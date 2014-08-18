@@ -1,0 +1,8 @@
+.DS_Store
+composer.lock
+
+
+# IDE
+.idea
+
+*.bak
