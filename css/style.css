@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|Open+Sans+Condensed:300,700);
+/*Bootstrap Components*/
+/*Fixed top navbar*/
+.navbar {
+  border-radius: 0;
+}
+.navbar.navbar-fixed-top {
+  background: #ffffff;
+  height: 64px;
+}
+.navbar.navbar-fixed-top .navbar-form {
+  margin: 15px 0;
+}
+.navbar.navbar-fixed-top .navbar-form .input-search input {
+  border: none;
+  background: #f2f2f2;
+  border-radius: 2px;
+  color: #878787;
+  font-size: 12px;
+  box-shadow: none;
+  padding: 0px 15px;
+  height: 36px;
+  width: 224px;
+}
+.navbar.navbar-fixed-top .navbar-form .input-search .form-control::-moz-placeholder {
+  color: #afafaf;
+}
+.navbar.navbar-fixed-top .navbar-form .input-search .btn {
+  border-color: #f2f2f2;
+  background: #f2f2f2;
+  color: #b0b0b0;
+  border-radius: 2px;
+  height: 36px;
+  font-size: 16px;
+  outline: none;
+}
+.navbar.navbar-fixed-top .navbar-right > li > a {
+  color: #878787;
+  padding-bottom: 17px;
+  padding-top: 18px;
+}
+.navbar.navbar-fixed-top .navbar-right > li > a span {
+  font-size: 24px;
+}
+.navbar.navbar-fixed-top .navbar-right .user.dropdown > a {
+  font-size: 13px;
+  color: #666666;
+  padding: 14px 18px 13px;
+}
+.navbar.navbar-fixed-top .navbar-right .user.dropdown > a img.img-circle {
+  margin-right: 10px;
+}
+.navbar.navbar-fixed-top .navbar-right .user.dropdown > a span {
+  color: #b8b8b8;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.navbar-brand {
+  padding: 14px;
+}
+.navbar-brand img {
+  height: 37px;
+}
+/*Navbar inverse*/
+.navbar-inverse {
+  background-color: #424749;
+  border: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.navbar-inverse span.icon-caret-down {
+  font-size: 12px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #c2c2c2;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li.dropdown.open > a {
+  background-color: #363a3c;
+}
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li.active > a:hover {
+  background-color: #5da400;
+}
+.navbar-inverse .dropdown-menu {
+  border-radius: 0;
+  border: none;
+  background-color: #444a4c;
+  box-shadow: none;
+  min-width: 200px;
+  padding: 8px 0;
+}
+.navbar-inverse .dropdown-menu li a {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: none;
+  padding: 2px 13px;
+  font-size: 13px;
+}
+.navbar-inverse .dropdown-menu li a .sprite {
+  margin-right: 6px;
+  margin-bottom: -5px;
+}
+.navbar-inverse .dropdown-menu li a:hover {
+  background: #5da400;
+}
+.navbar-inverse .social-nav {
+  font-size: 20px;
+}
+.navbar-inverse .social-nav li a {
+  padding: 14px 14px;
+}
+.btn-primary {
+  border-color: #5da400;
+  background: #5da400;
+}
+/*LiveScore Components*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 64px;
+}
+span.sprite {
+  width: 21px;
+  height: 18px;
+  content: "";
+  display: inline-block;
+  margin-bottom: -4px;
+}
+span.sprite.football {
+  background: url('../img/sprite-icons.png') no-repeat -230px -28px;
+}
+span.sprite.tennis {
+  background: url('../img/sprite-icons.png') no-repeat -229px -75px;
+}
+span.sprite.rugby {
+  background: url('../img/sprite-icons.png') no-repeat -230px -52px;
+}
+span.sprite.handball {
+  background: url('../img/sprite-icons.png') no-repeat -229px -98px;
+}
+span.sprite.basketball {
+  background: url('../img/sprite-icons.png') no-repeat -229px -122px;
+}
+span.sprite.volleyball {
+  background: url('../img/sprite-icons.png') no-repeat -257px -28px;
+}
+span.sprite.icehockey {
+  background: url('../img/sprite-icons.png') no-repeat -257px -52px;
+}
+span.sprite.baseball {
+  background: url('../img/sprite-icons.png') no-repeat -257px -75px;
+}
+span.sprite.a-football {
+  background: url('../img/sprite-icons.png') no-repeat -255px -98px;
+  height: 17px;
+  width: 22px;
+  margin-bottom: -4px !important;
+  margin-left: -2px;
+}
+/*Main Colors*/
+/*Typography*/

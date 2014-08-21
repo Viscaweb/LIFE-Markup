@@ -1,0 +1,129 @@
+/*Fixed top navbar*/
+.navbar{
+  border-radius: 0;
+}
+.navbar.navbar-fixed-top{
+  background: @body-bg;
+  height: 64px;
+  
+  .navbar-form{
+    margin: 15px 0;
+    
+    .input-search{
+      input{
+        border:none;
+        background: darken(@body-bg, 5%);
+        border-radius: 2px;
+        color: darken(@body-bg, 47%);
+        font-size: 12px;
+        box-shadow: none;
+        padding: 0px 15px;
+        height: 36px;
+        width: 224px;
+      }
+      .form-control::-moz-placeholder {
+        color: #afafaf;
+      }
+      .btn{
+        border-color: darken(@body-bg, 5%);
+        background: darken(@body-bg, 5%);
+        color: darken(@body-bg, 31%);
+        border-radius: 2px;
+        height: 36px;
+        font-size: 16px;
+        outline: none;
+      }
+    }
+  }
+  
+  .navbar-right > li > a{
+    color:darken(@body-bg, 47%);
+    padding-bottom: 17px;
+    padding-top: 18px;
+    span{
+      font-size: 24px;
+    }
+  }
+  .navbar-right{
+    .user.dropdown{
+      > a{
+        font-size: 13px;
+        color: darken(@body-bg, 60%);
+        padding: 14px 18px 13px;
+        img.img-circle{
+          margin-right: 10px;
+        }
+        span{
+          color:darken(@body-bg, 28%);
+          font-size: 12px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+.navbar-brand {
+  padding:14px;
+  
+  img{height: 37px;}
+}
+
+/*Navbar inverse*/
+
+.navbar-inverse {
+  background-color: @ls-greyblue-dark;
+  border: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  
+  span.icon-caret-down{
+    font-size: 12px;
+  }
+  
+  .navbar-nav > li > a{
+    color: darken(@body-bg, 24%);
+  }
+  .navbar-nav > li > a:hover, .navbar-nav > li.dropdown.open > a{
+    background-color: darken(@ls-greyblue-dark, 5%);
+  }
+  .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover{
+    background-color: @brand-primary;
+  }
+  
+  .dropdown-menu{
+    border-radius: 0;
+    border: none;
+    background-color: lighten(@ls-greyblue-dark, 1%);
+    box-shadow: none;
+    min-width: 200px;
+    padding: 8px 0;
+    li{
+      a{
+        color: @body-bg;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: none;
+        padding: 2px 13px;
+        font-size: 13px;
+        .sprite{
+          margin-right: 6px;
+          margin-bottom: -5px;
+        }
+      }
+      a:hover{
+        background: @brand-primary;
+      }
+    }
+  }
+  
+  .social-nav{
+    font-size: 20px;
+    
+    li{
+      a{
+        padding: 14px 14px;
+      }
+    }
+  }
+}
