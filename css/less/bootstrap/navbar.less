@@ -2,6 +2,7 @@
 .navbar{
   border-radius: 0;
 }
+
 .navbar.navbar-fixed-top{
   background: @body-bg;
   height: 64px;
@@ -13,7 +14,7 @@
       input{
         border:none;
         background: darken(@body-bg, 5%);
-        border-radius: 2px;
+        .border-radius(2px 0 0 2px);
         color: darken(@body-bg, 47%);
         font-size: 12px;
         box-shadow: none;
@@ -21,18 +22,29 @@
         height: 36px;
         width: 224px;
       }
+      
       .form-control::-moz-placeholder {
         color: #afafaf;
       }
+      
       .btn{
         border-color: darken(@body-bg, 5%);
         background: darken(@body-bg, 5%);
         color: darken(@body-bg, 31%);
-        border-radius: 2px;
+        .border-radius(0 2px 2px 0);
         height: 36px;
         font-size: 16px;
         outline: none;
+        
+        &:hover, &:active{
+          .box-shadow(none);
+        }
+        
+        &:hover{
+          color: darken(@body-bg, 35%);
+        }
       }
+      
     }
   }
   
@@ -44,6 +56,7 @@
       font-size: 24px;
     }
   }
+  
   .navbar-right{
     .user.dropdown{
       > a{
@@ -62,6 +75,7 @@
     }
   }
 }
+
 .navbar-brand {
   padding:14px;
   
@@ -69,7 +83,6 @@
 }
 
 /*Navbar inverse*/
-
 .navbar-inverse {
   background-color: @ls-greyblue-dark;
   border: none;

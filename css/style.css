@@ -14,7 +14,12 @@
 .navbar.navbar-fixed-top .navbar-form .input-search input {
   border: none;
   background: #f2f2f2;
-  border-radius: 2px;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   color: #878787;
   font-size: 12px;
   box-shadow: none;
@@ -29,10 +34,24 @@
   border-color: #f2f2f2;
   background: #f2f2f2;
   color: #b0b0b0;
-  border-radius: 2px;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   height: 36px;
   font-size: 16px;
   outline: none;
+}
+.navbar.navbar-fixed-top .navbar-form .input-search .btn:hover,
+.navbar.navbar-fixed-top .navbar-form .input-search .btn:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar.navbar-fixed-top .navbar-form .input-search .btn:hover {
+  color: #a6a6a6;
 }
 .navbar.navbar-fixed-top .navbar-right > li > a {
   color: #878787;
