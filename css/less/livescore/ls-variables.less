@@ -3,11 +3,47 @@
 @ls-grey: #33393b;
 @ls-greyblue-dark: #424749;
 @ls-greyblue-darker: @ls-greyblue-dark, 2%;
+@ls-light-color: #FFF;
+@ls-dark-color: #000;
 @live-red: #e33000;
-@body-bg: #fff; 
-
 @danger:;
 
-/*Typography*/
+/*Elements Colors*/
+@body-bg: #e7e9eb; 
+@ls-link-color: #0053a8;
+@header-bg: #fff; 
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|Open+Sans+Condensed:300,700);
+
+/*Navbar Inverse*/
+@ls-navbar-inverse-height: 50px;
+@ls-navbar-inverse-item-padding: 14px;
+
+/*Top BreadCrumbs*/
+@ls-top-breadcrumbs-height: 50px;
+
+/*Container*/ 
+@container-width: 1100px;
+
+/*Footer (I coulnd't find a color calculation for these colors)*/
+@ls-top-footer-bg: #313638;
+@ls-bottom-footer-bg: #272d2f;
+@ls-footer-text-color: #9fbbd3;
+
+/*Typography*/
+@ls-body-font:'Open Sans', sans-serif;
+
+//Responsive limits
+@xx-small-devices: 620px;
+@extra-small-devices: 768px;
+@small-devices: 992px;
+@medium-devices: 1200px;
+
+//Responsive Variables
+@desktop: ~"(min-width: @{medium-devices})";
+@laptop: ~"(min-width: @{small-devices}) and (max-width: @{medium-devices})";
+@tablet: ~"(min-width: @{extra-small-devices}) and (max-width: @{small-devices})";
+@phone: ~"(max-width: @{extra-small-devices})";
+@small-phone: ~"(max-width: @{xx-small-devices})";
+
+//Retina Display
+@retina: ~"all and (-webkit-min-device-pixel-ratio: 2), all and (min-resolution: 192dpi)";

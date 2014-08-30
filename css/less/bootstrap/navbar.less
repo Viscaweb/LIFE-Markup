@@ -1,132 +1,194 @@
 /*Fixed top navbar*/
+.header{
+
 .navbar{
   border-radius: 0;
 }
 
 .navbar.navbar-fixed-top{
-  background: @body-bg;
+  background: @ls-light-color;
   height: 64px;
+  border: 0;
+  
+  .navbar-header{
+    margin-right: 0;
+    float: left !important;
+    
+    .navbar-brand {
+      padding:14px;
+      
+      img{height: 37px;}
+    }
+    
+  }
   
   .navbar-form{
+    border: 0;
+    float: left !important;
     margin: 15px 0;
+    padding-bottom: 0;
+    padding-top: 0;
     
     .input-search{
+      margin-left: 10px;
+      display: inline-table;
+    
       input{
         border:none;
-        background: darken(@body-bg, 5%);
+        background: darken(@ls-light-color, 5%);
         .border-radius(2px 0 0 2px);
-        color: darken(@body-bg, 47%);
+        color: darken(@ls-light-color, 47%);
         font-size: 12px;
+        font-weight: 300;
         box-shadow: none;
         padding: 0px 15px;
         height: 36px;
         width: 224px;
       }
       
-      .form-control::-moz-placeholder {
-        color: #afafaf;
+      .form-control{
+        display: table-cell !important;
+      
+        &::-moz-placeholder {
+          color: #afafaf;
+        }
       }
       
-      .btn{
-        border-color: darken(@body-bg, 5%);
-        background: darken(@body-bg, 5%);
-        color: darken(@body-bg, 31%);
-        .border-radius(0 2px 2px 0);
-        height: 36px;
-        font-size: 16px;
-        outline: none;
-        
-        &:hover, &:active{
-          .box-shadow(none);
-        }
-        
-        &:hover{
-          color: darken(@body-bg, 35%);
+      .input-group-btn{
+        display: inline-block;
+      
+        .btn{
+          border-color: darken(@ls-light-color, 5%);
+          background: darken(@ls-light-color, 5%);
+          color: darken(@ls-light-color, 31%);
+          .border-radius(0 2px 2px 0);
+          height: 36px;
+          font-size: 16px;
+          outline: none;
+          
+          &:hover, &:active{
+            .box-shadow(none);
+          }
+          
+          &:hover{
+            color: darken(@ls-light-color, 35%);
+          }
         }
       }
       
     }
-  }
-  
-  .navbar-right > li > a{
-    color:darken(@body-bg, 47%);
-    padding-bottom: 17px;
-    padding-top: 18px;
-    span{
-      font-size: 24px;
+    
+    .login.btn{
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 59px;
     }
   }
   
-  .navbar-right{
+  .navbar-right{ 
+    margin: 0;
+  
+    > li{
+      > a{ 
+        color:darken(@ls-light-color, 47%);
+        padding-bottom: 0;
+        padding-top: 0;
+        line-height: 64px;
+        
+        span{
+          vertical-align: middle;
+          font-size: 24px;
+        }
+      }
+      
+      &.active{
+        > a{
+          color: @brand-primary;
+        }
+      }
+    }
+  
+
     .user.dropdown{
-      > a{
-        font-size: 13px;
-        color: darken(@body-bg, 60%);
-        padding: 14px 18px 13px;
+      > a{        
         img.img-circle{
           margin-right: 10px;
         }
+        
         span{
-          color:darken(@body-bg, 28%);
+          color:darken(@ls-light-color, 28%);
           font-size: 12px;
           margin-left: 10px;
         }
       }
     }
   }
+  
 }
 
-.navbar-brand {
-  padding:14px;
-  
-  img{height: 37px;}
+.dropdown-inverted{
+  .dropdown-menu{
+    background-color: lighten(@ls-greyblue-dark, 1%);
+    
+    > li{
+      > a{
+        color: @ls-light-color;
+      }
+    }
+  }
 }
+
 
 /*Navbar inverse*/
 .navbar-inverse {
   background-color: @ls-greyblue-dark;
   border: none;
-  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
+  height: @ls-navbar-inverse-height;
+  margin-bottom: 0;
   
   span.icon-caret-down{
     font-size: 12px;
   }
   
-  .navbar-nav > li > a{
-    color: darken(@body-bg, 24%);
-  }
-  .navbar-nav > li > a:hover, .navbar-nav > li.dropdown.open > a{
-    background-color: darken(@ls-greyblue-dark, 5%);
-  }
-  .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover{
-    background-color: @brand-primary;
-  }
-  
-  .dropdown-menu{
-    border-radius: 0;
-    border: none;
-    background-color: lighten(@ls-greyblue-dark, 1%);
-    box-shadow: none;
-    min-width: 200px;
-    padding: 8px 0;
-    li{
-      a{
-        color: @body-bg;
-        font-family: 'Open Sans', sans-serif;
-        text-transform: none;
-        padding: 2px 13px;
-        font-size: 13px;
-        .sprite{
-          margin-right: 6px;
-          margin-bottom: -5px;
+  .navbar-nav{ 
+    margin: 0;
+    
+    //This is the first level
+    > li {
+    
+      > a{
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: darken(@ls-light-color, 24%);
+        padding: 0 @ls-navbar-inverse-item-padding;
+        line-height: @ls-navbar-inverse-height;
+        
+        &:hover{
+          background-color: darken(@ls-greyblue-dark, 5%);
+        }
+        
+      }
+      
+      &.dropdown.open{
+        > a, > a:hover{
+          background-color: darken(@ls-greyblue-dark, 5%);
         }
       }
-      a:hover{
-        background: @brand-primary;
+      
+      &.active{
+        >a , >a:hover{
+          background-color: @brand-primary;
+          color: @ls-light-color;
+        }
       }
+      
+      &.divider{
+        border-left: 1px solid @ls-greyblue-dark - 10%;
+        height: @ls-navbar-inverse-height;
+      }
+      
     }
   }
   
@@ -135,8 +197,31 @@
     
     li{
       a{
-        padding: 14px 14px;
+        color: darken(@ls-light-color, 10.7%);
+        padding: 0 @ls-navbar-inverse-item-padding;
       }
     }
   }
 }
+
+
+//This code overwrite the default navbar responsive behavior to be "non responsive"
+.navbar-collapse.collapse {
+  display: block !important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+//This code overwrite the default navbar responsive behavior to be "non responsive"
+
+}
+

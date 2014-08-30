@@ -1,0 +1,28 @@
+/*Dropdown*/
+.dropdown-menu{
+  border-radius: 0;
+  border: none;
+  .box-shadow( 0 5px 5px rgba(0, 0, 0, 0.04) );
+  min-width: 200px;
+  padding: 8px 0;
+  
+  > li{
+    > a{
+      color: lighten(@ls-dark-color, 22%);
+      text-transform: none;
+      padding: 2px 13px;
+      font-size: 13px;
+      line-height: 23px;
+      
+      .sprite{
+        margin-right: 6px;
+        margin-bottom: -5px;
+      }
+      
+      &:hover{
+        color: @ls-light-color;
+        background: @brand-primary;
+      }        
+    }
+  }
+}

@@ -1,4 +1,18 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: @ls-body-font;
   padding-top: 64px;
+  background: @body-bg;
 } 
+
+a{
+  color: @ls-link-color;
+  
+  &:hover{
+    text-decoration: none;
+  }
+  
+  &:focus{
+    text-decoration: none;
+  }
+  
+}

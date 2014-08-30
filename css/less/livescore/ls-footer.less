@@ -1,0 +1,32 @@
+.footer{
+
+  .top-footer{
+    padding: 20px;
+    background: @ls-top-footer-bg;
+  }
+  
+  .bottom-footer{
+    overflow: hidden;
+    text-align: center;
+    background: @ls-bottom-footer-bg;
+    
+    .navbar-nav{
+      float: none;
+      display: inline-block;
+      
+      li{
+        a{
+          color: @ls-footer-text-color;
+          font-size: 11px;
+          padding-bottom: 8px;
+          
+          &:hover, &:focus{
+            background: transparent;
+          }
+          
+        }
+      }
+    }
+  }
+  
+} 

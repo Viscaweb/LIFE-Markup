@@ -1,0 +1,53 @@
+.breadcrumb{
+  .border-radius(0);
+  background: @ls-light-color;
+  padding: 0 0 0 20px;
+  margin: 0;
+  
+  > li{//First Level
+    font-size: 12px;
+     
+    > a{
+      outline: none;
+      display: inline-block;
+      line-height: @ls-top-breadcrumbs-height;
+      padding: 0 8px;
+      border-bottom:2px solid transparent;
+      
+      > span{
+        font-size: 11px;
+        margin-left: 6px;
+        color: darken(@ls-light-color, 11.2%);
+      }
+    }
+    
+    & + li:before{
+       color: darken(@ls-light-color, 11.2%);
+       font-family: 'LSicons';
+       content: "\e60d ";
+       padding: 0;
+       font-size: 17px;
+       vertical-align: middle;
+    }
+    
+    &.open{
+      > a{
+        background: darken(@ls-light-color, 6%);
+        > span{
+          color: @brand-primary;
+        }
+        
+        border-bottom-color: @brand-primary;
+      }
+    }
+    
+    &.active:before{
+      padding-right: 8px;
+    }
+    
+    .dropdown-menu{
+      margin-top: 0;
+      left: 17px;
+    }
+  }  
+}
