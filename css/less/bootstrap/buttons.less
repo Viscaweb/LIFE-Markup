@@ -1,4 +1,25 @@
+.btn{
+  .border-radius(2px);
+  font-size: 12px;
+  font-weight: 600;
+  color: lighten(@ls-dark-color, 26.2%);
+  line-height: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.btn-default{
+  border-color: @ls-btn-default - 27%;
+  background: @ls-btn-default;
+}
+
 .btn-primary{
-  border-color: @brand-primary;
+  color: @ls-light-color;
+  border-color: @brand-primary + 1%;
   background: @brand-primary;
+  
+  &.active{
+    border-color: @brand-primary + 1%;
+    background: @brand-primary;
+  }
 }

@@ -179,8 +179,31 @@
 .header .navbar-right {
   float: right!important;
 }
+.btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 12px;
+  font-weight: 600;
+  color: #434343;
+  line-height: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.btn-default {
+  border-color: #e1e1e1;
+  background: #fcfcfc;
+}
 .btn-primary {
-  border-color: #5da400;
+  color: #ffffff;
+  border-color: #5ea501;
+  background: #5da400;
+}
+.btn-primary.active {
+  border-color: #5ea501;
   background: #5da400;
 }
 /*Dropdown*/
@@ -214,6 +237,7 @@
 /*Navbar Inverse*/
 /*Top BreadCrumbs*/
 /*Container*/
+/*Buttons*/
 /*Footer (I coulnd't find a color calculation for these colors)*/
 /*Typography*/
 body {
@@ -276,6 +300,9 @@ span.sprite.a-football {
 }
 #ad-content {
   height: 167px;
+}
+.live-red {
+  color: #e33000;
 }
 /*Structure*/
 .wrapper {
