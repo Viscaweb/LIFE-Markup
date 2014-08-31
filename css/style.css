@@ -367,11 +367,12 @@ span.sprite.a-football {
 .footer .bottom-footer .navbar-nav {
   float: none;
   display: inline-block;
+  vertical-align: top;
 }
 .footer .bottom-footer .navbar-nav li a {
   color: #9fbbd3;
   font-size: 11px;
-  padding-bottom: 8px;
+  padding: 13px 15px;
 }
 .footer .bottom-footer .navbar-nav li a:hover,
 .footer .bottom-footer .navbar-nav li a:focus {
