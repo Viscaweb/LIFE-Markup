@@ -206,6 +206,10 @@
   border-color: #5ea501;
   background: #5da400;
 }
+.btn-primary:hover {
+  border-color: #4b9200;
+  background: #4f9600;
+}
 /*Dropdown*/
 .dropdown-menu {
   border-radius: 0;
