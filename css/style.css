@@ -1,9 +1,71 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|Open+Sans+Condensed:300,700);
 /*Bootstrap Components*/
+.btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 12px;
+  font-weight: 600;
+  color: #434343;
+  line-height: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.btn span {
+  color: #b8b8b8;
+}
+.btn-default {
+  border-color: #e1e1e1;
+  background: #fcfcfc;
+}
+.btn-primary {
+  color: #ffffff;
+  border-color: #5ea501;
+  background: #5da400;
+}
+.btn-primary.active {
+  border-color: #5ea501;
+  background: #5da400;
+}
+.btn-primary:hover {
+  border-color: #4b9200;
+  background: #4f9600;
+}
+/*Dropdown*/
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+  min-width: 200px;
+  padding: 8px 0;
+}
+.dropdown-menu > li > a {
+  color: #383838;
+  text-transform: none;
+  padding: 2px 13px;
+  font-size: 13px;
+  line-height: 23px;
+}
+.dropdown-menu > li > a .sprite {
+  margin-right: 6px;
+  margin-bottom: -5px;
+}
+.dropdown-menu > li > a:hover {
+  color: #ffffff;
+  background: #5da400;
+}
 .container {
   padding: 0;
   width: 1100px;
   min-width: 1100px;
+}
+.row {
+  margin-bottom: 15px;
 }
 /*Fixed top navbar*/
 .header {
@@ -179,65 +241,6 @@
 .header .navbar-right {
   float: right!important;
 }
-.btn {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  font-size: 12px;
-  font-weight: 600;
-  color: #434343;
-  line-height: 16px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-.btn span {
-  color: #b8b8b8;
-}
-.btn-default {
-  border-color: #e1e1e1;
-  background: #fcfcfc;
-}
-.btn-primary {
-  color: #ffffff;
-  border-color: #5ea501;
-  background: #5da400;
-}
-.btn-primary.active {
-  border-color: #5ea501;
-  background: #5da400;
-}
-.btn-primary:hover {
-  border-color: #4b9200;
-  background: #4f9600;
-}
-/*Dropdown*/
-.dropdown-menu {
-  border-radius: 0;
-  border: none;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
-  min-width: 200px;
-  padding: 8px 0;
-}
-.dropdown-menu > li > a {
-  color: #383838;
-  text-transform: none;
-  padding: 2px 13px;
-  font-size: 13px;
-  line-height: 23px;
-}
-.dropdown-menu > li > a .sprite {
-  margin-right: 6px;
-  margin-bottom: -5px;
-}
-.dropdown-menu > li > a:hover {
-  color: #ffffff;
-  background: #5da400;
-}
 /*LiveScore Components*/
 /*Main Colors*/
 /*Elements Colors*/
@@ -260,6 +263,9 @@ a:hover {
 }
 a:focus {
   text-decoration: none;
+}
+span.dark-icon {
+  color: #5c5c5c;
 }
 span.sprite {
   width: 21px;
