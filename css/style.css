@@ -418,6 +418,23 @@
 .header .navbar-right {
   float: right!important;
 }
+/*Pagination*/
+.pagination > li.active a,
+.pagination > li.active a:hover,
+.pagination > li.active a:focus {
+  -webkit-box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  border-color: #5ea501;
+  background: #5da400;
+  outline: none;
+}
+.pagination > li > a {
+  background: #fcfcfc;
+}
+.pagination > li > a > span {
+  color: #b8b8b8;
+}
 .nav-tabs {
   background: #fcfcfc;
   border-bottom: 2px solid #f0f0f0;

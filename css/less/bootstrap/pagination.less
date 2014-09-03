@@ -1,0 +1,23 @@
+/*Pagination*/
+.pagination{
+
+  > li{
+
+    &.active{
+      a,a:hover,a:focus{
+        .inner-shadow(1px);
+        border-color: @brand-primary + 1%;
+        background: @brand-primary;
+        outline: none;
+      }
+    }
+
+    > a{
+
+      background: darken(@ls-light-color, 1%);
+      > span{
+        color: darken(@ls-light-color, 28%);
+      }
+    }
+  }
+}
