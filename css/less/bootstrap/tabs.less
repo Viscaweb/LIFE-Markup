@@ -1,0 +1,55 @@
+.nav-tabs{
+  background: darken(@ls-light-color, 1%);
+  border-bottom: 2px solid darken(@ls-light-color, 6%);
+  > li{
+    margin-bottom: -2px;
+    &.active{
+      a,a:hover{
+        .border-radiuses(2px,0,0,2px);
+        border-right: none;
+        background: @brand-primary;
+        border: transparent;
+        border-bottom: 2px solid darken(@brand-primary, 4%);
+        color: @ls-light-color;
+      }
+      .badge{
+        background: @ls-light-color;
+        color: @brand-primary;
+      }
+    }
+    > a{
+      .border-radius(0);
+      border-top: none;
+      border-bottom: 2px solid darken(@ls-light-color, 6%);
+      border-right: 1px solid darken(@ls-light-color, 12%);
+      margin-right: 0;
+      color: lighten(@ls-dark-color, 26.2%);
+      outline: none;
+      
+      &:focus{
+        border-left: none;
+        border-bottom: 2px solid darken(@brand-primary, 4%);
+      }
+
+      &:hover{
+
+        background-color: darken(@ls-light-color, 6%);
+        border-bottom: 2px solid darken(@brand-primary, 4%);
+      }
+
+      .badge{
+        background-color: @brand-primary;
+      }
+    }
+    &.dropdown.open{
+      > a{
+        color: @ls-light-color;
+        border-color: transparent;
+        background-color: @brand-primary;
+        border-bottom: 2px solid darken(@ls-light-color, 6%);
+        border-right: 1px solid darken(@ls-light-color, 12%);
+        border-left: none;
+      }
+    }
+  }
+}
