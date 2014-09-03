@@ -185,7 +185,8 @@
   margin-bottom: -2px;
 }
 .nav-pills > li.active a,
-.nav-pills > li.active a:hover {
+.nav-pills > li.active a:hover,
+.nav-pills > li.active a:focus {
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -425,7 +426,8 @@
   margin-bottom: -2px;
 }
 .nav-tabs > li.active a,
-.nav-tabs > li.active a:hover {
+.nav-tabs > li.active a:hover,
+.nav-tabs > li.active a:focus {
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
