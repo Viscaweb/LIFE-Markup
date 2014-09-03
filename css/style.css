@@ -143,6 +143,10 @@
 .btn-link:hover,
 .btn-link:focus:hover {
   background: #f1f1f1;
+  text-decoration: none;
+}
+.btn-group .btn-link span {
+  color: #0053a8;
 }
 /*Dropdown*/
 .dropdown-menu {
