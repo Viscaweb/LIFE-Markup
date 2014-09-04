@@ -1,5 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|Open+Sans+Condensed:300,700);
 /*Bootstrap Components*/
+/*Alerts*/
+.alert {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+.alert.alert-dismissible {
+  padding-right: 30px;
+}
+.alert.alert-dismissible:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.alert-info {
+  border-color: #d3d7d8;
+  background-color: #e7ebec;
+}
+.alert-success {
+  border-color: #ccdcc4;
+  background-color: #e0f0d8;
+}
 .btn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -512,6 +533,7 @@
 /*Navbar Inverse*/
 /*Top BreadCrumbs*/
 /*Container*/
+/*Alerts*/
 /*Buttons*/
 /*Footer (I coulnd't find a color calculation for these colors)*/
 /*Typography*/
