@@ -52,12 +52,17 @@
         font-size: 12px;
       }
       button{
+        font-style: normal; 
         border: none;
         color: lighten(@ls-dark-color, 82%);
         background: none;
 
         &.active{
           color: lighten(@ls-dark-color, 33%);
+        }
+        &.btn-default{
+          background-color: @ls-light-color;
+          color: lighten(@ls-dark-color,20%);
         }
       }
     }
