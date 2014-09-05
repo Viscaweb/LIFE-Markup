@@ -1,0 +1,104 @@
+/*panels*/
+.panel{
+  .border-radius(0);
+  .drop-shadow (0, 0, 0, 0, 0);
+  border-color: darken(@ls-light-color,6%);
+
+  > .panel-heading{
+    .border-radius(0);
+    font-size: 16px;
+    padding: 8px 20px;
+    border-color: darken(@ls-light-color,6%);
+    position: relative;
+
+    .panel-title{
+      font-size: 16px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: lighten(@ls-dark-color, 37% );
+      font-weight: bold;
+      display: inline;
+    }
+
+    .tools{
+      float: right;
+      display: inline-block;
+      font-style: italic;
+      color: lighten( @ls-dark-color, 58% );
+      font-size: 12px;
+      margin-top: -10px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+
+      a{
+        font-size: 12px;
+        
+        font-style: normal;
+
+        span{
+          font-size: 10px;
+        }
+      }
+      .badge{
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        background-color: @brand-primary;
+        color: @ls-light-color;
+      }
+      .label{
+        font-weight: 600;
+        font-style: normal;
+        font-size: 12px;
+      }
+      button{
+        border: none;
+        color: lighten(@ls-dark-color, 82%);
+        background: none;
+
+        &.active{
+          color: lighten(@ls-dark-color, 33%);
+        }
+      }
+    }
+  }
+
+  > .panel-body{
+    padding: 20px;
+    color: lighten(@ls-dark-color,36%);
+    font-weight: lighter;
+  }
+  &.panel-condensed{
+
+    .panel-body{
+      font-weight: lighter;
+      padding: 15px;
+
+      b,strong{
+        font-weight: 600;
+      }
+    }
+  }
+  &.panel-inverse{
+    border-color: darken(@ls-grey,1%);
+
+    .panel-heading{
+      background-color: darken(@ls-grey,1%);
+      border-color: darken(@ls-grey,1%);
+      .panel-title{
+        color:darken(@ls-light-color, 24%);
+      }
+    }
+    .panel-body{
+      color: #fff;
+      background-color: lighten(@ls-greyblue-dark, 1%);
+    }
+    a{
+      color: @ls-inverse-link-color;
+    }
+    b,strong{
+      color: darken(@ls-light-color,4%);
+    }
+    
+  }
+}

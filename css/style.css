@@ -21,6 +21,14 @@
   border-color: #ccdcc4;
   background-color: #e0f0d8;
 }
+/*Badges*/
+.badge {
+  background-color: #5da400;
+  padding: 4px 3px;
+}
+.badge.live {
+  background-color: #e33000;
+}
 .btn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -201,6 +209,18 @@
 }
 .row {
   margin-bottom: 15px;
+}
+/*Labels*/
+.label {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.label-live {
+  background-color: #e33000;
 }
 .nav-pills {
   border-bottom: 2px solid #f0f0f0;
@@ -459,6 +479,110 @@
 .pagination > li > a > span {
   color: #b8b8b8;
 }
+/*panels*/
+.panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  border-color: #f0f0f0;
+}
+.panel > .panel-heading {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-color: #f0f0f0;
+  position: relative;
+}
+.panel > .panel-heading .panel-title {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #5e5e5e;
+  font-weight: bold;
+  display: inline;
+}
+.panel > .panel-heading .tools {
+  float: right;
+  display: inline-block;
+  font-style: italic;
+  color: #949494;
+  font-size: 12px;
+  margin-top: -10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+.panel > .panel-heading .tools a {
+  font-size: 12px;
+  font-style: normal;
+}
+.panel > .panel-heading .tools a span {
+  font-size: 10px;
+}
+.panel > .panel-heading .tools .badge {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #5da400;
+  color: #ffffff;
+}
+.panel > .panel-heading .tools .label {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+}
+.panel > .panel-heading .tools button {
+  border: none;
+  color: #d1d1d1;
+  background: none;
+}
+.panel > .panel-heading .tools button.active {
+  color: #545454;
+}
+.panel > .panel-body {
+  padding: 20px;
+  color: #5c5c5c;
+  font-weight: lighter;
+}
+.panel.panel-condensed .panel-body {
+  font-weight: lighter;
+  padding: 15px;
+}
+.panel.panel-condensed .panel-body b,
+.panel.panel-condensed .panel-body strong {
+  font-weight: 600;
+}
+.panel.panel-inverse {
+  border-color: #313638;
+}
+.panel.panel-inverse .panel-heading {
+  background-color: #313638;
+  border-color: #313638;
+}
+.panel.panel-inverse .panel-heading .panel-title {
+  color: #c2c2c2;
+}
+.panel.panel-inverse .panel-body {
+  color: #fff;
+  background-color: #444a4c;
+}
+.panel.panel-inverse a {
+  color: #9ccdff;
+}
+.panel.panel-inverse b,
+.panel.panel-inverse strong {
+  color: #f5f5f5;
+}
 .nav-tabs {
   background: #fcfcfc;
   border-bottom: 2px solid #f0f0f0;
@@ -547,12 +671,21 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #002aff;
 }
 a:focus {
   text-decoration: none;
 }
+b,
+strong {
+  color: #5c5c5c;
+}
 span.dark-icon {
   color: #5c5c5c;
+}
+/*Typography classes*/
+.uppercase {
+  text-transform: uppercase;
 }
 span.sprite {
   width: 21px;
