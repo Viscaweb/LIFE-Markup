@@ -722,6 +722,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding-top: 64px;
   background: #e7e9eb;
+  color: #5c5c5c;
 }
 /*Tipography*/
 h1,
@@ -743,12 +744,29 @@ h2 {
 h5 {
   font-size: 16px;
 }
+p {
+  font-weight: lighter;
+}
+p b {
+  font-weight: 600;
+}
+p.lead {
+  font-size: 17px;
+}
+p.lead b {
+  font-weight: bold;
+}
+small,
+.small {
+  font-size: 13px;
+  font-weight: normal;
+}
 a {
   color: #0053a8;
 }
 a:hover {
   text-decoration: none;
-  color: #002aff;
+  color: #0078ff;
 }
 a:focus {
   text-decoration: none;
@@ -763,10 +781,6 @@ strong {
 }
 span.dark-icon {
   color: #5c5c5c;
-}
-/*Typography classes*/
-.uppercase {
-  text-transform: uppercase;
 }
 span.sprite {
   width: 21px;

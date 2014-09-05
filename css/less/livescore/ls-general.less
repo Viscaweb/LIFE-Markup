@@ -2,6 +2,7 @@ body{
   font-family: @ls-body-font;
   padding-top: 64px;
   background: @body-bg;
+  color: lighten(@ls-dark-color, 36%);
 }
 
 /*Tipography*/
@@ -20,7 +21,25 @@ h5{
   font-size: 16px;
 }
 
+p{
+  font-weight: lighter;
 
+  b{
+    font-weight: 600;
+  }
+  &.lead{
+    font-size: 17px;
+
+    b{
+      font-weight: bold;
+    }
+  }
+}
+
+small,.small{
+  font-size: 13px;
+  font-weight: normal;
+}
 
 
 
