@@ -835,14 +835,8 @@ span.sprite.a-football {
   margin-bottom: -4px !important;
   margin-left: -2px;
 }
-.ad-block {
+.visual-block {
   background: #d4d4d4;
-}
-#ad-top {
-  height: 230px;
-}
-#ad-content {
-  height: 167px;
 }
 .live-red {
   color: #e33000;
