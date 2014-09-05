@@ -1,0 +1,55 @@
+/*form-control*/
+.form-control{
+	.border-radius(2px);
+	font-size: 12px;
+	padding: 6px 12px;
+	height: 38px;
+	color: lighten(@ls-dark-color, 29%);
+
+	&:focus{
+		.box-shadow(0 0 8px rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), 0.25));
+		border-color: @brand-primary;
+	}
+}
+
+/*Validation states*/
+
+.has-success{
+	.form-control{
+		border-color: @brand-primary;
+		&:focus{
+			.box-shadow(0 0 8px rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), 0.25));
+			border-color: @brand-primary;
+		}
+		
+	}
+	.form-control-feedback{
+		color:  @brand-primary;
+	}
+}
+.has-error{
+	.form-control{
+		border-color: @ls-form-error;
+		&:focus{
+			.box-shadow(0 0 8px rgba(red(@ls-form-error), green(@ls-form-error), blue(@ls-form-error), 0.25));
+			border-color: @ls-form-error;
+		}
+		
+	}
+	.form-control-feedback{
+		color:  @ls-form-error;
+	}
+}
+.has-warning{
+	.form-control{
+		border-color: @ls-form-warning;
+		&:focus{
+			.box-shadow(0 0 8px rgba(red(@ls-form-warning), green(@ls-form-warning), blue(@ls-form-warning), 0.25));
+			border-color: @ls-form-warning;
+		}
+		
+	}
+	.form-control-feedback{
+		color:  @ls-form-warning;
+	}
+}
