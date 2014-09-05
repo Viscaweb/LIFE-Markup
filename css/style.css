@@ -65,6 +65,24 @@
 .btn.btn-xs {
   padding: 2px 6px;
 }
+.btn.dropdown-toggle .icon-caret-down,
+.btn.dropdown-toggle .icon-expand {
+  margin-left: 20px;
+}
+.btn.datepicker-icon {
+  padding: 5px 40px 5px 11px;
+}
+.btn.datepicker-icon span.icon-calendar {
+  color: #9c9c9c;
+  font-size: 22px;
+}
+.btn.datepicker-icon .icon-caret-down,
+.btn.datepicker-icon .icon-expand {
+  margin-top: -6px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
 .btn-default {
   border-color: #e1e1e1;
   background: #fcfcfc;
