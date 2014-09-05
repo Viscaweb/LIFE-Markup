@@ -723,6 +723,26 @@ body {
   padding-top: 64px;
   background: #e7e9eb;
 }
+/*Tipography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #474747;
+}
+h1 {
+  font-weight: bold;
+  font-size: 38px;
+}
+h2 {
+  font-size: 27px;
+}
+h5 {
+  font-size: 16px;
+}
 a {
   color: #0053a8;
 }
@@ -736,6 +756,10 @@ a:focus {
 b,
 strong {
   color: #5c5c5c;
+}
+/*Typography classes*/
+.uppercase {
+  text-transform: uppercase;
 }
 span.dark-icon {
   color: #5c5c5c;

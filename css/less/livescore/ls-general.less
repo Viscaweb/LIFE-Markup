@@ -2,7 +2,27 @@ body{
   font-family: @ls-body-font;
   padding-top: 64px;
   background: @body-bg;
-} 
+}
+
+/*Tipography*/
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+  color: lighten(@ls-dark-color, 28%);
+}
+h1{
+  font-weight: bold;
+  font-size: 38px;
+}
+h2{
+  font-size: 27px;
+}
+h5{
+  font-size: 16px;
+}
+
+
+
+
 
 a{
   color: @ls-link-color;
@@ -19,4 +39,9 @@ a{
 }
 b,strong{
   color: lighten(@ls-dark-color,36%);
+}
+
+/*Typography classes*/
+.uppercase{
+  text-transform: uppercase;
 }
