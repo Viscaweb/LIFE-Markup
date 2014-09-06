@@ -24,7 +24,7 @@
 /*Badges*/
 .badge {
   background-color: #5da400;
-  padding: 4px 3px;
+  padding: 4px 4px;
 }
 .badge.live {
   background-color: #e33000;
