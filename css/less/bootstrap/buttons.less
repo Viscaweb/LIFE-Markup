@@ -184,3 +184,60 @@
     }
   }
 }
+/*Custom Buttons*/
+.btn-prediction,.btn-prediction:focus{
+  border-color: @live-red;
+  background-color: @ls-light-color;
+  color: @live-red;
+
+  &:hover{
+    color:@live-red;
+  };
+}
+.btn-prediction-done,.btn-prediction-done:focus{
+  border-color: lighten(@ls-dark-color, 37%);
+  background-color: lighten(@ls-dark-color, 45%);
+  color: @ls-light-color;
+
+  &:hover{
+    color:@ls-light-color;
+    background: lighten(@ls-dark-color, 40%)
+  };
+}
+.btn-prediction-success,.btn-prediction-success:focus{
+  color: @ls-light-color;
+  border-color: @brand-primary;
+  background: @ls-btn-success;
+  outline: none;
+
+  &:hover{
+    color: @ls-light-color;
+    border-color: @brand-primary - 18%;
+    background: @ls-btn-success - 14%;
+  }
+}
+.btn-prediction-result,.btn-prediction-result:focus{
+  color: @brand-primary;
+  border-color: @brand-primary;
+  background: darken(@ls-light-color, 3%);
+  outline: none;
+
+  &:hover{
+    color: @brand-primary;
+    border-color: @brand-primary - 18%;
+    background: darken(@ls-light-color, 8%);
+  }
+}
+.btn-prediction-failed,.btn-prediction-failed:focus{
+  color: @ls-light-color;
+  border-color: @ls-btn-danger - 15%;
+  background: @ls-btn-danger;
+  outline: none;
+
+  &:hover{
+    color: @ls-light-color;
+    border-color: @ls-btn-danger - 18%;
+    background: @ls-btn-danger - 14%;
+  }
+  
+}
