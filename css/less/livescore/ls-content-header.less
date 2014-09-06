@@ -1,0 +1,109 @@
+/*Content Header*/
+.content-header{
+	position: relative;
+	padding: 10px 6px;
+	.avatar{
+		display: inline-block;
+		position: relative;
+		top: -32px;
+		margin-right: 20px;
+		img{
+			max-width: 65px;
+		}
+	}
+	.info{
+		display: inline-block;
+		.title{
+			h1{
+				display: inline-block;
+				margin: 0 0 5px;
+				font-size: 27px;
+				font-weight: 600;
+			}
+			a{
+				display: inline-block;
+				color: darken(@ls-light-color,31%);
+				font-size: 14px;
+		    margin-left: 10px;
+		    vertical-align: middle;
+			}
+
+		}
+		.btn-link{
+				font-weight: 400;
+			}
+		
+		a{
+			color: darken(@ls-light-color,35%);
+			display: block;
+			font-size: 11px;
+			margin-bottom: 3px;
+			img{
+				max-width: 18px;
+			}
+		}
+	}
+	&.teams{
+		.shirts{
+			float: right;
+			a{
+				text-align: center;
+				display: inline-block;
+				font-size: 11px;
+				color: darken(@ls-light-color,32%);
+
+				img{
+					display: block;
+				}
+			}
+		}
+	}
+	&.player{
+		.avatar{
+			top: -24px;
+		}
+		.info{
+			margin-right: 46px;
+			.title{
+				.first-name{
+					margin: 0;
+					font-size: 13px;
+					font-weight: 600;
+					padding-left: 2px;
+				}
+			}
+		}
+		.description{
+			display: inline-block;
+			ul{
+				padding: 0;
+				list-style: none;
+
+				li{
+					padding: 1px 0;
+					font-size: 11px;
+					border-bottom: 1px solid darken(@ls-light-color,7%);
+
+					b{
+						color: lighten(@ls-dark-color,20%);
+					}
+				}
+			}
+		}
+		.teams{
+			float: right;
+			a{
+				text-align: center;
+				display: inline-block;
+				font-size: 11px;
+				color: darken(@ls-light-color,32%);
+				padding: 2px;
+
+				img{
+					max-width: 52px;
+					display: block;
+				}
+			}
+		}
+	}
+}

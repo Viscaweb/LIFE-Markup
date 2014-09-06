@@ -1,0 +1,53 @@
+/*Player info*/
+.player{
+
+
+
+  .name{
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+    img{
+      margin-top: -3px;
+      max-width: 14px;
+      margin-right: 6px;
+    }
+  }
+
+  .goals{
+    display: inline-block;
+    h1{
+      font-size: 52px;
+      font-weight: 100;
+      color: darken(@ls-light-color, 46%);
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 10px;
+      color: darken(@ls-light-color, 27%);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+      i{
+        font-size: 14px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .picture{
+    bottom: 0;
+    position: absolute;
+    right: 5px;
+
+    img{
+      max-width: 82px;
+    }
+  }
+
+
+  &+.player{
+    border-left: 1px solid darken(@ls-light-color, 7%);;
+  }
+}

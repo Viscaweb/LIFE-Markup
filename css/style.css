@@ -23,8 +23,10 @@
 }
 /*Badges*/
 .badge {
+  padding: 4px 6px;
+}
+.badge.primary {
   background-color: #5da400;
-  padding: 4px 4px;
 }
 .badge.live {
   background-color: #e33000;
@@ -880,6 +882,101 @@
 /*Validation Form-controls*/
 /*Footer (I coulnd't find a color calculation for these colors)*/
 /*Typography*/
+/*Content Header*/
+.content-header {
+  position: relative;
+  padding: 10px 6px;
+}
+.content-header .avatar {
+  display: inline-block;
+  position: relative;
+  top: -32px;
+  margin-right: 20px;
+}
+.content-header .avatar img {
+  max-width: 65px;
+}
+.content-header .info {
+  display: inline-block;
+}
+.content-header .info .title h1 {
+  display: inline-block;
+  margin: 0 0 5px;
+  font-size: 27px;
+  font-weight: 600;
+}
+.content-header .info .title a {
+  display: inline-block;
+  color: #b0b0b0;
+  font-size: 14px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.content-header .info .btn-link {
+  font-weight: 400;
+}
+.content-header .info a {
+  color: #a6a6a6;
+  display: block;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+.content-header .info a img {
+  max-width: 18px;
+}
+.content-header.teams .shirts {
+  float: right;
+}
+.content-header.teams .shirts a {
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  color: #adadad;
+}
+.content-header.teams .shirts a img {
+  display: block;
+}
+.content-header.player .avatar {
+  top: -24px;
+}
+.content-header.player .info {
+  margin-right: 46px;
+}
+.content-header.player .info .title .first-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 2px;
+}
+.content-header.player .description {
+  display: inline-block;
+}
+.content-header.player .description ul {
+  padding: 0;
+  list-style: none;
+}
+.content-header.player .description ul li {
+  padding: 1px 0;
+  font-size: 11px;
+  border-bottom: 1px solid #ededed;
+}
+.content-header.player .description ul li b {
+  color: #333333;
+}
+.content-header.player .teams {
+  float: right;
+}
+.content-header.player .teams a {
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  color: #adadad;
+  padding: 2px;
+}
+.content-header.player .teams a img {
+  max-width: 52px;
+  display: block;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   padding-top: 64px;
@@ -986,7 +1083,51 @@ span.sprite.a-football {
   background: #d4d4d4;
 }
 .live-red {
-  color: #e33000;
+  color: #e33000 !important;
+}
+/*Player info*/
+.player .name {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+.player .name img {
+  margin-top: -3px;
+  max-width: 14px;
+  margin-right: 6px;
+}
+.player .goals {
+  display: inline-block;
+}
+.player .goals h1 {
+  font-size: 52px;
+  font-weight: 100;
+  color: #8a8a8a;
+  margin-bottom: 0;
+}
+.player .goals p {
+  font-size: 10px;
+  color: #bababa;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.player .goals p i {
+  font-size: 14px;
+  vertical-align: middle;
+}
+.player .picture {
+  bottom: 0;
+  position: absolute;
+  right: 5px;
+}
+.player .picture img {
+  max-width: 82px;
+}
+.player + .player {
+  border-left: 1px solid #ededed;
 }
 /*Structure*/
 .wrapper {
@@ -999,6 +1140,126 @@ span.sprite.a-football {
   vertical-align: top;
   background: #f3f4f5;
   border-right: 1px solid #e7e7e7;
+}
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav > li {
+  border-bottom: 1px solid #e8e8e8;
+}
+.sidebar-nav > li > a {
+  font-weight: 600;
+  line-height: 23px;
+  padding: 15px 21px;
+  padding-right: 15px;
+}
+.sidebar-nav > li > a.pull-right {
+  position: absolute;
+  border-left: 1px solid #e8e8e8;
+  color: #adadad;
+  background-color: #f5f5f5;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding: 15px 15px 8px;
+  line-height: 30px;
+}
+.sidebar-nav > li > a.pull-right span {
+  font-size: 18px;
+}
+.sidebar-nav > li > a i {
+  font-size: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.sidebar-nav > li > a .badge.pull-right {
+  margin-left: 2px;
+}
+.sidebar-nav li {
+  position: relative;
+}
+.sidebar-nav li.active > a {
+  color: #5da400;
+}
+.sidebar-nav li a {
+  color: #4a4a4a;
+  display: block;
+  font-size: 13px;
+}
+.sidebar-nav li a:hover {
+  color: #ffffff;
+  background-color: #5da400;
+}
+.sidebar-nav li a.dropdown-togle:before {
+  content: "";
+  font-family: "LSicons";
+  font-size: 10px;
+  left: 8px;
+  margin-top: 3px;
+  position: absolute;
+  color: #d4d4d4;
+}
+.sidebar-nav li a.dropdown-togle.open:before {
+  content: "";
+}
+.sidebar-nav li a.sortable:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 10px;
+  right: 8px;
+  margin-top: 3px;
+  position: absolute;
+  color: #d4d4d4;
+}
+.sidebar-nav li a.sortable:hover:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 10px;
+  right: 8px;
+  margin-top: 3px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3);
+}
+.sidebar-nav li a.sortable:hover:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 12px;
+  left: 6px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3);
+}
+.sidebar-nav li .sub-menu {
+  padding: 0;
+  padding-bottom: 10px;
+  list-style: none;
+}
+.sidebar-nav li .sub-menu li a {
+  padding: 3px 21px;
+}
+.sidebar-nav li .sub-menu li a img {
+  margin-right: 5px;
+  margin-top: -5px;
+  max-width: 16px;
+}
+.sidebar-nav li .sub-menu li .third-menu {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li .sub-menu li .third-menu li a {
+  color: #0053a8;
+  padding-left: 45px;
+}
+.sidebar-nav li .sub-menu li .third-menu li a:hover {
+  color: #0078ff;
+  background: transparent;
+}
+.sidebar-nav li .sub-menu li .third-menu li .fourth-menu {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li .sub-menu li .third-menu li .fourth-menu li a {
+  padding-left: 62px;
 }
 .main {
   display: table-cell;
