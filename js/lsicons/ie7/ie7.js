@@ -14,7 +14,7 @@
 	}
 	var icons = {
 		'icon-whistle': '&#xe62b;',
-		'icon-1x2': '&#xe600;',
+		'icon-x2': '&#xe600;',
 		'icon-am-football': '&#xe601;',
 		'icon-android': '&#xe602;',
 		'icon-apple': '&#xe603;',
@@ -57,6 +57,9 @@
 		'icon-twitter': '&#xe628;',
 		'icon-volley': '&#xe629;',
 		'icon-woman': '&#xe62a;',
+		'icon-caret-double-left': '&#xe62c;',
+		'icon-caret-double-right': '&#xe62d;',
+		'icon-ellipse': '&#xe62e;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

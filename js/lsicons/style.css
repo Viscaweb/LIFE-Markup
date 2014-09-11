@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?-7wxtsx');
-	src:url('fonts/LSicons.eot?#iefix-7wxtsx') format('embedded-opentype'),
-		url('fonts/LSicons.woff?-7wxtsx') format('woff'),
-		url('fonts/LSicons.ttf?-7wxtsx') format('truetype'),
-		url('fonts/LSicons.svg?-7wxtsx#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?f4xuvt');
+	src:url('fonts/LSicons.eot?#iefixf4xuvt') format('embedded-opentype'),
+		url('fonts/LSicons.woff?f4xuvt') format('woff'),
+		url('fonts/LSicons.ttf?f4xuvt') format('truetype'),
+		url('fonts/LSicons.svg?f4xuvt#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,7 +26,7 @@
 .icon-whistle:before {
 	content: "\e62b";
 }
-.icon-1x2:before {
+.icon-x2:before {
 	content: "\e600";
 }
 .icon-am-football:before {
@@ -154,4 +154,13 @@
 }
 .icon-woman:before {
 	content: "\e62a";
+}
+.icon-caret-double-left:before {
+	content: "\e62c";
+}
+.icon-caret-double-right:before {
+	content: "\e62d";
+}
+.icon-ellipse:before {
+	content: "\e62e";
 }
