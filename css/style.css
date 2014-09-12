@@ -235,6 +235,12 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.btn-group.btn-group-xs .btn {
+  margin-left: -1px;
+}
+.btn-group.btn-group-justified {
+  table-layout: inherit;
+}
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {
@@ -857,11 +863,11 @@
   font-weight: 600;
 }
 .panel.panel-inverse {
-  border-color: #313638;
+  border-color: #313536;
 }
 .panel.panel-inverse .panel-heading {
-  background-color: #313638;
-  border-color: #313638;
+  background-color: #313536;
+  border-color: #313536;
 }
 .panel.panel-inverse .panel-heading .panel-title {
   color: #c2c2c2;
@@ -883,6 +889,7 @@
 }
 .nav-tabs > li {
   margin-bottom: -2px;
+  border-right: 1px solid #e0e0e0;
 }
 .nav-tabs > li.active a,
 .nav-tabs > li.active a:hover,
@@ -921,10 +928,12 @@
   background-clip: padding-box;
   border-top: none;
   border-bottom: 2px solid #f0f0f0;
-  border-right: 1px solid #e0e0e0;
+  border-right: none;
+  border-left: none;
   margin-right: 0;
   color: #434343;
   outline: none;
+  font-size: 13px;
 }
 .nav-tabs > li > a:focus {
   border-left: none;
@@ -1066,6 +1075,7 @@
 }
 .content-header.teams .shirts a img {
   display: block;
+  margin: 0 auto;
 }
 .content-header.player .avatar {
   top: -24px;
