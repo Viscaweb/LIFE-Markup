@@ -6,6 +6,8 @@
       
       .main-news, .sub-news{
         
+        a{ outline: none; }
+         
         .preview{
           width: 100%;
         }
@@ -21,9 +23,13 @@
           
           .resume{
             margin: 0;
-            color:lighten(@ls-dark-color, 20.8%);
             font-size: 14px;
             font-weight: 700;
+            
+            a{
+              color:lighten(@ls-dark-color, 20.8%);
+            }
+            
           }
         }
       }      
