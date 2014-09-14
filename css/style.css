@@ -303,7 +303,7 @@
   background: #cf412e;
 }
 .btn-live {
-  background: url("../img/sprites/live-spot.png") no-repeat 10px center;
+  background: url("../img/sprites/live-spot.gif") no-repeat 10px center;
   padding-left: 23px;
 }
 /*Dropdown*/
@@ -1567,7 +1567,7 @@ span.sprite.a-football {
 .matches-slider .content .match.live .status,
 .matches-slider-live .content .match.live .status {
   padding-left: 11px;
-  background: url("../img/sprites/live-spot.png") no-repeat 0 4px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   font-weight: 600;
   color: #e33000;
 }
@@ -1615,7 +1615,7 @@ span.sprite.a-football {
   line-height: 16px;
 }
 .matches-slider-live > .title h4 span {
-  background: url("../img/sprites/live-spot.png") no-repeat 0 4px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   padding-left: 11px;
   text-transform: uppercase;
   color: #ffffff;
@@ -2005,7 +2005,7 @@ span.sprite.a-football {
 #top-competitions-block.panel > .panel-body table.teams tr.live td.team {
   font-weight: 600;
   color: #e33000;
-  background-image: url("../img/sprites/live-spot.png");
+  background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -2256,7 +2256,7 @@ span.sprite.a-football {
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;
-  background-image: url("../img/sprites/live-spot.png");
+  background-image: url("../img/sprites/live-spot.gif");
   background-position: 5px center;
   background-repeat: no-repeat;
 }
