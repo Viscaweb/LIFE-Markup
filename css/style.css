@@ -2246,9 +2246,11 @@ span.sprite.a-football {
   background-color: #f7f7f7;
 }
 #live-commented-matches.panel > .panel-body .matches tr td.score.none {
-  background-image: url("../img/sprites/no-score.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  line-height: 12px;
+}
+#live-commented-matches.panel > .panel-body .matches tr td.score > span {
+  color: #d5d5d5;
+  font-size: 15px;
 }
 #live-commented-matches.panel > .panel-body .matches tr td.commented {
   width: 25px;
