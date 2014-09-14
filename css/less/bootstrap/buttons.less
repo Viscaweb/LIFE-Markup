@@ -206,6 +206,32 @@
     .btn{
       border-right-width: 0px;
 
+      &.btn-default{
+        &:hover + .btn{
+          border-left-color: darken(@ls-light-color, 32%);
+        }
+      }
+      &.btn-warning{
+        &:hover + .btn{
+          border-left-color: @ls-btn-warning - 18%;
+        }
+      }
+      &.btn-danger{
+        &:hover + .btn{
+          border-left-color: @ls-btn-danger - 18%;
+        }
+      }
+      &.btn-info{
+        &:hover + .btn{
+          border-left-color: @ls-btn-info - 18%;
+        }
+      }
+      &.btn-success{
+        &:hover + .btn{
+          border-left-color: @brand-primary - 18%;
+        }
+      }
+
       &:last-of-type{
         border-right-width: 1px;
       }
