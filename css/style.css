@@ -1050,6 +1050,9 @@
 .table tr.stats td.stat.equal {
   background-image: url("../img/sprites/stats-equal.png");
 }
+.table tr.stats td.stat > span {
+  font-size: 12px;
+}
 .table tr.stats:nth-child(even) td.stat {
   background-color: #f0f0f0;
 }
