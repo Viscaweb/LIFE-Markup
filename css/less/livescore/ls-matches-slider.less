@@ -3,6 +3,7 @@
   display: table;
   background: lighten(@ls-grey, 74%); 
   border-bottom: 1px solid darken(@ls-light-color, 7.5%);
+  table-layout:fixed;
   
   .control{
     background: darken(@ls-light-color, 1.5%);
@@ -42,9 +43,19 @@
   .content{
     vertical-align: top;
     display: table-cell;
+    white-space:nowrap;
     
     .matches{
       overflow: hidden;
+      width: 100%;
+      position: relative;
+      
+      .inner{
+        left: 0;
+        position: relative;
+        display: block;
+        width: 1600px; 
+      }      
     }
     
     .match{
