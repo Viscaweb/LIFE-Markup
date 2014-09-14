@@ -241,6 +241,21 @@
 .btn-group.btn-group-justified .btn {
   border-right-width: 0px;
 }
+.btn-group.btn-group-justified .btn.btn-default:hover + .btn {
+  border-left-color: #adadad;
+}
+.btn-group.btn-group-justified .btn.btn-warning:hover + .btn {
+  border-left-color: #df9c3c;
+}
+.btn-group.btn-group-justified .btn.btn-danger:hover + .btn {
+  border-left-color: #cb3d2a;
+}
+.btn-group.btn-group-justified .btn.btn-info:hover + .btn {
+  border-left-color: #84a2ab;
+}
+.btn-group.btn-group-justified .btn.btn-success:hover + .btn {
+  border-left-color: #4b9200;
+}
 .btn-group.btn-group-justified .btn:last-of-type {
   border-right-width: 1px;
 }
