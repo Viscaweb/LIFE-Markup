@@ -1894,6 +1894,7 @@ span.sprite.a-football {
   height: 55px;
 }
 #top-match-block > .panel-body .add-comment .btn {
+  white-space: normal;
   margin-top: 10px;
 }
 #top-match-block > .panel-body .add-comment .row {
