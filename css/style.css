@@ -2397,10 +2397,11 @@ span.sprite.a-football {
 .sidebar-nav li .sub-menu li a {
   padding: 3px 21px;
 }
-.sidebar-nav li .sub-menu li a img {
+.sidebar-nav li .sub-menu li a img,
+.sidebar-nav li .sub-menu li a span {
   margin-right: 5px;
   margin-top: -5px;
-  max-width: 16px;
+  max-width: 18px;
 }
 .sidebar-nav li .sub-menu li .third-menu {
   padding: 0;
