@@ -1548,6 +1548,7 @@ span.sprite.a-football {
 }
 .matches-slider .content .match table tr td.score,
 .matches-slider-live .content .match table tr td.score {
+  text-align: center;
   font-weight: 700;
   padding-left: 8px;
   padding-right: 8px;
@@ -2153,6 +2154,10 @@ span.sprite.a-football {
 #news-block.panel > .panel-body {
   padding: 0;
 }
+#news-block.panel > .panel-body .main-news a,
+#news-block.panel > .panel-body .sub-news a {
+  outline: none;
+}
 #news-block.panel > .panel-body .main-news .preview,
 #news-block.panel > .panel-body .sub-news .preview {
   width: 100%;
@@ -2170,9 +2175,12 @@ span.sprite.a-football {
 #news-block.panel > .panel-body .main-news .content .resume,
 #news-block.panel > .panel-body .sub-news .content .resume {
   margin: 0;
-  color: #353535;
   font-size: 14px;
   font-weight: 700;
+}
+#news-block.panel > .panel-body .main-news .content .resume a,
+#news-block.panel > .panel-body .sub-news .content .resume a {
+  color: #353535;
 }
 #news-block.panel > .panel-body .sub-news {
   padding: 18px 0;
@@ -2256,9 +2264,11 @@ span.sprite.a-football {
   background-color: #f7f7f7;
 }
 #live-commented-matches.panel > .panel-body .matches tr td.score.none {
-  background-image: url("../img/sprites/no-score.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  line-height: 12px;
+}
+#live-commented-matches.panel > .panel-body .matches tr td.score > span {
+  color: #d5d5d5;
+  font-size: 15px;
 }
 #live-commented-matches.panel > .panel-body .matches tr td.commented {
   width: 25px;
