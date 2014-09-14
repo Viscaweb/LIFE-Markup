@@ -2224,6 +2224,7 @@ span.sprite.a-football {
 }
 #live-commented-matches.panel > .panel-body .description {
   padding: 15px;
+  border-bottom: 2px solid #f5f5f5;
 }
 #live-commented-matches.panel > .panel-body .description p {
   font-size: 12px;
