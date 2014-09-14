@@ -1355,9 +1355,19 @@ span.sprite.a-football {
   bottom: 0;
   position: absolute;
   right: 5px;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  min-width: 85px;
+  min-height: 85px;
 }
 .player .picture img {
-  max-width: 82px;
+  max-width: 85px;
+  min-width: 85px;
 }
 .player + .player {
   border-left: 1px solid #ededed;

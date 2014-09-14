@@ -1,8 +1,6 @@
 /*Player info*/
 .player{
 
-
-
   .name{
     margin: 0;
     font-size: 12px;
@@ -40,14 +38,20 @@
     bottom: 0;
     position: absolute;
     right: 5px;
+    background-color: darken(@ls-light-color, 5%);
+    .border-radius(50px);
+    min-width: 85px;
+    min-height: 85px;
 
     img{
-      max-width: 82px;
+      max-width: 85px;
+      min-width: 85px;
+      
     }
   }
 
 
   &+.player{
-    border-left: 1px solid darken(@ls-light-color, 7%);;
+    border-left: 1px solid darken(@ls-light-color, 7%);
   }
 }
