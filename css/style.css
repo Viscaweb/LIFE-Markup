@@ -238,6 +238,12 @@
 .btn-group.btn-group-justified {
   table-layout: inherit;
 }
+.btn-group.btn-group-justified .btn {
+  border-right-width: 0px;
+}
+.btn-group.btn-group-justified .btn:last-of-type {
+  border-right-width: 1px;
+}
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {
