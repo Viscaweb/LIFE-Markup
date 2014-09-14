@@ -1623,6 +1623,8 @@ span.sprite.a-football {
   position: relative;
   line-height: 71px;
   padding: 20px 60px 20px 20px;
+  display: table-cell;
+  width: 20%;
 }
 .matches-slider-live > .title .controls {
   position: absolute;
