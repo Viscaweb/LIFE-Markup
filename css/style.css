@@ -1575,12 +1575,12 @@ span.sprite.a-football {
 .matches-slider-live .content .match.live table tr td.score {
   color: #e33000;
 }
-.matches-slider .content .match.final-stage,
-.matches-slider-live .content .match.final-stage {
+.matches-slider .content .match.highlight,
+.matches-slider-live .content .match.highlight {
   background-color: #fff4ce;
 }
-.matches-slider .content .match.final-stage table tr:first-child td:last-child,
-.matches-slider-live .content .match.final-stage table tr:first-child td:last-child {
+.matches-slider .content .match.highlight table tr:first-child td:last-child,
+.matches-slider-live .content .match.highlight table tr:first-child td:last-child {
   border-color: #fff4ce;
 }
 .matches-slider .content .match:hover,
