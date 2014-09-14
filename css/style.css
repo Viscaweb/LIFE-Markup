@@ -1538,6 +1538,7 @@ span.sprite.a-football {
 }
 .matches-slider .content .match table tr td.score,
 .matches-slider-live .content .match table tr td.score {
+  text-align: center;
   font-weight: 700;
   padding-left: 8px;
   padding-right: 8px;
