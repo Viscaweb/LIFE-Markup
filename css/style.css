@@ -1050,6 +1050,9 @@
 .table tr.stats td.stat.equal {
   background-image: url("../img/sprites/stats-equal.png");
 }
+.table tr.stats td.stat > span {
+  font-size: 12px;
+}
 .table tr.stats:nth-child(even) td.stat {
   background-color: #f0f0f0;
 }
@@ -1658,10 +1661,13 @@ span.sprite.a-football {
   background-color: #363a3c;
 }
 .matches-slider-live .toggle-right {
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
   cursor: pointer;
   width: 25px;
   display: table-cell;
-  background: url("../img/sprites/toggle-match-slider-right.png") no-repeat center center #313536;
+  background: #313536;
 }
 .matches-slider-live .toggle-right:hover {
   background-color: #363a3c;
