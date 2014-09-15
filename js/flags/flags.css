@@ -44,8 +44,15 @@
 .flag-82, .flag-83, .flag-84, .flag-85, .flag-86, 
 .flag-87, .flag-88, .flag-89, .flag-9, .flag-90, 
 .flag-91, .flag-92, .flag-93, .flag-94, .flag-95, 
-.flag-96, .flag-98, .flag-99, .flag-default
-{ display: inline-block; background: url('flags.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+.flag-96, .flag-98, .flag-99, .flag-default{ 
+	display: inline-block; 
+	background: url('flags.png') no-repeat; 
+	overflow: hidden; 
+	text-indent: -9999px; 
+	text-align: left;
+	position: relative;
+	top: 2px;
+}
  
 .flag-0 { background-position: -0px -0px; width: 18px; height: 13px; }
 .flag-1 { background-position: -18px -0px; width: 18px; height: 13px; }

@@ -1129,8 +1129,8 @@
   font-size: 11px;
   margin-bottom: 3px;
 }
-.content-header .info a img {
-  max-width: 18px;
+.content-header .info a span {
+  margin-right: 5px;
 }
 .content-header.teams .shirts {
   float: right;
