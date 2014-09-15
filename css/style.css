@@ -2549,6 +2549,7 @@ span.sprite.a-football {
   left: 17px;
 }
 .main .content-wrapper {
+  margin: 0;
   padding: 20px;
 }
 .main .content-wrapper > .content {
