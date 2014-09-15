@@ -88,13 +88,13 @@
   outline: none;
   
   &.active{
-    border-color: @brand-primary;
+    border-color: @ls-success-border;
     background: @ls-btn-success;
     outline: none;
   }
   
   &:hover{
-    border-color: @brand-primary - 18%;
+    border-color: @ls-success-border - 18%;
     background: @ls-btn-success - 14%;
   }
   
@@ -269,20 +269,20 @@
 
   &:hover{
     color: @ls-light-color;
-    border-color: @brand-primary - 18%;
+    border-color: @ls-success-border - 18%;
     background: @ls-btn-success - 14%;
   }
 }
 
 .btn-prediction-result,.btn-prediction-result:focus{
-  color: @brand-primary;
+  color: @ls-success-border;
   border-color: @ls-success-border;
   background: darken(@ls-light-color, 3%);
   outline: none;
 
   &:hover{
-    color: @brand-primary;
-    border-color: @brand-primary - 18%;
+    color: @ls-success-border;
+    border-color: @ls-success-border - 18%;
     background: darken(@ls-light-color, 8%);
   }
 }
