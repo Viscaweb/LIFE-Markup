@@ -2342,13 +2342,15 @@ span.sprite.a-football {
 .wrapper {
   width: 100%;
   display: table;
+  margin: 0;
 }
 .left-sidebar {
-  width: 180px;
   display: table-cell;
   vertical-align: top;
   background: #f3f4f5;
   border-right: 1px solid #e7e7e7;
+  padding: 0;
+  float: none;
 }
 .sidebar-nav {
   padding: 0;
@@ -2495,6 +2497,8 @@ span.sprite.a-football {
   display: table-cell;
   vertical-align: top;
   background: #ffffff;
+  padding: 0;
+  float: none;
 }
 .main .breadcrumb {
   -webkit-border-radius: 0;
