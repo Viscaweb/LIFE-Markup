@@ -641,11 +641,6 @@
 .header .navbar.navbar-fixed-top .navbar-form .input-search .input-group-btn .btn:hover {
   color: #a6a6a6;
 }
-.header .navbar.navbar-fixed-top .navbar-form .login.btn {
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: 55px;
-}
 .header .navbar.navbar-fixed-top .navbar-right {
   margin: 0;
 }
@@ -669,6 +664,17 @@
   color: #b8b8b8;
   font-size: 12px;
   margin-left: 10px;
+}
+.header .navbar.navbar-fixed-top .navbar-right .user.login {
+  padding: 15px 0;
+}
+.header .navbar.navbar-fixed-top .navbar-right .user.login .btn {
+  line-height: 16px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 9px 11px;
 }
 .header .dropdown-inverted .dropdown-menu {
   background-color: #444a4c;
