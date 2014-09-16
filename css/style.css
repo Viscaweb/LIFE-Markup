@@ -897,12 +897,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #5da400;
+  color: #0053a8;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #325800;
+  color: #0078ff;
   text-decoration: underline;
 }
 a:focus {
@@ -3016,7 +3016,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #5da400;
+  color: #0053a8;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -3038,7 +3038,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #325800;
+  color: #0078ff;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3617,7 +3617,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #5da400;
+  border-color: #0053a8;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4334,7 +4334,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.428571429;
   text-decoration: none;
-  color: #5da400;
+  color: #0053a8;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4354,7 +4354,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #325800;
+  color: #0078ff;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4549,7 +4549,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #5da400;
+  color: #0053a8;
   background-color: #ffffff;
 }
 .nav-pills > li > a > .badge {
@@ -4615,7 +4615,7 @@ a.list-group-item.active > .badge,
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #5da400;
+  border-color: #0053a8;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -7422,7 +7422,7 @@ body {
   background: #e7e9eb;
   color: #5c5c5c;
 }
-/*Tipography*/
+/*Typography*/
 h1,
 h2,
 h3,
@@ -7459,12 +7459,8 @@ small,
   font-size: 13px;
   font-weight: normal;
 }
-a {
-  color: #0053a8;
-}
 a:hover {
   text-decoration: none;
-  color: #0078ff;
 }
 a:focus {
   text-decoration: none;
