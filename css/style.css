@@ -6307,6 +6307,10 @@ button.close {
 .btn.dropdown-toggle .icon-expand {
   margin-left: 20px;
 }
+.btn.dropdown-toggle.btn-link .icon-caret-down,
+.btn.dropdown-toggle.btn-link .icon-expand {
+  margin-left: 10px;
+}
 .btn.datepicker-icon {
   padding: 5px 40px 5px 11px;
 }
