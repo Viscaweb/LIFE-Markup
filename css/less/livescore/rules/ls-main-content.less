@@ -1,0 +1,28 @@
+.main{
+  display: table-cell;
+  vertical-align: top;
+  background: @ls-light-color;
+  padding: 0;
+  float: none;
+  
+  //Includes
+  @import "ls-top-breadcrumbs.less";
+  
+  .content-wrapper{
+    margin: 0;
+    padding: 20px;
+    
+    > .content{
+      float: left;
+      width: 620px;
+      padding-right: 10px;
+    }
+    
+    .right-sidebar{
+      float: left;
+      width: 260px;
+      padding-left: 10px;
+    }
+  }
+  
+}

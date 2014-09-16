@@ -1,0 +1,78 @@
+/*Main Colors*/
+@brand-primary: #5da400;
+@ls-grey: #33393b;
+@ls-greyblue-dark: #424749;
+@ls-greyblue-darker: @ls-greyblue-dark, 2%;
+@ls-light-color: #FFF;
+@ls-dark-color: #000;
+@live-red: #e33000;
+@active-green: #5da400;
+@danger:;
+
+/*Elements Colors*/
+@body-bg: #e7e9eb; 
+@ls-link-color: #0053a8;
+@ls-inverse-link-color: #9ccdff;
+@ls-link-hover-color: #0078ff;
+@header-bg: #fff; 
+@ls-fav-hover: #ffd800;
+
+/*Navbar Inverse*/
+@ls-navbar-inverse-height: 50px;
+@ls-navbar-inverse-item-padding: 14px;
+
+/*Top BreadCrumbs*/
+@ls-top-breadcrumbs-height: 50px;
+
+/*Matches Slider*/
+@ls-matches-slider-final-stage-bg: #fff4ce;
+
+/*Container*/ 
+@container-width: 1100px;
+
+/*Alerts*/
+@ls-alert-info: #e7ebec;
+@ls-alert-success: #e0f0d8;
+
+/*Buttons*/
+@ls-btn-default: #fcfcfc;
+@ls-btn-primary: @brand-primary;
+@ls-btn-success: #87b762;
+@ls-success-border: #5da400;
+@ls-btn-info: #96b4bd;
+@ls-btn-warning: #f1ae4e;
+@ls-btn-danger: #dd4f3c;
+@ls-btn-link: #0053a8;
+
+/*Validation Form-controls*/
+@ls-form-error: #a43434;
+@ls-form-warning: #e29000;
+
+/*Footer (I coulnd't find a color calculation for these colors)*/
+@ls-top-footer-bg: #313638;
+@ls-bottom-footer-bg: #272d2f;
+@ls-footer-text-color: #9fbbd3;
+
+/*Typography*/
+@ls-body-font:'Open Sans', sans-serif;
+
+/*Social like icons*/
+@ls-fb-icon: #4a6baa;
+@ls-twitter-icon: #00b9f3;
+@ls-gp-icon: #e75f46;
+
+//Responsive limits
+@xx-small-devices: 620px;
+@extra-small-devices: 768px;
+@small-devices: 992px;
+@medium-devices: 1200px;
+
+//Responsive Variables
+@desktop: ~"(min-width: @{medium-devices})";
+@laptop: ~"(min-width: @{small-devices}) and (max-width: @{medium-devices})";
+@tablet: ~"(min-width: @{extra-small-devices}) and (max-width: @{small-devices})";
+@phone: ~"(max-width: @{extra-small-devices})";
+@small-phone: ~"(max-width: @{xx-small-devices})";
+
+//Retina Display
+@retina: ~"all and (-webkit-min-device-pixel-ratio: 2), all and (min-resolution: 192dpi)";
