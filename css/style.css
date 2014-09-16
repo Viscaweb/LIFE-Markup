@@ -5015,7 +5015,7 @@ a.list-group-item-danger.active:focus {
   padding: 15px;
 }
 .panel-heading {
-  padding: 10px 15px;
+  padding: 8px 20px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -5033,7 +5033,7 @@ a.list-group-item-danger.active:focus {
   color: inherit;
 }
 .panel-footer {
-  padding: 10px 15px;
+  padding: 8px 20px;
   background-color: #f5f5f5;
   border-top: 1px solid #dddddd;
   border-bottom-right-radius: 3px;
@@ -7042,7 +7042,6 @@ button.close {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   font-size: 16px;
-  padding: 8px 20px;
   border-color: #f0f0f0;
   position: relative;
 }
@@ -7055,14 +7054,12 @@ button.close {
 }
 .panel > .panel-heading .tools {
   float: right;
-  display: inline-block;
   font-style: italic;
   color: #949494;
   font-size: 12px;
-  margin-top: -10px;
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 10px;
 }
 .panel > .panel-heading .tools a {
   font-size: 12px;
@@ -7355,6 +7352,9 @@ button.close {
   font-size: 14px;
   margin-left: 10px;
   vertical-align: middle;
+}
+.content-header .info .title a.active {
+  color: #ffc600;
 }
 .content-header .info .btn-link {
   font-weight: 400;
@@ -8699,7 +8699,7 @@ span.sprite.a-football {
   padding: 3px 7px;
 }
 .sidebar-nav li .sub-menu li .third-menu li a.pull-right:hover {
-  color: #ffd800;
+  color: #ffc600;
   background-color: transparent;
 }
 .sidebar-nav li .sub-menu li .third-menu li .fourth-menu {
