@@ -7195,6 +7195,8 @@ button.close {
 }
 .nav-tabs > li > a .badge {
   background-color: #5da400;
+  float: right;
+  margin-left: 5px;
 }
 .nav-tabs > li.dropdown.open > a {
   color: #ffffff;
