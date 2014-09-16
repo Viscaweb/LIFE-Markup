@@ -1,25 +1,10 @@
 /*Alerts*/
 .alert{
-	padding: 10px 20px;
+	padding: (@alert-padding - 10px) @alert-padding;
 	font-size: 12px;
 
 	&.alert-dismissible{
-		padding-right: 30px;
-
-		&:after{
-			content:'';
-		    display:block;
-		    clear: both;
-		}
+		padding-right: @alert-padding + 10px;
 	}
 
-}
-
-.alert-info{
-	border-color: @ls-alert-info - 20%;
-	background-color: @ls-alert-info;
-}
-.alert-success{
-	border-color: @ls-alert-success - 20%;
-	background-color: @ls-alert-success;
 }
