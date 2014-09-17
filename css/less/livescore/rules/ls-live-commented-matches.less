@@ -45,9 +45,13 @@
             
             &.commented{
               width: 25px;
-              background-image: url("../img/sprites/mic.png");
-              background-position: center center;
-              background-repeat: no-repeat;
+              
+              span{
+                font-size: 18px;
+                line-height: 10px;
+                vertical-align: middle;
+                color: darken(@ls-light-color, 20.5%);
+              }
             }
           }
           
@@ -70,7 +74,10 @@
               }
               
               &.commented{
-                background-image: url("../img/sprites/mic-live.png");
+                
+                span{
+                  color: @live-red;
+                }
               }
             }
           }

@@ -8523,9 +8523,12 @@ span.sprite.a-football {
 }
 .live-commented-matches.panel > .panel-body .matches tr td.commented {
   width: 25px;
-  background-image: url("../img/sprites/mic.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+}
+.live-commented-matches.panel > .panel-body .matches tr td.commented span {
+  font-size: 18px;
+  line-height: 10px;
+  vertical-align: middle;
+  color: #cbcbcb;
 }
 .live-commented-matches.panel > .panel-body .matches tr.live td.date {
   font-size: 11px;
@@ -8541,8 +8544,8 @@ span.sprite.a-football {
   font-size: 13px;
   font-weight: 700;
 }
-.live-commented-matches.panel > .panel-body .matches tr.live td.commented {
-  background-image: url("../img/sprites/mic-live.png");
+.live-commented-matches.panel > .panel-body .matches tr.live td.commented span {
+  color: #e33000;
 }
 .live-commented-matches.panel > .panel-body .matches tr:nth-child(even) td.score {
   background-color: #ededed;
