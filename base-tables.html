@@ -18,7 +18,7 @@
       <link rel="stylesheet" href="js/flags/flags.css" />
       
       <!-- Owl Carousel -->
-      <link rel="stylesheet" href="js/owl.carousel/owl.carousel.css" />
+      <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
       
       <!-- Custom styles for this template -->
       <link rel="stylesheet" href="css/style.css" />
@@ -44,7 +44,6 @@
                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
               </span>
             </div>
-            <a type="submit" class="btn btn-primary login">Login / Register</a>
           </form>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown"><a href="#"><span class="icon-bell"></span></a></li>
@@ -102,8 +101,8 @@
     </nav>
   </div>
     <div class="container">
-       <div class="wrapper">
-        <div class="left-sidebar">
+      <div class="wrapper row">
+        <div class="left-sidebar col-xs-2">
           <ul class="sidebar-nav">
             <li>
               <a href="#"><i class="icon-football"></i>All Matches</a>
@@ -117,7 +116,7 @@
             </li>
             <li class="active">
               <a href="#" class="dropdown-togle open"><i class="icon-team"></i>My Leagues</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu sortable-ul">
                 <li><a href="#" class="sortable"><img src="img/sprites/ligue1.png">Ligue 1 <span class="live-red">(6)</span></a></li>
                 <li><a href="#" class="sortable"><img src="img/sprites/ligue2.png">Ligue 2</a></li>
                 <li><a href="#" class="sortable"><img src="img/sprites/premiereleague.png">Premiere League</a></li>
@@ -132,7 +131,7 @@
             </li>
             <li class="active">
               <a href="#" class="dropdown-togle open"><i class="icon-shirt"></i>My Teams</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu sortable-ul">
                 <li><a href="#" class="sortable"><img src="img/sprites/fr.png">France</a></li>
                 <li><a href="#" class="sortable"><img src="img/sprites/manchestercity.png">Manchester City</a></li>
                 <li><a href="#" class="sortable"><img src="img/sprites/om.png">OM</a></li>
@@ -192,7 +191,7 @@
             <li><a href="#">+ View more</a></li>
           </ul>
         </div>
-        <div class="main">
+        <div class="main col-xs-10">
           
           <ol class="breadcrumb">
             <li><a href="#">Foot en direct</a></li>
@@ -224,7 +223,12 @@
             <li class="active">Summary</li>
           </ol>
           
-          <div class="content-wrapper">
+          <div class="visual-block" id="visual-content">
+            <!-- Content Ad Space -->
+            <img src="img/920x167.gif">
+          </div> 
+          <div class="content-wrapper row">
+            
             <div class="content">
               <div class="row">
                 <div class="col-md-12">
@@ -514,6 +518,9 @@
                         <td>Item 4</td>
                         <td>Item 4</td>
                       </tr>
+                      <tr>
+                        <td colspan="4"><a class="btn btn-block"><i class="icon-expand"></i>Display More</a></td>
+                      </tr>
                     </tbody>                
                   </table>
                 </div>
@@ -655,9 +662,10 @@
               </div>
             </div>
 
+
             <!--BEGIN RIGHT SIDEBAR -->
             <div class="right-sidebar">
-                <div id="top-match-block" class="panel panel-default">
+                <div class="panel panel-default top-match-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Upcoming Top Games</h3>
                     </div>
@@ -697,32 +705,32 @@
                         <div class="match-time"><span>20h30</span></div>
                       </div>
                       <div class="make-prediction">
-                        Make a prediction <button class="btn btn-prediction btn-xs" type="button">1</button> <button class="btn btn-prediction btn-xs" type="button">X</button> <button class="btn btn-prediction btn-xs" type="button">2</button> 
+                        <div class="pull-right"><button class="btn btn-prediction btn-xs" type="button">1</button> <button class="btn btn-prediction btn-xs" type="button">X</button> <button class="btn btn-prediction btn-xs" type="button">2</button></div> Make a prediction  
                       </div>
                       <table class="table bets table-condensed table-striped">
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets1.png" alt="Bet1"></td>
                           <td><a href="#">Betclic</a></td>
-                          <td class="stat down"><a href="#">1.75</a></td>
-                          <td class="stat up"><a href="#">3.50</a></td>
-                          <td class="stat equal"><a href="#">3.80</a></td>
+                          <td class="stat"><span class="icon-arrow-down"></span><a href="#">1.75</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.50</a></td>
+                          <td class="stat"><span class="icon-equal"></span><a href="#">3.80</a></td>
                         </tr>
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets2.png" alt="Bet1"></td>
                           <td><a href="#">PMU</a></td>
-                          <td class="stat equal"><a href="#">1.64</a></td>
-                          <td class="stat up"><a href="#">3.45</a></td>
-                          <td class="stat up"><a href="#">3.60</a></td>
+                          <td class="stat"><span class="icon-equal"></span><a href="#">1.64</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.45</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.60</a></td>
                         </tr>
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets3.png" alt="Bet1"></td>
                           <td><a href="#">Netbet</a></td>
-                          <td class="stat down"><a href="#">1.75</a></td>
-                          <td class="stat up"><a href="#">3.50</a></td>
-                          <td class="stat up"><a href="#">3.70</a></td>
+                          <td class="stat"><span class="icon-arrow-down"></span><a href="#">1.75</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.50</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.70</a></td>
                         </tr>
                       </table>
-                      <div class="panel panel-default top-match-comments">
+                      <div class="panel panel-condensed comments">
                         <div class="panel-body">
                           <ul class="media-list">
                             <li class="media">
@@ -805,11 +813,11 @@
                     </div>
                 </div>
                 
-                <div id="top-competitions-block" class="panel panel-default">
+                <div class="panel panel-default top-competitions-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Top Competitions</h3>
                       <div class="tools">
-                        <button><span class="glyphicon glyphicon-cog"></span></button>
+                        <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
                       </div>
                     </div>
                     <div class="panel-body">
@@ -867,7 +875,7 @@
                         <tbody>
                           <tr class="live">
                             <td class="number">1</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/psg.png"> PSG</td>
                             <td class="pts">86</td>
                             <td>37</td>
@@ -875,7 +883,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">2</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -883,7 +891,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">3</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -891,7 +899,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">4</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -899,7 +907,7 @@
                           </tr>
                           <tr class="live">
                             <td class="number">5</td>
-                            <td class="state up">+1</td>
+                            <td class="state up"><span class="icon-arrow-up"></span>+1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -907,7 +915,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">6</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -915,7 +923,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">7</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -923,7 +931,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">8</td>
-                            <td class="state up">+1</td>
+                            <td class="state up"><span class="icon-arrow-up"></span>+1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -931,7 +939,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">9</td>
-                            <td class="state up">+4</td>
+                            <td class="state up"><span class="icon-arrow-up"></span>+4</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -939,7 +947,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">10</td>
-                            <td class="state down">-2</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-2</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -947,7 +955,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">11</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -955,7 +963,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">12</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -963,7 +971,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">13</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -971,7 +979,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">14</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -979,7 +987,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">15</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -987,7 +995,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">16</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -995,7 +1003,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">17</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1003,7 +1011,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">18</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1011,7 +1019,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">19</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1019,7 +1027,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">20</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1031,7 +1039,7 @@
                     </div>
                 </div>
                 
-                  <div id="social-networks-block" class="panel panel-default">
+                  <div class="panel panel-default social-networks-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Follow us</h3>
                     </div>
@@ -1061,34 +1069,34 @@
                     </div>
                   </div>         
                   
-                  <div id="news-block" class="panel panel-default">
+                  <div class="panel panel-default news-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">News in brief</h3>
                     </div>
                     <div class="panel-body">
                       <div class="main-news">
-                        <img class="preview" src="img/news1.png" alt="News 1">
+                        <a href="#"><img class="preview" src="img/news1.png" alt="News 1"></a>
                         <div class="content">
                           <div class="date">Thu. March 10 - 13:45</div>
-                          <p class="resume">2014 World Cup : five questions regading the french team players list for Brazil</p>
+                          <p class="resume"><a href="#">2014 World Cup : five questions regading the french team players list for Brazil</a></p>
                         </div>
                       </div>
                       <div class="main-news">
-                        <img class="preview" src="img/news2.png" alt="News 2">
+                        <a href="#"><img class="preview" src="img/news2.png" alt="News 2"></a>
                         <div class="content">
                           <div class="date">Thu. March 10 - 13:45</div>
-                          <p class="resume">Odss Ligua Europa Final : FC Séville Benfica</p>
+                          <p class="resume"><a href="#">Odss Ligua Europa Final : FC Séville Benfica</a></p>
                         </div>
                       </div>
                       <div class="sub-news">
                         <div class="row">
                           <div class="col-xs-5">
-                            <img class="preview" src="img/news2.png" alt="News 2">
+                            <a href="#"><img class="preview" src="img/news2.png" alt="News 2"></a>
                           </div>
                           <div class="col-xs-7">
                             <div class="content">
                               <div class="date">Thu. March 10 - 13:45</div>
-                              <p class="resume">Marco Verratti best player in french Ligue 1</p>
+                              <p class="resume"><a href="#">Marco Verratti best player in french Ligue 1</a></p>
                             </div>
                           </div>
                         </div>
@@ -1096,12 +1104,12 @@
                       <div class="sub-news">
                         <div class="row">
                           <div class="col-xs-5">
-                            <img class="preview" src="img/news2.png" alt="News 2">
+                            <a href="#"><img class="preview" src="img/news2.png" alt="News 2"></a>
                           </div>
                           <div class="col-xs-7">
                             <div class="content">
                               <div class="date">Thu. March 10 - 13:45</div>
-                              <p class="resume">Duel de statistiques : Miralem Pjanic vs Paul Pogba</p>
+                              <p class="resume"><a href="#">Duel de statistiques : Miralem Pjanic vs Paul Pogba</a></p>
                             </div>
                           </div>
                         </div>
@@ -1118,7 +1126,7 @@
                     <a href="#" class="all-news"><span class="icon-caret-right"></span> All News</a>
                   </div>      
                   
-                  <div id="live-commented-matches" class="panel panel-default">
+                  <div class="panel panel-default live-commented-matches">
                     <div class="panel-heading">
                       <h3 class="panel-title">Live commented matches</h3>
                     </div>
@@ -1133,70 +1141,70 @@
                           <td class="team1">VA</td>
                           <td class="score">1 - 2</td>
                           <td class="team2">Monaco</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
                           <td class="team1">Rennes</td>
-                          <td class="score none"></td>
+                          <td class="score none"><span class="icon-expand-h"></span></td>
                           <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="commented"><span class="icon-mic"></span></td>
                         </tr>
                       </table>
                     </div>
@@ -1260,6 +1268,7 @@
             <div class="clearfix"></div>
         </div>
       </div>
+    
     </div>
     </div><!-- /.container -->
     <div class="footer">
@@ -1286,20 +1295,37 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery-ui/jquery-ui.js"></script>
+    <script src="js/owl.carousel/owl.carousel.min.js"></script>
     <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
       
-      /*Sortable*/
-      $( ".sortable-ul" ).sortable();
-      $( ".sortable-ul" ).disableSelection();
-      
-      /*Tooltips*/
-      $('.ttip, [data-toggle="tooltip"]').tooltip();
+        /*Sortable*/
+        $( ".sortable-ul" ).sortable();
+        $( ".sortable-ul" ).disableSelection();
+        
+        /*Tooltips*/
+        $('.ttip, [data-toggle="tooltip"]').tooltip();
 
-      /*Popover*/
-      $('[data-popover="popover"]').popover();
+        /*Popover*/
+        $('[data-popover="popover"]').popover();
 
+        var owl = $(".matches-slider .matches .inner");
+ 
+        owl.owlCarousel({
+          autoWidth:true,
+          pagination: false,
+          navigation: false,
+        });
+ 
+        $(".matches-slider .prev.control").click(function(){
+          owl.trigger('prev.owl.carousel');
+        });
+        
+        $(".matches-slider .next.control").click(function(){
+          owl.trigger('next.owl.carousel');
+        });
+        
       });
     </script>
   </body>
