@@ -101,13 +101,11 @@
           
           td{
             &.state{
-              background-repeat: no-repeat;
-              background-position: 2px center;
-              padding-left: 14px !important;
               padding-right: 0;
-              &.down{ background-image: url("../img/sprites/stats-down.png"); color: @live-red; }
-              &.up{ background-image: url("../img/sprites/stats-up.png"); color: @brand-primary; }
-              &.equal{ background-image: url("../img/sprites/stats-equal.png"); }
+              padding-left: 4px;
+              
+              &.down{ color: @live-red; }
+              &.up{ color: @brand-primary; }
             }
             
             &.team{

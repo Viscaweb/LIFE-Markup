@@ -38,10 +38,21 @@
           font-weight: bold;
         }
       }
+      
     td{
       vertical-align: middle !important;
       font-size: 12px;
       padding: 8px 10px;
+      
+      > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
+        font-size: 10px;
+        margin-right: 3px;
+      }
+      
+      span.icon-arrow-down{ color: @ls-table-stats-down; }
+      span.icon-arrow-up{ color: @ls-table-stats-up; }
+      span.icon-equal{ color: @ls-table-stats-equal; }
+      
     }
   }
   
@@ -130,18 +141,6 @@
     td{
       &.stat{ 
         background-color: darken(@ls-light-color, 2%);
-        background-repeat: no-repeat;
-        background-position: 5px center;
-        padding-left: 17px !important;
-        
-        &.down{ background-image: url("../img/sprites/stats-down.png"); }
-        &.up{ background-image: url("../img/sprites/stats-up.png"); }
-        &.equal{ background-image: url("../img/sprites/stats-equal.png"); }
-        
-        > span{
-          font-size: 12px;
-        }
-        
       }
     }
     
