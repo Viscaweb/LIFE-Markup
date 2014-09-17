@@ -52,8 +52,41 @@
       span.icon-arrow-down{ color: @ls-table-stats-down; }
       span.icon-arrow-up{ color: @ls-table-stats-up; }
       span.icon-equal{ color: @ls-table-stats-equal; }
-      
     }
+    
+    &:hover{
+      td{
+        background-color: @table-bg-hover !important; 
+      }
+    }
+    
+    &.highlight{
+      td{
+        background-color: @ls-tr-highlight-bg !important;
+      }
+    }
+    &.selected{
+      td{
+        background-color: @ls-tr-selected-bg !important;
+      }
+    }
+    &.event-won{
+      td{
+        background-color: @ls-tr-won-bg !important;
+      }
+    }
+    &.event-lost{
+      td{
+        background-color: @ls-tr-lost-bg !important;
+      }
+    }
+    &.event-draw{
+      td{
+        background-color: @ls-tr-draw-bg !important;
+      }
+    }
+    
+    
   }
   
 &.table-striped{

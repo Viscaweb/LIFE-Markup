@@ -2113,7 +2113,7 @@ th {
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #f5f5f5;
+  background-color: #ededed;
 }
 table col[class*="col-"] {
   position: static;
@@ -2138,14 +2138,14 @@ table th[class*="col-"] {
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
-  background-color: #f5f5f5;
+  background-color: #ededed;
 }
 .table-hover > tbody > tr > td.active:hover,
 .table-hover > tbody > tr > th.active:hover,
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
+  background-color: #e0e0e0;
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
@@ -7252,6 +7252,24 @@ button.close {
 .table tr td span.icon-equal {
   color: #999999;
 }
+.table tr:hover td {
+  background-color: #ededed !important;
+}
+.table tr.highlight td {
+  background-color: #fff4ce !important;
+}
+.table tr.selected td {
+  background-color: #e3e8f1 !important;
+}
+.table tr.event-won td {
+  background-color: #e9f2e2 !important;
+}
+.table tr.event-lost td {
+  background-color: #f5d3cf !important;
+}
+.table tr.event-draw td {
+  background-color: #faf1e6 !important;
+}
 .table.table-striped > tbody > tr:nth-child(even) > th,
 .table.table-striped > tbody > tr:nth-child(even) > td {
   background-color: #fafafa;
@@ -7323,6 +7341,7 @@ button.close {
 /*Buttons*/
 /*Validation Form-controls*/
 /*Footer (I coulnd't find a color calculation for these colors)*/
+/*Table status colors*/
 /*Table Icons*/
 /*Typography*/
 /*Social like icons*/
