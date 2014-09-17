@@ -18,7 +18,7 @@
       <link rel="stylesheet" href="js/flags/flags.css" />
       
       <!-- Owl Carousel -->
-      <link rel="stylesheet" href="js/owl.carousel/owl.carousel.css" />
+      <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
       
       <!-- Custom styles for this template -->
       <link rel="stylesheet" href="css/style.css" />
@@ -235,7 +235,7 @@
             <div class="prev control"><span class="icon-caret-left"></span></div>
             <div class="content">
               <div class="matches">
-                <div class="inner">
+                <div class="inner owl-carousel owl-theme">
                   <div class="match">
                     <span class="status">Term</span>
                     <table>
@@ -1665,20 +1665,37 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery-ui/jquery-ui.js"></script>
+    <script src="js/owl.carousel/owl.carousel.min.js"></script>
     <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
       
-      /*Sortable*/
-      $( ".sortable-ul" ).sortable();
-      $( ".sortable-ul" ).disableSelection();
-      
-      /*Tooltips*/
-      $('.ttip, [data-toggle="tooltip"]').tooltip();
+        /*Sortable*/
+        $( ".sortable-ul" ).sortable();
+        $( ".sortable-ul" ).disableSelection();
+        
+        /*Tooltips*/
+        $('.ttip, [data-toggle="tooltip"]').tooltip();
 
-      /*Popover*/
-      $('[data-popover="popover"]').popover();
+        /*Popover*/
+        $('[data-popover="popover"]').popover();
 
+        var owl = $(".matches-slider .matches .inner");
+ 
+        owl.owlCarousel({
+          autoWidth:true,
+          pagination: false,
+          navigation: false,
+        });
+ 
+        $(".matches-slider .prev.control").click(function(){
+          owl.trigger('prev.owl.carousel');
+        });
+        
+        $(".matches-slider .next.control").click(function(){
+          owl.trigger('next.owl.carousel');
+        });
+        
       });
     </script>
   </body>
