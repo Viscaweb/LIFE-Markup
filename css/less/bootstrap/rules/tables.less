@@ -232,12 +232,21 @@
                 margin-right: 5px;
               }
             }
+            .mark{
+              background-color: transparent;
+              color: darken(@ls-light-color,37%);
+              float: right;
+              padding: 0 1px;
+            }
           }
           &.score{
             font-size: 14px;
             font-weight: 700;
             background-color: darken(@ls-light-color,3%);
             text-align: center;
+            span.icon-expand-h{
+              color: darken(@ls-light-color,16%);
+            }
           }
           &.tools{
             padding: 0 5px;
@@ -246,7 +255,7 @@
             a{
               display: inline-block;
               font-size: 18px;
-              padding: 5px 5px;
+              padding: 5px 4px;
               color: darken(@ls-light-color, 4%);
               &:hover{
                 background-color: @brand-primary;
