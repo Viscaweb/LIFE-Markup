@@ -8068,78 +8068,6 @@ span.sprite.a-football {
   width: 22px;
   padding: 0;
 }
-.top-match-block > .panel-body .top-match-comments.panel {
-  margin: 0;
-  height: 277px;
-  overflow: hidden;
-  border: 0;
-  border-top: 2px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
-}
-.top-match-block > .panel-body .top-match-comments.panel .panel-body {
-  padding: 0 14px;
-}
-.top-match-block > .panel-body .top-match-comments .media-list {
-  border: 0;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media {
-  position: relative;
-  padding: 10px 0;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .img-circle {
-  max-width: 47px;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .avatar {
-  margin-right: 11px;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .avatar .btn-group {
-  margin-top: 5px;
-  display: block;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .avatar .btn-group .btn {
-  line-height: 13px;
-  font-size: 11px;
-  padding: 1px 4px;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .avatar .btn-group .btn.btn-default {
-  color: #a3a3a3;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .media-heading h4 {
-  font-size: 12px;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .media-heading .tools {
-  top: 14px;
-  right: 0;
-  position: absolute;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .media-heading .tools h5 {
-  font-size: 10px;
-  margin: 4px 0 0;
-  white-space: nowrap;
-  right: 0;
-  position: absolute;
-  background: #ffffff;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .media-heading .tools > a {
-  display: none;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media .media-body p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 15px;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media:hover .media-heading .tools h5 {
-  display: none;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media:hover .media-heading .tools > a {
-  display: inline-block;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media.view-all {
-  text-align: center;
-}
-.top-match-block > .panel-body .top-match-comments .media-list .media.view-all a {
-  font-size: 12px;
-}
 .top-match-block > .panel-body .add-comment {
   padding: 15px;
   background: #fafafa;
@@ -8561,6 +8489,78 @@ span.sprite.a-football {
   font-size: 12px;
   line-height: 17px;
 }
+.panel-condensed.comments.panel {
+  margin: 0;
+  height: 277px;
+  overflow: hidden;
+  border: 0;
+  border-top: 2px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+.panel-condensed.comments.panel .panel-body {
+  padding: 0 14px;
+}
+.panel-condensed.comments .media-list {
+  border: 0;
+}
+.panel-condensed.comments .media-list .media {
+  position: relative;
+  padding: 10px 0;
+}
+.panel-condensed.comments .media-list .media .img-circle {
+  max-width: 47px;
+}
+.panel-condensed.comments .media-list .media .avatar {
+  margin-right: 11px;
+}
+.panel-condensed.comments .media-list .media .avatar .btn-group {
+  margin-top: 5px;
+  display: block;
+}
+.panel-condensed.comments .media-list .media .avatar .btn-group .btn {
+  line-height: 13px;
+  font-size: 11px;
+  padding: 1px 4px;
+}
+.panel-condensed.comments .media-list .media .avatar .btn-group .btn.btn-default {
+  color: #a3a3a3;
+}
+.panel-condensed.comments .media-list .media .media-heading h4 {
+  font-size: 12px;
+}
+.panel-condensed.comments .media-list .media .media-heading .tools {
+  top: 14px;
+  right: 0;
+  position: absolute;
+}
+.panel-condensed.comments .media-list .media .media-heading .tools h5 {
+  font-size: 10px;
+  margin: 4px 0 0;
+  white-space: nowrap;
+  right: 0;
+  position: absolute;
+  background: #ffffff;
+}
+.panel-condensed.comments .media-list .media .media-heading .tools > a {
+  display: none;
+}
+.panel-condensed.comments .media-list .media .media-body p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+.panel-condensed.comments .media-list .media:hover .media-heading .tools h5 {
+  display: none;
+}
+.panel-condensed.comments .media-list .media:hover .media-heading .tools > a {
+  display: inline-block;
+}
+.panel-condensed.comments .media-list .media.view-all {
+  text-align: center;
+}
+.panel-condensed.comments .media-list .media.view-all a {
+  font-size: 12px;
+}
 /*Structure*/
 .wrapper {
   width: 100%;
@@ -8711,7 +8711,6 @@ span.sprite.a-football {
 }
 .right-sidebar .panel .panel-heading .tools {
   right: 6px;
-  margin-top: -9px;
 }
 .right-sidebar .panel .panel-heading .tools .glyphicon {
   font-size: 16px;
