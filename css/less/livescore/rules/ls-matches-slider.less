@@ -132,7 +132,7 @@
         background-color: @ls-light-color;
       }      
       
-      &.live{
+      &.live, &.paused{
         .status{
           padding-left: 11px;
           background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
@@ -148,6 +148,13 @@
           }
         }
         
+      }      
+      
+      &.paused{
+        .status{
+          background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
+          color: lighten(@ls-dark-color, 60.5%);
+        }
       }
       
       &.highlight{
