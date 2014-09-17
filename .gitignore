@@ -8,3 +8,4 @@ composer.lock
 *.bak
 *.db
 *.db
+*.db
