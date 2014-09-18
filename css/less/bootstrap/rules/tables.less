@@ -27,7 +27,7 @@
       th{
         background-color: darken(@ls-light-color, 5%);
         font-weight: 600;
-        font-size: 11px;
+        font-size:  @font-size-base - 2;
         text-transform: uppercase;
         color: lighten(@ls-dark-color,36.5%);
         padding: 8px 20px;
@@ -35,18 +35,18 @@
         &[colspan]{
           text-align: center;
           text-transform: uppercase;
-          font-size: 12px;
+          font-size:  @font-size-base - 1;
           font-weight: bold;
         }
       }
       
     td{
       vertical-align: middle !important;
-      font-size: 12px;
+      font-size:  @font-size-base - 1;
       padding: 8px 10px;
       
       > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
-        font-size: 10px;
+        font-size:  @font-size-base - 3;
         margin-right: 3px;
       }
       
@@ -114,13 +114,13 @@
           border: 0;
           padding: 4px 7px;
           background-color: darken(@ls-light-color, 5%);
-          font-size: 11px;
+          font-size:  @font-size-base - 2;
           font-weight: 600;
 
           &[colspan]{
             text-align: center;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size:  @font-size-base - 1;
             font-weight: bold;
           }
         }
@@ -128,7 +128,7 @@
       &.league-data{
         >tr{
           >th{
-            font-size: 12px;
+            font-size:  @font-size-base - 1;
             font-weight: 700;
             background-color: lighten(@ls-greyblue-dark, 21.3%);
             text-align: left;
@@ -149,7 +149,7 @@
           th{
             
             font-weight: 700;
-            font-size: 12px;
+            font-size:  @font-size-base - 1;
           }
         }
       }
@@ -157,7 +157,7 @@
       td{
         font-weight: 400;
         line-height: 16px;
-        font-size: 12px;
+        font-size:  @font-size-base - 1;
         padding: 3px 7px;
         border-top: 1px solid darken(@ls-light-color, 4%);
         border-left: none;
@@ -165,7 +165,7 @@
         &:first-child{ border-left: 0; }
         &:last-child{ border-right: 0; }
         
-        span.icon-caret-right, span.icon-caret-right{ font-size: 10px; }
+        span.icon-caret-right, span.icon-caret-right{ font-size:  @font-size-base - 3; }
         
       }
     }
@@ -243,7 +243,7 @@
             }
           }
           &.score{
-            font-size: 14px;
+            font-size:  @font-size-base + 1;
             font-weight: 700;
             background-color: darken(@ls-light-color,3%);
             text-align: center;
@@ -257,7 +257,7 @@
             
             a{
               display: inline-block;
-              font-size: 18px;
+              font-size:  @font-size-base + 5;
               padding: 5px 4px;
               color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
               &:hover{
@@ -306,7 +306,7 @@
               font-weight: 400;
               
               i{
-                font-size: 18px;
+                font-size:  @font-size-base + 3;
                 vertical-align: middle;
                 color:  rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
               }
@@ -383,7 +383,7 @@
             }
           }
           &.score{
-            font-size: 14px;
+            font-size:  @font-size-base + 1;
             font-weight: 700;
             background-color: darken(@ls-light-color,3%);
             text-align: center;
@@ -397,7 +397,7 @@
             
             a{
               display: inline-block;
-              font-size: 14px;
+              font-size:  @font-size-base + 1;
               padding: 4px 4px;
               color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
               &:hover{
