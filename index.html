@@ -355,7 +355,7 @@
             <div class="prev control"><span class="icon-caret-left"></span></div>
             <div class="content">
               <div class="matches">
-                <div class="inner">
+                <div class="inner owl-carousel owl-theme">
                   <div class="match live">
                     <span class="status">22'</span>
                     <table>
@@ -1695,6 +1695,23 @@
         $(".matches-slider .next.control").click(function(){
           owl.trigger('next.owl.carousel');
         });
+
+        var matches_live = $(".matches-slider-live .matches .inner");
+ 
+        matches_live.owlCarousel({
+          autoWidth:true,
+          pagination: false,
+          navigation: false,
+        });
+ 
+        $(".matches-slider-live .prev.control").click(function(){
+          matches_live.trigger('prev.owl.carousel');
+        });
+        
+        $(".matches-slider-live .next.control").click(function(){
+          matches_live.trigger('next.owl.carousel');
+        });
+        
         
       });
     </script>
