@@ -5,10 +5,8 @@
     &.active{
       a,a:hover,a:focus{
         .border-radiuses(2px,0,0,2px);
-        background: @brand-primary;
         border: transparent;
         border-bottom: 2px solid darken(@brand-primary, 4%);
-        color: @ls-light-color;
       }
       .badge{
         background: @ls-light-color;
@@ -16,7 +14,6 @@
       }
     }
     > a{
-      .border-radius(0);
       border-top: none;
       border-bottom: 2px solid darken(@ls-light-color, 6%);
       color: lighten(@ls-dark-color, 26.2%);

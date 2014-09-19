@@ -3701,7 +3701,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
 }
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 0;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -6750,22 +6750,14 @@ button.close {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #5da400;
   border: transparent;
   border-bottom: 2px solid #519000;
-  color: #ffffff;
 }
 .nav-pills > li.active .badge {
   background: #ffffff;
   color: #5da400;
 }
 .nav-pills > li > a {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   border-top: none;
   border-bottom: 2px solid #f0f0f0;
   color: #434343;
