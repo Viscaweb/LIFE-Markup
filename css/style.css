@@ -3784,7 +3784,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0;
   }
 }
 @media (min-width: 768px) {
@@ -6795,9 +6795,6 @@ button.close {
 /*Fixed top navbar*/
 .header {
   /*Navbar inverse*/
-}
-.header .navbar {
-  border-radius: 0;
 }
 .header .navbar.navbar-fixed-top {
   background: #ffffff;
