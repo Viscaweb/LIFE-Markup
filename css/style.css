@@ -8892,6 +8892,8 @@ span.sprite.a-football {
 .sidebar-nav li .sub-menu li .third-menu {
   padding: 0;
   list-style: none;
+  background-color: #ededed;
+  border-left: 3px solid #5da400;
 }
 .sidebar-nav li .sub-menu li .third-menu li a {
   color: #0053a8;
