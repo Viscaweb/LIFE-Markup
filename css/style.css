@@ -6719,6 +6719,7 @@ button.close {
 .media-list li.media .media-body p {
   line-height: 15px;
   font-weight: 400;
+  font-size: 13px;
 }
 .media-list li.media .media-body .reply {
   color: #5da400;
