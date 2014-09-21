@@ -21,8 +21,8 @@
   }
 
   &.btn-sm{
-    .border-radius(2px);
-    padding: 6px 10px;
+    .border-radius(@border-radius-base - 2);
+    padding: (@padding-small-vertical + 1) @padding-small-horizontal;
   }
 
   &.btn-xs{ 
@@ -57,20 +57,12 @@
   }
 }
 
-.btn-default{
-  border-color: @ls-btn-default - 27%;
-  background: @ls-btn-default;
-}
 
 .btn-primary,.btn-primary:focus{
   color: @ls-light-color;
-  border-color: @brand-primary + 1%;
-  background: @brand-primary;
   outline: none;
   
   &.active{
-    border-color: @brand-primary + 1%;
-    background: @brand-primary;
     outline: none;
   }
   
@@ -87,13 +79,9 @@
 
 .btn-success,.btn-success:focus{
   color: @ls-light-color;
-  border-color: @ls-success-border;
-  background: @ls-btn-success;
   outline: none;
   
   &.active{
-    border-color: @ls-success-border;
-    background: @ls-btn-success;
     outline: none;
   }
   
@@ -109,13 +97,9 @@
 
 .btn-info,.btn-info:focus{
   color: @ls-light-color;
-  border-color: @ls-btn-info - 15%;
-  background: @ls-btn-info;
   outline: none;
   
   &.active{
-    border-color: @ls-btn-info - 5%;
-    background: @ls-btn-info;
     outline: none;
   }
   
@@ -128,13 +112,9 @@
 
 .btn-warning,.btn-warning:focus{
   color: @ls-light-color;
-  border-color: @ls-btn-warning - 15%;
-  background: @ls-btn-warning;
   outline: none;
   
   &.active{
-    border-color: @ls-btn-warning - 5%;
-    background: @ls-btn-warning;
     outline: none;
   }
   
@@ -147,13 +127,9 @@
 
 .btn-danger,.btn-danger:focus{
   color: @ls-light-color;
-  border-color: @ls-btn-danger - 15%;
-  background: @ls-btn-danger;
   outline: none;
   
   &.active{
-    border-color: @ls-btn-danger - 5%;
-    background: @ls-btn-danger;
     outline: none;
   }
   

@@ -142,28 +142,28 @@
 @btn-font-weight:                600;
 
 @btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-bg:                 @ls-btn-default;
+@btn-default-border:            @ls-btn-default - 27%;
 
-@btn-primary-color:              #fff;
+@btn-primary-color:              @ls-light-color;
 @btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-primary-border:            @brand-primary + 1%;
 
 @btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
-@btn-success-border:             darken(@btn-success-bg, 5%);
+@btn-success-bg:                 @ls-btn-success;
+@btn-success-border:            @ls-success-border;
 
 @btn-info-color:                 #fff;
-@btn-info-bg:                    @brand-info;
-@btn-info-border:                darken(@btn-info-bg, 5%);
+@btn-info-bg:                    @ls-btn-info;
+@btn-info-border:               @ls-btn-info - 15%;
 
 @btn-warning-color:              #fff;
-@btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             darken(@btn-warning-bg, 5%);
+@btn-warning-bg:                 @ls-btn-warning;
+@btn-warning-border:             @ls-btn-warning - 15%;
 
 @btn-danger-color:               #fff;
-@btn-danger-bg:                  @brand-danger;
-@btn-danger-border:              darken(@btn-danger-bg, 5%);
+@btn-danger-bg:                  @ls-btn-danger;
+@btn-danger-border:             @ls-btn-danger - 15%;
 
 @btn-link-disabled-color:        @gray-light;
 
@@ -182,7 +182,7 @@
 //** `<input>` border color
 @input-border:                   #ccc;
 //** `<input>` border radius
-@input-border-radius:            @border-radius-base;
+@input-border-radius:            @border-radius-base - 2;
 //** Border color for inputs on focus
 @input-border-focus:             #66afe9;
 
@@ -190,7 +190,7 @@
 @input-color-placeholder:        @gray-light;
 
 //** Default `.form-control` height
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-base:              38px;
 //** Large `.form-control` height
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
@@ -219,11 +219,11 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 //** Dropdown link text color.
-@dropdown-link-color:            @gray-dark;
+@dropdown-link-color:            lighten(@ls-dark-color, 22%);
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-color:      @ls-light-color;
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-bg:         @brand-primary;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;
@@ -410,9 +410,9 @@
 
 @nav-tabs-link-hover-border-color:          @gray-lighter;
 
-@nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gray;
-@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-active-link-hover-bg:             @brand-primary;
+@nav-tabs-active-link-hover-color:          @ls-light-color;
+@nav-tabs-active-link-hover-border-color:   darken(@brand-primary, 4%);
 
 @nav-tabs-justified-link-border-color:            #ddd;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
@@ -680,10 +680,10 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-body-padding:          15px;
+@panel-body-padding:          20px;
 @panel-heading-padding:       8px 20px;
 @panel-footer-padding:        @panel-heading-padding;
-@panel-border-radius:         @border-radius-base;
+@panel-border-radius:         0;
 
 //** Border color for elements within panels
 @panel-inner-border:          #ddd;
