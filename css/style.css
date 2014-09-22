@@ -1066,7 +1066,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 33px;
+  font-size: 38px;
 }
 h2,
 .h2 {
@@ -1082,7 +1082,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 13px;
+  font-size: 16px;
 }
 h6,
 .h6 {
@@ -7481,6 +7481,8 @@ button.close {
 /*Table Icons*/
 /*Typography*/
 /*Social like icons*/
+/*Player*/
+/*Upcoming Top Games - Block*/
 /*Content Header*/
 .content-header {
   position: relative;
@@ -7498,11 +7500,9 @@ button.close {
 .content-header .info {
   display: inline-block;
 }
-.content-header .info .title h1 {
+.content-header .info .title h2 {
   display: inline-block;
   margin: 0 0 5px;
-  font-size: 27px;
-  font-weight: 600;
 }
 .content-header .info .title a {
   display: inline-block;
@@ -7598,13 +7598,6 @@ h6 {
 }
 h1 {
   font-weight: bold;
-  font-size: 38px;
-}
-h2 {
-  font-size: 27px;
-}
-h5 {
-  font-size: 16px;
 }
 p {
   font-weight: lighter;
@@ -8520,7 +8513,6 @@ span.sprite.a-football {
 .news-block.panel > .panel-body .main-news .content .resume,
 .news-block.panel > .panel-body .sub-news .content .resume {
   margin: 0;
-  font-size: 14px;
   font-weight: 700;
 }
 .news-block.panel > .panel-body .main-news .content .resume a,
@@ -8545,7 +8537,6 @@ span.sprite.a-football {
 .news-block.panel > .panel-body .sub-news .content .resume {
   margin: 0;
   color: #353535;
-  font-size: 14px;
   font-weight: 700;
   line-height: 16px;
 }
@@ -8785,7 +8776,6 @@ span.sprite.a-football {
 .sidebar-nav li a {
   color: #4a4a4a;
   display: block;
-  font-size: 13px;
 }
 .sidebar-nav li a:hover {
   color: #ffffff;

@@ -11,19 +11,20 @@
 			max-width: 65px;
 		}
 	}
+  
 	.info{
 		display: inline-block;
 		.title{
-			h1{
+    
+			h2{
 				display: inline-block;
 				margin: 0 0 5px;
-				font-size: 27px;
-				font-weight: 600;
 			}
+      
 			a{
 				display: inline-block;
 				color: darken(@ls-light-color,31%);
-				font-size: 14px;
+				font-size: @font-size-base + 1;
 		    margin-left: 10px;
 		    vertical-align: middle;
 
@@ -40,7 +41,7 @@
 		a{
 			color: darken(@ls-light-color,35%);
 			display: block;
-			font-size: 11px;
+			font-size: @font-size-small - 1;
 			margin-bottom: 3px;
 			span{
 				margin-right: 5px;
@@ -53,7 +54,7 @@
 			a{
 				text-align: center;
 				display: inline-block;
-				font-size: 11px;
+				font-size: @font-size-small - 1;
 				color: darken(@ls-light-color,32%);
 
 				img{
@@ -72,7 +73,7 @@
 			.title{
 				.first-name{
 					margin: 0;
-					font-size: 13px;
+					font-size: @font-size-base;
 					font-weight: 600;
 					padding-left: 2px;
 				}
@@ -86,7 +87,7 @@
 
 				li{
 					padding: 1px 0;
-					font-size: 11px;
+					font-size: @font-size-small - 1;
 					border-bottom: 1px solid darken(@ls-light-color,7%);
 
 					b{
@@ -100,7 +101,7 @@
 			a{
 				text-align: center;
 				display: inline-block;
-				font-size: 11px;
+				font-size: @font-size-small - 1;
 				color: darken(@ls-light-color,32%);
 				padding: 2px;
 

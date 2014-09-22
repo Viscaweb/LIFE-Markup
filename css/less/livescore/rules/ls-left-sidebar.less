@@ -30,11 +30,11 @@
 				padding: 15px 15px 8px;
 				line-height: 30px;
 				span{
-					font-size: 18px;
+					font-size: @font-size-large + 2;
 				}
 			}
 			i{
-				font-size: 16px;
+				font-size: @font-size-large;
 				margin-right: 5px;
 				vertical-align: middle;
 			}
@@ -58,7 +58,6 @@
 		a{
 			color: lighten(@ls-dark-color, 29%);
 			display: block;
-			font-size: 13px;
 			
 			&:hover{
 				color: @ls-light-color;
@@ -68,7 +67,7 @@
 			&.dropdown-togle:before{
 				content: "";
 		    font-family: "LSicons";
-		    font-size: 10px;
+		    font-size: @font-size-small - 2;
 		    left: 8px;
 		    margin-top: 3px;
 		    position: absolute;
@@ -80,7 +79,7 @@
 			&.sortable:after{
 				content: "";
 		    font-family: "Glyphicons Halflings";
-		    font-size: 10px;
+		    font-size: @font-size-small - 2;
 		    right: 8px;
 		    margin-top: 3px;
 		    position: absolute;
@@ -89,7 +88,7 @@
 			&.sortable:hover:after{
 				content: "";
 		    font-family: "Glyphicons Halflings";
-		    font-size: 10px;
+		    font-size: @font-size-small - 2;
 		    right: 8px;
 		    margin-top: 3px;
 		    position: absolute;
@@ -98,7 +97,7 @@
 			&.sortable:hover:before{
 				content: "";
 		    font-family: "Glyphicons Halflings";
-		    font-size: 12px;
+		    font-size: @font-size-small;
 		    left: 6px;
 		    position: absolute;
 		    color: @ls-light-color;
