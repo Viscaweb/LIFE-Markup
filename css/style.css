@@ -882,7 +882,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   line-height: 1.428571429;
   color: #333333;
@@ -902,7 +902,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0078ff;
+  color: #002d5c;
   text-decoration: underline;
 }
 a:focus {
@@ -3038,7 +3038,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #0078ff;
+  color: #002d5c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4354,7 +4354,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #0078ff;
+  color: #002d5c;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
