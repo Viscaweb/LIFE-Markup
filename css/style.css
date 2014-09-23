@@ -7925,7 +7925,6 @@ span.sprite.a-football {
 .matches-slider-live .content .match {
   cursor: pointer;
   padding: 6px 20px;
-  float: left;
   border-right: 1px solid #e9e9e9;
   background: #fbfbfb;
 }
