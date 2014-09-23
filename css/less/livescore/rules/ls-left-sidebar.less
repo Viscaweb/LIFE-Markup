@@ -76,32 +76,43 @@
 			&.dropdown-togle.open:before{
 				content: "";
 			}
-			&.sortable:after{
-				content: "";
-		    font-family: "Glyphicons Halflings";
-		    font-size: @font-size-small - 2;
-		    right: 8px;
-		    margin-top: 3px;
-		    position: absolute;
-		    color: darken(@ls-light-color,17%);
-			}
-			&.sortable:hover:after{
-				content: "";
-		    font-family: "Glyphicons Halflings";
-		    font-size: @font-size-small - 2;
-		    right: 8px;
-		    margin-top: 3px;
-		    position: absolute;
-		    color: @ls-light-color;
-			}			
-			&.sortable:hover:before{
-				content: "";
-		    font-family: "Glyphicons Halflings";
-		    font-size: @font-size-small;
-		    left: 6px;
-		    position: absolute;
-		    color: @ls-light-color;
-			}
+			&.sortable{
+					.sort{
+						margin-top: 3px;
+						position: absolute;
+						left: 5px;
+						top: 1px;
+						opacity: 0;
+						font-size: @font-size-small;						
+					}
+					.close{
+						opacity: 0;
+						font-size: @font-size-small;
+					}
+				&:hover{
+					.sort{
+				    color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
+				    opacity: 1;
+				    text-shadow: none;
+				    &:hover{
+				    	color: #fff;
+				    }
+					}
+					.close{
+				    right: 4px;
+				    top: 3px;
+				    margin-top: 3px;
+				    position: absolute;
+				    color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
+				    opacity: 1;
+				    display: block;
+				    text-shadow: none;
+				    &:hover{
+				    	color: #fff;
+				    }
+			  	}
+				}
+			}		
 		}
 
 		.sub-menu{
@@ -133,17 +144,21 @@
 								color: @ls-light-color;
 							}
 
-							&.pull-right{
+							.fav{
 								color: darken(@ls-light-color, 32%); 
 								position: absolute;
 						    right: 0;
-						    top: 0;
+						    top: 5px;
 						    padding: 3px 7px;
+						    display: block;
+						    &:hover{
+									color:darken(@ls-light-color, 37%); 
+								}
+								&.active{
+									color: @ls-fav-hover;
+								}
 							}
-							&.pull-right:hover{
-								color: @ls-fav-hover; 
-								background-color: transparent;
-							}
+							
 						}
 						.fourth-menu{
 							padding: 0;

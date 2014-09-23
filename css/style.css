@@ -7511,6 +7511,9 @@ button.close {
   margin-left: 10px;
   vertical-align: middle;
 }
+.content-header .info .title a:hover {
+  color: #a1a1a1;
+}
 .content-header .info .title a.active {
   color: #ffc600;
 }
@@ -7770,6 +7773,7 @@ span.sprite.a-football {
 .player .picture img {
   max-width: 85px;
   min-width: 85px;
+  max-height: 85px;
 }
 .player + .player {
   border-left: 1px solid #ededed;
@@ -8793,31 +8797,38 @@ span.sprite.a-football {
 .sidebar-nav li a.dropdown-togle.open:before {
   content: "";
 }
-.sidebar-nav li a.sortable:after {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  font-size: 10px;
-  right: 8px;
+.sidebar-nav li a.sortable .sort {
   margin-top: 3px;
   position: absolute;
-  color: #d4d4d4;
-}
-.sidebar-nav li a.sortable:hover:after {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  font-size: 10px;
-  right: 8px;
-  margin-top: 3px;
-  position: absolute;
-  color: #ffffff;
-}
-.sidebar-nav li a.sortable:hover:before {
-  content: "";
-  font-family: "Glyphicons Halflings";
+  left: 5px;
+  top: 1px;
+  opacity: 0;
   font-size: 12px;
-  left: 6px;
+}
+.sidebar-nav li a.sortable .close {
+  opacity: 0;
+  font-size: 12px;
+}
+.sidebar-nav li a.sortable:hover .sort {
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  text-shadow: none;
+}
+.sidebar-nav li a.sortable:hover .sort:hover {
+  color: #fff;
+}
+.sidebar-nav li a.sortable:hover .close {
+  right: 4px;
+  top: 3px;
+  margin-top: 3px;
   position: absolute;
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  display: block;
+  text-shadow: none;
+}
+.sidebar-nav li a.sortable:hover .close:hover {
+  color: #fff;
 }
 .sidebar-nav li .sub-menu {
   padding: 0;
@@ -8846,16 +8857,19 @@ span.sprite.a-football {
 .sidebar-nav li .sub-menu li .third-menu li a:hover {
   color: #ffffff;
 }
-.sidebar-nav li .sub-menu li .third-menu li a.pull-right {
+.sidebar-nav li .sub-menu li .third-menu li a .fav {
   color: #adadad;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
   padding: 3px 7px;
+  display: block;
 }
-.sidebar-nav li .sub-menu li .third-menu li a.pull-right:hover {
+.sidebar-nav li .sub-menu li .third-menu li a .fav:hover {
+  color: #a1a1a1;
+}
+.sidebar-nav li .sub-menu li .third-menu li a .fav.active {
   color: #ffc600;
-  background-color: transparent;
 }
 .sidebar-nav li .sub-menu li .third-menu li .fourth-menu {
   padding: 0;
