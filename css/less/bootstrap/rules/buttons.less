@@ -1,5 +1,4 @@
 .btn{
-  .border-radius(@border-radius-base - 2);
   font-size: @font-size-small;
   color: lighten(@ls-dark-color, 26.2%);
   line-height: 16px;
@@ -14,19 +13,16 @@
   }
 
   &.btn-lg{
-    .border-radius(@border-radius-base);
     font-size: @font-size-large;
     padding: (@padding-large-vertical + 3) (@padding-large-horizontal + 2);
     font-weight: bold;
   }
 
   &.btn-sm{
-    .border-radius(@border-radius-base - 2);
     padding: (@padding-small-vertical + 1) @padding-small-horizontal;
   }
 
   &.btn-xs{ 
-    .border-radius(@border-radius-base - 2);
     padding: (@padding-xs-vertical + 1) (@padding-xs-horizontal + 1);
   }
   
@@ -41,11 +37,16 @@
     }
   }  
   
-  &.datepicker-icon{
-    padding: 5px 40px 5px 11px;
-    span.icon-calendar{
+  &.large-icon{
+    padding: 6px 40px 5px 11px;
+    > span.icon{
       color: darken(@ls-light-color,39%);
       font-size: @font-size-base + 9;
+      display: inline-block;
+      font-size: 22px;
+      height: 22px;
+      vertical-align: middle;
+      margin-right: 11px;
     }
     
     .icon-caret-down,.icon-expand{

@@ -1,0 +1,222 @@
+.nav-pills{
+
+  &.teams{
+    position:relative;
+    top:-5px;
+  
+    >li{
+    margin-right:5px;
+    
+      >img{
+        max-width:28px;
+        max-height:28px;
+      }
+    }
+  }
+}
+
+.panel{
+
+  &.head-to-head, &.team-form{
+    
+     .teams{
+      margin-bottom:8px;
+     
+      .team{
+      
+        .circle{
+          display:inline-block;
+          width:60px;
+          height:60px;
+          background-color: lighten(@gray-light, 13.1%);
+          color:@ls-light-color;
+          line-height:60px;
+          .border-radius(50%);
+          margin-top:16px;
+          margin-bottom:2px;
+          font-size:@ls-head-to-head-first-team-size;
+          
+          &.gray1{ background-color: lighten(@gray-light, 13.1%); }
+          &.gray2{ background-color: lighten(@gray-light, 30.5%); }
+          &.gray3{ background-color: lighten(@gray-light, 32.4%); }
+          &.success{ background-color:@brand-success; }
+          &.danger{ background-color:@brand-danger; }
+          
+        }
+        
+        span{
+          display:block;
+          font-weight:600;
+          font-size:@font-size-x-small;
+        }
+        
+        &.second{
+          
+          .circle{
+            width:40px;
+            height:40px;
+            line-height:40px;
+            margin-bottom:10px;
+            margin-top:28px;
+            font-size:@ls-head-to-head-second-team-size;
+          }
+        }
+        
+        &.third{
+        
+          .circle{
+            width:32px;
+            height:32px;
+            line-height:32px;
+            margin-top:32px;
+            margin-bottom:14px;
+            font-size:@ls-head-to-head-third-team-size;
+          }    
+        }
+        
+        &.fourth{
+        
+          .circle{
+            width:24px;
+            height:24px;
+            line-height:24px;
+            font-size:@font-size-small;
+          }
+        }
+        
+        &.fifth{
+        
+          .circle{
+            width:20px;
+            height:20px;
+            line-height:20px;
+            font-size:@font-size-small;
+          }
+        }
+        
+
+      }
+    }
+    
+    .table{
+      border-bottom:1px solid darken(@ls-light-color, 6%);
+      border-top:1px solid darken(@ls-light-color, 6%);     
+    
+      tbody{
+        
+        tr{
+        
+          .date{
+            width:10%;
+          }
+        
+          .logo{
+            width:2%;
+            
+            img{
+              width:18px;
+              height:18px;
+            }
+          }
+          
+          .date2{
+            width:25%;
+          }
+          
+          .team1{
+            width:5%;
+          }
+          
+          .score{
+            font-weight:@font-weight-bold;
+            text-align:center;
+            width:7%;
+            
+          }
+          
+          
+        }
+        
+        a{
+          padding:5px;
+        }
+      }
+    
+    }
+  }
+  
+  
+  &.team-form{
+  
+    .nav-pills{
+    
+      li{
+        margin-right:0;
+      }
+    }
+    
+    .navigation{
+      text-align:center;
+      margin-top:15px;
+      
+        .btn{
+          padding:8px 18px;
+        }
+    }
+    
+    .teams.row{
+      padding:0 15px;
+    
+      .team{
+ 
+        .circle{
+          margin-top:0;
+        }
+        
+        &.second{
+        
+          .circle{
+            margin-top:12px;
+          }
+        }
+          
+        &.third{
+        
+          .circle{  
+            margin-top:16px; 
+          }    
+        }
+        
+        &.fourth{
+        
+          .circle{
+            margin-bottom:18px;
+            margin-top:20px;
+          }
+        }
+        
+        &.fifth{
+          
+           .circle{
+             margin-top:21px;
+             margin-bottom:21px;
+           }
+        }
+      }
+    }
+    
+    table{
+    
+      tbody{
+      
+        tr{
+        
+          .score{
+            width:14% !important;
+          }
+        }
+      }
+    }
+    
+  }
+}

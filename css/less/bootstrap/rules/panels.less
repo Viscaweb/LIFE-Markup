@@ -15,6 +15,14 @@
       color: lighten(@ls-dark-color, 37% );
       font-weight: bold;
       display: inline;
+      
+      > img{
+        max-width: 20px;
+        max-height: 20px;
+        margin-right: 10px;
+        vertical-align: bottom;
+      }
+      
     }
 
     .tools{
@@ -36,6 +44,7 @@
           font-size:  @font-size-base - 3;
         }
       }
+      
       .badge{
         font-size:  @font-size-small;
         font-weight: normal;
@@ -43,24 +52,46 @@
         background-color: @brand-primary;
         color: @ls-light-color;
       }
+      
       .label{
         font-weight: 600;
         font-style: normal;
         font-size:  @font-size-small;
       }
+      
       button{
         font-style: normal; 
-        border: none;
-        color: lighten(@ls-dark-color, 82%);
-        background: none;
 
-        &.active{
-          color: lighten(@ls-dark-color, 33%);
-        }
-        &.btn-default{
+        &.spinner{
+          border: none;
           background-color: @ls-light-color;
           color: lighten(@ls-dark-color,20%);
         }
+      }
+      
+      a.icon{
+        vertical-align: middle;
+        padding: 0 4px;
+        
+        > span{
+          color: lighten(@ls-dark-color, 82%);
+          font-size: @font-size-small;
+          
+          &.icon-lg{
+            font-size: @font-size-large;
+          }
+        }
+        
+        &.active{
+          > span{ 
+            color: lighten(@ls-dark-color, 33%);
+          }
+        }
+        
+      }
+      
+      .glyphicon{
+        font-size: @font-size-large; 
       }
     }
   }
