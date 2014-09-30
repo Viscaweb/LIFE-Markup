@@ -9002,23 +9002,53 @@ span.sprite.a-football {
   background-color: #333739;
 }
 .match-timeline {
-  overflow: auto;
+  position: relative;
+}
+.match-timeline .controls > a {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  outline: none;
+}
+.match-timeline .controls > a > span {
+  font-size: 21px;
+  color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 21px;
+  display: block;
+  top: 50%;
+  margin-top: -10.5px;
+  text-align: center;
+}
+.match-timeline .controls > a.next {
+  left: auto;
+  right: 0;
+}
+.match-timeline .controls > a:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 .match-timeline .timeline-container {
+  overflow: hidden;
+}
+.match-timeline .timeline-scroll {
   position: relative;
   height: 155px;
   background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
   display: table-cell;
   vertical-align: middle;
 }
-.match-timeline .timeline-container .timeline {
+.match-timeline .timeline-scroll .timeline {
   background-color: #428200;
   border: 1px solid #428200;
   border-width: 1px 0;
   font-size: 0;
   white-space: nowrap;
 }
-.match-timeline .timeline-container .timeline .time-lapse {
+.match-timeline .timeline-scroll .timeline .time-lapse {
   background: url("../img/timeline/timeline-guide.png") repeat-x 12px 0;
   color: #ffffff;
   font-family: Tahoma;
@@ -9028,24 +9058,24 @@ span.sprite.a-football {
   text-align: center;
   line-height: 29px;
 }
-.match-timeline .timeline-container .timeline .time-lapse:first-child {
+.match-timeline .timeline-scroll .timeline .time-lapse:first-child {
   background-repeat: no-repeat;
-  margin-left: 13px;
+  margin-left: 39px;
 }
-.match-timeline .timeline-container .team-actions {
+.match-timeline .timeline-scroll .team-actions {
   top: 50%;
   left: 0;
   position: absolute;
   width: 100%;
 }
-.match-timeline .timeline-container .team-actions .action {
+.match-timeline .timeline-scroll .team-actions .action {
   cursor: pointer;
   bottom: 16.5px;
   position: absolute;
   text-align: center;
   display: inline-block;
   background: rgba(69, 75, 77, 0.7);
-  padding: 2px;
+  padding: 1px 1px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -9053,23 +9083,21 @@ span.sprite.a-football {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.match-timeline .timeline-container .team-actions .action span {
+.match-timeline .timeline-scroll .team-actions .action span {
   height: 18px;
   width: 18px;
   display: block;
 }
-.match-timeline .timeline-container .team-actions .action span.act-goal {
+.match-timeline .timeline-scroll .team-actions .action span.act-goal {
   background: url("../img/sprite-icons.png") no-repeat -61px -28px;
 }
-.match-timeline .timeline-container .team-actions .action span.act-replacement {
-  background: url("../img/sprite-icons.png") no-repeat -201px -4px;
-  width: 15px;
+.match-timeline .timeline-scroll .team-actions .action span.act-replacement {
+  background: url("../img/sprite-icons.png") no-repeat -200px -4px;
 }
-.match-timeline .timeline-container .team-actions .action span.act-yellow-card {
-  background: url("../img/sprite-icons.png") no-repeat -118px -5px;
-  width: 15px;
+.match-timeline .timeline-scroll .team-actions .action span.act-yellow-card {
+  background: url("../img/sprite-icons.png") no-repeat -117px -5px;
 }
-.match-timeline .timeline-container .team-actions .action:after {
+.match-timeline .timeline-scroll .team-actions .action:after {
   position: absolute;
   bottom: -4px;
   left: 50%;
@@ -9080,24 +9108,24 @@ span.sprite.a-football {
   border-right: 5px solid transparent;
   border-top: 4px solid rgba(69, 75, 77, 0.7);
 }
-.match-timeline .timeline-container .team-actions .action.away-team {
+.match-timeline .timeline-scroll .team-actions .action.away-team {
   bottom: auto;
   top: 16.5px;
 }
-.match-timeline .timeline-container .team-actions .action.away-team:after {
+.match-timeline .timeline-scroll .team-actions .action.away-team:after {
   top: -4px;
   bottom: auto;
   border-bottom: 4px solid rgba(69, 75, 77, 0.7);
   border-top-width: 0;
 }
-.match-timeline .timeline-container .team-actions .action:hover {
+.match-timeline .timeline-scroll .team-actions .action:hover {
   background-color: #454b4d;
   z-index: 400;
 }
-.match-timeline .timeline-container .team-actions .action:hover:after {
+.match-timeline .timeline-scroll .team-actions .action:hover:after {
   border-top-color: #454b4d;
 }
-.match-timeline .timeline-container .team-actions .action:hover.away-team:after {
+.match-timeline .timeline-scroll .team-actions .action:hover.away-team:after {
   border-bottom-color: #454b4d;
 }
 /*Match Head to Head */
