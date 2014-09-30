@@ -1,10 +1,44 @@
 .match-timeline{  
-  overflow: auto;
+  position: relative;
+  
   .controls{
-    
+    > a{
+      position: absolute;
+      height: 100%;
+      width: 40px;
+      background: rgba(0,0,0,0.3);
+      left: 0;
+      top: 0;
+      outline: none;
+      
+      > span{
+        font-size: @ls-match-timeline-control-icon-size;
+        color: @ls-light-color;
+        position: absolute;
+        width: 100%;
+        height: @ls-match-timeline-control-icon-size;
+        display: block;
+        top: 50%;
+        margin-top: -( @ls-match-timeline-control-icon-size / 2);
+        text-align: center;
+      }
+      
+      &.next{
+        left: auto;
+        right: 0;
+      }
+      
+      &:hover{
+        background: rgba(0,0,0,0.7);
+      }
+    }
   }
   
   .timeline-container{
+    overflow: auto;
+  }
+  
+  .timeline-scroll{
     position: relative;
     height: @ls-match-timeline-container-height;
     background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
@@ -30,7 +64,7 @@
         
         &:first-child{
           background-repeat: no-repeat;
-          margin-left: 13px;
+          margin-left: 39px;
         }        
       }
     }
@@ -48,7 +82,7 @@
         text-align: center;
         display: inline-block;
         background: fade(@ls-match-timeline-action-bg, 70%);
-        padding: 2px;
+        padding: 1px 1px;
         .border-radius(2px);
         
         span{
@@ -57,8 +91,8 @@
           display: block;
           
           &.act-goal{ background:url("../img/sprite-icons.png") no-repeat  -61px -28px; }
-          &.act-replacement{ background:url("../img/sprite-icons.png") no-repeat  -201px -4px; width: 15px;}
-          &.act-yellow-card{ background:url("../img/sprite-icons.png") no-repeat  -118px -5px; width: 15px;}
+          &.act-replacement{ background:url("../img/sprite-icons.png") no-repeat  -200px -4px;}
+          &.act-yellow-card{ background:url("../img/sprite-icons.png") no-repeat  -117px -5px;}
         }
         
         &:after{
