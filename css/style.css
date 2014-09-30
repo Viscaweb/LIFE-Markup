@@ -9061,6 +9061,14 @@ span.sprite.a-football {
 .match-timeline .timeline-container .team-actions .action span.act-goal {
   background: url("../img/sprite-icons.png") no-repeat -61px -28px;
 }
+.match-timeline .timeline-container .team-actions .action span.act-replacement {
+  background: url("../img/sprite-icons.png") no-repeat -201px -4px;
+  width: 15px;
+}
+.match-timeline .timeline-container .team-actions .action span.act-yellow-card {
+  background: url("../img/sprite-icons.png") no-repeat -118px -5px;
+  width: 15px;
+}
 .match-timeline .timeline-container .team-actions .action:after {
   position: absolute;
   bottom: -4px;
