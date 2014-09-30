@@ -1,0 +1,65 @@
+.match-timeline{  
+  overflow: auto;
+  .controls{
+    
+  }
+  
+  .timeline-container{
+    position: relative;
+    height: 134px;
+    background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
+    display: table-cell;
+    vertical-align: middle;
+    
+    .timeline{
+      background-color: @ls-match-timeline-bg;
+      border: @ls-match-timeline-border;
+      border-width: 1px 0;
+      font-size: 0; //This is to fix the inline-block known issue
+      white-space: nowrap;
+      
+      .time-lapse{
+        background: url("../img/timeline/timeline-guide.png") repeat-x 12px 0;
+        color: @ls-light-color;
+        font-family: @ls-match-timeline-font;
+        font-size: @font-size-x-small;
+        display: inline-block;
+        width: 26px;
+        text-align: center;
+        line-height: @ls-match-timeline-height;
+        
+        &:first-child{
+          background-repeat: no-repeat;
+          margin-left: 13px;
+        }        
+        
+        
+      }
+    }
+    
+    .team-actions{
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      
+      .action{
+        text-align: center;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 2px;
+        .border-radius(2px);
+        
+        span{
+          height: 18px;
+          width: 18px;
+          display: block;
+          
+          &.act-goal{ background:url("../img/sprite-icons.png") no-repeat  -61px -28px; }
+        }
+        
+      }
+    }
+  }
+}
