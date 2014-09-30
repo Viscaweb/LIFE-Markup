@@ -9005,6 +9005,7 @@ span.sprite.a-football {
   position: relative;
 }
 .match-timeline .controls > a {
+  z-index: 5;
   position: absolute;
   height: 100%;
   width: 40px;
@@ -9036,12 +9037,13 @@ span.sprite.a-football {
 }
 .match-timeline .timeline-scroll {
   position: relative;
-  height: 155px;
+  height: 145px;
   background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
   display: table-cell;
   vertical-align: middle;
 }
 .match-timeline .timeline-scroll .timeline {
+  z-index: 2;
   background-color: #428200;
   border: 1px solid #428200;
   border-width: 1px 0;
@@ -9062,7 +9064,40 @@ span.sprite.a-football {
   background-repeat: no-repeat;
   margin-left: 39px;
 }
+.match-timeline .timeline-scroll .timeline .time-lapse:last-child {
+  margin-right: 39px;
+}
+.match-timeline .timeline-scroll .match-time-zones {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.match-timeline .timeline-scroll .match-time-zones .time-zone {
+  display: table;
+  position: absolute;
+  height: 100%;
+}
+.match-timeline .timeline-scroll .match-time-zones .time-zone .time {
+  display: table-cell;
+  background: rgba(192, 0, 0, 0.4);
+}
+.match-timeline .timeline-scroll .match-time-zones .time-zone .label {
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 10px 5px;
+  vertical-align: bottom;
+  display: table-cell;
+  color: #a6c785;
+  background: rgba(0, 0, 0, 0.3);
+  width: 41px;
+  text-align: center;
+}
 .match-timeline .timeline-scroll .team-actions {
+  z-index: 3;
   top: 50%;
   left: 0;
   position: absolute;
