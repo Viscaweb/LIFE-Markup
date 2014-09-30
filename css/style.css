@@ -9037,7 +9037,7 @@ span.sprite.a-football {
   left: 0;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 .match-timeline .timeline-container .team-actions .action {
   text-align: center;
@@ -9058,6 +9058,10 @@ span.sprite.a-football {
 }
 .match-timeline .timeline-container .team-actions .action span.act-goal {
   background: url("../img/sprite-icons.png") no-repeat -61px -28px;
+}
+.match-timeline .timeline-container .team-actions.away-team {
+  top: auto;
+  bottom: 0;
 }
 /*Match Head to Head */
 .nav-pills.teams {
