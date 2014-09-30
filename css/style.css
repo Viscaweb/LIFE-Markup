@@ -9006,7 +9006,7 @@ span.sprite.a-football {
 }
 .match-timeline .timeline-container {
   position: relative;
-  height: 134px;
+  height: 155px;
   background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
   display: table-cell;
   vertical-align: middle;
@@ -9033,16 +9033,18 @@ span.sprite.a-football {
   margin-left: 13px;
 }
 .match-timeline .timeline-container .team-actions {
-  top: 0;
+  top: 50%;
   left: 0;
   position: absolute;
   width: 100%;
-  height: 50%;
 }
 .match-timeline .timeline-container .team-actions .action {
+  cursor: pointer;
+  bottom: 16.5px;
+  position: absolute;
   text-align: center;
   display: inline-block;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(69, 75, 77, 0.7);
   padding: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -9059,9 +9061,35 @@ span.sprite.a-football {
 .match-timeline .timeline-container .team-actions .action span.act-goal {
   background: url("../img/sprite-icons.png") no-repeat -61px -28px;
 }
-.match-timeline .timeline-container .team-actions.away-team {
-  top: auto;
-  bottom: 0;
+.match-timeline .timeline-container .team-actions .action:after {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -5px;
+  content: "";
+  display: block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 4px solid rgba(69, 75, 77, 0.7);
+}
+.match-timeline .timeline-container .team-actions .action.away-team {
+  bottom: auto;
+  top: 16.5px;
+}
+.match-timeline .timeline-container .team-actions .action.away-team:after {
+  top: -4px;
+  bottom: auto;
+  border-bottom: 4px solid rgba(69, 75, 77, 0.7);
+  border-top-width: 0;
+}
+.match-timeline .timeline-container .team-actions .action:hover {
+  background-color: #454b4d;
+}
+.match-timeline .timeline-container .team-actions .action:hover:after {
+  border-top-color: #454b4d;
+}
+.match-timeline .timeline-container .team-actions .action:hover.away-team:after {
+  border-bottom-color: #454b4d;
 }
 /*Match Head to Head */
 .nav-pills.teams {
