@@ -9084,6 +9084,7 @@ span.sprite.a-football {
 }
 .match-timeline .timeline-container .team-actions .action:hover {
   background-color: #454b4d;
+  z-index: 400;
 }
 .match-timeline .timeline-container .team-actions .action:hover:after {
   border-top-color: #454b4d;
