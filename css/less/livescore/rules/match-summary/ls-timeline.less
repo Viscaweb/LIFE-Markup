@@ -1,9 +1,48 @@
 .match-timeline{  
   position: relative;
   
+  .team-logos{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    
+    .team{
+      width: 113px;
+      position: absolute;
+      
+      img{
+        vertical-align: top;
+        display: inline-block;
+        max-width: 38px;
+        max-height: 38px;
+        margin-right: 5px;
+      }
+      
+      .name{
+        display: inline-block;
+        font-family: @ls-match-timeline-team-font-family;
+        font-size: @ls-match-timeline-team-font-size;
+        font-weight: 600;
+        color: @ls-light-color;
+        line-height: 38px;
+      }
+      
+      &.home{
+        top: 10%;
+      }
+      
+      &.away{
+        bottom: 10%;
+      }
+    }
+    
+  }
+  
   .controls{
     > a{
-      z-index: 5;
+      z-index: 6;
       position: absolute;
       height: 100%;
       width: 40px;
@@ -42,17 +81,19 @@
   .timeline-scroll{
     position: relative;
     height: @ls-match-timeline-container-height;
-    background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
+    background: url("../img/timeline/timeline-gray-bg.jpg") repeat-x 0 0;
     display: table-cell;
     vertical-align: middle;
     
     .timeline{
-      z-index: 2;
+      position: relative;
+      z-index: 3;
       background-color: @ls-match-timeline-bg;
       border: @ls-match-timeline-border;
       border-width: 1px 0;
       font-size: 0; //This is to fix the inline-block known issue
       white-space: nowrap;
+      padding-right: 40px;
       
       .time-lapse{
         background: url("../img/timeline/timeline-guide.png") repeat-x 12px 0;
@@ -69,14 +110,53 @@
           margin-left: 39px;
         }        
         
-        &:last-child{
-          margin-right: 39px;
+        &.end{
+          margin-right: 10px;
+          padding-left: 7px;
+          text-align: left;
+          width: 41px;
+        }
+      }
+      
+      .penalty-turn{
+        position: relative;
+        width: 22px;
+        line-height: @ls-match-timeline-height;
+        display: inline-block;
+        top: -4px;
+        
+        span{
+          display: block;
+          position: absolute;
+          height: 19px;
+          width: 19px;
+          
+          &.home{
+            top: -45px;
+          }
+          
+          &.away{
+            bottom: -45px;
+          }
+          
+          &.win{ background: url("../img/timeline/penalty-win.png") no-repeat 0 0; }
+          &.lose{ background: url("../img/timeline/penalty-lose.png") no-repeat 0 0; }
+          
         }
       }
     }
     
-    .match-time-zones{
+    .match-live-progress{
+      background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
       z-index: 1;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    .match-time-zones{
+      z-index: 2;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -105,15 +185,30 @@
           width: 41px;
           text-align: center;
         }
+        
+        &.final-score{
+          .label{
+            width: 52px;
+          }
+        }
       }
     }
     
     .team-actions{
-      z-index: 3;
+      z-index: 4;
       top: 50%;
       left: 0;
       position: absolute;
       width: 100%;
+      
+      .replay{
+        background: url("../img/timeline/play-action.png") no-repeat;
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -10px;
+      }
       
       .action{
         cursor: pointer;

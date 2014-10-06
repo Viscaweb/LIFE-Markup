@@ -75,7 +75,7 @@
   
   tr{
       th{
-        background-color: darken(@ls-light-color, 5%);
+        background-color: darken(@ls-light-color, 8.3%);
         font-weight: 600;
         font-size:  @font-size-small - 1;
         text-transform: uppercase;
@@ -94,140 +94,13 @@
       vertical-align: middle !important;
       font-size:  @font-size-small;
       padding: 8px 10px;
-      
-      > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
-        font-size:  @font-size-base - 3;
-        margin-right: 3px;
-      }
-      
-      span.icon-arrow-down{ color: @ls-table-stats-down; }
-      span.icon-arrow-up{ color: @ls-table-stats-up; }
-      span.icon-equal{ color: @ls-table-stats-equal; }
-      
-      &.trend{
-        min-width: 70px;
-        padding: 0 !important;
-        .progress{
-          margin-bottom: 0;
-        }
-      }
-      &.event-outcome-won{
-        background-color: @ls-td-won-bg !important;
-        color: @ls-light-color;
-        width: 1%;
-        border-bottom: 1px solid @ls-light-color;
-        border-right: 1px solid @ls-light-color;
-        text-transform: uppercase;
-      }
-      &.event-outcome-draw{
-        background-color: @ls-td-draw-bg !important;
-        color: @ls-light-color;
-        width: 1%;
-        border-bottom: 1px solid @ls-light-color;
-        border-right: 1px solid @ls-light-color;
-        text-transform: uppercase;
-
-      }
-      &.event-outcome-lost{
-        background-color: @ls-td-lost-bg !important;
-        color: @ls-light-color;
-        width: 1%;
-        border-bottom: 1px solid @ls-light-color;
-        border-right: 1px solid @ls-light-color;
-        text-transform: uppercase;
-      }
-      &.event-outcome-live{
-        padding: 0 !important;
-        text-align: center;
-        font-size: @font-size-x-tiny - 1 !important;
-        background-color: @ls-td-live-bg !important;
-        color: @live-red;
-        width: 1%;
-        border-bottom: 1px solid @ls-light-color;
-        border-right: 1px solid @ls-light-color;
-        text-transform: uppercase;
-      }
-      &.event-outcome-upcoming{
-        background-color: @ls-td-upcoming-bg !important;
-        color: @ls-light-color;
-        text-transform: uppercase;
-      }
     }
     
     &:hover{
       td{
         background-color: @table-bg-hover !important;
-          &.event-outcome-won{
-          background-color: @ls-td-won-bg !important;
-          color: @ls-light-color;
-          width: 1%;
-          border-bottom: 1px solid @ls-light-color;
-          border-right: 1px solid @ls-light-color;
-          text-transform: uppercase;
-        }
-        &.event-outcome-draw{
-          background-color: @ls-td-draw-bg !important;
-          color: @ls-light-color;
-          width: 1%;
-          border-bottom: 1px solid @ls-light-color;
-          border-right: 1px solid @ls-light-color;
-          text-transform: uppercase;
-
-        }
-        &.event-outcome-lost{
-          background-color: @ls-td-lost-bg !important;
-          color: @ls-light-color;
-          width: 1%;
-          border-bottom: 1px solid @ls-light-color;
-          border-right: 1px solid @ls-light-color;
-          text-transform: uppercase;
-        }
-        &.event-outcome-live{
-          padding: 0 !important;
-          text-align: center;
-          font-size: @font-size-x-tiny - 1 !important;
-          background-color: @ls-td-live-bg !important;
-          color: @live-red;
-          width: 1%;
-          border-bottom: 1px solid @ls-light-color;
-          border-right: 1px solid @ls-light-color;
-          text-transform: uppercase;
-        }
-        &.event-outcome-upcoming{
-          background-color: @ls-td-upcoming-bg !important;
-          color: @ls-light-color;
-          text-transform: uppercase;
-        }
       }
-    }
-    
-    &.highlight{
-      td{
-        background-color: @ls-tr-highlight-bg !important;
-      }
-    }
-    &.selected{
-      td{
-        background-color: @ls-tr-selected-bg !important;
-      }
-    }
-    &.event-won{
-      td{
-        background-color: @ls-tr-won-bg !important;
-      }
-    }
-    &.event-lost{
-      td{
-        background-color: @ls-tr-lost-bg !important;
-      }
-    }
-    &.event-draw{
-      td{
-        background-color: @ls-tr-draw-bg !important;
-      }
-    }
-    
-    
+    }    
   }
   
 &.table-striped{
@@ -253,7 +126,6 @@
           th{
           border: 0;
           padding: 4px 7px;
-          background-color: darken(@ls-light-color, 5%);
           font-size:  @font-size-small - 1;
           font-weight: 600;
 
@@ -311,7 +183,7 @@
     }
   }
   
-   tr.stats{
+  tr.stats{
     td{
       &.stat{ 
         background-color: darken(@ls-light-color, 2%);
@@ -324,6 +196,136 @@
       }
     }
   }
+  
+  /*TR HIGHLIGHT STYLES*/
+> tbody{
+  > tr{
+    &.highlight{
+      td{
+        background-color: @ls-tr-highlight-bg !important;
+      }
+    }
+    &.selected{
+      td{
+        background-color: @ls-tr-selected-bg !important;
+      }
+    }
+    &.event-won{
+      td{
+        background-color: @ls-tr-won-bg !important;
+      }
+    }
+    &.event-lost{
+      td{
+        background-color: @ls-tr-lost-bg !important;
+      }
+    }
+    &.event-draw{
+      td{
+        background-color: @ls-tr-draw-bg !important;
+      }
+    }
+  }
+}
+
+
+> tbody{
+  > tr{
+      td{
+        > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
+          font-size:  @font-size-base - 3;
+          margin-right: 3px;
+        }
+        
+        span.icon-arrow-down{ color: @ls-table-stats-down; }
+        span.icon-arrow-up{ color: @ls-table-stats-up; }
+        span.icon-equal{ color: @ls-table-stats-equal; }
+         
+        
+        &.trend{
+          min-width: 70px;
+          padding: 0 !important;
+          .progress{
+            margin-bottom: 0;
+          }
+        }
+        
+        &.event-outcome{
+          color: @ls-light-color;
+          width: 1%;
+          border-bottom: 1px solid @ls-light-color;
+          border-right: 1px solid @ls-light-color;
+          text-transform: uppercase;
+          text-align:center;
+        }
+        
+        &.event-outcome-won{
+          background-color: @ls-td-won-bg !important;   
+        }
+        &.event-outcome-draw{
+          background-color: @ls-td-draw-bg !important;
+        }
+        &.event-outcome-lost{
+          background-color: @ls-td-lost-bg !important;
+        }
+        &.event-outcome-live{
+          padding: 0 !important;
+          text-align: center;
+          font-size: @font-size-x-tiny - 1 !important;
+          background-color: @ls-td-live-bg !important;
+          color: @live-red;
+        }
+        &.event-outcome-upcoming{
+          background-color: @ls-td-upcoming-bg !important;
+        }
+      }
+      
+      &:hover{
+        td{
+          &.event-outcome-won{
+            background-color: @ls-td-won-bg !important;
+            color: @ls-light-color;
+            width: 1%;
+            border-bottom: 1px solid @ls-light-color;
+            border-right: 1px solid @ls-light-color;
+            text-transform: uppercase;
+          }
+          &.event-outcome-draw{
+            background-color: @ls-td-draw-bg !important;
+            color: @ls-light-color;
+            width: 1%;
+            border-bottom: 1px solid @ls-light-color;
+            border-right: 1px solid @ls-light-color;
+            text-transform: uppercase;
+          }
+          &.event-outcome-lost{
+            background-color: @ls-td-lost-bg !important;
+            color: @ls-light-color;
+            width: 1%;
+            border-bottom: 1px solid @ls-light-color;
+            border-right: 1px solid @ls-light-color;
+            text-transform: uppercase;
+          }
+          &.event-outcome-live{
+            padding: 0 !important;
+            text-align: center;
+            font-size: @font-size-x-tiny - 1 !important;
+            background-color: @ls-td-live-bg !important;
+            color: @live-red;
+            width: 1%;
+            border-bottom: 1px solid @ls-light-color;
+            border-right: 1px solid @ls-light-color;
+            text-transform: uppercase;
+          }
+          &.event-outcome-upcoming{
+            background-color: @ls-td-upcoming-bg !important;
+            color: @ls-light-color;
+            text-transform: uppercase;
+          }
+        }
+      }
+  }
+}
   
   &.no-border{
     tr{
