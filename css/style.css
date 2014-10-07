@@ -7656,7 +7656,7 @@ button.close {
 /*Buttons*/
 /*Progress Bars*/
 /*Validation Form-controls*/
-/*Footer (I coulnd't find a color calculation for these colors)*/
+/*Footer*/
 /*Table status colors*/
 /*Table Icons*/
 /*Typography*/
@@ -9002,7 +9002,7 @@ span.sprite.a-football {
   z-index: 4;
 }
 .match-timeline .team-logos .team {
-  width: 113px;
+  min-width: 80px;
   position: absolute;
 }
 .match-timeline .team-logos .team img {
@@ -9064,6 +9064,10 @@ span.sprite.a-football {
   display: table-cell;
   vertical-align: middle;
 }
+.match-timeline .timeline-scroll .timeline-elements {
+  white-space: nowrap;
+  font-size: 0;
+}
 .match-timeline .timeline-scroll .timeline {
   position: relative;
   z-index: 3;
@@ -9072,7 +9076,7 @@ span.sprite.a-football {
   border-width: 1px 0;
   font-size: 0;
   white-space: nowrap;
-  padding-right: 40px;
+  display: inline-block;
 }
 .match-timeline .timeline-scroll .timeline .time-lapse {
   background: url("../img/timeline/timeline-guide.png") repeat-x 12px 0;
@@ -9094,30 +9098,51 @@ span.sprite.a-football {
   text-align: left;
   width: 41px;
 }
-.match-timeline .timeline-scroll .timeline .penalty-turn {
+.match-timeline .timeline-scroll .penalty-goals {
   position: relative;
-  width: 22px;
-  line-height: 29px;
   display: inline-block;
-  top: -4px;
+  line-height: 29px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  padding-right: 40px;
+  z-index: 3;
 }
-.match-timeline .timeline-scroll .timeline .penalty-turn span {
-  display: block;
+.match-timeline .timeline-scroll .penalty-goals > div {
+  display: inline-block;
+  line-height: 26px;
+  padding: 0 5px;
+}
+.match-timeline .timeline-scroll .penalty-goals > div.home {
+  position: relative;
+  top: -35px;
+}
+.match-timeline .timeline-scroll .penalty-goals > div.away {
   position: absolute;
-  height: 19px;
-  width: 19px;
+  left: 0;
+  bottom: -35px;
 }
-.match-timeline .timeline-scroll .timeline .penalty-turn span.home {
-  top: -45px;
+.match-timeline .timeline-scroll .penalty-goals > div span {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 1px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
-.match-timeline .timeline-scroll .timeline .penalty-turn span.away {
-  bottom: -45px;
+.match-timeline .timeline-scroll .penalty-goals > div span.win {
+  background: #87B762;
 }
-.match-timeline .timeline-scroll .timeline .penalty-turn span.win {
-  background: url("../img/timeline/penalty-win.png") no-repeat 0 0;
-}
-.match-timeline .timeline-scroll .timeline .penalty-turn span.lose {
-  background: url("../img/timeline/penalty-lose.png") no-repeat 0 0;
+.match-timeline .timeline-scroll .penalty-goals > div span.lose {
+  background: #E6523E;
 }
 .match-timeline .timeline-scroll .match-live-progress {
   background: url("../img/timeline/timeline-bg.jpg") repeat 0 0;
@@ -9651,8 +9676,67 @@ span.sprite.a-football {
   padding-left: 10px;
 }
 .footer .top-footer {
-  padding: 20px;
   background: #313638;
+}
+.footer .top-footer > .row {
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+.footer .top-footer .left-column {
+  padding: 20px 25px 40px;
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+}
+.footer .top-footer .left-column > .row {
+  margin-bottom: 0;
+}
+.footer .top-footer .left-column h3 {
+  color: #d2dce5;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.footer .top-footer .left-column h3 img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+.footer .top-footer .left-column h3.title {
+  text-transform: uppercase;
+}
+.footer .top-footer .left-column ul {
+  padding: 0;
+}
+.footer .top-footer .left-column ul li {
+  list-style: none;
+}
+.footer .top-footer .left-column ul li a {
+  color: #9fbbd3;
+  font-size: 11px;
+  line-height: 18px;
+}
+.footer .top-footer .right-column {
+  background: #272d2f;
+  display: table-cell;
+  float: none;
+  padding: 40px 20px 0;
+  vertical-align: top;
+}
+.footer .top-footer .right-column img {
+  margin-bottom: 40px;
+}
+.footer .top-footer .right-column p {
+  color: #f9f9f9;
+  font-size: 11px;
+  line-height: 18px;
+}
+.footer .top-footer .right-column .app-links {
+  margin-top: 20px;
+}
+.footer .top-footer .right-column .app-links img:first-child {
+  margin-right: 5px;
 }
 .footer .bottom-footer {
   overflow: hidden;

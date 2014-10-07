@@ -9,7 +9,7 @@
     z-index: 4;
     
     .team{
-      width: 113px;
+      min-width: 80px;
       position: absolute;
       
       img{
@@ -85,6 +85,11 @@
     display: table-cell;
     vertical-align: middle;
     
+    .timeline-elements{
+      white-space: nowrap;
+      font-size: 0;
+    }
+    
     .timeline{
       position: relative;
       z-index: 3;
@@ -93,7 +98,7 @@
       border-width: 1px 0;
       font-size: 0; //This is to fix the inline-block known issue
       white-space: nowrap;
-      padding-right: 40px;
+      display: inline-block;
       
       .time-lapse{
         background: url("../img/timeline/timeline-guide.png") repeat-x 12px 0;
@@ -117,30 +122,47 @@
           width: 41px;
         }
       }
+    }
+    
+    .penalty-goals{
+      position: relative;
+      display: inline-block;
+      line-height: @ls-match-timeline-height;
+      font-size: @font-size-small;
+      background-color: @ls-match-timeline-bg;
+      border: @ls-match-timeline-border;
+      padding-right: 40px;
+      z-index: 3;
       
-      .penalty-turn{
-        position: relative;
-        width: 22px;
-        line-height: @ls-match-timeline-height;
+      > div{
         display: inline-block;
-        top: -4px;
+        line-height: 26px;
+        padding: 0 5px;
+        
+        &.home{
+          position: relative;
+          top: -35px;
+        }
+        
+        &.away{
+          position: absolute;
+          left: 0;
+          bottom: -35px;
+        }
         
         span{
-          display: block;
-          position: absolute;
-          height: 19px;
-          width: 19px;
+          cursor: pointer; 
+          text-align: center;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          line-height: 18px;
+          color: @ls-light-color;
+          padding: 1px;
+          .border-radius(50%);
           
-          &.home{
-            top: -45px;
-          }
-          
-          &.away{
-            bottom: -45px;
-          }
-          
-          &.win{ background: url("../img/timeline/penalty-win.png") no-repeat 0 0; }
-          &.lose{ background: url("../img/timeline/penalty-lose.png") no-repeat 0 0; }
+          &.win{ background: #87B762; }
+          &.lose{ background: #E6523E; }
           
         }
       }
