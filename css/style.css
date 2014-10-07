@@ -8999,7 +8999,7 @@ span.sprite.a-football {
   left: 0;
   position: absolute;
   height: 100%;
-  z-index: 1;
+  z-index: 4;
 }
 .match-timeline .team-logos .team {
   width: 113px;
@@ -9060,7 +9060,7 @@ span.sprite.a-football {
 .match-timeline .timeline-scroll {
   position: relative;
   height: 145px;
-  background: url("../img/timeline/timeline-gray-bg.jpg") repeat-x 0 0;
+  background: url("../img/timeline/timeline-gray-bg.jpg") repeat 0 0;
   display: table-cell;
   vertical-align: middle;
 }
@@ -9120,7 +9120,7 @@ span.sprite.a-football {
   background: url("../img/timeline/penalty-lose.png") no-repeat 0 0;
 }
 .match-timeline .timeline-scroll .match-live-progress {
-  background: url("../img/timeline/timeline-bg.jpg") repeat-x 0 0;
+  background: url("../img/timeline/timeline-bg.jpg") repeat 0 0;
   z-index: 1;
   height: 100%;
   position: absolute;
