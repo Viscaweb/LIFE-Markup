@@ -202,12 +202,23 @@
       width: 100%;
       
       .replay{
-        background: url("../img/timeline/play-action.png") no-repeat;
+        background-color: @ls-match-timeline-replay-icon-bg;
+        .border-radius(50%);
         cursor: pointer;
         position: absolute;
         width: 20px;
         height: 20px;
         top: -10px;
+        padding: 2px;
+        
+        span{
+          font-size: @font-size-large;
+          color: @ls-light-color;
+        }
+        
+        &:hover{
+          background-color: @ls-match-timeline-replay-icon-hover;
+        }
       }
       
       .action{
