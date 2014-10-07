@@ -9167,12 +9167,26 @@ span.sprite.a-football {
   width: 100%;
 }
 .match-timeline .timeline-scroll .team-actions .replay {
-  background: url("../img/timeline/play-action.png") no-repeat;
+  background-color: #454a4c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   cursor: pointer;
   position: absolute;
   width: 20px;
   height: 20px;
   top: -10px;
+  padding: 2px;
+}
+.match-timeline .timeline-scroll .team-actions .replay span {
+  font-size: 16px;
+  color: #ffffff;
+}
+.match-timeline .timeline-scroll .team-actions .replay:hover {
+  background-color: #5da400;
 }
 .match-timeline .timeline-scroll .team-actions .action {
   cursor: pointer;
