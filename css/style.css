@@ -7169,7 +7169,9 @@ button.close {
 }
 .table {
   width: 100%;
+  border-bottom: 1px solid #fafafa;
   /*TR HIGHLIGHT STYLES*/
+  /*TD HIGHLIGHT STYLES*/
   /*MY GAMES TABLES*/
   /*MATCHES TABLES*/
 }
@@ -7235,7 +7237,7 @@ button.close {
   color: #5d5d5d;
   padding: 8px 20px;
 }
-.table tr th[colspan] {
+.table tr th.divider {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -7245,9 +7247,28 @@ button.close {
   vertical-align: middle !important;
   font-size: 12px;
   padding: 8px 10px;
+  border-top: 1px solid #f5f5f5;
 }
 .table tr:hover td {
   background-color: #ededed !important;
+}
+.table thead.league-data th .dropdown-toggle {
+  margin-right: 5px;
+}
+.table tr td.color-success,
+.table tr th.color-success {
+  color: #87b762;
+}
+.table tr td span.icon,
+.table tr th span.icon {
+  margin-right: 5px;
+}
+.table tr td span.country i,
+.table tr th span.country i {
+  margin-right: 5px;
+}
+.table tbody tr td.view-more {
+  background-color: #ffffff;
 }
 .table.table-striped > tbody > tr:nth-child(even) > th,
 .table.table-striped > tbody > tr:nth-child(even) > td {
@@ -7257,19 +7278,13 @@ button.close {
 .table.table-striped > tbody > tr:nth-child(odd) > td {
   background-color: #ffffff;
 }
-.table.table-condensed > thead > tr th {
+.table.table-condensed thead > tr th {
   border: 0;
   padding: 4px 7px;
   font-size: 11px;
   font-weight: 600;
 }
-.table.table-condensed > thead > tr th[colspan] {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-}
-.table.table-condensed > thead.league-data > tr > th {
+.table.table-condensed thead.league-data > tr > th {
   font-size: 12px;
   font-weight: 700;
   background-color: #767e82;
@@ -7287,7 +7302,6 @@ button.close {
   line-height: 16px;
   font-size: 12px;
   padding: 3px 7px;
-  border-top: 1px solid #f5f5f5;
   border-left: none;
 }
 .table.table-condensed tr td:first-child {
@@ -7319,6 +7333,21 @@ button.close {
   background-color: #f5d3cf !important;
 }
 .table > tbody > tr.event-draw td {
+  background-color: #faf1e6 !important;
+}
+.table tbody tr td.highlight {
+  background-color: #fff4ce !important;
+}
+.table tbody tr td.selected {
+  background-color: #e3e8f1 !important;
+}
+.table tbody tr td.event-won {
+  background-color: #e9f2e2 !important;
+}
+.table tbody tr td.event-lost {
+  background-color: #f5d3cf !important;
+}
+.table tbody tr td.event-draw {
   background-color: #faf1e6 !important;
 }
 .table > tbody > tr td > span.icon-arrow-down,
@@ -7416,15 +7445,22 @@ button.close {
 .table.my-games thead.league-data tr th {
   background-color: #5da400;
   color: #ffffff;
-}
-.table.my-games thead.league-data tr th i {
-  margin-right: 5px;
+  font-size: 12px;
 }
 .table.my-games thead.league-data tr th a {
   color: #ffffff;
 }
+.table.my-games thead.league-data tr th a.title {
+  margin-right: 5px;
+}
 .table.my-games thead.league-data tr th span {
   color: rgba(0, 0, 0, 0.1);
+}
+.table.my-games thead.league-data tr th span i {
+  color: #ffffff;
+}
+.table.my-games tbody tr td span.hour {
+  font-weight: 600;
 }
 .table.my-games tbody tr td .league {
   max-width: 20px;
@@ -7479,6 +7515,7 @@ button.close {
 .table.my-games tbody tr td.tools {
   padding: 0 5px;
   text-align: right;
+  font-size: 0;
 }
 .table.my-games tbody tr td.tools a {
   display: inline-block;
@@ -7498,9 +7535,6 @@ button.close {
 }
 .table.matches thead tr th {
   border-bottom: 1px solid #999999;
-}
-.table.matches thead tr th i {
-  margin-right: 5px;
 }
 .table.matches thead tr th .country {
   text-transform: uppercase;
@@ -7529,6 +7563,9 @@ button.close {
   vertical-align: middle;
   color: rgba(0, 0, 0, 0.2);
 }
+.table.matches thead tr th.tools a i.icon-standings {
+  margin-right: 5px;
+}
 .table.matches thead tr th.tools a:hover {
   background-color: #5da400;
   color: #ffffff;
@@ -7544,6 +7581,9 @@ button.close {
 }
 .table.matches thead tr th.tools a.live i {
   color: #e33000;
+}
+.table.matches tbody tr td span.hour {
+  font-weight: 600;
 }
 .table.matches tbody tr td .league {
   max-width: 20px;
@@ -7642,6 +7682,9 @@ button.close {
 }
 .table.matches tbody tr.highlight .score > a {
   color: #ffffff;
+}
+.table.matches.table-condensed tr td.prediction .btn-group .btn {
+  line-height: 15px;
 }
 /*LiveScore Components*/
 /*Main Colors*/
