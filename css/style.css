@@ -4516,13 +4516,6 @@ a.label:focus {
 .label-danger[href]:focus {
   background-color: #c43522;
 }
-.label-live {
-  background-color: #e33000;
-}
-.label-live[href]:hover,
-.label-live[href]:focus {
-  background-color: #b02500;
-}
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -6616,6 +6609,13 @@ button.close {
 .label-live {
   background-color: #e33000;
 }
+.label-live {
+  background-color: #e33000;
+}
+.label-live[href]:hover,
+.label-live[href]:focus {
+  background-color: #b02500;
+}
 /*Media List*/
 .media-list {
   border-top: 1px solid #ebebeb;
@@ -7270,6 +7270,18 @@ button.close {
 .table tbody tr td.view-more {
   background-color: #ffffff;
 }
+.table tbody tr:nth-child(2n+1) td.odd {
+  background-color: #fafafa !important;
+  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
+  -moz-box-shadow: -1px -1px 0 #ffffff inset;
+  box-shadow: -1px -1px 0 #ffffff inset;
+}
+.table tbody tr:nth-child(2n) td.odd {
+  background-color: #f0f0f0 !important;
+  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
+  -moz-box-shadow: -1px -1px 0 #ffffff inset;
+  box-shadow: -1px -1px 0 #ffffff inset;
+}
 .table.table-striped > tbody > tr:nth-child(even) > th,
 .table.table-striped > tbody > tr:nth-child(even) > td {
   background-color: #fafafa;
@@ -7446,12 +7458,16 @@ button.close {
   background-color: #5da400;
   color: #ffffff;
   font-size: 12px;
+  font-weight: 700;
 }
 .table.my-games thead.league-data tr th a {
   color: #ffffff;
 }
 .table.my-games thead.league-data tr th a.title {
   margin-right: 5px;
+}
+.table.my-games thead.league-data tr th a.icon-help {
+  font-size: 14px;
 }
 .table.my-games thead.league-data tr th span {
   color: rgba(0, 0, 0, 0.1);
@@ -9493,26 +9509,49 @@ span.sprite.a-football {
 }
 /*Match Odds */
 table.odds-1x2 tbody tr td.logo,
-table.odds-over-under tbody tr td.logo {
+table.odds-over-under tbody tr td.logo,
+table.odds-double-chance tbody tr td.logo,
+table.odds-half-time-full-time tbody tr td.logo {
   width: 22px;
   padding: 0 0 1px;
 }
 table.odds-1x2 tbody tr td.name,
-table.odds-over-under tbody tr td.name {
+table.odds-over-under tbody tr td.name,
+table.odds-double-chance tbody tr td.name,
+table.odds-half-time-full-time tbody tr td.name {
   width: 65%;
 }
 table.odds-1x2 tbody tr td.result,
-table.odds-over-under tbody tr td.result {
+table.odds-over-under tbody tr td.result,
+table.odds-double-chance tbody tr td.result,
+table.odds-half-time-full-time tbody tr td.result {
   text-align: center;
   width: 10%;
-  border: 1px solid #ffffff;
+  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
+  -moz-box-shadow: -1px -1px 0 #ffffff inset;
+  box-shadow: -1px -1px 0 #ffffff inset;
+}
+table.odds-1x2 tbody tr:first-child td.result,
+table.odds-over-under tbody tr:first-child td.result,
+table.odds-double-chance tbody tr:first-child td.result,
+table.odds-half-time-full-time tbody tr:first-child td.result {
+  -webkit-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
+  -moz-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
+  box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
 }
 table.odds-1x2 tbody tr:last-child td.result,
-table.odds-over-under tbody tr:last-child td.result {
-  border-bottom: 0;
+table.odds-over-under tbody tr:last-child td.result,
+table.odds-double-chance tbody tr:last-child td.result,
+table.odds-half-time-full-time tbody tr:last-child td.result {
+  -webkit-box-shadow: -1px 0 0 #ffffff inset;
+  -moz-box-shadow: -1px 0 0 #ffffff inset;
+  box-shadow: -1px 0 0 #ffffff inset;
 }
 table.odds-over-under tbody tr td.name {
   width: 75%;
+}
+table.odds-half-time-full-time tbody tr td.name {
+  width: 25%;
 }
 /*Structure*/
 .wrapper {
