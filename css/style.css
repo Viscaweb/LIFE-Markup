@@ -7860,6 +7860,11 @@ a.view-more {
 }
 a.view-more > span {
   font-size: 10px;
+  margin-right: 5px;
+}
+a.view-more > span > i {
+  vertical-align: middle;
+  font-size: 16px;
 }
 b,
 strong {

@@ -149,6 +149,20 @@
           background-color: @ls-light-color;
         }
       }
+      
+      &:nth-child(2n+1){ 
+        td.odd{
+          background-color: darken(@ls-light-color,2%) !important;
+          .box-shadow(-1px -1px 0 @ls-light-color inset);
+        }
+      }   
+      
+      &:nth-child(2n){
+        td.odd{
+          background-color: darken(@ls-light-color,6%) !important;
+          .box-shadow(-1px -1px 0 @ls-light-color inset);
+        }
+      }
     }
   }
   
@@ -405,12 +419,17 @@ tbody{
             background-color: @brand-primary;
             color: @ls-light-color;
             font-size: @font-size-small;
+            font-weight: @font-weight-bold;
             
             a{
               color: @ls-light-color;
               
               &.title{
                 margin-right: 5px;
+              }
+              
+              &.icon-help{
+                font-size: @font-size-normal;
               }
             }
             

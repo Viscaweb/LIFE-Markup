@@ -1,5 +1,5 @@
 table{
-  &.odds-1x2, &.odds-over-under{
+  &.odds-1x2, &.odds-over-under, &.odds-double-chance, &.odds-half-time-full-time{
     
     thead{}
     
@@ -21,7 +21,15 @@ table{
           &.result{
             text-align: center;
             width: 10%;
-            border:1px solid @ls-light-color;
+            .box-shadow(-1px -1px 0 @ls-light-color inset);
+          }
+        }
+      }
+      
+      tr:first-child{
+        td{
+          &.result{
+            .box-shadow(-1px -1px 0 @ls-light-color inset, -1px 1px 0 @ls-light-color inset);
           }
         }
       }
@@ -30,7 +38,7 @@ table{
         td{
           
           &.result{
-            border-bottom:0;
+            .box-shadow(-1px 0 0 @ls-light-color inset);
           }
         }
       }
@@ -47,6 +55,22 @@ table{
         
           &.name{
             width:75%;
+          }
+        }
+      }
+    }
+  }
+  
+  &.odds-half-time-full-time{
+  
+    tbody{
+    
+      tr{
+      
+        td{
+        
+          &.name{
+            width:25%;
           }
         }
       }
