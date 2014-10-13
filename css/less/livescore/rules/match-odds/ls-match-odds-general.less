@@ -1,0 +1,55 @@
+table{
+  &.odds-1x2, &.odds-over-under{
+    
+    thead{}
+    
+    tbody{
+     
+      tr{
+     
+        td{
+        
+          &.logo{
+            width: 22px;
+            padding: 0 0 1px;
+          }
+      
+          &.name{
+            width: 65%;
+          }
+          
+          &.result{
+            text-align: center;
+            width: 10%;
+            border:1px solid @ls-light-color;
+          }
+        }
+      }
+      
+      tr:last-child{
+        td{
+          
+          &.result{
+            border-bottom:0;
+          }
+        }
+      }
+    }
+  }
+  
+  &.odds-over-under{
+  
+    tbody{
+    
+      tr{
+      
+        td{
+        
+          &.name{
+            width:75%;
+          }
+        }
+      }
+    }
+  }
+}

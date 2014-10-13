@@ -9443,6 +9443,29 @@ span.sprite.a-football {
 .panel.team-form table tbody tr .score {
   width: 14% !important;
 }
+/*Match Odds */
+table.odds-1x2 tbody tr td.logo,
+table.odds-over-under tbody tr td.logo {
+  width: 22px;
+  padding: 0 0 1px;
+}
+table.odds-1x2 tbody tr td.name,
+table.odds-over-under tbody tr td.name {
+  width: 65%;
+}
+table.odds-1x2 tbody tr td.result,
+table.odds-over-under tbody tr td.result {
+  text-align: center;
+  width: 10%;
+  border: 1px solid #ffffff;
+}
+table.odds-1x2 tbody tr:last-child td.result,
+table.odds-over-under tbody tr:last-child td.result {
+  border-bottom: 0;
+}
+table.odds-over-under tbody tr td.name {
+  width: 75%;
+}
 /*Structure*/
 .wrapper {
   width: 100%;
