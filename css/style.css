@@ -7185,6 +7185,8 @@ button.close {
   color: #ffffff;
   text-transform: none;
   padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 700 !important;
 }
 .table > thead.league-data > tr > th .country {
   text-transform: uppercase;
@@ -7204,9 +7206,10 @@ button.close {
 }
 .table > thead.league-data > tr > th.tools a {
   display: inline-block;
-  padding: 2px 4px;
+  padding: 0 4px;
   color: #f5f5f5;
   font-weight: 400;
+  line-height: 22px;
 }
 .table > thead.league-data > tr > th.tools a i {
   font-size: 18px;
@@ -7217,10 +7220,18 @@ button.close {
   background-color: #5da400;
   color: #ffffff;
 }
+.table > thead.league-data > tr > th.tools a.fav {
+  vertical-align: middle;
+}
+.table > thead.league-data > tr > th.tools a.fav span {
+  font-size: 15px;
+  display: inline-block;
+}
 .table > thead.league-data > tr > th.tools a.active {
   color: #5da400;
 }
 .table > thead.league-data > tr > th.tools a.active.fav span {
+  font-size: 14px;
   color: #ffc600;
 }
 .table > thead.league-data > tr > th.tools a.active:hover {
@@ -7228,6 +7239,9 @@ button.close {
 }
 .table > thead.league-data > tr > th.tools a.live i {
   color: #e33000;
+}
+.table > thead.league-data > tr:hover > th {
+  background-color: #6e7679 !important;
 }
 .table tr th {
   background-color: #eaeaea;
@@ -7250,7 +7264,7 @@ button.close {
   border-top: 1px solid #f5f5f5;
 }
 .table tr:hover td {
-  background-color: #ededed !important;
+  background-color: #ededed;
 }
 .table thead.league-data th .dropdown-toggle {
   margin-right: 5px;
@@ -7270,6 +7284,9 @@ button.close {
 .table tbody tr td.view-more {
   background-color: #ffffff;
 }
+.table tbody tr td.prediction .btn-group-justified {
+  max-width: 69px;
+}
 .table tbody tr:nth-child(2n+1) td.odd {
   background-color: #fafafa !important;
   -webkit-box-shadow: -1px -1px 0 #ffffff inset;
@@ -7282,6 +7299,11 @@ button.close {
   -moz-box-shadow: -1px -1px 0 #ffffff inset;
   box-shadow: -1px -1px 0 #ffffff inset;
 }
+.table tbody tr td.odd:last-child {
+  -webkit-box-shadow: 0 -1px 0 #ffffff inset;
+  -moz-box-shadow: 0 -1px 0 #ffffff inset;
+  box-shadow: 0 -1px 0 #ffffff inset;
+}
 .table.table-striped > tbody > tr:nth-child(even) > th,
 .table.table-striped > tbody > tr:nth-child(even) > td {
   background-color: #fafafa;
@@ -7289,6 +7311,10 @@ button.close {
 .table.table-striped > tbody > tr:nth-child(odd) > th,
 .table.table-striped > tbody > tr:nth-child(odd) > td {
   background-color: #ffffff;
+}
+.table.table-striped > tbody > tr:nth-child(even):hover > td,
+.table.table-striped > tbody > tr:nth-child(odd):hover > td {
+  background-color: #ededed;
 }
 .table.table-condensed thead > tr th {
   border: 0;
@@ -7298,15 +7324,13 @@ button.close {
 }
 .table.table-condensed thead.league-data > tr > th {
   font-size: 12px;
-  font-weight: 700;
   background-color: #767e82;
   text-align: left;
   color: #ffffff;
   text-transform: none;
-  padding: 3px 8px;
+  padding: 2px 8px;
 }
 .table.table-condensed tr.league-data tr th {
-  font-weight: 700;
   font-size: 12px;
 }
 .table.table-condensed tr td {
@@ -7451,7 +7475,7 @@ button.close {
   color: #ffffff;
   text-transform: uppercase;
 }
-.table.no-border tr td {
+.table.no-border tr > td {
   border: 0;
 }
 .table.my-games thead.league-data tr th {
@@ -7535,9 +7559,9 @@ button.close {
 }
 .table.my-games tbody tr td.tools a {
   display: inline-block;
-  font-size: 18px;
-  padding: 5px 4px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.05);
+  padding: 5px 4px;
 }
 .table.my-games tbody tr td.tools a:hover {
   background-color: #5da400;
@@ -7570,7 +7594,6 @@ button.close {
 }
 .table.matches thead tr th.tools a {
   display: inline-block;
-  padding: 5px 4px;
   color: #f5f5f5;
   font-weight: 400;
 }
@@ -7620,8 +7643,10 @@ button.close {
   line-height: 25px;
   color: #5c5c5c;
 }
-.table.matches tbody tr td.team .label {
-  padding: 2px 4px;
+.table.matches tbody tr td.team .red-card {
+  padding: 0 2px;
+  background-color: #e33000;
+  font-weight: 400;
 }
 .table.matches tbody tr td.team img {
   max-width: 20px;
@@ -7679,9 +7704,10 @@ button.close {
 }
 .table.matches tbody tr td.tools a {
   display: inline-block;
-  font-size: 14px;
-  padding: 4px 4px;
+  font-size: 16px;
+  padding: 0 2px;
   color: rgba(0, 0, 0, 0.05);
+  line-height: 25px;
 }
 .table.matches tbody tr td.tools a:hover {
   background-color: #5da400;
@@ -9511,47 +9537,182 @@ span.sprite.a-football {
 table.odds-1x2 tbody tr td.logo,
 table.odds-over-under tbody tr td.logo,
 table.odds-double-chance tbody tr td.logo,
-table.odds-half-time-full-time tbody tr td.logo {
+table.odds-half-time-full-time tbody tr td.logo,
+table.odds-correct-score tbody tr td.logo,
+table.odds-goal-scorers tbody tr td.logo {
   width: 22px;
   padding: 0 0 1px;
 }
 table.odds-1x2 tbody tr td.name,
 table.odds-over-under tbody tr td.name,
 table.odds-double-chance tbody tr td.name,
-table.odds-half-time-full-time tbody tr td.name {
+table.odds-half-time-full-time tbody tr td.name,
+table.odds-correct-score tbody tr td.name,
+table.odds-goal-scorers tbody tr td.name {
   width: 65%;
 }
 table.odds-1x2 tbody tr td.result,
 table.odds-over-under tbody tr td.result,
 table.odds-double-chance tbody tr td.result,
-table.odds-half-time-full-time tbody tr td.result {
+table.odds-half-time-full-time tbody tr td.result,
+table.odds-correct-score tbody tr td.result,
+table.odds-goal-scorers tbody tr td.result {
   text-align: center;
   width: 10%;
   -webkit-box-shadow: -1px -1px 0 #ffffff inset;
   -moz-box-shadow: -1px -1px 0 #ffffff inset;
   box-shadow: -1px -1px 0 #ffffff inset;
 }
+table.odds-1x2 tbody tr td.result:last-child,
+table.odds-over-under tbody tr td.result:last-child,
+table.odds-double-chance tbody tr td.result:last-child,
+table.odds-half-time-full-time tbody tr td.result:last-child,
+table.odds-correct-score tbody tr td.result:last-child,
+table.odds-goal-scorers tbody tr td.result:last-child {
+  -webkit-box-shadow: 0 -1px 0 #ffffff inset;
+  -moz-box-shadow: 0 -1px 0 #ffffff inset;
+  box-shadow: 0 -1px 0 #ffffff inset;
+}
 table.odds-1x2 tbody tr:first-child td.result,
 table.odds-over-under tbody tr:first-child td.result,
 table.odds-double-chance tbody tr:first-child td.result,
-table.odds-half-time-full-time tbody tr:first-child td.result {
+table.odds-half-time-full-time tbody tr:first-child td.result,
+table.odds-correct-score tbody tr:first-child td.result,
+table.odds-goal-scorers tbody tr:first-child td.result {
   -webkit-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
   -moz-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
   box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
 }
+table.odds-1x2 tbody tr:first-child td.result:last-child,
+table.odds-over-under tbody tr:first-child td.result:last-child,
+table.odds-double-chance tbody tr:first-child td.result:last-child,
+table.odds-half-time-full-time tbody tr:first-child td.result:last-child,
+table.odds-correct-score tbody tr:first-child td.result:last-child,
+table.odds-goal-scorers tbody tr:first-child td.result:last-child {
+  -webkit-box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
+  -moz-box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
+  box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
+}
 table.odds-1x2 tbody tr:last-child td.result,
 table.odds-over-under tbody tr:last-child td.result,
 table.odds-double-chance tbody tr:last-child td.result,
-table.odds-half-time-full-time tbody tr:last-child td.result {
+table.odds-half-time-full-time tbody tr:last-child td.result,
+table.odds-correct-score tbody tr:last-child td.result,
+table.odds-goal-scorers tbody tr:last-child td.result {
   -webkit-box-shadow: -1px 0 0 #ffffff inset;
   -moz-box-shadow: -1px 0 0 #ffffff inset;
   box-shadow: -1px 0 0 #ffffff inset;
+}
+table.odds-1x2 tbody tr:last-child td.result:last-child,
+table.odds-over-under tbody tr:last-child td.result:last-child,
+table.odds-double-chance tbody tr:last-child td.result:last-child,
+table.odds-half-time-full-time tbody tr:last-child td.result:last-child,
+table.odds-correct-score tbody tr:last-child td.result:last-child,
+table.odds-goal-scorers tbody tr:last-child td.result:last-child {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 table.odds-over-under tbody tr td.name {
   width: 75%;
 }
 table.odds-half-time-full-time tbody tr td.name {
   width: 25%;
+}
+table.odds-correct-score > tbody > tr > td,
+table.odds-goal-scorers > tbody > tr > td {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+  cursor: pointer;
+}
+table.odds-correct-score > tbody > tr > td i,
+table.odds-goal-scorers > tbody > tr > td i {
+  font-size: 10px;
+  color: #969696;
+  display: none;
+  margin-left: 5px;
+}
+table.odds-correct-score > tbody > tr > td:hover i,
+table.odds-goal-scorers > tbody > tr > td:hover i {
+  display: inline-block;
+}
+table.odds-correct-score > tbody > tr > td a,
+table.odds-goal-scorers > tbody > tr > td a {
+  float: right;
+}
+table.odds-correct-score > tbody > tr > td.result,
+table.odds-goal-scorers > tbody > tr > td.result {
+  width: 33.3%;
+  text-align: left;
+  vertical-align: top !important;
+}
+table.odds-correct-score > tbody > tr > td .table-slide,
+table.odds-goal-scorers > tbody > tr > td .table-slide {
+  display: none;
+  position: relative;
+}
+table.odds-correct-score > tbody > tr > td .table-slide .table,
+table.odds-goal-scorers > tbody > tr > td .table-slide .table {
+  width: 100%;
+  background: transparent;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+table.odds-correct-score > tbody > tr > td .table-slide .table tbody tr td,
+table.odds-goal-scorers > tbody > tr > td .table-slide .table tbody tr td {
+  border-top: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+table.odds-goal-scorers thead tr th.logo {
+  width: 38%;
+}
+table.odds-goal-scorers thead tr th.logo img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 5px;
+}
+table.odds-goal-scorers tbody tr td i {
+  float: left;
+  line-height: 17px;
+  margin-left: -10px;
+}
+table.odds-goal-scorers tbody tr td.result {
+  width: 20%;
+  text-align: center;
+}
+table.odds-goal-scorers tbody tr td .table-slide .table {
+  margin-bottom: 13px;
+  margin-top: 8px;
+}
+table.odds-goal-scorers tbody tr td a {
+  float: none;
+}
+table.odds-goal-scorers tbody tr td:first-child {
+  vertical-align: top !important;
+}
+.offer-simple {
+  background: #f8f8f8;
+  padding: 12px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.offer-simple .content {
+  display: table-cell;
+}
+.offer-simple .content img {
+  margin: 0 15px 0 10px;
+}
+.offer-simple .content p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+.offer-simple .button {
+  display: table-cell;
+  text-align: right;
 }
 /*Structure*/
 .wrapper {

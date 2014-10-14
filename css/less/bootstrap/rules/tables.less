@@ -19,6 +19,8 @@
           color: @ls-light-color;
           text-transform: none;
           padding: 3px 8px;
+          font-size: @font-size-small;
+          font-weight: @font-weight-bold !important;
           
           .country{
             text-transform: uppercase;
@@ -41,9 +43,10 @@
             
             a{
               display: inline-block;
-              padding: 2px 4px;
+              padding: 0 4px;
               color: darken(@ls-light-color, 4%);
               font-weight: 400;
+              line-height: 22px;
               
               i{
                 font-size:  @font-size-base + 5;
@@ -55,10 +58,21 @@
                 background-color: @brand-primary;
                 color: @ls-light-color;
               }
+              
+              &.fav{
+                vertical-align: middle;
+                
+                span{
+                  font-size: @font-size-medium;
+                  display: inline-block;
+                }
+              }       
+              
               &.active{
                 color: @brand-primary;
                 &.fav{
                   span{
+                    font-size: @font-size-normal;
                     color: @ls-fav-hover;
                   }
                 }
@@ -67,6 +81,7 @@
                   color: @ls-light-color;
                 }
               }
+              
               &.live{
                 i{
                   color: @live-red;
@@ -74,6 +89,12 @@
               }
             }
             
+          }
+        }
+        
+        &:hover{
+          > th{
+            background-color: lighten(@ls-greyblue-dark, 18%) !important;
           }
         }
       }
@@ -105,9 +126,10 @@
       border-top: 1px solid darken(@ls-light-color, 4%);
     }
     
+    //General Hover Style
     &:hover{
       td{
-        background-color: @table-bg-hover !important;
+        background-color: @table-bg-hover;
       }
     }    
   }
@@ -148,8 +170,15 @@
         &.view-more{
           background-color: @ls-light-color;
         }
+        
+        &.prediction{
+          .btn-group-justified{
+            max-width: 69px;
+          }
+        }
       }
       
+      //General TD Odd Style
       &:nth-child(2n+1){ 
         td.odd{
           background-color: darken(@ls-light-color,2%) !important;
@@ -163,9 +192,16 @@
           .box-shadow(-1px -1px 0 @ls-light-color inset);
         }
       }
+      
+      td.odd:last-child{
+        .box-shadow(0 -1px 0 @ls-light-color inset);
+      }
+      
     }
   }
   
+  
+  //Table Striped Style
   &.table-striped{
     > tbody{
 
@@ -174,9 +210,16 @@
           background-color: darken(@ls-light-color,2%);
         }
       }
+      
       > tr:nth-child(odd){
         > th,> td{
           background-color: @ls-light-color;
+        }
+      }
+      
+      > tr:nth-child(even):hover, > tr:nth-child(odd):hover{
+        > td{
+          background-color: @table-bg-hover;
         }
       }
     }
@@ -197,12 +240,11 @@
         >tr{
           >th{
             font-size:  @font-size-small;
-            font-weight: 700;
             background-color: lighten(@ls-greyblue-dark, 21.3%);
             text-align: left;
             color: @ls-light-color;
             text-transform: none;
-            padding: 3px 8px;
+            padding: 2px 8px;
           }
         }
       }
@@ -213,8 +255,6 @@
       &.league-data{
         tr{
           th{
-            
-            font-weight: 700;
             font-size:  @font-size-small;
           }
         }
@@ -404,7 +444,7 @@ tbody{
   
   &.no-border{
     tr{
-      td{
+      > td{
         border: 0;
       }
     }
@@ -511,9 +551,9 @@ tbody{
             
             a{
               display: inline-block;
-              font-size:  @font-size-base + 5;
-              padding: 5px 4px;
+              font-size:  @font-size-large;
               color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
+              padding: 5px 4px;
               
               &:hover{
                 background-color: @brand-primary;
@@ -560,9 +600,9 @@ tbody{
           &.tools{
             text-align: right;
             padding: 0;
+            
             a{
               display: inline-block;
-              padding: 5px 4px;
               color: darken(@ls-light-color, 4%);
               font-weight: 400;
               
@@ -592,6 +632,7 @@ tbody{
                   color: @ls-light-color;
                 }
               }
+              
               &.live{
                 i{
                   color: @live-red;
@@ -632,8 +673,10 @@ tbody{
               color: lighten(@ls-dark-color, 36%);
             }
             
-            .label{
-              padding: 2px 4px;
+            .red-card{
+              padding: 0 2px;
+              background-color: @live-red;
+              font-weight: @font-weight-normal;
             }
             
             img{
@@ -701,9 +744,10 @@ tbody{
             
             a{
               display: inline-block;
-              font-size:  @font-size-base + 1;
-              padding: 4px 4px;
+              font-size:  @font-size-large;
+              padding: 0 2px;
               color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
+              line-height: 25px;
               
               &:hover{
                 background-color: @brand-primary;
