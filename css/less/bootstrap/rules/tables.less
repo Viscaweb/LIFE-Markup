@@ -13,7 +13,9 @@
 
     &.league-data{
       >tr{
+        
         >th{
+          cursor: pointer;
           background-color: lighten(@ls-greyblue-dark, 21.3%);
           text-align: left;
           color: @ls-light-color;
@@ -25,12 +27,11 @@
           .country{
             text-transform: uppercase;
             color: darken(@ls-light-color, 16%);
-            font-weight: 400;
-            cursor: default;
+            font-weight: @font-weight-normal; 
           }
           
           a{
-            color: @ls-light-color;
+            color: @ls-light-color; 
           }
           
           span{
@@ -134,6 +135,30 @@
     }    
   }
   
+    //Table Striped Style
+  &.table-striped{
+     tbody{
+
+      tr:nth-child(even){
+         th, td{
+          background-color: darken(@ls-light-color,2%);
+        }
+      }
+      
+      tr:nth-child(odd){
+         th, td{
+          background-color: @ls-light-color;
+        }
+      }
+      
+      tr:nth-child(even):hover,  tr:nth-child(odd):hover{
+         td{
+          background-color: @table-bg-hover;
+        }
+      }
+    }
+  }
+  
   //General Styles
   thead{
     &.league-data{
@@ -165,15 +190,59 @@
   
   //Deep level
   tbody{
-    tr{
-      td{
+    tr, tr:nth-child(even), tr:nth-child(odd){
+      > td{
         &.view-more{
           background-color: @ls-light-color;
+        }
+        
+        &.updated{
+          background-color: @live-red;
+          color: @ls-light-color;
         }
         
         &.prediction{
           .btn-group-justified{
             max-width: 69px;
+          }
+        }
+        
+        &.score{
+          font-size:  @font-size-base + 1;
+          font-weight: 700;
+          background-color: darken(@ls-light-color,3%);
+          text-align: center;
+          width: 50px;
+          padding: 0;
+          
+          > a{
+            position:relative;
+            display: block;
+            line-height: 25px;
+            color: lighten(@ls-dark-color,36%);
+            
+            &.has-score-details:after{
+              position: absolute;
+              right: 0;
+              bottom: -3px;
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: 4px solid transparent;
+              border-bottom: 5px solid transparent; 
+              border-left: 4px solid darken(@ls-light-color, 28%);
+              .rotate(45deg);
+            }
+          }
+
+          span.icon-expand-h{
+            color: darken(@ls-light-color,16%);
+          }
+        }
+        
+        &.tools{
+          a.available{
+            color: darken(@ls-light-color, 29%);
           }
         }
       }
@@ -197,33 +266,54 @@
         .box-shadow(0 -1px 0 @ls-light-color inset);
       }
       
+      //LIVE STYLES
+      &.live{
+        td{
+          
+          &.time{
+            color: @live-red;
+            
+            img, i{
+              margin-right: 3px;
+            }
+          }
+        
+          &.score{
+            a{
+              color: @live-red;
+            }
+          }
+          
+          &.tools{
+            a.available{
+              color: @brand-primary;
+              
+              &:hover{
+                color: @ls-light-color;
+              }
+              
+              i.icon-prono{
+                color: darken(@ls-light-color, 29%);
+              }
+            }
+          }
+        }
+        
+        &.highlight{
+          td{
+            &.score{
+              a{
+                color: @ls-light-color;
+              }
+            }
+          }
+        }
+      }
     }
   }
   
   
-  //Table Striped Style
-  &.table-striped{
-    > tbody{
 
-      > tr:nth-child(even){
-        > th,> td{
-          background-color: darken(@ls-light-color,2%);
-        }
-      }
-      
-      > tr:nth-child(odd){
-        > th,> td{
-          background-color: @ls-light-color;
-        }
-      }
-      
-      > tr:nth-child(even):hover, > tr:nth-child(odd):hover{
-        > td{
-          background-color: @table-bg-hover;
-        }
-      }
-    }
-  }
 
   &.table-condensed{
     thead{
@@ -368,10 +458,10 @@ tbody{
         &.event-outcome{
           color: @ls-light-color;
           width: 1%;
-          border-bottom: 1px solid @ls-light-color;
-          border-right: 1px solid @ls-light-color;
           text-transform: uppercase;
           text-align:center;
+          .box-shadow(1px -1px 0 @ls-light-color inset);
+          
         }
         
         &.event-outcome-won{
@@ -392,6 +482,7 @@ tbody{
         }
         &.event-outcome-upcoming{
           background-color: @ls-td-upcoming-bg !important;
+          color: @ls-light-color;
         }
       }
       
@@ -401,24 +492,18 @@ tbody{
             background-color: @ls-td-won-bg !important;
             color: @ls-light-color;
             width: 1%;
-            border-bottom: 1px solid @ls-light-color;
-            border-right: 1px solid @ls-light-color;
             text-transform: uppercase;
           }
           &.event-outcome-draw{
             background-color: @ls-td-draw-bg !important;
             color: @ls-light-color;
             width: 1%;
-            border-bottom: 1px solid @ls-light-color;
-            border-right: 1px solid @ls-light-color;
             text-transform: uppercase;
           }
           &.event-outcome-lost{
             background-color: @ls-td-lost-bg !important;
             color: @ls-light-color;
             width: 1%;
-            border-bottom: 1px solid @ls-light-color;
-            border-right: 1px solid @ls-light-color;
             text-transform: uppercase;
           }
           &.event-outcome-live{
@@ -428,8 +513,6 @@ tbody{
             background-color: @ls-td-live-bg !important;
             color: @live-red;
             width: 1%;
-            border-bottom: 1px solid @ls-light-color;
-            border-right: 1px solid @ls-light-color;
             text-transform: uppercase;
           }
           &.event-outcome-upcoming{
@@ -439,6 +522,14 @@ tbody{
           }
         }
       }
+      
+    &:last-child{
+      td{
+         &.event-outcome{
+          .box-shadow(1px 0 0 @ls-light-color inset);
+         }
+      }
+    }
   }
 }
   
@@ -577,7 +668,7 @@ tbody{
   
   /*MATCHES TABLES*/
   &.matches{
-    thead{
+    thead.league-data{
       tr{
         th{
           border-bottom: 1px solid lighten(@ls-dark-color, 60%);
@@ -586,7 +677,6 @@ tbody{
             text-transform: uppercase;
             color: darken(@ls-light-color, 16%);
             font-weight: 400;
-            cursor: default;
           }
           
           a{
@@ -718,25 +808,6 @@ tbody{
             }
           }
           
-          &.score{
-            font-size:  @font-size-base + 1;
-            font-weight: 700;
-            background-color: darken(@ls-light-color,3%);
-            text-align: center;
-            width: 50px;
-            padding: 0;
-            > a{
-              display: block;
-              line-height: 25px;
-              color: lighten(@ls-dark-color,36%);
-            }
-            &.live-red a{
-                color: @live-red;
-              }
-            span.icon-expand-h{
-              color: darken(@ls-light-color,16%);
-            }
-          }
           
           &.tools{
             padding: 0 5px;
@@ -784,6 +855,99 @@ tbody{
                 line-height: @font-size-medium;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  
+  /*STANDING TABLES*/
+  &.table-standing{
+    thead{
+      tr{
+        th{
+          border-bottom: 0;
+        }
+      }
+    }
+    
+    tbody{
+      tr{
+        td{
+          border: 0;
+        
+          &.rank-standing-green{ background-color: @ls-table-rank-standing-green !important; }
+          &.rank-standing-clear-green{ background-color: @ls-table-rank-standing-clear-green !important; }
+          &.rank-standing-blue{ background-color: @ls-table-rank-standing-blue; }
+          &.rank-standing-clear-blue{ background-color: @ls-table-rank-standing-clear-blue; }
+          &.rank-standing-orange{ background-color: @ls-table-rank-standing-orange; }
+          &.rank-standing-clear-orange{ background-color: @ls-table-rank-standing-clear-orange; }
+          &.rank-standing-red{ background-color: @ls-table-rank-standing-red; }
+          &.rank-standing-clear-red{ background-color: @ls-table-rank-standing-clear-red; }
+          
+          &.stats{
+            font-weight: @font-weight-semi-bold;
+          
+            &.up{
+              color: @brand-primary;
+            }
+            
+            &.down{
+              color: @live-red;
+            }
+          }
+        
+          &.team{
+            width: 18%;
+            
+            img{
+              margin-right: 5px;
+              max-width: 18px;
+              max-height: 18px;
+              vertical-align: top;
+            }
+          }
+          
+          &.number{
+            font-weight: @font-weight-semi-bold;
+          }
+          
+          &.live{
+            text-align: center;
+            width: 8px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+          
+          &.extra-points{
+            font-weight: @font-weight-semi-bold;
+            color: @brand-primary;
+          }
+          
+          &.points{
+            font-weight: @font-weight-bold;
+            text-align: right;
+            width: 3%;
+          }
+          
+          &.point{
+            text-align: right;
+            width: 6%;
+          }
+        }
+        
+        &.live{
+          td{
+            &.team{
+              font-weight: @font-weight-semi-bold;
+              color: @live-red;
+            }
+          }
+        }
+        
+        &.selected-row{
+          td{
+            background-color: @ls-table-standing-selected-tr-bg;
           }
         }
       }

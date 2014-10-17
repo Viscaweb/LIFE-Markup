@@ -1,0 +1,152 @@
+table.other-sport{
+
+  thead{
+  
+    span.match-name{
+      color: darken(@ls-light-color, 16%) !important;
+      font-weight: @font-weight-normal;
+    }
+  }
+  
+  tbody{
+    border-top: 0;
+   
+    &:nth-child(even){
+      background-color: darken(@ls-light-color,2%);
+    }
+    
+    &.highlight{
+      background-color: @ls-tr-highlight-bg;
+    }
+  
+    tr{
+    
+      td{
+        background-color: transparent !important;
+        border: 0;
+      }
+  
+      td.hour{
+        width: 5%;
+        font-weight: @font-weight-semi-bold;
+      }
+      
+      td.time{
+        width: 7%;
+        color: darken(@ls-light-color, 46%);
+      }
+      
+      td.teams{
+        width: 32%;
+        
+        i{
+          margin-right: 5px;
+        }
+      }
+      
+      td.score{
+        width: 5%;
+        background: rgba(0,0,0,0.06) !important;
+        .box-shadow(-1px 1px 0 @ls-light-color inset);
+        text-align: center;
+        font-size: @font-size-normal;
+        
+        &.main{
+          font-weight: @font-weight-bold;
+        }
+      }
+      
+      &:nth-child(2), td[rowspan]{
+        border-bottom: 2px solid darken(@ls-light-color, 11.5%);
+      }
+    
+    }
+  
+    &:hover{
+      background-color: @table-bg-hover;
+    }
+    
+    &.live{
+      
+      tr{
+      
+        td.score.main, td.time{
+          color: @live-red;
+        }
+        
+        td.time{
+          font-size: @font-size-x-small;
+          
+          img{
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  
+  &.sport-baseball{
+  
+    tbody{
+    
+      tr{
+      
+        td.teams{
+          width: 20%;
+        }
+        
+        td.score{
+          width: 3%;
+        }
+        
+        td.hits{
+          .box-shadow(-1px 1px 0 @ls-light-color inset, 3px 0 0 @ls-light-color inset);
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  
+  &.sport-tennis{
+  
+    thead{
+    
+      tr{
+      
+        th{
+        
+          img{
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+            margin-left: 2px;
+          }
+          
+          i.icon-man, .icon-woman{
+            font-size: @font-size-medium;
+            color: #8dc4ff;
+            vertical-align: middle;
+            display: inline-block;
+          }
+          
+          i.icon-woman{
+            color: #ffaef7;
+          }
+        }
+      }
+    }
+    
+    tbody{
+      
+      tr{
+      
+        td.teams{
+        
+          img{
+            float: right; 
+          }
+        }
+      }
+    }
+  }
+}

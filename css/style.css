@@ -9714,6 +9714,98 @@ table.odds-goal-scorers tbody tr td:first-child {
   display: table-cell;
   text-align: right;
 }
+/*Other Sports*/
+table.other-sport thead span.match-name {
+  color: #d6d6d6 !important;
+  font-weight: 400;
+}
+table.other-sport tbody {
+  border-top: 0;
+}
+table.other-sport tbody:nth-child(even) {
+  background-color: #fafafa;
+}
+table.other-sport tbody.highlight {
+  background-color: #fff4ce;
+}
+table.other-sport tbody tr td {
+  background-color: transparent !important;
+  border: 0;
+}
+table.other-sport tbody tr td.hour {
+  width: 5%;
+  font-weight: 600;
+}
+table.other-sport tbody tr td.time {
+  width: 7%;
+  color: #8a8a8a;
+}
+table.other-sport tbody tr td.teams {
+  width: 32%;
+}
+table.other-sport tbody tr td.teams i {
+  margin-right: 5px;
+}
+table.other-sport tbody tr td.score {
+  width: 5%;
+  background: rgba(0, 0, 0, 0.06) !important;
+  -webkit-box-shadow: -1px 1px 0 #ffffff inset;
+  -moz-box-shadow: -1px 1px 0 #ffffff inset;
+  box-shadow: -1px 1px 0 #ffffff inset;
+  text-align: center;
+  font-size: 14px;
+}
+table.other-sport tbody tr td.score.main {
+  font-weight: 700;
+}
+table.other-sport tbody tr:nth-child(2),
+table.other-sport tbody tr td[rowspan] {
+  border-bottom: 2px solid #e2e2e2;
+}
+table.other-sport tbody:hover {
+  background-color: #ededed;
+}
+table.other-sport tbody.live tr td.score.main,
+table.other-sport tbody.live tr td.time {
+  color: #e33000;
+}
+table.other-sport tbody.live tr td.time {
+  font-size: 11px;
+}
+table.other-sport tbody.live tr td.time img {
+  margin-right: 3px;
+}
+table.other-sport.sport-baseball tbody tr td.teams {
+  width: 20%;
+}
+table.other-sport.sport-baseball tbody tr td.score {
+  width: 3%;
+}
+table.other-sport.sport-baseball tbody tr td.hits {
+  -webkit-box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
+  -moz-box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
+  box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
+  padding-left: 10px;
+}
+table.other-sport.sport-tennis thead tr th img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+table.other-sport.sport-tennis thead tr th i.icon-man,
+table.other-sport.sport-tennis thead tr th .icon-woman {
+  font-size: 15px;
+  color: #8dc4ff;
+  vertical-align: middle;
+  display: inline-block;
+}
+table.other-sport.sport-tennis thead tr th i.icon-woman {
+  color: #ffaef7;
+}
+table.other-sport.sport-tennis tbody tr td.teams img {
+  float: right;
+}
 /*Structure*/
 .wrapper {
   width: 100%;
