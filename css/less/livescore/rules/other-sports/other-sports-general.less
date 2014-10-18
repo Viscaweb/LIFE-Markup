@@ -50,10 +50,15 @@ table.other-sport{
         .box-shadow(-1px 1px 0 @ls-light-color inset);
         text-align: center;
         font-size: @font-size-normal;
+        font-weight: @font-weight-normal !important;
         
         &.main{
-          font-weight: @font-weight-bold;
+          font-weight: @font-weight-bold !important;
         }
+      }
+      
+      td.tools{
+        text-align: right;        
       }
       
       &:nth-child(2), td[rowspan]{
@@ -101,7 +106,7 @@ table.other-sport{
         
         td.hits{
           .box-shadow(-1px 1px 0 @ls-light-color inset, 3px 0 0 @ls-light-color inset);
-          padding-left: 10px;
+          padding-left: 5px;
         }
       }
     }
