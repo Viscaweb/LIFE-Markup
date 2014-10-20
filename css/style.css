@@ -6301,7 +6301,7 @@ button.close {
   margin-left: 10px;
 }
 .btn.large-icon {
-  padding: 6px 40px 5px 11px;
+  padding: 6px 22px 5px 11px;
 }
 .btn.large-icon > span.icon {
   color: #9c9c9c;
@@ -6402,6 +6402,7 @@ button.close {
   color: #0053a8;
   background: #ffffff;
   outline: none;
+  font-weight: 600;
 }
 .btn-link.active,
 .btn-link:focus.active {
@@ -7005,8 +7006,10 @@ button.close {
   margin-right: 10px;
   vertical-align: bottom;
 }
-.panel > .panel-heading .panel-title span.glyphicon {
-  margin-right: 6px;
+.panel > .panel-heading .panel-title span.glyphicon,
+.panel > .panel-heading .panel-title span.icon {
+  margin-right: 5px;
+  vertical-align: middle;
 }
 .panel > .panel-heading .tools {
   float: right;
@@ -7025,6 +7028,11 @@ button.close {
 .panel > .panel-heading .tools a span {
   color: #949494;
   font-size: 10px;
+}
+.panel > .panel-heading .tools a span.icon-caret-right {
+  font-size: 8px;
+  color: #0053a8;
+  margin-right: 3px;
 }
 .panel > .panel-heading .tools .badge {
   font-size: 12px;
@@ -7070,6 +7078,36 @@ button.close {
 .panel > .panel-body.no-padding {
   padding: 0;
 }
+.panel .description {
+  margin-bottom: 5px;
+}
+.panel .description .name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8c8c8c;
+  display: inline-block;
+  background-color: #f8f8f8;
+  padding: 3px 7px;
+  position: relative;
+}
+.panel .description .name:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 23px solid #f8f8f8;
+}
+.panel .description .date {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8c8c8c;
+  float: right;
+  padding: 3px 7px;
+}
 .panel.panel-condensed .panel-body {
   font-weight: lighter;
   padding: 15px;
@@ -7080,6 +7118,7 @@ button.close {
 }
 .panel.panel-inverse {
   border-color: #313536;
+  background-color: #444a4c;
 }
 .panel.panel-inverse .panel-heading {
   background-color: #313536;
@@ -7088,6 +7127,12 @@ button.close {
 .panel.panel-inverse .panel-heading .panel-title {
   color: #c2c2c2;
 }
+.panel.panel-inverse .not-available {
+  font-weight: 600;
+  font-size: 12px;
+  color: #dadada;
+  margin: 13px 0 11px;
+}
 .panel.panel-inverse .panel-body {
   color: #fff;
   background-color: #444a4c;
@@ -7095,9 +7140,50 @@ button.close {
 .panel.panel-inverse a {
   color: #9ccdff;
 }
+.panel.panel-inverse a .icon-caret-right {
+  color: #9ccdff !important;
+}
 .panel.panel-inverse b,
 .panel.panel-inverse strong {
   color: #f5f5f5;
+}
+.panel.panel-inverse .description {
+  background-color: #444a4c;
+}
+.panel.panel-inverse .description .name {
+  background-color: #313536;
+}
+.panel.panel-inverse .description .name:after {
+  border-top-color: #313536;
+}
+.panel.panel-inverse .description .date {
+  color: #dadada;
+}
+.panel.panel-inverse table.table-striped {
+  border-bottom: 0;
+}
+.panel.panel-inverse table.table-striped tbody tr td a {
+  color: #ffffff;
+}
+.panel.panel-inverse table.table-striped tbody tr:nth-child(even) th,
+.panel.panel-inverse table.table-striped tbody tr:nth-child(even) td {
+  background-color: #3b3f41;
+}
+.panel.panel-inverse table.table-striped tbody tr:nth-child(even) th.score,
+.panel.panel-inverse table.table-striped tbody tr:nth-child(even) td.score {
+  background-color: #383d3e;
+}
+.panel.panel-inverse table.table-striped tbody tr:nth-child(odd) th,
+.panel.panel-inverse table.table-striped tbody tr:nth-child(odd) td {
+  background-color: #444a4c;
+}
+.panel.panel-inverse table.table-striped tbody tr:nth-child(odd) th.score,
+.panel.panel-inverse table.table-striped tbody tr:nth-child(odd) td.score {
+  background-color: #3d4244;
+}
+.panel.panel-inverse table.table-striped tbody tr:nth-child(even):hover td,
+.panel.panel-inverse table.table-striped tbody tr:nth-child(odd):hover td {
+  background-color: #363a3c;
 }
 .nav-tabs {
   background: #fcfcfc;
@@ -7147,6 +7233,7 @@ button.close {
   margin-right: 0;
   color: #434343;
   outline: none;
+  font-weight: 600;
 }
 .nav-tabs > li > a:focus {
   border-left: none;
@@ -7303,8 +7390,8 @@ button.close {
 .table tbody tr > td.updated,
 .table tbody tr:nth-child(even) > td.updated,
 .table tbody tr:nth-child(odd) > td.updated {
-  background-color: #e33000;
-  color: #ffffff;
+  background-color: #e33000 !important;
+  color: #ffffff !important;
 }
 .table tbody tr > td.prediction .btn-group-justified,
 .table tbody tr:nth-child(even) > td.prediction .btn-group-justified,
@@ -7318,7 +7405,6 @@ button.close {
   font-weight: 700;
   background-color: #f7f7f7;
   text-align: center;
-  width: 50px;
   padding: 0;
 }
 .table tbody tr > td.score > a,
@@ -7352,10 +7438,41 @@ button.close {
 .table tbody tr:nth-child(odd) > td.score span.icon-expand-h {
   color: #d6d6d6;
 }
+.table tbody tr > td.tools,
+.table tbody tr:nth-child(even) > td.tools,
+.table tbody tr:nth-child(odd) > td.tools {
+  padding: 0 5px;
+  text-align: right;
+}
+.table tbody tr > td.tools a,
+.table tbody tr:nth-child(even) > td.tools a,
+.table tbody tr:nth-child(odd) > td.tools a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 2px;
+  color: rgba(0, 0, 0, 0.05);
+  line-height: 25px;
+}
 .table tbody tr > td.tools a.available,
 .table tbody tr:nth-child(even) > td.tools a.available,
 .table tbody tr:nth-child(odd) > td.tools a.available {
   color: #b5b5b5;
+}
+.table tbody tr > td.tools a:hover,
+.table tbody tr:nth-child(even) > td.tools a:hover,
+.table tbody tr:nth-child(odd) > td.tools a:hover {
+  background-color: #5da400;
+  color: #ffffff;
+}
+.table tbody tr > td.tools a.active,
+.table tbody tr:nth-child(even) > td.tools a.active,
+.table tbody tr:nth-child(odd) > td.tools a.active {
+  color: #5da400;
+}
+.table tbody tr > td.tools a.active:hover,
+.table tbody tr:nth-child(even) > td.tools a.active:hover,
+.table tbody tr:nth-child(odd) > td.tools a.active:hover {
+  color: #ffffff;
 }
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
@@ -7365,6 +7482,11 @@ button.close {
   -moz-box-shadow: -1px -1px 0 #ffffff inset;
   box-shadow: -1px -1px 0 #ffffff inset;
 }
+.table tbody tr:nth-child(2n+1) td.striped,
+.table tbody tr:nth-child(even):nth-child(2n+1) td.striped,
+.table tbody tr:nth-child(odd):nth-child(2n+1) td.striped {
+  background-color: #fafafa !important;
+}
 .table tbody tr:nth-child(2n) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n) td.odd {
@@ -7372,6 +7494,11 @@ button.close {
   -webkit-box-shadow: -1px -1px 0 #ffffff inset;
   -moz-box-shadow: -1px -1px 0 #ffffff inset;
   box-shadow: -1px -1px 0 #ffffff inset;
+}
+.table tbody tr:nth-child(2n) td.striped,
+.table tbody tr:nth-child(even):nth-child(2n) td.striped,
+.table tbody tr:nth-child(odd):nth-child(2n) td.striped {
+  background-color: #f0f0f0 !important;
 }
 .table tbody tr td.odd:last-child,
 .table tbody tr:nth-child(even) td.odd:last-child,
@@ -7403,15 +7530,20 @@ button.close {
 .table tbody tr:nth-child(odd).live td.tools a.available {
   color: #5da400;
 }
+.table tbody tr.live td.tools a.available i.icon-prono,
+.table tbody tr:nth-child(even).live td.tools a.available i.icon-prono,
+.table tbody tr:nth-child(odd).live td.tools a.available i.icon-prono {
+  color: #b5b5b5;
+}
 .table tbody tr.live td.tools a.available:hover,
 .table tbody tr:nth-child(even).live td.tools a.available:hover,
 .table tbody tr:nth-child(odd).live td.tools a.available:hover {
   color: #ffffff;
 }
-.table tbody tr.live td.tools a.available i.icon-prono,
-.table tbody tr:nth-child(even).live td.tools a.available i.icon-prono,
-.table tbody tr:nth-child(odd).live td.tools a.available i.icon-prono {
-  color: #b5b5b5;
+.table tbody tr.live td.tools a.available:hover i.icon-prono,
+.table tbody tr:nth-child(even).live td.tools a.available:hover i.icon-prono,
+.table tbody tr:nth-child(odd).live td.tools a.available:hover i.icon-prono {
+  color: #ffffff;
 }
 .table tbody tr.live.highlight td.score a,
 .table tbody tr:nth-child(even).live.highlight td.score a,
@@ -7451,6 +7583,10 @@ button.close {
 .table.table-condensed tr td span.icon-caret-right,
 .table.table-condensed tr td span.icon-caret-right {
   font-size: 10px;
+}
+.table.table-condensed tr td.team img {
+  max-height: 18px;
+  max-width: 18px;
 }
 .table tr.stats td.stat {
   background-color: #fafafa;
@@ -7779,27 +7915,6 @@ button.close {
   float: right;
   padding: 0 1px;
 }
-.table.matches tbody tr td.tools {
-  padding: 0 5px;
-  text-align: right;
-}
-.table.matches tbody tr td.tools a {
-  display: inline-block;
-  font-size: 16px;
-  padding: 0 2px;
-  color: rgba(0, 0, 0, 0.05);
-  line-height: 25px;
-}
-.table.matches tbody tr td.tools a:hover {
-  background-color: #5da400;
-  color: #ffffff;
-}
-.table.matches tbody tr td.tools a.active {
-  color: #5da400;
-}
-.table.matches tbody tr td.tools a.active:hover {
-  color: #ffffff;
-}
 .table.matches tbody tr.highlight .score {
   background-color: #e33000 !important;
 }
@@ -7812,6 +7927,10 @@ button.close {
 .table.table-standing thead tr th {
   border-bottom: 0;
 }
+.table.table-standing thead tr th span.match-name {
+  color: #d6d6d6 !important;
+  font-weight: 400;
+}
 .table.table-standing tbody tr td {
   border: 0;
 }
@@ -7822,25 +7941,27 @@ button.close {
   background-color: #e3f1d9 !important;
 }
 .table.table-standing tbody tr td.rank-standing-blue {
-  background-color: #bee1ec;
+  background-color: #bee1ec !important;
 }
 .table.table-standing tbody tr td.rank-standing-clear-blue {
-  background-color: #dcf2f9;
+  background-color: #dcf2f9 !important;
 }
 .table.table-standing tbody tr td.rank-standing-orange {
-  background-color: #f3ca88;
+  background-color: #f3ca88 !important;
 }
 .table.table-standing tbody tr td.rank-standing-clear-orange {
-  background-color: #f6ddb4;
+  background-color: #f6ddb4 !important;
 }
 .table.table-standing tbody tr td.rank-standing-red {
-  background-color: #eebaba;
+  background-color: #eebaba !important;
 }
 .table.table-standing tbody tr td.rank-standing-clear-red {
-  background-color: #f5cdcd;
+  background-color: #f5cdcd !important;
 }
 .table.table-standing tbody tr td.stats {
   font-weight: 600;
+  padding-left: 4px;
+  padding-right: 1px;
 }
 .table.table-standing tbody tr td.stats.up {
   color: #5da400;
@@ -7849,7 +7970,7 @@ button.close {
   color: #e33000;
 }
 .table.table-standing tbody tr td.team {
-  width: 18%;
+  width: 20%;
 }
 .table.table-standing tbody tr td.team img {
   margin-right: 5px;
@@ -7859,6 +7980,7 @@ button.close {
 }
 .table.table-standing tbody tr td.number {
   font-weight: 600;
+  text-align: right;
 }
 .table.table-standing tbody tr td.live {
   text-align: center;
@@ -7869,6 +7991,8 @@ button.close {
 .table.table-standing tbody tr td.extra-points {
   font-weight: 600;
   color: #5da400;
+  padding-left: 0;
+  padding-right: 0;
 }
 .table.table-standing tbody tr td.points {
   font-weight: 700;
@@ -7877,7 +8001,7 @@ button.close {
 }
 .table.table-standing tbody tr td.point {
   text-align: right;
-  width: 6%;
+  width: 4%;
 }
 .table.table-standing tbody tr.live td.team {
   font-weight: 600;
@@ -7885,6 +8009,12 @@ button.close {
 }
 .table.table-standing tbody tr.selected-row td {
   background-color: #d2dae8;
+}
+.table.table-standing tbody tr:nth-child(even) td.number {
+  background-color: #e6e6e6;
+}
+.table.table-standing tbody tr:nth-child(odd) td.number {
+  background-color: #efefef;
 }
 /*LiveScore Components*/
 /*Main Colors*/
@@ -9913,9 +10043,13 @@ table.other-sport tbody tr td.score {
   box-shadow: -1px 1px 0 #ffffff inset;
   text-align: center;
   font-size: 14px;
+  font-weight: 400 !important;
 }
 table.other-sport tbody tr td.score.main {
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+table.other-sport tbody tr td.tools {
+  text-align: right;
 }
 table.other-sport tbody tr:nth-child(2),
 table.other-sport tbody tr td[rowspan] {
@@ -9944,7 +10078,7 @@ table.other-sport.sport-baseball tbody tr td.hits {
   -webkit-box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
   -moz-box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
   box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 table.other-sport.sport-tennis thead tr th img {
   height: 20px;
