@@ -252,12 +252,31 @@
             line-height: 25px;
             
             &.available{
+              position: relative;
               color: darken(@ls-light-color, 29%);
+              
+              .comment-number{
+                color: @ls-light-color;
+                font-size: @font-size-x-tiny - 2px; 
+                line-height: @font-size-x-tiny - 1px;
+                font-weight: @font-weight-semi-bold;
+                text-align: center;
+                position: absolute;
+                width: 100%;
+                top: 5px;
+                left: 0;
+              }
             }            
             
             &:hover{
               background-color: @brand-primary;
               color: @ls-light-color;
+              
+              &.available{
+                .comment-number{
+                  color: @brand-primary;
+                }
+              }
             }
             
             &.active{
@@ -427,28 +446,38 @@
 > tbody{
   > tr{
     &.highlight{
+            background-color: @ls-tr-highlight-bg !important;
+
       td{
-        background-color: @ls-tr-highlight-bg !important;
+        background-color: transparent !important;
       }
     }
     &.selected{
+      background-color: @ls-tr-selected-bg !important;
+    
       td{
-        background-color: @ls-tr-selected-bg !important;
+        background-color: transparent !important;
       }
     }
     &.event-won{
+      background-color: @ls-tr-won-bg !important;
+      
       td{
-        background-color: @ls-tr-won-bg !important;
-      }
+        background-color: transparent !important;
+      }    
     }
     &.event-lost{
+      background-color: @ls-tr-lost-bg !important;
+      
       td{
-        background-color: @ls-tr-lost-bg !important;
-      }
+        background-color: transparent !important;
+      }    
     }
     &.event-draw{
+      background-color: @ls-tr-draw-bg !important;
+      
       td{
-        background-color: @ls-tr-draw-bg !important;
+        background-color: transparent !important;
       }
     }
   }

@@ -7456,13 +7456,32 @@ button.close {
 .table tbody tr > td.tools a.available,
 .table tbody tr:nth-child(even) > td.tools a.available,
 .table tbody tr:nth-child(odd) > td.tools a.available {
+  position: relative;
   color: #b5b5b5;
+}
+.table tbody tr > td.tools a.available .comment-number,
+.table tbody tr:nth-child(even) > td.tools a.available .comment-number,
+.table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
+  color: #ffffff;
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  left: 0;
 }
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
 .table tbody tr:nth-child(odd) > td.tools a:hover {
   background-color: #5da400;
   color: #ffffff;
+}
+.table tbody tr > td.tools a:hover.available .comment-number,
+.table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
+.table tbody tr:nth-child(odd) > td.tools a:hover.available .comment-number {
+  color: #5da400;
 }
 .table tbody tr > td.tools a.active,
 .table tbody tr:nth-child(even) > td.tools a.active,
@@ -7594,20 +7613,35 @@ button.close {
 .table tr.stats:nth-child(even) td.stat {
   background-color: #f0f0f0;
 }
-.table > tbody > tr.highlight td {
+.table > tbody > tr.highlight {
   background-color: #fff4ce !important;
 }
-.table > tbody > tr.selected td {
+.table > tbody > tr.highlight td {
+  background-color: transparent !important;
+}
+.table > tbody > tr.selected {
   background-color: #e3e8f1 !important;
 }
-.table > tbody > tr.event-won td {
+.table > tbody > tr.selected td {
+  background-color: transparent !important;
+}
+.table > tbody > tr.event-won {
   background-color: #e9f2e2 !important;
 }
-.table > tbody > tr.event-lost td {
+.table > tbody > tr.event-won td {
+  background-color: transparent !important;
+}
+.table > tbody > tr.event-lost {
   background-color: #f5d3cf !important;
 }
-.table > tbody > tr.event-draw td {
+.table > tbody > tr.event-lost td {
+  background-color: transparent !important;
+}
+.table > tbody > tr.event-draw {
   background-color: #faf1e6 !important;
+}
+.table > tbody > tr.event-draw td {
+  background-color: transparent !important;
 }
 .table tbody tr td.highlight {
   background-color: #fff4ce !important;
@@ -8060,10 +8094,12 @@ button.close {
 }
 .content-header .info .title a {
   display: inline-block;
-  color: #b0b0b0;
+  vertical-align: middle;
+}
+.content-header .info .title a span {
   font-size: 14px;
   margin-left: 10px;
-  vertical-align: middle;
+  color: #b0b0b0;
 }
 .content-header .info .title a:hover {
   color: #a1a1a1;
@@ -8075,13 +8111,15 @@ button.close {
   font-weight: 400;
 }
 .content-header .info a {
-  color: #a6a6a6;
   display: block;
   font-size: 11px;
   margin-bottom: 3px;
 }
 .content-header .info a span {
   margin-right: 5px;
+}
+.content-header .info a.name {
+  color: #a6a6a6;
 }
 .content-header.teams .shirts {
   float: right;
@@ -8287,6 +8325,24 @@ span.sprite.a-football {
   width: 22px;
   margin-bottom: -4px !important;
   margin-left: -2px;
+}
+span.yellow-card {
+  width: 12px;
+  background: url("../img/sprite-icons.png") no-repeat -120px -5px;
+}
+span.red-card {
+  width: 12px;
+  background: url("../img/sprite-icons.png") no-repeat -146px -5px;
+}
+span.yellow-red-card {
+  width: 12px;
+  background: url("../img/sprite-icons.png") no-repeat -176px -5px;
+}
+span.sprite.goal {
+  background: url("../img/sprite-icons.png") no-repeat -60px -26px;
+}
+span.sprite.penalty-goal {
+  background: url("../img/sprite-icons.png") no-repeat -3px -50px;
 }
 .visual-block {
   background: #d4d4d4;
@@ -9344,6 +9400,7 @@ span.sprite.a-football {
 }
 .panel.match-information .table thead tr th.team {
   background-color: #454a4c;
+  width: 40%;
 }
 .panel.match-information .table thead tr th.team .row {
   margin: 0;
@@ -9360,6 +9417,32 @@ span.sprite.a-football {
   text-align: right;
   font-size: 20px;
   font-weight: 700;
+  line-height: 32px;
+}
+.panel.match-information .table thead tr th.team .name a {
+  display: inline-block;
+  color: #dfdfdf;
+  margin-left: 7px;
+  position: relative;
+}
+.panel.match-information .table thead tr th.team .name a .qualified {
+  color: #6bbe00;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  bottom: -10px;
+  right: 0;
+  position: absolute;
+}
+.panel.match-information .table thead tr th.team .name a .qualified i {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.panel.match-information .table thead tr th.team .name a.star {
+  color: #b1b1b1;
+}
+.panel.match-information .table thead tr th.team .name a.star span {
+  font-size: 14px;
 }
 .panel.match-information .table thead tr th.team.away-team .logo {
   text-align: right;
@@ -9367,8 +9450,154 @@ span.sprite.a-football {
 .panel.match-information .table thead tr th.team.away-team .name {
   text-align: left;
 }
+.panel.match-information .table thead tr th.team.away-team .name a {
+  margin-left: 0;
+  margin-right: 7px;
+}
+.panel.match-information .table thead tr th.team.away-team .name a .qualified {
+  left: 0;
+  right: auto;
+}
 .panel.match-information .table thead tr th.score {
-  background-color: #333739;
+  text-align: center;
+  background-color: #313536;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 10%;
+}
+.panel.match-information .table thead tr th.score span {
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 31px;
+  color: #ffffff;
+}
+.panel.match-information .table thead tr th.score span.versus {
+  margin: 0 7px;
+}
+.panel.match-information .table tbody tr td.team-information {
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-left: 0;
+  vertical-align: top !important;
+}
+.panel.match-information .table tbody tr td.team-information .standings {
+  display: inline-block;
+}
+.panel.match-information .table tbody tr td.team-information .standings table {
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+}
+.panel.match-information .table tbody tr td.team-information .standings table tbody td {
+  min-width: 22px;
+  padding: 3px 4px;
+  line-height: 14px;
+}
+.panel.match-information .table tbody tr td.team-information .standings table tbody td.position {
+  padding-top: 6px;
+  text-align: center;
+  font-weight: 700;
+}
+.panel.match-information .table tbody tr td.team-information .faults {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+  float: right;
+  font-size: 0;
+}
+.panel.match-information .table tbody tr td.team-information .faults span {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 2px;
+}
+.panel.match-information .table tbody tr td.team-information ul.players {
+  clear: both;
+  width: 100%;
+  text-align: right;
+  padding: 0;
+}
+.panel.match-information .table tbody tr td.team-information ul.players li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 22px;
+}
+.panel.match-information .table tbody tr td.team-information ul.players li span {
+  margin-left: 5px;
+}
+.panel.match-information .table tbody tr td.team-information.away {
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 0;
+}
+.panel.match-information .table tbody tr td.team-information.away .standings {
+  float: right;
+}
+.panel.match-information .table tbody tr td.team-information.away .faults {
+  float: none;
+  text-align: left;
+}
+.panel.match-information .table tbody tr td.team-information.away ul.players {
+  text-align: left;
+}
+.panel.match-information .table tbody tr td.team-information.away ul.players li span {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.panel.match-information .table tbody tr td.middle {
+  padding: 2px 0;
+  vertical-align: top !important;
+}
+.panel.match-information .table tbody tr td.middle > .score {
+  background-color: #454a4c;
+  padding: 5px 0;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+.panel.match-information .table tbody tr td.middle > .score .title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #c4c4c4;
+  text-transform: uppercase;
+}
+.panel.match-information .table tbody tr td.middle > .score span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #ffffff;
+}
+.panel.match-information .table tbody tr td.middle > .score span.versus {
+  margin: 0 3px;
+}
+.panel.match-information .table tbody tr td.middle > .score span.success {
+  color: #5da400;
+}
+.panel.match-information .table tbody tr td.middle > .title {
+  background-color: #dbdbdb;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 0 5px;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.panel.match-information .table tbody tr td.middle .time-zone {
+  background-color: #dbdbdb;
+  padding: 3px 7px 5px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.panel.match-information .table tbody tr td.middle .time-zone span.score {
+  font-weight: 700;
+  font-size: 13px;
+  float: right;
+}
+.panel.match-information .table tbody tr:hover td {
+  background-color: transparent;
 }
 .match-timeline {
   position: relative;
@@ -10127,6 +10356,35 @@ ol.breadcrumb li a img {
 }
 .panel .table tbody tr td.name {
   width: 65%;
+}
+/*Team Summary*/
+table.team-results thead tr th span img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 5px;
+}
+table.team-results tbody tr td span.date {
+  font-weight: 600;
+}
+table.team-results tbody tr td.type img {
+  max-width: 16px;
+  max-height: 16px;
+  margin-right: 3px;
+}
+table.team-results tbody tr td.score {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+table.team-results tbody tr td.date {
+  text-align: center;
+  font-weight: 700;
+}
+.panel .table tbody tr td.avatar img {
+  max-height: 18px;
+  max-width: 18px;
+}
+.stats .table tbody tr td.percent {
+  text-align: right;
+  font-weight: 700;
 }
 /*Structure*/
 .wrapper {
