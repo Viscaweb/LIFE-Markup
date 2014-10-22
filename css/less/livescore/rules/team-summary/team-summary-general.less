@@ -39,12 +39,7 @@ table.team-results{
         
         &.score{
           background: rgba(255,255,255,0.4) !important;
-        }
-        
-        &.date{
-          text-align: center;
-          font-weight: @font-weight-bold;
-        }
+        }  
       }
     }
   }
@@ -70,7 +65,7 @@ table.team-results{
   }
 }
 
-.stats{
+.panel.stats{
 
   .table{
     
@@ -82,7 +77,49 @@ table.team-results{
           text-align: right;
           font-weight: @font-weight-bold;
         }
+        
+         td.date{
+          text-align: center;
+          font-weight: @font-weight-bold;
+        }
       }
     }
+  }
+}
+
+.panel.goal-stats{
+
+  tbody{
+    
+    tr{
+   
+      td{
+      
+        .progress{
+          margin-bottom: 0;
+          background: none;
+          box-shadow: none;
+          
+            .progress-bar{
+              box-shadow: none;
+              border-radius: 2px;
+              
+              &.progress-bar-success{
+                float: right;
+              }          
+            }
+        }
+        
+        &.percent{
+          width: 3%;
+          font-weight: @font-weight-bold;
+          text-align: center;
+        }
+        
+        &.prog{ 
+          width: 30%;
+        }
+      }
+   } 
   }
 }

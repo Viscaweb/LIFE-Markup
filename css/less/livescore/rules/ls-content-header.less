@@ -23,11 +23,11 @@
       
 			a{
 				display: inline-block;
+				font-size: @font-size-base + 1;
+		    margin-left: 10px;
 		    vertical-align: middle;
 
         span{
-          font-size: @font-size-base + 1;
-          margin-left: 10px;
           color: darken(@ls-light-color,31%);
         }
         
@@ -46,16 +46,13 @@
 			}
 		
 		a{
+			color: darken(@ls-light-color,35%);
 			display: block;
 			font-size: @font-size-small - 1;
 			margin-bottom: 3px;
 			span{
 				margin-right: 5px;
 			}
-      
-      &.name{
-        color: darken(@ls-light-color,35%);
-      }
 		}
 	}
 	&.teams{

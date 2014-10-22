@@ -1,0 +1,53 @@
+.panel.match-report{
+  table{
+    thead{
+      tr{
+        th{
+          span.icon{
+            vertical-align: top;
+            font-size: @font-size-large;
+            color: lighten(@ls-dark-color, 55.3%);
+          }
+          
+          &.team{
+            width: 40%;
+          }
+          
+          &.middle{
+            width: 10%;
+          }
+        }
+      }
+    }
+    
+    tbody{
+      tr{
+        th{
+          border-top: 0;
+          font-weight: @font-weight-bold;
+          font-size: @font-size-small;
+        }
+        
+        td{
+          
+          &.striped{
+            font-size: @font-size-small;
+            font-weight: @font-weight-bold;
+            text-align: center;
+          }
+          
+          &.team{
+            &.home{
+              text-align: right;
+            }
+          }
+          
+          &.icon{
+            width: 1%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

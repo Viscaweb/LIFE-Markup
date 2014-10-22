@@ -6542,6 +6542,14 @@ button.close {
   margin-right: 6px;
   margin-bottom: -5px;
 }
+.dropdown-menu > li > a span.icon {
+  color: #a8a8a8;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.dropdown-menu > li > a:hover span.icon {
+  color: #ffffff;
+}
 /*form-control*/
 .form-control {
   font-size: 12px;
@@ -7355,11 +7363,9 @@ button.close {
 .table tr:hover td {
   background-color: #ededed;
 }
-.table.table-striped tbody tr:nth-child(even) th,
 .table.table-striped tbody tr:nth-child(even) td {
   background-color: #fafafa;
 }
-.table.table-striped tbody tr:nth-child(odd) th,
 .table.table-striped tbody tr:nth-child(odd) td {
   background-color: #ffffff;
 }
@@ -7381,6 +7387,11 @@ button.close {
 .table tr td span.country i,
 .table tr th span.country i {
   margin-right: 5px;
+}
+.table tbody tr > th,
+.table tbody tr:nth-child(even) > th,
+.table tbody tr:nth-child(odd) > th {
+  background-color: #e4e4e4;
 }
 .table tbody tr > td.view-more,
 .table tbody tr:nth-child(even) > td.view-more,
@@ -8052,11 +8063,14 @@ button.close {
 }
 /*LiveScore Components*/
 /*Main Colors*/
+/*LS Icons Font*/
 /*Elements Colors*/
 /*Navbar Inverse*/
 /*Top BreadCrumbs*/
 /*Matches Slider*/
 /*Match Resume*/
+/*Match Statistics*/
+/*Match Teams Lineups*/
 /*Match Timeline*/
 /*Match Head to Head*/
 /*Container*/
@@ -8094,11 +8108,11 @@ button.close {
 }
 .content-header .info .title a {
   display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
   vertical-align: middle;
 }
 .content-header .info .title a span {
-  font-size: 14px;
-  margin-left: 10px;
   color: #b0b0b0;
 }
 .content-header .info .title a:hover {
@@ -8111,15 +8125,13 @@ button.close {
   font-weight: 400;
 }
 .content-header .info a {
+  color: #a6a6a6;
   display: block;
   font-size: 11px;
   margin-bottom: 3px;
 }
 .content-header .info a span {
   margin-right: 5px;
-}
-.content-header .info a.name {
-  color: #a6a6a6;
 }
 .content-header.teams .shirts {
   float: right;
@@ -8326,15 +8338,15 @@ span.sprite.a-football {
   margin-bottom: -4px !important;
   margin-left: -2px;
 }
-span.yellow-card {
-  width: 12px;
-  background: url("../img/sprite-icons.png") no-repeat -120px -5px;
+span.sprite.yellow-card {
+  width: 9px;
+  background: url("../img/sprite-icons.png") no-repeat -121px -5px;
 }
-span.red-card {
+span.sprite.red-card {
   width: 12px;
   background: url("../img/sprite-icons.png") no-repeat -146px -5px;
 }
-span.yellow-red-card {
+span.sprite.yellow-red-card {
   width: 12px;
   background: url("../img/sprite-icons.png") no-repeat -176px -5px;
 }
@@ -8343,6 +8355,19 @@ span.sprite.goal {
 }
 span.sprite.penalty-goal {
   background: url("../img/sprite-icons.png") no-repeat -3px -50px;
+}
+span.sprite.shirt {
+  background: url("../img/sprite-icons.png") no-repeat -5px -97px;
+}
+span.sprite.clock {
+  background: url("../img/sprite-icons.png") no-repeat -144px -121px;
+}
+span.sprite.player-change {
+  background: url("../img/sprite-icons.png") no-repeat -205px -5px;
+  width: 8px;
+}
+span.sprite.missed-goal {
+  background: url("../img/sprite-icons.png") no-repeat -143px -75px;
 }
 .visual-block {
   background: #d4d4d4;
@@ -9539,66 +9564,6 @@ span.sprite.penalty-goal {
 .panel.match-information .table tbody tr td.team-information.away ul.players {
   text-align: left;
 }
-.panel.match-information .table tbody tr td.team-information.away ul.players li span {
-  margin-left: 0;
-  margin-right: 5px;
-}
-.panel.match-information .table tbody tr td.middle {
-  padding: 2px 0;
-  vertical-align: top !important;
-}
-.panel.match-information .table tbody tr td.middle > .score {
-  background-color: #454a4c;
-  padding: 5px 0;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 2px;
-}
-.panel.match-information .table tbody tr td.middle > .score .title {
-  font-size: 10px;
-  font-weight: 600;
-  color: #c4c4c4;
-  text-transform: uppercase;
-}
-.panel.match-information .table tbody tr td.middle > .score span {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 23px;
-  color: #ffffff;
-}
-.panel.match-information .table tbody tr td.middle > .score span.versus {
-  margin: 0 3px;
-}
-.panel.match-information .table tbody tr td.middle > .score span.success {
-  color: #5da400;
-}
-.panel.match-information .table tbody tr td.middle > .title {
-  background-color: #dbdbdb;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 2px 0 5px;
-  line-height: 16px;
-  margin-bottom: 2px;
-}
-.panel.match-information .table tbody tr td.middle .time-zone {
-  background-color: #dbdbdb;
-  padding: 3px 7px 5px;
-  line-height: 16px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.panel.match-information .table tbody tr td.middle .time-zone span.score {
-  font-weight: 700;
-  font-size: 13px;
-  float: right;
-}
-.panel.match-information .table tbody tr:hover td {
-  background-color: transparent;
-}
 .match-timeline {
   position: relative;
 }
@@ -9880,6 +9845,257 @@ span.sprite.penalty-goal {
 }
 .match-timeline .timeline-scroll .team-actions .action:hover.away-team:after {
   border-bottom-color: #454b4d;
+}
+.panel.match-report table thead tr th span.icon {
+  vertical-align: top;
+  font-size: 16px;
+  color: #8d8d8d;
+}
+.panel.match-report table thead tr th.team {
+  width: 40%;
+}
+.panel.match-report table thead tr th.middle {
+  width: 10%;
+}
+.panel.match-report table tbody tr th {
+  border-top: 0;
+  font-weight: 700;
+  font-size: 12px;
+}
+.panel.match-report table tbody tr td.striped {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+.panel.match-report table tbody tr td.team.home {
+  text-align: right;
+}
+.panel.match-report table tbody tr td.icon {
+  width: 1%;
+  text-align: center;
+}
+.panel.match-sumary-statistics .possession {
+  background: url("../img/timeline/timeline-bg.jpg") repeat;
+  padding: 13px 10px 20px;
+}
+.panel.match-sumary-statistics .possession .title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+  padding-bottom: 8px;
+}
+.panel.match-sumary-statistics .possession .graph {
+  display: table;
+  width: 100%;
+}
+.panel.match-sumary-statistics .possession .graph .percent {
+  color: #ffffff;
+  width: 14%;
+  display: table-cell;
+  text-align: center;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.panel.match-sumary-statistics .possession .graph .bar {
+  z-index: 2;
+  position: relative;
+  display: table-cell;
+}
+.panel.match-sumary-statistics .possession .graph .bar .progress {
+  margin-bottom: 0;
+  background-color: #396400;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.panel.match-sumary-statistics .possession .graph .bar .progress .progress-bar {
+  float: right;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+.panel.match-sumary-statistics .possession .graph .bar:before {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 1px;
+  height: 33px;
+  z-index: -1;
+}
+.panel.match-sumary-statistics .table tbody tr td.prog {
+  text-align: right;
+  width: 30%;
+}
+.panel.match-sumary-statistics .table tbody tr td.prog .progress {
+  margin: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.panel.match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.panel.match-sumary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
+  background-color: #9e9e9e;
+}
+.panel.match-sumary-statistics .table tbody tr td.prog.home .progress .progress-bar {
+  float: right;
+}
+.panel.match-sumary-statistics .table tbody tr td.striped {
+  text-align: center;
+  width: 19%;
+}
+.panel.match-sumary-statistics .table tbody tr td.number {
+  width: 2%;
+  text-align: center;
+  font-weight: 700;
+}
+.panel.match-teams-lineups .component-container {
+  display: table;
+}
+.panel.match-teams-lineups .component-container .team {
+  display: table-cell;
+  vertical-align: top;
+  width: 20%;
+}
+.panel.match-teams-lineups .component-container .team .table {
+  margin-bottom: 0;
+}
+.panel.match-teams-lineups .component-container .team .table thead tr th.team-logo {
+  background: #ffffff;
+  text-align: center;
+}
+.panel.match-teams-lineups .component-container .team .table thead tr th.team-logo img {
+  margin-top: 7px;
+  max-height: 45px;
+  max-width: 45px;
+}
+.panel.match-teams-lineups .component-container .team .table thead tr th.team-logo span.positions {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+.panel.match-teams-lineups .component-container .team .table tbody tr th {
+  border-top: 0;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+.panel.match-teams-lineups .component-container .team .table tbody tr td {
+  line-height: 18px;
+}
+.panel.match-teams-lineups .component-container .team .table tbody tr td.number {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: top !important;
+}
+.panel.match-teams-lineups .component-container .team .table tbody tr td.player {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.panel.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite {
+  float: right;
+  margin-right: 3px;
+}
+.panel.match-teams-lineups .component-container .field {
+  background: url("../img/field/field-bg.png") repeat 0 -7px;
+  display: table-cell;
+  vertical-align: top;
+  padding: 17px 16px;
+}
+.panel.match-teams-lineups .component-container .field .field-lines {
+  background: url("../img/field/field-lines.png") no-repeat;
+  width: 337px;
+  height: 506px;
+  position: relative;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player {
+  position: absolute;
+  border-left: 0;
+  text-align: center;
+  min-width: 35px;
+  cursor: pointer;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player:after {
+  content: "\e620";
+  font-family: "LSicons";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ededed;
+  font-size: 35px;
+  line-height: 35px;
+  width: 100%;
+  height: 23.799999999999997px;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player .number {
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 27.85px;
+  display: block;
+  width: 100%;
+  height: 23.799999999999997px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player .name {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: none;
+  text-align: center;
+  white-space: nowrap;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player .icons {
+  text-align: center;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player .icons span {
+  margin-bottom: 0;
+  margin-right: 4px;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite.goal {
+  background-position: -62px -28px;
+  width: 16px;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player:hover:after {
+  color: #ffffff;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player:hover .name {
+  color: #e0e0e0;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player.away:after {
+  color: #242424;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player.away .number {
+  color: #ffffff;
+}
+.panel.match-teams-lineups .component-container .field .field-lines .player.away:hover:after {
+  color: #0d0d0d;
 }
 /*Match Head to Head */
 .nav-pills.teams {
@@ -10374,17 +10590,97 @@ table.team-results tbody tr td.type img {
 table.team-results tbody tr td.score {
   background: rgba(255, 255, 255, 0.4) !important;
 }
-table.team-results tbody tr td.date {
-  text-align: center;
-  font-weight: 700;
-}
 .panel .table tbody tr td.avatar img {
   max-height: 18px;
   max-width: 18px;
 }
-.stats .table tbody tr td.percent {
+.panel.stats .table tbody tr td.percent {
   text-align: right;
   font-weight: 700;
+}
+.panel.stats .table tbody tr td.date {
+  text-align: center;
+  font-weight: 700;
+}
+.panel.goal-stats tbody tr td .progress {
+  margin-bottom: 0;
+  background: none;
+  box-shadow: none;
+}
+.panel.goal-stats tbody tr td .progress .progress-bar {
+  box-shadow: none;
+  border-radius: 2px;
+}
+.panel.goal-stats tbody tr td .progress .progress-bar.progress-bar-success {
+  float: right;
+}
+.panel.goal-stats tbody tr td.percent {
+  width: 3%;
+  font-weight: 700;
+  text-align: center;
+}
+.panel.goal-stats tbody tr td.prog {
+  width: 30%;
+}
+/*Team Squad*/
+.panel table.links-table tbody tr td {
+  padding: 0;
+}
+.panel table.links-table tbody tr td > a {
+  padding: 8px;
+  display: block;
+}
+.panel table.links-table tbody tr td > a img {
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 5px;
+}
+.panel table.links-table tbody tr td > a span.icon-caret-right {
+  float: right;
+  line-height: 18px;
+}
+.panel table.links-table tbody tr td > a:hover {
+  background: #f2f2f2;
+}
+.panel table.links-table tbody tr:hover td {
+  background: transparent !important;
+}
+.panel table.squad-listing thead tr th {
+  padding: 4px 7px;
+  font-size: 10px !important;
+}
+.panel table.squad-listing tbody tr th {
+  border-top: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+.panel table.squad-listing tbody tr td {
+  text-align: center;
+}
+.panel table.squad-listing tbody tr td.num {
+  font-weight: 600;
+}
+.panel table.squad-listing tbody tr td.player {
+  vertical-align: middle !important;
+  width: 30%;
+  text-align: left;
+}
+.panel table.squad-listing tbody tr td.player img {
+  max-height: 30px;
+  max-width: 30px;
+  margin-right: 10px;
+}
+.panel table.squad-listing tbody tr td.nationality {
+  text-align: left;
+  border-left: 2px solid #eaeaea;
+}
+.panel table.squad-listing tbody tr td.nationality span {
+  margin-right: 8px;
+}
+.panel table.squad-listing.avatars tbody tr td.player {
+  padding: 0 5px 0 !important;
+  line-height: 31px;
 }
 /*Structure*/
 .wrapper {

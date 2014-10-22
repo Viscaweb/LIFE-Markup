@@ -140,13 +140,13 @@
      tbody{
 
       tr:nth-child(even){
-         th, td{
+         td{
           background-color: darken(@ls-light-color,2%);
         }
       }
       
       tr:nth-child(odd){
-         th, td{
+         td{
           background-color: @ls-light-color;
         }
       }
@@ -191,6 +191,10 @@
   //Deep level
   tbody{
     tr, tr:nth-child(even), tr:nth-child(odd){
+      > th{
+        background-color: darken(@ls-light-color, 10.7%);
+      }
+    
       > td{
       
         &.view-more{
