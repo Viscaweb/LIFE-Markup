@@ -1,0 +1,112 @@
+.panel{
+
+  &.player-statistics{
+
+    > .row{
+      margin: 0;
+    
+      > div{
+        padding: 0;
+        
+        &:first-child{
+        
+          .big-stat{
+            border-left: 0;
+          }
+          
+          .statistics{
+          
+            .row{
+            
+              > div:first-child{
+                border: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+      
+      .statistics{   
+
+        > .row{
+          margin: 0;
+          
+          > div{
+            border-left: 1px solid darken(@ls-light-color, 6%);  
+            text-align: center;
+          }
+          
+        }
+        
+          .big-stat{
+            padding: 20px;
+            border-left: 1px solid darken(@ls-light-color, 6%);
+            border-bottom: 1px solid darken(@ls-light-color, 6%);
+            height: 150px;
+      
+            h5.title{
+              text-transform: uppercase;
+              font-size: @font-size-small;
+              font-weight: @font-weight-bold;
+              line-height: 14px;
+              margin-bottom: 0;
+            }
+            
+            span.icon{
+              font-size: 40px;
+              color: darken(@ls-light-color, 15.5%);
+            }
+            
+            h1.result{
+              font-size: 47px;
+              font-weight: @font-weight-light;
+              display: inline-block;
+            }
+        
+          }
+          
+          img{
+            vertical-align: baseline;
+          }
+        
+          h2.result{
+            font-size: 29px;
+            display: inline-block;
+            font-weight: @font-weight-light;
+            
+            &.football-field{
+              padding-left: 25px;
+              background: url("../img/sprites/football-field.png") no-repeat left center;
+            }
+            
+            &.arrow-right-green{
+              padding-left: 22px;
+              background: url("../img/sprites/arrow-right-green.png") no-repeat left center;
+            }
+            
+            &.arrow-left-red{
+              padding-left: 20px;
+              background: url("../img/sprites/arrow-left-red.png") no-repeat left center;
+            }
+            
+            &.chairs{
+              padding-left: 40px;
+              background: url("../img/sprites/chairs.png") no-repeat left center;
+            }
+            
+            &.yellow-card{
+              padding-left: 20px;
+              background: url("../img/sprites/yellow-card.png") no-repeat left center;
+            }
+            
+            &.red-card{
+              padding-left: 20px;
+              background: url("../img/sprites/red-card.png") no-repeat left center;
+            }
+          }
+      }
+    
+  }
+
+}

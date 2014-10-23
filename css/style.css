@@ -7760,6 +7760,10 @@ button.close {
 .table.no-border tr > td {
   border: 0;
 }
+.table.table-odds tbody tr td.logo {
+  padding: 0 0 1px;
+  width: 2%;
+}
 .table.my-games thead.league-data tr th {
   background-color: #5da400;
   color: #ffffff;
@@ -8073,6 +8077,7 @@ button.close {
 /*Match Teams Lineups*/
 /*Match Timeline*/
 /*Match Head to Head*/
+/*Player Summary*/
 /*Container*/
 /*Buttons*/
 /*Progress Bars*/
@@ -9507,6 +9512,7 @@ span.sprite.missed-goal {
 }
 .panel.match-information .table tbody tr td.team-information .standings {
   display: inline-block;
+  width: 46%;
 }
 .panel.match-information .table tbody tr td.team-information .standings table {
   margin-bottom: 0;
@@ -9549,6 +9555,62 @@ span.sprite.missed-goal {
 .panel.match-information .table tbody tr td.team-information ul.players li span {
   margin-left: 5px;
 }
+.panel.match-information .table tbody tr td.middle {
+  padding: 2px 0 0;
+  vertical-align: top !important;
+}
+.panel.match-information .table tbody tr td.middle > .score {
+  background-color: #454a4c;
+  padding: 5px 0;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+.panel.match-information .table tbody tr td.middle > .score .title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #c4c4c4;
+  text-transform: uppercase;
+}
+.panel.match-information .table tbody tr td.middle > .score span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #ffffff;
+}
+.panel.match-information .table tbody tr td.middle > .score span.versus {
+  margin: 0 3px;
+}
+.panel.match-information .table tbody tr td.middle > .score span.success {
+  color: #5da400;
+}
+.panel.match-information .table tbody tr td.middle > .title {
+  background-color: #dbdbdb;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 0 5px;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.panel.match-information .table tbody tr td.middle .time-zone {
+  background-color: #dbdbdb;
+  padding: 3px 7px 5px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.panel.match-information .table tbody tr td.middle .time-zone span.score {
+  font-weight: 700;
+  font-size: 13px;
+  float: right;
+}
+.panel.match-information .table tbody tr td.middle > div:last-child {
+  margin-bottom: 0;
+}
 .panel.match-information .table tbody tr td.team-information.away {
   padding-top: 3px;
   padding-left: 10px;
@@ -9563,6 +9625,9 @@ span.sprite.missed-goal {
 }
 .panel.match-information .table tbody tr td.team-information.away ul.players {
   text-align: left;
+}
+.panel.match-information .table tbody tr:hover td {
+  background-color: transparent;
 }
 .match-timeline {
   position: relative;
@@ -10097,6 +10162,105 @@ span.sprite.missed-goal {
 .panel.match-teams-lineups .component-container .field .field-lines .player.away:hover:after {
   color: #0d0d0d;
 }
+.panel.match-prediction .panel-body h4.title {
+  display: inline-block;
+  margin: 0;
+}
+.panel.match-prediction .panel-body .info {
+  float: right;
+  font-size: 10px;
+  font-weight: 600;
+  color: #969696;
+}
+.panel.match-prediction .panel-body .info span.icon {
+  margin-right: 5px;
+  font-size: 13px;
+}
+.panel.match-prediction .make-prediction {
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+.panel.match-prediction .make-prediction .user-info {
+  font-weight: 600;
+  display: inline-block;
+}
+.panel.match-prediction .make-prediction .user-info img {
+  margin-right: 5px;
+}
+.panel.match-prediction .make-prediction .prediction {
+  display: table;
+  float: right;
+  margin-top: 5px;
+}
+.panel.match-prediction .make-prediction .prediction .team {
+  padding-top: 10px;
+  vertical-align: top;
+  display: table-cell;
+  font-weight: 600;
+}
+.panel.match-prediction .make-prediction .prediction .choise {
+  vertical-align: middle;
+  display: table-cell;
+}
+.panel.match-prediction .make-prediction .prediction .choise .btn-group {
+  margin: 0 8px;
+}
+.panel.match-prediction .make-prediction .prediction .choise .btn-group .btn {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.panel.match-prediction .make-prediction .prediction .choise .result {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.panel.match-prediction .make-prediction .prediction .choise .result .icon {
+  color: #bababa;
+}
+.panel.match-prediction > .row {
+  margin: 0;
+}
+.panel.match-prediction > .row > div {
+  border-right: 1px solid #f0f0f0;
+  padding: 0;
+}
+.panel.match-prediction > .row > div h5.title {
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.panel.match-prediction > .row > div .content {
+  padding: 0 20px 15px;
+}
+.panel.match-prediction > .row > div .content p {
+  margin: 10px 0 15px;
+  font-size: 12px;
+}
+.panel.match-prediction > .row > div table tbody tr td .progress {
+  margin-bottom: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #e8e8e8;
+}
+.panel.match-prediction > .row > div table tbody tr td .progress .progress-bar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.panel.match-prediction > .row > div table tbody tr td .progress.gray .progress-bar {
+  background-color: #9e9e9e;
+}
+.panel.match-prediction > .row > div table tbody tr td.percent {
+  width: 60%;
+}
+.panel.match-prediction > .row > div:last-child {
+  border-right: 0;
+}
 /*Match Head to Head */
 .nav-pills.teams {
   position: relative;
@@ -10273,24 +10437,18 @@ table.odds-over-under tbody tr td.logo,
 table.odds-double-chance tbody tr td.logo,
 table.odds-half-time-full-time tbody tr td.logo,
 table.odds-correct-score tbody tr td.logo,
-table.odds-goal-scorers tbody tr td.logo {
+table.odds-goal-scorers tbody tr td.logo,
+table.table-odds tbody tr td.logo {
   width: 22px;
   padding: 0 0 1px;
-}
-table.odds-1x2 tbody tr td.name,
-table.odds-over-under tbody tr td.name,
-table.odds-double-chance tbody tr td.name,
-table.odds-half-time-full-time tbody tr td.name,
-table.odds-correct-score tbody tr td.name,
-table.odds-goal-scorers tbody tr td.name {
-  width: 65%;
 }
 table.odds-1x2 tbody tr td.result,
 table.odds-over-under tbody tr td.result,
 table.odds-double-chance tbody tr td.result,
 table.odds-half-time-full-time tbody tr td.result,
 table.odds-correct-score tbody tr td.result,
-table.odds-goal-scorers tbody tr td.result {
+table.odds-goal-scorers tbody tr td.result,
+table.table-odds tbody tr td.result {
   text-align: center;
   width: 10%;
   -webkit-box-shadow: -1px -1px 0 #ffffff inset;
@@ -10302,7 +10460,8 @@ table.odds-over-under tbody tr td.result:last-child,
 table.odds-double-chance tbody tr td.result:last-child,
 table.odds-half-time-full-time tbody tr td.result:last-child,
 table.odds-correct-score tbody tr td.result:last-child,
-table.odds-goal-scorers tbody tr td.result:last-child {
+table.odds-goal-scorers tbody tr td.result:last-child,
+table.table-odds tbody tr td.result:last-child {
   -webkit-box-shadow: 0 -1px 0 #ffffff inset;
   -moz-box-shadow: 0 -1px 0 #ffffff inset;
   box-shadow: 0 -1px 0 #ffffff inset;
@@ -10312,7 +10471,8 @@ table.odds-over-under tbody tr:first-child td.result,
 table.odds-double-chance tbody tr:first-child td.result,
 table.odds-half-time-full-time tbody tr:first-child td.result,
 table.odds-correct-score tbody tr:first-child td.result,
-table.odds-goal-scorers tbody tr:first-child td.result {
+table.odds-goal-scorers tbody tr:first-child td.result,
+table.table-odds tbody tr:first-child td.result {
   -webkit-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
   -moz-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
   box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
@@ -10322,7 +10482,8 @@ table.odds-over-under tbody tr:first-child td.result:last-child,
 table.odds-double-chance tbody tr:first-child td.result:last-child,
 table.odds-half-time-full-time tbody tr:first-child td.result:last-child,
 table.odds-correct-score tbody tr:first-child td.result:last-child,
-table.odds-goal-scorers tbody tr:first-child td.result:last-child {
+table.odds-goal-scorers tbody tr:first-child td.result:last-child,
+table.table-odds tbody tr:first-child td.result:last-child {
   -webkit-box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
   -moz-box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
   box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
@@ -10332,7 +10493,8 @@ table.odds-over-under tbody tr:last-child td.result,
 table.odds-double-chance tbody tr:last-child td.result,
 table.odds-half-time-full-time tbody tr:last-child td.result,
 table.odds-correct-score tbody tr:last-child td.result,
-table.odds-goal-scorers tbody tr:last-child td.result {
+table.odds-goal-scorers tbody tr:last-child td.result,
+table.table-odds tbody tr:last-child td.result {
   -webkit-box-shadow: -1px 0 0 #ffffff inset;
   -moz-box-shadow: -1px 0 0 #ffffff inset;
   box-shadow: -1px 0 0 #ffffff inset;
@@ -10342,7 +10504,8 @@ table.odds-over-under tbody tr:last-child td.result:last-child,
 table.odds-double-chance tbody tr:last-child td.result:last-child,
 table.odds-half-time-full-time tbody tr:last-child td.result:last-child,
 table.odds-correct-score tbody tr:last-child td.result:last-child,
-table.odds-goal-scorers tbody tr:last-child td.result:last-child {
+table.odds-goal-scorers tbody tr:last-child td.result:last-child,
+table.table-odds tbody tr:last-child td.result:last-child {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -10553,24 +10716,24 @@ ol.breadcrumb li a img {
 .panel .panel-heading span.icon-football {
   margin-right: 5px;
 }
-.panel .table tbody tr td span.name {
+.panel .table.league-clubs tbody tr td span.name {
   color: #b3b3b3;
 }
-.panel .table tbody tr td.number,
-.panel .table tbody tr td.goals {
+.panel .table.league-clubs tbody tr td.number,
+.panel .table.league-clubs tbody tr td.goals {
   text-align: center;
 }
-.panel .table tbody tr td.number {
+.panel .table.league-clubs tbody tr td.number {
   width: 8%;
 }
-.panel .table tbody tr td.logo {
+.panel .table.league-clubs tbody tr td.logo {
   width: 5%;
 }
-.panel .table tbody tr td.logo img {
+.panel .table.league-clubs tbody tr td.logo img {
   max-height: 18px;
   max-width: 18px;
 }
-.panel .table tbody tr td.name {
+.panel .table.league-clubs tbody tr td.name {
   width: 65%;
 }
 /*Team Summary*/
@@ -10681,6 +10844,80 @@ table.team-results tbody tr td.score {
 .panel table.squad-listing.avatars tbody tr td.player {
   padding: 0 5px 0 !important;
   line-height: 31px;
+}
+/*Player Summary*/
+.panel.player-statistics > .row {
+  margin: 0;
+}
+.panel.player-statistics > .row > div {
+  padding: 0;
+}
+.panel.player-statistics > .row > div:first-child .big-stat {
+  border-left: 0;
+}
+.panel.player-statistics > .row > div:first-child .statistics .row > div:first-child {
+  border: 0;
+}
+.panel.player-statistics .statistics > .row {
+  margin: 0;
+}
+.panel.player-statistics .statistics > .row > div {
+  border-left: 1px solid #f0f0f0;
+  text-align: center;
+}
+.panel.player-statistics .statistics .big-stat {
+  padding: 20px;
+  border-left: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 150px;
+}
+.panel.player-statistics .statistics .big-stat h5.title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+.panel.player-statistics .statistics .big-stat span.icon {
+  font-size: 40px;
+  color: #d7d7d7;
+}
+.panel.player-statistics .statistics .big-stat h1.result {
+  font-size: 47px;
+  font-weight: 300;
+  display: inline-block;
+}
+.panel.player-statistics .statistics img {
+  vertical-align: baseline;
+}
+.panel.player-statistics .statistics h2.result {
+  font-size: 29px;
+  display: inline-block;
+  font-weight: 300;
+}
+.panel.player-statistics .statistics h2.result.football-field {
+  padding-left: 25px;
+  background: url("../img/sprites/football-field.png") no-repeat left center;
+}
+.panel.player-statistics .statistics h2.result.arrow-right-green {
+  padding-left: 22px;
+  background: url("../img/sprites/arrow-right-green.png") no-repeat left center;
+}
+.panel.player-statistics .statistics h2.result.arrow-left-red {
+  padding-left: 20px;
+  background: url("../img/sprites/arrow-left-red.png") no-repeat left center;
+}
+.panel.player-statistics .statistics h2.result.chairs {
+  padding-left: 40px;
+  background: url("../img/sprites/chairs.png") no-repeat left center;
+}
+.panel.player-statistics .statistics h2.result.yellow-card {
+  padding-left: 20px;
+  background: url("../img/sprites/yellow-card.png") no-repeat left center;
+}
+.panel.player-statistics .statistics h2.result.red-card {
+  padding-left: 20px;
+  background: url("../img/sprites/red-card.png") no-repeat left center;
 }
 /*Structure*/
 .wrapper {
