@@ -8198,6 +8198,9 @@ body {
   background: #e7e9eb;
   color: #5c5c5c;
 }
+body.iframe {
+  padding: 0;
+}
 /*Typography*/
 h1,
 h2,
@@ -8255,6 +8258,11 @@ a.view-more > span > i {
 b,
 strong {
   color: #5c5c5c;
+}
+iframe {
+  border: 0;
+  width: 100%;
+  margin-bottom: 18px;
 }
 /*Typography classes*/
 .uppercase {
@@ -8371,8 +8379,50 @@ span.sprite.player-change {
   background: url("../img/sprite-icons.png") no-repeat -205px -5px;
   width: 8px;
 }
+span.sprite.football-field {
+  background: url("../img/sprite-icons.png") no-repeat -5px -3px;
+  width: 16px;
+  height: 19px;
+}
+span.sprite.green-arrow {
+  background: url("../img/sprite-icons.png") no-repeat -37px -3px;
+  width: 11px;
+}
+span.sprite.red-arrow {
+  background: url("../img/sprite-icons.png") no-repeat -64px -3px;
+  width: 11px;
+}
+span.sprite.chairs {
+  background: url("../img/sprite-icons.png") no-repeat -87px -3px;
+  width: 23px;
+}
 span.sprite.missed-goal {
   background: url("../img/sprite-icons.png") no-repeat -143px -75px;
+}
+span.sprite.red-cross {
+  background: url("../img/sprite-icons.png") no-repeat -3px -75px;
+}
+span.sprite.yellow-cross {
+  background: url("../img/sprite-icons.png") no-repeat -31px -75px;
+}
+span.sprite.stadium {
+  background: url("../img/sprite-icons.png") no-repeat -198px -97px;
+  width: 25px;
+}
+span.sprite.info {
+  background: url("../img/sprite-icons.png") no-repeat -199px -75px;
+}
+span.sprite.whistle {
+  background: url("../img/sprite-icons.png") no-repeat -3px -27px;
+}
+span.sprite.extra-time {
+  background: url("../img/sprite-icons.png") no-repeat -171px -75px;
+}
+span.sprite.linesman-flag {
+  background: url("../img/sprite-icons.png") no-repeat -58px -50px;
+}
+span.sprite.corner-flag {
+  background: url("../img/sprite-icons.png") no-repeat -86px -50px;
 }
 .visual-block {
   background: #d4d4d4;
@@ -10162,6 +10212,60 @@ span.sprite.missed-goal {
 .panel.match-teams-lineups .component-container .field .field-lines .player.away:hover:after {
   color: #0d0d0d;
 }
+.table.teams-lineups {
+  margin-bottom: 0;
+}
+.table.teams-lineups thead tr th {
+  border-right: 2px solid #ededed;
+}
+.table.teams-lineups thead tr th.team-logo {
+  background: #ffffff;
+  text-align: center;
+}
+.table.teams-lineups thead tr th.team-logo img {
+  margin-top: 7px;
+  max-height: 45px;
+  max-width: 45px;
+}
+.table.teams-lineups thead tr th.team-logo span.positions {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+.table.teams-lineups thead tr th:last-child {
+  border-right: 0;
+}
+.table.teams-lineups tbody tr th {
+  border-top: 0;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border-right: 2px solid #ededed;
+  width: 50%;
+}
+.table.teams-lineups tbody tr th:last-child {
+  border-right: 0;
+}
+.table.teams-lineups tbody tr td {
+  line-height: 18px;
+}
+.table.teams-lineups tbody tr td.number {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: top !important;
+  width: 6%;
+}
+.table.teams-lineups tbody tr td.player span.sprite {
+  float: right;
+  margin-right: 3px;
+}
+.table.teams-lineups tbody tr td:nth-child(2) {
+  border-right: 2px solid #ededed;
+}
 .panel.match-prediction .panel-body h4.title {
   display: inline-block;
   margin: 0;
@@ -10260,6 +10364,90 @@ span.sprite.missed-goal {
 }
 .panel.match-prediction > .row > div:last-child {
   border-right: 0;
+}
+.panel.match-tips ul.media-list {
+  border-top: 0;
+  margin: 0;
+}
+.panel.match-tips ul.media-list li.media {
+  display: table;
+  width: 100%;
+}
+.panel.match-tips ul.media-list li.media a.avatar {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 15px;
+  width: 60px;
+  text-align: center;
+  outline: none;
+}
+.panel.match-tips ul.media-list li.media a.avatar img {
+  max-height: 48px;
+  max-width: 48px;
+}
+.panel.match-tips ul.media-list li.media .media-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.panel.match-tips ul.media-list li.media .media-body p {
+  margin: 0;
+}
+.panel.match-tips ul.media-list li.media:first-child {
+  padding-top: 0;
+}
+.panel.match-tips .make-bet {
+  border-top: 1px solid #ebebeb;
+  padding-top: 15px;
+}
+.panel.match-tips .make-bet img {
+  max-height: 30px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.panel.match-tips .make-bet p {
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+}
+.panel.match-tips.iframe {
+  margin: 0;
+}
+.table.live-commentary {
+  margin: 0;
+}
+.table.live-commentary tbody tr td {
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: 400;
+}
+.table.live-commentary tbody tr td.minute {
+  width: 13%;
+  text-align: center;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.table.live-commentary tbody tr td.icon {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.table.live-commentary tbody tr td.content p {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+.table.live-commentary tbody tr td.content p + img,
+.table.live-commentary tbody tr td.content p + iframe {
+  margin-top: 13px;
+}
+.table.live-commentary tbody tr td.content .btn {
+  margin-top: 3px;
+}
+.table.live-commentary tbody tr td.content .btn .icon {
+  font-size: 17px;
+  vertical-align: middle;
+  color: #666666;
 }
 /*Match Head to Head */
 .nav-pills.teams {
@@ -10918,6 +11106,121 @@ table.team-results tbody tr td.score {
 .panel.player-statistics .statistics h2.result.red-card {
   padding-left: 20px;
   background: url("../img/sprites/red-card.png") no-repeat left center;
+}
+.panel.player-statistics table.player-statistics thead tr th {
+  text-align: right;
+}
+.panel.player-statistics table.player-statistics thead tr th.competition {
+  text-align: left;
+}
+.panel.player-statistics table.player-statistics thead tr th.shirt-number {
+  border-left: 2px solid #dedede;
+  border-right: 2px solid #dedede;
+}
+.panel.player-statistics table.player-statistics thead tr th.goals-number {
+  border-left: 2px solid #dedede;
+}
+.panel.player-statistics table.player-statistics tbody tr th {
+  border-top: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+.panel.player-statistics table.player-statistics tbody tr th.competition {
+  text-align: left;
+}
+.panel.player-statistics table.player-statistics tbody tr td {
+  text-align: right;
+}
+.panel.player-statistics table.player-statistics tbody tr td.competition {
+  text-align: left;
+}
+.panel.player-statistics table.player-statistics tbody tr td.competition a {
+  margin-left: 8px;
+}
+.panel.player-statistics table.player-statistics tbody tr td.shirt-number {
+  border-left: 2px solid #eaeaea;
+  border-right: 2px solid #eaeaea;
+}
+.panel.player-statistics table.player-statistics tbody tr td.goals-number {
+  border-left: 2px solid #eaeaea;
+}
+.panel.goals-distribution > .row {
+  margin: 0;
+}
+.panel.goals-distribution > .row > div {
+  padding: 20px;
+}
+.panel.goals-distribution > .row > div p {
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.panel.goals-distribution > .row > div h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.panel.goals-distribution .js-chart {
+  text-align: center;
+  background: #fafafa;
+}
+.panel.goals-distribution .js-chart .title {
+  font-family: Courier;
+  font-size: 11px;
+  margin-top: 15px;
+}
+.panel.goals-statistics table thead tr th.date {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+.panel.goals-statistics table thead tr th.statistics-title {
+  font-weight: 700;
+  font-size: 12px;
+  background: #ffffff;
+  line-height: 47px;
+  border-bottom: 1px solid #fafafa;
+}
+.panel.goals-statistics table thead tr th.statistics-title > span {
+  line-height: 60px;
+}
+.panel.goals-statistics table thead tr th.statistics-title .stat {
+  float: right;
+  line-height: 20px;
+}
+.panel.goals-statistics table thead tr th.statistics-title .stat span.icon {
+  font-size: 36px;
+  color: #d7d7d7;
+}
+.panel.goals-statistics table thead tr th.statistics-title .stat h1.result {
+  font-size: 47px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 5px 0;
+}
+.panel.goals-statistics table tbody tr td.logo,
+.panel.goals-statistics table tbody tr td.date {
+  width: 3%;
+}
+.panel.goals-statistics table tbody tr td.logo img,
+.panel.goals-statistics table tbody tr td.date img {
+  max-width: 16px;
+  max-height: 16px;
+}
+.panel.goals-statistics table tbody tr td.league img {
+  max-height: 16px;
+  max-width: 16px;
+  margin-right: 2px;
+}
+.panel.goals-statistics table tbody tr td.score {
+  width: 8%;
+}
+.panel.goals-statistics table tbody tr td.minutes,
+.panel.goals-statistics table tbody tr td.date {
+  font-weight: 600;
+}
+.panel.goals-statistics table tbody tr td.tools {
+  width: 13%;
 }
 /*Structure*/
 .wrapper {
