@@ -1395,7 +1395,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1100px;
   }
 }
 .container-fluid {
@@ -11226,7 +11226,11 @@ table.team-results tbody tr td.score {
 .wrapper {
   width: 100%;
   display: table;
+  table-layout: fixed;
   margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
 }
 .left-sidebar {
   display: table-cell;
@@ -11235,6 +11239,7 @@ table.team-results tbody tr td.score {
   border-right: 1px solid #e7e7e7;
   padding: 0;
   float: none;
+  margin: 0;
 }
 .sidebar-nav {
   padding: 0;
@@ -11390,6 +11395,7 @@ table.team-results tbody tr td.score {
   background: #ffffff;
   padding: 0;
   float: none;
+  margin: 0;
 }
 .main .breadcrumb {
   -webkit-border-radius: 0;
