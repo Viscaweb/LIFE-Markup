@@ -49,6 +49,23 @@
     .dropdown-menu{
       margin-top: 0;
       left: 17px;
+      
+      /*This is only a temporal solution*/
+      height: @ls-top-breadcrumbs-dropdown-height;
+      overflow: auto;
+      
+      &::-webkit-scrollbar {
+          width: @ls-top-breadcrumbs-scrollbar-width;
+      }
+       
+      &::-webkit-scrollbar-track {
+          background: @ls-top-breadcrumbs-scrollbar-background;
+      }
+       
+      &::-webkit-scrollbar-thumb {
+          background: @ls-top-breadcrumbs-scrollbar-color;
+          .border-radius(@ls-top-breadcrumbs-scrollbar-border-radius);
+      }
     }
   }  
 }

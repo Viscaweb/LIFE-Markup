@@ -139,7 +139,7 @@
       &.live, &.paused{
         .status{
           padding-left: 11px;
-          background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+          background: url("@{ls-image-live-spot}") no-repeat 0 4px;
           font-weight: 600;
           color: @live-red;
         }
@@ -156,7 +156,7 @@
       
       &.paused{
         .status{
-          background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
+          background: url("@{ls-image-paused-spot}") no-repeat 0 4px;
           color: lighten(@ls-dark-color, 60.5%);
         }
       }
@@ -216,7 +216,7 @@
       line-height: 16px;
       
       span{
-        background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+        background: url("@{ls-image-live-spot}") no-repeat 0 4px;
         padding-left: 11px;
         text-transform: uppercase;
         color: @ls-light-color;
