@@ -36,6 +36,11 @@
 	-moz-background-clip:    padding;
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
+  @media @ie8{
+    behavior: "@{ls-css3-pie-url}";
+    position: relative;  
+    zoom: 1;  
+  }
 }
 .border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
 	-webkit-border-top-right-radius:    @topright;
@@ -56,6 +61,7 @@
 	-moz-background-clip:    padding; 
 	-webkit-background-clip: padding-box; 
 	background-clip:         padding-box; 
+  behavior: "@{ls-css3-pie-url}";
 }
 
 .opacity (@opacity: 0.5) {
