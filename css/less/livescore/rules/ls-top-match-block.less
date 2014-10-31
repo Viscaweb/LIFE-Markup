@@ -55,13 +55,15 @@
         padding: 0 8px; 
         
         &:after{
-          background: url("../img/sprites/ribbon-corner-right.png") no-repeat 0 0;
-          content: " ";
+          content: "";
           position: absolute;
-          right: -10px;
           top: 0;
-          width: 10px;
-          height: 19px;
+          right: -8px;
+          width: 0; 
+          height: 0; 
+          border-left: 2px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 20px solid darken(@ls-light-color, 2.9%);
         }
       }
       

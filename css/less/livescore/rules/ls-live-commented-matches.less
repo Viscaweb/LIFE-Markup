@@ -10,7 +10,6 @@
       
       .description{
         padding: 15px;
-        border-bottom: 2px solid darken(@ls-light-color, 4%);
         
         p{
           font-size: @font-size-small;
@@ -21,15 +20,29 @@
       }
       
       .matches{
+        border-top: 2px solid darken(@ls-light-color, 4%);
         margin: 0;
         
         tr{
           td{
+          
+            > a{
+              padding: 3px 7px;
+              line-height: @font-size-x-large;
+              color: inherit;
+            }
+          
             &.team1{
               text-align: right;
+              padding: 0;
+            }
+            
+            &.team2{
+              padding: 0;
             }
           
             &.score{ 
+              padding: 0;
               text-align: center;
               background-color: darken(@ls-light-color, 3.3%);
               
@@ -45,6 +58,7 @@
             
             &.commented{
               width: 25px;
+              padding: 0;
               
               span{
                 font-size: @font-size-large + 2;

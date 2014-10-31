@@ -6241,6 +6241,7 @@ button.close {
 .alert {
   padding: 10px 20px;
   font-size: 12px;
+  line-height: 21px;
 }
 .alert.alert-dismissible {
   padding-right: 30px;
@@ -6436,7 +6437,7 @@ button.close {
 }
 @media \0screen {
   .btn-group > .btn {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -6624,7 +6625,7 @@ button.close {
 }
 @media \0screen {
   .label {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -6816,7 +6817,7 @@ button.close {
 }
 @media \0screen {
   .header .navbar.navbar-fixed-top .navbar-form .input-search input {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -6846,7 +6847,7 @@ button.close {
 }
 @media \0screen {
   .header .navbar.navbar-fixed-top .navbar-form .input-search .input-group-btn .btn {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -7034,7 +7035,7 @@ button.close {
 }
 @media \0screen {
   .panel > .panel-heading {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -7054,17 +7055,18 @@ button.close {
 }
 .panel > .panel-heading .panel-title span.glyphicon,
 .panel > .panel-heading .panel-title span.icon {
-  margin-right: 5px;
+  margin-right: 10px;
   vertical-align: middle;
+  font-size: 18px;
 }
 .panel > .panel-heading .tools {
   float: right;
   font-style: italic;
   color: #949494;
   font-size: 12px;
-  position: absolute;
-  right: 20px;
-  top: 10px;
+  position: relative;
+  right: 0;
+  top: 2px;
 }
 .panel > .panel-heading .tools a {
   outline: none;
@@ -7086,6 +7088,7 @@ button.close {
   font-style: normal;
   background-color: #5da400;
   color: #ffffff;
+  margin-right: 5px;
 }
 .panel > .panel-heading .tools .label {
   font-weight: 600;
@@ -7284,7 +7287,7 @@ button.close {
 }
 @media \0screen {
   .nav-tabs > li > a {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -8533,7 +8536,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .player .picture {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -8578,7 +8581,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .sharing .likes .fb .icon {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -8609,7 +8612,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .sharing .likes .tw .icon {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -8640,7 +8643,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .sharing .likes .gp .icon {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -8942,13 +8945,15 @@ span.sprite.corner-flag {
   padding: 0 8px;
 }
 .top-match-block > .panel-body .score-board .title:after {
-  background: url("../img/sprites/ribbon-corner-right.png") no-repeat 0 0;
-  content: " ";
+  content: "";
   position: absolute;
-  right: -10px;
   top: 0;
-  width: 10px;
-  height: 19px;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 20px solid #f8f8f8;
 }
 .top-match-block > .panel-body .score-board .match-date {
   position: absolute;
@@ -9073,7 +9078,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .top-competitions-block.panel > .panel-body .nav-pills > li > a {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -9235,7 +9240,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .social-networks-block.panel > .panel-body .likes .fb .icon {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -9267,7 +9272,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .social-networks-block.panel > .panel-body .likes .tw .icon {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -9299,7 +9304,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .social-networks-block.panel > .panel-body .likes .gp .icon {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -9402,7 +9407,6 @@ span.sprite.corner-flag {
 }
 .live-commented-matches.panel > .panel-body .description {
   padding: 15px;
-  border-bottom: 2px solid #f5f5f5;
 }
 .live-commented-matches.panel > .panel-body .description p {
   font-size: 12px;
@@ -9410,12 +9414,23 @@ span.sprite.corner-flag {
   margin: 0;
 }
 .live-commented-matches.panel > .panel-body .matches {
+  border-top: 2px solid #f5f5f5;
   margin: 0;
+}
+.live-commented-matches.panel > .panel-body .matches tr td > a {
+  padding: 3px 7px;
+  line-height: 17px;
+  color: inherit;
 }
 .live-commented-matches.panel > .panel-body .matches tr td.team1 {
   text-align: right;
+  padding: 0;
+}
+.live-commented-matches.panel > .panel-body .matches tr td.team2 {
+  padding: 0;
 }
 .live-commented-matches.panel > .panel-body .matches tr td.score {
+  padding: 0;
   text-align: center;
   background-color: #f7f7f7;
 }
@@ -9428,6 +9443,7 @@ span.sprite.corner-flag {
 }
 .live-commented-matches.panel > .panel-body .matches tr td.commented {
   width: 25px;
+  padding: 0;
 }
 .live-commented-matches.panel > .panel-body .matches tr td.commented span {
   font-size: 18px;
@@ -9938,7 +9954,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .match-timeline .timeline-scroll .penalty-goals > div span {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -10013,7 +10029,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .match-timeline .timeline-scroll .team-actions .replay {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -10042,7 +10058,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .match-timeline .timeline-scroll .team-actions .action {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -10198,7 +10214,7 @@ span.sprite.corner-flag {
 }
 @media \0screen {
   .panel.match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -10624,7 +10640,7 @@ span.sprite.corner-flag {
 @media \0screen {
   .panel.head-to-head .teams .team .circle,
   .panel.team-form .teams .team .circle {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -10923,7 +10939,6 @@ table.odds-goal-scorers tbody tr td:first-child {
 }
 .offer-simple {
   background: #f8f8f8;
-  padding: 12px;
   border: 1px solid #efefef;
   overflow: hidden;
   display: table;
@@ -10932,6 +10947,7 @@ table.odds-goal-scorers tbody tr td:first-child {
 }
 .offer-simple .content {
   display: table-cell;
+  padding: 12px;
 }
 .offer-simple .content img {
   margin: 0 15px 0 10px;
@@ -10942,6 +10958,7 @@ table.odds-goal-scorers tbody tr td:first-child {
   font-weight: 400;
 }
 .offer-simple .button {
+  padding: 12px;
   display: table-cell;
   text-align: right;
 }
@@ -11436,7 +11453,7 @@ table.team-results tbody tr td.score {
 }
 @media \0screen {
   .sidebar-nav > li > a .badge.pull-right {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -11552,7 +11569,7 @@ table.team-results tbody tr td.score {
   padding-left: 0px !important;
 }
 .right-sidebar .panel .panel-heading .tools {
-  right: 6px;
+  right: -7px;
 }
 .main {
   display: table-cell;
@@ -11576,7 +11593,7 @@ table.team-results tbody tr td.score {
 }
 @media \0screen {
   .main .breadcrumb {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
@@ -11638,7 +11655,7 @@ table.team-results tbody tr td.score {
 }
 @media \0screen {
   .main .breadcrumb > li .dropdown-menu::-webkit-scrollbar-thumb {
-    behavior: "js/css3pie/PIE.htc";
+    behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
