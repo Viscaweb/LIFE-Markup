@@ -10,14 +10,19 @@
     <title>Livescore</title>
     
     <!-- Global Style links-->
-      <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" href="js/bootstrap/dist/css/bootstrap.min.css" />
+    
       <!-- LSicons-->
       <link rel="stylesheet" href="js/lsicons/style.css" />
+      
       <!-- Flags Sprites-->
       <link rel="stylesheet" href="js/flags/flags.css" />
+      
+      <!-- Owl Carousel -->
+      <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
+      
       <!-- Custom styles for this template -->
       <link rel="stylesheet" href="css/style.css" />
+      
     <!--End Global Style-->
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -92,7 +97,7 @@
     </nav>
   </header>
     <div class="container">
-      <div class="visual-block" id="visual-top">
+      <div class="visual-block">
         <!-- Top Ad Space -->
         <img src="img/1100x230.gif">
       </div>
@@ -111,29 +116,29 @@
             </li>
             <li class="active">
               <a href="#" class="dropdown-togle open"><i class="icon-team"></i>My Leagues</a>
-              <ul class="sub-menu">
-                <li><a href="#" class="sortable"><img src="img/sprites/ligue1.png">Ligue 1 <span class="live-red">(6)</span></a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/ligue2.png">Ligue 2</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/premiereleague.png">Premiere League</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/bundesliga.png">Bundesliga <span class="live-red">(3)</span></a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/seriea.png">Serie A</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/coupedefrance.png">Coupe de France</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/cdl.png">CdL</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/ldc.png">LdC</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/eurocoup.png">Europa League</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/worldcup.png">World Cup</a></li>
+              <ul class="sub-menu sortable-ul">
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/ligue1.png">Ligue 1 <span class="live-red">(6)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/ligue2.png">Ligue 2<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/premiereleague.png">Premiere League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/bundesliga.png">Bundesliga <span class="live-red">(3)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/seriea.png">Serie A<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/coupedefrance.png">Coupe de France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/cdl.png">CdL<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/ldc.png">LdC<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/eurocoup.png">Europa League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/worldcup.png">World Cup<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
               </ul>
             </li>
             <li class="active">
               <a href="#" class="dropdown-togle open"><i class="icon-shirt"></i>My Teams</a>
-              <ul class="sub-menu">
-                <li><a href="#" class="sortable"><img src="img/sprites/fr.png">France</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/manchestercity.png">Manchester City</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/om.png">OM</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/realmadrid.png">Real Madrid</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/barcelona.png">Barcelona</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/lyon.png">Lyon</a></li>
-                <li><a href="#" class="sortable"><img src="img/sprites/psg.png">PSG</a></li>
+              <ul class="sub-menu sortable-ul">
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/fr.png">France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/manchestercity.png">Manchester City<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/om.png">OM<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/realmadrid.png">Real Madrid<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/barcelona.png">Barcelona<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/lyon.png">Lyon<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+                <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/psg.png">PSG<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
               </ul>
             </li>
             <li>
@@ -157,25 +162,25 @@
                   <a href="#" class="dropdown-togle open"><span class="flag-3"></span>Germany</a>
                     <ul class="third-menu">
                       <li><a href="#">All</a></li>
-                      <li><a href="#">Bundesliga </a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">Super Coupe</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">Bundesliga 2</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                      <li><a href="#">Bundesliga <span class="fav active" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">Super Coupe <span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">Bundesliga 2 <span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
                       <li>
                         <a href="#">CFA</a>
                         <ul class="fourth-menu">
                           <li><a href="#">All</a></li>
-                          <li><a href="#">CFA Group A</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                          <li><a href="#">CFA Group B</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                          <li><a href="#">CFA Group C</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                          <li><a href="#">CFA Group D</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                          <li><a href="#">CFA Group A<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                          <li><a href="#">CFA Group B<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                          <li><a href="#">CFA Group C<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                          <li><a href="#">CFA Group D<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
                         </ul>
                       </li>
-                      <li><a href="#">Bundesliga 3</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">Regionalliga</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">Coupe de la Lig.</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">Oberliga</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">DfB-Pokal</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
-                      <li><a href="#">Barrages</a><a class="pull-right" href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                      <li><a href="#">Bundesliga 3<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">Regionalliga<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">Coupe de la Lig.<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">Oberliga<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">DfB-Pokal<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                      <li><a href="#">Barrages<span class="fav" href="#"><i class="glyphicon glyphicon-star"></i></span></a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="dropdown-togle"><span class="flag-76"></span>Andorra</a></li>
@@ -218,7 +223,7 @@
             <li class="active">Summary</li>
           </ol>
           
-          <div class="visual-block" id="visual-content">
+          <div class="visual-block">
             <!-- Content Ad Space -->
             <img src="img/920x167.gif">
           </div> 
@@ -226,100 +231,113 @@
             <div class="prev control"><span class="icon-caret-left"></span></div>
             <div class="content">
               <div class="matches">
-                <div class="inner">
-                <div class="match">
-                  <span class="status">Term</span>
-                  <table>
-                    <tr class="win">
-                      <td class="team">Tfc</td>
-                      <td class="score">3</td>
-                    </tr>
-                    <tr>
-                      <td class="team">Va</td>
-                      <td class="score">1</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="match">
-                  <span class="status">Term</span>
-                  <table>
-                    <tr>
-                      <td class="team">Soc</td>
-                      <td class="score">0</td>
-                    </tr>
-                    <tr class="win">
-                      <td class="team">Etg</td>
-                      <td class="score">3</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="match">
-                  <span class="status">Term</span>
-                  <table>
-                    <tr class="win">
-                      <td class="team">Rea</td>
-                      <td class="score">2</td>
-                    </tr>
-                    <tr>
-                      <td class="team">Bay</td>
-                      <td class="score">1</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="match highlight live">
-                  <span class="status">75'</span>
-                  <table>
-                    <tr>
-                      <td class="team">Rei</td>
-                      <td class="score">1</td>
-                    </tr>
-                    <tr>
-                      <td class="team">Aca</td>
-                      <td class="score">3</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="match">
-                  <span class="status">TAB</span>
-                  <table>
-                    <tr>
-                      <td class="team">Nice</td>
-                      <td class="score">0</td>
-                    </tr>
-                    <tr class="win">
-                      <td class="team">Lyon</td>
-                      <td class="score">1</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="match">
-                  <span class="status">Term</span>
-                  <table>
-                    <tr class="win">
-                      <td class="flag"><img src="img/sprites/manchestercity.png"></td>
-                      <td class="team">Asm</td>
-                      <td class="score">3</td>
-                    </tr>
-                    <tr>
-                      <td class="flag"><img src="img/sprites/manchestercity.png"></td>
-                      <td class="team">Bor</td>
-                      <td class="score">1</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="match live">
-                  <span class="status">26'</span>
-                  <table>
-                    <tr>
-                      <td class="team">OM</td>
-                      <td class="score">1</td>
-                    </tr>
-                    <tr>
-                      <td class="team">GUI</td>
-                      <td class="score">1</td>
-                    </tr>
-                  </table>
-                </div>
+                <div class="inner owl-carousel owl-theme">
+                  <div class="match">
+                    <span class="status">Term</span>
+                    <table>
+                      <tr class="win">
+                        <td class="team">Tfc</td>
+                        <td class="score">3</td>
+                      </tr>
+                      <tr>
+                        <td class="team">Va</td>
+                        <td class="score">1</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match">
+                    <span class="status">Term</span>
+                    <table>
+                      <tr>
+                        <td class="team">Soc</td>
+                        <td class="score">0</td>
+                      </tr>
+                      <tr class="win">
+                        <td class="team">Etg</td>
+                        <td class="score">3</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match">
+                    <span class="status">Term</span>
+                    <table>
+                      <tr class="win">
+                        <td class="team">Rea</td>
+                        <td class="score">2</td>
+                      </tr>
+                      <tr>
+                        <td class="team">Bay</td>
+                        <td class="score">1</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match highlight live">
+                    <span class="status">75'</span>
+                    <table>
+                      <tr>
+                        <td class="team">Rei</td>
+                        <td class="score">1</td>
+                      </tr>
+                      <tr>
+                        <td class="team">Aca</td>
+                        <td class="score">3</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match">
+                    <span class="status">TAB</span>
+                    <table>
+                      <tr>
+                        <td class="team">Nice</td>
+                        <td class="score">0</td>
+                      </tr>
+                      <tr class="win">
+                        <td class="team">Lyon</td>
+                        <td class="score">1</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match">
+                    <span class="status">Term</span>
+                    <table>
+                      <tr class="win">
+                        <td class="flag"><img src="img/sprites/manchestercity.png"></td>
+                        <td class="team">Asm</td>
+                        <td class="score">3</td>
+                      </tr>
+                      <tr>
+                        <td class="flag"><img src="img/sprites/manchestercity.png"></td>
+                        <td class="team">Bor</td>
+                        <td class="score">1</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match live">
+                    <span class="status">26'</span>
+                    <table>
+                      <tr>
+                        <td class="team">OM</td>
+                        <td class="score">1</td>
+                      </tr>
+                      <tr>
+                        <td class="team">GUI</td>
+                        <td class="score">1</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="match paused">
+                    <span class="status">HT</span>
+                    <table>
+                      <tr>
+                        <td class="team">OM</td>
+                        <td class="score">1</td>
+                      </tr>
+                      <tr>
+                        <td class="team">GUI</td>
+                        <td class="score">1</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -333,7 +351,7 @@
             <div class="prev control"><span class="icon-caret-left"></span></div>
             <div class="content">
               <div class="matches">
-                <div class="inner">
+                <div class="inner owl-carousel owl-theme">
                   <div class="match live">
                     <span class="status">22'</span>
                     <table>
@@ -465,6 +483,8 @@
                         <li><a href="#">Option 1</a></li>
                         <li><a href="#">Option 2</a></li>
                         <li><a href="#">Option 3</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -505,6 +525,7 @@
                   <p>
                     <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
                     <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                    <button type="button" class="btn btn-link btn-xs dropdown-toggle">2013 / 2014<span class="icon-caret-down"></span></button>
                   </p>
                 </div>
               </div>
@@ -554,7 +575,7 @@
                 </div>
                 <div class="col-md-2">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-default datepicker-icon"><span class="icon-calendar"></span> <span class="icon-caret-down"></span></button>
+                    <button type="button" class="btn btn-default large-icon"><span class="icon icon-calendar"></span> <span class="icon-caret-down"></span></button>
                   </div>
                 </div>
               </div>
@@ -642,7 +663,7 @@
                   <div class="alert alert-danger" role="alert">An error ocurred, please retry in 30 seconds</div>                  
                   <div class="alert alert-warning alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <span class="glyphicon glyphicon-volume-up"></span> Sound is disabled. <strong>Do you want to enable sound now ?</strong> <button class="btn btn-xs btn-primary pull-right">Activate sound</button>
+                    <span class="icon glyphicon glyphicon-volume-up"></span>Sound is disabled. <strong>Do you want to enable sound now ?</strong> <button class="btn btn-xs btn-success pull-right">Activate sound</button>
                   </div>
                 </div>
               </div>
@@ -650,10 +671,10 @@
                 <div class="col-md-12">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <div class="panel-title">Panel title</div>
                       <div class="tools">
                         <a href="#"><span class="icon-caret-right"></span> Text Link</a>
                       </div>
+                      <div class="panel-title">Panel title</div>
                     </div>
                   </div>
                   <div class="panel panel-default">
@@ -673,44 +694,53 @@
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h3 class="panel-title">Panel title</h3>
                       <div class="tools">
                         <span class="label label-live"> Live</span>
                       </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <div class="panel-title"><span class="glyphicon glyphicon-comment "></span> Panel title</div>
-                      <div class="tools">
-                        <span class="badge">49</span><i class="uppercase"> Messages</i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
                       <h3 class="panel-title">Panel title</h3>
-                      <div class="tools">
-                        <button class="active"><span class="glyphicon glyphicon-align-justify"></span></button>
-                        <button><span class="glyphicon glyphicon-align-justify"></span></button>
-                        <button><span class="glyphicon glyphicon-th-large"></span></button>
-                      </div>
                     </div>
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <div class="panel-title"><span class="icon-football"></span> Panel title</div>
+                      <div class="tools">
+                        <span class="badge">49</span><i class="uppercase">Messages</i>
+                      </div>
+                      <div class="panel-title"><span class="glyphicon glyphicon-comment "></span>Panel title</div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="tools">
+                        <a href="#" class="icon active"><span class="glyphicon glyphicon-align-justify"></span></a>
+                        <a href="#" class="icon"><span class="glyphicon glyphicon-align-justify"></span></a>
+                        <a href="#" class="icon"><span class="glyphicon glyphicon-th-large"></span></a>
+                      </div>
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
                       <div class="tools">
                         <i>Les buteurs pour PSG en Ligue 1 cette saison</i>
                       </div>
+                      <div class="panel-title"><span class="icon icon-football"></span>Panel title</div>
                     </div>
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h3 class="panel-title">Panel title</h3>
                       <div class="tools">
-                        <button type="button" class="btn btn-xs btn-default spinner">All time <span class="icon-expand"></span></button>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs btn-default spinner dropdown-toggle" data-toggle="dropdown">All time <span class="icon-expand"></span></button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
                       </div>
+                      <h3 class="panel-title">Panel title</h3>
                     </div>
                     <div class="panel-body">
                       <p>Cras justo odio, dapibus ac facilisis in, <b>egestas eget</b> quam. Morbi leo risus, porta ac consectetur ac, <a href="#">link color</a> at eros. Morbi leo risus, link hover color ac,
@@ -724,10 +754,10 @@
                   </div>
                   <div class="panel panel-inverse">
                     <div class="panel-heading">
-                      <h3 class="panel-title">Panel title</h3>
                       <div class="tools">
                         <a href="#"><span class="icon-caret-right"></span> Text Link</a>
                       </div>
+                      <h3 class="panel-title">Panel title</h3>
                     </div>
                     <div class="panel-body">
                       <p>Cras justo odio, dapibus ac facilisis in, <b>egestas eget</b> quam. Morbi leo risus, porta ac consectetur ac, <a href="#">link color</a> at eros. Morbi leo risus, link hover color ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -852,10 +882,10 @@
                 </div>
                 <div class="info">
                   <div class="title">
-                    <h1>Champions League</h1>
-                    <a href="#"><span class="glyphicon glyphicon-star"></span></a>
+                    <h2>Champions League</h2>
+                    <a href="#" class="active"><span class="glyphicon glyphicon-star"></span></a>
                   </div>
-                  <a href="#" class="uppercase"><span class="flag-11"></span>International</a>
+                  <a href="#" class="uppercase name"><span class="flag-11"></span>International</a>
                   <button class="btn btn-xs btn-link dropdown-toggle">2013 / 2014<span class="icon-caret-down"></span></button>
                 </div>
               </div>
@@ -865,10 +895,10 @@
                 </div>
                 <div class="info">
                   <div class="title">
-                    <h1 class="uppercase">Psg</h1>
+                    <h2 class="uppercase">Psg</h2>
                     <a href="#"><span class="glyphicon glyphicon-star"></span></a>
                   </div>
-                  <a href="#" class="uppercase"><span class="flag-5"></span>France</a>
+                  <a href="#" class="uppercase name"><span class="flag-5"></span>France</a>
                   <button class="btn btn-xs btn-link dropdown-toggle">2013 / 2014<span class="icon-caret-down"></span></button>
                 </div>
                 <div class="shirts">
@@ -894,7 +924,7 @@
                 <div class="info">
                   <div class="title">
                     <h3 class="first-name">Arjen</h3>
-                    <h1 class="last-name">Robben</h1>
+                    <h2 class="last-name">Robben</h2>
                   </div>
                   <a href="#" class="uppercase"><span class="flag-9"></span>Netherlands</a>
                 </div>
@@ -998,12 +1028,10 @@
                   </div>
                   <div class="gp">
                     <div class="icon"><span class="icon-googleplus"></span></div>
-                    <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
                     <script src="https://apis.google.com/js/platform.js" async defer>
                       {lang: 'es'}
                     </script>
 
-                    <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
                     <div class="g-plusone" data-size="medium"></div>
                   </div>
                 </div>
@@ -1013,11 +1041,10 @@
 
             <!--BEGIN RIGHT SIDEBAR -->
             <div class="right-sidebar">
-                <div id="top-match-block" class="panel panel-default ">
+                <div class="panel panel-default panel-condensed top-match-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Upcoming Top Games</h3>
                     </div>
-                    <div class="panel-body no-padding">
                       <div class="row">
                         <div class="col-xs-4">
                           <div class="top-match active">
@@ -1053,33 +1080,32 @@
                         <div class="match-time"><span>20h30</span></div>
                       </div>
                       <div class="make-prediction">
-                        Make a prediction <button class="btn btn-prediction btn-xs" type="button">1</button> <button class="btn btn-prediction btn-xs" type="button">X</button> <button class="btn btn-prediction btn-xs" type="button">2</button> 
+                        <div class="pull-right"><button class="btn btn-prediction btn-xs" type="button">1</button> <button class="btn btn-prediction btn-xs" type="button">X</button> <button class="btn btn-prediction btn-xs" type="button">2</button></div> Make a prediction  
                       </div>
                       <table class="table bets table-condensed table-striped">
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets1.png" alt="Bet1"></td>
                           <td><a href="#">Betclic</a></td>
-                          <td class="stat down"><a href="#">1.75</a></td>
-                          <td class="stat up"><a href="#">3.50</a></td>
-                          <td class="stat equal"><a href="#">3.80</a></td>
+                          <td class="stat"><span class="icon-arrow-down"></span><a href="#">1.75</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.50</a></td>
+                          <td class="stat"><span class="icon-equal"></span><a href="#">3.80</a></td>
                         </tr>
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets2.png" alt="Bet1"></td>
                           <td><a href="#">PMU</a></td>
-                          <td class="stat equal"><a href="#">1.64</a></td>
-                          <td class="stat up"><a href="#">3.45</a></td>
-                          <td class="stat up"><a href="#">3.60</a></td>
+                          <td class="stat"><span class="icon-equal"></span><a href="#">1.64</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.45</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.60</a></td>
                         </tr>
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets3.png" alt="Bet1"></td>
                           <td><a href="#">Netbet</a></td>
-                          <td class="stat down"><a href="#">1.75</a></td>
-                          <td class="stat up"><a href="#">3.50</a></td>
-                          <td class="stat up"><a href="#">3.70</a></td>
+                          <td class="stat"><span class="icon-arrow-down"></span><a href="#">1.75</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.50</a></td>
+                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.70</a></td>
                         </tr>
                       </table>
-                      <div class="panel panel-condensed top-match-comments">
-                        <div class="panel-body">
+                      <div class="comments">
                           <ul class="media-list">
                             <li class="media">
                               <a href="#" class="pull-left avatar">
@@ -1141,10 +1167,9 @@
                                 <p>c la guerre pour les deux</p>
                                 <!-- Nested media object -->
                               </div>
-                              <li class="media view-all"><a href="#">+ View all 56 comments</a>
+                              <li class="media view-all"><a href="#">+ View all 56 comments</a></li>
                             </li>   
                           </ul>
-                        </div>
                       </div>
                       <div class="add-comment">
                         <p><span></span>Say what you think about this game!</p>
@@ -1158,17 +1183,15 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                 </div>
                 
-                <div id="top-competitions-block" class="panel panel-default">
+                <div class="panel panel-condensed panel-default top-competitions-block">
                     <div class="panel-heading">
-                      <h3 class="panel-title">Top Competitions</h3>
                       <div class="tools">
-                        <button><span class="glyphicon glyphicon-cog"></span></button>
+                        <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
                       </div>
+                      <h3 class="panel-title">Top Competitions</h3>
                     </div>
-                    <div class="panel-body">
                       <ul class="nav nav-pills">
                         <li class="active">
                           <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
@@ -1223,7 +1246,7 @@
                         <tbody>
                           <tr class="live">
                             <td class="number">1</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/psg.png"> PSG</td>
                             <td class="pts">86</td>
                             <td>37</td>
@@ -1231,7 +1254,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">2</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1239,7 +1262,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">3</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1247,7 +1270,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">4</td>
-                            <td class="state equal"></td>
+                            <td class="state"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1255,7 +1278,7 @@
                           </tr>
                           <tr class="live">
                             <td class="number">5</td>
-                            <td class="state up">+1</td>
+                            <td class="state up"><span class="icon-arrow-up"></span>+1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1263,7 +1286,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">6</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1271,7 +1294,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">7</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1279,7 +1302,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">8</td>
-                            <td class="state up">+1</td>
+                            <td class="state up"><span class="icon-arrow-up"></span>+1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1287,7 +1310,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">9</td>
-                            <td class="state up">+4</td>
+                            <td class="state up"><span class="icon-arrow-up"></span>+4</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1295,7 +1318,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">10</td>
-                            <td class="state down">-2</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-2</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1303,7 +1326,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">11</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1311,7 +1334,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">12</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1319,7 +1342,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">13</td>
-                            <td class="state down">-1</td>
+                            <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1327,7 +1350,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">14</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1335,7 +1358,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">15</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1343,7 +1366,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">16</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1351,7 +1374,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">17</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1359,7 +1382,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">18</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1367,7 +1390,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">19</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1375,7 +1398,7 @@
                           </tr>
                           <tr class="">
                             <td class="number">20</td>
-                            <td class="state equal"></td>
+                            <td class="state equal"><span class="icon-equal"></span></td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
                             <td class="pts">79</td>
                             <td>37</td>
@@ -1384,10 +1407,9 @@
                         </tbody>
                       </table>
                       <a href="#" class="full-table"><span class="icon-caret-right"></span> Full Table</a>
-                    </div>
                 </div>
                 
-                  <div id="social-networks-block" class="panel panel-default">
+                  <div class="panel panel-condensed panel-default social-networks-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Follow us</h3>
                     </div>
@@ -1417,11 +1439,10 @@
                     </div>
                   </div>         
                   
-                  <div id="news-block" class="panel panel-default">
+                  <div class="panel panel-condensed panel-default news-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">News in brief</h3>
                     </div>
-                    <div class="panel-body">
                       <div class="main-news">
                         <a href="#"><img class="preview" src="img/news1.png" alt="News 1"></a>
                         <div class="content">
@@ -1470,15 +1491,13 @@
                           <li>07/05 <a href="#">- Cote PSG Rennes : Le calice jusqu'à la lie ?</a></li>
                         </ul>
                       </div>
-                    </div>
                     <a href="#" class="all-news"><span class="icon-caret-right"></span> All News</a>
                   </div>      
                   
-                  <div id="live-commented-matches" class="panel panel-default">
+                  <div class="panel panel-condensed panel-default live-commented-matches">
                     <div class="panel-heading">
                       <h3 class="panel-title">Live commented matches</h3>
                     </div>
-                    <div class="panel-body">
                       <img class="preview" src="img/live-commented-matches.png" alt="Live">
                       <div class="description">
                         <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper</p>
@@ -1486,83 +1505,81 @@
                       <table class="table matches table-condensed table-striped no-border">
                         <tr class="live">
                           <td class="date">63'</td>
-                          <td class="team1">VA</td>
-                          <td class="score">1 - 2</td>
-                          <td class="team2">Monaco</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">VA</a></td>
+                          <td class="score"><a href="#">1 - 2</a></td>
+                          <td class="team2"><a href="#">Monaco</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                       </table>
-                    </div>
                   </div>     
                   
-                  <div class="panel panel-default">
+                  <div class="panel panel-condensed panel-default">
                     <div class="panel-heading">
                       <h3 class="panel-title">Long box title that has to be displayed on two lines</h3>
                     </div>
-                    <div class="panel-body no-padding">
                       <table class="table matches table-striped table-condensed no-border">
                         <thead>
                           <tr>
@@ -1597,14 +1614,13 @@
                           <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
                         </tr>
                       </table>
-                    </div>
                   </div>   
                   
-                  <div class="panel panel-default empty-block">
+                  <div class="panel panel-condensed panel-default empty-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Empty panel</h3>
                     </div>
-                    <div class="panel-body no-padding">
+                    <div class="panel-body">
                       <img src="img/sprites/empty-block-bg.png" alt="Empty Panel">
                       <p>Information not available for the selected criteria</p>
                     </div>
@@ -1616,7 +1632,6 @@
             <div class="clearfix"></div>
         </main>
       </div>
-    </div>
     </div><!-- /.container -->
     <footer class="footer">
       <div class="container">
@@ -1740,16 +1755,57 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.js"></script>
+    <script src="js/owl.carousel/owl.carousel.min.js"></script>
     <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
       
-      /*Tooltips*/
-      $('.ttip, [data-toggle="tooltip"]').tooltip();
+        /*Sortable*/
+        $( ".sortable-ul" ).sortable();
+        $( ".sortable-ul" ).disableSelection();
+        
+        /*Tooltips*/
+        $('.ttip, [data-toggle="tooltip"]').tooltip();
 
-      /*Popover*/
-      $('[data-popover="popover"]').popover();
+        /*Popover*/
+        $('[data-popover="popover"]').popover();
 
+        var owl = $(".matches-slider .matches .inner");
+ 
+        owl.owlCarousel({
+          autoWidth:true,
+          pagination: false,
+          navigation: false,
+          dots: false,
+        });
+ 
+        $(".matches-slider .prev.control").click(function(){
+          owl.trigger('prev.owl.carousel');
+        });
+        
+        $(".matches-slider .next.control").click(function(){
+          owl.trigger('next.owl.carousel');
+        });
+
+        var matches_live = $(".matches-slider-live .matches .inner");
+ 
+        matches_live.owlCarousel({
+          autoWidth: true,
+          pagination: false,
+          nav: false,
+          dots: false,
+        });
+ 
+        $(".matches-slider-live .prev.control").click(function(){
+          matches_live.trigger('prev.owl.carousel');
+        });
+        
+        $(".matches-slider-live .next.control").click(function(){
+          matches_live.trigger('next.owl.carousel');
+        });
+        
+        
       });
     </script>
   </body>

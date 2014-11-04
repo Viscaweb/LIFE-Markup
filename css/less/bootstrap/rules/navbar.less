@@ -2,7 +2,7 @@
 .header{
 
   .navbar.navbar-fixed-top{
-    background: @ls-light-color;
+    background: @header-bg;
     height: 64px;
     border: 0;
     
@@ -31,9 +31,9 @@
       
         input{
           border:none;
-          background: darken(@ls-light-color, 5%);
+          background: darken(@header-bg, 5%);
           .border-radius(2px 0 0 2px);
-          color: darken(@ls-light-color, 47%);
+          color: darken(@header-bg, 47%);
           font-size:  @font-size-base -1;
           font-weight: 300;
           box-shadow: none;
@@ -54,9 +54,9 @@
           display: inline-block;
         
           .btn{
-            border-color: darken(@ls-light-color, 5%);
-            background: darken(@ls-light-color, 5%);
-            color: darken(@ls-light-color, 31%);
+            border-color: darken(@header-bg, 5%);
+            background: darken(@header-bg, 5%);
+            color: darken(@header-bg, 31%);
             .border-radius(0 2px 2px 0);
             height: 36px;
             font-size:  @font-size-large;
@@ -67,7 +67,7 @@
             }
             
             &:hover{
-              color: darken(@ls-light-color, 35%);
+              color: darken(@header-bg, 35%);
             }
           }
         }
@@ -82,7 +82,7 @@
     
       > li{
         > a{ 
-          color:darken(@ls-light-color, 47%);
+          color:darken(@header-bg, 47%);
           padding-bottom: 0;
           padding-top: 0;
           line-height: 64px;
@@ -108,7 +108,7 @@
           }
           
           span{
-            color:darken(@ls-light-color, 28%);
+            color:darken(@header-bg, 28%);
             font-size:  @font-size-small;
             margin-left: 10px;
           }
@@ -120,7 +120,7 @@
          
         .btn{
           line-height: 16px;
-          color: @ls-light-color;
+          color: @header-bg;
           font-size:  @font-size-small;
           font-weight: 600;
           margin-left: 10px;
@@ -137,7 +137,7 @@
       
       > li{
         > a{
-          color: @ls-light-color;
+          color: @header-bg;
         }
       }
     }
@@ -185,7 +185,7 @@
         &.active{
           >a , >a:hover{
             background-color: @brand-primary;
-            color: @ls-light-color;
+            color: @header-bg;
           }
         }
         
@@ -202,7 +202,7 @@
       
       li{
         a{
-          color: darken(@ls-light-color, 10.7%);
+          color: darken(@header-bg, 10.7%);
           padding: 0 @ls-navbar-inverse-item-padding;
         }
       }

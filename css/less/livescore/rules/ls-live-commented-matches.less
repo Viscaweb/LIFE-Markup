@@ -1,8 +1,6 @@
 
 .live-commented-matches{
   &.panel{
-    > .panel-body{
-      padding: 0;
       
       .preview{
         width: 100%;
@@ -45,6 +43,10 @@
               padding: 0;
               text-align: center;
               background-color: darken(@ls-light-color, 3.3%);
+              
+              a{
+                line-height: @font-size-large;
+              }
               
               &.none{
                 line-height: 12px;
@@ -105,7 +107,6 @@
         }
       }
       
-    }
   } 
   
 }

@@ -749,6 +749,7 @@
                           <th class="text-center">1</th>
                           <th class="text-center">X</th>
                           <th class="text-center">2</th>
+                        </tr>
                       </thead>
                       <tbody>
                         <tr>
@@ -863,10 +864,11 @@
                           <th class="text-center"><b>Goal scorer</b></th>
                           <th class="text-center"><b>First goal scorer</b></th>
                           <th class="text-center"><b>Last goal scorer</b></th>
+                        </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><b>L. Suarez<b></td>
+                          <td><b>L. Suarez</b></td>
                           <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#">1.43</a></td>
                           <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#">2.83</a></td>
                           <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#">3.62</a></td>
@@ -1122,7 +1124,7 @@
                           <td><b>G. Bigirimana</b></td>
                           <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#">15.00</a></td>
                           <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#">51.00</a></td>
-                          <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#"><s>51.00<s></a></td>
+                          <td class="event-lost result"><i class="icon-expand"></i><span class="icon-arrow-down"></span><a href="#"><s>51.00</s></a></td>
                         </tr>
                         <tr>
                           <td><b>C. Tiote</b></td>
@@ -1194,11 +1196,10 @@
             
             <!--BEGIN RIGHT SIDEBAR -->
             <div class="right-sidebar">
-                <div class="panel panel-default top-match-block">
+                <div class="panel panel-default panel-condensed top-match-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Upcoming Top Games</h3>
                     </div>
-                    <div class="panel-body no-padding">
                       <div class="row">
                         <div class="col-xs-4">
                           <div class="top-match active">
@@ -1259,8 +1260,7 @@
                           <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.70</a></td>
                         </tr>
                       </table>
-                      <div class="panel panel-condensed comments">
-                        <div class="panel-body">
+                      <div class="comments">
                           <ul class="media-list">
                             <li class="media">
                               <a href="#" class="pull-left avatar">
@@ -1322,10 +1322,9 @@
                                 <p>c la guerre pour les deux</p>
                                 <!-- Nested media object -->
                               </div>
-                              <li class="media view-all"><a href="#">+ View all 56 comments</a>
+                              <li class="media view-all"><a href="#">+ View all 56 comments</a></li>
                             </li>   
                           </ul>
-                        </div>
                       </div>
                       <div class="add-comment">
                         <p><span></span>Say what you think about this game!</p>
@@ -1339,17 +1338,15 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                 </div>
                 
-                <div class="panel panel-default top-competitions-block">
+                <div class="panel panel-condensed panel-default top-competitions-block">
                     <div class="panel-heading">
-                      <h3 class="panel-title">Top Competitions</h3>
                       <div class="tools">
                         <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
                       </div>
+                      <h3 class="panel-title">Top Competitions</h3>
                     </div>
-                    <div class="panel-body">
                       <ul class="nav nav-pills">
                         <li class="active">
                           <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
@@ -1565,10 +1562,9 @@
                         </tbody>
                       </table>
                       <a href="#" class="full-table"><span class="icon-caret-right"></span> Full Table</a>
-                    </div>
                 </div>
                 
-                  <div class="panel panel-default social-networks-block">
+                  <div class="panel panel-condensed panel-default social-networks-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Follow us</h3>
                     </div>
@@ -1598,11 +1594,10 @@
                     </div>
                   </div>         
                   
-                  <div class="panel panel-default news-block">
+                  <div class="panel panel-condensed panel-default news-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">News in brief</h3>
                     </div>
-                    <div class="panel-body">
                       <div class="main-news">
                         <a href="#"><img class="preview" src="img/news1.png" alt="News 1"></a>
                         <div class="content">
@@ -1651,15 +1646,13 @@
                           <li>07/05 <a href="#">- Cote PSG Rennes : Le calice jusqu'à la lie ?</a></li>
                         </ul>
                       </div>
-                    </div>
                     <a href="#" class="all-news"><span class="icon-caret-right"></span> All News</a>
                   </div>      
                   
-                  <div class="panel panel-default live-commented-matches">
+                  <div class="panel panel-condensed panel-default live-commented-matches">
                     <div class="panel-heading">
                       <h3 class="panel-title">Live commented matches</h3>
                     </div>
-                    <div class="panel-body">
                       <img class="preview" src="img/live-commented-matches.png" alt="Live">
                       <div class="description">
                         <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper</p>
@@ -1667,83 +1660,81 @@
                       <table class="table matches table-condensed table-striped no-border">
                         <tr class="live">
                           <td class="date">63'</td>
-                          <td class="team1">VA</td>
-                          <td class="score">1 - 2</td>
-                          <td class="team2">Monaco</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">VA</a></td>
+                          <td class="score"><a href="#">1 - 2</a></td>
+                          <td class="team2"><a href="#">Monaco</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                         <tr>
                           <td class="date">21h00</td>
-                          <td class="team1">Rennes</td>
-                          <td class="score none"><span class="icon-expand-h"></span></td>
-                          <td class="team2">Sochaux</td>
-                          <td class="commented"><span class="icon-mic"></span></td>
+                          <td class="team1"><a href="#">Rennes</a></td>
+                          <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+                          <td class="team2"><a href="#">Sochaux</a></td>
+                          <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
                         </tr>
                       </table>
-                    </div>
                   </div>     
                   
-                  <div class="panel panel-default">
+                  <div class="panel panel-condensed panel-default">
                     <div class="panel-heading">
                       <h3 class="panel-title">Long box title that has to be displayed on two lines</h3>
                     </div>
-                    <div class="panel-body no-padding">
                       <table class="table matches table-striped table-condensed no-border">
                         <thead>
                           <tr>
@@ -1778,14 +1769,13 @@
                           <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
                         </tr>
                       </table>
-                    </div>
                   </div>   
                   
-                  <div class="panel panel-default empty-block">
+                  <div class="panel panel-condensed panel-default empty-block">
                     <div class="panel-heading">
                       <h3 class="panel-title">Empty panel</h3>
                     </div>
-                    <div class="panel-body no-padding">
+                    <div class="panel-body">
                       <img src="img/sprites/empty-block-bg.png" alt="Empty Panel">
                       <p>Information not available for the selected criteria</p>
                     </div>
@@ -1793,11 +1783,12 @@
                   
             </div>
             <!--END RIGHT SIDEBAR -->
+            
+            
           </div>
             <div class="clearfix"></div>
         </main>
       </div>
-    </div>
     </div><!-- /.container -->
     <footer class="footer">
       <div class="container">
