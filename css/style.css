@@ -8360,7 +8360,7 @@ span.dark-icon {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans Condensed';
   src: url("../fonts/OpenSans-Regular-webfont.eot");
   src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Regular-webfont.woff") format('woff'), url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format('svg');
   font-weight: 400;
@@ -9863,7 +9863,7 @@ span.sprite.corner-flag {
 }
 .match-timeline .team-logos .team .name {
   display: inline-block;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 19px;
   font-weight: 600;
   color: #ffffff;

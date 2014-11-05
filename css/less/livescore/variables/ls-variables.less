@@ -18,12 +18,12 @@
 
 /*File Names*/
 /*Fonts Paths*/
-@ls-font-open-sans-condensed-bold: 'OpenSans-CondBold-webfont';
-@ls-font-open-sans-condensed-light: 'OpenSans-CondLight-webfont';
-@ls-font-open-sans-regular: 'OpenSans-Regular-webfont';
-@ls-font-open-sans-light: 'OpenSans-Light-webfont';
-@ls-font-open-sans-semi-bold: 'OpenSans-Semibold-webfont';
-@ls-font-open-sans-bold: 'OpenSans-Bold-webfont';
+@ls-alternate-bold-font-name: 'OpenSans-CondBold-webfont';
+@ls-alternate-light-font-name: 'OpenSans-CondLight-webfont';
+@ls-body-regular-font-name: 'OpenSans-Regular-webfont';
+@ls-body-light-font-name: 'OpenSans-Light-webfont';
+@ls-body-semi-bold-font-name: 'OpenSans-Semibold-webfont';
+@ls-body-bold-font-name: 'OpenSans-Bold-webfont';
 
 /*Images Paths*/
 @ls-image-live-spot: "@{ls-img-path}sprites/live-spot.gif";
@@ -87,7 +87,7 @@
 @ls-match-timeline-control-icon-size: 21px;
 @ls-match-timeline-time-zone-bg: #c00000;
 @ls-match-timeline-time-zone-label-color: darken(@ls-light-color, 20%);
-@ls-match-timeline-team-font-family: "Open Sans Condensed",sans-serif;
+@ls-match-timeline-team-font-family: @ls-alternate-font;
 @ls-match-timeline-team-font-size: 19px;
 @ls-match-timeline-replay-icon-bg: #454A4C;
 @ls-match-timeline-replay-icon-hover: @brand-primary;
@@ -159,7 +159,10 @@
 @ls-table-rank-standing-clear-red: #f5cdcd;
 
 /*Typography*/
-@ls-body-font:'Open Sans', sans-serif;
+@ls-body-font-name: 'Open Sans';
+@ls-alternate-font-name: 'Open Sans Condensed';
+@ls-body-font: '@{ls-body-font-name}', sans-serif;
+@ls-alternate-font: '@{ls-alternate-font-name}', sans-serif;
 @ls-link-caret-right-size: 10px;
 @font-weight-light: 300;
 @font-weight-normal: 400;
