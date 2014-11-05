@@ -7,6 +7,9 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 16px;
+    display: block;
+    color: @ls-headings-color;
+    
     img{
       margin-top: -3px;
       max-width: 14px;
@@ -16,12 +19,11 @@
 
   .goals{
     display: inline-block;
-    h1{
-      font-size: @ls-player-goal-size;
-      font-weight: 100;
-      color: darken(@ls-light-color, 46%);
-      margin-bottom: 0;
-    }
+    font-size: @ls-player-goal-size;
+    font-weight: @font-weight-light;
+    color: darken(@ls-light-color, 46%);
+    margin-bottom: 0;
+    
     p{
       font-size: 10px;
       color: darken(@ls-light-color, 27%);
@@ -34,6 +36,7 @@
       }
     }
   }
+  
   .picture{
     bottom: 0;
     position: absolute;

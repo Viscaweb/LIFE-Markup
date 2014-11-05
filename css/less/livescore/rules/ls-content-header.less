@@ -15,12 +15,12 @@
 	.info{
 		display: inline-block;
 		.title{
+    > span{
+      font-weight: @font-weight-semi-bold;
+      font-size: @font-size-h2;
+      color: @ls-headings-color;
+    }
     
-			h2{
-				display: inline-block;
-				margin: 0 0 5px;
-			}
-      
 			a{
 				display: inline-block;
 				font-size: @font-size-base + 1;
@@ -39,6 +39,10 @@
 		    	color: @ls-fav-hover;
 		    }
 			}
+      
+      &.uppercase{
+        text-transform: uppercase;
+      }
 
 		}
 		.btn-link{
@@ -84,6 +88,14 @@
 					font-weight: 600;
 					padding-left: 2px;
 				}
+        
+        .last-name{
+          display: block;
+          font-weight: @font-weight-semi-bold;
+          font-size: @font-size-h2;
+          line-height: 32px;
+          color: @ls-headings-color;
+        }
 			}
 		}
 		.description{

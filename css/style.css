@@ -8161,9 +8161,10 @@ button.close {
 .content-header .info {
   display: inline-block;
 }
-.content-header .info .title h2 {
-  display: inline-block;
-  margin: 0 0 5px;
+.content-header .info .title > span {
+  font-weight: 600;
+  font-size: 27px;
+  color: #474747;
 }
 .content-header .info .title a {
   display: inline-block;
@@ -8179,6 +8180,9 @@ button.close {
 }
 .content-header .info .title a.active {
   color: #ffc600;
+}
+.content-header .info .title.uppercase {
+  text-transform: uppercase;
 }
 .content-header .info .btn-link {
   font-weight: 400;
@@ -8216,6 +8220,13 @@ button.close {
   font-size: 13px;
   font-weight: 600;
   padding-left: 2px;
+}
+.content-header.player .info .title .last-name {
+  display: block;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 32px;
+  color: #474747;
 }
 .content-header.player .description {
   display: inline-block;
@@ -8494,6 +8505,8 @@ span.sprite.corner-flag {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 16px;
+  display: block;
+  color: #474747;
 }
 .player .name img {
   margin-top: -3px;
@@ -8502,10 +8515,8 @@ span.sprite.corner-flag {
 }
 .player .goals {
   display: inline-block;
-}
-.player .goals h1 {
   font-size: 52px;
-  font-weight: 100;
+  font-weight: 300;
   color: #8a8a8a;
   margin-bottom: 0;
 }
