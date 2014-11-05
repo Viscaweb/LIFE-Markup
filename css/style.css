@@ -8660,6 +8660,7 @@ span.sprite.corner-flag {
   background: #f3f4f5;
   border-bottom: 1px solid #ececec;
   table-layout: fixed;
+  z-index: 9999;
 }
 .matches-slider .control,
 .matches-slider-live .control {
@@ -8814,33 +8815,42 @@ span.sprite.corner-flag {
 .matches-slider-live {
   background-color: #424749;
 }
-.matches-slider-live > .title {
+.matches-slider-live .toggle-container {
+  width: 100%;
+  overflow: hidden;
+}
+.matches-slider-live .slider-content {
+  display: table;
+  width: 100%;
+}
+.matches-slider-live .slider-content > .title {
   border-right: 1px solid #52585b;
   position: relative;
   line-height: 71px;
   padding: 20px 60px 20px 20px;
   display: table-cell;
   width: 20%;
+  min-width: 155px;
 }
-.matches-slider-live > .title .controls {
+.matches-slider-live .slider-content > .title .controls {
   position: absolute;
   right: 15px;
   top: 26px;
   line-height: 17px;
 }
-.matches-slider-live > .title .controls span {
+.matches-slider-live .slider-content > .title .controls span {
   cursor: pointer;
   font-size: 17px;
   margin-left: 3px;
 }
-.matches-slider-live > .title h4 {
+.matches-slider-live .slider-content > .title h4 {
   margin: 0;
   font-size: 12px;
   color: #8f979a;
   font-weight: 600;
   line-height: 16px;
 }
-.matches-slider-live > .title h4 span {
+.matches-slider-live .slider-content > .title h4 span {
   background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   padding-left: 11px;
   text-transform: uppercase;
@@ -8863,6 +8873,7 @@ span.sprite.corner-flag {
 .matches-slider-live .content .match {
   background-color: #2f3334;
   border-color: #52585b;
+  min-width: 130px;
 }
 .matches-slider-live .content .match table tr td {
   color: #ffffff;
