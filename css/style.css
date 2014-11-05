@@ -6665,7 +6665,8 @@ button.close {
 .media-list li.media .media-body .media-heading {
   margin: 0;
 }
-.media-list li.media .media-body .media-heading h4 {
+.media-list li.media .media-body .media-heading h4,
+.media-list li.media .media-body .media-heading .h4 {
   font-size: 13px;
   font-weight: bold;
   color: #5c5c5c;
@@ -6675,18 +6676,21 @@ button.close {
 .media-list li.media .media-body .media-heading .tools {
   float: right;
 }
-.media-list li.media .media-body .media-heading .tools h5 {
+.media-list li.media .media-body .media-heading .tools h5,
+.media-list li.media .media-body .media-heading .tools .h5 {
   font-weight: 400;
   color: #9e9e9e;
   font-size: 11px;
   display: inline-block;
   margin-right: 6px;
 }
-.media-list li.media .media-body .media-heading .tools h5 a {
+.media-list li.media .media-body .media-heading .tools h5 a,
+.media-list li.media .media-body .media-heading .tools .h5 a {
   color: #dbdbdb;
   margin-right: 5px;
 }
-.media-list li.media .media-body .media-heading .tools h5 a:hover {
+.media-list li.media .media-body .media-heading .tools h5 a:hover,
+.media-list li.media .media-body .media-heading .tools .h5 a:hover {
   color: #424749;
 }
 .media-list li.media .media-body .media-heading .tools > a {
@@ -7029,9 +7033,12 @@ button.close {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  font-size: 16px;
   border-color: #f0f0f0;
   position: relative;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #5e5e5e;
+  font-weight: bold;
 }
 @media \0screen {
   .panel > .panel-heading {
@@ -7041,11 +7048,11 @@ button.close {
   }
 }
 .panel > .panel-heading .panel-title {
+  display: inline;
   font-size: 16px;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #5e5e5e;
   font-weight: bold;
-  display: inline;
 }
 .panel > .panel-heading .panel-title > img {
   max-width: 20px;
@@ -7062,6 +7069,8 @@ button.close {
 .panel > .panel-heading .tools {
   float: right;
   font-style: italic;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
   color: #949494;
   font-size: 12px;
   position: relative;
@@ -8854,14 +8863,17 @@ span.sprite.corner-flag {
   font-size: 17px;
   margin-left: 3px;
 }
-.matches-slider-live .slider-content > .title h4 {
+.matches-slider-live .slider-content > .title h4,
+.matches-slider-live .slider-content > .title .h4 {
   margin: 0;
   font-size: 12px;
   color: #8f979a;
   font-weight: 600;
   line-height: 16px;
+  display: block;
 }
-.matches-slider-live .slider-content > .title h4 span {
+.matches-slider-live .slider-content > .title h4 span,
+.matches-slider-live .slider-content > .title .h4 span {
   background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   padding-left: 11px;
   text-transform: uppercase;
@@ -9127,15 +9139,18 @@ span.sprite.corner-flag {
   float: right;
   max-width: 32px;
 }
-.top-competitions-block.panel .active-ligue h4 {
+.top-competitions-block.panel .active-ligue h4,
+.top-competitions-block.panel .active-ligue .h4 {
   margin: 0 0 20px;
   font-size: 11px;
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
   color: #bdbdbd;
+  display: block;
 }
-.top-competitions-block.panel .active-ligue h4 span {
+.top-competitions-block.panel .active-ligue h4 span,
+.top-competitions-block.panel .active-ligue .h4 span {
   color: #353535;
   font-size: 14px;
   display: block;
@@ -9535,7 +9550,8 @@ span.sprite.corner-flag {
 .panel-condensed .comments .media-list .media .avatar .btn-group .btn.btn-default {
   color: #a3a3a3;
 }
-.panel-condensed .comments .media-list .media .media-heading h4 {
+.panel-condensed .comments .media-list .media .media-heading h4,
+.panel-condensed .comments .media-list .media .media-heading .h4 {
   font-size: 12px;
 }
 .panel-condensed .comments .media-list .media .media-heading .tools {
@@ -9543,7 +9559,8 @@ span.sprite.corner-flag {
   right: 0;
   position: absolute;
 }
-.panel-condensed .comments .media-list .media .media-heading .tools h5 {
+.panel-condensed .comments .media-list .media .media-heading .tools h5,
+.panel-condensed .comments .media-list .media .media-heading .tools .h5 {
   font-size: 10px;
   margin: 4px 0 0;
   white-space: nowrap;
@@ -9559,7 +9576,8 @@ span.sprite.corner-flag {
   font-size: 12px;
   line-height: 15px;
 }
-.panel-condensed .comments .media-list .media:hover .media-heading .tools h5 {
+.panel-condensed .comments .media-list .media:hover .media-heading .tools h5,
+.panel-condensed .comments .media-list .media:hover .media-heading .tools .h5 {
   display: none;
 }
 .panel-condensed .comments .media-list .media:hover .media-heading .tools > a {
@@ -10437,7 +10455,8 @@ span.sprite.corner-flag {
 .table.teams-lineups tbody tr td:nth-child(2) {
   border-right: 2px solid #ededed;
 }
-.panel.match-prediction .panel-body h4.title {
+.panel.match-prediction .panel-body h4.title,
+.panel.match-prediction .panel-body .h4-title {
   display: inline-block;
   margin: 0;
 }
@@ -10502,11 +10521,13 @@ span.sprite.corner-flag {
   border-right: 1px solid #f0f0f0;
   padding: 0;
 }
-.panel.match-prediction > .row > div h5.title {
+.panel.match-prediction > .row > div h5.title,
+.panel.match-prediction > .row > div .h5.title {
   margin: 0;
   padding: 15px 20px;
   font-size: 15px;
   font-weight: 600;
+  display: block;
 }
 .panel.match-prediction > .row > div .content {
   padding: 0 20px 15px;
@@ -11239,18 +11260,21 @@ table.team-results tbody tr td.score {
   border-bottom: 1px solid #f0f0f0;
   height: 150px;
 }
-.panel.player-statistics .statistics .big-stat h5.title {
+.panel.player-statistics .statistics .big-stat h5.title,
+.panel.player-statistics .statistics .big-stat .h5.title {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
   margin-bottom: 0;
+  display: block;
 }
 .panel.player-statistics .statistics .big-stat span.icon {
   font-size: 40px;
   color: #d7d7d7;
 }
-.panel.player-statistics .statistics .big-stat h1.result {
+.panel.player-statistics .statistics .big-stat h1.result,
+.panel.player-statistics .statistics .big-stat .h1.result {
   font-size: 47px;
   font-weight: 300;
   display: inline-block;
@@ -11258,32 +11282,39 @@ table.team-results tbody tr td.score {
 .panel.player-statistics .statistics img {
   vertical-align: baseline;
 }
-.panel.player-statistics .statistics h2.result {
+.panel.player-statistics .statistics h2.result,
+.panel.player-statistics .statistics .h2.result {
   font-size: 29px;
   display: inline-block;
   font-weight: 300;
 }
-.panel.player-statistics .statistics h2.result.football-field {
+.panel.player-statistics .statistics h2.result.football-field,
+.panel.player-statistics .statistics .h2.result.football-field {
   padding-left: 25px;
   background: url("../img//sprites/football-field.png") no-repeat left center;
 }
-.panel.player-statistics .statistics h2.result.arrow-right-green {
+.panel.player-statistics .statistics h2.result.arrow-right-green,
+.panel.player-statistics .statistics .h2.result.arrow-right-green {
   padding-left: 22px;
   background: url("../img//sprites/arrow-right-green.png") no-repeat left center;
 }
-.panel.player-statistics .statistics h2.result.arrow-left-red {
+.panel.player-statistics .statistics h2.result.arrow-left-red,
+.panel.player-statistics .statistics .h2.result.arrow-left-red {
   padding-left: 20px;
   background: url("../img//sprites/arrow-left-red.png") no-repeat left center;
 }
-.panel.player-statistics .statistics h2.result.chairs {
+.panel.player-statistics .statistics h2.result.chairs,
+.panel.player-statistics .statistics .h2.result.chairs {
   padding-left: 40px;
   background: url("../img//sprites/chairs.png") no-repeat left center;
 }
-.panel.player-statistics .statistics h2.result.yellow-card {
+.panel.player-statistics .statistics h2.result.yellow-card,
+.panel.player-statistics .statistics .h2.result.yellow-card {
   padding-left: 20px;
   background: url("../img//sprites/yellow-card.png") no-repeat left center;
 }
-.panel.player-statistics .statistics h2.result.red-card {
+.panel.player-statistics .statistics h2.result.red-card,
+.panel.player-statistics .statistics .h2.result.red-card {
   padding-left: 20px;
   background: url("../img//sprites/red-card.png") no-repeat left center;
 }
@@ -11336,9 +11367,11 @@ table.team-results tbody tr td.score {
   margin-bottom: 20px;
   font-weight: 400;
 }
-.panel.goals-distribution > .row > div h4 {
+.panel.goals-distribution > .row > div h4,
+.panel.goals-distribution > .row > div .h4 {
   font-weight: 400;
   font-size: 16px;
+  display: block;
 }
 .panel.goals-distribution .js-chart {
   text-align: center;
@@ -11372,7 +11405,8 @@ table.team-results tbody tr td.score {
   font-size: 36px;
   color: #d7d7d7;
 }
-.panel.goals-statistics table thead tr th.statistics-title .stat h1.result {
+.panel.goals-statistics table thead tr th.statistics-title .stat h1.result,
+.panel.goals-statistics table thead tr th.statistics-title .stat .h1.result {
   font-size: 47px;
   font-weight: 300;
   display: inline-block;
@@ -11708,18 +11742,24 @@ table.team-results tbody tr td.score {
 .footer .top-footer .left-column > .row {
   margin-bottom: 0;
 }
-.footer .top-footer .left-column h3 {
+.footer .top-footer .left-column h3,
+.footer .top-footer .left-column span.title,
+.footer .top-footer .left-column span.h3 {
   color: #d2dce5;
   font-size: 12px;
   font-weight: 600;
   line-height: 20px;
+  display: block;
 }
-.footer .top-footer .left-column h3 img {
+.footer .top-footer .left-column h3 img,
+.footer .top-footer .left-column span.title img,
+.footer .top-footer .left-column span.h3 img {
   width: 20px;
   height: 20px;
   margin-right: 6px;
 }
-.footer .top-footer .left-column h3.title {
+.footer .top-footer .left-column h3.title,
+.footer .top-footer .left-column span.title {
   text-transform: uppercase;
 }
 .footer .top-footer .left-column ul {

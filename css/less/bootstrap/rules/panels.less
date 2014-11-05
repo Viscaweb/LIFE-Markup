@@ -1,20 +1,25 @@
 /*panels*/
+
+.panel-title-font-style(){
+  font-size:  @font-size-large;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: lighten(@ls-dark-color, 37% );
+  font-weight: bold;
+}
+
 .panel{
   .drop-shadow (0, 0, 0, 0, 0);
   border-color: darken(@ls-light-color,6%);
 
   > .panel-heading{
     .border-radius(0);
-    font-size:  @font-size-large;
     border-color: darken(@ls-light-color,6%);
     position: relative;
-
+    .panel-title-font-style();
+    
     .panel-title{
-      font-size:  @font-size-large;
-      font-family: 'Open Sans Condensed', sans-serif;
-      color: lighten(@ls-dark-color, 37% );
-      font-weight: bold;
       display: inline;
+      .panel-title-font-style();
       
       > img{
         max-width: 20px;
@@ -34,6 +39,8 @@
     .tools{
       float: right;
       font-style: italic;
+      font-weight: normal;
+      font-family: @font-family-sans-serif;
       color: lighten( @ls-dark-color, 58% );
       font-size:  @font-size-small;
       position: relative;
