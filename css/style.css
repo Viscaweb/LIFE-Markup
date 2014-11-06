@@ -6252,13 +6252,17 @@ button.close {
   width: 20px;
   display: inline-block;
   font-size: 20px;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 .alert > .icon.icon-default {
   color: #c3c3c3;
 }
 .alert.icon {
   line-height: 19px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  top: 1px;
 }
 /*Badges*/
 .badge {
@@ -6294,15 +6298,17 @@ button.close {
   padding: 2px 6px;
 }
 .btn.dropdown-toggle .icon-caret-down,
-.btn.dropdown-toggle .icon-expand {
+.btn.dropdown-toggle .icon-expand,
+.btn.dropdown-toggle .icon {
   margin-left: 20px;
 }
 .btn.dropdown-toggle.btn-link .icon-caret-down,
-.btn.dropdown-toggle.btn-link .icon-expand {
+.btn.dropdown-toggle.btn-link .icon-expand,
+.btn.dropdown-toggle.btn-link .icon {
   margin-left: 10px;
 }
 .btn.large-icon {
-  padding: 6px 22px 5px 11px;
+  padding: 6px 28px 5px 11px;
 }
 .btn.large-icon > span.icon {
   color: #9c9c9c;
@@ -6417,6 +6423,7 @@ button.close {
 .btn.spinner {
   min-width: 100px;
   text-align: left;
+  border: 1px solid #e0e0e0 !important;
 }
 .btn.spinner span {
   margin-top: -6px;
@@ -6424,8 +6431,14 @@ button.close {
   right: 5px;
   top: 50%;
 }
+.btn.spinner .icon {
+  font-size: 11px;
+}
 .btn-group .btn-link span {
   color: #0053a8;
+}
+.btn-group + .btn-group {
+  margin-left: 15px;
 }
 .btn-group > .btn {
   -webkit-border-radius: 2px;
@@ -6441,6 +6454,10 @@ button.close {
     position: relative;
     zoom: 1;
   }
+}
+.btn-group > .btn.active {
+  background-color: #5da400;
+  border-color: #4f8b00;
 }
 .btn-group.btn-group-justified {
   table-layout: inherit;
@@ -6527,9 +6544,36 @@ button.close {
   border-color: #cb3d2a;
   background: #cf412e;
 }
+.btn-prediction-failed:after,
+.btn-prediction-failed:focus:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  background-color: #ffffff;
+  transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+}
 .btn-live {
-  background: url("../img/sprites/live-spot.gif") no-repeat 10px center;
+  position: relative;
   padding-left: 23px;
+}
+.btn-live:after {
+  position: absolute;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 center;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 100%;
+  left: 10px;
+  top: 0;
 }
 /*Dropdown*/
 .dropdown-menu {
@@ -6630,6 +6674,10 @@ button.close {
     zoom: 1;
   }
 }
+.label .icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
 .label-live {
   background-color: #e33000;
 }
@@ -6658,6 +6706,19 @@ button.close {
 }
 .media-list li.media .pull-left {
   margin-right: 20px;
+}
+.media-list li.media .avatar {
+  text-align: center;
+  min-width: 49px;
+}
+.media-list li.media .avatar .btn-group {
+  display: block;
+  margin-top: 5px;
+}
+.media-list li.media .avatar .btn-group .btn {
+  font-size: 11px;
+  line-height: 13px;
+  padding: 1px 4px;
 }
 .media-list li.media .img-circle {
   max-width: 40px;
@@ -6719,7 +6780,6 @@ button.close {
   margin-bottom: -2px;
 }
 .nav-pills > li.active a,
-.nav-pills > li.active a:hover,
 .nav-pills > li.active a:focus {
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 0;
@@ -6738,16 +6798,19 @@ button.close {
   background-clip: padding-box;
   behavior: "js/css3pie/PIE.htc";
   border: transparent;
+  background-color: #f4f4f4;
   border-bottom: 2px solid #519000;
+  color: #5e5e5e;
 }
-.nav-pills > li.active .badge {
-  background: #ffffff;
-  color: #5da400;
+.nav-pills > li.active a:hover {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #519000;
+  color: #5e5e5e;
 }
 .nav-pills > li > a {
   border-top: none;
   border-bottom: 2px solid #f0f0f0;
-  color: #434343;
+  color: #5e5e5e;
   outline: none;
   font-weight: 600;
 }
@@ -7290,7 +7353,7 @@ button.close {
   border-right: none;
   border-left: none;
   margin-right: 0;
-  color: #434343;
+  color: #5e5e5e;
   outline: none;
   font-weight: 600;
 }
@@ -8291,6 +8354,7 @@ h1 {
 p {
   font-weight: lighter;
   font-size: 14px;
+  line-height: 22px;
 }
 p b {
   font-weight: 600;
@@ -8571,8 +8635,17 @@ span.sprite.corner-flag {
 }
 /*sharing*/
 .sharing {
-  padding: 21px 16px;
+  padding: 21px 0;
   background-color: #f7f7f7;
+  margin: 0;
+}
+.sharing iframe {
+  margin: 0;
+  min-width: 65px;
+  margin-right: 20px;
+}
+.sharing > div > div {
+  vertical-align: top !important;
 }
 .sharing #twitter-widget-0 {
   height: 65px !important;
@@ -8672,6 +8745,22 @@ span.sprite.corner-flag {
   position: relative;
   top: 3px;
   width: 140px;
+}
+.sharing p {
+  font-size: 12px;
+  font-weight: 600;
+}
+.sharing .share-link-block {
+  margin-top: 30px;
+}
+.sharing .share-link-block input.share-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  width: 100%;
+  border: 0;
+  padding: 6px;
 }
 .matches-slider,
 .matches-slider-live {
@@ -8778,6 +8867,11 @@ span.sprite.corner-flag {
   padding-left: 8px;
   padding-right: 8px;
   background-color: #e6e6e6;
+}
+.matches-slider .content .match table tr td.score.update,
+.matches-slider-live .content .match table tr td.score.update {
+  background-color: #e33000;
+  color: #ffffff !important;
 }
 .matches-slider .content .match table tr:first-child td,
 .matches-slider-live .content .match table tr:first-child td {
@@ -11474,6 +11568,14 @@ table.team-results tbody tr td.score {
   padding: 15px 21px;
   padding-right: 15px;
 }
+.sidebar-nav > li > a .icon.right {
+  float: right;
+  line-height: 22px;
+  color: #d4d4d4;
+}
+.sidebar-nav > li > a .icon.active {
+  color: #5da400;
+}
 .sidebar-nav > li > a.pull-right {
   position: absolute;
   border-left: 1px solid #e8e8e8;
@@ -11522,6 +11624,15 @@ table.team-results tbody tr td.score {
 .sidebar-nav li a:hover {
   color: #ffffff;
   background-color: #5da400;
+}
+.sidebar-nav li a:hover .icon.right {
+  color: #ffffff;
+}
+.sidebar-nav li a:hover .icon.active {
+  color: #ffffff;
+}
+.sidebar-nav li a:hover.live-red {
+  color: #ffffff !important;
 }
 .sidebar-nav li a.dropdown-togle:before {
   content: "";
@@ -11658,6 +11769,11 @@ table.team-results tbody tr td.score {
   line-height: 51px;
   padding: 0 8px;
   border-bottom: 2px solid transparent;
+}
+.main .breadcrumb > li > a img.team {
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 7px;
 }
 .main .breadcrumb > li > a > span {
   font-size: 11px;

@@ -3,20 +3,24 @@
   > li{
     margin-bottom: -2px;
     &.active{
-      a,a:hover,a:focus{
+      a, a:focus{
         .border-radiuses(2px,0,0,2px);
         border: transparent;
+        background-color: darken(@ls-light-color, 4.5%);
         border-bottom: 2px solid darken(@brand-primary, 4%);
+        color: lighten(@ls-dark-color, 37%);
       }
-      .badge{
-        background: @ls-light-color;
-        color: @brand-primary;
+      
+      a:hover{
+        background-color: darken(@ls-light-color, 6%);
+        border-bottom: 2px solid darken(@brand-primary, 4%);
+        color: lighten(@ls-dark-color, 37%);
       }
     }
     > a{
       border-top: none;
       border-bottom: 2px solid darken(@ls-light-color, 6%);
-      color: lighten(@ls-dark-color, 26.2%);
+      color: lighten(@ls-dark-color, 37%);
       outline: none;
       font-weight: @font-weight-semi-bold;
       
@@ -26,7 +30,6 @@
       }
 
       &:hover{
-
         background-color: darken(@ls-light-color, 6%);
         border-bottom: 2px solid darken(@brand-primary, 4%);
       }

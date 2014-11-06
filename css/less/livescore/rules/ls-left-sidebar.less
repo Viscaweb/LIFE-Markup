@@ -13,12 +13,23 @@
 	list-style: none;
 	> li{
 		border-bottom: 1px solid darken(@ls-light-color, 9%);
+    
 		> a{
 			font-weight: 600;
 			line-height: 23px;
 			
 			padding: 15px 21px;
 			padding-right: 15px;
+      
+      .icon.right{
+        float: right;
+        line-height: 22px;
+        color: darken(@ls-light-color, 17%);
+      }
+      
+      .icon.active{
+        color: @brand-primary;
+      }
 
 			&.pull-right{
 				position: absolute;
@@ -64,6 +75,18 @@
 			&:hover{
 				color: @ls-light-color;
 				background-color: @brand-primary;
+        
+        .icon.right{
+          color: @ls-light-color;
+        }
+        
+        .icon.active{
+          color: @ls-light-color;
+        }
+        
+        &.live-red{
+         color: @ls-light-color !important;
+        }
 			}
 
 			&.dropdown-togle:before{

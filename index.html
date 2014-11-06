@@ -115,7 +115,7 @@
         <div class="left-sidebar col-xs-2">
           <ul class="sidebar-nav">
             <li>
-              <a href="#"><i class="icon-football"></i>All Matches</a>
+              <a href="#"><i class="icon icon-football active"></i>All Matches</a>
               <a href="#" class="pull-right"><span class="icon-calendar"></span></a>
             </li>
             <li>
@@ -125,7 +125,7 @@
               <a href="#" ><i class="icon-bell"></i>My Games<span class="badge live pull-right">3</span><span class="badge pull-right">12</span></a>
             </li>
             <li class="active">
-              <a href="#" class="dropdown-togle open"><i class="icon-team"></i>My Leagues</a>
+              <a href="#" class="dropdown-togle open"><i class="icon-team"></i>My Leagues<span class="icon glyphicon glyphicon-cog right"></span></a>
               <ul class="sub-menu sortable-ul">
                 <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/ligue1.png">Ligue 1 <span class="live-red">(6)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
                 <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/ligue2.png">Ligue 2<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
@@ -140,7 +140,7 @@
               </ul>
             </li>
             <li class="active">
-              <a href="#" class="dropdown-togle open"><i class="icon-shirt"></i>My Teams</a>
+              <a href="#" class="dropdown-togle open"><i class="icon-shirt"></i>My Teams<span class="icon glyphicon glyphicon-cog right"></span></a>
               <ul class="sub-menu sortable-ul">
                 <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/fr.png">France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
                 <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/manchestercity.png">Manchester City<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
@@ -206,7 +206,7 @@
           <ol class="breadcrumb">
             <li><a href="#">Foot en direct</a></li>
             <li><a href="#">France</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PSG <span class="icon-caret-down"></span></a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="team" src="img/sprites/psg.png">PSG <span class="icon-caret-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#"> Ajaccio</a></li>
                 <li><a href="#"> Bastia	</a></li>
@@ -286,7 +286,7 @@
                     <table>
                       <tr>
                         <td class="team">Rei</td>
-                        <td class="score">1</td>
+                        <td class="score update">1</td>
                       </tr>
                       <tr>
                         <td class="team">Aca</td>
@@ -375,7 +375,7 @@
                           <tr>
                             <td class="flag"><img src="img/sprites/manchestercity.png"></td>
                             <td class="team">Aja</td>
-                            <td class="score">1</td>
+                            <td class="score update">1</td>
                           </tr>
                         </table>
                       </div>
@@ -455,6 +455,27 @@
                   </div>
                 </div>
               </div>
+              
+              <div class="row">
+                <div class="col-md-3">
+                  <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                </div>
+                <div class="col-md-2">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-via="gore_edward">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>    
+                </div>
+                <div class="col-md-2">
+                  <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'es'}
+                  </script>
+                  <div class="g-plusone" data-size="medium"></div>
+                </div>
+                <div class="col-md-5 text-right">
+                  <div class="btn-group"><button class="btn btn-default dropdown-toggle large-icon" type="button"><span class="icon icon-share"></span>Partager<span class="icon-caret-down"></span></button>
+                  </div>
+                </div>
+              </div> 
+              
               <div class="row">
                 <div class="col-md-12">
                   <button type="button" class="btn btn-default btn-block"><span class="dark-icon icon-expand"></span> Display all matches</button>
@@ -573,21 +594,19 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-9">
                   <div class="btn-group">
                     <button type="button" class="btn btn-default"><span class="icon-caret-left"></span></button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Phase de poule<span class="icon-caret-down"></span></button>
                     <button type="button" class="btn btn-default"><span class="icon-caret-right"></span></button>
                   </div>
-                </div>
-                <div class="col-md-5">
                   <div class="btn-group">
                     <button type="button" class="btn btn-default"><span class="icon-caret-left"></span></button>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Phase de poule<span class="icon-expand"></span></button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Phase de poule<span class="icon icon-caret-select"></span></button>
                     <button type="button" class="btn btn-default"><span class="icon-caret-right"></span></button>
                   </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3 text-right">
                   <div class="btn-group">
                     <button type="button" class="btn btn-default large-icon"><span class="icon icon-calendar"></span> <span class="icon-caret-down"></span></button>
                   </div>
@@ -709,7 +728,7 @@
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <div class="tools">
-                        <span class="label label-live"> Live</span>
+                        <span class="label label-live"><i class="icon icon-ellipse"></i>Live</span>
                       </div>
                       Panel title
                     </div>
@@ -744,7 +763,7 @@
                     <div class="panel-heading">
                       <div class="tools">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-xs btn-default spinner dropdown-toggle" data-toggle="dropdown">All time <span class="icon-expand"></span></button>
+                          <button type="button" class="btn btn-xs btn-default spinner dropdown-toggle" data-toggle="dropdown">All time <span class="icon icon-caret-select"></span></button>
                           <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -817,7 +836,7 @@
                 <div class="col-md-12">
                   <ul class="media-list">
                     <li class="media">
-                      <a href="#" class="pull-left">
+                      <a href="#" class="pull-left avatar">
                         <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
                       </a>
                       <div class="media-body">
@@ -834,8 +853,13 @@
                       </div>
                     </li>                    
                     <li class="media">
-                      <a href="#" class="pull-left">
+                      <a href="#" class="pull-left avatar">
                         <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                        <div class="btn-group btn-group-xs">
+                          <button type="button" class="btn btn-success">1</button>
+                          <button type="button" class="btn btn-default">N</button>
+                          <button type="button" class="btn btn-default">2</button>
+                        </div>
                       </a>
                       <div class="media-body">
                         <div class="media-heading">
@@ -852,8 +876,13 @@
                         En plus lille contre psg a l'avant derniere journées</p>
                         <!-- Nested media object -->
                         <div class="media">
-                          <a href="#" class="pull-left">
+                          <a href="#" class="pull-left avatar">
                             <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                            <div class="btn-group btn-group-xs">
+                              <button type="button" class="btn btn-default">1</button>
+                              <button type="button" class="btn btn-prediction-failed">N</button>
+                              <button type="button" class="btn btn-default">2</button>
+                            </div>
                           </a>
                           <div class="media-body">
                             <div class="media-heading">
@@ -869,7 +898,7 @@
                         </div>
                         <!-- Nested media object -->
                         <div class="media">
-                          <a href="#" class="pull-left">
+                          <a href="#" class="pull-left avatar">
                             <img class="img-circle" alt="64x64"src="img/placehold-avatar.png">
                           </a>
                           <div class="media-body">
@@ -1018,16 +1047,22 @@
               <div class="row sharing">
                 <div class="col-md-7">
                   <p>Tu as aimé cet article ? Partage-le maintenant!</p>
-                  <!-- Facebook Button-->
-                  <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:76px; height:65px;" allowTransparency="true"></iframe>
-                  <!-- Facebook Button-->
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="footendirectcom" >Tweet</a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                  <!-- Google Button -->
-                  <script src="https://apis.google.com/js/platform.js" async defer>
-                    {lang: 'es'}
-                  </script>
-                  <div class="g-plusone" data-size="tall"></div>
+                  <div class="social-embeds">
+                    <!-- Facebook Button-->
+                    <iframe class="facebook" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:65px;" allowTransparency="true"></iframe>
+                    <!-- Facebook Button-->
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="footendirectcom" >Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <!-- Google Button -->
+                    <script src="https://apis.google.com/js/platform.js" async defer>
+                      {lang: 'es'}
+                    </script>
+                    <div class="g-plusone" data-size="tall"></div>
+                  </div>
+                  <div class="share-link-block">
+                    <p>Partager le lien de la page :</p>
+                    <input type="text" class="share-link" value="http://footendirect.com/actualites/un-11-ty">
+                  </div>
                 </div>
                 <div class="col-md-5 likes">
                   <p>Réseaux sociaux :</p>

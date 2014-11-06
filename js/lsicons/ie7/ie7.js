@@ -60,6 +60,7 @@
 		'icon-caret-double-left': '&#xe62c;',
 		'icon-caret-double-right': '&#xe62d;',
 		'icon-ellipse': '&#xe62e;',
+		'icon-caret-select': '&#xe62f;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

@@ -27,18 +27,19 @@
   }
   
   &.dropdown-toggle{
-    .icon-caret-down,.icon-expand{
+    .icon-caret-down,.icon-expand, .icon{
       margin-left: 20px;
     }
     &.btn-link{
-      .icon-caret-down,.icon-expand{
+      .icon-caret-down,.icon-expand, .icon{
         margin-left: 10px;
       }
     }
   }  
   
   &.large-icon{
-    padding: 6px 22px 5px 11px;
+    padding: 6px 28px 5px 11px;
+    
     > span.icon{
       color: darken(@ls-light-color,39%);
       font-size: @font-size-base + 9;
@@ -161,12 +162,17 @@
 .btn.spinner{
   min-width: 100px;
   text-align: left;
+  border:1px solid darken(@ls-light-color, 12%) !important;
 
   span{
     margin-top: -6px;
     position: absolute;
     right: 5px;
     top: 50%;
+  }
+  
+  .icon{
+    font-size: @font-size-x-small;
   }
 }
 
@@ -177,8 +183,17 @@
     }
   }
   
+  & + .btn-group{
+    margin-left: 15px;
+  }
+  
   > .btn{
     .border-radius(2px);
+    
+   &.active{
+      background-color: @brand-primary;
+      border-color: darken(@brand-primary, 5%);
+    }    
   }
   
   &.btn-group-justified{
@@ -228,7 +243,7 @@
 
   &:hover{
     color:@live-red;
-  };
+  }
 }
 
 .btn-prediction-done,.btn-prediction-done:focus{
@@ -280,9 +295,32 @@
     background: @ls-btn-danger - 14%;
   }
   
+  &:after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background-color: @ls-light-color;
+    .rotate(40deg);
+  }
 }
 
 .btn-live{
-  background: url("@{ls-image-live-spot}") no-repeat 10px center;
+  position: relative;
   padding-left: 23px;
+  
+  &:after{
+    position: absolute;
+    background: url("@{ls-image-live-spot}") no-repeat 0 center;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 100%;
+    left: 10px;
+    top: 0;
+  }
 }

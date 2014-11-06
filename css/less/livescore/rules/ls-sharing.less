@@ -1,8 +1,21 @@
 /*sharing*/
 .sharing{
-	padding: 21px 16px;
+	padding: 21px 0;
 	background-color: darken(@ls-light-color, 3%);
-
+  margin: 0;
+  
+  iframe{
+    margin: 0;
+    min-width: 65px;
+    margin-right: 20px;
+  }
+  
+  > div{
+    > div{
+      vertical-align: top !important;
+    }
+  }
+  
   #twitter-widget-0{
     height: 65px !important;
   }  
@@ -76,5 +89,23 @@
   	}
   }
 
-
+  p{
+    font-size: @font-size-small;
+    font-weight: @font-weight-semi-bold;
+  }
+  
+  .share-link-block{
+    margin-top: 30px;
+    
+    input.share-link{ 
+      font-family: @ls-body-font;
+      font-size: @font-size-small;
+      font-weight: @font-weight-semi-bold;
+      color: lighten(@ls-dark-color, 10%);
+      width: 100%;
+      border: 0;
+      padding: 6px;
+    }
+  }
+  
 }

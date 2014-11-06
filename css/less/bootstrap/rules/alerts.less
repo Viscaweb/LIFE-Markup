@@ -14,7 +14,7 @@
     width: 20px;
     display: inline-block;
     font-size: 20px;
-    margin-right: 8px;
+    margin-right: 12px;
     
     &.icon-default{
       color: darken(@gray-lighter, 17%);
@@ -25,4 +25,11 @@
     line-height: 19px;
   }
   
+}
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.alert-dismissible{
+  .close {
+    top: 1px;
+  }
 }
