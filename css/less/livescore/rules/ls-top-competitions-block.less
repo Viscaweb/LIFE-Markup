@@ -135,13 +135,61 @@
         }
         
         tbody{
+          tr, tr.highlight{
+            td.number{ background-color: #efefef !important; } 
+            &:nth-child(odd){ td.number{ background-color: #e6e6e6 !important; } }
+            &:nth-child(+1), &:nth-child(+2){ td.number{ background-color: #d1e9be !important; } }
+            &:nth-child(+3){ td.number{ background-color: #e3f1d9 !important; } }
+            &:nth-child(+4){ td.number{ background-color: #bee1ec !important; } }
+            &:nth-child(+18), &:nth-child(+19), &:nth-child(+20){ td.number{ background-color: #eebaba !important; } }
+          }
+        }
+      }
+      
+      table.results{
+        thead{
+          th{
+            text-transform: none;
+            font-size: @font-size-small;
+          }
+        }
+      
+        tbody{
           tr{
-            td.number{ background-color: #efefef; }
-            &:nth-child(odd){ td.number{ background-color: #e6e6e6; } }
-            &:nth-child(+1), &:nth-child(+2){ td.number{ background-color: #d1e9be; } }
-            &:nth-child(+3){ td.number{ background-color: #e3f1d9; } }
-            &:nth-child(+4){ td.number{ background-color: #bee1ec; } }
-            &:nth-child(+18), &:nth-child(+19), &:nth-child(+20){ td.number{ background-color: #eebaba; } }
+            td{
+              &.time{
+                color: darken(@ls-light-color,46%);
+                width: 5%;
+                padding-left: 4px;
+                padding-right: 4px;
+              }
+              
+              &.hour{
+                width: 5%;
+                padding-left: 4px;
+                padding-right: 4px;
+              }
+              
+              &.team{
+                width: 20%;
+                
+                b{
+                  font-weight: @font-weight-semi-bold;
+                }
+              }
+              
+              &.team1{
+                text-align: right;
+              }
+              
+              &.score{
+                font-size: @font-size-base;
+                
+                a{
+                  line-height: inherit;
+                }
+              }
+            }
           }
         }
       }

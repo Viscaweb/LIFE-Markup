@@ -108,34 +108,66 @@
         right: 15px;
       }
       
-      .match-time{
+      .match-time, .match-info{
         text-align: center;
         position: absolute;
         bottom: 27px;
         left: 0;
         width: 100%;
         
-        span{
+        > span{
           padding: 7px 9px;
           background: darken(@ls-greyblue-dark, 5%);
           color: @ls-light-color;
           font-size: @ls-top-match-block-match-time-size;
           display: inline-block;
+          min-width: @ls-top-match-block-score-min-width;
         }
         
+        .block{
+          display: inline-block;
+          min-width: @ls-top-match-block-score-min-width;
+        
+          div.score{
+            padding: 1px 9px;
+            background: darken(@ls-greyblue-dark, 5%);
+            color: @ls-light-color;
+            font-weight: @font-weight-bold;
+            font-size: @ls-top-match-block-score-size;
+          }
+          
+          div.time{
+            padding-left: 15px;
+            background: url("@{ls-image-live-spot}") no-repeat 28px center;
+            background-color: darken(@ls-greyblue-dark, 10%);
+            color: @ls-light-color;    
+            font-size: @font-size-small;
+            line-height: @font-size-large;
+          }        
+        }
+        
+      }
+      
+      .match-info{
+        bottom: 21px;
       }
     }
     
     .make-prediction{
-      padding: 0 8px;
-      line-height: 32px;
+      padding: 5px 8px;
       font-weight: 600;
       font-size: @font-size-small;
       background: darken(@ls-light-color, 5%);
       color: lighten(@ls-dark-color, 10%);
+      overflow: hidden;
+      line-height: 19px;
       
       .btn{
         margin-left: 10px;
+      }
+      
+      > div{
+        line-height: 20px;
       }
     }
     
@@ -145,6 +177,10 @@
       .logo{
         width: 22px;
         padding: 0;
+      }
+      
+      .best-odd{
+        font-weight: @font-weight-bold;
       }
     }
     

@@ -1,0 +1,56 @@
+
+
+.loading{
+  position: relative;
+  
+  &:after{
+    content: "";
+    position: absolute;
+    background: url("@{ls-image-loading}") no-repeat center center;
+    background-color: darken(@ls-light-color, 1.7%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    z-index: 2;
+  }
+  
+  &:before{
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    color: @brand-primary;
+    z-index: 3;
+    text-transform: uppercase;
+    font-weight: @font-weight-semi-bold;
+    font-size: @font-size-small; 
+    margin-top: 28px;
+  }
+  
+  &.dark{
+    &:after{
+      background-color: @ls-greyblue-dark; 
+    }
+  }
+  
+  &.horizontal{
+    &:after{
+      background-position: 40% center;
+    }
+    
+    &:before{
+      display: inline-block;
+      width: auto;
+      left: 40%;
+      margin-top: -8px; 
+      margin-left: 34px;
+    }
+  }
+}
+

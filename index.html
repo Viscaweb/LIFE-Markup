@@ -1120,13 +1120,32 @@
                           </div>                        
                         </div>
                       </div>
-                      <div class="score-board">
+                      <div class="score-board live">
                         <div class="title">LdC - Group 1 - J2</div>
                         <div class="match-date">28 Juin 2014</div>
                         <div class="teams">Nimes - PSG</div>
                         <div class="team team1"><img src="img/sprites/team2.png" alt="Team 2"></div>
                         <div class="team team2"><img src="img/sprites/psg.png" alt="PSG"></div>
                         <div class="match-time"><span>20h30</span></div>
+                      </div>
+                      <div class="score-board">
+                        <div class="title">LdC - Group 1 - J2</div>
+                        <div class="match-date">28 Juin 2014</div>
+                        <div class="teams">Nimes - PSG</div>
+                        <div class="team team1"><img src="img/sprites/team2.png" alt="Team 2"></div>
+                        <div class="team team2"><img src="img/sprites/psg.png" alt="PSG"></div>
+                        <div class="match-info">
+                          <div class="block">
+                            <div class="score">
+                              <span class="home-score">2</span>
+                              <span class="versus">-</span>
+                              <span class="away-score">1</span>
+                            </div>
+                            <div class="time">
+                              43'
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div class="make-prediction">
                         <div class="pull-right"><button class="btn btn-prediction btn-xs" type="button">1</button> <button class="btn btn-prediction btn-xs" type="button">X</button> <button class="btn btn-prediction btn-xs" type="button">2</button></div> Make a prediction  
@@ -1142,7 +1161,7 @@
                         <tr class="stats">
                           <td class="logo"><img src="img/sprites/bets2.png" alt="Bet1"></td>
                           <td><a href="#">PMU</a></td>
-                          <td class="stat"><span class="icon-equal"></span><a href="#">1.64</a></td>
+                          <td class="stat best-odd"><span class="icon-equal"></span><a href="#">1.64</a></td>
                           <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.45</a></td>
                           <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.60</a></td>
                         </tr>
@@ -1150,8 +1169,8 @@
                           <td class="logo"><img src="img/sprites/bets3.png" alt="Bet1"></td>
                           <td><a href="#">Netbet</a></td>
                           <td class="stat"><span class="icon-arrow-down"></span><a href="#">1.75</a></td>
-                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.50</a></td>
-                          <td class="stat"><span class="icon-arrow-up"></span><a href="#">3.70</a></td>
+                          <td class="stat best-odd"><span class="icon-arrow-up"></span><a href="#">3.50</a></td>
+                          <td class="stat best-odd"><span class="icon-arrow-up"></span><a href="#">3.70</a></td>
                         </tr>
                       </table>
                       <div class="comments">
@@ -1192,6 +1211,7 @@
                                   <span class="h4">YOUNITED-is-king</span>
                                   <div class="tools">
                                     <span class="h5">19/05 15h19</span>
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
                                     <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
                                     <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
                                   </div>
@@ -1325,15 +1345,15 @@
                             <td>37</td>
                             <td>57</td>
                           </tr>
-                          <tr class="live">
+                          <tr class="live highlight">
                             <td class="number">5</td>
                             <td class="state up"><span class="icon-arrow-up"></span>+1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
-                            <td class="pts">79</td>
+                            <td class="pts updated">79</td>
                             <td>37</td>
                             <td>57</td>
                           </tr>
-                          <tr class="">
+                          <tr class="highlight">
                             <td class="number">6</td>
                             <td class="state down"><span class="icon-arrow-down"></span>-1</td>
                             <td class="team"><img src="img/sprites/monaco.png"> Monaco</td>
@@ -1452,6 +1472,136 @@
                             <td class="pts">79</td>
                             <td>37</td>
                             <td>57</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a href="#" class="full-table"><span class="icon-caret-right"></span> Full Table</a>
+                </div>
+                
+                
+                <div class="panel panel-condensed panel-default top-competitions-block">
+                    <div class="panel-heading">
+                      <div class="tools">
+                        <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
+                      </div>
+                      Top Competitions
+                    </div>
+                      <ul class="nav nav-pills">
+                        <li class="active">
+                          <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="img/sprites/bundesliga.png" alt="Ligue"></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="img/sprites/ligue2.png" alt="Ligue"></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="img/sprites/premiereleague.png" alt="Ligue"></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="img/sprites/seriea.png" alt="Ligue"></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="img/sprites/ldc.png" alt="Ligue"></a>
+                        </li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="icon-caret-down"></span></a>
+                          <ul role="menu" class="dropdown-menu pull-right">
+                                <li><a href="#">Option 1</a></li>
+                                <li><a href="#">Option 2</a></li>
+                                <li><a href="#">Option 3</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="active-ligue">
+                        <img class="ligue-logo" src="img/sprites/ligue1.png" alt="ligue">
+                        <span class="h4">
+                          <span>Ligue 1</span>
+                          37th matchday
+                        </span>
+                        <div class="btn-group">
+                          <button class="btn btn-default active" type="button">Results</button>
+                          <button class="btn btn-default" type="button">Table</button>
+                          <button class="btn btn-default" type="button">Fixtures</button>
+                        </div>
+                      </div>
+                      <table class="table results table-condensed table-striped no-border">
+                        <thead>
+                          <tr>
+                            <th colspan="5" class="text-center">Samedi 10 Mai 2014</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">VA</td>
+                            <td class="striped score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                            <td class="team team2"><b>Monaco</b></td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">Rennes</td>
+                            <td class="striped score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                            <td class="team team2"><b>Sochaux</b></td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">Nantes</td>
+                            <td class="striped score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
+                            <td class="team team2"><b>St Etie.</b></td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">Montpel.</td>
+                            <td class="striped score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                            <td class="team team2"><b>Bastia</b></td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">Lyon</td>
+                            <td class="striped score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
+                            <td class="team team2"><b>Lorient</b></td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">Lille</td>
+                            <td class="striped score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
+                            <td class="team team2"><b>PSG</b></td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1"><b>Guingamp</b></td>
+                            <td class="striped score"><a href="#"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">0</span></a></td>
+                            <td class="team team2">Toulouse</td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1"><b>Evian</b></td>
+                            <td class="striped score"><a href="#"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">0</span></a></td>
+                            <td class="team team2">Nice</td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1">Bordeaux</td>
+                            <td class="striped score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
+                            <td class="team team2">OM</td>
+                          </tr>
+                          <tr>
+                            <td class="hour">21h00</td>
+                            <td class="time">Term.</td>
+                            <td class="team team1"><b>Ajaccio</b></td>
+                            <td class="striped score"><a href="#"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
+                            <td class="team team2">Reims</td>
                           </tr>
                         </tbody>
                       </table>

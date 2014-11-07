@@ -193,6 +193,7 @@
    &.active{
       background-color: @brand-primary;
       border-color: darken(@brand-primary, 5%);
+      color: @ls-light-color;
     }    
   }
   
@@ -233,6 +234,23 @@
       }
     }
   }
+  
+  .btn-prediction-failed{
+    position: relative;
+    
+    &:after{
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 50%;
+      margin-left: -1px;
+      background-color: @ls-light-color;
+      .rotate(40deg);
+    }
+  }
 }
 
 /*Custom Buttons*/
@@ -243,6 +261,8 @@
 
   &:hover{
     color:@live-red;
+    border-color: darken(@live-red, 6%);
+    background: darken(@ls-light-color, 6%);
   }
 }
 
@@ -253,8 +273,8 @@
 
   &:hover{
     color:@ls-light-color;
-    background: lighten(@ls-dark-color, 40%)
-  };
+    background: lighten(@ls-dark-color, 40%);
+  }
 }
 
 .btn-prediction-success,.btn-prediction-success:focus{
@@ -293,19 +313,6 @@
     color: @ls-light-color;
     border-color: @ls-btn-danger - 18%;
     background: @ls-btn-danger - 14%;
-  }
-  
-  &:after{
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 1px;
-    top: 0;
-    left: 50%;
-    margin-left: -1px;
-    background-color: @ls-light-color;
-    .rotate(40deg);
   }
 }
 
