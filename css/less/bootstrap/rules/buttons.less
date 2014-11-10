@@ -177,14 +177,28 @@
 }
 
 .btn-group{
+
   .btn-link{
+  
     span{
         color: @ls-btn-link;
     }
-  }
-  
-  & + .btn-group{
-    margin-left: 15px;
+    
+    &.icon{
+      
+      span{
+        color: darken(@ls-light-color, 19.3%);
+        font-size: @font-size-normal;
+      }
+      
+      &:hover{
+        background-color: transparent;
+        
+        span{
+          color: darken(@ls-light-color, 30%);
+        }
+      }
+    }
   }
   
   > .btn{
@@ -255,13 +269,13 @@
 
 /*Custom Buttons*/
 .btn-prediction,.btn-prediction:focus{
-  border-color: @live-red;
+  border-color: @ls-btn-prediction;
   background-color: @ls-light-color;
-  color: @live-red;
+  color: @ls-btn-prediction;
 
   &:hover{
-    color:@live-red;
-    border-color: darken(@live-red, 6%);
+    color:@ls-btn-prediction;
+    border-color: darken(@ls-btn-prediction, 6%);
     background: darken(@ls-light-color, 6%);
   }
 }

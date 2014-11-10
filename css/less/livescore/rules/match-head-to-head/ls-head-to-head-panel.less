@@ -1,4 +1,5 @@
 .nav-pills{
+  border-bottom: 0;
 
   &.teams{
     position:relative;
@@ -22,19 +23,60 @@
      .teams{
       margin-bottom:8px;
      
+       table.circles{
+        width: 100%;
+        
+        tr{
+          td{
+            width: 33.3%;
+            text-align: center;
+
+            &.circle-info{
+              height: 60px;
+            }
+            
+            &.title{
+              padding-top: 5px;
+            
+              span{
+                display:block;
+                font-weight:@font-weight-semi-bold;
+                font-size:@font-size-x-small;
+                
+                &.win{
+                  color:@brand-success;
+                }
+                
+                &.draw{
+                  color:lighten(@gray-light, 32.4%);
+                }
+                
+                &.lost{
+                  color:@brand-danger;
+                }
+              }
+            }
+          }
+        }
+       }
+     
       .team{
       
         .circle{
-          display:inline-block;
+          display:inline-table;
           width:60px;
           height:60px;
           background-color: lighten(@gray-light, 13.1%);
           color:@ls-light-color;
-          line-height:60px;
           .border-radius(50%);
-          margin-top:16px;
-          margin-bottom:2px;
-          font-size:@ls-head-to-head-first-team-size;
+          
+          span{
+            display: table-cell;
+            vertical-align: middle;
+            font-size: @ls-head-to-head-first-team-size;
+            font-weight: @font-weight-normal;
+            text-align: center;
+          }
           
           &.gray1{ background-color: lighten(@gray-light, 13.1%); }
           &.gray2{ background-color: lighten(@gray-light, 30.5%); }
@@ -44,21 +86,17 @@
           
         }
         
-        span{
-          display:block;
-          font-weight:600;
-          font-size:@font-size-x-small;
-        }
         
         &.second{
           
           .circle{
             width:40px;
             height:40px;
-            line-height:40px;
-            margin-bottom:10px;
-            margin-top:28px;
             font-size:@ls-head-to-head-second-team-size;
+            
+            span{
+              font-size:@ls-head-to-head-second-team-size;
+            }
           }
         }
         
@@ -67,10 +105,10 @@
           .circle{
             width:32px;
             height:32px;
-            line-height:32px;
-            margin-top:32px;
-            margin-bottom:14px;
-            font-size:@ls-head-to-head-third-team-size;
+            
+            span{
+              font-size:@ls-head-to-head-third-team-size;
+            }
           }    
         }
         
@@ -79,8 +117,10 @@
           .circle{
             width:24px;
             height:24px;
-            line-height:24px;
-            font-size:@font-size-small;
+            
+            span{
+              font-size:@font-size-small;
+            }
           }
         }
         
@@ -89,11 +129,12 @@
           .circle{
             width:20px;
             height:20px;
-            line-height:20px;
-            font-size:@font-size-small;
+
+            span{
+              font-size:@font-size-small;
+            }
           }
         }
-        
 
       }
     }
@@ -111,6 +152,8 @@
           }
         
           .logo{
+            padding-right: 0;
+            padding-left: 0;
             width:2%;
             
             img{
@@ -125,13 +168,14 @@
           
           .team1{
             width:5%;
+            text-align: right;
           }
           
           .score{
             font-weight:@font-weight-bold;
             text-align:center;
             width:7%;
-            
+            min-width: 35px;
           }
           
           
@@ -145,8 +189,19 @@
     }
   }
   
+  &.head-to-head{
+    > .teams{
+      margin: 0;
+      padding: 15px 0;
+    }
+  }
+  
   
   &.team-form{
+  
+    > .row{
+      margin: 0;
+    }
   
     .nav-pills{
     
@@ -158,64 +213,14 @@
     .navigation{
       text-align:center;
       margin-top:15px;
+      margin-bottom:15px;
+      
       
         .btn{
-          padding:8px 18px;
+          padding:8px 13px;
         }
     }
     
-    .teams.row{
-      padding:0 15px;
-    
-      .team{
- 
-        .circle{
-          margin-top:0;
-        }
-        
-        &.second{
-        
-          .circle{
-            margin-top:12px;
-          }
-        }
-          
-        &.third{
-        
-          .circle{  
-            margin-top:16px; 
-          }    
-        }
-        
-        &.fourth{
-        
-          .circle{
-            margin-bottom:18px;
-            margin-top:20px;
-          }
-        }
-        
-        &.fifth{
-          
-           .circle{
-             margin-top:21px;
-             margin-bottom:21px;
-           }
-        }
-        
-        span.win{
-          color:@brand-success;
-        }
-        
-        span.draw{
-          color:lighten(@gray-light, 32.4%);
-        }
-        
-        span.lost{
-          color:@brand-danger;
-        }
-      }
-    }
     
     table{
     
@@ -228,7 +233,85 @@
           }
         }
       }
+    }    
+  }
+  
+  &.discussion{
+  
+    .panel-body{
+      padding-bottom: 0;
+    
+      ul{
+        border: 0;
+        
+        li:first-child{
+          padding-top: 0;
+        }
+        
+        li{
+          a{
+          
+            img{
+              max-width: 48px;
+            }
+          }
+          
+          .media-body{
+            
+            .media-heading{
+              overflow: hidden;
+            }
+          }
+        }
+      }
     }
     
+    .make-prediction{
+      padding: 10px 20px;
+      background-color: darken(@ls-light-color, 4%);
+      border-top: 1px solid darken(@ls-light-color, 6%);
+      overflow: hidden;
+      padding-bottom: 0;
+    
+      .user-info{
+      
+        .prediction{
+          display: inline-block;
+          vertical-align: top;
+          padding-top: 2px;
+          margin-left: 8px;
+          
+          h4{
+            font-size: @font-size-base;
+            font-weight: @font-weight-semi-bold;
+            color: lighten(@ls-dark-color, 36%);
+            margin-top: 0;
+          }
+          
+          a.pull-left{
+          
+            .btn-group-xs{
+              
+              .btn{
+                padding: 4px 9px;
+              }
+            }
+          }
+        }
+      }
+      
+      .comment-form{
+        margin-top: 10px;
+        
+        textarea.form-control{
+          height: 90px;
+        }
+        
+        .btn{
+          margin: 20px 0;
+          float: right;
+        }
+      }
+    }    
   }
 }

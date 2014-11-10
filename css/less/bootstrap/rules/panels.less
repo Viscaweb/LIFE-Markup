@@ -2,7 +2,7 @@
 
 .panel-title-font-style(){
   font-size:  @font-size-large;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: @ls-alternate-font;
   color: lighten(@ls-dark-color, 37% );
   font-weight: bold;
 }
@@ -200,6 +200,10 @@
       
       .icon-caret-right{ 
         color: @ls-inverse-link-color !important;
+      }
+      
+      &:hover{
+        color: @ls-inverse-link-hover-color;
       }
     }
 

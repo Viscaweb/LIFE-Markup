@@ -5,6 +5,7 @@
 @ls-light-color: #FFF;
 @ls-dark-color: #000;
 @live-red: #e33000;
+@prediction: #e00000;
 @active-green: #5da400;
 
 /*LS Icons Font*/
@@ -48,18 +49,27 @@
 
 /*Elements Colors*/
 @ls-inverse-link-color: #9ccdff;
+@ls-inverse-link-hover-color: #43a0ff;
 @header-bg: #fff; 
 @ls-fav-hover: #ffc600;
+@ls-scrollbar-background: darken(@ls-light-color, 6%);
+@ls-scrollbar-color: @brand-primary;
+@ls-scrollbar-border-radius: 3px;
 
 /*Navbar Inverse*/
 @ls-navbar-inverse-height: 50px;
 @ls-navbar-inverse-item-padding: 14px;
 
+/*Main Header*/
+@ls-notification-menu-hover: #579a00;
+@ls-notification-menu-highlight: #fff4ce;
+@ls-notification-menu-scrollbar-width: 10px;
+
 /*Top BreadCrumbs*/
 @ls-top-breadcrumbs-height: 51px;
 @ls-top-breadcrumbs-scrollbar-width: 3px;
-@ls-top-breadcrumbs-scrollbar-background: darken(@ls-light-color, 6%);
-@ls-top-breadcrumbs-scrollbar-color: @brand-primary;
+@ls-top-breadcrumbs-scrollbar-background: @ls-scrollbar-background;
+@ls-top-breadcrumbs-scrollbar-color: @ls-scrollbar-color;
 @ls-top-breadcrumbs-dropdown-height: 300px;
 @ls-top-breadcrumbs-scrollbar-border-radius: 3px;
 
@@ -70,6 +80,8 @@
 /*Match Resume*/
 @ls-match-info-table-team-name-size: 20px;
 @ls-match-info-table-sore-size: 39px;
+@ls-match-info-table-qualified-color: #79c614;
+@ls-match-info-table-winner-color: #79c614;
 
 /*Match Statistics*/
 @ls-match-statistics-percent-size: 26px;
@@ -77,6 +89,8 @@
 /*Match Teams Lineups*/
 @ls-match-teams-lineups-field-padding: 17px 16px;
 @ls-match-teams-lineups-shirt-size: 35px;
+@ls-match-teams-lineups-home-shirt-color: #ededed;
+@ls-match-teams-lineups-away-shirt-color: #252525;
 
 /*Match Timeline*/
 @ls-match-timeline-container-height: 145px;
@@ -113,19 +127,30 @@
 @ls-btn-warning: #f1ae4e;
 @ls-btn-danger: #dd4f3c;
 @ls-btn-link: #0053a8;
+@ls-btn-prediction: @prediction;
 
 /*Progress Bars*/
 @ls-trend-home:       #6790ce;
 @ls-trend-neutral:     darken(@ls-light-color,28%);
 @ls-trend-away:        #2356a3;
 
+/*Modals*/
+@ls-modal-close-icon-size: 24px;
+
 /*Validation Form-controls*/
 @ls-form-error: #a43434;
 @ls-form-warning: #e29000;
 
+/*Form Elements*/
+@ls-checkbox-hover-bg: #e9f2e2;
+@ls-radiobutton-hover-bg: #e9f2e2;
+
+/*DatePicker*/
+@ls-datepicker-header-height: 36px;
+
 /*Footer*/
-@ls-top-footer-bg: #313638;
-@ls-bottom-footer-bg: #272d2f;
+@ls-top-footer-bg: darken(@ls-greyblue-dark, 7%);
+@ls-bottom-footer-bg: darken(@ls-greyblue-dark, 11%);
 @ls-footer-link-color: #9fbbd3;
 @ls-footer-title-color: #d2dce5;
 
@@ -147,6 +172,7 @@
 @ls-table-stats-down: #BD0800;
 @ls-table-stats-up: #7AB748;
 @ls-table-stats-equal: darken(@ls-light-color, 40%);
+@ls-table-red-card: #f40000;
 
 /*Table Standings*/
 @ls-table-standing-selected-tr-bg: #d2dae8;
@@ -162,6 +188,7 @@
 /*Typography*/
 @ls-body-font-name: 'Open Sans';
 @ls-alternate-font-name: 'Open Sans Condensed';
+@ls-bootstrap-icons-font-family: 'Glyphicons Halflings';
 @ls-body-font: '@{ls-body-font-name}', sans-serif;
 @ls-alternate-font: '@{ls-alternate-font-name}', sans-serif;
 @ls-link-caret-right-size: 10px;

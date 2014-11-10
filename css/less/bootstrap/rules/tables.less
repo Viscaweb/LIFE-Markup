@@ -4,7 +4,9 @@
   border-bottom: 1px solid darken(@ls-light-color, 2%);
   
   >thead{
+  
     >tr{
+    
       >th{
         border-bottom: none;
         vertical-align: middle;
@@ -12,6 +14,7 @@
     }
 
     &.league-data{
+    
       >tr{
         
         >th{
@@ -20,7 +23,7 @@
           text-align: left;
           color: @ls-light-color;
           text-transform: none;
-          padding: 3px 8px;
+          padding: 3px 0 2px 8px !important;
           font-size: @font-size-small;
           font-weight: @font-weight-bold !important;
           
@@ -38,16 +41,23 @@
             color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
           }
           
-          &.tools{
-            text-align: right !important;
+          .tools{
+            float: right;
             padding: 0 !important;
+            
+            span{
+             
+              a.fav{
+                font-size: @font-size-normal;
+              }
+             }
             
             a{
               display: inline-block;
               padding: 0 4px;
               color: darken(@ls-light-color, 4%);
               font-weight: 400;
-              line-height: 22px;
+              line-height: 17px;
               
               i{
                 font-size:  @font-size-base + 5;
@@ -71,7 +81,9 @@
               
               &.active{
                 color: @brand-primary;
+                
                 &.fav{
+                
                   span{
                     font-size: @font-size-normal;
                     color: @ls-fav-hover;
@@ -84,6 +96,7 @@
               }
               
               &.live{
+              
                 i{
                   color: @live-red;
                 }
@@ -94,6 +107,7 @@
         }
         
         &:hover{
+        
           > th{
             background-color: lighten(@ls-greyblue-dark, 18%) !important;
           }
@@ -104,6 +118,7 @@
   
   //General table style
   tr{
+  
       th{
         background-color: darken(@ls-light-color, 8.3%);
         font-weight: 600;
@@ -137,6 +152,7 @@
   
     //Table Striped Style
   &.table-striped{
+  
      tbody{
 
       tr:nth-child(even){
@@ -161,7 +177,9 @@
     
   //General Styles
   thead{
+  
     &.league-data{
+    
       th{
         .dropdown-toggle{
           margin-right: 5px; 
@@ -171,7 +189,9 @@
   }
   
   tr{
+  
     td, th{
+    
       &.color-success{
         color: @brand-success;
       }
@@ -190,7 +210,9 @@
   
   //Deep level
   tbody{
+  
     tr, tr:nth-child(even), tr:nth-child(odd){
+    
       > th{
         background-color: darken(@ls-light-color, 10.7%);
       }
@@ -207,6 +229,7 @@
         }
         
         &.prediction{
+        
           .btn-group-justified{
             max-width: 69px;
           }
@@ -277,6 +300,7 @@
               color: @ls-light-color;
               
               &.available{
+              
                 .comment-number{
                   color: @brand-primary;
                 }
@@ -285,6 +309,7 @@
             
             &.active{
               color: @brand-primary;
+              
               &:hover{
                 color: @ls-light-color;
               }
@@ -295,6 +320,7 @@
       
       //General TD Odd Style
       &:nth-child(2n+1){ 
+      
         td.odd{
           background-color: darken(@ls-light-color,2%) !important;
           .box-shadow(-1px -1px 0 @ls-light-color inset);
@@ -322,6 +348,7 @@
       
       //LIVE STYLES
       &.live{
+      
         td{
           
           &.time{
@@ -333,12 +360,14 @@
           }
         
           &.score{
+          
             a{
               color: @live-red;
             }
           }
           
           &.tools{
+          
             a.available{
               color: @brand-primary;
               
@@ -359,8 +388,11 @@
         }
         
         &.highlight{
+        
           td{
+          
             &.score{
+            
               a{
                 color: @ls-light-color;
               }
@@ -375,8 +407,11 @@
 
 
   &.table-condensed{
+  
     thead{
+    
       >tr{
+      
           th{
           border: 0;
           padding: 4px 7px;
@@ -386,7 +421,9 @@
       }
       
       &.league-data{
+      
         >tr{
+        
           >th{
             font-size:  @font-size-small;
             background-color: lighten(@ls-greyblue-dark, 21.3%);
@@ -401,8 +438,11 @@
 
 
     tr{
+    
       &.league-data{
+      
         tr{
+        
           th{
             font-size:  @font-size-small;
           }
@@ -422,6 +462,7 @@
         span.icon-caret-right, span.icon-caret-right{ font-size:  @font-size-base - 3; }
         
         &.team{
+        
           img{
             max-height: 18px;
             max-width: 18px;
@@ -433,13 +474,16 @@
   }
   
   tr.stats{
+  
     td{
+    
       &.stat{ 
         background-color: darken(@ls-light-color, 2%);
       }
     }
     
     &:nth-child(even){
+    
       td.stat{
         background-color: darken(@ls-light-color, 6%);
       }
@@ -448,40 +492,66 @@
   
   /*TR HIGHLIGHT STYLES*/
 > tbody{
+
   > tr{
+  
     &.highlight{
             background-color: @ls-tr-highlight-bg !important;
 
       td{
         background-color: transparent !important;
       }
+      
+      &:hover{
+        background-color: darken(@ls-tr-highlight-bg, 6%) !important;
+      }
     }
+    
     &.selected{
       background-color: @ls-tr-selected-bg !important;
     
       td{
         background-color: transparent !important;
       }
+      
+      &:hover{
+        background-color: darken(@ls-tr-selected-bg, 6%) !important;
+      }
     }
+    
     &.event-won{
       background-color: @ls-tr-won-bg !important;
       
       td{
         background-color: transparent !important;
       }    
+      
+      &:hover{
+        background-color: darken(@ls-tr-won-bg, 6%) !important;
+      }
     }
+    
     &.event-lost{
       background-color: @ls-tr-lost-bg !important;
       
       td{
         background-color: transparent !important;
       }    
+      
+      &:hover{
+         background-color: darken(@ls-tr-lost-bg, 6%) !important;
+      }
     }
+    
     &.event-draw{
       background-color: @ls-tr-draw-bg !important;
       
       td{
         background-color: transparent !important;
+      }
+      
+      &:hover{
+        background-color: darken(@ls-tr-draw-bg, 6%) !important;
       }
     }
   }
@@ -489,20 +559,27 @@
 
 /*TD HIGHLIGHT STYLES*/
 tbody{
+
   tr{
+  
     td{
+    
       &.highlight{
         background-color: @ls-tr-highlight-bg !important;
       }
+      
       &.selected{
         background-color: @ls-tr-selected-bg !important;
       }
+      
       &.event-won{
         background-color: @ls-tr-won-bg !important;
       }
+      
       &.event-lost{
         background-color: @ls-tr-lost-bg !important;
       }
+      
       &.event-draw{
         background-color: @ls-tr-draw-bg !important;
       }   
@@ -511,8 +588,11 @@ tbody{
 }
 
 > tbody{
+
   > tr{
+  
       td{
+      
         > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
           font-size:  @font-size-base - 3;
           margin-right: 3px;
@@ -526,6 +606,7 @@ tbody{
         &.trend{
           min-width: 70px;
           padding: 0 !important;
+          
           .progress{
             margin-bottom: 0;
           }
@@ -536,19 +617,21 @@ tbody{
           width: 1%;
           text-transform: uppercase;
           text-align:center;
-          .box-shadow(1px -1px 0 @ls-light-color inset);
-          
+          .box-shadow(1px -1px 0 @ls-light-color inset);     
         }
         
         &.event-outcome-won{
           background-color: @ls-td-won-bg !important;   
         }
+        
         &.event-outcome-draw{
           background-color: @ls-td-draw-bg !important;
         }
+        
         &.event-outcome-lost{
           background-color: @ls-td-lost-bg !important;
         }
+        
         &.event-outcome-live{
           padding: 0 !important;
           text-align: center;
@@ -556,6 +639,7 @@ tbody{
           background-color: @ls-td-live-bg !important;
           color: @live-red;
         }
+        
         &.event-outcome-upcoming{
           background-color: @ls-td-upcoming-bg !important;
           color: @ls-light-color;
@@ -563,25 +647,30 @@ tbody{
       }
       
       &:hover{
+      
         td{
+        
           &.event-outcome-won{
             background-color: @ls-td-won-bg !important;
             color: @ls-light-color;
             width: 1%;
             text-transform: uppercase;
           }
+          
           &.event-outcome-draw{
             background-color: @ls-td-draw-bg !important;
             color: @ls-light-color;
             width: 1%;
             text-transform: uppercase;
           }
+          
           &.event-outcome-lost{
             background-color: @ls-td-lost-bg !important;
             color: @ls-light-color;
             width: 1%;
             text-transform: uppercase;
           }
+          
           &.event-outcome-live{
             padding: 0 !important;
             text-align: center;
@@ -590,6 +679,7 @@ tbody{
             color: @live-red;
             width: 1%;
             text-transform: uppercase;
+            
           }
           &.event-outcome-upcoming{
             background-color: @ls-td-upcoming-bg !important;
@@ -600,7 +690,9 @@ tbody{
       }
       
     &:last-child{
+    
       td{
+      
          &.event-outcome{
           .box-shadow(1px 0 0 @ls-light-color inset);
          }
@@ -618,9 +710,13 @@ tbody{
   }
   
   &.table-odds{
+  
     tbody{
+    
       tr{
+      
         td{
+        
           &.logo{
             padding: 0 0 1px;
             width: 2%;
@@ -632,9 +728,13 @@ tbody{
   
   /*MY GAMES TABLES*/
   &.my-games{
+  
     thead{
+    
       &.league-data{
+      
         tr{
+        
           th{
             background-color: @brand-primary;
             color: @ls-light-color;
@@ -665,8 +765,11 @@ tbody{
       }
     }
     tbody{
+    
       tr{
+      
         td{
+        
           span.hour{
             font-weight: @font-weight-semi-bold;
           }
@@ -684,21 +787,27 @@ tbody{
               line-height: 36px;
               color: lighten(@ls-dark-color, 36%);
             }
+            
             img{
               max-width: 20px;
             }
+            
             &.team1{
               text-align: right;
+              
               img{
                 margin-left: 5px;
               }
             }
+            
             &.team2{
               text-align: left;
+              
               img{
                 margin-right: 5px;
               }
             }
+            
             .mark{
               background-color: transparent;
               color: darken(@ls-light-color,37%);
@@ -714,11 +823,13 @@ tbody{
             text-align: center;
             width: 50px;
             padding: 0;
+            
             > a{
               display: block;
               line-height: 36px;
               color: lighten(@ls-dark-color,36%);
             }
+            
             span.icon-expand-h{
               color: darken(@ls-light-color,16%);
             }
@@ -757,10 +868,14 @@ tbody{
   
   /*MATCHES TABLES*/
   &.matches{
+  
     thead.league-data{
+    
       tr{
+      
         th{
           border-bottom: 1px solid lighten(@ls-dark-color, 60%);
+          padding: 3px 0 2px 8px;
           
           .country{
             text-transform: uppercase;
@@ -776,14 +891,22 @@ tbody{
             color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
           }
           
-          &.tools{
-            text-align: right;
+          .tools{
+            float: right;
             padding: 0;
+            
+             span{
+             
+              a.fav{
+                font-size: @font-size-normal;
+              }
+             }
             
             a{
               display: inline-block;
               color: darken(@ls-light-color, 4%);
               font-weight: 400;
+              padding: 0 4px;
               
               i{
                 font-size:  @font-size-base + 5;
@@ -799,11 +922,15 @@ tbody{
                 background-color: @brand-primary;
                 color: @ls-light-color;
               }
+              
               &.active{
                 color: @brand-primary;
+                
                 &.fav{
+                
                   span{
                     color: @ls-fav-hover;
+                    font-size: @font-size-normal;
                   }
                 }
                 
@@ -822,9 +949,13 @@ tbody{
         }
       }
     }
+    
     tbody{
+    
       tr{
+      
         td{
+        
           span.hour{
             font-weight: @font-weight-semi-bold;
           }
@@ -854,7 +985,7 @@ tbody{
             
             .red-card{
               padding: 0 2px;
-              background-color: @live-red;
+              background-color: @ls-table-red-card;
               font-weight: @font-weight-normal;
             }
             
@@ -900,8 +1031,10 @@ tbody{
         }
         
         &.highlight{
+        
           .score{
             background-color: @live-red !important;
+            
             > a{
               color: @ls-light-color;
             }
@@ -911,10 +1044,15 @@ tbody{
     }
     
     &.table-condensed{
+    
       tr{
+      
         td{
+        
           &.prediction{
+          
             .btn-group{
+            
               .btn{
                 line-height: @font-size-medium;
               }
@@ -927,8 +1065,11 @@ tbody{
   
   /*STANDING TABLES*/
   &.table-standing{
+  
     thead{
+    
       tr{
+      
         th{
           border-bottom: 0;
           
@@ -941,7 +1082,9 @@ tbody{
     }
     
     tbody{
+    
       tr{
+      
         td{
           border: 0;
         
@@ -960,11 +1103,11 @@ tbody{
             padding-right: 1px;
             
             &.up{
-              color: @brand-primary;
+              color: @ls-table-stats-up;
             }
             
             &.down{
-              color: @live-red;
+              color: @ls-table-stats-down;
             }
           }
         
@@ -1011,7 +1154,9 @@ tbody{
         }
         
         &.live{
+        
           td{
+          
             &.team{
               font-weight: @font-weight-semi-bold;
               color: @live-red;
@@ -1020,13 +1165,16 @@ tbody{
         }
         
         &.selected-row{
+        
           td{
             background-color: @ls-table-standing-selected-tr-bg;
           }
         }
         
         &:nth-child(even){
+        
           td{
+          
             &.number{
               background-color: darken(@ls-light-color, 10%);
             }
@@ -1034,7 +1182,9 @@ tbody{
         }        
         
         &:nth-child(odd){
+        
           td{
+          
             &.number{
               background-color: darken(@ls-light-color, 6.4%);
             }

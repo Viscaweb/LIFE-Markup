@@ -398,19 +398,19 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="teams row">
-                      <div class="col-md-4 text-center team first">
-                        <div class="circle gray1">4</div>
-                        <span>REAL M.</span>
-                      </div>
-                      <div class="col-md-4  text-center team third">
-                        <div class="circle gray3">1</div>
-                        <span>DRAW</span>
-                      </div>
-                      <div class="col-md-4  text-center team second">
-                        <div class="circle gray2">2</div>
-                        <span>BAYERN</span>
-                      </div>
+                    <div class="teams">
+                      <table class="circles">
+                        <tr>
+                          <td class="circle-info"><div class="team first"><div class="circle gray1"><span>4</span></div></div></td>
+                          <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                          <td class="circle-info"><div class="team second"><div class="circle gray2"><span>2</span></div></div></td>
+                        </tr>
+                        <tr>
+                          <td class="title"><span>REAL M.</span></td>
+                          <td class="title"><span>DRAW</span></td>
+                          <td class="title"><span>BAYERN</span></td>
+                        </tr>
+                      </table>
                     </div>
                     <table class="table table-condensed table-striped no-border">
                       <tbody>
@@ -474,7 +474,7 @@
                     </div>
                     <div class="row"> 
                       <div class="col-md-12 navigation">
-                        <div class="btn-group">
+                        <div class="btn-group btn-group-justified">
                           <a class="btn btn-default">All</a>
                           <a class="btn btn-default">Home</a>
                           <a class="btn btn-primary active">Away</a>                
@@ -482,19 +482,19 @@
                         </div>
                       </div> 
                     </div>
-                    <div class="teams row">
-                      <div class="col-md-4 text-center team first">
-                        <div class="circle success">4</div>
-                        <span class="win">WIN</span>
-                      </div>
-                      <div class="col-md-4  text-center team third">
-                        <div class="circle gray3">1</div>
-                        <span class="draw">DRAW</span>
-                      </div>
-                      <div class="col-md-4  text-center team fourth">
-                        <div class="circle danger">0</div>
-                        <span class="lost">LOST</span>
-                      </div>
+                    <div class="teams">
+                      <table class="circles">
+                        <tr>
+                          <td class="circle-info"><div class="team first"><div class="circle success"><span>4</span></div></div></td>
+                          <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                          <td class="circle-info"><div class="team fourth"><div class="circle danger"><span>0</span></div></div></td>
+                        </tr>
+                        <tr>
+                          <td class="title"><span class="win">WIN</span></td>
+                          <td class="title"><span class="draw">DRAW</span></td>
+                          <td class="title"><span class="lost">LOST</span></td>
+                        </tr>
+                      </table>
                     </div>
                     <table class="table table-condensed table-striped no-border">
                       <tbody>                       
@@ -556,7 +556,7 @@
                     </div>
                     <div class="row"> 
                       <div class="col-md-12 navigation">
-                        <div class="btn-group">
+                        <div class="btn-group btn-group-justified">
                           <a class="btn btn-default">All</a>
                           <a class="btn btn-default">Home</a>
                           <a class="btn btn-primary active">Away</a>                
@@ -564,19 +564,19 @@
                         </div>
                       </div> 
                     </div>
-                    <div class="teams row">
-                      <div class="col-md-4 text-center team second success">
-                        <div class="circle success">2</div>
-                        <span class="win">WIN</span>
-                      </div>
-                      <div class="col-md-4  text-center team fifth">
-                        <div class="circle gray3">1</div>
-                        <span class="draw">DRAW</span>
-                      </div>
-                      <div class="col-md-4  text-center team second danger">
-                        <div class="circle danger">2</div>
-                        <span class="lost">LOST</span>
-                      </div>
+                    <div class="teams">
+                      <table class="circles">
+                        <tr>
+                          <td class="circle-info"><div class="team second"><div class="circle success"><span>2</span></div></div></td>
+                          <td class="circle-info"><div class="team fifth"><div class="circle gray3"><span>1</span></div></div></td>
+                          <td class="circle-info"><div class="team second"><div class="circle danger"><span>2</span></div></div></td>
+                        </tr>
+                        <tr>
+                          <td class="title"><span class="win">WIN</span></td>
+                          <td class="title"><span class="draw">DRAW</span></td>
+                          <td class="title"><span class="lost">LOST</span></td>
+                        </tr>
+                      </table>
                     </div>
                     <table class="table table-condensed table-striped no-border">
                       <tbody>
@@ -643,8 +643,8 @@
                         <thead>
                           <tr>
                             <th><b>Goals</b></th>
-                            <th><b>This season</b></th>
-                            <th><b>Past season</b></th>
+                            <th class="text-right"><b>This season</b></th>
+                            <th class="text-right"><b>Past season</b></th>
                           </tr>
                         </thead>
                         <tr>
@@ -677,8 +677,8 @@
                         <thead>
                           <tr>
                             <th><b>Goals</b></th>
-                            <th><b>This season</b></th>
-                            <th><b>Past season</b></th>
+                            <th class="text-right"><b>This season</b></th>
+                            <th class="text-right"><b>Past season</b></th>
                           </tr>
                         </thead>
                         <tr>
@@ -699,7 +699,7 @@
               
               <div class="row">
                 <div class="col-md-12">
-                  <div class="panel panel-default team-over-under">
+                  <div class="panel panel-default discussion">
                     <div class="panel-heading">
                       <div class="panel-title"><span class="glyphicon glyphicon-comment "></span> Discussion PSG</div>
                       <div class="tools">
@@ -729,7 +729,30 @@
                             <p>Victoire du Real car l'atletico a deja reussi sa saison en étant champion !</p>
                             <!-- Nested media object -->
                           </div>
-                        </li> 
+                        </li>                        
+                        <li class="media">
+                          <a href="#" class="pull-left avatar">
+                            <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                            <div class="btn-group btn-group-xs">
+                              <button class="btn btn-success" type="button">1</button>
+                              <button class="btn btn-default" type="button">N</button>
+                              <button class="btn btn-default" type="button">2</button>
+                            </div>
+                          </a>
+                          <div class="media-body">
+                            <div class="media-heading">
+                              <h4>sebastien.au</h4>
+                              <div class="tools">
+                                <h5>19/05 15h19</h5>
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                              </div>
+                            </div>
+                            <p>real meme si jsuis pour le barca</p>
+                            <!-- Nested media object -->
+                          </div>
+                        </li>                       
                         <li class="media">
                           <a href="#" class="pull-left avatar">
                             <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
@@ -741,14 +764,14 @@
                           </a>
                           <div class="media-body">
                             <div class="media-heading">
-                              <h4>YOUNITED-is-king</h4>
+                              <h4>riadh sbai</h4>
                               <div class="tools">
                                 <h5>19/05 15h19</h5>
                                 <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
                                 <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
                               </div>
                             </div>
-                            <p>real meme si jsuis pour le barca</p>
+                            <p>c la guerre pour les deux</p>
                             <!-- Nested media object -->
                           </div>
                         </li>
@@ -758,19 +781,114 @@
                           </a>
                           <div class="media-body">
                             <div class="media-heading">
-                              <h4>Stimer</h4>
+                              <h4>ramoul</h4>
                               <div class="tools">
                                 <h5>30 min ago</h5>
                                 <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
                                 <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
                               </div>
                             </div>
-                            <p>c la guerre pour les deux</p>
+                            <p>real 1-0 atletico</p>
                             <!-- Nested media object -->
                           </div>
-                          </li><li class="media view-all"><a href="#">+ View all 56 comments</a>
+                        </li>
+                        <li class="media">
+                          <a href="#" class="pull-left avatar">
+                            <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                            <div class="btn-group btn-group-xs">
+                              <button class="btn btn-success" type="button">1</button>
+                              <button class="btn btn-default" type="button">N</button>
+                              <button class="btn btn-default" type="button">2</button>
+                            </div>
+                          </a>
+                          <div class="media-body">
+                            <div class="media-heading">
+                              <h4>Andréleboss</h4>
+                              <div class="tools">
+                                <h5>19/05 15h19</h5>
+                                <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                              </div>
+                            </div>
+                            <p>Moi j'y croi poru lyon a la 3eme place du poduim vu que St etienne a fais match nul contre rennes il faut juste que lyon gagne le match contre toulouse et que lille perde contre l'OM apres il reste que 3 poins d'ecart! En plus lille contre psg a l'avant dernier journées</p>
+                            <!-- Nested media object -->
+                            <div class="media">
+                              <a href="#" class="pull-left avatar">
+                                <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                                <div class="btn-group btn-group-xs">
+                                  <button type="button" class="btn btn-default">1</button>
+                                  <button type="button" class="btn btn-prediction-failed">N</button>
+                                  <button type="button" class="btn btn-default">2</button>
+                                </div>
+                              </a>
+                              <div class="media-body">
+                                <div class="media-heading">
+                                  <span class="h4">ramoul</span>
+                                  <div class="tools">
+                                    <span class="h5"><a href="#"><span class="glyphicon glyphicon-pencil"></span></a>19/05 15h19</span>
+                                    <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                                  </div>
+                                </div>
+                                <p><a class="reply" href="#">@Andréleboss</a>, Lyon va pas aller en LDC l'année prochaine, surtout avec un 0-0 contre Chernomorets en Ligue Europa. ^^</p>
+                              </div>
+                            </div>
+                            <div class="media">
+                              <a href="#" class="pull-left avatar">
+                                <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                              </a>
+                              <div class="media-body">
+                                <div class="media-heading">
+                                  <span class="h4">PSG365</span>
+                                  <div class="tools">
+                                    <span class="h5">19/05 15h19</span>
+                                    <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                                  </div>
+                                </div>
+                                <p><a class="reply" href="#">@Andréleboss</a>, Lyon va pas aller en LDC l'année prochaine, surtout avec un 0-0 contre Chernomorets en Ligue Europa. ^^</p>
+                              </div>
+                            </div>
+                          </div>                         
+                        </li>
+                        <li class="media">
+                          <a href="#" class="pull-left avatar">
+                            <img class="img-circle" alt="64x64" src="img/placehold-avatar.png">
+                          </a>
+                          <div class="media-body">
+                            <div class="media-heading">
+                              <h4>Raboul</h4>
+                              <div class="tools">
+                                <h5>30 min ago</h5>
+                                <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                              </div>
+                            </div>
+                            <p>Victoire du Real car l'atletico a deja reussi sa saison en étant champion!</p>
+                            <!-- Nested media object -->
+                          </div>
+                        </li>
+                        <li class="media view-all text-center"><a href="#">+ View all 56 comments</a>
                         </li>   
-                      </ul>
+                      </ul>           
+                    </div>
+                    <div class="make-prediction">
+                      <div class="user-info"><img src="img/placehold-avatar.png" class="img-circle">
+                        <div class="prediction">
+                          <h4>sebastien.au</h4>
+                          <a href="#" class="pull-left avatar">
+                            <div class="btn-group btn-group-xs">
+                              <button class="btn btn-success" type="button">1</button>
+                              <button class="btn btn-default" type="button">X</button>
+                              <button class="btn btn-default" type="button">2</button>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="comment-form">
+                        <textarea class="form-control" placeholder="Ecris ici...."></textarea>
+                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-edit"></span>Publier mon commentaire</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -932,7 +1050,7 @@
                       </div>
                       Top Competitions
                     </div>
-                      <ul class="nav nav-pills">
+                      <ul class="nav nav-pills nav-justified">
                         <li class="active">
                           <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
                         </li>
@@ -1329,30 +1447,32 @@
                             <th></th>
                           </tr>
                         </thead>
-                        <tr>
-                          <td>1</td>
-                          <td><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                        </tbody>
                       </table>
                   </div>   
                   

@@ -582,14 +582,18 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
                       <a class="btn btn-primary active">All</a>
                       <a class="btn btn-default">Finished</a>
-                      <a class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>                
+                      <a class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>                       
                       <a class="btn btn-default">Next</a>                
                       <a class="btn btn-default">Predictions</a>                
-                      <a class="btn btn-default">Odds</a>                
-                      <a class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></a>                
+                      <a class="btn btn-default">Odds</a>  
+                    </div>  
+                    <div class="btn-group">
+                      <a class="btn btn-link icon"><span class="glyphicon glyphicon-cog"></span></a>
+                    </div>  
+                    <div class="btn-group">  
                       <a class="btn btn-default"><span class="icon-caret-left"></span></a>
                       <a class="btn btn-default">Mon 2 Jun. <span class="icon-caret-down"></span></a>
                       <a class="btn btn-default"><span class="icon-caret-right"></span></a>
@@ -603,12 +607,14 @@
                   <table class="table my-games table-striped no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games </a><a class="icon-help" href="#"><span class="glyphicon glyphicon-question-sign"></span></a></th>
+                        <th colspan="7"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games </a><a class="icon-help" href="#"><span class="glyphicon glyphicon-question-sign"></span></a></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><span class="hour">13h30</span> FT</td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><span class="hour">13h30</span></td>
+                        <td>FT</td>
                         <td class="team team1"><a href="#">Barcelona<img src="img/sprites/barcelona.png"></a></td>
                         <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Atletico Madrid <span class="mark">(0 - 1)</span></a></td>
@@ -622,7 +628,9 @@
                           </td>
                       </tr>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><span class="hour">13h30</span> <a href="#">Bet</a></td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><span class="hour">13h30</span></td>
+                        <td><a href="#">Bet</a></td>
                         <td class="team team1"><a href="#">PSG<img src="img/sprites/psg.png"></a></td>
                         <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Montpellier <span class="mark">(0 - 1)</span></a></td>
@@ -636,7 +644,9 @@
                           </td>
                       </tr>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><span class="hour">13h30</span> <a href="#">Bet</a></td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><span class="hour">13h30</span></td>
+                        <td><a href="#">Bet</a></td>
                         <td class="team team1"><a href="#">Udinese<img src="img/sprites/barcelona.png"></a></td>
                         <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Sampdoria <span class="mark">(0 - 1)</span></a></td>
@@ -649,9 +659,7 @@
                           <a class="active" href="#"><i class="icon-bell"></i></a>
                           </td>
                       </tr>
-
-                    </tbody>                 
-                       
+                    </tbody>                                       
                   </table>
                 </div>
               </div>
@@ -662,15 +670,18 @@
                   <table class="table matches table-condensed table-striped no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
                         </th>
-                        <th colspan="1" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
-                        </th>
+                        
                       </tr>
                     </thead>
                     <tbody>
@@ -692,14 +703,16 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                                <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
+                                <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-85"></i>Algeria :</span>
                           <a href="#">Algeria Nedjma Championnat</a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -725,7 +738,7 @@
                         <td class="time"> TAB</td>
                         <td class="team team1"><a href="#"><span class="label red-card">1</span>USM El Harrach</a></td>
                         <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
-                        <td class="team team2"><a href="#"><b>CABBA</b> <span class="mark">(0 - 2)</span></a></td>
+                        <td class="team team2"><a href="#"><b>CABBA *</b> <span class="mark">(0 - 2)</span></a></td>
                         <td class="tools">
                           <a href="#" class="available"><i class="icon-tv"></i></a>
                           <a href="#" class="available"><i class="icon-play"></i></a>
@@ -830,14 +843,16 @@
                     </tbody>                 
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>Austria :</span>
                           <a href="#">Austria Regionalliga</a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
-                        </th>
+                        </th>      
                       </tr>
                     </thead>
                     <tbody>
@@ -859,13 +874,15 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="123">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>Austria :</span>
                           <a href="#">Austria Regionalliga</a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -973,40 +990,46 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="5">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -1017,14 +1040,18 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
                       <a class="btn btn-primary active">All</a>
                       <a class="btn btn-default">Finished</a>
-                      <a class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>                
-                      <a class="btn btn-default">Next</a>                
+                      <a class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>  
+                      <a class="btn btn-default">Next</a> 
                       <a class="btn btn-default">Predictions</a>                
-                      <a class="btn btn-default">Odds</a>                
-                      <a class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></a>                
+                      <a class="btn btn-default">Odds</a>
+                    </div>
+                    <div class="btn-group">
+                      <a class="btn btn-link icon"><span class="glyphicon glyphicon-cog"></span></a>
+                    </div>  
+                    <div class="btn-group">
                       <a class="btn btn-default"><span class="icon-caret-left"></span></a>
                       <a class="btn btn-default">Mon 2 Jun. <span class="icon-caret-down"></span></a>
                       <a class="btn btn-default"><span class="icon-caret-right"></span></a>
@@ -1038,12 +1065,12 @@
                   <table class="table my-games predictions table-striped table-condensed no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="7"><span class="icon"><i class="icon-bell"></i></span><a href="#">My Games </a></th>
+                        <th colspan="9"><span class="icon"><i class="icon-bell"></i></span><a href="#">My Games </a></th>
                       </tr>
                     </thead>
                     <thead>
                       <tr>
-                        <th>Status</th>
+                        <th colspan="3">Status</th>
                         <th></th>
                         <th>Score</th>
                         <th></th>
@@ -1054,7 +1081,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><b>13h30</b> Term.</td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><b>13h30</b></td>
+                        <td>Term.</td>
                         <td class="team team1"><a href="#">Barcelona<img src="img/sprites/barcelona.png"></a></td>
                         <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Atletico Madrid</a></td>
@@ -1084,7 +1113,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><span class="hour">20h45</span><a href="#">Parier</a></td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><span class="hour">20h45</span></td>
+                        <td><a href="#">Parier</a></td>
                         <td class="team team1"><a href="#">PSG<img src="img/sprites/psg.png"></a></td>
                         <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Montpellier</a></td>
@@ -1114,7 +1145,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><b>21h30</b> <a href="#">Parier</a></td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><b>21h30</b></td>
+                        <td><a href="#">Parier</a></td>
                         <td class="team team1"><a href="#">Udinese<img src="img/sprites/barcelona.png"></a></td>
                         <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Sampdoria</a></td>
@@ -1153,15 +1186,17 @@
                   <table class="table matches predictions table-condensed table-striped no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
-                        </th>
+                        </th>                        
                       </tr>
                     </thead>
                     <tbody>
@@ -1199,14 +1234,16 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-85"></i>Algeria :</span>
                           <a href="#">Algeria Nedjma Championnat</a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -1462,14 +1499,16 @@
                     </tbody>                 
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>Austria :</span>
                           <a href="#">Austria Regionalliga</a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
-                        </th>
+                        </th>                      
                       </tr>
                     </thead>
                     <tbody>
@@ -1507,13 +1546,15 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>Austria :</span>
                           <a href="#">Austria Regionalliga</a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -1676,40 +1717,46 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="2" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -1720,34 +1767,37 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
                       <a class="btn btn-primary active">All</a>
                       <a class="btn btn-default">Finished</a>
                       <a class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>                
                       <a class="btn btn-default">Next</a>                
                       <a class="btn btn-default">Predictions</a>                
-                      <a class="btn btn-default">Odds</a>                
-                      <a class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></a>                
+                      <a class="btn btn-default">Odds</a>
+                    </div>  
+                    <div class="btn-group">
+                      <a class="btn btn-link icon"><span class="glyphicon glyphicon-cog"></span></a> 
+                    </div>
+                    <div class="btn-group">   
                       <a class="btn btn-default"><span class="icon-caret-left"></span></a>
                       <a class="btn btn-default">Mon 2 Jun. <span class="icon-caret-down"></span></a>
                       <a class="btn btn-default"><span class="icon-caret-right"></span></a>
                     </div>
                   </div>
                 </div>
-              </div>
-              
+              </div>             
               
               <div class="row">
                 <div class="col-md-12">
                   <table class="table my-games odds table-striped table-condensed no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="8"><span class="icon"><i class="icon-bell"></i></span><a href="#">My Games </a></th>
+                        <th colspan="10"><span class="icon"><i class="icon-bell"></i></span><a href="#">My Games </a></th>
                       </tr>
                     </thead>
                     <thead>
                       <tr>
-                        <th>Status</th>
+                        <th colspan="3">Status</th>
                         <th></th>
                         <th>Score</th>
                         <th></th>
@@ -1759,7 +1809,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><b>13h30</b> Term.</td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><b>13h30</b></td>
+                        <td>Term.</td>
                         <td class="team team1"><a href="#">Barcelona<img src="img/sprites/barcelona.png"></a></td>
                         <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Atletico Madrid</a></td>
@@ -1778,7 +1830,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><b>20h45</b> <a href="#">Parier</a></td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><b>20h45</b></td>
+                        <td><a href="#">Parier</a></td>
                         <td class="team team1"><a href="#">PSG<img src="img/sprites/psg.png"></a></td>
                         <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Montpellier</a></td>
@@ -1797,7 +1851,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png"><b>21h30</b> <a href="#">Parier</a></td>
+                        <td><img class="league" src="img/sprites/ligue1.png"></td>
+                        <td><b>21h30</b></td>
+                        <td><a href="#">Parier</a></td>
                         <td class="team team1"><a href="#">Udinese<img src="img/sprites/barcelona.png"></a></td>
                         <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png">Sampdoria</a></td>
@@ -1825,14 +1881,16 @@
                   <table class="table matches odds table-condensed table-striped no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -1873,14 +1931,16 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-85"></i>Algeria :</span>
                           <a href="#">Algeria Nedjma Championnat</a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -2048,13 +2108,15 @@
                     </tbody>                 
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>Austria :</span>
                           <a href="#">Austria Regionalliga</a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -2082,13 +2144,15 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>Austria :</span>
                           <a href="#">Austria Regionalliga</a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -2196,40 +2260,46 @@
                     </tbody>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="6">
+                        <th colspan="12">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="3" class="tools">
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -2239,16 +2309,18 @@
               
               <div class="row">
                 <div class="col-md-12">
-                <table class="table table-condensed table-striped table-standing">
+                  <table class="table table-condensed table-striped table-standing">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="18">
+                        <th colspan="19">
+                          <div class="tools">
+                            <span>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
                           <span class="country"><i class="flag-5"></i>France :</span>
                           <a href="#">Ligue 2 </a>
-                        </th>
-                        <th colspan="1" class="tools">
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -2694,14 +2766,16 @@
                     </tbody>
                     <thead class="league-data">
                       <tr>
-                        <th colspan="14">
+                        <th colspan="19">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i>  Classement</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
+                            </span>
+                          </div>
                           <span class="country"><i class="flag-11"></i>International :</span>
                           <a href="#">Champions League</a>
                           <span class="match-name">: Groupe stage - Group C</span>
-                        </th>
-                        <th colspan="5" class="tools">
-                          <a href="#"><i class="icon-standings"></i>  Classement</a>
-                          <a class="fav" href="#"><span class="glyphicon glyphicon-star"></span></a>
                         </th>
                       </tr>
                     </thead>
@@ -2788,8 +2862,7 @@
                 </div>
               </div>
               
-              <div class="row">
-              
+              <div class="row">            
                 <div class="col-md-6">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -3104,7 +3177,7 @@
                       </div>
                       Top Competitions
                     </div>
-                      <ul class="nav nav-pills">
+                      <ul class="nav nav-pills nav-justified">
                         <li class="active">
                           <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
                         </li>
@@ -3501,30 +3574,32 @@
                             <th></th>
                           </tr>
                         </thead>
-                        <tr>
-                          <td>1</td>
-                          <td><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                        </tbody>
                       </table>
                   </div>   
                   

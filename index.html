@@ -19,7 +19,7 @@
       
       <!-- Owl Carousel -->
       <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
-      
+            
       <!-- Custom styles for this template -->
       <link rel="stylesheet" href="css/style.css" />
       
@@ -52,22 +52,91 @@
             </div>
           </form>
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown"><a href="#"><span class="icon-bell"></span></a></li>
-            <li class="dropdown"><a href="#"><span class="glyphicon glyphicon-comment"></span></a></li>
-            <li class="dropdown"><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+            <li class="dropdown alerts"><a href="#"><span class="icon-bell"><span class="badge live">5</span></span></a></li>
+            <li class="dropdown notifications">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-comment"><span class="badge primary">3</span></span></a>
+              <ul class="dropdown-menu custom" role="menu">
+                <li>
+                  <div class="dropdown-title">Notifications (3)<div class="tools"><a href="#" class="icon"><span class="icon glyphicon glyphicon-cog"></span></a></div></div>
+                  <div class="notifications-list">
+                    <ul>
+                      <li class="highlight">
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">Congratulations ! </span>
+                          <p class="message">New Prediction Contest Grid is available. Play now !</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                      <li class="highlight">
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">YOUNITED</span>
+                          <p class="message">real meme si jsuis pour le barca</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">Congratulations ! </span>
+                          <p class="message">You won this month predictions contest</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">Congratulations ! </span>
+                          <p class="message">You won this month predictions contest</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="view-all">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown settings">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></a>
+              <ul class="dropdown-menu custom" role="menu">
+                <li>
+                  <div class="dropdown-title">Settings</div>
+                  <div class="field time-zone">
+                    <label for="time-zone">Time Zone</label>
+                    <div class="select-component">
+                      <select name="time-zone" id="time-zone">
+                        <option value="1" selected>15h09 UTC+2 Madrid</option>
+                        <option value="1">15h09 UTC+2 Madrid</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field odds-type">
+                    <label for="time-zone">Odds Type</label>
+                    <div class="select-component">
+                      <select name="time-zone" id="time-zone">
+                        <option value="1" selected>Decimal Odds</option>
+                        <option value="1">Decimal Odds</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
             <li class="active"><a href="#"><span class="glyphicon glyphicon-volume-up"></span></a></li>
             <!--User dropdown-->
             <li class="user dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="img/user.jpg" />sebastien au. <span class="icon-caret-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">My account</a></li>
-                <li><a href="#">My predictions</a></li>
-                <li><a href="#">Prediction Contest</a></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-user"></span>My account</a></li>
+                <li><a href="#"><span class="icon icon-prono"></span>My predictions</a></li>
+                <li><a href="#"><span class="icon icon-cup"></span>Prediction Contest</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Webmaster zone</a></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-wrench"></span>Webmaster zone</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-edit"></span>Contact</a></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-off"></span>Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -208,26 +277,26 @@
             <li><a href="#">France</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="team" src="img/sprites/psg.png">PSG <span class="icon-caret-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#"> Ajaccio</a></li>
-                <li><a href="#"> Bastia	</a></li>
-                <li><a href="#"> Bordeaux</a></li>
-                <li><a href="#"> Evian</a></li>
-                <li><a href="#"> Guingamp</a></li>
-                <li><a href="#"> Lille</a></li>
-                <li><a href="#"> Lorient</a></li>
-                <li><a href="#"> Lyon</a></li>
-                <li><a href="#"> Monaco</a></li>
-                <li><a href="#"> Montpellier</a></li>
-                <li><a href="#"> Nantes</a></li>
-                <li><a href="#"> Nice</a></li>
-                <li><a href="#"> OM</a></li>
-                <li><a href="#"> PSG</a></li>
-                <li><a href="#"> Reims</a></li>
-                <li><a href="#"> Rennes</a></li>
-                <li><a href="#"> Sochaux</a></li>
-                <li><a href="#"> St Etienne</a></li>
-                <li><a href="#"> Toulouse</a></li>
-                <li><a href="#"> Valenciennes</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Ajaccio</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Bastia	</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Bordeaux</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Evian</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Guingamp</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Lille</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Lorient</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Lyon</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Monaco</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Montpellier</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Nantes</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Nice</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">OM</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">PSG</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Reims</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Rennes</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Sochaux</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">St Etienne</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Toulouse</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Valenciennes</a></li>
               </ul>            
             </li>
             <li class="active">Summary</li>
@@ -661,17 +730,46 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-1">
-                  <span class="badge live">259</span>     
-                  <span class="badge live">12</span>     
+                <div class="col-md-6">
+                  <div>
+                    <span class="badge live">259</span>
+                    <span class="badge primary">259</span>
+                    <span class="badge">259</span>       
+                  </div>
+                  <div>
+                    <span class="badge live">12</span>   
+                    <span class="badge primary">49</span>     
+                    <span class="badge">49</span>     
+                  </div>
+                  <div>
+                    <div class="checkbox">
+                      <input id="check1" type="checkbox">
+                      <label for="check1"></label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="check2" type="checkbox" checked>
+                      <label for="check2">Checkbox</label>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="radio">
+                      <input id="radio1" type="radio" name="radio1">
+                      <label for="radio1"></label>
+                    </div>
+                    <div class="radio">
+                      <input id="radio2" type="radio" name="radio1" checked>
+                      <label for="radio2">Radio</label>
+                    </div>
+                  </div> 
+                  <div>
+                    <div class="switch-button">
+                      <input type="checkbox" id="switch1" name="check" checked />
+                      <span><label for="switch1"></label></span>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-1">
-                  <span class="badge primary">259</span>     
-                  <span class="badge primary">49</span>     
-                </div>
-                <div class="col-md-1">
-                  <span class="badge">259</span>     
-                  <span class="badge">49</span>     
+                <div class="col-md-6 text-right">
+                  <div id="datepicker" style="display: inline-block;"></div>
                 </div>
               </div>
               <div class="row">
@@ -687,6 +785,52 @@
               <div class="row">
                 <div class="col-md-12">
                   <button data-popover="popover" type="button" class="btn btn-default" data-original-title="Popover in top" data-content="This is the popover content space, put your ideas here!" data-placement="top" data-trigger="hover"><i class="fa fa-chevron-circle-up"></i> Popover</button>
+                  
+                  <button class="btn btn-default" data-toggle="modal" data-target="#modal-window">Modal Window</button>
+                  
+                  <div class="modal fade" id="modal-window">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                          <h4 class="modal-title">Results Bar Customization</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Display results from :</p>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="checkbox">
+                                <input type="checkbox" checked="" id="check3">
+                                <label for="check3">My Games</label>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="checkbox">
+                                <input type="checkbox" checked="" id="check4">
+                                <label for="check4">My Leagues</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <p>Hidden by default :</p>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="switch-button">
+                                <input type="checkbox" checked="" name="check" id="switch2">
+                                <span><label for="switch2"></label></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                  
                 </div>
               </div>
               <div class="row">
@@ -1020,28 +1164,34 @@
               </div>
               <div class="row">
                 <div class="col-md-4 player">
-                  <span class="name"><img src="img/sprites/realmadrid.png">Cristiano Ronaldo</span>
+                  <a href="#"><span class="name"><img src="img/sprites/realmadrid.png">Cristiano Ronaldo</span></a>
                   <div class="goals">
                     17
                     <p><i class="icon-football"></i> Goals</p>
                   </div>
-                  <div class="picture"><img src="img/player_placeholder.png" class="img-circle"></div>
+                  <div class="picture">
+                    <a href="#"><img src="img/player_placeholder.png" class="img-circle"></a>
+                  </div>
                 </div>
                 <div class="col-md-4 player">
-                  <span class="name"><img src="img/sprites/psg.png">Zlatan Ibrahimovic</span>
+                  <a href="#"><span class="name"><img src="img/sprites/psg.png">Zlatan Ibrahimovic</span></a>
                   <div class="goals">
                     10
                     <p><i class="icon-football"></i> Goals</p>
                   </div>
-                  <div class="picture"><img src="img/player_placeholder.png" class="img-circle"></div>
+                  <div class="picture">
+                    <a href="#"><img src="img/player_placeholder.png" class="img-circle"></a>
+                  </div>
                 </div>
                 <div class="col-md-4 player">
-                  <span class="name"><img src="img/sprites/barcelona.png">Lionel Messi</span>
+                  <a href="#"><span class="name"><img src="img/sprites/barcelona.png">Lionel Messi</span></a>
                   <div class="goals">
                     8
                     <p><i class="icon-football"></i> Goals</p>
                   </div>
-                  <div class="picture"><img src="img/player_placeholder.png" class="img-circle"></div>
+                  <div class="picture">
+                    <a href="#"><img src="img/player_placeholder.png" class="img-circle"></a>
+                  </div>
                 </div>
               </div>
               <div class="row sharing">
@@ -1261,7 +1411,7 @@
                       </div>
                       Top Competitions
                     </div>
-                      <ul class="nav nav-pills">
+                      <ul class="nav nav-pills nav-justified">
                         <li class="active">
                           <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
                         </li>
@@ -1788,30 +1938,32 @@
                             <th></th>
                           </tr>
                         </thead>
-                        <tr>
-                          <td>1</td>
-                          <td><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
-                          <td>50€</td>
-                          <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
-                        </tr>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
+                            <td><a href="#">50€</a></td>
+                            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+                          </tr>
+                        </tbody>
                       </table>
                   </div>   
                   
@@ -1970,7 +2122,32 @@
 
         /*Popover*/
         $('[data-popover="popover"]').popover();
-
+        
+        /*DatePicker*/
+        //Dates to mark
+        var mark_dates = ["2014-11-21","2014-11-15","2014-11-11","2014-11-10"];
+        
+        $("#datepicker").datepicker({
+          dateFormat: 'yy-mm-dd',
+          showOtherMonths: true,
+          selectOtherMonths: true,
+          beforeShowDay: function(date) {
+            var m = date.getMonth(), d = date.getDate(), y = date.getFullYear();
+            var ndate = y + '-' + (m+1) + '-' + d;
+            
+            if($.inArray(ndate, mark_dates) != -1) {
+               return [true, 'marked-date', 'tooltip text'];
+            } else {
+               return [true, '', ''];
+            }
+          }
+        });
+        
+        /*Prevent Dropdown Custom Menus Closes*/
+        $('.settings.dropdown .dropdown-menu').click(function(e) {
+          e.stopPropagation();
+        });
+        
         var owl = $(".matches-slider .matches .inner");
  
         owl.owlCarousel({

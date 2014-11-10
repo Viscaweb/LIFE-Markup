@@ -1,0 +1,34 @@
+/*Modals*/
+.modal{
+  .modal-dialog{
+    .modal-content{
+    
+      .modal-header{
+        background-color: darken(@ls-light-color, 2.8%);
+        padding: 20px;
+        .border-radius(2px 2px 0 0);
+        
+        .modal-title{
+          font-family: @ls-alternate-font;
+          font-size: @font-size-x-large;
+          line-height: @font-size-x-large;
+        }
+        
+        .close{
+          font-size: @ls-modal-close-icon-size;
+          margin-top: -4px;
+          margin-right: 5px;
+        }
+      }
+      
+      .modal-body{
+        padding: 20px;
+      }
+      
+      .modal-footer{
+        .border-radius(0 0 2px 2px);
+        padding: 20px;
+      }
+    }
+  }
+}

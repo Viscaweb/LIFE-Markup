@@ -1,4 +1,132 @@
 /*form-control*/
+
+.checkbox, .radio{
+  display: inline-block;
+  line-height: @font-size-xx-large;
+  
+  input[type="checkbox"], input[type="radio"]{
+    display: none;
+    margin: 0;
+  }
+ 
+  label{
+    font-weight: @font-weight-semi-bold;
+  }
+ 
+  input[type="checkbox"] + label, input[type="radio"] + label{
+   padding-left: 0;
+    
+    &:before{
+      content: ""; 
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      border: 1px solid darken(@ls-light-color, 20%);
+      .border-radius(1px);
+      margin-right: 5px;
+      font-size: @font-size-small;
+      font-family: @ls-bootstrap-icons-font-family;
+      font-weight: normal;
+      line-height: 14px;
+      vertical-align: bottom;
+      text-align: center;
+    } 
+    
+    &:hover:before{
+      background-color: @ls-checkbox-hover-bg;
+    }
+  }
+  
+  input[type="checkbox"]:checked + label, input[type="radio"]:checked + label{
+    
+    &:before{
+      content: "\e013";
+      color: @brand-primary;
+      border-color: @brand-primary;
+    } 
+  }
+  
+  input[type="radio"] + label{
+    &:before{
+      .border-radius(50%);
+      font-family: @ls-icons-font;
+    }
+  }
+  
+  input[type="radio"]:checked + label{
+    &:before{
+      content: "\e62e";
+    }
+  }
+  
+}
+
+.switch-button{
+  display: inline-block;
+  line-height: @font-size-x-large;
+  .border-radius(50px);
+  background-color: darken(@ls-light-color, 9%);
+  width: 57px;
+  height: 24px;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  label{
+    .border-radius(50%);
+    border: 1px solid darken(@ls-light-color, 20%);
+    background-color: @ls-light-color;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+    background-clip: padding-box;
+    
+    &:before{
+      position: absolute;
+      font-size: @font-size-small;
+      font-weight: @font-weight-semi-bold;
+      z-index: 0;
+      content: "Off";
+      right: 10px;
+      color: darken(@ls-light-color, 48%);
+    } 
+    
+  }
+  
+  input[type="checkbox"]:checked + span{ 
+    background-color: @brand-primary;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    
+    label{
+      float: right; 
+      border-color: darken(@brand-primary, 5%);
+    
+      &:before{
+        position: absolute;
+        font-size: @font-size-small;
+        font-weight: @font-weight-semi-bold;
+        z-index: 0;
+        content: "On";
+        color: @ls-light-color;
+        left: 10px;
+      }
+    }
+  }
+}
+
 .form-control{
 	font-size: @font-size-small;
 	color: lighten(@ls-dark-color, 29%);
