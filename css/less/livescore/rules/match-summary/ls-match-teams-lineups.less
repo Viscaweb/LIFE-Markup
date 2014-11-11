@@ -199,6 +199,74 @@
       }
     }
   }
+  
+  .popover{
+    border-top: 0;
+    min-width: 322px;
+    .border-radius(2px);
+    
+    .arrow:after{
+      border-bottom-color: @panel-default-heading-bg;
+    }
+    
+    .popover-content{
+      padding: 0;
+      
+      > .title{
+        .border-radius(2px 2px 0 0);
+        background:  @panel-default-heading-bg;
+        border-bottom: 1px solid darken(@ls-light-color,6%);
+        padding: 8px 20px;
+        .panel-title-font-style();
+      }
+      
+      > .body{
+        padding: 15px 20px 20px;
+      }
+    
+      .content-header.player{
+        padding: 0;
+      
+        .avatar{
+          margin-right: 10px;
+          position: static;
+          
+          img{
+            margin: 0;
+            max-width: 80px;
+            max-height: 80px;
+            vertical-align: baseline;
+          }
+        }
+      
+        .actions{
+          margin-top: 5px;
+        
+          .action{
+            display: inline-block;
+            margin-right: 7px;
+            
+            .sprite, .icon{
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+      
+      .table{
+        margin-top: 12px;
+        border-top:2px solid darken(@ls-light-color, 2%);
+        
+        tr{
+          td{
+            &.value{
+              font-weight: @font-weight-semi-bold;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .table.teams-lineups{

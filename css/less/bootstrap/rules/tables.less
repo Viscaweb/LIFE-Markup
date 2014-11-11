@@ -23,8 +23,8 @@
           text-align: left;
           color: @ls-light-color;
           text-transform: none;
-          padding: 3px 0 2px 8px !important;
-          font-size: @font-size-small;
+          padding: 0;
+          font-size: 0;
           font-weight: @font-weight-bold !important;
           
           .country{
@@ -41,23 +41,56 @@
             color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
           }
           
+          > .title{
+            display: inline-block;
+            font-size: 0;
+            padding: 0 2px;
+            
+            > a, > span{
+              font-size: @ls-data-league-font-size;
+              display: inline-block;
+              padding: @ls-data-league-padding;
+              line-height: @ls-data-league-line-height;
+              color: @ls-light-color;
+            }
+          }
+          
+          > a.dropdown-toggle{
+            padding: @ls-data-league-arrow-padding;
+            line-height: @ls-data-league-line-height;
+            font-size: @ls-data-league-font-size;
+            
+            i{
+              font-size: @font-size-x-tiny;
+            }
+            
+            &:hover{
+              background-color: @ls-data-league-hover;
+            }
+          } 
+          
           .tools{
             float: right;
             padding: 0 !important;
+            font-size: 0;
             
             span{
+             display: inline-block;
              
               a.fav{
                 font-size: @font-size-normal;
+                vertical-align: top;
+                line-height: @font-size-xx-large + 1px;
               }
-             }
+            }
             
             a{
               display: inline-block;
-              padding: 0 4px;
+              padding: @ls-data-league-padding;
               color: darken(@ls-light-color, 4%);
               font-weight: 400;
-              line-height: 17px;
+              line-height: 19px;
+              font-size: @ls-data-league-font-size;
               
               i{
                 font-size:  @font-size-base + 5;
@@ -66,7 +99,7 @@
               }
               
               &:hover{
-                background-color: @brand-primary;
+                background-color: @ls-data-league-hover;
                 color: @ls-light-color;
               }
               
@@ -112,6 +145,10 @@
             background-color: lighten(@ls-greyblue-dark, 18%) !important;
           }
         }
+      }
+      
+      &.active{
+        .box-shadow(5px 0 0 @active-green inset);
       }
     }
   }
@@ -176,18 +213,6 @@
   }
     
   //General Styles
-  thead{
-  
-    &.league-data{
-    
-      th{
-        .dropdown-toggle{
-          margin-right: 5px; 
-        }
-      }
-    }
-  }
-  
   tr{
   
     td, th{
@@ -250,14 +275,14 @@
             
             &.has-score-details:after{
               position: absolute;
-              right: 0;
+              right: -1px;
               bottom: -3px;
               content: "";
               width: 0;
               height: 0;
-              border-top: 4px solid transparent;
+              border-top: 5px solid transparent;
               border-bottom: 5px solid transparent; 
-              border-left: 4px solid darken(@ls-light-color, 28%);
+              border-left: 5px solid darken(@ls-light-color, 28%);
               .rotate(45deg);
             }
           }
@@ -316,6 +341,13 @@
             }
           }
         } 
+        
+        &.live{
+          padding-left: 17px;
+          background-image: url("@{ls-image-live-spot}");
+          background-repeat: no-repeat;
+          background-position: 6px center;
+        }
       }
       
       //General TD Odd Style
@@ -415,7 +447,7 @@
           th{
           border: 0;
           padding: 4px 7px;
-          font-size:  @font-size-small - 1;
+          font-size:  @font-size-x-small;
           font-weight: 600;
         }
       }
@@ -425,12 +457,12 @@
         >tr{
         
           >th{
-            font-size:  @font-size-small;
             background-color: lighten(@ls-greyblue-dark, 21.3%);
             text-align: left;
             color: @ls-light-color;
             text-transform: none;
-            padding: 2px 8px;
+            padding: 0;
+            font-size: 0;
           }
         }
       }
@@ -438,16 +470,6 @@
 
 
     tr{
-    
-      &.league-data{
-      
-        tr{
-        
-          th{
-            font-size:  @font-size-small;
-          }
-        }
-      }
       
       td{
         font-weight: 400;
@@ -721,6 +743,10 @@ tbody{
             padding: 0 0 1px;
             width: 2%;
           }
+          
+          &.best-odd{
+            font-weight: @font-weight-bold;
+          }
         }
       }
     }
@@ -738,7 +764,6 @@ tbody{
           th{
             background-color: @brand-primary;
             color: @ls-light-color;
-            font-size: @font-size-small;
             font-weight: @font-weight-bold;
             
             a{
@@ -746,10 +771,27 @@ tbody{
               
               &.title{
                 margin-right: 5px;
+                line-height: @ls-data-league-line-height;
               }
               
               &.icon-help{
                 font-size: @font-size-normal;
+              }
+            }
+            
+            > .title{
+              span.icon{
+                font-size: @font-size-normal;
+                line-height: @font-size-x-large;
+                margin: 0;
+                position: relative;
+                top: 1px;
+              }
+              
+              .icon-help{
+                line-height: @font-size-x-large;
+                position: relative;
+                top: 1px;
               }
             }
             
@@ -875,7 +917,7 @@ tbody{
       
         th{
           border-bottom: 1px solid lighten(@ls-dark-color, 60%);
-          padding: 3px 0 2px 8px;
+          padding: 0;
           
           .country{
             text-transform: uppercase;
@@ -906,21 +948,16 @@ tbody{
               display: inline-block;
               color: darken(@ls-light-color, 4%);
               font-weight: 400;
-              padding: 0 4px;
               
               i{
-                font-size:  @font-size-base + 5;
+                font-size:  @font-size-xx-large;
+                line-height: @font-size-large;
                 vertical-align: middle;
                 color:  rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
                 
                 &.icon-standings{
                   margin-right: 5px;
                 }
-              }
-              
-              &:hover{
-                background-color: @brand-primary;
-                color: @ls-light-color;
               }
               
               &.active{
@@ -956,6 +993,10 @@ tbody{
       
         td{
         
+          &.score{
+            min-width: 50px;
+          }
+        
           span.hour{
             font-weight: @font-weight-semi-bold;
           }
@@ -978,7 +1019,7 @@ tbody{
             
             > a{
               display: block;
-              padding: 0 6px;
+              padding: 0 10px;
               line-height: 25px;
               color: lighten(@ls-dark-color, 36%);
             }
@@ -1009,6 +1050,7 @@ tbody{
                 margin-left: 5px;
               }
             }
+            
             
             &.team2{
               text-align: left;
@@ -1136,7 +1178,7 @@ tbody{
           
           &.extra-points{
             font-weight: @font-weight-semi-bold;
-            color: @brand-primary;
+            color: @ls-table-stats-up;
             padding-left: 0;
             padding-right: 0;
           }
