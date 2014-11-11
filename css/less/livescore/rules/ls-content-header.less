@@ -42,12 +42,20 @@
           color: darken(@ls-light-color,31%);
         }
         
-		    &:hover{
-		    	color: darken(@ls-light-color,37%);
-		    }
-
 		    &.active{
 		    	color: @ls-fav-hover;
+          
+          span{
+            color: @ls-fav-hover;
+          }
+		    }  
+        
+		    &:hover{
+		    	color: darken(@ls-light-color,37%);
+          
+          span{
+            color: darken(@ls-light-color,37%);
+          }
 		    }
 			}
       
