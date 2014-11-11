@@ -41,15 +41,20 @@
 				z-index: 1;
 				padding: 15px 15px 8px;
 				line-height: 30px;
+        
 				span{
 					font-size: @font-size-large + 2;
 				}
 			}
+      
 			i{
 				font-size: @font-size-large;
 				margin-right: 5px;
 				vertical-align: middle;
+        position: relative;
+        top: -1px;
 			}
+      
 			.badge.pull-right{
 				margin-left: 2px;
         .border-radius(10px);
@@ -90,7 +95,7 @@
 			}
 
 			&.dropdown-togle:before{
-				content: "";
+				content: "\e60b";
 		    font-family: "LSicons";
 		    font-size: @font-size-small - 2;
 		    left: 8px;
@@ -98,9 +103,11 @@
 		    position: absolute;
 		    color: darken(@ls-light-color,17%);
 			}
+      
 			&.dropdown-togle.open:before{
-				content: "";
+				content: "\e60d";
 			}
+      
 			&.sortable{
 					.sort{
 						margin-top: 3px;
