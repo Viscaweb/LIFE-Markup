@@ -12,8 +12,14 @@ module.exports = function (grunt) {
                 dest: '',
                 ext: '.css'
             }
+        },
+        watch: {
+            files: "**/*.less",
+            tasks: ["less"]
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
 };

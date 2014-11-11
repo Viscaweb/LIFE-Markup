@@ -1,0 +1,5 @@
+About Grunt : http://gruntjs.com/getting-started
+
+Install grunt dependencies:
+npm install grunt-contrib-less --save-dev
+npm install grunt-contrib-watch --save-dev
