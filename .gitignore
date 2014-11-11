@@ -9,3 +9,9 @@ composer.lock
 *.db
 *.db
 *.db
+
+# Grunt
+node_modules
+
+# Generated files
+*.css.map
