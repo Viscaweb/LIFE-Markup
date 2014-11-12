@@ -74,9 +74,8 @@
         .btn-group{
           .btn{
             font-weight: 400;
-            min-width: 73px;
-            padding-left: 8px;
-            padding-right: 8px;
+            padding-left: 6px;
+            padding-right: 6px;
           }
         }
       }
@@ -98,6 +97,12 @@
             &.team{
               width: 43%;
             }
+            
+            &.pts{
+              padding-left: 3px;
+              padding-right: 3px;
+              text-align: center;
+            }
           }
           
           td{
@@ -116,12 +121,15 @@
             }
             
             &.number{
-              font-weight: 600;
+              font-weight: @font-weight-semi-bold;
               text-align: center;
             }
             
             &.pts{
-              font-weight: 600;
+              font-weight: @font-weight-semi-bold;
+              padding-left: 3px;
+              padding-right: 3px;
+              text-align: center;
             }
           }
           
