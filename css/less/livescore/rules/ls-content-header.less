@@ -102,22 +102,26 @@
     
     a.star{
       
-      &:hover + a.add-to-my-team{
-        display: inline-block;
-      }
-    }
-    
-    a.add-to-my-team{
-      text-transform: none;
-      color: @link-color;
-      font-size: @font-size-small;
-      margin-left: 0;
-      display: none;
-      
       &:hover{
-        color: @link-hover-color;
+        
+        span.add-to-my-team{
+          display: inline-block;
+        }
       }
-    }
+      
+      span.add-to-my-team{
+        text-transform: none;
+        color: @link-color;
+        font-size: @font-size-small;
+        margin-left: 0;
+        display: none;
+        vertical-align: baseline;
+        
+        &:hover{
+          color: @link-hover-color;
+        }
+      }    
+    } 
 	}
   
 	&.player{

@@ -1,0 +1,46 @@
+.popover.popover-trend{
+  border-top: 0;
+  min-width: 260px;
+  .border-radius(2px);
+  
+  > .arrow:after{
+    border-bottom-color: @panel-default-heading-bg;
+  }
+  
+  > .popover-title{
+    .border-radius(2px 2px 0 0);
+    background:  @panel-default-heading-bg;
+    border-bottom: 1px solid darken(@ls-light-color,6%);
+    padding: 8px 20px;
+    .panel-title-font-style();
+  }
+  
+  .popover-content{
+    padding:  padding: 15px 20px 20px;
+    
+    table{
+      margin: 0;
+      width: 100%;
+      
+      tr{
+        td{
+          vertical-align: middle;
+          padding: 10px;
+         
+         .indicator{
+          display: inline-block;
+          padding: 0 8px;
+          background-color: @ls-trend-neutral;
+          vertical-align: bottom;
+          color: @ls-light-color;
+          margin-right: 7px;
+         }
+         
+         .progress{
+          margin: 0;
+         }
+        }
+      }
+    }
+  }
+}

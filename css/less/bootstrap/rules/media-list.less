@@ -40,24 +40,27 @@
       max-width: 40px;
     }
     .media-body{
+    
       .media-heading{
         margin: 0;
         
-        h4, .h4{
+        h4, .name{
           font-size: @font-size-base;
           font-weight: bold;
           color: lighten(@ls-dark-color,36%);
           margin-top: 0;
           display: inline-block;
+          margin-bottom: 9px;
         }
+        
         .tools{
           float: right;
-          h5, .h5{
+          h5, .date{
             font-weight: 400;
             color: darken(@ls-light-color,38%);
             font-size: @font-size-small - 1;
             display: inline-block;
-            margin-right: 6px;
+            margin-right: 6px;            
 
             a{
               color: darken(@ls-light-color, 14%);
@@ -67,6 +70,7 @@
               }
             }
           }
+          
           > a{
             color: darken(@ls-light-color, 14%);
             font-size: @font-size-large;
@@ -78,11 +82,13 @@
           }     
         }
       }
+      
       p{
         line-height: 15px;
         font-weight: 400;
         font-size: @font-size-base;
       }
+      
       .reply{
         color: @brand-primary;
 
