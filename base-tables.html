@@ -929,32 +929,40 @@
                         <td><span class="hour">20h45</span> </td>
                         <td></td>
                         <td class="team team1"><a href="#">Barracas Central</a></td>
-                        <td class="score"><a href="#" data-popover="popover" data-html="true" data-placement="bottom" data-content="
+                        <td class="score"><a href="javascript:;" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
                         <table class='table matches table-condensed table-striped no-border'>
                           <tbody>
                             <tr>
                               <td class='team team1'></td>
+                              <td></td>
                               <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite goal'></span></td>
                               <td class='team team2'>David Alaba</td>
                             </tr>
                             <tr>
                               <td class='team team1'>Cristiano Ronaldo (Penalty)</td>
+                              <td><span class='sprite penalty-goal'></span></td>
                               <td class='score'><span class='home-score'>6'</span></td>
+                              <td></td>
                               <td class='team team2'></td>
                             </tr>
                             <tr>
                               <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite goal'></span></td>
                               <td class='score'><span class='home-score'>14'</span></td>
+                              <td><span class='sprite goal'></span></td>
                               <td class='team team2'></td>
                             </tr>
                             <tr>
                               <td class='team team1'></td>
+                              <td></td>
                               <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite penalty-goal'></span></td>
                               <td class='team team2'>Arjen Robben (Penalty)</td>
                             </tr>
                           </tbody>
                         </table>
-                        "><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2"><a href="#" >Colegiales<span class="mark">(0 - 1)</span></a></td>
                         <td class="tools">
                           <a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
@@ -1069,6 +1077,22 @@
                       <a class="btn btn-default"><span class="icon-caret-left"></span></a>
                       <a class="btn btn-default">Mon 2 Jun. <span class="icon-caret-down"></span></a>
                       <a class="btn btn-default"><span class="icon-caret-right"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="odds-selector">              
+                    <div class="content">
+                      <p>Show odds from :</p>
+                    </div>
+                    <div class="button">
+                      <div class="btn-group">
+                        <a class="btn btn-default bet-preview"><img src="img/sprites/bonus2.png" alt="Bwin"></a>
+                        <a class="btn btn-default bet-name"><span class="icon-caret-down"></span>Bwin</a>
+                      </div>   
                     </div>
                   </div>
                 </div>
@@ -1232,22 +1256,22 @@
                         <td class="trend">
                           <div class="progress" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-title="Trend" data-content="
                           <table class='no-border'>
-                            <tr>
-                              <td><span class='indicator'>1</span>1</td>
-                              <td>2</td>
-                              <td>3</td>
+                            <tr class='values'>
+                              <td><span class='indicator home'>1</span>80%</td>
+                              <td><span class='indicator'>N</span>10%</td>
+                              <td><span class='indicator away'>2</span>10%</td>
                             </tr>
                             <tr>
                               <td colspan='3'>
                                 <div class='progress'>
-                                  <div style='width: 55%' class='progress-bar progress-bar-home'>
-                                    <span class='sr-only'>60% Complete (success)</span>
+                                  <div style='width: 80%' class='progress-bar progress-bar-home'>
+                                    <span class='sr-only'>80% Complete (success)</span>
                                   </div>
-                                  <div style='width: 25%' class='progress-bar progress-bar-neutral'>
+                                  <div style='width: 10%' class='progress-bar progress-bar-neutral'>
                                     <span class='sr-only'>10% Complete (warning)</span>
                                   </div>
-                                  <div style='width: 20%' class='progress-bar progress-bar-away'>
-                                    <span class='sr-only'>40% Complete (danger)</span>
+                                  <div style='width: 10%' class='progress-bar progress-bar-away'>
+                                    <span class='sr-only'>10% Complete (danger)</span>
                                   </div>
                                 </div>
                               </td>
@@ -1347,7 +1371,71 @@
                           </div>                        
                         </td>
                         <td class="tools">
-                          <a href="#"><i class="icon-bulb"></i></a>
+                          <a href="javascript:;" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-title="Trend" data-content="
+                          <div class='tips-list'>
+                            <ul class='media-list'>
+                              <li class='media'>
+                                <div class='tip-container'>
+                                  <a href='#' class='avatar'>
+                                    <img class='img-circle' alt='64x64' src='img/placehold-avatar.png'>
+                                  </a>
+                                  <div class='media-body'>
+                                    <p><b>Ryad Boudebouz</b> a donné le plus de passes décisives pour <b>Bastia</b> avec 5. <b>Issa Cissokho</b> est le meilleur passeur de <b>Nantes</b> (4).</p>
+                                  </div>
+                                </div>
+                              </li> 
+                              <li class='media'>
+                                <div class='tip-container'>
+                                  <a href='#' class='avatar'>
+                                    <img alt='Team Logo' src='img/sprites/team7.png'>
+                                  </a>
+                                  <div class='media-body'>
+                                    <p>Saviez-vous que <b>Nantes</b> marque 35% de leurs buts entre les minutes 76-90?</p>
+                                  </div>
+                                  </div>
+                              </li>
+                              <li class='media'>
+                                <div class='tip-container'>
+                                  <a href='#' class='avatar'>
+                                    <img alt='Team Logo' src='img/sprites/team6.png'>
+                                  </a>
+                                  <div class='media-body'>
+                                    <p>Saviez-vous que <b>Bastia</b> marque 31% de leurs buts entre les minutes 76-90?</p>
+                                  </div>
+                                </div>
+                              </li>  
+                              <li class='media'>
+                                <div class='tip-container'>
+                                  <a href='#' class='avatar'>
+                                    <img alt='Team Logo' src='img/sprites/team7.png'>
+                                  </a>
+                                  <div class='media-body'>
+                                    <p><b>Nantes</b> n'a pas marqué dans 8 de leurs 18 matches à l'extérieur en Ligue 1 cette saison.</p>
+                                  </div>
+                                </div>
+                              </li>                     
+                              <li class='media'>
+                                <div class='tip-container'>
+                                  <a href='#' class='avatar'>
+                                    <img alt='Team Logo' src='img/sprites/team6.png'>
+                                  </a>
+                                  <div class='media-body'>
+                                    <p>Lors des dernières 31 rencontres, <b>Bastia</b> a gagné 11 fois, il ya eu 9 nuls et <b>Nantes</b> a gagné 11 fois. La différence de buts est de 38-37 en faveur de <b>Nantes</b>.</p>
+                                  </div>
+                                </div>
+                              </li>                     
+                              <li class='media'>
+                                <div class='tip-container'>
+                                  <a href='#' class='avatar'>
+                                    <img alt='Team Logo' src='img/sprites/team6.png'>
+                                  </a>
+                                  <div class='media-body'>
+                                    <p><b>Bastia</b> n'a pas marqué dans 5 de leurs 18 matches à domicile en Ligue 1 cette saison.</p>
+                                  </div>
+                                </div>
+                              </li>                      
+                            </ul>
+                          </div>" data-template="<div class='popover popover-tips'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><i class="icon-bulb"></i></a>
                           <a href="#"><i class="icon-bell"></i></a>
                           </td>
                       </tr>
@@ -2377,7 +2465,7 @@
                   <table class="table table-condensed table-striped table-standing">
                     <thead  class="league-data active">
                       <tr>
-                        <th colspan="18">
+                        <th colspan="19">
                           <div class="tools">
                             <span>
                               <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
@@ -2398,6 +2486,7 @@
                         <th>Team</th>
                         <th></th>
                         <th class="text-right">Pts</th>
+                        <th class="text-right"></th>
                         <th class="text-right">P</th>
                         <th class="text-right">W</th>
                         <th class="text-right">D</th>
@@ -2415,6 +2504,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">PSG</td>
                         <td class="extra-points">+3</td>
                         <td class="points">89</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">27</td>
                         <td class="point">8</td>
@@ -2435,6 +2525,7 @@
                         <td class="team"><img src="img/sprites/monaco.png">Monaco</td>
                         <td class="extra-points"></td>
                         <td class="points">89</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">27</td>
                         <td class="point">8</td>
@@ -2455,6 +2546,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">Lille</td>
                         <td class="extra-points"></td>
                         <td class="points">71</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">27</td>
                         <td class="point">8</td>
@@ -2475,6 +2567,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">St Etienne</td>
                         <td class="extra-points"></td>
                         <td class="points">69</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">27</td>
                         <td class="point">8</td>
@@ -2495,6 +2588,7 @@
                         <td class="team"><img src="img/sprites/lyon.png">Lyon</td>
                         <td class="extra-points"></td>
                         <td class="points">61</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">27</td>
                         <td class="point">8</td>
@@ -2515,6 +2609,7 @@
                         <td class="team"><img src="img/sprites/om.png">OM</td>
                         <td class="extra-points"></td>
                         <td class="points">60</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">16</td>
                         <td class="point">12</td>
@@ -2535,6 +2630,7 @@
                         <td class="team"><img src="img/sprites/om.png">Bardeaux</td>
                         <td class="extra-points">+3</td>
                         <td class="points">53</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">13</td>
                         <td class="point">14</td>
@@ -2555,6 +2651,7 @@
                           <td class="team"><img src="img/sprites/om.png">Lorient</td>
                           <td class="extra-points"></td>
                           <td class="points">49</td>
+                          <td class="point-detail"></td>
                           <td class="point">38</td>
                           <td class="point">13</td>
                           <td class="point">10</td>
@@ -2575,6 +2672,7 @@
                         <td class="team"><img src="img/sprites/om.png">Reims</td>
                         <td class="extra-points">+1</td>
                         <td class="points">49</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">12</td>
                         <td class="point">13</td>
@@ -2595,6 +2693,7 @@
                         <td class="team"><img src="img/sprites/om.png">Bastia</td>
                         <td class="extra-points">+1</td>
                         <td class="points">49</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">13</td>
                         <td class="point">10</td>
@@ -2615,6 +2714,7 @@
                         <td class="team"><img src="img/sprites/om.png">Toulouse</td>
                         <td class="extra-points"></td>
                         <td class="points">48</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">12</td>
                         <td class="point">12</td>
@@ -2635,6 +2735,7 @@
                         <td class="team"><img src="img/sprites/om.png">Nantes</td>
                         <td class="extra-points"></td>
                         <td class="points">46</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">11</td>
                         <td class="point">13</td>
@@ -2644,7 +2745,19 @@
                         <td class="point">2</td>
                         <td class="event-outcome event-outcome-upcoming"><span class="glyphicon glyphicon-time"></span></td>
                         <td class="event-outcome event-outcome-won">w</td>
-                        <td class="event-outcome event-outcome-lost">l</td>
+                        <td class="event-outcome event-outcome-lost" data-popover="popover" data-container="body" data-html="true" data-placement="bottom" data-content="
+                        <table class='table my-games table-condensed no-border'>
+                          <tbody>
+                            <tr>
+                              <td class='date'>02/04</td>
+                              <td><img class='league' src='img/sprites/ligue1.png'></td>
+                              <td class='team team1'><a href='#'>Nantes <img src='img/sprites/barcelona.png'></a></td>
+                              <td class='score'><a href='#'><span class='home-score'>0</span> <span class='versus'> - </span> <span class='away'>1</span></a></td>
+                              <td class='team team2'><a href='#'><img src='img/sprites/realmadrid.png'><b>Lille</b></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-standings'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>">l</td>
                         <td class="event-outcome event-outcome-won">w</td>
                         <td class="event-outcome event-outcome-won">w</td>
                         <td class="event-outcome event-outcome-lost">l</td>
@@ -2655,6 +2768,7 @@
                         <td class="team"><img src="img/sprites/om.png">Rennes</td>
                         <td class="extra-points"></td>
                         <td class="points">46</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">12</td>
                         <td class="point">10</td>
@@ -2675,6 +2789,7 @@
                         <td class="team"><img src="img/sprites/om.png">Montpellier</td>
                         <td class="extra-points">+1</td>
                         <td class="points">44</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">11</td>
                         <td class="point">11</td>
@@ -2695,6 +2810,7 @@
                         <td class="team"><img src="img/sprites/om.png">Guingamp</td>
                         <td class="extra-points"></td>
                         <td class="points">42</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">8</td>
                         <td class="point">18</td>
@@ -2715,6 +2831,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">Nice</td>
                         <td class="extra-points"></td>
                         <td class="points">42</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">11</td>
                         <td class="point">9</td>
@@ -2735,6 +2852,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">Evian</td>
                         <td class="extra-points"></td>
                         <td class="points">42</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">12</td>
                         <td class="point">6</td>
@@ -2755,6 +2873,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">Sochaux</td>
                         <td class="extra-points"></td>
                         <td class="points">40</td>
+                        <td class="point-detail"><span data-placement="bottom" data-toggle="tooltip" data-original-title="-6 point (Federation decision)">p</span></td>
                         <td class="point">38</td>
                         <td class="point">10</td>
                         <td class="point">10</td>
@@ -2775,6 +2894,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">Valenciennes</td>
                         <td class="extra-points"></td>
                         <td class="points">40</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">6</td>
                         <td class="point">10</td>
@@ -2795,6 +2915,7 @@
                         <td class="team"><img src="img/sprites/barcelona.png">Ajaccio</td>
                         <td class="extra-points"></td>
                         <td class="points">23</td>
+                        <td class="point-detail"></td>
                         <td class="point">38</td>
                         <td class="point">4</td>
                         <td class="point">11</td>
@@ -2833,6 +2954,7 @@
                         <th></th>
                         <th colspan="8">Team</th>
                         <th class="text-right">Pts</th>
+                        <th class="text-right"></th>
                         <th class="text-right">P</th>
                         <th class="text-right">W</th>
                         <th class="text-right">D</th>
@@ -2849,6 +2971,7 @@
                         <td class="team" colspan="7"><img src="img/sprites/psg.png">PSG</td>
                         <td class="extra-points"></td>
                         <td class="points">13</td>
+                        <td class="point-detail"></td>
                         <td class="point">6</td>
                         <td class="point">4</td>
                         <td class="point">1</td>
@@ -2863,6 +2986,7 @@
                         <td class="team" colspan="7"><img src="img/sprites/psg.png">Olympiakos</td>
                         <td class="extra-points"></td>
                         <td class="points">10</td>
+                        <td class="point-detail"></td>
                         <td class="point">6</td>
                         <td class="point">3</td>
                         <td class="point">1</td>
@@ -2877,6 +3001,7 @@
                         <td class="team" colspan="7"><img src="img/sprites/psg.png">benfica</td>
                         <td class="extra-points"></td>
                         <td class="points">10</td>
+                        <td class="point-detail"></td>
                         <td class="point">6</td>
                         <td class="point">3</td>
                         <td class="point">1</td>
@@ -2891,6 +3016,7 @@
                         <td class="team" colspan="7"><img src="img/sprites/psg.png">anderlecht</td>
                         <td class="extra-points"></td>
                         <td class="points">1</td>
+                        <td class="point-detail"></td>
                         <td class="point">6</td>
                         <td class="point">0</td>
                         <td class="point">1</td>

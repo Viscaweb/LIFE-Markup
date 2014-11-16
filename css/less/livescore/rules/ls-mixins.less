@@ -147,3 +147,18 @@
 	-ms-transform-origin:     @x @y;
 	-o-transform-origin:      @x @y;
 }
+
+.scroll-bar(@width: 10px, @border-radius: 2px, @background: @ls-scrollbar-background, @thumb-background: @ls-scrollbar-color){
+  &::-webkit-scrollbar {
+      width: @width;
+  }
+   
+  &::-webkit-scrollbar-track {
+      background: @background;
+  } 
+   
+  &::-webkit-scrollbar-thumb {
+      background: @thumb-background;
+      .border-radius(@border-radius);
+  }
+}
