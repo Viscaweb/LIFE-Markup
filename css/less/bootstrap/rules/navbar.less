@@ -162,19 +162,6 @@
          .notifications-list{
             max-height: 338px;
             overflow: auto;
-                  
-            &::-webkit-scrollbar {
-                width: @ls-notification-menu-scrollbar-width;
-            }
-             
-            &::-webkit-scrollbar-track {
-                background: @ls-top-breadcrumbs-scrollbar-background;
-            } 
-             
-            &::-webkit-scrollbar-thumb {
-                background: @ls-top-breadcrumbs-scrollbar-color;
-                .border-radius(@ls-scrollbar-border-radius);
-            }
          
             >ul{
               margin: 0;
@@ -402,7 +389,16 @@
     text-transform: uppercase;
     height: @ls-navbar-inverse-height;
     margin-bottom: 0;
-    
+    position: relative;
+
+    .loading-bar{
+      background-color: @brand-primary;
+      position: absolute;
+      height: 3px;
+      top: 0;
+      left: 0;
+    }
+
     span.icon-caret-down{
       font-size:  @font-size-small;
     }

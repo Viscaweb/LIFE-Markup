@@ -58,7 +58,7 @@
               <ul class="dropdown-menu custom" role="menu">
                 <li>
                   <div class="dropdown-title">Notifications (3)<div class="tools"><a href="#" class="icon"><span class="icon glyphicon glyphicon-cog"></span></a></div></div>
-                  <div class="notifications-list">
+                  <div class="notifications-list ls-scrollbar">
                     <ul>
                       <li class="highlight">
                         <a href="#">
@@ -143,6 +143,7 @@
       </div><!-- /.container-fluid -->
     </nav>
     <nav class="navbar navbar-inverse">
+      <div class="loading-bar" style="width: 21%;"></div>
       <div class="container">
         <!-- Collect the nav links, forms, and other content for toggling -->
           <ul class="nav navbar-nav">
@@ -306,7 +307,7 @@
             <!-- Content Ad Space -->
             <img src="img/920x167.gif">
           </div> 
-          <div class="matches-slider">
+          <div class="matches-slider" id="matches-slider1">
             <div class="prev control"><span class="icon-caret-left"></span></div>
             <div class="content">
               <div class="matches">
@@ -422,7 +423,7 @@
             </div>
             <div class="next control"><span class="icon-caret-right"></span></div>
           </div>
-          <div class="matches-slider-live">
+          <div class="matches-slider match-slider-inverse">
             <div class="toggle-container">
               <div class="slider-content">
                 <div class="title">
@@ -2148,7 +2149,7 @@
           e.stopPropagation();
         });
         
-        var owl = $(".matches-slider .matches .inner");
+        var owl = $("#matches-slider1 .matches .inner");
  
         owl.owlCarousel({
           autoWidth:true,
@@ -2157,15 +2158,15 @@
           dots: false,
         });
  
-        $(".matches-slider .prev.control").click(function(){
+        $("#matches-slider1 .prev.control").click(function(){
           owl.trigger('prev.owl.carousel');
         });
         
-        $(".matches-slider .next.control").click(function(){
+        $("#matches-slider1 .next.control").click(function(){
           owl.trigger('next.owl.carousel');
         });
 
-        var matches_live = $(".matches-slider-live .matches .inner");
+        var matches_live = $(".match-slider-inverse .matches .inner");
  
         matches_live.owlCarousel({
           autoWidth: true,
@@ -2174,17 +2175,17 @@
           dots: false,
         });
  
-        $(".matches-slider-live .prev.control").click(function(){
+        $(".match-slider-inverse .prev.control").click(function(){
           matches_live.trigger('prev.owl.carousel');
         });
         
-        $(".matches-slider-live .next.control").click(function(){
+        $(".match-slider-inverse .next.control").click(function(){
           matches_live.trigger('next.owl.carousel');
         });
         
-        $(".matches-slider-live .toggle-right").click(function(){
+        $(".match-slider-inverse .toggle-right").click(function(){
           var toggle = $(this);
-          var cont = $(this).parents(".matches-slider-live");
+          var cont = $(this).parents(".match-slider-inverse");
           
           if( toggle.hasClass("closed") ){
             cont.css({'position':'static'});
