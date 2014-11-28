@@ -135,12 +135,13 @@
         }
       }
       
-      .menu-badge(@top: -7px, @right: -9px){
+      .menu-badge(@top: 16px, @right: 9px){
         > a{
-          
+          position: relative;
+
           > span{  
-            position: relative;
-                    
+            position: static;
+
             .badge{
               font-family: @ls-body-font;
               position: absolute;
@@ -155,7 +156,7 @@
     
       .notifications.dropdown{
       
-        .menu-badge();
+        .menu-badge(16px, 6px);
       
         ul.dropdown-menu{
         
@@ -251,7 +252,7 @@
       }
       
       .alerts.dropdown{ 
-        .menu-badge(-5px, -6px);
+        .menu-badge();
       }
     
       .settings.dropdown{

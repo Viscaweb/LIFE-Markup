@@ -1,9 +1,11 @@
 .nav-tabs{
   background: darken(@ls-light-color, 1%);
   border-bottom: 2px solid darken(@ls-light-color, 6%);
+
   > li{
     margin-bottom: -2px;
     border-right: 1px solid darken(@ls-light-color, 12%);
+
     &.active{
       a,a:hover,a:focus{
         .border-radiuses(2px,0,0,2px);
@@ -11,11 +13,13 @@
         border: transparent;
         border-bottom: 2px solid @nav-tabs-active-link-hover-border-color;
       }
+
       .badge{
         background: @ls-light-color;
         color: @brand-primary;
       }
     }
+
     > a{
       .border-radius(0);
       border-top: none;
@@ -40,10 +44,10 @@
 
       .badge{
         background-color: @brand-primary;
-        float: right;
         margin-left: 5px;
       }
     }
+    
     &.dropdown.open{
       > a{
         color: @ls-light-color;

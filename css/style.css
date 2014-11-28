@@ -6666,7 +6666,7 @@ button.close {
   font-size: 12px;
   font-family: 'Glyphicons Halflings';
   font-weight: normal;
-  line-height: 14px;
+  line-height: 15px;
   vertical-align: bottom;
   text-align: center;
 }
@@ -7170,14 +7170,17 @@ button.close {
 .header .navbar.navbar-fixed-top .navbar-right ul.dropdown-menu > li .dropdown-title .tools a.icon:hover {
   color: #9e9e9e;
 }
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a > span {
+.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a {
   position: relative;
+}
+.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a > span {
+  position: static;
 }
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a > span .badge {
   font-family: 'Open Sans', sans-serif;
   position: absolute;
-  top: -7px;
-  right: -9px;
+  top: 16px;
+  right: 6px;
   font-size: 11px;
   font-weight: 700;
 }
@@ -7249,14 +7252,17 @@ button.close {
   background-color: transparent;
   color: #002d5c;
 }
-.header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a > span {
+.header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a {
   position: relative;
+}
+.header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a > span {
+  position: static;
 }
 .header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a > span .badge {
   font-family: 'Open Sans', sans-serif;
   position: absolute;
-  top: -5px;
-  right: -6px;
+  top: 16px;
+  right: 9px;
   font-size: 11px;
   font-weight: 700;
 }
@@ -7820,7 +7826,6 @@ button.close {
 }
 .nav-tabs > li > a .badge {
   background-color: #5da400;
-  float: right;
   margin-left: 5px;
 }
 .nav-tabs > li.dropdown.open > a {
@@ -8540,6 +8545,9 @@ button.close {
 }
 .table.matches tbody tr td.score {
   min-width: 50px;
+}
+.table.matches tbody tr td.odd {
+  white-space: nowrap;
 }
 .table.matches tbody tr td span.hour {
   font-weight: 600;
@@ -10562,7 +10570,7 @@ span.glyphicon-star.active {
 .ls-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #4f8b00;
 }
-.ls-scrollbar::-webkit-scrollbar:hover {
+.ls-scrollbar:hover::-webkit-scrollbar {
   width: 11px;
 }
 /*Base Tables*/
