@@ -82,12 +82,15 @@
     position: relative;
     height: @ls-match-timeline-container-height;
     background: url("@{ls-image-timeline-gray-bg}") repeat 0 0;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     
     .timeline-elements{
       white-space: nowrap;
       font-size: 0;
+      position: relative;
+      top: 50%;
+      margin-top: -15px;
     }
     
     .timeline{

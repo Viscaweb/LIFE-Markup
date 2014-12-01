@@ -2,14 +2,17 @@
 .content-header{
 	position: relative;
 	padding: 10px 6px;
+	display: table;
+	width: 100%;
+	margin-bottom: 15px;
   
 	.avatar{
-		display: inline-block;
+		vertical-align: top;
+		display: table-cell;
 		position: relative;
-		top: -32px;
-		margin-right: 20px;
-    padding-top: 5px;
-    
+   	padding: 10px 20px 10px 6px;
+    width: 15.5%;
+
 		img{
 			max-width: 65px;
       margin-top: 8px;
@@ -17,8 +20,10 @@
 	}
   
 	.info{
-		display: inline-block;
-    
+		display: table-cell;
+		padding: 10px 6px 10px 0;
+    vertical-align: top;
+
 		.title{
       margin: 0;
       line-height: 21px;
@@ -87,7 +92,9 @@
 	&.teams{
   
 		.shirts{
-			float: right;
+			text-align: right;
+			display: table-cell;
+			padding: 10px 0;
       
 			a{
 				text-align: center;
@@ -127,14 +134,11 @@
 	}
   
 	&.player{
-  
-		.avatar{
-			top: -27px;
-		}
     
 		.info{
 			margin-right: 46px;
-      
+      width: 25%;
+
 			.title{
       
 				.first-name {
@@ -158,8 +162,10 @@
 		}
     
 		.description{
-			display: inline-block;
-      
+			display: table-cell;
+      vertical-align: top;
+      padding: 10px 20px 10px 0;
+
 			ul{
 				padding: 0;
 				list-style: none;
@@ -177,7 +183,10 @@
 		}
     
 		.teams{
-			float: right;
+			vertical-align: top;
+			text-align: right;
+			display: table-cell;
+			padding: 10px 0;
       
 			a{
 				text-align: center;

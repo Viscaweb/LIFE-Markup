@@ -8451,10 +8451,8 @@ button.close {
 .table.my-games tbody tr td.team.team2 img {
   margin-right: 5px;
 }
-.table.my-games tbody tr td.team .mark {
-  background-color: transparent;
+.table.my-games tbody tr td.half-time-score {
   color: #a1a1a1;
-  float: right;
   padding: 0 1px;
 }
 .table.my-games tbody tr td.score {
@@ -8601,10 +8599,8 @@ button.close {
 .table.matches tbody tr td.team.team2 img {
   margin-right: 5px;
 }
-.table.matches tbody tr td.team .mark {
-  background-color: transparent;
+.table.matches tbody tr td.half-time-score {
   color: #a1a1a1;
-  float: right;
   padding: 0 1px;
 }
 .table.matches tbody tr.live > td.time {
@@ -8909,20 +8905,25 @@ button.close {
 .content-header {
   position: relative;
   padding: 10px 6px;
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
 }
 .content-header .avatar {
-  display: inline-block;
+  vertical-align: top;
+  display: table-cell;
   position: relative;
-  top: -32px;
-  margin-right: 20px;
-  padding-top: 5px;
+  padding: 10px 20px 10px 6px;
+  width: 15.5%;
 }
 .content-header .avatar img {
   max-width: 65px;
   margin-top: 8px;
 }
 .content-header .info {
-  display: inline-block;
+  display: table-cell;
+  padding: 10px 6px 10px 0;
+  vertical-align: top;
 }
 .content-header .info .title {
   margin: 0;
@@ -8980,7 +8981,9 @@ button.close {
   margin-right: 5px;
 }
 .content-header.teams .shirts {
-  float: right;
+  text-align: right;
+  display: table-cell;
+  padding: 10px 0;
 }
 .content-header.teams .shirts a {
   text-align: center;
@@ -9006,11 +9009,9 @@ button.close {
 .content-header.teams a.star span.add-to-my-team:hover {
   color: #002d5c;
 }
-.content-header.player .avatar {
-  top: -27px;
-}
 .content-header.player .info {
   margin-right: 46px;
+  width: 25%;
 }
 .content-header.player .info .title .first-name {
   margin: 0;
@@ -9029,7 +9030,9 @@ button.close {
   color: #474747;
 }
 .content-header.player .description {
-  display: inline-block;
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px 20px 10px 0;
 }
 .content-header.player .description ul {
   padding: 0;
@@ -9044,7 +9047,10 @@ button.close {
   color: #333333;
 }
 .content-header.player .teams {
-  float: right;
+  vertical-align: top;
+  text-align: right;
+  display: table-cell;
+  padding: 10px 0;
 }
 .content-header.player .teams a {
   text-align: center;
@@ -9637,6 +9643,7 @@ span.sprite.corner-flag {
 }
 .match-slider-inverse {
   background-color: #424749;
+  border-bottom-color: #52585b;
 }
 .match-slider-inverse .toggle-container {
   width: 100%;
@@ -9719,6 +9726,15 @@ span.sprite.corner-flag {
 }
 .match-slider-inverse .content .match:nth-child(even) table tr:first-child td:last-child {
   border-color: #424749;
+}
+.match-slider-inverse .content .match.highlight {
+  background-color: #fff4ce;
+}
+.match-slider-inverse .content .match.highlight table tr:first-child td:last-child {
+  border-color: #fff4ce !important;
+}
+.match-slider-inverse .content .match.highlight table tr td.team {
+  color: #424749;
 }
 .match-slider-inverse .content .match:hover {
   background-color: #363a3c;
@@ -10409,7 +10425,7 @@ span.sprite.corner-flag {
   padding: 0 14px;
   margin: 0;
   height: 277px;
-  overflow: hidden;
+  overflow: auto;
   border: 0;
   border-bottom: 1px solid #f5f5f5;
   border-top: 2px solid #f5f5f5;
@@ -10545,13 +10561,13 @@ span.glyphicon-star.active {
   margin-top: -8px;
   margin-left: 34px;
 }
-.ls-scrollbar::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 3px;
 }
-.ls-scrollbar::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: #f0f0f0;
 }
-.ls-scrollbar::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #5da400;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -10561,16 +10577,16 @@ span.glyphicon-star.active {
   background-clip: padding-box;
 }
 @media \0screen {
-  .ls-scrollbar::-webkit-scrollbar-thumb {
+  *::-webkit-scrollbar-thumb {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-.ls-scrollbar::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
   background: #4f8b00;
 }
-.ls-scrollbar:hover::-webkit-scrollbar {
+*:hover::-webkit-scrollbar {
   width: 11px;
 }
 /*Base Tables*/
@@ -11132,12 +11148,15 @@ span.glyphicon-star.active {
   position: relative;
   height: 145px;
   background: url("../img//timeline/timeline-gray-bg.jpg") repeat 0 0;
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
 }
 .match-timeline .timeline-scroll .timeline-elements {
   white-space: nowrap;
   font-size: 0;
+  position: relative;
+  top: 50%;
+  margin-top: -15px;
 }
 .match-timeline .timeline-scroll .timeline {
   position: relative;
@@ -13365,28 +13384,6 @@ table.squad-listing.avatars tbody tr td.player {
   /*This is only a temporal solution*/
   height: 300px;
   overflow: auto;
-}
-.main .breadcrumb > li .dropdown-menu::-webkit-scrollbar {
-  width: 3px;
-}
-.main .breadcrumb > li .dropdown-menu::-webkit-scrollbar-track {
-  background: #f0f0f0;
-}
-.main .breadcrumb > li .dropdown-menu::-webkit-scrollbar-thumb {
-  background: #5da400;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-@media \0screen {
-  .main .breadcrumb > li .dropdown-menu::-webkit-scrollbar-thumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .main .content-wrapper {
   margin: 0;

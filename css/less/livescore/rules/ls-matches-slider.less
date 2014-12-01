@@ -192,7 +192,8 @@
 
 .match-slider-inverse{ 
   background-color: @ls-greyblue-dark;
-  
+  border-bottom-color: lighten(@ls-greyblue-dark, 6.6%);
+
   .toggle-container{
     width: 100%;
     overflow: hidden;
@@ -311,6 +312,26 @@
         }        
       }     
       
+      &.highlight{
+        background-color: @ls-matches-slider-final-stage-bg;
+        
+        table{
+          tr{
+           &:first-child{
+              td:last-child{
+                border-color: @ls-matches-slider-final-stage-bg !important;
+              }
+           }
+
+           td{
+            &.team{
+              color: @ls-greyblue-dark;
+            }
+           }
+          }
+        }
+      }
+
       &:hover{
         background-color: darken(@ls-greyblue-dark, 5%);
       }
