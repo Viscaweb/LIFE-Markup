@@ -8901,6 +8901,7 @@ button.close {
 /*Social like icons*/
 /*Player*/
 /*Upcoming Top Games - Block*/
+/*Bootstrap Wizard Component*/
 /*Content Header*/
 .content-header {
   position: relative;
@@ -10588,6 +10589,98 @@ span.glyphicon-star.active {
 }
 *:hover::-webkit-scrollbar {
   width: 11px;
+}
+.ls-wizard ul.nav {
+  background-color: #f9f9f9;
+}
+.ls-wizard ul.nav > li {
+  margin: 0;
+}
+.ls-wizard ul.nav > li > a {
+  position: relative;
+  padding: 17px 20px;
+  padding-left: 40px;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -moz-background-clip: padding !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border-bottom: 0 !important;
+}
+@media \0screen {
+  .ls-wizard ul.nav > li > a {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.ls-wizard ul.nav > li > a:after,
+.ls-wizard ul.nav > li > a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -21px;
+  border-top: 31px solid transparent;
+  border-bottom: 31px solid transparent;
+  border-right: 0;
+  border-left: 20px solid #e8e8e8;
+  z-index: 1;
+}
+.ls-wizard ul.nav > li > a:after {
+  right: -20px;
+  border-left-color: #f9f9f9;
+  z-index: 2;
+}
+.ls-wizard ul.nav > li > a .label {
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #ffffff;
+  background-color: #5da400;
+  margin-right: 7px;
+}
+@media \0screen {
+  .ls-wizard ul.nav > li > a .label {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.ls-wizard ul.nav > li > a:hover {
+  background-color: #efefef;
+}
+.ls-wizard ul.nav > li > a:hover:after {
+  border-left-color: #efefef;
+}
+.ls-wizard ul.nav > li:first-child > a {
+  padding-left: 20px;
+}
+.ls-wizard ul.nav > li.active > a {
+  color: #ffffff;
+  background-color: #61a606;
+}
+.ls-wizard ul.nav > li.active > a:after {
+  border-left-color: #61a606;
+}
+.ls-wizard ul.nav > li.active > a .label {
+  background-color: #ffffff;
+  color: #5da400;
 }
 /*Base Tables*/
 .popover.popover-trend,
