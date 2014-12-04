@@ -1,7 +1,9 @@
 .nav-pills{
   border-bottom: 2px solid darken(@ls-light-color, 6%);
+
   > li{
     margin-bottom: -2px;
+    
     &.active{
       a, a:focus{
         .border-radiuses(2px,0,0,2px);
@@ -17,6 +19,7 @@
         color: lighten(@ls-dark-color, 37%);
       }
     }
+
     > a{
       border-top: none;
       border-bottom: 2px solid darken(@ls-light-color, 6%);
@@ -37,7 +40,18 @@
       .badge{
         background-color: @brand-primary;
       }
+
+      .icon{
+        margin-right: 7px;
+      }
+
+      .icon-lg{
+        font-size: 20px;
+        line-height: 17px;
+        vertical-align: bottom;
+      }
     }
+
     &.dropdown.open{
       > a{
         color: @ls-light-color;
@@ -47,7 +61,8 @@
         border-left: none;
       }
     }
-    &+li{
+
+    & + li{
       margin-left: 0;
     }
   }

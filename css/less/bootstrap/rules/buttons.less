@@ -357,3 +357,20 @@
     top: 0;
   }
 }
+
+.btn-selector{
+  padding: 20px;
+  .box-sizing(border-box);
+
+  &.active{
+    border-width: 4px;
+    border-color: @active-green;
+    padding: 17px;
+    background-color: @btn-default-bg;
+    .box-shadow(none);
+
+    &:hover{
+      background-color: darken(@btn-default-bg, 10%);
+    }
+  }
+}

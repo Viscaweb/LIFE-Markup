@@ -6597,6 +6597,24 @@ button.close {
   left: 10px;
   top: 0;
 }
+.btn-selector {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn-selector.active {
+  border-width: 4px;
+  border-color: #5da400;
+  padding: 17px;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-selector.active:hover {
+  background-color: #e3e3e3;
+}
 /*Dropdown*/
 .dropdown-menu {
   border-radius: 0;
@@ -7025,6 +7043,14 @@ button.close {
 }
 .nav-pills > li > a .badge {
   background-color: #5da400;
+}
+.nav-pills > li > a .icon {
+  margin-right: 7px;
+}
+.nav-pills > li > a .icon-lg {
+  font-size: 20px;
+  line-height: 17px;
+  vertical-align: bottom;
 }
 .nav-pills > li.dropdown.open > a {
   color: #ffffff;
@@ -8902,6 +8928,7 @@ button.close {
 /*Player*/
 /*Upcoming Top Games - Block*/
 /*Bootstrap Wizard Component*/
+/*Widget Creator Page*/
 /*Content Header*/
 .content-header {
   position: relative;
@@ -10590,13 +10617,13 @@ span.glyphicon-star.active {
 *:hover::-webkit-scrollbar {
   width: 11px;
 }
-.ls-wizard ul.nav {
+.ls-wizard > ul.nav {
   background-color: #f9f9f9;
 }
-.ls-wizard ul.nav > li {
+.ls-wizard > ul.nav > li {
   margin: 0;
 }
-.ls-wizard ul.nav > li > a {
+.ls-wizard > ul.nav > li > a {
   position: relative;
   padding: 17px 20px;
   padding-left: 40px;
@@ -10612,14 +10639,14 @@ span.glyphicon-star.active {
   border-bottom: 0 !important;
 }
 @media \0screen {
-  .ls-wizard ul.nav > li > a {
+  .ls-wizard > ul.nav > li > a {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-.ls-wizard ul.nav > li > a:after,
-.ls-wizard ul.nav > li > a:before {
+.ls-wizard > ul.nav > li > a:after,
+.ls-wizard > ul.nav > li > a:before {
   content: "";
   display: block;
   position: absolute;
@@ -10631,12 +10658,12 @@ span.glyphicon-star.active {
   border-left: 20px solid #e8e8e8;
   z-index: 1;
 }
-.ls-wizard ul.nav > li > a:after {
+.ls-wizard > ul.nav > li > a:after {
   right: -20px;
   border-left-color: #f9f9f9;
   z-index: 2;
 }
-.ls-wizard ul.nav > li > a .label {
+.ls-wizard > ul.nav > li > a .label {
   padding: 0;
   display: inline-block;
   text-align: center;
@@ -10656,29 +10683,29 @@ span.glyphicon-star.active {
   margin-right: 7px;
 }
 @media \0screen {
-  .ls-wizard ul.nav > li > a .label {
+  .ls-wizard > ul.nav > li > a .label {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-.ls-wizard ul.nav > li > a:hover {
+.ls-wizard > ul.nav > li > a:hover {
   background-color: #efefef;
 }
-.ls-wizard ul.nav > li > a:hover:after {
+.ls-wizard > ul.nav > li > a:hover:after {
   border-left-color: #efefef;
 }
-.ls-wizard ul.nav > li:first-child > a {
+.ls-wizard > ul.nav > li:first-child > a {
   padding-left: 20px;
 }
-.ls-wizard ul.nav > li.active > a {
+.ls-wizard > ul.nav > li.active > a {
   color: #ffffff;
   background-color: #61a606;
 }
-.ls-wizard ul.nav > li.active > a:after {
+.ls-wizard > ul.nav > li.active > a:after {
   border-left-color: #61a606;
 }
-.ls-wizard ul.nav > li.active > a .label {
+.ls-wizard > ul.nav > li.active > a .label {
   background-color: #ffffff;
   color: #5da400;
 }
@@ -12278,17 +12305,21 @@ span.glyphicon-star.active {
   font-weight: 600;
 }
 /*Match Head to Head */
-.nav-pills {
+.head-to-head .nav-pills,
+.team-form .nav-pills {
   border-bottom: 0;
 }
-.nav-pills.teams {
+.head-to-head .nav-pills.teams,
+.team-form .nav-pills.teams {
   position: relative;
   top: -5px;
 }
-.nav-pills.teams > li {
+.head-to-head .nav-pills.teams > li,
+.team-form .nav-pills.teams > li {
   margin-right: 5px;
 }
-.nav-pills.teams > li > img {
+.head-to-head .nav-pills.teams > li > img,
+.team-form .nav-pills.teams > li > img {
   max-width: 28px;
   max-height: 28px;
 }
@@ -13200,6 +13231,173 @@ table.squad-listing.avatars tbody tr td.player {
 }
 .goals-statistics table tbody tr td.tools {
   width: 13%;
+}
+/*Widget Creator*/
+.widget-creator-heading {
+  padding: 20px;
+}
+.widget-creator-heading > .title {
+  display: inline-block;
+  margin: 0;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.widget-creator-heading > .btn {
+  vertical-align: top;
+}
+.widget-creator-heading > .btn:first-child {
+  margin-right: 20px;
+}
+.widget-creator-heading > a.pull-right {
+  line-height: 35px;
+}
+.widget-creator-type-of-widget .section {
+  padding: 25px 20px;
+}
+.widget-creator-type-of-widget .section .heading {
+  margin-bottom: 25px;
+}
+.widget-creator-type-of-widget .section .heading .label {
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #ffffff;
+  background-color: #666666;
+  margin-right: 7px;
+}
+@media \0screen {
+  .widget-creator-type-of-widget .section .heading .label {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.widget-creator-type-of-widget .section .heading .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 7px;
+}
+.widget-creator-type-of-widget .section .heading .description {
+  font-weight: 300;
+  font-size: 14px;
+  display: none;
+}
+.widget-creator-type-of-widget .section .heading:hover .description {
+  display: inline-block;
+}
+.widget-creator-type-of-widget .section > .nav-pills {
+  margin-bottom: 28px;
+}
+.widget-creator-type-of-widget .section .selection {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 20px;
+  max-width: 95px;
+}
+.widget-creator-type-of-widget .section .selection > .btn {
+  margin-bottom: 10px;
+}
+.widget-creator-type-of-widget .section .selection .title {
+  text-align: center;
+  display: block;
+}
+.widget-creator-type-of-widget .section .search-competition label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon {
+  position: relative;
+  margin-bottom: 20px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: #afafaf;
+  top: 3px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon.left-addon .glyphicon {
+  left: 5px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon.left-addon input {
+  padding-left: 30px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon.right-addon .glyphicon {
+  right: 5px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon.right-addon input {
+  padding-right: 30px;
+}
+.widget-creator-type-of-widget .section .search-competition .inner-addon input {
+  height: auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media \0screen {
+  .widget-creator-type-of-widget .section .search-competition .inner-addon input {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.widget-creator-type-of-widget .section .search-competition .title {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.widget-creator-type-of-widget .section .search-competition .table {
+  border: 1px solid #f5f5f5;
+}
+.widget-creator-type-of-widget .section .search-competition .table tbody tr td.number {
+  text-align: right;
+}
+.widget-creator-type-of-widget .section .search-competition .table tbody tr td.flag {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 1%;
+}
+.widget-creator-type-of-widget .section .search-competition .table tbody tr td.functions {
+  text-align: right;
+}
+.widget-creator-type-of-widget .section .search-competition .table tbody tr td.functions .btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media \0screen {
+  .widget-creator-type-of-widget .section .search-competition .table tbody tr td.functions .btn {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.widget-creator-type-of-widget .section:nth-child(even) {
+  background-color: #f9f9f9;
 }
 /*Structure*/
 .wrapper {

@@ -146,11 +146,11 @@
             <li><a href="#">Webmaster area</a></li>
             <li class="active">Widget edition</li>
           </ol>
-          <div class="row" style="margin: 0;">
-            <div class="col-md-2">
-              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="icon icon-caret-left"></span> Back to My Widgets</button>
-            </div>
-            <div class="col-md-10"><a href="#" class="pull-right">Need Help</a><h1>h1 Create / Edit your widget here</h1></div>
+
+          <div class="widget-creator-heading">
+            <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="icon icon-caret-left"></span> Back to My Widgets</button>
+            <span class="title">h1 Create / Edit your widget here</span>
+            <a href="#" class="pull-right">Need Help</a>
           </div>
 
           <div id="rootwizard" class="ls-wizard">
@@ -160,8 +160,77 @@
               <li><a href="#tab3" data-toggle="tab"><span class="label">3</span>Settings and validation</a></li>
             </ul>
             <div class="tab-content">
-              <div class="tab-pane" id="tab1">
-               <span class="h3">Choose the type of widget you wish to create:</span>
+              <div class="tab-pane widget-creator-type-of-widget" id="tab1">
+                <div class="section">
+                  <div class="heading">
+                    <span class="label">1</span>
+                    <span class="title">Choose the type of widget you wish to create:</span>
+                    <span class="description">(Hover for a quick description)</span>
+                  </div>
+                  <ul class="nav nav-pills">
+                    <li class="active"><a href="#"><span class="sprite football"></span>Football</a></li>
+                    <li><a href="#"><span class="sprite tennis"></span>Tennis</a></li>
+                    <li><a href="#"><span class="sprite rugby"></span>Rugby</a></li>
+                    <li><a href="#"><span class="sprite handball"></span>Handball</a></li>
+                    <li><a href="#"><span class="sprite basketball"></span>Basketball</a></li>
+                  </ul>
+                  <div class="selection">
+                    <a href="#" class="btn btn-default btn-selector active"><img src="img/sprites/icon_calendar.png" alt="Results / Fixtures"></a>
+                    <span class="title">Results / Fixtures</span>
+                  </div>
+                  <div class="selection">
+                    <a href="#" class="btn btn-default btn-selector"><img src="img/sprites/icon_standings.png" alt="Standings"></a>
+                    <span class="title">Standings</span>
+                  </div>
+                  <div class="selection">
+                    <a href="#" class="btn btn-default btn-selector"><img src="img/sprites/icon_score.png" alt="My Team's Next Match"></a>
+                    <span class="title">My Team's Next Match</span>
+                  </div>
+                  <div class="selection">
+                    <a href="#" class="btn btn-default btn-selector"><img src="img/sprites/icon_live.png" alt="Livescore"></a>
+                    <span class="title">Livescore</span>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="heading">
+                    <span class="label">2</span>
+                    <span class="title">Select the subject of your widget:</span>
+                    <span class="description">One or several competitions ? A team  ?</span>
+                  </div>
+                  <ul class="nav nav-pills">
+                    <li class="active"><a href="#"><i class="icon-team icon icon-lg"></i>Compétition</a></li>
+                    <li><a href="#"><i class="icon-shirt icon icon-lg"></i>Team</a></li>
+                  </ul>
+                  <div class="row search-competition">
+                    <div class="col-md-6">
+                      <label>Type here to search a competition :</label>
+                      <div class="inner-addon right-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input type="text" placeholder="Champions League, Europa League..." class="form-control">
+                      </div>
+                      <a href="#">World Cup,</a> <a href="#">Champions League,</a> <a href="#">Premier League,</a> <a href="#">Championship,</a> <a href="#">English League Cup,</a> <a href="#">Bundesliga,</a> <a href="#">Serie A,</a> <a href="#">Spanish League,</a> <a href="#">Europa League,</a> <a href="#">FA Cup</a>
+                    </div>
+                    <div class="col-md-6">
+                      <span class="title">Your Selection</span>
+                      <table class="table table-striped no-border">
+                        <tbody>
+                          <tr>
+                            <td class="number">1</td>
+                            <td class="flag"><span class="flag-11"></span></td>
+                            <td class="name">Champions League (Football, International)</td>
+                            <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
+                          </tr>
+                          <tr>
+                            <td class="number">2</td>
+                            <td class="flag"><span class="flag-2"></span></td>
+                            <td class="name">Champions League (Football, International)</td>
+                            <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane" id="tab2">
                2
