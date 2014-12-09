@@ -1,5 +1,49 @@
 /*form-control*/
 
+.select-component{
+  border: 1px solid darken(@ls-light-color, 8.2%);
+  position: relative;
+  cursor: pointer;
+  .border-radius(2px);
+  
+  &:after{
+    content: "\e62f";
+    position: absolute;
+    font-family: @ls-icons-font;
+    font-size: @font-size-x-small;
+    width: 40px;
+    text-align: center;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: darken(@ls-light-color, 1%);
+    pointer-events: none;
+    cursor: pointer;
+    color: darken(@ls-light-color, 27%);
+    line-height: 31px;
+  }
+  
+  select{
+    padding: 7px 13px;
+    cursor: pointer;
+    width: 100%;
+    border: 0;
+    background: darken(@ls-light-color, 1%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  
+  &:hover{
+    border-color: darken(@btn-default-border, 7%);
+    
+    select, &:after{
+      background-color: darken(@btn-default-bg, 5%);
+    }
+  }
+}
+
 .checkbox, .radio{
   display: inline-block;
   line-height: @font-size-xx-large;
@@ -30,6 +74,7 @@
       line-height: 15px;
       vertical-align: bottom;
       text-align: center;
+      background-color: #FFF;
     } 
     
     &:hover:before{
@@ -125,6 +170,24 @@
         content: "On";
         color: @ls-light-color;
         left: 10px;
+      }
+    }
+  }
+
+  &.yes-no{
+    label{
+
+      &:before{
+        content: "No";
+      }
+    }
+
+    input[type="checkbox"]:checked + span{
+
+      label{
+        &:before{
+          content: "Yes";
+        }
       }
     }
   }
