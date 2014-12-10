@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="js/flags/flags.css">
     <!-- Owl Carousel-->
     <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css">
+
+    <!-- Color Picker-->
+    <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="js/jquery.colorpicker/jquery.colorpicker.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/style.css">
     <!-- End Global Style-->
@@ -216,7 +221,7 @@
                       <label>Type here to search a competition :</label>
                       <div class="inner-addon right-addon">
                         <i class="glyphicon glyphicon-search"></i>
-                        <input type="text" placeholder="Champions League, Europa League..." class="form-control">
+                        <input type="text" placeholder="Champions League, Europa League..." class="form-control color-picker">
                       </div>
                       <a href="#">World Cup,</a> <a href="#">Champions League,</a> <a href="#">Premier League,</a> <a href="#">Championship,</a> <a href="#">English League Cup,</a> <a href="#">Bundesliga,</a> <a href="#">Serie A,</a> <a href="#">Spanish League,</a> <a href="#">Europa League,</a> <a href="#">FA Cup</a>
                     </div>
@@ -289,7 +294,7 @@
                           </div>
                           <div class="col-md-3 value">
                             <div class="input-group color-picker">
-                              <input type="text" class="form-control" value="#000000">
+                              <input type="text" class="form-control color-picker" value="#000000">
                               <span class="input-group-addon"><span class="color-preview"></span></span>
                             </div>
                           </div>
@@ -562,6 +567,12 @@
                       <span class="description">(Hover for a quick description)</span>
                     </div>
 
+                    <div class="iframe-container">
+                      <div class="widget-iframe">
+                        <iframe src="webmaster-widget-maker-iframe.html"></iframe>
+                      </div>
+                    </div>
+
                     <span class="title">Code to paste to insert the widget on your site</span>
                     <p class="warning"><b>IMPORTANT</b> : You must click on the "SAVE" button below otherwise the widget will be lost and the code will not work on your website.</p>
 
@@ -715,6 +726,14 @@
     <script src="js/owl.carousel/owl.carousel.min.js"></script>
     <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.wizard/jquery.bootstrap.wizard.js"></script>
+    <script src="js/jquery.colorpicker/jquery.colorpicker.js"></script>
+    <script src="js/jquery.colorpicker/i18n/jquery.ui.colorpicker-nl.js"></script>
+    <script src="js/jquery.colorpicker/swatches/jquery.ui.colorpicker-pantone.js"></script>
+    <script src="js/jquery.colorpicker/parts/jquery.ui.colorpicker-rgbslider.js"></script>
+    <script src="js/jquery.colorpicker/parts/jquery.ui.colorpicker-memory.js"></script>
+    <script src="js/jquery.colorpicker/parsers/jquery.ui.colorpicker-cmyk-parser.js"></script>
+    <script src="js/jquery.colorpicker/parsers/jquery.ui.colorpicker-cmyk-percentage-parser.js"></script>
+    
     <script type="text/javascript">
       $( document ).ready(function() {
 
@@ -730,6 +749,9 @@
 
         /*Popover*/
         $('[data-popover="popover"]').popover();
+
+        /*Color Picker*/
+        $('input.color-picker').colorpicker();
 
       });
     </script>

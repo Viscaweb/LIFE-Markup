@@ -1,5 +1,5 @@
 /* To avoid CSS expressions while still supporting IE 7 and IE 6, use this script */
-/* The script tag referring to this file must be placed before the ending body tag. */
+/* The script tag referencing this file must be placed before the ending body tag. */
 
 /* Use conditional comments in order to target IE 7 and older:
 	<!--[if lt IE 8]><!-->
@@ -61,6 +61,8 @@
 		'icon-caret-double-right': '&#xe62d;',
 		'icon-ellipse': '&#xe62e;',
 		'icon-caret-select': '&#xe62f;',
+		'icon-widget': '&#xe630;',
+		'icon-arrow-up-down': '&#xe631;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?-lkvlnh');
-	src:url('fonts/LSicons.eot?#iefix-lkvlnh') format('embedded-opentype'),
-		url('fonts/LSicons.woff?-lkvlnh') format('woff'),
-		url('fonts/LSicons.ttf?-lkvlnh') format('truetype'),
-		url('fonts/LSicons.svg?-lkvlnh#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?-s85ich');
+	src:url('fonts/LSicons.eot?#iefix-s85ich') format('embedded-opentype'),
+		url('fonts/LSicons.woff?-s85ich') format('woff'),
+		url('fonts/LSicons.ttf?-s85ich') format('truetype'),
+		url('fonts/LSicons.svg?-s85ich#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -166,4 +166,10 @@
 }
 .icon-caret-select:before {
 	content: "\e62f";
+}
+.icon-widget:before {
+	content: "\e630";
+}
+.icon-arrow-up-down:before {
+	content: "\e631";
 }

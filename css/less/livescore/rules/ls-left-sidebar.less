@@ -215,3 +215,127 @@
 	}
 	
 }
+
+.sidebar-nav-inverse{
+	background-color: @ls-left-sidebar-inverse-bg;
+
+	> li{
+
+		> a.dropdown-togle{
+			color: lighten(@ls-greyblue-dark, 55.5%);
+			padding: 5px 21px 3px;
+			line-height: 20px;
+
+			&.active{
+
+				.icon{
+					color: @brand-primary;
+					margin-right: 5px;
+					font-size: @font-size-large;
+				}
+			}
+
+			&:before{
+				margin-top: 0;
+				font-size: @font-size-x-tiny;
+			}
+
+			&:hover{
+				color: @ls-light-color;
+
+				.icon{
+					color: @ls-light-color;
+				}
+			}
+		}
+
+		> ul{
+
+			> li{
+
+				a{
+					color: lighten(@ls-greyblue-dark, 55.5%);
+					line-height: @font-size-large;
+
+					.icon{
+						color: lighten(@ls-left-sidebar-inverse-bg, 34.5%);
+						font-size: @font-size-large;
+						position: relative;
+						top: 3px;
+					}
+
+					&:hover{
+
+						.icon{
+							color: @ls-light-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.user-sidebar-nav{
+	margin-bottom: 0;
+
+	> li{
+		border-bottom: 1px solid lighten(@ls-left-sidebar-inverse-bg, 2.5%); 
+	}
+
+	li.user-display{
+		overflow: hidden;
+		padding: 10px 20px;
+
+		img{
+			float: left;
+			max-height: 47px;
+			max-width: 47px;
+			margin-right: 8px;
+		}
+
+		.info{
+			float: left;
+			margin-top: 6px;
+
+			span{
+				color: darken(@ls-light-color, 15.5%);
+			}
+
+			a{
+				color: @ls-inverse-link-color;
+				font-size: @font-size-small; 
+
+				&:hover{
+					background-color: transparent;
+					color: @ls-inverse-link-hover-color;
+				}
+			}
+		}
+	}
+
+	li.rank{
+		text-align: center;
+		padding: 10px 20px;
+
+		span.title{
+			text-transform: uppercase;
+			color: lighten(@ls-left-sidebar-inverse-bg, 34.5%);
+			font-weight: @font-weight-bold;
+			font-size: @font-size-small;
+		}
+
+		.rank-numbers{
+
+			span.rank1{
+				font-size: @ls-user-left-sidebar-rank1-font-size;
+				color:	lighten(@ls-greyblue-dark, 55.5%);
+			}
+
+			span.rank2{
+				font-size: @ls-user-left-sidebar-rank2-font-size;
+				color: lighten(@ls-left-sidebar-inverse-bg, 37.3%);
+			}
+		}	
+	}	
+}
