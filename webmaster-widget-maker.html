@@ -157,7 +157,6 @@
             <span class="title">h1 Create / Edit your widget here</span>
             <a href="#" class="pull-right">Need Help</a>
           </div>
-
           <div id="rootwizard" class="ls-wizard">
             <ul class="nav nav-pills">
               <li><a href="#tab1" data-toggle="tab"><span class="label">1</span>Type of widget<span class="chevron"></span></a></li>
@@ -221,7 +220,7 @@
                       <label>Type here to search a competition :</label>
                       <div class="inner-addon right-addon">
                         <i class="glyphicon glyphicon-search"></i>
-                        <input type="text" placeholder="Champions League, Europa League..." class="form-control color-picker">
+                        <input type="text" id="search" placeholder="Champions League, Europa League..." class="form-control color-picker">
                       </div>
                       <a href="#">World Cup,</a> <a href="#">Champions League,</a> <a href="#">Premier League,</a> <a href="#">Championship,</a> <a href="#">English League Cup,</a> <a href="#">Bundesliga,</a> <a href="#">Serie A,</a> <a href="#">Spanish League,</a> <a href="#">Europa League,</a> <a href="#">FA Cup</a>
                     </div>
@@ -739,7 +738,8 @@
 
         /*Wizard*/
         $('#rootwizard').bootstrapWizard();
-
+        $('#rootwizard').bootstrapWizard();
+        
         /*Sortable*/
         $( ".sortable-ul" ).sortable();
         $( ".sortable-ul" ).disableSelection();
@@ -751,7 +751,13 @@
         $('[data-popover="popover"]').popover();
 
         /*Color Picker*/
-        $('input.color-picker').colorpicker();
+        $('#search').colorpicker({
+          position: {
+            at: 'bottom right',
+            of: 'element',
+            within: 'element'
+          }
+        });
 
       });
     </script>

@@ -13731,6 +13731,114 @@ table.squad-listing.avatars tbody tr td.player {
 .widget-creator-settings-validation .section:nth-child(even) {
   background-color: #f9f9f9;
 }
+main .create-widget {
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+main .create-widget img {
+  float: left;
+}
+main .create-widget .content {
+  padding: 20px;
+  margin-left: 115px;
+}
+main .create-widget .content p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+main .create-widget .content a {
+  font-size: 14px;
+}
+main .create-widget .content button {
+  margin-top: 20px;
+}
+main .widget-conditions p {
+  margin-bottom: 20px;
+}
+main .widget-conditions p:last-child {
+  margin-bottom: 0;
+}
+main .widget-conditions .important {
+  color: #ff0000;
+}
+main .fixtures-widgets tbody tr td.icon,
+main .standings-widgets tbody tr td.icon,
+main .livescore-widgets tbody tr td.icon,
+main .matches-widgets tbody tr td.icon {
+  width: 2%;
+}
+main .fixtures-widgets tbody tr td.icon img,
+main .standings-widgets tbody tr td.icon img,
+main .livescore-widgets tbody tr td.icon img,
+main .matches-widgets tbody tr td.icon img {
+  max-width: 28px;
+  max-height: 28px;
+}
+main .fixtures-widgets tbody tr td.content,
+main .standings-widgets tbody tr td.content,
+main .livescore-widgets tbody tr td.content,
+main .matches-widgets tbody tr td.content {
+  max-width: 70%;
+}
+main .fixtures-widgets tbody tr td.content a.edit,
+main .standings-widgets tbody tr td.content a.edit,
+main .livescore-widgets tbody tr td.content a.edit,
+main .matches-widgets tbody tr td.content a.edit {
+  color: #888888;
+  font-size: 16px;
+  margin-left: 7px;
+}
+main .fixtures-widgets tbody tr td.content input,
+main .standings-widgets tbody tr td.content input,
+main .livescore-widgets tbody tr td.content input,
+main .matches-widgets tbody tr td.content input {
+  height: 34px;
+  max-width: 58%;
+  display: inline-block;
+}
+main .fixtures-widgets tbody tr td.content button,
+main .standings-widgets tbody tr td.content button,
+main .livescore-widgets tbody tr td.content button,
+main .matches-widgets tbody tr td.content button {
+  margin-left: 6px;
+}
+main .fixtures-widgets tbody tr td.button,
+main .standings-widgets tbody tr td.button,
+main .livescore-widgets tbody tr td.button,
+main .matches-widgets tbody tr td.button {
+  text-align: right;
+  max-width: 100%;
+}
+main .fixtures-widgets tbody tr td.button .btn-default span,
+main .standings-widgets tbody tr td.button .btn-default span,
+main .livescore-widgets tbody tr td.button .btn-default span,
+main .matches-widgets tbody tr td.button .btn-default span {
+  color: #888888;
+}
+main .fixtures-widgets tbody tr td.button .btn-danger span,
+main .standings-widgets tbody tr td.button .btn-danger span,
+main .livescore-widgets tbody tr td.button .btn-danger span,
+main .matches-widgets tbody tr td.button .btn-danger span {
+  color: #ffffff;
+}
+main .fixtures-widgets tbody tr td.button span.glyphicon,
+main .standings-widgets tbody tr td.button span.glyphicon,
+main .livescore-widgets tbody tr td.button span.glyphicon,
+main .matches-widgets tbody tr td.button span.glyphicon {
+  font-size: 18px;
+  margin-right: 5px;
+  line-height: 7px;
+  position: relative;
+  top: 4px;
+}
+main .standings-widgets td.content span.empty,
+main .livescore-widgets td.content span.empty,
+main .matches-widgets td.content span.empty {
+  color: #c8c8c8;
+  font-size: 12px;
+  font-weight: 600;
+}
 /*Structure*/
 .wrapper {
   width: 100%;
@@ -13958,7 +14066,7 @@ table.squad-listing.avatars tbody tr td.player {
 }
 .sidebar-nav-inverse > li > ul > li a {
   color: #d1d4d5;
-  line-height: 16px;
+  line-height: 19px;
 }
 .sidebar-nav-inverse > li > ul > li a .icon {
   color: #818f93;
@@ -13967,6 +14075,13 @@ table.squad-listing.avatars tbody tr td.player {
   top: 3px;
 }
 .sidebar-nav-inverse > li > ul > li a:hover .icon {
+  color: #ffffff;
+}
+.sidebar-nav-inverse > li > ul > li.active a {
+  background-color: #5da400;
+  color: #ffffff;
+}
+.sidebar-nav-inverse > li > ul > li.active a .icon {
   color: #ffffff;
 }
 .user-sidebar-nav {
