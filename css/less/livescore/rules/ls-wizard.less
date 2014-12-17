@@ -1,4 +1,6 @@
 .ls-wizard{
+  margin-bottom: 50px;
+
   > ul.nav{
   	background-color: @ls-wizard-nav-bg;
 
@@ -80,5 +82,29 @@
   			}
   		}
   	}	
+  }
+
+  .navigation.wizard{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    > li{ 
+      display: inline-block;
+
+      .btn{
+        min-width: 85px;
+        margin-left: 10px;
+
+        span{
+          color: @ls-light-color;
+          margin-right: 5px;
+        }
+      }
+
+      &.disabled{
+        display: none;
+      }
+    }
   }
 }
