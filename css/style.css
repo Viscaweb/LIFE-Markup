@@ -6638,6 +6638,47 @@ button.close {
 .btn-selector-group .btn-selector-item .popover .popover-content .content p {
   font-size: 13px;
 }
+.btn-facebook {
+  color: #ffffff;
+  background-color: #4763b2;
+  border-color: #4059a0;
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .dropdown-toggle.btn-facebook {
+  color: #ffffff;
+  background-color: #384f8e;
+  border-color: #2e4174;
+}
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .dropdown-toggle.btn-facebook {
+  background-image: none;
+}
+.btn-facebook.disabled,
+.btn-facebook[disabled],
+fieldset[disabled] .btn-facebook,
+.btn-facebook.disabled:hover,
+.btn-facebook[disabled]:hover,
+fieldset[disabled] .btn-facebook:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook[disabled]:focus,
+fieldset[disabled] .btn-facebook:focus,
+.btn-facebook.disabled:active,
+.btn-facebook[disabled]:active,
+fieldset[disabled] .btn-facebook:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook.active {
+  background-color: #4763b2;
+  border-color: #4059a0;
+}
+.btn-facebook .badge {
+  color: #4763b2;
+  background-color: #ffffff;
+}
 /*Dropdown*/
 .dropdown-menu {
   border-radius: 0;
@@ -13859,6 +13900,102 @@ main .matches-widgets td.content span.empty {
   color: #c8c8c8;
   font-size: 12px;
   font-weight: 600;
+}
+/*Login*/
+.registration-features {
+  overflow: hidden;
+  border: 1px solid #f5f5f5;
+  background-color: #fafafa;
+}
+.registration-features .content {
+  padding: 20px;
+}
+.registration-features .content p {
+  font-size: 13px;
+}
+.registration-features .content span.title {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+}
+.registration-features .content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+}
+.registration-features .content ul li {
+  font-size: 14px;
+  line-height: 33px;
+}
+.registration-features .content ul li .icon {
+  font-size: 24px;
+  color: #5da400;
+  display: inline-block;
+  min-width: 35px;
+  text-align: center;
+  vertical-align: middle;
+}
+.registration-features .image {
+  float: right;
+}
+.login .login-facebook,
+.register .login-facebook,
+.password-forgotten .login-facebook {
+  text-align: center;
+  padding: 20px;
+}
+.login .login-facebook button i,
+.register .login-facebook button i,
+.password-forgotten .login-facebook button i {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 17px;
+  margin-right: 12px;
+}
+.login .divider,
+.register .divider,
+.password-forgotten .divider {
+  text-align: center;
+  border-top: 1px solid #dddddd;
+  position: relative;
+}
+.login .divider span,
+.register .divider span,
+.password-forgotten .divider span {
+  position: relative;
+  display: inline-block;
+  line-height: 20px;
+  top: -12px;
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+.login form a.forgot-password-link,
+.register form a.forgot-password-link,
+.password-forgotten form a.forgot-password-link {
+  float: right;
+  font-size: 10px;
+  line-height: 23px;
+}
+.login form .has-error,
+.register form .has-error,
+.password-forgotten form .has-error {
+  margin-bottom: 25px;
+}
+.login form button.btn-primary,
+.register form button.btn-primary,
+.password-forgotten form button.btn-primary {
+  float: right;
+  min-width: 115px;
+}
+.register form button.btn-primary {
+  float: none;
+  margin-top: 15px;
+}
+.password-forgotten form button span {
+  margin-right: 5px;
+}
+.password-forgotten form button .btn-primary {
+  float: right;
 }
 /*Structure*/
 .wrapper {
