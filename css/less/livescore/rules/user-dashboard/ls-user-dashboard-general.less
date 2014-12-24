@@ -1,0 +1,144 @@
+.prediction-contest-grid{
+ 
+	.indicators{
+		margin: 0;
+		padding: 0;
+ 
+		> div{
+			padding: 15px 0;
+			text-align: right;
+			font-size: @font-size-small;
+			
+			&:first-child{
+				padding-left: 20px;
+				text-align: left;
+			}
+
+			&:last-child{
+				padding-right: 20px; 
+			}
+
+			.number-big{
+				font-size: @ls-contest-grid-big-number-font-size;
+				line-height: @ls-contest-grid-big-number-font-size;
+				color: lighten(@ls-dark-color, 36%);
+				margin-right: 4px;
+				margin-left: 3px;
+			}
+
+			.number-small{ 
+				font-size: @font-size-x-large;
+				color: darken(@ls-light-color, 30%);
+			}
+
+		}
+	}
+
+	.table.predictions{
+		thead.league-data{
+			tr{
+				th{
+					span.country{
+						span.icon{
+							color: @ls-light-color;
+							font-size: @font-size-medium;
+							line-height: @font-size-normal;
+							position: relative;
+							top: 2px;
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		tbody{
+			tr{
+
+				&.prediction-waiting{
+					td{
+
+					}
+				}
+
+				&.prediction-won{
+					td.icon{
+						background-color: @ls-td-won-bg !important;
+
+						.icon{
+							font-size: @font-size-small;
+							color: @ls-light-color;
+						}
+					}
+				}
+
+				&.prediction-lost{
+					td.icon{
+						background-color: @ls-td-lost-bg !important;
+
+						.icon{
+							font-size: @font-size-small;
+							color: @ls-light-color;
+						}
+					}
+				}
+
+				&.prediction-closed{
+					td.prediction{
+						.btn-prediction{
+							border-color: darken(@ls-light-color, 11.6%);
+							color: lighten(@ls-dark-color, 20%);
+						}
+					}
+				}
+
+				td{	
+
+					&.icon{
+						text-align: center;
+						padding: 0 4px;
+
+						.icon{
+							font-size: @font-size-normal;
+							margin: 0;
+						}
+					}
+
+					&.date{
+						font-weight: @font-weight-semi-bold;
+					}
+
+					&.league-logo{
+						padding: 0 3px;
+
+						img{
+							max-width: 16px;
+							max-height: 16px;
+						}
+					}
+
+					&.prediction{
+						.btn-hidden{
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.user-notification{
+		padding: 15px;
+		font-size: @font-size-small;
+
+		> a{
+			font-weight: @font-weight-semi-bold;
+
+			img{
+				max-width: 32px;
+				max-height: 32px;
+				margin-right: 8px;
+			}
+		}
+	}
+}
