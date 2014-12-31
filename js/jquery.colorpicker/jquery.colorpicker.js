@@ -2482,7 +2482,7 @@
 					};
 				}
 				
-				that.dialog.position(position);				
+						
 				
 				if (that.element.is(':hidden')) {
 					element.remove();
@@ -2540,6 +2540,7 @@
 				// wind up with the cursor stuck in the upper left corner
 				$(function() {
 					that._repaintAllParts();
+					that.dialog.position(position);		
 				});
 			}
 		},

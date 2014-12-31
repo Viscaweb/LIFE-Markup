@@ -770,21 +770,535 @@
 
               <div class="row">
                 <div class="col-md-6">
-                  <div class="panel panel-default prediction-contest-grid">
-                      <div class="panel-heading">
-                        <div class="panel-title">Season gifts</div>
-                      </div>
+                  <div class="panel panel-default season-gifts">
+                    <div class="panel-heading">
+                      <div class="panel-title">Season gifts</div>
+                    </div>
+                    <table class="table table-stripped">
+                      <tbody>
+                        <tr>
+                          <td class="odd place">1st</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift1.png" alt="Season Gift"></td>
+                          <td class="gift">iPhone 6</td>
+                        </tr>
+                        <tr>
+                          <td class="odd place">2nd</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift2.png" alt="Season Gift"></td>
+                          <td class="gift">Gopro Hero3+ White Edition</td>
+                        </tr>
+                        <tr>
+                          <td class="odd place">3rd</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift3.png" alt="Season Gift"></td>
+                          <td class="gift">iPad mini wifi 16go</td>
+                        </tr>
+                        <tr>
+                          <td class="odd place">4 - 5</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift4.png" alt="Season Gift"></td>
+                          <td class="gift">Pack Stadium Box</td>
+                        </tr>
+                        <tr>
+                          <td class="odd place">6 - 7</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift5.png" alt="Season Gift"></td>
+                          <td class="gift">Maillot</td>
+                        </tr>
+                        <tr>
+                          <td class="odd place">8 - 9</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift6.png" alt="Season Gift"></td>
+                          <td class="gift">FIFA 15</td>
+                        </tr>
+                        <tr>
+                          <td class="odd place">10</td>
+                          <td class="gift-img"><img src="img/user-dashboard/gift7.png" alt="Season Gift"></td>
+                          <td class="gift">Carte cadeau Intersport (valeur 50€)</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="panel panel-default prediction-contest-grid">
+                  <div class="panel panel-default first-day-month-gift">
                     <div class="panel-heading">
                       <div class="panel-title">Gift for the 1st of each month</div>
+                    </div>
+                    <div class="panel-body">
+                      <span class="title">1<sup>st</sup></span>
+                      <p class="description">Your favorite team shirt</p>
+                      <img src="img/user-dashboard/1st-gift.png" alt="1st of Month Gift">
+                      <a href="#"><span class="icon-caret-right"></span> Rules & Gifts</a>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <div class="panel panel-default last-predictions">
+                <div class="panel-heading">
+                  Your last Predictions
+                </div>
+                <table class="table matches predictions table-condensed table-striped no-border">                  
+                  <tbody>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Leverkusen</a></td>
+                      <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                      <td class="team team2"><a href="#">Werder Brême</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction-success">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-lost event-lost prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="date">13/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/bundesliga.png"></td>
+                      <td class="team team1"><a href="#">Arsenal</a></td>
+                      <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                      <td class="team team2"><a href="#">Man City</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a class="btn btn-prediction-failed" type="button">1</a>
+                          <a class="btn btn-prediction" type="button">X</a>
+                          <a class="btn btn-prediction-result" type="button">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">13/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/premiereleague.png"></td>
+                      <td class="team team1"><a href="#">Bayern</a></td>
+                      <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                      <td class="team team2"><a href="#">Stuttgart</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a class="btn btn-prediction" type="button">1</a>
+                          <a class="btn btn-prediction" type="button">X</a>
+                          <a class="btn btn-prediction-success" type="button">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Barcelone</a></td>
+                      <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                      <td class="team team2"><a href="#">Ath. Bilbao</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a class="btn btn-prediction" type="button">1</a>
+                          <a class="btn btn-prediction" type="button">X</a>
+                          <a class="btn btn-prediction-success" type="button">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Rennes</a></td>
+                      <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">0</span></a></td>
+                      <td class="team team2"><a href="#">PSG</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction-done">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Bastia</a></td>
+                      <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">1</span></a></td>
+                      <td class="team team2"><a href="#">Lens</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction-success">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-lost event-lost prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Reims</a></td>
+                      <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
+                      <td class="team team2"><a href="#">Toulouse</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction-result">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction-failed">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">St Etienne</a></td>
+                      <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
+                      <td class="team team2"><a href="#">Caen</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction-success">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-lost event-lost prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Real Madrid</a></td>
+                      <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
+                      <td class="team team2"><a href="#">Atletico M.</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction-failed">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction-result">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Juventus</a></td>
+                      <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">0</span></a></td>
+                      <td class="team team2"><a href="#">Udinese</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction-success">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-lost event-lost prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Lille</a></td>
+                      <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
+                      <td class="team team2"><a href="#">Nantes</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction">1</a>
+                          <a type="button" class="btn btn-prediction-failed">X</a>
+                          <a type="button" class="btn btn-prediction-result">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Guingamp</a></td>
+                      <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">2</span></a></td>
+                      <td class="team team2"><a href="#">Bordeaux</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction">1</a>
+                          <a type="button" class="btn btn-prediction-success">X</a>
+                          <a type="button" class="btn btn-prediction">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>  
+                    <tr class="prediction-won event-won prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Man Utd</a></td>
+                      <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
+                      <td class="team team2"><a href="#">QPR</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction-success">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>    
+                    <tr class="prediction-lost event-lost prediction-closed">
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="date">12/09</td>
+                      <td class="league-logo"><img class="league" src="img/sprites/ligue1.png"></td>
+                      <td class="team team1"><a href="#">Evian</a></td>
+                      <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
+                      <td class="team team2"><a href="#">OM</a></td>
+                      <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                          <a type="button" class="btn btn-prediction-failed">1</a>
+                          <a type="button" class="btn btn-prediction">X</a>
+                          <a type="button" class="btn btn-prediction-result">2</a>
+                        </div>
+                      </td>
+                      <td class="trend">
+                        <div class="progress">
+                          <div style="width: 35%" class="progress-bar progress-bar-home">
+                            <span class="sr-only">60% Complete (success)</span>
+                          </div>
+                          <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                            <span class="sr-only">10% Complete (warning)</span>
+                          </div>
+                          <div style="width: 35%" class="progress-bar progress-bar-away">
+                            <span class="sr-only">40% Complete (danger)</span>
+                          </div>
+                        </div>                        
+                      </td>
+                      <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                        <a href="#"><i class="icon-bell"></i></a>
+                      </td>
+                    </tr>             
+                  </tbody>                 
+                </table>
+                <div class="table-pagination">
+                  <a href="#"><span class="icon-caret-right icon"></span>All my predictions</a>
+                  <ul class="pagination pagination-xs">
+                    <li><a href="#"><span class="icon-caret-left"></span></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><span class="icon-caret-right"></span></a></li>
+                  </ul>
+                </div>
+              </div>
 
 
             </div>

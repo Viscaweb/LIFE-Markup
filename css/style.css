@@ -10870,6 +10870,9 @@ span.glyphicon-star.active {
   display: block;
   background-color: #FFF;
 }
+.ui-colorpicker {
+  z-index: 4 !important;
+}
 .step-heading {
   margin-bottom: 25px;
 }
@@ -13901,34 +13904,41 @@ main .matches-widgets td.content span.empty {
   font-weight: 600;
 }
 /*User Dashboard & Contest*/
-.prediction-contest-grid .indicators {
+.prediction-contest-grid .indicators,
+.last-predictions .indicators {
   margin: 0;
   padding: 0;
 }
-.prediction-contest-grid .indicators > div {
+.prediction-contest-grid .indicators > div,
+.last-predictions .indicators > div {
   padding: 15px 0;
   text-align: right;
   font-size: 12px;
 }
-.prediction-contest-grid .indicators > div:first-child {
+.prediction-contest-grid .indicators > div:first-child,
+.last-predictions .indicators > div:first-child {
   padding-left: 20px;
   text-align: left;
 }
-.prediction-contest-grid .indicators > div:last-child {
+.prediction-contest-grid .indicators > div:last-child,
+.last-predictions .indicators > div:last-child {
   padding-right: 20px;
 }
-.prediction-contest-grid .indicators > div .number-big {
+.prediction-contest-grid .indicators > div .number-big,
+.last-predictions .indicators > div .number-big {
   font-size: 24px;
   line-height: 24px;
   color: #5c5c5c;
   margin-right: 4px;
   margin-left: 3px;
 }
-.prediction-contest-grid .indicators > div .number-small {
+.prediction-contest-grid .indicators > div .number-small,
+.last-predictions .indicators > div .number-small {
   font-size: 17px;
   color: #b3b3b3;
 }
-.prediction-contest-grid .table.predictions thead.league-data tr th span.country span.icon {
+.prediction-contest-grid .table.predictions thead.league-data tr th span.country span.icon,
+.last-predictions .table.predictions thead.league-data tr th span.country span.icon {
   color: #ffffff;
   font-size: 15px;
   line-height: 14px;
@@ -13936,56 +13946,112 @@ main .matches-widgets td.content span.empty {
   top: 2px;
   margin-right: 10px;
 }
-.prediction-contest-grid .table.predictions tbody tr.prediction-won td.icon {
+.prediction-contest-grid .table.predictions tbody tr.prediction-won td.icon,
+.last-predictions .table.predictions tbody tr.prediction-won td.icon {
   background-color: #87b762 !important;
 }
-.prediction-contest-grid .table.predictions tbody tr.prediction-won td.icon .icon {
+.prediction-contest-grid .table.predictions tbody tr.prediction-won td.icon .icon,
+.last-predictions .table.predictions tbody tr.prediction-won td.icon .icon {
   font-size: 12px;
   color: #ffffff;
 }
-.prediction-contest-grid .table.predictions tbody tr.prediction-lost td.icon {
+.prediction-contest-grid .table.predictions tbody tr.prediction-lost td.icon,
+.last-predictions .table.predictions tbody tr.prediction-lost td.icon {
   background-color: #e6523e !important;
 }
-.prediction-contest-grid .table.predictions tbody tr.prediction-lost td.icon .icon {
+.prediction-contest-grid .table.predictions tbody tr.prediction-lost td.icon .icon,
+.last-predictions .table.predictions tbody tr.prediction-lost td.icon .icon {
   font-size: 12px;
   color: #ffffff;
 }
-.prediction-contest-grid .table.predictions tbody tr.prediction-closed td.prediction .btn-prediction {
+.prediction-contest-grid .table.predictions tbody tr.prediction-closed td.prediction .btn-prediction,
+.last-predictions .table.predictions tbody tr.prediction-closed td.prediction .btn-prediction {
   border-color: #e1e1e1;
   color: #333333;
 }
-.prediction-contest-grid .table.predictions tbody tr td.icon {
+.prediction-contest-grid .table.predictions tbody tr td.icon,
+.last-predictions .table.predictions tbody tr td.icon {
   text-align: center;
   padding: 0 4px;
 }
-.prediction-contest-grid .table.predictions tbody tr td.icon .icon {
+.prediction-contest-grid .table.predictions tbody tr td.icon .icon,
+.last-predictions .table.predictions tbody tr td.icon .icon {
   font-size: 14px;
   margin: 0;
 }
-.prediction-contest-grid .table.predictions tbody tr td.date {
+.prediction-contest-grid .table.predictions tbody tr td.date,
+.last-predictions .table.predictions tbody tr td.date {
   font-weight: 600;
 }
-.prediction-contest-grid .table.predictions tbody tr td.league-logo {
+.prediction-contest-grid .table.predictions tbody tr td.league-logo,
+.last-predictions .table.predictions tbody tr td.league-logo {
   padding: 0 3px;
 }
-.prediction-contest-grid .table.predictions tbody tr td.league-logo img {
+.prediction-contest-grid .table.predictions tbody tr td.league-logo img,
+.last-predictions .table.predictions tbody tr td.league-logo img {
   max-width: 16px;
   max-height: 16px;
 }
-.prediction-contest-grid .table.predictions tbody tr td.prediction .btn-hidden {
+.prediction-contest-grid .table.predictions tbody tr td.prediction .btn-hidden,
+.last-predictions .table.predictions tbody tr td.prediction .btn-hidden {
   text-transform: uppercase;
 }
-.prediction-contest-grid .user-notification {
+.prediction-contest-grid .user-notification,
+.last-predictions .user-notification {
   padding: 15px;
   font-size: 12px;
 }
-.prediction-contest-grid .user-notification > a {
+.prediction-contest-grid .user-notification > a,
+.last-predictions .user-notification > a {
   font-weight: 600;
 }
-.prediction-contest-grid .user-notification > a img {
+.prediction-contest-grid .user-notification > a img,
+.last-predictions .user-notification > a img {
   max-width: 32px;
   max-height: 32px;
   margin-right: 8px;
+}
+.prediction-contest-grid .table-pagination,
+.last-predictions .table-pagination {
+  padding: 10px 15px;
+  font-size: 12px;
+  line-height: 25px;
+}
+.prediction-contest-grid .table-pagination .pagination,
+.last-predictions .table-pagination .pagination {
+  margin: 0;
+  float: right;
+}
+.season-gifts .table tbody tr td.place {
+  text-align: center;
+  min-width: 19%;
+  font-weight: 600;
+}
+.season-gifts .table tbody tr td.gift-img {
+  min-width: 17%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
+.season-gifts .table tbody tr td.gift-img img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.first-day-month-gift .panel-body {
+  text-align: center;
+}
+.first-day-month-gift .panel-body .title {
+  line-height: 17px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.first-day-month-gift .panel-body .title sup {
+  font-size: 10px;
+}
+.first-day-month-gift .panel-body a {
+  font-size: 12px;
+  margin-top: 10px;
+  display: block;
 }
 /*Login*/
 .registration-features {
@@ -14122,6 +14188,175 @@ main .matches-widgets td.content span.empty {
 }
 .successfully button {
   margin-top: 30px;
+}
+/*User My Information*/
+main .content .form-section {
+  border-top: 1px solid #f1f1f1;
+  padding-top: 20px;
+  padding-bottom: 6px;
+}
+main .content .form-section .name {
+  font-weight: 600;
+  line-height: 36px;
+  width: 26%;
+  padding-right: 0;
+}
+main .content .form-section .field {
+  width: 65%;
+}
+main .content .form-section .field .input-group span.input-group-addon {
+  padding: 6px 9px;
+  background-color: #f8f8f8;
+}
+main .content .form-section .field .input-group span.input-group-addon .icon {
+  color: #cdcdcd;
+  font-size: 16px;
+}
+main .content .form-section .profile-image-field .name {
+  line-height: 75px;
+}
+main .content .form-section .profile-image-field .profile-image {
+  height: 77px;
+  width: 77px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+@media \0screen {
+  main .content .form-section .profile-image-field .profile-image {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+main .content .form-section .profile-image-field .profile-image img {
+  height: 100%;
+  width: 100%;
+}
+main .content .form-section .profile-image-field .profile-image a {
+  height: 54px;
+  width: 54px;
+  display: block;
+  position: absolute;
+  bottom: -29px;
+  background-color: rgba(0, 0, 0, 0.27);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: 50%;
+  margin-left: -27px;
+  text-align: center;
+  padding-top: 5px;
+}
+@media \0screen {
+  main .content .form-section .profile-image-field .profile-image a {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+main .content .form-section .profile-image-field .profile-image a .icon {
+  color: #ffffff;
+  font-size: 16px;
+}
+main .content .form-section .profile-image-field .profile-image a:hover {
+  background-color: #5da400;
+}
+main .content .form-section .info {
+  color: #a0a0a0;
+  font-size: 16px;
+  line-height: 40px;
+  padding-left: 0;
+}
+main .content .form-section .buttons {
+  text-align: right;
+}
+main .content .form-section .buttons .btn {
+  padding: 9px 14px;
+  line-height: 14px;
+}
+main .content .form-section .buttons .btn-default {
+  margin-right: 20px;
+}
+main .content .form-section:last-child {
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+main .content .league-list {
+  overflow: hidden;
+}
+main .content .league-list .heading {
+  background-color: #fcfcfc;
+  padding: 10px 15px;
+  line-height: 34px;
+}
+main .content .league-list .heading img {
+  position: relative;
+  top: 5px;
+}
+main .content .league-list .heading span {
+  font-weight: 600;
+}
+main .content .league-list .heading button {
+  text-align: right;
+  float: right;
+}
+main .content .league-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+main .content .league-list ul li {
+  background-color: #ffffff;
+}
+main .content .league-list ul li span.sort {
+  margin-right: 10px;
+  color: #afafaf;
+  padding: 0 17px;
+  background: #fbfbfb;
+  line-height: 34px;
+  display: inline-block;
+  cursor: move;
+}
+main .content .league-list ul li span.sort:hover {
+  background-color: #5da400 !important;
+  color: #ffffff;
+}
+main .content .league-list ul li span.logo {
+  margin: 0 8px;
+}
+main .content .league-list ul li span.logo img {
+  max-width: 18px;
+}
+main .content .league-list ul li span.name {
+  font-weight: 600;
+}
+main .content .league-list ul li span.fav .icon {
+  float: right;
+  color: #ffc600;
+  margin-right: 15px;
+  line-height: 34px;
+}
+main .content .league-list ul li:nth-child(even) {
+  background-color: #fcfcfc;
+}
+main .content .league-list ul li:nth-child(even) span.sort {
+  background-color: #f4f4f4;
+}
+main .content .league-list ul li.item-placeholder {
+  border: 1px dashed #cccccc;
+  padding: 17px 0;
+  background: #f2f2f2;
 }
 /*Structure*/
 .wrapper {

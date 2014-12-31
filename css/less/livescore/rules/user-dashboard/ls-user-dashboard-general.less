@@ -1,4 +1,4 @@
-.prediction-contest-grid{
+.prediction-contest-grid, .last-predictions{
  
 	.indicators{
 		margin: 0;
@@ -139,6 +139,69 @@
 				max-height: 32px;
 				margin-right: 8px;
 			}
+		}
+	}
+
+	.table-pagination{
+		padding: 10px 15px;
+		font-size: @font-size-small;
+		line-height: 25px;
+
+		.pagination{
+			margin: 0;
+			float: right;
+		}
+	}
+}
+
+.season-gifts{
+	.table{
+		tbody{
+			tr{
+				td{
+
+					&.place{
+						text-align: center;
+						min-width: 19%;
+						font-weight: @font-weight-semi-bold;
+					}
+
+					&.gift-img{
+						min-width: 17%;
+						text-align: center;
+						vertical-align: middle;
+						padding: 0;
+
+						img{
+							max-width: 30px;
+							max-height: 30px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.first-day-month-gift{
+	.panel-body{
+		text-align: center;
+
+		.title{
+			line-height: @font-size-x-large;
+			font-size: @font-size-x-large;
+			font-weight: @font-weight-semi-bold;
+
+			sup{
+				font-size: @font-size-x-tiny;
+			}
+		}
+
+		a{
+			font-size: @font-size-small;
+			margin-top: 10px;
+			display: block;
 		}
 	}
 }
