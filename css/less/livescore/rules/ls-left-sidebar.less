@@ -63,12 +63,23 @@
 	}
 	
 	li{
-
 		position: relative;
 
 		&.active{
+
 			>a{
 				color: @brand-primary;
+			}
+		}
+
+		&.user-display.active{
+			background-color: @brand-primary;
+
+			.info{
+
+				span{
+					color: @ls-light-color !important;
+				}
 			}
 		}
 

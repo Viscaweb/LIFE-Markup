@@ -1298,3 +1298,40 @@ tbody{
     }
   }
 }
+
+.table.league-selection{
+  border: 1px solid darken(@ls-light-color, 4%);
+
+  tbody{
+    tr{
+      td{
+        &.number{
+          text-align: right;
+        }
+
+        &.flag{
+          text-align: center;
+          padding-left: 0;
+          padding-right: 0;
+          width: 1%;
+        }
+
+        &.name{
+          font-weight: @font-weight-semi-bold;
+        }
+
+        &.functions{
+          text-align: right;
+
+          .btn{
+            .border-radius(2px); 
+          }
+        }
+
+        &:first-child{
+          padding: 8px;
+        }
+      }
+    }
+  }
+}
