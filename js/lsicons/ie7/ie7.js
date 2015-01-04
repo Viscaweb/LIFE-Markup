@@ -63,6 +63,7 @@
 		'icon-caret-select': '&#xe62f;',
 		'icon-widget': '&#xe630;',
 		'icon-arrow-up-down': '&#xe631;',
+		'icon-prediction': '&#xe632;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

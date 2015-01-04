@@ -1,209 +1,339 @@
-main{
+.profile-wall{ 
+  position: relative;
 
-  .profile-wall{ 
-    position: relative;
+  img{
+    max-width: 100%;
+  }
 
-    img{
-      max-width: 100%;
-    }
+  a.change-image{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.27);
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: @ls-light-color;
 
-    a.change-image{
-      display: inline-block;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.27);
-      position: absolute;
-      right: 0;
-      top: 0;
-      color: @ls-light-color;
-
-      .icon{
-        font-size: 18px;
-        margin-right: 5px;
-        vertical-align: middle;
-        position: relative;
-        top: -2px;
-      }
-      
-      &:hover{
-        background-color: @brand-primary;
-        color: @ls-light-color;
-      }
-    }
-
-    .profile-image{
-      height: 138px;
-      width: 138px;
-      .border-radius(50%);
-      overflow: hidden;
-      position: absolute;
-      display: inline-block;
+    .icon{
+      font-size: 18px;
+      margin-right: 5px;
       vertical-align: middle;
-      bottom: -49px;
-      left: 24px;
-
-      img{
-        height: 100%;
-        width: 100%;
-      }
-
-      a{
-        height: 80px;
-        width: 80px;
-        display: block;
-        position: absolute;
-        bottom: -40px;
-        background-color: rgba(0, 0, 0, 0.27);
-        .border-radius(50%);
-        left: 50%;
-        margin-left: -40px;
-        text-align: center;
-        padding-top: 10px;
-
-        .icon{
-          font-size: 20px;
-          color: @ls-light-color;
-        }
-
-        &:hover{
-          background-color: @brand-primary;
-        }
-
-      }
+      position: relative;
+      top: -2px;
     }
-
-    .display-name{
-      position: absolute;
-      font-size: 28px;
-      bottom: 10px;
-      left: 180px;
+    
+    &:hover{
+      background-color: @brand-primary;
       color: @ls-light-color;
-      font-weight: @font-weight-normal;
-      margin: 0;
     }
   }
 
-  ul.profile-nav{
-    margin-top: 23px;
+  .profile-image{
+    height: 138px;
+    width: 138px;
+    .border-radius(50%);
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    bottom: -49px;
+    left: 24px;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+
+    a{
+      height: 80px;
+      width: 80px;
+      display: block;
+      position: absolute;
+      bottom: -40px;
+      background-color: rgba(0, 0, 0, 0.27);
+      .border-radius(50%);
+      left: 50%;
+      margin-left: -40px;
+      text-align: center;
+      padding-top: 10px;
+
+      .icon{
+        font-size: 20px;
+        color: @ls-light-color;
+      }
+
+      &:hover{
+        background-color: @brand-primary;
+      }
+
+    }
+  }
+
+  .display-name{
+    position: absolute;
+    font-size: 28px;
+    bottom: 10px;
+    left: 180px;
+    color: @ls-light-color;
+    font-weight: @font-weight-normal;
+    margin: 0;
+  }
+}
+
+ul.profile-nav{
+  margin-top: 23px;
+
+  li{
+
+    &:first-child{
+      margin-left: 178px;
+    }
+  }
+}
+
+.content{
+
+  .profile-tabs{
+    margin-bottom: 20px;
+  }
+
+  ul.media-list{
 
     li{
 
-      &:first-child{
-        margin-left: 178px;
+      .match-info{
+        text-align: center;
+        padding: 0 70px 12px;
+        position: relative;
+
+        .date{
+          display: inline-block;
+          font-size: @font-size-x-small;
+          position: relative;
+          background-color: darken(@ls-light-color, 6%);
+          padding: 5px 15px;
+          margin-bottom: 10px;
+        }
+
+        img{
+          max-width: 47px;
+          max-height: 47px;
+          margin-top: 12px;
+          position: absolute;
+
+          &.team1{
+            left: 15px;
+          }
+
+          &.team2{
+            right: 15px;
+            top: 0;
+          }
+        }
+
+        table.user-prediction{
+          width: 100%;
+
+          tr{
+
+            td{
+
+              &.team1{
+                width: 38%;
+                text-align: right;
+                font-size: 17px;
+                font-weight: @font-weight-semi-bold;
+              }
+
+              &.prediction{
+                width: 22%;
+
+                .btn-group{
+                  margin-bottom: 0;
+                }
+              }
+
+              &.team2{
+                text-align: left;
+                font-size: 17px;
+                font-weight: @font-weight-semi-bold;
+              }
+            }
+          }
+        }
       }
+
+      .indicators{
+        margin: 0;
+        padding: 0;
+        background-color: darken(@ls-light-color, 2.8%);
+        margin-top: 8px;
+        margin-bottom: 10px;
+     
+        > div{
+          padding: 15px 0;
+          text-align: right;
+          font-size: @font-size-small;
+          
+          &:first-child{
+            padding-left: 20px;
+            text-align: left;
+          }
+
+          &:last-child{
+            padding-right: 20px; 
+          }
+
+          .number-big{
+            font-size: @ls-contest-grid-big-number-font-size;
+            line-height: @ls-contest-grid-big-number-font-size;
+            color: lighten(@ls-dark-color, 36%);
+            margin-right: 4px;
+            margin-left: 3px;
+          }
+
+          .number-small{ 
+            font-size: @font-size-x-large;
+            color: darken(@ls-light-color, 30%);
+          }
+
+        }
+      }
+    } 
+  }
+}
+
+ul.image-list{
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+
+  li{
+    display: inline-block;
+    padding: 13px;
+
+    img{
+      max-width: 35px;
+      max-height: 35px;          
     }
   }
+}
 
-  .content{
+.contest-ranking{
 
-    .profile-tabs{
-      margin-bottom: 20px;
+  .panel-body{
+    text-align: center;
+
+    span.title{
+      text-transform: uppercase;
+      font-weight: @font-weight-bold;
+      font-size: @font-size-small;
     }
 
-    ul.media-list{
+    ul{
+      list-style: none;
+      padding: 0; 
 
-      li{
+      li.rank{
+        border-bottom: 1px solid darken(@ls-light-color, 7%);
+        margin-bottom: 10px;
 
-        .match-info{
-          text-align: center;
-          padding: 0 70px 12px;
-          position: relative;
+        .rank-numbers{
+          margin-top: 5px;
+          margin-bottom: 10px;
 
-          .date{
-            display: inline-block;
-            font-size: @font-size-x-small;
-            position: relative;
-            background-color: darken(@ls-light-color, 6%);
-            padding: 5px 15px;
-            margin-bottom: 10px;
-          }
+          span{
+            font-size: 28px;
 
-          img{
-            max-width: 47px;
-            max-height: 47px;
-            margin-top: 12px;
-            position: absolute;
+            &.rank1{          
+              font-weight: @font-weight-semi-bold;
 
-            &.team1{
-              left: 15px;
-            }
+              &.active{
+                color: @brand-primary;
+              }
 
-            &.team2{
-              right: 15px;
-              top: 0;
-            }
-          }
-
-          table.user-prediction{
-            width: 100%;
-
-            tr{
-
-              td{
-
-                &.team1{
-                  width: 38%;
-                  text-align: right;
-                  font-size: 17px;
-                  font-weight: @font-weight-semi-bold;
-                }
-
-                &.prediction{
-                  width: 22%;
-
-                  .btn-group{
-                    margin-bottom: 0;
-                  }
-                }
-
-                &.team2{
-                  text-align: left;
-                  font-size: 17px;
-                  font-weight: @font-weight-semi-bold;
-                }
+              sup{
+                font-size: 17px !important;
               }
             }
           }
         }
 
-        .indicators{
-          margin: 0;
-          padding: 0;
-          background-color: darken(@ls-light-color, 2.8%);
-          margin-top: 8px;
-          margin-bottom: 10px;
-       
-          > div{
-            padding: 15px 0;
-            text-align: right;
-            font-size: @font-size-small;
-            
-            &:first-child{
-              padding-left: 20px;
-              text-align: left;
-            }
+      }
+    }
+  }
 
-            &:last-child{
-              padding-right: 20px; 
-            }
+  .evolution-image{
 
-            .number-big{
-              font-size: @ls-contest-grid-big-number-font-size;
-              line-height: @ls-contest-grid-big-number-font-size;
-              color: lighten(@ls-dark-color, 36%);
-              margin-right: 4px;
-              margin-left: 3px;
-            }
+    img{
+      width: 100%;
+    }
+  }
+}
 
-            .number-small{ 
-              font-size: @font-size-x-large;
-              color: darken(@ls-light-color, 30%);
-            }
+.predicion-statistics{
 
+  .panel-body{
+
+    .stat, .statistics{
+      padding: 17px 0;
+      border-bottom: 1px solid darken(@ls-light-color, 7%);
+
+      span{
+
+        &.title{
+          text-transform: uppercase;
+          font-weight: @font-weight-bold;
+          font-size: @font-size-small; 
+        }
+
+        &.number{
+          float: right;
+          line-height: 18px;
+          font-size: 21px;
+          font-weight: @font-weight-semi-bold;
+
+          &.active{
+            color: @brand-primary;
+            font-size: 28px;
+            font-weight: @font-weight-semi-bold;
           }
         }
-      } 
+      }
     }
 
+    .stat:first-child{
+      padding-top: 4px;
+    }
 
+    .statistics{
+      border: 0;
+      text-align: center;
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      span{
+
+        &.number{
+          float: none;
+          display: block;
+          margin-top: 15px;
+        }
+
+        &.won{
+          color: @brand-primary;
+        }
+
+        &.lost{
+          color: @live-red;
+        }
+      }
+    }
+
+    img{
+      margin-top: 25px;
+      margin-bottom: 13px;
+    }
   }
 }

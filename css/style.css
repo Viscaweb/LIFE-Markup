@@ -7000,13 +7000,13 @@ fieldset[disabled] .btn-facebook.active {
   color: #afafaf;
   top: 3px;
 }
-.inner-addon.left-addon .glyphicon {
+.inner-addon.left-addon > .glyphicon {
   left: 5px;
 }
 .inner-addon.left-addon input {
   padding-left: 30px;
 }
-.inner-addon.right-addon .glyphicon {
+.inner-addon.right-addon > .glyphicon {
   right: 5px;
 }
 .inner-addon.right-addon input {
@@ -7390,64 +7390,6 @@ fieldset[disabled] .btn-facebook.active {
   right: 6px;
   font-size: 11px;
   font-weight: 700;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list {
-  max-height: 338px;
-  overflow: auto;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul {
-  margin: 0;
-  padding: 0;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li {
-  padding: 0;
-  list-style: none;
-  display: block;
-  border-bottom: 1px solid #f1f1f1;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li a {
-  display: block;
-  position: relative;
-  padding: 15px 20px 15px 75px;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li a img.avatar {
-  position: absolute;
-  left: 18px;
-  top: 15px;
-  max-height: 48px;
-  max-width: 48px;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li a .title {
-  font-size: 12px;
-  font-weight: 600;
-  display: block;
-  color: #303030;
-  margin-bottom: 2px;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li a .message {
-  font-size: 12px;
-  color: #5e5e5e;
-  line-height: 15px;
-  margin-bottom: 5px;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li a .date {
-  display: block;
-  font-size: 10px;
-  color: #b8b8b8;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li.highlight a {
-  background-color: #fff4ce;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li.highlight a .message {
-  font-weight: 600;
-  color: #363636;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li:hover a {
-  background-color: #579a00;
-}
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li:hover a .title,
-.header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu .notifications-list > ul > li:hover a .message {
-  color: #ffffff;
 }
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu a.view-all {
   text-align: center;
@@ -8934,6 +8876,53 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.league-selection tbody tr td:first-child {
   padding: 8px;
+}
+.table.predictions thead.league-data tr th span.country span.icon {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 14px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+.table.predictions tbody tr.prediction-won td.icon {
+  background-color: #87b762 !important;
+}
+.table.predictions tbody tr.prediction-won td.icon .icon {
+  font-size: 12px;
+  color: #ffffff;
+}
+.table.predictions tbody tr.prediction-lost td.icon {
+  background-color: #e6523e !important;
+}
+.table.predictions tbody tr.prediction-lost td.icon .icon {
+  font-size: 12px;
+  color: #ffffff;
+}
+.table.predictions tbody tr.prediction-closed td.prediction .btn-prediction {
+  border-color: #e1e1e1;
+  color: #333333;
+}
+.table.predictions tbody tr td.icon {
+  text-align: center;
+  padding: 0 4px;
+}
+.table.predictions tbody tr td.icon .icon {
+  font-size: 14px;
+  margin: 0;
+}
+.table.predictions tbody tr td.date {
+  font-weight: 600;
+}
+.table.predictions tbody tr td.league-logo {
+  padding: 0 3px;
+}
+.table.predictions tbody tr td.league-logo img {
+  max-width: 16px;
+  max-height: 16px;
+}
+.table.predictions tbody tr td.prediction .btn-hidden {
+  text-transform: uppercase;
 }
 /*jQuery UI Components*/
 /*Custom General Icons Behavior*/
@@ -11005,6 +10994,64 @@ span.glyphicon-star.active {
 .step-heading .description {
   font-weight: 300;
   font-size: 14px;
+}
+.notifications-list {
+  max-height: 338px;
+  overflow: auto;
+}
+.notifications-list > ul {
+  margin: 0;
+  padding: 0;
+}
+.notifications-list > ul > li {
+  padding: 0;
+  list-style: none;
+  display: block;
+  border-bottom: 1px solid #f1f1f1;
+}
+.notifications-list > ul > li a {
+  display: block;
+  position: relative;
+  padding: 15px 20px 15px 75px;
+}
+.notifications-list > ul > li a img.avatar {
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  max-height: 48px;
+  max-width: 48px;
+}
+.notifications-list > ul > li a .title {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  color: #303030;
+  margin-bottom: 2px;
+}
+.notifications-list > ul > li a .message {
+  font-size: 12px;
+  color: #5e5e5e;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+.notifications-list > ul > li a .date {
+  display: block;
+  font-size: 10px;
+  color: #b8b8b8;
+}
+.notifications-list > ul > li.highlight a {
+  background-color: #fff4ce;
+}
+.notifications-list > ul > li.highlight a .message {
+  font-weight: 600;
+  color: #363636;
+}
+.notifications-list > ul > li:hover a {
+  background-color: #579a00;
+}
+.notifications-list > ul > li:hover a .title,
+.notifications-list > ul > li:hover a .message {
+  color: #ffffff;
 }
 /*Base Tables*/
 .popover.popover-trend,
@@ -13943,65 +13990,6 @@ main .matches-widgets td.content span.empty {
   font-size: 17px;
   color: #b3b3b3;
 }
-.prediction-contest-grid .table.predictions thead.league-data tr th span.country span.icon,
-.last-predictions .table.predictions thead.league-data tr th span.country span.icon {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 14px;
-  position: relative;
-  top: 2px;
-  margin-right: 10px;
-}
-.prediction-contest-grid .table.predictions tbody tr.prediction-won td.icon,
-.last-predictions .table.predictions tbody tr.prediction-won td.icon {
-  background-color: #87b762 !important;
-}
-.prediction-contest-grid .table.predictions tbody tr.prediction-won td.icon .icon,
-.last-predictions .table.predictions tbody tr.prediction-won td.icon .icon {
-  font-size: 12px;
-  color: #ffffff;
-}
-.prediction-contest-grid .table.predictions tbody tr.prediction-lost td.icon,
-.last-predictions .table.predictions tbody tr.prediction-lost td.icon {
-  background-color: #e6523e !important;
-}
-.prediction-contest-grid .table.predictions tbody tr.prediction-lost td.icon .icon,
-.last-predictions .table.predictions tbody tr.prediction-lost td.icon .icon {
-  font-size: 12px;
-  color: #ffffff;
-}
-.prediction-contest-grid .table.predictions tbody tr.prediction-closed td.prediction .btn-prediction,
-.last-predictions .table.predictions tbody tr.prediction-closed td.prediction .btn-prediction {
-  border-color: #e1e1e1;
-  color: #333333;
-}
-.prediction-contest-grid .table.predictions tbody tr td.icon,
-.last-predictions .table.predictions tbody tr td.icon {
-  text-align: center;
-  padding: 0 4px;
-}
-.prediction-contest-grid .table.predictions tbody tr td.icon .icon,
-.last-predictions .table.predictions tbody tr td.icon .icon {
-  font-size: 14px;
-  margin: 0;
-}
-.prediction-contest-grid .table.predictions tbody tr td.date,
-.last-predictions .table.predictions tbody tr td.date {
-  font-weight: 600;
-}
-.prediction-contest-grid .table.predictions tbody tr td.league-logo,
-.last-predictions .table.predictions tbody tr td.league-logo {
-  padding: 0 3px;
-}
-.prediction-contest-grid .table.predictions tbody tr td.league-logo img,
-.last-predictions .table.predictions tbody tr td.league-logo img {
-  max-width: 16px;
-  max-height: 16px;
-}
-.prediction-contest-grid .table.predictions tbody tr td.prediction .btn-hidden,
-.last-predictions .table.predictions tbody tr td.prediction .btn-hidden {
-  text-transform: uppercase;
-}
 .prediction-contest-grid .user-notification,
 .last-predictions .user-notification {
   padding: 15px;
@@ -14058,6 +14046,233 @@ main .matches-widgets td.content span.empty {
   font-size: 12px;
   margin-top: 10px;
   display: block;
+}
+.setting-box {
+  background-color: #f8f8f8;
+  border: 1px solid #f5f5f5;
+  padding: 15px 10px;
+  line-height: 24px;
+}
+.setting-box .option-name {
+  display: inline-block;
+  font-size: 12px;
+}
+.setting-box .option-name .icon {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #5da400;
+  margin-right: 7px;
+}
+.setting-box .field {
+  float: right;
+}
+.settings-list {
+  padding: 0;
+  margin: 0;
+}
+.settings-list > li {
+  list-style: none;
+  padding: 5px 10px;
+  line-height: 24px;
+}
+.settings-list > li .option-name {
+  display: inline-block;
+  font-size: 12px;
+}
+.settings-list > li .option-name .icon {
+  display: inline-block;
+  margin-right: 5px;
+  width: 25px;
+  text-align: center;
+}
+.settings-list > li .option-name .icon > .icon {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #5da400;
+}
+.settings-list > li .field {
+  float: right;
+}
+.settings-list > li:nth-child(even) {
+  background-color: #fafafa;
+}
+.search-block {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #efefef;
+}
+.search-block label {
+  font-weight: 600;
+}
+.search-block .option-group-name {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #969696;
+}
+.search-block div.checkbox {
+  display: block;
+  margin-bottom: 13px;
+}
+.search-block .dropdown-menu li a img {
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+.search-block .dropdown-menu li a .glyphicon-user {
+  color: #c0c0c0;
+}
+.teams-table .title {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.teams-table .title > span {
+  color: #5da400;
+}
+.teams-table table tbody tr td.logo {
+  width: 3%;
+}
+.teams-table table tbody tr td.logo img {
+  max-width: 18px;
+  max-height: 18px;
+}
+.contest-standings .filters {
+  padding: 15px;
+}
+.contest-standings .filters .btn-group-justified {
+  margin-bottom: 15px;
+}
+.contest-standings .filters .btn-group-justified > .btn {
+  width: auto;
+}
+.contest-standings .filters .btn-group-justified .btn.spinner {
+  min-width: 169px;
+}
+.contest-standings .filters .btn-group-justified:last-child {
+  margin-bottom: 5px;
+}
+.contest-standings .table thead tr th {
+  padding: 4px 7px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.contest-standings .table thead tr th.state {
+  padding-left: 0;
+  padding-right: 0;
+}
+.contest-standings .table thead tr th.state .icon {
+  font-size: 16px;
+  line-height: 12px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.contest-standings .table thead.show-all tr th {
+  border: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+.contest-standings .table thead.show-all tr th > div {
+  padding: 8px 12px;
+  background: url("../img//user-dashboard/th-bg.png") repeat-x;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 16px;
+}
+.contest-standings .table thead.show-all tr th > div span {
+  font-size: 13px;
+  font-weight: 600;
+}
+.contest-standings .table thead.show-all tr th > div a {
+  margin-left: 30px;
+}
+.contest-standings .table tbody tr td.number {
+  font-weight: 600;
+  width: 3%;
+  padding: 8px 5px;
+  text-align: center;
+}
+.contest-standings .table tbody tr td.state {
+  width: 2%;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 11px;
+  font-weight: 600;
+}
+.contest-standings .table tbody tr td.state.down {
+  color: #bd0800;
+}
+.contest-standings .table tbody tr td.state.up {
+  color: #7ab748;
+}
+.contest-standings .table tbody tr td.avatar {
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 2%;
+}
+.contest-standings .table tbody tr td.avatar img {
+  max-width: 24px;
+  max-height: 24px;
+}
+.contest-standings .table tbody tr td.points {
+  width: 2%;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: right;
+}
+.contest-standings .table tbody tr.event-won td.number {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.contest-standings .table tbody tr.event-won td.player a {
+  font-weight: 700;
+}
+.predictions-filter label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.predictions-filter select {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.predictions-filter .row {
+  margin-bottom: 0;
+}
+.predictions-filter .row label {
+  font-weight: 400;
+  font-size: 12px;
+}
+.archives .table tbody tr td.icon {
+  width: 1%;
+  padding-right: 2px;
+}
+.archives .table tbody tr td.icon .icon {
+  font-size: 16px;
+  color: #b8b8b8;
+  line-height: 12px;
+  position: relative;
+  top: 2px;
+}
+.how-to-play p {
+  font-size: 13px;
+}
+.how-to-play .image {
+  margin: 20px 0;
+}
+.how-to-play .image img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+.how-to-play .image p {
+  color: #5da400;
+  font-weight: 600;
 }
 /*Login*/
 .registration-features {
@@ -14369,13 +14584,13 @@ main .content .league-list ul li.item-placeholder {
   background: #f2f2f2;
 }
 /*User profile*/
-main .profile-wall {
+.profile-wall {
   position: relative;
 }
-main .profile-wall img {
+.profile-wall img {
   max-width: 100%;
 }
-main .profile-wall a.change-image {
+.profile-wall a.change-image {
   display: inline-block;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.27);
@@ -14384,18 +14599,18 @@ main .profile-wall a.change-image {
   top: 0;
   color: #ffffff;
 }
-main .profile-wall a.change-image .icon {
+.profile-wall a.change-image .icon {
   font-size: 18px;
   margin-right: 5px;
   vertical-align: middle;
   position: relative;
   top: -2px;
 }
-main .profile-wall a.change-image:hover {
+.profile-wall a.change-image:hover {
   background-color: #5da400;
   color: #ffffff;
 }
-main .profile-wall .profile-image {
+.profile-wall .profile-image {
   height: 138px;
   width: 138px;
   -webkit-border-radius: 50%;
@@ -14412,17 +14627,17 @@ main .profile-wall .profile-image {
   left: 24px;
 }
 @media \0screen {
-  main .profile-wall .profile-image {
+  .profile-wall .profile-image {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-main .profile-wall .profile-image img {
+.profile-wall .profile-image img {
   height: 100%;
   width: 100%;
 }
-main .profile-wall .profile-image a {
+.profile-wall .profile-image a {
   height: 80px;
   width: 80px;
   display: block;
@@ -14441,20 +14656,20 @@ main .profile-wall .profile-image a {
   padding-top: 10px;
 }
 @media \0screen {
-  main .profile-wall .profile-image a {
+  .profile-wall .profile-image a {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-main .profile-wall .profile-image a .icon {
+.profile-wall .profile-image a .icon {
   font-size: 20px;
   color: #ffffff;
 }
-main .profile-wall .profile-image a:hover {
+.profile-wall .profile-image a:hover {
   background-color: #5da400;
 }
-main .profile-wall .display-name {
+.profile-wall .display-name {
   position: absolute;
   font-size: 28px;
   bottom: 10px;
@@ -14463,21 +14678,21 @@ main .profile-wall .display-name {
   font-weight: 400;
   margin: 0;
 }
-main ul.profile-nav {
+ul.profile-nav {
   margin-top: 23px;
 }
-main ul.profile-nav li:first-child {
+ul.profile-nav li:first-child {
   margin-left: 178px;
 }
-main .content .profile-tabs {
+.content .profile-tabs {
   margin-bottom: 20px;
 }
-main .content ul.media-list li .match-info {
+.content ul.media-list li .match-info {
   text-align: center;
   padding: 0 70px 12px;
   position: relative;
 }
-main .content ul.media-list li .match-info .date {
+.content ul.media-list li .match-info .date {
   display: inline-block;
   font-size: 11px;
   position: relative;
@@ -14485,68 +14700,165 @@ main .content ul.media-list li .match-info .date {
   padding: 5px 15px;
   margin-bottom: 10px;
 }
-main .content ul.media-list li .match-info img {
+.content ul.media-list li .match-info img {
   max-width: 47px;
   max-height: 47px;
   margin-top: 12px;
   position: absolute;
 }
-main .content ul.media-list li .match-info img.team1 {
+.content ul.media-list li .match-info img.team1 {
   left: 15px;
 }
-main .content ul.media-list li .match-info img.team2 {
+.content ul.media-list li .match-info img.team2 {
   right: 15px;
   top: 0;
 }
-main .content ul.media-list li .match-info table.user-prediction {
+.content ul.media-list li .match-info table.user-prediction {
   width: 100%;
 }
-main .content ul.media-list li .match-info table.user-prediction tr td.team1 {
+.content ul.media-list li .match-info table.user-prediction tr td.team1 {
   width: 38%;
   text-align: right;
   font-size: 17px;
   font-weight: 600;
 }
-main .content ul.media-list li .match-info table.user-prediction tr td.prediction {
+.content ul.media-list li .match-info table.user-prediction tr td.prediction {
   width: 22%;
 }
-main .content ul.media-list li .match-info table.user-prediction tr td.prediction .btn-group {
+.content ul.media-list li .match-info table.user-prediction tr td.prediction .btn-group {
   margin-bottom: 0;
 }
-main .content ul.media-list li .match-info table.user-prediction tr td.team2 {
+.content ul.media-list li .match-info table.user-prediction tr td.team2 {
   text-align: left;
   font-size: 17px;
   font-weight: 600;
 }
-main .content ul.media-list li .indicators {
+.content ul.media-list li .indicators {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
   margin-top: 8px;
   margin-bottom: 10px;
 }
-main .content ul.media-list li .indicators > div {
+.content ul.media-list li .indicators > div {
   padding: 15px 0;
   text-align: right;
   font-size: 12px;
 }
-main .content ul.media-list li .indicators > div:first-child {
+.content ul.media-list li .indicators > div:first-child {
   padding-left: 20px;
   text-align: left;
 }
-main .content ul.media-list li .indicators > div:last-child {
+.content ul.media-list li .indicators > div:last-child {
   padding-right: 20px;
 }
-main .content ul.media-list li .indicators > div .number-big {
+.content ul.media-list li .indicators > div .number-big {
   font-size: 24px;
   line-height: 24px;
   color: #5c5c5c;
   margin-right: 4px;
   margin-left: 3px;
 }
-main .content ul.media-list li .indicators > div .number-small {
+.content ul.media-list li .indicators > div .number-small {
   font-size: 17px;
   color: #b3b3b3;
+}
+ul.image-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+ul.image-list li {
+  display: inline-block;
+  padding: 13px;
+}
+ul.image-list li img {
+  max-width: 35px;
+  max-height: 35px;
+}
+.contest-ranking .panel-body {
+  text-align: center;
+}
+.contest-ranking .panel-body span.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+.contest-ranking .panel-body ul {
+  list-style: none;
+  padding: 0;
+}
+.contest-ranking .panel-body ul li.rank {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px;
+}
+.contest-ranking .panel-body ul li.rank .rank-numbers {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.contest-ranking .panel-body ul li.rank .rank-numbers span {
+  font-size: 28px;
+}
+.contest-ranking .panel-body ul li.rank .rank-numbers span.rank1 {
+  font-weight: 600;
+}
+.contest-ranking .panel-body ul li.rank .rank-numbers span.rank1.active {
+  color: #5da400;
+}
+.contest-ranking .panel-body ul li.rank .rank-numbers span.rank1 sup {
+  font-size: 17px !important;
+}
+.contest-ranking .evolution-image img {
+  width: 100%;
+}
+.predicion-statistics .panel-body .stat,
+.predicion-statistics .panel-body .statistics {
+  padding: 17px 0;
+  border-bottom: 1px solid #ededed;
+}
+.predicion-statistics .panel-body .stat span.title,
+.predicion-statistics .panel-body .statistics span.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+.predicion-statistics .panel-body .stat span.number,
+.predicion-statistics .panel-body .statistics span.number {
+  float: right;
+  line-height: 18px;
+  font-size: 21px;
+  font-weight: 600;
+}
+.predicion-statistics .panel-body .stat span.number.active,
+.predicion-statistics .panel-body .statistics span.number.active {
+  color: #5da400;
+  font-size: 28px;
+  font-weight: 600;
+}
+.predicion-statistics .panel-body .stat:first-child {
+  padding-top: 4px;
+}
+.predicion-statistics .panel-body .statistics {
+  border: 0;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.predicion-statistics .panel-body .statistics span.number {
+  float: none;
+  display: block;
+  margin-top: 15px;
+}
+.predicion-statistics .panel-body .statistics span.won {
+  color: #5da400;
+}
+.predicion-statistics .panel-body .statistics span.lost {
+  color: #e33000;
+}
+.predicion-statistics .panel-body img {
+  margin-top: 25px;
+  margin-bottom: 13px;
 }
 /*Structure*/
 .wrapper {

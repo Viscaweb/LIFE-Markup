@@ -1335,3 +1335,90 @@ tbody{
     }
   }
 }
+
+.table.predictions{
+  thead.league-data{
+    tr{
+      th{
+        span.country{
+          span.icon{
+            color: @ls-light-color;
+            font-size: @font-size-medium;
+            line-height: @font-size-normal;
+            position: relative;
+            top: 2px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  tbody{
+    tr{
+
+      &.prediction-won{
+        td.icon{
+          background-color: @ls-td-won-bg !important;
+
+          .icon{
+            font-size: @font-size-small;
+            color: @ls-light-color;
+          }
+        }
+      }
+
+      &.prediction-lost{
+        td.icon{
+          background-color: @ls-td-lost-bg !important;
+
+          .icon{
+            font-size: @font-size-small;
+            color: @ls-light-color;
+          }
+        }
+      }
+
+      &.prediction-closed{
+        td.prediction{
+          .btn-prediction{
+            border-color: darken(@ls-light-color, 11.6%);
+            color: lighten(@ls-dark-color, 20%);
+          }
+        }
+      }
+
+      td{ 
+
+        &.icon{
+          text-align: center;
+          padding: 0 4px;
+
+          .icon{
+            font-size: @font-size-normal;
+            margin: 0;
+          }
+        }
+
+        &.date{
+          font-weight: @font-weight-semi-bold;
+        }
+
+        &.league-logo{
+          padding: 0 3px;
+
+          img{
+            max-width: 16px;
+            max-height: 16px;
+          }
+        }
+
+        &.prediction{
+          .btn-hidden{
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

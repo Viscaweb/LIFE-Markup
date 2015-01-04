@@ -148,3 +148,6 @@
 .icon-arrow-up-down {
 	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe631;');
 }
+.icon-prediction {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe632;');
+}

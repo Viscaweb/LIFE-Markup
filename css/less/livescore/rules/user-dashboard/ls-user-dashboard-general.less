@@ -34,99 +34,6 @@
 		}
 	}
 
-	.table.predictions{
-		thead.league-data{
-			tr{
-				th{
-					span.country{
-						span.icon{
-							color: @ls-light-color;
-							font-size: @font-size-medium;
-							line-height: @font-size-normal;
-							position: relative;
-							top: 2px;
-							margin-right: 10px;
-						}
-					}
-				}
-			}
-		}
-
-		tbody{
-			tr{
-
-				&.prediction-waiting{
-					td{
-
-					}
-				}
-
-				&.prediction-won{
-					td.icon{
-						background-color: @ls-td-won-bg !important;
-
-						.icon{
-							font-size: @font-size-small;
-							color: @ls-light-color;
-						}
-					}
-				}
-
-				&.prediction-lost{
-					td.icon{
-						background-color: @ls-td-lost-bg !important;
-
-						.icon{
-							font-size: @font-size-small;
-							color: @ls-light-color;
-						}
-					}
-				}
-
-				&.prediction-closed{
-					td.prediction{
-						.btn-prediction{
-							border-color: darken(@ls-light-color, 11.6%);
-							color: lighten(@ls-dark-color, 20%);
-						}
-					}
-				}
-
-				td{	
-
-					&.icon{
-						text-align: center;
-						padding: 0 4px;
-
-						.icon{
-							font-size: @font-size-normal;
-							margin: 0;
-						}
-					}
-
-					&.date{
-						font-weight: @font-weight-semi-bold;
-					}
-
-					&.league-logo{
-						padding: 0 3px;
-
-						img{
-							max-width: 16px;
-							max-height: 16px;
-						}
-					}
-
-					&.prediction{
-						.btn-hidden{
-							text-transform: uppercase;
-						}
-					}
-				}
-			}
-		}
-	}
-
 	.user-notification{
 		padding: 15px;
 		font-size: @font-size-small;
@@ -202,6 +109,339 @@
 			font-size: @font-size-small;
 			margin-top: 10px;
 			display: block;
+		}
+	}
+}
+
+.setting-box{
+	background-color: darken(@ls-light-color, 2.8%);
+	border: 1px solid darken(@ls-light-color, 3.8%);
+	padding: 15px 10px;
+	line-height: 24px;
+
+	.option-name{
+		display: inline-block;
+		font-size: @font-size-small;
+
+		.icon{
+			font-size: @font-size-xx-large;
+			vertical-align: middle;
+			color: @brand-primary;
+			margin-right: 7px;
+		}
+	}
+
+	.field{
+		float: right;
+	}
+}
+
+.settings-list{
+	padding: 0;
+	margin: 0;
+
+	> li{
+		list-style: none;
+		padding: 5px 10px;
+		line-height: 24px;
+
+		.option-name{
+			display: inline-block;
+			font-size: @font-size-small;
+
+			.icon{
+				display: inline-block;
+				margin-right: 5px;
+				width: 25px;
+				text-align: center;
+
+				> .icon{
+					font-size: @font-size-xx-large;
+					vertical-align: middle;
+					color: @brand-primary;
+				}
+
+			}
+		}
+
+		.field{
+			float: right;
+		}
+
+		&:nth-child(even){
+			background-color: darken(@ls-light-color, 2%);
+		}
+
+	}
+}
+
+.search-block{
+	padding: 20px;
+	background-color: darken(@ls-light-color, 2%);
+	border: 1px solid darken(@ls-light-color, 6.2%);
+
+	label{
+		font-weight: @font-weight-semi-bold;
+	}
+
+	.option-group-name{
+		display: block;
+		text-transform: uppercase;
+		font-weight: @font-weight-semi-bold;
+		color: darken(@ls-light-color, 41%);
+	}
+
+	div.checkbox{
+		display: block;
+		margin-bottom: 13px;
+	}
+
+	.dropdown-menu{
+		li{
+			a{
+				img{
+					height: 20px;
+			    margin-right: 5px;
+			    width: 20px;
+				}
+
+				.glyphicon-user{
+					color: darken(@ls-light-color, 24.7%);
+				}
+			}
+		}
+	}
+}
+
+.teams-table{
+	.title{
+		display: block;
+		font-size: @font-size-xx-large;
+		font-weight: @font-weight-semi-bold;
+		margin-bottom: 20px;
+
+		> span{
+			color: @active-green;
+		}
+	}
+
+	table{
+		tbody{
+			tr{
+				td{
+
+					&.logo{
+						width: 3%;
+
+						img{
+							max-width: 18px;
+							max-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.contest-standings{
+	.filters{
+		padding: 15px;
+
+		.btn-group-justified{
+			margin-bottom: 15px;
+
+			> .btn{
+				width: auto;
+			}
+
+			.btn.spinner{
+				min-width: 169px;
+			}
+
+			&:last-child{
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.table{
+		thead{
+			tr{
+				th{
+					padding: 4px 7px;
+					font-weight: @font-weight-bold;
+					font-size: @font-size-small;
+
+					&.state{
+						padding-left: 0;
+						padding-right: 0;
+
+						.icon{
+							font-size: @font-size-large;
+							line-height: @font-size-small;
+							vertical-align: middle;
+							position: relative;
+							top: -1px;
+						}
+					}
+				}
+			}
+
+			&.show-all{
+				tr{
+					th{
+						border: 0;
+						padding: 0;
+						background-color: darken(@ls-light-color, 4.8%);
+
+						> div{
+							padding: 8px 12px;
+							background: url(@ls-image-user-dashboard-th-bg) repeat-x;
+							font-size: @font-size-small;
+							font-weight: @font-weight-normal;
+							text-transform: none;
+							line-height: @font-size-large;
+
+							span{
+								font-size: @font-size-base;
+								font-weight: @font-weight-semi-bold;
+							}
+
+							a{
+								margin-left: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		tbody{
+			tr{
+				td{
+					&.number{
+						font-weight: @font-weight-semi-bold;
+						width: 3%;
+						padding: 8px 5px;
+						text-align: center;
+					}
+
+					&.state{
+						width: 2%;
+						padding-left: 0;
+						padding-right: 0;
+						font-size: @font-size-x-small;
+						font-weight: @font-weight-semi-bold;
+
+						&.down{ color: @ls-table-stats-down; }
+            &.up{ color: @ls-table-stats-up; }
+					}
+
+					&.avatar{
+						padding-right: 0;	
+						padding-top: 0;	
+						padding-bottom: 0;	
+						width: 2%;
+
+						img{
+							max-width: 24px;
+							max-height: 24px;
+						}
+					}
+
+					&.points{
+						width: 2%;
+						font-weight: @font-weight-bold;
+						font-size: @font-size-normal;
+						text-align: right;
+					}
+				}
+
+				&.event-won{
+					td{
+						&.number{
+							font-weight: @font-weight-bold;
+							font-size: @font-size-large;
+							padding-left: 2px;
+							padding-right: 2px;
+						}
+
+						&.player{
+							a{
+								font-weight: @font-weight-bold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.predictions-filter{
+
+	label{
+		font-size: @font-size-normal;
+		font-weight: @font-weight-semi-bold;
+	}
+
+	select{
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
+
+	.row{
+		margin-bottom: 0;
+
+		label{
+			font-weight: @font-weight-normal;
+			font-size: @font-size-small;
+		}
+	}
+}
+
+.archives{
+	.table{
+		tbody{
+			tr{
+				td{
+					&.icon{
+						width: 1%; 
+						padding-right: 2px;
+
+						.icon{
+							font-size: @font-size-large;
+							color: darken(@ls-light-color, 28%);
+							line-height: @font-size-small;
+							position: relative;
+							top: 2px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.how-to-play{
+
+	p{
+		font-size: @font-size-base;
+	}
+
+	.image{
+		margin: 20px 0;
+
+		img{
+			float: left;
+			margin-right: 10px;
+			margin-top: 7px;
+		}
+
+		p{
+			color: @brand-primary;
+			font-weight: @font-weight-semi-bold;
 		}
 	}
 }
