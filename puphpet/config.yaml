@@ -3,14 +3,14 @@ vagrantfile-local:
     vm:
         box: puphpet/debian75-x64
         box_url: puphpet/debian75-x64
-        hostname: ''
+        hostname: ls-markup.vagrant
         memory: '512'
         cpus: '1'
         chosen_provider: virtualbox
         network:
             private_network: 192.168.56.101
             forwarded_port:
-                zq4ZbH6HygZs:
+                gi2LOsi2X1xU:
                     host: '9670'
                     guest: '22'
         post_up_message: ''
@@ -32,11 +32,11 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            Hz5pFSiTwLiO:
+            QuvqwxB3LJ8v:
                 owner: www-data
                 group: www-data
                 source: ./
-                target: /var/www/default
+                target: /var/www/markup
                 sync_type: default
                 rsync:
                     args:
@@ -85,7 +85,33 @@ apache:
         sendfile: 0
     modules:
         - rewrite
-    vhosts: {  }
+    vhosts:
+        v1d3gufjys07:
+            servername: ls-markup.vagrant
+            serveraliases:
+                - '*.vagrantshare.com'
+            docroot: /var/www/markup
+            port: '80'
+            directories:
+                s7w2lpiofixc:
+                    provider: directory
+                    path: /var/www/markup
+                    options:
+                        - Indexes
+                        - FollowSymlinks
+                        - MultiViews
+                    allow_override:
+                        - All
+                    require:
+                        - all
+                        - granted
+                    custom_fragment: 'AllowOverride All'
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
     mod_pagespeed: 0
 nginx:
     install: '0'
@@ -95,7 +121,7 @@ nginx:
         proxy_buffers: '4 256k'
     upstreams: {  }
     vhosts:
-        orsrx9iunpsf:
+        qqmmwuxdaobh:
             proxy: ''
             server_name: awesome.dev
             server_aliases:
@@ -164,7 +190,7 @@ drush:
 ruby:
     install: '1'
     versions:
-        eduIwkUk9by6:
+        3EP0lawI6cMO:
             version: ''
 nodejs:
     install: '0'
@@ -173,7 +199,7 @@ python:
     install: '1'
     packages: {  }
     versions:
-        EC3yEVdRhBFK:
+        6ITJ7d6tpkM0:
             version: ''
 mysql:
     install: '0'
@@ -181,7 +207,7 @@ mysql:
     root_password: '123'
     adminer: 0
     databases:
-        PcySXtKwqWbh:
+        d8qmTuBh9qXz:
             grant:
                 - ALL
             name: dbname
