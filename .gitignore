@@ -16,3 +16,6 @@ node_modules
 # Generated files
 *.css.map
 *.db
+
+#Vagrant
+.vagrant/
