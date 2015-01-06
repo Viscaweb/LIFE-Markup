@@ -27,6 +27,7 @@ Requirements
 Run
 ---
 
-1. vagrant up
-2. vagrant share
-3. Go to http://www.browserstack.com/screenshots/ and copy past the hostname
+1. Run : vagrant up
+2. Run : vagrant share
+3. Try it, run : open http://ls-markup.vagrant
+3. Go to : http://www.browserstack.com/screenshots/ and copy past the hostname
