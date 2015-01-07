@@ -2,6 +2,10 @@
   &::-webkit-scrollbar {
     width: 3px;
   }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 3px;
+  }
    
   &::-webkit-scrollbar-track {
     background: @ls-scrollbar-background;
@@ -19,6 +23,10 @@
   &:hover {
     &::-webkit-scrollbar {
      width: 11px;
+    }
+
+    &::-webkit-scrollbar:horizontal {
+     height: 11px;
     }
   }
 }

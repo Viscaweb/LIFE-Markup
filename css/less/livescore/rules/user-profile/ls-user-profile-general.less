@@ -1,7 +1,7 @@
 .profile-wall{ 
   position: relative;
 
-  img{
+  > img{
     max-width: 100%;
   }
 
@@ -39,12 +39,12 @@
     bottom: -49px;
     left: 24px;
 
-    img{
+    > img{
       height: 100%;
       width: 100%;
     }
 
-    a{
+    > a{
       height: 80px;
       width: 80px;
       display: block;
@@ -334,6 +334,225 @@ ul.image-list{
     img{
       margin-top: 25px;
       margin-bottom: 13px;
+    }
+  }
+}
+
+.change-profile-image{
+  > .row{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+
+    .left-side{
+      vertical-align: top;
+      display: table-cell;
+      float: none;
+      padding: 0;
+      border-right: 1px solid darken(@ls-light-color, 10.3%);
+      background-color: darken(@ls-light-color, 2.8%);
+
+      .current-image{
+        padding: 20px;
+        text-align: center;
+
+        img{
+          .border-radius(50%);
+          margin-bottom: 8px;
+          max-width: 104px;
+          max-height: 104px;
+        }
+      }
+    }
+
+    .options{
+      vertical-align: top;
+      display: table-cell;
+      float: none;
+      padding: 15px 20px;
+
+      label{
+        font-weight: @font-weight-semi-bold;
+        font-size: @font-size-medium;
+        margin-bottom: 10px;
+      }
+
+      .predefined-images{
+        margin-bottom: 20px;
+
+        ul{
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+
+          > li{
+            float: left;
+            list-style: none;
+            display: block;
+            text-align: center;
+            margin-right: 20px;
+
+            .img{
+              .border-radius(50%);
+              display: inline-block;
+              margin-bottom: 5px;
+
+              img{
+                border: 1px solid @ls-light-color;
+                max-height: 50px;
+                max-width: 50px;
+              }
+            }
+
+            .name{
+              display: block;
+            }
+
+            a{
+              color: lighten(@ls-dark-color, 36%);
+              outline: none;
+            }
+
+            &.selected-image{
+              .img{
+                position: relative;
+                border: 3px solid transparent;
+                border-color: @brand-primary;
+
+                img{
+                  max-height: 44px;
+                  max-width: 44px;
+                }
+
+                &:after{
+                  content: "\e013";
+                  font-family: @ls-bootstrap-icons-font-family;
+                  font-size: @font-size-normal;
+                  color: @brand-primary;
+                  position: absolute;
+                  display: block;
+                  left: 0;
+                  bottom: 4px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .custom-picture{
+        > .row{
+          > div{
+
+            &:first-child{
+              padding-right: 0;
+            }
+          }
+        }
+
+        .add-file{
+          cursor: pointer;
+        }
+
+        .drag-zone{
+          border: 2px dashed darken(@ls-light-color, 13%);
+          padding: 9px;
+          text-align: center;
+
+          .drag-message{
+
+            > span{
+              font-size: @font-size-normal;
+            }
+
+            .btn{
+              padding-top: 7px;
+              padding-bottom: 7px;
+              margin-left: 10px;
+
+              .icon{
+                font-size: @font-size-large;
+                position: relative;
+                vertical-align: middle;
+                top: -2px;
+                margin-right: 10px;
+              }
+            }
+          }
+
+          .drop-message{
+            display: none;
+            font-size: @font-size-normal;
+            line-height: 32px;
+
+            .icon{
+              font-size: 27px;
+              vertical-align: middle;
+              position: relative;
+              top: -1px;
+              margin-right: 5px;
+            }
+          }
+
+          &.dragging{
+            background-color: @active-green;
+            color: @ls-light-color;
+            border-color: @ls-light-color;
+
+            .drop-message{
+              display: block;
+            }
+
+            .drag-message{
+              display: none;
+            }
+          }
+        }
+      }
+
+      .my-teams{
+
+        .scroll-container{
+          overflow: auto;
+          width: 100%;
+          padding-bottom: 10px;
+        }
+
+        ul{
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          white-space: nowrap;
+
+          > li{
+            list-style: none;
+            display: inline-block;
+            text-align: center;
+            min-width: 70px;
+
+            .logo{
+              background-color: darken(@ls-light-color, 4.7%);
+              display: inline-block;
+              .border-radius(50%);
+              height: 52px;
+              width: 52px;
+              margin-bottom: 5px;
+
+              img{
+                max-width: 100%;
+                max-height: 100%;
+              }
+            }
+
+            .name{
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
 }
