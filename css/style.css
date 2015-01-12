@@ -8069,7 +8069,6 @@ fieldset[disabled] .btn-facebook.active {
   font-weight: bold;
 }
 .table tr td {
-  vertical-align: middle !important;
   font-size: 12px;
   padding: 8px 10px;
   border-top: 1px solid #f5f5f5;
@@ -8491,6 +8490,7 @@ fieldset[disabled] .btn-facebook.active {
   font-weight: 700;
 }
 .table.my-games thead.league-data tr th {
+  vertical-align: middle !important;
   background-color: #5da400;
   color: #ffffff;
   font-weight: 700;
@@ -8522,6 +8522,9 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.my-games thead.league-data tr th span i {
   color: #ffffff;
+}
+.table.my-games tbody tr td {
+  vertical-align: middle !important;
 }
 .table.my-games tbody tr td span.hour {
   font-weight: 600;
@@ -8598,6 +8601,7 @@ fieldset[disabled] .btn-facebook.active {
 .table.matches thead.league-data tr th {
   border-bottom: 1px solid #999999;
   padding: 0;
+  vertical-align: middle !important;
 }
 .table.matches thead.league-data tr th .country {
   text-transform: uppercase;
@@ -8643,6 +8647,9 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.matches thead.league-data tr th .tools a.live i {
   color: #e33000;
+}
+.table.matches tbody tr td {
+  vertical-align: middle !important;
 }
 .table.matches tbody tr td.score {
   min-width: 50px;
@@ -8732,12 +8739,14 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.table-standing thead tr th {
   border-bottom: 0;
+  vertical-align: middle !important;
 }
 .table.table-standing thead tr th span.match-name {
   color: #d6d6d6 !important;
   font-weight: 400;
 }
 .table.table-standing tbody tr td {
+  vertical-align: middle;
   border: 0;
 }
 .table.table-standing tbody tr td.rank-standing-green {
@@ -9093,6 +9102,7 @@ fieldset[disabled] .btn-facebook.active {
 /*Widget Creator Page*/
 /*User Dashboard & Contest*/
 /*News*/
+/*Streaming Page*/
 /*Content Header*/
 .content-header {
   position: relative;
@@ -9331,6 +9341,12 @@ iframe {
 /*Typography classes*/
 .uppercase {
   text-transform: uppercase;
+}
+.page-title {
+  font-size: 27px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
 }
 span.dark-icon {
   color: #5c5c5c;
@@ -10730,6 +10746,59 @@ span.sprite.webmaster-border {
 }
 .panel-condensed .comments .media-list .media.view-all a {
   font-size: 12px;
+}
+.panel-condensed .comments.carousel {
+  padding: 0;
+  height: auto;
+  position: relative;
+}
+.panel-condensed .comments.carousel .media-list .media {
+  padding: 10px 14px;
+  width: 248px;
+}
+.panel-condensed .comments.carousel .media-list .media .media-heading .tools {
+  right: 14px;
+}
+.panel-condensed .comments.carousel .control {
+  display: none;
+  position: absolute;
+  background: #fbfbfb;
+  text-align: center;
+  width: 38px;
+  border-color: #e9e9e9;
+  cursor: pointer;
+  height: 100%;
+  z-index: 2;
+}
+.panel-condensed .comments.carousel .control span {
+  font-size: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #dbdbdb;
+}
+.panel-condensed .comments.carousel .control:hover {
+  background: #f0f0f0;
+}
+.panel-condensed .comments.carousel .control:hover span {
+  color: #afafaf;
+}
+.panel-condensed .comments.carousel .control.prev {
+  top: 0;
+  left: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.panel-condensed .comments.carousel .control.next {
+  top: 0;
+  right: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+.panel-condensed .comments.carousel:hover .control {
+  display: block;
 }
 /*custom progress bars*/
 .progress-bar-home {
@@ -15699,6 +15768,123 @@ ul.image-list li img {
   margin-top: 10px;
   font-size: 11px;
   font-weight: 300;
+}
+/*Streaming*/
+.streaming-description {
+  margin-bottom: 0;
+}
+.streaming-description > div:first-child {
+  padding-right: 0;
+}
+.streaming-description > div:last-child {
+  margin-left: 0;
+}
+.streaming-description .title {
+  display: block;
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+}
+.streaming-description .sub-title {
+  display: block;
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.streaming-table > div > .title {
+  display: block;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+.streaming-table table {
+  margin-top: 15px;
+}
+.streaming-table table thead tr th {
+  text-align: center;
+}
+.streaming-table table thead tr th span {
+  display: block;
+  font-weight: 400;
+}
+.streaming-table table tbody tr td {
+  width: 10.25%;
+  vertical-align: top;
+}
+.streaming-table table tbody tr td.hour {
+  text-align: center;
+  background-color: #f6f6f6 !important;
+  width: 5%;
+  font-weight: 700;
+  vertical-align: middle;
+  padding: 23px 8px;
+}
+.streaming-table table tbody tr td ul {
+  margin: 0;
+  padding: 0;
+}
+.streaming-table table tbody tr td ul > li {
+  list-style: none;
+  display: block;
+  padding: 8px 0;
+  border-top: 1px solid #e6e6e6;
+}
+.streaming-table table tbody tr td ul > li > a {
+  position: relative;
+  display: block;
+  color: #5c5c5c;
+}
+.streaming-table table tbody tr td ul > li > a .title {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+.streaming-table table tbody tr td ul > li > a .title img {
+  max-height: 14px;
+  margin-right: 5px;
+}
+.streaming-table table tbody tr td ul > li > a .description {
+  display: block;
+  margin-top: 3px;
+  line-height: 14px;
+  font-size: 11px;
+  font-weight: 400;
+}
+.streaming-table table tbody tr td ul > li > a .hover {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  font-size: 11px;
+  line-height: 11px;
+}
+.streaming-table table tbody tr td ul > li > a .hover .icon {
+  margin-right: 5px;
+  color: #5da400;
+  display: inline-block;
+  float: left;
+  font-size: 23px;
+}
+.streaming-table table tbody tr td ul > li > a:hover .hover {
+  display: block;
+}
+.streaming-table table tbody tr td ul > li:first-child {
+  padding-top: 0;
+  border: 0;
+}
+.streaming-table table tbody tr td ul > li:last-child {
+  padding-bottom: 0;
+}
+.streaming-table table tbody tr td:nth-child(odd) {
+  background-color: #fdfdfd;
+}
+.streaming-table table tbody tr:hover td {
+  background-color: #ededed;
 }
 /*Structure*/
 .wrapper {

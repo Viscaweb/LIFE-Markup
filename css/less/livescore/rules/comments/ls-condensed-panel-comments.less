@@ -103,5 +103,74 @@
         
       }
     }
+
+    &.carousel{
+      padding: 0;
+      height: auto;
+      position: relative;
+
+      .media-list{
+        .media{
+          padding: 10px 14px;
+          width: 248px;
+
+          .media-heading{
+            .tools{
+              right: 14px;
+            }
+          }
+        }
+      }
+
+      .control{
+        display: none;
+        position: absolute;
+        background: darken(@ls-light-color, 1.5%);
+        text-align: center;
+        width: 38px;
+        border-color: darken(@ls-light-color, 8.5%);
+        cursor: pointer; 
+        height: 100%;
+        z-index: 2;
+
+        span{
+          font-size: 21px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -10px;
+          margin-top: -10px;
+          color: darken(@ls-light-color, 14%);
+        }
+        
+        &:hover{
+          background: darken(@ls-light-color, 6%);
+          
+          span{
+            color: darken(@ls-light-color, 31.5%);
+          }
+        }
+        
+        &.prev{
+          top: 0;
+          left: 0;
+          border-right-width: 1px;
+          border-right-style: solid;
+        }
+        
+        &.next{
+          top: 0;
+          right: 0;
+          border-left-width: 1px;
+          border-left-style: solid;
+        }
+      }
+
+      &:hover{
+        .control{
+          display: block;
+        }
+      }
+    }
   }
 }
