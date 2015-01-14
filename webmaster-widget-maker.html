@@ -335,7 +335,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -346,7 +346,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -357,7 +357,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -371,7 +371,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -382,7 +382,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -393,7 +393,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -404,7 +404,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -418,7 +418,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -429,7 +429,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -440,7 +440,7 @@
                               </div>
                               <div class="col-md-3 value">
                                 <div class="input-group color-picker">
-                                  <input type="text" class="form-control" value="#000000">
+                                  <input type="text" class="form-control color-picker" value="#000000">
                                   <span class="input-group-addon"><span class="color-preview"></span></span>
                                 </div>
                               </div>
@@ -782,7 +782,19 @@
         $('[data-popover="popover"]').popover();
 
         /*Color Picker*/
-        $('input.color-picker').colorpicker();
+        $('input.color-picker').colorpicker({
+          colorFormat: '#HEX',
+          select: function(event, color){
+            var input = $(this);
+            input.parent().find(".input-group-addon .color-preview").css({ 'background-color' : color.formatted });
+          }
+        });
+
+        $('.input-group.color-picker .color-preview').click(function( e ){
+          e.stopPropagation();
+          var colorPicker = $(this).parents(".input-group.color-picker").find("input.color-picker");
+          colorPicker.colorpicker('open');
+        });
 
       });
     </script>

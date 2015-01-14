@@ -9502,6 +9502,18 @@ span.sprite.info {
 span.sprite.whistle {
   background: url("../img//sprite-icons.png") no-repeat -3px -27px;
 }
+span.sprite.whistle-active {
+  background: url("../img//sprite-icons.png") no-repeat -31px -144px;
+}
+span.sprite.shootouts {
+  background: url("../img//sprite-icons.png") no-repeat -60px -144px;
+}
+span.sprite.grid {
+  background: url("../img//sprite-icons.png") no-repeat -199px -123px;
+}
+span.sprite.gift {
+  background: url("../img//sprite-icons.png") no-repeat -255px -122px;
+}
 span.sprite.extra-time {
   background: url("../img//sprite-icons.png") no-repeat -171px -75px;
 }
@@ -10865,10 +10877,10 @@ span.glyphicon-star.active {
   margin-left: 34px;
 }
 *::-webkit-scrollbar {
-  width: 3px;
+  width: 10px;
 }
 *::-webkit-scrollbar:horizontal {
-  height: 3px;
+  height: 10px;
 }
 *::-webkit-scrollbar-track {
   background: #f0f0f0;
@@ -10891,12 +10903,6 @@ span.glyphicon-star.active {
 }
 *::-webkit-scrollbar-thumb:hover {
   background: #4f8b00;
-}
-*:hover::-webkit-scrollbar {
-  width: 11px;
-}
-*:hover::-webkit-scrollbar:horizontal {
-  height: 11px;
 }
 .ls-wizard {
   margin-bottom: 50px;
@@ -11020,6 +11026,7 @@ span.glyphicon-star.active {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  text-transform: uppercase;
 }
 @media \0screen {
   .color-picker input {
@@ -11036,6 +11043,7 @@ span.glyphicon-star.active {
   width: 23px;
   display: block;
   background-color: #FFF;
+  cursor: pointer;
 }
 .ui-colorpicker {
   z-index: 4 !important;
@@ -13181,6 +13189,9 @@ table.other-sport thead span.match-name {
   color: #d6d6d6 !important;
   font-weight: 400;
 }
+table.other-sport thead tr th {
+  vertical-align: middle;
+}
 table.other-sport tbody {
   border-top: 0;
 }
@@ -13193,6 +13204,7 @@ table.other-sport tbody.highlight {
 table.other-sport tbody tr td {
   background-color: transparent !important;
   border: 0;
+  vertical-align: middle;
 }
 table.other-sport tbody tr td.hour {
   width: 5%;
@@ -14235,6 +14247,13 @@ main .matches-widgets td.content span.empty {
 }
 .contest-standings .filters .btn-group-justified:last-child {
   margin-bottom: 5px;
+}
+.contest-standings .table-scroll {
+  height: 550px;
+  overflow: auto;
+}
+.contest-standings .table {
+  margin: 0;
 }
 .contest-standings .table thead tr th {
   padding: 4px 7px;
