@@ -6301,8 +6301,8 @@ button.close {
 .btn.btn-xs {
   padding: 2px 6px;
 }
-.btn.dropdown-toggle .icon-caret-down,
-.btn.dropdown-toggle .icon-expand {
+.btn.dropdown-toggle .icon.icon-caret-down,
+.btn.dropdown-toggle .icon.icon-expand {
   margin-left: 15px;
 }
 .btn.dropdown-toggle.btn-link .icon-caret-down,
@@ -8943,6 +8943,7 @@ fieldset[disabled] .btn-facebook.active {
   padding: 50px 15px 15px;
   position: relative;
   display: none;
+  background-color: #ffffff;
 }
 .ui-datepicker:after {
   content: "";
