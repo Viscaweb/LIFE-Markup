@@ -8164,6 +8164,7 @@ fieldset[disabled] .btn-facebook.active {
 .table tbody tr:nth-child(odd) > td.tools {
   padding: 0 5px;
   text-align: right;
+  font-size: 0;
 }
 .table tbody tr > td.tools a,
 .table tbody tr:nth-child(even) > td.tools a,
@@ -8634,6 +8635,8 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.matches thead.league-data tr th .tools a i.icon-standings {
   margin-right: 5px;
+  position: relative;
+  top: -1px;
 }
 .table.matches thead.league-data tr th .tools a.active {
   color: #5da400;
@@ -8683,6 +8686,8 @@ fieldset[disabled] .btn-facebook.active {
   padding: 0 2px;
   background-color: #f40000;
   font-weight: 400;
+  position: relative;
+  top: -2px;
 }
 .table.matches tbody tr td.team img {
   max-width: 20px;
@@ -8713,13 +8718,17 @@ fieldset[disabled] .btn-facebook.active {
   color: #a1a1a1;
   padding: 0 1px;
 }
+.table.matches tbody tr td.win {
+  font-weight: 700;
+}
 .table.matches tbody tr.live > td.time {
   padding-left: 15px;
   background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
 }
-.table.matches tbody tr.live.paused > td.time {
+.table.matches tbody tr.live.paused > td.time,
+.table.matches tbody tr.live.paused > td.date {
   padding-left: 15px;
   background-image: url("../img/sprites/paused-spot.gif");
   background-repeat: no-repeat;
@@ -9604,7 +9613,7 @@ span.sprite.webmaster-border {
 .player .picture {
   bottom: 0;
   position: absolute;
-  right: 5px;
+  right: 15px;
   background-color: #f2f2f2;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
