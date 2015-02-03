@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livescore">
+    <meta name="author" content="Condor Themes">
+    <link rel="icon" href="js/bootstrap/favicon.ico">
+    <title>Livescore</title>
+    
+    <!-- Global Style links-->
+    
+      <!-- LSicons-->
+      <link rel="stylesheet" href="js/lsicons/style.css" />
+      
+      <!-- Flags Sprites-->
+      <link rel="stylesheet" href="js/flags/flags.css" />
+      
+      <!-- Owl Carousel -->
+      <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
+            
+      <!-- Custom styles for this template -->
+      <link rel="stylesheet" href="css/style.css" />
+      
+    <!--End Global Style-->
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <header class="header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="img/ls-logo.png" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <form class="navbar-form navbar-left" role="search">
+            <div class="input-group input-search">
+              <input type="text" class="form-control" placeholder="Arsenal, Rooney, Premier League...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown alerts"><a href="#"><span class="icon-bell"><span class="badge live">5</span></span></a></li>
+            <li class="dropdown notifications">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-comment"><span class="badge primary">3</span></span></a>
+              <ul class="dropdown-menu custom" role="menu">
+                <li>
+                  <div class="dropdown-title">Notifications (3)<div class="tools"><a href="#" class="icon"><span class="icon glyphicon glyphicon-cog"></span></a></div></div>
+                  <div class="notifications-list ls-scrollbar">
+                    <ul>
+                      <li class="highlight">
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">Congratulations ! </span>
+                          <p class="message">New Prediction Contest Grid is available. Play now !</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                      <li class="highlight">
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">YOUNITED</span>
+                          <p class="message">real meme si jsuis pour le barca</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">Congratulations ! </span>
+                          <p class="message">You won this month predictions contest</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="avatar img-circle" src="img/player_placeholder.png">
+                          <span class="title">Congratulations ! </span>
+                          <p class="message">You won this month predictions contest</p>
+                          <span class="date">19/05 15h19</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="view-all">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown settings">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></a>
+              <ul class="dropdown-menu custom" role="menu">
+                <li>
+                  <div class="dropdown-title">Settings</div>
+                  <div class="field time-zone">
+                    <label for="time-zone">Time Zone</label>
+                    <div class="select-component">
+                      <select name="time-zone" id="time-zone">
+                        <option value="1" selected>15h09 UTC+2 Madrid</option>
+                        <option value="1">15h09 UTC+2 Madrid</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field odds-type">
+                    <label for="time-zone">Odds Type</label>
+                    <div class="select-component">
+                      <select name="time-zone" id="time-zone">
+                        <option value="1" selected>Decimal Odds</option>
+                        <option value="1">Decimal Odds</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-volume-up"></span></a></li>
+            <!--User dropdown-->
+            <li class="user dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="img/user.jpg" />sebastien au. <span class="icon-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><span class="icon glyphicon glyphicon-user"></span>My account</a></li>
+                <li><a href="#"><span class="icon icon-prono"></span>My predictions</a></li>
+                <li><a href="#"><span class="icon icon-cup"></span>Prediction Contest</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-wrench"></span>Webmaster zone</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-edit"></span>Contact</a></li>
+                <li><a href="#"><span class="icon glyphicon glyphicon-off"></span>Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <nav class="navbar navbar-inverse">
+      <div class="loading-bar" style="width: 21%;"></div>
+      <div class="container">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="sprite football"></span> Football</a></li>
+            <li><a href="#"><span class="sprite tennis"></span> Tennis</a></li>
+            <li><a href="#"><span class="sprite rugby"></span> Rugby</a></li>
+            <li><a href="#"><span class="sprite handball"></span> Handball</a></li>
+            <li class="dropdown dropdown-inverted">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="icon-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><span class="sprite basketball"></span> Basketball</a></li>
+                <li><a href="#"><span class="sprite volleyball"></span> Volleyball</a></li>
+                <li><a href="#"><span class="sprite icehockey"></span> Ice Hockey</a></li>
+                <li><a href="#"><span class="sprite baseball"></span> Baseball</a></li>
+                <li><a href="#"><span class="sprite a-football"></span> American Football</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Streaming</a></li>
+            <li><a href="#">Prediction Contest</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right social-nav">
+            <li><a href="#"><span class="icon-apple"></span></a></li>
+            <li><a href="#"><span class="icon-android"></span></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <li><a href="#"><span class="icon-twitter"></span></a></li>
+            <li><a href="#"><span class="icon-googleplus"></span></a></li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+    <div class="container">
+      
+      <div class="wrapper row">
+        <div class="left-sidebar col-xs-2">
+          
+        </div>
+        <main class="main col-xs-10">
+          
+          <ol class="breadcrumb">
+            <li><a href="#">Foot en direct</a></li>
+            <li><a href="#">France</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="team" src="img/sprites/psg.png">PSG <span class="icon-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Ajaccio</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Bastia	</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Bordeaux</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Evian</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Guingamp</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Lille</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Lorient</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Lyon</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Monaco</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Montpellier</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Nantes</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Nice</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">OM</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">PSG</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Reims</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Rennes</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Sochaux</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">St Etienne</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Toulouse</a></li>
+                <li><a href="#"><img class="team" src="img/sprites/psg.png">Valenciennes</a></li>
+              </ul>            
+            </li>
+            <li class="active">Summary</li>
+          </ol>
+          
+          
+          
+          
+          <div class="content-wrapper row">
+            <div class="content">
+              	     
+              
+            </div>
+
+            <!--BEGIN RIGHT SIDEBAR -->
+            <div class="right-sidebar">
+                
+                
+                
+                  
+                  
+                  <div class="panel panel-condensed panel-default news-block">
+                    <div class="panel-heading">
+                      News in brief
+                    </div>
+                      
+                      <div class="latest-news">
+                        <ul>
+                          <li>10/05 <a href="#">- Helena Costa : première femme entraîneur en...</a></li>
+                          <li>09/05 <a href="#">- Cote et Matchs Ligue 1 : Les affiches de la 37e...</a></li>
+                          <li>08/05 <a href="#">- La liste des 23 du Brésil pour la Coupe du...</a></li>
+                          <li>07/05 <a href="#">- Cote PSG Rennes : Le calice jusqu'à la lie ?</a></li>
+                        </ul>
+                      </div>
+                    <a href="#" class="all-news"><span class="icon-caret-right"></span> All News</a>
+                  </div>      
+                  
+                  
+                  
+            </div>
+            <!--END RIGHT SIDEBAR -->
+            
+          </div>
+            <div class="clearfix"></div>
+        </main>
+      </div>
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="container">
+        <div class="top-footer">
+          <div class="row">
+           
+           
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Utilisation</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Livescore gratuit</a></li>
+            <li><a href="#">Recrutement</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.js"></script>
+    <script src="js/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+
+        /*Calendar Button*/
+        var dp_button = $(".calendar-button");
+
+        $('.calendar-button input').datepicker({
+            beforeShow: function (event, ui) {
+              setTimeout(function () {
+                ui.dpDiv.css({ left: (dp_button.offset().left ), top: ((dp_button.offset().top + dp_button.height()) + 10) });  
+              }, 1);   
+            }
+        });
+
+        dp_button.on("click", function() {
+            $(".calendar-button input").datepicker("show");
+        });
+
+        /*Sortable*/
+        $( ".sortable-ul" ).sortable();
+        $( ".sortable-ul" ).disableSelection();
+        
+        /*Tooltips*/
+        $('.ttip, [data-toggle="tooltip"]').tooltip();
+
+        /*Popover*/
+        $('[data-popover="popover"]').popover();
+        
+        /*DatePicker*/
+        //Dates to mark
+        var mark_dates = ["2014-11-21","2014-11-15","2014-11-11","2014-11-10"];
+        
+        $("#datepicker").datepicker({
+          dateFormat: 'yy-mm-dd',
+          showOtherMonths: true,
+          selectOtherMonths: true,
+          beforeShowDay: function(date) {
+            var m = date.getMonth(), d = date.getDate(), y = date.getFullYear();
+            var ndate = y + '-' + (m+1) + '-' + d;
+            
+            if($.inArray(ndate, mark_dates) != -1) {
+               return [true, 'marked-date', 'tooltip text'];
+            } else {
+               return [true, '', ''];
+            }
+          }
+        });
+        
+        /*Prevent Dropdown Custom Menus Closes*/
+        $('.settings.dropdown .dropdown-menu').click(function(e) {
+          e.stopPropagation();
+        });
+        
+        var owl = $("#matches-slider1 .matches .inner");
+ 
+        owl.owlCarousel({
+          autoWidth:true,
+          pagination: false,
+          navigation: false,
+          dots: false,
+        });
+ 
+        $("#matches-slider1 .prev.control").click(function(){
+          owl.trigger('prev.owl.carousel');
+        });
+        
+        $("#matches-slider1 .next.control").click(function(){
+          owl.trigger('next.owl.carousel');
+        });
+
+        var matches_live = $(".match-slider-inverse .matches .inner");
+ 
+        matches_live.owlCarousel({
+          autoWidth: true,
+          pagination: false,
+          nav: false,
+          dots: false,
+        });
+ 
+        $(".match-slider-inverse .prev.control").click(function(){
+          matches_live.trigger('prev.owl.carousel');
+        });
+        
+        $(".match-slider-inverse .next.control").click(function(){
+          matches_live.trigger('next.owl.carousel');
+        });
+        
+        $(".match-slider-inverse .toggle-right").click(function(){
+          var toggle = $(this);
+          var cont = $(this).parents(".match-slider-inverse");
+          
+          if( toggle.hasClass("closed") ){
+            cont.css({'position':'static'});
+            cont.animate({width:'100%'},500,function(){
+              toggle.removeClass("closed").html('<span class="icon-caret-double-left"></span>');
+            });
+           
+          }else{
+            cont.animate({width:'25px'},500,function(){
+              $(this).css({'position':'absolute'});
+              toggle.addClass("closed").html('<span class="icon-caret-double-right"></span>');
+            });
+          }
+        });
+        
+      });
+    </script>
+  </body>
+</html>
