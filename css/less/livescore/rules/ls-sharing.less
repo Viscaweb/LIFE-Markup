@@ -1,8 +1,5 @@
 /*sharing*/
 .sharing{
-	padding: 21px 0;
-	background-color: darken(@ls-light-color, 3%);
-  margin: 0;
   
   iframe{
     margin: 0;
@@ -10,12 +7,17 @@
     margin-right: 20px;
   }
   
-  > div{
+  > div {
+    padding: 21px 0;
+    background-color: darken(@ls-light-color, 3%);
+    margin: 0;
+
     > div{
-      vertical-align: top !important;
+      > div{
+        vertical-align: top !important;
+      }
     }
   }
-  
   #twitter-widget-0{
     height: 65px !important;
   }  

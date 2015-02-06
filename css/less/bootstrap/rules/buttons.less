@@ -4,8 +4,10 @@
   line-height: 16px;
   padding: (@padding-large-vertical - 1) (@padding-base-horizontal - 1); 
  
-  span{
-    color: darken(@ls-light-color, 28%);
+  span{ 
+    &.icon, &.icon-caret-down, &.icon-caret-up, &.icon-caret-left, &.icon-caret-right {
+      color: darken(@ls-light-color, 28%);
+    }
   }
 
   &:focus{
@@ -15,7 +17,6 @@
   &.btn-lg{
     font-size: @font-size-large;
     padding: (@padding-large-vertical + 3) (@padding-large-horizontal + 2);
-    font-weight: bold;
   }
 
   &.btn-sm{
@@ -169,7 +170,7 @@
   text-align: left;
   border:1px solid darken(@ls-light-color, 12%) !important;
 
-  span{
+  span.icon{
     float: right;
     line-height: @font-size-medium;
   }

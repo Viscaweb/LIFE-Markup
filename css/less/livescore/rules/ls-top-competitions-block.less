@@ -34,8 +34,14 @@
           
           &.open{
             > a{
+              border-bottom-color: darken(@brand-primary, 3.8%);
+              
               .icon-caret-down{
                 color: @ls-light-color;
+              }
+
+              &:hover{
+                background-color: @brand-primary;
               }
             }
             

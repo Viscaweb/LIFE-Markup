@@ -55,6 +55,7 @@
         left: 0;
         position: relative;
         display: block;
+        font-size: 0;
         
         .owl-stage{
           //width: auto !important;
@@ -66,7 +67,7 @@
     .match{
       cursor: pointer;
       padding: 6px 20px;
-      //float: left;
+      display: inline-block;
       border-right: 1px solid darken(@ls-light-color, 8.5%);
       background: darken(@ls-light-color, 1.5%);
       
@@ -234,11 +235,18 @@
         display: block;
         
         span{
-          background: url("@{ls-image-live-spot}") no-repeat 0 4px;
-          padding-left: 11px;
           text-transform: uppercase;
           color: @ls-light-color;
           display: block;
+        }
+      }
+
+      &.live{
+        h4, .h4{
+          span{
+            background: url("@{ls-image-live-spot}") no-repeat 0 4px;
+            padding-left: 11px;
+          }
         }
       }
     }

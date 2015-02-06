@@ -164,6 +164,7 @@
 			list-style: none;
 
 			li{
+
 				a{
 					padding: 3px 21px;
 
@@ -172,13 +173,35 @@
     				margin-top: -5px;
     				max-width: 18px;
 					}
+
+					&.open{
+						background-color: lighten(@ls-grey, 72%);
+		        border-left: 3px solid @brand-primary; 
+		        padding-left: 18px;
+
+		        &:hover{
+		        	color: @ls-light-color;
+		        	background-color: @brand-primary;
+
+		        	&:before{
+		        		color: darken(@ls-light-color,17%); 
+		        	}
+		        }
+
+		        &:before{
+		        	color: darken(@ls-light-color,40%);
+		        }
+					}		
 				}
+
 				.third-menu{
 					padding: 0;
 					list-style: none;
           background-color: lighten(@ls-grey, 72%);
           border-left: 3px solid @brand-primary;
+
 					li{
+
 						a{
 							color: @link-color;
 							padding-left: 45px;
@@ -200,31 +223,54 @@
 								&.active{
 									color: @ls-fav-hover;
 								}
-							}
-							
+							}							
 						}
+
+						&.sub-menu{
+
+							&:before{
+								content: "\e60d";
+						    font-family: "LSicons";
+						    font-size: @font-size-small - 2;
+						    left: 32px;
+						    margin-top: 3px;
+						    position: absolute;
+						    color: darken(@ls-light-color,40%);
+						    top: 3px;
+							}
+						  
+							&.open:before{
+								content: "\e60b";
+							}
+
+							&:hover{
+
+								&:before{
+									color: darken(@ls-light-color,17%);
+								}
+							}
+						}
+
 						.fourth-menu{
 							padding: 0;
 							list-style: none;
+
 							li{
+
 								a{
 									padding-left: 62px;
 
 									&.pull-right{
 										padding-left: 0px !important;
 									}
-								}
-								
+								}							
 							}
 						}
 					}
 				}
 			}
-
-		}
-		
-	}
-	
+		}		
+	}	
 }
 
 .sidebar-nav-inverse{

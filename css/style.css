@@ -6284,7 +6284,11 @@ button.close {
   line-height: 16px;
   padding: 9px 11px;
 }
-.btn span {
+.btn span.icon,
+.btn span.icon-caret-down,
+.btn span.icon-caret-up,
+.btn span.icon-caret-left,
+.btn span.icon-caret-right {
   color: #b8b8b8;
 }
 .btn:focus {
@@ -6293,7 +6297,6 @@ button.close {
 .btn.btn-lg {
   font-size: 16px;
   padding: 13px 18px;
-  font-weight: bold;
 }
 .btn.btn-sm {
   padding: 6px 10px;
@@ -6431,7 +6434,7 @@ button.close {
   text-align: left;
   border: 1px solid #e0e0e0 !important;
 }
-.btn.spinner span {
+.btn.spinner span.icon {
   float: right;
   line-height: 15px;
 }
@@ -6910,7 +6913,14 @@ fieldset[disabled] .btn-facebook.active {
   font-weight: 600;
   z-index: 0;
   content: "Off";
-  right: 10px;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 23px;
+  top: 0;
+  text-align: right;
+  padding-right: 10px;
   color: #858585;
 }
 .switch-button input[type="checkbox"]:checked + span {
@@ -6934,7 +6944,9 @@ fieldset[disabled] .btn-facebook.active {
   z-index: 0;
   content: "On";
   color: #ffffff;
-  left: 10px;
+  left: 0;
+  text-align: left;
+  padding-left: 10px;
 }
 .switch-button.yes-no label:before {
   content: "No";
@@ -7242,6 +7254,9 @@ fieldset[disabled] .btn-facebook.active {
 }
 .nav-pills > li + li {
   margin-left: 0;
+}
+.nav-pills.nav-justified {
+  border-bottom: 0;
 }
 /*Fixed top navbar*/
 .header {
@@ -7929,7 +7944,8 @@ fieldset[disabled] .btn-facebook.active {
 .nav-tabs > li > a .badge {
   background-color: #5da400;
   margin-left: 5px;
-  padding: 3px 6px;
+  padding: 3px 5px;
+  line-height: 11px;
 }
 .nav-tabs > li.dropdown.open > a {
   color: #ffffff;
@@ -7940,7 +7956,6 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table {
   width: 100%;
-  border-bottom: 1px solid #fafafa;
   /*TR HIGHLIGHT STYLES*/
   /*TD HIGHLIGHT STYLES*/
   /*MY GAMES TABLES*/
@@ -9640,17 +9655,17 @@ span.sprite.webmaster-border {
   border-left: 1px solid #ededed;
 }
 /*sharing*/
-.sharing {
-  padding: 21px 0;
-  background-color: #f7f7f7;
-  margin: 0;
-}
 .sharing iframe {
   margin: 0;
   min-width: 65px;
   margin-right: 20px;
 }
-.sharing > div > div {
+.sharing > div {
+  padding: 21px 0;
+  background-color: #f7f7f7;
+  margin: 0;
+}
+.sharing > div > div > div {
   vertical-align: top !important;
 }
 .sharing #twitter-widget-0 {
@@ -9830,10 +9845,12 @@ span.sprite.webmaster-border {
   left: 0;
   position: relative;
   display: block;
+  font-size: 0;
 }
 .matches-slider .content .match {
   cursor: pointer;
   padding: 6px 20px;
+  display: inline-block;
   border-right: 1px solid #e9e9e9;
   background: #fbfbfb;
 }
@@ -9956,11 +9973,14 @@ span.sprite.webmaster-border {
 }
 .match-slider-inverse .slider-content > .title h4 span,
 .match-slider-inverse .slider-content > .title .h4 span {
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
-  padding-left: 11px;
   text-transform: uppercase;
   color: #ffffff;
   display: block;
+}
+.match-slider-inverse .slider-content > .title.live h4 span,
+.match-slider-inverse .slider-content > .title.live .h4 span {
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  padding-left: 11px;
 }
 .match-slider-inverse .control {
   background-color: #424749;
@@ -10252,8 +10272,14 @@ span.sprite.webmaster-border {
   background: #f8f8f8;
   border-bottom-color: #529100;
 }
+.top-competitions-block.panel .nav-pills > li.open > a {
+  border-bottom-color: #529100;
+}
 .top-competitions-block.panel .nav-pills > li.open > a .icon-caret-down {
   color: #ffffff;
+}
+.top-competitions-block.panel .nav-pills > li.open > a:hover {
+  background-color: #5da400;
 }
 .top-competitions-block.panel .nav-pills > li.open > .dropdown-menu {
   margin-top: -1px;
@@ -12733,10 +12759,19 @@ span.glyphicon-star.active {
 }
 .popover-partager .share-social .social-embeds {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   padding-left: 20px;
   vertical-align: top;
   border-left: 1px solid #e6e6e6;
+}
+.popover-partager .share-social .social-embeds > div {
+  vertical-align: top !important;
+}
+.popover-partager .share-social .social-embeds .twitter-share-button {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 77px;
+  margin-right: 10px;
 }
 .popover-partager .share-url {
   margin: 0;
@@ -12954,6 +12989,20 @@ span.glyphicon-star.active {
 }
 .team-form table tbody tr .score {
   width: 14% !important;
+}
+.team-over-under .nav-pills {
+  border-bottom: 0;
+}
+.team-over-under .nav-pills.teams {
+  position: relative;
+  top: -5px;
+}
+.team-over-under .nav-pills.teams > li {
+  margin-right: 5px;
+}
+.team-over-under .nav-pills.teams > li > img {
+  max-width: 28px;
+  max-height: 28px;
 }
 .discussion .panel-body ul {
   border: 0;
@@ -13201,6 +13250,10 @@ table.other-sport thead span.match-name {
 }
 table.other-sport thead tr th {
   vertical-align: middle;
+}
+table.other-sport thead.league-data > tr > th .tools span a.fav {
+  position: relative;
+  top: 1px;
 }
 table.other-sport tbody {
   border-top: 0;
@@ -16080,6 +16133,21 @@ ul.image-list li img {
   margin-top: -5px;
   max-width: 18px;
 }
+.sidebar-nav li .sub-menu li a.open {
+  background-color: #edeff0;
+  border-left: 3px solid #5da400;
+  padding-left: 18px;
+}
+.sidebar-nav li .sub-menu li a.open:hover {
+  color: #ffffff;
+  background-color: #5da400;
+}
+.sidebar-nav li .sub-menu li a.open:hover:before {
+  color: #d4d4d4;
+}
+.sidebar-nav li .sub-menu li a.open:before {
+  color: #999999;
+}
 .sidebar-nav li .sub-menu li .third-menu {
   padding: 0;
   list-style: none;
@@ -16106,6 +16174,22 @@ ul.image-list li img {
 }
 .sidebar-nav li .sub-menu li .third-menu li a .fav.active {
   color: #ffc600;
+}
+.sidebar-nav li .sub-menu li .third-menu li.sub-menu:before {
+  content: "\e60d";
+  font-family: "LSicons";
+  font-size: 10px;
+  left: 32px;
+  margin-top: 3px;
+  position: absolute;
+  color: #999999;
+  top: 3px;
+}
+.sidebar-nav li .sub-menu li .third-menu li.sub-menu.open:before {
+  content: "\e60b";
+}
+.sidebar-nav li .sub-menu li .third-menu li.sub-menu:hover:before {
+  color: #d4d4d4;
 }
 .sidebar-nav li .sub-menu li .third-menu li .fourth-menu {
   padding: 0;
