@@ -64,6 +64,10 @@
 		'icon-widget': '&#xe630;',
 		'icon-arrow-up-down': '&#xe631;',
 		'icon-prediction': '&#xe632;',
+		'icon-cake-candle': '&#xe633;',
+		'icon-man-height': '&#xe634;',
+		'icon-weight': '&#xe635;',
+		'icon-arrows-position': '&#xe636;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

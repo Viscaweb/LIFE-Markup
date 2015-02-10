@@ -137,7 +137,7 @@
     
 		.info{
 			margin-right: 46px;
-      width: 25%;
+      width: 38%;
 
 			.title{
       
@@ -164,7 +164,8 @@
 		.description{
 			display: table-cell;
       vertical-align: top;
-      padding: 10px 20px 10px 0;
+      padding: 10px 10px 10px 0;
+      width: 25%;
 
 			ul{
 				padding: 0;
@@ -175,8 +176,26 @@
 					font-size: @font-size-small - 1;
 					border-bottom: 1px solid darken(@ls-light-color,7%);
 
-					b{
-						color: lighten(@ls-dark-color,20%);
+					.icon{
+						margin-right: 5px;
+						font-size: @font-size-medium; 
+						color: lighten(@ls-dark-color, 35.3%);
+					}
+
+					span.info{
+						float: right;
+						margin: 0;
+						padding: 0;
+						width: auto;
+						font-size: @font-size-base;
+						color: darken(@ls-light-color, 23%);
+						cursor: pointer;
+						position: relative;
+						top: 3px;
+					}
+
+					span{
+						font-weight: @font-weight-semi-bold;
 					}
 				}
 			}

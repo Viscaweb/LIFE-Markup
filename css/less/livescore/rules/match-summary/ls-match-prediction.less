@@ -88,6 +88,63 @@
         font-weight: @font-weight-semi-bold;
         display: block;
       }
+
+      .notification{
+        position: relative;
+        padding: 12px;
+        padding-left: 62px;
+        border-bottom: 1px solid darken(@ls-light-color, 6%);
+        line-height: @font-size-xx-large + 1px;
+
+        > div.icon{
+          display: block;
+          left: 0;
+          top: 0;
+          text-align: center;
+          width: 43px;
+          height: 43px;
+          padding: 10px 0;
+          position: absolute;
+          background-color: darken(@ls-light-color, 6%);
+
+          > span{
+            font-size: @font-size-x-large;
+            line-height: @font-size-x-large;
+            vertical-align: middle;
+
+            &.glyphicon{
+              vertical-align: baseline;
+            }
+
+            &.icon-clock{
+              font-size: @font-size-xx-large + 2px;
+            }
+          }
+        }
+
+        > span{
+          font-weight: @font-weight-semi-bold;
+          color: lighten(@ls-dark-color, 20%);
+        }
+
+        &.prediction-won{
+          background-color: @ls-tr-won-bg;
+
+          > div.icon{
+            background-color: @active-green;
+            color: @ls-light-color;
+          }
+        }
+
+        &.prediction-lost{
+          background-color: @ls-tr-lost-bg;
+
+          > div.icon{
+            background-color: @ls-td-lost-bg;
+            color: @ls-light-color;
+          }
+        }
+      }
       
       .content{
         padding: 0 20px 15px;
@@ -127,6 +184,42 @@
       }
       
       &:last-child{ border-right: 0; }
+    }
+  }
+}
+
+.popover-prediction{
+  max-width: 455px;
+
+  .popover-content{
+    padding: 0;
+
+    > img{
+      float: left;
+    }
+
+    .title{
+      display: block;
+      font-size: @font-size-xx-large;
+      font-weight: @font-weight-semi-bold;
+      margin-bottom: 10px;
+    }
+
+    > div.content{
+      padding: 20px 20px 10px;
+      margin-left: 134px;
+
+      > p{
+        margin-bottom: 15px;
+      }
+    }
+
+    .btn{
+      min-width: 72px;
+
+      &:last-child{
+        margin-left: 10px;
+      }
     }
   }
 }

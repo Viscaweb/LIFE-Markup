@@ -205,6 +205,8 @@
         > a{        
           img.img-circle{
             margin-right: 10px;
+            max-width: 37px;
+            max-height: 37px;
           }
           
           span{
@@ -299,10 +301,25 @@
           &:hover{
             background-color: darken(@ls-greyblue-dark, 5%);
           }
+
+          span.sprite{
+            margin-right: 4px;
+          }
           
+        }
+
+        &.dropdown{
+
+          > a{
+
+            span.icon-caret-down{
+              margin-left: 4px;
+            }
+          }
         }
         
         &.dropdown.open{
+
           > a, > a:hover{
             background-color: darken(@ls-greyblue-dark, 5%);
           }

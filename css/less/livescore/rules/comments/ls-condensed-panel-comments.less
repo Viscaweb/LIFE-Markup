@@ -44,12 +44,13 @@
           h4, .name{
             font-size: 12px;
             margin-bottom: 7px;
+            display: inline-block;
+            .text-overflow(); 
+            width: 83px;
           }
           
           .tools{
-            top: 14px;
-            right: 0;
-            position: absolute;
+            float: right;
             background: @ls-light-color;
 
             h5, .date{
@@ -81,7 +82,10 @@
           .media-heading{
           
             .tools{
-            
+              position: absolute;
+              right: 0;
+              z-index: 1;
+
               h5, .date{
                 display: none;
               }

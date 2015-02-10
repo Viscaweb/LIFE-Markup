@@ -73,21 +73,22 @@
       </div><!-- /.container-fluid -->
     </nav>
     <nav class="navbar navbar-inverse">
+      <div class="loading-bar" style="width: 21%;"></div>
       <div class="container">
         <!-- Collect the nav links, forms, and other content for toggling -->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><span class="sprite football"></span> Football</a></li>
-            <li><a href="#"><span class="sprite tennis"></span> Tennis</a></li>
-            <li><a href="#"><span class="sprite rugby"></span> Rugby</a></li>
-            <li><a href="#"><span class="sprite handball"></span> Handball</a></li>
+            <li class="active"><a href="#"><span class="sprite football"></span>Football</a></li>
+            <li><a href="#"><span class="sprite tennis"></span>Tennis</a></li>
+            <li><a href="#"><span class="sprite rugby"></span>Rugby</a></li>
+            <li><a href="#"><span class="sprite handball"></span>Handball</a></li>
             <li class="dropdown dropdown-inverted">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="icon-caret-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others<span class="icon-caret-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#"><span class="sprite basketball"></span> Basketball</a></li>
-                <li><a href="#"><span class="sprite volleyball"></span> Volleyball</a></li>
-                <li><a href="#"><span class="sprite icehockey"></span> Ice Hockey</a></li>
-                <li><a href="#"><span class="sprite baseball"></span> Baseball</a></li>
-                <li><a href="#"><span class="sprite a-football"></span> American Football</a></li>
+                <li><a href="#"><span class="sprite basketball"></span>Basketball</a></li>
+                <li><a href="#"><span class="sprite volleyball"></span>Volleyball</a></li>
+                <li><a href="#"><span class="sprite icehockey"></span>Ice Hockey</a></li>
+                <li><a href="#"><span class="sprite baseball"></span>Baseball</a></li>
+                <li><a href="#"><span class="sprite a-football"></span>American Football</a></li>
               </ul>
             </li>
             <li><a href="#">Streaming</a></li>
@@ -1382,7 +1383,17 @@
                         <div class="choise">
                           <div class="btn-group">
                             <button class="btn btn-primary" type="button">1</button>
-                            <button class="btn btn-prediction" type="button">X</button>
+                            <button class="btn btn-prediction" type="button" data-popover="popover" data-container="body" data-html="true" data-placement="bottom" data-content="
+                              <img src='img/134x231.gif' alt='img'>
+                              <div class='content'>
+                                <span class='title'>Follow your predictions</span>
+                                <p>Cras justo odio, dapibus ac facilisis in, <b>egestas eget</b> quam. Morbi leo risus, porta ac consectetur ac,<a href='#'>link color</a> at eros. Morbi leo risus, <a href='#'>blue link hover</a> ac, vestibulum at eros. Fusce dapibus, tellus ac cursus</p>
+                                <div class='text-center'>
+                                  <a class='btn btn-default' href='#'>Login</a>
+                                  <a class='btn btn-primary' href='#'>Register</a>
+                                </div>
+                              </div>
+                              " data-template="<div class='popover popover-prediction'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>">X</button>
                             <button class="btn btn-prediction" type="button">2</button>
                           </div>
                           <div class="result"><span class="icon glyphicon glyphicon-time"></span> Result pending</div>
@@ -1401,6 +1412,18 @@
                         </div>
                       </div>
                       <div class="col-md-6">
+                        <!-- <div class="notification">
+                          <div class="icon"><span class="icon icon-clock"></span></div>
+                          <span>Result pending...</span>
+                        </div> -->
+                        <div class="notification prediction-won">
+                          <div class="icon"><span class="icon glyphicon glyphicon-ok"></span></div>
+                          <span>Prediction won !</span>
+                        </div>
+                        <!-- <div class="notification prediction-lost">
+                          <div class="icon"><span class="icon glyphicon glyphicon-remove"></span></div>
+                          <span>Prediction lost !</span>
+                        </div> -->
                         <span class="title h5">Trend from the community :</span>
                         <table class="table table-condensed table-striped">
                           <thead>
@@ -2073,64 +2096,66 @@
                       </div>
                     </div> 
                   </div>
-                  <div class="teams">
-                    <table class="circles">
-                      <tbody><tr>
-                        <td class="circle-info"><div class="team first"><div class="circle success"><span>4</span></div></div></td>
-                        <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
-                        <td class="circle-info"><div class="team fourth"><div class="circle danger"><span>0</span></div></div></td>
-                      </tr>
-                      <tr>
-                        <td class="title"><span class="win">WIN</span></td>
-                        <td class="title"><span class="draw">DRAW</span></td>
-                        <td class="title"><span class="lost">LOST</span></td>
-                      </tr>
-                    </tbody></table>
+                  <div class="panel-content">
+                    <div class="teams">
+                      <table class="circles">
+                        <tbody><tr>
+                          <td class="circle-info"><div class="team first"><div class="circle success"><span>4</span></div></div></td>
+                          <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                          <td class="circle-info"><div class="team fourth"><div class="circle danger"><span>0</span></div></div></td>
+                        </tr>
+                        <tr>
+                          <td class="title"><span class="win">WIN</span></td>
+                          <td class="title"><span class="draw">DRAW</span></td>
+                          <td class="title"><span class="lost">LOST</span></td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                    <table class="table table-condensed table-striped no-border">
+                      <tbody>                       
+                        <tr class="event-draw">
+                          <td class="event-outcome event-outcome-draw">D</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/cup2.png"></td>
+                          <td class="team1">Sevilla</td>
+                          <td class="score">0 - 0</td>
+                          <td class="team2">Villar.</td>
+                        </tr>
+                        <tr class="event-won">
+                          <td class="event-outcome event-outcome-won">W</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/eurocoup.png"></td>
+                          <td class="team1"><b>Sevilla</b></td>
+                          <td class="score">2 - 0</td>
+                          <td class="team2">Valenc.</td>
+                        </tr>
+                        <tr class="event-won">
+                          <td class="event-outcome event-outcome-won">W</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/cup2.png"></td>
+                          <td class="team1"><b>Sevilla</b></td>
+                          <td class="score">4 - 0</td>
+                          <td class="team2">Granada</td>
+                        </tr>
+                        <tr class="event-won">
+                          <td class="event-outcome event-outcome-won">W</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/eurocoup.png"></td>
+                          <td class="team1"><b>Sevilla</b></td>
+                          <td class="score">4 - 1</td>
+                          <td class="team2">Porto</td>
+                        </tr>
+                        <tr class="event-won">
+                          <td class="event-outcome event-outcome-won">W</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/cup2.png"></td>
+                          <td class="team1"><b>Sevilla</b></td>
+                          <td class="score">4 - 1</td>
+                          <td class="team2">Espany.</td>
+                        </tr>
+                      </tbody>                                                 
+                    </table>
                   </div>
-                  <table class="table table-condensed table-striped no-border">
-                    <tbody>                       
-                      <tr class="event-draw">
-                        <td class="event-outcome event-outcome-draw">D</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/cup2.png"></td>
-                        <td class="team1">Sevilla</td>
-                        <td class="score">0 - 0</td>
-                        <td class="team2">Villar.</td>
-                      </tr>
-                      <tr class="event-won">
-                        <td class="event-outcome event-outcome-won">W</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/eurocoup.png"></td>
-                        <td class="team1"><b>Sevilla</b></td>
-                        <td class="score">2 - 0</td>
-                        <td class="team2">Valenc.</td>
-                      </tr>
-                      <tr class="event-won">
-                        <td class="event-outcome event-outcome-won">W</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/cup2.png"></td>
-                        <td class="team1"><b>Sevilla</b></td>
-                        <td class="score">4 - 0</td>
-                        <td class="team2">Granada</td>
-                      </tr>
-                      <tr class="event-won">
-                        <td class="event-outcome event-outcome-won">W</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/eurocoup.png"></td>
-                        <td class="team1"><b>Sevilla</b></td>
-                        <td class="score">4 - 1</td>
-                        <td class="team2">Porto</td>
-                      </tr>
-                      <tr class="event-won">
-                        <td class="event-outcome event-outcome-won">W</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/cup2.png"></td>
-                        <td class="team1"><b>Sevilla</b></td>
-                        <td class="score">4 - 1</td>
-                        <td class="team2">Espany.</td>
-                      </tr>
-                    </tbody>                                                 
-                  </table>
                   <a class="view-more" href="#"><span class="icon-caret-right"></span>Team Profile</a>
                 </div>
                 
@@ -2153,64 +2178,66 @@
                       </div>
                     </div> 
                   </div>
-                  <div class="teams">
-                    <table class="circles">
-                      <tbody><tr>
-                        <td class="circle-info"><div class="team second"><div class="circle success"><span>2</span></div></div></td>
-                        <td class="circle-info"><div class="team fifth"><div class="circle gray3"><span>1</span></div></div></td>
-                        <td class="circle-info"><div class="team second"><div class="circle danger"><span>2</span></div></div></td>
-                      </tr>
-                      <tr>
-                        <td class="title"><span class="win">WIN</span></td>
-                        <td class="title"><span class="draw">DRAW</span></td>
-                        <td class="title"><span class="lost">LOST</span></td>
-                      </tr>
-                    </tbody></table>
+                  <div class="panel-content">
+                    <div class="teams">
+                      <table class="circles">
+                        <tbody><tr>
+                          <td class="circle-info"><div class="team second"><div class="circle success"><span>2</span></div></div></td>
+                          <td class="circle-info"><div class="team fifth"><div class="circle gray3"><span>1</span></div></div></td>
+                          <td class="circle-info"><div class="team second"><div class="circle danger"><span>2</span></div></div></td>
+                        </tr>
+                        <tr>
+                          <td class="title"><span class="win">WIN</span></td>
+                          <td class="title"><span class="draw">DRAW</span></td>
+                          <td class="title"><span class="lost">LOST</span></td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                    <table class="table table-condensed table-striped no-border">
+                      <tbody>
+                        <tr class="event-draw">
+                          <td class="event-outcome event-outcome-draw">D</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/cup2.png"></td>
+                          <td class="team1">Benfica</td>
+                          <td class="score">1 - 1</td>
+                          <td class="team2">Rio Ave</td>
+                        </tr>
+                        <tr class="event-won">
+                          <td class="event-outcome event-outcome-won">W</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/eurocoup.png"></td>
+                          <td class="team1"><b>Benfica</b></td>
+                          <td class="score">2 - 0</td>
+                          <td class="team2">Vitori.</td>
+                        </tr>
+                        <tr class="event-lost">
+                          <td class="event-outcome event-outcome-lost">L</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/cup2.png"></td>
+                          <td class="team1">Benfica</td>
+                          <td class="score">1 - 2</td>
+                          <td class="team2"><b>Juve</b></td>
+                        </tr>
+                        <tr class="event-lost">
+                          <td class="event-outcome event-outcome-lost">L</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/eurocoup.png"></td>
+                          <td class="team1">Benfica</td>
+                          <td class="score">0 - 1</td>
+                          <td class="team2"><b>Olhane.</b></td>
+                        </tr>
+                        <tr class="event-won">
+                          <td class="event-outcome event-outcome-won">W</td>
+                          <td class="date">21h00</td>
+                          <td class="logo"><img src="img/sprites/cup2.png"></td>
+                          <td class="team1"><b>Benfica</b></td>
+                          <td class="score">4 - 1</td>
+                          <td class="team2">Porto</td>
+                        </tr>
+                      </tbody>                                                 
+                    </table>
                   </div>
-                  <table class="table table-condensed table-striped no-border">
-                    <tbody>
-                      <tr class="event-draw">
-                        <td class="event-outcome event-outcome-draw">D</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/cup2.png"></td>
-                        <td class="team1">Benfica</td>
-                        <td class="score">1 - 1</td>
-                        <td class="team2">Rio Ave</td>
-                      </tr>
-                      <tr class="event-won">
-                        <td class="event-outcome event-outcome-won">W</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/eurocoup.png"></td>
-                        <td class="team1"><b>Benfica</b></td>
-                        <td class="score">2 - 0</td>
-                        <td class="team2">Vitori.</td>
-                      </tr>
-                      <tr class="event-lost">
-                        <td class="event-outcome event-outcome-lost">L</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/cup2.png"></td>
-                        <td class="team1">Benfica</td>
-                        <td class="score">1 - 2</td>
-                        <td class="team2"><b>Juve</b></td>
-                      </tr>
-                      <tr class="event-lost">
-                        <td class="event-outcome event-outcome-lost">L</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/eurocoup.png"></td>
-                        <td class="team1">Benfica</td>
-                        <td class="score">0 - 1</td>
-                        <td class="team2"><b>Olhane.</b></td>
-                      </tr>
-                      <tr class="event-won">
-                        <td class="event-outcome event-outcome-won">W</td>
-                        <td class="date">21h00</td>
-                        <td class="logo"><img src="img/sprites/cup2.png"></td>
-                        <td class="team1"><b>Benfica</b></td>
-                        <td class="score">4 - 1</td>
-                        <td class="team2">Porto</td>
-                      </tr>
-                    </tbody>                                                 
-                  </table>
                   <a class="view-more" href="#"><span class="icon-caret-right"></span>Team Profile</a>
                 </div>
                 

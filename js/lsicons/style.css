@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?qtpem9');
-	src:url('fonts/LSicons.eot?#iefixqtpem9') format('embedded-opentype'),
-		url('fonts/LSicons.woff?qtpem9') format('woff'),
-		url('fonts/LSicons.ttf?qtpem9') format('truetype'),
-		url('fonts/LSicons.svg?qtpem9#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?-xj98rm');
+	src:url('fonts/LSicons.eot?#iefix-xj98rm') format('embedded-opentype'),
+		url('fonts/LSicons.woff?-xj98rm') format('woff'),
+		url('fonts/LSicons.ttf?-xj98rm') format('truetype'),
+		url('fonts/LSicons.svg?-xj98rm#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -225,5 +225,21 @@
 
 .icon-prediction:before {
 	content: "\e632";
+}
+
+.icon-cake-candle:before {
+	content: "\e633";
+}
+
+.icon-man-height:before {
+	content: "\e634";
+}
+
+.icon-weight:before {
+	content: "\e635";
+}
+
+.icon-arrows-position:before {
+	content: "\e636";
 }
 
