@@ -25,12 +25,21 @@
       
       .icon.right{
         float: right;
-        line-height: 22px;
+        line-height: 23px;
         color: darken(@ls-light-color, 17%);
       }
       
       .icon.active{
         color: @brand-primary;
+      }
+      
+      &.option-icon {
+	      position: absolute;
+	      top: 0px;
+	      right: 0px;
+	      padding-left: 8px;
+	      padding-right: 8px;
+	      display: none;
       }
 
 			&.pull-right{
@@ -84,6 +93,13 @@
 				}
 			}
 		}
+		
+		&:hover {
+			
+			.option-icon {
+				display: block;
+			}
+		}
 
 
 		a{
@@ -105,6 +121,7 @@
         &.live-red{
          color: @ls-light-color !important;
         }
+		
 			}
 
 			&.dropdown-togle:before{
