@@ -522,10 +522,14 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="btn-group pull-right">
-                    <button type="button" class="btn btn-default"><span class="icon-caret-left"></span></button>
-                    <button type="button" class="btn btn-default dropdown-toggle"><span>Mon 2 Jun.</span><span class="icon-caret-down"></span></button>
-                    <button type="button" class="btn btn-default"><span class="icon-caret-right"></span></button>
+                  <div class="btn-group pull-right btn-group-date-selector">
+                    <input type="hidden" value="Mon 2 Jun" class="input-datepicker">
+                    <button type="button" class="btn btn-default btn-datepicker-day-before"><span class="icon-caret-left"></span></button>
+                    <button type="button" class="btn btn-default btn-datepicker-open">
+                      <span class="text-selected-date">Mon 2 Jun.</span>
+                      <span class="icon-caret-down"></span>
+                    </button>
+                    <button type="button" class="btn btn-default btn-datepicker-day-after"><span class="icon-caret-right"></span></button>
                   </div>
                 </div>
               </div>
@@ -681,10 +685,9 @@
                   </div>
                 </div>
                 <div class="col-md-3 text-right">
-                  <div class="btn-group calendar-button">
-                    <button type="button" class="btn btn-default large-icon"><span class="icon icon-calendar"></span> <span class="icon-caret-down"></span></button>
+                  <div class="btn-group calendar-button" data-position="bottom-right">
                     <input type="hidden" name="date">
-                    <span></span>
+                    <button type="button" class="btn btn-default large-icon btn-datepicker-open"><span class="icon icon-calendar"></span> <span class="icon-caret-down"></span></button>
                   </div>
                 </div>
               </div>
@@ -1099,6 +1102,10 @@
                         <input type="text" class="form-control" placeholder="Input warning">
                         <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
                       </div>
+                    </div>
+                    <div class="input-group calendar-button" data-position="bottom-right">
+                      <input type="text" aria-describedby="basic-addon1" placeholder="Username" class="form-control">
+                      <span id="basic-addon1" class="input-group-addon btn-datepicker-open"><span class="icon icon-calendar"></span></span>
                     </div>
                   </form>
                 </div>
@@ -2259,19 +2266,204 @@
       $( document ).ready(function() {
 
         /*Calendar Button*/
-        var dp_button = $(".calendar-button");
+        $(".calendar-button").each(function(){
+          var el = this;
+          var $el = $(this);
 
-        $('.calendar-button input').datepicker({
-            beforeShow: function (event, ui) {
-              setTimeout(function () {
-                ui.dpDiv.css({ left: (dp_button.offset().left ), top: ((dp_button.offset().top + dp_button.height()) + 10) });  
-              }, 1);   
+          $el.find('.btn-datepicker-open, input').data('el', $el);
+
+          $el.getDatePicker = function(){
+            var datePicker = $(this).find('input');
+
+            if( datePicker.hasClass('hasDatepicker') ){
+              return datePicker;
             }
+
+            datePicker.datepicker({
+              beforeShow: function (event, ui) {
+                setTimeout(function () {
+                  var dpDiv = ui.dpDiv;
+                  var dpInput = ui.input;
+                  var $el = dpInput.data('el');
+                  var dpPos = $el.data("position");
+                  var elPos = $el.offset();
+                  var dpDivPosition = {};
+
+                  switch( dpPos ){
+
+                    case "top-center":
+                      dpDivPosition = {
+                        left: (elPos.left + ($el.outerWidth(true) / 2) ) - (dpDiv.outerWidth(true) / 2),
+                        top: elPos.top - dpDiv.outerHeight(true)
+                      };
+                    break;
+
+                    case "top-right":
+                      dpDivPosition = {
+                        left: (elPos.left + $el.outerWidth(true)) - dpDiv.outerWidth(true),
+                        top: elPos.top - dpDiv.outerHeight(true)
+                      };
+                    break;
+
+                    case "top-left":
+                      dpDivPosition = {
+                        left: elPos.left,
+                        top: elPos.top - dpDiv.outerHeight(true)
+                      };
+                    break;
+
+                    case 'left-top':
+                      dpDivPosition = {
+                        left: elPos.left - dpDiv.outerWidth(true),
+                        top: elPos.top
+                      };
+                    break;
+
+                    case 'right-top':
+                      dpDivPosition = {
+                        left: elPos.left + $el.outerWidth(true),
+                        top: elPos.top
+                      };
+                    break;
+
+                    case 'bottom-center':
+                      dpDivPosition = {
+                        left: (elPos.left + ($el.outerWidth(true) / 2) ) - (dpDiv.outerWidth(true) / 2),
+                        top: (elPos.top + $el.outerHeight(true))
+                      };
+                    break;
+
+                    case 'bottom-right':
+                      dpDivPosition = {
+                        left: (elPos.left + $el.outerWidth(true)) - dpDiv.outerWidth(true),
+                        top: (elPos.top + $el.outerHeight(true))
+                      };
+                    break;
+
+                    /*Bottom - Left*/
+                    default:
+                      dpDivPosition = {
+                        left: elPos.left,
+                        top: (elPos.top + $el.outerHeight(true))
+                      };
+                    break;
+                  }
+
+                  ui.dpDiv.css( dpDivPosition );  
+                }, 1);   
+              }
+            });
+
+            return datePicker;
+          };
+
+          $(".btn-datepicker-open", el).click(function(){
+            var $el = $(this).data('el');
+            $el.getDatePicker().datepicker('show');
+          });
+
+          $("input", el).focus(function(){
+            var $el = $(this).data('el');
+            $el.getDatePicker().datepicker('show');
+          });
+
         });
 
-        dp_button.on("click", function() {
-            $(".calendar-button input").datepicker("show");
+        /*ButtonGroup Date Selector*/
+        $('.btn-group-date-selector').each(function(){
+
+          var base = this;
+          var $base = $(this);
+
+          $base.find('.btn-datepicker-open, .input-datepicker, .btn-datepicker-day-before, .btn-datepicker-day-after').data('base', $base);
+
+          /**
+           * Method to get the datepicker and initialise it only when needed
+           */
+          $base.getDatePicker = function(){
+
+            var datePicker = $(this).find('.input-datepicker');
+
+            if (datePicker.hasClass('hasDatepicker')){
+              return datePicker;
+            }
+
+            /**
+             * Initialise datepicker
+             */
+            datePicker.datepicker({
+              onSelect: function(dateText, ui) {
+                var dpInput = ui.input;
+                var $base = dpInput.data('base');
+                var currentDay = $base.getDatePicker().datepicker('option', 'dateFormat', 'D d M.').val();
+                $base.find('.text-selected-date').html(currentDay);
+              },
+              beforeShow: function (event, ui) {
+                setTimeout(function () {
+
+                  var dpDiv = ui.dpDiv;
+                  var dpInput = ui.input;
+
+                  dpDiv.addClass('ui-datepicker-with-border');
+
+                  var $base = dpInput.data('base');
+                  var $basePosition = $base.offset();
+
+                  var dpDivPositionLeft = $basePosition.left;
+                  dpDivPositionLeft += $base.outerWidth(true);
+                  dpDivPositionLeft -= dpDiv.outerWidth(true);
+
+                  var dpDivPositionTop = $basePosition.top;
+                  dpDivPositionTop += $base.outerHeight(true);
+
+                  dpDivPosition = {
+                    left: dpDivPositionLeft,
+                    top: dpDivPositionTop
+                  };
+
+                  ui.dpDiv.css(dpDivPosition);
+                }, 1);
+              }
+            });
+
+            var datePicker = this.getDatePicker();
+
+            return datePicker;
+
+          };
+
+          $base.dateIncreaseByDay = function (days){
+
+            var datePicker = this.getDatePicker();
+
+            var dateCurrent = datePicker.datepicker('getDate');
+            var dateNext = new Date(dateCurrent.getTime() + days * 86400 * 1000);
+            datePicker.datepicker('setDate', dateNext);
+
+            $('.ui-datepicker-current-day', datePicker.dpDiv).trigger("click");
+
+          };
+
+          /**
+           * Bind the actions
+           */
+          $base.find('.btn-datepicker-open').click(function(){
+            var $base = $(this).data('base');
+            $base.getDatePicker().datepicker('show');
+          });
+
+          $base.find('.btn-datepicker-day-after').click(function(){
+            var $base = $(this).data('base');
+            $base.dateIncreaseByDay(+1);
+          });
+
+          $base.find('.btn-datepicker-day-before').click(function(){
+            var $base = $(this).data('base');
+            $base.dateIncreaseByDay(-1);
+          });
+
         });
+
 
         /*Sortable*/
         $( ".sortable-ul" ).sortable();
