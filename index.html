@@ -188,7 +188,7 @@
           <ul class="sidebar-nav">
             <li>
               <a href="#"><i class="icon icon-football active"></i>All Matches</a>
-              <!-- <a href="#" class="pull-right"><span class="icon-calendar"></span></a> -->
+              <!-- <a href="javascript:;" class="pull-right calendar-button btn-datepicker-open" data-position="right-top"><input type="hidden" name="dp"><span class="icon-calendar"></span></a> -->
             </li>
             <li>
               <a href="#" class="live-red uppercase"><i class="icon-ellipse"></i>Live Now<span class="badge live pull-right">12</span></a>
@@ -2270,7 +2270,13 @@
           var el = this;
           var $el = $(this);
 
-          $el.find('.btn-datepicker-open, input').data('el', $el);
+          $el.find('input').data('el', $el);
+
+          if( $el.hasClass("btn-datepicker-open") ){
+            $el.data('el', $el);
+          }else{
+            $el.find('.btn-datepicker-open').data('el', $el);
+          }
 
           $el.getDatePicker = function(){
             var datePicker = $(this).find('input');
@@ -2357,10 +2363,21 @@
             return datePicker;
           };
 
-          $(".btn-datepicker-open", el).click(function(){
-            var $el = $(this).data('el');
-            $el.getDatePicker().datepicker('show');
-          });
+          if( $el.hasClass("btn-datepicker-open") ){
+
+            $el.click(function(){
+              var $el = $(this).data('el');
+              $el.getDatePicker().datepicker('show');
+            });  
+
+          } else {
+
+            $(".btn-datepicker-open", el).click(function(){
+              var $el = $(this).data('el');
+              $el.getDatePicker().datepicker('show');
+            });
+
+          }
 
           $("input", el).focus(function(){
             var $el = $(this).data('el');
