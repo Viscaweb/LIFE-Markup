@@ -8899,6 +8899,9 @@ fieldset[disabled] .btn-facebook.active {
 .table.league-selection {
   border: 1px solid #f5f5f5;
 }
+.table.league-selection tbody tr td {
+  vertical-align: middle;
+}
 .table.league-selection tbody tr td.number {
   text-align: right;
 }
