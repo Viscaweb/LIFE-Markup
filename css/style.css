@@ -13931,33 +13931,33 @@ table.squad-listing.avatars tbody tr td.player {
   margin-bottom: 16px;
   margin-top: 18px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group {
   display: table;
   margin: 0;
   padding: 10px 0;
   border-top: 1px solid #e6e6e6;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param .name {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group .name {
   padding-left: 0;
   font-weight: 600;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param .name .icon {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group .name .icon {
   margin-right: 15px;
   margin-left: 8px;
   vertical-align: middle;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param .value {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group .value {
   display: table-cell;
   padding-right: 0;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param:last-child {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group:last-child {
   border-bottom: 1px solid #e6e6e6;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group {
   display: table;
   width: 100%;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param .name {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group .name {
   padding-top: 10px;
   padding-bottom: 10px;
   float: none;
@@ -13965,10 +13965,10 @@ table.squad-listing.avatars tbody tr td.player {
   vertical-align: middle;
   line-height: 14px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param .name .icon {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group .name .icon {
   float: left;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param .value {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group .value {
   padding-left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -13977,11 +13977,11 @@ table.squad-listing.avatars tbody tr td.player {
   vertical-align: middle;
   text-align: right;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group {
   display: table;
   width: 100%;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .name {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .name {
   vertical-align: top;
   display: table-cell;
   float: none;
@@ -13991,7 +13991,7 @@ table.squad-listing.avatars tbody tr td.player {
   width: 30%;
   line-height: 28px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value {
   display: table-cell;
   vertical-align: middle;
   padding-top: 10px;
@@ -14000,67 +14000,67 @@ table.squad-listing.avatars tbody tr td.player {
   padding-left: 0;
   float: none;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .icon {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .icon {
   font-size: 15px;
   position: relative;
   top: 2px;
   color: #9e9e9e;
   margin-right: 9px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value input[type="text"] {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value input[type="text"] {
   height: 30px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .radio {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .radio {
   margin-top: 0;
   margin-bottom: 0;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .radio label {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .radio label {
   font-weight: 400;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .select-component {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component {
   display: inline-block;
   min-width: 145px;
   line-height: 18px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .select-component select {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component select {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .select-component:after {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component:after {
   line-height: 27px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .switch-button {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .switch-button {
   vertical-align: middle;
   margin-right: 10px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.width {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.width {
   text-align: left;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.width .input-group {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.width .input-group {
   max-width: 130px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.height {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.height {
   text-align: left;
   line-height: 28px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.height .input-group {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.height .input-group {
   margin-left: 8px;
   display: inline-table;
   max-width: 130px;
   vertical-align: middle;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.type-of-display > .divider {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.type-of-display > .divider {
   margin-bottom: 5px;
   min-height: 30px;
   line-height: 28px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.type-of-display .radio {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.type-of-display .radio {
   margin-right: 8px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.type-of-display .select-component {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.type-of-display .select-component {
   min-width: 145px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param:first-child {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group:first-child {
   border-top: 0;
 }
 .widget-creator-settings-validation > .row > div p.warning {
