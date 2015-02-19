@@ -14184,6 +14184,7 @@ main .livescore-widgets tbody tr td.icon img,
 main .matches-widgets tbody tr td.icon img {
   max-width: 28px;
   max-height: 28px;
+  margin-left: 6px;
 }
 main .fixtures-widgets tbody tr td.content,
 main .standings-widgets tbody tr td.content,
