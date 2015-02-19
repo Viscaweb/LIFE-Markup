@@ -2340,7 +2340,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 38px;
+  height: 35px;
   padding: 6px 12px;
   font-size: 13px;
   line-height: 1.42857143;
@@ -2392,7 +2392,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: 38px;
+  line-height: 35px;
   line-height: 1.42857143 \0;
 }
 input[type="date"].input-sm,
@@ -2517,7 +2517,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 47.5px;
+  padding-right: 43.75px;
 }
 .form-control-feedback {
   position: absolute;
@@ -2525,9 +2525,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
 }
 .input-lg + .form-control-feedback {
@@ -3996,8 +3996,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -4077,8 +4077,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 .navbar-btn.btn-sm {
   margin-top: 10px;
@@ -6961,6 +6961,8 @@ fieldset[disabled] .btn-facebook.active {
 .form-control {
   font-size: 12px;
   color: #4a4a4a;
+  padding: 6px 11px 9px;
+  line-height: 16px;
 }
 .form-control:focus {
   -webkit-box-shadow: 0 0 8px rgba(93, 164, 0, 0.25);
@@ -14201,7 +14203,6 @@ main .fixtures-widgets tbody tr td.content input,
 main .standings-widgets tbody tr td.content input,
 main .livescore-widgets tbody tr td.content input,
 main .matches-widgets tbody tr td.content input {
-  height: 34px;
   max-width: 58%;
   display: inline-block;
 }
