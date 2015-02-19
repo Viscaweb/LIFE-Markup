@@ -11100,6 +11100,9 @@ span.glyphicon-star.active {
 .ls-wizard > .tab-content .tab-pane > .row > div {
   padding: 25px 20px;
 }
+.ls-wizard > .tab-content .tab-pane > .row > div > .nav-pills {
+  margin-bottom: 28px;
+}
 .ls-wizard .navigation.wizard {
   margin: 0;
   padding: 0;
@@ -13900,12 +13903,6 @@ table.squad-listing.avatars tbody tr td.player {
 .widget-creator-heading > a.pull-right {
   line-height: 35px;
 }
-.widget-creator-type-of-widget > .row > div > .nav-pills {
-  margin-bottom: 28px;
-}
-.widget-creator-widget-subject > .row > div > .nav-pills {
-  margin-bottom: 28px;
-}
 .widget-creator-widget-subject > .row > div .search-competition label {
   font-size: 13px;
   font-weight: 600;
@@ -13921,9 +13918,6 @@ table.squad-listing.avatars tbody tr td.player {
 .widget-creator-settings-validation > .row > div .step-heading span.icon {
   margin-right: 5px;
   font-size: 11px;
-}
-.widget-creator-settings-validation > .row > div .nav-pills {
-  margin-bottom: 8px;
 }
 .widget-creator-settings-validation > .row > div .widget-parameters {
   margin-bottom: 19px;
