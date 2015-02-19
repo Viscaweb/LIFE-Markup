@@ -11094,6 +11094,12 @@ span.glyphicon-star.active {
   background-color: #ffffff;
   color: #5da400;
 }
+.ls-wizard > .tab-content .tab-pane > .row {
+  margin: 0;
+}
+.ls-wizard > .tab-content .tab-pane > .row > div {
+  padding: 25px 20px;
+}
 .ls-wizard .navigation.wizard {
   margin: 0;
   padding: 0;
@@ -13894,20 +13900,8 @@ table.squad-listing.avatars tbody tr td.player {
 .widget-creator-heading > a.pull-right {
   line-height: 35px;
 }
-.widget-creator-type-of-widget > .row {
-  margin: 0;
-}
-.widget-creator-type-of-widget > .row > div {
-  padding: 25px 20px;
-}
 .widget-creator-type-of-widget > .row > div > .nav-pills {
   margin-bottom: 28px;
-}
-.widget-creator-widget-subject > .row {
-  margin: 0;
-}
-.widget-creator-widget-subject > .row > div {
-  padding: 25px 20px;
 }
 .widget-creator-widget-subject > .row > div > .nav-pills {
   margin-bottom: 28px;
@@ -13923,12 +13917,6 @@ table.squad-listing.avatars tbody tr td.player {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 20px;
-}
-.widget-creator-settings-validation > .row {
-  margin: 0;
-}
-.widget-creator-settings-validation > .row > div {
-  padding: 25px 20px;
 }
 .widget-creator-settings-validation > .row > div .step-heading span.icon {
   margin-right: 5px;
