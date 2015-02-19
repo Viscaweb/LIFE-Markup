@@ -14164,6 +14164,12 @@ main .widget-conditions p:last-child {
 main .widget-conditions .important {
   color: #ff0000;
 }
+main .fixtures-widgets tbody tr td,
+main .standings-widgets tbody tr td,
+main .livescore-widgets tbody tr td,
+main .matches-widgets tbody tr td {
+  vertical-align: middle;
+}
 main .fixtures-widgets tbody tr td.icon,
 main .standings-widgets tbody tr td.icon,
 main .livescore-widgets tbody tr td.icon,
@@ -14211,6 +14217,12 @@ main .livescore-widgets tbody tr td.button,
 main .matches-widgets tbody tr td.button {
   text-align: right;
   max-width: 100%;
+}
+main .fixtures-widgets tbody tr td.button .btn-default,
+main .standings-widgets tbody tr td.button .btn-default,
+main .livescore-widgets tbody tr td.button .btn-default,
+main .matches-widgets tbody tr td.button .btn-default {
+  margin-right: 5px;
 }
 main .fixtures-widgets tbody tr td.button .btn-default span,
 main .standings-widgets tbody tr td.button .btn-default span,
