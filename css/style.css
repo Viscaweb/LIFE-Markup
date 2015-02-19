@@ -15968,7 +15968,7 @@ ul.image-list li img {
   width: 50%;
   text-align: right;
 }
-.streaming table tbody tr td.watch a i {
+.streaming table tbody tr td.watch span i {
   font-size: 17px;
   color: #ffffff;
   margin-right: 10px;

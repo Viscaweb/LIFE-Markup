@@ -2248,11 +2248,11 @@
 
 		if (video.type === 'youtube') {
 			html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/'
-				+ video.id + '?autoplay=1&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
+				+ video.id + '?autoplay=1&v=' + video.id + '"  allowfullscreen></iframe>';
 		} else if (video.type === 'vimeo') {
 			html = '<iframe src="http://player.vimeo.com/video/' + video.id + '?autoplay=1" width="' + width
 				+ '" height="' + height
-				+ '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+				+ '"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 		}
 
 		item.addClass('owl-video-playing');

@@ -40,7 +40,7 @@
           <form role="search" class="navbar-form navbar-left">
             <div class="input-group input-search">
               <input type="text" placeholder="Arsenal, Rooney, Premier League..." class="form-control"><span class="input-group-btn">
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></span>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></span>
             </div>
           </form>
           <ul class="nav navbar-nav navbar-right">
@@ -53,13 +53,13 @@
                   </div>
                   <div class="notifications-list ls-scrollbar">
                     <ul>
-                      <li class="highlight"><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle"><span class="title">Congratulations ! </span>
+                      <li class="highlight"><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle" alt="user avatar"><span class="title">Congratulations ! </span>
                           <p class="message">New Prediction Contest Grid is available. Play now !</p><span class="date">19/05 15h19</span></a></li>
-                      <li class="highlight"><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle"><span class="title">YOUNITED</span>
+                      <li class="highlight"><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle" alt="user avatar"><span class="title">YOUNITED</span>
                           <p class="message">real meme si jsuis pour le barca</p><span class="date">19/05 15h19</span></a></li>
-                      <li><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle"><span class="title">Congratulations ! </span>
+                      <li><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle" alt="user avatar"><span class="title">Congratulations ! </span>
                           <p class="message">You won this month predictions contest</p><span class="date">19/05 15h19</span></a></li>
-                      <li><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle"><span class="title">Congratulations ! </span>
+                      <li><a href="#"><img src="img/player_placeholder.png" class="avatar img-circle" alt="user avatar"><span class="title">Congratulations ! </span>
                           <p class="message">You won this month predictions contest</p><span class="date">19/05 15h19</span></a></li>
                     </ul>
                   </div><a href="#" class="view-all">View All</a>
@@ -82,7 +82,7 @@
                   <div class="field odds-type">
                     <label for="time-zone">Odds Type</label>
                     <div class="select-component">
-                      <select id="time-zone" name="time-zone">
+                      <select id="time-zone" name="time-zone2">
                         <option value="1" selected="">Decimal Odds</option>
                         <option value="1">Decimal Odds</option>
                       </select>
@@ -648,7 +648,7 @@
           <div class="row">
             <div class="col-md-9 left-column"><span class="title h3">Top competitions football</span>
               <div class="row">
-                <div class="col-md-4"><span class="h3"><img src="img/sprites/worldcup.png">Coupe du Monde</span>
+                <div class="col-md-4"><span class="h3"><img src="img/sprites/worldcup.png" alt="World Cup">Coupe du Monde</span>
                   <ul>
                     <li><a href="#">Foot en direct Coupe du Monde</a></li>
                     <li><a href="#">R&#233;sultat Coupe du Monde</a></li>
@@ -656,7 +656,7 @@
                     <li><a href="#">Classement Coupe du Monde</a></li>
                   </ul>
                 </div>
-                <div class="col-md-4"><span class="h3"><img src="img/sprites/ligue1.png">Ligue1</span>
+                <div class="col-md-4"><span class="h3"><img src="img/sprites/ligue1.png" alt="Ligue 1">Ligue1</span>
                   <ul>
                     <li><a href="#">Foot en direct Ligue 1</a></li>
                     <li><a href="#">R&#233;sultat Liguel 1</a></li>
@@ -664,7 +664,7 @@
                     <li><a href="#">Classement Ligue 1</a></li>
                   </ul>
                 </div>
-                <div class="col-md-4"><span class="h3"><img src="img/sprites/ldc.png">Ligue des Champions</span>
+                <div class="col-md-4"><span class="h3"><img src="img/sprites/ldc.png" alt="Ldc">Ligue des Champions</span>
                   <ul>
                     <li><a href="#">Foot en direct Ligue des Champions</a></li>
                     <li><a href="#">R&#233;sultat Ligue des Champions</a></li>
@@ -674,7 +674,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-4"><span class="h3"><img src="img/sprites/premiereleague.png">Premier League</span>
+                <div class="col-md-4"><span class="h3"><img src="img/sprites/premiereleague.png" alt="Premiere league">Premier League</span>
                   <ul>
                     <li><a href="#">Foot en direct Premier League</a></li>
                     <li><a href="#">R&#233;sultat Premier League</a></li>
@@ -682,7 +682,7 @@
                     <li><a href="#">Classement Premier League</a></li>
                   </ul>
                 </div>
-                <div class="col-md-4"><span class="h3"><img src="img/sprites/cup2.png">Liga</span>
+                <div class="col-md-4"><span class="h3"><img src="img/sprites/cup2.png" alt="Cup">Liga</span>
                   <ul>
                     <li><a href="#">Foot en direct Liga</a></li>
                     <li><a href="#">R&#233;sultat Liga</a></li>
@@ -690,7 +690,7 @@
                     <li><a href="#">Classement Liga</a></li>
                   </ul>
                 </div>
-                <div class="col-md-4"><span class="h3"><img src="img/sprites/seriea.png">Serie A</span>
+                <div class="col-md-4"><span class="h3"><img src="img/sprites/seriea.png" alt="Serie A">Serie A</span>
                   <ul>
                     <li><a href="#">Foot en direct Serie A</a></li>
                     <li><a href="#">R&#233;sultat Serie A</a></li>
@@ -726,9 +726,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 right-column"><img src="img/ls-logo-white.png">
+            <div class="col-md-3 right-column"><img src="img/ls-logo-white.png" alt="Site Logo">
               <p>Fusce sagittis eget purus vel hendrerit. Morbi fermentum semper risus. Phasellus vel efficitur dolor. Quisque vel lorem accumsan, ornare velit eget, ultricies lacus, um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
-              <div class="app-links"><img src="img/app-store.png"><img src="img/play-store.png"></div>
+              <div class="app-links"><img src="img/app-store.png" alt="AppStore"><img src="img/play-store.png" alt="PlayStore"></div>
             </div>
           </div>
         </div>
