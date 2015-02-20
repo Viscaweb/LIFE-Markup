@@ -2,6 +2,8 @@
 
 .loading{
   position: relative;
+  min-height: 60px;
+
   
   &:after{
     content: "";
@@ -18,7 +20,7 @@
   }
   
   &:before{
-    content: 'Loading...';
+    content: "";
     position: absolute;
     top: 50%;
     display: block;
@@ -53,4 +55,6 @@
     }
   }
 }
+
+
 

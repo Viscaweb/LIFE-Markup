@@ -100,7 +100,7 @@
 				display: block;
 			}
 		}
-
+		
 
 		a{
 			color: lighten(@ls-dark-color, 29%);
@@ -174,6 +174,7 @@
 				    }
 			  	}
 				}
+				
 			}		
 		}
 
@@ -189,8 +190,8 @@
 
 					img,span{
 						margin-right: 5px;
-    				margin-top: -5px;
-    				max-width: 18px;
+						margin-top: -5px;
+						max-width: 18px;
 					}
 
 					&.open{
@@ -204,15 +205,36 @@
 
 		        	&:before{
 		        		color: darken(@ls-light-color,17%); 
-		        	}
+		        	}	        	
 		        }
 
 		        &:before{
 		        	color: darken(@ls-light-color,40%);
 		        }
 					}		
+				
+				&.add-more {
+					color: @link-color;
+					
+					&:hover {
+						background: darken(@ls-light-color,10%); 
+					}
+					
+					
+					i {
+						margin-right: 5px;
+					}	
+		
 				}
-
+				
+				}
+				
+				&.item-placeholder{
+            	border: 1px dashed darken(@ls-light-color, 20%);
+            	padding: 12px 0;
+            	background: darken(@ls-light-color, 10%); 
+				}
+				
 				.third-menu{
 					padding: 0;
 					list-style: none;
