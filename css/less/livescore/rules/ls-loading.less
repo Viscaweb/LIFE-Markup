@@ -18,7 +18,7 @@
   }
   
   &:before{
-    content: 'Loading...';
+    content: "";
     position: absolute;
     top: 50%;
     display: block;
@@ -52,5 +52,12 @@
       margin-left: 34px;
     }
   }
+}
+
+
+.popover .popover-content {
+	&.loading {
+		min-height: 70px;
+	}
 }
 
