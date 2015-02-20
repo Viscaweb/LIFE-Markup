@@ -2490,7 +2490,9 @@
 
 
         /*Sortable*/
-        $( ".sortable-ul" ).sortable();
+        $( ".sortable-ul" ).sortable({
+			placeholder: "item-placeholder"
+	  	});
         $( ".sortable-ul" ).disableSelection();
         
         /*Tooltips*/
