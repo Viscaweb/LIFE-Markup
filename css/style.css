@@ -11228,54 +11228,52 @@ span.glyphicon-star.active {
   margin: 0;
   padding: 0;
 }
-.notifications-list > ul > li {
-  padding: 0;
+.notifications-list > ul > li.media {
+  padding: 15px 18px;
   list-style: none;
   display: block;
   border-bottom: 1px solid #f1f1f1;
+  border-top: 0 !important;
+  cursor: pointer;
 }
-.notifications-list > ul > li a {
-  display: block;
-  position: relative;
-  padding: 15px 20px 15px 75px;
+.notifications-list > ul > li.media .avatar {
+  padding-top: 2px;
+  margin-right: 9px;
 }
-.notifications-list > ul > li a img.avatar {
-  position: absolute;
-  left: 18px;
-  top: 15px;
+.notifications-list > ul > li.media .avatar img {
   max-height: 48px;
   max-width: 48px;
 }
-.notifications-list > ul > li a .title {
+.notifications-list > ul > li.media .media-body .meadia-heading {
   font-size: 12px;
   font-weight: 600;
   display: block;
   color: #303030;
   margin-bottom: 2px;
 }
-.notifications-list > ul > li a .message {
+.notifications-list > ul > li.media .media-body p {
   font-size: 12px;
   color: #5e5e5e;
   line-height: 15px;
   margin-bottom: 5px;
 }
-.notifications-list > ul > li a .date {
+.notifications-list > ul > li.media .media-body .date {
   display: block;
   font-size: 10px;
   color: #b8b8b8;
 }
-.notifications-list > ul > li.highlight a {
+.notifications-list > ul > li.media.highlight {
   background-color: #fff4ce;
 }
-.notifications-list > ul > li.highlight a .message {
+.notifications-list > ul > li.media.highlight .media-body p {
   font-weight: 600;
   color: #363636;
 }
-.notifications-list > ul > li:hover a {
+.notifications-list > ul > li.media:hover {
   background-color: #579a00;
 }
-.notifications-list > ul > li:hover a .title,
-.notifications-list > ul > li:hover a .message {
+.notifications-list > ul > li.media:hover .media-body .meadia-heading,
+.notifications-list > ul > li.media:hover .media-body p {
   color: #ffffff;
 }
 /*Base Tables*/
