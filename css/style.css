@@ -14337,6 +14337,12 @@ main .matches-widgets td.content span.empty {
   margin: 0;
   float: right;
 }
+.prediction-contest-grid .table tbody tr.event-won td.score,
+.last-predictions .table tbody tr.event-won td.score,
+.prediction-contest-grid .table tbody tr.event-lost td.score,
+.last-predictions .table tbody tr.event-lost td.score {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
 .season-gifts .table tbody tr td.place {
   text-align: center;
   min-width: 19%;
