@@ -15214,8 +15214,8 @@ ul.image-list li img {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin-bottom: 8px;
-  max-width: 104px;
-  max-height: 104px;
+  width: 104px;
+  height: 104px;
 }
 @media \0screen {
   .change-profile-image > .row .left-side .current-image img {
