@@ -258,9 +258,9 @@
             </a>
             <div class="profile-image">
               <img src="img/profile-img.jpg" alt="Profile Avatar">
-              <a href="#" data-toggle="modal" data-target="#modal-profile-image"><span class="icon glyphicon glyphicon-camera"></span></a>
-
-              <div class="modal fade" id="modal-profile-image">
+              <a href="#" class="modal-toggle"><span class="icon glyphicon glyphicon-camera"></span></a>
+            </div>
+                          <div class="modal fade" id="modal-profile-image">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -343,8 +343,6 @@
                   </div><!-- /.modal-content -->
                 </div>
               </div>
-
-            </div>
             <span class="display-name">sebastien au.</span>           
           </div>
           <ul class="nav nav-pills profile-nav">
@@ -1274,7 +1272,12 @@
     <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
-      
+
+        /*Profile Modal Trigger*/
+        $(".profile-image .modal-toggle").click(function(){
+          $("#modal-profile-image").modal();
+        });
+
         /*Sortable*/
         $( ".sortable-ul" ).sortable({
           placeholder: "item-placeholder"
