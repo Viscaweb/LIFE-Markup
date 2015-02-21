@@ -6521,6 +6521,29 @@ button.close {
   margin-left: 10px;
   margin-right: 5px;
 }
+.btn-group .select-component {
+  float: left;
+  display: inline-block;
+  font-style: normal;
+  border-color: #e0e0e0;
+}
+.btn-group .select-component select {
+  outline: none;
+}
+.btn-group .select-component.select-component-xs:after {
+  line-height: 20px;
+  width: 30px;
+}
+.btn-group .select-component.select-component-xs select {
+  color: #333333;
+  font-weight: 600;
+  padding: 0 6px 1px;
+  min-width: 160px;
+}
+.btn-group .btn + .select-component,
+.btn-group .select-component + .btn {
+  margin-left: -1px;
+}
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {

@@ -276,6 +276,36 @@
       margin-right: 5px;
     }
   }
+
+  .select-component{
+    float: left;
+    display: inline-block;
+    font-style: normal;
+    border-color: darken(@ls-light-color, 12%);
+
+    select{
+      outline: none;
+    }
+
+    &.select-component-xs{
+
+      &:after{
+        line-height: 20px;
+        width: 30px;
+      }
+
+      select{
+        color: lighten(@ls-dark-color, 20%);
+        font-weight: @font-weight-semi-bold;
+        padding: 0 6px 1px;
+        min-width: 160px;
+      }
+    }
+  }
+
+  .btn + .select-component, .select-component + .btn {
+    margin-left: -1px;
+  }
 }
 
 /*Custom Buttons*/
