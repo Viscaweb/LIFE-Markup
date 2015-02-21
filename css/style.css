@@ -2340,7 +2340,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 38px;
+  height: 35px;
   padding: 6px 12px;
   font-size: 13px;
   line-height: 1.428571429;
@@ -2392,7 +2392,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: 38px;
+  line-height: 35px;
   line-height: 1.428571429 \0;
 }
 input[type="date"].input-sm,
@@ -2517,7 +2517,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 47.5px;
+  padding-right: 43.75px;
 }
 .form-control-feedback {
   position: absolute;
@@ -2525,9 +2525,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
 }
 .input-lg + .form-control-feedback {
@@ -3996,8 +3996,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -4077,8 +4077,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 .navbar-btn.btn-sm {
   margin-top: 10px;
@@ -6602,14 +6602,15 @@ button.close {
   vertical-align: top;
   display: inline-block;
   margin-right: 20px;
-  max-width: 95px;
+  width: 95px;
 }
 .btn-selector-group .btn-selector-item .btn-selector {
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 20px 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: 100%;
 }
 .btn-selector-group .btn-selector-item .btn-selector.active {
   border-width: 4px;
@@ -6960,6 +6961,8 @@ fieldset[disabled] .btn-facebook.active {
 .form-control {
   font-size: 12px;
   color: #4a4a4a;
+  padding: 6px 11px 9px;
+  line-height: 16px;
 }
 .form-control:focus {
   -webkit-box-shadow: 0 0 8px rgba(93, 164, 0, 0.25);
@@ -8897,6 +8900,9 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.league-selection {
   border: 1px solid #f5f5f5;
+}
+.table.league-selection tbody tr td {
+  vertical-align: middle;
 }
 .table.league-selection tbody tr td.number {
   text-align: right;
@@ -10929,6 +10935,7 @@ span.glyphicon-star.active {
 }
 .loading {
   position: relative;
+  min-height: 60px;
 }
 .loading:after {
   content: "";
@@ -10944,7 +10951,7 @@ span.glyphicon-star.active {
   z-index: 2;
 }
 .loading:before {
-  content: 'Loading...';
+  content: "";
   position: absolute;
   top: 50%;
   display: block;
@@ -11093,6 +11100,15 @@ span.glyphicon-star.active {
 .ls-wizard > ul.nav > li.active > a .label {
   background-color: #ffffff;
   color: #5da400;
+}
+.ls-wizard > .tab-content .tab-pane > .row {
+  margin: 0;
+}
+.ls-wizard > .tab-content .tab-pane > .row > div {
+  padding: 25px 20px;
+}
+.ls-wizard > .tab-content .tab-pane > .row > div > .nav-pills {
+  margin-bottom: 28px;
 }
 .ls-wizard .navigation.wizard {
   margin: 0;
@@ -13894,24 +13910,6 @@ table.squad-listing.avatars tbody tr td.player {
 .widget-creator-heading > a.pull-right {
   line-height: 35px;
 }
-.widget-creator-type-of-widget > .row {
-  margin: 0;
-}
-.widget-creator-type-of-widget > .row > div {
-  padding: 25px 20px;
-}
-.widget-creator-type-of-widget > .row > div > .nav-pills {
-  margin-bottom: 28px;
-}
-.widget-creator-widget-subject > .row {
-  margin: 0;
-}
-.widget-creator-widget-subject > .row > div {
-  padding: 25px 20px;
-}
-.widget-creator-widget-subject > .row > div > .nav-pills {
-  margin-bottom: 28px;
-}
 .widget-creator-widget-subject > .row > div .search-competition label {
   font-size: 13px;
   font-weight: 600;
@@ -13924,18 +13922,9 @@ table.squad-listing.avatars tbody tr td.player {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.widget-creator-settings-validation > .row {
-  margin: 0;
-}
-.widget-creator-settings-validation > .row > div {
-  padding: 25px 20px;
-}
 .widget-creator-settings-validation > .row > div .step-heading span.icon {
   margin-right: 5px;
   font-size: 11px;
-}
-.widget-creator-settings-validation > .row > div .nav-pills {
-  margin-bottom: 8px;
 }
 .widget-creator-settings-validation > .row > div .widget-parameters {
   margin-bottom: 19px;
@@ -13948,33 +13937,33 @@ table.squad-listing.avatars tbody tr td.player {
   margin-bottom: 16px;
   margin-top: 18px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group {
   display: table;
   margin: 0;
   padding: 10px 0;
   border-top: 1px solid #e6e6e6;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param .name {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group .name {
   padding-left: 0;
   font-weight: 600;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param .name .icon {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group .name .icon {
   margin-right: 15px;
   margin-left: 8px;
   vertical-align: middle;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param .value {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group .value {
   display: table-cell;
   padding-right: 0;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters .param:last-child {
+.widget-creator-settings-validation > .row > div .widget-parameters .form-group:last-child {
   border-bottom: 1px solid #e6e6e6;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group {
   display: table;
   width: 100%;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param .name {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group .name {
   padding-top: 10px;
   padding-bottom: 10px;
   float: none;
@@ -13982,10 +13971,10 @@ table.squad-listing.avatars tbody tr td.player {
   vertical-align: middle;
   line-height: 14px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param .name .icon {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group .name .icon {
   float: left;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .param .value {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-options .form-group .value {
   padding-left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -13994,11 +13983,11 @@ table.squad-listing.avatars tbody tr td.player {
   vertical-align: middle;
   text-align: right;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group {
   display: table;
   width: 100%;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .name {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .name {
   vertical-align: top;
   display: table-cell;
   float: none;
@@ -14008,7 +13997,7 @@ table.squad-listing.avatars tbody tr td.player {
   width: 30%;
   line-height: 28px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value {
   display: table-cell;
   vertical-align: middle;
   padding-top: 10px;
@@ -14017,67 +14006,67 @@ table.squad-listing.avatars tbody tr td.player {
   padding-left: 0;
   float: none;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .icon {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .icon {
   font-size: 15px;
   position: relative;
   top: 2px;
   color: #9e9e9e;
   margin-right: 9px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value input[type="text"] {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value input[type="text"] {
   height: 30px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .radio {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .radio {
   margin-top: 0;
   margin-bottom: 0;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .radio label {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .radio label {
   font-weight: 400;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .select-component {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component {
   display: inline-block;
   min-width: 145px;
   line-height: 18px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .select-component select {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component select {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .select-component:after {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component:after {
   line-height: 27px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value .switch-button {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .switch-button {
   vertical-align: middle;
   margin-right: 10px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.width {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.width {
   text-align: left;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.width .input-group {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.width .input-group {
   max-width: 130px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.height {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.height {
   text-align: left;
   line-height: 28px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.height .input-group {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.height .input-group {
   margin-left: 8px;
   display: inline-table;
   max-width: 130px;
   vertical-align: middle;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.type-of-display > .divider {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.type-of-display > .divider {
   margin-bottom: 5px;
   min-height: 30px;
   line-height: 28px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.type-of-display .radio {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.type-of-display .radio {
   margin-right: 8px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param .value.type-of-display .select-component {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value.type-of-display .select-component {
   min-width: 145px;
 }
-.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .param:first-child {
+.widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group:first-child {
   border-top: 0;
 }
 .widget-creator-settings-validation > .row > div p.warning {
@@ -14178,6 +14167,12 @@ main .widget-conditions p:last-child {
 main .widget-conditions .important {
   color: #ff0000;
 }
+main .fixtures-widgets tbody tr td,
+main .standings-widgets tbody tr td,
+main .livescore-widgets tbody tr td,
+main .matches-widgets tbody tr td {
+  vertical-align: middle;
+}
 main .fixtures-widgets tbody tr td.icon,
 main .standings-widgets tbody tr td.icon,
 main .livescore-widgets tbody tr td.icon,
@@ -14190,6 +14185,7 @@ main .livescore-widgets tbody tr td.icon img,
 main .matches-widgets tbody tr td.icon img {
   max-width: 28px;
   max-height: 28px;
+  margin-left: 6px;
 }
 main .fixtures-widgets tbody tr td.content,
 main .standings-widgets tbody tr td.content,
@@ -14209,7 +14205,6 @@ main .fixtures-widgets tbody tr td.content input,
 main .standings-widgets tbody tr td.content input,
 main .livescore-widgets tbody tr td.content input,
 main .matches-widgets tbody tr td.content input {
-  height: 34px;
   max-width: 58%;
   display: inline-block;
 }
@@ -14225,6 +14220,12 @@ main .livescore-widgets tbody tr td.button,
 main .matches-widgets tbody tr td.button {
   text-align: right;
   max-width: 100%;
+}
+main .fixtures-widgets tbody tr td.button .btn-default,
+main .standings-widgets tbody tr td.button .btn-default,
+main .livescore-widgets tbody tr td.button .btn-default,
+main .matches-widgets tbody tr td.button .btn-default {
+  margin-right: 5px;
 }
 main .fixtures-widgets tbody tr td.button .btn-default span,
 main .standings-widgets tbody tr td.button .btn-default span,
@@ -16326,6 +16327,20 @@ ul.image-list li img {
 }
 .sidebar-nav li .sub-menu li a.open:before {
   color: #999999;
+}
+.sidebar-nav li .sub-menu li a.add-more {
+  color: #0053a8;
+}
+.sidebar-nav li .sub-menu li a.add-more:hover {
+  background: #e6e6e6;
+}
+.sidebar-nav li .sub-menu li a.add-more i {
+  margin-right: 5px;
+}
+.sidebar-nav li .sub-menu li.item-placeholder {
+  border: 1px dashed #cccccc;
+  padding: 12px 0;
+  background: #e6e6e6;
 }
 .sidebar-nav li .sub-menu li .third-menu {
   padding: 0;
