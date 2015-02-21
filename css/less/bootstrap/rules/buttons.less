@@ -350,12 +350,17 @@
   border-color: @ls-success-border;
   background: darken(@ls-light-color, 3%);
   outline: none;
+  border-right-width: 1px !important;
 
   &:hover{
     color: @ls-success-border;
     border-color: @ls-success-border - 18%;
     background: darken(@ls-light-color, 8%);
   }
+}
+
+.btn.btn-prediction-result + .btn{
+  margin-left: 0;
 }
 
 .btn-prediction-failed,.btn-prediction-failed:focus{

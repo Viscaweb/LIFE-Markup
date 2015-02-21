@@ -6587,12 +6587,16 @@ button.close {
   border-color: #5da400;
   background: #f7f7f7;
   outline: none;
+  border-right-width: 1px !important;
 }
 .btn-prediction-result:hover,
 .btn-prediction-result:focus:hover {
   color: #5da400;
   border-color: #4b9200;
   background: #ebebeb;
+}
+.btn.btn-prediction-result + .btn {
+  margin-left: 0;
 }
 .btn-prediction-failed,
 .btn-prediction-failed:focus {
