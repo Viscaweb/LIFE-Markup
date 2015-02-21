@@ -15302,6 +15302,41 @@ ul.image-list li img {
 }
 .change-profile-image > .row .options .custom-picture > .row > div:first-child {
   padding-right: 0;
+  text-align: center;
+}
+.change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: inline-block;
+  position: relative;
+  border: 3px solid transparent;
+  border-color: #5da400;
+}
+@media \0screen {
+  .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img img {
+  max-height: 46px;
+  max-width: 46px;
+}
+.change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img:after {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+  font-size: 14px;
+  color: #5da400;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
 }
 .change-profile-image > .row .options .custom-picture .add-file {
   cursor: pointer;
@@ -15392,6 +15427,26 @@ ul.image-list li img {
 }
 .change-profile-image > .row .options .my-teams ul > li .name {
   display: block;
+}
+.change-profile-image > .row .options .my-teams ul > li.selected-image .logo {
+  position: relative;
+  border: 3px solid transparent;
+  border-color: #5da400;
+}
+.change-profile-image > .row .options .my-teams ul > li.selected-image .logo img {
+  max-height: 44px;
+  max-width: 44px;
+}
+.change-profile-image > .row .options .my-teams ul > li.selected-image .logo:after {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+  font-size: 14px;
+  color: #5da400;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
 }
 /*Webmaster 2*/
 .webmaster-banner {

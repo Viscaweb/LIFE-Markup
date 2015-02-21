@@ -451,6 +451,34 @@ ul.image-list{
 
             &:first-child{
               padding-right: 0;
+              text-align: center;
+
+              &.selected-image{
+                .img{
+                  .border-radius(50%);
+                  display: inline-block;
+                  position: relative;
+                  border: 3px solid transparent;
+                  border-color: @brand-primary;
+
+                  img{
+                    max-height: 46px;
+                    max-width: 46px;
+                  }
+
+                  &:after{
+                    content: "\e013";
+                    font-family: @ls-bootstrap-icons-font-family;
+                    font-size: @font-size-normal;
+                    color: @brand-primary;
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    bottom: 4px;
+                    width: 100%;
+                  }
+                }
+              }
             }
           }
         }
@@ -551,6 +579,31 @@ ul.image-list{
 
             .name{
               display: block;
+            }
+
+            &.selected-image{
+              .logo{
+                position: relative;
+                border: 3px solid transparent;
+                border-color: @brand-primary;
+
+                img{
+                  max-height: 44px;
+                  max-width: 44px;
+                }
+
+                &:after{
+                  content: "\e013";
+                  font-family: @ls-bootstrap-icons-font-family;
+                  font-size: @font-size-normal;
+                  color: @brand-primary;
+                  position: absolute;
+                  display: block;
+                  left: 0;
+                  bottom: 4px;
+                  width: 100%;
+                }
+              }
             }
           }
         }
