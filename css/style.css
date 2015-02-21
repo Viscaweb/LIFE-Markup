@@ -14927,10 +14927,20 @@ main .content .league-list ul li span.name {
   font-weight: 600;
 }
 main .content .league-list ul li span.fav .icon {
+  cursor: pointer;
   float: right;
-  color: #ffc600;
+  color: #b0b0b0;
   margin-right: 15px;
   line-height: 34px;
+}
+main .content .league-list ul li span.fav .icon:hover {
+  color: #a1a1a1;
+}
+main .content .league-list ul li span.fav.active .icon {
+  color: #ffc600;
+}
+main .content .league-list ul li span.fav.active .icon:hover {
+  color: #f0ba00;
 }
 main .content .league-list ul li:nth-child(even) {
   background-color: #fcfcfc;

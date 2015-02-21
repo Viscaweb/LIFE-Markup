@@ -170,10 +170,25 @@ main{
             &.fav{
 
               .icon{
+                cursor: pointer;
                 float: right;
-                color: @ls-fav-hover;
+                color: darken(@ls-light-color,31%);
                 margin-right: 15px;
                 line-height: 34px; 
+
+                &:hover{
+                  color: darken(@ls-light-color,37%);
+                }
+              }
+
+              &.active{
+                .icon{
+                  color: @ls-fav-hover;
+
+                  &:hover{
+                    color: darken(@ls-fav-hover, 3%);
+                  }
+                }
               }
             }
 
