@@ -11001,6 +11001,9 @@ span.glyphicon-star.active {
   margin-top: -8px;
   margin-left: 34px;
 }
+.loading.dropdown-menu {
+  position: absolute;
+}
 *::-webkit-scrollbar {
   width: 10px;
 }
