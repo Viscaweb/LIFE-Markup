@@ -10803,6 +10803,26 @@ span.sprite.webmaster-border {
   font-size: 12px;
   line-height: 17px;
 }
+.empty-state {
+  background-color: #fbfbfb;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.empty-state > .icon {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 50px;
+  color: #f0f0f0;
+}
+.empty-state > p {
+  margin: 7px 0 30px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #5da400;
+}
 .panel-condensed .comments {
   padding: 0 14px;
   margin: 0;

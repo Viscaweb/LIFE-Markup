@@ -1,5 +1,6 @@
 
 .empty-block{
+
   &.panel{
     > .panel-body{
       text-align: center;
@@ -14,5 +15,28 @@
       }
       
     }
+  }
+}
+
+.empty-state{
+  background-color: darken(@ls-light-color, 1.7%);
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+
+  > .icon{
+    display: inline-block;
+    margin-top: 5px; 
+    font-size: 50px;
+    color: darken(@ls-light-color, 6%);
+  }
+
+  > p{
+    margin: 7px 0 30px;
+    font-size: @font-size-base;
+    font-weight: @font-weight-semi-bold;
+    text-transform: uppercase;
+    color: @active-green;
   }
 }
