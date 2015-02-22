@@ -14864,6 +14864,9 @@ main .content .form-section .info {
   line-height: 40px;
   padding-left: 0;
 }
+main .content .form-section .info > span {
+  cursor: default;
+}
 main .content .form-section .buttons {
   text-align: right;
 }
