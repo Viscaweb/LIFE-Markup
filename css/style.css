@@ -15860,8 +15860,17 @@ ul.image-list li img {
   width: 100%;
 }
 .featured-article .article-image .match-container .article-match-info {
+  position: relative;
   margin-bottom: 0;
   background-color: #454a4c;
+}
+.featured-article .article-image .match-container .article-match-info > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 .featured-article .article-image .match-container .article-match-info .team {
   color: #dfdfdf;
