@@ -16661,7 +16661,7 @@ ul.image-list li img {
   margin-top: 0;
   left: 17px;
   /*This is only a temporal solution*/
-  height: 300px;
+  max-height: 300px;
   overflow: auto;
 }
 .main .content-wrapper {
