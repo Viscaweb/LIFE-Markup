@@ -297,20 +297,28 @@
     padding-bottom: 0;
   
     .user-info{
-    
-      .prediction{
-        display: inline-block;
+
+      > div{
         vertical-align: top;
         padding-top: 2px;
         margin-left: 8px;
-        
+        display: inline-block;
+
         .name{
+          line-height: 45px;
           font-size: @font-size-base;
           font-weight: @font-weight-semi-bold;
           color: lighten(@ls-dark-color, 36%);
           margin-top: 0;
           display: block;
           margin-bottom: 7px;
+        }
+      }
+    
+      .prediction{
+        
+        .name{
+          line-height: @font-size-xx-large;
         }
         
         .btn-group-xs{

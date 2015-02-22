@@ -13205,19 +13205,23 @@ span.glyphicon-star.active {
   overflow: hidden;
   padding-bottom: 0;
 }
-.discussion .make-prediction .user-info .prediction {
-  display: inline-block;
+.discussion .make-prediction .user-info > div {
   vertical-align: top;
   padding-top: 2px;
   margin-left: 8px;
+  display: inline-block;
 }
-.discussion .make-prediction .user-info .prediction .name {
+.discussion .make-prediction .user-info > div .name {
+  line-height: 45px;
   font-size: 13px;
   font-weight: 600;
   color: #5c5c5c;
   margin-top: 0;
   display: block;
   margin-bottom: 7px;
+}
+.discussion .make-prediction .user-info .prediction .name {
+  line-height: 18px;
 }
 .discussion .make-prediction .user-info .prediction .btn-group-xs .btn {
   padding: 4px 9px;
