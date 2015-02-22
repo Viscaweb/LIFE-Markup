@@ -16055,6 +16055,9 @@ ul.image-list li img {
   margin: 10px 20px;
   display: block;
 }
+.streaming table tbody tr td {
+  vertical-align: middle;
+}
 .streaming table tbody tr td.icon {
   width: 5%;
 }
