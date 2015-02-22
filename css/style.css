@@ -15643,9 +15643,15 @@ ul.image-list li img {
   display: inline-block;
   float: right;
   margin-right: 20px;
+}
+.webmaster-content-section-2 .section-nav a {
   line-height: 33px;
-  font-size: 20px;
+  display: inline-block;
   color: #bebebe;
+}
+.webmaster-content-section-2 .section-nav a .icon {
+  vertical-align: middle;
+  font-size: 20px;
 }
 .webmaster-content-section-2 .features {
   padding: 0 20px;
