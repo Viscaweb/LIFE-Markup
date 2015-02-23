@@ -9663,6 +9663,9 @@ span.sprite.webmaster-border {
 .live-red {
   color: #e33000 !important;
 }
+.bg-grey {
+  background-color: #f9f9f9;
+}
 /*Player info*/
 .player .name {
   margin: 0;
