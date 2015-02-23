@@ -6891,7 +6891,7 @@ fieldset[disabled] .btn-facebook.active {
 }
 .switch-button {
   display: inline-block;
-  line-height: 17px;
+  line-height: 18px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -16401,7 +16401,7 @@ ul.image-list li img {
 .sidebar-nav li a:hover.live-red {
   color: #ffffff !important;
 }
-.sidebar-nav li a.dropdown-togle:before {
+.sidebar-nav li a.dropdown-toggle:before {
   content: "\e60d";
   font-family: "LSicons";
   font-size: 10px;
@@ -16410,7 +16410,7 @@ ul.image-list li img {
   position: absolute;
   color: #d4d4d4;
 }
-.sidebar-nav li a.dropdown-togle.open:before {
+.sidebar-nav li a.dropdown-toggle.open:before {
   content: "\e60b";
 }
 .sidebar-nav li a.sortable .sort {
@@ -16545,24 +16545,24 @@ ul.image-list li img {
 .sidebar-nav-inverse {
   background-color: #2e3436;
 }
-.sidebar-nav-inverse > li > a.dropdown-togle {
+.sidebar-nav-inverse > li > a.dropdown-toggle {
   color: #d1d4d5;
   padding: 5px 21px 3px;
   line-height: 20px;
 }
-.sidebar-nav-inverse > li > a.dropdown-togle.active .icon {
+.sidebar-nav-inverse > li > a.dropdown-toggle.active .icon {
   color: #5da400;
   margin-right: 5px;
   font-size: 16px;
 }
-.sidebar-nav-inverse > li > a.dropdown-togle:before {
+.sidebar-nav-inverse > li > a.dropdown-toggle:before {
   margin-top: 0;
   font-size: 10px;
 }
-.sidebar-nav-inverse > li > a.dropdown-togle:hover {
+.sidebar-nav-inverse > li > a.dropdown-toggle:hover {
   color: #ffffff;
 }
-.sidebar-nav-inverse > li > a.dropdown-togle:hover .icon {
+.sidebar-nav-inverse > li > a.dropdown-toggle:hover .icon {
   color: #ffffff;
 }
 .sidebar-nav-inverse > li > ul > li a {
