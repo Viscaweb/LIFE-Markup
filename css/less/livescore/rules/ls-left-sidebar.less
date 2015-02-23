@@ -139,19 +139,34 @@
 			}
       
 			&.sortable{
+
 					.sort{
-						margin-top: 3px;
+						margin-top: 2px;
 						position: absolute;
 						left: 5px;
 						top: 1px;
 						opacity: 0;
 						font-size: @font-size-small;						
 					}
+
 					.close{
-						opacity: 0;
+						display: none;
 						font-size: @font-size-small;
+						right: 4px;
+				    top: 1px;
+				    margin-top: 3px;
+				    position: absolute;
+				    color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
+				    text-shadow: none;
+				    opacity: 1;
+ 
+				    &:hover{
+				    	color: #fff;
+				    }
 					}
+
 				&:hover{
+
 					.sort{
 				    color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
 				    opacity: 1;
@@ -160,18 +175,9 @@
 				    	color: #fff;
 				    }
 					}
+
 					.close{
-				    right: 4px;
-				    top: 3px;
-				    margin-top: 3px;
-				    position: absolute;
-				    color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
-				    opacity: 1;
 				    display: block;
-				    text-shadow: none;
-				    &:hover{
-				    	color: #fff;
-				    }
 			  	}
 				}
 				

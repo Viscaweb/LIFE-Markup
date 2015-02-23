@@ -16417,7 +16417,7 @@ ul.image-list li img {
   content: "\e60b";
 }
 .sidebar-nav li a.sortable .sort {
-  margin-top: 3px;
+  margin-top: 2px;
   position: absolute;
   left: 5px;
   top: 1px;
@@ -16425,8 +16425,18 @@ ul.image-list li img {
   font-size: 12px;
 }
 .sidebar-nav li a.sortable .close {
-  opacity: 0;
+  display: none;
   font-size: 12px;
+  right: 4px;
+  top: 1px;
+  margin-top: 3px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+  opacity: 1;
+}
+.sidebar-nav li a.sortable .close:hover {
+  color: #fff;
 }
 .sidebar-nav li a.sortable:hover .sort {
   color: rgba(0, 0, 0, 0.2);
@@ -16437,17 +16447,7 @@ ul.image-list li img {
   color: #fff;
 }
 .sidebar-nav li a.sortable:hover .close {
-  right: 4px;
-  top: 3px;
-  margin-top: 3px;
-  position: absolute;
-  color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
   display: block;
-  text-shadow: none;
-}
-.sidebar-nav li a.sortable:hover .close:hover {
-  color: #fff;
 }
 .sidebar-nav li .sub-menu {
   padding: 0;
