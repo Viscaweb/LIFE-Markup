@@ -1,12 +1,14 @@
 table.other-sport{
 
-  thead{
+  thead, tbody tr th{
   
     span.match-name{
       color: darken(@ls-light-color, 16%) !important;
       font-weight: @font-weight-normal;
     }
-    
+  }
+
+  thead{
     tr{
       th{
         vertical-align: middle;
@@ -126,6 +128,14 @@ table.other-sport{
         }
       }
     }
+
+    &.header{
+      tr{
+        &:nth-child(2), td[rowspan]{
+          border-bottom: 0;
+        }
+      }
+    }
   }
   
   &.sport-baseball{
@@ -152,7 +162,7 @@ table.other-sport{
   
   &.sport-tennis{
   
-    thead{
+    thead, tbody{
     
       tr{
       

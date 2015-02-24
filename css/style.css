@@ -8026,6 +8026,7 @@ fieldset[disabled] .btn-facebook.active {
   padding: 0;
   font-size: 0;
   font-weight: 700 !important;
+  border-top: 0;
 }
 .table > thead.league-data > tr > th .country {
   text-transform: uppercase;
@@ -8167,7 +8168,7 @@ fieldset[disabled] .btn-facebook.active {
 .table tbody tr > th,
 .table tbody tr:nth-child(even) > th,
 .table tbody tr:nth-child(odd) > th {
-  background-color: #e4e4e4;
+  background-color: #eaeaea;
 }
 .table tbody tr > td.view-more,
 .table tbody tr:nth-child(even) > td.view-more,
@@ -8357,6 +8358,110 @@ fieldset[disabled] .btn-facebook.active {
 .table tbody tr:nth-child(odd).live.highlight td.score a {
   color: #ffffff;
 }
+.table tbody tr.league-data > th {
+  cursor: pointer;
+  background-color: #767e82;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+  padding: 0;
+  font-size: 0;
+  font-weight: 700 !important;
+  border-top: 0;
+}
+.table tbody tr.league-data > th .country {
+  text-transform: uppercase;
+  color: #d6d6d6;
+  font-weight: 400;
+}
+.table tbody tr.league-data > th a {
+  color: #ffffff;
+}
+.table tbody tr.league-data > th span {
+  color: rgba(0, 0, 0, 0.1);
+}
+.table tbody tr.league-data > th > .title {
+  display: inline-block;
+  font-size: 0;
+  padding: 0 2px;
+}
+.table tbody tr.league-data > th > .title > a,
+.table tbody tr.league-data > th > .title > span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 2px 4px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.table tbody tr.league-data > th > a.dropdown-toggle {
+  padding: 3px 7px;
+  line-height: 19px;
+  font-size: 12px;
+}
+.table tbody tr.league-data > th > a.dropdown-toggle i {
+  font-size: 10px;
+}
+.table tbody tr.league-data > th > a.dropdown-toggle:hover {
+  background-color: #4a4d4e;
+}
+.table tbody tr.league-data > th .tools {
+  float: right;
+  padding: 0 !important;
+  font-size: 0;
+}
+.table tbody tr.league-data > th .tools span {
+  display: inline-block;
+}
+.table tbody tr.league-data > th .tools span a.fav {
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 19px;
+}
+.table tbody tr.league-data > th .tools a {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #f5f5f5;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 12px;
+}
+.table tbody tr.league-data > th .tools a i {
+  font-size: 18px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.2);
+}
+.table tbody tr.league-data > th .tools a:hover {
+  background-color: #4a4d4e;
+  color: #ffffff;
+}
+.table tbody tr.league-data > th .tools a.fav {
+  vertical-align: middle;
+}
+.table tbody tr.league-data > th .tools a.fav span {
+  font-size: 15px;
+  display: inline-block;
+}
+.table tbody tr.league-data > th .tools a.active {
+  color: #5da400;
+}
+.table tbody tr.league-data > th .tools a.active.fav span {
+  font-size: 14px;
+  color: #ffc600;
+}
+.table tbody tr.league-data > th .tools a.active:hover {
+  color: #ffffff;
+}
+.table tbody tr.league-data > th .tools a.live i {
+  color: #e33000;
+}
+.table tbody tr.league-data:hover > th {
+  background-color: #6e7679 !important;
+}
+.table tbody tr.league-data.active > th > a.dropdown-toggle {
+  -webkit-box-shadow: 5px 0 0 #5da400 inset;
+  -moz-box-shadow: 5px 0 0 #5da400 inset;
+  box-shadow: 5px 0 0 #5da400 inset;
+}
 .table.table-condensed thead > tr th {
   border: 0;
   padding: 4px 7px;
@@ -8370,6 +8475,12 @@ fieldset[disabled] .btn-facebook.active {
   text-transform: none;
   padding: 0;
   font-size: 0;
+}
+.table.table-condensed tr th {
+  border: 0;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 600;
 }
 .table.table-condensed tr td {
   font-weight: 400;
@@ -8806,17 +8917,71 @@ fieldset[disabled] .btn-facebook.active {
 .table.matches tbody tr.highlight .score > a {
   color: #ffffff;
 }
+.table.matches tbody tr.league-data th {
+  border-bottom: 1px solid #999999;
+  padding: 0;
+  vertical-align: middle !important;
+}
+.table.matches tbody tr.league-data th .country {
+  text-transform: uppercase;
+  color: #d6d6d6;
+  font-weight: 400;
+}
+.table.matches tbody tr.league-data th a {
+  color: #ffffff;
+}
+.table.matches tbody tr.league-data th span {
+  color: rgba(0, 0, 0, 0.1);
+}
+.table.matches tbody tr.league-data th .tools {
+  float: right;
+  padding: 0;
+}
+.table.matches tbody tr.league-data th .tools span a.fav {
+  font-size: 14px;
+}
+.table.matches tbody tr.league-data th .tools a {
+  display: inline-block;
+  color: #f5f5f5;
+  font-weight: 400;
+}
+.table.matches tbody tr.league-data th .tools a i {
+  font-size: 18px;
+  line-height: 16px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.2);
+}
+.table.matches tbody tr.league-data th .tools a i.icon-standings {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.table.matches tbody tr.league-data th .tools a.active {
+  color: #5da400;
+}
+.table.matches tbody tr.league-data th .tools a.active.fav span {
+  color: #ffc600;
+  font-size: 14px;
+}
+.table.matches tbody tr.league-data th .tools a.active:hover {
+  color: #ffffff;
+}
+.table.matches tbody tr.league-data th .tools a.live i {
+  color: #e33000;
+}
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;
 }
 .table.matches.odds tbody tr td.tools {
   width: 10%;
 }
-.table.table-standing thead tr th {
+.table.table-standing thead tr th,
+.table.table-standing tbody tr th {
   border-bottom: 0;
   vertical-align: middle !important;
 }
-.table.table-standing thead tr th span.match-name {
+.table.table-standing thead tr th span.match-name,
+.table.table-standing tbody tr th span.match-name {
   color: #d6d6d6 !important;
   font-weight: 400;
 }
@@ -8964,7 +9129,8 @@ fieldset[disabled] .btn-facebook.active {
 .table.league-selection tbody tr td:first-child {
   padding: 8px;
 }
-.table.predictions thead.league-data tr th span.country span.icon {
+.table.predictions thead.league-data tr th span.country span.icon,
+.table.predictions tbody tr th span.country span.icon {
   color: #ffffff;
   font-size: 15px;
   line-height: 14px;
@@ -13397,10 +13563,12 @@ table.odds-goal-scorers > tbody > tr > td .table-slide .table tbody tr td {
   border-top: 1px solid #ffffff;
   background-color: rgba(0, 0, 0, 0.06) !important;
 }
-table.odds-goal-scorers thead tr th.logo {
+table.odds-goal-scorers thead tr th.logo,
+table.odds-goal-scorers tbody tr th.logo {
   width: 38%;
 }
-table.odds-goal-scorers thead tr th.logo img {
+table.odds-goal-scorers thead tr th.logo img,
+table.odds-goal-scorers tbody tr th.logo img {
   max-width: 20px;
   max-height: 20px;
   margin-right: 5px;
@@ -13452,7 +13620,8 @@ table.odds-goal-scorers tbody tr td:first-child {
   text-align: right;
 }
 /*Other Sports*/
-table.other-sport thead span.match-name {
+table.other-sport thead span.match-name,
+table.other-sport tbody tr th span.match-name {
   color: #d6d6d6 !important;
   font-weight: 400;
 }
@@ -13531,6 +13700,10 @@ table.other-sport tbody.live tr td.time img {
 table.other-sport tbody.live.paused tr td.time {
   background-image: url("../img/sprites/paused-spot.gif");
 }
+table.other-sport tbody.header tr:nth-child(2),
+table.other-sport tbody.header tr td[rowspan] {
+  border-bottom: 0;
+}
 table.other-sport.sport-baseball tbody tr td.teams {
   width: 20%;
 }
@@ -13543,20 +13716,24 @@ table.other-sport.sport-baseball tbody tr td.hits {
   box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
   padding-left: 5px;
 }
-table.other-sport.sport-tennis thead tr th img {
+table.other-sport.sport-tennis thead tr th img,
+table.other-sport.sport-tennis tbody tr th img {
   height: 20px;
   width: 20px;
   margin-right: 5px;
   margin-left: 2px;
 }
 table.other-sport.sport-tennis thead tr th i.icon-man,
-table.other-sport.sport-tennis thead tr th .icon-woman {
+table.other-sport.sport-tennis tbody tr th i.icon-man,
+table.other-sport.sport-tennis thead tr th .icon-woman,
+table.other-sport.sport-tennis tbody tr th .icon-woman {
   font-size: 15px;
   color: #8dc4ff;
   vertical-align: middle;
   display: inline-block;
 }
-table.other-sport.sport-tennis thead tr th i.icon-woman {
+table.other-sport.sport-tennis thead tr th i.icon-woman,
+table.other-sport.sport-tennis tbody tr th i.icon-woman {
   color: #ffaef7;
 }
 table.other-sport.sport-tennis tbody tr td.teams img {
@@ -13842,6 +14019,7 @@ table.squad-listing.avatars tbody tr td.player {
   text-align: center;
   font-weight: 700;
   font-size: 12px;
+  background-color: #e4e4e4;
 }
 .player-statistics table.player-statistics tbody tr th.competition {
   text-align: left;
@@ -13890,31 +14068,38 @@ table.squad-listing.avatars tbody tr td.player {
   font-size: 11px;
   margin-top: 15px;
 }
-.goals-statistics table thead tr th.date {
+.goals-statistics table thead tr th.date,
+.goals-statistics table tbody tr th.date {
   text-align: center;
   font-weight: 700;
   font-size: 12px;
 }
-.goals-statistics table thead tr th.statistics-title {
+.goals-statistics table thead tr th.statistics-title,
+.goals-statistics table tbody tr th.statistics-title {
   font-weight: 700;
   font-size: 12px;
   background: #ffffff;
   line-height: 47px;
   border-bottom: 1px solid #fafafa;
 }
-.goals-statistics table thead tr th.statistics-title > span {
+.goals-statistics table thead tr th.statistics-title > span,
+.goals-statistics table tbody tr th.statistics-title > span {
   line-height: 60px;
 }
-.goals-statistics table thead tr th.statistics-title .stat {
+.goals-statistics table thead tr th.statistics-title .stat,
+.goals-statistics table tbody tr th.statistics-title .stat {
   float: right;
   line-height: 20px;
 }
-.goals-statistics table thead tr th.statistics-title .stat span.icon {
+.goals-statistics table thead tr th.statistics-title .stat span.icon,
+.goals-statistics table tbody tr th.statistics-title .stat span.icon {
   font-size: 36px;
   color: #d7d7d7;
 }
 .goals-statistics table thead tr th.statistics-title .stat h1.result,
-.goals-statistics table thead tr th.statistics-title .stat .result {
+.goals-statistics table tbody tr th.statistics-title .stat h1.result,
+.goals-statistics table thead tr th.statistics-title .stat .result,
+.goals-statistics table tbody tr th.statistics-title .stat .result {
   font-size: 47px;
   font-weight: 300;
   display: inline-block;
@@ -14541,26 +14726,6 @@ main .matches-widgets td.content span.empty {
   position: relative;
   top: -1px;
 }
-.contest-standings .table thead.show-all tr th {
-  border: 0;
-  padding: 0;
-  background-color: #f3f3f3;
-}
-.contest-standings .table thead.show-all tr th > div {
-  padding: 8px 12px;
-  background: url("../img//user-dashboard/th-bg.png") repeat-x;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: none;
-  line-height: 16px;
-}
-.contest-standings .table thead.show-all tr th > div span {
-  font-size: 13px;
-  font-weight: 600;
-}
-.contest-standings .table thead.show-all tr th > div a {
-  margin-left: 30px;
-}
 .contest-standings .table tbody tr td.number {
   font-weight: 600;
   width: 3%;
@@ -14603,6 +14768,26 @@ main .matches-widgets td.content span.empty {
 }
 .contest-standings .table tbody tr.event-won td.player a {
   font-weight: 700;
+}
+.contest-standings .table tbody tr.show-all th {
+  border: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+.contest-standings .table tbody tr.show-all th > div {
+  padding: 8px 12px;
+  background: url("../img//user-dashboard/th-bg.png") repeat-x;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 16px;
+}
+.contest-standings .table tbody tr.show-all th > div span {
+  font-size: 13px;
+  font-weight: 600;
+}
+.contest-standings .table tbody tr.show-all th > div a {
+  margin-left: 30px;
 }
 .predictions-filter label {
   font-size: 14px;
@@ -16478,13 +16663,13 @@ ul.image-list li img {
 .sidebar-nav li .sub-menu li a.open:before {
   color: #999999;
 }
-.sidebar-nav li .sub-menu li a.add-more {
+.sidebar-nav li .sub-menu li.add-more a {
   color: #0053a8;
 }
-.sidebar-nav li .sub-menu li a.add-more:hover {
+.sidebar-nav li .sub-menu li.add-more a:hover {
   background: #e6e6e6;
 }
-.sidebar-nav li .sub-menu li a.add-more i {
+.sidebar-nav li .sub-menu li.add-more a i {
   margin-right: 5px;
 }
 .sidebar-nav li .sub-menu li.item-placeholder {
