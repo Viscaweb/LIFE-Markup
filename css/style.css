@@ -13311,6 +13311,10 @@ span.glyphicon-star.active {
   border-top: 1px solid #f0f0f0;
   margin-bottom: 0;
 }
+.head-to-head .table tbody tr td,
+.team-form .table tbody tr td {
+  vertical-align: middle;
+}
 .head-to-head .table tbody tr .date,
 .team-form .table tbody tr .date {
   width: 10%;
