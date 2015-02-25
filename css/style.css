@@ -9902,14 +9902,18 @@ span.sprite.webmaster-border {
   border-left: 1px solid #ededed;
 }
 /*sharing*/
+.sharing {
+  margin: 0 15px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  padding: 21px 0;
+}
 .sharing iframe {
   margin: 0;
   min-width: 65px;
   margin-right: 20px;
 }
 .sharing > div {
-  padding: 21px 0;
-  background-color: #f7f7f7;
   margin: 0;
 }
 .sharing > div > div > div {
