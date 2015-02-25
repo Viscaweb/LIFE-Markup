@@ -5015,7 +5015,7 @@ a.list-group-item-danger.active:focus {
   padding: 20px;
 }
 .panel-heading {
-  padding: 8px 20px;
+  padding: 8px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: -1;
   border-top-left-radius: -1;
@@ -5033,7 +5033,7 @@ a.list-group-item-danger.active:focus {
   color: inherit;
 }
 .panel-footer {
-  padding: 8px 20px;
+  padding: 8px 15px;
   background-color: #ffffff;
   border-top: 1px solid #f0f0f0;
   border-bottom-right-radius: -1;
@@ -8569,6 +8569,9 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table tbody tr td.event-draw {
   background-color: #faf1e6 !important;
+}
+.table tbody tr td.win {
+  font-weight: 700;
 }
 .table > tbody > tr td > span.icon-arrow-down,
 .table > tbody > tr td > span.icon-arrow-up,
