@@ -23,6 +23,10 @@
               color: darken(@ls-light-color, 24%); 
               font-size: @font-size-small;
             }
+
+            &:focus{
+              background-color: transparent;
+            }
           }
           
           &.active{
@@ -40,13 +44,9 @@
                 color: @ls-light-color;
               }
 
-              &:hover{
+              &:hover, &:focus{
                 background-color: @brand-primary;
               }
-            }
-            
-            > .dropdown-menu{
-              margin-top: -1px;
             }
           }
         }

@@ -10527,6 +10527,9 @@ span.sprite.webmaster-border {
   color: #c2c2c2;
   font-size: 12px;
 }
+.top-competitions-block.panel .nav-pills > li > a:focus {
+  background-color: transparent;
+}
 .top-competitions-block.panel .nav-pills > li.active > a {
   background: #f8f8f8;
   border-bottom-color: #529100;
@@ -10537,11 +10540,9 @@ span.sprite.webmaster-border {
 .top-competitions-block.panel .nav-pills > li.open > a .icon-caret-down {
   color: #ffffff;
 }
-.top-competitions-block.panel .nav-pills > li.open > a:hover {
+.top-competitions-block.panel .nav-pills > li.open > a:hover,
+.top-competitions-block.panel .nav-pills > li.open > a:focus {
   background-color: #5da400;
-}
-.top-competitions-block.panel .nav-pills > li.open > .dropdown-menu {
-  margin-top: -1px;
 }
 .top-competitions-block.panel .active-ligue {
   padding: 15px;
