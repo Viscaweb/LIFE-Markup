@@ -38,7 +38,7 @@
 		'icon-football': '&#xe615;',
 		'icon-googleplus': '&#xe616;',
 		'icon-handball': '&#xe617;',
-		'icon-hockey': '&#xe618;',
+		'icon-icehockey': '&#xe618;',
 		'icon-man': '&#xe619;',
 		'icon-mic': '&#xe61a;',
 		'icon-open': '&#xe61b;',
