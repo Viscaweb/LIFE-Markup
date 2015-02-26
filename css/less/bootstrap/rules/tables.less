@@ -697,6 +697,18 @@
         background-color: darken(@ls-tr-draw-bg, 6%) !important;
       }
     }
+    
+    &.event-canceled{
+      background-color: @ls-tr-canceled-bg !important;
+      
+      td{
+        background-color: transparent !important;
+      }
+      
+      &:hover{
+        background-color: darken(@ls-tr-canceled-bg, 6%) !important;
+      }
+    }
   }
 }
 
@@ -1436,6 +1448,14 @@ tbody{
           }
         }
       }
+      
+      &.prediction-canceled{
+        td.icon{
+          background-color: @ls-td-canceled-bg !important;
+
+          
+        }
+      }
 
       &.prediction-closed{
         td.prediction{
@@ -1451,7 +1471,8 @@ tbody{
         &.icon{
           text-align: center;
           padding: 0 4px;
-
+		  color: lighten(@ls-dark-color, 50%);
+          
           .icon{
             font-size: @font-size-normal;
             margin: 0;
@@ -1474,6 +1495,7 @@ tbody{
         &.prediction{
           .btn-hidden{
             text-transform: uppercase;
+            font-size: @font-size-x-small;
           }
         }
       }
