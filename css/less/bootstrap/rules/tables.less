@@ -1451,19 +1451,21 @@ tbody{
       
       &.prediction-canceled{
         td.icon{
-          background-color: @ls-td-canceled-bg !important;
-
-          
+          background-color: @ls-td-canceled-bg !important;     
         }
       }
 
-      &.prediction-closed{
+      &.prediction-locked{
         td.prediction{
           .btn-prediction{
             border-color: darken(@ls-light-color, 11.6%);
             color: lighten(@ls-dark-color, 20%);
           }
         }
+      }
+      
+      &.prediction-closed{
+        .prediction-locked;
       }
 
       td{ 
