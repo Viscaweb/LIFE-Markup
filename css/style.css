@@ -10036,16 +10036,17 @@ span.sprite.webmaster-border {
   border: 0;
   padding: 6px;
 }
-.row.social {
+.social {
   display: table;
 }
-.row.social > div {
+.social > div {
   float: none;
   display: table-cell;
   vertical-align: middle;
   line-height: 12px;
+  width: 25%;
 }
-.row.social > div iframe {
+.social > div iframe {
   margin: 0;
 }
 .matches-slider {
