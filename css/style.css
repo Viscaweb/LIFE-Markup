@@ -7698,10 +7698,11 @@ fieldset[disabled] .btn-facebook.active {
     zoom: 1;
   }
 }
+/*
 .modal-open[style] {
   padding-right: 0px !important;
   overflow: scroll;
-}
+}*/
 /*panels*/
 .panel {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -8560,6 +8561,15 @@ fieldset[disabled] .btn-facebook.active {
 .table > tbody > tr.event-draw:hover {
   background-color: #f5e3cc !important;
 }
+.table > tbody > tr.event-canceled {
+  background-color: #e6e6e6 !important;
+}
+.table > tbody > tr.event-canceled td {
+  background-color: transparent !important;
+}
+.table > tbody > tr.event-canceled:hover {
+  background-color: #d6d6d6 !important;
+}
 .table tbody tr td.highlight {
   background-color: #fff4ce !important;
 }
@@ -9161,6 +9171,13 @@ fieldset[disabled] .btn-facebook.active {
   font-size: 12px;
   color: #ffffff;
 }
+.table.predictions tbody tr.prediction-canceled td.icon {
+  background-color: #e6e6e6 !important;
+}
+.table.predictions tbody tr.prediction-locked td.prediction .btn-prediction {
+  border-color: #e1e1e1;
+  color: #333333;
+}
 .table.predictions tbody tr.prediction-closed td.prediction .btn-prediction {
   border-color: #e1e1e1;
   color: #333333;
@@ -9168,6 +9185,7 @@ fieldset[disabled] .btn-facebook.active {
 .table.predictions tbody tr td.icon {
   text-align: center;
   padding: 0 4px;
+  color: #808080;
 }
 .table.predictions tbody tr td.icon .icon {
   font-size: 14px;
@@ -9185,6 +9203,7 @@ fieldset[disabled] .btn-facebook.active {
 }
 .table.predictions tbody tr td.prediction .btn-hidden {
   text-transform: uppercase;
+  font-size: 11px;
 }
 /*jQuery UI Components*/
 /*Custom General Icons Behavior*/
@@ -11000,12 +11019,18 @@ span.sprite.webmaster-border {
   font-size: 50px;
   color: #f0f0f0;
 }
+.empty-state > .glyphicon {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 50px;
+  color: #f0f0f0;
+}
 .empty-state > p {
   margin: 7px 0 30px;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #5da400;
+  color: #cccccc;
 }
 .panel-condensed .comments {
   padding: 0 14px;
@@ -11576,6 +11601,7 @@ span.glyphicon-star.active {
   line-height: 23px;
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
 }
 .popover.popover-tips {
   min-width: 420px;
