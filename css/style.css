@@ -6498,6 +6498,9 @@ button.close {
 .btn-group.btn-group-justified .btn:last-of-type {
   border-right-width: 1px;
 }
+.btn-group.btn-group-justified .btn.spinner {
+  border-right-width: 0 !important;
+}
 .btn-group .btn-prediction-failed {
   position: relative;
 }
