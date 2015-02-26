@@ -29,6 +29,16 @@ table.other-sport{
                 position: relative;
                 top: 1px;
               }
+
+              a{
+
+                i.icon-standings{
+                  margin-right: 5px;
+                  position: relative;
+                  top: -1px;
+                  line-height: 16px;
+                }
+              }
             }
           }
         }
@@ -36,6 +46,8 @@ table.other-sport{
     }
   }
   
+
+
   tbody{
     border-top: 0;
    
@@ -87,11 +99,25 @@ table.other-sport{
       }
       
       td.tools{
-        text-align: right;        
+        text-align: right;       
       }
       
       &:nth-child(2), td[rowspan]{
         border-bottom: 2px solid darken(@ls-light-color, 11.5%);
+      }
+
+      th{
+
+        .tools{
+          a{
+            i.icon-standings{
+              margin-right: 5px;
+              position: relative;
+              top: -1px;
+              line-height: 16px;
+            }
+          } 
+        }
       }
     
     }
@@ -169,16 +195,16 @@ table.other-sport{
         th{
         
           img{
-            height: 20px;
-            width: 20px;
+            height: 18px;
+            width: 18px;
             margin-right: 5px;
             margin-left: 2px;
+            margin-top: -3px;
           }
           
           i.icon-man, .icon-woman{
             font-size: @font-size-medium;
             color: #8dc4ff;
-            vertical-align: middle;
             display: inline-block;
           }
           

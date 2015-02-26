@@ -8165,6 +8165,8 @@ fieldset[disabled] .btn-facebook.active {
 .table tr td span.country i,
 .table tr th span.country i {
   margin-right: 5px;
+  position: relative;
+  top: 2px;
 }
 .table tbody tr > th,
 .table tbody tr:nth-child(even) > th,
@@ -13654,6 +13656,12 @@ table.other-sport thead.league-data > tr > th .tools span a.fav {
   position: relative;
   top: 1px;
 }
+table.other-sport thead.league-data > tr > th .tools span a i.icon-standings {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+  line-height: 16px;
+}
 table.other-sport tbody {
   border-top: 0;
 }
@@ -13702,6 +13710,12 @@ table.other-sport tbody tr:nth-child(2),
 table.other-sport tbody tr td[rowspan] {
   border-bottom: 2px solid #e2e2e2;
 }
+table.other-sport tbody tr th .tools a i.icon-standings {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+  line-height: 16px;
+}
 table.other-sport tbody:hover {
   background-color: #ededed;
 }
@@ -13740,10 +13754,11 @@ table.other-sport.sport-baseball tbody tr td.hits {
 }
 table.other-sport.sport-tennis thead tr th img,
 table.other-sport.sport-tennis tbody tr th img {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   margin-right: 5px;
   margin-left: 2px;
+  margin-top: -3px;
 }
 table.other-sport.sport-tennis thead tr th i.icon-man,
 table.other-sport.sport-tennis tbody tr th i.icon-man,
@@ -13751,7 +13766,6 @@ table.other-sport.sport-tennis thead tr th .icon-woman,
 table.other-sport.sport-tennis tbody tr th .icon-woman {
   font-size: 15px;
   color: #8dc4ff;
-  vertical-align: middle;
   display: inline-block;
 }
 table.other-sport.sport-tennis thead tr th i.icon-woman,
