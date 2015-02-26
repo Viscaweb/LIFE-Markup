@@ -8768,7 +8768,7 @@ fieldset[disabled] .btn-facebook.active {
   display: inline-block;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.05);
-  padding: 5px 4px;
+  padding: 5px 2px;
 }
 .table.my-games tbody tr td.tools a:hover {
   background-color: #5da400;
