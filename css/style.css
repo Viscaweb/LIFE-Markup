@@ -13700,6 +13700,7 @@ table.other-sport tbody tr td.score {
   text-align: center;
   font-size: 14px;
   font-weight: 400 !important;
+  padding-top: 1px !important;
 }
 table.other-sport tbody tr td.score.main {
   font-weight: 700 !important;
