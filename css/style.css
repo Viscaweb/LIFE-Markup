@@ -11347,9 +11347,6 @@ span.glyphicon-star.active {
 .ls-wizard > .tab-content .tab-pane > .row > div {
   padding: 25px 20px;
 }
-.ls-wizard > .tab-content .tab-pane > .row > div > .nav-pills {
-  margin-bottom: 28px;
-}
 .ls-wizard .navigation.wizard {
   margin: 0;
   padding: 0;
