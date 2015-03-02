@@ -329,13 +329,7 @@
         color: @brand-success;
       }
       
-      &.empty-row {
-	      text-align: center;
-	      
-	      .icon {
-		      color: darken(@ls-light-color, 30%);
-	      }
-      }
+      
     
       span.icon{//Icon beside text margin
         margin-right: 5px;
@@ -349,6 +343,18 @@
         }
       }
     }
+    
+    &.empty-row {
+	    td {
+	      text-align: center;
+	      border-bottom-width: 1px;
+	      
+	      .icon {
+		      color: darken(@ls-light-color, 30%);
+	      }
+	    }
+      }
+      
   }
   
   //Deep level
