@@ -59,22 +59,18 @@
     position: absolute;
   }
   
+  
+  
   &.sub-menu {
-	  &:after {
-		  background-image: none;
-	  }  
+	  .loading-left-nav;
   }
   
   &.third-menu {
-	  &:after {
-		  background-image: none;
-	  }  
+	  .loading-left-nav;  
   }
   
   &.fourth-menu {
-	  &:after {
-		  background-image: none;
-	  }  
+	  .loading-left-nav;  
   }
   
   
@@ -82,5 +78,14 @@
 }
 
 
+/* Mixin */
 
+.loading-left-nav {
+	min-height: initial;
+	&:after {
+		  background-image: none;
+		  background-color: fade(lighten(@ls-grey, 74%), 80%);
+	  }
+	
+}
 
