@@ -354,9 +354,9 @@
            
             <div class="profile-image">
               <img src="img/profile-img.jpg" alt="Profile Avatar">
-              <a href="#" data-toggle="modal" data-target="#modal-profile-image"><span class="icon glyphicon glyphicon-camera"></span></a>
-
-              <div class="modal fade" id="modal-profile-image">
+              <a href="#" class="modal-toggle"><span class="icon glyphicon glyphicon-camera"></span></a>
+            </div>
+            <div class="modal fade" id="modal-profile-image">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -393,12 +393,13 @@
                               </li>
                             </ul>
                           </div>
-                          <!--
-	                      <div class="custom-picture">
+                          <div class="custom-picture">
                             <label>Custom picture</label>
                             <div class="row">
                               <div class="col-sm-2">
-                                <img class="add-file" src="img/user-dashboard/add-file.png" alt="Add File">
+                                <div class="img">
+                                  <img class="add-file" src="img/user-dashboard/add-file.png" alt="Add File">
+                                </div>
                               </div>
                               <div class="col-sm-10">
                                 <div class="drag-zone">
@@ -413,19 +414,18 @@
                               </div>
                             </div>
                           </div>
-                          -->
                           <div class="my-teams">
                             <label>My Teams</label>
                             <div class="scroll-container">
                               <ul>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
-                                <li><a href="#" class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></a><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                                <li><div class="logo"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
                               </ul>
                             </div>
                           </div>
@@ -439,8 +439,7 @@
                   </div><!-- /.modal-content -->
                 </div>
               </div>
-
-            </div>
+            
             <span class="display-name">sebastien au.</span>           
           </div>
           
@@ -1546,15 +1545,22 @@
 					</div>
 				</div>
               
-            <div class="alert alert-info alert-dismissible" role="alert">
-	            <button type="button" class="close" data-dismiss="alert">
-	            	<span aria-hidden="true">×</span>
-	            	<span class="sr-only">Close</span></button>
-	            		[ WELCOME TEXT ] Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
-	            </div>  
-						
+	            <div class="alert alert-info alert-dismissible" role="alert">
+		            <button type="button" class="close" data-dismiss="alert">
+		            	<span aria-hidden="true">×</span>
+		            	<span class="sr-only">Close</span></button>
+		            		[ WELCOME TEXT ] Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	
+	Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
+		        </div>  
+			
+				<div class="panel panel-default">
+				
+				</div>
+			
+			
+			
+			
               
             </div>
 
@@ -1622,6 +1628,11 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
     <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
+	      
+	      /*Profile Modal Trigger*/
+        $(".profile-image .modal-toggle").click(function(){
+          $("#modal-profile-image").modal();
+        });
 
         /*Calendar Button*/
         var dp_button = $(".calendar-button");
