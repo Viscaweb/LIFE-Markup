@@ -912,7 +912,7 @@
                               <span class="name">Reboul</span>
                               <div class="tools">
                                 <span class="date">19/05 15h19</span>
-                                <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                                <a><span class="glyphicon glyphicon-flag" data-toggle="modal" data-target="#modal-report"></span></a>
                                 <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
                               </div>
                             </div>
@@ -1464,7 +1464,9 @@
                           </tr>
                         </tbody>
                       </table>
-                      <a href="#" class="full-table"><span class="icon-caret-right"></span> Full Table</a>
+                      <div class="panel-footer">
+                      	<a href="#"><span class="icon-caret-right"></span> Full Table</a>
+                      </div>
                 </div>
                 
                   <div class="panel panel-condensed panel-default social-networks-block">
@@ -1806,6 +1808,34 @@
         </div>
       </div>
     </footer>
+    
+    
+    
+    
+    <!-- Modal report -->
+    <div class="modal fade" id="modal-report">
+	    <div class="modal-dialog modal-sm">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	          <h4 class="modal-title">Report a message</h4>
+	        </div>
+	        <div class="modal-body">
+	          <p>Are you sure you want to report this message ?</p>    
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-primary">Report</button>
+	        </div>
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+    
+    
+    
+    
+    
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
