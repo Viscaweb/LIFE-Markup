@@ -201,8 +201,8 @@
             <li>
               <a href="#" ><i class="icon-bell"></i>My Games<span class="badge live pull-right">3</span></a>
             </li>
-            <li class="active">
-              <a href="#" class="dropdown-toggle open"><i class="glyphicon glyphicon-star"></i>My Leagues</a>
+            <li class="active opened">
+              <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Leagues</a>
               <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
               <ul class="sub-menu sortable-ul">
                 <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/ligue1.png" alt="Ligue 1">Ligue 1 <span class="live-red">(6)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
@@ -219,8 +219,8 @@
                 <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add competitions</a></li>
                 </ul>
             </li>
-            <li class="active">
-              <a href="#" class="dropdown-toggle open"><i class="glyphicon glyphicon-star"></i>My Teams</a>
+            <li class="active opened">
+              <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Teams</a>
 	          <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
               <ul class="sub-menu sortable-ul">
                 <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="img/sprites/fr.png" alt="France">France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
@@ -234,8 +234,8 @@
                 <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add teams</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#" class="dropdown-toggle open"><i class="glyphicon glyphicon-globe"></i>Top Countries</a>
+            <li class="opened">
+              <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Top Countries</a>
               <ul class="sub-menu">
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag fr"></span>France</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag _England"></span>England</a></li>
@@ -244,8 +244,8 @@
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#" class="dropdown-toggle open"><i class="glyphicon glyphicon-globe"></i>Country</a>
+            <li class="opened">
+              <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Country</a>
               <ul class="sub-menu f16">
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag _United_Nations"></span>International</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag za"></span>South Africa</a></li>
@@ -2788,6 +2788,11 @@
   		$('.dropdown').on('hide.bs.dropdown', function(e){
   			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
   		});
+  		
+  		$( ".sidebar-nav > li" ).click(function() {
+  		 	$(this).toggleClass( "opened" );
+		});
+  		
       
       });
     </script>
