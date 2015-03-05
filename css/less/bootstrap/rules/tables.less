@@ -431,6 +431,7 @@
           padding: 0 5px;
           text-align: right;
           font-size: 0;
+          white-space: nowrap;
           
           a{
             display: inline-block;
@@ -915,6 +916,7 @@ tbody{
           &.logo{
             padding: 0 0 1px;
             width: 2%;
+            vertical-align: middle;
           }
           
           &.best-odd{
@@ -1006,7 +1008,7 @@ tbody{
               color: lighten(@ls-dark-color, 36%);
             }
             
-            img{
+	            img{
               max-width: 20px;
             }
             
@@ -1128,6 +1130,7 @@ tbody{
           
           &.team{
             padding: 0;
+            white-space: nowrap;
             
             > a{
               display: block;
@@ -1180,6 +1183,8 @@ tbody{
           &.half-time-score{
             color: darken(@ls-light-color,37%);
             padding: 0 1px;
+            min-width: 36px;
+            text-align: center;
           }
 
           &.win{
