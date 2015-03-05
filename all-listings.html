@@ -82,6 +82,7 @@
                         <td class="score hour"><a href="#">20:45</a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
                         <td class="half-time-score">(0 - 1)</td>
+                        <td class="minutes">20'</td>
                         <td class="odd">
                           <span class="icon-arrow-down"></span><a href="#">1.75</a>
                         </td>
@@ -132,23 +133,50 @@
             
             <div class="content">
             	
-            	
+            <h3>Match listing</h3>
             	
             <div class="row">
                 <div class="col-md-12">
-                  <table class="table my-games table-striped no-border">
+                  <table class="table matches my-games table-striped no-border">
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="8"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
+                        <th colspan="8"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
-                        <td><span class="hour">13h30</span></td>
-                        <td>FT</td>
+                        <td class="league"><img src="img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                        <td class="hour">13h30</td>
+                        <td class="time">FT</td>
                         <td class="team team1"><a href="#"><span>Barcelona</span><img src="img/sprites/barcelona.png" alt="Barcelona"></a></td>
-                        <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                        <td class="score"><a href="#" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <table class='table matches table-condensed table-striped no-border'>
+                          <tbody>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite goal'></span></td>
+                              <td class='team team2'>David Alaba</td>
+                            </tr>
+                            
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite goal'></span></td>
+                              <td class='score'><span class='home-score'>14'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite penalty-goal'></span></td>
+                              <td class='team team2'>Arjen Robben (Penalty)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
                         <td class="half-time-score">(0 - 1)</td>
                         <td class="tools">
@@ -160,6 +188,66 @@
                           <a class="active" href="#"><i class="icon-bell"></i></a>
                           </td>
                       </tr>
+                      
+                    </tbody>                                       
+                  </table>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                  <table class="table matches my-games table-striped no-border">
+                    <thead  class="league-data">
+                      <tr>
+                        <th colspan="8"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="league"><img src="img/sprites/ligue1.png" alt="League 1"></td>
+                        <td class="hour">13h30</td>
+                        <td class="time">FT</td>
+                        <td class="team team1"><a href="#"><span>BCN</span><img src="img/sprites/barcelona.png" alt="Barcelona"></a></td>
+                        <td class="score"><a href="#" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <table class='table matches table-condensed table-striped no-border'>
+                          <tbody>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite goal'></span></td>
+                              <td class='team team2'>David Alaba</td>
+                            </tr>
+                            
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite goal'></span></td>
+                              <td class='score'><span class='home-score'>14'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite penalty-goal'></span></td>
+                              <td class='team team2'>Arjen Robben (Penalty)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                        <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png"><span>MAD</span></a></td>
+                        <td class="half-time-score">(0 - 1)</td>
+                        <td class="tools">
+                          <a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
+                          <a href="#"><i class="icon-mic"></i></a>
+                          <a href="#"><i class="glyphicon glyphicon-comment"></i></a>
+                          <a href="#"><i class="icon-prono"></i></a>
+                          <a href="#"><i class="icon-stats"></i></a>
+                          <a class="active" href="#"><i class="icon-bell"></i></a>
+                          </td>
+                      </tr>
+                      
                     </tbody>                                       
                   </table>
                 </div>
@@ -185,10 +273,10 @@
                         </th>
                       </tr>
                       <tr>
-                        <td><span class="hour">20h00</span> </td>
+                        <td class="hour">20h00</td>
                         <td><a href="#">Bet</a></td>
                         <td class="team team1"><a href="#"><span>Barcelona</span><img src="img/sprites/barcelona.png" alt="Barcelona"></a></td>
-                        <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                        <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                         <td class="team team2"><a href="#"><img alt="Team 5" src="img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
                         <td class="half-time-score">(0 - 1)</td>
                         <td class="tools">
@@ -199,27 +287,12 @@
                           <a href="#"><i class="icon-stats"></i></a>
                           <a href="#"><i class="icon-bell"></i></a>
                           </td>
-                      </tr>
-                      <tr class="league-data active">
-                        <th colspan="7">
-                          <div class="tools">
-                            <span>
-                                <a class="live" href="#"><i class="icon-standings"></i>LIVE Table</a>
-                                <a class="fav active" href="#"><span class="glyphicon glyphicon-star"></span></a>
-                            </span>
-                          </div>
-                          <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
-                          <div class="title">
-                            <span class="country"><i class="country-flag dz"></i>Algeria :</span>
-                            <a href="#">Algeria Nedjma Championnat</a>
-                          </div>
-                        </th>
-                      </tr>
+                      </tr>   
                       <tr class="live">
-                        <td><span class="hour">18h00</span></td>
-                        <td class="time live">104+</td>
+                        <td class="hour">18h00</td>
+                        <td class="time">104+</td>
                         <td class="team team1"><a href="#">Ain Fekroun</a></td>
-                        <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                        <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2"><a href="#">CR Belouizdad<span class="label red-card">1</span></a></td>
                         <td class="half-time-score">(0 - 0)</td>
                         <td class="tools">
@@ -233,10 +306,10 @@
                           </td>
                       </tr>
                       <tr>
-                        <td>18h00</td>
-                        <td class="time"> TAB</td>
+                        <td class="hour">18h00</td>
+                        <td class="time">TAB</td>
                         <td class="team team1"><a href="#"><span class="label red-card">1</span>USM El Harrach</a></td>
-                        <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
+                        <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
                         <td class="team team2 win"><a href="#">CABBA <span class="qualified">*</span></a></td>
                         <td class="half-time-score">(0 - 2)</td>
                         <td class="tools">
@@ -249,13 +322,13 @@
                           <a href="#"><i class="icon-bell"></i></a>
                           </td>
                       </tr>
-                      <tr>
-                        <td><span class="hour">18h00</span></td>
-                        <td class="time">FT</td>
+                      <tr class="live paused">
+                        <td class="hour">18h00</td>
+                        <td class="time">HT</td>
                         <td class="team team1 win"><a href="#">MO Béjaia</a></td>
-                        <td class="score"><a href="#" class="has-score-details"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                        <td class="score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">0</span></a></td>
                         <td class="team team2"><a href="#">JS Kabylie</a></td>
-                        <td class="half-time-score">(0 - 1)</td>                        
+                        <td class="half-time-score">(0 - 0)</td>                        
                         <td class="tools">
                           <a href="#"><i class="icon-tv"></i></a>
                           <a href="#"><i class="icon-play"></i></a>
@@ -267,10 +340,10 @@
                           </td>
                       </tr>
                       <tr class="highlight live">
-                        <td><span class="hour">18h00</span></td>
+                        <td class="hour">18h00</td>
                         <td class="time live">57'</td>
                         <td class="team team1"><a href="#">JS Saoura</a></td>
-                        <td class="score"><a href="#" class="has-score-details"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
+                        <td class="score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
                         <td class="team team2 win"><a href="#">MC Alger</a></td>
                         <td class="half-time-score">(0 - 0)</td>                        
                         <td class="tools">
@@ -284,10 +357,10 @@
                       </tr>
                      
                       <tr>
-                        <td><span class="hour">20h45</span> </td>
-                        <td></td>
+                        <td class="hour">20h45</td>
+                        <td class="time">FT</td>
                         <td class="team team1"><a href="#">Barracas Central</a></td>
-                        <td class="score"><a href="javascript:;" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <td class="score"><a href="javascript:;" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
                         <table class='table matches table-condensed table-striped no-border'>
                           <tbody>
                             <tr>
@@ -308,7 +381,7 @@
                               <td class='team team1'>Cristiano Ronaldo</td>
                               <td><span class='sprite goal'></span></td>
                               <td class='score'><span class='home-score'>14'</span></td>
-                              <td><span class='sprite goal'></span></td>
+                              <td></td>
                               <td class='team team2'></td>
                             </tr>
                             <tr>

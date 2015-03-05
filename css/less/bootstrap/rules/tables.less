@@ -428,7 +428,7 @@
         }
         
         &.tools{
-          padding: 0 5px;
+          padding: 0px;
           text-align: right;
           font-size: 0;
           white-space: nowrap;
@@ -477,6 +477,11 @@
               }
             }
           }
+		  
+		  &.tools-1 {
+			  max-width: 20px;
+		  }
+        
         } 
         
       }
@@ -1029,10 +1034,7 @@ tbody{
             }            
           } 
 
-          &.half-time-score{
-            color: darken(@ls-light-color,37%);
-            padding: 0 1px;
-          }
+          
           
           &.score{
             font-size:  @font-size-base + 1;
@@ -1054,7 +1056,7 @@ tbody{
           }
           
           &.tools{
-            padding: 0 5px;
+            padding: 0px;
             text-align: right;
             font-size: 0;//Fix for inline white space
             
@@ -1183,7 +1185,8 @@ tbody{
           &.half-time-score{
             color: darken(@ls-light-color,37%);
             padding: 0 1px;
-            min-width: 36px;
+            max-width: 36px;
+            white-space: nowrap;
             text-align: center;
           }
 
