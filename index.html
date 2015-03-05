@@ -246,20 +246,20 @@
             </li>
             <li class="opened">
               <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Country</a>
-              <ul class="sub-menu f16">
+              <ul class="sub-menu">
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag _United_Nations"></span>International</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag za"></span>South Africa</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag al"></span>Albania</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag ag"></span>Algeria</a></li>
-                <li>
-                  <a href="#" class="dropdown-toggle open"><span class="country-flag de"></span>Germany</a>
+                <li class="opened">
+                  <a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a>
                     <ul class="third-menu">
                       <li><a href="#">All</a></li>
                       <li><a href="#">Bundesliga <span class="fav active"><i class="glyphicon glyphicon-star"></i></span></a></li>
                       <li><a href="#">Super Coupe <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
                       <li><a href="#">Bundesliga 2 <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
-                      <li class="sub-menu open">
-                        <a href="#">CFA</a>
+                      <li class="opened">
+                        <a href="#" class="dropdown-toggle">CFA</a>
                         <ul class="fourth-menu">
                           <li><a href="#">All</a></li>
                           <li><a href="#">CFA Group A<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
@@ -2789,9 +2789,11 @@
   			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
   		});
   		
+  		
   		$( ".sidebar-nav > li" ).click(function() {
   		 	$(this).toggleClass( "opened" );
 		});
+		
   		
       
       });

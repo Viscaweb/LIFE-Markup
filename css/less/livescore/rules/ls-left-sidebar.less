@@ -193,7 +193,7 @@
 			max-height: 0px;
 			.transition(max-height 400ms ease-out);
 
-			li{
+			> li{
 
 				a{
 					padding: 3px 21px;
@@ -209,27 +209,35 @@
 						top:6px;
 					}
 
-					&.open{
-						background-color: lighten(@ls-grey, 72%);
-		        border-left: 3px solid @brand-primary; 
-		        padding-left: 18px;
-
-		        &:hover{
-		        	color: @ls-light-color;
-		        	background-color: @brand-primary;
-
-		        	&:before{
-		        		color: darken(@ls-light-color,17%); 
-		        	}	        	
-		        }
-
-		        &:before{
-		        	color: darken(@ls-light-color,40%);
-		        }
-					}		
-				
-				
 				}
+				
+				&.opened{
+					> a {	
+						background-color: lighten(@ls-grey, 72%);
+				        border-left: 3px solid @brand-primary; 
+				        padding-left: 18px;
+
+				        &:hover{
+				        	color: @ls-light-color;
+				        	background-color: @brand-primary;
+		
+				        	&:before{
+				        		color: darken(@ls-light-color,17%); 
+				        	}	        	
+				        }
+		
+				        &:before{
+				        	color: darken(@ls-light-color,40%);
+				        }
+				        
+				        
+					}
+						
+					.third-menu {
+						max-height: none;
+					}
+				        
+					}	
 				
 				
 				&.more {
@@ -267,8 +275,10 @@
 				.third-menu{
 					padding: 0;
 					list-style: none;
-          background-color: lighten(@ls-grey, 72%);
-          border-left: 3px solid @brand-primary;
+					max-height: 0px;
+					overflow-y: hidden;
+					background-color: lighten(@ls-grey, 72%);
+					border-left: 3px solid @brand-primary;
 
 					li{
 
@@ -294,24 +304,34 @@
 									color: @ls-fav-hover;
 								}
 							}							
+							
+							&.dropdown-toggle:before {
+								left: 5px;
+							}
 						}
-
-						&.sub-menu{
+						
+													
+							
+						&.opened{
+								
+							.fourth-menu {
+								max-height: none;
+							}
+								
+						}
+							
+						&:hover{
 
 							&:before{
-								content: "\e60d";
-						    font-family: "LSicons";
-						    font-size: @font-size-small - 2;
-						    left: 5px;
-						    margin-top: 3px;
-						    position: absolute;
-						    color: darken(@ls-light-color,40%);
-						    top: 3px;
+								color: darken(@ls-light-color,17%);
 							}
-						  
-							&.open:before{
-								content: "\e60b";
-							}
+						}
+							
+							
+							
+						
+
+						&.sub-menu{
 
 							&:hover{
 
@@ -324,6 +344,8 @@
 						.fourth-menu{
 							padding: 0;
 							list-style: none;
+							max-height: 0px;
+							overflow-y: hidden;
 
 							li{
 
