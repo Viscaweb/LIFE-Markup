@@ -201,7 +201,7 @@
             <li>
               <a href="#" ><i class="icon-bell"></i>My Games<span class="badge live pull-right">3</span></a>
             </li>
-            <li class="active opened">
+            <li class="active open">
               <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Leagues</a>
               <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
               <ul class="sub-menu sortable-ul">
@@ -219,7 +219,7 @@
                 <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add competitions</a></li>
                 </ul>
             </li>
-            <li class="active opened">
+            <li class="active open">
               <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Teams</a>
 	          <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
               <ul class="sub-menu sortable-ul">
@@ -234,7 +234,7 @@
                 <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add teams</a></li>
               </ul>
             </li>
-            <li class="opened">
+            <li class="open">
               <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Top Countries</a>
               <ul class="sub-menu">
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag fr"></span>France</a></li>
@@ -244,23 +244,23 @@
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a></li>
               </ul>
             </li>
-            <li class="opened">
+            <li class="open">
               <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Country</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu second-menu">
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag _United_Nations"></span>International</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag za"></span>South Africa</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag al"></span>Albania</a></li>
                 <li><a href="#" class="dropdown-toggle"><span class="country-flag ag"></span>Algeria</a></li>
-                <li class="opened">
-                  <a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a>
-                    <ul class="third-menu">
+                <li class="open">
+                  <a class="dropdown-toggle"><span class="country-flag de"></span>Germany</a>
+                    <ul class="sub-menu third-menu">
                       <li><a href="#">All</a></li>
                       <li><a href="#">Bundesliga <span class="fav active"><i class="glyphicon glyphicon-star"></i></span></a></li>
                       <li><a href="#">Super Coupe <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
                       <li><a href="#">Bundesliga 2 <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
-                      <li class="opened">
-                        <a href="#" class="dropdown-toggle">CFA</a>
-                        <ul class="fourth-menu">
+                      <li class="open">
+                        <a class="dropdown-toggle">CFA</a>
+                        <ul class="sub-menu fourth-menu">
                           <li><a href="#">All</a></li>
                           <li><a href="#">CFA Group A<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
                           <li><a href="#">CFA Group B<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
@@ -2782,18 +2782,29 @@
         });
         
 		$('.dropdown').on('show.bs.dropdown', function(e){
-			$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+			$(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
   		});
   		
   		$('.dropdown').on('hide.bs.dropdown', function(e){
-  			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  			$(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
   		});
   		
+/*
   		
-  		$( ".sidebar-nav > li" ).click(function() {
-  		 	$(this).toggleClass( "opened" );
+  		$('.collapse').on('shown.bs.collapse', function(){
+			$(this).parent().find("li").removeClass(".dropdown-toggle").addClass("open");
+		}).on('hidden.bs.collapse', function(){
+			$(this).parent().find(".dropdown-toggle").removeClass("open");
 		});
+*/
 		
+		
+		
+	
+  		$('.sidebar-nav .dropdown-toggle').click(function(){
+	  		$(this).nextAll('.sub-menu').slideToggle();
+	  		$(this).parent('li').toggleClass('open');
+	  	});	
   		
       
       });

@@ -187,11 +187,22 @@
 		
 
 		.sub-menu{
-			padding: 0;
+			padding: 0 0 10px;
 			list-style: none;
-			overflow-y: hidden;
-			max-height: 0px;
 			.transition(max-height 400ms ease-out);
+			
+			&.second-menu {
+					> li {
+						&.open{
+							> a {
+							background-color: lighten(@ls-grey, 72%);
+							border-left: 3px solid @brand-primary; 
+							padding-left: 18px;
+						}	
+					} 
+					 
+					}
+			}
 
 			> li{
 
@@ -210,13 +221,13 @@
 					}
 
 				}
+			
 				
-				&.opened{
+				
+			
+				&.open{
 					> a {	
-						background-color: lighten(@ls-grey, 72%);
-				        border-left: 3px solid @brand-primary; 
-				        padding-left: 18px;
-
+						
 				        &:hover{
 				        	color: @ls-light-color;
 				        	background-color: @brand-primary;
@@ -233,9 +244,6 @@
 				        
 					}
 						
-					.third-menu {
-						max-height: none;
-					}
 				        
 					}	
 				
@@ -262,9 +270,7 @@
 		
 				}
 				
-				&:last-child {
-					margin-bottom: 10px;
-				}
+				
 				
 				&.item-placeholder{
             	border: 1px dashed darken(@ls-light-color, 20%);
@@ -272,13 +278,13 @@
             	background: darken(@ls-light-color, 10%); 
 				}
 				
+				
 				.third-menu{
 					padding: 0;
 					list-style: none;
-					max-height: 0px;
-					overflow-y: hidden;
 					background-color: lighten(@ls-grey, 72%);
-					border-left: 3px solid @brand-primary;
+					border-left: 3px solid @brand-primary; 
+
 
 					li{
 
@@ -297,8 +303,10 @@
 						    top: 5px;
 						    padding: 3px 7px;
 						    display: block;
+						    
 						    &:hover{
-									color:darken(@ls-light-color, 37%); 
+									color:darken(@ls-light-color, 37%);
+									background-color: @brand-primary; 
 								}
 								&.active{
 									color: @ls-fav-hover;
@@ -310,15 +318,7 @@
 							}
 						}
 						
-													
-							
-						&.opened{
-								
-							.fourth-menu {
-								max-height: none;
-							}
-								
-						}
+										
 							
 						&:hover{
 
@@ -344,8 +344,7 @@
 						.fourth-menu{
 							padding: 0;
 							list-style: none;
-							max-height: 0px;
-							overflow-y: hidden;
+
 
 							li{
 
@@ -355,7 +354,9 @@
 									&.pull-right{
 										padding-left: 0px !important;
 									}
-								}							
+								}
+								
+														
 							}
 						}
 					}
@@ -363,12 +364,7 @@
 			}
 		}		
 		
-		&.opened {
-			
-			>.sub-menu {
-				max-height: none;
-				
-			}
+		&.open {
 			
 			> a {
 				
