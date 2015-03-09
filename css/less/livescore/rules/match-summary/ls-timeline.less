@@ -141,6 +141,8 @@
         display: inline-block;
         line-height: 26px;
         padding: 0 5px;
+        background: fade(@ls-dark-color, 25%);
+		.border-radius(20px);        
         
         &.home{
           position: relative;
@@ -157,12 +159,9 @@
           cursor: pointer; 
           text-align: center;
           display: inline-block;
-          width: 20px;
-          height: 20px;
           line-height: 18px;
           color: @ls-light-color;
           padding: 1px;
-          .border-radius(50%);
           
           &.win{ background: #87B762; }
           &.lose{ background: #E6523E; }
@@ -257,13 +256,9 @@
         .border-radius(2px);
         
         span{
-          height: 18px;
-          width: 18px;
-          display: block;
+			display: block;
+			margin-bottom: 0px;
           
-          &.act-goal{ background:url("@{ls-image-sprite-icons}") no-repeat  -61px -28px; }
-          &.act-replacement{ background:url("@{ls-image-sprite-icons}") no-repeat  -200px -4px;}
-          &.act-yellow-card{ background:url("@{ls-image-sprite-icons}") no-repeat  -117px -5px;}
         }
         
         &:after{
