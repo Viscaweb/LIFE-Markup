@@ -1005,11 +1005,8 @@ tbody{
           }
           
           &.team{
-            padding: 0;
             > a{
               display: block;
-              padding: 0 6px;
-              line-height: 36px;
               color: lighten(@ls-dark-color, 36%);
             }
             
@@ -1107,6 +1104,7 @@ tbody{
 
           &.score{
             min-width: 50px;
+            width: 50px;
           }
 
           &.odd{
@@ -1131,13 +1129,10 @@ tbody{
           }
           
           &.team{
-            padding: 0;
             white-space: nowrap;
             
             > a{
               display: block;
-              padding: 0 10px;
-              line-height: 25px;
               color: lighten(@ls-dark-color, 36%);
             }
             
@@ -1154,7 +1149,6 @@ tbody{
             }
             
             &.team1{
-              padding: 0;
               text-align: right;
               
               > a{
@@ -1311,6 +1305,11 @@ tbody{
             width: 22%;
             padding: 3px 5px;
             
+           
+            > a{
+              color: lighten(@ls-dark-color, 36%);
+            }
+            
             img{
               margin-right: 5px;
               max-width: 18px;
@@ -1337,6 +1336,7 @@ tbody{
             padding-left: 0;
             padding-right: 0;
             text-align: right;
+            white-space: nowrap;
           }
           
           &.points{
@@ -1368,7 +1368,7 @@ tbody{
         
           td{
           
-            &.team{
+            &.team, &.team > a{
               font-weight: @font-weight-semi-bold;
               color: @live-red;
             }
