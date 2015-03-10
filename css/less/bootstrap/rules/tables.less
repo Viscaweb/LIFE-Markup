@@ -636,6 +636,7 @@
         span.icon-caret-right, span.icon-caret-right{ font-size:  @font-size-base - 3; }
         
         &.team{
+        	width: auto;
         
           img{
             max-height: 18px;
@@ -920,7 +921,6 @@ tbody{
         
           &.logo{
             padding: 0 0 1px;
-            width: 2%;
             vertical-align: middle;
           }
           
@@ -1005,6 +1005,7 @@ tbody{
           }
           
           &.team{
+	          width: auto;
             > a{
               display: block;
               color: lighten(@ls-dark-color, 36%);
@@ -1101,6 +1102,7 @@ tbody{
       
         td{
           vertical-align: middle !important;
+          width: 1%;
 
           &.score{
             min-width: 50px;
@@ -1122,6 +1124,7 @@ tbody{
           
           &.time{
             color: darken(@ls-light-color,46%);
+            white-space: nowrap;
             
             i{
               color: darken(@ls-light-color,24%);
@@ -1129,6 +1132,7 @@ tbody{
           }
           
           &.team{
+	          width: auto;
             white-space: nowrap;
             
             > a{
@@ -1243,7 +1247,6 @@ tbody{
         tr{
           td{
             &.tools{
-              width: 10%;
             }
           }
         }
@@ -1277,6 +1280,7 @@ tbody{
         td{
           vertical-align: middle;
           border: 0;
+          width: 1%;
         
           &.rank-standing-green{ background-color: @ls-table-rank-standing-green !important; }
           &.rank-standing-clear-green{ background-color: @ls-table-rank-standing-clear-green !important; }
@@ -1302,7 +1306,7 @@ tbody{
           }
         
           &.team{
-            width: 22%;
+	        width: auto;
             padding: 3px 5px;
             
            
@@ -1342,7 +1346,6 @@ tbody{
           &.points{
             font-weight: @font-weight-bold;
             text-align: right;
-            width: 3%;
           }
           
           &.point-detail{
@@ -1360,7 +1363,6 @@ tbody{
           
           &.point{
             text-align: right;
-            width: 4%;
           }
         }
         
