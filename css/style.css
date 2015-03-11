@@ -6660,8 +6660,8 @@ button.close {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -8242,7 +8242,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tr td {
   font-size: 12px;
   padding: 8px 10px;
-  border-top: 1px solid #f5f5f5;
+  border-top: 1px solid #ededed;
 }
 .table tr:hover td {
   background-color: #ededed;
@@ -9002,7 +9002,8 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches tbody tr td.team > a {
   display: block;
   color: #5c5c5c;
-  line-height: 25px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
@@ -9072,8 +9073,8 @@ fieldset[disabled] .btn-twitter.active {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -9099,8 +9100,8 @@ fieldset[disabled] .btn-twitter.active {
   border: 1px solid #b3b3b3;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: none;
@@ -9304,8 +9305,8 @@ fieldset[disabled] .btn-twitter.active {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -9478,6 +9479,15 @@ table.matches.layout-fixed colgroup col.half-time-score {
 table.matches.layout-fixed colgroup col.tools {
   width: 145px;
 }
+table.matches.layout-fixed colgroup col.tools-2 {
+  width: 40px;
+}
+table.matches.layout-fixed colgroup col.tools-5 {
+  width: 94px;
+}
+table.matches.layout-fixed colgroup col.tools-6 {
+  width: 114px;
+}
 table.matches.layout-fixed colgroup col.tools-7 {
   width: 130px;
 }
@@ -9513,6 +9523,9 @@ table.matches.layout-fixed colgroup col.prediction {
 }
 table.matches.layout-fixed colgroup col.trend {
   width: 70px;
+}
+table.matches.layout-fixed colgroup col.goal-minute {
+  width: 30px;
 }
 /*jQuery UI Components*/
 /*Custom General Icons Behavior*/
@@ -11324,8 +11337,8 @@ span.sprite.webmaster-border {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -11354,8 +11367,8 @@ span.sprite.webmaster-border {
   border: 1px solid #b3b3b3;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: none;
@@ -11456,8 +11469,8 @@ span.sprite.webmaster-border {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -12190,8 +12203,8 @@ span.sprite.webmaster-border {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -15007,8 +15020,8 @@ table.other-sport tbody.live tr td.time:before {
   border: 1px solid #e33000;
   border-radius: 10px;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 4px;
   box-sizing: border-box;
   -webkit-animation: blink 1s step-end infinite;
@@ -15387,66 +15400,66 @@ table.squad-listing.avatars tbody tr td.player {
   font-size: 11px;
   margin-top: 15px;
 }
-.goals-statistics table thead tr th.date,
-.goals-statistics table tbody tr th.date {
+.goals-statistics thead tr th.date,
+.goals-statistics tbody tr th.date {
   text-align: center;
   font-weight: 700;
   font-size: 12px;
 }
-.goals-statistics table thead tr th.statistics-title,
-.goals-statistics table tbody tr th.statistics-title {
+.goals-statistics thead tr th.statistics-title,
+.goals-statistics tbody tr th.statistics-title {
   font-weight: 700;
   font-size: 12px;
   background: #ffffff;
   line-height: 47px;
   border-bottom: 1px solid #fafafa;
 }
-.goals-statistics table thead tr th.statistics-title > span,
-.goals-statistics table tbody tr th.statistics-title > span {
+.goals-statistics thead tr th.statistics-title > span,
+.goals-statistics tbody tr th.statistics-title > span {
   line-height: 60px;
 }
-.goals-statistics table thead tr th.statistics-title .stat,
-.goals-statistics table tbody tr th.statistics-title .stat {
+.goals-statistics thead tr th.statistics-title .stat,
+.goals-statistics tbody tr th.statistics-title .stat {
   float: right;
   line-height: 20px;
 }
-.goals-statistics table thead tr th.statistics-title .stat span.icon,
-.goals-statistics table tbody tr th.statistics-title .stat span.icon {
+.goals-statistics thead tr th.statistics-title .stat span.icon,
+.goals-statistics tbody tr th.statistics-title .stat span.icon {
   font-size: 36px;
   color: #d7d7d7;
 }
-.goals-statistics table thead tr th.statistics-title .stat h1.result,
-.goals-statistics table tbody tr th.statistics-title .stat h1.result,
-.goals-statistics table thead tr th.statistics-title .stat .result,
-.goals-statistics table tbody tr th.statistics-title .stat .result {
+.goals-statistics thead tr th.statistics-title .stat h1.result,
+.goals-statistics tbody tr th.statistics-title .stat h1.result,
+.goals-statistics thead tr th.statistics-title .stat .result,
+.goals-statistics tbody tr th.statistics-title .stat .result {
   font-size: 47px;
   font-weight: 300;
   display: inline-block;
   margin: 5px 0;
   line-height: 1.1;
 }
-.goals-statistics table tbody tr td.logo,
-.goals-statistics table tbody tr td.date {
+.goals-statistics tbody tr td.logo,
+.goals-statistics tbody tr td.date {
   width: 3%;
 }
-.goals-statistics table tbody tr td.logo img,
-.goals-statistics table tbody tr td.date img {
+.goals-statistics tbody tr td.logo img,
+.goals-statistics tbody tr td.date img {
   max-width: 16px;
   max-height: 16px;
 }
-.goals-statistics table tbody tr td.league img {
+.goals-statistics tbody tr td.league img {
   max-height: 16px;
   max-width: 16px;
   margin-right: 2px;
 }
-.goals-statistics table tbody tr td.score {
+.goals-statistics tbody tr td.score {
   width: 8%;
 }
-.goals-statistics table tbody tr td.minutes,
-.goals-statistics table tbody tr td.date {
+.goals-statistics tbody tr td.minutes,
+.goals-statistics tbody tr td.date {
   font-weight: 600;
 }
-.goals-statistics table tbody tr td.tools {
+.goals-statistics tbody tr td.tools {
   width: 13%;
 }
 /*Widget Creator*/
