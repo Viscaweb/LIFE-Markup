@@ -1132,7 +1132,7 @@ tbody{
           }
           
           &.team{
-	          width: auto;
+	        width: auto;
             white-space: nowrap;
             
             > a{
@@ -1551,4 +1551,105 @@ tbody{
       }
     }
   }
+}
+
+
+table {
+	
+	&.matches.layout-fixed {
+		table-layout: fixed;
+		
+		tr {
+			
+			td {
+				width: auto;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+				&.team {
+					
+					> a {
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+				}
+			}
+		}
+		
+		colgroup {
+			
+			col {
+				&.hour {
+					width: 50px;
+				}
+				
+				&.time {
+					width: 60px;
+				}
+				
+				&.team {
+					min-width: 50px;
+				}
+				
+				&.score {
+					width: 50px;
+				}
+				
+				&.half-time-score {
+					width: 50px;
+				}
+				
+				&.tools {
+					width: 145px;
+				}
+				
+				&.number{
+					width: 25px ;
+				}
+                
+                &.event-leg{
+					width: 25px;
+				}
+                
+                &.event-outcome{
+					width: 25px;
+				}
+                
+                &.league{
+					width: 30px;
+				}
+                
+                &.logo{
+					width: 22px;
+				}
+                
+                &.date{
+					width:50px ;
+				}
+                
+                &.stage{
+					width: 80px;
+				}
+                
+                &.minutes{
+					width: 60px;
+				}
+                
+                &.odd{
+					width:54px ;
+				}
+                
+                &.prediction{
+					width:70px ;
+				}
+                
+                &.trend{
+					width: 70px;
+				}
+				
+				
+			}
+		}
+	}
+	
 }

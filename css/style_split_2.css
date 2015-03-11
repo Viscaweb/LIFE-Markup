@@ -1,3 +1,19 @@
+.match-teams-lineups .popover .popover-content > .title {
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #f5f5f5;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #5e5e5e;
+  font-weight: bold;
+}
+
 @media \0screen {
   .match-teams-lineups .popover .popover-content > .title {
     behavior: url("js/css3pie/PIE.htc");

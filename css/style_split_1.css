@@ -9460,6 +9460,10 @@ fieldset[disabled] .btn-twitter.active {
 
 /*Modals*/
 
+.modal .modal-dialog .modal-content {
+  border-radius: 0px;
+}
+
 .modal .modal-dialog .modal-content .modal-header {
   background-color: #f8f8f8;
   padding: 20px;
@@ -16875,20 +16879,4 @@ span.glyphicon-star.active {
 
 .match-teams-lineups .popover .popover-content {
   padding: 0;
-}
-
-.match-teams-lineups .popover .popover-content > .title {
-  -webkit-border-radius: 2px 2px 0 0;
-  -moz-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #f5f5f5;
-  border-bottom: 1px solid #f0f0f0;
-  padding: 8px 20px;
-  font-size: 16px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #5e5e5e;
-  font-weight: bold;
 }

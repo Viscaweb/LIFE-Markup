@@ -7744,6 +7744,9 @@ fieldset[disabled] .btn-twitter.active {
   border: none;
 }
 /*Modals*/
+.modal .modal-dialog .modal-content {
+  border-radius: 0px;
+}
 .modal .modal-dialog .modal-content .modal-header {
   background-color: #f8f8f8;
   padding: 20px;
@@ -9425,6 +9428,69 @@ fieldset[disabled] .btn-twitter.active {
 .table.predictions tbody tr td.prediction .btn-hidden {
   text-transform: uppercase;
   font-size: 11px;
+}
+table.matches.layout-fixed {
+  table-layout: fixed;
+}
+table.matches.layout-fixed tr td {
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table.matches.layout-fixed tr td.team > a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table.matches.layout-fixed colgroup col.hour {
+  width: 50px;
+}
+table.matches.layout-fixed colgroup col.time {
+  width: 60px;
+}
+table.matches.layout-fixed colgroup col.team {
+  min-width: 50px;
+}
+table.matches.layout-fixed colgroup col.score {
+  width: 50px;
+}
+table.matches.layout-fixed colgroup col.half-time-score {
+  width: 50px;
+}
+table.matches.layout-fixed colgroup col.tools {
+  width: 145px;
+}
+table.matches.layout-fixed colgroup col.number {
+  width: 25px ;
+}
+table.matches.layout-fixed colgroup col.event-leg {
+  width: 25px;
+}
+table.matches.layout-fixed colgroup col.event-outcome {
+  width: 25px;
+}
+table.matches.layout-fixed colgroup col.league {
+  width: 30px;
+}
+table.matches.layout-fixed colgroup col.logo {
+  width: 22px;
+}
+table.matches.layout-fixed colgroup col.date {
+  width: 50px ;
+}
+table.matches.layout-fixed colgroup col.stage {
+  width: 80px;
+}
+table.matches.layout-fixed colgroup col.minutes {
+  width: 60px;
+}
+table.matches.layout-fixed colgroup col.odd {
+  width: 54px ;
+}
+table.matches.layout-fixed colgroup col.prediction {
+  width: 70px ;
+}
+table.matches.layout-fixed colgroup col.trend {
+  width: 70px;
 }
 /*jQuery UI Components*/
 /*Custom General Icons Behavior*/
