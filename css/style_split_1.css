@@ -10188,7 +10188,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr:nth-child(odd) > td.tools a {
   display: inline-block;
   font-size: 16px;
-  padding: 0 2px;
+  padding: 0 1px;
   color: rgba(0, 0, 0, 0.05);
   line-height: 25px;
 }
@@ -10507,6 +10507,8 @@ fieldset[disabled] .btn-twitter.active {
 
 .table.table-condensed tr td.team {
   width: auto;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .table.table-condensed tr td.team img {
@@ -10980,6 +10982,7 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches tbody tr td.team > a {
   display: block;
   color: #5c5c5c;
+  line-height: 25px;
 }
 
 .table.matches tbody tr td.team .red-card {
@@ -11502,6 +11505,114 @@ fieldset[disabled] .btn-twitter.active {
 .table.predictions tbody tr td.prediction .btn-hidden {
   text-transform: uppercase;
   font-size: 11px;
+}
+
+table.matches.layout-fixed {
+  table-layout: fixed;
+}
+
+table.matches.layout-fixed tr td {
+  width: auto;
+  overflow: hidden;
+}
+
+table.matches.layout-fixed tr td.team > a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+table.matches.layout-fixed tr td.team img {
+  position: absolute;
+  top: 4px;
+}
+
+table.matches.layout-fixed tr td.team.team1 img {
+  right: 0px;
+}
+
+table.matches.layout-fixed tr td.team.team2 img {
+  left: 0px;
+}
+
+table.matches.layout-fixed tr td.team.has-logo.team1 > a {
+  padding-right: 20px;
+}
+
+table.matches.layout-fixed tr td.team.has-logo.team2 > a {
+  padding-left: 20px;
+}
+
+table.matches.layout-fixed colgroup col.hour {
+  width: 50px;
+}
+
+table.matches.layout-fixed colgroup col.time {
+  width: 60px;
+}
+
+table.matches.layout-fixed colgroup col.team {
+  min-width: 50px;
+}
+
+table.matches.layout-fixed colgroup col.score {
+  width: 46px;
+}
+
+table.matches.layout-fixed colgroup col.half-time-score {
+  width: 44px;
+}
+
+table.matches.layout-fixed colgroup col.tools {
+  width: 145px;
+}
+
+table.matches.layout-fixed colgroup col.tools-7 {
+  width: 130px;
+}
+
+table.matches.layout-fixed colgroup col.number {
+  width: 25px;
+}
+
+table.matches.layout-fixed colgroup col.event-leg {
+  width: 25px;
+}
+
+table.matches.layout-fixed colgroup col.event-outcome {
+  width: 25px;
+}
+
+table.matches.layout-fixed colgroup col.league {
+  width: 30px;
+}
+
+table.matches.layout-fixed colgroup col.logo {
+  width: 22px;
+}
+
+table.matches.layout-fixed colgroup col.date {
+  width: 50px;
+}
+
+table.matches.layout-fixed colgroup col.stage {
+  width: 80px;
+}
+
+table.matches.layout-fixed colgroup col.minutes {
+  width: 60px;
+}
+
+table.matches.layout-fixed colgroup col.odd {
+  width: 54px;
+}
+
+table.matches.layout-fixed colgroup col.prediction {
+  width: 70px;
+}
+
+table.matches.layout-fixed colgroup col.trend {
+  width: 70px;
 }
 
 /*jQuery UI Components*/
@@ -16695,188 +16806,4 @@ span.glyphicon-star.active {
   margin-top: 7px;
   max-height: 45px;
   max-width: 45px;
-}
-
-.match-teams-lineups .component-container .team .table thead tr th.team-logo span.positions {
-  margin-top: 5px;
-  margin-bottom: 1px;
-  font-size: 14px;
-  font-weight: 700;
-  display: block;
-}
-
-.match-teams-lineups .component-container .team .table tbody tr th {
-  border-top: 0;
-  text-transform: none;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.match-teams-lineups .component-container .team .table tbody tr td {
-  line-height: 18px;
-}
-
-.match-teams-lineups .component-container .team .table tbody tr td.number {
-  font-weight: 700;
-  font-size: 13px;
-  text-align: center;
-  vertical-align: top !important;
-}
-
-.match-teams-lineups .component-container .team .table tbody tr td.player {
-  padding-left: 1px;
-  padding-right: 1px;
-}
-
-.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite {
-  float: right;
-  margin-right: 3px;
-}
-
-.match-teams-lineups .component-container .field {
-  background: url("../img//field/field-bg.png") repeat 0 -7px;
-  display: table-cell;
-  vertical-align: top;
-  padding: 17px 16px;
-  position: relative;
-}
-
-.match-teams-lineups .component-container .field .field-lines {
-  background: url("../img//field/field-lines.png") no-repeat;
-  width: 337px;
-  height: 506px;
-  position: relative;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player {
-  position: absolute;
-  border-left: 0;
-  text-align: center;
-  min-width: 35px;
-  cursor: pointer;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player:after {
-  content: "\e620";
-  font-family: "LSicons";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #ededed;
-  font-size: 35px;
-  line-height: 35px;
-  width: 100%;
-  height: 23.8px;
-  display: block;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player .number {
-  color: #1a1a1a;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 27.85px;
-  display: block;
-  width: 100%;
-  height: 23.8px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player .name {
-  display: block;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: none;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player .icons {
-  text-align: center;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player .icons span {
-  margin-bottom: 0;
-  margin-right: 4px;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite.goal {
-  background-position: -62px -28px;
-  width: 16px;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player:hover:after {
-  color: #ffffff;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player:hover .name {
-  color: #e0e0e0;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player.away:after {
-  color: #252525;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player.away .number {
-  color: #ffffff;
-}
-
-.match-teams-lineups .component-container .field .field-lines .player.away:hover:after {
-  color: #0d0d0d;
-}
-
-.match-teams-lineups .component-container .field:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 120px;
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 13px solid #ffffff;
-}
-
-.match-teams-lineups .component-container .field:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 137px;
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 13px solid #ffffff;
-}
-
-.match-teams-lineups .popover {
-  border-top: 0;
-  min-width: 322px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-
-@media \0screen {
-  .match-teams-lineups .popover {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.match-teams-lineups .popover .arrow:after {
-  border-bottom-color: #f5f5f5;
-}
-
-.match-teams-lineups .popover .popover-content {
-  padding: 0;
 }

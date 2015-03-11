@@ -8357,7 +8357,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr:nth-child(odd) > td.tools a {
   display: inline-block;
   font-size: 16px;
-  padding: 0 2px;
+  padding: 0 1px;
   color: rgba(0, 0, 0, 0.05);
   line-height: 25px;
 }
@@ -8625,6 +8625,8 @@ fieldset[disabled] .btn-twitter.active {
 }
 .table.table-condensed tr td.team {
   width: auto;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 .table.table-condensed tr td.team img {
   max-height: 18px;
@@ -9000,6 +9002,7 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches tbody tr td.team > a {
   display: block;
   color: #5c5c5c;
+  line-height: 25px;
 }
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
@@ -9435,11 +9438,27 @@ table.matches.layout-fixed {
 table.matches.layout-fixed tr td {
   width: auto;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 table.matches.layout-fixed tr td.team > a {
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
+}
+table.matches.layout-fixed tr td.team img {
+  position: absolute;
+  top: 4px;
+}
+table.matches.layout-fixed tr td.team.team1 img {
+  right: 0px;
+}
+table.matches.layout-fixed tr td.team.team2 img {
+  left: 0px;
+}
+table.matches.layout-fixed tr td.team.has-logo.team1 > a {
+  padding-right: 20px;
+}
+table.matches.layout-fixed tr td.team.has-logo.team2 > a {
+  padding-left: 20px;
 }
 table.matches.layout-fixed colgroup col.hour {
   width: 50px;
@@ -9451,13 +9470,16 @@ table.matches.layout-fixed colgroup col.team {
   min-width: 50px;
 }
 table.matches.layout-fixed colgroup col.score {
-  width: 50px;
+  width: 46px;
 }
 table.matches.layout-fixed colgroup col.half-time-score {
-  width: 50px;
+  width: 44px;
 }
 table.matches.layout-fixed colgroup col.tools {
   width: 145px;
+}
+table.matches.layout-fixed colgroup col.tools-7 {
+  width: 130px;
 }
 table.matches.layout-fixed colgroup col.number {
   width: 25px ;

@@ -1,3 +1,187 @@
+.match-teams-lineups .component-container .team .table thead tr th.team-logo span.positions {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+
+.match-teams-lineups .component-container .team .table tbody tr th {
+  border-top: 0;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.match-teams-lineups .component-container .team .table tbody tr td {
+  line-height: 18px;
+}
+
+.match-teams-lineups .component-container .team .table tbody tr td.number {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: top !important;
+}
+
+.match-teams-lineups .component-container .team .table tbody tr td.player {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite {
+  float: right;
+  margin-right: 3px;
+}
+
+.match-teams-lineups .component-container .field {
+  background: url("../img//field/field-bg.png") repeat 0 -7px;
+  display: table-cell;
+  vertical-align: top;
+  padding: 17px 16px;
+  position: relative;
+}
+
+.match-teams-lineups .component-container .field .field-lines {
+  background: url("../img//field/field-lines.png") no-repeat;
+  width: 337px;
+  height: 506px;
+  position: relative;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player {
+  position: absolute;
+  border-left: 0;
+  text-align: center;
+  min-width: 35px;
+  cursor: pointer;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player:after {
+  content: "\e620";
+  font-family: "LSicons";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ededed;
+  font-size: 35px;
+  line-height: 35px;
+  width: 100%;
+  height: 23.8px;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player .number {
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 27.85px;
+  display: block;
+  width: 100%;
+  height: 23.8px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player .name {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player .icons {
+  text-align: center;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player .icons span {
+  margin-bottom: 0;
+  margin-right: 4px;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite.goal {
+  background-position: -62px -28px;
+  width: 16px;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player:hover:after {
+  color: #ffffff;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player:hover .name {
+  color: #e0e0e0;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player.away:after {
+  color: #252525;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player.away .number {
+  color: #ffffff;
+}
+
+.match-teams-lineups .component-container .field .field-lines .player.away:hover:after {
+  color: #0d0d0d;
+}
+
+.match-teams-lineups .component-container .field:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 120px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 13px solid #ffffff;
+}
+
+.match-teams-lineups .component-container .field:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 137px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 13px solid #ffffff;
+}
+
+.match-teams-lineups .popover {
+  border-top: 0;
+  min-width: 322px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@media \0screen {
+  .match-teams-lineups .popover {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+
+.match-teams-lineups .popover .arrow:after {
+  border-bottom-color: #f5f5f5;
+}
+
+.match-teams-lineups .popover .popover-content {
+  padding: 0;
+}
+
 .match-teams-lineups .popover .popover-content > .title {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;

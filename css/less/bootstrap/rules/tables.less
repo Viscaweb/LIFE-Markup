@@ -436,7 +436,7 @@
           a{
             display: inline-block;
             font-size:  @font-size-large;
-            padding: 0 2px;
+            padding: 0 1px;
             color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
             line-height: 25px;
             
@@ -637,6 +637,8 @@
         
         &.team{
         	width: auto;
+        	padding-bottom: 0px;
+        	padding-top: 0px;
         
           img{
             max-height: 18px;
@@ -1138,6 +1140,7 @@ tbody{
             > a{
               display: block;
               color: lighten(@ls-dark-color, 36%);
+              line-height: 25px;
             }
             
             .red-card{
@@ -1564,15 +1567,43 @@ table {
 			td {
 				width: auto;
 				overflow: hidden;
-				text-overflow: ellipsis;
 				
 				&.team {
 					
 					> a {
 						overflow: hidden;
 						text-overflow: ellipsis;
+						position: relative;
 					}
+					
+					img {
+						position: absolute;
+						top:4px;
+					}
+					
+				
+					&.team1 img {
+						right: 0px;
+					}
+					
+					&.team2 img {
+						left: 0px;
+					}
+					
+					&.has-logo {
+						
+						&.team1 > a {
+							padding-right: 20px;
+						}
+						
+						&.team2 > a {
+							padding-left: 20px;
+						}
+					}
+				
 				}
+				
+				
 			}
 		}
 		
@@ -1592,15 +1623,19 @@ table {
 				}
 				
 				&.score {
-					width: 50px;
+					width: 46px;
 				}
 				
 				&.half-time-score {
-					width: 50px;
+					width: 44px;
 				}
 				
 				&.tools {
 					width: 145px;
+				}
+				
+				&.tools-7 {
+					width: 130px;
 				}
 				
 				&.number{
