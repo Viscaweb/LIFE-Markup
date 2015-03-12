@@ -1104,7 +1104,6 @@ tbody{
       
         td{
           vertical-align: middle !important;
-          width: 1%;
 
           &.score{
             min-width: 50px;
@@ -1282,7 +1281,6 @@ tbody{
         td{
           vertical-align: middle;
           border: 0;
-          width: 1%;
         
           &.rank-standing-green{ background-color: @ls-table-rank-standing-green !important; }
           &.rank-standing-clear-green{ background-color: @ls-table-rank-standing-clear-green !important; }
@@ -1309,7 +1307,7 @@ tbody{
         
           &.team{
 	        width: auto;
-            padding: 3px 5px;
+            padding: 0px 5px;
             
            
             > a{
@@ -1364,7 +1362,7 @@ tbody{
           }
           
           &.point{
-            text-align: right;
+            text-align: center;
           }
         }
         
@@ -1560,8 +1558,9 @@ tbody{
 
 table {
 	
-	&.matches.layout-fixed {
+	&.layout-fixed {
 		table-layout: fixed;
+		border-collapse: initial;
 		
 		tr {
 			
@@ -1580,26 +1579,27 @@ table {
 					img {
 						position: absolute;
 						top:4px;
+						left: 0px;
 					}
 					
 				
 					&.team1 img {
 						right: 0px;
+						left: auto;
 					}
-					
-					&.team2 img {
-						left: 0px;
-					}
+
 					
 					&.has-logo {
 						
-						&.team1 > a {
-							padding-right: 20px;
-						}
-						
-						&.team2 > a {
+						> a {
 							padding-left: 20px;
 						}
+						
+						&.team1 > a {
+							padding-right: 20px;
+							padding-left: 0px;
+						}
+
 					}
 				
 				}
@@ -1696,6 +1696,26 @@ table {
 				}
 				
 				&.goal-minute{
+					width: 30px;
+				}
+				
+				&.point {
+					width: 30px;
+				}
+				
+				&.points {
+					width: 34px;
+				}
+				
+				&.point-details {
+					width: 10px;
+				}
+				
+				&.extra-points {
+					width: 30px;
+				}
+				
+				&.rank-variation {
 					width: 30px;
 				}
 				

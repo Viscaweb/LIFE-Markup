@@ -8972,7 +8972,6 @@ fieldset[disabled] .btn-twitter.active {
 }
 .table.matches tbody tr td {
   vertical-align: middle !important;
-  width: 1%;
 }
 .table.matches tbody tr td.score {
   min-width: 50px;
@@ -9185,7 +9184,6 @@ fieldset[disabled] .btn-twitter.active {
 .table.table-standing tbody tr td {
   vertical-align: middle;
   border: 0;
-  width: 1%;
 }
 .table.table-standing tbody tr td.rank-standing-green {
   background-color: #d1e9be !important;
@@ -9224,7 +9222,7 @@ fieldset[disabled] .btn-twitter.active {
 }
 .table.table-standing tbody tr td.team {
   width: auto;
-  padding: 3px 5px;
+  padding: 0px 5px;
 }
 .table.table-standing tbody tr td.team > a {
   color: #5c5c5c;
@@ -9269,7 +9267,7 @@ fieldset[disabled] .btn-twitter.active {
   cursor: pointer;
 }
 .table.table-standing tbody tr td.point {
-  text-align: right;
+  text-align: center;
 }
 .table.table-standing tbody tr.live td.team,
 .table.table-standing tbody tr.live td.team > a {
@@ -9433,98 +9431,114 @@ fieldset[disabled] .btn-twitter.active {
   text-transform: uppercase;
   font-size: 11px;
 }
-table.matches.layout-fixed {
+table.layout-fixed {
   table-layout: fixed;
+  border-collapse: initial;
 }
-table.matches.layout-fixed tr td {
+table.layout-fixed tr td {
   width: auto;
   overflow: hidden;
 }
-table.matches.layout-fixed tr td.team > a {
+table.layout-fixed tr td.team > a {
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
 }
-table.matches.layout-fixed tr td.team img {
+table.layout-fixed tr td.team img {
   position: absolute;
   top: 4px;
-}
-table.matches.layout-fixed tr td.team.team1 img {
-  right: 0px;
-}
-table.matches.layout-fixed tr td.team.team2 img {
   left: 0px;
 }
-table.matches.layout-fixed tr td.team.has-logo.team1 > a {
-  padding-right: 20px;
+table.layout-fixed tr td.team.team1 img {
+  right: 0px;
+  left: auto;
 }
-table.matches.layout-fixed tr td.team.has-logo.team2 > a {
+table.layout-fixed tr td.team.has-logo > a {
   padding-left: 20px;
 }
-table.matches.layout-fixed colgroup col.hour {
+table.layout-fixed tr td.team.has-logo.team1 > a {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+table.layout-fixed colgroup col.hour {
   width: 50px;
 }
-table.matches.layout-fixed colgroup col.time {
+table.layout-fixed colgroup col.time {
   width: 60px;
 }
-table.matches.layout-fixed colgroup col.team {
+table.layout-fixed colgroup col.team {
   min-width: 50px;
 }
-table.matches.layout-fixed colgroup col.score {
+table.layout-fixed colgroup col.score {
   width: 46px;
 }
-table.matches.layout-fixed colgroup col.half-time-score {
+table.layout-fixed colgroup col.half-time-score {
   width: 44px;
 }
-table.matches.layout-fixed colgroup col.tools {
+table.layout-fixed colgroup col.tools {
   width: 145px;
 }
-table.matches.layout-fixed colgroup col.tools-2 {
+table.layout-fixed colgroup col.tools-2 {
   width: 40px;
 }
-table.matches.layout-fixed colgroup col.tools-5 {
+table.layout-fixed colgroup col.tools-5 {
   width: 94px;
 }
-table.matches.layout-fixed colgroup col.tools-6 {
+table.layout-fixed colgroup col.tools-6 {
   width: 114px;
 }
-table.matches.layout-fixed colgroup col.tools-7 {
+table.layout-fixed colgroup col.tools-7 {
   width: 130px;
 }
-table.matches.layout-fixed colgroup col.number {
+table.layout-fixed colgroup col.number {
   width: 25px ;
 }
-table.matches.layout-fixed colgroup col.event-leg {
+table.layout-fixed colgroup col.event-leg {
   width: 25px;
 }
-table.matches.layout-fixed colgroup col.event-outcome {
+table.layout-fixed colgroup col.event-outcome {
   width: 25px;
 }
-table.matches.layout-fixed colgroup col.league {
+table.layout-fixed colgroup col.league {
   width: 30px;
 }
-table.matches.layout-fixed colgroup col.logo {
+table.layout-fixed colgroup col.logo {
   width: 22px;
 }
-table.matches.layout-fixed colgroup col.date {
+table.layout-fixed colgroup col.date {
   width: 50px ;
 }
-table.matches.layout-fixed colgroup col.stage {
+table.layout-fixed colgroup col.stage {
   width: 80px;
 }
-table.matches.layout-fixed colgroup col.minutes {
+table.layout-fixed colgroup col.minutes {
   width: 60px;
 }
-table.matches.layout-fixed colgroup col.odd {
+table.layout-fixed colgroup col.odd {
   width: 54px ;
 }
-table.matches.layout-fixed colgroup col.prediction {
+table.layout-fixed colgroup col.prediction {
   width: 70px ;
 }
-table.matches.layout-fixed colgroup col.trend {
+table.layout-fixed colgroup col.trend {
   width: 70px;
 }
-table.matches.layout-fixed colgroup col.goal-minute {
+table.layout-fixed colgroup col.goal-minute {
+  width: 30px;
+}
+table.layout-fixed colgroup col.point {
+  width: 30px;
+}
+table.layout-fixed colgroup col.points {
+  width: 34px;
+}
+table.layout-fixed colgroup col.point-details {
+  width: 10px;
+}
+table.layout-fixed colgroup col.extra-points {
+  width: 30px;
+}
+table.layout-fixed colgroup col.rank-variation {
   width: 30px;
 }
 /*jQuery UI Components*/
