@@ -1,6 +1,8 @@
-/* Tables */
+/* Specific livescore Tables */
 
-.table {
+
+table {
+	
 	tr {
 		td {
 			
@@ -26,4 +28,172 @@
 			}
 		}
 	}
+	
+	
+	&.layout-fixed {
+		table-layout: fixed;
+		border-collapse: initial;
+		
+		tr {
+			
+			td {
+				width: auto;
+				overflow: hidden;
+				
+				&.team {
+					
+					> a {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						position: relative;
+					}
+					
+					img {
+						position: absolute;
+						top:4px;
+						left: 0px;
+					}
+					
+				
+					&.team1 img {
+						right: 0px;
+						left: auto;
+					}
+
+					
+					&.has-logo {
+						
+						> a {
+							padding-left: 20px;
+						}
+						
+						&.team1 > a {
+							padding-right: 20px;
+							padding-left: 0px;
+						}
+
+					}
+				
+				}
+				
+				
+			}
+		}
+		
+		colgroup {
+			
+			col {
+				&.hour {
+					width: 50px;
+				}
+				
+				&.time {
+					width: 60px;
+				}
+				
+				&.team {
+					min-width: 50px;
+				}
+				
+				&.score {
+					width: 46px;
+				}
+				
+				&.half-time-score {
+					width: 44px;
+				}
+				
+				&.tools {
+					width: 145px;
+				}
+				
+				&.tools-2 {
+					width: 40px;
+				}
+				
+				&.tools-5 {
+					width: 94px;
+				}
+				
+				&.tools-6 {
+					width: 114px;
+				}
+				
+				&.tools-7 {
+					width: 130px;
+				}
+				
+				&.number{
+					width: 25px ;
+				}
+                
+                &.event-leg{
+					width: 25px;
+				}
+                
+                &.event-outcome{
+					width: 25px;
+				}
+                
+                &.league{
+					width: 30px;
+				}
+                
+                &.logo{
+					width: 22px;
+				}
+                
+                &.date{
+					width:50px ;
+				}
+                
+                &.stage{
+					width: 80px;
+				}
+                
+                &.minutes{
+					width: 60px;
+				}
+                
+                &.odd{
+					width:54px ;
+				}
+                
+                &.prediction{
+					width:70px ;
+				}
+                
+                &.trend{
+					width: 70px;
+				}
+				
+				&.goal-minute{
+					width: 30px;
+				}
+				
+				&.point {
+					width: 30px;
+				}
+				
+				&.points {
+					width: 34px;
+				}
+				
+				&.point-details {
+					width: 10px;
+				}
+				
+				&.extra-points {
+					width: 30px;
+				}
+				
+				&.rank-variation {
+					width: 30px;
+				}
+				
+				
+			}
+		}
+	}
+	
 }

@@ -11506,150 +11506,6 @@ fieldset[disabled] .btn-twitter.active {
   font-size: 11px;
 }
 
-table.layout-fixed {
-  table-layout: fixed;
-  border-collapse: initial;
-}
-
-table.layout-fixed tr td {
-  width: auto;
-  overflow: hidden;
-}
-
-table.layout-fixed tr td.team > a {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: relative;
-}
-
-table.layout-fixed tr td.team img {
-  position: absolute;
-  top: 4px;
-  left: 0px;
-}
-
-table.layout-fixed tr td.team.team1 img {
-  right: 0px;
-  left: auto;
-}
-
-table.layout-fixed tr td.team.has-logo > a {
-  padding-left: 20px;
-}
-
-table.layout-fixed tr td.team.has-logo.team1 > a {
-  padding-right: 20px;
-  padding-left: 0px;
-}
-
-table.layout-fixed colgroup col.hour {
-  width: 50px;
-}
-
-table.layout-fixed colgroup col.time {
-  width: 60px;
-}
-
-table.layout-fixed colgroup col.team {
-  min-width: 50px;
-}
-
-table.layout-fixed colgroup col.score {
-  width: 46px;
-}
-
-table.layout-fixed colgroup col.half-time-score {
-  width: 44px;
-}
-
-table.layout-fixed colgroup col.tools {
-  width: 145px;
-}
-
-table.layout-fixed colgroup col.tools-2 {
-  width: 40px;
-}
-
-table.layout-fixed colgroup col.tools-5 {
-  width: 94px;
-}
-
-table.layout-fixed colgroup col.tools-6 {
-  width: 114px;
-}
-
-table.layout-fixed colgroup col.tools-7 {
-  width: 130px;
-}
-
-table.layout-fixed colgroup col.number {
-  width: 25px;
-}
-
-table.layout-fixed colgroup col.event-leg {
-  width: 25px;
-}
-
-table.layout-fixed colgroup col.event-outcome {
-  width: 25px;
-}
-
-table.layout-fixed colgroup col.league {
-  width: 30px;
-}
-
-table.layout-fixed colgroup col.logo {
-  width: 22px;
-}
-
-table.layout-fixed colgroup col.date {
-  width: 50px;
-}
-
-table.layout-fixed colgroup col.stage {
-  width: 80px;
-}
-
-table.layout-fixed colgroup col.minutes {
-  width: 60px;
-}
-
-table.layout-fixed colgroup col.odd {
-  width: 54px;
-}
-
-table.layout-fixed colgroup col.prediction {
-  width: 70px;
-}
-
-table.layout-fixed colgroup col.trend {
-  width: 70px;
-}
-
-table.layout-fixed colgroup col.goal-minute {
-  width: 30px;
-}
-
-table.layout-fixed colgroup col.point {
-  width: 30px;
-}
-
-table.layout-fixed colgroup col.points {
-  width: 34px;
-}
-
-table.layout-fixed colgroup col.point-details {
-  width: 10px;
-}
-
-table.layout-fixed colgroup col.extra-points {
-  width: 30px;
-}
-
-table.layout-fixed colgroup col.rank-variation {
-  width: 30px;
-}
-
 /*jQuery UI Components*/
 
 /*Custom General Icons Behavior*/
@@ -15663,23 +15519,167 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 
-/* Tables */
+/* Specific livescore Tables */
 
-.table tr td.stage {
+table tr td.stage {
   white-space: nowrap;
 }
 
-.table tr td.stage img {
+table tr td.stage img {
   max-width: 18px;
   margin-right: 3px;
 }
 
-.table tr td.league img {
+table tr td.league img {
   max-width: 18px;
 }
 
-.table tr td.hour {
+table tr td.hour {
   font-weight: 600;
+}
+
+table.layout-fixed {
+  table-layout: fixed;
+  border-collapse: initial;
+}
+
+table.layout-fixed tr td {
+  width: auto;
+  overflow: hidden;
+}
+
+table.layout-fixed tr td.team > a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+table.layout-fixed tr td.team img {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+}
+
+table.layout-fixed tr td.team.team1 img {
+  right: 0px;
+  left: auto;
+}
+
+table.layout-fixed tr td.team.has-logo > a {
+  padding-left: 20px;
+}
+
+table.layout-fixed tr td.team.has-logo.team1 > a {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+
+table.layout-fixed colgroup col.hour {
+  width: 50px;
+}
+
+table.layout-fixed colgroup col.time {
+  width: 60px;
+}
+
+table.layout-fixed colgroup col.team {
+  min-width: 50px;
+}
+
+table.layout-fixed colgroup col.score {
+  width: 46px;
+}
+
+table.layout-fixed colgroup col.half-time-score {
+  width: 44px;
+}
+
+table.layout-fixed colgroup col.tools {
+  width: 145px;
+}
+
+table.layout-fixed colgroup col.tools-2 {
+  width: 40px;
+}
+
+table.layout-fixed colgroup col.tools-5 {
+  width: 94px;
+}
+
+table.layout-fixed colgroup col.tools-6 {
+  width: 114px;
+}
+
+table.layout-fixed colgroup col.tools-7 {
+  width: 130px;
+}
+
+table.layout-fixed colgroup col.number {
+  width: 25px;
+}
+
+table.layout-fixed colgroup col.event-leg {
+  width: 25px;
+}
+
+table.layout-fixed colgroup col.event-outcome {
+  width: 25px;
+}
+
+table.layout-fixed colgroup col.league {
+  width: 30px;
+}
+
+table.layout-fixed colgroup col.logo {
+  width: 22px;
+}
+
+table.layout-fixed colgroup col.date {
+  width: 50px;
+}
+
+table.layout-fixed colgroup col.stage {
+  width: 80px;
+}
+
+table.layout-fixed colgroup col.minutes {
+  width: 60px;
+}
+
+table.layout-fixed colgroup col.odd {
+  width: 54px;
+}
+
+table.layout-fixed colgroup col.prediction {
+  width: 70px;
+}
+
+table.layout-fixed colgroup col.trend {
+  width: 70px;
+}
+
+table.layout-fixed colgroup col.goal-minute {
+  width: 30px;
+}
+
+table.layout-fixed colgroup col.point {
+  width: 30px;
+}
+
+table.layout-fixed colgroup col.points {
+  width: 34px;
+}
+
+table.layout-fixed colgroup col.point-details {
+  width: 10px;
+}
+
+table.layout-fixed colgroup col.extra-points {
+  width: 30px;
+}
+
+table.layout-fixed colgroup col.rank-variation {
+  width: 30px;
 }
 
 /*Base Tables*/
