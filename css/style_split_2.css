@@ -1090,11 +1090,6 @@
   min-width: 35px;
 }
 
-.head-to-head .table tbody a,
-.team-form .table tbody a {
-  padding: 5px;
-}
-
 .head-to-head > .teams {
   margin: 0;
   padding: 15px 0;

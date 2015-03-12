@@ -183,9 +183,9 @@
                       <tr>
 	                    <td class="number">1</td>
 	                    <td class="event-leg" data-toggle="tooltip" data-placement="left" data-container="body" title="1st leg">A</td>
-	                    <td class="event-outcome event-outcome-draw">D</td>
-	                    <td class="event-outcome event-outcome-won">w</td>
-	                    <td class="event-outcome event-outcome-lost">L</td>
+	                    <td class="event-outcome event-outcome-draw" data-toggle="tooltip" data-placement="left" data-container="body" title="Draw">D</td>
+	                    <td class="event-outcome event-outcome-won" data-toggle="tooltip" data-placement="left" data-container="body" title="Won">w</td>
+	                    <td class="event-outcome event-outcome-lost" data-toggle="tooltip" data-placement="left" data-container="body" title="Lost">L</td>
                         <td class="league"><img src="img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
                         <td class="logo"><img alt="Bet1" src="img/sprites/bets1.png" data-toggle="tooltip" data-placement="top" data-container="body" title="Betclic"></td>
                         <td class="date">02/04</td>
@@ -635,24 +635,7 @@
                           </td>
                       </tr>
                       
-                      <!-- test line -->
-                      <tr class="highlight live">
-                        <td class="hour">18h00</td>
-                        <td class="time live">57'</td>
-                        <td class="team team1"><span class="label red-card">1</span><a href="#">JS Saoura</a></td>
-                        <td class="score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
-                        <td class="team team2 win"><a href="#">MC Alger</a></td>
-                        <td class="half-time-score">(0 - 0)</td>                        
-                        <td class="tools">
-                          <a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
-                          <a href="#"><i class="icon-mic"></i></a>
-                          <a href="#"><i class="glyphicon glyphicon-comment"></i></a>
-                          <a href="#"><i class="icon-prono"></i></a>
-                          <a href="#"><i class="icon-stats"></i></a>
-                          <a href="#"><i class="icon-bell"></i></a>
-                          </td>
-                      </tr>
-                      
+                    
                      
                       <tr>
                         <td class="hour">20h45</td>
@@ -1933,7 +1916,327 @@
                 </div>
               </div>
               
+              <h3>Head to Head</h3>
               
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default head-to-head">
+                    <div class="panel-heading">
+                      Head to Head
+                      <div class="tools">
+                        <ul class="nav nav-pills teams">
+                          <li><img alt="Real" src="img/sprites/realmadrid.png"></li>
+                          <li><img alt="fc" src="img/sprites/fc_bayern.png"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="teams">
+                      <table class="circles">
+                        <tr>
+                          <td class="circle-info"><div class="team first"><div class="circle gray1"><span>4</span></div></div></td>
+                          <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                          <td class="circle-info"><div class="team second"><div class="circle gray2"><span>2</span></div></div></td>
+                        </tr>
+                        <tr>
+                          <td class="title"><span>REAL M.</span></td>
+                          <td class="title"><span>DRAW</span></td>
+                          <td class="title"><span>BAYERN</span></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <table class="table matches table-condensed table-striped no-border layout-fixed">
+                      <tbody>
+	                    <colgroup>
+	                    	<col class="date">
+	                    	<col class="league">
+	                    	<col class="stage">
+	                    	<col class="team">
+	                    	<col class="score">
+	                    	<col class="team">
+	                    	<col class="tools tools-6">
+	                    </colgroup>
+                        <tr>
+                          <td class="date">17/04/12</td>
+                          <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                          <td class="stage">MD16</td>
+                          <td class="team team1"><a href="#">Bayern</a></td>
+                          <td class="score">2 - 1</td>
+                          <td class="team team2"><a href="#">Real.</a></td>
+                          <td class="tools">
+                          	<a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
+						  	<a href="#"><i class="icon-mic"></i></a>
+						  	<a href="#"><i class="glyphicon glyphicon-comment"></i></a>
+						  	<a href="#"><i class="icon-prono"></i></a>
+						  	<a href="#"><i class="icon-stats"></i></a>
+						  	<a href="#"><i class="icon-bell"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="date">13/08/10</td>
+                          <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                          <td class="stage">MD25</td>
+                          <td class="team team1"><a href="#">Bayern</a></td>
+                          <td class="score">0 - 0</td>
+                          <td class="team team2"><a href="#">Real.*</a></td>
+                          <td class="tools">
+                          	<a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
+						  	<a href="#"><i class="icon-mic"></i></a>
+						  	<a href="#"><i class="glyphicon glyphicon-comment"></i></a>
+						  	<a href="#"><i class="icon-prono"></i></a>
+						  	<a href="#"><i class="icon-stats"></i></a>
+						  	<a href="#"><i class="icon-bell"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="date">07/03/07</td>
+                          <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                          <td class="stage">MD7</td>
+                          <td class="team team1"><a href="#">Bayern</a></td>
+                          <td class="score">2 - 1</td>
+                          <td class="team team2"><a href="#">Real.</a></td>
+                          <td class="tools">
+                          	<a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
+						  	<a href="#"><i class="icon-mic"></i></a>
+						  	<a href="#"><i class="glyphicon glyphicon-comment"></i></a>
+						  	<a href="#"><i class="icon-prono"></i></a>
+						  	<a href="#"><i class="icon-stats"></i></a>
+						  	<a href="#"><i class="icon-bell"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="date">20/02/07</td>
+                          <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                          <td class="stage">MD12</td>
+                          <td class="team team1"><a href="#">Real Madrid with a long name</a></td>
+                          <td class="score">3 - 2</td>
+                          <td class="team team2"><a href="#">Bayern</a></td>
+                          <td class="tools">
+                          	<a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
+						  	<a href="#"><i class="icon-mic"></i></a>
+						  	<a href="#"><i class="glyphicon glyphicon-comment"></i></a>
+						  	<a href="#"><i class="icon-prono"></i></a>
+						  	<a href="#"><i class="icon-stats"></i></a>
+						  	<a href="#"><i class="icon-bell"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="date">10/03/04</td>
+                          <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                          <td class="stage">MD14</td>
+                          <td class="team team1"><a href="#">Real.</a></td>
+                          <td class="score">1 - 0</td>
+                          <td class="team team2"><a href="#">Bayern</a></td>
+                          <td class="tools">
+                          	<a href="#"><i class="glyphicon glyphicon-info-sign"></i></a>
+						  	<a href="#"><i class="icon-mic"></i></a>
+						  	<a href="#"><i class="glyphicon glyphicon-comment"></i></a>
+						  	<a href="#"><i class="icon-prono"></i></a>
+						  	<a href="#"><i class="icon-stats"></i></a>
+						  	<a href="#"><i class="icon-bell"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>                                                 
+                    </table>
+                    <div class="panel-footer">
+					  <a href="#"><span class="icon-caret-right"></span>All Stats</a>
+					</div>
+                  </div>
+                </div>
+              </div>
+              
+              <h3>Team Forms</h3>
+
+			<div class="row">
+                <div class="col-md-6">
+                  <div class="panel panel-default team-form">
+                    <div class="panel-heading">
+                      Real Madrid Form
+                      <div class="tools">
+                        <ul class="nav nav-pills teams">
+                          <li><img alt="Real" src="img/sprites/realmadrid.png"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row"> 
+                      <div class="col-md-12 navigation">
+                        <div class="btn-group btn-group-justified">
+                          <a class="btn btn-default">All</a>
+                          <a class="btn btn-default">Home</a>
+                          <a class="btn btn-primary active">Away</a>                
+                          <a class="btn btn-default">Next</a>                         
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="panel-content">
+                      <div class="teams">
+                        <table class="circles">
+                          <tr>
+                            <td class="circle-info"><div class="team first"><div class="circle success"><span>4</span></div></div></td>
+                            <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                            <td class="circle-info"><div class="team fourth"><div class="circle danger"><span>0</span></div></div></td>
+                          </tr>
+                          <tr>
+                            <td class="title"><span class="win">WIN</span></td>
+                            <td class="title"><span class="draw">DRAW</span></td>
+                            <td class="title"><span class="lost">LOST</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <table class="table matches table-condensed table-striped no-border layout-fixed">
+                        <tbody>                       
+                          <colgroup>
+                          	<col class="event-outcome">
+                          	<col class="date">
+                          	<col class="logo">
+                          	<col class="team">
+                          	<col class="score">
+                          	<col class="team">
+                          </colgroup>
+                          <tr class="event-draw">
+                            <td class="event-outcome event-outcome-draw">D</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                            <td class="team team1"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">0 - 0</a></td>
+                            <td class="team team2"><a href="#">Villa</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">2 - 0</a></td>
+                            <td class="team team2"><a href="#">Valencienne</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">4 - 0</a></td>
+                            <td class="team team2"><a href="#">Granada</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">4 - 1</a></td>
+                            <td class="team team2"><a href="#">Porto</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">4 - 1</a></td>
+                            <td class="team team2"><a href="#">Espanya</a></td>
+                          </tr>
+                        </tbody>                                                 
+                      </table>
+                    </div>
+                    <div class="panel-footer">
+					  	<a href="#"><span class="icon-caret-right"></span>Team profile</a>
+					</div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="panel panel-default team-form">
+                    <div class="panel-heading">
+                      Real Madrid Form
+                      <div class="tools">
+                        <ul class="nav nav-pills teams">
+                          <li><img alt="Real" src="img/sprites/realmadrid.png"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row"> 
+                      <div class="col-md-12 navigation">
+                        <div class="btn-group btn-group-justified">
+                          <a class="btn btn-default">All</a>
+                          <a class="btn btn-default">Home</a>
+                          <a class="btn btn-primary active">Away</a>                
+                          <a class="btn btn-default">Next</a>                         
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="panel-content">
+                      <div class="teams">
+                        <table class="circles">
+                          <tr>
+                            <td class="circle-info"><div class="team first"><div class="circle success"><span>4</span></div></div></td>
+                            <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                            <td class="circle-info"><div class="team fourth"><div class="circle danger"><span>0</span></div></div></td>
+                          </tr>
+                          <tr>
+                            <td class="title"><span class="win">WIN</span></td>
+                            <td class="title"><span class="draw">DRAW</span></td>
+                            <td class="title"><span class="lost">LOST</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <table class="table matches table-condensed table-striped no-border layout-fixed">
+                        <tbody>                       
+                          <colgroup>
+                          	<col class="event-outcome">
+                          	<col class="date">
+                          	<col class="logo">
+                          	<col class="team">
+                          	<col class="score">
+                          	<col class="team">
+                          </colgroup>
+                          <tr class="event-draw">
+                            <td class="event-outcome event-outcome-draw">D</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                            <td class="team team1"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">0 - 0</a></td>
+                            <td class="team team2"><a href="#">Villar.</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">2 - 0</a></td>
+                            <td class="team team2"><a href="#">Valenc.</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">4 - 0</a></td>
+                            <td class="team team2"><a href="#">Granada</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">4 - 1</a></td>
+                            <td class="team team2"><a href="#">Porto</a></td>
+                          </tr>
+                          <tr class="event-won">
+                            <td class="event-outcome event-outcome-won">W</td>
+                            <td class="date">21h00</td>
+                            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                            <td class="team team1 win"><a href="#">Sevilla</a></td>
+                            <td class="score"><a href="#">4 - 1</a></td>
+                            <td class="team team2"><a href="#">Espany.</a></td>
+                          </tr>
+                        </tbody>                                                 
+                      </table>
+                    </div>
+                    <div class="panel-footer">
+					  	<a href="#"><span class="icon-caret-right"></span>Team profile</a>
+					</div>
+                  </div>
+                </div>
+                
+                     
+              </div>              
               
            	</div>
 
