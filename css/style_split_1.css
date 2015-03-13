@@ -10979,8 +10979,7 @@ fieldset[disabled] .btn-twitter.active {
 }
 
 .table.matches tbody tr td.team {
-  width: auto;
-  white-space: nowrap;
+  width: 50%;
 }
 
 .table.matches tbody tr td.team > a {
@@ -12087,7 +12086,7 @@ span.dark-icon {
 }
 
 @font-face {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Regular-webfont.eot");
   src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Regular-webfont.woff") format('woff'), url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format('svg');
   font-weight: 400;
@@ -15560,6 +15559,7 @@ table.layout-fixed tr td {
 table.layout-fixed tr td.team > a {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   position: relative;
 }
 
@@ -15588,7 +15588,7 @@ table.layout-fixed colgroup col.hour {
 }
 
 table.layout-fixed colgroup col.time {
-  width: 60px;
+  width: 50px;
 }
 
 table.layout-fixed colgroup col.team {
@@ -15649,6 +15649,10 @@ table.layout-fixed colgroup col.logo {
 
 table.layout-fixed colgroup col.date {
   width: 50px;
+}
+
+table.layout-fixed colgroup col.date-dmy {
+  width: 57px;
 }
 
 table.layout-fixed colgroup col.stage {
@@ -16777,9 +16781,4 @@ table.layout-fixed colgroup col.rank-variation {
   width: 1px;
   height: 33px;
   z-index: -1;
-}
-
-.match-sumary-statistics .table tbody tr td.prog {
-  text-align: right;
-  width: 30%;
 }

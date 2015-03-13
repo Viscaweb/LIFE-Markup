@@ -1,3 +1,8 @@
+.match-sumary-statistics .table tbody tr td.prog {
+  text-align: right;
+  width: 30%;
+}
+
 .match-sumary-statistics .table tbody tr td.prog .progress {
   margin: 0;
   background-color: transparent;
