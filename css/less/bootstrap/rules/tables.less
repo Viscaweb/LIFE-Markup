@@ -289,7 +289,7 @@
     td{
       font-size:  @font-size-small;
       padding: 8px 10px;
-      border-top: 1px solid darken(@ls-light-color, 7%);
+      border: 1px solid darken(@ls-light-color, 5%);
     }
     
     //General Hover Style
@@ -417,6 +417,9 @@
           }
           
           &.hour {
+	          
+	          text-align: center;
+	          
 	          > a {
 		          color: lighten(@ls-dark-color,45%);
 	          }
@@ -624,10 +627,9 @@
       }
       
       td{
-        font-weight: 400;
         line-height: 16px;
         font-size:  @font-size-small;
-        padding: 3px 7px;
+        padding: 3px 4px;
         border-left: none;
         
         &:first-child{ border-left: 0; }

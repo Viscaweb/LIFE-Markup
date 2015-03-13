@@ -10053,7 +10053,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tr td {
   font-size: 12px;
   padding: 8px 10px;
-  border-top: 1px solid #ededed;
+  border: 1px solid #f2f2f2;
 }
 
 .table tr:hover td {
@@ -10160,6 +10160,12 @@ fieldset[disabled] .btn-twitter.active {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+
+.table tbody tr > td.score.hour,
+.table tbody tr:nth-child(even) > td.score.hour,
+.table tbody tr:nth-child(odd) > td.score.hour {
+  text-align: center;
 }
 
 .table tbody tr > td.score.hour > a,
@@ -10485,10 +10491,9 @@ fieldset[disabled] .btn-twitter.active {
 }
 
 .table.table-condensed tr td {
-  font-weight: 400;
   line-height: 16px;
   font-size: 12px;
-  padding: 3px 7px;
+  padding: 3px 4px;
   border-left: none;
 }
 
@@ -15536,16 +15541,20 @@ table tr td.league img {
 
 table tr td.hour {
   font-weight: 600;
+  text-align: center;
 }
 
 table.layout-fixed {
   table-layout: fixed;
-  border-collapse: initial;
+  border-collapse: collapse;
 }
 
 table.layout-fixed tr td {
   width: auto;
-  overflow: hidden;
+  /*
+				overflow: hidden;
+				
+*/
 }
 
 table.layout-fixed tr td.team > a {
@@ -15627,6 +15636,10 @@ table.layout-fixed colgroup col.event-outcome {
 }
 
 table.layout-fixed colgroup col.league {
+  width: 30px;
+}
+
+table.layout-fixed colgroup col.league-logo {
   width: 30px;
 }
 
@@ -16769,36 +16782,4 @@ table.layout-fixed colgroup col.rank-variation {
 .match-sumary-statistics .table tbody tr td.prog {
   text-align: right;
   width: 30%;
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress {
-  margin: 0;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-
-@media \0screen {
-  .match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
-  background-color: #9e9e9e;
 }

@@ -1,6 +1,5 @@
 /* Specific livescore Tables */
 
-
 table {
 	
 	tr {
@@ -25,6 +24,7 @@ table {
 			
 			&.hour {
 				font-weight: @font-weight-semi-bold;
+				text-align: center;
 			}
 		}
 	}
@@ -32,14 +32,16 @@ table {
 	
 	&.layout-fixed {
 		table-layout: fixed;
-		border-collapse: initial;
+		border-collapse: collapse;
 		
 		tr {
 			
 			td {
 				width: auto;
+/*
 				overflow: hidden;
 				
+*/
 				&.team {
 					
 					> a {
@@ -136,6 +138,10 @@ table {
 				}
                 
                 &.league{
+					width: 30px;
+				}
+				
+				&.league-logo{
 					width: 30px;
 				}
                 
