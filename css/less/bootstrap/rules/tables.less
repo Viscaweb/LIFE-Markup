@@ -55,6 +55,20 @@
           line-height: @ls-data-league-line-height;
           color: @ls-light-color;
         }
+		
+		span{
+        
+          img{
+            max-width: 17px;
+            max-height: 17px;
+            margin-right: 5px;
+          }
+        }
+        
+        span.match-name {
+	        display: none;
+        }
+      
       }
       
       > a.dropdown-toggle{
@@ -145,6 +159,7 @@
     
       > th{
         background-color: lighten(@ls-greyblue-dark, 18%) !important;
+        
       }
     }
   }
@@ -234,6 +249,7 @@
 
 .table{
   width: 100%;
+  margin-bottom: 0px;
   
   > thead{
   
@@ -368,6 +384,18 @@
     
       > th{
         background-color: darken(@ls-light-color, 8.3%);
+        
+        span.match-name{
+            color: darken(@ls-light-color, 16%) !important;
+            font-weight: @font-weight-normal;
+            display: none;
+          }
+        
+        &:hover {
+	       span.match-name{
+            display: inline-block;
+          } 
+        }
       }
     
       > td{
@@ -465,7 +493,7 @@
               &.available{
               
                 .comment-number{
-                  color: @brand-primary;
+                  color: @ls-light-color;
                 }
               }
             }
@@ -1400,6 +1428,18 @@ tbody{
         
       }
     }
+  }
+  
+  &:hover {
+	   tr.league-data {
+	   		> th {
+		    	.title {
+		    		span.match-name {
+	        			display: inline-block;
+	        		}
+				}
+			}
+       }
   }
 }
 

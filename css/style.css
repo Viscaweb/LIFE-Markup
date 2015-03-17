@@ -8105,6 +8105,7 @@ fieldset[disabled] .btn-twitter.active {
 }
 .table {
   width: 100%;
+  margin-bottom: 0px;
   /*TR HIGHLIGHT STYLES*/
   /*TD HIGHLIGHT STYLES*/
   /*MY GAMES TABLES*/
@@ -8149,6 +8150,14 @@ fieldset[disabled] .btn-twitter.active {
   padding: 2px 4px;
   line-height: 19px;
   color: #ffffff;
+}
+.table > thead.league-data > tr > th > .title span img {
+  max-width: 17px;
+  max-height: 17px;
+  margin-right: 5px;
+}
+.table > thead.league-data > tr > th > .title span.match-name {
+  display: none;
 }
 .table > thead.league-data > tr > th > a.dropdown-toggle {
   padding: 3px 7px;
@@ -8281,6 +8290,12 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr:nth-child(odd) > th span.match-name {
   color: #d6d6d6 !important;
   font-weight: 400;
+  display: none;
+}
+.table tbody tr > th:hover span.match-name,
+.table tbody tr:nth-child(even) > th:hover span.match-name,
+.table tbody tr:nth-child(odd) > th:hover span.match-name {
+  display: inline-block;
 }
 .table tbody tr > td.view-more,
 .table tbody tr:nth-child(even) > td.view-more,
@@ -8392,7 +8407,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr > td.tools a:hover.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a:hover.available .comment-number {
-  color: #5da400;
+  color: #ffffff;
 }
 .table tbody tr > td.tools a.active,
 .table tbody tr:nth-child(even) > td.tools a.active,
@@ -8519,6 +8534,14 @@ fieldset[disabled] .btn-twitter.active {
   padding: 2px 4px;
   line-height: 19px;
   color: #ffffff;
+}
+.table tbody tr.league-data > th > .title span img {
+  max-width: 17px;
+  max-height: 17px;
+  margin-right: 5px;
+}
+.table tbody tr.league-data > th > .title span.match-name {
+  display: none;
 }
 .table tbody tr.league-data > th > a.dropdown-toggle {
   padding: 3px 7px;
@@ -9303,6 +9326,9 @@ fieldset[disabled] .btn-twitter.active {
 }
 .table.table-standing tbody tr:nth-child(odd) td.number {
   background-color: #efefef;
+}
+.table:hover tr.league-data > th .title span.match-name {
+  display: inline-block;
 }
 .table.league-selection {
   border: 1px solid #f5f5f5;
@@ -15096,11 +15122,6 @@ ol.breadcrumb li a img {
   width: 65%;
 }
 /*Team Summary*/
-table.team-results thead tr th span img {
-  max-width: 17px;
-  max-height: 17px;
-  margin-right: 5px;
-}
 table.team-results tbody tr td span.date {
   font-weight: 600;
 }

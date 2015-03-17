@@ -9887,6 +9887,7 @@ fieldset[disabled] .btn-twitter.active {
 
 .table {
   width: 100%;
+  margin-bottom: 0px;
   /*TR HIGHLIGHT STYLES*/
   /*TD HIGHLIGHT STYLES*/
   /*MY GAMES TABLES*/
@@ -9938,6 +9939,16 @@ fieldset[disabled] .btn-twitter.active {
   padding: 2px 4px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.table > thead.league-data > tr > th > .title span img {
+  max-width: 17px;
+  max-height: 17px;
+  margin-right: 5px;
+}
+
+.table > thead.league-data > tr > th > .title span.match-name {
+  display: none;
 }
 
 .table > thead.league-data > tr > th > a.dropdown-toggle {
@@ -10101,6 +10112,13 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr:nth-child(odd) > th span.match-name {
   color: #d6d6d6 !important;
   font-weight: 400;
+  display: none;
+}
+
+.table tbody tr > th:hover span.match-name,
+.table tbody tr:nth-child(even) > th:hover span.match-name,
+.table tbody tr:nth-child(odd) > th:hover span.match-name {
+  display: inline-block;
 }
 
 .table tbody tr > td.view-more,
@@ -10227,7 +10245,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr > td.tools a:hover.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a:hover.available .comment-number {
-  color: #5da400;
+  color: #ffffff;
 }
 
 .table tbody tr > td.tools a.active,
@@ -10376,6 +10394,16 @@ fieldset[disabled] .btn-twitter.active {
   padding: 2px 4px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.table tbody tr.league-data > th > .title span img {
+  max-width: 17px;
+  max-height: 17px;
+  margin-right: 5px;
+}
+
+.table tbody tr.league-data > th > .title span.match-name {
+  display: none;
 }
 
 .table tbody tr.league-data > th > a.dropdown-toggle {
@@ -11346,6 +11374,10 @@ fieldset[disabled] .btn-twitter.active {
 
 .table.table-standing tbody tr:nth-child(odd) td.number {
   background-color: #efefef;
+}
+
+.table:hover tr.league-data > th .title span.match-name {
+  display: inline-block;
 }
 
 .table.league-selection {
@@ -16738,56 +16770,4 @@ table.layout-fixed colgroup col.rank-variation {
   width: 1px;
   height: 33px;
   z-index: -1;
-}
-
-.match-sumary-statistics .table tbody tr td.prog {
-  text-align: right;
-  width: 30%;
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress {
-  margin: 0;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-
-@media \0screen {
-  .match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
-  background-color: #9e9e9e;
-}
-
-.match-sumary-statistics .table tbody tr td.prog.home .progress .progress-bar {
-  float: right;
-}
-
-.match-sumary-statistics .table tbody tr td.striped {
-  text-align: center;
-  width: 19%;
-}
-
-.match-sumary-statistics .table tbody tr td.number {
-  width: 2%;
-  text-align: center;
-  font-weight: 700;
 }
