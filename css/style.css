@@ -8906,7 +8906,7 @@ fieldset[disabled] .btn-twitter.active {
   display: inline-block;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.05);
-  padding: 5px 2px;
+  padding: 5px 1px;
 }
 .table.my-games tbody tr td.tools a:hover {
   background-color: #5da400;
@@ -8995,7 +8995,8 @@ fieldset[disabled] .btn-twitter.active {
   color: #c2c2c2;
 }
 .table.matches tbody tr td.team {
-  width: 50%;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 .table.matches tbody tr td.team > a {
   display: block;
@@ -12697,25 +12698,13 @@ table.layout-fixed tr td {
 }
 table.layout-fixed tr td.team > a {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   position: relative;
 }
-table.layout-fixed tr td.team img {
-  position: absolute;
-  top: 4px;
-  left: 0px;
-}
 table.layout-fixed tr td.team.team1 img {
-  right: 0px;
-  left: auto;
+  float: right;
 }
-table.layout-fixed tr td.team.has-logo > a {
-  padding-left: 20px;
-}
-table.layout-fixed tr td.team.has-logo.team1 > a {
-  padding-right: 20px;
-  padding-left: 0px;
+table.layout-fixed tr td.team.team2 img {
+  float: left;
 }
 table.layout-fixed colgroup col.hour {
   width: 50px;

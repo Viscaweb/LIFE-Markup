@@ -26,6 +26,8 @@ table {
 				font-weight: @font-weight-semi-bold;
 				text-align: center;
 			}
+			
+			
 		}
 	}
 	
@@ -46,34 +48,16 @@ table {
 					
 					> a {
 						overflow: hidden;
-						text-overflow: ellipsis;
 						position: relative;
-					}
-					
-					img {
-						position: absolute;
-						top:4px;
-						left: 0px;
 					}
 					
 				
 					&.team1 img {
-						right: 0px;
-						left: auto;
+						float: right;
 					}
-
 					
-					&.has-logo {
-						
-						> a {
-							padding-left: 20px;
-						}
-						
-						&.team1 > a {
-							padding-right: 20px;
-							padding-left: 0px;
-						}
-
+					&.team2 img {
+						float: left;
 					}
 				
 				}
@@ -90,7 +74,7 @@ table {
 				}
 				
 				&.time {
-					width: 60px;
+					width: 50px;
 				}
 				
 				&.team {
@@ -151,6 +135,9 @@ table {
                 
                 &.date{
 					width:50px ;
+				}
+				&.date-dmy{
+					width:57px ;
 				}
                 
                 &.stage{
