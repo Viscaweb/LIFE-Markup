@@ -186,7 +186,7 @@
               </div>  
             <div class="row">
                 <div class="col-md-12">
-                  <table class="table matches my-games table-striped layout-fixed">
+                  <table class="table matches my-games table-condensed table-striped layout-fixed">
                     <colgroup>
                     	<col class="league-logo" />
                     	<col class="hour" />
@@ -599,6 +599,64 @@
                       
                     </tbody>
                   </table>
+                  <table class="table matches table-condensed table-striped layout-fixed">
+	              <colgroup >
+                        <col class="hour" />
+                        <col class="time" />
+                        <col class="team team1" />
+                        <col class="score" />
+                        <col class="team team2" />
+                        <col class="half-time-score" />
+                        <col class="tools tools-7" />
+                      </colgroup>
+                    <tbody class="league-data active">
+                      <tr class="league-data">
+                        <th colspan="7">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                          </div>
+                          <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
+                          <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 2</a>
+                            <span class="match-name">: Matchday 20</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </tbody>
+	              </table>
+                  <table class="table matches table-condensed table-striped layout-fixed">
+	              <colgroup >
+                        <col class="hour" />
+                        <col class="time" />
+                        <col class="team team1" />
+                        <col class="score" />
+                        <col class="team team2" />
+                        <col class="half-time-score" />
+                        <col class="tools tools-7" />
+                      </colgroup>
+                    <tbody class="league-data active">
+                      <tr class="league-data">
+                        <th colspan="7">
+                          <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                          </div>
+                          <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
+                          <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 2</a>
+                            <span class="match-name">: Matchday 20</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </tbody>
+	              </table>
                 </div>
               </div>
 	        
@@ -627,7 +685,7 @@
               </div>
             <div class="row">
                 <div class="col-md-12">
-                  <table class="table matches my-games table-striped layout-fixed">
+                  <table class="table matches my-games table-condensed table-striped layout-fixed">
                     <colgroup>
                     	<col class="league-logo" />
                     	<col class="hour" />
@@ -1139,7 +1197,7 @@
               </div>
             <div class="row">
                 <div class="col-md-12">
-                  <table class="table matches my-games table-striped layout-fixed">
+                  <table class="table matches my-games table-condensed table-striped layout-fixed">
                     <colgroup>
                     	<col class="league-logo" />
                     	<col class="hour" />
@@ -1147,15 +1205,14 @@
                     	<col class="team" />
                     	<col class="score" />
                     	<col class="team" />
-                    	<col class="odd" />
-                    	<col class="odd" />
-                    	<col class="odd" />
+                    	<col class="prediction" />
+                    	<col class="trend" />
                     	<col class="tools tools-2" />
                     </colgroup>
                    
                     <thead  class="league-data">
                       <tr>
-                        <th colspan="10"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
+                        <th colspan="9"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1193,14 +1250,25 @@
                         </table>
                         " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
-                        <td class="odd">
-                          <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                        <td class="prediction">
+                          <div class="btn-group btn-group-justified btn-group-xs">
+                            <a class="btn btn-prediction">1</a>
+                            <a class="btn btn-prediction">X</a>
+                            <a class="btn btn-prediction">2</a>
+                          </div>
                         </td>
-                        <td class="odd">
-                          <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                        </td>
-                        <td class="odd">
-                          <span class="icon-equal"></span><a href="#">3.80</a>
+                        <td class="trend">
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-home" style="width: 35%">
+                              <span class="sr-only">60% Complete (success)</span>
+                            </div>
+                            <div class="progress-bar progress-bar-neutral" style="width: 30%">
+                              <span class="sr-only">10% Complete (warning)</span>
+                            </div>
+                            <div class="progress-bar progress-bar-away" style="width: 35%">
+                              <span class="sr-only">40% Complete (danger)</span>
+                            </div>
+                          </div>                        
                         </td>
                         <td class="tools">
                           <a href="#"><i class="icon-stats"></i></a>
@@ -1214,14 +1282,25 @@
                         <td class="team team1 has-logo"><a href="#"><span>PSG</span><img src="img/sprites/psg.png" alt="Barcelona"></a></td>
                         <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="img/sprites/lyon.png"><span>Olympique Lyonnais</span></a></td>
-                        <td class="odd">
-                          <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                        <td class="prediction">
+                          <div class="btn-group btn-group-justified btn-group-xs">
+                            <a class="btn btn-prediction">1</a>
+                            <a class="btn btn-prediction">X</a>
+                            <a class="btn btn-prediction">2</a>
+                          </div>
                         </td>
-                        <td class="odd">
-                          <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                        </td>
-                        <td class="odd">
-                          <span class="icon-equal"></span><a href="#">3.80</a>
+                        <td class="trend">
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-home" style="width: 35%">
+                              <span class="sr-only">60% Complete (success)</span>
+                            </div>
+                            <div class="progress-bar progress-bar-neutral" style="width: 30%">
+                              <span class="sr-only">10% Complete (warning)</span>
+                            </div>
+                            <div class="progress-bar progress-bar-away" style="width: 35%">
+                              <span class="sr-only">40% Complete (danger)</span>
+                            </div>
+                          </div>                        
                         </td>
                         <td class="tools">
                           <a href="#"><i class="icon-stats"></i></a>
@@ -1235,14 +1314,25 @@
                         <td class="team team1 has-logo"><a href="#"><span>Monaco</span><img src="img/sprites/monaco.png" alt="Barcelona"></a></td>
                         <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                         <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="img/sprites/team2.png"><span>Nimes</span></a></td>
-                        <td class="odd">
-                          <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                        <td class="prediction">
+                          <div class="btn-group btn-group-justified btn-group-xs">
+                            <a class="btn btn-prediction">1</a>
+                            <a class="btn btn-prediction">X</a>
+                            <a class="btn btn-prediction">2</a>
+                          </div>
                         </td>
-                        <td class="odd">
-                          <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                        </td>
-                        <td class="odd">
-                          <span class="icon-equal"></span><a href="#">3.80</a>
+                        <td class="trend">
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-home" style="width: 35%">
+                              <span class="sr-only">60% Complete (success)</span>
+                            </div>
+                            <div class="progress-bar progress-bar-neutral" style="width: 30%">
+                              <span class="sr-only">10% Complete (warning)</span>
+                            </div>
+                            <div class="progress-bar progress-bar-away" style="width: 35%">
+                              <span class="sr-only">40% Complete (danger)</span>
+                            </div>
+                          </div>                        
                         </td>
                         <td class="tools">
                           <a href="#"><i class="icon-stats"></i></a>
