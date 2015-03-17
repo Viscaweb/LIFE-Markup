@@ -10096,6 +10096,13 @@ fieldset[disabled] .btn-twitter.active {
   background-color: #eaeaea;
 }
 
+.table tbody tr > th span.match-name,
+.table tbody tr:nth-child(even) > th span.match-name,
+.table tbody tr:nth-child(odd) > th span.match-name {
+  color: #d6d6d6 !important;
+  font-weight: 400;
+}
+
 .table tbody tr > td.view-more,
 .table tbody tr:nth-child(even) > td.view-more,
 .table tbody tr:nth-child(odd) > td.view-more {
@@ -11165,12 +11172,6 @@ fieldset[disabled] .btn-twitter.active {
 .table.table-standing tbody tr th {
   border-bottom: 0;
   vertical-align: middle !important;
-}
-
-.table.table-standing thead tr th span.match-name,
-.table.table-standing tbody tr th span.match-name {
-  color: #d6d6d6 !important;
-  font-weight: 400;
 }
 
 .table.table-standing tbody tr td {
@@ -16789,8 +16790,4 @@ table.layout-fixed colgroup col.rank-variation {
   width: 2%;
   text-align: center;
   font-weight: 700;
-}
-
-.match-teams-lineups .component-container {
-  display: table;
 }

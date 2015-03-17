@@ -1,3 +1,7 @@
+.match-teams-lineups .component-container {
+  display: table;
+}
+
 .match-teams-lineups .component-container .team {
   display: table-cell;
   vertical-align: top;
@@ -5603,3 +5607,5 @@ ul.image-list li img {
     content: none;
   }
 }
+
+/*# sourceMappingURL=css/style.map */
