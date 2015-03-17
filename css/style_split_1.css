@@ -10008,10 +10008,6 @@ fieldset[disabled] .btn-twitter.active {
   color: #ffc600;
 }
 
-.table > thead.league-data > tr > th .tools a.active:hover {
-  color: #ffffff;
-}
-
 .table > thead.league-data > tr > th .tools a.live i {
   color: #e33000;
 }
@@ -10218,8 +10214,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
 .table tbody tr:nth-child(odd) > td.tools a:hover {
-  background-color: #5da400;
-  color: #ffffff;
+  color: #5da400;
 }
 
 .table tbody tr > td.tools a:hover.available .comment-number,
@@ -10237,7 +10232,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr > td.tools a.active:hover,
 .table tbody tr:nth-child(even) > td.tools a.active:hover,
 .table tbody tr:nth-child(odd) > td.tools a.active:hover {
-  color: #ffffff;
+  color: #407100;
 }
 
 .table tbody tr > td.tools.tools-1,
@@ -10442,10 +10437,6 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr.league-data > th .tools a.active.fav span {
   font-size: 14px;
   color: #ffc600;
-}
-
-.table tbody tr.league-data > th .tools a.active:hover {
-  color: #ffffff;
 }
 
 .table tbody tr.league-data > th .tools a.live i {
@@ -10864,17 +10855,8 @@ fieldset[disabled] .btn-twitter.active {
   padding: 5px 1px;
 }
 
-.table.my-games tbody tr td.tools a:hover {
-  background-color: #5da400;
-  color: #ffffff;
-}
-
 .table.my-games tbody tr td.tools a.active {
   color: #5da400;
-}
-
-.table.my-games tbody tr td.tools a.active:hover {
-  color: #ffffff;
 }
 
 .table.matches thead.league-data tr th {
@@ -10932,10 +10914,6 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches thead.league-data tr th .tools a.active.fav span {
   color: #ffc600;
   font-size: 14px;
-}
-
-.table.matches thead.league-data tr th .tools a.active:hover {
-  color: #ffffff;
 }
 
 .table.matches thead.league-data tr th .tools a.live i {
@@ -11173,10 +11151,6 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches tbody tr.league-data th .tools a.active.fav span {
   color: #ffc600;
   font-size: 14px;
-}
-
-.table.matches tbody tr.league-data th .tools a.active:hover {
-  color: #ffffff;
 }
 
 .table.matches tbody tr.league-data th .tools a.live i {
@@ -16788,4 +16762,35 @@ table.layout-fixed colgroup col.rank-variation {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+
+@media \0screen {
+  .match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+
+.match-sumary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
+  background-color: #9e9e9e;
+}
+
+.match-sumary-statistics .table tbody tr td.prog.home .progress .progress-bar {
+  float: right;
+}
+
+.match-sumary-statistics .table tbody tr td.striped {
+  text-align: center;
+  width: 19%;
+}
+
+.match-sumary-statistics .table tbody tr td.number {
+  width: 2%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.match-teams-lineups .component-container {
+  display: table;
 }

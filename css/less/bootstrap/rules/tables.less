@@ -126,7 +126,7 @@
             }
             
             &:hover{
-              color: @ls-light-color;
+             // color: @ls-light-color;
             }
           }
           
@@ -218,7 +218,7 @@
             }
             
             &:hover{
-              color: @ls-light-color;
+              //color: @ls-light-color;
             }
           }
           
@@ -460,8 +460,7 @@
             }            
             
             &:hover{
-              background-color: @brand-primary;
-              color: @ls-light-color;
+              color: @brand-primary;
               
               &.available{
               
@@ -475,7 +474,7 @@
               color: @brand-primary;
               
               &:hover{
-                color: @ls-light-color;
+                color: darken(@brand-primary, 10%);
               }
             }
           }
@@ -1067,17 +1066,11 @@ tbody{
               color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
               padding: 5px 1px;
               
-              &:hover{
-                background-color: @brand-primary;
-                color: @ls-light-color;
-              }
               
               &.active{
                 color: @brand-primary;
                 
-                &:hover{
-                  color: @ls-light-color;
-                }
+
               }
             }
           }

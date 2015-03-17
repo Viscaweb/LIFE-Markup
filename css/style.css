@@ -8205,9 +8205,6 @@ fieldset[disabled] .btn-twitter.active {
   font-size: 14px;
   color: #ffc600;
 }
-.table > thead.league-data > tr > th .tools a.active:hover {
-  color: #ffffff;
-}
 .table > thead.league-data > tr > th .tools a.live i {
   color: #e33000;
 }
@@ -8384,8 +8381,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
 .table tbody tr:nth-child(odd) > td.tools a:hover {
-  background-color: #5da400;
-  color: #ffffff;
+  color: #5da400;
 }
 .table tbody tr > td.tools a:hover.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
@@ -8400,7 +8396,7 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr > td.tools a.active:hover,
 .table tbody tr:nth-child(even) > td.tools a.active:hover,
 .table tbody tr:nth-child(odd) > td.tools a.active:hover {
-  color: #ffffff;
+  color: #407100;
 }
 .table tbody tr > td.tools.tools-1,
 .table tbody tr:nth-child(even) > td.tools.tools-1,
@@ -8572,9 +8568,6 @@ fieldset[disabled] .btn-twitter.active {
 .table tbody tr.league-data > th .tools a.active.fav span {
   font-size: 14px;
   color: #ffc600;
-}
-.table tbody tr.league-data > th .tools a.active:hover {
-  color: #ffffff;
 }
 .table tbody tr.league-data > th .tools a.live i {
   color: #e33000;
@@ -8908,15 +8901,8 @@ fieldset[disabled] .btn-twitter.active {
   color: rgba(0, 0, 0, 0.05);
   padding: 5px 1px;
 }
-.table.my-games tbody tr td.tools a:hover {
-  background-color: #5da400;
-  color: #ffffff;
-}
 .table.my-games tbody tr td.tools a.active {
   color: #5da400;
-}
-.table.my-games tbody tr td.tools a.active:hover {
-  color: #ffffff;
 }
 .table.matches thead.league-data tr th {
   border-bottom: 1px solid #999999;
@@ -8963,9 +8949,6 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches thead.league-data tr th .tools a.active.fav span {
   color: #ffc600;
   font-size: 14px;
-}
-.table.matches thead.league-data tr th .tools a.active:hover {
-  color: #ffffff;
 }
 .table.matches thead.league-data tr th .tools a.live i {
   color: #e33000;
@@ -9161,9 +9144,6 @@ fieldset[disabled] .btn-twitter.active {
 .table.matches tbody tr.league-data th .tools a.active.fav span {
   color: #ffc600;
   font-size: 14px;
-}
-.table.matches tbody tr.league-data th .tools a.active:hover {
-  color: #ffffff;
 }
 .table.matches tbody tr.league-data th .tools a.live i {
   color: #e33000;

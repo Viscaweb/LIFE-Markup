@@ -1,34 +1,3 @@
-@media \0screen {
-  .match-sumary-statistics .table tbody tr td.prog .progress .progress-bar {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.match-sumary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
-  background-color: #9e9e9e;
-}
-
-.match-sumary-statistics .table tbody tr td.prog.home .progress .progress-bar {
-  float: right;
-}
-
-.match-sumary-statistics .table tbody tr td.striped {
-  text-align: center;
-  width: 19%;
-}
-
-.match-sumary-statistics .table tbody tr td.number {
-  width: 2%;
-  text-align: center;
-  font-weight: 700;
-}
-
-.match-teams-lineups .component-container {
-  display: table;
-}
-
 .match-teams-lineups .component-container .team {
   display: table-cell;
   vertical-align: top;
