@@ -17859,6 +17859,7 @@ ul.image-list li img {
 .sidebar-nav > li > a {
   font-weight: 600;
   line-height: 23px;
+  cursor: pointer;
   padding: 11px 21px;
   padding-right: 15px;
 }
@@ -17954,7 +17955,6 @@ ul.image-list li img {
   font-family: "LSicons";
   font-size: 10px;
   left: 8px;
-  margin-top: 2px;
   position: absolute;
   color: #d4d4d4;
   transition: transform 200ms ease-out;
@@ -18022,6 +18022,9 @@ ul.image-list li img {
 .sidebar-nav li .sub-menu > li a .country-flag {
   position: relative;
   top: 6px;
+}
+.sidebar-nav li .sub-menu > li a.dropdown-toggle:before {
+  margin-top: 2px;
 }
 .sidebar-nav li .sub-menu > li.open > a:hover {
   color: #ffffff;

@@ -19,7 +19,7 @@
 		> a{
 			font-weight: 600;
 			line-height: 23px;
-			
+			cursor: pointer;
 			padding: 11px 21px;
 			padding-right: 15px;
       
@@ -131,7 +131,6 @@
 			    font-family: "LSicons";
 			    font-size: @font-size-small - 2;
 			    left: 8px;
-			    margin-top: 2px;
 			    position: absolute;
 			    color: darken(@ls-light-color,17%);
 			    .transition(transform 200ms ease-out);
@@ -220,7 +219,12 @@
 						top:6px;
 					}
 
+					&.dropdown-toggle:before {
+						margin-top: 2px;
+					}
 				}
+				
+				
 			
 				
 				
