@@ -9947,10 +9947,6 @@ fieldset[disabled] .btn-twitter.active {
   margin-right: 5px;
 }
 
-.table > thead.league-data > tr > th > .title span.match-name {
-  display: none;
-}
-
 .table > thead.league-data > tr > th > a.dropdown-toggle {
   padding: 3px 7px;
   line-height: 19px;
@@ -10400,10 +10396,6 @@ fieldset[disabled] .btn-twitter.active {
   max-width: 17px;
   max-height: 17px;
   margin-right: 5px;
-}
-
-.table tbody tr.league-data > th > .title span.match-name {
-  display: none;
 }
 
 .table tbody tr.league-data > th > a.dropdown-toggle {
@@ -11192,6 +11184,10 @@ fieldset[disabled] .btn-twitter.active {
   color: #e33000;
 }
 
+.table.matches tbody tr.league-data span.match-name {
+  display: none;
+}
+
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;
 }
@@ -11260,6 +11256,9 @@ fieldset[disabled] .btn-twitter.active {
 
 .table.table-standing tbody tr td.team > a {
   color: #5c5c5c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .table.table-standing tbody tr td.team img {
@@ -11310,6 +11309,10 @@ fieldset[disabled] .btn-twitter.active {
 
 .table.table-standing tbody tr td.point {
   text-align: center;
+}
+
+.table.table-standing tbody tr.league-data span.match-name {
+  display: inline-block;
 }
 
 .table.table-standing tbody tr.live td.team,
@@ -15530,6 +15533,8 @@ span.glyphicon-star.active {
 
 table tr td.stage {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 table tr td.stage img {
@@ -15646,6 +15651,10 @@ table.layout-fixed colgroup col.date-dmy {
 
 table.layout-fixed colgroup col.stage {
   width: 80px;
+}
+
+table.layout-fixed colgroup col.stage-has-logo {
+  width: 95px;
 }
 
 table.layout-fixed colgroup col.minutes {
@@ -16758,16 +16767,4 @@ table.layout-fixed colgroup col.rank-variation {
   -moz-box-shadow: none;
   box-shadow: none;
   background-color: #ffffff;
-}
-
-.match-sumary-statistics .possession .graph .bar:before {
-  background-color: #ffffff;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 50%;
-  width: 1px;
-  height: 33px;
-  z-index: -1;
 }

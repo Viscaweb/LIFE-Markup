@@ -1,3 +1,15 @@
+.match-sumary-statistics .possession .graph .bar:before {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 1px;
+  height: 33px;
+  z-index: -1;
+}
+
 .match-sumary-statistics .table tbody tr td.prog {
   text-align: right;
   width: 30%;

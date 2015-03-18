@@ -64,10 +64,7 @@
             margin-right: 5px;
           }
         }
-        
-        span.match-name {
-	        display: none;
-        }
+
       
       }
       
@@ -1116,7 +1113,7 @@ tbody{
       tr{
       
         .league-data-matches-style();
-
+		
       }
     }
     
@@ -1242,6 +1239,10 @@ tbody{
 
         &.league-data{
           .league-data-matches-style();
+          
+          span.match-name {
+	        display: none;
+        	}
         }
       }
     }
@@ -1330,6 +1331,9 @@ tbody{
            
             > a{
               color: lighten(@ls-dark-color, 36%);
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
             
             img{
@@ -1384,6 +1388,13 @@ tbody{
           }
         }
         
+        &.league-data {
+	        
+	        span.match-name {
+	        	display: inline-block;
+        	}
+        }
+        
         &.live{
         
           td{
@@ -1431,6 +1442,7 @@ tbody{
   }
   
   &:hover {
+	   
 	   tr.league-data {
 	   		> th {
 		    	.title {
