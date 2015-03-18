@@ -6620,56 +6620,17 @@ button.close {
 }
 .btn-live {
   position: relative;
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-  /*
-  &:after{
-    position: absolute;
-    background: url("@{ls-image-live-spot}") no-repeat 0 center;
-    content: "";
-    display: block;
-    width: 8px;
-    height: 100%;
-    left: 10px;
-    top: 0;
-  }
-*/
+  padding-left: 23px;
 }
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-.btn-live:before {
+.btn-live:after {
+  position: absolute;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 center;
   content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
+  display: block;
+  width: 8px;
+  height: 100%;
+  left: 10px;
+  top: 0;
 }
 .btn-selector-group .btn-selector-item {
   vertical-align: top;
@@ -7612,7 +7573,8 @@ fieldset[disabled] .btn-twitter.active {
   background-color: #424749;
   border: none;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
   height: 50px;
   margin-bottom: 0;
   position: relative;
@@ -7631,8 +7593,8 @@ fieldset[disabled] .btn-twitter.active {
   margin: 0;
 }
 .header .navbar-inverse .navbar-nav > li > a {
-  font-family: 'Open Sans', sans-serif;
-  color: #d9d9d9;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #c2c2c2;
   padding: 0 14px;
   line-height: 50px;
 }
@@ -9050,71 +9012,17 @@ fieldset[disabled] .btn-twitter.active {
   font-weight: 700;
 }
 .table.matches tbody tr.live > td.time {
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-}
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-.table.matches tbody tr.live > td.time:before {
-  content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
+  padding-left: 15px;
+  background-image: url("../img/sprites/live-spot.gif");
+  background-repeat: no-repeat;
+  background-position: 5px center;
 }
 .table.matches tbody tr.live.paused > td.time,
 .table.matches tbody tr.live.paused > td.date {
-  /*
-    padding-left: 15px;
-    background-image: url("@{ls-image-paused-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-*/
-}
-.table.matches tbody tr.live.paused > td.time:before,
-.table.matches tbody tr.live.paused > td.date:before {
-  content: "";
-  background: #b3b3b3;
-  border: 1px solid #b3b3b3;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: none;
-  -o-animation: none;
-  animation: none;
-  -webkit-animation: none 300ms 0 ease;
-  -moz-animation: none 300ms 0 ease;
-  -ms-animation: none 300ms 0 ease;
+  padding-left: 15px;
+  background-image: url("../img/sprites/paused-spot.gif");
+  background-repeat: no-repeat;
+  background-position: 5px center;
 }
 .table.matches tbody tr.highlight .score {
   background-color: #e33000 !important;
@@ -9282,44 +9190,10 @@ fieldset[disabled] .btn-twitter.active {
   color: #e33000;
 }
 .table.table-standing tbody tr.live td.extra-points {
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-}
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-.table.table-standing tbody tr.live td.extra-points:before {
-  content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
+  padding-left: 15px;
+  background-image: url("../img/sprites/live-spot.gif");
+  background-repeat: no-repeat;
+  background-position: 5px center;
 }
 .table.table-standing tbody tr.selected-row td {
   background-color: #d2dae8;
@@ -11216,81 +11090,18 @@ span.sprite.webmaster-border {
 }
 .matches-slider .content .match.live .status,
 .matches-slider .content .match.paused .status {
-  /*
-          padding-left: 11px;
-          background: url("@{ls-image-live-spot}") no-repeat 0 4px;
-*/
+  padding-left: 11px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   font-weight: 600;
   color: #e33000;
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-}
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-.matches-slider .content .match.live .status:before,
-.matches-slider .content .match.paused .status:before {
-  content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
 }
 .matches-slider .content .match.live table tr td.score,
 .matches-slider .content .match.paused table tr td.score {
   color: #e33000;
 }
 .matches-slider .content .match.paused .status {
+  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
   color: #9a9a9a;
-  /*
-    padding-left: 15px;
-    background-image: url("@{ls-image-paused-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-*/
-}
-.matches-slider .content .match.paused .status:before {
-  content: "";
-  background: #b3b3b3;
-  border: 1px solid #b3b3b3;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: none;
-  -o-animation: none;
-  animation: none;
-  -webkit-animation: none 300ms 0 ease;
-  -moz-animation: none 300ms 0 ease;
-  -ms-animation: none 300ms 0 ease;
 }
 .matches-slider .content .match.highlight {
   background-color: #fff4ce;
@@ -11350,49 +11161,8 @@ span.sprite.webmaster-border {
 }
 .match-slider-inverse .slider-content > .title.live h4 span.title,
 .match-slider-inverse .slider-content > .title.live .h4 span.title {
-  /*
-            background: url("@{ls-image-live-spot}") no-repeat 0 4px;
-            padding-left: 11px;
-*/
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-}
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-.match-slider-inverse .slider-content > .title.live h4 span.title:before,
-.match-slider-inverse .slider-content > .title.live .h4 span.title:before {
-  content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  padding-left: 11px;
 }
 .match-slider-inverse .control {
   background-color: #424749;
@@ -12083,50 +11853,10 @@ span.sprite.webmaster-border {
   font-size: 11px;
   font-weight: 600;
   color: #e33000;
-  /*
-                padding-left: 17px;
-                background-image: url("@{ls-image-live-spot}");
-                background-position: 5px center;
-                background-repeat: no-repeat;
-*/
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-}
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-.live-commented-matches.panel .matches tr.live td.date:before {
-  content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
+  padding-left: 17px;
+  background-image: url("../img/sprites/live-spot.gif");
+  background-position: 5px center;
+  background-repeat: no-repeat;
 }
 .live-commented-matches.panel .matches tr.live td.score {
   color: #e33000;
@@ -12785,7 +12515,10 @@ table.layout-fixed colgroup col.odd {
   width: 54px ;
 }
 table.layout-fixed colgroup col.prediction {
-  width: 70px ;
+  width: 80px ;
+}
+table.layout-fixed colgroup col.prediction-status {
+  width: 25px;
 }
 table.layout-fixed colgroup col.trend {
   width: 70px;
@@ -15016,44 +14749,10 @@ table.other-sport tbody.live tr td.time {
 }
 table.other-sport tbody.live tr td.time {
   font-size: 11px;
-  /*padding-left: 15px;
-    background-image: url("@{ls-image-live-spot}");
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    */
-}
-@keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    background: #e33000;
-  }
-  50% {
-    background: transparent;
-  }
-}
-table.other-sport tbody.live tr td.time:before {
-  content: "";
-  background: #e33000;
-  border: 1px solid #e33000;
-  border-radius: 10px;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 4px;
-  box-sizing: border-box;
-  -webkit-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-  -webkit-animation: blink 1s step-end infinite 300ms 0 ease;
-  -moz-animation: blink 1s step-end infinite 300ms 0 ease;
-  -ms-animation: blink 1s step-end infinite 300ms 0 ease;
+  padding-left: 15px;
+  background-image: url("../img/sprites/live-spot.gif");
+  background-repeat: no-repeat;
+  background-position: 5px center;
 }
 table.other-sport tbody.live tr td.time img {
   margin-right: 3px;
@@ -18391,4 +18090,3 @@ ul.image-list li img {
     content: none;
   }
 }
-/*# sourceMappingURL=css/style.map */
