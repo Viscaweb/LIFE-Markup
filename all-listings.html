@@ -2959,7 +2959,7 @@
                         <a href="#"><i class="icon-bell"></i></a>
                       </td>
                     </tr>
-                    <tr class="prediction-waiting">
+                    <tr class="prediction-waiting prediction-hidden">
                       <td class="icon odd"><span class="icon icon-clock"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
@@ -2968,7 +2968,7 @@
                       <td class="team team2"><a href="#">Ath. Bilbao</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction btn-hidden">Hidden</a>
+                          <a href="#" class="btn btn-prediction btn-hidden disabled">Hidden</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -2998,7 +2998,7 @@
                       <td class="team team2"><a href="#">Ath. Bilbao</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction btn-hidden">Canceled</a>
+                          <a href="#" class="btn btn-prediction btn-hidden disabled">Canceled</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3027,10 +3027,10 @@
                       <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">0</span></a></td>
                       <td class="team team2"><a href="#">PSG</a></td>
                       <td class="prediction">
-                        <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction" disabled="disabled">1</a>
-                          <a href="#" class="btn btn-prediction" disabled="disabled">X</a>
-                          <a href="#" class="btn btn-prediction-done" disabled="disabled">2</a>
+                        <div class="btn-group btn-group-justified btn-group-xs"  data-toggle="tooltip" data-placement="top" title="Predictions are only possible before kick off.">
+                          <a href="#" class="btn btn-prediction disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction-done disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3052,7 +3052,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-won event-won prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Bastia</a></td>
@@ -3060,9 +3060,9 @@
                       <td class="team team2"><a href="#">Lens</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction-success">2</a>
+                          <a href="#" class="btn btn-prediction disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction-success disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3084,7 +3084,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-lost event-lost prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Reims</a></td>
@@ -3092,9 +3092,9 @@
                       <td class="team team2"><a href="#">Toulouse</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction-result">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction-failed">2</a>
+                          <a href="#" class="btn btn-prediction-result disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction-failed disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3116,7 +3116,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-won event-won prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">St Etienne</a></td>
@@ -3124,9 +3124,9 @@
                       <td class="team team2"><a href="#">Caen</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction-success">2</a>
+                          <a href="#" class="btn btn-prediction disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction-success disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3148,7 +3148,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-lost event-lost prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Real Madrid</a></td>
@@ -3156,9 +3156,9 @@
                       <td class="team team2"><a href="#">Atletico M.</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction-failed">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction-result">2</a>
+                          <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction-result disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3180,7 +3180,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-won event-won prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Juventus</a></td>
@@ -3188,9 +3188,9 @@
                       <td class="team team2"><a href="#">Udinese</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction-success">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction">2</a>
+                          <a href="#" class="btn btn-prediction-success disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3212,7 +3212,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-lost event-lost prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Lille</a></td>
@@ -3220,9 +3220,9 @@
                       <td class="team team2"><a href="#">Nantes</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction">1</a>
-                          <a href="#" class="btn btn-prediction-failed">X</a>
-                          <a href="#" class="btn btn-prediction-result">2</a>
+                          <a href="#" class="btn btn-prediction disabled">1</a>
+                          <a href="#" class="btn btn-prediction-failed disabled">X</a>
+                          <a href="#" class="btn btn-prediction-result disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3244,7 +3244,7 @@
                       </td>
                     </tr>
                     <tr class="prediction-won event-won prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Guingamp</a></td>
@@ -3252,9 +3252,9 @@
                       <td class="team team2"><a href="#">Bordeaux</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction">1</a>
-                          <a href="#" class="btn btn-prediction-success">X</a>
-                          <a href="#" class="btn btn-prediction">2</a>
+                          <a href="#" class="btn btn-prediction disabled">1</a>
+                          <a href="#" class="btn btn-prediction-success disabled">X</a>
+                          <a href="#" class="btn btn-prediction disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3276,7 +3276,7 @@
                       </td>
                     </tr>  
                     <tr class="prediction-won event-won prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Man Utd</a></td>
@@ -3284,9 +3284,9 @@
                       <td class="team team2"><a href="#">QPR</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction-success">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction">2</a>
+                          <a href="#" class="btn btn-prediction-success disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">
@@ -3308,7 +3308,7 @@
                       </td>
                     </tr>    
                     <tr class="prediction-lost event-lost prediction-closed">
-                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                      <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                       <td class="date">12/09</td>
                       <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                       <td class="team team1"><a href="#">Evian</a></td>
@@ -3316,9 +3316,9 @@
                       <td class="team team2"><a href="#">OM</a></td>
                       <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                          <a href="#" class="btn btn-prediction-failed">1</a>
-                          <a href="#" class="btn btn-prediction">X</a>
-                          <a href="#" class="btn btn-prediction-result">2</a>
+                          <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                          <a href="#" class="btn btn-prediction disabled">X</a>
+                          <a href="#" class="btn btn-prediction-result disabled">2</a>
                         </div>
                       </td>
                       <td class="trend">

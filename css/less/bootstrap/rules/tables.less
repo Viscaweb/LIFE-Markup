@@ -1538,26 +1538,57 @@ tbody{
       }
       
       &.prediction-cancelled{
+       
         td.icon{
           background-color: @ls-td-cancelled-bg !important;     
+        }
+       
+        .btn {
+	        opacity: 1;
+        }
+      }
+      
+      &.prediction-hidden{
+       
+        .btn {
+	        opacity: 1;
         }
       }
 
       &.prediction-locked{
         td.prediction{
+          
           .btn-prediction{
             border-color: darken(@ls-light-color, 11.6%);
             color: lighten(@ls-dark-color, 20%);
-            cursor: default;
           }
+          
           .btn-prediction-success, .btn-prediction-failed, .btn-prediction-result {
 	         cursor: default;
           }
+          
+          .btn-group {
+	        cursor: not-allowed;
+          }
+          
         }
       }
       
       &.prediction-closed{
+        
         .prediction-locked;
+        
+        td.prediction{
+        
+	        .btn {
+		        opacity: 1;
+	        }
+	        
+	        .btn-group {
+		        cursor: default;
+	          }
+        }
+        
       }
 
       td{ 
