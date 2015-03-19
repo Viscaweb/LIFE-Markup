@@ -313,71 +313,36 @@
 }
 
 /*Custom Buttons*/
-.btn-prediction,.btn-prediction:focus{
-  border-color: @ls-btn-prediction;
-  background-color: @ls-light-color;
-  color: @ls-btn-prediction;
 
-  &:hover{
-    color:@ls-btn-prediction;
-    border-color: darken(@ls-btn-prediction, 6%);
-    background: darken(@ls-light-color, 6%);
-  }
+.btn-prediction,.btn-prediction:focus{
+	.button-variant(@ls-btn-prediction; @ls-light-color; @ls-btn-prediction);
 }
+
 
 .btn-prediction-done,.btn-prediction-done:focus{
-  border-color: lighten(@ls-dark-color, 37%);
-  background-color: lighten(@ls-dark-color, 45%);
-  color: @ls-light-color;
-
-  &:hover{
-    color:@ls-light-color;
-    background: lighten(@ls-dark-color, 40%);
-  }
+	.button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
 }
+
 
 .btn-prediction-success,.btn-prediction-success:focus{
-  color: @ls-light-color;
-  border-color: @ls-success-border;
-  background: @ls-btn-success;
-  outline: none;
-
-  &:hover{
-    color: @ls-light-color;
-    border-color: @ls-success-border - 18%;
-    background: @ls-btn-success - 14%;
-  }
+	.button-variant(@ls-light-color; @ls-btn-success; @ls-success-border);
 }
+ 
 
 .btn-prediction-result,.btn-prediction-result:focus{
-  color: @ls-success-border;
-  border-color: @ls-success-border;
-  background: darken(@ls-light-color, 3%);
-  outline: none;
-  border-right-width: 1px !important;
-
-  &:hover{
-    color: @ls-success-border;
-    border-color: @ls-success-border - 18%;
-    background: darken(@ls-light-color, 8%);
-  }
+	.button-variant(@ls-success-border; darken(@ls-light-color, 3%); @ls-success-border);
+	border-right-width: 1px !important;
+	outline: none;
 }
+
 
 .btn.btn-prediction-result + .btn{
   margin-left: 0;
 }
 
 .btn-prediction-failed,.btn-prediction-failed:focus{
-  color: @ls-light-color;
-  border-color: @ls-btn-danger - 15%;
-  background: @ls-btn-danger;
-  outline: none;
-
-  &:hover{
-    color: @ls-light-color;
-    border-color: @ls-btn-danger - 18%;
-    background: @ls-btn-danger - 14%;
-  }
+	.button-variant(@ls-light-color; @ls-btn-danger; @ls-btn-danger - 15%);
+	outline: none;
 }
 
 .btn-live{
