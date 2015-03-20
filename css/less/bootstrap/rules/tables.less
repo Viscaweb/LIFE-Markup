@@ -1542,58 +1542,8 @@ tbody{
         td.icon{
           background-color: @ls-td-cancelled-bg !important;     
         }
-       
-        &.prediction-closed .btn-group,
-        .btn {
-	        opacity: 0.6;
-        }
-      }
-      
-      &.prediction-hidden{
-       
-       .prediction-locked;
-       
-        .btn {
-	        opacity: 1;
-        }
-      }
 
-      &.prediction-locked{
-        td.prediction{
-          
-          .btn-prediction{
-            border-color: darken(@ls-light-color, 11.6%);
-            color: lighten(@ls-dark-color, 20%);
-          }
-          
-          .btn-prediction-success, .btn-prediction-failed, .btn-prediction-result {
-	         cursor: default;
-          }
-          
-          .btn-group {
-	        cursor: not-allowed;
-          }
-          
-        }
-      }
-      
-      &.prediction-closed{
-        
-        .prediction-locked;
-        
-        td.prediction{
-        
-	        .btn {
-		        opacity: 1;
-		        cursor: default; //necessary on IE
-	        }
-	        
-	        .btn-group {
-		        cursor: default;
-	          }
-        }
-        
-      }
+      }  
 
       td{ 
 
@@ -1608,8 +1558,6 @@ tbody{
           }
         }
 
-
-
         &.league-logo{
           padding: 0 3px;
 
@@ -1619,12 +1567,7 @@ tbody{
           }
         }
 
-        &.prediction{
-          .btn-hidden{
-            text-transform: uppercase;
-            font-size: @font-size-x-small;
-          }
-        }
+        
       }
     }
   }
