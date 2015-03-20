@@ -31,6 +31,72 @@
 	outline: none;
 }
 
+
+
+/* Prediction buttons status depending on prediction state */
+
+.prediction-locked{
+          
+	.btn-prediction{
+        border-color: darken(@ls-light-color, 11.6%);
+		color: lighten(@ls-dark-color, 20%);
+	}
+      
+	.btn-prediction-success, .btn-prediction-failed, .btn-prediction-result {
+		cursor: default;
+	}
+      
+	.btn-group {
+		cursor: not-allowed;
+	}
+          
+        
+}
+
+.prediction-closed{
+        
+	.prediction-locked;
+	
+	.btn {
+		opacity: 1;
+		cursor: default; //necessary on IE
+	}
+	
+	.btn-group {
+		cursor: default;
+	}
+}
+
+
+.prediction-hidden{
+       
+	.prediction-locked;
+	
+	.btn {
+	    opacity: 1;
+	}
+}
+
+.prediction-cancelled{
+
+	&.prediction-closed .btn-group,
+	.btn {
+	    opacity: 0.6;
+	}
+}
+
+.prediction{
+	.btn-hidden{
+		text-transform: uppercase;
+		font-size: @font-size-x-small;
+	}
+}
+
+
+
+
+
+
 .btn-live{
   position: relative;
   padding-left: 23px;
@@ -110,3 +176,8 @@
     margin: 0 5px;
   }
 }
+
+
+
+
+
