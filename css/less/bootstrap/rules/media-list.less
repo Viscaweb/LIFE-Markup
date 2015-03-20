@@ -21,19 +21,35 @@
     }
 
     .avatar{
-      text-align: center;
-      min-width: 49px;
+    	text-align: center;
+		min-width: 49px;
       
-      .btn-group{
-        display: block;
-        margin-top: 5px;
+		.btn-group{
+        	display: block;
+			margin-top: 5px;
         
-        .btn{
-          font-size: 11px;
-          line-height: 13px;
-          padding: 1px 4px;
-        }
-      }
+			.btn{
+			font-size: 11px;
+			line-height: 13px;
+			padding: 1px 4px;
+        	}
+    	}
+    
+		&.avatar-user {
+	  
+		  img {
+			  background: @ls-user-avatar-placeholder-bg;
+		  }
+		  
+		}
+		
+		&.player-image {
+	  
+		  img {
+			  background: @ls-player-image-placeholder-bg;
+		  }
+		  
+		}
     }
     
     .img-circle{
