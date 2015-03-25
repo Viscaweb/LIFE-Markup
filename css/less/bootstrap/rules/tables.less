@@ -471,6 +471,10 @@
               position: relative;
               color: darken(@ls-light-color, 29%);
               
+              &.live {
+	              color: @live-red;
+              }
+              
               .comment-number{
                 color: @ls-light-color;
                 font-size: @font-size-x-tiny - 2px; 
@@ -560,25 +564,7 @@
             }
           }
           
-          &.tools{
           
-            a.available{
-              color: @brand-primary;
-              
-              i.icon-prono{
-                color: darken(@ls-light-color, 29%);
-              }              
-              
-              &:hover{
-                color: @ls-light-color;
-                
-                i.icon-prono{
-                  color:@ls-light-color;
-                }
-              }
-
-            }
-          }
         }
         
         &.highlight{
