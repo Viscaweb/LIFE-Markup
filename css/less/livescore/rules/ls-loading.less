@@ -72,9 +72,21 @@
   &.fourth-menu {
 	  .loading-left-nav;  
   }
-  
-  
-  
+
+}
+
+/* Classic loading for some simple elements */
+.sidebar-nav .sub-menu li.loading {
+  min-height: initial;
+
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
 }
 
 
