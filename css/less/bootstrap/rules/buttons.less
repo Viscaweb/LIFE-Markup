@@ -5,11 +5,6 @@
   padding: (@padding-large-vertical - 1) (@padding-base-horizontal - 1);
   .transition(.6s ease-in-out width); 
  
-  span{ 
-    &.icon, &.icon-caret-down, &.icon-caret-up, &.icon-caret-left, &.icon-caret-right {
-      color: darken(@ls-light-color, 28%);
-    }
-  }
 
   &:focus{
     outline: none;
@@ -66,6 +61,19 @@
   }
 }
 
+.btn-default {
+
+	span{ 
+	    
+	    &.icon,
+	    &.icon-caret-down,
+	    &.icon-caret-up,
+	    &.icon-caret-left,
+	    &.icon-caret-right {
+	      color: darken(@ls-light-color, 28%);
+	    }
+	}
+}
 
 .btn-primary,.btn-primary:focus{
   color: @ls-light-color;
@@ -84,6 +92,7 @@
     color: @ls-light-color;
     margin-right: 5px;
   }
+
 }
 
 .btn-success,.btn-success:focus{
