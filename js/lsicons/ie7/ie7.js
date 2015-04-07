@@ -38,7 +38,7 @@
 		'icon-football': '&#xe615;',
 		'icon-googleplus': '&#xe616;',
 		'icon-handball': '&#xe617;',
-		'icon-icehockey': '&#xe618;',
+		'icon-hockey': '&#xe618;',
 		'icon-man': '&#xe619;',
 		'icon-mic': '&#xe61a;',
 		'icon-open': '&#xe61b;',
@@ -68,6 +68,7 @@
 		'icon-man-height': '&#xe634;',
 		'icon-weight': '&#xe635;',
 		'icon-arrows-position': '&#xe636;',
+		'icon-bell-off': '&#xe637;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

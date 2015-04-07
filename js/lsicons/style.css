@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?-xj98rm');
-	src:url('fonts/LSicons.eot?#iefix-xj98rm') format('embedded-opentype'),
-		url('fonts/LSicons.woff?-xj98rm') format('woff'),
-		url('fonts/LSicons.ttf?-xj98rm') format('truetype'),
-		url('fonts/LSicons.svg?-xj98rm#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?um82xh');
+	src:url('fonts/LSicons.eot?#iefixum82xh') format('embedded-opentype'),
+		url('fonts/LSicons.woff?um82xh') format('woff'),
+		url('fonts/LSicons.ttf?um82xh') format('truetype'),
+		url('fonts/LSicons.svg?um82xh#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -123,7 +123,7 @@
 	content: "\e617";
 }
 
-.icon-icehockey:before {
+.icon-hockey:before {
 	content: "\e618";
 }
 
@@ -241,5 +241,9 @@
 
 .icon-arrows-position:before {
 	content: "\e636";
+}
+
+.icon-bell-off:before {
+	content: "\e637";
 }
 

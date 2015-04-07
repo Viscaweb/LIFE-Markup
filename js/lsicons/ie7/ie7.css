@@ -73,7 +73,7 @@
 .icon-handball {
 	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe617;');
 }
-.icon-icehockey {
+.icon-hockey {
 	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe618;');
 }
 .icon-man {
@@ -162,4 +162,7 @@
 }
 .icon-arrows-position {
 	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe636;');
+}
+.icon-bell-off {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe637;');
 }
