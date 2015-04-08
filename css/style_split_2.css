@@ -1,3 +1,20 @@
+.loading.third-menu:before {
+  display: none;
+}
+
+.loading.third-menu:after {
+  background-image: none;
+  background-color: rgba(243, 244, 245, 0.8);
+}
+
+.loading.fourth-menu {
+  min-height: initial;
+}
+
+.loading.fourth-menu:before {
+  display: none;
+}
+
 .loading.fourth-menu:after {
   background-image: none;
   background-color: rgba(243, 244, 245, 0.8);

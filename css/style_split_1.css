@@ -9947,6 +9947,12 @@ button.close {
   color: #e33000;
 }
 
+.table tbody tr > td.tools a.available.live:hover,
+.table tbody tr:nth-child(even) > td.tools a.available.live:hover,
+.table tbody tr:nth-child(odd) > td.tools a.available.live:hover {
+  color: #b02500;
+}
+
 .table tbody tr > td.tools a.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
@@ -9964,7 +9970,7 @@ button.close {
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
 .table tbody tr:nth-child(odd) > td.tools a:hover {
-  color: #5da400;
+  color: #666666;
 }
 
 .table tbody tr > td.tools a:hover.available .comment-number,
@@ -11636,6 +11642,10 @@ iframe {
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
+}
+
+.content-wrapper h1 {
+  margin-top: 0px;
 }
 
 span.dark-icon {
@@ -15358,21 +15368,4 @@ span.glyphicon-star.active {
 
 .loading.third-menu {
   min-height: initial;
-}
-
-.loading.third-menu:before {
-  display: none;
-}
-
-.loading.third-menu:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
-}
-
-.loading.fourth-menu {
-  min-height: initial;
-}
-
-.loading.fourth-menu:before {
-  display: none;
 }
