@@ -30,15 +30,27 @@ module.exports = function (grunt) {
                 }
             }
         },
+        csssplit: {
+		    split: {
+		      src: ['css/style.css'],
+		      dest: 'css/',
+		      options: {
+		          maxSelectors: 4095,
+		          maxPages: 2,
+		          suffix: '_split_'
+		      }
+		    },
+		},
         watch: {
             files: "**/*.less",
-            tasks: ["less:development"]
+            tasks: ["less:development","csssplit:split"]
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-csssplit');
 
     grunt.registerTask('default', ['less:development']);
     grunt.registerTask('build', ['less:production', 'cssmin']);
