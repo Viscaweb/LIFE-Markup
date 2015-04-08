@@ -1,16 +1,3 @@
-.loading.third-menu:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
-}
-
-.loading.fourth-menu {
-  min-height: initial;
-}
-
-.loading.fourth-menu:before {
-  display: none;
-}
-
 .loading.fourth-menu:after {
   background-image: none;
   background-color: rgba(243, 244, 245, 0.8);
@@ -1436,6 +1423,8 @@
   -moz-box-shadow: none;
   box-shadow: none;
   background-color: #ffffff;
+  min-width: 1%;
+  max-width: 99%;
 }
 
 .match-summary-statistics .possession .graph .bar:before {
@@ -1473,6 +1462,7 @@
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  min-width: 1px;
 }
 
 @media \0screen {
@@ -1723,7 +1713,6 @@
   padding: 8px 20px;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #5e5e5e;
   font-weight: 600;
 }
 
@@ -2367,6 +2356,86 @@
 .popover-partager .share-url label {
   margin-top: 11px;
   font-weight: 600;
+}
+
+.streaming > .row {
+  margin: 0;
+}
+
+.streaming > .row > div:first-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.streaming > .row > div:last-child {
+  text-align: right;
+  padding: 0;
+  border-left: 1px solid #e6e6e6;
+}
+
+.streaming span.title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 10px 20px;
+  display: block;
+}
+
+.streaming table tbody tr td {
+  vertical-align: middle;
+}
+
+.streaming table tbody tr td.icon {
+  width: 5%;
+}
+
+.streaming table tbody tr td.icon a span {
+  font-size: 23px;
+  color: #888888;
+  margin-left: 5px;
+}
+
+.streaming table tbody tr td.hour {
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 600;
+}
+
+.streaming table tbody tr td.watch {
+  width: 50%;
+  text-align: right;
+}
+
+.streaming table tbody tr td.watch span i {
+  font-size: 17px;
+  color: #ffffff;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.streaming p {
+  margin: 10px 18px;
+}
+
+.streaming-matches table thead tr th {
+  text-align: center;
+}
+
+.streaming-matches table tbody tr td {
+  text-align: center;
+}
+
+.streaming-matches table tbody tr td.team1 {
+  width: 17%;
+}
+
+.streaming-matches table tbody tr td.icon a {
+  font-size: 17px;
+  color: #5da400;
+}
+
+.streaming-matches table tbody tr td.tools {
+  width: 30%;
 }
 
 /*Match Head to Head */
@@ -6150,86 +6219,6 @@ ul.image-list li img {
   display: block;
 }
 
-.streaming > .row {
-  margin: 0;
-}
-
-.streaming > .row > div:first-child {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.streaming > .row > div:last-child {
-  text-align: right;
-  padding: 0;
-  border-left: 1px solid #e6e6e6;
-}
-
-.streaming span.title {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
-  margin: 10px 20px;
-  display: block;
-}
-
-.streaming table tbody tr td {
-  vertical-align: middle;
-}
-
-.streaming table tbody tr td.icon {
-  width: 5%;
-}
-
-.streaming table tbody tr td.icon a span {
-  font-size: 23px;
-  color: #888888;
-  margin-left: 5px;
-}
-
-.streaming table tbody tr td.hour {
-  padding-left: 0;
-  padding-right: 0;
-  font-weight: 600;
-}
-
-.streaming table tbody tr td.watch {
-  width: 50%;
-  text-align: right;
-}
-
-.streaming table tbody tr td.watch span i {
-  font-size: 17px;
-  color: #ffffff;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.streaming p {
-  margin: 0 18px;
-}
-
-.streaming-matches table thead tr th {
-  text-align: center;
-}
-
-.streaming-matches table tbody tr td {
-  text-align: center;
-}
-
-.streaming-matches table tbody tr td.team1 {
-  width: 17%;
-}
-
-.streaming-matches table tbody tr td.icon a {
-  font-size: 17px;
-  color: #5da400;
-}
-
-.streaming-matches table tbody tr td.tools {
-  width: 30%;
-}
-
 .right-sidebar .newsletter img {
   width: 100%;
 }
@@ -6835,17 +6824,7 @@ ul.image-list li img {
   right: -7px;
 }
 
-.main {
-  display: table-cell;
-  vertical-align: top;
-  background: #ffffff;
-  padding: 0;
-  float: none;
-  margin: 0;
-  width: 100%;
-}
-
-.main .breadcrumb {
+.breadcrumb {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -6859,18 +6838,18 @@ ul.image-list li img {
 }
 
 @media \0screen {
-  .main .breadcrumb {
+  .breadcrumb {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
 
-.main .breadcrumb > li {
+.breadcrumb > li {
   font-size: 12px;
 }
 
-.main .breadcrumb > li > a {
+.breadcrumb > li > a {
   outline: none;
   display: inline-block;
   line-height: 43px;
@@ -6878,19 +6857,19 @@ ul.image-list li img {
   border-bottom: 2px solid transparent;
 }
 
-.main .breadcrumb > li > a img.team {
+.breadcrumb > li > a img.team {
   max-width: 18px;
   max-height: 18px;
   margin-right: 7px;
 }
 
-.main .breadcrumb > li > a > span {
+.breadcrumb > li > a > span {
   font-size: 11px;
   margin-left: 6px;
   color: #e2e2e2;
 }
 
-.main .breadcrumb > li + li:before {
+.breadcrumb > li + li:before {
   color: #e2e2e2;
   font-family: 'LSicons';
   content: "\e60d ";
@@ -6899,25 +6878,35 @@ ul.image-list li img {
   vertical-align: middle;
 }
 
-.main .breadcrumb > li.open > a {
+.breadcrumb > li.open > a {
   background: #f0f0f0;
   border-bottom-color: #5da400;
 }
 
-.main .breadcrumb > li.open > a > span {
+.breadcrumb > li.open > a > span {
   color: #5da400;
 }
 
-.main .breadcrumb > li.active:before {
+.breadcrumb > li.active:before {
   padding-right: 8px;
 }
 
-.main .breadcrumb > li .dropdown-menu {
+.breadcrumb > li .dropdown-menu {
   margin-top: 0;
   left: 17px;
   /*This is only a temporal solution*/
   max-height: 300px;
   overflow: auto;
+}
+
+.main {
+  display: table-cell;
+  vertical-align: top;
+  background: #ffffff;
+  padding: 0;
+  float: none;
+  margin: 0;
+  width: 100%;
 }
 
 .main .content-wrapper {
@@ -7064,5 +7053,3 @@ ul.image-list li img {
     content: none;
   }
 }
-
-/*# sourceMappingURL=css/style-map.css */
