@@ -5509,7 +5509,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 5px 14px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 15px;
+  border-radius: 2px;
 }
 
 .pager li > a:hover,
@@ -6449,7 +6449,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-default > .panel-heading {
-  color: #333333;
+  color: #666666;
   background-color: #f5f5f5;
   border-color: #dddddd;
 }
@@ -6460,7 +6460,7 @@ a.list-group-item-danger.active:focus {
 
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
-  background-color: #333333;
+  background-color: #666666;
 }
 
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
@@ -7732,14 +7732,6 @@ button.close {
   -o-transition: 0.6s ease-in-out width;
 }
 
-.btn span.icon,
-.btn span.icon-caret-down,
-.btn span.icon-caret-up,
-.btn span.icon-caret-left,
-.btn span.icon-caret-right {
-  color: #b8b8b8;
-}
-
 .btn:focus {
   outline: none;
 }
@@ -7791,6 +7783,14 @@ button.close {
   position: absolute;
   right: 10px;
   top: 50%;
+}
+
+.btn-default span.icon,
+.btn-default span.icon-caret-down,
+.btn-default span.icon-caret-up,
+.btn-default span.icon-caret-left,
+.btn-default span.icon-caret-right {
+  color: #b8b8b8;
 }
 
 .btn-primary,
@@ -9261,7 +9261,6 @@ button.close {
   position: relative;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #5e5e5e;
   font-weight: 600;
 }
 
@@ -9277,7 +9276,6 @@ button.close {
   display: inline;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #5e5e5e;
   font-weight: 600;
 }
 
@@ -9876,7 +9874,7 @@ button.close {
 .table tbody tr:nth-child(odd) > td.score > a {
   position: relative;
   display: block;
-  line-height: 25px;
+  line-height: 28px;
   color: #5c5c5c;
 }
 
@@ -9949,6 +9947,12 @@ button.close {
   color: #e33000;
 }
 
+.table tbody tr > td.tools a.available.live:hover,
+.table tbody tr:nth-child(even) > td.tools a.available.live:hover,
+.table tbody tr:nth-child(odd) > td.tools a.available.live:hover {
+  color: #b02500;
+}
+
 .table tbody tr > td.tools a.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
@@ -9966,7 +9970,7 @@ button.close {
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
 .table tbody tr:nth-child(odd) > td.tools a:hover {
-  color: #5da400;
+  color: #666666;
 }
 
 .table tbody tr > td.tools a:hover.available .comment-number,
@@ -10232,8 +10236,6 @@ button.close {
 
 .table.table-condensed tr td.team {
   width: auto;
-  padding-bottom: 0px;
-  padding-top: 0px;
 }
 
 .table.table-condensed tr td.team img {
@@ -10685,16 +10687,13 @@ button.close {
   color: #c2c2c2;
 }
 
-.table.matches tbody tr td.team {
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
-
 .table.matches tbody tr td.team > a {
   display: block;
   color: #5c5c5c;
-  padding-top: 4px;
-  padding-bottom: 4px;
+}
+
+.table.matches tbody tr td.team > a:hover {
+  color: #0076f0;
 }
 
 .table.matches tbody tr td.team .red-card {
@@ -11410,7 +11409,6 @@ button.close {
 
 .content-header .info .btn-link {
   font-weight: 400;
-  padding: 0;
   margin-top: 5px;
 }
 
@@ -11646,6 +11644,10 @@ iframe {
   margin-bottom: 10px;
 }
 
+.content-wrapper h1 {
+  margin-top: 0px;
+}
+
 span.dark-icon {
   color: #5c5c5c;
 }
@@ -11748,14 +11750,6 @@ table.layout-fixed tr td {
 table.layout-fixed tr td.team > a {
   overflow: hidden;
   position: relative;
-}
-
-table.layout-fixed tr td.team.team1 img {
-  float: right;
-}
-
-table.layout-fixed tr td.team.team2 img {
-  float: left;
 }
 
 table.layout-fixed colgroup col.hour {
@@ -14684,10 +14678,6 @@ span.sprite.webmaster-border {
   background-position: right center;
 }
 
-.top-competitions-block.panel table.teams tr.live td.team > a {
-  color: #e33000;
-}
-
 .top-competitions-block.panel table.teams tbody tr td.number,
 .top-competitions-block.panel table.teams tbody tr.highlight td.number {
   background-color: #efefef !important;
@@ -15378,8 +15368,4 @@ span.glyphicon-star.active {
 
 .loading.third-menu {
   min-height: initial;
-}
-
-.loading.third-menu:before {
-  display: none;
 }

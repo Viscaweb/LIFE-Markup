@@ -4426,7 +4426,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 5px 14px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 15px;
+  border-radius: 2px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
@@ -5207,7 +5207,7 @@ a.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-default > .panel-heading {
-  color: #333333;
+  color: #666666;
   background-color: #f5f5f5;
   border-color: #dddddd;
 }
@@ -5216,7 +5216,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
-  background-color: #333333;
+  background-color: #666666;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #dddddd;
@@ -6289,13 +6289,6 @@ button.close {
   -ms-transition: 0.6s ease-in-out width;
   -o-transition: 0.6s ease-in-out width;
 }
-.btn span.icon,
-.btn span.icon-caret-down,
-.btn span.icon-caret-up,
-.btn span.icon-caret-left,
-.btn span.icon-caret-right {
-  color: #b8b8b8;
-}
 .btn:focus {
   outline: none;
 }
@@ -6338,6 +6331,13 @@ button.close {
   position: absolute;
   right: 10px;
   top: 50%;
+}
+.btn-default span.icon,
+.btn-default span.icon-caret-down,
+.btn-default span.icon-caret-up,
+.btn-default span.icon-caret-left,
+.btn-default span.icon-caret-right {
+  color: #b8b8b8;
 }
 .btn-primary,
 .btn-primary:focus {
@@ -7571,7 +7571,6 @@ button.close {
   position: relative;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #5e5e5e;
   font-weight: 600;
 }
 @media \0screen {
@@ -7585,7 +7584,6 @@ button.close {
   display: inline;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #5e5e5e;
   font-weight: 600;
 }
 .panel > .panel-heading .panel-title > img {
@@ -8084,7 +8082,7 @@ button.close {
 .table tbody tr:nth-child(odd) > td.score > a {
   position: relative;
   display: block;
-  line-height: 25px;
+  line-height: 28px;
   color: #5c5c5c;
 }
 .table tbody tr > td.score > a.has-score-details:after,
@@ -8148,6 +8146,11 @@ button.close {
 .table tbody tr:nth-child(odd) > td.tools a.available.live {
   color: #e33000;
 }
+.table tbody tr > td.tools a.available.live:hover,
+.table tbody tr:nth-child(even) > td.tools a.available.live:hover,
+.table tbody tr:nth-child(odd) > td.tools a.available.live:hover {
+  color: #b02500;
+}
 .table tbody tr > td.tools a.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
@@ -8164,7 +8167,7 @@ button.close {
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
 .table tbody tr:nth-child(odd) > td.tools a:hover {
-  color: #5da400;
+  color: #666666;
 }
 .table tbody tr > td.tools a:hover.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
@@ -8386,8 +8389,6 @@ button.close {
 }
 .table.table-condensed tr td.team {
   width: auto;
-  padding-bottom: 0px;
-  padding-top: 0px;
 }
 .table.table-condensed tr td.team img {
   max-height: 18px;
@@ -8745,15 +8746,12 @@ button.close {
 .table.matches tbody tr td.time i {
   color: #c2c2c2;
 }
-.table.matches tbody tr td.team {
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
 .table.matches tbody tr td.team > a {
   display: block;
   color: #5c5c5c;
-  padding-top: 4px;
-  padding-bottom: 4px;
+}
+.table.matches tbody tr td.team > a:hover {
+  color: #0076f0;
 }
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
@@ -9311,7 +9309,6 @@ button.close {
 }
 .content-header .info .btn-link {
   font-weight: 400;
-  padding: 0;
   margin-top: 5px;
 }
 .content-header .info a {
@@ -9505,6 +9502,9 @@ iframe {
   display: block;
   margin-bottom: 10px;
 }
+.content-wrapper h1 {
+  margin-top: 0px;
+}
 span.dark-icon {
   color: #5c5c5c;
 }
@@ -9591,12 +9591,6 @@ table.layout-fixed tr td {
 table.layout-fixed tr td.team > a {
   overflow: hidden;
   position: relative;
-}
-table.layout-fixed tr td.team.team1 img {
-  float: right;
-}
-table.layout-fixed tr td.team.team2 img {
-  float: left;
 }
 table.layout-fixed colgroup col.hour {
   width: 44px;
@@ -11973,9 +11967,6 @@ span.sprite.webmaster-border {
   background-repeat: no-repeat;
   background-position: right center;
 }
-.top-competitions-block.panel table.teams tr.live td.team > a {
-  color: #e33000;
-}
 .top-competitions-block.panel table.teams tbody tr td.number,
 .top-competitions-block.panel table.teams tbody tr.highlight td.number {
   background-color: #efefef !important;
@@ -13761,6 +13752,8 @@ span.glyphicon-star.active {
   -moz-box-shadow: none;
   box-shadow: none;
   background-color: #ffffff;
+  min-width: 1%;
+  max-width: 99%;
 }
 .match-summary-statistics .possession .graph .bar:before {
   background-color: #ffffff;
@@ -13794,6 +13787,7 @@ span.glyphicon-star.active {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  min-width: 1px;
 }
 @media \0screen {
   .match-summary-statistics .table tbody tr td.prog .progress .progress-bar {
@@ -14007,7 +14001,6 @@ span.glyphicon-star.active {
   padding: 8px 20px;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #5e5e5e;
   font-weight: 600;
 }
 @media \0screen {
@@ -14532,6 +14525,70 @@ span.glyphicon-star.active {
 .popover-partager .share-url label {
   margin-top: 11px;
   font-weight: 600;
+}
+.streaming > .row {
+  margin: 0;
+}
+.streaming > .row > div:first-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+.streaming > .row > div:last-child {
+  text-align: right;
+  padding: 0;
+  border-left: 1px solid #e6e6e6;
+}
+.streaming span.title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 10px 20px;
+  display: block;
+}
+.streaming table tbody tr td {
+  vertical-align: middle;
+}
+.streaming table tbody tr td.icon {
+  width: 5%;
+}
+.streaming table tbody tr td.icon a span {
+  font-size: 23px;
+  color: #888888;
+  margin-left: 5px;
+}
+.streaming table tbody tr td.hour {
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 600;
+}
+.streaming table tbody tr td.watch {
+  width: 50%;
+  text-align: right;
+}
+.streaming table tbody tr td.watch span i {
+  font-size: 17px;
+  color: #ffffff;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.streaming p {
+  margin: 10px 18px;
+}
+.streaming-matches table thead tr th {
+  text-align: center;
+}
+.streaming-matches table tbody tr td {
+  text-align: center;
+}
+.streaming-matches table tbody tr td.team1 {
+  width: 17%;
+}
+.streaming-matches table tbody tr td.icon a {
+  font-size: 17px;
+  color: #5da400;
+}
+.streaming-matches table tbody tr td.tools {
+  width: 30%;
 }
 /*Match Head to Head */
 .head-to-head .nav-pills,
@@ -17653,70 +17710,6 @@ ul.image-list li img {
   color: #353535;
   display: block;
 }
-.streaming > .row {
-  margin: 0;
-}
-.streaming > .row > div:first-child {
-  padding-right: 0;
-  padding-left: 0;
-}
-.streaming > .row > div:last-child {
-  text-align: right;
-  padding: 0;
-  border-left: 1px solid #e6e6e6;
-}
-.streaming span.title {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
-  margin: 10px 20px;
-  display: block;
-}
-.streaming table tbody tr td {
-  vertical-align: middle;
-}
-.streaming table tbody tr td.icon {
-  width: 5%;
-}
-.streaming table tbody tr td.icon a span {
-  font-size: 23px;
-  color: #888888;
-  margin-left: 5px;
-}
-.streaming table tbody tr td.hour {
-  padding-left: 0;
-  padding-right: 0;
-  font-weight: 600;
-}
-.streaming table tbody tr td.watch {
-  width: 50%;
-  text-align: right;
-}
-.streaming table tbody tr td.watch span i {
-  font-size: 17px;
-  color: #ffffff;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-.streaming p {
-  margin: 0 18px;
-}
-.streaming-matches table thead tr th {
-  text-align: center;
-}
-.streaming-matches table tbody tr td {
-  text-align: center;
-}
-.streaming-matches table tbody tr td.team1 {
-  width: 17%;
-}
-.streaming-matches table tbody tr td.icon a {
-  font-size: 17px;
-  color: #5da400;
-}
-.streaming-matches table tbody tr td.tools {
-  width: 30%;
-}
 .right-sidebar .newsletter img {
   width: 100%;
 }
@@ -18215,16 +18208,7 @@ ul.image-list li img {
 .right-sidebar .panel .panel-heading .tools {
   right: -7px;
 }
-.main {
-  display: table-cell;
-  vertical-align: top;
-  background: #ffffff;
-  padding: 0;
-  float: none;
-  margin: 0;
-  width: 100%;
-}
-.main .breadcrumb {
+.breadcrumb {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -18237,33 +18221,33 @@ ul.image-list li img {
   border-bottom: 1px solid #ececec;
 }
 @media \0screen {
-  .main .breadcrumb {
+  .breadcrumb {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-.main .breadcrumb > li {
+.breadcrumb > li {
   font-size: 12px;
 }
-.main .breadcrumb > li > a {
+.breadcrumb > li > a {
   outline: none;
   display: inline-block;
   line-height: 43px;
   padding: 0 8px;
   border-bottom: 2px solid transparent;
 }
-.main .breadcrumb > li > a img.team {
+.breadcrumb > li > a img.team {
   max-width: 18px;
   max-height: 18px;
   margin-right: 7px;
 }
-.main .breadcrumb > li > a > span {
+.breadcrumb > li > a > span {
   font-size: 11px;
   margin-left: 6px;
   color: #e2e2e2;
 }
-.main .breadcrumb > li + li:before {
+.breadcrumb > li + li:before {
   color: #e2e2e2;
   font-family: 'LSicons';
   content: "\e60d ";
@@ -18271,22 +18255,31 @@ ul.image-list li img {
   font-size: 17px;
   vertical-align: middle;
 }
-.main .breadcrumb > li.open > a {
+.breadcrumb > li.open > a {
   background: #f0f0f0;
   border-bottom-color: #5da400;
 }
-.main .breadcrumb > li.open > a > span {
+.breadcrumb > li.open > a > span {
   color: #5da400;
 }
-.main .breadcrumb > li.active:before {
+.breadcrumb > li.active:before {
   padding-right: 8px;
 }
-.main .breadcrumb > li .dropdown-menu {
+.breadcrumb > li .dropdown-menu {
   margin-top: 0;
   left: 17px;
   /*This is only a temporal solution*/
   max-height: 300px;
   overflow: auto;
+}
+.main {
+  display: table-cell;
+  vertical-align: top;
+  background: #ffffff;
+  padding: 0;
+  float: none;
+  margin: 0;
+  width: 100%;
 }
 .main .content-wrapper {
   margin: 0;
@@ -18406,4 +18399,3 @@ ul.image-list li img {
     content: none;
   }
 }
-/*# sourceMappingURL=css/style-map.css */

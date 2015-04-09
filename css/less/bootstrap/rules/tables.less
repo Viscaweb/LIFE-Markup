@@ -423,7 +423,7 @@
           > a{
             position:relative;
             display: block;
-            line-height: 25px;
+            line-height: 28px;
             color: lighten(@ls-dark-color,36%);
             
             &.has-score-details:after{
@@ -473,6 +473,10 @@
               
               &.live {
 	              color: @live-red;
+	              
+	              &:hover {
+		             color: darken(@live-red,10%); 
+	              } 
               }
               
               .comment-number{
@@ -489,7 +493,7 @@
             }            
             
             &:hover{
-              color: @brand-primary;
+              color: darken(@ls-light-color, 60%);
               
               &.available{
               
@@ -648,8 +652,6 @@
         
         &.team{
         	width: auto;
-        	padding-bottom: 0px;
-        	padding-top: 0px;
         
           img{
             max-height: 18px;
@@ -1136,16 +1138,16 @@ tbody{
               color: darken(@ls-light-color,24%);
             }
           }
-          
+
           &.team{
-	        padding-bottom: 0px;
-        	padding-top: 0px;
-            
+	          
             > a{
               display: block;
               color: lighten(@ls-dark-color, 36%);
-              padding-top: 4px;
-              padding-bottom: 4px;
+              
+              &:hover {
+	            color: @link-hover-color;
+            }
             }
             
             .red-card{
@@ -1159,6 +1161,8 @@ tbody{
             img{
               max-width: 20px;
             }
+            
+            
             
             &.team1{
               text-align: right;
