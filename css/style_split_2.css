@@ -6925,6 +6925,8 @@ ul.image-list li img {
 
 .webmaster-content-section-2 {
   background-color: #f7f7f7;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .webmaster-content-section-2 > .row {
@@ -6994,6 +6996,8 @@ ul.image-list li img {
 
 .webmaster-content-section-3 {
   padding: 10px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .webmaster-content-section-3 > .row > div {
