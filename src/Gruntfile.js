@@ -6,7 +6,7 @@ module.exports = function (grunt) {
                     //paths: ["css"]
                 },
                 files: {
-                    "css/style.css": "css/style.less"
+                    "../compiled/css/style.css": "css/style.less"
                 }
             },
             production: {
@@ -19,21 +19,21 @@ module.exports = function (grunt) {
                     //}
                 },
                 files: {
-                    "css/style.css": "css/style.less"
+                    "../compiled/css/style.css": "css/style.less"
                 }
             }
         },
         cssmin: {
             combine: {
                 files: {
-                    'css/style.min.css': ['css/style.css']
+                    '../compiled/css/style.min.css': ['css/style.css']
                 }
             }
         },
         csssplit: {
 		    split: {
-		      src: ['css/style.css'],
-		      dest: 'css/',
+		      src: ['../compiled/css/style.css'],
+		      dest: '../compiled/css/',
 		      options: {
 		          maxSelectors: 4095,
 		          maxPages: 2,
