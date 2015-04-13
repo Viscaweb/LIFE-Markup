@@ -1,18 +1,19 @@
 {
-    "name": "markup",
-    "version": "1.0.0",
-    "main": "Gruntfile.js",
-    "dependencies": {
-        "grunt": "^0.4.5",
-        "grunt-cli": "~0.1.11",
-        "grunt-contrib-less": "^0.12.0",
-        "grunt-contrib-cssmin": "^0.10.0",
-        "grunt-contrib-watch": "~0.5.3"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "proprietary"
+  "name": "markup",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-csssplit": "^0.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "proprietary"
 }
