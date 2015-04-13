@@ -1,0 +1,301 @@
+<div class="row">
+    <div class="col-md-12">
+        <button data-popover="popover" type="button" class="btn btn-default" data-original-title="Popover in top" data-content="This is the popover content space, put your ideas here!" data-placement="top" data-trigger="hover"><i class="fa fa-chevron-circle-up"></i> Popover</button>
+
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-window">Modal Window</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-login">Modal Login</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-login-simple">Modal Login Simple</button>
+
+        <div class="modal fade" id="modal-window">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Results Bar Customization</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Display results from :</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="checkbox">
+                                    <input type="checkbox" checked="" id="check3">
+                                    <label for="check3">My Games</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="checkbox">
+                                    <input type="checkbox" checked="" id="check4">
+                                    <label for="check4">My Leagues</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Hidden by default :</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="switch-button">
+                                    <input type="checkbox" checked="" name="check" id="switch2">
+                                    <span><label for="switch2"></label></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <!-- LOGIN REGISTER MODAL -->
+        <div class="modal fade login login-modal" id="modal-login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Login or Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger" role="alert">[ CUSTOM MESSAGE ] Please log in or create a free account in order to use this function.</div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="#" class="login-image">
+                                    <img src="img/290x380.jpg" alt="Visual Block">
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- LOGIN BLOCK -->
+                                <div class="btn-group btn-group-justified">
+                                    <a class="btn btn-primary" href="#">Login</a>
+                                    <a class="btn btn-default" href="#">New User</a>
+                                </div>
+                                <div class="login-facebook">
+                                    <button type="button" class="btn btn-facebook"><i class="icon icon-facebook"></i>Login with Facebook</button>
+                                </div>
+                                <div class="divider">
+                                    <span>or sign in using your account details</span>
+                                </div>
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Email / Name</label>
+                                            <input type="text" class="form-control" placeholder="Your login email or name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a href="#" class="forgot-password-link">Forgot you password?</a>
+                                            <label>Password</label>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="password" class="form-control" placeholder="Password">
+
+                                        </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="remember-check1" type="checkbox" checked="">
+                                        <label for="remember-check1">Remember me</label>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Sign in</button>
+                                </form>
+
+                                <hr>
+
+                                <!-- REGISTER BLOCK -->
+                                <div class="btn-group btn-group-justified">
+                                    <a class="btn btn-default" href="#">Login</a>
+                                    <a class="btn btn-primary" href="#">New User</a>
+                                </div>
+                                <div class="login-facebook">
+                                    <button type="button" class="btn btn-facebook"><i class="icon icon-facebook"></i>Register with Facebook</button>
+                                </div>
+                                <div class="divider">
+                                    <span>or create an account</span>
+                                </div>
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" placeholder="Your first name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" placeholder="Enter email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Confirm the password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="check3" type="checkbox" checked="">
+                                        <label for="check3">I have read and agree to the <a href="#">terms and conditions of use</a></label>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                </form>
+
+                                <hr>
+
+                                <!-- LOST PASSWORD BLOCK -->
+
+                                <span class="title">Enter you email to reset you password</span>
+                                <p>Enter the email you send to register, and we will send you a link to reset your password:</p>
+                                <div class="alert alert-success" role="alert">
+                                    <span class="icon glyphicon glyphicon-ok"></span> Reset email sent
+                                </div>
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Enter you email here</label>
+                                            <input type="text" class="form-control" placeholder="Your login email or name">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
+                                    <button type="button" class="btn btn-primary">Reset password</button>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <!-- LOGIN REGISTER MODAL SIMPE -->
+        <div class="modal fade login login-modal" id="modal-login-simple">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Login or Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger" role="alert">[ CUSTOM MESSAGE ] Please log in or create a free account in order to use this function.</div>
+
+
+
+                        <div class="btn-group btn-group-justified">
+                            <a class="btn btn-primary" href="#">Login</a>
+                            <a class="btn btn-default" href="#">New User</a>
+                        </div>
+                        <div class="login-facebook">
+                            <button type="button" class="btn btn-facebook"><i class="icon icon-facebook"></i>Login with Facebook</button>
+                        </div>
+                        <div class="divider">
+                            <span>or sign in using your account details</span>
+                        </div>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>Email / Name</label>
+                                    <input type="text" class="form-control" placeholder="Your login email or name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <a href="#" class="forgot-password-link">Forgot you password?</a>
+                                    <label>Password</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" placeholder="Input error">
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <input id="remember-check" type="checkbox" checked="">
+                                <label for="remember-check">Remember me</label>
+                            </div>
+                            <button type="button" class="btn btn-primary">Sign in</button>
+                        </form>
+
+                        <hr>
+
+                        <!-- REGISTER BLOCK -->
+                        <div class="btn-group btn-group-justified">
+                            <a class="btn btn-default" href="#">Login</a>
+                            <a class="btn btn-primary" href="#">New User</a>
+                        </div>
+                        <div class="login-facebook">
+                            <button type="button" class="btn btn-facebook"><i class="icon icon-facebook"></i>Register with Facebook</button>
+                        </div>
+                        <div class="divider">
+                            <span>or create an account</span>
+                        </div>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="Your first name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>Confirm the password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <input id="check3" type="checkbox" checked="">
+                                <label for="check3">I have read and agree to the <a href="#">terms and conditions of use</a></label>
+                            </div>
+                            <button type="button" class="btn btn-primary">Register</button>
+                        </form>
+
+                        <hr>
+
+                        <!-- LOST PASSWORD BLOCK -->
+
+                        <span class="title">Enter you email to reset you password</span>
+                        <p>Enter the email you send to register, and we will send you a link to reset your password:</p>
+                        <div class="alert alert-success" role="alert">
+                            <span class="icon glyphicon glyphicon-ok"></span> Reset email sent
+                        </div>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>Enter you email here</label>
+                                    <input type="text" class="form-control" placeholder="Your login email or name">
+                                </div>
+                            </div>
+                            <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
+                            <button type="button" class="btn btn-primary">Reset password</button>
+                        </form>
+
+                    </div>
+
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+    </div>
+</div>
