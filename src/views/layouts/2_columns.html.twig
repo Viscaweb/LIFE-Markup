@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block container_content %}
+
+    <div class="left-sidebar col-xs-2">
+        {% block container_content_left %}
+            {% include 'blocks/commons/left_navbar.html.twig' %}
+        {% endblock %}
+    </div>
+
+    <main class="main col-xs-10">
+
+        {% block container_main %}
+            {# content top full#}
+        {% endblock %}
+
+        <div class="content-wrapper">
+
+            {% block container_content_wrapper %}
+                {# content#}
+            {% endblock %}
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </main>
+
+{% endblock %}
