@@ -1,0 +1,21 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_before %}
+    {% include 'blocks/placeholders/visual_block_1220x230.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb_competitions.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/elements/content_header_competition.html.twig' %}
+    {{ include('blocks/elements/page_tabs.twig', {type: 'competition'}) }}
+    {% include 'blocks/various/share_page_small.html.twig' %}
+    {% include 'blocks/sports/team_fixtures_results.twig' %}
+    {% include 'blocks/sports/competition_top_scorers.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+{% endblock %}
