@@ -14625,10 +14625,14 @@ span.glyphicon-star.active {
   font-size: 10px;
   font-weight: 600;
   color: #969696;
+  line-height: 21px;
 }
 .match-prediction .panel-body .info span.icon {
   margin-right: 5px;
   font-size: 13px;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
 }
 .match-prediction .make-prediction {
   overflow: hidden;
