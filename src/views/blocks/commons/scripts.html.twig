@@ -7,6 +7,20 @@
 <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/custombox/custombox.min.js"></script>
 <script type="text/javascript">
+    var timeline_scroll = $(".match-timeline .timeline-container");
+
+    $(".match-timeline .controls .prev").click(function( e ){
+        timeline_scroll.animate({ scrollLeft: timeline_scroll.scrollLeft() - 52 }, 200);
+        e.preventDefault();
+    });
+
+    $(".match-timeline .controls .next").click(function( e ){
+        timeline_scroll.animate({ scrollLeft: timeline_scroll.scrollLeft() + 52 }, 200);
+        e.preventDefault();
+    });
+
+</script>
+<script type="text/javascript">
     $( document ).ready(function() {
 
         /*Calendar Button*/
