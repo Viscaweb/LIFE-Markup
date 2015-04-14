@@ -1,0 +1,27 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/elements/default_tables.html.twig' %}
+    {% include 'blocks/elements/match_listing_buttons.html.twig' %}
+    {% include 'blocks/sports/match_listing_general.html.twig' %}
+    {% include 'blocks/elements/match_listing_buttons.html.twig' %}
+    {% include 'blocks/sports/match_listing_general_predictions.html.twig' %}
+    {% include 'blocks/elements/match_listing_buttons.html.twig' %}
+    {% include 'blocks/sports/match_listing_general_odds.html.twig' %}
+    {% include 'blocks/sports/competition_standing.html.twig' %}
+    {% include 'blocks/sports/match_listing_small.html.twig' %}
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {% include 'blocks/various/follow_us.html.twig' %}
+    {% include 'blocks/news/news_in_brief.html.twig' %}
+    {% include 'blocks/sports/live_commented_matches.html.twig' %}
+    {% include 'blocks/various/partners_featured.html.twig' %}
+{% endblock %}
