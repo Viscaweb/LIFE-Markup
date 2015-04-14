@@ -335,6 +335,27 @@
             }
         });
 
+
+        var commentsCarousel = $(".comments.carousel .owl-carousel");
+
+        commentsCarousel.owlCarousel({
+            items: 1,
+            autoWidth:true,
+            pagination: false,
+            navigation: false,
+            dots: false,
+        });
+
+        $(".comments.carousel .prev.control").click(function(){
+            commentsCarousel.trigger('prev.owl.carousel');
+        });
+
+        $(".comments.carousel .next.control").click(function(){
+            commentsCarousel.trigger('next.owl.carousel');
+        });
+
+
+
         $('.dropdown').on('show.bs.dropdown', function(e){
             $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
         });
