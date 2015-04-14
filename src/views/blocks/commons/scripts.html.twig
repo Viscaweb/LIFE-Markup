@@ -23,6 +23,11 @@
 <script type="text/javascript">
     $( document ).ready(function() {
 
+        /*Profile Modal Trigger*/
+        $(".profile-image .modal-toggle").click(function(){
+            $("#modal-profile-image").modal();
+        });
+
         /*Calendar Button*/
         $(".calendar-button").each(function(){
             var el = this;
