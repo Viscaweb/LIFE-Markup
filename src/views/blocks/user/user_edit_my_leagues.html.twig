@@ -1,0 +1,201 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">My Leagues</div>
+            <div class="league-list">
+                <div class="heading">
+                    <img src="img/drag-drop-line.png" alt="Drag Drop Line">
+                    <span>Drag drop leagues to reorder</span>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-window"><span class="icon glyphicon glyphicon-plus"></span>Add favorite leagues</button>
+                    <div class="modal fade" id="modal-window">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title">Add League</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Type here to search a competition :</label>
+                                            <div class="inner-addon right-addon">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                                <input data-toggle="dropdown" type="text" placeholder="Champions League, Europa League..." class="form-control">
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#"><span class="country-flag fr"></span>Ligue 1</a></li>
+                                                    <li><a href="#"><span class="country-flag fr"></span>Ligue 2</a></li>
+                                                    <li><a href="#"><span class="country-flag fr"></span>Coupe de la Ligue</a></li>
+                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions</a></li>
+                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie</a></li>
+                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie / Phase de poule</a></li>
+                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie / Phase finale</a></li>
+                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue Junior</a></li>
+                                                    <li class="pag-nav">
+                                                        <ul class="pagination pagination-xs">
+                                                            <li><a href="#"><span class="icon-caret-left"></span></a></li>
+                                                            <li class="active"><a href="#">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#"><span class="icon-caret-right"></span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="table table-striped no-border league-selection">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="flag"><span class="country-flag fr"></span></td>
+                                                    <td class="name">Ligue 1 (Football, France)</td>
+                                                    <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="flag"><span class="country-flag _England"></span></td>
+                                                    <td class="name">Premier League (Football, England)</td>
+                                                    <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Add Leagues</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div>
+                    </div>
+                </div>
+                <ul class="sortable-ul">
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/ligue1.png" alt="Ligue 1">
+                            </span>
+                        <span class="name">League 1</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/ligue2.png" alt="Ligue 2">
+                            </span>
+                        <span class="name">League 2</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/premiereleague.png" alt="Premiere league">
+                            </span>
+                        <span class="name">Premier League</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/bundesliga.png" alt="Bundes Liga">
+                            </span>
+                        <span class="name">Bundesliga</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/seriea.png" alt="Serie A">
+                            </span>
+                        <span class="name">Serie A</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/coupedefrance.png" alt="Coupe de France">
+                            </span>
+                        <span class="name">Coupe de France</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/cdl.png" alt="Cdl">
+                            </span>
+                        <span class="name">CdL</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/ldc.png" alt="Ldc">
+                            </span>
+                        <span class="name">LdC</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/eurocoup.png" alt="Europa League">
+                            </span>
+                        <span class="name">Europa League</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                    <li>
+                            <span class="sort">
+                              <i class="icon glyphicon glyphicon-align-justify"></i>
+                            </span>
+                            <span class="logo">
+                              <img src="img/sprites/ldc.png" alt="Ldc">
+                            </span>
+                        <span class="name">LdC</span>
+                            <span class="fav active">
+                              <i class="icon glyphicon glyphicon-star"></i>
+                            </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
