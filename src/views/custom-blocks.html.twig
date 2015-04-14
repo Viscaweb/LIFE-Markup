@@ -1,0 +1,34 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/user/user_profile_header.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/elements/page_tabs.twig', {type: 'country'}) }}
+    {% include 'blocks/sports/competition_standing_panel.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
+    {% include 'blocks/predictions/predictions_alert_welcome.html.twig' %}
+    <div class="row">
+        <div class="col-md-8">
+            {% include 'blocks/predictions/predictions_contest_share.html.twig' %}
+        </div>
+        <div class="col-md-4">
+            {% include 'blocks/predictions/predictions_contest_rules_link.html.twig' %}
+        </div>
+    </div>
+    {% include 'blocks/sports/match_listing_A_R.html.twig' %}
+    {% include 'blocks/sports/match_prediction_no_contest.html.twig' %}
+    {% include 'blocks/elements/sports_tabs.html.twig' %}
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/news/news_in_brief_list.html.twig' %}
+{% endblock %}
