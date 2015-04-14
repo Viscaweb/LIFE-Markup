@@ -1,0 +1,24 @@
+{% extends "layouts/full.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    <div class="row">
+        <div class="col-sm-8">
+            <h1>Contact us</h1>
+            <p>Please, feel free to contact us with the following form.</p>
+            {% include 'blocks/various/contact_form.html.twig' %}
+
+        </div>
+        <div class="col-sm-4">
+            {% include 'blocks/various/follow_us.html.twig' %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}
