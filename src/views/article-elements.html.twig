@@ -1,0 +1,30 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb_news.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/news/article_content.html.twig' %}
+    {% include 'blocks/various/comment_thread_empty_heads.html.twig' %}
+    <div class="news-title">
+        <span>Most recent news</span>
+    </div>
+    {% include 'blocks/news/most_recent_news_listing.html.twig' %}
+    <div class="news-title">
+        <span>Other News</span>
+    </div>
+    {% include 'blocks/news/other_news_listing.html.twig' %}
+    {% include 'blocks/streaming/match_streaming.html.twig' %}
+    {% include 'blocks/streaming/next_matches_streaming_list.html.twig' %}
+
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/various/newsletter_form.html.twig' %}
+{% endblock %}
