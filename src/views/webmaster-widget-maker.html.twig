@@ -1,5 +1,9 @@
 {% extends "layouts/full.html.twig" %}
 
+{% block resources_header %}
+    {{ include('blocks/commons/head.html.twig', {page: 'webmaster'}) }}
+{% endblock %}
+
 {% block container_main %}
     {% include 'blocks/commons/breadcrumb.html.twig' %}
     {% include 'blocks/webmaster/widgets_creator_header.html.twig' %}
