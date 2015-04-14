@@ -9,16 +9,18 @@ $twig = new Twig_Environment($loader);
 /* Generating static html files */
 
 echo "<pre>Generating HTML files :\n";
-if ($templateDir = opendir('views')) {
+if ($templateDir = opendir('views/pages/')) {
     $i = 0;
     while (false !== ($twigTemplate = readdir($templateDir))) {
 
         if( strpos($twigTemplate, '.html.twig') !=false) {
             $i++;
 
+            $twigTemplatePath = 'pages/'.$twigTemplate;
+
             $htmlFile = strstr($twigTemplate,'.twig', true );
             echo $i.' - ';
-            echo generateHtml($htmlFile , $twigTemplate, $twig);
+            echo generateHtml($htmlFile , $twigTemplatePath, $twig);
             echo "\n";
             }
     }
