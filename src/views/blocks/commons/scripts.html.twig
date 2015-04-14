@@ -345,6 +345,12 @@
             $(this).parent('li').toggleClass('open');
         });
 
+        /*Table Toggle Interaction*/
+        $(".table-toggle").click(function(){
+            var table = $(".table-slide", this);
+            table.toggle("slow");
+        });
+
 
     });
 </script>
