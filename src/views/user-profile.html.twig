@@ -1,0 +1,22 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/user/user_profile_header_big.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/user/user_feed.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/user/user_favorite_teams.html.twig' %}
+    {% include 'blocks/user/user_favorite_leagues.html.twig' %}
+    {% include 'blocks/user/user_contest_ranking.html.twig' %}
+    {% include 'blocks/predictions/predictions_user_statistics.html.twig' %}
+{% endblock %}
