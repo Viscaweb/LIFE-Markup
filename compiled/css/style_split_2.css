@@ -36,6 +36,10 @@
   margin-left: 3px;
 }
 
+.match-slider-inverse .slider-content > .title .controls span:hover {
+  color: #c2c6c8;
+}
+
 .match-slider-inverse .slider-content > .title h4,
 .match-slider-inverse .slider-content > .title .h4 {
   margin: 0;
@@ -291,10 +295,18 @@
 }
 
 .top-match-block .score-board.live .match-info .block div.time {
-  padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 28px center;
+}
+
+.top-match-block .score-board.live .match-info .block div.time .live-spot {
+  background-image: url("../img/sprites/live-spot.gif");
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: -1px;
+  margin-right: 3px;
 }
 
 .top-match-block .score-board.live.paused .match-info .block div.time {
@@ -3098,11 +3110,15 @@ span.glyphicon-star.active {
   font-size: 10px;
   font-weight: 600;
   color: #969696;
+  line-height: 21px;
 }
 
 .match-prediction .panel-body .info span.icon {
   margin-right: 5px;
   font-size: 13px;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
 }
 
 .match-prediction .make-prediction {
