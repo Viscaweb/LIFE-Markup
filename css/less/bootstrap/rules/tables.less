@@ -1095,6 +1095,7 @@ tbody{
             > a{
               display: block;
               color: lighten(@ls-dark-color, 36%);
+
               
               &:hover {
 	             color: @link-hover-color;
@@ -1131,11 +1132,41 @@ tbody{
             
             &.team2{
               text-align: left;
+
               .label{
                 margin-left: 5px;
               }
+
               img{
                 margin-right: 5px;
+              }
+            }
+            
+            &.has-logo{
+
+              > a{
+                position: relative;
+                padding-left: 23px;
+              }
+
+              img{
+                margin-top: -9px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+              }
+
+              &.team1{
+
+                > a{
+                  padding-left: 0;
+                  padding-right: 23px;
+                }
+
+                img{
+                  right: 0;
+                  left: auto;
+                }
               }
             }
           }

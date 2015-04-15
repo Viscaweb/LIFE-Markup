@@ -8539,7 +8539,8 @@ button.close {
   font-size: 16px;
   padding: 0 1px;
   color: rgba(0, 0, 0, 0.05);
-  line-height: 25px;
+  line-height: 15px;
+  vertical-align: middle;
 }
 .table tbody tr > td.tools a.available,
 .table tbody tr:nth-child(even) > td.tools a.available,
@@ -8567,7 +8568,7 @@ button.close {
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 5px;
+  top: 3px;
   left: 0;
 }
 .table tbody tr > td.tools a:hover,
@@ -9074,7 +9075,7 @@ button.close {
   display: inline-block;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.05);
-  padding: 5px 1px;
+  padding: 0 1px;
 }
 .table.my-games tbody tr td.tools a.active {
   color: #5da400;
@@ -9189,6 +9190,24 @@ button.close {
 }
 .table.matches tbody tr td.team.team2 img {
   margin-right: 5px;
+}
+.table.matches tbody tr td.team.has-logo > a {
+  position: relative;
+  padding-left: 23px;
+}
+.table.matches tbody tr td.team.has-logo img {
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.table.matches tbody tr td.team.has-logo.team1 > a {
+  padding-left: 0;
+  padding-right: 23px;
+}
+.table.matches tbody tr td.team.has-logo.team1 img {
+  right: 0;
+  left: auto;
 }
 .table.matches tbody tr td.half-time-score {
   color: #a1a1a1;
@@ -10093,8 +10112,6 @@ table.layout-fixed colgroup col.rank-variation {
 table.layout-fixed colgroup col.favorite {
   width: 25px;
 }
-<<<<<<< HEAD
-=======
 table.popover-odd-evolution {
   width: 100%;
   margin-top: 3px;
@@ -10105,7 +10122,6 @@ table.popover-odd-evolution tr td.old {
 table.popover-odd-evolution tr td.icon span {
   font-size: 12px;
 }
->>>>>>> e06acf0
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {
@@ -12986,7 +13002,8 @@ span.glyphicon-star.active {
   font-size: 16px;
   padding: 0 1px;
   color: rgba(0, 0, 0, 0.05);
-  line-height: 25px;
+  line-height: 15px;
+  vertical-align: middle;
 }
 .fav-match.available {
   position: relative;
@@ -13006,7 +13023,7 @@ span.glyphicon-star.active {
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 5px;
+  top: 3px;
   left: 0;
 }
 .fav-match:hover {
