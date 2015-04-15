@@ -12368,6 +12368,19 @@ table.layout-fixed colgroup col.favorite {
   width: 25px;
 }
 
+table.popover-odd-evolution {
+  width: 100%;
+  margin-top: 3px;
+}
+
+table.popover-odd-evolution tr td.old {
+  text-decoration: line-through;
+}
+
+table.popover-odd-evolution tr td.icon span {
+  font-size: 12px;
+}
+
 /*Custom Buttons*/
 
 .btn-prediction,
@@ -14683,17 +14696,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match.live table tr td.score,
 .matches-slider .content .match.paused table tr td.score {
   color: #e33000;
-}
-
-.matches-slider .content .match.paused .status {
-  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
-  color: #9a9a9a;
-}
-
-.matches-slider .content .match.highlight {
-  background-color: #fff4ce;
-}
-
-.matches-slider .content .match.highlight table tr:first-child td:last-child {
-  border-color: #fff4ce;
 }
