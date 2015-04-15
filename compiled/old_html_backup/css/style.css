@@ -6946,7 +6946,7 @@ button.close {
   padding: 2px 13px;
   line-height: 23px;
 }
-.dropdown-menu > li > a .sprite {
+.dropdown-menu > li > a .sprite-icons {
   margin-right: 6px;
   margin-bottom: -5px;
 }
@@ -7535,6 +7535,9 @@ button.close {
   position: relative;
   top: 5px;
 }
+.nav-pills > li .dropdown-menu {
+  margin-top: 0;
+}
 .nav-pills > li.dropdown.open > a {
   color: #ffffff;
   border-color: transparent;
@@ -7802,7 +7805,7 @@ button.close {
 .header .navbar-inverse .navbar-nav > li > a:hover {
   background-color: #363a3c;
 }
-.header .navbar-inverse .navbar-nav > li > a span.sprite {
+.header .navbar-inverse .navbar-nav > li > a span.sprite-icons {
   margin-right: 4px;
 }
 .header .navbar-inverse .navbar-nav > li.dropdown > a span.icon-caret-down {
@@ -8039,6 +8042,9 @@ button.close {
 }
 .panel > .panel-heading .tools .btn-group {
   top: -2px;
+}
+.panel > .panel-heading .tools .btn-group .dropdown-menu {
+  margin-top: 0;
 }
 .panel > .panel-heading .tools button {
   font-style: normal;
@@ -8533,7 +8539,8 @@ button.close {
   font-size: 16px;
   padding: 0 1px;
   color: rgba(0, 0, 0, 0.05);
-  line-height: 25px;
+  line-height: 15px;
+  vertical-align: middle;
 }
 .table tbody tr > td.tools a.available,
 .table tbody tr:nth-child(even) > td.tools a.available,
@@ -8561,7 +8568,7 @@ button.close {
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 5px;
+  top: 3px;
   left: 0;
 }
 .table tbody tr > td.tools a:hover,
@@ -9068,7 +9075,7 @@ button.close {
   display: inline-block;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.05);
-  padding: 5px 1px;
+  padding: 0 1px;
 }
 .table.my-games tbody tr td.tools a.active {
   color: #5da400;
@@ -9183,6 +9190,24 @@ button.close {
 }
 .table.matches tbody tr td.team.team2 img {
   margin-right: 5px;
+}
+.table.matches tbody tr td.team.has-logo > a {
+  position: relative;
+  padding-left: 23px;
+}
+.table.matches tbody tr td.team.has-logo img {
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.table.matches tbody tr td.team.has-logo.team1 > a {
+  padding-left: 0;
+  padding-right: 23px;
+}
+.table.matches tbody tr td.team.has-logo.team1 img {
+  right: 0;
+  left: auto;
 }
 .table.matches tbody tr td.half-time-score {
   color: #a1a1a1;
@@ -10087,6 +10112,16 @@ table.layout-fixed colgroup col.rank-variation {
 table.layout-fixed colgroup col.favorite {
   width: 25px;
 }
+table.popover-odd-evolution {
+  width: 100%;
+  margin-top: 3px;
+}
+table.popover-odd-evolution tr td.old {
+  text-decoration: line-through;
+}
+table.popover-odd-evolution tr td.icon span {
+  font-size: 12px;
+}
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {
@@ -10668,7 +10703,7 @@ fieldset[disabled] .btn-twitter.active {
 .btn-block .icon-expand {
   margin: 0 5px;
 }
-span.sprite {
+span.sprite-icons {
   width: 21px;
   height: 18px;
   content: "";
@@ -10678,132 +10713,132 @@ span.sprite {
   background-size: 292px;
   background-repeat: no-repeat;
 }
-span.sprite.football {
+span.sprite-icons.football {
   background-position: -230px -28px;
 }
-span.sprite.tennis {
+span.sprite-icons.tennis {
   background-position: -229px -75px;
 }
-span.sprite.rugby {
+span.sprite-icons.rugby {
   background-position: -230px -52px;
 }
-span.sprite.handball {
+span.sprite-icons.handball {
   background-position: -229px -98px;
 }
-span.sprite.basketball {
+span.sprite-icons.basketball {
   background-position: -229px -122px;
 }
-span.sprite.volleyball {
+span.sprite-icons.volleyball {
   background-position: -257px -28px;
 }
-span.sprite.icehockey {
+span.sprite-icons.icehockey {
   background-position: -257px -52px;
 }
-span.sprite.baseball {
+span.sprite-icons.baseball {
   background-position: -257px -75px;
 }
-span.sprite.am-football {
+span.sprite-icons.am-football {
   background-position: -255px -98px;
   height: 17px;
   width: 22px;
   margin-bottom: -4px !important;
   margin-left: -2px;
 }
-span.sprite.yellow-card {
+span.sprite-icons.yellow-card {
   width: 9px;
   background-position: -121px -5px;
 }
-span.sprite.red-card {
+span.sprite-icons.red-card {
   width: 12px;
   background-position: -146px -5px;
 }
-span.sprite.yellow-red-card {
+span.sprite-icons.yellow-red-card {
   width: 12px;
   background-position: -176px -5px;
 }
-span.sprite.goal {
+span.sprite-icons.goal {
   background-position: -60px -26px;
 }
-span.sprite.penalty-goal {
+span.sprite-icons.penalty-goal {
   background-position: -3px -50px;
 }
-span.sprite.penalty-missed {
+span.sprite-icons.penalty-missed {
   background-position: -254px -3px;
 }
-span.sprite.shirt {
+span.sprite-icons.shirt {
   background-position: -5px -97px;
 }
-span.sprite.clock {
+span.sprite-icons.clock {
   background-position: -144px -121px;
 }
-span.sprite.player-change {
+span.sprite-icons.player-change {
   background-position: -205px -5px;
   width: 8px;
 }
-span.sprite.football-field {
+span.sprite-icons.football-field {
   background-position: -5px -3px;
   width: 16px;
   height: 19px;
 }
-span.sprite.green-arrow {
+span.sprite-icons.green-arrow {
   background-position: -37px -3px;
   width: 11px;
 }
-span.sprite.red-arrow {
+span.sprite-icons.red-arrow {
   background-position: -64px -3px;
   width: 11px;
 }
-span.sprite.chairs {
+span.sprite-icons.chairs {
   background-position: -87px -3px;
   width: 23px;
 }
-span.sprite.incident-important {
+span.sprite-icons.incident-important {
   background-position: -143px -75px;
 }
-span.sprite.red-cross {
+span.sprite-icons.red-cross {
   background-position: -3px -75px;
 }
-span.sprite.yellow-cross {
+span.sprite-icons.yellow-cross {
   background-position: -31px -75px;
 }
-span.sprite.stadium {
+span.sprite-icons.stadium {
   background-position: -198px -97px;
   width: 25px;
 }
-span.sprite.info {
+span.sprite-icons.info {
   background-position: -199px -75px;
 }
-span.sprite.whistle {
+span.sprite-icons.whistle {
   background-position: -3px -27px;
 }
-span.sprite.whistle-active {
+span.sprite-icons.whistle-active {
   background-position: -31px -144px;
 }
-span.sprite.shootouts {
+span.sprite-icons.shootouts {
   background-position: -60px -144px;
 }
-span.sprite.shootout-goal {
+span.sprite-icons.shootout-goal {
   background-position: -116px -26px;
 }
-span.sprite.shootout-missed {
+span.sprite-icons.shootout-missed {
   background-position: -87px -26px;
 }
-span.sprite.grid {
+span.sprite-icons.grid {
   background-position: -199px -123px;
 }
-span.sprite.gift {
+span.sprite-icons.gift {
   background-position: -255px -122px;
 }
-span.sprite.extra-time {
+span.sprite-icons.extra-time {
   background-position: -171px -75px;
 }
-span.sprite.linesman-flag {
+span.sprite-icons.linesman-flag {
   background-position: -58px -50px;
 }
-span.sprite.corner-flag {
+span.sprite-icons.corner-flag {
   background-position: -86px -50px;
 }
-span.sprite.webmaster-cogs {
+span.sprite-icons.webmaster-cogs {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -32px -1px;
   width: 20px;
   height: 24px;
@@ -10813,33 +10848,33 @@ span.sprite.webmaster-cogs {
   position: relative;
   top: 7px;
 }
-span.sprite.webmaster-palette {
+span.sprite-icons.webmaster-palette {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -36px -29px;
   width: 15px;
   height: 15px;
   margin-right: 5px;
   margin-bottom: -3px;
 }
-span.sprite.webmaster-background {
+span.sprite-icons.webmaster-background {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -5px -3px;
   width: 18px;
   height: 18px;
   margin: 0;
 }
-span.sprite.webmaster-text {
+span.sprite-icons.webmaster-text {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -8px -29px;
   width: 15px;
   height: 15px;
   margin: 0;
 }
-span.sprite.webmaster-border {
+span.sprite-icons.webmaster-border {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -8px -74px;
   width: 17px;
   height: 19px;
   margin: 0;
 }
 @media all and (-webkit-min-device-pixel-ratio: 2), all and (min-resolution: 192dpi) {
-  span.sprite {
+  span.sprite-icons {
     background-image: url("../img//sprite-icons@2x.png");
   }
 }
@@ -12967,7 +13002,8 @@ span.glyphicon-star.active {
   font-size: 16px;
   padding: 0 1px;
   color: rgba(0, 0, 0, 0.05);
-  line-height: 25px;
+  line-height: 15px;
+  vertical-align: middle;
 }
 .fav-match.available {
   position: relative;
@@ -12987,7 +13023,7 @@ span.glyphicon-star.active {
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 5px;
+  top: 3px;
   left: 0;
 }
 .fav-match:hover {
@@ -14380,7 +14416,7 @@ span.glyphicon-star.active {
   padding-left: 1px;
   padding-right: 1px;
 }
-.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite {
+.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite-icons {
   float: right;
   margin-right: 3px;
 }
@@ -14447,7 +14483,7 @@ span.glyphicon-star.active {
   margin-bottom: 0;
   margin-right: 4px;
 }
-.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite.goal {
+.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite-icons.goal {
   background-position: -62px -28px;
   width: 16px;
 }
@@ -14556,8 +14592,7 @@ span.glyphicon-star.active {
   display: inline-block;
   margin-right: 7px;
 }
-.match-teams-lineups .popover .popover-content .content-header.player .actions .action .sprite,
-.match-teams-lineups .popover .popover-content .content-header.player .actions .action .icon {
+.match-teams-lineups .popover .popover-content .content-header.player .actions .action .sprite-icons {
   margin-right: 3px;
 }
 .match-teams-lineups .popover .popover-content .table {
@@ -14614,7 +14649,7 @@ span.glyphicon-star.active {
   vertical-align: top !important;
   width: 6%;
 }
-.table.teams-lineups tbody tr td.player span.sprite {
+.table.teams-lineups tbody tr td.player span.sprite-icons {
   float: right;
   margin-right: 3px;
 }

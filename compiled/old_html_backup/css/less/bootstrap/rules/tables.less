@@ -464,10 +464,9 @@
            .ls-tools-icon-style();
           }
 		  
-		  &.tools-1 {
-			  max-width: 20px;
-		  }
-        
+    		  &.tools-1 {
+    			  max-width: 20px;
+    		  }
         } 
         
       }
@@ -1029,7 +1028,7 @@ tbody{
               display: inline-block;
               font-size:  @font-size-large;
               color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
-              padding: 5px 1px;
+              padding: 0 1px;
               
               
               &.active{
@@ -1096,10 +1095,11 @@ tbody{
             > a{
               display: block;
               color: lighten(@ls-dark-color, 36%);
+
               
               &:hover {
-	            color: @link-hover-color;
-            }
+	             color: @link-hover-color;
+              }
             }
             
             .red-card{
@@ -1113,8 +1113,6 @@ tbody{
             img{
               max-width: 20px;
             }
-            
-            
             
             &.team1{
               text-align: right;
@@ -1130,16 +1128,45 @@ tbody{
               img{
                 margin-left: 5px;
               }
-            }
-            
+            }      
             
             &.team2{
               text-align: left;
+
               .label{
                 margin-left: 5px;
               }
+
               img{
                 margin-right: 5px;
+              }
+            }
+            
+            &.has-logo{
+
+              > a{
+                position: relative;
+                padding-left: 23px;
+              }
+
+              img{
+                margin-top: -9px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+              }
+
+              &.team1{
+
+                > a{
+                  padding-left: 0;
+                  padding-right: 23px;
+                }
+
+                img{
+                  right: 0;
+                  left: auto;
+                }
               }
             }
           }
