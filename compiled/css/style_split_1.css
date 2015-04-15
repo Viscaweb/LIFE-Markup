@@ -11226,6 +11226,28 @@ button.close {
   margin-right: 5px;
 }
 
+.table.matches tbody tr td.team.has-logo > a {
+  position: relative;
+  padding-left: 23px;
+}
+
+.table.matches tbody tr td.team.has-logo img {
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.table.matches tbody tr td.team.has-logo.team1 > a {
+  padding-left: 0;
+  padding-right: 23px;
+}
+
+.table.matches tbody tr td.team.has-logo.team1 img {
+  right: 0;
+  left: auto;
+}
+
 .table.matches tbody tr td.half-time-score {
   color: #a1a1a1;
   white-space: nowrap;
@@ -14684,17 +14706,4 @@ span.sprite-icons.webmaster-border {
 
 .matches-slider .content .match:nth-child(even) {
   background-color: #ffffff;
-}
-
-.matches-slider .content .match.live .status,
-.matches-slider .content .match.paused .status {
-  padding-left: 11px;
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
-  font-weight: 600;
-  color: #e33000;
-}
-
-.matches-slider .content .match.live table tr td.score,
-.matches-slider .content .match.paused table tr td.score {
-  color: #e33000;
 }

@@ -9190,6 +9190,24 @@ button.close {
 .table.matches tbody tr td.team.team2 img {
   margin-right: 5px;
 }
+.table.matches tbody tr td.team.has-logo > a {
+  position: relative;
+  padding-left: 23px;
+}
+.table.matches tbody tr td.team.has-logo img {
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.table.matches tbody tr td.team.has-logo.team1 > a {
+  padding-left: 0;
+  padding-right: 23px;
+}
+.table.matches tbody tr td.team.has-logo.team1 img {
+  right: 0;
+  left: auto;
+}
 .table.matches tbody tr td.half-time-score {
   color: #a1a1a1;
   white-space: nowrap;
