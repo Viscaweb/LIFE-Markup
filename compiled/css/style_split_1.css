@@ -12364,6 +12364,10 @@ table.layout-fixed colgroup col.rank-variation {
   width: 30px;
 }
 
+table.layout-fixed colgroup col.favorite {
+  width: 25px;
+}
+
 /*Custom Buttons*/
 
 .btn-prediction,
@@ -14692,8 +14696,4 @@ span.sprite.webmaster-border {
 
 .matches-slider .content .match.highlight table tr:first-child td:last-child {
   border-color: #fff4ce;
-}
-
-.matches-slider .content .match:hover {
-  background: #f0f0f0;
 }

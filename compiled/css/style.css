@@ -10089,6 +10089,9 @@ table.layout-fixed colgroup col.extra-points {
 table.layout-fixed colgroup col.rank-variation {
   width: 30px;
 }
+table.layout-fixed colgroup col.favorite {
+  width: 25px;
+}
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {
@@ -12963,6 +12966,47 @@ i.glyphicon-star.active,
 span.glyphicon-star.active {
   color: #ffc600 !important;
 }
+/*Mixin General Tables Tools Icon Style*/
+.fav-match {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 1px;
+  color: rgba(0, 0, 0, 0.05);
+  line-height: 25px;
+}
+.fav-match.available {
+  position: relative;
+  color: #b5b5b5;
+}
+.fav-match.available.live {
+  color: #e33000;
+}
+.fav-match.available.live:hover {
+  color: #b02500;
+}
+.fav-match.available .comment-number {
+  color: #ffffff;
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  left: 0;
+}
+.fav-match:hover {
+  color: #666666;
+}
+.fav-match:hover.available .comment-number {
+  color: #ffffff;
+}
+.fav-match.active {
+  color: #5da400;
+}
+.fav-match.active:hover {
+  color: #407100;
+}
 .loading {
   position: relative;
   min-height: 60px;
@@ -15602,6 +15646,10 @@ table.other-sport tbody tr td.score.main {
 table.other-sport tbody tr td.tools {
   text-align: right;
 }
+table.other-sport tbody tr td.tools.favorite {
+  width: 4%;
+  text-align: center;
+}
 table.other-sport tbody tr:nth-child(2),
 table.other-sport tbody tr td[rowspan] {
   border-bottom: 2px solid #e2e2e2;
@@ -16051,7 +16099,7 @@ table.squad-listing.avatars tbody tr td.player {
   font-weight: 600;
 }
 .goals-statistics tbody tr td.tools {
-  width: 13%;
+  width: 4%;
 }
 /*Widget Creator*/
 .widget-creator-heading {
