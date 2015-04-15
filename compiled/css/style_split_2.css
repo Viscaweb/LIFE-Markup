@@ -2869,7 +2869,7 @@ span.glyphicon-star.active {
   padding-right: 1px;
 }
 
-.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite {
+.match-teams-lineups .component-container .team .table tbody tr td.player span.sprite-icons {
   float: right;
   margin-right: 3px;
 }
@@ -2945,7 +2945,7 @@ span.glyphicon-star.active {
   margin-right: 4px;
 }
 
-.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite.goal {
+.match-teams-lineups .component-container .field .field-lines .player .icons span.sprite-icons.goal {
   background-position: -62px -28px;
   width: 16px;
 }
@@ -3074,8 +3074,7 @@ span.glyphicon-star.active {
   margin-right: 7px;
 }
 
-.match-teams-lineups .popover .popover-content .content-header.player .actions .action .sprite,
-.match-teams-lineups .popover .popover-content .content-header.player .actions .action .icon {
+.match-teams-lineups .popover .popover-content .content-header.player .actions .action .sprite-icons {
   margin-right: 3px;
 }
 
@@ -3145,7 +3144,7 @@ span.glyphicon-star.active {
   width: 6%;
 }
 
-.table.teams-lineups tbody tr td.player span.sprite {
+.table.teams-lineups tbody tr td.player span.sprite-icons {
   float: right;
   margin-right: 3px;
 }
