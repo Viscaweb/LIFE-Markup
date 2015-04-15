@@ -7956,6 +7956,11 @@ button.close {
     zoom: 1;
   }
 }
+/*
+.modal-open[style] {
+  padding-right: 0px !important;
+  overflow: scroll;
+}*/
 /*panels*/
 .panel {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);

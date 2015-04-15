@@ -1,3 +1,11 @@
+.matches-slider .content .match table tr.win td.team {
+  font-weight: 700;
+}
+
+.matches-slider .content .match:nth-child(even) {
+  background-color: #ffffff;
+}
+
 .matches-slider .content .match.live .status,
 .matches-slider .content .match.paused .status {
   padding-left: 11px;
