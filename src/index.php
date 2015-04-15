@@ -19,9 +19,9 @@ if ($templateDir = opendir('views/pages/')) {
             $twigTemplatePath = 'pages/'.$twigTemplate;
 
             $htmlFile = strstr($twigTemplate,'.twig', true );
-            echo $i.' - ';
+            echo $i.' - <a href="../compiled/'.$htmlFile.'"">';
             echo generateHtml($htmlFile , $twigTemplatePath, $twig);
-            echo "\n";
+            echo "</a>\n";
             }
     }
     closedir($templateDir);
