@@ -3,5 +3,8 @@
     "description": "Markup",
     "minimum-stability": "dev",
     "license": "proprietary",
-    "authors": []
+    "authors": [],
+    "require": {
+        "twig/twig": "~2.0@dev"
+    }
 }

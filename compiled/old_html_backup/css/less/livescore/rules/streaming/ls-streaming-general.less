@@ -1,0 +1,156 @@
+.streaming-description{
+	margin-bottom: 0;
+
+	> div{
+		&:first-child{
+			padding-right: 0;
+		}
+
+		&:last-child{
+			margin-left: 0;
+		}
+	}
+
+	.title{
+		display: block;
+		margin: 0;
+		font-size: @ls-streaming-main-title-size;
+		font-weight: @font-weight-bold;
+	}
+
+	.sub-title{
+		display: block;
+		margin: 0 0 20px;
+		font-size: @ls-streaming-sub-title-size;
+		font-weight: @font-weight-semi-bold;	
+	}
+}
+
+.streaming-table{
+
+	> div > .title{
+		display: block;
+		font-size: @ls-streaming-table-title-size;
+		font-weight: @font-weight-semi-bold;
+		margin: 0 0 20px;
+	}
+
+	table{
+		margin-top: 15px;
+
+		thead{
+			tr{
+				th{
+					text-align: center;
+
+					span{
+						display: block;
+						font-weight: @font-weight-normal;
+					}
+				}
+			}
+		}
+
+		tbody{
+			tr{
+				td{
+					width: 10.25%;
+					vertical-align: top;
+
+					&.hour{
+						text-align: center;
+						background-color: darken(@ls-light-color, 3.4%) !important;
+						width: 5%;
+						font-weight: @font-weight-bold;
+						vertical-align: middle;
+						padding: 23px 8px; 
+					}
+
+					ul{
+						margin: 0;
+						padding: 0;
+
+						> li{
+							list-style: none;
+							display: block;
+							padding: 8px 0;
+							border-top: 1px solid darken(@ls-light-color, 10%);
+
+							> a{
+								position: relative;
+								display: block;
+								color: lighten(@ls-dark-color, 36%);
+
+								.title{
+									display: block;
+									font-size: @font-size-small;
+									font-weight: @font-weight-bold;
+									line-height: @font-size-normal;
+
+									img{
+										max-height: 14px;
+										margin-right: 5px;
+									}
+								}
+
+								.description{
+									display: block;
+									margin-top: 3px;
+									line-height: @font-size-normal;
+									font-size: @font-size-x-small;
+									font-weight: @font-weight-normal;
+								}
+
+								.hover{
+									display: none;
+									padding: 10px;
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+									background-color: darken(@ls-light-color, 3.4%);
+									font-size: @font-size-x-small;
+									line-height: @font-size-x-small;
+
+									.icon{
+										margin-right: 5px; 
+										color: @active-green;
+										display: inline-block;
+										float: left;
+										font-size: @ls-streaming-table-hover-icon-size;
+									}
+								}
+
+								&:hover{
+									.hover{
+										display: block;
+									}
+								}
+							}
+
+							&:first-child{
+								padding-top: 0;
+								border: 0;
+							}
+
+							&:last-child{
+								padding-bottom: 0;
+							}
+						}
+					}
+
+					&:nth-child(odd){
+						background-color: darken(@ls-light-color, 0.8%);
+					}
+				}
+
+				&:hover{
+					td{
+						background-color: @table-bg-hover;
+					}
+				}
+			}
+		}
+	}
+}

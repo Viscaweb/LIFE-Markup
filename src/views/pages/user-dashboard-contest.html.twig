@@ -1,0 +1,37 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/placeholders/visual_block_970x300.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/predictions/predictions_contest_grid_with_winner.html.twig' %}
+    <div class="row">
+        <div class="col-md-6">
+            {% include 'blocks/predictions/predictions_contest_season_gifts.html.twig' %}
+        </div>
+        <div class="col-md-6">
+            {% include 'blocks/predictions/predictions_contest_month_gifts.html.twig' %}
+        </div>
+    </div>
+    {% include 'blocks/predictions/predictions_last_predictions.html.twig' %}
+    {% include 'blocks/user/user_notifications_settings.html.twig' %}
+    {% include 'blocks/search/search_form.html.twig' %}
+    {% include 'blocks/search/search_results.html.twig' %}
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/user/user_notifications.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_standings.html.twig' %}
+    {% include 'blocks/predictions/predictions_filter.html.twig' %}
+    {% include 'blocks/predictions/predictions_user_statistics.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_others.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_quick_info.html.twig' %}
+{% endblock %}

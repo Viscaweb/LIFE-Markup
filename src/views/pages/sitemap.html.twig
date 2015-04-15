@@ -1,0 +1,16 @@
+{% extends "layouts/full.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+
+    <h1>Sitemap</h1>
+    <p>Here is the sitemap</p>
+    {% include 'blocks/various/sitemap_links.html.twig' %}
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}

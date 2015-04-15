@@ -1,0 +1,40 @@
+/*Alerts*/
+.alert{
+	padding: (@alert-padding - 10px) @alert-padding;
+	font-size: @font-size-small;
+	line-height: 21px;
+
+	&.alert-dismissible{
+		padding-right: @alert-padding + 10px;
+	}
+
+  > .icon{
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    font-size: @font-size-xx-large;
+    margin-right: 12px;
+    text-align: center;
+    
+    &.icon-default{
+      color: darken(@gray-lighter, 17%);
+    }
+    
+    &.glyphicon-ok{
+      font-size: @font-size-normal;
+    }
+  }
+  
+  &.icon{
+    line-height: 19px;
+  }
+  
+}
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.alert-dismissible{
+  .close {
+    top: 1px;
+  }
+}

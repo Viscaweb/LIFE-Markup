@@ -1,0 +1,350 @@
+.match-timeline{  
+  position: relative;
+  
+  .team-logos{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 4;
+    
+    .team{
+      min-width: 80px;
+      position: absolute;
+      
+      img{
+        vertical-align: top;
+        display: inline-block;
+        max-width: 38px;
+        max-height: 38px;
+        margin-right: 5px;
+      }
+      
+      .name{
+        display: inline-block;
+        font-family: @ls-match-timeline-team-font-family;
+        font-size: @ls-match-timeline-team-font-size;
+        font-weight: 600;
+        color: @ls-light-color; 
+        line-height: 38px;
+      }
+      
+      &.home{
+        top: 10%;
+      }
+      
+      &.away{
+        bottom: 10%;
+      }
+    }
+    
+  }
+  
+  .controls{
+    > a{
+      z-index: 6;
+      position: absolute;
+      height: 100%;
+      width: 40px;
+      background: rgba(0,0,0,0.3);
+      left: 0;
+      top: 0;
+      outline: none;
+      
+      > span{
+        font-size: @ls-match-timeline-control-icon-size;
+        color: @ls-light-color;
+        position: absolute;
+        width: 100%;
+        height: @ls-match-timeline-control-icon-size;
+        display: block;
+        top: 50%;
+        margin-top: -( @ls-match-timeline-control-icon-size / 2);
+        text-align: center;
+      }
+      
+      &.next{
+        left: auto;
+        right: 0;
+      }
+      
+      &:hover{
+        background: rgba(0,0,0,0.7);
+      }
+    }
+  }
+  
+  .timeline-container{
+    overflow: hidden;
+  }
+  
+  .timeline-scroll{
+    position: relative;
+    height: @ls-match-timeline-container-height;
+    background: url("@{ls-image-timeline-gray-bg}") repeat 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    
+    .timeline-elements{
+      white-space: nowrap;
+      font-size: 0;
+      position: relative;
+      top: 50%;
+      margin-top: -15px;
+    }
+    
+    .timeline{
+      position: relative;
+      z-index: 3;
+      background-color: @ls-match-timeline-bg;
+      border: @ls-match-timeline-border;
+      border-width: 1px 0;
+      font-size: 0; //This is to fix the inline-block known issue
+      white-space: nowrap;
+      display: inline-block;
+      
+      .time-lapse{
+        background: url("@{ls-image-timeline-guide-bg}") repeat-x 12px 0;
+        color: @ls-light-color;
+        font-family: @ls-match-timeline-font;
+        font-size: @font-size-x-small;
+        display: inline-block;
+        width: 26px;
+        text-align: center;
+        line-height: @ls-match-timeline-height;
+        
+        &:first-child{
+          background-repeat: no-repeat;
+          margin-left: 39px;
+        }        
+        
+        &.end{
+          margin-right: 10px;
+          padding-left: 7px;
+          text-align: left;
+          width: 41px;
+        }
+      }
+    }
+    
+    .penalty-goals{
+      position: relative;
+      display: inline-block;
+      line-height: @ls-match-timeline-height;
+      font-size: @font-size-small;
+      background-color: @ls-match-timeline-bg;
+      border: @ls-match-timeline-border;
+      padding-right: 40px;
+      z-index: 3;
+      
+      > div{
+        display: inline-block;
+        line-height: 26px;
+        padding: 0 5px 1px 5px;
+        background: fade(@ls-dark-color, 25%);
+		.border-radius(20px);        
+        
+        &.home{
+          position: relative;
+          top: -35px;
+        }
+        
+        &.away{
+          position: absolute;
+          left: 0;
+          bottom: -35px;
+        }
+        
+        span{
+          cursor: pointer; 
+          text-align: center;
+          display: inline-block;
+          line-height: 18px;
+          color: @ls-light-color;
+          padding: 1px;
+          
+          &.win{ background: #87B762; }
+          &.lose{ background: #E6523E; }
+          
+        }
+      }
+    }
+    
+    .match-live-progress{
+      background: url("@{ls-image-timeline-bg}") repeat 0 0;
+      z-index: 1;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    .match-time-zones{
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      
+      .time-zone{
+        display: table;
+        position: absolute;
+        height: 100%;
+        
+        .time{
+          display: table-cell;
+          background: fade(@ls-match-timeline-time-zone-bg, 40%);
+        }
+        
+        .label{
+          font-family: @ls-match-timeline-font;
+          font-size: @font-size-small;
+          font-weight: normal;
+          padding: 10px 5px;
+          vertical-align: bottom;
+          display: table-cell;
+          color: @ls-match-timeline-time-zone-label-color;
+          background: rgba(0,0,0,0.3);
+          width: 41px;
+          text-align: center;
+        }
+        
+        &.final-score{
+          .label{
+            width: 52px;
+          }
+        }
+      }
+    }
+    
+    .team-actions{
+      z-index: 4;
+      top: 50%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      
+      .replay{
+        background-color: @ls-match-timeline-replay-icon-bg;
+        .border-radius(50%);
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        padding: 2px;
+        
+        span{
+          font-size: @font-size-large;
+          color: @ls-light-color;
+        }
+        
+        &:hover{
+          background-color: @ls-match-timeline-replay-icon-hover;
+        }
+      }
+      
+      .action{
+        cursor: pointer;
+        bottom: (@ls-match-timeline-height / 2) + 2px;
+        position: absolute;
+        text-align: center;
+        display: inline-block;
+        background: fade(@ls-match-timeline-action-bg, 70%);
+        padding: 1px 1px;
+        min-width: 23px;
+        .border-radius(2px);
+        
+        span{
+			display: block;
+			margin-bottom: 0px;
+			margin-left: auto;
+			margin-right: auto;
+          
+        }
+        
+        &:after{
+          position: absolute;
+          bottom: -4px;
+          left: 50%;
+          margin-left: -5px;
+          content: "";
+          display: block;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 4px solid fade(@ls-match-timeline-action-bg, 70%);
+        }
+        
+        &.away-team{
+          bottom: auto;
+          top: (@ls-match-timeline-height / 2) + 2px;
+          
+          &:after{
+            top: -4px;
+            bottom: auto;
+            border-bottom: 4px solid fade(@ls-match-timeline-action-bg, 70%);
+            border-top-width: 0;
+          }
+        }
+        
+        &:hover{
+          background-color: @ls-match-timeline-action-bg;
+          z-index: 400;
+          
+          &:after{
+            border-top-color: @ls-match-timeline-action-bg;
+          }
+          
+          &.away-team{
+            &:after{
+              border-bottom-color: @ls-match-timeline-action-bg;
+            }
+          }
+        }
+        
+      }
+      
+    }
+  }
+  
+  .popover{
+    min-width: 291px;
+    .border-radius(2px);
+    
+    .popover-content{
+      padding: 6px 5px;
+      
+      table{
+        border: 0;
+        margin: 0;
+        
+        tr{
+          &.sustitution{
+            td{
+            
+              &.player{
+                padding-left:1px;
+                padding-right:1px;
+                
+                img{
+                  max-height: 30px;
+                  max-width: 30px;
+                  background: @ls-player-image-placeholder-bg;
+                  
+                }
+              }
+            }
+          }
+          
+          td{
+            &.details{
+              font-weight: @font-weight-semi-bold;
+              font-size: @font-size-x-small;
+            }
+          }
+        }
+      }
+    }
+  }
+}

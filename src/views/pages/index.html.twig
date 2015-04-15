@@ -1,0 +1,43 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_before %}
+    {% include 'blocks/placeholders/visual_block_1220x230.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/placeholders/visual_block_970x160.html.twig' %}
+    {% include 'blocks/sports/matches_slider.html.twig' %}
+    {% include 'blocks/sports/matches_slider_inverse.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/elements/default_buttons.html.twig' %}
+    {% include 'blocks/elements/default_badges.html.twig' %}
+    {% include 'blocks/elements/datepicker.html.twig' %}
+    {% include 'blocks/elements/default_form_checkbox_radios.html.twig' %}
+    {% include 'blocks/elements/default_tooltips.html.twig' %}
+    {% include 'blocks/elements/default_popovers_and_modals.html.twig' %}
+    {% include 'blocks/elements/default_alerts.html.twig' %}
+    {% include 'blocks/elements/default_panels.html.twig' %}
+    {% include 'blocks/elements/default_form_inputs.html.twig' %}
+    {% include 'blocks/elements/default_media_list.html.twig' %}
+    {% include 'blocks/elements/content_header_country.html.twig' %}
+    {% include 'blocks/elements/content_header_competition.html.twig' %}
+    {% include 'blocks/elements/content_header_team.html.twig' %}
+    {% include 'blocks/elements/content_header_player.html.twig' %}
+    {% include 'blocks/elements/default_semantic.html.twig' %}
+    {% include 'blocks/elements/players_best.html.twig' %}
+    {% include 'blocks/various/share_page.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables_empty.html.twig' %}
+    {% include 'blocks/sports/top_competitions_results.html.twig' %}
+    {% include 'blocks/various/follow_us.html.twig' %}
+    {% include 'blocks/news/news_in_brief.html.twig' %}
+    {% include 'blocks/sports/live_commented_matches.html.twig' %}
+    {% include 'blocks/various/partners_featured.html.twig' %}
+{% endblock %}

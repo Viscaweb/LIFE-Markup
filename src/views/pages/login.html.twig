@@ -1,0 +1,23 @@
+{% extends "layouts/full.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    <div class="row">
+        <div class="col-sm-8">
+            {% include 'blocks/login/site_features.html.twig' %}
+        </div>
+        <div class="col-sm-4">
+            {% include 'blocks/login/login_panel.html.twig' %}
+            {% include 'blocks/login/register_panel.html.twig' %}
+            {% include 'blocks/login/password_resest_panel.html.twig' %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_no_favorites.html.twig' %}
+{% endblock %}
+
+{% block container_content_before %}
+{% endblock %}
+
+{% block container_main %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/empty/competition_standings_panel_empty.html.twig' %}
+    {% include 'blocks/empty/match_listing_empty_prev_next.html.twig' %}
+    {% include 'blocks/empty/match_listing_empty_prev.html.twig' %}
+    {% include 'blocks/empty/match_listing_my_games_empty.html.twig' %}
+    {% include 'blocks/empty/match_listing_empty_competitions.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/empty/panel_empty.html.twig' %}
+{% endblock %}

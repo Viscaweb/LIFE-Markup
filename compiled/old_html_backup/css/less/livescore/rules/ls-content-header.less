@@ -1,0 +1,223 @@
+/*Content Header*/
+.content-header{
+	position: relative;
+	padding: 10px 6px;
+	display: table;
+	width: 100%;
+	margin-bottom: 15px;
+  
+	.avatar{
+		vertical-align: top;
+		display: table-cell;
+		position: relative;
+   	padding: 10px 20px 10px 6px;
+    width: 15.5%;
+
+		img{
+			max-width: 65px;
+      margin-top: 8px;
+		}
+	}
+  
+	.info{
+		display: table-cell;
+		padding: 10px 6px 10px 0;
+    vertical-align: top;
+
+		.title{
+      margin: 0;
+      line-height: 21px;
+    
+      > span, > h1, > h2, > h3, > div{
+        font-weight: @font-weight-normal;
+        font-size: @font-size-h2;
+        line-height: 38px;
+        color: @ls-headings-color;
+        margin: 0;
+        display: inline-block;
+      }
+    
+			a{
+				display: inline-block;
+				font-size: @font-size-base + 1;
+		    margin-left: 10px;
+		    vertical-align: top;
+        line-height: 38px;
+
+        span{
+          vertical-align: middle;
+          color: darken(@ls-light-color,31%);
+        }
+        
+		    &.active{
+		    	color: @ls-fav-hover;
+          
+          span{
+            color: @ls-fav-hover;
+          }
+		    }  
+        
+		    &:hover{
+		    	color: darken(@ls-light-color,37%);
+          
+          span{
+            color: darken(@ls-light-color,37%);
+          }
+		    }
+			}
+      
+      &.uppercase{
+        text-transform: uppercase;
+      }
+
+		}
+		
+    .btn-link{
+      font-weight: 400;
+      margin-top: 5px;
+		}
+		
+		a{
+			color: darken(@ls-light-color,35%);
+			display: block;
+			font-size: @font-size-small - 1;
+      
+			span{
+				margin-right: 5px;
+			}
+		}
+	}
+  
+	&.teams{
+  
+		.shirts{
+			text-align: right;
+			display: table-cell;
+			padding: 10px 0;
+      
+			a{
+				text-align: center;
+				display: inline-block;
+				font-size: @font-size-small - 1;
+				color: darken(@ls-light-color,32%);
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}      
+		}
+    
+    a.star{
+      
+      &:hover{
+        
+        span.add-to-my-team{
+          display: inline-block;
+        }
+      }
+      
+      span.add-to-my-team{
+        text-transform: none;
+        color: @link-color;
+        font-size: @font-size-small;
+        margin-left: 0;
+        display: none;
+        vertical-align: baseline;
+        
+        &:hover{
+          color: @link-hover-color;
+        }
+      }    
+    } 
+	}
+  
+	&.player{
+    
+		.info{
+			margin-right: 46px;
+      width: 38%;
+
+			.title{
+      
+				.first-name {
+					margin: 0;
+					font-size: @font-size-base;
+          line-height: 18px;
+					font-weight: 600;
+					padding-left: 2px;
+          display: block;
+				}
+        
+        .last-name{
+          margin: 0;
+          display: block;
+          font-weight: @font-weight-normal;
+          font-size: @font-size-h2;
+          line-height: 32px;
+          color: @ls-headings-color;
+        }
+			}
+		}
+    
+		.description{
+			display: table-cell;
+      vertical-align: top;
+      padding: 10px 10px 10px 0;
+      width: 25%;
+
+			ul{
+				padding: 0;
+				list-style: none;
+
+				li{
+					padding: 1px 0;
+					font-size: @font-size-small - 1;
+					border-bottom: 1px solid darken(@ls-light-color,7%);
+
+					.icon{
+						margin-right: 5px;
+						font-size: @font-size-medium; 
+						color: lighten(@ls-dark-color, 35.3%);
+					}
+
+					span.info{
+						float: right;
+						margin: 0;
+						padding: 0;
+						width: auto;
+						font-size: @font-size-base;
+						color: darken(@ls-light-color, 23%);
+						cursor: pointer;
+						position: relative;
+						top: 3px;
+					}
+
+					span{
+						font-weight: @font-weight-semi-bold;
+					}
+				}
+			}
+		}
+    
+		.teams{
+			vertical-align: top;
+			text-align: right;
+			display: table-cell;
+			padding: 10px 0;
+      
+			a{
+				text-align: center;
+				display: inline-block;
+				font-size: @font-size-small - 1;
+				color: darken(@ls-light-color,32%);
+				padding: 2px;
+
+				img{
+					max-width: 52px;
+					display: block;
+				}
+			}
+		}
+	}
+}
