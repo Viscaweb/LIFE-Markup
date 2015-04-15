@@ -7535,6 +7535,9 @@ button.close {
   position: relative;
   top: 5px;
 }
+.nav-pills > li .dropdown-menu {
+  margin-top: 0;
+}
 .nav-pills > li.dropdown.open > a {
   color: #ffffff;
   border-color: transparent;
@@ -8039,6 +8042,9 @@ button.close {
 }
 .panel > .panel-heading .tools .btn-group {
   top: -2px;
+}
+.panel > .panel-heading .tools .btn-group .dropdown-menu {
+  margin-top: 0;
 }
 .panel > .panel-heading .tools button {
   font-style: normal;
