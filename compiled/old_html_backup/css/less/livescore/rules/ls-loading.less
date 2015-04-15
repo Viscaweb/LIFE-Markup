@@ -1,0 +1,97 @@
+
+
+.loading{
+  position: relative;
+  min-height: 60px;
+
+  
+  &:after{
+    content: "";
+    position: absolute;
+    background: url("@{ls-image-loading}") no-repeat center center;
+    background-color: fade(darken(@ls-light-color, 1.7%), 80%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    z-index: 2;
+  }
+  
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    color: @brand-primary;
+    z-index: 3;
+    text-transform: uppercase;
+    font-weight: @font-weight-semi-bold;
+    font-size: @font-size-small; 
+    margin-top: 28px;
+  }
+  
+  &.loading-dark{
+    &:after{
+      background-color: @ls-greyblue-dark; 
+    }
+  }
+  
+  &.loading-horizontal{
+    &:after{
+      background-position: 40% center;
+    }
+    
+    &:before{
+      display: inline-block;
+      width: auto;
+      left: 40%;
+      margin-top: -8px; 
+      margin-left: 34px;
+    }
+  }
+
+  &.dropdown-menu{
+    position: absolute;
+  }
+  
+  
+  
+  &.sub-menu {
+	  .loading-left-nav;
+  }
+  
+  &.third-menu {
+	  .loading-left-nav;  
+  }
+  
+  &.fourth-menu {
+	  .loading-left-nav;  
+  }
+
+}
+
+/* Classic loading for some simple elements */
+.sidebar-nav .sub-menu li.loading {
+	.loading-left-nav; 
+}
+
+
+/* Mixin */
+
+.loading-left-nav {
+	min-height: initial;
+	&:before {
+        display:none;
+	}
+	&:after {
+        background-image: none;
+        background-color: fade(lighten(@ls-grey, 74%), 80%);
+	}
+	
+}
+

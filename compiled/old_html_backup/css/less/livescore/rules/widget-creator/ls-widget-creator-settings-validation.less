@@ -1,0 +1,275 @@
+.widget-creator-settings-validation{
+
+	> .row{
+
+		> div{
+
+			.step-heading{
+				span.icon{
+					margin-right: 5px;
+					font-size: @font-size-x-small;
+				}
+			}
+
+			.widget-parameters{
+				margin-bottom: 19px;
+
+				.title{
+					font-size: @font-size-large;
+					font-weight: @font-weight-bold;
+					display: block;
+					text-transform: uppercase;
+					margin-bottom: 16px;
+					margin-top: 18px;
+				}
+
+				.form-group{
+					display: table;
+					margin: 0;
+					padding: 10px 0;
+					border-top: 1px solid darken(@ls-light-color, 10%);
+
+					.name{
+						padding-left: 0;
+						font-weight: @font-weight-semi-bold;
+
+						.icon{
+							margin-right: 15px;
+							margin-left: 8px;
+							vertical-align: middle;
+						}
+					}
+
+					.value{
+						display: table-cell;
+						padding-right: 0;
+					}
+
+					&:last-child{
+						border-bottom: 1px solid darken(@ls-light-color, 10%);
+					}
+				}
+
+				&.widget-options{
+					.form-group{
+						display: table;
+						width: 100%;
+
+						.name{
+							padding-top: 10px;
+							padding-bottom: 10px;
+							float: none;
+							display: table-cell;
+							vertical-align: middle;
+							line-height: 14px;
+
+							.icon{
+								float: left;
+							}
+						}
+
+						.value{
+							padding-left: 0;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							float: none;
+							display: table-cell;
+							vertical-align: middle;
+							text-align: right;
+						}
+					}
+				}
+
+				&.widget-style{
+					.form-group{
+						display: table;
+						width: 100%;
+
+						.name{
+							vertical-align: top;
+							display: table-cell;
+							float: none;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							padding-right: 0;
+							width: 30%;
+							line-height: 28px;
+						}
+
+						.value{
+							display: table-cell;
+							vertical-align: middle;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							width: 70%;
+							padding-left: 0;
+							float: none;
+
+							.icon{
+								font-size: @font-size-medium;
+								position: relative;
+								top: 2px;
+								color: darken(@ls-light-color, 38%);
+								margin-right: 9px;
+							}
+
+							input[type="text"]{
+								height: 30px;
+							}
+
+							.radio{
+								margin-top: 0;
+								margin-bottom: 0;
+
+								label{
+									font-weight: @font-weight-normal;
+								}
+							}
+
+							.select-component{
+								display: inline-block;
+								min-width: 145px;
+								line-height: 18px;
+
+								select{
+									padding-top: 4px;
+									padding-bottom: 4px;
+								}
+
+								&:after{
+									line-height: 27px;
+								}
+							}
+
+							.switch-button{
+								vertical-align: middle;
+								margin-right: 10px;
+							}
+
+							&.width{
+								text-align: left;
+
+								.input-group{
+									max-width: 130px;
+								}
+							}
+
+							&.height{
+								text-align: left;
+								line-height: 28px;
+
+								.input-group{
+									margin-left: 8px;
+									display: inline-table;
+									max-width: 130px;
+									vertical-align: middle;
+								}
+							}
+
+							&.type-of-display{
+
+								> .divider{
+									margin-bottom: 5px;
+									min-height: 30px;
+									line-height: 28px;
+								}
+
+								.radio{
+									margin-right: 8px; 
+								}
+
+								.select-component{
+									min-width: 145px;
+								}
+							}
+
+							&.display-odds{
+
+							}
+						}
+
+						&:first-child{
+							border-top: 0;
+						}
+					}
+				}
+			}
+
+			p.warning{
+				color: @warning-red;
+
+				b{
+					color: @warning-red;
+				}
+			}
+
+			.widget-preview{
+
+				.title{
+					font-size: @font-size-xx-large;
+					font-weight: @font-weight-semi-bold;
+					margin-right: 7px;
+				}
+
+				.btn-group-justified{
+					margin-top: 20px; 
+				}
+
+				textarea.embed-code{
+					margin-top: 20px;
+					margin-bottom: 20px;
+					height: 100px;
+				}
+
+				.buttons{
+					text-align: right;
+
+					.btn{
+						margin-left: 10px;
+					}
+				}
+
+				.iframe-container{
+					margin-bottom: 25px;
+					height: 518px;
+					position: relative;
+
+					.widget-iframe{
+						padding: 15px;
+						background-color: @ls-light-color;
+						border: 1px solid darken(@ls-light-color, 4%);
+						position: absolute;
+						right: 0;
+						width: 100%;
+						height: 518px;
+						z-index: 3;
+						.transition(all 250ms ease-in-out);
+						overflow: hidden;
+
+						iframe{
+							height: 518px;
+							width: 640px;
+							overflow: hidden;
+							padding: 13px 8px;
+						}
+
+						&:hover{
+							width: 630px;
+							.box-shadow(0 0 13px rgba(0, 0, 0, 0.1));
+						}
+
+						&:after{
+							content: "";
+							height: 100%;
+							width: 100%;
+							top: 15px;
+							left: 15px;
+							background-color: rgba(218, 218, 218, 0.4);
+							position: absolute;
+						}
+					}
+				}
+			}
+		}
+	}
+}

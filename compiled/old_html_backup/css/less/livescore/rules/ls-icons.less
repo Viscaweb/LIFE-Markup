@@ -1,0 +1,72 @@
+/*Custom General Icons Behavior*/
+
+.span{
+  &.active{
+    .glyphicon-star{
+      color: @ls-fav-hover !important;
+    }
+  }
+}
+
+i, span{
+ &.glyphicon-star.active{
+    color: @ls-fav-hover !important;
+  }
+}
+
+/*Mixin General Tables Tools Icon Style*/
+.ls-tools-icon-style(){
+	display: inline-block;
+  font-size:  @font-size-large;
+  padding: 0 1px;
+  color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
+  line-height: 25px;
+  
+  &.available{
+    position: relative;
+    color: darken(@ls-light-color, 29%);
+    
+    &.live {
+      color: @live-red;
+      
+      &:hover {
+       color: darken(@live-red,10%); 
+      } 
+    }
+    
+    .comment-number{
+      color: @ls-light-color;
+      font-size: @font-size-x-tiny - 2px; 
+      line-height: @font-size-x-tiny - 1px;
+      font-weight: @font-weight-semi-bold;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 5px;
+      left: 0;
+    }
+  }            
+  
+  &:hover{
+    color: darken(@ls-light-color, 60%);
+    
+    &.available{
+    
+      .comment-number{
+        color: @ls-light-color;
+      }
+    }
+  }
+  
+  &.active{
+    color: @brand-primary;
+    
+    &:hover{
+      color: darken(@brand-primary, 10%);
+    }
+  }
+}
+
+.fav-match{
+	.ls-tools-icon-style();
+}

@@ -1,0 +1,374 @@
+/*Fixed top navbar*/
+.header{
+
+  .navbar.navbar-fixed-top{
+    background: @header-bg;
+    height: 64px;
+    border: 0;
+    .box-shadow( 0px 3px 0px 0px rgba(0,0,0,0.05));
+    
+    .navbar-header{
+      margin-right: 0;
+      float: left !important;
+      
+      .navbar-brand {
+        padding:14px;
+        
+        img{height: 37px;}
+      }
+      
+    }
+    
+    .navbar-form{
+      border: 0;
+      float: left !important;
+      margin: 15px 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      
+      .input-search{
+        margin-left: 10px;
+        display: inline-table;
+      
+        input{
+          border:none;
+          background: darken(@header-bg, 5%);
+          .border-radius(2px 0 0 2px);
+          color: darken(@header-bg, 47%);
+          font-size:  @font-size-base -1;
+          font-weight: 300;
+          box-shadow: none;
+          padding: 0px 15px;
+          height: 36px;
+          width: 224px;
+        }
+        
+        .form-control{
+          display: table-cell !important;
+        
+          &::-moz-placeholder {
+            color: #afafaf;
+          }
+        }
+        
+        .input-group-btn{
+          display: inline-block;
+        
+          .btn{
+            border-color: darken(@header-bg, 5%);
+            background: darken(@header-bg, 5%);
+            color: darken(@header-bg, 31%);
+            .border-radius(0 2px 2px 0);
+            height: 36px;
+            font-size:  @font-size-large;
+            outline: none;
+            
+            &:hover, &:active{
+              .box-shadow(none);
+            }
+            
+            &:hover{
+              color: darken(@header-bg, 35%);
+            }
+          }
+        }
+        
+      }
+      
+
+    }
+    
+    .navbar-right{ 
+      margin: 0;
+    
+      > li{
+        > a{ 
+          color:darken(@header-bg, 57%);
+          padding-bottom: 0;
+          padding-top: 0;
+          line-height: 64px;
+          
+          span{
+            vertical-align: middle;
+            font-size:  @font-size-base + 11;
+            top : 0px;
+          }   
+        }
+             
+        &.active{
+          > a{
+            color: @active-green;
+          }
+        }
+      }
+      
+      ul.dropdown-menu{
+        
+        &.custom{
+          padding: 0;
+          min-width: 297px;
+          right: -123px;
+        }
+      
+        > li{
+          .dropdown-title{
+            padding: 15px;
+            color: darken(@ls-light-color, 31.8%);
+            background-color: darken(@ls-light-color, 6%);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            
+            .tools{
+              position: absolute;
+              right: 15px;
+              top: 13px;
+              
+              a.icon{
+                color: darken(@ls-light-color, 34%);
+                font-size: @font-size-xx-large;
+                
+                &:hover{
+                  color: darken(@ls-light-color, 38%);
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      .menu-badge(@top: 16px, @right: 9px){
+        > a{
+          position: relative;
+
+          > span{  
+            position: static;
+
+            .badge{
+              font-family: @ls-body-font;
+              position: absolute;
+              top: @top;
+              right: @right;
+              font-size: @font-size-x-small;
+              font-weight: @font-weight-bold;
+            }
+          }
+        }
+      }
+    
+      .notifications.dropdown{
+      
+        .menu-badge(16px, 6px);
+      
+        ul.dropdown-menu{
+        
+          a.view-all{
+            text-align: center;
+            line-height: 23px;
+            padding: 6px 10px;
+            color: @link-color;
+            
+            &:hover{
+              background-color: transparent;
+              color: @link-hover-color;
+            }
+          }
+         
+        }
+      }
+      
+      .alerts.dropdown{ 
+        .menu-badge();
+      }
+    
+      .settings.dropdown{
+      
+        ul.dropdown-menu{
+        
+          .field{
+            label{
+              display: block;
+              font-weight: @font-weight-bold;
+            }
+            
+            &.time-zone{
+              padding: 13px 24px 13px;
+              border-bottom: 1px solid darken(@ls-light-color, 5.5%);
+            }    
+            
+            &.odds-type{
+              padding: 15px 24px 29px;
+            }
+          }
+        }
+      }
+
+      .user.dropdown{
+        > a{        
+          img.img-circle{
+            margin-right: 10px;
+            max-width: 37px;
+            max-height: 37px;
+            background: @ls-user-avatar-placeholder-bg;
+          }
+          
+          span{
+            color:darken(@header-bg, 28%);
+            font-size:  @font-size-small;
+            margin-left: 10px;
+          }
+        }
+        
+        ul.dropdown-menu{
+          li{
+            a{
+              .icon{
+                margin-right: 8px;
+                color: darken(@ls-light-color, 17.2%);
+              }
+              
+              &:hover{
+                .icon{
+                  color: @ls-light-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      .user.login{
+        padding: 15px 0;
+         
+        .btn{
+          line-height: 16px;
+          color: @header-bg;
+          font-size:  @font-size-small;
+          font-weight: 600;
+          margin-left: 10px;
+          padding: 9px 11px;
+        }
+      }  
+    }
+    
+  }
+
+  .dropdown-inverted{
+    .dropdown-menu{
+      background-color: lighten(@ls-greyblue-dark, 1%);
+      border-color: @ls-greyblue-dark;
+      
+      > li{
+        > a{
+          color: @header-bg;
+        }
+      }
+    }
+  }
+
+
+  /*Navbar inverse*/
+  .navbar-inverse {
+    background-color: @ls-greyblue-dark;
+    border: none;
+    font-weight: 600;
+    font-size:  @font-size-base;
+    height: @ls-navbar-inverse-height;
+    margin-bottom: 0;
+    position: relative;
+
+    .loading-bar{
+      background-color: @brand-primary;
+      position: absolute;
+      height: 3px;
+      top: 0;
+      left: 0;
+    }
+
+    span.icon-caret-down{
+      font-size:  @font-size-small;
+    }
+    
+    .navbar-nav{ 
+      margin: 0;
+      
+      //This is the first level
+      > li {
+      
+        > a{
+          font-family: @ls-body-font;
+          color: darken(@ls-light-color, 15%);
+          padding: 0 @ls-navbar-inverse-item-padding;
+          line-height: @ls-navbar-inverse-height;
+          
+          &:hover{
+            background-color: darken(@ls-greyblue-dark, 5%);
+          }
+
+          span.sprite{
+            margin-right: 4px;
+          }
+          
+        }
+
+        &.dropdown{
+
+          > a{
+
+            span.icon-caret-down{
+              margin-left: 4px;
+            }
+          }
+        }
+        
+        &.dropdown.open{
+
+          > a, > a:hover{
+            background-color: darken(@ls-greyblue-dark, 5%);
+          }
+        }
+        
+        &.active{
+          >a , >a:hover{
+            background-color: @brand-primary;
+            color: @header-bg;
+          }
+        }
+        
+        &.divider{
+          border-left: 1px solid @ls-greyblue-dark - 10%;
+          height: @ls-navbar-inverse-height;
+        }
+        
+      }
+    }
+    
+    .social-nav{
+      font-size:  @font-size-base + 7;
+      
+      li{
+        a{
+          color: darken(@header-bg, 10.7%);
+          padding: 0 @ls-navbar-inverse-item-padding;
+        }
+      }
+    }
+  }
+
+
+  //This code overwrite the default navbar responsive behavior to be "non responsive"
+  .navbar-collapse.collapse {
+    display: block !important;
+  }
+
+  .navbar-nav>li, .navbar-nav {
+    float: left !important;
+  }
+
+  .navbar-right {
+    float: right!important;
+  }
+  //This code overwrite the default navbar responsive behavior to be "non responsive"
+
+}
+

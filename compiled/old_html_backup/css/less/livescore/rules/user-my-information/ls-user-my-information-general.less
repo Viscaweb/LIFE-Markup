@@ -1,0 +1,218 @@
+main{
+
+  .content{
+
+    .form-section{
+      border-top: 1px solid darken(@ls-light-color, 5.5%);
+      padding-top: 20px;
+      padding-bottom: 6px;
+
+      .name{
+        font-weight: @font-weight-semi-bold;
+        line-height: 36px;
+        width: 26%;
+        padding-right: 0;
+      }
+
+      .field{
+        width: 65%;
+
+        .input-group{
+
+          span.input-group-addon{
+            padding: 6px 9px;
+            background-color: darken(@ls-light-color, 2.8%);
+
+            .icon{
+              color: darken(@ls-light-color, 19.5%);
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .profile-image-field{
+        
+        .name{
+          line-height: 75px;
+        }
+
+        .profile-image{
+          height: 77px;
+          width: 77px;
+          .border-radius(50%);
+          overflow: hidden;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+
+          img{
+            height: 100%;
+            width: 100%;
+          }
+
+          a{
+            height: 54px;
+            width: 54px;
+            display: block;
+            position: absolute;
+            bottom: -29px;
+            background-color: rgba(0, 0, 0, 0.27);
+            .border-radius(50%);
+            left: 50%;
+            margin-left: -27px;
+            text-align: center;
+            padding-top: 5px;
+
+            .icon{
+              color: @ls-light-color;
+              font-size: @font-size-large;
+            }
+
+            &:hover{
+              background-color: @brand-primary;
+            }
+          }
+        }
+      }
+
+      .info{
+        color: darken(@ls-light-color, 37.3%);
+        font-size: @font-size-large;
+        line-height: 40px;
+        padding-left: 0;
+
+        > span{
+          cursor: default;
+        }
+      }
+
+      .buttons{
+        text-align: right;
+
+        .btn{
+          padding: 9px 14px;
+          line-height: 14px;
+        }
+
+        .btn-default{
+          margin-right: 20px;
+        }
+      }
+
+      &:last-child{
+        border-bottom: 1px solid darken(@ls-light-color, 5.5%);
+        margin-bottom: 10px;
+      }
+    }
+
+    .league-list{    
+      overflow: hidden;      
+
+      .heading{
+        background-color: darken(@ls-light-color, 1%);
+        padding: 10px 15px;
+        line-height: 34px;
+
+        img{
+          position: relative;
+          top: 5px;
+        }
+
+        span{
+          font-weight: @font-weight-semi-bold;
+        }
+
+        > button{
+          text-align: right;
+          float: right;
+        }
+
+        .divider{
+          border-bottom: 1px solid darken(@ls-light-color, 4%);
+          margin-bottom: 5px;
+        }
+      }
+
+      ul{
+        list-style: none;
+        padding-left: 0;
+
+        li{
+          background-color: @ls-light-color;
+
+          span{
+
+            &.sort{
+              margin-right: 10px;
+              color: darken(@ls-light-color, 31.5%);
+              padding: 0 17px;
+              background: darken(@ls-light-color, 1.5%);
+              line-height: 34px;
+              display: inline-block;
+              cursor: move;
+
+              &:hover{
+                background-color: @active-green !important;
+                color: @ls-light-color;
+              }
+            }
+
+            &.logo{
+              margin: 0 8px;
+              
+              img{
+                max-width: 18px;
+              }
+            }
+
+            &.name{
+              font-weight: @font-weight-semi-bold;
+            }
+
+            &.fav{
+
+              .icon{
+                cursor: pointer;
+                float: right;
+                color: darken(@ls-light-color,31%);
+                margin-right: 15px;
+                line-height: 34px; 
+
+                &:hover{
+                  color: darken(@ls-light-color,37%);
+                }
+              }
+
+              &.active{
+                .icon{
+                  color: @ls-fav-hover;
+
+                  &:hover{
+                    color: darken(@ls-fav-hover, 3%);
+                  }
+                }
+              }
+            }
+
+          }
+
+          &:nth-child(even){
+            background-color: darken(@ls-light-color, 1%);
+
+            span.sort{
+              background-color: darken(@ls-light-color, 4.5%); 
+            }
+          }
+
+          &.item-placeholder{
+            border: 1px dashed darken(@ls-light-color, 20%);
+            padding: 17px 0;
+            background: darken(@ls-light-color, 5%); 
+          }
+        }
+      }
+    }
+  }
+}

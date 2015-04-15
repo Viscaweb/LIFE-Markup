@@ -1,0 +1,361 @@
+.match-teams-lineups{
+
+  .component-container{ 
+    display: table;
+    
+    .team{
+      display: table-cell;
+      vertical-align: top;
+      width: 20%;
+      
+      .table{
+        margin-bottom: 0;
+      
+        thead{
+        
+          tr{
+          
+            th{
+              
+              &.team-logo{
+                background: @ls-light-color;
+                text-align: center;
+                
+                img{
+                  margin-top: 7px;
+                  max-height: 45px;
+                  max-width: 45px;
+                }
+                
+                span.positions{
+                  margin-top: 5px;
+                  margin-bottom: 1px;
+                  font-size: @font-size-normal;
+                  font-weight: @font-weight-bold;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        
+        tbody{
+        
+          tr{
+          
+            th{
+              border-top: 0;
+              text-transform: none;
+              font-weight: @font-weight-bold;
+              font-size: @font-size-small;
+              line-height: @font-size-medium;
+            }
+            
+            td{
+              line-height: @font-size-xx-large;
+              
+              &.number{
+                font-weight: @font-weight-bold;
+                font-size: @font-size-base;
+                text-align: center;
+                vertical-align: top !important;
+              }
+              
+              &.player{
+                padding-left: 1px;
+                padding-right: 1px;
+                
+                span.sprite{
+                  float: right;
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .field{
+      background: url("@{ls-image-match-teams-lineups-field-bg}") repeat 0 -7px;
+      display: table-cell;
+      vertical-align: top;
+      padding: @ls-match-teams-lineups-field-padding;
+      position: relative;
+      
+      .field-lines{
+        background: url("@{ls-image-match-teams-lineups-field-lines}") no-repeat;
+        width: 337px;
+        height: 506px;
+        position: relative;
+        
+        .player{
+          position: absolute;
+          border-left: 0;
+          text-align: center;
+          min-width: 35px;
+          cursor: pointer;
+          
+          &:after{
+            content: "\e620";
+            font-family: @ls-icons-font;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: @ls-match-teams-lineups-home-shirt-color;
+            font-size: @ls-match-teams-lineups-shirt-size;
+            line-height: @ls-match-teams-lineups-shirt-size;
+            width: 100%;
+            height: @ls-match-teams-lineups-shirt-size - (@ls-match-teams-lineups-shirt-size * 0.32);            
+            display: block;
+            overflow: hidden;
+            z-index: 1;
+          }
+          
+          .number{
+            color: lighten(@ls-dark-color, 10%);
+            font-size: @font-size-x-small;
+            font-weight: @font-weight-bold;
+            line-height: @ls-match-teams-lineups-shirt-size - (@ls-match-teams-lineups-shirt-size * 0.29) + 3px;
+            display: block;
+            width: 100%;
+            height: @ls-match-teams-lineups-shirt-size - (@ls-match-teams-lineups-shirt-size * 0.32);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+          }
+          
+          .name{
+            display: block;
+            color: @ls-light-color;
+            font-size: @font-size-small;
+            font-weight: @font-weight-semi-bold;
+            text-transform: none;
+            text-align: center;
+            white-space: nowrap;
+          }
+          
+          .icons{
+            text-align: center;
+            
+            span{
+              margin-bottom: 0;
+              margin-right: 4px;
+              
+              &.sprite.goal{
+                background-position: -62px -28px;
+                width: 16px;
+              }
+            }
+          }
+          
+          &:hover{
+          
+            &:after{
+              color: @ls-light-color;
+            }
+            
+            .name{
+              color: darken(@ls-light-color, 12%);
+            }
+          }
+          
+          &.away{
+          
+            &:after{
+              color: @ls-match-teams-lineups-away-shirt-color;
+            }
+            
+            .number{
+              color: @ls-light-color;
+            }
+            
+            &:hover{
+            
+              &:after{
+                color: lighten(@ls-dark-color, 5%);
+              }
+            }
+          }
+        }
+      }
+      
+      &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 120px;
+        width: 0; 
+        height: 0; 
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 13px solid @ls-light-color;
+      }
+      
+      &:after{
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 137px;
+        width: 0; 
+        height: 0; 
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 13px solid @ls-light-color;      
+      }
+    }
+  }
+  
+  .popover{
+    border-top: 0;
+    min-width: 322px;
+    .border-radius(2px);
+    
+    .arrow:after{
+      border-bottom-color: @panel-default-heading-bg;
+    }
+    
+    .popover-content{
+      padding: 0;
+      
+      > .title{
+        .border-radius(2px 2px 0 0);
+        background:  @panel-default-heading-bg;
+        border-bottom: 1px solid darken(@ls-light-color,6%);
+        padding: 8px 20px;
+        .panel-title-font-style();
+      }
+      
+      > .body{
+        padding: 15px 20px 20px;
+      }
+    
+      .content-header.player{
+        padding: 0;
+      
+        .avatar{
+          margin-right: 10px;
+          position: static;
+          
+          img{
+            margin: 0;
+            max-width: 80px;
+            max-height: 80px;
+            vertical-align: baseline;
+            background: @ls-player-image-placeholder-bg;
+          }
+        }
+      
+        .actions{
+          margin-top: 5px;
+        
+          .action{
+            display: inline-block;
+            margin-right: 7px;
+            
+            .sprite, .icon{
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+      
+      .table{
+        margin: 12px 0px;
+        border-top:2px solid darken(@ls-light-color, 2%);
+
+        
+        tr{
+        
+          td{
+          
+            &.value{
+              font-weight: @font-weight-semi-bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.table.teams-lineups{
+  margin-bottom: 0;
+
+  thead{
+  
+    tr{
+    
+      th{
+        border-right: 2px solid darken(@ls-light-color, 7%);
+        
+        &.team-logo{
+          background: @ls-light-color;
+          text-align: center;
+          
+          img{
+            margin-top: 7px;
+            max-height: 45px;
+            max-width: 45px;
+          }
+          
+          span.positions{
+            margin-top: 5px;
+            margin-bottom: 1px;
+            font-size: @font-size-normal;
+            font-weight: @font-weight-bold;
+            display: block;
+          }
+        }
+        
+        &:last-child{
+          border-right: 0;
+        }
+      }
+    }
+  }
+  
+  tbody{
+  
+    tr{
+    
+      th{
+        border-top: 0;
+        text-transform: none;
+        font-weight: @font-weight-bold;
+        font-size: @font-size-small;
+        line-height: @font-size-medium;
+        border-right: 2px solid darken(@ls-light-color, 7%);
+        width: 50%;
+        
+        &:last-child{
+          border-right: 0;
+        }
+      }
+      
+      td{
+        line-height: @font-size-xx-large;
+        
+        &.number{
+          font-weight: @font-weight-bold;
+          font-size: @font-size-base;
+          text-align: center;
+          vertical-align: top !important;
+          width: 6%;
+        }
+        
+        &.player{
+          
+          span.sprite{
+            float: right;
+            margin-right: 3px;
+          }
+        }
+        
+        &:nth-child(2){
+          border-right: 2px solid darken(@ls-light-color, 7%);
+        }
+      }
+    }
+  }
+}
