@@ -10093,6 +10093,19 @@ table.layout-fixed colgroup col.rank-variation {
 table.layout-fixed colgroup col.favorite {
   width: 25px;
 }
+<<<<<<< HEAD
+=======
+table.popover-odd-evolution {
+  width: 100%;
+  margin-top: 3px;
+}
+table.popover-odd-evolution tr td.old {
+  text-decoration: line-through;
+}
+table.popover-odd-evolution tr td.icon span {
+  font-size: 12px;
+}
+>>>>>>> e06acf0
 /*Custom Buttons*/
 .btn-prediction,
 .btn-prediction:focus {
