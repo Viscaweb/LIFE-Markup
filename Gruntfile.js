@@ -4,6 +4,9 @@ module.exports = function (grunt) {
             development: {
                 options: {
                     //paths: ["css"]
+                    sourceMap: true,
+                    sourceMapFilename: "compiled/css/style-map.css",
+                    sourceMapURL: "style-map.css"
                 },
                 files: {
                     "compiled/css/style.css": "src/css/style.less"
