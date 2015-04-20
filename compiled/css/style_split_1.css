@@ -12412,6 +12412,8 @@ table.popover-odd-evolution tr td.icon span {
   font-size: 12px;
 }
 
+/* Mixins */
+
 /*Custom Buttons*/
 
 .btn-prediction,
@@ -12570,6 +12572,19 @@ fieldset[disabled] .btn-prediction-done:focus.active {
 .btn-prediction-done:focus .badge {
   color: #737373;
   background-color: #ffffff;
+}
+
+.btn-prediction-done:hover::before,
+.btn-prediction-done:focus:hover::before {
+  content: '\e014';
+  color: #ff0000;
+  font-family: 'Glyphicons Halflings';
+  position: absolute;
+  background-color: #5A5A5A;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .btn-prediction-success,
@@ -12885,6 +12900,8 @@ fieldset[disabled] .btn-prediction-failed:focus.active {
   text-transform: uppercase;
   font-size: 11px;
 }
+
+/* Livescore specific buttons */
 
 .btn-live {
   position: relative;
@@ -14698,12 +14715,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match table tr:first-child td {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-}
-
-.matches-slider .content .match table tr:first-child td.team {
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.matches-slider .content .match table tr:first-child td:last-child {
-  border-color: #fbfbfb;
 }

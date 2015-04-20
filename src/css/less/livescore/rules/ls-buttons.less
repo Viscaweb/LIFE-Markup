@@ -1,3 +1,19 @@
+/* Mixins */
+
+.prediction-remove(@cross-color){
+  &::before {
+    content: '\e014';
+    color: @cross-color;
+    font-family: 'Glyphicons Halflings';
+    position: absolute;
+    background-color: #5A5A5A;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+  }
+}
+
 /*Custom Buttons*/
 
 .btn-prediction,.btn-prediction:focus{
@@ -7,6 +23,10 @@
 
 .btn-prediction-done,.btn-prediction-done:focus{
 	.button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
+
+    &:hover {
+      .prediction-remove(red);
+    }
 }
 
 
@@ -93,9 +113,7 @@
 }
 
 
-
-
-
+/* Livescore specific buttons */
 
 .btn-live{
   position: relative;
