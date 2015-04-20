@@ -1309,30 +1309,27 @@ span.glyphicon-star.active {
   content: "";
   position: absolute;
   background: url("../img//loading.png") no-repeat center center;
-  background-color: rgba(251, 251, 251, 0.8);
   width: 100%;
   height: 100%;
+  max-height: 300px;
   top: 0;
   left: 0;
   text-align: center;
   display: block;
-  z-index: 2;
+  z-index: 3;
 }
 
 .loading:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  background-color: rgba(251, 251, 251, 0.8);
   display: block;
   width: 100%;
+  height: 100%;
   text-align: center;
-  left: 0;
-  color: #5da400;
-  z-index: 3;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  margin-top: 28px;
+  z-index: 2;
 }
 
 .loading.loading-dark:after {
