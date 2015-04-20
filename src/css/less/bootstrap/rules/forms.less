@@ -50,8 +50,9 @@
   line-height: @font-size-xx-large;
   
   input[type="checkbox"], input[type="radio"]{
-    display: none;
     margin: 0;
+    opacity: 0;
+    width: 18px;
   }
  
   label{
@@ -79,6 +80,12 @@
     } 
     
     &:hover:before{
+      background-color: @ls-checkbox-hover-bg;
+    }
+  }
+
+  input[type="checkbox"]:hover + label, input[type="radio"]:hover + label {
+    &:before{
       background-color: @ls-checkbox-hover-bg;
     }
   }

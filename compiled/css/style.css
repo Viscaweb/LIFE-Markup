@@ -7021,8 +7021,9 @@ button.close {
 .radio input[type="checkbox"],
 .checkbox input[type="radio"],
 .radio input[type="radio"] {
-  display: none;
   margin: 0;
+  opacity: 0;
+  width: 18px;
 }
 .checkbox label,
 .radio label {
@@ -7072,6 +7073,12 @@ button.close {
 .radio input[type="checkbox"] + label:hover:before,
 .checkbox input[type="radio"] + label:hover:before,
 .radio input[type="radio"] + label:hover:before {
+  background-color: #e9f2e2;
+}
+.checkbox input[type="checkbox"]:hover + label:before,
+.radio input[type="checkbox"]:hover + label:before,
+.checkbox input[type="radio"]:hover + label:before,
+.radio input[type="radio"]:hover + label:before {
   background-color: #e9f2e2;
 }
 .checkbox input[type="checkbox"]:checked + label:before,

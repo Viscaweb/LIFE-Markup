@@ -8620,8 +8620,9 @@ button.close {
 .radio input[type="checkbox"],
 .checkbox input[type="radio"],
 .radio input[type="radio"] {
-  display: none;
   margin: 0;
+  opacity: 0;
+  width: 18px;
 }
 
 .checkbox label,
@@ -8676,6 +8677,13 @@ button.close {
 .radio input[type="checkbox"] + label:hover:before,
 .checkbox input[type="radio"] + label:hover:before,
 .radio input[type="radio"] + label:hover:before {
+  background-color: #e9f2e2;
+}
+
+.checkbox input[type="checkbox"]:hover + label:before,
+.radio input[type="checkbox"]:hover + label:before,
+.checkbox input[type="radio"]:hover + label:before,
+.radio input[type="radio"]:hover + label:before {
   background-color: #e9f2e2;
 }
 
@@ -14687,27 +14695,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match table tr td.flag {
   border-color: transparent;
   padding: 0 4px 0 0;
-}
-
-.matches-slider .content .match table tr td.flag img {
-  max-width: 16px;
-}
-
-.matches-slider .content .match table tr td.team {
-  min-width: 45px;
-  padding-left: 0;
-  padding-right: 11px;
-}
-
-.matches-slider .content .match table tr td.score {
-  text-align: center;
-  font-weight: 700;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: #e6e6e6;
-}
-
-.matches-slider .content .match table tr td.score.update {
-  background-color: #e33000;
-  color: #ffffff !important;
 }
