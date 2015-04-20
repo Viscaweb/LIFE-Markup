@@ -3300,15 +3300,15 @@ span.glyphicon-star.active {
   text-align: center;
   width: 43px;
   height: 43px;
-  padding: 10px 0;
+  line-height: 43px;
+  padding: 0px;
   position: absolute;
   background-color: #f0f0f0;
 }
 
 .match-prediction > .row > div .notification > div.icon > span {
   font-size: 17px;
-  line-height: 17px;
-  vertical-align: middle;
+  line-height: inherit;
 }
 
 .match-prediction > .row > div .notification > div.icon > span.icon-clock {
@@ -8420,3 +8420,5 @@ ul.image-list li img {
     content: none;
   }
 }
+
+/*# sourceMappingURL=style-map.css */
