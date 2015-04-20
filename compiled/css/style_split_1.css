@@ -5093,7 +5093,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs .dropdown-menu {
-  margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -8526,6 +8525,7 @@ button.close {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
   min-width: 200px;
   padding: 8px 0;
+  margin-top: 0;
 }
 
 .dropdown-menu > li > a {
@@ -9224,10 +9224,6 @@ button.close {
   top: 5px;
 }
 
-.nav-pills > li .dropdown-menu {
-  margin-top: 0;
-}
-
 .nav-pills > li.dropdown.open > a {
   color: #ffffff;
   border-color: transparent;
@@ -9595,6 +9591,8 @@ button.close {
   float: right!important;
 }
 
+/*Bootstrap default navbar-nav*/
+
 /*Pagination*/
 
 .pagination > li.active a,
@@ -9833,10 +9831,6 @@ button.close {
 
 .panel > .panel-heading .tools .btn-group {
   top: -2px;
-}
-
-.panel > .panel-heading .tools .btn-group .dropdown-menu {
-  margin-top: 0;
 }
 
 .panel > .panel-heading .tools button {
@@ -10493,6 +10487,12 @@ button.close {
 .table tbody tr:nth-child(even) > td.tools.tools-1,
 .table tbody tr:nth-child(odd) > td.tools.tools-1 {
   max-width: 20px;
+}
+
+.table tbody tr > td.favorite,
+.table tbody tr:nth-child(even) > td.favorite,
+.table tbody tr:nth-child(odd) > td.favorite {
+  text-align: center;
 }
 
 .table tbody tr:nth-child(2n+1) td.odd,
@@ -14710,9 +14710,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match table tr td.score.update {
   background-color: #e33000;
   color: #ffffff !important;
-}
-
-.matches-slider .content .match table tr:first-child td {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
 }

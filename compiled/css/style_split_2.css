@@ -1,3 +1,8 @@
+.matches-slider .content .match table tr:first-child td {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
 .matches-slider .content .match table tr:first-child td.team {
   border-bottom: 1px solid #e6e6e6;
 }
@@ -2212,6 +2217,14 @@ span.glyphicon-star.active {
   list-style: none;
   font-size: 12px;
   line-height: 22px;
+}
+
+.match-information .table tbody tr td.team-information ul.players li a {
+  color: #5c5c5c;
+}
+
+.match-information .table tbody tr td.team-information ul.players li a:hover {
+  color: #0076f0;
 }
 
 .match-information .table tbody tr td.team-information ul.players li span {
@@ -8267,7 +8280,6 @@ ul.image-list li img {
 }
 
 .breadcrumb > li .dropdown-menu {
-  margin-top: 0;
   left: 17px;
   /*This is only a temporal solution*/
   max-height: 300px;
