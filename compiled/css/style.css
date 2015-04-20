@@ -8591,6 +8591,11 @@ button.close {
 .table tbody tr:nth-child(odd) > td.tools.tools-1 {
   max-width: 20px;
 }
+.table tbody tr > td.favorite,
+.table tbody tr:nth-child(even) > td.favorite,
+.table tbody tr:nth-child(odd) > td.favorite {
+  text-align: center;
+}
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n+1) td.odd {
