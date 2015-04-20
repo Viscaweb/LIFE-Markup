@@ -13821,6 +13821,12 @@ span.glyphicon-star.active {
   font-size: 12px;
   line-height: 22px;
 }
+.match-information .table tbody tr td.team-information ul.players li a {
+  color: #5c5c5c;
+}
+.match-information .table tbody tr td.team-information ul.players li a:hover {
+  color: #0076f0;
+}
 .match-information .table tbody tr td.team-information ul.players li span {
   margin-left: 5px;
 }
