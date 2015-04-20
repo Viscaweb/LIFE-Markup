@@ -978,7 +978,7 @@
 }
 
 .empty-state {
-  background-color: #fbfbfb;
+  background-color: transparent;
   min-height: 200px;
   width: 100%;
   text-align: center;
@@ -1004,7 +1004,7 @@
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #cccccc;
+  color: #d9d9d9;
 }
 
 .empty-state .btn-available-matches time {
