@@ -1,3 +1,4 @@
+<!--Prediction contest grid-->
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default prediction-contest-grid">
@@ -23,20 +24,33 @@
                 Prediction Contest Grid
             </div>
             <div class="row indicators">
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     My Ranking: <span class="number-big">345</span><span class="number-small">/ 739</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     Correct predictions: <span class="number-big">9</span><span class="number-small">/ 16</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     Points: <span class="number-big">9</span>
                 </div>
             </div>
-            <table class="table matches predictions table-condensed table-striped no-border">
+            <table class="table matches predictions table-condensed table-striped no-border layout-fixed">
+                <colgroup>
+                    <col class="prediction-status">
+                    <col class="date">
+                    <col class="hour">
+                    <col class="league">
+                    <col class="team">
+                    <col class="score">
+                    <col class="team">
+                    <col class="prediction">
+                    <col class="trend">
+                    <col class="tools tools-2">
+                    <col class="favorite">
+                </colgroup>
                 <thead class="league-data">
                 <tr>
-                    <th colspan="12">
+                    <th colspan="11">
                         <div class="title">
                             <span class="country"><span class="icon-cup icon"></span>Grid Nº3</span>
                         </div>
@@ -47,6 +61,7 @@
                 <tr>
                     <th></th>
                     <th class="text-right">Date</th>
+                    <th class="text-right">Time</th>
                     <th></th>
                     <th></th>
                     <th>Score</th>
@@ -54,13 +69,15 @@
                     <th>Prediction</th>
                     <th class="text-center">Trend</th>
                     <th>Aide</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr class="">
                     <td class="icon odd"></td>
                     <td class="date">12/09</td>
-                    <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
+                    <td class="hour">20h00</td>
+                    <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
                     <td class="team team1"><a href="#">Leverkusen</a></td>
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Werder Brême</a></td>
@@ -86,12 +103,15 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="">
                     <td class="icon odd"></td>
                     <td class="date">13/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/bundesliga.png" alt="Bundes liga"></td>
                     <td class="team team1"><a href="#">Arsenal</a></td>
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
@@ -118,12 +138,50 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-waiting">
                     <td class="icon odd"><span class="icon icon-clock"></span></td>
                     <td class="date">13/09</td>
+                    <td class="hour">20h00</td>
+                    <td class="league-logo"><img class="league" src="img/sprites/premiereleague.png" alt="Premiere League"></td>
+                    <td class="team team1"><a href="#">Bayern</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Stuttgart</a></td>
+                    <td class="prediction">
+                        <div class="btn-group btn-group-justified btn-group-xs">
+                            <a href="#" class="btn btn-prediction-done">1</a>
+                            <a href="#" class="btn btn-prediction">X</a>
+                            <a href="#" class="btn btn-prediction">2</a>
+                        </div>
+                    </td>
+                    <td class="trend">
+                        <div class="progress">
+                            <div style="width: 35%" class="progress-bar progress-bar-home">
+                                <span class="sr-only">60% Complete (success)</span>
+                            </div>
+                            <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                                <span class="sr-only">10% Complete (warning)</span>
+                            </div>
+                            <div style="width: 35%" class="progress-bar progress-bar-away">
+                                <span class="sr-only">40% Complete (danger)</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-bulb"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr class="prediction-waiting">
+                    <td class="icon odd"><span class="icon icon-clock"></span></td>
+                    <td class="date">13/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/premiereleague.png" alt="Premiere League"></td>
                     <td class="team team1"><a href="#">Bayern</a></td>
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
@@ -150,51 +208,22 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
-                <tr class="prediction-waiting">
-                    <td class="icon odd"><span class="icon icon-clock"></span></td>
-                    <td class="date">13/09</td>
-                    <td class="league-logo"><img class="league" src="img/sprites/premiereleague.png" alt="Premiere League"></td>
-                    <td class="team team1"><a href="#">Bayern</a></td>
-                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                    <td class="team team2"><a href="#">Stuttgart</a></td>
-                    <td class="prediction">
-                        <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction">1</a>
-                            <a href="#" class="btn btn-prediction-done">X</a>
-                            <a href="#" class="btn btn-prediction">2</a>
-                        </div>
-                    </td>
-                    <td class="trend">
-                        <div class="progress">
-                            <div style="width: 35%" class="progress-bar progress-bar-home">
-                                <span class="sr-only">60% Complete (success)</span>
-                            </div>
-                            <div style="width: 30%" class="progress-bar progress-bar-neutral">
-                                <span class="sr-only">10% Complete (warning)</span>
-                            </div>
-                            <div style="width: 35%" class="progress-bar progress-bar-away">
-                                <span class="sr-only">40% Complete (danger)</span>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="tools">
-                        <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
-                    </td>
-                </tr>
-                <tr class="prediction-waiting">
+                <tr class="prediction-waiting prediction-hidden">
                     <td class="icon odd"><span class="icon icon-clock"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Barcelone</a></td>
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Ath. Bilbao</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction btn-hidden">Hidden</a>
+                            <a href="#" class="btn btn-prediction btn-hidden disabled">Hidden</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -212,19 +241,22 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-cancelled event-cancelled prediction-closed">
                     <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Event cancelled"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Barcelone</a></td>
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Ath. Bilbao</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction btn-hidden">Cancelled</a>
+                            <a href="#" class="btn btn-prediction btn-hidden disabled">Cancelled</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -242,21 +274,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-locked live">
                     <td class="icon odd"><span class="icon glyphicon glyphicon-lock" data-toggle="tooltip" data-placement="top" title="Prediction locked"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Rennes</a></td>
                     <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">0</span></a></td>
                     <td class="team team2"><a href="#">PSG</a></td>
                     <td class="prediction">
-                        <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction" disabled="disabled">1</a>
-                            <a href="#" class="btn btn-prediction" disabled="disabled">X</a>
-                            <a href="#" class="btn btn-prediction-done" disabled="disabled">2</a>
+                        <div class="btn-group btn-group-justified btn-group-xs"  data-toggle="tooltip" data-placement="top" title="Predictions are only possible before kick off.">
+                            <a href="#" class="btn btn-prediction disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction-done disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -274,21 +309,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-won event-won prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Bastia</a></td>
                     <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">1</span></a></td>
                     <td class="team team2"><a href="#">Lens</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction-success">2</a>
+                            <a href="#" class="btn btn-prediction disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction-success disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -306,21 +344,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-lost event-lost prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Reims</a></td>
                     <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
                     <td class="team team2"><a href="#">Toulouse</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction-result">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction-failed">2</a>
+                            <a href="#" class="btn btn-prediction-result disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction-failed disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -338,21 +379,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-won event-won prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">St Etienne</a></td>
                     <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
                     <td class="team team2"><a href="#">Caen</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction-success">2</a>
+                            <a href="#" class="btn btn-prediction disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction-success disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -370,21 +414,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-lost event-lost prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Real Madrid</a></td>
                     <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
                     <td class="team team2"><a href="#">Atletico M.</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction-failed">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction-result">2</a>
+                            <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction-result disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -402,21 +449,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-won event-won prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Juventus</a></td>
                     <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">0</span></a></td>
                     <td class="team team2"><a href="#">Udinese</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction-success">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction">2</a>
+                            <a href="#" class="btn btn-prediction-success disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -434,21 +484,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-lost event-lost prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Lille</a></td>
                     <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
                     <td class="team team2"><a href="#">Nantes</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction">1</a>
-                            <a href="#" class="btn btn-prediction-failed">X</a>
-                            <a href="#" class="btn btn-prediction-result">2</a>
+                            <a href="#" class="btn btn-prediction disabled">1</a>
+                            <a href="#" class="btn btn-prediction-failed disabled">X</a>
+                            <a href="#" class="btn btn-prediction-result disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -466,21 +519,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-won event-won prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Guingamp</a></td>
                     <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">2</span></a></td>
                     <td class="team team2"><a href="#">Bordeaux</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction">1</a>
-                            <a href="#" class="btn btn-prediction-success">X</a>
-                            <a href="#" class="btn btn-prediction">2</a>
+                            <a href="#" class="btn btn-prediction disabled">1</a>
+                            <a href="#" class="btn btn-prediction-success disabled">X</a>
+                            <a href="#" class="btn btn-prediction disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -498,21 +554,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-won event-won prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Man Utd</a></td>
                     <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
                     <td class="team team2"><a href="#">QPR</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction-success">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction">2</a>
+                            <a href="#" class="btn btn-prediction-success disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -530,21 +589,24 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 <tr class="prediction-lost event-lost prediction-closed">
-                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove"></span></td>
+                    <td class="icon odd"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
                     <td class="date">12/09</td>
+                    <td class="hour">20h00</td>
                     <td class="league-logo"><img class="league" src="img/sprites/ligue1.png" alt="League 1"></td>
                     <td class="team team1"><a href="#">Evian</a></td>
                     <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
                     <td class="team team2"><a href="#">OM</a></td>
                     <td class="prediction">
                         <div class="btn-group btn-group-justified btn-group-xs">
-                            <a href="#" class="btn btn-prediction-failed">1</a>
-                            <a href="#" class="btn btn-prediction">X</a>
-                            <a href="#" class="btn btn-prediction-result">2</a>
+                            <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                            <a href="#" class="btn btn-prediction disabled">X</a>
+                            <a href="#" class="btn btn-prediction-result disabled">2</a>
                         </div>
                     </td>
                     <td class="trend">
@@ -562,11 +624,18 @@
                     </td>
                     <td class="tools">
                         <a href="#"><i class="icon-bulb"></i></a>
-                        <a href="#"><i class="icon-bell"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
                     </td>
                 </tr>
                 </tbody>
             </table>
+            <!-- Grid winner
+            <div class="user-notification">
+                <a href="#"><img class="img-circle avatar" src="img/user-default.png" alt="User Avatar">John Smith</a> finished 1st and won his favorite team shirt!
+            </div>
+            -->
             <div class="panel-footer">
                 <a href="#"><span class="icon-caret-right icon"></span>Contest rules</a>
             </div>
