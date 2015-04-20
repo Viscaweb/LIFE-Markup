@@ -4064,7 +4064,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
 }
 .nav-tabs .dropdown-menu {
-  margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -6940,6 +6939,7 @@ button.close {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
   min-width: 200px;
   padding: 8px 0;
+  margin-top: 0;
 }
 .dropdown-menu > li > a {
   text-transform: none;
@@ -7535,9 +7535,6 @@ button.close {
   position: relative;
   top: 5px;
 }
-.nav-pills > li .dropdown-menu {
-  margin-top: 0;
-}
 .nav-pills > li.dropdown.open > a {
   color: #ffffff;
   border-color: transparent;
@@ -7841,6 +7838,7 @@ button.close {
 .header .navbar-right {
   float: right!important;
 }
+/*Bootstrap default navbar-nav*/
 /*Pagination*/
 .pagination > li.active a,
 .pagination > li.active a:hover,
@@ -7956,11 +7954,6 @@ button.close {
     zoom: 1;
   }
 }
-/*
-.modal-open[style] {
-  padding-right: 0px !important;
-  overflow: scroll;
-}*/
 /*panels*/
 .panel {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -8047,9 +8040,6 @@ button.close {
 }
 .panel > .panel-heading .tools .btn-group {
   top: -2px;
-}
-.panel > .panel-heading .tools .btn-group .dropdown-menu {
-  margin-top: 0;
 }
 .panel > .panel-heading .tools button {
   font-style: normal;
@@ -14756,14 +14746,14 @@ span.glyphicon-star.active {
   text-align: center;
   width: 43px;
   height: 43px;
-  padding: 10px 0;
+  line-height: 43px;
+  padding: 0px;
   position: absolute;
   background-color: #f0f0f0;
 }
 .match-prediction > .row > div .notification > div.icon > span {
   font-size: 17px;
-  line-height: 17px;
-  vertical-align: middle;
+  line-height: inherit;
 }
 .match-prediction > .row > div .notification > div.icon > span.icon-clock {
   font-size: 20px;
@@ -18840,7 +18830,6 @@ ul.image-list li img {
   padding-right: 8px;
 }
 .breadcrumb > li .dropdown-menu {
-  margin-top: 0;
   left: 17px;
   /*This is only a temporal solution*/
   max-height: 300px;
@@ -18973,4 +18962,3 @@ ul.image-list li img {
     content: none;
   }
 }
-/*# sourceMappingURL=style-map.css */
