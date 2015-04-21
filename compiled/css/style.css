@@ -7418,7 +7418,8 @@ button.close {
 }
 .media-list li.media .media-body .media-heading,
 .media-list div.media .media-body .media-heading {
-  margin: 0;
+  line-height: 19px;
+  margin: 0 0 9px;
 }
 .media-list li.media .media-body .media-heading h4,
 .media-list div.media .media-body .media-heading h4,
@@ -7429,7 +7430,6 @@ button.close {
   color: #5c5c5c;
   margin-top: 0;
   display: inline-block;
-  margin-bottom: 9px;
 }
 .media-list li.media .media-body .media-heading .tools,
 .media-list div.media .media-body .media-heading .tools {
@@ -7461,13 +7461,20 @@ button.close {
 .media-list li.media .media-body .media-heading .tools > a,
 .media-list div.media .media-body .media-heading .tools > a {
   color: #dbdbdb;
-  font-size: 16px;
+  font-size: 0;
   margin-left: 10px;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
 }
 .media-list li.media .media-body .media-heading .tools > a:hover,
 .media-list div.media .media-body .media-heading .tools > a:hover {
   color: #424749;
+}
+.media-list li.media .media-body .media-heading .tools > a > span,
+.media-list div.media .media-body .media-heading .tools > a > span {
+  font-size: 16px;
+  vertical-align: middle;
 }
 .media-list li.media .media-body p,
 .media-list div.media .media-body p {
@@ -12900,10 +12907,12 @@ span.sprite-icons.webmaster-border {
 .panel-condensed .comments .media-list .media .avatar .btn-group .btn.btn-default {
   color: #a3a3a3;
 }
+.panel-condensed .comments .media-list .media .media-heading {
+  margin: 0 0 4px;
+}
 .panel-condensed .comments .media-list .media .media-heading h4,
 .panel-condensed .comments .media-list .media .media-heading .name {
   font-size: 12px;
-  margin-bottom: 7px;
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12917,7 +12926,7 @@ span.sprite-icons.webmaster-border {
 .panel-condensed .comments .media-list .media .media-heading .tools h5,
 .panel-condensed .comments .media-list .media .media-heading .tools .date {
   font-size: 10px;
-  margin: 4px 0 0;
+  margin: 0;
   white-space: nowrap;
   right: 0;
   position: absolute;
