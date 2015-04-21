@@ -76,7 +76,7 @@
       line-height: 15px;
       vertical-align: bottom;
       text-align: center;
-      background-color: #FFF;
+      background-color: @ls-light-color;
     } 
     
     &:hover:before{
@@ -97,6 +97,25 @@
       color: @brand-primary;
       border-color: @brand-primary;
     } 
+  }
+
+  input[type="checkbox"]:focus + label, input[type="radio"]:focus + label {
+    &:before{
+      .box-shadow(0px 0px 5px 0px @brand-primary);
+    }
+  }
+
+  input[type="checkbox"]:disabled + label, input[type="radio"]:disabled + label{
+
+    opacity: 0.5;
+    pointer-events: none;
+
+    &:before {
+      pointer-events: none !important;
+      background-color: @ls-light-color;
+    }
+
+
   }
   
   input[type="radio"] + label{

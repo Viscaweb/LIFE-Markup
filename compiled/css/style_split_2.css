@@ -1,3 +1,94 @@
+.matches-slider {
+  width: 100%;
+  display: table;
+  background: #f3f4f5;
+  border-bottom: 1px solid #ececec;
+  table-layout: fixed;
+  z-index: 9999;
+}
+
+.matches-slider .control {
+  background: #fbfbfb;
+  text-align: center;
+  width: 38px;
+  vertical-align: top;
+  display: table-cell;
+  border-color: #e9e9e9;
+  cursor: pointer;
+}
+
+.matches-slider .control span {
+  font-size: 21px;
+  line-height: 71px;
+  color: #dbdbdb;
+}
+
+.matches-slider .control:hover {
+  background: #f0f0f0;
+}
+
+.matches-slider .control:hover span {
+  color: #afafaf;
+}
+
+.matches-slider .control.prev {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.matches-slider .control.next {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.matches-slider .content {
+  vertical-align: top;
+  display: table-cell;
+  white-space: nowrap;
+}
+
+.matches-slider .content .matches {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.matches-slider .content .matches .inner {
+  left: 0;
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
+.matches-slider .content .match {
+  cursor: pointer;
+  padding: 6px 20px;
+  display: inline-block;
+  min-width: 130px;
+  border-right: 1px solid #e9e9e9;
+  background: #fbfbfb;
+}
+
+.matches-slider .content .match .status {
+  display: block;
+  line-height: 18px;
+  font-size: 10px;
+  color: #9a9a9a;
+}
+
+.matches-slider .content .match table tr td {
+  line-height: 10px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.matches-slider .content .match table tr td.flag {
+  border-color: transparent;
+  padding: 0 4px 0 0;
+}
+
 .matches-slider .content .match table tr td.flag img {
   max-width: 16px;
 }
@@ -1099,10 +1190,13 @@
   color: #a3a3a3;
 }
 
+.panel-condensed .comments .media-list .media .media-heading {
+  margin: 0 0 4px;
+}
+
 .panel-condensed .comments .media-list .media .media-heading h4,
 .panel-condensed .comments .media-list .media .media-heading .name {
   font-size: 12px;
-  margin-bottom: 7px;
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1118,7 +1212,7 @@
 .panel-condensed .comments .media-list .media .media-heading .tools h5,
 .panel-condensed .comments .media-list .media .media-heading .tools .date {
   font-size: 10px;
-  margin: 4px 0 0;
+  margin: 0;
   white-space: nowrap;
   right: 0;
   position: absolute;

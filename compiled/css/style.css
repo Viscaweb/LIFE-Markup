@@ -7057,7 +7057,7 @@ button.close {
   line-height: 15px;
   vertical-align: bottom;
   text-align: center;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 @media \0screen {
   .checkbox input[type="checkbox"] + label:before,
@@ -7088,6 +7088,28 @@ button.close {
   content: "\e013";
   color: #5da400;
   border-color: #5da400;
+}
+.checkbox input[type="checkbox"]:focus + label:before,
+.radio input[type="checkbox"]:focus + label:before,
+.checkbox input[type="radio"]:focus + label:before,
+.radio input[type="radio"]:focus + label:before {
+  -webkit-box-shadow: 0px 0px 5px 0px #5da400;
+  -moz-box-shadow: 0px 0px 5px 0px #5da400;
+  box-shadow: 0px 0px 5px 0px #5da400;
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label,
+.radio input[type="radio"]:disabled + label {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.checkbox input[type="checkbox"]:disabled + label:before,
+.radio input[type="checkbox"]:disabled + label:before,
+.checkbox input[type="radio"]:disabled + label:before,
+.radio input[type="radio"]:disabled + label:before {
+  pointer-events: none !important;
+  background-color: #ffffff;
 }
 .checkbox input[type="radio"] + label:before,
 .radio input[type="radio"] + label:before {

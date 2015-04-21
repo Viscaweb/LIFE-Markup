@@ -8228,7 +8228,7 @@ button.close {
 }
 
 .btn.large-icon {
-  padding: 6px 28px 5px 11px;
+  padding: 6px 23px 5px 11px;
 }
 
 .btn.large-icon > span.icon {
@@ -8659,7 +8659,7 @@ button.close {
   line-height: 15px;
   vertical-align: bottom;
   text-align: center;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 @media \0screen {
@@ -8694,6 +8694,31 @@ button.close {
   content: "\e013";
   color: #5da400;
   border-color: #5da400;
+}
+
+.checkbox input[type="checkbox"]:focus + label:before,
+.radio input[type="checkbox"]:focus + label:before,
+.checkbox input[type="radio"]:focus + label:before,
+.radio input[type="radio"]:focus + label:before {
+  -webkit-box-shadow: 0px 0px 5px 0px #5da400;
+  -moz-box-shadow: 0px 0px 5px 0px #5da400;
+  box-shadow: 0px 0px 5px 0px #5da400;
+}
+
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label,
+.radio input[type="radio"]:disabled + label {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.checkbox input[type="checkbox"]:disabled + label:before,
+.radio input[type="checkbox"]:disabled + label:before,
+.checkbox input[type="radio"]:disabled + label:before,
+.radio input[type="radio"]:disabled + label:before {
+  pointer-events: none !important;
+  background-color: #ffffff;
 }
 
 .checkbox input[type="radio"] + label:before,
@@ -9087,7 +9112,8 @@ button.close {
 
 .media-list li.media .media-body .media-heading,
 .media-list div.media .media-body .media-heading {
-  margin: 0;
+  line-height: 19px;
+  margin: 0 0 9px;
 }
 
 .media-list li.media .media-body .media-heading h4,
@@ -9099,7 +9125,6 @@ button.close {
   color: #5c5c5c;
   margin-top: 0;
   display: inline-block;
-  margin-bottom: 9px;
 }
 
 .media-list li.media .media-body .media-heading .tools,
@@ -9136,14 +9161,22 @@ button.close {
 .media-list li.media .media-body .media-heading .tools > a,
 .media-list div.media .media-body .media-heading .tools > a {
   color: #dbdbdb;
-  font-size: 16px;
+  font-size: 0;
   margin-left: 10px;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .media-list li.media .media-body .media-heading .tools > a:hover,
 .media-list div.media .media-body .media-heading .tools > a:hover {
   color: #424749;
+}
+
+.media-list li.media .media-body .media-heading .tools > a > span,
+.media-list div.media .media-body .media-heading .tools > a > span {
+  font-size: 16px;
+  vertical-align: middle;
 }
 
 .media-list li.media .media-body p,
@@ -14604,95 +14637,4 @@ span.sprite-icons.webmaster-border {
 
 .social > div iframe {
   margin: 0;
-}
-
-.matches-slider {
-  width: 100%;
-  display: table;
-  background: #f3f4f5;
-  border-bottom: 1px solid #ececec;
-  table-layout: fixed;
-  z-index: 9999;
-}
-
-.matches-slider .control {
-  background: #fbfbfb;
-  text-align: center;
-  width: 38px;
-  vertical-align: top;
-  display: table-cell;
-  border-color: #e9e9e9;
-  cursor: pointer;
-}
-
-.matches-slider .control span {
-  font-size: 21px;
-  line-height: 71px;
-  color: #dbdbdb;
-}
-
-.matches-slider .control:hover {
-  background: #f0f0f0;
-}
-
-.matches-slider .control:hover span {
-  color: #afafaf;
-}
-
-.matches-slider .control.prev {
-  border-right-width: 1px;
-  border-right-style: solid;
-}
-
-.matches-slider .control.next {
-  border-left-width: 1px;
-  border-left-style: solid;
-}
-
-.matches-slider .content {
-  vertical-align: top;
-  display: table-cell;
-  white-space: nowrap;
-}
-
-.matches-slider .content .matches {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.matches-slider .content .matches .inner {
-  left: 0;
-  position: relative;
-  display: block;
-  font-size: 0;
-}
-
-.matches-slider .content .match {
-  cursor: pointer;
-  padding: 6px 20px;
-  display: inline-block;
-  min-width: 130px;
-  border-right: 1px solid #e9e9e9;
-  background: #fbfbfb;
-}
-
-.matches-slider .content .match .status {
-  display: block;
-  line-height: 18px;
-  font-size: 10px;
-  color: #9a9a9a;
-}
-
-.matches-slider .content .match table tr td {
-  line-height: 10px;
-  padding: 5px;
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.matches-slider .content .match table tr td.flag {
-  border-color: transparent;
-  padding: 0 4px 0 0;
 }
