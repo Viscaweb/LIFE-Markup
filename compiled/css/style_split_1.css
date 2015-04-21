@@ -11511,7 +11511,7 @@ button.close {
 
 .table.table-standing tbody tr td.points {
   font-weight: 700;
-  text-align: right;
+  text-align: center;
 }
 
 .table.table-standing tbody tr td.point-detail {
