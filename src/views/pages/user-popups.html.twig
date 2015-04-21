@@ -28,10 +28,10 @@
 
     {% include 'blocks/modals/modal_sample.html.twig' %}
     {% include 'blocks/modals/modal_login.html.twig' %}
-    {% include 'blocks/modals/modal_register.html.twig' %}
+    {{ include('blocks/modals/modal_register.html.twig', {context: 'reg-main'}) }}
     {% include 'blocks/modals/modal_register_success.html.twig' %}
     {% include 'blocks/modals/modal_password_forgotten.html.twig' %}
-    {% include 'blocks/modals/modal_register_fb_failed.html.twig' %}
+    {{ include('blocks/modals/modal_register.html.twig', {context: 'login-fb-error'}) }}
 
 {% endblock %}
 
