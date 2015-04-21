@@ -8599,6 +8599,20 @@ button.close {
   -moz-appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@media \0screen {
+  .select-component select {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
 }
 
 .select-component:hover {
@@ -14633,8 +14647,4 @@ span.sprite-icons.webmaster-border {
   vertical-align: middle;
   line-height: 12px;
   width: 25%;
-}
-
-.social > div iframe {
-  margin: 0;
 }
