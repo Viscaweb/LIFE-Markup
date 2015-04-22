@@ -8967,6 +8967,11 @@ button.close {
   -moz-box-shadow: 1px -1px 0 #ffffff inset;
   box-shadow: 1px -1px 0 #ffffff inset;
 }
+.table > tbody > tr td.event-outcome a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
 .table > tbody > tr td.event-outcome-won {
   background-color: #87b762 !important;
 }
@@ -13854,6 +13859,11 @@ span.glyphicon-star.active {
   text-align: center;
   font-weight: 700;
 }
+.match-information .table tbody tr td.team-information .standings table tbody td a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
 .match-information .table tbody tr td.team-information .standings .popover {
   min-width: 395px;
 }
@@ -18148,6 +18158,10 @@ ul.image-list li img {
 .article-match-info:hover {
   text-decoration: none;
   background-color: #ebebeb;
+}
+.article-match-info:hover .hour,
+.article-match-info:hover .versus {
+  background-color: #d5d5d5;
 }
 .featured-article {
   background-color: #363a3c;
