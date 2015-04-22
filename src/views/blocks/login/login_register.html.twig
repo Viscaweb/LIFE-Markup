@@ -1,0 +1,28 @@
+<div class="login">
+    {% if tab == 'password_reset' %}
+        {#tabs not showing if password reset#}
+    {% elseif tab == 'login'  %}
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-primary" href="#">Login</a>
+            <a class="btn btn-default" href="#">New User</a>
+        </div>
+    {% elseif tab == 'register'  %}
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-default" href="#">Login</a>
+            <a class="btn btn-primary" href="#">New User</a>
+        </div>
+    {% endif %}
+
+    <div class="tab-content">
+        <div class="tab-pane {% if tab == 'login' %}active{% endif %}">
+            {% include 'blocks/login/parts/form_login.html.twig' %}
+        </div>
+        <div class="tab-pane {% if tab == 'register' %}active{% endif %}">
+            {% include 'blocks/login/parts/form_register.html.twig' %}
+        </div>
+        <div class="tab-pane {% if tab == 'password_reset' %}active{% endif %}">
+            {% include 'blocks/login/parts/form_password_reset.html.twig' %}
+        </div>
+    </div>
+</div>
+
