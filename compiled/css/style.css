@@ -10088,6 +10088,9 @@ table.layout-fixed colgroup col.half-time-score {
 table.layout-fixed colgroup col.tools {
   width: 145px;
 }
+table.layout-fixed colgroup col.tools-1 {
+  width: 32px;
+}
 table.layout-fixed colgroup col.tools-2 {
   width: 40px;
 }
@@ -12819,6 +12822,15 @@ span.sprite-icons.webmaster-border {
   line-height: 17px;
   color: inherit;
 }
+.live-commented-matches.panel .matches tr td.team {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.live-commented-matches.panel .matches tr td.team > a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .live-commented-matches.panel .matches tr td.team1 {
   text-align: right;
   padding: 0;
@@ -12852,7 +12864,6 @@ span.sprite-icons.webmaster-border {
   color: #cbcbcb;
 }
 .live-commented-matches.panel .matches tr.live td.date {
-  font-size: 11px;
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;

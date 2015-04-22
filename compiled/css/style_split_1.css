@@ -12350,6 +12350,10 @@ table.layout-fixed colgroup col.tools {
   width: 145px;
 }
 
+table.layout-fixed colgroup col.tools-1 {
+  width: 32px;
+}
+
 table.layout-fixed colgroup col.tools-2 {
   width: 40px;
 }
@@ -14639,12 +14643,4 @@ span.sprite-icons.webmaster-border {
 
 .social {
   display: table;
-}
-
-.social > div {
-  float: none;
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 12px;
-  width: 25%;
 }

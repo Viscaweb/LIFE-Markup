@@ -29,7 +29,18 @@
               line-height: @font-size-x-large;
               color: inherit;
             }
-          
+
+            &.team{
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              > a {
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+
             &.team1{
               text-align: right;
               padding: 0;
@@ -74,7 +85,6 @@
           &.live{
             td{
               &.date{
-                font-size: @font-size-small - 1;
                 font-weight: 600;
                 color: @live-red; 
                 padding-left: 17px;

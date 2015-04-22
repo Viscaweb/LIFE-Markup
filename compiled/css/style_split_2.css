@@ -1,3 +1,11 @@
+.social > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 12px;
+  width: 25%;
+}
+
 .social > div iframe {
   margin: 0;
 }
@@ -1044,6 +1052,17 @@
   color: inherit;
 }
 
+.live-commented-matches.panel .matches tr td.team {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.live-commented-matches.panel .matches tr td.team > a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .live-commented-matches.panel .matches tr td.team1 {
   text-align: right;
   padding: 0;
@@ -1085,7 +1104,6 @@
 }
 
 .live-commented-matches.panel .matches tr.live td.date {
-  font-size: 11px;
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;
