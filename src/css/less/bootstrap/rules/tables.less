@@ -404,6 +404,10 @@
         &.updated{
           background-color: @live-red !important;
           color: @ls-light-color !important;
+
+          > a {
+            color: @ls-light-color !important;
+          }
         }
         
         &.prediction{
@@ -526,18 +530,7 @@
           
         }
         
-        &.highlight{
-        
-          td{
-          
-            &.score{
-            
-              a{
-                color: @ls-light-color;
-              }
-            }
-          }
-        }
+
       }
     }
 
@@ -1199,16 +1192,7 @@ tbody{
           }
         }
         
-        &.highlight{
-        
-          .score{
-            background-color: @live-red !important;
-            
-            > a{
-              color: @ls-light-color;
-            }
-          }
-        }
+
 
         &.league-data{
           .league-data-matches-style();

@@ -8518,6 +8518,11 @@ button.close {
   background-color: #e33000 !important;
   color: #ffffff !important;
 }
+.table tbody tr > td.updated > a,
+.table tbody tr:nth-child(even) > td.updated > a,
+.table tbody tr:nth-child(odd) > td.updated > a {
+  color: #ffffff !important;
+}
 .table tbody tr > td.prediction .btn-group-justified,
 .table tbody tr:nth-child(even) > td.prediction .btn-group-justified,
 .table tbody tr:nth-child(odd) > td.prediction .btn-group-justified {
@@ -8700,11 +8705,6 @@ button.close {
 .table tbody tr:nth-child(even).live td.score a,
 .table tbody tr:nth-child(odd).live td.score a {
   color: #e33000;
-}
-.table tbody tr.live.highlight td.score a,
-.table tbody tr:nth-child(even).live.highlight td.score a,
-.table tbody tr:nth-child(odd).live.highlight td.score a {
-  color: #ffffff;
 }
 .table tbody tr.league-data > th {
   cursor: pointer;
@@ -9283,12 +9283,6 @@ button.close {
   background-image: url("../img/sprites/paused-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
-}
-.table.matches tbody tr.highlight .score {
-  background-color: #e33000 !important;
-}
-.table.matches tbody tr.highlight .score > a {
-  color: #ffffff;
 }
 .table.matches tbody tr.league-data th {
   border-bottom: 1px solid #999999;
