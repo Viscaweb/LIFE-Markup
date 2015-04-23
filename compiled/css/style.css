@@ -6804,7 +6804,6 @@ button.close {
 .btn-link:focus {
   color: #0053a8;
   outline: none;
-  font-weight: 600;
 }
 .btn-link.active,
 .btn-link:focus.active {
