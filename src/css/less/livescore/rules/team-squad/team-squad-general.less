@@ -6,6 +6,8 @@ table.links-table{
     
       td{
         padding: 0;
+        width: 33%;
+        vertical-align: middle;
       
         > a{
           padding: 8px;
@@ -23,18 +25,51 @@ table.links-table{
           }
           
           &:hover{
-            background: darken(@ls-light-color, 5%);
+
+            + .dropdown-toggle {
+              display: block;
+            }
+          }
+
+
+        }
+
+        &.open {
+
+          .dropdown-toggle {
+            display: block;
+            background-color: darken(@ls-light-color, 7%);
+            text-decoration: none;
+
           }
         }
      
       }
-      
+
       &:hover{
-      
+
         td{
-          background: transparent !important;
+          background: transparent;
+
+          &:hover {
+            background-color: darken(@ls-light-color, 5%);
+          }
         }
       }
+    }
+  }
+
+  .dropdown-toggle {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: @ls-light-color;
+
+    &:hover {
+      display: block;
+      background-color: darken(@ls-light-color, 7%);
     }
   }
 }

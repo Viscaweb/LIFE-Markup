@@ -1,25 +1,3 @@
-.sharing .share-link-block input.share-link {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: #1a1a1a;
-  width: 100%;
-  border: 0;
-  padding: 6px;
-}
-
-.social {
-  display: table;
-}
-
-.social > div {
-  float: none;
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 12px;
-  width: 25%;
-}
-
 .social > div iframe {
   margin: 0;
 }
@@ -4780,7 +4758,8 @@ table.team-results tbody tr td.score {
 
 table.links-table tbody tr td {
   padding: 0;
-  width: 30%;
+  width: 33%;
+  vertical-align: middle;
 }
 
 table.links-table tbody tr td > a {
@@ -4799,18 +4778,36 @@ table.links-table tbody tr td > a span.icon-caret-right {
   line-height: 18px;
 }
 
-table.links-table tbody tr td > a:hover {
-  background: #f2f2f2;
+table.links-table tbody tr td > a:hover + .dropdown-toggle {
+  display: block;
 }
 
-table.links-table tbody tr td > div > a img {
-  max-width: 18px;
-  max-height: 18px;
-  margin-right: 5px;
+table.links-table tbody tr td.open .dropdown-toggle {
+  display: block;
+  background-color: #ededed;
+  text-decoration: none;
 }
 
 table.links-table tbody tr:hover td {
-  background: transparent !important;
+  background: transparent;
+}
+
+table.links-table tbody tr:hover td:hover {
+  background-color: #f2f2f2;
+}
+
+table.links-table .dropdown-toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+table.links-table .dropdown-toggle:hover {
+  display: block;
+  background-color: #ededed;
 }
 
 table.squad-listing thead tr th {
@@ -4858,62 +4855,6 @@ table.squad-listing tbody tr td.nationality span {
 table.squad-listing.avatars tbody tr td.player {
   padding: 0 5px 0 !important;
   line-height: 31px;
-}
-
-.links-list {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-
-.links-list > li {
-  position: relative;
-  min-height: 1px;
-  padding-left: 0px;
-  padding-right: 0px;
-  border-bottom: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-}
-
-@media (min-width: 768px) {
-  .links-list > li {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-
-.links-list > li:nth-child(3n+3) {
-  border-right: none;
-}
-
-.links-list > li:nth-last-child(-n + 3):nth-child(3n + 1),
-.links-list > li:nth-last-child(-n + 3):nth-child(3n + 1) ~ li {
-  border-bottom: 0px;
-}
-
-.links-list .btn-group .btn.link-name {
-  width: auto;
-  text-align: left;
-}
-
-.links-list .btn-group .btn.link-name img {
-  max-width: 18px;
-  max-height: 18px;
-  margin-right: 5px;
-}
-
-.links-list .btn-group .btn.dropdown-toggle {
-  opacity: 0;
-  text-decoration: none !important;
-}
-
-.links-list .btn-group .btn.dropdown-toggle.btn-link > .icon-caret-down {
-  margin-left: 0px;
-}
-
-.links-list .btn-group:hover .dropdown-toggle,
-.links-list .btn-group.open .dropdown-toggle {
-  opacity: 1;
 }
 
 /*Player Summary*/
