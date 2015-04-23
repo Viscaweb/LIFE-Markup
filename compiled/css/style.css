@@ -6351,7 +6351,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.links-list:before,
+.links-list:after {
   content: " ";
   display: table;
 }
@@ -6369,7 +6371,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.links-list:after {
   clear: both;
 }
 .center-block {
@@ -6929,6 +6932,9 @@ button.close {
 .btn-group .btn + .select-component,
 .btn-group .select-component + .btn {
   margin-left: -1px;
+}
+.btn-group.open .dropdown-toggle.btn-link {
+  background: #f1f1f1;
 }
 /*Dropdown*/
 .dropdown-menu {
@@ -8966,11 +8972,6 @@ button.close {
   -webkit-box-shadow: 1px -1px 0 #ffffff inset;
   -moz-box-shadow: 1px -1px 0 #ffffff inset;
   box-shadow: 1px -1px 0 #ffffff inset;
-}
-.table > tbody > tr td.event-outcome a {
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
 }
 .table > tbody > tr td.event-outcome-won {
   background-color: #87b762 !important;
@@ -13859,11 +13860,6 @@ span.glyphicon-star.active {
   text-align: center;
   font-weight: 700;
 }
-.match-information .table tbody tr td.team-information .standings table tbody td a {
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
 .match-information .table tbody tr td.team-information .standings .popover {
   min-width: 395px;
 }
@@ -14344,10 +14340,10 @@ span.glyphicon-star.active {
   font-weight: 700;
   text-align: center;
 }
-.match-report table tbody tr td.team.home {
+.match-report table tbody tr td.player.home {
   text-align: right;
 }
-.match-report table tbody tr td.team.home a.replay {
+.match-report table tbody tr td.player.home a.replay {
   float: left;
   color: #5da400;
   font-size: 17px;
@@ -15908,6 +15904,7 @@ table.team-results tbody tr td.score {
 /*Team Squad*/
 table.links-table tbody tr td {
   padding: 0;
+  width: 30%;
 }
 table.links-table tbody tr td > a {
   padding: 8px;
@@ -15924,6 +15921,11 @@ table.links-table tbody tr td > a span.icon-caret-right {
 }
 table.links-table tbody tr td > a:hover {
   background: #f2f2f2;
+}
+table.links-table tbody tr td > div > a img {
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 5px;
 }
 table.links-table tbody tr:hover td {
   background: transparent !important;
@@ -15965,6 +15967,52 @@ table.squad-listing tbody tr td.nationality span {
 table.squad-listing.avatars tbody tr td.player {
   padding: 0 5px 0 !important;
   line-height: 31px;
+}
+.links-list {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.links-list > li {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+@media (min-width: 768px) {
+  .links-list > li {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.links-list > li:nth-child(3n+3) {
+  border-right: none;
+}
+.links-list > li:nth-last-child(-n + 3):nth-child(3n + 1),
+.links-list > li:nth-last-child(-n + 3):nth-child(3n + 1) ~ li {
+  border-bottom: 0px;
+}
+.links-list .btn-group .btn.link-name {
+  width: auto;
+  text-align: left;
+}
+.links-list .btn-group .btn.link-name img {
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 5px;
+}
+.links-list .btn-group .btn.dropdown-toggle {
+  opacity: 0;
+  text-decoration: none !important;
+}
+.links-list .btn-group .btn.dropdown-toggle.btn-link > .icon-caret-down {
+  margin-left: 0px;
+}
+.links-list .btn-group:hover .dropdown-toggle,
+.links-list .btn-group.open .dropdown-toggle {
+  opacity: 1;
 }
 /*Player Summary*/
 .player-statistics > .row {

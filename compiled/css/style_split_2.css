@@ -1,3 +1,29 @@
+.sharing .share-link-block input.share-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  width: 100%;
+  border: 0;
+  padding: 6px;
+}
+
+.social {
+  display: table;
+}
+
+.social > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 12px;
+  width: 25%;
+}
+
+.social > div iframe {
+  margin: 0;
+}
+
 .matches-slider {
   width: 100%;
   display: table;
@@ -2860,11 +2886,11 @@ span.glyphicon-star.active {
   text-align: center;
 }
 
-.match-report table tbody tr td.team.home {
+.match-report table tbody tr td.player.home {
   text-align: right;
 }
 
-.match-report table tbody tr td.team.home a.replay {
+.match-report table tbody tr td.player.home a.replay {
   float: left;
   color: #5da400;
   font-size: 17px;
@@ -4754,6 +4780,7 @@ table.team-results tbody tr td.score {
 
 table.links-table tbody tr td {
   padding: 0;
+  width: 30%;
 }
 
 table.links-table tbody tr td > a {
@@ -4774,6 +4801,12 @@ table.links-table tbody tr td > a span.icon-caret-right {
 
 table.links-table tbody tr td > a:hover {
   background: #f2f2f2;
+}
+
+table.links-table tbody tr td > div > a img {
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 5px;
 }
 
 table.links-table tbody tr:hover td {
@@ -4825,6 +4858,62 @@ table.squad-listing tbody tr td.nationality span {
 table.squad-listing.avatars tbody tr td.player {
   padding: 0 5px 0 !important;
   line-height: 31px;
+}
+
+.links-list {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.links-list > li {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+
+@media (min-width: 768px) {
+  .links-list > li {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+.links-list > li:nth-child(3n+3) {
+  border-right: none;
+}
+
+.links-list > li:nth-last-child(-n + 3):nth-child(3n + 1),
+.links-list > li:nth-last-child(-n + 3):nth-child(3n + 1) ~ li {
+  border-bottom: 0px;
+}
+
+.links-list .btn-group .btn.link-name {
+  width: auto;
+  text-align: left;
+}
+
+.links-list .btn-group .btn.link-name img {
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 5px;
+}
+
+.links-list .btn-group .btn.dropdown-toggle {
+  opacity: 0;
+  text-decoration: none !important;
+}
+
+.links-list .btn-group .btn.dropdown-toggle.btn-link > .icon-caret-down {
+  margin-left: 0px;
+}
+
+.links-list .btn-group:hover .dropdown-toggle,
+.links-list .btn-group.open .dropdown-toggle {
+  opacity: 1;
 }
 
 /*Player Summary*/
@@ -7476,6 +7565,11 @@ ul.image-list li img {
 .article-match-info:hover {
   text-decoration: none;
   background-color: #ebebeb;
+}
+
+.article-match-info:hover .hour,
+.article-match-info:hover .versus {
+  background-color: #d5d5d5;
 }
 
 .featured-article {
