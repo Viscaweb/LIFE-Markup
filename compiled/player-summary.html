@@ -1014,10 +1014,34 @@
                 </div>
             </div>
         </div>
+        
         <div class="make-prediction">
-            <div class="pull-right"><button class="btn btn-prediction btn-xs" type="button">1</button> <button class="btn btn-prediction btn-xs" type="button">X</button> <button class="btn btn-prediction btn-xs" type="button">2</button></div> Make a prediction
+            <span class="title-prediction">What's your prediction ?</span>
+            <div class="prediction">
+                <div class="team home">Nimes</div>
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-done">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+                <div class="team away">PSG</div>
+            </div>
         </div>
-        <table class="table bets table-condensed table-striped">
+
+        <table class="table bets table-condensed table-striped layout-fixed">
+            <colgroup>
+                <col class="logo">
+                <col class="">
+                <col class="odd">
+                <col class="odd">
+                <col class="odd">
+            </colgroup>
+            <tr class="stats">
+                <th colspan="2">Odds</th>
+                <th class="stat text-center">1</th>
+                <th class="stat text-center">X</th>
+                <th class="stat text-center">2</th>
+            </tr>
             <tr class="stats">
                 <td class="logo"><img src="img/sprites/bets1.png" alt="Bet1"></td>
                 <td><a href="#">Betclic</a></td>

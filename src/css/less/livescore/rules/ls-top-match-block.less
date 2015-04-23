@@ -183,13 +183,12 @@
     }
     
     .make-prediction{
-      padding: 5px 8px;
-      font-weight: 600;
+      padding: 5px 8px 10px;
       font-size: @font-size-small;
-      background: darken(@ls-light-color, 5%);
       color: lighten(@ls-dark-color, 10%);
       overflow: hidden;
       line-height: 19px;
+      text-align: center;
       
       .btn{
         margin-left: 10px;
@@ -198,6 +197,43 @@
       > div{
         line-height: 20px;
       }
+
+      .title-prediction {
+        font-size: @font-size-normal;
+        margin-bottom: 6px;
+        display: block;
+        font-weight: 100;
+      }
+
+      .prediction {
+        .make-row(0px);
+
+        div {
+
+          .make-sm-column(4,10px);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+        }
+
+        .team {
+
+          color: lighten(@ls-dark-color, 36%);
+          font-weight: 600;
+
+          &.home {
+            text-align: right;
+          }
+
+          &.away {
+            text-align: left;
+          }
+        }
+
+      }
+
+
     }
     
     .bets{

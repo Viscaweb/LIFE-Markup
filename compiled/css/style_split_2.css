@@ -1,3 +1,25 @@
+.sharing .share-link-block input.share-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  width: 100%;
+  border: 0;
+  padding: 6px;
+}
+
+.social {
+  display: table;
+}
+
+.social > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 12px;
+  width: 25%;
+}
+
 .social > div iframe {
   margin: 0;
 }
@@ -483,13 +505,12 @@
 }
 
 .top-match-block .make-prediction {
-  padding: 5px 8px;
-  font-weight: 600;
+  padding: 5px 8px 10px;
   font-size: 12px;
-  background: #f2f2f2;
   color: #1a1a1a;
   overflow: hidden;
   line-height: 19px;
+  text-align: center;
 }
 
 .top-match-block .make-prediction .btn {
@@ -498,6 +519,48 @@
 
 .top-match-block .make-prediction > div {
   line-height: 20px;
+}
+
+.top-match-block .make-prediction .title-prediction {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 100;
+}
+
+.top-match-block .make-prediction .prediction {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.top-match-block .make-prediction .prediction div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .top-match-block .make-prediction .prediction div {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+.top-match-block .make-prediction .prediction .team {
+  color: #5c5c5c;
+  font-weight: 600;
+}
+
+.top-match-block .make-prediction .prediction .team.home {
+  text-align: right;
+}
+
+.top-match-block .make-prediction .prediction .team.away {
+  text-align: left;
 }
 
 .top-match-block .bets {
