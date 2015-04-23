@@ -16,12 +16,12 @@
 
 /*Custom Buttons*/
 
-.btn-prediction,.btn-prediction:focus{
+.btn-prediction{
 	.button-variant(@ls-btn-prediction; @ls-light-color; @ls-btn-prediction);
 }
 
 
-.btn-prediction-done,.btn-prediction-done:focus{
+.btn-prediction-done{
 	.button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
 
     &:hover {
@@ -30,12 +30,12 @@
 }
 
 
-.btn-prediction-success,.btn-prediction-success:focus{
+.btn-prediction-success{
 	.button-variant(@ls-light-color; @ls-btn-success; @ls-success-border);
 }
  
 
-.btn-prediction-result,.btn-prediction-result:focus{
+.btn-prediction-result{
 	.button-variant(@ls-success-border; darken(@ls-light-color, 3%); @ls-success-border);
 	border-right-width: 1px !important;
 	outline: none;
@@ -46,7 +46,7 @@
   margin-left: 0;
 }
 
-.btn-prediction-failed,.btn-prediction-failed:focus{
+.btn-prediction-failed{
 	.button-variant(@ls-light-color; @ls-btn-danger; @ls-btn-danger - 15%);
 	outline: none;
 }
@@ -67,7 +67,9 @@
 	}
       
 	.btn-group {
-		cursor: not-allowed;
+      cursor: not-allowed;
+      pointer-events: none;
+
 	}
           
         
@@ -101,7 +103,9 @@
 
 	&.prediction-closed .btn-group,
 	.btn {
-	    opacity: 0.6;
+      opacity: 0.6;
+      pointer-events: none;
+
 	}
 }
 
