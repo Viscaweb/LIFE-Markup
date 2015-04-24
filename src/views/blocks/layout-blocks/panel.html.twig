@@ -1,0 +1,21 @@
+{# Default panel layout #}
+
+<div class="panel {{ panel_classes }}">
+
+    {% set _header = block('panel_heading') %}
+    {% if _header is not empty %}
+        <div class="panel-heading">
+        {% block panel_heading %}{% endblock %}
+        </div>
+    {% endif %}
+
+    {% block panel_content %}{% endblock %}
+
+    {% set _footer = block('panel_footer') %}
+    {% if _footer is not empty %}
+        <div class="panel-footer">
+            {% block panel_footer %}{% endblock %}
+        </div>
+    {% endif %}
+
+</div>
