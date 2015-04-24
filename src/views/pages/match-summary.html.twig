@@ -30,5 +30,5 @@
     {% include 'blocks/sports/team_head2head_sidebar.html.twig' %}
     {% include 'blocks/sports/team_form_1.html.twig' %}
     {% include 'blocks/sports/team_form_2.html.twig' %}
-    {% include 'blocks/various/follow_us.html.twig' %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
 {% endblock %}
