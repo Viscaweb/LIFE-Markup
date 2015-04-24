@@ -1,38 +1,37 @@
-<!-- REGISTER MODAL -->
-<div class="modal fade login-modal" id="{{ context }}">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title">Login or Register</h4>
+{# REGISTER MODAL #}
+{% extends 'blocks/containers/modal.html.twig' %}
+
+{% set modal_classes = 'login login-modal' %}
+{% set modal_id = context %}
+
+{% block modal_header %}
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">Login or Register</h4>
+{% endblock %}
+
+{% block modal_content %}
+    <div class="login-register-container">
+        {% if context == 'reg-main' %}
+            <div class="alert alert-danger" role="alert">[ CUSTOM MESSAGE ] Please log in or create a free account in order to use this function.</div>
+        {% elseif context == 'login-fb-error' %}
+            <div class="alert alert-danger" role="alert">
+                <span class="icon glyphicon glyphicon-warning-sign"></span>
+                Register with facebook failed, please try again or register with your email.
             </div>
-            <div class="modal-body">
-                <div class="login-register-container">
-                    {% if context == 'reg-main' %}
-                        <div class="alert alert-danger" role="alert">[ CUSTOM MESSAGE ] Please log in or create a free account in order to use this function.</div>
-                    {% elseif context == 'login-fb-error' %}
-                        <div class="alert alert-danger" role="alert">
-                            <span class="icon glyphicon glyphicon-warning-sign"></span>
-                            Register with facebook failed, please try again or register with your email.
-                        </div>
-                    {% endif %}
+        {% endif %}
 
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="#" class="login-image">
-                                <img src="img/290x380.jpg" alt="Visual Block">
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-
-                            <!-- REGISTER BLOCK -->
-                            {{ include('blocks/login/login_register.html.twig', {tab:'register'}) }}
-                        </div>
-                    </div>
-                </div>
-
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="#" class="login-image">
+                    <img src="img/290x380.jpg" alt="Visual Block">
+                </a>
             </div>
+            <div class="col-sm-6">
 
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                <!-- REGISTER BLOCK -->
+                {{ include('blocks/login/login_register.html.twig', {tab:'register'}) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
