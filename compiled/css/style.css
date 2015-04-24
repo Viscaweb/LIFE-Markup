@@ -16937,6 +16937,26 @@ main .matches-widgets td.content span.empty {
 .password-forgotten form button .btn-primary {
   float: right;
 }
+.password-forgotten .title {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 17px;
+  display: block;
+}
+.password-forgotten .title small,
+.password-forgotten .title .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.password-forgotten .title small,
+.password-forgotten .title .small {
+  font-size: 75%;
+}
 .pass-recovery,
 .successfully {
   float: none;
