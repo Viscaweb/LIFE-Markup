@@ -4307,7 +4307,7 @@ table.squad-listing.avatars tbody tr td.player {
 }
 
 .player-statistics table.player-statistics thead tr th {
-  text-align: right;
+  text-align: center;
 }
 
 .player-statistics table.player-statistics thead tr th.competition {
@@ -4336,7 +4336,7 @@ table.squad-listing.avatars tbody tr td.player {
 }
 
 .player-statistics table.player-statistics tbody tr td {
-  text-align: right;
+  text-align: center;
 }
 
 .player-statistics table.player-statistics tbody tr td.competition {

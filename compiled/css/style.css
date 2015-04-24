@@ -16006,7 +16006,7 @@ table.squad-listing.avatars tbody tr td.player {
   background: url("../img//sprites/red-card.png") no-repeat left center;
 }
 .player-statistics table.player-statistics thead tr th {
-  text-align: right;
+  text-align: center;
 }
 .player-statistics table.player-statistics thead tr th.competition {
   text-align: left;
@@ -16029,7 +16029,7 @@ table.squad-listing.avatars tbody tr td.player {
   text-align: left;
 }
 .player-statistics table.player-statistics tbody tr td {
-  text-align: right;
+  text-align: center;
 }
 .player-statistics table.player-statistics tbody tr td.competition {
   text-align: left;
