@@ -24,6 +24,9 @@
 
             <h3>Facebook</h3>
             <button class="btn btn-default" data-toggle="modal" data-target="#login-fb-error">LOGIN_FB_ERROR</button>
+
+            <h3>Account validation</h3>
+            <button class="btn btn-default" data-toggle="modal" data-target="#validation-success">ACCOUNT_VALIDATION_ERROR</button>
         </div>
     </div>
 
@@ -34,6 +37,7 @@
     {% include 'blocks/modals/modal_password_forgotten.html.twig' %}
     {{ include('blocks/modals/modal_register.html.twig', {context: 'login-fb-error'}) }}
     {% include 'blocks/modals/modal_password_forgotten_success.html.twig' %}
+    {% include 'blocks/modals/modal_validation_success.html.twig' %}
 
 {% endblock %}
 

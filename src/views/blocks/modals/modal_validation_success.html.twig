@@ -1,0 +1,11 @@
+{# REGISTER SUCCESS STATE MODAL #}
+{% extends 'blocks/containers/modal.html.twig' %}
+
+{% set modal_classes = 'login login-modal' %}
+{% set modal_id = 'validation-success' %}
+
+{% block modal_content %}
+    <div class="login-register-container">
+        {% include 'blocks/login/parts/account_validation_success.html.twig' %}
+    </div>
+{% endblock %}
