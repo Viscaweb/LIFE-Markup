@@ -16,6 +16,7 @@
 
             <h3>Password Forgotten</h3>
             <button class="btn btn-default" data-toggle="modal" data-target="#login-pwd">LOGIN_PWD</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#login-pwd-success">LOGIN_PWD_SUCCESS</button>
 
             <h3>Registration</h3>
             <button class="btn btn-default" data-toggle="modal" data-target="#reg-main">REG_MAIN</button>
@@ -32,6 +33,7 @@
     {% include 'blocks/modals/modal_register_success.html.twig' %}
     {% include 'blocks/modals/modal_password_forgotten.html.twig' %}
     {{ include('blocks/modals/modal_register.html.twig', {context: 'login-fb-error'}) }}
+    {% include 'blocks/modals/modal_password_forgotten_success.html.twig' %}
 
 {% endblock %}
 
