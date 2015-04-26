@@ -751,7 +751,8 @@ tbody{
   > tr{
   
       td{
-      
+        vertical-align: middle;
+
         > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
           font-size:  @font-size-base - 3;
           margin-right: 3px;
@@ -776,7 +777,15 @@ tbody{
           width: 1%;
           text-transform: uppercase;
           text-align:center;
-          .box-shadow(1px -1px 0 @ls-light-color inset);     
+          padding: 0;
+          .box-shadow(1px 0 0 @ls-light-color inset);  
+
+          a{
+            text-decoration: none;
+            color: @ls-light-color;
+            padding: 3px 3px;
+            display: inline-block;
+          }   
         }
         
         &.event-outcome-won{
