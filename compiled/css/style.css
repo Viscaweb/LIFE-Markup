@@ -8941,6 +8941,9 @@ button.close {
 .table tbody tr td.win {
   font-weight: 700;
 }
+.table > tbody > tr td {
+  vertical-align: middle;
+}
 .table > tbody > tr td > span.icon-arrow-down,
 .table > tbody > tr td > span.icon-arrow-up,
 .table > tbody > tr td span.icon-equal {
