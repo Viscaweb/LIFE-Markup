@@ -74,9 +74,16 @@
               
               img{
                 max-width: 38px;
-                max-height: 38px;
-              }
-            }
+                max-height: 38px; 
+              } 
+
+              &:hover{
+                img{
+                  opacity: 0.7;
+                }
+              } 
+            }           
+          }
             
             .name{
               padding: 0;
@@ -105,6 +112,10 @@
                     margin-right: 3px;
                   }
                 }
+
+                &:hover{
+                  color: @ls-light-color; 
+                }
               }
               
               a.star{
@@ -112,6 +123,10 @@
                 
                 span{
                   font-size: @font-size-normal;
+                }
+
+                &:hover{
+                  color: darken(@ls-light-color, 34.5%);
                 }
               }
             }
@@ -136,7 +151,6 @@
                 }
               }
             }
-          }
           
           &.score{
             text-align: center;
@@ -184,8 +198,7 @@
                 tbody{
                 
                   td{
-                    min-width: 22px;
-                    padding: 3px 4px;
+                    min-width: 22px;                    
                     line-height: @font-size-normal;
                     
                     &.position{
