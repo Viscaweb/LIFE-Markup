@@ -123,6 +123,15 @@
                 
                 span{
                   font-size: @font-size-normal;
+                  visibility: hidden;
+                }
+
+                &:hover{
+                  color: darken(@ls-light-color, 34.5%);
+
+                  span{
+                  visibility: visible;
+                  }
                 }
 
                 &:hover{
@@ -194,6 +203,7 @@
                 margin-bottom: 0;
                 background-color: transparent;
                 border: 0;
+                table-layout: fixed;
                 
                 tbody{
                 

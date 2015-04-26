@@ -8326,6 +8326,9 @@ button.close {
   margin-bottom: 0px;
   /*TR HIGHLIGHT STYLES*/
   /*TD HIGHLIGHT STYLES*/
+  /*MY GAMES TABLES*/
+  /*MATCHES TABLES*/
+  /*STANDING TABLES*/
 }
 .table > thead > tr > th {
   border-bottom: none;
@@ -8835,7 +8838,9 @@ button.close {
   font-weight: 600;
 }
 .table.table-condensed tr td {
+  line-height: 20px;
   font-size: 12px;
+  padding: 3px 4px;
   border-left: none;
 }
 .table.table-condensed tr td:first-child {
@@ -8935,11 +8940,6 @@ button.close {
 }
 .table tbody tr td.win {
   font-weight: 700;
-}
-.table > tbody {
-  /*MY GAMES TABLES*/
-  /*MATCHES TABLES*/
-  /*STANDING TABLES*/
 }
 .table > tbody > tr td > span.icon-arrow-down,
 .table > tbody > tr td > span.icon-arrow-up,
@@ -9222,7 +9222,7 @@ button.close {
   color: #8a8a8a;
   white-space: nowrap;
 }
-.table > tbody.matches tbody tr td.time i {
+.table.matches tbody tr td.time i {
   color: #c2c2c2;
 }
 .table > tbody.matches tbody tr td.team > a {
@@ -9277,156 +9277,156 @@ button.close {
   padding-left: 0;
   padding-right: 23px;
 }
-.table > tbody.matches tbody tr td.team.has-logo.team1 img {
+.table.matches tbody tr td.team.has-logo.team1 img {
   right: 0;
   left: auto;
 }
-.table > tbody.matches tbody tr td.half-time-score {
+.table.matches tbody tr td.half-time-score {
   color: #a1a1a1;
   white-space: nowrap;
   text-align: center;
 }
-.table > tbody.matches tbody tr td.win {
+.table.matches tbody tr td.win {
   font-weight: 700;
 }
-.table > tbody.matches tbody tr.live > td.time {
+.table.matches tbody tr.live > td.time {
   padding-left: 15px;
   background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
 }
-.table > tbody.matches tbody tr.live.paused > td.time,
-.table > tbody.matches tbody tr.live.paused > td.date {
+.table.matches tbody tr.live.paused > td.time,
+.table.matches tbody tr.live.paused > td.date {
   padding-left: 15px;
   background-image: url("../img/sprites/paused-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
 }
-.table > tbody.matches tbody tr.league-data th {
+.table.matches tbody tr.league-data th {
   border-bottom: 1px solid #999999;
   padding: 0;
   vertical-align: middle !important;
 }
-.table > tbody.matches tbody tr.league-data th .country {
+.table.matches tbody tr.league-data th .country {
   text-transform: uppercase;
   color: #d6d6d6;
   font-weight: 400;
 }
-.table > tbody.matches tbody tr.league-data th a {
+.table.matches tbody tr.league-data th a {
   color: #ffffff;
 }
-.table > tbody.matches tbody tr.league-data th span {
+.table.matches tbody tr.league-data th span {
   color: rgba(0, 0, 0, 0.1);
 }
-.table > tbody.matches tbody tr.league-data th .tools {
+.table.matches tbody tr.league-data th .tools {
   float: right;
   padding: 0;
 }
-.table > tbody.matches tbody tr.league-data th .tools span a.fav {
+.table.matches tbody tr.league-data th .tools span a.fav {
   font-size: 14px;
 }
-.table > tbody.matches tbody tr.league-data th .tools a {
+.table.matches tbody tr.league-data th .tools a {
   display: inline-block;
   color: #f5f5f5;
   font-weight: 400;
 }
-.table > tbody.matches tbody tr.league-data th .tools a i {
+.table.matches tbody tr.league-data th .tools a i {
   font-size: 18px;
   line-height: 16px;
   vertical-align: middle;
   color: rgba(0, 0, 0, 0.2);
 }
-.table > tbody.matches tbody tr.league-data th .tools a i.icon-standings {
+.table.matches tbody tr.league-data th .tools a i.icon-standings {
   margin-right: 5px;
   position: relative;
   top: -1px;
 }
-.table > tbody.matches tbody tr.league-data th .tools a.active {
+.table.matches tbody tr.league-data th .tools a.active {
   color: #5da400;
 }
-.table > tbody.matches tbody tr.league-data th .tools a.active.fav span {
+.table.matches tbody tr.league-data th .tools a.active.fav span {
   color: #ffc600;
   font-size: 14px;
 }
-.table > tbody.matches tbody tr.league-data th .tools a.live i {
+.table.matches tbody tr.league-data th .tools a.live i {
   color: #e33000;
 }
-.table > tbody.matches tbody tr.league-data span.match-name {
+.table.matches tbody tr.league-data span.match-name {
   display: none;
 }
-.table > tbody.matches.table-condensed tr td.prediction .btn-group .btn {
+.table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;
 }
-.table > tbody.table-standing thead tr th,
-.table > tbody.table-standing tbody tr th {
+.table.table-standing thead tr th,
+.table.table-standing tbody tr th {
   border-bottom: 0;
   vertical-align: middle !important;
 }
-.table > tbody.table-standing tbody tr td {
+.table.table-standing tbody tr td {
   vertical-align: middle;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-green {
+.table.table-standing tbody tr td.rank-standing-green {
   background-color: #d1e9be !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-clear-green {
+.table.table-standing tbody tr td.rank-standing-clear-green {
   background-color: #e3f1d9 !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-blue {
+.table.table-standing tbody tr td.rank-standing-blue {
   background-color: #bee1ec !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-clear-blue {
+.table.table-standing tbody tr td.rank-standing-clear-blue {
   background-color: #dcf2f9 !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-orange {
+.table.table-standing tbody tr td.rank-standing-orange {
   background-color: #f3ca88 !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-clear-orange {
+.table.table-standing tbody tr td.rank-standing-clear-orange {
   background-color: #f6ddb4 !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-red {
+.table.table-standing tbody tr td.rank-standing-red {
   background-color: #eebaba !important;
 }
-.table > tbody.table-standing tbody tr td.rank-standing-clear-red {
+.table.table-standing tbody tr td.rank-standing-clear-red {
   background-color: #f5cdcd !important;
 }
-.table > tbody.table-standing tbody tr td.stats {
+.table.table-standing tbody tr td.stats {
   font-weight: 600;
   padding-left: 4px;
   padding-right: 1px;
 }
-.table > tbody.table-standing tbody tr td.stats.up {
+.table.table-standing tbody tr td.stats.up {
   color: #7ab748;
 }
-.table > tbody.table-standing tbody tr td.stats.down {
+.table.table-standing tbody tr td.stats.down {
   color: #bd0800;
 }
-.table > tbody.table-standing tbody tr td.team {
+.table.table-standing tbody tr td.team {
   width: auto;
   padding: 0px 5px;
 }
-.table > tbody.table-standing tbody tr td.team > a {
+.table.table-standing tbody tr td.team > a {
   color: #5c5c5c;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.table > tbody.table-standing tbody tr td.team img {
+.table.table-standing tbody tr td.team img {
   margin-right: 5px;
   max-width: 18px;
   max-height: 18px;
   vertical-align: top;
 }
-.table > tbody.table-standing tbody tr td.number {
+.table.table-standing tbody tr td.number {
   font-weight: 600;
   text-align: right;
 }
-.table > tbody.table-standing tbody tr td.live {
+.table.table-standing tbody tr td.live {
   text-align: center;
   width: 8px;
   padding-left: 0;
   padding-right: 0;
 }
-.table > tbody.table-standing tbody tr td.extra-points {
+.table.table-standing tbody tr td.extra-points {
   font-weight: 600;
   color: #7ab748;
   padding-left: 0;
@@ -9434,72 +9434,72 @@ button.close {
   text-align: right;
   white-space: nowrap;
 }
-.table > tbody.table-standing tbody tr td.points {
+.table.table-standing tbody tr td.points {
   font-weight: 700;
   text-align: center;
 }
-.table > tbody.table-standing tbody tr td.point-detail {
+.table.table-standing tbody tr td.point-detail {
   padding-left: 0;
   padding-right: 0;
 }
-.table > tbody.table-standing tbody tr td.point-detail span {
+.table.table-standing tbody tr td.point-detail span {
   font-size: 8px;
   font-weight: 700;
   color: #c25656;
   display: inline-block;
   cursor: pointer;
 }
-.table > tbody.table-standing tbody tr td.point {
+.table.table-standing tbody tr td.point {
   text-align: center;
 }
-.table > tbody.table-standing tbody tr.league-data span.match-name {
+.table.table-standing tbody tr.league-data span.match-name {
   display: inline-block;
 }
-.table > tbody.table-standing tbody tr.live td.team,
-.table > tbody.table-standing tbody tr.live td.team > a {
+.table.table-standing tbody tr.live td.team,
+.table.table-standing tbody tr.live td.team > a {
   font-weight: 600;
   color: #e33000;
 }
-.table > tbody.table-standing tbody tr.live td.extra-points {
+.table.table-standing tbody tr.live td.extra-points {
   padding-left: 15px;
   background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
 }
-.table > tbody.table-standing tbody tr.selected-row td {
+.table.table-standing tbody tr.selected-row td {
   background-color: #d2dae8;
 }
-.table > tbody.table-standing tbody tr:nth-child(even) td.number {
+.table.table-standing tbody tr:nth-child(even) td.number {
   background-color: #e6e6e6;
 }
-.table > tbody.table-standing tbody tr:nth-child(odd) td.number {
+.table.table-standing tbody tr:nth-child(odd) td.number {
   background-color: #efefef;
 }
-.table > tbody:hover tr.league-data > th .title span.match-name {
+.table:hover tr.league-data > th .title span.match-name {
   display: inline-block;
 }
-.table .table.league-selection {
+.table.league-selection {
   border: 1px solid #f5f5f5;
 }
-.table .table.league-selection tbody tr td {
+.table.league-selection tbody tr td {
   vertical-align: middle;
 }
-.table .table.league-selection tbody tr td.number {
+.table.league-selection tbody tr td.number {
   text-align: right;
 }
-.table .table.league-selection tbody tr td.flag {
+.table.league-selection tbody tr td.flag {
   text-align: center;
   padding-left: 0;
   padding-right: 0;
   width: 1%;
 }
-.table .table.league-selection tbody tr td.name {
+.table.league-selection tbody tr td.name {
   font-weight: 600;
 }
-.table .table.league-selection tbody tr td.functions {
+.table.league-selection tbody tr td.functions {
   text-align: right;
 }
-.table .table.league-selection tbody tr td.functions .btn {
+.table.league-selection tbody tr td.functions .btn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -9508,17 +9508,17 @@ button.close {
   background-clip: padding-box;
 }
 @media \0screen {
-  .table .table.league-selection tbody tr td.functions .btn {
+  .table.league-selection tbody tr td.functions .btn {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-.table .table.league-selection tbody tr td:first-child {
+.table.league-selection tbody tr td:first-child {
   padding: 8px;
 }
-.table .table.predictions thead.league-data tr th span.country span.icon,
-.table .table.predictions tbody tr th span.country span.icon {
+.table.predictions thead.league-data tr th span.country span.icon,
+.table.predictions tbody tr th span.country span.icon {
   color: #ffffff;
   font-size: 15px;
   line-height: 14px;
@@ -9526,36 +9526,36 @@ button.close {
   top: 2px;
   margin-right: 10px;
 }
-.table .table.predictions tbody tr.prediction-won td.icon {
+.table.predictions tbody tr.prediction-won td.icon {
   background-color: #87b762 !important;
 }
-.table .table.predictions tbody tr.prediction-won td.icon .icon {
+.table.predictions tbody tr.prediction-won td.icon .icon {
   font-size: 12px;
   color: #ffffff;
 }
-.table .table.predictions tbody tr.prediction-lost td.icon {
+.table.predictions tbody tr.prediction-lost td.icon {
   background-color: #e6523e !important;
 }
-.table .table.predictions tbody tr.prediction-lost td.icon .icon {
+.table.predictions tbody tr.prediction-lost td.icon .icon {
   font-size: 12px;
   color: #ffffff;
 }
-.table .table.predictions tbody tr.prediction-cancelled td.icon {
+.table.predictions tbody tr.prediction-cancelled td.icon {
   background-color: #e6e6e6 !important;
 }
-.table .table.predictions tbody tr td.icon {
+.table.predictions tbody tr td.icon {
   text-align: center;
   padding: 0 4px;
   color: #808080;
 }
-.table .table.predictions tbody tr td.icon .icon {
+.table.predictions tbody tr td.icon .icon {
   font-size: 14px;
   margin: 0;
 }
-.table .table.predictions tbody tr td.league-logo {
+.table.predictions tbody tr td.league-logo {
   padding: 0 3px;
 }
-.table .table.predictions tbody tr td.league-logo img {
+.table.predictions tbody tr td.league-logo img {
   max-width: 16px;
   max-height: 16px;
 }
@@ -13677,23 +13677,20 @@ span.glyphicon-star.active {
   max-width: 38px;
   max-height: 38px;
 }
-.match-information .table thead tr th.team .logo:hover img {
-  opacity: 0.7;
-}
-.match-information .table thead tr th .name {
+.match-information .table thead tr th.team .name {
   padding: 0;
   text-align: right;
   font-size: 20px;
   font-weight: 700;
   line-height: 32px;
 }
-.match-information .table thead tr th .name a {
+.match-information .table thead tr th.team .name a {
   display: inline-block;
   color: #dfdfdf;
   margin-left: 7px;
   position: relative;
 }
-.match-information .table thead tr th .name a .qualified {
+.match-information .table thead tr th.team .name a .qualified {
   color: #79c614;
   font-size: 11px;
   line-height: 11px;
@@ -13702,33 +13699,27 @@ span.glyphicon-star.active {
   right: 0;
   position: absolute;
 }
-.match-information .table thead tr th .name a .qualified i {
+.match-information .table thead tr th.team .name a .qualified i {
   vertical-align: middle;
   margin-right: 3px;
 }
-.match-information .table thead tr th .name a:hover {
-  color: #ffffff;
-}
-.match-information .table thead tr th .name a.star {
+.match-information .table thead tr th.team .name a.star {
   color: #b1b1b1;
 }
-.match-information .table thead tr th .name a.star span {
+.match-information .table thead tr th.team .name a.star span {
   font-size: 14px;
 }
-.match-information .table thead tr th .name a.star:hover {
-  color: #a7a7a7;
-}
-.match-information .table thead tr th.away-team .logo {
+.match-information .table thead tr th.team.away-team .logo {
   text-align: right;
 }
-.match-information .table thead tr th.away-team .name {
+.match-information .table thead tr th.team.away-team .name {
   text-align: left;
 }
-.match-information .table thead tr th.away-team .name a {
+.match-information .table thead tr th.team.away-team .name a {
   margin-left: 0;
   margin-right: 7px;
 }
-.match-information .table thead tr th.away-team .name a .qualified {
+.match-information .table thead tr th.team.away-team .name a .qualified {
   left: 0;
   right: auto;
 }
@@ -13765,6 +13756,7 @@ span.glyphicon-star.active {
 }
 .match-information .table tbody tr td.team-information .standings table tbody td {
   min-width: 22px;
+  padding: 3px 4px;
   line-height: 14px;
 }
 .match-information .table tbody tr td.team-information .standings table tbody td.position {
@@ -16027,7 +16019,7 @@ table.squad-listing.avatars tbody tr td.player {
   background: url("../img//sprites/red-card.png") no-repeat left center;
 }
 .player-statistics table.player-statistics thead tr th {
-  text-align: center;
+  text-align: right;
 }
 .player-statistics table.player-statistics thead tr th.competition {
   text-align: left;
@@ -16050,7 +16042,7 @@ table.squad-listing.avatars tbody tr td.player {
   text-align: left;
 }
 .player-statistics table.player-statistics tbody tr td {
-  text-align: center;
+  text-align: right;
 }
 .player-statistics table.player-statistics tbody tr td.competition {
   text-align: left;
@@ -16957,26 +16949,6 @@ main .matches-widgets td.content span.empty {
 }
 .password-forgotten form button .btn-primary {
   float: right;
-}
-.password-forgotten .title {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-  margin-top: 9px;
-  margin-bottom: 9px;
-  font-size: 17px;
-  display: block;
-}
-.password-forgotten .title small,
-.password-forgotten .title .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-}
-.password-forgotten .title small,
-.password-forgotten .title .small {
-  font-size: 75%;
 }
 .pass-recovery,
 .successfully {
