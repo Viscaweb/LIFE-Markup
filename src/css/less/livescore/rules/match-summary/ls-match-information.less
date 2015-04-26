@@ -20,11 +20,18 @@
         top:-1px;
       }
       
-      a.icon{
-      
+      a.icon{        
+
         span{
           font-size: @font-size-xx-large + 1px;
-          vertical-align: middle;
+          vertical-align: middle;  
+          color: @ls-action-icon-color;       
+        }
+
+        &:hover{
+          span{
+            color: @ls-action-icon-color-hover;
+          }
         }
       }
     }
@@ -209,7 +216,8 @@
                 tbody{
                 
                   td{
-                    min-width: 22px;                    
+                    min-width: 22px;
+                    padding: 3px 4px;
                     line-height: @font-size-normal;
                     
                     &.position{
