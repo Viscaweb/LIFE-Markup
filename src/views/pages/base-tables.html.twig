@@ -12,7 +12,7 @@
     {% include 'blocks/sports/match_listing_general_predictions.html.twig' %}
     {{ include('blocks/elements/match_listing_buttons.html.twig', {type: 'all'}) }}
     {% include 'blocks/sports/match_listing_general_odds.html.twig' %}
-    {% include 'blocks/sports/competition_standing.html.twig' %}
+    <div class="row"><div class="col-md-12">{% include 'blocks/sports/competition_standing.html.twig' %}</div></div>
     {% include 'blocks/sports/match_listing_small.html.twig' %}
 
 {% endblock %}
