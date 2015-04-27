@@ -13,6 +13,33 @@ $(".match-timeline .controls .next").click(function( e ){
 
 $( document ).ready(function() {
 
+    /*
+        This is a temporal fix for fixed header padding-right bug: https://github.com/twbs/bootstrap/issues/14040
+        Bootstrap already have included it in the next milestone: v3.3.5 - Currently v3.3.4
+    */
+    
+    $(window).load(function(){
+
+        var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
+        $.fn.modal.Constructor.prototype.setScrollbar = function () 
+        {
+            oldSSB.apply(this);
+            if(this.bodyIsOverflowing && this.scrollbarWidth) 
+            {
+                $('.navbar-fixed-top, .navbar-fixed-bottom').css('padding-right', this.scrollbarWidth);
+            }       
+        }
+
+        var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
+        $.fn.modal.Constructor.prototype.resetScrollbar = function () 
+        {
+            oldRSB.apply(this);
+            $('.navbar-fixed-top, .navbar-fixed-bottom').css('padding-right', '');
+        }
+
+    });
+
+
     /*Profile Modal Trigger*/
     $(".profile-image .modal-toggle").click(function(){
         $("#modal-profile-image").modal();
