@@ -1,3 +1,90 @@
+.top-competitions-block.panel .active-ligue .ligue-logo {
+  float: right;
+  max-width: 32px;
+}
+
+.top-competitions-block.panel .active-ligue h4,
+.top-competitions-block.panel .active-ligue .h4 {
+  margin: 0 0 20px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  display: block;
+}
+
+.top-competitions-block.panel .active-ligue h4 span,
+.top-competitions-block.panel .active-ligue .h4 span {
+  color: #353535;
+  font-size: 14px;
+  display: block;
+  text-transform: none;
+}
+
+.top-competitions-block.panel .active-ligue .btn-group .btn {
+  font-weight: 400;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.top-competitions-block.panel table.teams {
+  margin: 0;
+}
+
+.top-competitions-block.panel table.teams tr th.number {
+  text-align: center;
+  width: 23px;
+}
+
+.top-competitions-block.panel table.teams tr th.state {
+  width: 20px;
+}
+
+.top-competitions-block.panel table.teams tr th.pts {
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center;
+}
+
+.top-competitions-block.panel table.teams tr td.state {
+  padding-right: 0;
+  padding-left: 4px;
+}
+
+.top-competitions-block.panel table.teams tr td.state.down {
+  color: #bd0800;
+}
+
+.top-competitions-block.panel table.teams tr td.state.up {
+  color: #7ab748;
+}
+
+.top-competitions-block.panel table.teams tr td.team img {
+  max-width: 17px;
+  margin-right: 5px;
+}
+
+.top-competitions-block.panel table.teams tr td.number {
+  font-weight: 600;
+  text-align: center;
+}
+
+.top-competitions-block.panel table.teams tr td.pts {
+  font-weight: 600;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center;
+}
+
+.top-competitions-block.panel table.teams tr.live td.team {
+  font-weight: 600;
+  color: #e33000;
+  background-image: url("../img/sprites/live-spot.gif");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .top-competitions-block.panel table.teams tr.live td.team > a {
   color: #e33000;
 }
@@ -710,12 +797,12 @@ span.glyphicon-star.active {
   background: url("../img//loading.gif") no-repeat center center;
   width: 100%;
   height: 100%;
-  max-height: 300px;
+  max-height: 200px;
   top: 0;
   left: 0;
   text-align: center;
   display: block;
-  z-index: 3;
+  z-index: 4;
 }
 
 .loading:before {
@@ -728,7 +815,7 @@ span.glyphicon-star.active {
   width: 100%;
   height: 100%;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 .loading.loading-dark:after {
@@ -1439,6 +1526,11 @@ span.glyphicon-star.active {
 .match-information .panel-heading .tools a.icon span {
   font-size: 19px;
   vertical-align: middle;
+  color: #cccccc;
+}
+
+.match-information .panel-heading .tools a.icon:hover span {
+  color: #424749;
 }
 
 .match-information .match-info {
@@ -1485,7 +1577,11 @@ span.glyphicon-star.active {
   max-height: 38px;
 }
 
-.match-information .table thead tr th.team .name {
+.match-information .table thead tr th.team .logo:hover img {
+  opacity: 0.7;
+}
+
+.match-information .table thead tr th .name {
   padding: 0;
   text-align: right;
   font-size: 20px;
@@ -1493,14 +1589,14 @@ span.glyphicon-star.active {
   line-height: 32px;
 }
 
-.match-information .table thead tr th.team .name a {
+.match-information .table thead tr th .name a {
   display: inline-block;
   color: #dfdfdf;
   margin-left: 7px;
   position: relative;
 }
 
-.match-information .table thead tr th.team .name a .qualified {
+.match-information .table thead tr th .name a .qualified {
   color: #79c614;
   font-size: 11px;
   line-height: 11px;
@@ -1510,33 +1606,46 @@ span.glyphicon-star.active {
   position: absolute;
 }
 
-.match-information .table thead tr th.team .name a .qualified i {
+.match-information .table thead tr th .name a .qualified i {
   vertical-align: middle;
   margin-right: 3px;
 }
 
-.match-information .table thead tr th.team .name a.star {
-  color: #b1b1b1;
+.match-information .table thead tr th .name a:hover {
+  color: #ffffff;
 }
 
-.match-information .table thead tr th.team .name a.star span {
+.match-information .table thead tr th .name a.star {
+  color: #b1b1b1;
+  display: none;
+}
+
+.match-information .table thead tr th .name a.star span {
   font-size: 14px;
 }
 
-.match-information .table thead tr th.team.away-team .logo {
+.match-information .table thead tr th .name a.star:hover {
+  color: #a7a7a7;
+}
+
+.match-information .table thead tr th.team:hover .name a.star {
+  display: inline-block;
+}
+
+.match-information .table thead tr th.away-team .logo {
   text-align: right;
 }
 
-.match-information .table thead tr th.team.away-team .name {
+.match-information .table thead tr th.away-team .name {
   text-align: left;
 }
 
-.match-information .table thead tr th.team.away-team .name a {
+.match-information .table thead tr th.away-team .name a {
   margin-left: 0;
   margin-right: 7px;
 }
 
-.match-information .table thead tr th.team.away-team .name a .qualified {
+.match-information .table thead tr th.away-team .name a .qualified {
   left: 0;
   right: auto;
 }
@@ -1576,11 +1685,11 @@ span.glyphicon-star.active {
   margin-bottom: 0;
   background-color: transparent;
   border: 0;
+  table-layout: fixed;
 }
 
 .match-information .table tbody tr td.team-information .standings table tbody td {
   min-width: 22px;
-  padding: 3px 4px;
   line-height: 14px;
 }
 
@@ -2455,6 +2564,7 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 13px solid #ffffff;
+  -moz-transform: scale(0.9999);
 }
 
 .match-teams-lineups .component-container .field:after {
@@ -2467,6 +2577,7 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 13px solid #ffffff;
+  -moz-transform: scale(0.9999);
 }
 
 .match-teams-lineups .popover {
