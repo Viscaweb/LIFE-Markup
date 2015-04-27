@@ -336,6 +336,7 @@
 
             <h3>Password Forgotten</h3>
             <button class="btn btn-default" data-toggle="modal" data-target="#login-pwd">LOGIN_PWD</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#login-pwd-simple">LOGIN_PWD_SIMPLE</button>
             <button class="btn btn-default" data-toggle="modal" data-target="#login-pwd-success">LOGIN_PWD_SUCCESS</button>
 
             <h3>Registration</h3>
@@ -351,7 +352,7 @@
     </div>
 
     <div class="modal fade " id="modal-window">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -395,7 +396,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->    <div class="modal fade login login-modal" id="login-main">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -498,8 +499,7 @@
         </div>
         <div class="tab-pane ">
             <div class="password-forgotten">
-    <span class="title">Reset your password</span>
-    <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
+        <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
     <div class="alert alert-danger" role="alert">
         <span class="icon glyphicon glyphicon-remove"></span> This email or username is not recognized.
     </div>
@@ -507,7 +507,7 @@
         <div class="form-group">
             <div class="col-md-12">
                 <label>Enter you email here</label>
-                <input type="text" class="form-control" placeholder="Your login email or name">
+                <input type="email" class="form-control" placeholder="Your login email or name" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
             </div>
         </div>
         <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
@@ -531,7 +531,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->    <div class="modal fade login login-modal" id="reg-main">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -635,8 +635,7 @@
         </div>
         <div class="tab-pane ">
             <div class="password-forgotten">
-    <span class="title">Reset your password</span>
-    <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
+        <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
     <div class="alert alert-danger" role="alert">
         <span class="icon glyphicon glyphicon-remove"></span> This email or username is not recognized.
     </div>
@@ -644,7 +643,7 @@
         <div class="form-group">
             <div class="col-md-12">
                 <label>Enter you email here</label>
-                <input type="text" class="form-control" placeholder="Your login email or name">
+                <input type="email" class="form-control" placeholder="Your login email or name" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
             </div>
         </div>
         <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
@@ -669,7 +668,7 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
     <div class="modal fade login login-modal" id="login-reg-success">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -690,7 +689,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->    <div class="modal fade login login-modal" id="login-pwd">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -790,8 +789,7 @@
         </div>
         <div class="tab-pane active">
             <div class="password-forgotten">
-    <span class="title">Reset your password</span>
-    <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
+        <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
     <div class="alert alert-danger" role="alert">
         <span class="icon glyphicon glyphicon-remove"></span> This email or username is not recognized.
     </div>
@@ -799,7 +797,7 @@
         <div class="form-group">
             <div class="col-md-12">
                 <label>Enter you email here</label>
-                <input type="text" class="form-control" placeholder="Your login email or name">
+                <input type="email" class="form-control" placeholder="Your login email or name" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
             </div>
         </div>
         <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
@@ -824,7 +822,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->    <div class="modal fade login login-modal" id="login-fb-error">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -931,8 +929,7 @@
         </div>
         <div class="tab-pane ">
             <div class="password-forgotten">
-    <span class="title">Reset your password</span>
-    <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
+        <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
     <div class="alert alert-danger" role="alert">
         <span class="icon glyphicon glyphicon-remove"></span> This email or username is not recognized.
     </div>
@@ -940,7 +937,7 @@
         <div class="form-group">
             <div class="col-md-12">
                 <label>Enter you email here</label>
-                <input type="text" class="form-control" placeholder="Your login email or name">
+                <input type="email" class="form-control" placeholder="Your login email or name" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
             </div>
         </div>
         <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
@@ -965,11 +962,11 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
     <div class="modal fade login login-modal" id="login-pwd-success">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
                                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <h4 class="modal-title">Login or Register</h4>
+    <h4 class="modal-title">Password reset</h4>
                 </div>
             
             <div class="modal-body">
@@ -986,7 +983,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->    <div class="modal fade login login-modal" id="validation-success">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
         <div class="modal-content">
                         
             <div class="modal-body">
@@ -997,6 +994,48 @@
     <p>[Text that welcomes the user and enourage to customize his livescore]</p>
         <button type="button" class="btn btn-primary">Close</button>
 </div>    </div>
+            </div>
+
+                        
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->    <div class="modal fade login login-modal" id="login-pwd-simple">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+                                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">Password reset</h4>
+                </div>
+            
+            <div class="modal-body">
+                    <div class="login-register-container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- LOST PASSWORD BLOCK -->
+                <div class="password-forgotten">
+        <p>Enter the email you used to register, and we will send you a link to reset your password:</p>
+    <div class="alert alert-danger" role="alert">
+        <span class="icon glyphicon glyphicon-remove"></span> This email or username is not recognized.
+    </div>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <div class="col-md-12">
+                <label>Enter you email here</label>
+                <input type="email" class="form-control" placeholder="Your login email or name" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+            </div>
+        </div>
+        <button class="btn btn-default"><span class="icon-caret-left"></span> Back</button>
+        <button type="button" class="btn btn-primary">Reset password</button>
+    </form>
+</div>
+
+
+
+
+            </div>
+        </div>
+    </div>
             </div>
 
                         
