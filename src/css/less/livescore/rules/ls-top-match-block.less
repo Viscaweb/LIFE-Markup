@@ -43,6 +43,7 @@
       position: relative;
       background: url("@{ls-image-scoreboard-game-field}") repeat;
       height: 123px;
+      display: block;
       
       .title{
         line-height: 19px;
@@ -50,7 +51,8 @@
         font-size: @font-size-small - 1;
         background: darken(@ls-light-color, 2.8%);
         position: absolute;
-        padding: 0 8px; 
+        padding: 0 8px;
+        color: darken(@ls-light-color, 60%);
         
         &:after{
           content: "";

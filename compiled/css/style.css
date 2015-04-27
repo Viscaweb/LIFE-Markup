@@ -12152,6 +12152,7 @@ span.sprite-icons.webmaster-border {
   position: relative;
   background: url("../img//bg-green-field.png") repeat;
   height: 123px;
+  display: block;
 }
 .top-match-block .score-board .title {
   line-height: 19px;
@@ -12160,6 +12161,7 @@ span.sprite-icons.webmaster-border {
   background: #f8f8f8;
   position: absolute;
   padding: 0 8px;
+  color: #666666;
 }
 .top-match-block .score-board .title:after {
   content: "";
