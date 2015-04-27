@@ -18197,6 +18197,7 @@ ul.image-list li img {
 .article-match-info .team.team1 {
   text-align: right;
   padding-right: 20px;
+  color: #5c5c5c;
 }
 .article-match-info .team.team1 img {
   float: left;
@@ -18204,6 +18205,7 @@ ul.image-list li img {
 .article-match-info .team.team2 {
   text-align: left;
   padding-left: 20px;
+  color: #5c5c5c;
 }
 .article-match-info .team.team2 img {
   float: right;
@@ -18216,6 +18218,7 @@ ul.image-list li img {
   font-size: 19px;
   font-weight: 700;
   background-color: #dfdfdf;
+  color: #5c5c5c;
 }
 .article-match-info:hover {
   text-decoration: none;
