@@ -528,6 +528,20 @@
           }                    
         }        
       }
+
+      &:hover{
+        &:nth-child(2n+1){
+          td.odd{
+            background-color: darken(@ls-light-color,6%) !important;
+          }
+        }
+
+        &:nth-child(2n){
+          td.odd{
+            background-color: darken(@ls-light-color,10%) !important;
+          }
+        }
+      }
     }
 
     //League header style in tbody
@@ -539,8 +553,6 @@
       }
     }
   }
-  
-
 
 
   &.table-condensed{
@@ -622,6 +634,23 @@
         background-color: darken(@ls-light-color, 6%);
       }
     }
+
+    &:hover{
+
+      td{
+
+        &.stat{
+          background-color: darken(@ls-light-color, 6%);
+        }
+      }
+
+      &:nth-child(even){
+
+        td.stat{
+          background-color: darken(@ls-light-color, 10%);
+        }
+      }
+    }
   }
   
   
@@ -631,7 +660,7 @@
   > tr{
   
     &.highlight{
-            background-color: @ls-tr-highlight-bg !important;
+      background-color: @ls-tr-highlight-bg !important;
 
       td{
         background-color: transparent !important;
@@ -739,6 +768,32 @@ tbody{
 
       &.win{
         font-weight: @font-weight-bold;
+      }
+    }
+
+    &:hover{
+      
+      td{
+
+        &.highlight{
+          background-color: darken(@ls-tr-highlight-bg, 4%) !important;
+        }
+        
+        &.selected{
+          background-color: darken(@ls-tr-selected-bg, 4%) !important;
+        }
+        
+        &.event-won{
+          background-color: darken(@ls-tr-won-bg, 4%) !important;
+        }
+        
+        &.event-lost{
+          background-color: darken(@ls-tr-lost-bg, 4%) !important;
+        }
+        
+        &.event-draw{
+          background-color: darken(@ls-tr-draw-bg, 4%) !important;
+        }   
       }
     }
   }
