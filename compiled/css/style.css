@@ -8523,11 +8523,24 @@ button.close {
   color: rgba(0, 0, 0, 0.05);
   line-height: 15px;
   vertical-align: middle;
+  position: relative;
+}
+.table tbody tr > td.tools a .comment-number,
+.table tbody tr:nth-child(even) > td.tools a .comment-number,
+.table tbody tr:nth-child(odd) > td.tools a .comment-number {
+  color: #b3b3b3;
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 0;
 }
 .table tbody tr > td.tools a.available,
 .table tbody tr:nth-child(even) > td.tools a.available,
 .table tbody tr:nth-child(odd) > td.tools a.available {
-  position: relative;
   color: #b5b5b5;
 }
 .table tbody tr > td.tools a.available.live,
@@ -8544,14 +8557,6 @@ button.close {
 .table tbody tr:nth-child(even) > td.tools a.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
   color: #ffffff;
-  font-size: 8px;
-  line-height: 9px;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 3px;
-  left: 0;
 }
 .table tbody tr > td.tools a:hover,
 .table tbody tr:nth-child(even) > td.tools a:hover,
@@ -13022,9 +13027,20 @@ span.glyphicon-star.active {
   color: rgba(0, 0, 0, 0.05);
   line-height: 15px;
   vertical-align: middle;
+  position: relative;
+}
+.fav-match .comment-number {
+  color: #b3b3b3;
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 0;
 }
 .fav-match.available {
-  position: relative;
   color: #b5b5b5;
 }
 .fav-match.available.live {
@@ -13035,14 +13051,6 @@ span.glyphicon-star.active {
 }
 .fav-match.available .comment-number {
   color: #ffffff;
-  font-size: 8px;
-  line-height: 9px;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 3px;
-  left: 0;
 }
 .fav-match:hover {
   color: #666666;

@@ -10399,12 +10399,26 @@ button.close {
   color: rgba(0, 0, 0, 0.05);
   line-height: 15px;
   vertical-align: middle;
+  position: relative;
+}
+
+.table tbody tr > td.tools a .comment-number,
+.table tbody tr:nth-child(even) > td.tools a .comment-number,
+.table tbody tr:nth-child(odd) > td.tools a .comment-number {
+  color: #b3b3b3;
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 0;
 }
 
 .table tbody tr > td.tools a.available,
 .table tbody tr:nth-child(even) > td.tools a.available,
 .table tbody tr:nth-child(odd) > td.tools a.available {
-  position: relative;
   color: #b5b5b5;
 }
 
@@ -10424,14 +10438,6 @@ button.close {
 .table tbody tr:nth-child(even) > td.tools a.available .comment-number,
 .table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
   color: #ffffff;
-  font-size: 8px;
-  line-height: 9px;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 3px;
-  left: 0;
 }
 
 .table tbody tr > td.tools a:hover,
@@ -15219,13 +15225,4 @@ span.sprite-icons.webmaster-border {
 
 .top-competitions-block.panel .nav-pills > li.open > a .icon-caret-down {
   color: #ffffff;
-}
-
-.top-competitions-block.panel .nav-pills > li.open > a:hover,
-.top-competitions-block.panel .nav-pills > li.open > a:focus {
-  background-color: #5da400;
-}
-
-.top-competitions-block.panel .active-ligue {
-  padding: 15px;
 }
