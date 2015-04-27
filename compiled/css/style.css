@@ -7419,7 +7419,7 @@ button.close {
 .media-list li.media .media-body .media-heading .tools > a,
 .media-list div.media .media-body .media-heading .tools > a {
   color: #dbdbdb;
-  font-size: 0;
+  margin-top: -4px;
   margin-left: 10px;
   cursor: pointer;
   display: inline-block;
