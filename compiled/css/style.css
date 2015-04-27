@@ -8644,10 +8644,20 @@ button.close {
 .table tbody tr:nth-child(odd):hover:nth-child(2n+1) td.odd {
   background-color: #f0f0f0 !important;
 }
+.table tbody tr:hover:nth-child(2n+1) td.odd:hover,
+.table tbody tr:nth-child(even):hover:nth-child(2n+1) td.odd:hover,
+.table tbody tr:nth-child(odd):hover:nth-child(2n+1) td.odd:hover {
+  background-color: #e6e6e6 !important;
+}
 .table tbody tr:hover:nth-child(2n) td.odd,
 .table tbody tr:nth-child(even):hover:nth-child(2n) td.odd,
 .table tbody tr:nth-child(odd):hover:nth-child(2n) td.odd {
   background-color: #e6e6e6 !important;
+}
+.table tbody tr:hover:nth-child(2n) td.odd:hover,
+.table tbody tr:nth-child(even):hover:nth-child(2n) td.odd:hover,
+.table tbody tr:nth-child(odd):hover:nth-child(2n) td.odd:hover {
+  background-color: #dbdbdb !important;
 }
 .table tbody tr.league-data > th {
   cursor: pointer;
@@ -8807,8 +8817,14 @@ button.close {
 .table tr.stats:hover td.stat {
   background-color: #f0f0f0;
 }
+.table tr.stats:hover td.stat:hover {
+  background-color: #e6e6e6;
+}
 .table tr.stats:hover:nth-child(even) td.stat {
   background-color: #e6e6e6;
+}
+.table tr.stats:hover:nth-child(even) td.stat:hover {
+  background-color: #dbdbdb;
 }
 .table > tbody > tr.highlight {
   background-color: #fff4ce !important;
@@ -8899,6 +8915,21 @@ button.close {
 }
 .table tbody tr:hover td.event-draw {
   background-color: #f7e7d5 !important;
+}
+.table tbody tr:hover td:hover.highlight {
+  background-color: #ffeba5 !important;
+}
+.table tbody tr:hover td:hover.selected {
+  background-color: #c8d2e3 !important;
+}
+.table tbody tr:hover td:hover.event-won {
+  background-color: #d4e5c6 !important;
+}
+.table tbody tr:hover td:hover.event-lost {
+  background-color: #eeb4ad !important;
+}
+.table tbody tr:hover td:hover.event-draw {
+  background-color: #f3dec4 !important;
 }
 .table > tbody > tr td {
   vertical-align: middle;
@@ -9503,6 +9534,9 @@ button.close {
   text-align: center;
   padding: 0 4px;
   color: #808080;
+  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
+  -moz-box-shadow: -1px -1px 0 #ffffff inset;
+  box-shadow: -1px -1px 0 #ffffff inset;
 }
 .table.predictions tbody tr td.icon .icon {
   font-size: 14px;

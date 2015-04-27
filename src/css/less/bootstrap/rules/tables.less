@@ -532,13 +532,21 @@
       &:hover{
         &:nth-child(2n+1){
           td.odd{
-            background-color: darken(@ls-light-color,6%) !important;
+            background-color: darken(@ls-light-color, 6%) !important;
+
+            &:hover{
+              background-color: darken(@ls-light-color, 10%) !important;
+            }
           }
         }
 
         &:nth-child(2n){
           td.odd{
             background-color: darken(@ls-light-color,10%) !important;
+
+            &:hover{
+              background-color: darken(@ls-light-color, 14%) !important;
+            }
           }
         }
       }
@@ -641,6 +649,10 @@
 
         &.stat{
           background-color: darken(@ls-light-color, 6%);
+
+          &:hover{
+            background-color: darken(@ls-light-color, 10%);
+          }
         }
       }
 
@@ -648,6 +660,10 @@
 
         td.stat{
           background-color: darken(@ls-light-color, 10%);
+
+          &:hover{
+            background-color: darken(@ls-light-color, 14%);
+          }
         }
       }
     }
@@ -793,7 +809,30 @@ tbody{
         
         &.event-draw{
           background-color: darken(@ls-tr-draw-bg, 4%) !important;
-        }   
+        }
+
+        &:hover{
+
+          &.highlight{
+            background-color: darken(@ls-tr-highlight-bg, 8%) !important;
+          }
+          
+          &.selected{
+            background-color: darken(@ls-tr-selected-bg, 8%) !important;
+          }
+          
+          &.event-won{
+            background-color: darken(@ls-tr-won-bg, 8%) !important;
+          }
+          
+          &.event-lost{
+            background-color: darken(@ls-tr-lost-bg, 8%) !important;
+          }
+          
+          &.event-draw{
+            background-color: darken(@ls-tr-draw-bg, 8%) !important;
+          }
+        } 
       }
     }
   }
@@ -1566,6 +1605,7 @@ tbody{
           text-align: center;
           padding: 0 4px;
 		      color: lighten(@ls-dark-color, 50%);
+          .box-shadow(-1px -1px 0 @ls-light-color inset);
           
           .icon{
             font-size: @font-size-normal;
