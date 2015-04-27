@@ -1,0 +1,31 @@
+{% extends "layouts/full.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#" class="login-image">
+                                <img src="img/290x380.jpg" alt="Visual Block">
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- LOGIN BLOCK -->
+                            {{ include('blocks/login/login_register.html.twig', {tab:'login'}) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}
