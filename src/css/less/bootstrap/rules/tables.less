@@ -875,13 +875,13 @@ tbody{
           a{
             text-decoration: none;
             color: @ls-light-color;
-            padding: 3px 4px 2px;
+            padding: 3px 4px 3px;
             display: block;
           }   
         }
         
         &.event-outcome-won{
-          background-color: @ls-td-won-bg !important;   
+          background-color: @ls-td-won-bg !important;
         }
         
         &.event-outcome-draw{
@@ -904,6 +904,7 @@ tbody{
           background-color: @ls-td-upcoming-bg !important;
           color: @ls-light-color;
         }
+
         &.event-leg{
           background-color: darken(@ls-light-color,13%) !important;
           font-weight: bold;
@@ -945,10 +946,38 @@ tbody{
             text-transform: uppercase;
             
           }
+
           &.event-outcome-upcoming{
             background-color: @ls-td-upcoming-bg !important;
             color: @ls-light-color;
             text-transform: uppercase;
+          }
+
+          &:hover{
+
+            &.event-outcome-won{
+              background-color: darken(@ls-td-won-bg, 4%) !important;
+            }
+            
+            &.event-outcome-draw{
+              background-color: darken(@ls-td-draw-bg, 4%) !important;
+            }
+            
+            &.event-outcome-lost{
+              background-color: darken(@ls-td-lost-bg, 4%) !important;
+            }
+            
+            &.event-outcome-live{
+              background-color: darken(@ls-td-live-bg, 4%) !important;
+            }
+            
+            &.event-outcome-upcoming{
+              background-color: darken(@ls-td-upcoming-bg, 4%) !important;
+            }
+            
+            &.event-leg{
+              background-color: darken(@ls-light-color, 17%) !important;
+            }
           }
         }
       }

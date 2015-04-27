@@ -8969,7 +8969,7 @@ button.close {
 .table > tbody > tr td.event-outcome a {
   text-decoration: none;
   color: #ffffff;
-  padding: 3px 4px 2px;
+  padding: 3px 4px 3px;
   display: block;
 }
 .table > tbody > tr td.event-outcome-won {
@@ -9027,6 +9027,24 @@ button.close {
   background-color: #e6e6e6 !important;
   color: #ffffff;
   text-transform: uppercase;
+}
+.table > tbody > tr:hover td:hover.event-outcome-won {
+  background-color: #7cb154 !important;
+}
+.table > tbody > tr:hover td:hover.event-outcome-draw {
+  background-color: #e9be3d !important;
+}
+.table > tbody > tr:hover td:hover.event-outcome-lost {
+  background-color: #e4422c !important;
+}
+.table > tbody > tr:hover td:hover.event-outcome-live {
+  background-color: #dbdbdb !important;
+}
+.table > tbody > tr:hover td:hover.event-outcome-upcoming {
+  background-color: #dbdbdb !important;
+}
+.table > tbody > tr:hover td:hover.event-leg {
+  background-color: #d4d4d4 !important;
 }
 .table > tbody > tr:last-child td.event-outcome {
   -webkit-box-shadow: 1px 0 0 #ffffff inset;
@@ -13798,7 +13816,7 @@ span.glyphicon-star.active {
   font-size: 14px;
 }
 .match-information .table thead tr th .name a.star:hover {
-  color: #a7a7a7;
+  color: #999999;
 }
 .match-information .table thead tr th.team:hover .name a.star {
   display: inline-block;
