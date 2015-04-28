@@ -18302,6 +18302,7 @@ ul.image-list li img {
   text-align: center;
   width: 16%;
   display: table-cell;
+  vertical-align: middle;
   font-size: 19px;
   font-weight: 700;
   background-color: #dfdfdf;
