@@ -14,7 +14,13 @@
     {{ include('blocks/elements/match_listing_buttons.html.twig', {type: 'predictions'}) }}
     {% include 'blocks/sports/match_listing_general_predictions_2.html.twig' %}
     <h3>Match listing (by competition)</h3>
-    {% include 'blocks/sports/match_listing_by_competition_2.html.twig' %}
+    <div class="row">
+        <div class="col-md-12">
+            {% include 'blocks/sports/match_listing_by_competition.html.twig' %}
+        </div>
+    </div>
+
+
     <h3>Match listing (by participant)</h3>
     {% include 'blocks/sports/match_listing_by_team_2.html.twig' %}
     <h3>Match listing (by player)</h3>
