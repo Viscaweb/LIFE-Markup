@@ -24,7 +24,11 @@
     <h3>Match listing (by participant)</h3>
     {% include 'blocks/sports/match_listing_by_team_2.html.twig' %}
     <h3>Match listing (by player)</h3>
-    {% include 'blocks/sports/match_listing_by_player_2.html.twig' %}
+    <div class="row">
+        <div class="col-md-12">
+            {% include 'blocks/sports/match_listing_by_player.html.twig' %}
+        </div>
+    </div>
     <h3>Predictions Listing</h3>
     {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
     {% include 'blocks/predictions/predictions_last_predictions_2.html.twig' %}

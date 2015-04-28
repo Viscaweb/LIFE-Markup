@@ -10,7 +10,7 @@
     {% include 'blocks/various/share_page_small.html.twig' %}
     {% include 'blocks/sports/player_statistics.html.twig' %}
     {% include 'blocks/sports/player_goals_statistics.html.twig' %}
-    {% include 'blocks/sports/match_listing_by_player.html.twig' %}
+    {{ include('blocks/sports/match_listing_by_player.html.twig', {in_panel:'true'}) }}
 {% endblock %}
 
 {% block content_right %}
