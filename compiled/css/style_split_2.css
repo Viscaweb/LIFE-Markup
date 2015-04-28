@@ -5863,6 +5863,10 @@ main .matches-widgets td.content span.empty {
   margin-bottom: -20px;
 }
 
+.login-modal .login-image img {
+  max-width: 100%;
+}
+
 .login-modal form:before,
 .login-modal form:after {
   content: " ";
