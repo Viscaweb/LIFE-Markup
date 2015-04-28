@@ -16,27 +16,27 @@
     {% include 'blocks/empty/match_listing_empty_prev.html.twig' %}
     {% include 'blocks/empty/match_listing_my_games_empty.html.twig' %}
     {% include 'blocks/empty/match_listing_empty_competitions.html.twig' %}
-    {% include 'blocks/empty/empty_statistics.html.twig' %}
-    {% include 'blocks/empty/empty_odds.html.twig' %}
-    {% include 'blocks/empty/empty_notifications.html.twig' %}
-    {% include 'blocks/empty/empty_tips.html.twig' %}
-    {% include 'blocks/empty/empty_comments.html.twig' %}
-    {% include 'blocks/empty/empty_predictions.html.twig' %}
-    {% include 'blocks/empty/empty_videos.html.twig' %}
-    {% include 'blocks/empty/empty_goals.html.twig' %}
-    {% include 'blocks/empty/empty_search.html.twig' %}
-    {% include 'blocks/empty/empty_competitions.html.twig' %}
-    {% include 'blocks/empty/empty_teams.html.twig' %}
-    {% include 'blocks/empty/empty_messages.html.twig' %}
-    {% include 'blocks/empty/empty_matches_am-football.html.twig' %}
-    {% include 'blocks/empty/empty_matches_baseball.html.twig' %}
-    {% include 'blocks/empty/empty_matches_basketball.html.twig' %}
-    {% include 'blocks/empty/empty_matches_football.html.twig' %}
-    {% include 'blocks/empty/empty_matches_handball.html.twig' %}
-    {% include 'blocks/empty/empty_matches_hockey.html.twig' %}
-    {% include 'blocks/empty/empty_matches_rugby.html.twig' %}
-    {% include 'blocks/empty/empty_matches_tennis.html.twig' %}
-    {% include 'blocks/empty/empty_matches_volley.html.twig' %}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-stats', empty_message:'Statistics not available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-x2', empty_message:'Odds not available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-bell', empty_message:'No new notifications'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-bulb', empty_message:'Betting tips not available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-mic', empty_message:'Comments not available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-prono', empty_message:'No prediction available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-play', empty_message:'No videos available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-football', empty_message:'No goals available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'glyphicon glyphicon-search', empty_message:'No results found'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-cup', empty_message:'No competitions found'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-team', empty_message:'No teams found'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'glyphicon glyphicon-comment', empty_message:'No message available'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-am-football', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-baseball', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-basketball', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-football', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-handball', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-hockey', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-rugby', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-tennis', empty_message:'No Game'}) }}
+    {{ include('blocks/empty/empty_message_with_icon.html.twig', {empty_icon:'icon-volley', empty_message:'No Game'}) }}
 {% endblock %}
 
 {% block content_right %}
