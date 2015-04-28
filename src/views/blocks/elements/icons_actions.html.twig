@@ -1,3 +1,68 @@
+{% set action_icons = [
+'sprite-icons football',
+'sprite-icons tennis',
+'sprite-icons rugby',
+'sprite-icons handball',
+'sprite-icons basketball',
+'sprite-icons volleyball',
+'sprite-icons icehockey',
+'sprite-icons baseball',
+'sprite-icons am-football',
+'sprite-icons yellow-card',
+'sprite-icons red-card',
+'sprite-icons yellow-red-card',
+'sprite-icons goal',
+'sprite-icons penalty-goal',
+'sprite-icons penalty-missed',
+'sprite-icons shirt',
+'sprite-icons comment',
+'sprite-icons comment-more',
+'sprite-icons shot-off',
+'sprite-icons shot-on',
+'sprite-icons shot-on-1',
+'sprite-icons shot-post',
+'sprite-icons clock',
+'sprite-icons player-change',
+'sprite-icons substitution-left',
+'sprite-icons football-field',
+'sprite-icons lineups',
+'sprite-icons shot-blocked',
+'sprite-icons hit-player-wall',
+'sprite-icons green-arrow',
+'sprite-icons red-arrow',
+'sprite-icons chairs',
+'sprite-icons incident-important',
+'sprite-icons red-cross',
+'sprite-icons yellow-cross',
+'sprite-icons injury-back',
+'sprite-icons players-wall',
+'sprite-icons funfact',
+'sprite-icons stadium',
+'sprite-icons info',
+'sprite-icons whistle',
+'sprite-icons interrupted',
+'sprite-icons whistle-active',
+'sprite-icons shootouts',
+'sprite-icons goal-assist',
+'sprite-icons assist',
+'sprite-icons shootout-goal',
+'sprite-icons own-goal',
+'sprite-icons goal-small',
+'sprite-icons nogoal',
+'sprite-icons shootout-missed',
+
+
+'sprite-icons grid',
+'sprite-icons gift',
+'sprite-icons match-paused',
+'sprite-icons match-play',
+'sprite-icons match-reload',
+'sprite-icons match-stop',
+'sprite-icons extra-time',
+'sprite-icons offside',
+'sprite-icons corner-flag'
+] %}
+
 <div class="row">
     <div class="col-md-12">
         <h3>Actions icons</h3>
@@ -8,43 +73,15 @@
                 <th>Icon</th>
                 <th>Class</th>
             </tr>
-            <tr><td><span class="sprite-icons football"></span></td><td><pre>sprite-icons football</pre></td></tr>
-            <tr><td><span class="sprite-icons tennis"></span></td><td><pre>sprite-icons tennis</pre></td></tr>
-            <tr><td><span class="sprite-icons rugby"></span></td><td><pre>sprite-icons rugby</pre></td></tr>
-            <tr><td><span class="sprite-icons handball"></span></td><td><pre>sprite-icons handball</pre></td></tr>
-            <tr><td><span class="sprite-icons basketball"></span></td><td><pre>sprite-icons basketball</pre></td></tr>
-            <tr><td><span class="sprite-icons volleyball"></span></td><td><pre>sprite-icons volleyball</pre></td></tr>
-            <tr><td><span class="sprite-icons icehockey"></span></td><td><pre>sprite-icons icehockey</pre></td></tr>
-            <tr><td><span class="sprite-icons baseball"></span></td><td><pre>sprite-icons baseball</pre></td></tr>
-            <tr><td><span class="sprite-icons am-football"></span></td><td><pre>sprite-icons am-football</pre></td></tr>
-            <tr><td><span class="sprite-icons yellow-card"></span></td><td><pre>sprite-icons yellow-card</pre></td></tr>
-            <tr><td><span class="sprite-icons red-card"></span></td><td><pre>sprite-icons red-card</pre></td></tr>
-            <tr><td><span class="sprite-icons yellow-red-card"></span></td><td><pre>sprite-icons yellow-red-card</pre></td></tr>
-            <tr><td><span class="sprite-icons goal"></span></td><td><pre>sprite-icons goal</pre></td></tr>
-            <tr><td><span class="sprite-icons penalty-goal"></span></td><td><pre>sprite-icons penalty-goal</pre></td></tr>
-            <tr><td><span class="sprite-icons penalty-missed"></span></td><td><pre>sprite-icons penalty-missed</pre></td></tr>
-            <tr><td><span class="sprite-icons shirt"></span></td><td><pre>sprite-icons shirt</pre></td></tr>
-            <tr><td><span class="sprite-icons clock"></span></td><td><pre>sprite-icons clock</pre></td></tr>
-            <tr><td><span class="sprite-icons player-change"></span></td><td><pre>sprite-icons player-change</pre></td></tr>
-            <tr><td><span class="sprite-icons football-field"></span></td><td><pre>sprite-icons football-field</pre></td></tr>
-            <tr><td><span class="sprite-icons green-arrow"></span></td><td><pre>sprite-icons green-arrow</pre></td></tr>
-            <tr><td><span class="sprite-icons red-arrow"></span></td><td><pre>sprite-icons red-arrow</pre></td></tr>
-            <tr><td><span class="sprite-icons chairs"></span></td><td><pre>sprite-icons chairs</pre></td></tr>
-            <tr><td><span class="sprite-icons incident-important"></span></td><td><pre>sprite-icons incident-important</pre></td></tr>
-            <tr><td><span class="sprite-icons red-cross"></span></td><td><pre>sprite-icons red-cross</pre></td></tr>
-            <tr><td><span class="sprite-icons yellow-cross"></span></td><td><pre>sprite-icons yellow-cross</pre></td></tr>
-            <tr><td><span class="sprite-icons stadium"></span></td><td><pre>sprite-icons stadium</pre></td></tr>
-            <tr><td><span class="sprite-icons info"></span></td><td><pre>sprite-icons info</pre></td></tr>
-            <tr><td><span class="sprite-icons whistle"></span></td><td><pre>sprite-icons whistle</pre></td></tr>
-            <tr><td><span class="sprite-icons whistle-active"></span></td><td><pre>sprite-icons whistle-active</pre></td></tr>
-            <tr><td><span class="sprite-icons shootouts"></span></td><td><pre>sprite-icons shootouts</pre></td></tr>
-            <tr><td><span class="sprite-icons shootout-goal"></span></td><td><pre>sprite-icons shootout-goal</pre></td></tr>
-            <tr><td><span class="sprite-icons shootout-missed"></span></td><td><pre>sprite-icons shootout-missed</pre></td></tr>
-            <tr><td><span class="sprite-icons grid"></span></td><td><pre>sprite-icons grid</pre></td></tr>
-            <tr><td><span class="sprite-icons gift"></span></td><td><pre>sprite-icons gift</pre></td></tr>
-            <tr><td><span class="sprite-icons extra-time"></span></td><td><pre>sprite-icons extra-time</pre></td></tr>
-            <tr><td><span class="sprite-icons offside"></span></td><td><pre>sprite-icons offside</pre></td></tr>
-            <tr><td><span class="sprite-icons corner-flag"></span></td><td><pre>sprite-icons corner-flag</pre></td></tr>
+
+
+            {% for action_icon in action_icons %}
+            <tr><td><span class="{{ action_icon }}"></span></td><td><pre>{{ action_icon }}</pre></td></tr>
+            {% endfor %}
+
         </table>
     </div>
 </div>
+
+
+
