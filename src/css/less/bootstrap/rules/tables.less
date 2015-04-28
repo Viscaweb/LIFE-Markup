@@ -870,7 +870,6 @@ tbody{
           text-transform: uppercase;
           text-align:center;
           padding: 0;
-          .box-shadow(1px -1px 0 @ls-light-color inset);  
 
           a{
             text-decoration: none;
@@ -998,6 +997,10 @@ tbody{
     tr{
       > td{
         border: 0;
+
+        &.event-outcome {
+          .box-shadow(1px -1px 0 @ls-light-color inset);
+        }
       }
     }
   }
@@ -1018,7 +1021,7 @@ tbody{
           &.best-odd{
             font-weight: @font-weight-bold;
           }
-          
+
         }
       }
     }

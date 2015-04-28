@@ -8962,9 +8962,6 @@ button.close {
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  -webkit-box-shadow: 1px -1px 0 #ffffff inset;
-  -moz-box-shadow: 1px -1px 0 #ffffff inset;
-  box-shadow: 1px -1px 0 #ffffff inset;
 }
 .table > tbody > tr td.event-outcome a {
   text-decoration: none;
@@ -9053,6 +9050,11 @@ button.close {
 }
 .table.no-border tr > td {
   border: 0;
+}
+.table.no-border tr > td.event-outcome {
+  -webkit-box-shadow: 1px -1px 0 #ffffff inset;
+  -moz-box-shadow: 1px -1px 0 #ffffff inset;
+  box-shadow: 1px -1px 0 #ffffff inset;
 }
 .table.table-odds tbody tr td.logo {
   padding: 0 0 1px;

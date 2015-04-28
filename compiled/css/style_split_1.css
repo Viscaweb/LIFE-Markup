@@ -10942,9 +10942,6 @@ button.close {
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  -webkit-box-shadow: 1px -1px 0 #ffffff inset;
-  -moz-box-shadow: 1px -1px 0 #ffffff inset;
-  box-shadow: 1px -1px 0 #ffffff inset;
 }
 
 .table > tbody > tr td.event-outcome a {
@@ -11053,6 +11050,12 @@ button.close {
 
 .table.no-border tr > td {
   border: 0;
+}
+
+.table.no-border tr > td.event-outcome {
+  -webkit-box-shadow: 1px -1px 0 #ffffff inset;
+  -moz-box-shadow: 1px -1px 0 #ffffff inset;
+  box-shadow: 1px -1px 0 #ffffff inset;
 }
 
 .table.table-odds tbody tr td.logo {
@@ -15161,13 +15164,4 @@ span.sprite-icons.webmaster-border {
 
 .top-match-block .score-board .team2 {
   right: 15px;
-}
-
-.top-match-block .score-board .match-time,
-.top-match-block .score-board .match-info {
-  text-align: center;
-  position: absolute;
-  bottom: 27px;
-  left: 0;
-  width: 100%;
 }
