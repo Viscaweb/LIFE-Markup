@@ -8985,6 +8985,9 @@ button.close {
   background-color: #e6e6e6 !important;
   color: #e33000;
 }
+.table > tbody > tr td.event-outcome-live a {
+  color: #e33000;
+}
 .table > tbody > tr td.event-outcome-upcoming {
   background-color: #e6e6e6 !important;
   color: #ffffff;
