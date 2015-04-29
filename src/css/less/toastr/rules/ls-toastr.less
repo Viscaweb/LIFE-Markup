@@ -1,7 +1,9 @@
 #toast-container {
 
-  &.toast-top-center {
-    top: 10px;
+  &.toast-top-left,
+  &.toast-top-center,
+  &.toast-top-right{
+    top:75px;
 
     >div {
       margin-bottom: 8px;
@@ -58,4 +60,9 @@
 }
 #toast-container > .alert-success:before {
   content: "\e013";
+}
+
+
+.toast-progress {
+  .opacity(0.1);
 }

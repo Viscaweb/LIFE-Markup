@@ -11855,11 +11855,15 @@ button.close {
 
 /*Toastr notifications*/
 
-#toast-container.toast-top-center {
-  top: 10px;
+#toast-container.toast-top-left,
+#toast-container.toast-top-center,
+#toast-container.toast-top-right {
+  top: 75px;
 }
 
-#toast-container.toast-top-center > div {
+#toast-container.toast-top-left > div,
+#toast-container.toast-top-center > div,
+#toast-container.toast-top-right > div {
   margin-bottom: 8px;
 }
 
@@ -11921,6 +11925,13 @@ button.close {
 
 #toast-container > .alert-success:before {
   content: "\e013";
+}
+
+.toast-progress {
+  filter: alpha(opacity=10);
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
 }
 
 /*LiveScore Components*/
@@ -15115,34 +15126,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .content .match:hover {
   background-color: #363a3c;
-}
-
-.match-slider-inverse .toggle-right {
-  font-size: 13px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  width: 25px;
-  display: table-cell;
-  background: #313536;
-}
-
-.match-slider-inverse .toggle-right:hover {
-  background-color: #363a3c;
-}
-
-.top-match-block .top-match {
-  cursor: pointer;
-  padding: 15px 0 8px;
-  text-align: center;
-  border-bottom: 2px solid #efefef;
-}
-
-.top-match-block .top-match .shields img {
-  max-height: 28px;
-  max-width: 28px;
-}
-
-.top-match-block .top-match .shields img:last-child {
-  margin-left: 2px;
 }
