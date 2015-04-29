@@ -61,7 +61,39 @@ table.team-results{
   }
 }
 
-.panel.goal-stats{
+.goal-stats{
+
+  .goal-totals {
+    margin-bottom: 0;
+
+    .stat-value {
+      font-size: @ls-stat-value-big-size;
+      display: block;
+      text-align: center;
+
+      .scored {
+        color: @brand-success;
+
+      }
+
+      .conceded {
+        color: @brand-danger;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: @font-size-small;
+        font-weight: 600;
+      }
+
+      + .stat-value {
+        border-left: 1px solid darken(@ls-light-color, 7%);
+      }
+    }
+
+
+
+  }
 
   tbody{
     
@@ -102,6 +134,12 @@ table.team-results{
         &.prog{ 
           width: 30%;
         }
+
+        &.minute-range{
+          text-align: center;
+          white-space: nowrap;
+        }
+
       }
    } 
   }

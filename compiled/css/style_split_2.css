@@ -4379,38 +4379,71 @@ table.team-results tbody tr td.score {
   font-weight: 700;
 }
 
-.panel.goal-stats tbody tr td .progress {
+.goal-stats .goal-totals {
+  margin-bottom: 0;
+}
+
+.goal-stats .goal-totals .stat-value {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+
+.goal-stats .goal-totals .stat-value .scored {
+  color: #87b762;
+}
+
+.goal-stats .goal-totals .stat-value .conceded {
+  color: #dd4f3c;
+}
+
+.goal-stats .goal-totals .stat-value p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.goal-stats .goal-totals .stat-value + .stat-value {
+  border-left: 1px solid #ededed;
+}
+
+.goal-stats tbody tr td .progress {
   margin-bottom: 0;
   background: none;
   box-shadow: none;
 }
 
-.panel.goal-stats tbody tr td .progress .progress-bar {
+.goal-stats tbody tr td .progress .progress-bar {
   box-shadow: none;
   border-radius: 2px;
   min-width: 1px;
 }
 
-.panel.goal-stats tbody tr td .progress .progress-bar.progress-bar-success {
+.goal-stats tbody tr td .progress .progress-bar.progress-bar-success {
   float: right;
 }
 
-.panel.goal-stats tbody tr td .progress .progress-bar[style="width: 0%"],
-.panel.goal-stats tbody tr td .progress .progress-bar[style="width:0%"],
-.panel.goal-stats tbody tr td .progress .progress-bar[style="width: 0%;"],
-.panel.goal-stats tbody tr td .progress .progress-bar[style="width:0%;"],
-.panel.goal-stats tbody tr td .progress .progress-bar[width="0%"] {
+.goal-stats tbody tr td .progress .progress-bar[style="width: 0%"],
+.goal-stats tbody tr td .progress .progress-bar[style="width:0%"],
+.goal-stats tbody tr td .progress .progress-bar[style="width: 0%;"],
+.goal-stats tbody tr td .progress .progress-bar[style="width:0%;"],
+.goal-stats tbody tr td .progress .progress-bar[width="0%"] {
   background-color: #e6e6e6;
 }
 
-.panel.goal-stats tbody tr td.percent {
+.goal-stats tbody tr td.percent {
   width: 3%;
   font-weight: 700;
   text-align: center;
 }
 
-.panel.goal-stats tbody tr td.prog {
+.goal-stats tbody tr td.prog {
   width: 30%;
+}
+
+.goal-stats tbody tr td.minute-range {
+  text-align: center;
+  white-space: nowrap;
 }
 
 /*Team Squad*/
