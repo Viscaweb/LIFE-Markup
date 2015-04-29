@@ -9701,6 +9701,61 @@ button.close {
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
   border-color: #5da400;
 }
+/*Toastr notifications*/
+#toast-container.toast-top-center {
+  top: 10px;
+}
+#toast-container.toast-top-center > div {
+  margin-bottom: 8px;
+}
+#toast-container > div {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
+}
+#toast-container > div:hover {
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
+}
+#toast-container > div.alert-success {
+  color: #3c763d;
+}
+#toast-container > div.alert-danger {
+  color: #a94442;
+}
+#toast-container > div.alert-info {
+  color: #31708f;
+}
+#toast-container > div.alert-warning {
+  color: #8a6d3b;
+}
+#toast-container > .alert {
+  background-image: none !important;
+}
+#toast-container > .alert:before {
+  position: fixed;
+  font-family: "Glyphicons Halflings";
+  font-size: 24px;
+  line-height: 18px;
+  float: left;
+  padding-right: 0.5em;
+  margin: auto 0.5em auto -1.5em;
+  font-weight: normal;
+}
+#toast-container > .alert-danger:before {
+  content: "\e101";
+}
+#toast-container > .alert-warning:before {
+  content: "\e107";
+}
+#toast-container > .alert-info:before {
+  content: "\e086";
+}
+#toast-container > .alert-success:before {
+  content: "\e013";
+}
 /*LiveScore Components*/
 /*Main Colors*/
 /*Container*/

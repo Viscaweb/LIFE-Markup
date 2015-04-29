@@ -416,7 +416,15 @@ $( document ).ready(function() {
             "showEasing": "swing",
             "hideEasing": "linear",
             "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
+            "hideMethod": "fadeOut",
+            toastClass: 'alert',
+            iconClasses: {
+                error: 'alert-danger',
+                info: 'alert-info',
+                success: 'alert-success',
+                warning: 'alert-warning'
+            }
+
         };
 
         toastr[alert](msg, title);
