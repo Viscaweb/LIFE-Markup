@@ -10983,6 +10983,7 @@ button.close {
 .table > tbody > tr td.event-leg {
   background-color: #dedede !important;
   font-weight: bold;
+  text-align: center;
 }
 
 .table > tbody > tr:hover td.event-outcome-won {
