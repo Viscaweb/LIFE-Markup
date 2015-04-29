@@ -1,0 +1,15 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+
+{% block container_content_wrapper %}
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-default showtoast" data-title="Notification title" data-message="This is the message" data-alert="success" >SUCCESS</button>
+            <button class="btn btn-default showtoast" data-title="Notification title" data-message="This is the message" data-alert="warning" >WARNING</button>
+            <button class="btn btn-default showtoast" data-title="Notification title" data-message="This is the message" data-alert="info" >INFO</button>
+            <button class="btn btn-default showtoast" data-title="Notification title" data-message="This is the message" data-alert="error" >ERROR</button>
+
+        </div>
+    </div>
+{% endblock %}
+

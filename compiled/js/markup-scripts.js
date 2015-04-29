@@ -394,5 +394,36 @@ $( document ).ready(function() {
         table.toggle("slow");
     });
 
+    /* Initialisation of toastr */
+
+    $('.showtoast').click(function () {
+        var msg =  this.dataset.message;
+        var title = this.dataset.title;
+        var alert = this.dataset.alert;
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "3000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        toastr[alert](msg, title);
+
+    });
+
 
 });
+
+
