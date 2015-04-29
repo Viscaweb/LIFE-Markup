@@ -15991,9 +15991,17 @@ table.team-results tbody tr td.score {
 .panel.goal-stats tbody tr td .progress .progress-bar {
   box-shadow: none;
   border-radius: 2px;
+  min-width: 1px;
 }
 .panel.goal-stats tbody tr td .progress .progress-bar.progress-bar-success {
   float: right;
+}
+.panel.goal-stats tbody tr td .progress .progress-bar[style="width: 0%"],
+.panel.goal-stats tbody tr td .progress .progress-bar[style="width:0%"],
+.panel.goal-stats tbody tr td .progress .progress-bar[style="width: 0%;"],
+.panel.goal-stats tbody tr td .progress .progress-bar[style="width:0%;"],
+.panel.goal-stats tbody tr td .progress .progress-bar[width="0%"] {
+  background-color: #e6e6e6;
 }
 .panel.goal-stats tbody tr td.percent {
   width: 3%;

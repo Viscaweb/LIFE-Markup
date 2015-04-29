@@ -77,10 +77,19 @@ table.team-results{
             .progress-bar{
               box-shadow: none;
               border-radius: 2px;
+              min-width: 1px;
               
               &.progress-bar-success{
                 float: right;
-              }          
+              }
+
+              &[style="width: 0%"],
+              &[style="width:0%"],
+              &[style="width: 0%;"],
+              &[style="width:0%;"],
+              &[width="0%"]{
+                background-color: darken(@ls-light-color, 10%) ;
+              }
             }
         }
         
