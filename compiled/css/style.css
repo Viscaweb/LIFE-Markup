@@ -12469,6 +12469,18 @@ span.sprite-icons.webmaster-border {
 .top-match-block .score-board.live.paused .match-info .block div.time {
   background-image: url("../img/sprites/paused-spot.gif");
 }
+.top-match-block .score-board:hover:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: #000000;
+  filter: alpha(opacity=10);
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+}
 .top-match-block .make-prediction {
   padding: 5px 8px 10px;
   font-size: 12px;
