@@ -9245,7 +9245,7 @@ button.close {
 }
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
-  background-color: #f40000;
+  background-color: #dc0000;
   font-weight: 400;
   position: relative;
   top: -2px;
@@ -18780,6 +18780,9 @@ ul.image-list li img {
 .stats-holder .stat-block + .stat-block {
   border-left: 1px solid #ededed;
 }
+.stats-holder .stat-block .stat-value-small {
+  font-size: 16px;
+}
 .stats-holder .stat-block .icon {
   display: block;
   font-size: 30px;
@@ -18789,6 +18792,16 @@ ul.image-list li img {
 }
 .stats-holder .stat-block .conceded {
   color: #dd4f3c;
+}
+.stats-holder .stat-block .red-cards .icon {
+  color: #dc0000;
+}
+.stats-holder .stat-block .yellow-cards .icon {
+  color: #ffde00;
+}
+.stats-holder .stats-separator {
+  text-align: center;
+  padding: 10px;
 }
 /*Structure*/
 .wrapper {
