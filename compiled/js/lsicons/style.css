@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?um82xh');
-	src:url('fonts/LSicons.eot?#iefixum82xh') format('embedded-opentype'),
-		url('fonts/LSicons.woff?um82xh') format('woff'),
-		url('fonts/LSicons.ttf?um82xh') format('truetype'),
-		url('fonts/LSicons.svg?um82xh#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?szgz9r');
+	src:url('fonts/LSicons.eot?#iefixszgz9r') format('embedded-opentype'),
+		url('fonts/LSicons.woff?szgz9r') format('woff'),
+		url('fonts/LSicons.ttf?szgz9r') format('truetype'),
+		url('fonts/LSicons.svg?szgz9r#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -245,5 +245,9 @@
 
 .icon-bell-off:before {
 	content: "\e637";
+}
+
+.icon-card:before {
+	content: "\e638";
 }
 

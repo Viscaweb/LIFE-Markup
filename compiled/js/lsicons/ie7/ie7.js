@@ -69,6 +69,7 @@
 		'icon-weight': '&#xe635;',
 		'icon-arrows-position': '&#xe636;',
 		'icon-bell-off': '&#xe637;',
+		'icon-card': '&#xe638;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),
