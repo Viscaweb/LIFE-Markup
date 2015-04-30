@@ -1,0 +1,35 @@
+/* Statistics display templates */
+
+.stats-holder {
+  margin-bottom: 0;
+
+  .stat-block {
+    font-size: @ls-stat-value-big-size;
+    display: block;
+    text-align: center;
+
+    p {
+      text-transform: uppercase;
+      font-size: @font-size-small;
+      font-weight: 600;
+    }
+
+    + .stat-block {
+      border-left: 1px solid darken(@ls-light-color, 7%);
+    }
+    
+    .icon {
+      display: block;
+      font-size: 30px;
+    }
+
+    .scored {
+      color: @brand-success;
+    }
+
+    .conceded {
+      color: @brand-danger;
+    }
+  }
+
+}

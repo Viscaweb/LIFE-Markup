@@ -4515,34 +4515,6 @@ table.team-results tbody tr td.score {
   font-weight: 700;
 }
 
-.goal-stats .goal-totals {
-  margin-bottom: 0;
-}
-
-.goal-stats .goal-totals .stat-value {
-  font-size: 40px;
-  display: block;
-  text-align: center;
-}
-
-.goal-stats .goal-totals .stat-value .scored {
-  color: #87b762;
-}
-
-.goal-stats .goal-totals .stat-value .conceded {
-  color: #dd4f3c;
-}
-
-.goal-stats .goal-totals .stat-value p {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.goal-stats .goal-totals .stat-value + .stat-value {
-  border-left: 1px solid #ededed;
-}
-
 .goal-stats tbody tr td .progress {
   margin-bottom: 0;
   background: none;
@@ -7809,6 +7781,43 @@ ul.image-list li img {
 
 .streaming-table table tbody tr:hover td {
   background-color: #ededed;
+}
+
+/*Stats display*/
+
+/* Statistics display templates */
+
+.stats-holder {
+  margin-bottom: 0;
+}
+
+.stats-holder .stat-block {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+
+.stats-holder .stat-block p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stats-holder .stat-block + .stat-block {
+  border-left: 1px solid #ededed;
+}
+
+.stats-holder .stat-block .icon {
+  display: block;
+  font-size: 30px;
+}
+
+.stats-holder .stat-block .scored {
+  color: #87b762;
+}
+
+.stats-holder .stat-block .conceded {
+  color: #dd4f3c;
 }
 
 /*Structure*/
