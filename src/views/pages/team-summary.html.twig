@@ -14,13 +14,11 @@
     <div class="row">
         <div class="col-md-6">
             {% include 'blocks/sports/team_last_season_statistics.html.twig' %}
-            {% include 'blocks/sports/team_last_season_card_statistics.html.twig' %}
+            {% include 'blocks/sports/team_over_under_v1.1.html.twig' %}
             {{ include('blocks/sports/team_last_season_card_statistics_v1.1.html.twig', {in_panel:'true'}) }}
         </div>
         <div class="col-md-6">
             {{ include('blocks/sports/team_results_statistics.html.twig', {in_panel:'true'}) }}
-            {% include 'blocks/sports/team_over_under_1.html.twig' %}
-            {% include 'blocks/sports/team_over_under_v1.1.html.twig' %}
             {% include 'blocks/sports/team_last_season_goals_statistics.html.twig' %}
         </div>
     </div>
