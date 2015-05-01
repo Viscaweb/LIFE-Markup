@@ -8,32 +8,44 @@ $twig = new Twig_Environment($loader);
 
 /* Generating static html files */
 
-echo "<pre>Generating HTML files :\n";
-if ($templateDir = opendir('views/pages/')) {
-    $i = 0;
-    while (false !== ($twigTemplate = readdir($templateDir))) {
+echo '<pre>';
 
-        if( strpos($twigTemplate, '.html.twig') !=false) {
-            $i++;
+echo "Generating HTML files :\n";
+    compileFolder('pages/', '../compiled/', $twig);
+echo "Generating Pattern Library HTML files :\n";
+    compileFolder('pages/patterns-library/', '../compiled/patterns-library/', $twig);
 
-            $twigTemplatePath = 'pages/'.$twigTemplate;
+echo '</pre>';
 
-            $htmlFile = strstr($twigTemplate,'.twig', true );
-            echo $i.' - <a href="../compiled/'.$htmlFile.'"">';
-            echo generateHtml($htmlFile , $twigTemplatePath, $twig);
-            echo "</a>\n";
-            }
-    }
-    closedir($templateDir);
-
-}
-echo "</pre>";
-
-
-function generateHtml($outputFile, $twigTemplate, $twig) {
-    $outputPath = '../compiled/'.$outputFile;
-    file_put_contents($outputPath, $twig->render($twigTemplate));
+function generateHtml($outputPath, $outputFile, $twigTemplate, $twig) {
+    $filePath = $outputPath.$outputFile;
+    file_put_contents($filePath, $twig->render($twigTemplate));
     return $outputFile;
+}
+
+function compileFolder($sourceDir, $targetDir, $twig) {
+
+    $sourceDirFull = 'views/'.$sourceDir;
+
+    if ($templateDir = opendir($sourceDirFull)) {
+        $i = 0;
+        while (false !== ($twigTemplate = readdir($templateDir))) {
+
+            if( strpos($twigTemplate, '.html.twig') !=false) {
+                $i++;
+
+                $twigTemplatePath = $sourceDir.$twigTemplate;
+                $outputPath = $targetDir;
+
+                $htmlFile = strstr($twigTemplate,'.twig', true );
+                echo $i.' - <a href="'.$outputPath.$htmlFile.'">';
+                echo generateHtml($outputPath, $htmlFile , $twigTemplatePath, $twig);
+                echo "</a>\n";
+            }
+        }
+        closedir($templateDir);
+
+    }
 }
 
 
