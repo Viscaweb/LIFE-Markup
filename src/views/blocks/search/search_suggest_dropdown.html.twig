@@ -1,12 +1,41 @@
-<ul class="dropdown-menu" role="menu">
+<ul class="dropdown-menu dropdown-search" role="menu">
+
+    {% if type == 'all' %}
+        <li><a href="#"><img class="team" src="img/sprites/psg.png" alt="PSG">Paris Saint Germain</a></li>
+        <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Claudio Paris</a></li>
+        <li><a href="#"><span class="country-flag fr"></span>Ligue 1</a></li>
+        <li><a href="#"><span class="country-flag fr"></span>France</a></li>
+    {% endif %}
+
+    {% if type == 'teams' %}
     <li><a href="#"><img class="team" src="img/sprites/psg.png" alt="PSG">Paris Saint Germain</a></li>
+    <li><a href="#"><img class="team" src="img/team-default.png" alt="Team">Team name</a></li>
+    <li><a href="#"><img class="team" src="img/team-default.png" alt="Team">Team name</a></li>
+    <li><a href="#"><img class="team" src="img/team-default.png" alt="Team">Team name</a></li>
     <li class="divider"></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Claudio Paris</a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Vinicio Paris</a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Marc Paris</a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Michele Paris</a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Thomas Paris</a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Niko Paris</a></li>
+    {% endif %}
+
+    {% if type == 'player' %}
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Claudio Paris</a></li>
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Vinicio Paris</a></li>
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Marc Paris</a></li>
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Michele Paris</a></li>
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Thomas Paris</a></li>
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Niko Paris</a></li>
+    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Team name</a></li>
+    {% endif %}
+
+    {% if type == 'leagues' %}
+        <li><a href="#"><span class="country-flag fr"></span>Ligue 1</a></li>
+        <li><a href="#"><span class="country-flag fr"></span>Ligue 2</a></li>
+        <li><a href="#"><span class="country-flag _United_Nations"></span>Coupe de la Ligue</a></li>
+        <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions</a></li>
+        <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie</a></li>
+        <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie / Phase de poule</a></li>
+        <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie / Phase finale</a></li>
+        <li><a href="#"><span class="country-flag es"></span>Ligue Junior</a></li>
+    {% endif %}
+
     <li class="pag-nav">
         <ul class="pagination pagination-xs">
             <li><a href="#"><span class="icon-caret-left"></span></a></li>

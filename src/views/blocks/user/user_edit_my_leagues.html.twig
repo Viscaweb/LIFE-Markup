@@ -21,27 +21,9 @@
                                             <div class="inner-addon right-addon">
                                                 <i class="glyphicon glyphicon-search"></i>
                                                 <input data-toggle="dropdown" type="text" placeholder="Champions League, Europa League..." class="form-control">
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="#"><span class="country-flag fr"></span>Ligue 1</a></li>
-                                                    <li><a href="#"><span class="country-flag fr"></span>Ligue 2</a></li>
-                                                    <li><a href="#"><span class="country-flag fr"></span>Coupe de la Ligue</a></li>
-                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions</a></li>
-                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie</a></li>
-                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie / Phase de poule</a></li>
-                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue des Champions Asie / Phase finale</a></li>
-                                                    <li><a href="#"><span class="country-flag _United_Nations"></span>Ligue Junior</a></li>
-                                                    <li class="pag-nav">
-                                                        <ul class="pagination pagination-xs">
-                                                            <li><a href="#"><span class="icon-caret-left"></span></a></li>
-                                                            <li class="active"><a href="#">1</a></li>
-                                                            <li><a href="#">2</a></li>
-                                                            <li><a href="#">3</a></li>
-                                                            <li><a href="#">4</a></li>
-                                                            <li><a href="#">5</a></li>
-                                                            <li><a href="#"><span class="icon-caret-right"></span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+
+                                                {{ include('blocks/search/search_suggest_dropdown.html.twig', {type: 'leagues'}) }}
+
                                             </div>
                                             <div class="divider"></div>
                                         </div>

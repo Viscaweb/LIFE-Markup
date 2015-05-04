@@ -5599,38 +5599,6 @@ main .matches-widgets td.content span.empty {
   background-color: #fafafa;
 }
 
-.search-block {
-  padding: 20px;
-  background-color: #fafafa;
-  border: 1px solid #efefef;
-}
-
-.search-block label {
-  font-weight: 600;
-}
-
-.search-block .option-group-name {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #969696;
-}
-
-.search-block div.checkbox {
-  display: block;
-  margin-bottom: 13px;
-}
-
-.search-block .dropdown-menu li a img {
-  height: 20px;
-  margin-right: 5px;
-  width: 20px;
-}
-
-.search-block .dropdown-menu li a .glyphicon-user {
-  color: #c0c0c0;
-}
-
 .teams-table .title {
   display: block;
   font-size: 18px;
@@ -7839,6 +7807,40 @@ ul.image-list li img {
 .stats-holder .stats-separator {
   text-align: center;
   padding: 10px;
+}
+
+/*Search*/
+
+.search-block {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #efefef;
+}
+
+.search-block label {
+  font-weight: 600;
+}
+
+.search-block .option-group-name {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #969696;
+}
+
+.search-block div.checkbox {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.dropdown-search li a img {
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.dropdown-search li a .glyphicon-user {
+  color: #c0c0c0;
 }
 
 /*Structure*/

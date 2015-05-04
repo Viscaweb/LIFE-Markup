@@ -5,7 +5,7 @@
             <div class="inner-addon right-addon">
                 <i class="glyphicon glyphicon-search"></i>
                 <input data-toggle="dropdown" type="text" placeholder="Champions League, Europa League..." class="form-control">
-                {% include 'blocks/search/search_suggest_dropdown.html.twig' %}
+                {{ include('blocks/search/search_suggest_dropdown.html.twig', {type: 'all'}) }}
             </div>
             <div class="row">
                 <div class="col-md-4">
