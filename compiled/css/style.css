@@ -8244,6 +8244,609 @@ button.close {
   border-bottom: 2px solid #5da400;
   border-left: none;
 }
+.table tr th {
+  background-color: #eaeaea;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #5d5d5d;
+  padding: 8px 20px;
+}
+.table tr td {
+  font-size: 12px;
+  padding: 8px 10px;
+}
+.table tr:hover td {
+  background-color: #ededed;
+}
+.table-condensed thead > tr th {
+  border: 0;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.table-condensed tr th {
+  border: 0;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.table-condensed tr td {
+  line-height: 20px;
+  font-size: 12px;
+  border-left: none;
+  padding: 3px 4px;
+}
+.table-condensed tr td:first-child {
+  border-left: 0;
+}
+.table-condensed tr td:last-child {
+  border-right: 0;
+}
+.table-striped tbody tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+.table-striped tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+.table-striped tbody tr:nth-child(even):hover td,
+.table-striped tbody tr:nth-child(odd):hover td {
+  background-color: #ededed;
+}
+/*jQuery UI Components*/
+/*Custom General Icons Behavior*/
+.ui-datepicker {
+  width: 260px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+  padding: 50px 15px 15px;
+  position: relative;
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  /**
+   * I don't think we need this arrow.
+   * Seb will provide the design for each datepicker and then we'll see if
+   * the arrow is needed for any of the datepicker style.
+   * Right now, it's breaking the proper integration
+  */
+}
+.ui-datepicker.ui-datepicker-with-border {
+  border: 1px solid #e1e1e1;
+  margin-top: -1px;
+}
+.ui-datepicker .ui-datepicker-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #ebebeb;
+}
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  height: 36px;
+  line-height: 36px;
+  margin: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c2c2c2;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
+  position: absolute;
+  line-height: 36px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #b5b5b5;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after,
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:after {
+  background-color: #fcfcfc;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-family: "LSicons";
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:hover:after,
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:hover:after {
+  background-color: #f7f7f7;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev {
+  left: 0;
+  border-right: 1px solid #ebebeb;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after {
+  content: "\e60c";
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
+  right: 0;
+  border-left: 1px solid #ebebeb;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:after {
+  content: "\e60d";
+}
+.ui-datepicker table.ui-datepicker-calendar {
+  width: 100%;
+}
+.ui-datepicker table.ui-datepicker-calendar thead tr th {
+  text-align: center;
+  padding: 5px;
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td {
+  text-align: center;
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a {
+  display: inline-block;
+  padding: 5px;
+  margin: 1px;
+  color: #333333;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  background-clip: border-box;
+}
+@media \0screen {
+  .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
+  background-color: #5da400;
+  border-color: #5da400;
+  color: #ffffff;
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-priority-secondary {
+  color: #d2d2d2;
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+  color: #333333;
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
+  border-color: #5da400;
+}
+/*Toastr notifications*/
+#toast-container.toast-top-left,
+#toast-container.toast-top-center,
+#toast-container.toast-top-right {
+  top: 75px;
+}
+#toast-container.toast-top-left > div,
+#toast-container.toast-top-center > div,
+#toast-container.toast-top-right > div {
+  margin-bottom: 8px;
+}
+#toast-container > div {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
+}
+#toast-container > div:hover {
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
+}
+#toast-container > div.alert-success {
+  color: #3c763d;
+}
+#toast-container > div.alert-danger {
+  color: #a94442;
+}
+#toast-container > div.alert-info {
+  color: #31708f;
+}
+#toast-container > div.alert-warning {
+  color: #8a6d3b;
+}
+#toast-container > .alert {
+  background-image: none !important;
+}
+#toast-container > .alert:before {
+  position: fixed;
+  font-family: "Glyphicons Halflings";
+  font-size: 24px;
+  line-height: 18px;
+  float: left;
+  padding-right: 0.5em;
+  margin: auto 0.5em auto -1.5em;
+  font-weight: normal;
+}
+#toast-container > .alert-danger:before {
+  content: "\e101";
+}
+#toast-container > .alert-warning:before {
+  content: "\e107";
+}
+#toast-container > .alert-info:before {
+  content: "\e086";
+}
+#toast-container > .alert-success:before {
+  content: "\e013";
+}
+.toast-progress {
+  filter: alpha(opacity=10);
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+}
+/*LiveScore Components*/
+/*Main Colors*/
+/*Container*/
+/*LS Icons Font*/
+/*Assets Folder Path*/
+/*File Names*/
+/*Fonts Paths*/
+/*Images Paths*/
+/* value to update with retina sprite */
+/*CSS3 PIE Path*/
+/*Elements Colors*/
+/*Navbar Inverse*/
+/*User Left Sidebar*/
+/*Main Header*/
+/*Top BreadCrumbs*/
+/*Matches Slider*/
+/*Match Resume*/
+/*Match Statistics*/
+/*Match Teams Lineups*/
+/*Match Timeline*/
+/*Match Head to Head*/
+/*Player Summary*/
+/*Buttons*/
+/*Progress Bars*/
+/*Modals*/
+/*Validation Form-controls*/
+/*Form Elements*/
+/*DatePicker*/
+/*Footer*/
+/*Tables General*/
+/*Table status colors*/
+/*Table Icons*/
+/*Table Standings*/
+/*Typography*/
+/*Social like icons*/
+/*Player*/
+/*Upcoming Top Games - Block*/
+/*Bootstrap Wizard Component*/
+/*Color Picker Plugin*/
+/*Widget Creator Page*/
+/*User Dashboard & Contest*/
+/*News*/
+/*Streaming Page*/
+/*Content Header*/
+.content-header {
+  position: relative;
+  padding: 10px 6px;
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.content-header .avatar {
+  vertical-align: top;
+  display: table-cell;
+  position: relative;
+  padding: 10px 20px 10px 6px;
+  width: 15.5%;
+}
+.content-header .avatar img {
+  max-width: 65px;
+  margin-top: 8px;
+}
+.content-header .info {
+  display: table-cell;
+  padding: 10px 6px 10px 0;
+  vertical-align: top;
+}
+.content-header .info .title {
+  margin: 0;
+  line-height: 21px;
+}
+.content-header .info .title > span,
+.content-header .info .title > h1,
+.content-header .info .title > h2,
+.content-header .info .title > h3,
+.content-header .info .title > div {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 38px;
+  color: #474747;
+  margin: 0;
+  display: inline-block;
+}
+.content-header .info .title a {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+  vertical-align: top;
+  line-height: 38px;
+}
+.content-header .info .title a span {
+  vertical-align: middle;
+  color: #b0b0b0;
+}
+.content-header .info .title a.active {
+  color: #ffc600;
+}
+.content-header .info .title a.active span {
+  color: #ffc600;
+}
+.content-header .info .title a:hover {
+  color: #a1a1a1;
+}
+.content-header .info .title a:hover span {
+  color: #a1a1a1;
+}
+.content-header .info .title.uppercase {
+  text-transform: uppercase;
+}
+.content-header .info .btn-link {
+  font-weight: 400;
+  margin-top: 5px;
+}
+.content-header .info a {
+  color: #a6a6a6;
+  display: block;
+  font-size: 11px;
+}
+.content-header .info a span {
+  margin-right: 5px;
+}
+.content-header.teams .shirts {
+  text-align: right;
+  display: table-cell;
+  padding: 10px 0;
+}
+.content-header.teams .shirts a {
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  color: #adadad;
+}
+.content-header.teams .shirts a img {
+  display: block;
+  margin: 0 auto;
+}
+.content-header.teams a.star:hover span.add-to-my-team {
+  display: inline-block;
+}
+.content-header.teams a.star span.add-to-my-team {
+  text-transform: none;
+  color: #0053a8;
+  font-size: 12px;
+  margin-left: 0;
+  display: none;
+  vertical-align: baseline;
+}
+.content-header.teams a.star span.add-to-my-team:hover {
+  color: #0076f0;
+}
+.content-header.player .info {
+  margin-right: 46px;
+  width: 38%;
+}
+.content-header.player .info .title .first-name {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  padding-left: 2px;
+  display: block;
+}
+.content-header.player .info .title .last-name {
+  margin: 0;
+  display: block;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 32px;
+  color: #474747;
+}
+.content-header.player .description {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px 10px 10px 0;
+  width: 25%;
+}
+.content-header.player .description ul {
+  padding: 0;
+  list-style: none;
+}
+.content-header.player .description ul li {
+  padding: 1px 0;
+  font-size: 11px;
+  border-bottom: 1px solid #ededed;
+}
+.content-header.player .description ul li .icon {
+  margin-right: 5px;
+  font-size: 15px;
+  color: #5a5a5a;
+}
+.content-header.player .description ul li span.info {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-size: 13px;
+  color: #c4c4c4;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+}
+.content-header.player .description ul li span {
+  font-weight: 600;
+}
+.content-header.player .teams {
+  vertical-align: top;
+  text-align: right;
+  display: table-cell;
+  padding: 10px 0;
+}
+.content-header.player .teams a {
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  color: #adadad;
+  padding: 2px;
+}
+.content-header.player .teams a img {
+  max-width: 52px;
+  display: block;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 64px;
+  background: #e7e9eb;
+  color: #5c5c5c;
+}
+body.iframe {
+  padding: 0;
+}
+/*Typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #474747;
+}
+h1 {
+  font-weight: bold;
+}
+p {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 22px;
+}
+p b {
+  font-weight: 600;
+}
+p.lead {
+  font-size: 17px;
+}
+p.lead b {
+  font-weight: bold;
+}
+small,
+.small {
+  font-size: 13px;
+  font-weight: normal;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a > .icon-caret-right {
+  font-size: 10px;
+}
+a.view-more {
+  display: block;
+  font-size: 12px;
+  line-height: 23px;
+  padding: 6px 10px;
+}
+a.view-more > span {
+  font-size: 10px;
+  margin-right: 5px;
+}
+a.view-more > span > i {
+  vertical-align: middle;
+  font-size: 16px;
+}
+b,
+strong {
+  color: #5c5c5c;
+}
+iframe {
+  border: 0;
+  width: 100%;
+  margin-bottom: 18px;
+}
+/*Typography classes*/
+.uppercase {
+  text-transform: uppercase;
+}
+.page-title {
+  font-size: 27px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.content-wrapper h1 {
+  margin-top: 0px;
+}
+span.dark-icon {
+  color: #5c5c5c;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: url("../fonts/OpenSans-CondBold-webfont.eot");
+  src: url("../fonts/OpenSans-CondBold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-CondBold-webfont.woff") format('woff'), url("../fonts/OpenSans-CondBold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: url("../fonts/OpenSans-CondLight-webfont.eot");
+  src: url("../fonts/OpenSans-CondLight-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-CondLight-webfont.woff") format('woff'), url("../fonts/OpenSans-CondLight-webfont.ttf") format('truetype'), url("../fonts/OpenSans-CondLight-webfont.svg#open_sanscondensed_light") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Regular-webfont.woff") format('woff'), url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light-webfont.eot");
+  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Light-webfont.woff") format('woff'), url("../fonts/OpenSans-Light-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Light-webfont.svg#open_sanslight") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Semibold-webfont.eot");
+  src: url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Semibold-webfont.woff") format('woff'), url("../fonts/OpenSans-Semibold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold") format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Bold-webfont.woff") format('woff'), url("../fonts/OpenSans-Bold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraBold-webfont.eot");
+  src: url("../fonts/OpenSans-ExtraBold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-ExtraBold-webfont.woff") format('woff'), url("../fonts/OpenSans-ExtraBold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold") format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+/* Specific livescore Tables */
 .table {
   width: 100%;
   margin-bottom: 0px;
@@ -8363,40 +8966,6 @@ button.close {
   -moz-box-shadow: 5px 0 0 #5da400 inset;
   box-shadow: 5px 0 0 #5da400 inset;
 }
-.table tr th {
-  background-color: #eaeaea;
-  font-weight: 600;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #5d5d5d;
-  padding: 8px 20px;
-}
-.table tr th.divider {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-}
-.table tr th.divider.divider-dark {
-  background: #d9d9d9;
-}
-.table tr td {
-  font-size: 12px;
-  padding: 8px 10px;
-}
-.table tr:hover td {
-  background-color: #ededed;
-}
-.table.table-striped tbody tr:nth-child(even) td {
-  background-color: #fafafa;
-}
-.table.table-striped tbody tr:nth-child(odd) td {
-  background-color: #ffffff;
-}
-.table.table-striped tbody tr:nth-child(even):hover td,
-.table.table-striped tbody tr:nth-child(odd):hover td {
-  background-color: #ededed;
-}
 .table tr td.color-success,
 .table tr th.color-success {
   color: #87b762;
@@ -8410,6 +8979,34 @@ button.close {
   margin-right: 5px;
   position: relative;
   top: 0px;
+}
+.table tr th.divider {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.table tr th.divider.divider-dark {
+  background: #d9d9d9;
+}
+.table tr td.stage {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table tr td.stage img {
+  max-width: 18px;
+  margin-right: 3px;
+}
+.table tr td.league img {
+  max-width: 18px;
+}
+.table tr td.hour {
+  font-weight: 600;
+  text-align: center;
+}
+.table tr td.date {
+  text-align: center;
 }
 .table tr.empty-row td {
   text-align: center;
@@ -8765,12 +9362,6 @@ button.close {
   -moz-box-shadow: 5px 0 0 #5da400 inset;
   box-shadow: 5px 0 0 #5da400 inset;
 }
-.table.table-condensed thead > tr th {
-  border: 0;
-  padding: 4px 7px;
-  font-size: 11px;
-  font-weight: 600;
-}
 .table.table-condensed thead.league-data > tr > th {
   background-color: #767e82;
   text-align: left;
@@ -8778,24 +9369,6 @@ button.close {
   text-transform: none;
   padding: 0;
   font-size: 0;
-}
-.table.table-condensed tr th {
-  border: 0;
-  padding: 4px 7px;
-  font-size: 11px;
-  font-weight: 600;
-}
-.table.table-condensed tr td {
-  line-height: 20px;
-  font-size: 12px;
-  border-left: none;
-  padding: 3px 4px;
-}
-.table.table-condensed tr td:first-child {
-  border-left: 0;
-}
-.table.table-condensed tr td:last-child {
-  border-right: 0;
 }
 .table.table-condensed tr td span.icon-caret-right,
 .table.table-condensed tr td span.icon-caret-right {
@@ -9489,6 +10062,133 @@ button.close {
 .table:hover tr.league-data > th .title span.match-name {
   display: inline-block;
 }
+.table.layout-fixed {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.table.layout-fixed tr td {
+  width: auto;
+  /*
+                        overflow: hidden;
+
+        */
+}
+.table.layout-fixed tr td.team > a {
+  overflow: hidden;
+  position: relative;
+}
+.table.layout-fixed colgroup col.hour {
+  width: 44px;
+}
+.table.layout-fixed colgroup col.time {
+  width: 50px;
+}
+.table.layout-fixed colgroup col.team {
+  min-width: 50px;
+}
+.table.layout-fixed colgroup col.score {
+  width: 46px;
+}
+.table.layout-fixed colgroup col.half-time-score {
+  width: 44px;
+}
+.table.layout-fixed colgroup col.tools {
+  width: 145px;
+}
+.table.layout-fixed colgroup col.tools-1 {
+  width: 32px;
+}
+.table.layout-fixed colgroup col.tools-2 {
+  width: 40px;
+}
+.table.layout-fixed colgroup col.tools-4 {
+  width: 74px;
+}
+.table.layout-fixed colgroup col.tools-5 {
+  width: 94px;
+}
+.table.layout-fixed colgroup col.tools-6 {
+  width: 114px;
+}
+.table.layout-fixed colgroup col.tools-7 {
+  width: 130px;
+}
+.table.layout-fixed colgroup col.number {
+  width: 25px ;
+}
+.table.layout-fixed colgroup col.event-leg {
+  width: 25px;
+}
+.table.layout-fixed colgroup col.event-outcome {
+  width: 25px;
+}
+.table.layout-fixed colgroup col.league {
+  width: 30px;
+}
+.table.layout-fixed colgroup col.league-logo {
+  width: 30px;
+}
+.table.layout-fixed colgroup col.logo {
+  width: 22px;
+}
+.table.layout-fixed colgroup col.date {
+  width: 44px ;
+}
+.table.layout-fixed colgroup col.date-dmy {
+  width: 57px ;
+}
+.table.layout-fixed colgroup col.stage {
+  width: 80px;
+}
+.table.layout-fixed colgroup col.stage-has-logo {
+  width: 95px;
+}
+.table.layout-fixed colgroup col.minutes {
+  width: 60px;
+}
+.table.layout-fixed colgroup col.odd {
+  width: 54px ;
+}
+.table.layout-fixed colgroup col.prediction {
+  width: 84px ;
+}
+.table.layout-fixed colgroup col.prediction-status {
+  width: 25px;
+}
+.table.layout-fixed colgroup col.trend {
+  width: 70px;
+}
+.table.layout-fixed colgroup col.goal-minute {
+  width: 30px;
+}
+.table.layout-fixed colgroup col.point {
+  width: 30px;
+}
+.table.layout-fixed colgroup col.points {
+  width: 34px;
+}
+.table.layout-fixed colgroup col.point-details {
+  width: 10px;
+}
+.table.layout-fixed colgroup col.extra-points {
+  width: 30px;
+}
+.table.layout-fixed colgroup col.rank-variation {
+  width: 30px;
+}
+.table.layout-fixed colgroup col.favorite {
+  width: 25px;
+}
+.table.popover-odd-evolution {
+  width: 100%;
+  margin-top: 3px;
+}
+.table.popover-odd-evolution tr td.old {
+  text-decoration: line-through;
+}
+.table.popover-odd-evolution tr td.icon span {
+  font-size: 12px;
+}
 .table.league-selection {
   border: 1px solid #f5f5f5;
 }
@@ -9572,706 +10272,6 @@ button.close {
 .table.predictions tbody tr td.league-logo img {
   max-width: 16px;
   max-height: 16px;
-}
-/*jQuery UI Components*/
-/*Custom General Icons Behavior*/
-.ui-datepicker {
-  width: 260px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
-  padding: 50px 15px 15px;
-  position: relative;
-  display: none;
-  background-color: #ffffff;
-  border: 1px solid #f0f0f0;
-  /**
-   * I don't think we need this arrow.
-   * Seb will provide the design for each datepicker and then we'll see if
-   * the arrow is needed for any of the datepicker style.
-   * Right now, it's breaking the proper integration
-  */
-}
-.ui-datepicker.ui-datepicker-with-border {
-  border: 1px solid #e1e1e1;
-  margin-top: -1px;
-}
-.ui-datepicker .ui-datepicker-header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  background-color: #fcfcfc;
-  border-bottom: 1px solid #ebebeb;
-}
-.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
-  height: 36px;
-  line-height: 36px;
-  margin: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #c2c2c2;
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev,
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
-  position: absolute;
-  line-height: 36px;
-  width: 40px;
-  text-align: center;
-  cursor: pointer;
-  color: #b5b5b5;
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after,
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:after {
-  background-color: #fcfcfc;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  text-align: center;
-  font-family: "LSicons";
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:hover:after,
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:hover:after {
-  background-color: #f7f7f7;
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev {
-  left: 0;
-  border-right: 1px solid #ebebeb;
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after {
-  content: "\e60c";
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
-  right: 0;
-  border-left: 1px solid #ebebeb;
-}
-.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:after {
-  content: "\e60d";
-}
-.ui-datepicker table.ui-datepicker-calendar {
-  width: 100%;
-}
-.ui-datepicker table.ui-datepicker-calendar thead tr th {
-  text-align: center;
-  padding: 5px;
-}
-.ui-datepicker table.ui-datepicker-calendar tbody tr td {
-  text-align: center;
-}
-.ui-datepicker table.ui-datepicker-calendar tbody tr td a {
-  display: inline-block;
-  padding: 5px;
-  margin: 1px;
-  color: #333333;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  width: 30px;
-  height: 30px;
-  line-height: 20px;
-  font-size: 14px;
-  border: 1px solid transparent;
-  background-clip: border-box;
-}
-@media \0screen {
-  .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
-  background-color: #5da400;
-  border-color: #5da400;
-  color: #ffffff;
-}
-.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-priority-secondary {
-  color: #d2d2d2;
-}
-.ui-datepicker table.ui-datepicker-calendar tbody tr td a:hover {
-  background-color: #ebebeb;
-  border-color: #ebebeb;
-  color: #333333;
-}
-.ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
-  border-color: #5da400;
-}
-/*Toastr notifications*/
-#toast-container.toast-top-left,
-#toast-container.toast-top-center,
-#toast-container.toast-top-right {
-  top: 75px;
-}
-#toast-container.toast-top-left > div,
-#toast-container.toast-top-center > div,
-#toast-container.toast-top-right > div {
-  margin-bottom: 8px;
-}
-#toast-container > div {
-  opacity: 0.9;
-  -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
-}
-#toast-container > div:hover {
-  -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.35);
-}
-#toast-container > div.alert-success {
-  color: #3c763d;
-}
-#toast-container > div.alert-danger {
-  color: #a94442;
-}
-#toast-container > div.alert-info {
-  color: #31708f;
-}
-#toast-container > div.alert-warning {
-  color: #8a6d3b;
-}
-#toast-container > .alert {
-  background-image: none !important;
-}
-#toast-container > .alert:before {
-  position: fixed;
-  font-family: "Glyphicons Halflings";
-  font-size: 24px;
-  line-height: 18px;
-  float: left;
-  padding-right: 0.5em;
-  margin: auto 0.5em auto -1.5em;
-  font-weight: normal;
-}
-#toast-container > .alert-danger:before {
-  content: "\e101";
-}
-#toast-container > .alert-warning:before {
-  content: "\e107";
-}
-#toast-container > .alert-info:before {
-  content: "\e086";
-}
-#toast-container > .alert-success:before {
-  content: "\e013";
-}
-.toast-progress {
-  filter: alpha(opacity=10);
-  -webkit-opacity: 0.1;
-  -moz-opacity: 0.1;
-  opacity: 0.1;
-}
-/*LiveScore Components*/
-/*Main Colors*/
-/*Container*/
-/*LS Icons Font*/
-/*Assets Folder Path*/
-/*File Names*/
-/*Fonts Paths*/
-/*Images Paths*/
-/* value to update with retina sprite */
-/*CSS3 PIE Path*/
-/*Elements Colors*/
-/*Navbar Inverse*/
-/*User Left Sidebar*/
-/*Main Header*/
-/*Top BreadCrumbs*/
-/*Matches Slider*/
-/*Match Resume*/
-/*Match Statistics*/
-/*Match Teams Lineups*/
-/*Match Timeline*/
-/*Match Head to Head*/
-/*Player Summary*/
-/*Buttons*/
-/*Progress Bars*/
-/*Modals*/
-/*Validation Form-controls*/
-/*Form Elements*/
-/*DatePicker*/
-/*Footer*/
-/*Tables General*/
-/*Table status colors*/
-/*Table Icons*/
-/*Table Standings*/
-/*Typography*/
-/*Social like icons*/
-/*Player*/
-/*Upcoming Top Games - Block*/
-/*Bootstrap Wizard Component*/
-/*Color Picker Plugin*/
-/*Widget Creator Page*/
-/*User Dashboard & Contest*/
-/*News*/
-/*Streaming Page*/
-/*Content Header*/
-.content-header {
-  position: relative;
-  padding: 10px 6px;
-  display: table;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.content-header .avatar {
-  vertical-align: top;
-  display: table-cell;
-  position: relative;
-  padding: 10px 20px 10px 6px;
-  width: 15.5%;
-}
-.content-header .avatar img {
-  max-width: 65px;
-  margin-top: 8px;
-}
-.content-header .info {
-  display: table-cell;
-  padding: 10px 6px 10px 0;
-  vertical-align: top;
-}
-.content-header .info .title {
-  margin: 0;
-  line-height: 21px;
-}
-.content-header .info .title > span,
-.content-header .info .title > h1,
-.content-header .info .title > h2,
-.content-header .info .title > h3,
-.content-header .info .title > div {
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 38px;
-  color: #474747;
-  margin: 0;
-  display: inline-block;
-}
-.content-header .info .title a {
-  display: inline-block;
-  font-size: 14px;
-  margin-left: 10px;
-  vertical-align: top;
-  line-height: 38px;
-}
-.content-header .info .title a span {
-  vertical-align: middle;
-  color: #b0b0b0;
-}
-.content-header .info .title a.active {
-  color: #ffc600;
-}
-.content-header .info .title a.active span {
-  color: #ffc600;
-}
-.content-header .info .title a:hover {
-  color: #a1a1a1;
-}
-.content-header .info .title a:hover span {
-  color: #a1a1a1;
-}
-.content-header .info .title.uppercase {
-  text-transform: uppercase;
-}
-.content-header .info .btn-link {
-  font-weight: 400;
-  margin-top: 5px;
-}
-.content-header .info a {
-  color: #a6a6a6;
-  display: block;
-  font-size: 11px;
-}
-.content-header .info a span {
-  margin-right: 5px;
-}
-.content-header.teams .shirts {
-  text-align: right;
-  display: table-cell;
-  padding: 10px 0;
-}
-.content-header.teams .shirts a {
-  text-align: center;
-  display: inline-block;
-  font-size: 11px;
-  color: #adadad;
-}
-.content-header.teams .shirts a img {
-  display: block;
-  margin: 0 auto;
-}
-.content-header.teams a.star:hover span.add-to-my-team {
-  display: inline-block;
-}
-.content-header.teams a.star span.add-to-my-team {
-  text-transform: none;
-  color: #0053a8;
-  font-size: 12px;
-  margin-left: 0;
-  display: none;
-  vertical-align: baseline;
-}
-.content-header.teams a.star span.add-to-my-team:hover {
-  color: #0076f0;
-}
-.content-header.player .info {
-  margin-right: 46px;
-  width: 38%;
-}
-.content-header.player .info .title .first-name {
-  margin: 0;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 600;
-  padding-left: 2px;
-  display: block;
-}
-.content-header.player .info .title .last-name {
-  margin: 0;
-  display: block;
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 32px;
-  color: #474747;
-}
-.content-header.player .description {
-  display: table-cell;
-  vertical-align: top;
-  padding: 10px 10px 10px 0;
-  width: 25%;
-}
-.content-header.player .description ul {
-  padding: 0;
-  list-style: none;
-}
-.content-header.player .description ul li {
-  padding: 1px 0;
-  font-size: 11px;
-  border-bottom: 1px solid #ededed;
-}
-.content-header.player .description ul li .icon {
-  margin-right: 5px;
-  font-size: 15px;
-  color: #5a5a5a;
-}
-.content-header.player .description ul li span.info {
-  float: right;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  font-size: 13px;
-  color: #c4c4c4;
-  cursor: pointer;
-  position: relative;
-  top: 3px;
-}
-.content-header.player .description ul li span {
-  font-weight: 600;
-}
-.content-header.player .teams {
-  vertical-align: top;
-  text-align: right;
-  display: table-cell;
-  padding: 10px 0;
-}
-.content-header.player .teams a {
-  text-align: center;
-  display: inline-block;
-  font-size: 11px;
-  color: #adadad;
-  padding: 2px;
-}
-.content-header.player .teams a img {
-  max-width: 52px;
-  display: block;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 64px;
-  background: #e7e9eb;
-  color: #5c5c5c;
-}
-body.iframe {
-  padding: 0;
-}
-/*Typography*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  color: #474747;
-}
-h1 {
-  font-weight: bold;
-}
-p {
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 22px;
-}
-p b {
-  font-weight: 600;
-}
-p.lead {
-  font-size: 17px;
-}
-p.lead b {
-  font-weight: bold;
-}
-small,
-.small {
-  font-size: 13px;
-  font-weight: normal;
-}
-a:hover {
-  text-decoration: none;
-}
-a:focus {
-  text-decoration: none;
-}
-a > .icon-caret-right {
-  font-size: 10px;
-}
-a.view-more {
-  display: block;
-  font-size: 12px;
-  line-height: 23px;
-  padding: 6px 10px;
-}
-a.view-more > span {
-  font-size: 10px;
-  margin-right: 5px;
-}
-a.view-more > span > i {
-  vertical-align: middle;
-  font-size: 16px;
-}
-b,
-strong {
-  color: #5c5c5c;
-}
-iframe {
-  border: 0;
-  width: 100%;
-  margin-bottom: 18px;
-}
-/*Typography classes*/
-.uppercase {
-  text-transform: uppercase;
-}
-.page-title {
-  font-size: 27px;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 10px;
-}
-.content-wrapper h1 {
-  margin-top: 0px;
-}
-span.dark-icon {
-  color: #5c5c5c;
-}
-@font-face {
-  font-family: 'Open Sans Condensed';
-  src: url("../fonts/OpenSans-CondBold-webfont.eot");
-  src: url("../fonts/OpenSans-CondBold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-CondBold-webfont.woff") format('woff'), url("../fonts/OpenSans-CondBold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold") format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans Condensed';
-  src: url("../fonts/OpenSans-CondLight-webfont.eot");
-  src: url("../fonts/OpenSans-CondLight-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-CondLight-webfont.woff") format('woff'), url("../fonts/OpenSans-CondLight-webfont.ttf") format('truetype'), url("../fonts/OpenSans-CondLight-webfont.svg#open_sanscondensed_light") format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Regular-webfont.woff") format('woff'), url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Light-webfont.eot");
-  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Light-webfont.woff") format('woff'), url("../fonts/OpenSans-Light-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Light-webfont.svg#open_sanslight") format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Semibold-webfont.eot");
-  src: url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Semibold-webfont.woff") format('woff'), url("../fonts/OpenSans-Semibold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold") format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Bold-webfont.eot");
-  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Bold-webfont.woff") format('woff'), url("../fonts/OpenSans-Bold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-ExtraBold-webfont.eot");
-  src: url("../fonts/OpenSans-ExtraBold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-ExtraBold-webfont.woff") format('woff'), url("../fonts/OpenSans-ExtraBold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold") format('svg');
-  font-weight: 800;
-  font-style: normal;
-}
-/* Specific livescore Tables */
-table tr td.stage {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-table tr td.stage img {
-  max-width: 18px;
-  margin-right: 3px;
-}
-table tr td.league img {
-  max-width: 18px;
-}
-table tr td.hour {
-  font-weight: 600;
-  text-align: center;
-}
-table tr td.date {
-  text-align: center;
-}
-table.layout-fixed {
-  table-layout: fixed;
-  border-collapse: collapse;
-}
-table.layout-fixed tr td {
-  width: auto;
-  /*
-				overflow: hidden;
-				
-*/
-}
-table.layout-fixed tr td.team > a {
-  overflow: hidden;
-  position: relative;
-}
-table.layout-fixed colgroup col.hour {
-  width: 44px;
-}
-table.layout-fixed colgroup col.time {
-  width: 50px;
-}
-table.layout-fixed colgroup col.team {
-  min-width: 50px;
-}
-table.layout-fixed colgroup col.score {
-  width: 46px;
-}
-table.layout-fixed colgroup col.half-time-score {
-  width: 44px;
-}
-table.layout-fixed colgroup col.tools {
-  width: 145px;
-}
-table.layout-fixed colgroup col.tools-1 {
-  width: 32px;
-}
-table.layout-fixed colgroup col.tools-2 {
-  width: 40px;
-}
-table.layout-fixed colgroup col.tools-4 {
-  width: 74px;
-}
-table.layout-fixed colgroup col.tools-5 {
-  width: 94px;
-}
-table.layout-fixed colgroup col.tools-6 {
-  width: 114px;
-}
-table.layout-fixed colgroup col.tools-7 {
-  width: 130px;
-}
-table.layout-fixed colgroup col.number {
-  width: 25px ;
-}
-table.layout-fixed colgroup col.event-leg {
-  width: 25px;
-}
-table.layout-fixed colgroup col.event-outcome {
-  width: 25px;
-}
-table.layout-fixed colgroup col.league {
-  width: 30px;
-}
-table.layout-fixed colgroup col.league-logo {
-  width: 30px;
-}
-table.layout-fixed colgroup col.logo {
-  width: 22px;
-}
-table.layout-fixed colgroup col.date {
-  width: 44px ;
-}
-table.layout-fixed colgroup col.date-dmy {
-  width: 57px ;
-}
-table.layout-fixed colgroup col.stage {
-  width: 80px;
-}
-table.layout-fixed colgroup col.stage-has-logo {
-  width: 95px;
-}
-table.layout-fixed colgroup col.minutes {
-  width: 60px;
-}
-table.layout-fixed colgroup col.odd {
-  width: 54px ;
-}
-table.layout-fixed colgroup col.prediction {
-  width: 84px ;
-}
-table.layout-fixed colgroup col.prediction-status {
-  width: 25px;
-}
-table.layout-fixed colgroup col.trend {
-  width: 70px;
-}
-table.layout-fixed colgroup col.goal-minute {
-  width: 30px;
-}
-table.layout-fixed colgroup col.point {
-  width: 30px;
-}
-table.layout-fixed colgroup col.points {
-  width: 34px;
-}
-table.layout-fixed colgroup col.point-details {
-  width: 10px;
-}
-table.layout-fixed colgroup col.extra-points {
-  width: 30px;
-}
-table.layout-fixed colgroup col.rank-variation {
-  width: 30px;
-}
-table.layout-fixed colgroup col.favorite {
-  width: 25px;
-}
-table.popover-odd-evolution {
-  width: 100%;
-  margin-top: 3px;
-}
-table.popover-odd-evolution tr td.old {
-  text-decoration: line-through;
-}
-table.popover-odd-evolution tr td.icon span {
-  font-size: 12px;
 }
 /* Mixins */
 /*Custom Buttons*/
