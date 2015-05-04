@@ -8,8 +8,8 @@ function drawChart() {
     if(document.getElementById('chart_OU')) {
         var data4 = google.visualization.arrayToDataTable([
             ['Year', 'Over 2,5 Goals', 'Under 2,5 Goals'],
-            ['2013/2014',     20, 18],
-            ['2013/2014',     18, 16]
+            ['Previous season',     20, 18],
+            ['Current season',     18, 16]
         ]);
 
         var options4 = {
@@ -26,8 +26,8 @@ function drawChart() {
     if(document.getElementById('chart_OU_2')) {
         var data5 = google.visualization.arrayToDataTable([
             ['Year', 'Over 2,5 Goals', 'Under 2,5 Goals'],
-            ['2013/2014',     20, 18],
-            ['2013/2014',     18, 16]
+            ['Previous season',     20, 18],
+            ['Current Season',     18, 16]
         ]);
 
         var options5 = {
