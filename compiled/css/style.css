@@ -3443,7 +3443,7 @@ tbody.collapse.in {
   text-align: left;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #e6e6e6;
   border-radius: 2px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -5977,7 +5977,7 @@ button.close {
   background-color: #ffffff;
   background-clip: padding-box;
   border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -6028,7 +6028,7 @@ button.close {
   margin-left: -11px;
   border-bottom-width: 0;
   border-top-color: #999999;
-  border-top-color: rgba(0, 0, 0, 0.25);
+  border-top-color: #e6e6e6;
   bottom: -11px;
 }
 .popover.top > .arrow:after {
@@ -6044,7 +6044,7 @@ button.close {
   margin-top: -11px;
   border-left-width: 0;
   border-right-color: #999999;
-  border-right-color: rgba(0, 0, 0, 0.25);
+  border-right-color: #e6e6e6;
 }
 .popover.right > .arrow:after {
   content: " ";
@@ -6058,7 +6058,7 @@ button.close {
   margin-left: -11px;
   border-top-width: 0;
   border-bottom-color: #999999;
-  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-bottom-color: #e6e6e6;
   top: -11px;
 }
 .popover.bottom > .arrow:after {
@@ -6074,7 +6074,7 @@ button.close {
   margin-top: -11px;
   border-right-width: 0;
   border-left-color: #999999;
-  border-left-color: rgba(0, 0, 0, 0.25);
+  border-left-color: #e6e6e6;
 }
 .popover.left > .arrow:after {
   content: " ";
@@ -6856,7 +6856,7 @@ button.close {
 /*Dropdown*/
 .dropdown-menu {
   border-radius: 0;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #e6e6e6;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
@@ -7859,8 +7859,6 @@ button.close {
   background-clip: padding-box;
   behavior: "js/css3pie/PIE.htc";
   padding: 0;
-  border: none;
-  border-top: 1px solid #f5f5f5;
 }
 .popover .popover-title {
   -webkit-border-top-right-radius: 0;
