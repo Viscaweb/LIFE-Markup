@@ -17457,9 +17457,6 @@ main .content .league-list ul li span.logo {
 main .content .league-list ul li span.logo img {
   max-width: 18px;
 }
-main .content .league-list ul li span.name {
-  font-weight: 600;
-}
 main .content .league-list ul li span.fav .icon {
   cursor: pointer;
   float: right;
