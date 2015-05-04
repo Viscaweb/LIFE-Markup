@@ -15,8 +15,8 @@
         <div class="col-sm-6">{% include 'blocks/sports/team/team_form_2.html.twig' %}</div>
     </div>
     <div class="row">
-        <div class="col-sm-6">{% include 'blocks/sports/team/team_over_under_1.html.twig' %}</div>
-        <div class="col-sm-6">{% include 'blocks/sports/team/team_over_under_2.html.twig' %}</div>
+        <div class="col-sm-6">{{ include('blocks/sports/team/team_over_under_v1.1.html.twig', {logo: 'true'}) }}</div>
+        <div class="col-sm-6">{{ include('blocks/sports/team/team_over_under_v1.1.html.twig', {logo: 'true', team2: '_2'}) }}</div>
     </div>
     {% include 'blocks/various/comment_thread.html.twig' %}
     {% include 'blocks/modals/modal_report_message.html.twig' %}

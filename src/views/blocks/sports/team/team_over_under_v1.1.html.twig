@@ -1,8 +1,15 @@
 <div class="panel panel-default team-over-under">
     <div class="panel-heading">
-        O/U 2,5 Goals PSG
+        O/U 2,5 Goals
+        {% if logo %}
+            <div class="tools">
+                <ul class="nav nav-pills teams">
+                    <li><img alt="Real" src="img/sprites/realmadrid.png"></li>
+                </ul>
+            </div>
+        {% endif %}
     </div>
     <div class="panel-body">
-        <div id="chart_OU"></div>
+        <div id="chart_OU{{ team2 }}"></div>
     </div>
 </div>
