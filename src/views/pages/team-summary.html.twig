@@ -8,21 +8,21 @@
     {% include 'blocks/elements/content_header_team.html.twig' %}
     {{ include('blocks/elements/page_tabs.html.twig', {type: 'team'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
-    {% include 'blocks/sports/team_small_results_next.html.twig' %}
-    {{ include('blocks/sports/match_listing_by_team.html.twig', {in_panel:'true'}) }}
-    {% include 'blocks/sports/competition_top_scorers.html.twig' %}
+    {% include 'blocks/sports/team/team_small_results_next.html.twig' %}
+    {{ include('blocks/sports/listings/match_listing_by_team.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/sports/competition/competition_top_scorers.html.twig' %}
     <div class="row">
         <div class="col-md-6">
-            {% include 'blocks/sports/team_last_season_statistics.html.twig' %}
-            {% include 'blocks/sports/team_over_under_v1.1.html.twig' %}
-            {{ include('blocks/sports/team_last_season_card_statistics_v1.1.html.twig', {in_panel:'true'}) }}
+            {% include 'blocks/sports/team/team_last_season_statistics.html.twig' %}
+            {% include 'blocks/sports/team/team_over_under_v1.1.html.twig' %}
+            {{ include('blocks/sports/team/team_last_season_card_statistics_v1.1.html.twig', {in_panel:'true'}) }}
         </div>
         <div class="col-md-6">
-            {{ include('blocks/sports/team_results_statistics.html.twig', {in_panel:'true'}) }}
-            {% include 'blocks/sports/team_last_season_goals_statistics.html.twig' %}
+            {{ include('blocks/sports/team/team_results_statistics.html.twig', {in_panel:'true'}) }}
+            {% include 'blocks/sports/team/team_last_season_goals_statistics.html.twig' %}
         </div>
     </div>
-    {% include 'blocks/sports/standing_evolution.html.twig' %}
+    {% include 'blocks/sports/team/team_standing_evolution.html.twig' %}
 {% endblock %}
 
 {% block content_right %}

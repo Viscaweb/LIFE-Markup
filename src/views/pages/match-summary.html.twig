@@ -6,21 +6,21 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'blocks/sports/match_alert_other_year.html.twig' %}
-    {% include 'blocks/sports/match_information.html.twig' %}
+    {% include 'blocks/sports/match/match_alert_other_year.html.twig' %}
+    {% include 'blocks/sports/match/match_information.html.twig' %}
     {{ include('blocks/elements/page_tabs.html.twig', {type: 'match'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
-    {% include 'blocks/sports/match_timeline.html.twig' %}
-    {% include 'blocks/sports/match_incidents.html.twig' %}
-    {% include 'blocks/sports/match_statistics.html.twig' %}
-    {% include 'blocks/sports/match_lineups.html.twig' %}
-    {% include 'blocks/sports/match_odds_1x2.html.twig' %}
-    {% include 'blocks/sports/match_prediction.html.twig' %}
-    {% include 'blocks/sports/match_betting_tips.html.twig' %}
-    {% include 'blocks/sports/match_betting_tips_iframe.html.twig' %}
-    {% include 'blocks/sports/match_lineups_list.html.twig' %}
-    {% include 'blocks/sports/match_comments.html.twig' %}
-    {% include 'blocks/sports/match_comments_iframe.html.twig' %}
+    {% include 'blocks/sports/match/match_timeline.html.twig' %}
+    {% include 'blocks/sports/match/match_incidents.html.twig' %}
+    {% include 'blocks/sports/match/match_statistics.html.twig' %}
+    {% include 'blocks/sports/match/match_lineups.html.twig' %}
+    {% include 'blocks/sports/match/match_odds_1x2.html.twig' %}
+    {% include 'blocks/sports/match/match_prediction.html.twig' %}
+    {% include 'blocks/sports/match/match_betting_tips.html.twig' %}
+    {% include 'blocks/sports/match/match_betting_tips_iframe.html.twig' %}
+    {% include 'blocks/sports/match/match_lineups_list.html.twig' %}
+    {% include 'blocks/sports/match/match_comments.html.twig' %}
+    {% include 'blocks/sports/match/match_comments_iframe.html.twig' %}
 
 
 
@@ -28,8 +28,8 @@
 
 {% block content_right %}
     {% include 'blocks/sports/top_competitions_tables.html.twig' %}
-    {% include 'blocks/sports/team_head2head_sidebar.html.twig' %}
-    {% include 'blocks/sports/team_form_1.html.twig' %}
-    {% include 'blocks/sports/team_form_2.html.twig' %}
+    {% include 'blocks/sports/match/team_head2head_sidebar.html.twig' %}
+    {% include 'blocks/sports/team/team_form_1.html.twig' %}
+    {% include 'blocks/sports/team/team_form_2.html.twig' %}
     {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
 {% endblock %}

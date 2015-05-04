@@ -12,7 +12,7 @@
 
 {% block content %}
     {{ include('blocks/elements/page_tabs.html.twig', {type: 'country'}) }}
-    {% include 'blocks/sports/competition_standing_panel.html.twig' %}
+    {% include 'blocks/sports/competition/competition_standing_panel.html.twig' %}
     {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
     {% include 'blocks/predictions/predictions_alert_welcome.html.twig' %}
     <div class="row">
@@ -23,8 +23,8 @@
             {% include 'blocks/predictions/predictions_contest_rules_link.html.twig' %}
         </div>
     </div>
-    {% include 'blocks/sports/match_listing_A_R.html.twig' %}
-    {% include 'blocks/sports/match_prediction_no_contest.html.twig' %}
+    {% include 'blocks/sports/listings/match_listing_A_R.html.twig' %}
+    {% include 'blocks/sports/match/match_prediction_no_contest.html.twig' %}
     {% include 'blocks/elements/sports_tabs.html.twig' %}
 
 {% endblock %}

@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'blocks/sports/match_information.html.twig' %}
+    {% include 'blocks/sports/match/match_information.html.twig' %}
     {{ include('blocks/elements/page_tabs.html.twig', {type: 'match'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
-    {% include 'blocks/sports/match_videos.html.twig' %}
+    {% include 'blocks/sports/match/match_videos.html.twig' %}
     {% include 'blocks/various/comment_thread.html.twig' %}
 
 
@@ -17,8 +17,8 @@
 
 {% block content_right %}
     {% include 'blocks/sports/top_competitions_tables.html.twig' %}
-    {% include 'blocks/sports/team_head2head_sidebar.html.twig' %}
-    {% include 'blocks/sports/team_form_1.html.twig' %}
-    {% include 'blocks/sports/team_form_2.html.twig' %}
+    {% include 'blocks/sports/match/team_head2head_sidebar.html.twig' %}
+    {% include 'blocks/sports/team/team_form_1.html.twig' %}
+    {% include 'blocks/sports/team/team_form_2.html.twig' %}
     {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
 {% endblock %}
