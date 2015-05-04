@@ -7,53 +7,6 @@
                     <img src="img/drag-drop-line.png" alt="Drag Drop Line">
                     <span>Drag drop leagues to reorder</span>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-window"><span class="icon glyphicon glyphicon-plus"></span>Add favorite leagues</button>
-                    <div class="modal fade" id="modal-window">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Add League</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <label>Type here to search a competition :</label>
-                                            <div class="inner-addon right-addon">
-                                                <i class="glyphicon glyphicon-search"></i>
-                                                <input data-toggle="dropdown" type="text" placeholder="Champions League, Europa League..." class="form-control">
-
-                                                {{ include('blocks/search/search_suggest_dropdown.html.twig', {type: 'leagues'}) }}
-
-                                            </div>
-                                            <div class="divider"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <table class="table table-striped no-border league-selection">
-                                                <tbody>
-                                                <tr>
-                                                    <td class="flag"><span class="country-flag fr"></span></td>
-                                                    <td class="name">Ligue 1 (Football, France)</td>
-                                                    <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="flag"><span class="country-flag _England"></span></td>
-                                                    <td class="name">Premier League (Football, England)</td>
-                                                    <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Add Leagues</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div>
-                    </div>
                 </div>
                 <ul class="sortable-ul">
                     <li>
@@ -179,5 +132,54 @@
                 </ul>
             </div>
         </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-window">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Add League</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Type here to search a competition :</label>
+                        <div class="inner-addon right-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input data-toggle="dropdown" type="text" placeholder="Champions League, Europa League..." class="form-control">
+
+                            {{ include('blocks/search/search_suggest_dropdown.html.twig', {type: 'leagues'}) }}
+
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-striped no-border league-selection">
+                            <tbody>
+                            <tr>
+                                <td class="flag"><span class="country-flag fr"></span></td>
+                                <td class="name">Ligue 1 (Football, France)</td>
+                                <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td class="flag"><span class="country-flag _England"></span></td>
+                                <td class="name">Premier League (Football, England)</td>
+                                <td class="functions"><a class="btn btn-danger btn-sm">Delete</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add Leagues</button>
+            </div>
+        </div><!-- /.modal-content -->
     </div>
 </div>
