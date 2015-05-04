@@ -3727,6 +3727,10 @@ span.glyphicon-star.active {
   color: #5da400;
 }
 
+.streaming-matches table tbody tr td.icon a:hover {
+  color: #407100;
+}
+
 .streaming-matches table tbody tr td.tools {
   width: 30%;
 }
