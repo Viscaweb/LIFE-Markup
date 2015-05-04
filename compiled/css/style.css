@@ -10185,6 +10185,9 @@ table.layout-fixed colgroup col.tools-1 {
 table.layout-fixed colgroup col.tools-2 {
   width: 40px;
 }
+table.layout-fixed colgroup col.tools-4 {
+  width: 74px;
+}
 table.layout-fixed colgroup col.tools-5 {
   width: 94px;
 }

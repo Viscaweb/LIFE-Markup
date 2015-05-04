@@ -12478,6 +12478,10 @@ table.layout-fixed colgroup col.tools-2 {
   width: 40px;
 }
 
+table.layout-fixed colgroup col.tools-4 {
+  width: 74px;
+}
+
 table.layout-fixed colgroup col.tools-5 {
   width: 94px;
 }
@@ -15123,8 +15127,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .content .match.highlight table tr td.team {
   color: #424749;
-}
-
-.match-slider-inverse .content .match:hover {
-  background-color: #363a3c;
 }
