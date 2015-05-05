@@ -1,3 +1,9 @@
+{% if withContest %}
+    {% set colWidth = '6' %}
+{% else %}
+    {% set colWidth = '12' %}
+{% endif %}
+
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default match-prediction">
@@ -33,6 +39,8 @@
                 </div>
             </div>
             <div class="row">
+
+                {% if withContest %}
                 <div class="col-md-6">
                     <span class="title h5">Predictions Contest</span>
                     <div class="content">
@@ -42,7 +50,9 @@
                         <a href="#" class="btn btn-primary">Predictions Contest</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                {% endif %}
+
+                <div class="col-md-{{ colWidth }}">
                     <div class="notification">
                         <div class="icon"><span class="icon icon-clock"></span></div>
                         <span>Result pending...</span>
