@@ -5811,10 +5811,10 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 20px;
 }
 .modal-footer {
-  padding: 15px;
+  padding: 20px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
@@ -7909,9 +7909,6 @@ button.close {
   font-size: 24px;
   margin-top: -4px;
   margin-right: 5px;
-}
-.modal .modal-dialog .modal-content .modal-body {
-  padding: 20px;
 }
 .modal .modal-dialog .modal-content .modal-footer {
   -webkit-border-radius: 0 0 2px 2px;
@@ -10805,6 +10802,10 @@ fieldset[disabled] .btn-twitter.active {
 .btn-group .btn + .select-component,
 .btn-group .select-component + .btn {
   margin-left: -1px;
+}
+/* Livescores Modals */
+.modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
+  padding: 0;
 }
 span.sprite-icons {
   width: 21px;
