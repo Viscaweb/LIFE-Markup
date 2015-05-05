@@ -18331,14 +18331,6 @@ ul.image-list li img {
   margin-bottom: 15px;
   position: relative;
 }
-.article-match-info a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
 .article-match-info .team {
   font-size: 16px;
   font-weight: 700;
@@ -18425,14 +18417,6 @@ ul.image-list li img {
   margin-bottom: 0;
   background-color: #454a4c;
 }
-.featured-article .article-image .match-container .article-match-info > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
 .featured-article .article-image .match-container .article-match-info .team {
   color: #dfdfdf;
 }
@@ -18445,6 +18429,12 @@ ul.image-list li img {
 .featured-article .article-image .match-container .article-match-info .hour {
   background-color: #313536;
   color: #ffffff;
+}
+.featured-article .article-image .match-container .article-match-info:hover {
+  background-color: #3d4244;
+}
+.featured-article .article-image .match-container .article-match-info:hover .hour {
+  background-color: #2a2d2e;
 }
 .featured-article .article-resume {
   padding: 10px 20px;
