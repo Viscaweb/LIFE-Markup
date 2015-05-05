@@ -1788,6 +1788,10 @@ span.glyphicon-star.active {
   width: 50px;
 }
 
+.popover.popover-score .popover-content .table tr:first-child td {
+  border-top: none;
+}
+
 .popover.popover-standings {
   min-width: 395px;
   -webkit-border-radius: 2px;
