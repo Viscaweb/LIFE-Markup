@@ -56,37 +56,36 @@
 /* Prediction buttons status depending on prediction state */
 
 .prediction-locked{
-          
-	.btn-prediction{
-        border-color: darken(@ls-light-color, 11.6%);
-		color: lighten(@ls-dark-color, 20%);
-	}
-      
-	.btn-prediction-success, .btn-prediction-failed, .btn-prediction-result {
-		cursor: default;
-	}
-      
-	.btn-group {
-      cursor: not-allowed;
-      pointer-events: none;
 
-	}
-          
-        
+  &.btn-group {
+    cursor: not-allowed;
+    pointer-events: none;
+
+  }
+
+  .btn-prediction{
+      border-color: darken(@ls-light-color, 11.6%);
+      color: lighten(@ls-dark-color, 20%);
+  }
+
+  .btn-prediction-success, .btn-prediction-failed, .btn-prediction-result {
+      cursor: default;
+  }
+
 }
 
 .prediction-closed{
-        
-	.prediction-locked;
-	
-	.btn {
-		opacity: 1;
-		cursor: default; //necessary on IE
-	}
-	
-	.btn-group {
-		cursor: default;
-	}
+
+  &.btn-group {
+    cursor: default;
+  }
+
+  .prediction-locked;
+
+  .btn {
+      opacity: 1;
+      cursor: default; //necessary on IE
+  }
 }
 
 
@@ -101,7 +100,7 @@
 
 .prediction-cancelled{
 
-	&.prediction-closed .btn-group,
+	&.prediction-closed.btn-group,
 	.btn {
       opacity: 0.6;
       pointer-events: none;

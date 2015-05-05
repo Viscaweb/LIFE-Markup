@@ -12861,6 +12861,11 @@ fieldset[disabled] .btn-prediction-failed.active {
 
 /* Prediction buttons status depending on prediction state */
 
+.prediction-locked.btn-group {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .prediction-locked .btn-prediction {
   border-color: #e1e1e1;
   color: #333333;
@@ -12872,7 +12877,11 @@ fieldset[disabled] .btn-prediction-failed.active {
   cursor: default;
 }
 
-.prediction-locked .btn-group {
+.prediction-closed.btn-group {
+  cursor: default;
+}
+
+.prediction-closed.btn-group {
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -12888,18 +12897,14 @@ fieldset[disabled] .btn-prediction-failed.active {
   cursor: default;
 }
 
-.prediction-closed .btn-group {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
 .prediction-closed .btn {
   opacity: 1;
   cursor: default;
 }
 
-.prediction-closed .btn-group {
-  cursor: default;
+.prediction-hidden.btn-group {
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .prediction-hidden .btn-prediction {
@@ -12913,16 +12918,11 @@ fieldset[disabled] .btn-prediction-failed.active {
   cursor: default;
 }
 
-.prediction-hidden .btn-group {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
 .prediction-hidden .btn {
   opacity: 1;
 }
 
-.prediction-cancelled.prediction-closed .btn-group,
+.prediction-cancelled.prediction-closed.btn-group,
 .prediction-cancelled .btn {
   opacity: 0.6;
   pointer-events: none;
