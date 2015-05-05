@@ -13367,6 +13367,12 @@ span.glyphicon-star.active {
   background-image: none;
   background-color: rgba(243, 244, 245, 0.8);
 }
+.popover.loading {
+  position: absolute;
+}
+.popover.loading .arrow:after {
+  border-bottom-color: rgba(251, 251, 251, 0.99);
+}
 /* Mixin */
 .loading-left-nav {
   min-height: initial;
