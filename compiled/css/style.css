@@ -10523,6 +10523,9 @@ fieldset[disabled] .btn-prediction-failed.active {
 .prediction-locked .btn-prediction-result {
   cursor: default;
 }
+.prediction-locked .btn {
+  opacity: 1;
+}
 .prediction-closed.btn-group {
   cursor: default;
 }
@@ -10541,6 +10544,8 @@ fieldset[disabled] .btn-prediction-failed.active {
 }
 .prediction-closed .btn {
   opacity: 1;
+}
+.prediction-closed .btn {
   cursor: default;
 }
 .prediction-hidden.btn-group {
@@ -10561,7 +10566,7 @@ fieldset[disabled] .btn-prediction-failed.active {
 }
 .prediction-cancelled.prediction-closed.btn-group,
 .prediction-cancelled .btn {
-  opacity: 0.6;
+  opacity: 1;
   pointer-events: none;
 }
 .prediction .btn-hidden {

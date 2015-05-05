@@ -72,6 +72,10 @@
       cursor: default;
   }
 
+  .btn {
+    opacity: 1;
+  }
+
 }
 
 .prediction-closed{
@@ -83,7 +87,6 @@
   .prediction-locked;
 
   .btn {
-      opacity: 1;
       cursor: default; //necessary on IE
   }
 }
@@ -92,17 +95,14 @@
 .prediction-hidden{
        
 	.prediction-locked;
-	
-	.btn {
-	    opacity: 1;
-	}
+  
 }
 
 .prediction-cancelled{
 
 	&.prediction-closed.btn-group,
 	.btn {
-      opacity: 0.6;
+      opacity: 1;
       pointer-events: none;
 
 	}

@@ -12877,6 +12877,10 @@ fieldset[disabled] .btn-prediction-failed.active {
   cursor: default;
 }
 
+.prediction-locked .btn {
+  opacity: 1;
+}
+
 .prediction-closed.btn-group {
   cursor: default;
 }
@@ -12899,6 +12903,9 @@ fieldset[disabled] .btn-prediction-failed.active {
 
 .prediction-closed .btn {
   opacity: 1;
+}
+
+.prediction-closed .btn {
   cursor: default;
 }
 
@@ -12924,7 +12931,7 @@ fieldset[disabled] .btn-prediction-failed.active {
 
 .prediction-cancelled.prediction-closed.btn-group,
 .prediction-cancelled .btn {
-  opacity: 0.6;
+  opacity: 1;
   pointer-events: none;
 }
 
@@ -15116,12 +15123,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .content .match.highlight {
   background-color: #fff4ce;
-}
-
-.match-slider-inverse .content .match.highlight table tr:first-child td:last-child {
-  border-color: #fff4ce !important;
-}
-
-.match-slider-inverse .content .match.highlight table tr td.team {
-  color: #424749;
 }
