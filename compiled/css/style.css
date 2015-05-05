@@ -13342,7 +13342,7 @@ span.glyphicon-star.active {
 }
 .loading.third-menu:after {
   background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
+  background-color: rgba(237, 239, 240, 0.8);
 }
 .loading.fourth-menu {
   min-height: initial;
@@ -13352,7 +13352,7 @@ span.glyphicon-star.active {
 }
 .loading.fourth-menu:after {
   background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
+  background-color: rgba(237, 239, 240, 0.8);
 }
 /* Classic loading for some simple elements */
 .sidebar-nav .sub-menu li.loading {
@@ -13372,16 +13372,6 @@ span.glyphicon-star.active {
   border-bottom-color: rgba(251, 251, 251, 0.99);
 }
 /* Mixin */
-.loading-left-nav {
-  min-height: initial;
-}
-.loading-left-nav:before {
-  display: none;
-}
-.loading-left-nav:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
-}
 *::-webkit-scrollbar {
   width: 10px;
 }

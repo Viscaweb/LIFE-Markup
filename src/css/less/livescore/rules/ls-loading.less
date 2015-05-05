@@ -59,22 +59,22 @@
   
   
   &.sub-menu {
-	  .loading-left-nav;
+	  .loading-left-nav(lighten(@ls-grey, 74%));
   }
   
   &.third-menu {
-	  .loading-left-nav;  
+	  .loading-left-nav(lighten(@ls-grey, 72%));
   }
   
   &.fourth-menu {
-	  .loading-left-nav;  
+	  .loading-left-nav(lighten(@ls-grey, 72%));
   }
 
 }
 
 /* Classic loading for some simple elements */
 .sidebar-nav .sub-menu li.loading {
-	.loading-left-nav; 
+	.loading-left-nav(lighten(@ls-grey, 74%));
 }
 
 .popover.loading {
@@ -87,15 +87,14 @@
 
 /* Mixin */
 
-.loading-left-nav {
+.loading-left-nav(@fade-color) {
 	min-height: initial;
 	&:before {
         display:none;
 	}
 	&:after {
         background-image: none;
-        background-color: fade(lighten(@ls-grey, 74%), 80%);
+        background-color: fade(@fade-color, 80%);
 	}
-	
 }
 
