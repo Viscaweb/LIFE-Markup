@@ -14028,7 +14028,6 @@ span.glyphicon-star.active {
   margin-bottom: 0;
   background-color: transparent;
   border: 0;
-  table-layout: fixed;
 }
 .match-information .table tbody tr td.team-information .standings table tbody td {
   min-width: 22px;
