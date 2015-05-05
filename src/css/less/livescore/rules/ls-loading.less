@@ -90,11 +90,10 @@
 .loading-left-nav(@fade-color) {
 	min-height: initial;
 	&:before {
-        display:none;
+      background-color: fade(@fade-color, 80%);
 	}
 	&:after {
-        background-image: none;
-        background-color: fade(@fade-color, 80%);
+      display: none;
 	}
 }
 

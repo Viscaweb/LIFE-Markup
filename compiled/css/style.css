@@ -13328,42 +13328,38 @@ span.glyphicon-star.active {
   min-height: initial;
 }
 .loading.sub-menu:before {
-  display: none;
+  background-color: rgba(243, 244, 245, 0.8);
 }
 .loading.sub-menu:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
+  display: none;
 }
 .loading.third-menu {
   min-height: initial;
 }
 .loading.third-menu:before {
-  display: none;
+  background-color: rgba(237, 239, 240, 0.8);
 }
 .loading.third-menu:after {
-  background-image: none;
-  background-color: rgba(237, 239, 240, 0.8);
+  display: none;
 }
 .loading.fourth-menu {
   min-height: initial;
 }
 .loading.fourth-menu:before {
-  display: none;
+  background-color: rgba(237, 239, 240, 0.8);
 }
 .loading.fourth-menu:after {
-  background-image: none;
-  background-color: rgba(237, 239, 240, 0.8);
+  display: none;
 }
 /* Classic loading for some simple elements */
 .sidebar-nav .sub-menu li.loading {
   min-height: initial;
 }
 .sidebar-nav .sub-menu li.loading:before {
-  display: none;
+  background-color: rgba(243, 244, 245, 0.8);
 }
 .sidebar-nav .sub-menu li.loading:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
+  display: none;
 }
 .popover.loading {
   position: absolute;

@@ -1231,12 +1231,11 @@ span.glyphicon-star.active {
 }
 
 .loading.sub-menu:before {
-  display: none;
+  background-color: rgba(243, 244, 245, 0.8);
 }
 
 .loading.sub-menu:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
+  display: none;
 }
 
 .loading.third-menu {
@@ -1244,12 +1243,11 @@ span.glyphicon-star.active {
 }
 
 .loading.third-menu:before {
-  display: none;
+  background-color: rgba(237, 239, 240, 0.8);
 }
 
 .loading.third-menu:after {
-  background-image: none;
-  background-color: rgba(237, 239, 240, 0.8);
+  display: none;
 }
 
 .loading.fourth-menu {
@@ -1257,12 +1255,11 @@ span.glyphicon-star.active {
 }
 
 .loading.fourth-menu:before {
-  display: none;
+  background-color: rgba(237, 239, 240, 0.8);
 }
 
 .loading.fourth-menu:after {
-  background-image: none;
-  background-color: rgba(237, 239, 240, 0.8);
+  display: none;
 }
 
 /* Classic loading for some simple elements */
@@ -1272,12 +1269,11 @@ span.glyphicon-star.active {
 }
 
 .sidebar-nav .sub-menu li.loading:before {
-  display: none;
+  background-color: rgba(243, 244, 245, 0.8);
 }
 
 .sidebar-nav .sub-menu li.loading:after {
-  background-image: none;
-  background-color: rgba(243, 244, 245, 0.8);
+  display: none;
 }
 
 .popover.loading {
