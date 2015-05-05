@@ -1076,7 +1076,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   line-height: 1.42857143;
-  color: #333333;
+  color: #5c5c5c;
   background-color: #e7e9eb;
 }
 input,
@@ -2895,7 +2895,7 @@ select[multiple].form-group-lg .form-control {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #9c9c9c;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4920,7 +4920,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #5c5c5c;
 }
 .alert {
   padding: 20px;
@@ -8704,10 +8704,7 @@ button.close {
   display: block;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
   padding-top: 64px;
-  background: #e7e9eb;
-  color: #5c5c5c;
 }
 body.iframe {
   padding: 0;
