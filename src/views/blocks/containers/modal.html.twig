@@ -9,7 +9,7 @@
                 </div>
             {% endif %}
 
-            <div class="modal-body container-fluid">
+            <div class="modal-body container-fluid {{ modal_body_classes }}">
                 {% block modal_content %}
                     {# Content of the modal #}
                 {% endblock %}
