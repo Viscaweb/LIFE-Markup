@@ -1,7 +1,7 @@
 .left-sidebar{
   display: table-cell;
   vertical-align: top;
-  background: lighten(@ls-grey, 74%); 
+  background: @ls-left-sidebar-bg;
   border-right: 1px solid darken(@ls-light-color, 9.5%);
   padding: 0;
   float: none;
@@ -193,7 +193,7 @@
 					> li {
 						&.open{
 							> a {
-							background-color: lighten(@ls-grey, 72%);
+							background-color: @ls-left-sidebar-sublevel-bg;
 							border-left: 3px solid @brand-primary; 
 							padding-left: 18px;
 						}	
@@ -278,8 +278,8 @@
 				.third-menu{
 					padding: 0;
 					list-style: none;
-					background-color: lighten(@ls-grey, 72%);
-					border-left: 3px solid @brand-primary; 
+					background-color: @ls-left-sidebar-sublevel-bg;
+					border-left: 3px solid @brand-primary;
 
 
 					li{
