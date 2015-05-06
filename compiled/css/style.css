@@ -9253,6 +9253,11 @@ span.dark-icon {
 .table tbody tr:nth-child(odd):hover:nth-child(2n) td.odd:hover {
   background-color: #dbdbdb !important;
 }
+.table tbody tr:hover td.score,
+.table tbody tr:nth-child(even):hover td.score,
+.table tbody tr:nth-child(odd):hover td.score {
+  background-color: #e6e6e6;
+}
 .table tbody tr.league-data > th {
   cursor: pointer;
   background-color: #767e82;
