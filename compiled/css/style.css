@@ -9453,6 +9453,11 @@ span.dark-icon {
 .table > tbody > tr.event-2nd-leg td {
   border-bottom: 1px solid #ededed;
 }
+.table > tbody > tr.event-won td.score,
+.table > tbody > tr.event-lost td.score,
+.table > tbody > tr.event-draw td.score {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
 .table tbody tr td.highlight {
   background-color: #fff4ce !important;
 }
@@ -16052,9 +16057,6 @@ ol.breadcrumb li a img {
 table.team-results tbody tr td span.date {
   font-weight: 600;
 }
-table.team-results tbody tr td.score {
-  background: rgba(255, 255, 255, 0.4) !important;
-}
 .panel .table tbody tr td.avatar img {
   max-height: 18px;
   max-width: 18px;
@@ -16873,12 +16875,6 @@ main .matches-widgets td.content span.empty {
 .prediction-contest-grid .table,
 .last-predictions .table {
   margin: 0;
-}
-.prediction-contest-grid .table tbody tr.event-won td.score,
-.last-predictions .table tbody tr.event-won td.score,
-.prediction-contest-grid .table tbody tr.event-lost td.score,
-.last-predictions .table tbody tr.event-lost td.score {
-  background-color: rgba(255, 255, 255, 0.25) !important;
 }
 .season-gifts .table tbody tr td.place {
   text-align: center;
