@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         cssmin: {
             combine: {
                 files: {
-                    'compiled/css/style.min.css': ['src/css/style.css']
+                    'compiled/css/style.min.css': ['compiled/css/style.css']
                 }
             }
         },
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
 		},
         watch: {
             files: "**/*.less",
-            tasks: ["less:development","csssplit:split"]
+            tasks: ["less:development","csssplit:split", "cssmin"]
         }
     });
 
