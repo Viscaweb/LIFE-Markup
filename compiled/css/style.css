@@ -9103,9 +9103,9 @@ span.dark-icon {
   font-size: 0;
   white-space: nowrap;
 }
-.table tbody tr > td.tools a,
-.table tbody tr:nth-child(even) > td.tools a,
-.table tbody tr:nth-child(odd) > td.tools a {
+.table tbody tr > td.tools > a,
+.table tbody tr:nth-child(even) > td.tools > a,
+.table tbody tr:nth-child(odd) > td.tools > a {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
@@ -9114,9 +9114,9 @@ span.dark-icon {
   vertical-align: middle;
   position: relative;
 }
-.table tbody tr > td.tools a .comment-number,
-.table tbody tr:nth-child(even) > td.tools a .comment-number,
-.table tbody tr:nth-child(odd) > td.tools a .comment-number {
+.table tbody tr > td.tools > a .comment-number,
+.table tbody tr:nth-child(even) > td.tools > a .comment-number,
+.table tbody tr:nth-child(odd) > td.tools > a .comment-number {
   color: #b3b3b3;
   font-size: 8px;
   line-height: 9px;
@@ -9127,44 +9127,44 @@ span.dark-icon {
   top: 3px;
   left: 0;
 }
-.table tbody tr > td.tools a.available,
-.table tbody tr:nth-child(even) > td.tools a.available,
-.table tbody tr:nth-child(odd) > td.tools a.available {
+.table tbody tr > td.tools > a.available,
+.table tbody tr:nth-child(even) > td.tools > a.available,
+.table tbody tr:nth-child(odd) > td.tools > a.available {
   color: #b5b5b5;
 }
-.table tbody tr > td.tools a.available.live,
-.table tbody tr:nth-child(even) > td.tools a.available.live,
-.table tbody tr:nth-child(odd) > td.tools a.available.live {
+.table tbody tr > td.tools > a.available.live,
+.table tbody tr:nth-child(even) > td.tools > a.available.live,
+.table tbody tr:nth-child(odd) > td.tools > a.available.live {
   color: #e33000;
 }
-.table tbody tr > td.tools a.available.live:hover,
-.table tbody tr:nth-child(even) > td.tools a.available.live:hover,
-.table tbody tr:nth-child(odd) > td.tools a.available.live:hover {
+.table tbody tr > td.tools > a.available.live:hover,
+.table tbody tr:nth-child(even) > td.tools > a.available.live:hover,
+.table tbody tr:nth-child(odd) > td.tools > a.available.live:hover {
   color: #b02500;
 }
-.table tbody tr > td.tools a.available .comment-number,
-.table tbody tr:nth-child(even) > td.tools a.available .comment-number,
-.table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
+.table tbody tr > td.tools > a.available .comment-number,
+.table tbody tr:nth-child(even) > td.tools > a.available .comment-number,
+.table tbody tr:nth-child(odd) > td.tools > a.available .comment-number {
   color: #ffffff;
 }
-.table tbody tr > td.tools a:hover,
-.table tbody tr:nth-child(even) > td.tools a:hover,
-.table tbody tr:nth-child(odd) > td.tools a:hover {
+.table tbody tr > td.tools > a:hover,
+.table tbody tr:nth-child(even) > td.tools > a:hover,
+.table tbody tr:nth-child(odd) > td.tools > a:hover {
   color: #666666;
 }
-.table tbody tr > td.tools a:hover.available .comment-number,
-.table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
-.table tbody tr:nth-child(odd) > td.tools a:hover.available .comment-number {
+.table tbody tr > td.tools > a:hover.available .comment-number,
+.table tbody tr:nth-child(even) > td.tools > a:hover.available .comment-number,
+.table tbody tr:nth-child(odd) > td.tools > a:hover.available .comment-number {
   color: #ffffff;
 }
-.table tbody tr > td.tools a.active,
-.table tbody tr:nth-child(even) > td.tools a.active,
-.table tbody tr:nth-child(odd) > td.tools a.active {
+.table tbody tr > td.tools > a.active,
+.table tbody tr:nth-child(even) > td.tools > a.active,
+.table tbody tr:nth-child(odd) > td.tools > a.active {
   color: #5da400;
 }
-.table tbody tr > td.tools a.active:hover,
-.table tbody tr:nth-child(even) > td.tools a.active:hover,
-.table tbody tr:nth-child(odd) > td.tools a.active:hover {
+.table tbody tr > td.tools > a.active:hover,
+.table tbody tr:nth-child(even) > td.tools > a.active:hover,
+.table tbody tr:nth-child(odd) > td.tools > a.active:hover {
   color: #407100;
 }
 .table tbody tr > td.tools.tools-1,
