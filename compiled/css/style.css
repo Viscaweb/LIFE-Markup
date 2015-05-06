@@ -9172,6 +9172,11 @@ span.dark-icon {
 .table tbody tr:nth-child(odd) > td.tools.tools-1 {
   max-width: 20px;
 }
+.table tbody tr > td.tools:last-child,
+.table tbody tr:nth-child(even) > td.tools:last-child,
+.table tbody tr:nth-child(odd) > td.tools:last-child {
+  padding-right: 4px;
+}
 .table tbody tr > td.favorite,
 .table tbody tr:nth-child(even) > td.favorite,
 .table tbody tr:nth-child(odd) > td.favorite {

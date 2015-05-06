@@ -1,3 +1,15 @@
+.match-slider-inverse .content .match:nth-child(even) {
+  background-color: #424749;
+}
+
+.match-slider-inverse .content .match:nth-child(even) table tr:first-child td:last-child {
+  border-color: #424749;
+}
+
+.match-slider-inverse .content .match.highlight {
+  background-color: #fff4ce;
+}
+
 .match-slider-inverse .content .match.highlight table tr:first-child td:last-child {
   border-color: #fff4ce !important;
 }

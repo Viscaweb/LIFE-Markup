@@ -11215,6 +11215,12 @@ span.dark-icon {
   max-width: 20px;
 }
 
+.table tbody tr > td.tools:last-child,
+.table tbody tr:nth-child(even) > td.tools:last-child,
+.table tbody tr:nth-child(odd) > td.tools:last-child {
+  padding-right: 4px;
+}
+
 .table tbody tr > td.favorite,
 .table tbody tr:nth-child(even) > td.favorite,
 .table tbody tr:nth-child(odd) > td.favorite {
@@ -15111,16 +15117,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .content .match table tr:first-child td:last-child {
   border-color: #2f3334;
-}
-
-.match-slider-inverse .content .match:nth-child(even) {
-  background-color: #424749;
-}
-
-.match-slider-inverse .content .match:nth-child(even) table tr:first-child td:last-child {
-  border-color: #424749;
-}
-
-.match-slider-inverse .content .match.highlight {
-  background-color: #fff4ce;
 }
