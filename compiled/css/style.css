@@ -16059,9 +16059,6 @@ ol.breadcrumb li a img {
   width: 65%;
 }
 /*Team Summary*/
-table.team-results tbody tr td span.date {
-  font-weight: 600;
-}
 .panel .table tbody tr td.avatar img {
   max-height: 18px;
   max-width: 18px;

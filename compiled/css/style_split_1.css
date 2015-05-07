@@ -11135,9 +11135,9 @@ span.dark-icon {
   white-space: nowrap;
 }
 
-.table tbody tr > td.tools a,
-.table tbody tr:nth-child(even) > td.tools a,
-.table tbody tr:nth-child(odd) > td.tools a {
+.table tbody tr > td.tools > a,
+.table tbody tr:nth-child(even) > td.tools > a,
+.table tbody tr:nth-child(odd) > td.tools > a {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
@@ -11147,9 +11147,9 @@ span.dark-icon {
   position: relative;
 }
 
-.table tbody tr > td.tools a .comment-number,
-.table tbody tr:nth-child(even) > td.tools a .comment-number,
-.table tbody tr:nth-child(odd) > td.tools a .comment-number {
+.table tbody tr > td.tools > a .comment-number,
+.table tbody tr:nth-child(even) > td.tools > a .comment-number,
+.table tbody tr:nth-child(odd) > td.tools > a .comment-number {
   color: #b3b3b3;
   font-size: 8px;
   line-height: 9px;
@@ -11161,51 +11161,51 @@ span.dark-icon {
   left: 0;
 }
 
-.table tbody tr > td.tools a.available,
-.table tbody tr:nth-child(even) > td.tools a.available,
-.table tbody tr:nth-child(odd) > td.tools a.available {
+.table tbody tr > td.tools > a.available,
+.table tbody tr:nth-child(even) > td.tools > a.available,
+.table tbody tr:nth-child(odd) > td.tools > a.available {
   color: #b5b5b5;
 }
 
-.table tbody tr > td.tools a.available.live,
-.table tbody tr:nth-child(even) > td.tools a.available.live,
-.table tbody tr:nth-child(odd) > td.tools a.available.live {
+.table tbody tr > td.tools > a.available.live,
+.table tbody tr:nth-child(even) > td.tools > a.available.live,
+.table tbody tr:nth-child(odd) > td.tools > a.available.live {
   color: #e33000;
 }
 
-.table tbody tr > td.tools a.available.live:hover,
-.table tbody tr:nth-child(even) > td.tools a.available.live:hover,
-.table tbody tr:nth-child(odd) > td.tools a.available.live:hover {
+.table tbody tr > td.tools > a.available.live:hover,
+.table tbody tr:nth-child(even) > td.tools > a.available.live:hover,
+.table tbody tr:nth-child(odd) > td.tools > a.available.live:hover {
   color: #b02500;
 }
 
-.table tbody tr > td.tools a.available .comment-number,
-.table tbody tr:nth-child(even) > td.tools a.available .comment-number,
-.table tbody tr:nth-child(odd) > td.tools a.available .comment-number {
+.table tbody tr > td.tools > a.available .comment-number,
+.table tbody tr:nth-child(even) > td.tools > a.available .comment-number,
+.table tbody tr:nth-child(odd) > td.tools > a.available .comment-number {
   color: #ffffff;
 }
 
-.table tbody tr > td.tools a:hover,
-.table tbody tr:nth-child(even) > td.tools a:hover,
-.table tbody tr:nth-child(odd) > td.tools a:hover {
+.table tbody tr > td.tools > a:hover,
+.table tbody tr:nth-child(even) > td.tools > a:hover,
+.table tbody tr:nth-child(odd) > td.tools > a:hover {
   color: #666666;
 }
 
-.table tbody tr > td.tools a:hover.available .comment-number,
-.table tbody tr:nth-child(even) > td.tools a:hover.available .comment-number,
-.table tbody tr:nth-child(odd) > td.tools a:hover.available .comment-number {
+.table tbody tr > td.tools > a:hover.available .comment-number,
+.table tbody tr:nth-child(even) > td.tools > a:hover.available .comment-number,
+.table tbody tr:nth-child(odd) > td.tools > a:hover.available .comment-number {
   color: #ffffff;
 }
 
-.table tbody tr > td.tools a.active,
-.table tbody tr:nth-child(even) > td.tools a.active,
-.table tbody tr:nth-child(odd) > td.tools a.active {
+.table tbody tr > td.tools > a.active,
+.table tbody tr:nth-child(even) > td.tools > a.active,
+.table tbody tr:nth-child(odd) > td.tools > a.active {
   color: #5da400;
 }
 
-.table tbody tr > td.tools a.active:hover,
-.table tbody tr:nth-child(even) > td.tools a.active:hover,
-.table tbody tr:nth-child(odd) > td.tools a.active:hover {
+.table tbody tr > td.tools > a.active:hover,
+.table tbody tr:nth-child(even) > td.tools > a.active:hover,
+.table tbody tr:nth-child(odd) > td.tools > a.active:hover {
   color: #407100;
 }
 
@@ -11308,6 +11308,12 @@ span.dark-icon {
 .table tbody tr:nth-child(even):hover:nth-child(2n) td.odd:hover,
 .table tbody tr:nth-child(odd):hover:nth-child(2n) td.odd:hover {
   background-color: #dbdbdb !important;
+}
+
+.table tbody tr:hover td.score,
+.table tbody tr:nth-child(even):hover td.score,
+.table tbody tr:nth-child(odd):hover td.score {
+  background-color: #e6e6e6;
 }
 
 .table tbody tr.league-data > th {
@@ -11560,6 +11566,12 @@ span.dark-icon {
 
 .table > tbody > tr.event-2nd-leg td {
   border-bottom: 1px solid #ededed;
+}
+
+.table > tbody > tr.event-won td.score,
+.table > tbody > tr.event-lost td.score,
+.table > tbody > tr.event-draw td.score {
+  background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .table tbody tr td.highlight {
@@ -15090,31 +15102,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .control:hover {
   background-color: #494f51;
-}
-
-.match-slider-inverse .control:hover span {
-  color: #596063;
-}
-
-.match-slider-inverse .content .match {
-  background-color: #2f3334;
-  border-color: #52585b;
-  min-width: 130px;
-}
-
-.match-slider-inverse .content .match table tr td {
-  color: #ffffff;
-  border-color: #52585b;
-}
-
-.match-slider-inverse .content .match table tr td.score {
-  background-color: #2d3132;
-}
-
-.match-slider-inverse .content .match table tr:first-child td.team {
-  border-bottom-color: #52585b;
-}
-
-.match-slider-inverse .content .match table tr:first-child td:last-child {
-  border-color: #2f3334;
 }

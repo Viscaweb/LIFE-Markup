@@ -1,3 +1,30 @@
+.match-slider-inverse .control:hover span {
+  color: #596063;
+}
+
+.match-slider-inverse .content .match {
+  background-color: #2f3334;
+  border-color: #52585b;
+  min-width: 130px;
+}
+
+.match-slider-inverse .content .match table tr td {
+  color: #ffffff;
+  border-color: #52585b;
+}
+
+.match-slider-inverse .content .match table tr td.score {
+  background-color: #2d3132;
+}
+
+.match-slider-inverse .content .match table tr:first-child td.team {
+  border-bottom-color: #52585b;
+}
+
+.match-slider-inverse .content .match table tr:first-child td:last-child {
+  border-color: #2f3334;
+}
+
 .match-slider-inverse .content .match:nth-child(even) {
   background-color: #424749;
 }
@@ -4514,14 +4541,6 @@ ol.breadcrumb li a img {
 
 /*Team Summary*/
 
-table.team-results tbody tr td span.date {
-  font-weight: 600;
-}
-
-table.team-results tbody tr td.score {
-  background: rgba(255, 255, 255, 0.4) !important;
-}
-
 .panel .table tbody tr td.avatar img {
   max-height: 18px;
   max-width: 18px;
@@ -5512,13 +5531,6 @@ main .matches-widgets td.content span.empty {
 .prediction-contest-grid .table,
 .last-predictions .table {
   margin: 0;
-}
-
-.prediction-contest-grid .table tbody tr.event-won td.score,
-.last-predictions .table tbody tr.event-won td.score,
-.prediction-contest-grid .table tbody tr.event-lost td.score,
-.last-predictions .table tbody tr.event-lost td.score {
-  background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .season-gifts .table tbody tr td.place {
