@@ -50,4 +50,5 @@
 
 {% block content_right %}
     {% include 'blocks/sports/listings/match_listing_sidebar.html.twig' %}
+    {{ include('blocks/sports/competition/competition_standing_noform.html.twig', {small: 'true'}) }}
 {% endblock %}
