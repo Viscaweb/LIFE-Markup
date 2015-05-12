@@ -82,6 +82,10 @@
 		font-weight: @font-weight-extra-bold;
 		line-height: @ls-news-article-title-line-height;
 		color: lighten(@ls-dark-color, 20.8%);
+
+      &:hover {
+        color: @link-color;
+      }
 	}
 
 	.article-body{
@@ -96,6 +100,11 @@
 			img{
 				max-width: 100%;
 				max-height: 100%;
+
+              &:hover {
+                opacity: 0.9;
+                transition: opacity 0.2s;
+              }
 			}
 		}
 	}
@@ -209,6 +218,11 @@
 
 		img{
 			width: 100%;
+
+          &:hover {
+            opacity: 0.9;
+            transition: opacity 0.2s;
+          }
 		}
 
 		.message{
@@ -288,6 +302,10 @@
 			color: @ls-light-color;
 			font-size: @ls-news-article-title-size + 2px;
 			margin-bottom: 10px;
+
+            &:hover {
+              color: darken(@ls-light-color, 10%);
+            }
 		}
 
 		p{
@@ -296,6 +314,11 @@
 
 		a{
 			color: @ls-inverse-link-color;
+
+          &:hover {
+            color: @ls-inverse-link-hover-color;
+          }
+
 		}
 	}
 }
