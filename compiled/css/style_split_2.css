@@ -1,3 +1,7 @@
+.match-slider-inverse .control:hover {
+  background-color: #494f51;
+}
+
 .match-slider-inverse .control:hover span {
   color: #596063;
 }
@@ -3782,28 +3786,6 @@ span.glyphicon-star.active {
 
 /*Match Head to Head */
 
-.head-to-head .nav-pills,
-.team-form .nav-pills {
-  border-bottom: 0;
-}
-
-.head-to-head .nav-pills.teams,
-.team-form .nav-pills.teams {
-  position: relative;
-  top: -5px;
-}
-
-.head-to-head .nav-pills.teams > li,
-.team-form .nav-pills.teams > li {
-  margin-right: 5px;
-}
-
-.head-to-head .nav-pills.teams > li > img,
-.team-form .nav-pills.teams > li > img {
-  max-width: 28px;
-  max-height: 28px;
-}
-
 .head-to-head .teams,
 .team-form .teams {
   margin-bottom: 8px;
@@ -4011,24 +3993,6 @@ span.glyphicon-star.active {
 
 .team-form .navigation .btn {
   padding: 8px 13px;
-}
-
-.team-over-under .nav-pills {
-  border-bottom: 0;
-}
-
-.team-over-under .nav-pills.teams {
-  position: relative;
-  top: -5px;
-}
-
-.team-over-under .nav-pills.teams > li {
-  margin-right: 5px;
-}
-
-.team-over-under .nav-pills.teams > li > img {
-  max-width: 28px;
-  max-height: 28px;
 }
 
 .discussion .panel-body ul {

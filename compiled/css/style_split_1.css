@@ -13235,6 +13235,14 @@ fieldset[disabled] .btn-twitter.active {
   padding: 0;
 }
 
+.panel > .panel-heading .team-logo {
+  max-width: 28px;
+  max-height: 28px;
+  margin-right: 5px;
+  top: -5px;
+  position: relative;
+}
+
 span.sprite-icons {
   width: 21px;
   height: 18px;
@@ -15098,8 +15106,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .control span {
   color: #52585b;
-}
-
-.match-slider-inverse .control:hover {
-  background-color: #494f51;
 }

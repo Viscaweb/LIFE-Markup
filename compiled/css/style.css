@@ -10824,6 +10824,13 @@ fieldset[disabled] .btn-twitter.active {
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
   padding: 0;
 }
+.panel > .panel-heading .team-logo {
+  max-width: 28px;
+  max-height: 28px;
+  margin-right: 5px;
+  top: -5px;
+  position: relative;
+}
 span.sprite-icons {
   width: 21px;
   height: 18px;
@@ -15432,24 +15439,6 @@ span.glyphicon-star.active {
   width: 30%;
 }
 /*Match Head to Head */
-.head-to-head .nav-pills,
-.team-form .nav-pills {
-  border-bottom: 0;
-}
-.head-to-head .nav-pills.teams,
-.team-form .nav-pills.teams {
-  position: relative;
-  top: -5px;
-}
-.head-to-head .nav-pills.teams > li,
-.team-form .nav-pills.teams > li {
-  margin-right: 5px;
-}
-.head-to-head .nav-pills.teams > li > img,
-.team-form .nav-pills.teams > li > img {
-  max-width: 28px;
-  max-height: 28px;
-}
 .head-to-head .teams,
 .team-form .teams {
   margin-bottom: 8px;
@@ -15622,20 +15611,6 @@ span.glyphicon-star.active {
 }
 .team-form .navigation .btn {
   padding: 8px 13px;
-}
-.team-over-under .nav-pills {
-  border-bottom: 0;
-}
-.team-over-under .nav-pills.teams {
-  position: relative;
-  top: -5px;
-}
-.team-over-under .nav-pills.teams > li {
-  margin-right: 5px;
-}
-.team-over-under .nav-pills.teams > li > img {
-  max-width: 28px;
-  max-height: 28px;
 }
 .discussion .panel-body ul {
   border: 0;
