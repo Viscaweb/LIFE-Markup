@@ -6833,7 +6833,7 @@ button.close {
   border-right-width: 0px;
 }
 .btn-group.btn-group-justified .btn.btn-default:hover + .btn {
-  border-left-color: #adadad;
+  border-left-color: #c2c2c2;
 }
 .btn-group.btn-group-justified .btn.btn-warning:hover + .btn {
   border-left-color: #df9c3c;
