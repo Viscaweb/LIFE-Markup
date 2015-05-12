@@ -7859,6 +7859,7 @@ button.close {
   background-clip: padding-box;
   behavior: "js/css3pie/PIE.htc";
   padding: 0;
+  background-clip: initial;
 }
 .popover .popover-title {
   -webkit-border-top-right-radius: 0;
