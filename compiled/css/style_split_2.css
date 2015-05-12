@@ -1,3 +1,18 @@
+.match-slider-inverse .slider-content > .title.live h4 span.title,
+.match-slider-inverse .slider-content > .title.live .h4 span.title {
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  padding-left: 11px;
+}
+
+.match-slider-inverse .control {
+  background-color: #424749;
+  border-color: #52585b;
+}
+
+.match-slider-inverse .control span {
+  color: #52585b;
+}
+
 .match-slider-inverse .control:hover {
   background-color: #494f51;
 }

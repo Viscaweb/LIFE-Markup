@@ -11228,6 +11228,12 @@ span.dark-icon {
   text-align: center;
 }
 
+.table tbody tr > td.logo img,
+.table tbody tr:nth-child(even) > td.logo img,
+.table tbody tr:nth-child(odd) > td.logo img {
+  max-width: 20px;
+}
+
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n+1) td.odd {
@@ -15092,19 +15098,4 @@ span.sprite-icons.webmaster-border {
   text-transform: uppercase;
   color: #ffffff;
   display: block;
-}
-
-.match-slider-inverse .slider-content > .title.live h4 span.title,
-.match-slider-inverse .slider-content > .title.live .h4 span.title {
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
-  padding-left: 11px;
-}
-
-.match-slider-inverse .control {
-  background-color: #424749;
-  border-color: #52585b;
-}
-
-.match-slider-inverse .control span {
-  color: #52585b;
 }
