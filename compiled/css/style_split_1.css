@@ -11165,7 +11165,7 @@ span.dark-icon {
 .table tbody tr > td.tools > a.available,
 .table tbody tr:nth-child(even) > td.tools > a.available,
 .table tbody tr:nth-child(odd) > td.tools > a.available {
-  color: #b5b5b5;
+  color: #cccccc;
 }
 
 .table tbody tr > td.tools > a.available.live,

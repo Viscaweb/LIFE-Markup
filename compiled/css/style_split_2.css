@@ -1181,6 +1181,7 @@ span.glyphicon-star.active {
   line-height: 15px;
   vertical-align: middle;
   position: relative;
+  color: #cccccc;
 }
 
 .fav-match .comment-number {
@@ -1196,7 +1197,7 @@ span.glyphicon-star.active {
 }
 
 .fav-match.available {
-  color: #b5b5b5;
+  color: #cccccc;
 }
 
 .fav-match.available.live {

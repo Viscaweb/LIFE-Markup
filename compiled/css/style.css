@@ -9131,7 +9131,7 @@ span.dark-icon {
 .table tbody tr > td.tools > a.available,
 .table tbody tr:nth-child(even) > td.tools > a.available,
 .table tbody tr:nth-child(odd) > td.tools > a.available {
-  color: #b5b5b5;
+  color: #cccccc;
 }
 .table tbody tr > td.tools > a.available.live,
 .table tbody tr:nth-child(even) > td.tools > a.available.live,
@@ -13273,6 +13273,7 @@ span.glyphicon-star.active {
   line-height: 15px;
   vertical-align: middle;
   position: relative;
+  color: #cccccc;
 }
 .fav-match .comment-number {
   color: #b3b3b3;
@@ -13286,7 +13287,7 @@ span.glyphicon-star.active {
   left: 0;
 }
 .fav-match.available {
-  color: #b5b5b5;
+  color: #cccccc;
 }
 .fav-match.available.live {
   color: #e33000;
