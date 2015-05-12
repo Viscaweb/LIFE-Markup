@@ -28,7 +28,7 @@
 
 {% block content_right %}
     {% include 'blocks/sports/top_competitions_tables.html.twig' %}
-    {% include 'blocks/sports/match/team_head2head_sidebar.html.twig' %}
+    {{ include('blocks/sports/match/team_head2head.html.twig', {small:'true'}) }}
     {% include 'blocks/sports/team/team_form.html.twig' %}
     {% include 'blocks/sports/team/team_form.html.twig' %}
     {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}

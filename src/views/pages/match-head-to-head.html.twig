@@ -9,7 +9,9 @@
     {% include 'blocks/sports/match/match_information.html.twig' %}
     {{ include('blocks/elements/page_tabs.html.twig', {type: 'match'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
-    {% include 'blocks/sports/match/team_head2head.html.twig' %}
+    <div class="row">
+        <div class="col-md-12">{% include 'blocks/sports/match/team_head2head.html.twig' %}</div>
+    </div>
     <div class="row">
         <div class="col-sm-6">{% include 'blocks/sports/team/team_form.html.twig' %}</div>
         <div class="col-sm-6">{% include 'blocks/sports/team/team_form.html.twig' %}</div>

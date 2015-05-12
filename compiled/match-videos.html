@@ -1363,15 +1363,13 @@
     <div class="panel-heading">
         Head to Head
         <div class="tools">
-            <ul class="nav nav-pills teams">
-                <li><img src="img/sprites/realmadrid.png" alt="Real"></li>
-                <li><img src="img/sprites/fc_bayern.png" alt="fc"></li>
-            </ul>
+            <img class="team-logo" alt="Real" src="img/sprites/realmadrid.png">
+            <img class="team-logo" alt="fc" src="img/sprites/fc_bayern.png">
         </div>
     </div>
     <div class="teams">
         <table class="circles">
-            <tbody><tr>
+            <tr>
                 <td class="circle-info"><div class="team first"><div class="circle gray1"><span>4</span></div></div></td>
                 <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
                 <td class="circle-info"><div class="team second"><div class="circle gray2"><span>2</span></div></div></td>
@@ -1381,49 +1379,61 @@
                 <td class="title"><span>DRAW</span></td>
                 <td class="title"><span>BAYERN</span></td>
             </tr>
-            </tbody></table>
+        </table>
     </div>
-    <table class="table matches table-condensed table-striped no-border">
+    <table class="table matches table-condensed table-striped layout-fixed">
+        <colgroup>
+            <col class="date date-dmy">
+            <col class="league-logo">
+                        <col class="team">
+            <col class="score">
+            <col class="team">
+                    </colgroup>
         <tbody>
+
         <tr>
             <td class="date">17/04/12</td>
-            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
-            <td class="team team1">Bayern</td>
+            <td class="league"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                        <td class="team team1"><a href="#"><span class="label red-card">1</span>Bayern Munich</a></td>
             <td class="score">2 - 1</td>
-            <td class="team team2">Real.</td>
-        </tr>
+            <td class="team team2"><a href="#">Real Madrid</a></td>
+                    </tr>
         <tr>
             <td class="date">13/08/10</td>
-            <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
-            <td class="team team1">Bayern</td>
+            <td class="league"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                        <td class="team team1"><a href="#">Bayern Munich</a></td>
             <td class="score">0 - 0</td>
-            <td class="team team2">Real.*</td>
-        </tr>
+            <td class="team team2"><a href="#">Real Madrid</a></td>
+                    </tr>
         <tr>
             <td class="date">07/03/07</td>
-            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
-            <td class="team team1">Bayern</td>
+            <td class="league"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                        <td class="team team1"><a href="#">Real Madrid</a></td>
             <td class="score">2 - 1</td>
-            <td class="team team2">Real.</td>
-        </tr>
+            <td class="team team2"><a href="#">Bayern Munich</a></td>
+                    </tr>
         <tr>
             <td class="date">20/02/07</td>
-            <td class="logo"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
-            <td class="team team1">Real.</td>
+            <td class="league"><img src="img/sprites/eurocoup.png" alt="Europa League"></td>
+                        <td class="team team1"><a href="#">Real Madrid with a long name</a></td>
             <td class="score">3 - 2</td>
-            <td class="team team2">Bayern</td>
-        </tr>
+            <td class="team team2"><a href="#">Bayern Munich</a></td>
+                    </tr>
         <tr>
             <td class="date">10/03/04</td>
-            <td class="logo"><img src="img/sprites/cup2.png" alt="Cup"></td>
-            <td class="team team1">Real.</td>
+            <td class="league"><img src="img/sprites/cup2.png" alt="Cup"></td>
+                        <td class="team team1"><a href="#">Real Madrid</a></td>
             <td class="score">1 - 0</td>
-            <td class="team team2">Bayern</td>
-        </tr>
+            <td class="team team2"><a href="#">Bayern Munich<span class="label red-card">1</span></a></td>
+                    </tr>
         </tbody>
     </table>
-    <a class="view-more" href="#"><span class="icon-caret-right"></span>Team Profile</a>
-</div>    <div class="panel panel-default team-form">
+    <div class="panel-footer">
+        <a href="#"><span class="icon-caret-right"></span>All Stats</a>
+    </div>
+</div>
+
+    <div class="panel panel-default team-form">
     <div class="panel-heading">
         Real Madrid Form
         <div class="tools">
