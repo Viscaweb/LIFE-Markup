@@ -18575,18 +18575,25 @@ ul.image-list li img {
 .small-news a.article-image img {
   max-width: 111px;
 }
+.small-news a.article-image img:hover {
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
 .small-news span.article-date {
   display: block;
   font-size: 11px;
   color: #a4a4a4;
   margin-bottom: 5px;
 }
-.small-news a span.article-title {
+.small-news a.article-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   color: #353535;
   display: block;
+}
+.small-news a:hover {
+  color: #0053a8;
 }
 .right-sidebar .newsletter img {
   width: 100%;

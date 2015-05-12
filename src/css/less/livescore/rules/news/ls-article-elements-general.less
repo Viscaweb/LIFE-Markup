@@ -141,6 +141,11 @@
 
 		img{
 			max-width: 111px;
+
+          &:hover {
+            opacity: 0.9;
+            transition: opacity 0.2s;
+          }
 		}
 	}
 
@@ -153,13 +158,17 @@
 
 	a{
 
-		span.article-title{
+		&.article-title{
 			font-size: @font-size-normal;
 			font-weight: @font-weight-bold;
 			line-height: 16px;
 			color: lighten(@ls-dark-color, 20.8%);
 			display: block;
 		}
+
+        &:hover {
+          color: @link-color;
+        }
 	}
 }
 
