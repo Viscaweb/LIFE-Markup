@@ -12489,19 +12489,6 @@ span.dark-icon {
   width: 25px;
 }
 
-.table.popover-odd-evolution {
-  width: 100%;
-  margin-top: 3px;
-}
-
-.table.popover-odd-evolution tr td.old {
-  text-decoration: line-through;
-}
-
-.table.popover-odd-evolution tr td.icon span {
-  font-size: 12px;
-}
-
 .table.league-selection {
   border: 1px solid #f5f5f5;
 }
@@ -12603,6 +12590,19 @@ span.dark-icon {
 .table.predictions tbody tr td.league-logo img {
   max-width: 16px;
   max-height: 16px;
+}
+
+.popover-odd-evolution {
+  width: 100%;
+  margin-top: 3px;
+}
+
+.popover-odd-evolution tr td.old {
+  text-decoration: line-through;
+}
+
+.popover-odd-evolution tr td.icon span {
+  font-size: 12px;
 }
 
 /* Mixins */
