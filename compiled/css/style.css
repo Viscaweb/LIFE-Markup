@@ -13150,7 +13150,9 @@ span.sprite-icons.webmaster-border {
   width: 83px;
 }
 .panel-condensed .comments .media-list .media .media-heading .tools {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 11px;
   background: #ffffff;
 }
 .panel-condensed .comments .media-list .media .media-heading .tools h5,
