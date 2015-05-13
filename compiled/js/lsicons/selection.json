@@ -1841,7 +1841,7 @@
 				"description": "Livescore Icons Font"
 			},
 			"metrics": {
-				"emSize": 512,
+				"emSize": 1024,
 				"baseline": 6.25,
 				"whitespace": 50
 			},
