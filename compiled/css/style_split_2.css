@@ -5954,6 +5954,15 @@ main .matches-widgets td.content span.empty {
   font-size: 75%;
 }
 
+.login-register-container .login-image {
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.login-register-container .login-image img {
+  max-width: 100%;
+}
+
 .pass-recovery,
 .successfully {
   float: none;
@@ -6001,15 +6010,6 @@ main .matches-widgets td.content span.empty {
 
 .successfully button {
   margin-top: 30px;
-}
-
-.login-modal .login-image {
-  margin-left: -20px;
-  margin-bottom: -20px;
-}
-
-.login-modal .login-image img {
-  max-width: 100%;
 }
 
 .login-modal form:before,
