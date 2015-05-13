@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?szgz9r');
-	src:url('fonts/LSicons.eot?#iefixszgz9r') format('embedded-opentype'),
-		url('fonts/LSicons.woff?szgz9r') format('woff'),
-		url('fonts/LSicons.ttf?szgz9r') format('truetype'),
-		url('fonts/LSicons.svg?szgz9r#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?jc3a83');
+	src:url('fonts/LSicons.eot?#iefixjc3a83') format('embedded-opentype'),
+		url('fonts/LSicons.woff?jc3a83') format('woff'),
+		url('fonts/LSicons.ttf?jc3a83') format('truetype'),
+		url('fonts/LSicons.svg?jc3a83#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -249,5 +249,9 @@
 
 .icon-card:before {
 	content: "\e638";
+}
+
+.icon-titular:before {
+	content: "\e639";
 }
 
