@@ -6,7 +6,7 @@
 
 {% block content %}
     {% include 'blocks/elements/content_header_team.html.twig' %}
-    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team', tab:'summary'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
     {% include 'blocks/sports/team/team_small_results_next.html.twig' %}
     {{ include('blocks/sports/listings/match_listing_by_team.html.twig', {in_panel:'true'}) }}

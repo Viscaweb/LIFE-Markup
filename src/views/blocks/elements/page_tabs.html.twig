@@ -4,49 +4,49 @@
     {% if type == 'competition' %}
         <div class="col-md-12">
             <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#">Summary</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Fixtures</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Teams</a></li>
+                <li {% if tab== 'summary' %}class="active"{% endif %}><a href="#">Summary</a></li>
+                <li {% if tab== 'results' %}class="active"{% endif %}><a href="#">Results</a></li>
+                <li {% if tab== 'fixtures' %}class="active"{% endif %}><a href="#">Fixtures</a></li>
+                <li {% if tab== 'tables' %}class="active"{% endif %}><a href="#">Tables</a></li>
+                <li {% if tab== 'teams' %}class="active"{% endif %}><a href="#">Teams</a></li>
             </ul>
         </div>
     {% elseif type == 'country' %}
         <div class="col-md-12">
             <ul class="nav nav-tabs nav-country" role="tablist">
-                <li class="active"><a href="#">Summary</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Competitions</a></li>
+                <li {% if tab== 'summary' %}class="active"{% endif %}><a href="#">Summary</a></li>
+                <li {% if tab== 'tables' %}class="active"{% endif %}><a href="#">Tables</a></li>
+                <li {% if tab== 'teams' %}class="active"{% endif %}><a href="#">Teams</a></li>
+                <li {% if tab== 'competitions' %}class="active"{% endif %}><a href="#">Competitions</a></li>
 
             </ul>
         </div>
     {% elseif type == 'team' %}
         <div class="col-md-12">
             <ul class="nav nav-tabs" role="tablist">
-                <li><a href="#">Summary</a></li>
-                <li><a href="#">Results / Fixtures</a></li>
-                <li class="active"><a href="#">Tables</a></li>
-                <li><a href="#">Squad</a></li>
-                <li><a href="#">Stats </a></li>
+                <li {% if tab== 'summary' %}class="active"{% endif %}><a href="#">Summary</a></li>
+                <li {% if tab== 'results-fixtures' %}class="active"{% endif %}><a href="#">Results / Fixtures</a></li>
+                <li {% if tab== 'tables' %}class="active"{% endif %}><a href="#">Tables</a></li>
+                <li {% if tab== 'squad' %}class="active"{% endif %}><a href="#">Squad</a></li>
+                <li {% if tab== 'stats' %}class="active"{% endif %}><a href="#">Stats</a></li>
             </ul>
         </div>
     {% elseif type == 'player' %}
         <div class="col-md-12">
             <ul class="nav nav-tabs" role="tablist">
-                <li><a href="#">Summary</a></li>
-                <li class="active"><a href="#">Goals</a></li>
+                <li {% if tab== 'summary' %}class="active"{% endif %}><a href="#">Summary</a></li>
+                <li {% if tab== 'goals' %}class="active"{% endif %}><a href="#">Goals</a></li>
             </ul>
         </div>
     {% elseif type == 'match' %}
         <div class="col-md-12">
             <ul role="tablist" class="nav nav-tabs">
-                <li class="active"><a href="#">Match Details</a></li>
-                <li><a href="#">Head to Head</a></li>
-                <li><a href="#">Odds</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Videos <span class="badge">4</span></a></li>
-                <li><a href="#">Streaming</a></li>
+                <li {% if tab== 'summary' %}class="active"{% endif %}><a href="#">Match Details</a></li>
+                <li {% if tab== 'head-to-head' %}class="active"{% endif %}><a href="#">Head to Head</a></li>
+                <li {% if tab== 'odds' %}class="active"{% endif %}><a href="#">Odds</a></li>
+                <li {% if tab== 'chat' %}class="active"{% endif %}><a href="#">Chat</a></li>
+                <li {% if tab== 'videos' %}class="active"{% endif %}><a href="#">Videos <span class="badge">4</span></a></li>
+                <li {% if tab== 'streaming' %}class="active"{% endif %}><a href="#">Streaming</a></li>
             </ul>
         </div>
     {% endif %}
