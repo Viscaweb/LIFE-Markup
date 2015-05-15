@@ -8046,7 +8046,6 @@ button.close {
 }
 .panel > .panel-body {
   color: #5c5c5c;
-  font-weight: lighter;
 }
 .panel > .panel-body.no-padding {
   padding: 0;
