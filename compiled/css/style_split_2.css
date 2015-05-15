@@ -5869,9 +5869,9 @@ main .matches-widgets td.content span.empty {
   padding: 20px;
 }
 
-.login .login-facebook button i,
-.register .login-facebook button i,
-.password-forgotten .login-facebook button i {
+.login .login-facebook .btn i,
+.register .login-facebook .btn i,
+.password-forgotten .login-facebook .btn i {
   font-size: 18px;
   vertical-align: middle;
   line-height: 17px;
