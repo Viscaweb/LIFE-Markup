@@ -2709,7 +2709,7 @@ span.glyphicon-star.active {
   font-size: 12px;
 }
 
-.match-report table tbody tr td.striped {
+.match-report table tbody tr td.minute {
   font-size: 12px;
   font-weight: 700;
   text-align: center;
