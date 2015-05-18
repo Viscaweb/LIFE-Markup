@@ -5,3 +5,17 @@
   }
 
 }
+
+.btn-group {
+
+  > .dropdown-toggle:not(:last-child):not(:first-child):not(:only-child){
+    border-radius: 0;
+  }
+
+  > button:only-of-type,
+  > a.btn:only-of-type{
+    border-radius: @border-radius-base !important;
+  }
+}
+
+

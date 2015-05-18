@@ -8423,6 +8423,15 @@ button.close {
   background: #f1f1f1;
 }
 
+.btn-group > .dropdown-toggle:not(:last-child):not(:first-child):not(:only-child) {
+  border-radius: 0;
+}
+
+.btn-group > button:only-of-type,
+.btn-group > a.btn:only-of-type {
+  border-radius: 2px !important;
+}
+
 /*Dropdown*/
 
 .dropdown-menu {
@@ -15089,12 +15098,5 @@ span.sprite-icons.webmaster-border {
   color: #8f979a;
   font-weight: 600;
   line-height: 16px;
-  display: block;
-}
-
-.match-slider-inverse .slider-content > .title h4 span.title,
-.match-slider-inverse .slider-content > .title .h4 span.title {
-  text-transform: uppercase;
-  color: #ffffff;
   display: block;
 }

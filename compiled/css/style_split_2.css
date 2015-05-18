@@ -1,3 +1,10 @@
+.match-slider-inverse .slider-content > .title h4 span.title,
+.match-slider-inverse .slider-content > .title .h4 span.title {
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+}
+
 .match-slider-inverse .slider-content > .title.live h4 span.title,
 .match-slider-inverse .slider-content > .title.live .h4 span.title {
   background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
@@ -4056,7 +4063,6 @@ span.glyphicon-star.active {
   line-height: 45px;
   font-size: 13px;
   font-weight: 600;
-  color: #5c5c5c;
   margin-top: 0;
   display: block;
   margin-bottom: 7px;
