@@ -7297,9 +7297,10 @@ button.close {
   width: 1120px;
   min-width: 1120px;
 }
-.row {
-  margin-bottom: 15px;
-}
+/*
+.row{
+   margin-bottom: 15px;
+ }*/
 /*Labels*/
 .label {
   -webkit-border-radius: 0;
@@ -10340,6 +10341,7 @@ fieldset[disabled] .btn-prediction.active {
   background-color: #e00000;
 }
 .btn-prediction-done {
+  position: relative;
   color: #ffffff;
   background-color: #737373;
   border-color: #5e5e5e;

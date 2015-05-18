@@ -22,11 +22,12 @@
 
 
 .btn-prediction-done{
-	.button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
+  position: relative;
+  .button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
 
-    &:hover {
-      .prediction-remove(red);
-    }
+  &:hover {
+    .prediction-remove(red);
+  }
 }
 
 

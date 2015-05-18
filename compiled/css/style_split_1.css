@@ -8937,9 +8937,10 @@ button.close {
   min-width: 1120px;
 }
 
-.row {
-  margin-bottom: 15px;
-}
+/*
+.row{
+   margin-bottom: 15px;
+ }*/
 
 /*Labels*/
 
@@ -12674,6 +12675,7 @@ fieldset[disabled] .btn-prediction.active {
 }
 
 .btn-prediction-done {
+  position: relative;
   color: #ffffff;
   background-color: #737373;
   border-color: #5e5e5e;
