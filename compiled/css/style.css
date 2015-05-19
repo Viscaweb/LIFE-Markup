@@ -18819,7 +18819,6 @@ ul.image-list li img {
   margin: 0;
   padding: 0;
   border: 0;
-  border-collapse: collapse;
 }
 .wrapper:before {
   content: "";
