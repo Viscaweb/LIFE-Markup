@@ -8532,10 +8532,10 @@ button.close {
 /*Content Header*/
 .content-header {
   position: relative;
-  padding: 10px 6px;
   display: table;
   width: 100%;
   margin-bottom: 15px;
+  border: 0;
 }
 .content-header .avatar {
   vertical-align: top;

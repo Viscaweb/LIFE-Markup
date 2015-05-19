@@ -6,8 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'blocks/sports/match/match_information.html.twig' %}
-    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'odds'}) }}
+    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'odds'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
     {% include 'blocks/sports/match/match_odds.html.twig' %}
 

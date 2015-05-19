@@ -1,13 +1,22 @@
-<div class="content-header league">
-    <div class="avatar">
-        <img src="img/sprites/ldc.png" alt="Ldc">
-    </div>
-    <div class="info">
-        <div class="title">
-            <span>Champions League</span>
-            <a href="#" class="active"><span class="glyphicon glyphicon-star"></span></a>
+<div class="panel content-header league">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="avatar">
+                <img src="img/sprites/ldc.png" alt="Ldc">
+            </div>
+            <div class="info">
+                <div class="title">
+                    <span>Champions League</span>
+                    <a href="#" class="active"><span class="glyphicon glyphicon-star"></span></a>
+                </div>
+                <a href="#" class="uppercase name"><span class="country-flag _United_Nations"></span>International</a>
+                <button class="btn btn-xs btn-link dropdown-toggle"><span>2013 / 2014</span><span class="icon-caret-down"></span></button>
+            </div>
         </div>
-        <a href="#" class="uppercase name"><span class="country-flag _United_Nations"></span>International</a>
-        <button class="btn btn-xs btn-link dropdown-toggle"><span>2013 / 2014</span><span class="icon-caret-down"></span></button>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+        {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab:'summary'}) }}
+        </div>
     </div>
 </div>

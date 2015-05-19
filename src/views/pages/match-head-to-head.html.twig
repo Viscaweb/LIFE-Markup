@@ -6,8 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'blocks/sports/match/match_information.html.twig' %}
-    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'head-to-head'}) }}
+    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'head-to-head'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
     <div class="row">
         <div class="col-md-12">{% include 'blocks/sports/match/team_head2head.html.twig' %}</div>

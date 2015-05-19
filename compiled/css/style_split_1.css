@@ -10449,10 +10449,10 @@ button.close {
 
 .content-header {
   position: relative;
-  padding: 10px 6px;
   display: table;
   width: 100%;
   margin-bottom: 15px;
+  border: 0;
 }
 
 .content-header .avatar {
@@ -14869,6 +14869,10 @@ span.sprite-icons.webmaster-border {
   padding: 6px;
 }
 
+.panel-social-small {
+  border: none;
+}
+
 .social {
   display: table;
 }
@@ -15090,14 +15094,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .slider-content > .title .controls span:hover {
   color: #c2c6c8;
-}
-
-.match-slider-inverse .slider-content > .title h4,
-.match-slider-inverse .slider-content > .title .h4 {
-  margin: 0;
-  font-size: 12px;
-  color: #8f979a;
-  font-weight: 600;
-  line-height: 16px;
-  display: block;
 }
