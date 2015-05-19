@@ -12094,6 +12094,9 @@ span.sprite-icons.webmaster-border {
   border: 0;
   padding: 6px;
 }
+.panel-social-small {
+  border: none;
+}
 .social {
   display: table;
 }
