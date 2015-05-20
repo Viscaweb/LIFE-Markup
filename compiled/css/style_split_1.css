@@ -14705,10 +14705,8 @@ span.sprite-icons.webmaster-border {
 /*sharing*/
 
 .sharing {
-  margin: 0 15px;
   overflow: hidden;
   background-color: #f7f7f7;
-  padding: 21px 0;
 }
 
 .sharing iframe {
