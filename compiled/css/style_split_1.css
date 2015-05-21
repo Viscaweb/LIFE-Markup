@@ -8428,8 +8428,9 @@ button.close {
 }
 
 .btn-group > button:only-of-type,
-.btn-group > a.btn:only-of-type {
-  border-radius: 2px !important;
+.btn-group > .btn:only-of-type,
+.btn-group > .btn:only-of-type:first-of-type:last-of-type {
+  border-radius: 2px;
 }
 
 /*Dropdown*/
