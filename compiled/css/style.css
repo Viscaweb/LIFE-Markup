@@ -6850,14 +6850,6 @@ button.close {
 .btn-group.open .dropdown-toggle.btn-link {
   background: #f1f1f1;
 }
-.btn-group > .dropdown-toggle:not(:last-child):not(:first-child):not(:only-child) {
-  border-radius: 0;
-}
-.btn-group > button:only-of-type,
-.btn-group > .btn:only-of-type,
-.btn-group > .btn:only-of-type:first-of-type:last-of-type {
-  border-radius: 2px;
-}
 /*Dropdown*/
 .dropdown-menu {
   border-radius: 0;
@@ -8792,6 +8784,9 @@ iframe {
 .row.row-voffset {
   margin-bottom: 20px;
 }
+.panel-body > .row-voffset:last-child {
+  margin-bottom: 0;
+}
 span.dark-icon {
   color: #5c5c5c;
 }
@@ -10298,6 +10293,7 @@ span.dark-icon {
 .btn-group-distributed {
   table-layout: auto;
 }
+/* Button group width selector in the middle with text-overflow and previous and next buttons */
 /* Mixins */
 /*Custom Buttons*/
 .btn-prediction {
@@ -10838,6 +10834,36 @@ fieldset[disabled] .btn-twitter.active {
 .btn-group .btn + .select-component,
 .btn-group .select-component + .btn {
   margin-left: -1px;
+}
+.btn-group.btn-group-selector-prev-next .btn {
+  width: auto;
+}
+.btn-group.btn-group-selector-prev-next .btn.btn-prev,
+.btn-group.btn-group-selector-prev-next .btn.btn-next {
+  width: 36px;
+}
+.btn-group.btn-group-selector-prev-next .dropdown-toggle,
+.btn-group.btn-group-selector-prev-next .btn-group .dropdown-toggle {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+  text-align: left;
+}
+.btn-group.btn-group-selector-prev-next .dropdown-toggle > .icon,
+.btn-group.btn-group-selector-prev-next .btn-group .dropdown-toggle > .icon {
+  position: absolute;
+  right: 4px;
+  line-height: 18px;
+}
+.btn-group.btn-group-selector-prev-next > .btn-group {
+  width: 100%;
+}
+.dropdown-select {
+  top: 0;
+  left: 0;
+  min-width: 100%;
 }
 /* Livescores Modals */
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {

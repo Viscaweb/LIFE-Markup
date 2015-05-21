@@ -1,3 +1,40 @@
+.match-slider-inverse .toggle-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.match-slider-inverse .slider-content {
+  display: table;
+  width: 100%;
+}
+
+.match-slider-inverse .slider-content > .title {
+  border-right: 1px solid #52585b;
+  position: relative;
+  line-height: 71px;
+  padding: 20px 60px 20px 20px;
+  display: table-cell;
+  width: 20%;
+  min-width: 155px;
+}
+
+.match-slider-inverse .slider-content > .title .controls {
+  position: absolute;
+  right: 15px;
+  top: 26px;
+  line-height: 17px;
+}
+
+.match-slider-inverse .slider-content > .title .controls span {
+  cursor: pointer;
+  font-size: 17px;
+  margin-left: 3px;
+}
+
+.match-slider-inverse .slider-content > .title .controls span:hover {
+  color: #c2c6c8;
+}
+
 .match-slider-inverse .slider-content > .title h4,
 .match-slider-inverse .slider-content > .title .h4 {
   margin: 0;

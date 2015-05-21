@@ -310,8 +310,40 @@
   .btn + .select-component, .select-component + .btn {
     margin-left: -1px;
   }
-}
 
+  &.btn-group-selector-prev-next {
+
+    .btn {
+      width: auto;
+
+      &.btn-prev,
+      &.btn-next {
+        width: 36px;
+      }
+    }
+
+    .dropdown-toggle,
+    .btn-group .dropdown-toggle{
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-right: 20px;
+      text-align: left;
+
+      > .icon {
+        position: absolute;
+        right: 4px;
+        line-height: 18px;
+      }
+    }
+
+    > .btn-group {
+      width: 100%;
+    }
+  }
+
+}
 
 
 
