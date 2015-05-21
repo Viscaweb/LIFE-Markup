@@ -6826,9 +6826,6 @@ button.close {
   border-color: #4f8b00;
   color: #ffffff;
 }
-.btn-group.btn-group-justified {
-  table-layout: inherit;
-}
 .btn-group.btn-group-justified .btn {
   border-right-width: 0px;
 }
