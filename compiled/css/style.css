@@ -7943,6 +7943,7 @@ button.close {
   -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   border-color: #f0f0f0;
+  margin-bottom: 20px;
 }
 .panel > .panel-heading {
   -webkit-border-radius: 0;
