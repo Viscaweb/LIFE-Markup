@@ -5694,10 +5694,6 @@ main .matches-widgets td.content span.empty {
   margin-bottom: 15px;
 }
 
-.contest-standings .filters .btn-group-justified > .btn {
-  width: auto;
-}
-
 .contest-standings .filters .btn-group-justified .btn.spinner {
   min-width: 169px;
 }
