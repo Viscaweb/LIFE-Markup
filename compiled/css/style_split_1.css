@@ -8458,6 +8458,10 @@ button.close {
   border-left-color: #c2c2c2;
 }
 
+.btn-group.btn-group-justified .btn:not(:last-child):last-of-type:not(.dropdown-toggle) {
+  border-right: 0;
+}
+
 .btn-group.open .dropdown-toggle.btn-link {
   background: #f1f1f1;
 }
@@ -15095,8 +15099,4 @@ span.sprite-icons.webmaster-border {
 
 .matches-slider .content .match table tr:first-child td:last-child {
   border-color: #fbfbfb;
-}
-
-.matches-slider .content .match table tr.win td.team {
-  font-weight: 700;
 }

@@ -6880,6 +6880,9 @@ button.close {
 .btn-group.btn-group-justified .btn-group:hover + .btn {
   border-left-color: #c2c2c2;
 }
+.btn-group.btn-group-justified .btn:not(:last-child):last-of-type:not(.dropdown-toggle) {
+  border-right: 0;
+}
 .btn-group.open .dropdown-toggle.btn-link {
   background: #f1f1f1;
 }
