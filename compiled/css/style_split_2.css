@@ -2398,6 +2398,7 @@ span.glyphicon-star.active {
 
 .match-timeline {
   position: relative;
+  background-color: #424749;
 }
 
 .match-timeline .team-logos {
