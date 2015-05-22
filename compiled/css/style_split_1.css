@@ -8371,6 +8371,7 @@ button.close {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  background-clip: border-box;
 }
 
 @media \0screen {
@@ -8387,12 +8388,28 @@ button.close {
   color: #ffffff;
 }
 
+.btn-group.btn-group-justified {
+  /* handling double borders when btn-group use inside btn-group-justified for dropdowns */
+  /*########## START */
+  /* .btn:hover + .btn-group {
+      .btn-default {
+        border-left-color: darken(@btn-default-border, 12%);
+      }
+
+    }*/
+  /*########## END*/
+}
+
 .btn-group.btn-group-justified .btn {
   border-right-width: 0px;
 }
 
 .btn-group.btn-group-justified .btn.btn-default:hover + .btn {
   border-left-color: #c2c2c2;
+}
+
+.btn-group.btn-group-justified .btn.btn-primary:hover + .btn {
+  border-left-color: #4b9200;
 }
 
 .btn-group.btn-group-justified .btn.btn-warning:hover + .btn {
@@ -8415,6 +8432,38 @@ button.close {
   border-right-width: 1px;
 }
 
+.btn-group.btn-group-justified .btn.btn-default:hover + .btn-group .btn {
+  border-left-color: #c2c2c2;
+}
+
+.btn-group.btn-group-justified .btn.btn-primary:hover + .btn-group .btn {
+  border-left-color: #4b9200;
+}
+
+.btn-group.btn-group-justified .btn.btn-warning:hover + .btn-group .btn {
+  border-left-color: #df9c3c;
+}
+
+.btn-group.btn-group-justified .btn.btn-danger:hover + .btn-group .btn {
+  border-left-color: #cb3d2a;
+}
+
+.btn-group.btn-group-justified .btn.btn-info:hover + .btn-group .btn {
+  border-left-color: #84a2ab;
+}
+
+.btn-group.btn-group-justified .btn.btn-success:hover + .btn-group .btn {
+  border-left-color: #4b9200;
+}
+
+.btn-group.btn-group-justified .btn-group:not(:last-child) .dropdown-toggle {
+  border-right: 0;
+}
+
+.btn-group.btn-group-justified .btn-group:hover + .btn {
+  border-left-color: #c2c2c2;
+}
+
 .btn-group.open .dropdown-toggle.btn-link {
   background: #f1f1f1;
 }
@@ -8430,6 +8479,7 @@ button.close {
   min-width: 200px;
   padding: 8px 0;
   margin-top: 0;
+  background-clip: border-box;
 }
 
 .dropdown-menu > li > a {
@@ -15055,43 +15105,4 @@ span.sprite-icons.webmaster-border {
 
 .matches-slider .content .match table tr.win td.team {
   font-weight: 700;
-}
-
-.matches-slider .content .match:nth-child(even) {
-  background-color: #ffffff;
-}
-
-.matches-slider .content .match.live .status,
-.matches-slider .content .match.paused .status {
-  padding-left: 11px;
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
-  font-weight: 600;
-  color: #e33000;
-}
-
-.matches-slider .content .match.live table tr td.score,
-.matches-slider .content .match.paused table tr td.score {
-  color: #e33000;
-}
-
-.matches-slider .content .match.paused .status {
-  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
-  color: #9a9a9a;
-}
-
-.matches-slider .content .match.highlight {
-  background-color: #fff4ce;
-}
-
-.matches-slider .content .match.highlight table tr:first-child td:last-child {
-  border-color: #fff4ce;
-}
-
-.matches-slider .content .match:hover {
-  background: #f0f0f0;
-}
-
-.match-slider-inverse {
-  background-color: #424749;
-  border-bottom-color: #52585b;
 }

@@ -1,3 +1,42 @@
+.matches-slider .content .match:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.matches-slider .content .match.live .status,
+.matches-slider .content .match.paused .status {
+  padding-left: 11px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  font-weight: 600;
+  color: #e33000;
+}
+
+.matches-slider .content .match.live table tr td.score,
+.matches-slider .content .match.paused table tr td.score {
+  color: #e33000;
+}
+
+.matches-slider .content .match.paused .status {
+  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
+  color: #9a9a9a;
+}
+
+.matches-slider .content .match.highlight {
+  background-color: #fff4ce;
+}
+
+.matches-slider .content .match.highlight table tr:first-child td:last-child {
+  border-color: #fff4ce;
+}
+
+.matches-slider .content .match:hover {
+  background: #f0f0f0;
+}
+
+.match-slider-inverse {
+  background-color: #424749;
+  border-bottom-color: #52585b;
+}
+
 .match-slider-inverse .toggle-container {
   width: 100%;
   overflow: hidden;
