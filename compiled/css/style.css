@@ -6830,12 +6830,6 @@ button.close {
 .btn-group.btn-group-justified {
   /* handling double borders when btn-group use inside btn-group-justified for dropdowns */
   /*########## START */
-  /* .btn:hover + .btn-group {
-      .btn-default {
-        border-left-color: darken(@btn-default-border, 12%);
-      }
-
-    }*/
   /*########## END*/
 }
 .btn-group.btn-group-justified .btn {
