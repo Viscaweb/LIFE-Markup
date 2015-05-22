@@ -9808,11 +9808,6 @@ button.close {
   font-style: normal;
 }
 
-.panel > .panel-heading .tools a span {
-  color: #949494;
-  font-size: 10px;
-}
-
 .panel > .panel-heading .tools a span.icon-caret-right {
   font-size: 8px;
   color: #0053a8;
@@ -9834,15 +9829,15 @@ button.close {
   font-size: 12px;
 }
 
-.panel > .panel-heading .tools .btn-group {
+.panel > .panel-heading .tools > .btn-group {
   top: -2px;
 }
 
-.panel > .panel-heading .tools button {
+.panel > .panel-heading .tools .btn {
   font-style: normal;
 }
 
-.panel > .panel-heading .tools button.spinner {
+.panel > .panel-heading .tools .btn.spinner {
   border: none;
   background-color: #ffffff;
   color: #333333;
@@ -9860,6 +9855,11 @@ button.close {
 
 .panel > .panel-heading .tools a.icon > span.icon-lg {
   font-size: 16px;
+}
+
+.panel > .panel-heading .tools a.icon > .glyphicon {
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .panel > .panel-heading .tools a.icon.active > span {

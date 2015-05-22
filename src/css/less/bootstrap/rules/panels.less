@@ -54,8 +54,6 @@
         font-style: normal;
 
         span{
-          color: lighten( @ls-dark-color, 58% );
-          font-size:  @font-size-base - 3;
           
           &.icon-caret-right{
             font-size: @font-size-x-tiny - 2;
@@ -80,11 +78,11 @@
         font-size:  @font-size-small;
       }
       
-      .btn-group {
+      >.btn-group {
 	      top:-2px;
       }
       
-      button{
+      .btn{
         font-style: normal; 
 
         &.spinner{
@@ -105,6 +103,11 @@
           &.icon-lg{
             font-size: @font-size-large;
           }
+        }
+
+        > .glyphicon {
+          font-size: @font-size-medium;
+          line-height: @line-height-computed;
         }
         
         &.active{
