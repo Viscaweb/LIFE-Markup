@@ -1,0 +1,19 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/elements/match_listing_buttons.html.twig', {type: 'all'}) }}
+    {% include 'blocks/sports/listings/match_listing_general_predictions.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {% include 'blocks/news/news_in_brief_list.html.twig' %}
+    {% include 'blocks/sports/live_commented_matches.html.twig' %}
+{% endblock %}
