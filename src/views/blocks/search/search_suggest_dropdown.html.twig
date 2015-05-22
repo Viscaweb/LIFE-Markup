@@ -1,28 +1,28 @@
 <ul class="dropdown-menu dropdown-search" role="menu">
 
     {% if type == 'all' %}
-        <li><a href="#"><img class="team" src="img/sprites/psg.png" alt="PSG">Paris Saint Germain</a></li>
-        <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Claudio Paris</a></li>
+        <li><a href="#"><img class="team" src="{{ ImageDirPath }}sprites/psg.png" alt="PSG">Paris Saint Germain</a></li>
+        <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Claudio Paris</a></li>
         <li><a href="#"><span class="country-flag fr"></span>Ligue 1</a></li>
         <li><a href="#"><span class="country-flag fr"></span>France</a></li>
     {% endif %}
 
     {% if type == 'teams' %}
-    <li><a href="#"><img class="team" src="img/sprites/psg.png" alt="PSG">Paris Saint Germain</a></li>
-    <li><a href="#"><img class="team" src="img/team-default.png" alt="Team">Team name</a></li>
-    <li><a href="#"><img class="team" src="img/team-default.png" alt="Team">Team name</a></li>
-    <li><a href="#"><img class="team" src="img/team-default.png" alt="Team">Team name</a></li>
+    <li><a href="#"><img class="team" src="{{ ImageDirPath }}sprites/psg.png" alt="PSG">Paris Saint Germain</a></li>
+    <li><a href="#"><img class="team" src="{{ ImageDirPath }}team-default.png" alt="Team">Team name</a></li>
+    <li><a href="#"><img class="team" src="{{ ImageDirPath }}team-default.png" alt="Team">Team name</a></li>
+    <li><a href="#"><img class="team" src="{{ ImageDirPath }}team-default.png" alt="Team">Team name</a></li>
     <li class="divider"></li>
     {% endif %}
 
     {% if type == 'player' %}
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Claudio Paris</a></li>
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Vinicio Paris</a></li>
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Marc Paris</a></li>
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Michele Paris</a></li>
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Thomas Paris</a></li>
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Niko Paris</a></li>
-    <li><a href="#"><img class="player" src="img/player-default.png" alt="Player">Team name</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Claudio Paris</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Vinicio Paris</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Marc Paris</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Michele Paris</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Thomas Paris</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Niko Paris</a></li>
+    <li><a href="#"><img class="player" src="{{ ImageDirPath }}player-default.png" alt="Player">Team name</a></li>
     {% endif %}
 
     {% if type == 'leagues' %}
