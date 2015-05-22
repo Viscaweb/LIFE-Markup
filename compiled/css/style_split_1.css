@@ -9793,7 +9793,6 @@ button.close {
 
 .panel > .panel-heading .tools {
   float: right;
-  font-style: italic;
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
   color: #949494;
@@ -9802,13 +9801,13 @@ button.close {
   right: 0;
 }
 
-.panel > .panel-heading .tools a {
+.panel > .panel-heading .tools > a {
   outline: none;
   font-size: 12px;
   font-style: normal;
 }
 
-.panel > .panel-heading .tools a span.icon-caret-right {
+.panel > .panel-heading .tools > a span.icon-caret-right {
   font-size: 8px;
   color: #0053a8;
   margin-right: 3px;
