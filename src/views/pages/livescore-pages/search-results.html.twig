@@ -1,0 +1,15 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/search/search_form.html.twig' %}
+    {% include 'blocks/search/search_results.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/various/partners_featured.html.twig' %}
+{% endblock %}
