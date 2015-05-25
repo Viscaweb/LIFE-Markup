@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+            
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livescore">
+    <meta name="author" content="Condor Themes">
+    <link rel="icon" href="../js/bootstrap/favicon.ico">
+    <title>Livescore</title>
+
+    <!-- Global Style links-->
+
+    <!-- LSicons-->
+    <link rel="stylesheet" href="../js/lsicons/style.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../js/owl.carousel/assets/owl.carousel.css" />
+
+
+    <link rel="stylesheet" href="../js/custombox/dist/custombox.min.css" />
+    <link rel="stylesheet" href="../js/toastr/toastr.min.css" />
+
+    
+    <!--  Custom styles for this template-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="../css/style_split_1.css" />
+    <link rel="stylesheet" href="../css/style_split_2.css" />
+    <![endif]-->
+
+    <!--End Global Style-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+
+            <header class="header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="../img/ls-logo.png" alt="site logo"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-search">
+                    <input type="text" class="form-control" placeholder="Arsenal, Rooney, Premier League...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown alerts"><a href="#"><span class="icon-bell"><span class="badge live">5</span></span></a></li>
+                <li class="dropdown notifications">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-comment"><span class="badge primary">3</span></span></a>
+                    <ul class="dropdown-menu custom" role="menu">
+                        <li>
+                            <div class="dropdown-title">Notifications (3)<div class="tools"><a href="#" class="icon"><span class="icon glyphicon glyphicon-cog"></span></a></div></div>
+                            <div class="notifications-list ls-scrollbar">
+                                <ul class="media-list">
+                                    <li class="media highlight">
+                                        <div class="media-left avatar">
+                                            <img src="../img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations !</span>
+                                            <p>New Prediction Contest Grid is available. Play now !</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media highlight">
+                                        <div class="media-left avatar">
+                                            <img src="../img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">YOUNITED</span>
+                                            <p>real meme si jsuis pour le barca</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-left avatar">
+                                            <img src="../img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations ! </span>
+                                            <p>You won this month predictions contest</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-left avatar">
+                                            <img src="../img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations ! </span>
+                                            <p>You won this month predictions contest</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="view-all">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown settings">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></a>
+                    <ul class="dropdown-menu custom" role="menu">
+                        <li>
+                            <div class="dropdown-title">Settings</div>
+                            <div class="field time-zone">
+                                <label for="time-zone">Time Zone</label>
+                                <div class="select-component">
+                                    <select name="time-zone" id="time-zone">
+                                        <option value="1" selected>15h09 UTC+2 Madrid</option>
+                                        <option value="1">15h09 UTC+2 Madrid</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field odds-type">
+                                <label for="time-zone">Odds Type</label>
+                                <div class="select-component">
+                                    <select name="time-zone" id="time-zone2">
+                                        <option value="1" selected>Decimal Odds</option>
+                                        <option value="1">Decimal Odds</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-volume-up"></span></a></li>
+                <!--User dropdown-->
+                <li class="user dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="../img/user-default.png" alt="user avatar">sebastien au. <span class="icon-caret-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="icon glyphicon glyphicon-user"></span>My account</a></li>
+                        <li><a href="#"><span class="icon icon-prono"></span>My predictions</a></li>
+                        <li><a href="#"><span class="icon icon-cup"></span>Prediction Contest</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-wrench"></span>Webmaster zone</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-edit"></span>Contact</a></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-off"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="loading-bar" style="width: 21%;"></div>
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="sprite-icons football"></span>Football</a></li>
+                <li><a href="#"><span class="sprite-icons tennis"></span>Tennis</a></li>
+                <li><a href="#"><span class="sprite-icons rugby"></span>Rugby</a></li>
+                <li><a href="#"><span class="sprite-icons handball"></span>Handball</a></li>
+                <li class="dropdown dropdown-inverted">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others<span class="icon-caret-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="sprite-icons basketball"></span>Basketball</a></li>
+                        <li><a href="#"><span class="sprite-icons volleyball"></span>Volleyball</a></li>
+                        <li><a href="#"><span class="sprite-icons icehockey"></span>Ice Hockey</a></li>
+                        <li><a href="#"><span class="sprite-icons baseball"></span>Baseball</a></li>
+                        <li><a href="#"><span class="sprite-icons am-football"></span>American Football</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Streaming</a></li>
+                <li><a href="#">Prediction Contest</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right social-nav">
+                <li><a href="#"><span class="icon-apple"></span></a></li>
+                <li><a href="#"><span class="icon-android"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-googleplus"></span></a></li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>    
+    <div class="container">
+                        <div class="wrapper row">
+            
+    <div class="left-sidebar col-xs-2">
+            <ul class="sidebar-nav sidebar-nav-inverse user-sidebar-nav">
+    <li class="user-display">
+        <img class="img-circle avatar" src="../img/user-default.png" alt="User Avatar">
+        <div class="info">
+            <span>sebastien au.</span>
+            <a href="#">My Profile</a>
+        </div>
+    </li>
+    <li class="rank">
+        <span class="title">contest rank</span>
+        <div class="rank-numbers">
+            <span class="rank1">345</span>
+            <span class="rank2">/ 739</span>
+        </div>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle active" href="#"><span class="icon glyphicon glyphicon-user"></span>Member area</a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#"><span class="icon glyphicon glyphicon-th-large"></span>Dashboard</a>
+            </li>
+            <li>
+                <a href="#"><span class="icon icon-cup"></span>Predictions Contest</a>
+            </li>
+            <li>
+                <a href="#"><span class="icon glyphicon glyphicon-th-list"></span>My Predictions</a>
+            </li>
+            <li>
+                <a href="#"><span class="icon glyphicon glyphicon-star"></span>My Favorites</a>
+            </li>
+            <li>
+                <a href="#"><span class="icon glyphicon glyphicon-pencil"></span>My Information</a>
+            </li>
+            <li>
+                <a href="#"><span class="icon glyphicon glyphicon-cog"></span>Settings</a>
+            </li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle active" href="#"><span class="icon glyphicon glyphicon-wrench"></span>Webmaster area</a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#"><span class="icon icon-widget"></span>My Widgets</a>
+            </li>
+        </ul>
+    </li>
+</ul>    <ul class="sidebar-nav">
+    <li>
+        <a href="#"><i class="icon icon-football active"></i>All Matches</a>
+        <!-- <a href="javascript:;" class="pull-right calendar-button btn-datepicker-open" data-position="right-top"><input type="hidden" name="dp"><span class="icon-calendar"></span></a> -->
+    </li>
+    <li>
+        <a href="#" class="live-red uppercase"><i class="icon-ellipse"></i>Live Now<span class="badge live pull-right">12</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="icon-bell"></i>My Games<span class="badge live pull-right">3</span></a>
+    </li>
+    <li class="active open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Leagues</a>
+        <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
+        <ul class="sub-menu sortable-ul">
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/ligue1.png" alt="Ligue 1">Ligue 1 <span class="live-red">(6)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/ligue2.png" alt="Ligue 2">Ligue 2<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/premiereleague.png" alt="Premiere league">Premiere League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/bundesliga.png" alt="Bundes Liga">Bundesliga <span class="live-red">(3)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/seriea.png" alt="Serie A">Serie A<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/coupedefrance.png" alt="Coupe de France">Coupe de France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/cdl.png" alt="Cdl">CdL<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/ldc.png" alt="Ldc">LdC<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/eurocoup.png" alt="Europa League">Europa League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/worldcup.png" alt="World Cup">World Cup<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+            <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add competitions</a></li>
+        </ul>
+    </li>
+    <li class="active open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Teams</a>
+        <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
+        <ul class="sub-menu sortable-ul">
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/fr.png" alt="France">France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/manchestercity.png" alt="Manchester City">Manchester City<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/fr.png" alt="OM">OM<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/realmadrid.png" alt="Real Madrid">Real Madrid<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/barcelona.png" alt="Barcelona">Barcelona<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/lyon.png" alt="Lyon">Lyon<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><img src="../img/sprites/psg.png" alt="PSG">PSG<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+            <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add teams</a></li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Top Countries</a>
+        <ul class="sub-menu">
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag fr"></span>France</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _England"></span>England</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag es"></span>Spain</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag it"></span>Italy</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a></li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Country</a>
+        <ul class="sub-menu second-menu">
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _United_Nations"></span>International</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag za"></span>South Africa</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag al"></span>Albania</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ag"></span>Algeria</a></li>
+            <li class="open">
+                <a class="dropdown-toggle"><span class="country-flag de"></span>Germany</a>
+                <ul class="sub-menu third-menu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Bundesliga <span class="fav active"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Super Coupe <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Bundesliga 2 <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li class="open">
+                        <a class="dropdown-toggle">CFA</a>
+                        <ul class="sub-menu fourth-menu">
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">CFA Group A<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group B<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group C<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group D<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bundesliga 3<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Regionalliga<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Coupe de la Lig.<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Oberliga<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">DfB-Pokal<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Barrages<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ad"></span>Andorra</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _England"></span>England</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ao"></span>Angola</a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+        </ul>
+    </li>
+    <li><a href="#">+ View more</a></li>
+</ul>    </div>
+
+    <main class="main col-xs-10">
+
+            <ol class="breadcrumb">
+    <li><a href="#">Foot en direct</a></li>
+    <li><a href="#">France</a></li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="team" src="../img/sprites/psg.png" alt="PSG">PSG <span class="icon-caret-down"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Ajaccio</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Bastia	</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Bordeaux</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Evian</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Guingamp</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Lille</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Lorient</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Lyon</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Monaco</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Montpellier</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Nantes</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Nice</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">OM</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">PSG</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Reims</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Rennes</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Sochaux</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">St Etienne</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Toulouse</a></li>
+            <li><a href="#"><img class="team" src="../img/sprites/psg.png" alt="PSG">Valenciennes</a></li>
+        </ul>
+    </li>
+    <li class="active">Summary</li>
+</ol>    <header class="profile-header">
+    <div class="profile-wall">
+        <img src="../img/profile-header.jpg">
+
+        <div class="profile-image">
+            <img src="../img/profile-img.jpg" alt="Profile Avatar">
+            <a href="#" class="modal-toggle"><span class="icon glyphicon glyphicon-camera"></span></a>
+        </div>
+        <div class="modal fade " id="modal-profile-image">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+                                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">Change Profile picture</h4>
+                </div>
+            
+            <div class="modal-body container-fluid modal-body-no-padding change-profile-image">
+                    <div class="row">
+        <div class="col-md-3 left-side">
+            <div class="current-image">
+                <img class="image-circle" src="../img/profile-img.jpg" alt="Profile Image">
+                <span class="nick-name">sebastien au.</span>
+            </div>
+        </div>
+        <div class="col-md-9 options">
+            <div class="predefined-images">
+                <label>Pre-defined</label>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="img">
+                                <img class="img-circle" src="../img/user-default.png" alt="Avatar">
+                            </div>
+                            <span class="name">Blank</span>
+                        </a>
+                    </li>
+                    <li class="selected-image">
+                        <a href="#">
+                            <div class="img">
+                                <img class="img-circle" src="../img/profile-img.jpg" alt="Profile Image">
+                            </div>
+                            <span class="name">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="custom-picture">
+                <label>Custom picture</label>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="img">
+                            <img class="add-file" src="../img/user-dashboard/add-file.png" alt="Add File">
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="drag-zone">
+                            <div class="drag-message">
+                                <span>Drag picture here or</span>
+                                <button type="button" class="btn btn-primary"><span class="icon glyphicon glyphicon-camera"></span>Select Picture</button>
+                            </div>
+                            <div class="drop-message">
+                                <span class="icon glyphicon glyphicon-circle-arrow-up"></span> Drop image here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-teams">
+                <label>My Teams</label>
+                <div class="scroll-container">
+                    <ul>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                        <li><div class="logo"><img src="../img/sprites/realmadrid.png" alt="Real Madrid"></div><span class="name">Real M.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+
+                                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+        <span class="display-name">sebastien au.</span>
+    </div>
+
+    <ul class="nav nav-pills profile-nav">
+        <li class="active"><a href="#">Contest & Predictions</a></li>
+    </ul>
+</header>
+        <div class="content-wrapper">
+
+                <div class="content">
+            <!--Prediction contest grid-->
+
+<div class="panel panel-default prediction-contest-grid">
+    <div class="panel-heading">
+        <div class="tools">
+            <div class="btn-group btn-group-xs">
+                <a href="#" class="btn btn-default"><span class="icon-caret-left"></span></a>
+                <div class="btn-group btn-group-xs">
+                    <a href="#" data-toggle="dropdown" class="btn btn-default spinner dropdown-toggle">
+                        <span>Grid 3 (08/09 - 14/09)</span>
+                        <span class="icon icon-caret-select"></span>
+                    </a>
+                    <ul role="menu" class="dropdown-menu dropdown-select">
+                        <li><a href="#">Grid 1 (01/09 - 03/09)</a></li>
+                        <li><a href="#">Grid 2 (04/09 - 08/09)</a></li>
+                        <li class="active"><a href="#">Grid 3 (08/09 - 14/09)</a></li>
+                        <li><a href="#">Grid 4 (15/09 - 19/09)</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-default"><span class="icon-caret-right"></span></a>
+            </div>
+        </div>
+        Prediction Contest Grid
+    </div>
+    <div class="row indicators">
+        <div class="col-xs-4">
+            My Ranking: <span class="number-big">345</span><span class="number-small">/ 739</span>
+        </div>
+        <div class="col-xs-4">
+            Correct predictions: <span class="number-big">9</span><span class="number-small">/ 16</span>
+        </div>
+        <div class="col-xs-4">
+            Points: <span class="number-big">9</span>
+        </div>
+    </div>
+    <table class="table matches predictions table-condensed table-striped no-border layout-fixed">
+        <colgroup>
+            <col class="prediction-status">
+            <col class="date">
+            <col class="league">
+            <col class="team">
+            <col class="score">
+            <col class="team">
+            <col class="prediction">
+            <col class="trend">
+            <col class="tools tools-2">
+            <col class="favorite">
+        </colgroup>
+        <thead class="league-data">
+        <tr>
+            <th colspan="10">
+                <div class="title">
+                    <span class="country"><span class="icon-cup icon"></span>Grid Nº3</span>
+                </div>
+            </th>
+        </tr>
+        </thead>
+        <thead>
+        <tr>
+            <th></th>
+            <th class="text-right">Date</th>
+            <th></th>
+            <th></th>
+            <th>Score</th>
+            <th></th>
+            <th>Prediction</th>
+            <th class="text-center">Trend</th>
+            <th>Aide</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="">
+            <td class="icon"></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+            <td class="team team1"><a href="#">Leverkusen</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Werder Brême</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="icon"></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">13/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/bundesliga.png" alt="Bundes liga"></td>
+            <td class="team team1"><a href="#">Arsenal</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Man City</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-waiting">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">13/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/premiereleague.png" alt="Premiere League"></td>
+            <td class="team team1"><a href="#">Bayern</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Stuttgart</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-done">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-waiting">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">13/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/premiereleague.png" alt="Premiere League"></td>
+            <td class="team team1"><a href="#">Bayern</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Stuttgart</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction-done">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-waiting">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Barcelone</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Ath. Bilbao</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-hidden">
+                    <a href="#" class="btn btn-prediction btn-hidden disabled">Hidden</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="event-cancelled">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Event cancelled"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Barcelone</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Ath. Bilbao</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-cancelled  prediction-closed">
+                    <a href="#" class="btn btn-prediction btn-hidden disabled">Cancelled</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="live">
+            <td class="icon"><span class="icon glyphicon glyphicon-lock" data-toggle="tooltip" data-placement="top" title="Prediction locked"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">0</span></a></td>
+            <td class="team team2"><a href="#">PSG</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-locked"  data-toggle="tooltip" data-placement="top" title="Predictions are only possible before kick off.">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-done disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Bastia</a></td>
+            <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">1</span></a></td>
+            <td class="team team2"><a href="#">Lens</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-success disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Reims</a></td>
+            <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
+            <td class="team team2"><a href="#">Toulouse</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction-result disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-failed disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">St Etienne</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
+            <td class="team team2"><a href="#">Caen</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-success disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Real Madrid</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
+            <td class="team team2"><a href="#">Atletico M.</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-result disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Juventus</a></td>
+            <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">0</span></a></td>
+            <td class="team team2"><a href="#">Udinese</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction-success disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Lille</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
+            <td class="team team2"><a href="#">Nantes</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction-failed disabled">X</a>
+                    <a href="#" class="btn btn-prediction-result disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Guingamp</a></td>
+            <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">2</span></a></td>
+            <td class="team team2"><a href="#">Bordeaux</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction-success disabled">X</a>
+                    <a href="#" class="btn btn-prediction disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Man Utd</a></td>
+            <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
+            <td class="team team2"><a href="#">QPR</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction-success disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Evian</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
+            <td class="team team2"><a href="#">OM</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs prediction-closed">
+                    <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-result disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Grid winner
+    <div class="user-notification">
+        <a href="#"><img class="img-circle avatar" src="../img/user-default.png" alt="User Avatar">John Smith</a> finished 1st and won his favorite team shirt!
+    </div>
+    -->
+    <div class="panel-footer">
+        <a href="#"><span class="icon-caret-right icon"></span>Contest rules</a>
+    </div>
+</div>
+    <!--Predictions listing-->
+
+<div class="panel panel-default last-predictions">
+    <div class="panel-heading">My Predictions</div>
+    <table class="table matches predictions table-condensed table-striped no-border layout-fixed">
+        <colgroup>
+            <col class="prediction-status">
+            <col class="date">
+            <col class="league">
+            <col class="team">
+            <col class="score">
+            <col class="team">
+            <col class="prediction">
+            <col class="trend">
+            <col class="tools tools-2">
+            <col class="favorite">
+        </colgroup>
+        <thead>
+        <tr>
+            <th></th>
+            <th class="text-right">Date</th>
+            <th></th>
+            <th></th>
+            <th>Score</th>
+            <th></th>
+            <th>Prediction</th>
+            <th class="text-center">Trend</th>
+            <th>Aide</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+            <td class="team team1"><a href="#">Leverkusen</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Werder Brême</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">13/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/bundesliga.png" alt="Bundes liga"></td>
+            <td class="team team1"><a href="#">Arsenal</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Man City</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-waiting">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">13/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/premiereleague.png" alt="Premiere League"></td>
+            <td class="team team1"><a href="#">Bayern</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Stuttgart</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction-done">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-waiting">
+            <td class="icon"><span class="icon icon-clock"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">13/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/premiereleague.png" alt="Premiere League"></td>
+            <td class="team team1"><a href="#">Bayern</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Stuttgart</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction">1</a>
+                    <a href="#" class="btn btn-prediction-done">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+
+        <tr class="prediction-cancelled event-cancelled prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Event cancelled"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Barcelone</a></td>
+            <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Ath. Bilbao</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs"  data-toggle="tooltip" data-placement="top" title="Event cancelled">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-done disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-locked live">
+            <td class="icon"><span class="icon glyphicon glyphicon-lock" data-toggle="tooltip" data-placement="top" title="Prediction locked"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">0</span></a></td>
+            <td class="team team2"><a href="#">PSG</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs"  data-toggle="tooltip" data-placement="top" title="Predictions are only possible before kick off.">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-done disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Bastia</a></td>
+            <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">1</span></a></td>
+            <td class="team team2"><a href="#">Lens</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-success disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Reims</a></td>
+            <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
+            <td class="team team2"><a href="#">Toulouse</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-result disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-failed disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">St Etienne</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
+            <td class="team team2"><a href="#">Caen</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-success disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Real Madrid</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
+            <td class="team team2"><a href="#">Atletico M.</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-result disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Juventus</a></td>
+            <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">0</span></a></td>
+            <td class="team team2"><a href="#">Udinese</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-success disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Lille</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">1</span></a></td>
+            <td class="team team2"><a href="#">Nantes</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction-failed disabled">X</a>
+                    <a href="#" class="btn btn-prediction-result disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Guingamp</a></td>
+            <td class="score"><a href="#"><span class="home-score">2</span><span class="versus"> - </span><span class="away">2</span></a></td>
+            <td class="team team2"><a href="#">Bordeaux</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction disabled">1</a>
+                    <a href="#" class="btn btn-prediction-success disabled">X</a>
+                    <a href="#" class="btn btn-prediction disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-won event-won prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-ok" data-toggle="tooltip" data-placement="top" title="Won"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Man Utd</a></td>
+            <td class="score"><a href="#"><span class="home-score">1</span><span class="versus"> - </span><span class="away">3</span></a></td>
+            <td class="team team2"><a href="#">QPR</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-success disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        <tr class="prediction-lost event-lost prediction-closed">
+            <td class="icon"><span class="icon glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="top" title="Lost"></span></td>
+            <td class="date" data-toggle="tooltip" data-placement="top" title="20h00" data-container="body">12/09</td>
+            <td class="league-logo"><img class="league" src="../img/sprites/ligue1.png" alt="League 1"></td>
+            <td class="team team1"><a href="#">Evian</a></td>
+            <td class="score"><a href="#"><span class="home-score">0</span><span class="versus"> - </span><span class="away">2</span></a></td>
+            <td class="team team2"><a href="#">OM</a></td>
+            <td class="prediction">
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction-failed disabled">1</a>
+                    <a href="#" class="btn btn-prediction disabled">X</a>
+                    <a href="#" class="btn btn-prediction-result disabled">2</a>
+                </div>
+            </td>
+            <td class="trend">
+                <div class="progress">
+                    <div style="width: 35%" class="progress-bar progress-bar-home">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                    <div style="width: 30%" class="progress-bar progress-bar-neutral">
+                        <span class="sr-only">10% Complete (warning)</span>
+                    </div>
+                    <div style="width: 35%" class="progress-bar progress-bar-away">
+                        <span class="sr-only">40% Complete (danger)</span>
+                    </div>
+                </div>
+            </td>
+            <td class="tools">
+                <a href="#"><i class="icon-bulb"></i></a>
+            </td>
+            <td class="favorite">
+                <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="table-pagination">
+        <a href="#"><span class="icon-caret-right icon"></span>All my predictions</a>
+        <ul class="pagination pagination-xs">
+            <li><a href="#"><span class="icon-caret-left"></span></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span class="icon-caret-right"></span></a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+
+    <div class="right-sidebar">
+            <div class="panel panel-condensed panel-default contest-standings">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <span class="icon icon-cup"></span>
+            Contest Standings
+        </div>
+    </div>
+    <div class="filters">
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-default active" href="#">Season</a>
+            <a class="btn btn-default" href="#">Month</a>
+            <a class="btn btn-default" href="#">Grid</a>
+        </div>
+        <div class="btn-group btn-group-justified btn-group-selector-prev-next">
+            <a href="#" class="btn btn-default btn-xs btn-prev">
+                <span class="icon-caret-left"></span>
+            </a>
+            <div class="btn-group">
+                <a href="#" class="btn btn-xs btn-default spinner dropdown-toggle"><span class="icon icon-caret-select"></span><span>Grid 3 (08/09 - 14/09)</span></a>
+            </div>
+            <a href="#" class="btn btn-default btn-xs btn-next">
+                <span class="icon-caret-right"></span>
+            </a>
+        </div>
+    </div>
+    <div class="table-scroll">
+        <table class="table table-striped no-border table-standing">
+            <thead>
+            <tr>
+                <th class="number">#</th>
+                <th class="state"><span class="icon icon-arrow-up-down"></span></th>
+                <th class="player" colspan="2">Player</th>
+                <th class="points">Pts</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="number rank-standing-green"><span data-toggle="tooltip" data-placement="left" title="[Winner prize]">1</span></td>
+                <td class="state"><span class="icon-equal"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/sprites/psg.png" alt="PSG"></a></td>
+                <td class="player"><a href="#">pacino13</a></td>
+                <td class="points">13</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="state"><span class="icon-equal"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Minya__11</a></td>
+                <td class="points">13</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="state down"><span class="icon-arrow-down"></span>-1</td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">MatHellG</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="state"><span class="icon-equal"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">the master</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="state down"><span class="icon-arrow-down"></span>-2</td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Kara</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="state up"><span class="icon-arrow-up"></span>+1</td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Gumball</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="state"><span class="icon-equal"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">CUSINIER</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr>
+                <td class="number">8</td>
+                <td class="state"><span class="icon-equal"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Boris Borin</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr>
+                <td class="number">9</td>
+                <td class="state"><span class="icon-equal"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">riadh boughdira</a></td>
+                <td class="points">12</td>
+            </tr>
+            <tr class="show-all">
+                <th colspan="5"><div><span>...</span><a href="#" class="btn btn-link btn-xs">+ Show all</a></div></th>
+            </tr>
+            <tr>
+                <td class="number">180</td>
+                <td class="state up"><span class="icon-arrow-up"></span>+4</td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Youness</a></td>
+                <td class="points">9</td>
+            </tr>
+            <tr>
+                <td class="number">181</td>
+                <td class="state up"><span class="icon-arrow-up"></span>+12</td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Firas Kalfallah</a></td>
+                <td class="points">9</td>
+            </tr>
+            <tr class="event-won">
+                <td class="number">182</td>
+                <td class="state down"><span class="icon-arrow-down"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">sebastien</a></td>
+                <td class="points">9</td>
+            </tr>
+            <tr>
+                <td class="number">183</td>
+                <td class="state down"><span class="icon-arrow-down"></span></td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">keisha357</a></td>
+                <td class="points">9</td>
+            </tr>
+            <tr>
+                <td class="number">184</td>
+                <td class="state down"><span class="icon-arrow-down"></span>-1</td>
+                <td class="avatar"><a href="#"><img class="img-circle" src="../img/player-default.png" alt="Player"></a></td>
+                <td class="player"><a href="#">Alex-du-67240</a></td>
+                <td class="points">9</td>
+            </tr>
+            <tr class="show-all">
+                <th colspan="5"><div><span>...</span><a href="#" class="btn btn-link btn-xs">+ Show all</a></div></th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>    <div class="panel panel-condensed panel-default prediction-statistics">
+    <div class="panel-heading">
+        Predictions statistics
+    </div>
+    <div class="panel-body">
+        <div class="stat">
+            <span class="title">Success rate</span>
+            <span class="number active">56%</span>
+        </div>
+        <div class="stat">
+            <span class="title">Predictions "2" correct</span>
+            <span class="number">56</span>
+        </div>
+        <div class="row statistics">
+            <div class="col-md-4">
+                <span class="title">won</span>
+                <span class="number won">168</span>
+            </div>
+            <div class="col-md-4">
+                <span class="title">lost</span>
+                <span class="number lost">132</span>
+            </div>
+            <div class="col-md-4">
+                <span class="title">total</span>
+                <span class="number total">300</span>
+            </div>
+            <img src="../img/prediction-statistics-chart.png" alt="Prediction Statistics Chart">
+        </div>
+    </div>
+</div>    </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </main>
+
+        </div>
+                    </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="top-footer">
+            <div class="row">
+                <div class="col-md-9 left-column">
+                    <span class="title">Top competitions football</span>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span><img src="../img/sprites/worldcup.png" alt="World Cup">Coupe du Monde</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Coupe du Monde</a></li>
+                                <li><a href="#">Résultat Coupe du Monde</a></li>
+                                <li><a href="#">Calendrier Coupe du Monde</a></li>
+                                <li><a href="#">Classement Coupe du Monde</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <span><img src="../img/sprites/ligue1.png" alt="Ligue 1">Ligue1</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Ligue 1</a></li>
+                                <li><a href="#">Résultat Liguel 1</a></li>
+                                <li><a href="#">Calendrier Ligue 1</a></li>
+                                <li><a href="#">Classement Ligue 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <span><img src="../img/sprites/ldc.png" alt="Ldc">Ligue des Champions</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Ligue des Champions</a></li>
+                                <li><a href="#">Résultat Ligue des Champions</a></li>
+                                <li><a href="#">Calendrier Ligue des Champions</a></li>
+                                <li><a href="#">Classement Ligue des Champions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span><img src="../img/sprites/premiereleague.png" alt="Premiere league">Premier League</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Premier League</a></li>
+                                <li><a href="#">Résultat Premier League</a></li>
+                                <li><a href="#">Calendrier Premier League</a></li>
+                                <li><a href="#">Classement Premier League</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <span><img src="../img/sprites/cup2.png" alt="Cup">Liga</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Liga</a></li>
+                                <li><a href="#">Résultat Liga</a></li>
+                                <li><a href="#">Calendrier Liga</a></li>
+                                <li><a href="#">Classement Liga</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <span><img src="../img/sprites/seriea.png" alt="Serie A">Serie A</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Serie A</a></li>
+                                <li><a href="#">Résultat Serie A</a></li>
+                                <li><a href="#">Calendrier Serie A</a></li>
+                                <li><a href="#">Classement Serie A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="title">Résultats foot par pays</span>
+                            <ul>
+                                <li><a href="#">Résultats Foot Français</a></li>
+                                <li><a href="#">Résultats Foot Anglais</a></li>
+                                <li><a href="#">Résultats Foot Espagnol</a></li>
+                                <li><a href="#">Résultats Foot Italien</a></li>
+                                <li><a href="#">Résultats Foot Allemand</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="title">Résultats foot par equipes</span>
+                            <ul>
+                                <li><a href="#">Equipe OM</a></li>
+                                <li><a href="#">Equipe Real Madrid</a></li>
+                                <li><a href="#">Equipe Barcelone</a></li>
+                                <li><a href="#">Equipe PSG</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="title">Principaux matchs à venir:</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Allemangne Portugal</a></li>
+                                <li><a href="#">Foot en direct Suisse France</a></li>
+                                <li><a href="#">Foot en direct Equiateur France</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 right-column">
+                    <img src="../img/ls-logo-white.png" alt="Site Logo">
+                    <p>Fusce sagittis eget purus vel hendrerit. Morbi fermentum semper risus. Phasellus vel efficitur dolor. Quisque vel lorem accumsan, ornare velit eget, ultricies lacus, um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
+                    <div class="app-links">
+                        <img src="../img/app-store.png" alt="AppStore">
+                        <img src="../img/play-store.png" alt="PlayStore">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Utilisation</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Livescore gratuit</a></li>
+                <li><a href="#">Recrutement</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery-ui/jquery-ui.js"></script>
+<script src="../js/owl.carousel/owl.carousel.min.js"></script>
+<script src="../js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/custombox/dist/custombox.min.js"></script>
+<script src="../js/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="../js/markup-scripts.js"></script>
+<script src="../js/google-charts.js"></script>
+
+</body>
+</html>

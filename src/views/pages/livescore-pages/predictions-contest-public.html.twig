@@ -1,0 +1,34 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/placeholders/visual_block_970x300.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
+    <div class="row">
+        <div class="col-md-6">
+            {% include 'blocks/predictions/predictions_contest_season_gifts.html.twig' %}
+        </div>
+        <div class="col-md-6">
+            {% include 'blocks/predictions/predictions_contest_month_gifts.html.twig' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            {% include 'blocks/predictions/predictions_contest_share.html.twig' %}
+        </div>
+        <div class="col-md-4">
+            {% include 'blocks/predictions/predictions_contest_rules_link.html.twig' %}
+        </div>
+    </div>
+    {% include 'blocks/various/comment_thread.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/predictions/predictions_contest_quick_info.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_standings.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_others.html.twig' %}
+{% endblock %}

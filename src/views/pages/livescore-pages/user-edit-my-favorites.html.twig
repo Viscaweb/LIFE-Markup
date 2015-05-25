@@ -1,0 +1,23 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    <span class="page-title">My Favorites</span>
+    {% include 'blocks/elements/sports_tabs.html.twig' %}
+    {% include 'blocks/user/user_edit_my_leagues.html.twig' %}
+    {% include 'blocks/user/user_edit_my_teams.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/various/help_panel.html.twig' %}
+    {% include 'blocks/placeholders/panel_300x300.html.twig' %}
+{% endblock %}
