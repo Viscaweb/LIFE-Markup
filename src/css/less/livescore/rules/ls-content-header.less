@@ -134,20 +134,20 @@
 
   &.player{
     
-		.info{
-			margin-right: 46px;
-      width: 38%;
+	.info{
+      margin-right: 46px;
+      width: auto;
 
-			.title{
-      
-				.first-name {
-					margin: 0;
-					font-size: @font-size-base;
+      .title{
+
+        .first-name {
+          margin: 0;
+          font-size: @font-size-base;
           line-height: 18px;
-					font-weight: 600;
-					padding-left: 2px;
+          font-weight: 600;
+          padding-left: 2px;
           display: block;
-				}
+        }
         
         .last-name{
           margin: 0;
@@ -160,65 +160,66 @@
 			}
 		}
     
-		.description{
-			display: table-cell;
+	.description{
+      display: table-cell;
       vertical-align: top;
       padding: 10px 10px 10px 0;
       width: 25%;
 
-			ul{
-				padding: 0;
-				list-style: none;
+      ul{
+        padding: 0;
+        list-style: none;
 
-				li{
-					padding: 1px 0;
-					font-size: @font-size-small - 1;
-					border-bottom: 1px solid darken(@ls-light-color,7%);
+        li{
+          padding: 1px 0;
+          font-size: @font-size-small - 1;
+          border-bottom: 1px solid darken(@ls-light-color,7%);
 
-					.icon{
-						margin-right: 5px;
-						font-size: @font-size-medium; 
-						color: lighten(@ls-dark-color, 35.3%);
-					}
+          .icon{
+            margin-right: 5px;
+            font-size: @font-size-medium;
+            color: lighten(@ls-dark-color, 35.3%);
+          }
 
-					span.info{
-						float: right;
-						margin: 0;
-						padding: 0;
-						width: auto;
-						font-size: @font-size-base;
-						color: darken(@ls-light-color, 23%);
-						cursor: pointer;
-						position: relative;
-						top: 3px;
-					}
+          span.info{
+            float: right;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            font-size: @font-size-base;
+            color: darken(@ls-light-color, 23%);
+            cursor: pointer;
+            position: relative;
+            top: 3px;
+          }
 
-					span{
-						font-weight: @font-weight-semi-bold;
-					}
-				}
-			}
-		}
-    
-		.teams{
-			vertical-align: top;
-			text-align: right;
-			display: table-cell;
-			padding: 10px 0;
-      
-			a{
-				text-align: center;
-				display: inline-block;
-				font-size: @font-size-small - 1;
-				color: darken(@ls-light-color,32%);
-				padding: 2px;
-
-				img{
-					max-width: 52px;
-					display: block;
-				}
-			}
-		}
+          span{
+            font-weight: @font-weight-semi-bold;
+          }
+        }
+      }
 	}
+    
+	.teams{
+      vertical-align: top;
+      text-align: right;
+      display: table-cell;
+      padding: 10px 0;
+      width: 25%;
+
+      a{
+        text-align: center;
+        display: inline-block;
+        font-size: @font-size-small - 1;
+        color: darken(@ls-light-color,32%);
+        padding: 2px;
+
+        img{
+          max-width: 52px;
+          display: block;
+        }
+      }
+	}
+  }
 
 }

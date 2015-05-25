@@ -8665,7 +8665,7 @@ button.close {
 }
 .content-header.player .info {
   margin-right: 46px;
-  width: 38%;
+  width: auto;
 }
 .content-header.player .info .title .first-name {
   margin: 0;
@@ -8722,6 +8722,7 @@ button.close {
   text-align: right;
   display: table-cell;
   padding: 10px 0;
+  width: 25%;
 }
 .content-header.player .teams a {
   text-align: center;
