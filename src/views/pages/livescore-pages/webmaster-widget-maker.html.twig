@@ -1,0 +1,25 @@
+{% extends "layouts/full.html.twig" %}
+{% set basePath = '../' %}
+
+{% block resources_header %}
+    {{ include('blocks/commons/head.html.twig', {page: 'webmaster'}) }}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/webmaster/widgets_creator_header.html.twig' %}
+    {% include 'blocks/webmaster/widgets_creator.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}
+
+{% block resources_footer %}
+    {% include 'blocks/commons/scripts.html.twig' %}
+    {% include 'blocks/commons/scripts_webmaster.html.twig' %}
+{% endblock %}

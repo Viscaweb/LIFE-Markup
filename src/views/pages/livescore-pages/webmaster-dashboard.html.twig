@@ -1,0 +1,18 @@
+{% extends "layouts/2_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/webmaster/widgets_promo_header.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    {% include 'blocks/webmaster/widgets_promo_intro.html.twig' %}
+    {% include 'blocks/webmaster/widgets_promo_samples.html.twig' %}
+    {% include 'blocks/webmaster/widgets_promo_features.html.twig' %}
+{% endblock %}
