@@ -29,10 +29,23 @@ ol.breadcrumb{
       tr{
       
         td{
-        
-          span.name{
-            color: darken(@ls-light-color, 30%);
+
+          &.name {
+
+            > a {
+              color: lighten(@ls-dark-color, 36%);
+
+              &:hover {
+                color: @link-hover-color;
+              }
+            }
+
+            span.name{
+              color: darken(@ls-light-color, 30%);
+            }
+
           }
+
         }
         
         td.number, td.goals{

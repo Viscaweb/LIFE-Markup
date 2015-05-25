@@ -16104,7 +16104,13 @@ ol.breadcrumb li a img {
 .panel .panel-heading span.icon-football {
   margin-right: 5px;
 }
-.panel .table.league-clubs tbody tr td span.name {
+.panel .table.league-clubs tbody tr td.name > a {
+  color: #5c5c5c;
+}
+.panel .table.league-clubs tbody tr td.name > a:hover {
+  color: #0076f0;
+}
+.panel .table.league-clubs tbody tr td.name span.name {
   color: #b3b3b3;
 }
 .panel .table.league-clubs tbody tr td.number,
