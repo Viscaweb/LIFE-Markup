@@ -3,7 +3,6 @@
   position: relative;
   display: table;
   width: 100%;
-  margin-bottom: 15px;
   border: 0;
 
   .avatar{
@@ -17,7 +16,7 @@
       max-width: 65px;
       margin-top: 8px;
 	}
-	}
+  }
 
   .info{
 		display: table-cell;
@@ -165,6 +164,10 @@
       vertical-align: top;
       padding: 10px 10px 10px 0;
       width: 25%;
+
+      &:last-child {
+        padding-right: 0;
+      }
 
       ul{
         padding: 0;

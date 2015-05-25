@@ -8561,7 +8561,6 @@ button.close {
   position: relative;
   display: table;
   width: 100%;
-  margin-bottom: 15px;
   border: 0;
 }
 .content-header .avatar {
@@ -8688,6 +8687,9 @@ button.close {
   vertical-align: top;
   padding: 10px 10px 10px 0;
   width: 25%;
+}
+.content-header.player .description:last-child {
+  padding-right: 0;
 }
 .content-header.player .description ul {
   padding: 0;
@@ -10912,6 +10914,9 @@ fieldset[disabled] .btn-twitter.active {
   margin-right: 5px;
   top: -5px;
   position: relative;
+}
+.panel.panel-no-border {
+  border: 0;
 }
 span.sprite-icons {
   width: 21px;

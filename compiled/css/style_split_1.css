@@ -10486,7 +10486,6 @@ button.close {
   position: relative;
   display: table;
   width: 100%;
-  margin-bottom: 15px;
   border: 0;
 }
 
@@ -10638,6 +10637,10 @@ button.close {
   vertical-align: top;
   padding: 10px 10px 10px 0;
   width: 25%;
+}
+
+.content-header.player .description:last-child {
+  padding-right: 0;
 }
 
 .content-header.player .description ul {
@@ -13346,6 +13349,10 @@ fieldset[disabled] .btn-twitter.active {
   position: relative;
 }
 
+.panel.panel-no-border {
+  border: 0;
+}
+
 span.sprite-icons {
   width: 21px;
   height: 18px;
@@ -15091,12 +15098,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match table tr:first-child td {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-}
-
-.matches-slider .content .match table tr:first-child td.team {
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.matches-slider .content .match table tr:first-child td:last-child {
-  border-color: #fbfbfb;
 }
