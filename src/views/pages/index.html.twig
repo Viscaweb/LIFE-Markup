@@ -22,10 +22,10 @@
     {% include 'blocks/elements/default_panels.html.twig' %}
     {% include 'blocks/elements/default_form_inputs.html.twig' %}
     {% include 'blocks/elements/default_media_list.html.twig' %}
-    {% include 'blocks/elements/content_header_country.html.twig' %}
-    {% include 'blocks/elements/content_header_competition.html.twig' %}
-    {% include 'blocks/elements/content_header_team.html.twig' %}
-    {% include 'blocks/elements/content_header_player.html.twig' %}
+    {{  include('blocks/elements/content_header_country.html.twig', {selectedTab: 'summary'}) }}
+    {{  include('blocks/elements/content_header_competition.html.twig', {selectedTab: 'summary'}) }}
+    {{  include('blocks/elements/content_header_team.html.twig', {selectedTab: 'summary'}) }}
+    {{  include('blocks/elements/content_header_player.html.twig', {selectedTab: 'summary'}) }}
     {% include 'blocks/elements/default_semantic.html.twig' %}
     {% include 'blocks/elements/players_best.html.twig' %}
     {% include 'blocks/various/share_page.html.twig' %}
