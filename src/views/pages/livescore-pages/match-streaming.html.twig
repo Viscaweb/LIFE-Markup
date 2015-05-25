@@ -1,0 +1,23 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'streaming'}) }}
+    {% include 'blocks/various/share_page_small.html.twig' %}
+    {% include 'blocks/streaming/match_streaming.html.twig' %}
+    {% include 'blocks/streaming/next_matches_streaming_list.html.twig' %}
+    {% include 'blocks/various/comment_thread.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {{ include('blocks/sports/match/team_head2head.html.twig', {small:'true'}) }}
+    {% include 'blocks/sports/team/team_form.html.twig' %}
+    {% include 'blocks/sports/team/team_form.html.twig' %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/various/partners_featured.html.twig' %}
+{% endblock %}
