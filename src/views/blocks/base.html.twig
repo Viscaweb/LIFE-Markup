@@ -4,7 +4,7 @@
     <div class="panel {{ panel_classes }}">
 
         {% set _header = block('panel_heading') %}
-        {% if _header is not empty %}
+        {% if _header is not empty and noHeader != 'true'  %}
             <div class="panel-heading">
                 {% block panel_heading %}{% endblock %}
             </div>

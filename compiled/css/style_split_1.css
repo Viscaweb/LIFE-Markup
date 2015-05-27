@@ -8190,7 +8190,7 @@ button.close {
   font-size: 12px;
   color: #434343;
   line-height: 16px;
-  padding: 9px 11px;
+  padding: 9px 9px;
   transition: 0.6s ease-in-out width;
   -webkit-transition: 0.6s ease-in-out width;
   -moz-transition: 0.6s ease-in-out width;
