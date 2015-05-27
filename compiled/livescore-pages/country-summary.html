@@ -732,19 +732,535 @@
         </tbody>
     </table>
 </div>
-    <div class="panel panel-condensed panel-default news-block">
-    <div class="panel-heading">
-        Default empty block
+    
+    <div class="panel panel-condensed panel-default">
+
+                            <div class="panel-heading">
+                    <div class="panel-title">Matches</div>
+            </div>
+        
+            <div class="panel-body">        <div class="row row-voffset">
+    <div class="col-md-8">
+        <div class="btn-toolbar" role="toolbar">
+                        <div class="btn-group btn-group-justified btn-group-distributed">
+
+                                    <a href="#" class="btn btn-default active">All</a>
+                    <a href="#" class="btn btn-default">Finished</a>
+                    <a href="#" class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>
+                    <a href="#" class="btn btn-default">Next</a>
+                    <a href="#" class="btn btn-default">Predictions</a>
+                    <a href="#" class="btn btn-default">Odds</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="btn-group pull-right btn-group-date-selector">
+            <input type="hidden" value="Mon 2 Jun" class="input-datepicker">
+            <button type="button" class="btn btn-default btn-datepicker-day-before"><span class="icon-caret-left"></span></button>
+            <button type="button" class="btn btn-default btn-datepicker-open">
+                <span class="text-selected-date">Mon 2 Jun.</span>
+                <span class="icon-caret-down"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-datepicker-day-after"><span class="icon-caret-right"></span></button>
+        </div>
+    </div>
+</div>
+
+    </div>    <div class="row">
+        <div class="col-md-12">
+            <table class="table matches my-games table-condensed table-striped layout-fixed">
+                <colgroup>
+                    <col class="hour" />
+                    <col class="league-logo" />
+                    <col class="time" />
+                    <col class="team" />
+                    <col class="score" />
+                    <col class="team" />
+                    <col class="half-time-score" />
+                    <col class="tools tools-6" />
+                    <col class="favorite">
+                </colgroup>
+
+                <thead  class="league-data">
+                <tr>
+                    <th colspan="9"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hour">13h30</td>
+                    <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                    <td class="time">FT</td>
+                    <td class="team team1 has-logo"><a href="#"><span>Barcelona</span><img src="../img/sprites/barcelona.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <table class='table matches table-condensed table-striped'>
+                          <tbody>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='team team2'>David Alaba</td>
+                            </tr>
+
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='score'><span class='home-score'>14'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite-icons penalty-goal'></span></td>
+                              <td class='team team2'>Arjen Robben (Penalty)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
+                    <td class="half-time-score">(0 - 1)</td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">45</span></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">13h30</td>
+                    <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                    <td class="time">FT</td>
+                    <td class="team team1 has-logo"><a href="#"><span>PSG</span><img src="../img/sprites/psg.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/lyon.png"><span>Olympique Lyonnais</span></a></td>
+                    <td class="half-time-score">(0 - 1)</td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">13h30</td>
+                    <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                    <td class="time">FT</td>
+                    <td class="team team1 has-logo"><a href="#"><span>Monaco</span><img src="../img/sprites/monaco.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team2.png"><span>Nimes</span></a></td>
+                    <td class="half-time-score">(0 - 1)</td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table matches table-condensed table-striped layout-fixed">
+                <colgroup>
+                    <col class="hour" />
+                    <col class="time" />
+                    <col class="team team1" />
+                    <col class="score" />
+                    <col class="team team2" />
+                    <col class="half-time-score" />
+                    <col class="tools tools-6" />
+                    <col class="favorite">
+                </colgroup>
+                <tbody class="league-data active">
+
+                <tr class="league-data active">
+                    <th colspan="8">
+                        <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                        </div>
+                        <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
+                        <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 1</a>
+                            <span class="match-name">: Matchday 23</span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1 has-logo"><a href="#"><span>Barcelona</span><img src="../img/sprites/barcelona.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-tv" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr class="live">
+                    <td class="hour">18h00</td>
+                    <td class="time">104+</td>
+                    <td class="team team1"><a href="#">Ain Fekroun</a></td>
+                    <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2"><a href="#">CR Belouizdad with a really long name<span class="label red-card">1</span></a></td>
+                    <td class="half-time-score">(0 - 0)</td>
+                    <td class="tools">
+                        <a href="#" class="available live"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">45</span></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">18h00</td>
+                    <td class="time">TAB</td>
+                    <td class="team team1"><a href="#"><span class="label red-card">1</span>USM El Harrach</a></td>
+                    <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
+                    <td class="team team2 win"><a href="#">CABBA <span class="qualified">*</span></a></td>
+                    <td class="half-time-score">(0 - 2)</td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-play" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr class="live paused">
+                    <td class="hour">18h00</td>
+                    <td class="time">HT</td>
+                    <td class="team team1 win"><a href="#">MO Béjaia</a></td>
+                    <td class="score"><a href="#"><span class="home-score">13</span> <span class="versus"> - </span> <span class="away">4</span></a></td>
+                    <td class="team team2"><a href="#">JS Kabylie</a></td>
+                    <td class="half-time-score">(0 - 0)</td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">13</span></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr class="live highlight">
+                    <td class="hour">18h00</td>
+                    <td class="time live">42'</td>
+                    <td class="team team1"><a href="#">JS Saoura</a></td>
+                    <td class="score updated"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
+                    <td class="team team2 win"><a href="#">MC Alger</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h45</td>
+                    <td class="time">FT</td>
+                    <td class="team team1"><a href="#">Barracas Central</a></td>
+                    <td class="score"><a href="javascript:;" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <table class='table matches table-condensed table-striped'>
+                          <tbody>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='team team2'>David Alaba</td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo (Penalty)</td>
+                              <td><span class='sprite-icons penalty-goal'></span></td>
+                              <td class='score'><span class='home-score'>6'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='score'><span class='home-score'>14'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite-icons penalty-goal'></span></td>
+                              <td class='team team2'>Arjen Robben (Penalty)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2"><a href="#" >Colegiales</a></td>
+                    <td class="half-time-score">(0 - 1)</td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Sparta Prague</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Malmo</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-tv" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Bratislava</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Sheriff</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Juventus</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Olympiakos</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Real Madrid</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Chelsea</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-play" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table matches table-condensed table-striped layout-fixed">
+                <colgroup >
+                    <col class="hour" />
+                    <col class="time" />
+                    <col class="team team1" />
+                    <col class="score" />
+                    <col class="team team2" />
+                    <col class="half-time-score" />
+                    <col class="tools tools-6" />
+                    <col class="favorite">
+                </colgroup>
+                <tbody class="league-data active">
+                <tr class="league-data">
+                    <th colspan="8">
+                        <div class="tools">
+                            <span>
+                              <a href="#" class="live"><i class="icon-standings"></i> Live Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                        </div>
+                        <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
+                        <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 2</a>
+                            <span class="match-name">: Matchday 20</span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Borussia Dortmund</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Zenith</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="icon-tv" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Razgrad</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Anderlecht</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"</i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Shalke 04</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2"><a href="#">Shakhtar Donesk</a></td>
+                    <td class="half-time-score"></td>
+                    <td class="tools">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
+                        <a href="#"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
+                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
+                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+            <table class="table matches table-condensed table-striped layout-fixed">
+                <colgroup >
+                    <col class="hour" />
+                    <col class="time" />
+                    <col class="team team1" />
+                    <col class="score" />
+                    <col class="team team2" />
+                    <col class="half-time-score" />
+                    <col class="tools tools-6" />
+                    <col class="favorite">
+                </colgroup>
+                <tbody class="league-data active">
+                <tr class="league-data">
+                    <th colspan="8">
+                        <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                        </div>
+                        <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
+                        <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 2</a>
+                            <span class="match-name">: Matchday 20</span>
+                        </div>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table matches table-condensed table-striped layout-fixed">
+                <colgroup >
+                    <col class="hour" />
+                    <col class="time" />
+                    <col class="team team1" />
+                    <col class="score" />
+                    <col class="team team2" />
+                    <col class="half-time-score" />
+                    <col class="tools tools-6" />
+                    <col class="favorite">
+                </colgroup>
+                <tbody class="league-data active">
+                <tr class="league-data">
+                    <th colspan="8">
+                        <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                        </div>
+                        <a class="dropdown-toggle" href="#"><i class="icon-caret-right"></i></a>
+                        <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 2</a>
+                            <span class="match-name">: Matchday 20</span>
+                        </div>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-link btn-block"><span class="icon icon-expand"></span><span>Display all matches</span></button>
+        </div>
     </div>
 
-    <div class="empty-state">
-        <span class="glyphicon glyphicon-th-list"></span>
-        <p>No data available</p>
-    </div>
-    <div class="panel-footer">
-        <a href="#"><span class="icon-caret-right"></span>View all</a>
-    </div>
-</div>    <div class="panel panel-default discussion">
+
+                
+</div>
+    <div class="panel panel-default discussion">
     <div class="panel-heading">
         <div class="panel-title"><span class="glyphicon glyphicon-comment "></span>Chat Real Madrid - Bayern Munich</div>
         <div class="tools">
