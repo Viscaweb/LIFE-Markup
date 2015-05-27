@@ -276,13 +276,6 @@
     margin-bottom: 0;
     position: relative;
 
-    .loading-bar{
-      background-color: @brand-primary;
-      position: absolute;
-      height: 3px;
-      top: 0;
-      left: 0;
-    }
 
     span.icon-caret-down{
       font-size:  @font-size-small;
@@ -354,7 +347,13 @@
     }
   }
 
-
+  .loading-bar{
+    background-color: @brand-primary;
+    position: absolute;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
   //This code overwrite the default navbar responsive behavior to be "non responsive"
   .navbar-collapse.collapse {
     display: block !important;

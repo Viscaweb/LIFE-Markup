@@ -7788,13 +7788,6 @@ button.close {
   margin-bottom: 0;
   position: relative;
 }
-.header .navbar-inverse .loading-bar {
-  background-color: #5da400;
-  position: absolute;
-  height: 3px;
-  top: 0;
-  left: 0;
-}
 .header .navbar-inverse span.icon-caret-down {
   font-size: 12px;
 }
@@ -7835,6 +7828,13 @@ button.close {
 .header .navbar-inverse .social-nav li a {
   color: #e4e4e4;
   padding: 0 14px;
+}
+.header .loading-bar {
+  background-color: #5da400;
+  position: absolute;
+  height: 2px;
+  top: 0;
+  left: 0;
 }
 .header .navbar-collapse.collapse {
   display: block !important;
