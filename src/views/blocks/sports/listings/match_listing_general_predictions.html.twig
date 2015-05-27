@@ -1,3 +1,16 @@
+{# Match Listing general Odds #}
+{% extends 'blocks/base.html.twig' %}
+
+{% set panel_classes = 'panel-condensed panel-default' %}
+{% block panel_heading %}
+    <div class="panel-title">Matches predictions</div>
+{% endblock %}
+
+{% block widget_content %}
+    {% if in_panel %}<div class="panel-body">{% endif %}
+    {{ include('blocks/elements/match_listing_buttons.html.twig', {type: 'predictions'}) }}
+    {% if in_panel %}</div>{% endif %}
+
 <div class="row">
     <div class="col-md-12">
         <table class="table matches my-games table-condensed table-striped layout-fixed">
@@ -715,6 +728,8 @@
 
             </tbody>
         </table>
-        <button type="button" class="btn btn-default btn-block"><span class="dark-icon icon-expand"></span><span>Display all matches</span></button>
+        <button type="button" class="btn btn-link btn-block"><span class="icon icon-expand"></span><span>Display all matches</span></button>
     </div>
 </div>
+
+{% endblock %}

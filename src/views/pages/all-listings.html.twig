@@ -9,10 +9,8 @@
 
     <h3>Match listing (general)</h3>
     {{ include('blocks/sports/listings/match_listing_general.html.twig', {in_panel:'true', noHeader:'true'}) }}
-    {{ include('blocks/elements/match_listing_buttons.html.twig', {type: 'odds'}) }}
-    {% include 'blocks/sports/listings/match_listing_general_odds.html.twig' %}
-    {{ include('blocks/elements/match_listing_buttons.html.twig', {type: 'predictions'}) }}
-    {% include 'blocks/sports/listings/match_listing_general_predictions.html.twig' %}
+    {{ include('blocks/sports/listings/match_listing_general_odds.html.twig', {in_panel:'true', noHeader:'true'}) }}
+    {{ include('blocks/sports/listings/match_listing_general_predictions.html.twig', {in_panel:'true', noHeader:'true'}) }}
 
     <h3>Match listing (by competition)</h3>
     <div class="row"><div class="col-md-12">{% include 'blocks/sports/listings/match_listing_by_competition.html.twig' %}</div></div>

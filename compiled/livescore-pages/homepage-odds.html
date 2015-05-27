@@ -301,17 +301,21 @@
         <div class="content-wrapper">
 
                 <div class="content">
-            <div class="row row-voffset">
+            
+    <div class="panel panel-condensed panel-default">
+
+                
+            <div class="panel-body">    <div class="row row-voffset">
     <div class="col-md-8">
         <div class="btn-toolbar" role="toolbar">
                         <div class="btn-group btn-group-justified btn-group-distributed">
 
-                                    <a href="#" class="btn btn-default active">All</a>
+                                    <a href="#" class="btn btn-default">All</a>
                     <a href="#" class="btn btn-default">Finished</a>
                     <a href="#" class="btn btn-default btn-live">Live <span class="live-red">(12)</span></a>
                     <a href="#" class="btn btn-default">Next</a>
                     <a href="#" class="btn btn-default">Predictions</a>
-                    <a href="#" class="btn btn-default">Odds</a>
+                    <a href="#" class="btn btn-default active">Odds</a>
                 
             </div>
         </div>
@@ -329,531 +333,537 @@
     </div>
 </div>
 
+    </div>
     <div class="row">
-    <div class="col-md-12">
-        <table class="table matches my-games table-condensed table-striped layout-fixed">
-            <colgroup>
-                <col class="hour" />
-                <col class="league-logo" />
-                <col class="time" />
-                <col class="team" />
-                <col class="score" />
-                <col class="team" />
-                <col class="odd" />
-                <col class="odd" />
-                <col class="odd" />
-                <col class="tools tools-1" />
-                <col class="favorite">
-            </colgroup>
+        <div class="col-md-12">
+            <table class="table matches my-games table-condensed table-striped layout-fixed">
+                <colgroup>
+                    <col class="hour" />
+                    <col class="league-logo" />
+                    <col class="time" />
+                    <col class="team" />
+                    <col class="score" />
+                    <col class="team" />
+                    <col class="odd" />
+                    <col class="odd" />
+                    <col class="odd" />
+                    <col class="tools tools-1" />
+                    <col class="favorite">
+                </colgroup>
 
-            <thead  class="league-data">
-            <tr>
-                <th colspan="11"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="hour">13h30</td>
-                <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
-                <td class="time">FT</td>
-                <td class="team team1 has-logo"><a href="#"><span>Barcelona</span><img src="../img/sprites/barcelona.png" alt="Barcelona"></a></td>
-                <td class="score"><a href="#" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
-                    <table class='table matches table-condensed table-striped'>
-                      <tbody>
-                        <tr>
-                          <td class='team team1'></td>
-                          <td></td>
-                          <td class='score'><span class='away'>6'</span></td>
-                          <td><span class='sprite-icons goal'></span></td>
-                          <td class='team team2'>David Alaba</td>
-                        </tr>
+                <thead  class="league-data">
+                <tr>
+                    <th colspan="11"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="icon-help" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="hour">13h30</td>
+                    <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                    <td class="time">FT</td>
+                    <td class="team team1 has-logo"><a href="#"><span>Barcelona</span><img src="../img/sprites/barcelona.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <table class='table matches table-condensed table-striped'>
+                          <tbody>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='team team2'>David Alaba</td>
+                            </tr>
 
-                        <tr>
-                          <td class='team team1'>Cristiano Ronaldo</td>
-                          <td><span class='sprite-icons goal'></span></td>
-                          <td class='score'><span class='home-score'>14'</span></td>
-                          <td></td>
-                          <td class='team team2'></td>
-                        </tr>
-                        <tr>
-                          <td class='team team1'></td>
-                          <td></td>
-                          <td class='score'><span class='away'>26'</span></td>
-                          <td><span class='sprite-icons penalty-goal'></span></td>
-                          <td class='team team2'>Arjen Robben (Penalty)</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
-                <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">13h30</td>
-                <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
-                <td class="time">FT</td>
-                <td class="team team1 has-logo"><a href="#"><span>PSG</span><img src="../img/sprites/psg.png" alt="Barcelona"></a></td>
-                <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
-                <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/lyon.png"><span>Olympique Lyonnais</span></a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">13h30</td>
-                <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
-                <td class="time">FT</td>
-                <td class="team team1 has-logo"><a href="#"><span>Monaco</span><img src="../img/sprites/monaco.png" alt="Barcelona"></a></td>
-                <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
-                <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team2.png"><span>Nimes</span></a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='score'><span class='home-score'>14'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite-icons penalty-goal'></span></td>
+                              <td class='team team2'>Arjen Robben (Penalty)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">13h30</td>
+                    <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                    <td class="time">FT</td>
+                    <td class="team team1 has-logo"><a href="#"><span>PSG</span><img src="../img/sprites/psg.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/lyon.png"><span>Olympique Lyonnais</span></a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">13h30</td>
+                    <td class="league"><img src="../img/sprites/ligue1.png" alt="League 1" data-toggle="tooltip" data-placement="top" data-container="body" title="Ligue 1"></td>
+                    <td class="time">FT</td>
+                    <td class="team team1 has-logo"><a href="#"><span>Monaco</span><img src="../img/sprites/monaco.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team2.png"><span>Nimes</span></a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table matches table-condensed table-striped layout-fixed">
+                <colgroup >
+                    <col class="hour">
+                    <col class="time">
+                    <col class="team team1">
+                    <col class="score">
+                    <col class="team team2">
+                    <col class="odd">
+                    <col class="odd">
+                    <col class="odd">
+                    <col class="tools tools-1">
+                    <col class="favorite">
+                </colgroup>
+                <tbody class="league-data active">
+                <tr class="league-data active">
+                    <th colspan="10">
+                        <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav active" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                        </div>
+                        <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
+                        <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 1</a>
+                            <span class="match-name">: Matchday 23</span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th></th>
+                    <th>Score</th>
+                    <th></th>
+                    <th class="text-center">1</th>
+                    <th class="text-center">x</th>
+                    <th class="text-center">2</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1 has-logo"><a href="#"><span>Barcelona</span><img src="../img/sprites/barcelona.png" alt="Barcelona"></a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#" data-popover="popover" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='img/sprites/bonus3.png'><table class='popover-odd-evolution'><tr><td class='old'>1.68</td><td class='icon'><span class='icon-caret-right'></span></td><td class='current'>1.75</td></tr></table>" data-html="true">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#" data-popover="popover" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='img/sprites/bonus3.png'>" data-html="true">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#" data-popover="popover" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='img/sprites/bonus3.png'>" data-html="true">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr class="live">
+                    <td class="hour">18h00</td>
+                    <td class="time">104+</td>
+                    <td class="team team1"><a href="#">Ain Fekroun</a></td>
+                    <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2"><a href="#">CR Belouizdad with a really long name<span class="label red-card">1</span></a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">18h00</td>
+                    <td class="time">TAB</td>
+                    <td class="team team1"><a href="#"><span class="label red-card">1</span>USM El Harrach</a></td>
+                    <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
+                    <td class="team team2 win"><a href="#">CABBA <span class="qualified">*</span></a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr class="live paused">
+                    <td class="hour">18h00</td>
+                    <td class="time">HT</td>
+                    <td class="team team1 win"><a href="#">MO Béjaia</a></td>
+                    <td class="score"><a href="#"><span class="home-score">13</span> <span class="versus"> - </span> <span class="away">4</span></a></td>
+                    <td class="team team2"><a href="#">JS Kabylie</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr class="live">
+                    <td class="hour">18h00</td>
+                    <td class="time live">42'</td>
+                    <td class="team team1"><a href="#">JS Saoura</a></td>
+                    <td class="score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
+                    <td class="team team2 win"><a href="#">MC Alger</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h45</td>
+                    <td class="time">FT</td>
+                    <td class="team team1"><a href="#">Barracas Central</a></td>
+                    <td class="score"><a href="javascript:;" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
+                        <table class='table matches table-condensed table-striped'>
+                          <tbody>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>6'</span></td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='team team2'>David Alaba</td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo (Penalty)</td>
+                              <td><span class='sprite-icons penalty-goal'></span></td>
+                              <td class='score'><span class='home-score'>6'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'>Cristiano Ronaldo</td>
+                              <td><span class='sprite-icons goal'></span></td>
+                              <td class='score'><span class='home-score'>14'</span></td>
+                              <td></td>
+                              <td class='team team2'></td>
+                            </tr>
+                            <tr>
+                              <td class='team team1'></td>
+                              <td></td>
+                              <td class='score'><span class='away'>26'</span></td>
+                              <td><span class='sprite-icons penalty-goal'></span></td>
+                              <td class='team team2'>Arjen Robben (Penalty)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
+                    <td class="team team2"><a href="#" >Colegiales</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Sparta Prague</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Malmo</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Bratislava</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Sheriff</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Juventus</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Olympiakos</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Real Madrid</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Chelsea</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table matches table-condensed table-striped layout-fixed">
+                <colgroup >
+                    <col class="hour">
+                    <col class="time">
+                    <col class="team team1">
+                    <col class="score">
+                    <col class="team team2">
+                    <col class="odd">
+                    <col class="odd">
+                    <col class="odd">
+                    <col class="tools tools-1">
+                    <col class="favorite">
+                </colgroup>
+                <tbody class="league-data active">
+                <tr class="league-data">
+                    <th colspan="10">
+                        <div class="tools">
+                            <span>
+                              <a href="#"><i class="icon-standings"></i> Table</a>
+                              <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
+                            </span>
+                        </div>
+                        <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
+                        <div class="title">
+                            <span class="country"><i class="country-flag fr"></i>France :</span>
+                            <a href="#">Ligue 2</a>
+                            <span class="match-name">: Matchday 23</span>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Borussia Dortmund</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Zenith</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Razgrad</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Anderlecht</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hour">20h00</td>
+                    <td><a href="#">Bet</a></td>
+                    <td class="team team1"><a href="#">Shalke 04</a></td>
+                    <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
+                    <td class="team team2 "><a href="#">Shakhtar Donesk</a></td>
+                    <td class="odd">
+                        <span class="icon-arrow-down"></span><a href="#">1.75</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-arrow-up"></span><a href="#">13.50</a>
+                    </td>
+                    <td class="odd">
+                        <span class="icon-equal"></span><a href="#">3.80</a>
+                    </td>
+                    <td class="tools">
+                        <a href="#"><i class="icon-stats"></i></a>
+                    </td>
+                    <td class="favorite">
+                        <a class="fav-match" href="#"><i class="icon-bell"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-link btn-block"><span class="icon icon-expand"></span><span>Display all matches</span></button>
+        </div>
+    </div>
+
+
+                
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <table class="table matches table-condensed table-striped layout-fixed">
-            <colgroup >
-                <col class="hour">
-                <col class="time">
-                <col class="team team1">
-                <col class="score">
-                <col class="team team2">
-                <col class="odd">
-                <col class="odd">
-                <col class="odd">
-                <col class="tools tools-1">
-                <col class="favorite">
-            </colgroup>
-            <tbody class="league-data active">
-            <tr class="league-data active">
-                <th colspan="10">
-                    <div class="tools">
-                        <span>
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav active" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
-                        </span>
-                    </div>
-                    <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
-                    <div class="title">
-                        <span class="country"><i class="country-flag fr"></i>France :</span>
-                        <a href="#">Ligue 1</a>
-                        <span class="match-name">: Matchday 23</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>Time</th>
-                <th>Status</th>
-                <th></th>
-                <th>Score</th>
-                <th></th>
-                <th class="text-center">1</th>
-                <th class="text-center">x</th>
-                <th class="text-center">2</th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1 has-logo"><a href="#"><span>Barcelona</span><img src="../img/sprites/barcelona.png" alt="Barcelona"></a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#" data-popover="popover" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='img/sprites/bonus3.png'><table class='popover-odd-evolution'><tr><td class='old'>1.68</td><td class='icon'><span class='icon-caret-right'></span></td><td class='current'>1.75</td></tr></table>" data-html="true">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#" data-popover="popover" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='img/sprites/bonus3.png'>" data-html="true">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#" data-popover="popover" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='img/sprites/bonus3.png'>" data-html="true">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr class="live">
-                <td class="hour">18h00</td>
-                <td class="time">104+</td>
-                <td class="team team1"><a href="#">Ain Fekroun</a></td>
-                <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
-                <td class="team team2"><a href="#">CR Belouizdad with a really long name<span class="label red-card">1</span></a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">18h00</td>
-                <td class="time">TAB</td>
-                <td class="team team1"><a href="#"><span class="label red-card">1</span>USM El Harrach</a></td>
-                <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
-                <td class="team team2 win"><a href="#">CABBA <span class="qualified">*</span></a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr class="live paused">
-                <td class="hour">18h00</td>
-                <td class="time">HT</td>
-                <td class="team team1 win"><a href="#">MO Béjaia</a></td>
-                <td class="score"><a href="#"><span class="home-score">13</span> <span class="versus"> - </span> <span class="away">4</span></a></td>
-                <td class="team team2"><a href="#">JS Kabylie</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr class="live">
-                <td class="hour">18h00</td>
-                <td class="time live">42'</td>
-                <td class="team team1"><a href="#">JS Saoura</a></td>
-                <td class="score"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away">1</span></a></td>
-                <td class="team team2 win"><a href="#">MC Alger</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h45</td>
-                <td class="time">FT</td>
-                <td class="team team1"><a href="#">Barracas Central</a></td>
-                <td class="score"><a href="javascript:;" class="has-score-details" data-trigger="hover" data-popover="popover" data-html="true" data-container="body" data-placement="bottom" data-content="
-                    <table class='table matches table-condensed table-striped'>
-                      <tbody>
-                        <tr>
-                          <td class='team team1'></td>
-                          <td></td>
-                          <td class='score'><span class='away'>6'</span></td>
-                          <td><span class='sprite-icons goal'></span></td>
-                          <td class='team team2'>David Alaba</td>
-                        </tr>
-                        <tr>
-                          <td class='team team1'>Cristiano Ronaldo (Penalty)</td>
-                          <td><span class='sprite-icons penalty-goal'></span></td>
-                          <td class='score'><span class='home-score'>6'</span></td>
-                          <td></td>
-                          <td class='team team2'></td>
-                        </tr>
-                        <tr>
-                          <td class='team team1'>Cristiano Ronaldo</td>
-                          <td><span class='sprite-icons goal'></span></td>
-                          <td class='score'><span class='home-score'>14'</span></td>
-                          <td></td>
-                          <td class='team team2'></td>
-                        </tr>
-                        <tr>
-                          <td class='team team1'></td>
-                          <td></td>
-                          <td class='score'><span class='away'>26'</span></td>
-                          <td><span class='sprite-icons penalty-goal'></span></td>
-                          <td class='team team2'>Arjen Robben (Penalty)</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
-                <td class="team team2"><a href="#" >Colegiales</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Sparta Prague</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Malmo</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Bratislava</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Sheriff</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Juventus</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Olympiakos</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Real Madrid</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Chelsea</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <table class="table matches table-condensed table-striped layout-fixed">
-            <colgroup >
-                <col class="hour">
-                <col class="time">
-                <col class="team team1">
-                <col class="score">
-                <col class="team team2">
-                <col class="odd">
-                <col class="odd">
-                <col class="odd">
-                <col class="tools tools-1">
-                <col class="favorite">
-            </colgroup>
-            <tbody class="league-data active">
-            <tr class="league-data">
-                <th colspan="10">
-                    <div class="tools">
-                        <span>
-                          <a href="#"><i class="icon-standings"></i> Table</a>
-                          <a class="fav" href="#"><span class="glyphicon glyphicon-star" data-toggle="tooltip" data-container="body" data-placement="top" title="Add/Remove from My Games"></span></a>
-                        </span>
-                    </div>
-                    <a class="dropdown-toggle" href="#"><i class="icon-caret-down"></i></a>
-                    <div class="title">
-                        <span class="country"><i class="country-flag fr"></i>France :</span>
-                        <a href="#">Ligue 2</a>
-                        <span class="match-name">: Matchday 23</span>
-                    </div>
-                </th>
-            </tr>
-
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Borussia Dortmund</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Zenith</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Razgrad</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Anderlecht</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="hour">20h00</td>
-                <td><a href="#">Bet</a></td>
-                <td class="team team1"><a href="#">Shalke 04</a></td>
-                <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
-                <td class="team team2 "><a href="#">Shakhtar Donesk</a></td>
-                <td class="odd">
-                    <span class="icon-arrow-down"></span><a href="#">1.75</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-arrow-up"></span><a href="#">13.50</a>
-                </td>
-                <td class="odd">
-                    <span class="icon-equal"></span><a href="#">3.80</a>
-                </td>
-                <td class="tools">
-                    <a href="#"><i class="icon-stats"></i></a>
-                </td>
-                <td class="favorite">
-                    <a class="fav-match" href="#"><i class="icon-bell"></i></a>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
-        <button type="button" class="btn btn-default btn-block"><span class="dark-icon icon-expand"></span><span>Display all matches</span></button>
     </div>
-</div>    </div>
 
     <div class="right-sidebar">
             
