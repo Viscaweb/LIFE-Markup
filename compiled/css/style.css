@@ -2256,11 +2256,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #f2f2f2;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ededed;
+  border-bottom: 2px solid #f2f2f2;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2271,7 +2271,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #ededed;
+  border-top: 2px solid #f2f2f2;
 }
 .table .table {
   background-color: #e7e9eb;
@@ -2285,7 +2285,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ededed;
+  border: 1px solid #f2f2f2;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2293,7 +2293,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ededed;
+  border: 1px solid #f2f2f2;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2431,7 +2431,7 @@ table th[class*="col-"] {
     margin-bottom: 13.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ededed;
+    border: 1px solid #f2f2f2;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -5451,7 +5451,7 @@ a.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #f2f2f2;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -8310,7 +8310,7 @@ button.close {
   border-right: 0;
 }
 .table-striped tbody tr:nth-child(even) td {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 .table-striped tbody tr:nth-child(odd) td {
   background-color: #ffffff;
@@ -9501,7 +9501,7 @@ span.dark-icon {
   background-color: #d6d6d6 !important;
 }
 .table > tbody > tr.event-2nd-leg td {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #f2f2f2;
 }
 .table > tbody > tr.event-won td.score,
 .table > tbody > tr.event-lost td.score,

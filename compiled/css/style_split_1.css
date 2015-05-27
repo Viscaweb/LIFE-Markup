@@ -2984,12 +2984,12 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #f2f2f2;
 }
 
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ededed;
+  border-bottom: 2px solid #f2f2f2;
 }
 
 .table > caption + thead > tr:first-child > th,
@@ -3002,7 +3002,7 @@ th {
 }
 
 .table > tbody + tbody {
-  border-top: 2px solid #ededed;
+  border-top: 2px solid #f2f2f2;
 }
 
 .table .table {
@@ -3019,7 +3019,7 @@ th {
 }
 
 .table-bordered {
-  border: 1px solid #ededed;
+  border: 1px solid #f2f2f2;
 }
 
 .table-bordered > thead > tr > th,
@@ -3028,7 +3028,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ededed;
+  border: 1px solid #f2f2f2;
 }
 
 .table-bordered > thead > tr > th,
@@ -3183,7 +3183,7 @@ table th[class*="col-"] {
     margin-bottom: 13.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ededed;
+    border: 1px solid #f2f2f2;
   }
 
   .table-responsive > .table {
@@ -6757,7 +6757,7 @@ a.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #f2f2f2;
 }
 
 .panel > .table > tbody:first-child > tr:first-child th,
@@ -10150,7 +10150,7 @@ button.close {
 }
 
 .table-striped tbody tr:nth-child(even) td {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 
 .table-striped tbody tr:nth-child(odd) td {
@@ -11623,7 +11623,7 @@ span.dark-icon {
 }
 
 .table > tbody > tr.event-2nd-leg td {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .table > tbody > tr.event-won td.score,
