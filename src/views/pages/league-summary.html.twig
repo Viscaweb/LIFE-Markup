@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'blocks/elements/content_header_competition.html.twig' %}
+    {{  include('blocks/elements/content_header_competition.html.twig', {selectedTab: 'summary'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
     {{ include('blocks/sports/listings/match_listing_by_competition.html.twig', {in_panel:'true'}) }}
     {% include 'blocks/sports/competition/competition_top_scorers.html.twig' %}
