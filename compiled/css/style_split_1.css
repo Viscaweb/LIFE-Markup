@@ -11285,6 +11285,12 @@ span.dark-icon {
   max-width: 20px;
 }
 
+.table tbody tr > td.minute-range,
+.table tbody tr:nth-child(even) > td.minute-range,
+.table tbody tr:nth-child(odd) > td.minute-range {
+  background-color: #f7f7f7;
+}
+
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n+1) td.odd {
@@ -12531,6 +12537,14 @@ span.dark-icon {
 
 .table.layout-fixed colgroup col.favorite {
   width: 25px;
+}
+
+.table.layout-fixed colgroup col.minute-range {
+  width: 60px;
+}
+
+.table.layout-fixed colgroup col.goals-number {
+  width: 26px;
 }
 
 .table.league-selection {
@@ -15072,26 +15086,4 @@ span.sprite-icons.webmaster-border {
   padding-left: 8px;
   padding-right: 8px;
   background-color: #e6e6e6;
-}
-
-.matches-slider .content .match table tr td.score.update {
-  background-color: #e33000;
-  color: #ffffff !important;
-}
-
-.matches-slider .content .match table tr:first-child td {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-}
-
-.matches-slider .content .match table tr:first-child td.team {
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.matches-slider .content .match table tr:first-child td:last-child {
-  border-color: #fbfbfb;
-}
-
-.matches-slider .content .match table tr.win td.team {
-  font-weight: 700;
 }
