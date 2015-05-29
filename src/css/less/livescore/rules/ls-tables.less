@@ -484,14 +484,34 @@
           }
         }
 
+        &.odd {
+          border-right: 1px solid @table-border-color;
+          border-left: 1px solid @table-border-color;
+
+          &.odd-no-border {
+            border-left: none;
+            border-right: none;
+          }
+
+          a > .odd-part {
+            color: lighten(@link-color, 45%);
+          }
+        }
+
+        &.odd-type {
+          font-size: @font-size-x-small;
+          text-transform: uppercase;
+          background-color: darken(@ls-light-color,3%);
+          text-align: center;
+          font-weight: 600;
+          height: 44px;
+        }
+
       }
 
       //General TD Odd Style
       &:nth-child(2n+1){
 
-        td.odd{
-          border: 1px solid @table-border-color;
-        }
 
         td.striped{
           background-color: darken(@ls-light-color,2%) !important;
@@ -499,9 +519,6 @@
       }
 
       &:nth-child(2n){
-        td.odd{
-          border: 1px solid @table-border-color;
-        }
 
         td.striped{
           background-color: darken(@ls-light-color,6%) !important;
@@ -535,23 +552,11 @@
 
       &:hover{
         &:nth-child(2n+1){
-          td.odd{
-            background-color: darken(@ls-light-color, 6%) !important;
-
-            &:hover{
-              background-color: darken(@ls-light-color, 10%) !important;
-            }
-          }
+          
         }
 
         &:nth-child(2n){
-          td.odd{
-            background-color: darken(@ls-light-color,10%) !important;
 
-            &:hover{
-              background-color: darken(@ls-light-color, 14%) !important;
-            }
-          }
         }
 
         td {

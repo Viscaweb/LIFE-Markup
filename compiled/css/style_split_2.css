@@ -1,29 +1,3 @@
-.matches-slider .content .match table tr td.score.update {
-  background-color: #e33000;
-  color: #ffffff !important;
-}
-
-.matches-slider .content .match table tr:first-child td {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-}
-
-.matches-slider .content .match table tr:first-child td.team {
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.matches-slider .content .match table tr:first-child td:last-child {
-  border-color: #fbfbfb;
-}
-
-.matches-slider .content .match table tr.win td.team {
-  font-weight: 700;
-}
-
-.matches-slider .content .match:nth-child(even) {
-  background-color: #ffffff;
-}
-
 .matches-slider .content .match.live .status,
 .matches-slider .content .match.paused .status {
   padding-left: 11px;
