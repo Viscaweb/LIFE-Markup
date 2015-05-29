@@ -387,10 +387,44 @@
   background: none;
 }
 
+.top-match-block .score-board.score-board-variant-1 .match-time,
+.top-match-block .score-board.score-board-variant-1 .match-info {
+  bottom: 46px;
+}
+
 .top-match-block .score-board.score-board-variant-1 .match-time > span,
 .top-match-block .score-board.score-board-variant-1 .match-info > span {
   background: transparent;
   color: #5c5c5c;
+  font-size: 12px;
+}
+
+.top-match-block .score-board.score-board-variant-1 .teams {
+  top: 82px;
+}
+
+.top-match-block .score-board.score-board-variant-1 .team {
+  bottom: 26px;
+}
+
+.top-match-block .score-board.score-board-variant-1 .title {
+  background: none;
+  left: 0;
+  right: 0;
+  top: 10px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.top-match-block .score-board.score-board-variant-1 .title:after {
+  border: none;
+}
+
+.top-match-block .score-board.score-board-variant-1 .match-date {
+  right: 0;
+  left: 0;
+  top: 34px;
+  text-align: center;
 }
 
 .top-match-block .make-prediction {

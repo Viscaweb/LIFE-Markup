@@ -229,13 +229,44 @@
       &.score-board-variant-1 {
 
         .match-time, .match-info {
+          bottom: 46px;
 
           > span {
             background: transparent;
             color: @text-color;
+            font-size: @font-size-small;
           }
 
         }
+
+        .teams {
+          top: 82px;
+        }
+
+        .team {
+          bottom: 26px;
+        }
+
+        .title {
+          background: none;
+          left: 0;
+          right: 0;
+          top: 10px;
+          text-align: center;
+          opacity: 0.5;
+          
+          &:after {
+            border: none;
+          }
+        }
+
+        .match-date {
+          right: 0;
+          left: 0;
+          top : 34px;
+          text-align: center;
+        }
+
       }
     }
     
