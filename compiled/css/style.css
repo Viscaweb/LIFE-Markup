@@ -9240,10 +9240,7 @@ span.dark-icon {
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n+1) td.odd {
-  background-color: #fafafa !important;
-  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
-  -moz-box-shadow: -1px -1px 0 #ffffff inset;
-  box-shadow: -1px -1px 0 #ffffff inset;
+  border: 1px solid #f2f2f2;
 }
 .table tbody tr:nth-child(2n+1) td.striped,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.striped,
@@ -9253,10 +9250,7 @@ span.dark-icon {
 .table tbody tr:nth-child(2n) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n) td.odd {
-  background-color: #f0f0f0 !important;
-  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
-  -moz-box-shadow: -1px -1px 0 #ffffff inset;
-  box-shadow: -1px -1px 0 #ffffff inset;
+  border: 1px solid #f2f2f2;
 }
 .table tbody tr:nth-child(2n) td.striped,
 .table tbody tr:nth-child(even):nth-child(2n) td.striped,
