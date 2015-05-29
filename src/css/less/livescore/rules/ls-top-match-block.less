@@ -87,6 +87,10 @@
         color: @ls-light-color;
         font-size: @font-size-large;
         font-weight: 700;
+        
+        .at {
+          opacity: 0.5;
+        }
       }
       
       .team{
@@ -197,6 +201,42 @@
 
       }
 
+      &.score-board-clear {
+        background: darken(@ls-light-color, 3%);
+        color: @text-color;
+
+        .title {
+          background: darken(@ls-light-color, 10%);
+
+          &:after{
+            border-top: 20px solid darken(@ls-light-color, 10%);
+          }
+        }
+
+        .match-date {
+          color : darken(@ls-light-color, 50%)
+        }
+
+        .teams {
+          color: @text-color;
+        }
+
+        .team {
+          background: none;
+        }
+      }
+
+      &.score-board-variant-1 {
+
+        .match-time, .match-info {
+
+          > span {
+            background: transparent;
+            color: @text-color;
+          }
+
+        }
+      }
     }
     
     .make-prediction{

@@ -259,6 +259,10 @@
   font-weight: 700;
 }
 
+.top-match-block .score-board .teams .at {
+  opacity: 0.5;
+}
+
 .top-match-block .score-board .team {
   background: url("../img/sprites/team-field-shadow.png") no-repeat center bottom;
   bottom: 10px;
@@ -356,6 +360,37 @@
   -webkit-opacity: 0.1;
   -moz-opacity: 0.1;
   opacity: 0.1;
+}
+
+.top-match-block .score-board.score-board-clear {
+  background: #f7f7f7;
+  color: #5c5c5c;
+}
+
+.top-match-block .score-board.score-board-clear .title {
+  background: #e6e6e6;
+}
+
+.top-match-block .score-board.score-board-clear .title:after {
+  border-top: 20px solid #e6e6e6;
+}
+
+.top-match-block .score-board.score-board-clear .match-date {
+  color: #808080;
+}
+
+.top-match-block .score-board.score-board-clear .teams {
+  color: #5c5c5c;
+}
+
+.top-match-block .score-board.score-board-clear .team {
+  background: none;
+}
+
+.top-match-block .score-board.score-board-variant-1 .match-time > span,
+.top-match-block .score-board.score-board-variant-1 .match-info > span {
+  background: transparent;
+  color: #5c5c5c;
 }
 
 .top-match-block .make-prediction {
