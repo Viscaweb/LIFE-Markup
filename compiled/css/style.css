@@ -9257,13 +9257,6 @@ span.dark-icon {
 .table tbody tr:nth-child(odd):nth-child(2n) td.striped {
   background-color: #f0f0f0 !important;
 }
-.table tbody tr td.odd:last-child,
-.table tbody tr:nth-child(even) td.odd:last-child,
-.table tbody tr:nth-child(odd) td.odd:last-child {
-  -webkit-box-shadow: 0 -1px 0 #ffffff inset;
-  -moz-box-shadow: 0 -1px 0 #ffffff inset;
-  box-shadow: 0 -1px 0 #ffffff inset;
-}
 .table tbody tr.live td.time,
 .table tbody tr:nth-child(even).live td.time,
 .table tbody tr:nth-child(odd).live td.time {
