@@ -11291,6 +11291,12 @@ span.dark-icon {
   background-color: #f7f7f7;
 }
 
+.table tbody tr > td.full-sportsbook-logo img,
+.table tbody tr:nth-child(even) > td.full-sportsbook-logo img,
+.table tbody tr:nth-child(odd) > td.full-sportsbook-logo img {
+  max-width: 50px;
+}
+
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n+1) td.odd {
@@ -15068,22 +15074,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match table tr td.flag {
   border-color: transparent;
   padding: 0 4px 0 0;
-}
-
-.matches-slider .content .match table tr td.flag img {
-  max-width: 16px;
-}
-
-.matches-slider .content .match table tr td.team {
-  min-width: 45px;
-  padding-left: 0;
-  padding-right: 11px;
-}
-
-.matches-slider .content .match table tr td.score {
-  text-align: center;
-  font-weight: 700;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: #e6e6e6;
 }

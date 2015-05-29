@@ -9232,6 +9232,11 @@ span.dark-icon {
 .table tbody tr:nth-child(odd) > td.minute-range {
   background-color: #f7f7f7;
 }
+.table tbody tr > td.full-sportsbook-logo img,
+.table tbody tr:nth-child(even) > td.full-sportsbook-logo img,
+.table tbody tr:nth-child(odd) > td.full-sportsbook-logo img {
+  max-width: 50px;
+}
 .table tbody tr:nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(even):nth-child(2n+1) td.odd,
 .table tbody tr:nth-child(odd):nth-child(2n+1) td.odd {
