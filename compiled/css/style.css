@@ -13852,6 +13852,10 @@ span.glyphicon-star.active {
 .odds-slider .match-infos .table-us-match-info th.info-datetime {
   height: 54px;
   vertical-align: middle;
+  text-align: center;
+}
+.odds-slider .match-infos .table-us-match-info th.info-datetime .hour {
+  display: block;
 }
 .odds-slider .match-infos .table-us-match-info td {
   text-align: center;
@@ -13877,7 +13881,7 @@ span.glyphicon-star.active {
   height: 54px;
 }
 .odds-slider .odds-type {
-  width: 100px;
+  width: 90px;
   display: table-cell;
   text-transform: uppercase;
   font-weight: 600;
