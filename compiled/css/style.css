@@ -8625,12 +8625,12 @@ button.close {
   font-weight: 400;
   margin-top: 5px;
 }
-.content-header .info a {
+.content-header .info .additionnal-info {
   color: #a6a6a6;
   display: block;
   font-size: 11px;
 }
-.content-header .info a span {
+.content-header .info .additionnal-info span {
   margin-right: 5px;
 }
 .content-header.teams .shirts {
