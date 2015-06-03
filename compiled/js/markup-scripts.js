@@ -352,6 +352,22 @@ $( document ).ready(function() {
         }
     });
 
+    var us_odds = $("#odds-slider1 .sportsbooks .inner");
+
+    us_odds.owlCarousel({
+        autoWidth:true,
+        pagination: false,
+        navigation: false,
+        dots: false,
+    });
+
+    $("#odds-slider1 .prev.control").click(function(){
+        us_odds.trigger('prev.owl.carousel');
+    });
+
+    $("#odds-slider1 .next.control").click(function(){
+        us_odds.trigger('next.owl.carousel');
+    });
 
     var commentsCarousel = $(".comments.carousel .owl-carousel");
 

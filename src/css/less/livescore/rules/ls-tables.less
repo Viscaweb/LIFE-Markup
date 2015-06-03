@@ -493,8 +493,39 @@
             border-right: none;
           }
 
-          a > .odd-part {
-            color: lighten(@link-color, 45%);
+          a {
+            > .odd-part {
+              color: lighten(@link-color, 45%);
+            }
+
+            .moneyline {
+              display: block;
+              text-align: right;
+              line-height: 16px;
+            }
+
+            .spread {
+              display: block;
+              width: 50%;
+              float: left;
+              text-align: right;
+              line-height: 16px;
+            }
+
+            .totals {
+              display: block;
+              float: right;
+              width: 50%;
+              text-align: right;
+              line-height: 16px;
+            }
+
+            .totals-ou {
+              display: block;
+              float: left;
+              width: 50%;
+              line-height: 32px;
+            }
           }
         }
 

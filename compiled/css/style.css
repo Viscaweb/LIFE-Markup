@@ -9254,6 +9254,39 @@ span.dark-icon {
 .table tbody tr:nth-child(odd) > td.odd a > .odd-part {
   color: #8fc6ff;
 }
+.table tbody tr > td.odd a .moneyline,
+.table tbody tr:nth-child(even) > td.odd a .moneyline,
+.table tbody tr:nth-child(odd) > td.odd a .moneyline {
+  display: block;
+  text-align: right;
+  line-height: 16px;
+}
+.table tbody tr > td.odd a .spread,
+.table tbody tr:nth-child(even) > td.odd a .spread,
+.table tbody tr:nth-child(odd) > td.odd a .spread {
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: right;
+  line-height: 16px;
+}
+.table tbody tr > td.odd a .totals,
+.table tbody tr:nth-child(even) > td.odd a .totals,
+.table tbody tr:nth-child(odd) > td.odd a .totals {
+  display: block;
+  float: right;
+  width: 50%;
+  text-align: right;
+  line-height: 16px;
+}
+.table tbody tr > td.odd a .totals-ou,
+.table tbody tr:nth-child(even) > td.odd a .totals-ou,
+.table tbody tr:nth-child(odd) > td.odd a .totals-ou {
+  display: block;
+  float: left;
+  width: 50%;
+  line-height: 32px;
+}
 .table tbody tr > td.odd-type,
 .table tbody tr:nth-child(even) > td.odd-type,
 .table tbody tr:nth-child(odd) > td.odd-type {
@@ -13800,6 +13833,194 @@ span.glyphicon-star.active {
 .notifications-list > ul > li.media:hover .media-body .meadia-heading,
 .notifications-list > ul > li.media:hover .media-body p {
   color: #ffffff;
+}
+.odds-slider {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  z-index: 9999;
+}
+.odds-slider .match-infos {
+  display: table-cell;
+  width: 30%;
+  vertical-align: top;
+  border-right: 1px solid #f2f2f2;
+}
+.odds-slider .match-infos .table-us-match-info {
+  vertical-align: middle;
+}
+.odds-slider .match-infos .table-us-match-info th.info-datetime {
+  height: 54px;
+  vertical-align: middle;
+}
+.odds-slider .match-infos .table-us-match-info td {
+  text-align: center;
+  pointer-events: none;
+  cursor: default;
+}
+.odds-slider .match-infos .table-us-match-info td.teams .team {
+  display: inline;
+}
+.odds-slider .match-infos .table-us-match-info td.teams .team img {
+  width: 50px;
+}
+.odds-slider .match-infos .table-us-match-info td.team-names {
+  font-weight: 600;
+  border-top: none;
+}
+.odds-slider .next-holder {
+  width: 54px;
+  display: table-cell;
+  border-left: 1px solid #f2f2f2;
+}
+.odds-slider .next-holder table th {
+  height: 54px;
+}
+.odds-slider .odds-type {
+  width: 100px;
+  display: table-cell;
+  text-transform: uppercase;
+  font-weight: 600;
+  vertical-align: top;
+  border-right: 1px solid #f2f2f2;
+}
+.odds-slider .odds-type table th {
+  height: 54px;
+}
+.odds-slider .odds-type table td {
+  height: 46px;
+}
+.odds-slider .control {
+  background: #fbfbfb;
+  text-align: center;
+  width: 38px;
+  vertical-align: top;
+  display: table-cell;
+  border-color: #e9e9e9;
+  cursor: pointer;
+}
+.odds-slider .control:hover {
+  background: #f0f0f0;
+}
+.odds-slider .control:hover span {
+  color: #afafaf;
+}
+.odds-slider .control.prev {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.odds-slider .control.next {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+.odds-slider .content {
+  vertical-align: top;
+  display: table-cell;
+  white-space: nowrap;
+}
+.odds-slider .content .sportsbooks {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.odds-slider .content .sportsbooks .inner {
+  left: 0;
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+.odds-slider .content .sportsbook-odds {
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+  min-width: 80px;
+  border-right: 1px solid #e9e9e9;
+  background: #fbfbfb;
+}
+.odds-slider .content .sportsbook-odds .status {
+  display: block;
+  line-height: 18px;
+  font-size: 10px;
+  color: #9a9a9a;
+}
+.odds-slider .content .sportsbook-odds table tr th {
+  height: 54px;
+}
+.odds-slider .content .sportsbook-odds table tr th.sportsbook-logo {
+  text-align: center;
+  vertical-align: middle;
+}
+.odds-slider .content .sportsbook-odds table tr th.sportsbook-logo img {
+  width: 60px;
+  display: initial;
+}
+.odds-slider .content .sportsbook-odds table tr td {
+  line-height: 10px;
+  padding: 5px;
+  height: 46px;
+}
+.odds-slider .content .sportsbook-odds table tr td.flag {
+  border-color: transparent;
+  padding: 0 4px 0 0;
+}
+.odds-slider .content .sportsbook-odds table tr td.flag img {
+  max-width: 16px;
+}
+.odds-slider .content .sportsbook-odds table tr td.team {
+  min-width: 45px;
+  padding-left: 0;
+  padding-right: 11px;
+}
+.odds-slider .content .sportsbook-odds table tr td.score {
+  text-align: center;
+  font-weight: 700;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #e6e6e6;
+}
+.odds-slider .content .sportsbook-odds table tr td.score.update {
+  background-color: #e33000;
+  color: #ffffff !important;
+}
+.odds-slider .content .sportsbook-odds table tr:first-child td {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.odds-slider .content .sportsbook-odds table tr:first-child td.team {
+  border-bottom: 1px solid #e6e6e6;
+}
+.odds-slider .content .sportsbook-odds table tr:first-child td:last-child {
+  border-color: #fbfbfb;
+}
+.odds-slider .content .sportsbook-odds table tr.win td.team {
+  font-weight: 700;
+}
+.odds-slider .content .sportsbook-odds:nth-child(even) {
+  background-color: #ffffff;
+}
+.odds-slider .content .sportsbook-odds.live .status,
+.odds-slider .content .sportsbook-odds.paused .status {
+  padding-left: 11px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  font-weight: 600;
+  color: #e33000;
+}
+.odds-slider .content .sportsbook-odds.live table tr td.score,
+.odds-slider .content .sportsbook-odds.paused table tr td.score {
+  color: #e33000;
+}
+.odds-slider .content .sportsbook-odds.paused .status {
+  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
+  color: #9a9a9a;
+}
+.odds-slider .content .sportsbook-odds.highlight {
+  background-color: #fff4ce;
+}
+.odds-slider .content .sportsbook-odds.highlight table tr:first-child td:last-child {
+  border-color: #fff4ce;
+}
+.odds-slider .content .sportsbook-odds:hover {
+  background: #f0f0f0;
 }
 /*Base Tables*/
 .popover.popover-trend,

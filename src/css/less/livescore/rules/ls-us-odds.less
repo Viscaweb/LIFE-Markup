@@ -1,0 +1,277 @@
+.odds-slider{
+  width: 100%;
+  display: table;
+  table-layout:fixed;
+  z-index: 9999;
+
+  .match-infos {
+
+    display: table-cell;
+    width: 30%;
+    vertical-align: top;
+    border-right: 1px solid @table-border-color;
+
+    .table-us-match-info {
+      vertical-align: middle;
+
+      th {
+
+        &.info-datetime {
+          height: @ls-odds-th-height;
+          vertical-align: middle;
+        }
+
+      }
+      td {
+        text-align: center;
+        pointer-events: none;
+        cursor: default;
+
+        &.teams {
+
+          .team {
+            display: inline;
+
+            img {width: 50px;}
+          }
+          
+        }
+
+        &.team-names {
+          font-weight: 600;
+          border-top: none;
+        }
+
+
+      }
+    }
+  }
+
+  .next-holder {
+    width: 54px;
+    display: table-cell;
+    border-left: 1px solid @table-border-color;
+
+    table {
+      th {
+        height: @ls-odds-th-height;
+      }
+    }
+  }
+
+  .odds-type {
+    width: 100px;
+    display: table-cell;
+    text-transform: uppercase;
+    font-weight: 600;
+    vertical-align: top;
+    border-right: 1px solid @table-border-color;
+
+    table {
+
+      th {
+        height: @ls-odds-th-height;
+      }
+
+      td {
+        height: @ls-odds-td-height;
+      }
+    }
+  }
+
+  .control{
+    background: darken(@ls-light-color, 1.5%);
+    text-align: center;
+    width: 38px;
+    vertical-align: top;
+    display: table-cell;
+    border-color: darken(@ls-light-color, 8.5%);
+    cursor: pointer; 
+    
+    span{
+
+    }
+    
+    &:hover{
+      background: darken(@ls-light-color, 6%);
+      
+      span{
+        color: darken(@ls-light-color, 31.5%);
+      }
+    }
+    
+    &.prev{
+      border-right-width: 1px;
+      border-right-style: solid;
+    }
+    
+    &.next{
+      border-left-width: 1px;
+      border-left-style: solid;
+    }
+    
+  }
+
+  .content{
+    vertical-align: top;
+    display: table-cell;
+    white-space:nowrap;
+    
+    .sportsbooks{
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      
+      .inner{
+        left: 0;
+        position: relative;
+        display: block;
+        font-size: 0;
+        
+        .owl-stage{
+          //width: auto !important;
+        }
+        
+      }      
+    }
+    
+    .sportsbook-odds{
+      cursor: pointer;
+      padding: 0;
+      display: inline-block;
+      min-width: 80px;
+      border-right: 1px solid darken(@ls-light-color, 8.5%);
+      background: darken(@ls-light-color, 1.5%);
+      
+      .status{
+        display: block;
+        line-height: 18px;
+        font-size: @font-size-small - 2;
+        color: lighten(@ls-dark-color, 60.5%);
+      }
+      
+      table{
+        tr{
+
+          th {
+            height: @ls-odds-th-height;
+
+            &.sportsbook-logo {
+              text-align: center;
+              vertical-align: middle;
+
+              img{
+                width: 60px;
+                display: initial;
+              }
+            }
+          }
+
+          td{
+            line-height: 10px;
+            padding: 5px;
+            height: @ls-odds-td-height;
+
+            &.flag{
+              border-color: transparent;
+              padding: 0 4px 0 0;
+              
+              img{
+                max-width: 16px;
+              }
+            }
+            
+            &.team{
+              min-width: 45px;
+              padding-left: 0;
+              padding-right: 11px;
+            }
+            
+            &.score{
+              text-align: center;
+              font-weight: 700;
+              padding-left: 8px;
+              padding-right: 8px;
+              background-color: darken(@ls-light-color, 9.8%);
+              
+              &.update{
+                background-color: @live-red;
+                color: @ls-light-color !important;
+              }
+            }
+          }
+          
+          &:first-child{
+            td{
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+              
+              &.team{
+                border-bottom: 1px solid darken(@ls-light-color, 9.8%);
+              }
+              
+              &:last-child{
+                border-color: darken(@ls-light-color, 1.5%);
+              }
+            }
+          }
+          
+          &.win{
+            td.team{
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      
+      &:nth-child(even){//Zebra Style
+        background-color: @ls-light-color;
+      }      
+      
+      &.live, &.paused{
+        .status{
+          padding-left: 11px;
+          background: url("@{ls-image-live-spot}") no-repeat 0 4px;
+          font-weight: 600;
+          color: @live-red;
+        }
+        
+        table{ 
+          tr{
+            td.score{
+              color: @live-red;
+            }
+          }
+        }
+        
+      }      
+      
+      &.paused{
+        .status{
+          background: url("@{ls-image-paused-spot}") no-repeat 0 4px;
+          color: lighten(@ls-dark-color, 60.5%);
+        }
+      }
+      
+      &.highlight{
+        background-color: @ls-matches-slider-final-stage-bg;
+        
+        table{
+          tr{
+           &:first-child{
+              td:last-child{
+                border-color: @ls-matches-slider-final-stage-bg;
+              }
+           }
+          }
+        }
+      }
+      
+      &:hover{
+        background: darken(@ls-light-color, 6%);
+      }
+    }
+    
+  }
+  
+}
