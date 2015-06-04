@@ -10294,6 +10294,10 @@ button.close {
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
+  background-color: #e6e6e6;
+}
+
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   background-color: #5da400;
   border-color: #5da400;
   color: #ffffff;
@@ -15063,13 +15067,4 @@ span.sprite-icons.webmaster-border {
   position: relative;
   display: block;
   font-size: 0;
-}
-
-.matches-slider .content .match {
-  cursor: pointer;
-  padding: 6px 20px;
-  display: inline-block;
-  min-width: 130px;
-  border-right: 1px solid #e9e9e9;
-  background: #fbfbfb;
 }

@@ -8433,6 +8433,9 @@ button.close {
   }
 }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
+  background-color: #e6e6e6;
+}
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   background-color: #5da400;
   border-color: #5da400;
   color: #ffffff;
