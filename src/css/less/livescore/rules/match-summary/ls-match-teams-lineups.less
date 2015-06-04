@@ -88,14 +88,48 @@
         width: 337px;
         height: 506px;
         position: relative;
-        
+
+        .field-part {
+          height: 254px;
+          
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+
+
+          .field-row {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+
+            &.lines-3 {
+              height: 33.3%;
+            }
+
+            &.lines-4 {
+              height: 25%;
+            }
+
+            &.lines-5 {
+              height: 20%;
+            }
+
+            &.lines-6 {
+              height: 16.6%;
+            }
+
+          }
+        }
+
         .player{
-          position: absolute;
+          position: relative;
+          display: table-cell;
           border-left: 0;
           text-align: center;
           min-width: 35px;
           cursor: pointer;
-          
+          border-collapse: collapse;
+
           &:after{
             content: "\e620";
             font-family: @ls-icons-font;
@@ -114,7 +148,7 @@
           
           .number{
             color: lighten(@ls-dark-color, 10%);
-            font-size: @font-size-x-small;
+            font-size: @font-size-x-small - 1;
             font-weight: @font-weight-bold;
             line-height: @ls-match-teams-lineups-shirt-size - (@ls-match-teams-lineups-shirt-size * 0.29) + 3px;
             display: block;
@@ -128,8 +162,8 @@
           .name{
             display: block;
             color: @ls-light-color;
-            font-size: @font-size-small;
-            font-weight: @font-weight-semi-bold;
+            font-size: @font-size-small - 1;
+            font-weight: @font-weight-normal;
             text-transform: none;
             text-align: center;
             white-space: nowrap;
@@ -137,6 +171,8 @@
           
           .icons{
             text-align: center;
+            margin-top: -3px;
+            line-height: 0;
             
             span{
               margin-bottom: 0;
