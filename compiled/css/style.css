@@ -15055,21 +15055,6 @@ span.glyphicon-star.active {
   cursor: pointer;
   border-collapse: collapse;
 }
-.match-teams-lineups .component-container .field .field-lines .player:after {
-  content: "\e620";
-  font-family: "LSicons";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #ededed;
-  font-size: 32px;
-  line-height: 32px;
-  width: 100%;
-  height: 19.84px;
-  display: block;
-  overflow: hidden;
-  z-index: 1;
-}
 .match-teams-lineups .component-container .field .field-lines .player .number {
   color: #1a1a1a;
   font-size: 10px;
@@ -15081,6 +15066,17 @@ span.glyphicon-star.active {
   text-align: center;
   position: relative;
   z-index: 2;
+  overflow: hidden;
+}
+.match-teams-lineups .component-container .field .field-lines .player .number .icon {
+  font-size: 32px;
+  color: #fff;
+}
+.match-teams-lineups .component-container .field .field-lines .player .number .shirt-number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #000;
 }
 .match-teams-lineups .component-container .field .field-lines .player .name {
   display: block;
@@ -15110,14 +15106,17 @@ span.glyphicon-star.active {
 .match-teams-lineups .component-container .field .field-lines .player:hover .name {
   color: #e0e0e0;
 }
+.match-teams-lineups .component-container .field .field-lines .player:hover .number {
+  opacity: 0.7;
+}
 .match-teams-lineups .component-container .field .field-lines .player.away:after {
   color: #252525;
 }
-.match-teams-lineups .component-container .field .field-lines .player.away .number {
-  color: #ffffff;
+.match-teams-lineups .component-container .field .field-lines .player.away .number .icon {
+  color: #000;
 }
-.match-teams-lineups .component-container .field .field-lines .player.away:hover:after {
-  color: #0d0d0d;
+.match-teams-lineups .component-container .field .field-lines .player.away .number .shirt-number {
+  color: #ffffff;
 }
 .match-teams-lineups .component-container .field:before {
   position: absolute;

@@ -130,22 +130,6 @@
           cursor: pointer;
           border-collapse: collapse;
 
-          &:after{
-            content: "\e620";
-            font-family: @ls-icons-font;
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: @ls-match-teams-lineups-home-shirt-color;
-            font-size: @ls-match-teams-lineups-shirt-size;
-            line-height: @ls-match-teams-lineups-shirt-size;
-            width: 100%;
-            height: @ls-match-teams-lineups-shirt-size - (@ls-match-teams-lineups-shirt-size * 0.38);
-            display: block;
-            overflow: hidden;
-            z-index: 1;
-          }
-          
           .number{
             color: lighten(@ls-dark-color, 10%);
             font-size: @font-size-x-small - 1;
@@ -157,6 +141,19 @@
             text-align: center;
             position: relative;
             z-index: 2;
+            overflow: hidden;
+
+            .icon {
+              font-size: 32px;
+              color: #fff;
+            }
+
+            .shirt-number {
+              position: absolute;
+              left: 0;
+              right: 0;
+              color: #000;
+            }
           }
           
           .name{
@@ -194,6 +191,10 @@
             .name{
               color: darken(@ls-light-color, 12%);
             }
+            
+            .number {
+              opacity: 0.7;
+            }
           }
           
           &.away{
@@ -203,13 +204,13 @@
             }
             
             .number{
-              color: @ls-light-color;
-            }
-            
-            &:hover{
-            
-              &:after{
-                color: lighten(@ls-dark-color, 5%);
+
+              .icon {
+               color: #000;
+              }
+
+              .shirt-number {
+                color: @ls-light-color;
               }
             }
           }
