@@ -1,3 +1,10 @@
+.matches-slider .content .matches .inner {
+  left: 0;
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
 .matches-slider .content .match {
   cursor: pointer;
   padding: 6px 20px;

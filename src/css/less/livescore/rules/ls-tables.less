@@ -875,6 +875,17 @@
 
     > tr{
 
+      &.selected-row{
+
+        td{
+          background-color: @ls-table-standing-selected-tr-bg;
+
+          &.score {
+            background-color: darken(@ls-table-standing-selected-tr-bg, 3%);
+          }
+        }
+      }
+
       td{
         vertical-align: middle;
 
@@ -1525,13 +1536,6 @@
             &.extra-points{
               .live-blink-gif();
             }
-          }
-        }
-
-        &.selected-row{
-
-          td{
-            background-color: @ls-table-standing-selected-tr-bg;
           }
         }
       }

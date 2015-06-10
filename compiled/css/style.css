@@ -9586,6 +9586,12 @@ span.dark-icon {
 .table tbody tr:hover td:hover.event-draw {
   background-color: #f3dec4 !important;
 }
+.table > tbody > tr.selected-row td {
+  background-color: #d2dae8;
+}
+.table > tbody > tr.selected-row td.score {
+  background-color: #c8d2e3;
+}
 .table > tbody > tr td {
   vertical-align: middle;
 }
@@ -10127,9 +10133,6 @@ span.dark-icon {
   background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
-}
-.table.table-standing tbody tr.selected-row td {
-  background-color: #d2dae8;
 }
 .table:hover tr.league-data > th .title span.match-name {
   display: inline-block;
