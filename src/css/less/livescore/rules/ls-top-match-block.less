@@ -30,7 +30,11 @@
         border-bottom-color: darken(@brand-primary, 3.8%);
       }
     }
-    
+  
+    .panel-content {
+      position: relative;
+    }
+  
     > .row{
       margin:0;
       
@@ -38,7 +42,19 @@
         padding: 0;
       }
     }
-    
+
+    .scoreboard-container {
+
+      &:hover {
+
+        .slider-control {
+          opacity: 1;
+          width: 30px;
+        }
+
+      }
+    }
+
     .score-board{
       position: relative;
       background: url("@{ls-image-scoreboard-game-field}") repeat;
@@ -336,7 +352,35 @@
       }
     }
     
+    .slider-control {
+      background: fade(@ls-dark-color, 50%);
+      position: absolute;
+      top: 53px;
+      width: 14px;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      color: @ls-light-color;
+      opacity: 0.5;
+      .transition(width 0.3s);
 
+      
+      &.prev {
+        left: 0;
+
+        &:hover {
+          background: fade(@ls-dark-color, 70%);
+        }
+      }
+      
+      &.next {
+        right: 0;
+      }
+
+      > span.icon {
+        font-size: @font-size-normal;
+      }
+    }
     
     .add-comment{
       padding: 15px;

@@ -280,12 +280,21 @@
   border-bottom-color: #529100;
 }
 
+.top-match-block .panel-content {
+  position: relative;
+}
+
 .top-match-block > .row {
   margin: 0;
 }
 
 .top-match-block > .row > div {
   padding: 0;
+}
+
+.top-match-block .scoreboard-container:hover .slider-control {
+  opacity: 1;
+  width: 30px;
 }
 
 .top-match-block .score-board {
@@ -577,6 +586,39 @@
 
 .top-match-block .bets .best-odd {
   font-weight: 700;
+}
+
+.top-match-block .slider-control {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 53px;
+  width: 14px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  opacity: 0.5;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+
+.top-match-block .slider-control.prev {
+  left: 0;
+}
+
+.top-match-block .slider-control.prev:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.top-match-block .slider-control.next {
+  right: 0;
+}
+
+.top-match-block .slider-control > span.icon {
+  font-size: 14px;
 }
 
 .top-match-block .add-comment {
