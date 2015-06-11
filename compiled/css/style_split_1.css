@@ -11332,9 +11332,9 @@ span.dark-icon {
 .table tbody tr > td.odd a .spread,
 .table tbody tr:nth-child(even) > td.odd a .spread,
 .table tbody tr:nth-child(odd) > td.odd a .spread {
+  float: left;
   display: block;
   width: 50%;
-  float: left;
   text-align: right;
   line-height: 16px;
 }
@@ -11342,8 +11342,8 @@ span.dark-icon {
 .table tbody tr > td.odd a .totals,
 .table tbody tr:nth-child(even) > td.odd a .totals,
 .table tbody tr:nth-child(odd) > td.odd a .totals {
-  display: block;
   float: right;
+  display: block;
   width: 50%;
   text-align: right;
   line-height: 16px;

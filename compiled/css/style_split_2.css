@@ -1965,6 +1965,10 @@ span.glyphicon-star.active {
   z-index: 9999;
 }
 
+.odds-slider .table tr > th {
+  border-top: none;
+}
+
 .odds-slider .match-infos {
   display: table-cell;
   width: 30%;
@@ -2115,6 +2119,7 @@ span.glyphicon-star.active {
   line-height: 10px;
   padding: 5px;
   height: 46px;
+  width: 80px;
 }
 
 .odds-slider .content .sportsbook-odds table tr td.team {

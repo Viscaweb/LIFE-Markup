@@ -4,6 +4,12 @@
   table-layout:fixed;
   z-index: 9999;
 
+  .table {
+    tr > th {
+      border-top: none;
+    }
+  }
+
   .match-infos {
 
     display: table-cell;
@@ -171,6 +177,7 @@
             line-height: 10px;
             padding: 5px;
             height: @ls-odds-td-height;
+            width: 80px;
 
             &.team{
               min-width: 45px;
