@@ -71,6 +71,7 @@
 		'icon-bell-off': '&#xe637;',
 		'icon-card': '&#xe638;',
 		'icon-titular': '&#xe639;',
+		'icon-matches-list': '&#xe63a;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),
