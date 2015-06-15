@@ -740,13 +740,13 @@
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
-  color: #bdbdbd;
+  color: rgba(92, 92, 92, 0.5);
   display: block;
 }
 
 .top-competitions-block.panel .active-ligue h4 span,
 .top-competitions-block.panel .active-ligue .h4 span {
-  color: #353535;
+  color: #5c5c5c;
   font-size: 14px;
   display: block;
   text-transform: none;

@@ -1328,7 +1328,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #777777;
+  color: rgba(92, 92, 92, 0.5);
 }
 .text-primary {
   color: #5da400;
@@ -2236,7 +2236,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
+  color: rgba(92, 92, 92, 0.5);
   text-align: left;
 }
 th {
@@ -7514,12 +7514,13 @@ button.close {
 .nav-pills > li.active a:hover {
   background-color: #f0f0f0;
   border-bottom: 2px solid #519000;
+  color: #5c5c5c;
   color: #5e5e5e;
 }
 .nav-pills > li > a {
   border-top: none;
   border-bottom: 2px solid #f0f0f0;
-  color: #5e5e5e;
+  color: #5c5c5c;
   outline: none;
   font-weight: 600;
 }
@@ -12867,12 +12868,12 @@ span.sprite-icons.webmaster-border {
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
-  color: #bdbdbd;
+  color: rgba(92, 92, 92, 0.5);
   display: block;
 }
 .top-competitions-block.panel .active-ligue h4 span,
 .top-competitions-block.panel .active-ligue .h4 span {
-  color: #353535;
+  color: #5c5c5c;
   font-size: 14px;
   display: block;
   text-transform: none;

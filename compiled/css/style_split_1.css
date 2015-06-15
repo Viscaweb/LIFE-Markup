@@ -1696,7 +1696,7 @@ mark,
 }
 
 .text-muted {
-  color: #777777;
+  color: rgba(92, 92, 92, 0.5);
 }
 
 .text-primary {
@@ -2961,7 +2961,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
+  color: rgba(92, 92, 92, 0.5);
   text-align: left;
 }
 
@@ -9197,13 +9197,14 @@ button.close {
 .nav-pills > li.active a:hover {
   background-color: #f0f0f0;
   border-bottom: 2px solid #519000;
+  color: #5c5c5c;
   color: #5e5e5e;
 }
 
 .nav-pills > li > a {
   border-top: none;
   border-bottom: 2px solid #f0f0f0;
-  color: #5e5e5e;
+  color: #5c5c5c;
   outline: none;
   font-weight: 600;
 }
