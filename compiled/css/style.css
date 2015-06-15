@@ -1093,7 +1093,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0076f0;
+  color: #0f86ff;
   text-decoration: underline;
 }
 a:focus {
@@ -3333,7 +3333,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #0076f0;
+  color: #0f86ff;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4647,7 +4647,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #0076f0;
+  color: #0f86ff;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -7717,7 +7717,7 @@ button.close {
 }
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu a.view-all:hover {
   background-color: transparent;
-  color: #0076f0;
+  color: #0f86ff;
 }
 .header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a {
   position: relative;
@@ -8276,7 +8276,7 @@ button.close {
   font-weight: 600;
   font-size: 11px;
   text-transform: uppercase;
-  color: #5d5d5d;
+  color: #696969;
   padding: 8px 20px;
 }
 .table tr td {
@@ -8664,7 +8664,7 @@ button.close {
   vertical-align: baseline;
 }
 .content-header.teams a.star span.add-to-my-team:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 .content-header.player .info {
   margin-right: 46px;
@@ -8801,10 +8801,6 @@ a.view-more > span {
 a.view-more > span > i {
   vertical-align: middle;
   font-size: 16px;
-}
-b,
-strong {
-  color: #5c5c5c;
 }
 iframe {
   border: 0;
@@ -9896,7 +9892,7 @@ span.dark-icon {
   color: #5c5c5c;
 }
 .table.matches tbody tr td.team > a:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
@@ -12967,7 +12963,7 @@ span.sprite-icons.webmaster-border {
   font-size: 12px;
 }
 .top-competitions-block.panel table.results tbody tr td.time {
-  color: #8a8a8a;
+  color: rgba(92, 92, 92, 0.6);
   padding-left: 4px;
   padding-right: 4px;
 }
@@ -13142,7 +13138,7 @@ span.sprite-icons.webmaster-border {
 }
 .news-block.panel .main-news .content .resume a:hover,
 .news-block.panel .sub-news .content .resume a:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 .news-block.panel .sub-news {
   padding: 18px 0;
@@ -14449,7 +14445,7 @@ span.glyphicon-star.active {
   color: #5c5c5c;
 }
 .match-information .table tbody tr td.team-information ul.players li a:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 .match-information .table tbody tr td.team-information ul.players li span {
   margin-left: 5px;
@@ -16391,7 +16387,7 @@ ol.breadcrumb li a img {
   color: #5c5c5c;
 }
 .panel .table.league-clubs tbody tr td.name > a:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 .panel .table.league-clubs tbody tr td.name span.name {
   color: #b3b3b3;

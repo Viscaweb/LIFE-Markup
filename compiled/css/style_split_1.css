@@ -1424,7 +1424,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #0076f0;
+  color: #0f86ff;
   text-decoration: underline;
 }
 
@@ -4219,7 +4219,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #0076f0;
+  color: #0f86ff;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -5794,7 +5794,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #0076f0;
+  color: #0f86ff;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -9440,7 +9440,7 @@ button.close {
 
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu a.view-all:hover {
   background-color: transparent;
-  color: #0076f0;
+  color: #0f86ff;
 }
 
 .header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a {
@@ -10108,7 +10108,7 @@ button.close {
   font-weight: 600;
   font-size: 11px;
   text-transform: uppercase;
-  color: #5d5d5d;
+  color: #696969;
   padding: 8px 20px;
 }
 
@@ -10611,7 +10611,7 @@ button.close {
 }
 
 .content-header.teams a.star span.add-to-my-team:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 
 .content-header.player .info {
@@ -10777,11 +10777,6 @@ a.view-more > span {
 a.view-more > span > i {
   vertical-align: middle;
   font-size: 16px;
-}
-
-b,
-strong {
-  color: #5c5c5c;
 }
 
 iframe {
@@ -12117,7 +12112,7 @@ span.dark-icon {
 }
 
 .table.matches tbody tr td.team > a:hover {
-  color: #0076f0;
+  color: #0f86ff;
 }
 
 .table.matches tbody tr td.team .red-card {
@@ -15063,4 +15058,20 @@ span.sprite-icons.webmaster-border {
   overflow: hidden;
   width: 100%;
   position: relative;
+}
+
+.matches-slider .content .matches .inner {
+  left: 0;
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
+.matches-slider .content .match {
+  cursor: pointer;
+  padding: 6px 20px;
+  display: inline-block;
+  min-width: 130px;
+  border-right: 1px solid #e9e9e9;
+  background: #fbfbfb;
 }
