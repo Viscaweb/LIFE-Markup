@@ -54,7 +54,8 @@ i, span{
   }
 
   &:hover{
-    color: @ls-table-tools-icons-hover-color ;
+    color: contrast(@ls-table-tools-icons-color, darken(@ls-table-tools-icons-color, 30%), lighten(@ls-table-tools-icons-color, 30%));
+
 
     &.available{
 
