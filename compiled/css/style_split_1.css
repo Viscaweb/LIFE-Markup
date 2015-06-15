@@ -11726,10 +11726,18 @@ span.dark-icon {
 
 .table > tbody > tr.selected-row td {
   background-color: #d2dae8;
+  color: #323232;
 }
 
 .table > tbody > tr.selected-row td.score {
   background-color: #c8d2e3;
+  color: #323232;
+}
+
+.table > tbody > tr.selected-row td.team a,
+.table > tbody > tr.selected-row td.half-time-score,
+.table > tbody > tr.selected-row td.time {
+  color: #323232 !important;
 }
 
 .table > tbody > tr td {
@@ -11980,7 +11988,6 @@ span.dark-icon {
 .table.my-games tbody tr td.score {
   font-size: 14px;
   font-weight: 700;
-  background-color: #f7f7f7;
   text-align: center;
   width: 50px;
   padding: 0;
@@ -15050,26 +15057,4 @@ span.sprite-icons.webmaster-border {
   vertical-align: top;
   display: table-cell;
   white-space: nowrap;
-}
-
-.matches-slider .content .matches {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.matches-slider .content .matches .inner {
-  left: 0;
-  position: relative;
-  display: block;
-  font-size: 0;
-}
-
-.matches-slider .content .match {
-  cursor: pointer;
-  padding: 6px 20px;
-  display: inline-block;
-  min-width: 130px;
-  border-right: 1px solid #e9e9e9;
-  background: #fbfbfb;
 }

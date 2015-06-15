@@ -9583,9 +9583,16 @@ span.dark-icon {
 }
 .table > tbody > tr.selected-row td {
   background-color: #d2dae8;
+  color: #323232;
 }
 .table > tbody > tr.selected-row td.score {
   background-color: #c8d2e3;
+  color: #323232;
+}
+.table > tbody > tr.selected-row td.team a,
+.table > tbody > tr.selected-row td.half-time-score,
+.table > tbody > tr.selected-row td.time {
+  color: #323232 !important;
 }
 .table > tbody > tr td {
   vertical-align: middle;
@@ -9786,7 +9793,6 @@ span.dark-icon {
 .table.my-games tbody tr td.score {
   font-size: 14px;
   font-weight: 700;
-  background-color: #f7f7f7;
   text-align: center;
   width: 50px;
   padding: 0;

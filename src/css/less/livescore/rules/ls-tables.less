@@ -879,9 +879,17 @@
 
         td{
           background-color: @ls-table-standing-selected-tr-bg;
+          color : @ls-table-standing-selected-tr-color;
 
           &.score {
             background-color: darken(@ls-table-standing-selected-tr-bg, 3%);
+            color : @ls-table-standing-selected-tr-color;
+          }
+
+          &.team a,
+          &.half-time-score,
+          &.time  {
+            color : @ls-table-standing-selected-tr-color !important;
           }
         }
       }
@@ -1170,7 +1178,6 @@
           &.score{
             font-size:  @font-size-base + 1;
             font-weight: 700;
-            background-color: darken(@ls-light-color,3%);
             text-align: center;
             width: 50px;
             padding: 0;
