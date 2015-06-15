@@ -884,28 +884,28 @@
       &.selected-row{
 
         td{
-          background-color: @ls-table-standing-selected-tr-bg;
-          color : @ls-table-standing-selected-tr-color;
+          background-color: @ls-tr-selected-bg;
+          color : @ls-td-selected-color;
 
           &.score {
-            background-color: darken(@ls-table-standing-selected-tr-bg, 3%);
-            color : @ls-table-standing-selected-tr-color;
+            background-color: darken(@ls-tr-selected-bg, 3%);
+            color : @ls-td-selected-color;
           }
 
           &.team a,
           &.half-time-score,
           &.time  {
-            color : @ls-table-standing-selected-tr-color !important;
+            color : @ls-td-selected-color !important;
           }
         }
 
         &:hover {
           td {
-            background-color: darken(@ls-table-standing-selected-tr-bg, 7%);
+            background-color: darken(@ls-tr-selected-bg, 7%);
 
             &.score {
-              background-color: darken(@ls-table-standing-selected-tr-bg, 10%);
-              color : @ls-table-standing-selected-tr-color;
+              background-color: darken(@ls-tr-selected-bg, 10%);
+              color : @ls-td-selected-color;
             }
           }
         }

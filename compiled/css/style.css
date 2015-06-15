@@ -9588,11 +9588,11 @@ span.dark-icon {
   background-color: #f3dec4 !important;
 }
 .table > tbody > tr.selected-row td {
-  background-color: #d2dae8;
+  background-color: #e3e8f1;
   color: #323232;
 }
 .table > tbody > tr.selected-row td.score {
-  background-color: #c8d2e3;
+  background-color: #d9e0ec;
   color: #323232;
 }
 .table > tbody > tr.selected-row td.team a,
@@ -9601,10 +9601,10 @@ span.dark-icon {
   color: #323232 !important;
 }
 .table > tbody > tr.selected-row:hover td {
-  background-color: #bac7dc;
+  background-color: #cbd4e5;
 }
 .table > tbody > tr.selected-row:hover td.score {
-  background-color: #b0bed7;
+  background-color: #c1cce0;
   color: #323232;
 }
 .table > tbody > tr td {
