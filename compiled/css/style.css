@@ -9885,7 +9885,7 @@ span.dark-icon {
   margin-right: 5px;
 }
 .table.matches tbody tr td.time {
-  color: #8a8a8a;
+  color: rgba(92, 92, 92, 0.6);
   white-space: nowrap;
 }
 .table.matches tbody tr td.time i {
