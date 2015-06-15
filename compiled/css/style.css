@@ -8903,7 +8903,7 @@ span.dark-icon {
 }
 .table > thead.league-data > tr > th .country {
   text-transform: uppercase;
-  color: #d6d6d6;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 }
 .table > thead.league-data > tr > th a {
@@ -8989,7 +8989,7 @@ span.dark-icon {
   color: #e33000;
 }
 .table > thead.league-data > tr:hover > th {
-  background-color: #6e7679 !important;
+  background-color: #5d6467 !important;
 }
 .table > thead.league-data.active > tr > th > a.dropdown-toggle {
   -webkit-box-shadow: 5px 0 0 #5da400 inset;
@@ -9053,7 +9053,7 @@ span.dark-icon {
 .table tbody tr > th span.match-name,
 .table tbody tr:nth-child(even) > th span.match-name,
 .table tbody tr:nth-child(odd) > th span.match-name {
-  color: #d6d6d6 !important;
+  color: rgba(255, 255, 255, 0.6) !important;
   font-weight: 400;
   display: none;
 }
@@ -9341,7 +9341,7 @@ span.dark-icon {
 }
 .table tbody tr.league-data > th .country {
   text-transform: uppercase;
-  color: #d6d6d6;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 }
 .table tbody tr.league-data > th a {
@@ -9427,7 +9427,7 @@ span.dark-icon {
   color: #e33000;
 }
 .table tbody tr.league-data:hover > th {
-  background-color: #6e7679 !important;
+  background-color: #5d6467 !important;
 }
 .table tbody tr.league-data.active > th > a.dropdown-toggle {
   -webkit-box-shadow: 5px 0 0 #5da400 inset;
@@ -9813,13 +9813,13 @@ span.dark-icon {
   color: #5da400;
 }
 .table.matches thead.league-data tr th {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #838b8f;
   padding: 0;
   vertical-align: middle !important;
 }
 .table.matches thead.league-data tr th .country {
   text-transform: uppercase;
-  color: #d6d6d6;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 }
 .table.matches thead.league-data tr th a {
@@ -9963,13 +9963,13 @@ span.dark-icon {
   background-position: 5px center;
 }
 .table.matches tbody tr.league-data th {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #838b8f;
   padding: 0;
   vertical-align: middle !important;
 }
 .table.matches tbody tr.league-data th .country {
   text-transform: uppercase;
-  color: #d6d6d6;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 }
 .table.matches tbody tr.league-data th a {
