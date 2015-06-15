@@ -19,7 +19,7 @@ i, span{
   display: inline-block;
   font-size:  @font-size-large;
   padding: 0 1px;
-  color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color), 0.05);
+  color: fade(@ls-table-tools-icons-color, 35%);
   line-height: 15px;
   vertical-align: middle;
   position: relative;
@@ -37,7 +37,7 @@ i, span{
   }
 
   &.available{
-    color: darken(@ls-light-color, 20%);
+    color: @ls-table-tools-icons-color;
 
     &.live {
       color: @live-red;
@@ -54,7 +54,7 @@ i, span{
   }
 
   &:hover{
-    color: darken(@ls-light-color, 60%);
+    color: @ls-table-tools-icons-hover-color ;
 
     &.available{
 
@@ -75,6 +75,5 @@ i, span{
 
 .fav-match{
   .ls-tools-icon-style();
-
-  color: darken(@ls-light-color, 20%);
+  color:@ls-table-tools-icons-color;
 }

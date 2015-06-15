@@ -892,6 +892,17 @@
             color : @ls-table-standing-selected-tr-color !important;
           }
         }
+
+        &:hover {
+          td {
+            background-color: darken(@ls-table-standing-selected-tr-bg, 7%);
+
+            &.score {
+              background-color: darken(@ls-table-standing-selected-tr-bg, 10%);
+              color : @ls-table-standing-selected-tr-color;
+            }
+          }
+        }
       }
 
       td{

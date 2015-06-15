@@ -1,3 +1,14 @@
+.matches-slider .control.next {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.matches-slider .content {
+  vertical-align: top;
+  display: table-cell;
+  white-space: nowrap;
+}
+
 .matches-slider .content .matches {
   overflow: hidden;
   width: 100%;
@@ -1478,7 +1489,7 @@ span.glyphicon-star.active {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(204, 204, 204, 0.35);
   line-height: 15px;
   vertical-align: middle;
   position: relative;
@@ -1514,7 +1525,7 @@ span.glyphicon-star.active {
 }
 
 .fav-match:hover {
-  color: #666666;
+  color: #808080;
 }
 
 .fav-match:hover.available .comment-number {

@@ -9147,7 +9147,7 @@ span.dark-icon {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(204, 204, 204, 0.35);
   line-height: 15px;
   vertical-align: middle;
   position: relative;
@@ -9188,7 +9188,7 @@ span.dark-icon {
 .table tbody tr > td.tools > a:hover,
 .table tbody tr:nth-child(even) > td.tools > a:hover,
 .table tbody tr:nth-child(odd) > td.tools > a:hover {
-  color: #666666;
+  color: #808080;
 }
 .table tbody tr > td.tools > a:hover.available .comment-number,
 .table tbody tr:nth-child(even) > td.tools > a:hover.available .comment-number,
@@ -9593,6 +9593,13 @@ span.dark-icon {
 .table > tbody > tr.selected-row td.half-time-score,
 .table > tbody > tr.selected-row td.time {
   color: #323232 !important;
+}
+.table > tbody > tr.selected-row:hover td {
+  background-color: #bac7dc;
+}
+.table > tbody > tr.selected-row:hover td.score {
+  background-color: #b0bed7;
+  color: #323232;
 }
 .table > tbody > tr td {
   vertical-align: middle;
@@ -13471,7 +13478,7 @@ span.glyphicon-star.active {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(204, 204, 204, 0.35);
   line-height: 15px;
   vertical-align: middle;
   position: relative;
@@ -13501,7 +13508,7 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 .fav-match:hover {
-  color: #666666;
+  color: #808080;
 }
 .fav-match:hover.available .comment-number {
   color: #ffffff;
