@@ -8188,7 +8188,6 @@ button.close {
 
 .btn {
   font-size: 12px;
-  color: #434343;
   line-height: 16px;
   padding: 9px 9px;
   transition: 0.6s ease-in-out width;
@@ -9191,14 +9190,13 @@ button.close {
   border: transparent;
   background-color: #f4f4f4;
   border-bottom: 2px solid #519000;
-  color: #5e5e5e;
+  color: #5c5c5c;
 }
 
 .nav-pills > li.active a:hover {
   background-color: #f0f0f0;
   border-bottom: 2px solid #519000;
   color: #5c5c5c;
-  color: #5e5e5e;
 }
 
 .nav-pills > li > a {
@@ -10065,7 +10063,7 @@ button.close {
   border-right: none;
   border-left: none;
   margin-right: 0;
-  color: #5e5e5e;
+  color: #5c5c5c;
   outline: none;
   font-weight: 600;
 }
