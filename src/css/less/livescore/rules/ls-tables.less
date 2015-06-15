@@ -179,7 +179,7 @@
 
 .league-data-matches-style(){
   th{
-    border-bottom: 1px solid lighten(@ls-th-league-bg, 5%);
+    border-bottom: 1px solid darken(@ls-th-league-bg, 4%);
     padding: 0;
     vertical-align: middle !important;
 
@@ -430,7 +430,7 @@
               height: 0;
               border-top: 5px solid transparent;
               border-bottom: 5px solid transparent;
-              border-left: 5px solid darken(@ls-light-color, 28%);
+              border-left: 5px solid contrast(@ls-light-color, darken(@ls-light-color, 28%), fade(#ffffff, 30%));
               .rotate(45deg);
             }
           }
@@ -440,12 +440,12 @@
             text-align: center;
 
             > a {
-              color: lighten(@ls-dark-color,45%);
+              color: fade(@ls-data-score-color, 70%);
             }
           }
 
           span.icon-expand-h{
-            color: darken(@ls-light-color,16%);
+            color: contrast(@ls-light-color, darken(@ls-light-color,16%), fade(#ffffff, 20%));
           }
         }
 
@@ -1106,6 +1106,7 @@
             background-color: @brand-primary;
             color: @ls-light-color;
             font-weight: @font-weight-bold;
+            border-bottom: 1px solid darken(@brand-primary, 4%);
 
             a{
               color: @ls-light-color;

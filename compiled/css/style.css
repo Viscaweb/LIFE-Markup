@@ -9129,7 +9129,7 @@ span.dark-icon {
 .table tbody tr > td.score.hour > a,
 .table tbody tr:nth-child(even) > td.score.hour > a,
 .table tbody tr:nth-child(odd) > td.score.hour > a {
-  color: #737373;
+  color: rgba(92, 92, 92, 0.7);
 }
 .table tbody tr > td.score span.icon-expand-h,
 .table tbody tr:nth-child(even) > td.score span.icon-expand-h,
@@ -9743,6 +9743,7 @@ span.dark-icon {
   background-color: #5da400;
   color: #ffffff;
   font-weight: 700;
+  border-bottom: 1px solid #519000;
 }
 .table.my-games thead.league-data tr th a {
   color: #ffffff;
@@ -9832,7 +9833,7 @@ span.dark-icon {
   color: #5da400;
 }
 .table.matches thead.league-data tr th {
-  border-bottom: 1px solid #838b8f;
+  border-bottom: 1px solid #6c7477;
   padding: 0;
   vertical-align: middle !important;
 }
@@ -9982,7 +9983,7 @@ span.dark-icon {
   background-position: 5px center;
 }
 .table.matches tbody tr.league-data th {
-  border-bottom: 1px solid #838b8f;
+  border-bottom: 1px solid #6c7477;
   padding: 0;
   vertical-align: middle !important;
 }
