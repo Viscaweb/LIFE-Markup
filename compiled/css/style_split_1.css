@@ -10204,7 +10204,7 @@ button.close {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  color: #c2c2c2;
+  color: rgba(92, 92, 92, 0.7);
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev,
@@ -10214,7 +10214,7 @@ button.close {
   width: 40px;
   text-align: center;
   cursor: pointer;
-  color: #b5b5b5;
+  color: rgba(92, 92, 92, 0.5);
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after,
@@ -10269,7 +10269,7 @@ button.close {
   display: inline-block;
   padding: 5px;
   margin: 1px;
-  color: #333333;
+  color: #5c5c5c;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -10309,7 +10309,7 @@ button.close {
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a:hover {
   background-color: #ebebeb;
   border-color: #ebebeb;
-  color: #333333;
+  color: #5c5c5c;
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
