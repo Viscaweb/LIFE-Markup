@@ -8910,7 +8910,7 @@ span.dark-icon {
   color: #ffffff;
 }
 .table > thead.league-data > tr > th span {
-  color: rgba(0, 0, 0, 0.1);
+  color: #51575a;
 }
 .table > thead.league-data > tr > th > .title {
   display: inline-block;
@@ -8939,7 +8939,7 @@ span.dark-icon {
   font-size: 10px;
 }
 .table > thead.league-data > tr > th > a.dropdown-toggle:hover {
-  background-color: #4a4d4e;
+  background-color: #51575a;
 }
 .table > thead.league-data > tr > th .tools {
   float: right;
@@ -8957,7 +8957,7 @@ span.dark-icon {
 .table > thead.league-data > tr > th .tools a {
   display: inline-block;
   padding: 2px 4px;
-  color: #f5f5f5;
+  color: #ffffff;
   font-weight: 400;
   line-height: 19px;
   font-size: 12px;
@@ -8968,8 +8968,11 @@ span.dark-icon {
   color: rgba(0, 0, 0, 0.2);
 }
 .table > thead.league-data > tr > th .tools a:hover {
-  background-color: #4a4d4e;
+  background-color: #51575a;
   color: #ffffff;
+}
+.table > thead.league-data > tr > th .tools a:hover.fav span {
+  color: #ffc600;
 }
 .table > thead.league-data > tr > th .tools a.fav {
   vertical-align: middle;
@@ -9348,7 +9351,7 @@ span.dark-icon {
   color: #ffffff;
 }
 .table tbody tr.league-data > th span {
-  color: rgba(0, 0, 0, 0.1);
+  color: #51575a;
 }
 .table tbody tr.league-data > th > .title {
   display: inline-block;
@@ -9377,7 +9380,7 @@ span.dark-icon {
   font-size: 10px;
 }
 .table tbody tr.league-data > th > a.dropdown-toggle:hover {
-  background-color: #4a4d4e;
+  background-color: #51575a;
 }
 .table tbody tr.league-data > th .tools {
   float: right;
@@ -9395,7 +9398,7 @@ span.dark-icon {
 .table tbody tr.league-data > th .tools a {
   display: inline-block;
   padding: 2px 4px;
-  color: #f5f5f5;
+  color: #ffffff;
   font-weight: 400;
   line-height: 19px;
   font-size: 12px;
@@ -9406,8 +9409,11 @@ span.dark-icon {
   color: rgba(0, 0, 0, 0.2);
 }
 .table tbody tr.league-data > th .tools a:hover {
-  background-color: #4a4d4e;
+  background-color: #51575a;
   color: #ffffff;
+}
+.table tbody tr.league-data > th .tools a:hover.fav span {
+  color: #ffc600;
 }
 .table tbody tr.league-data > th .tools a.fav {
   vertical-align: middle;
@@ -9839,7 +9845,7 @@ span.dark-icon {
   color: #ffffff;
 }
 .table.matches thead.league-data tr th span {
-  color: rgba(0, 0, 0, 0.1);
+  color: #51575a;
 }
 .table.matches thead.league-data tr th .tools {
   float: right;
@@ -9850,14 +9856,14 @@ span.dark-icon {
 }
 .table.matches thead.league-data tr th .tools a {
   display: inline-block;
-  color: #f5f5f5;
+  color: #ffffff;
   font-weight: 400;
 }
 .table.matches thead.league-data tr th .tools a i {
   font-size: 18px;
   line-height: 16px;
   vertical-align: middle;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6);
 }
 .table.matches thead.league-data tr th .tools a i.icon-standings {
   margin-right: 5px;
@@ -9989,7 +9995,7 @@ span.dark-icon {
   color: #ffffff;
 }
 .table.matches tbody tr.league-data th span {
-  color: rgba(0, 0, 0, 0.1);
+  color: #51575a;
 }
 .table.matches tbody tr.league-data th .tools {
   float: right;
@@ -10000,14 +10006,14 @@ span.dark-icon {
 }
 .table.matches tbody tr.league-data th .tools a {
   display: inline-block;
-  color: #f5f5f5;
+  color: #ffffff;
   font-weight: 400;
 }
 .table.matches tbody tr.league-data th .tools a i {
   font-size: 18px;
   line-height: 16px;
   vertical-align: middle;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6);
 }
 .table.matches tbody tr.league-data th .tools a i.icon-standings {
   margin-right: 5px;

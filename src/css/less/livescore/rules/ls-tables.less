@@ -42,7 +42,7 @@
     }
 
     span{
-      color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
+      color: darken(@ls-th-league-bg, 15%);
     }
 
     > .title{
@@ -102,7 +102,7 @@
       a{
         display: inline-block;
         padding: @ls-data-league-padding;
-        color: darken(@ls-light-color, 4%);
+        color: @ls-th-league-color;
         font-weight: 400;
         line-height: 19px;
         font-size: @ls-data-league-font-size;
@@ -116,6 +116,12 @@
         &:hover{
           background-color: @ls-data-league-hover;
           color: @ls-light-color;
+
+          &.fav {
+            span {
+              color: @ls-fav-hover;
+            }
+          }
         }
 
         &.fav{
@@ -188,7 +194,7 @@
     }
 
     span{
-      color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
+      color: darken(@ls-th-league-bg, 15%);
     }
 
     .tools{
@@ -204,14 +210,14 @@
 
       a{
         display: inline-block;
-        color: darken(@ls-light-color, 4%);
+        color: @ls-th-league-color;
         font-weight: 400;
 
         i{
           font-size:  @font-size-xx-large;
           line-height: @font-size-large;
           vertical-align: middle;
-          color:  rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
+          color: fade(@ls-th-league-color, 60%);
 
           &.icon-standings{
             margin-right: 5px;

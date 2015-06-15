@@ -1,3 +1,12 @@
+.matches-slider .control:hover span {
+  color: #afafaf;
+}
+
+.matches-slider .control.prev {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
 .matches-slider .control.next {
   border-left-width: 1px;
   border-left-style: solid;
