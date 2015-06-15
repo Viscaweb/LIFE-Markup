@@ -3866,7 +3866,7 @@ select[multiple].form-group-lg .form-control {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333333;
+  color: #5c5c5c;
   text-decoration: none;
 }
 
@@ -3894,9 +3894,9 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #333333;
-  background-color: #fcfcfc;
-  border-color: #e1e1e1;
+  color: #5c5c5c;
+  background-color: #fafafa;
+  border-color: #dfdfdf;
 }
 
 .btn-default:hover,
@@ -3905,9 +3905,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333333;
-  background-color: #e3e3e3;
-  border-color: #c2c2c2;
+  color: #5c5c5c;
+  background-color: #e0e0e0;
+  border-color: #c0c0c0;
 }
 
 .btn-default:active,
@@ -3934,13 +3934,13 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #fcfcfc;
-  border-color: #e1e1e1;
+  background-color: #fafafa;
+  border-color: #dfdfdf;
 }
 
 .btn-default .badge {
-  color: #fcfcfc;
-  background-color: #333333;
+  color: #fafafa;
+  background-color: #5c5c5c;
 }
 
 .btn-primary {
@@ -8230,7 +8230,7 @@ button.close {
 .btn-default span.icon-caret-up,
 .btn-default span.icon-caret-left,
 .btn-default span.icon-caret-right {
-  color: #b8b8b8;
+  color: rgba(92, 92, 92, 0.5);
 }
 
 .btn-primary,
@@ -8398,7 +8398,7 @@ button.close {
 }
 
 .btn-group.btn-group-justified .btn.btn-default:hover + .btn {
-  border-left-color: #c2c2c2;
+  border-left-color: #c0c0c0;
 }
 
 .btn-group.btn-group-justified .btn.btn-primary:hover + .btn {
@@ -8426,7 +8426,7 @@ button.close {
 }
 
 .btn-group.btn-group-justified .btn.btn-default:hover + .btn-group .btn {
-  border-left-color: #c2c2c2;
+  border-left-color: #c0c0c0;
 }
 
 .btn-group.btn-group-justified .btn.btn-primary:hover + .btn-group .btn {
@@ -8454,7 +8454,7 @@ button.close {
 }
 
 .btn-group.btn-group-justified .btn-group:hover + .btn {
-  border-left-color: #c2c2c2;
+  border-left-color: #c0c0c0;
 }
 
 .btn-group.btn-group-justified .btn:not(:last-child):last-of-type:not(.dropdown-toggle) {
@@ -8567,12 +8567,12 @@ button.close {
 }
 
 .select-component:hover {
-  border-color: #cfcfcf;
+  border-color: #cdcdcd;
 }
 
 .select-component:hover select,
 .select-component:hover:after {
-  background-color: #efefef;
+  background-color: #ededed;
 }
 
 .checkbox,
@@ -10184,7 +10184,7 @@ button.close {
 }
 
 .ui-datepicker.ui-datepicker-with-border {
-  border: 1px solid #e1e1e1;
+  border: 1px solid #dfdfdf;
   margin-top: -1px;
 }
 
@@ -13088,14 +13088,14 @@ fieldset[disabled] .btn-prediction-failed.active {
   border-width: 4px;
   border-color: #5da400;
   padding: 17px;
-  background-color: #fcfcfc;
+  background-color: #fafafa;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
 .btn-selector-group .btn-selector-item .btn-selector.active:hover {
-  background-color: #e3e3e3;
+  background-color: #e0e0e0;
 }
 
 .btn-selector-group .btn-selector-item .title {
