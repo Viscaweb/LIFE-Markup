@@ -8070,7 +8070,7 @@ button.close {
   line-height: 18px;
 }
 .panel > .panel-heading .tools a.icon.active > span {
-  color: #545454;
+  color: #5da400;
 }
 .panel > .panel-heading .tools .glyphicon {
   font-size: 16px;
@@ -19723,4 +19723,6 @@ ul.image-list li img {
     content: none;
   }
 }
+/*Theming*/
+/*@import "less/livescore/variables/ls-variables-widgets.less";*/
 /*# sourceMappingURL=style-map.css */
