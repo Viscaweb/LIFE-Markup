@@ -9587,26 +9587,6 @@ span.dark-icon {
 .table tbody tr:hover td:hover.event-draw {
   background-color: #f3dec4 !important;
 }
-.table > tbody > tr.selected-row td {
-  background-color: #e3e8f1;
-  color: #323232;
-}
-.table > tbody > tr.selected-row td.score {
-  background-color: #d9e0ec;
-  color: #323232;
-}
-.table > tbody > tr.selected-row td.team a,
-.table > tbody > tr.selected-row td.half-time-score,
-.table > tbody > tr.selected-row td.time {
-  color: #323232 !important;
-}
-.table > tbody > tr.selected-row:hover td {
-  background-color: #cbd4e5;
-}
-.table > tbody > tr.selected-row:hover td.score {
-  background-color: #c1cce0;
-  color: #323232;
-}
 .table > tbody > tr td {
   vertical-align: middle;
 }
