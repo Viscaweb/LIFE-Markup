@@ -126,14 +126,19 @@
 
 //== Dropdowns
 //
-@dropdown-border: darken(@ls-light-color, 10%);
+@dropdown-bg :                  @ls-light-color;
+@dropdown-border:               darken(@ls-light-color, 10%);
 
 //** Dropdown link text color.
-@dropdown-link-color:            lighten(@ls-dark-color, 22%);
+@dropdown-link-color:            @text-color;
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      @ls-light-color;
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         @brand-primary;
+
+@dropdown-link-active-color :   @btn-primary-color ;
+@dropdown-link-hover-color :    @btn-primary-color ;
+
 
 //== Navbar
 //
