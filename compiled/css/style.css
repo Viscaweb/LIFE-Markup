@@ -14346,6 +14346,10 @@ span.glyphicon-star.active {
 .match-information .table thead tr th .name a.star:hover {
   color: #999999;
 }
+.match-information .table thead tr th .name a.star.active span,
+.match-information .table thead tr th .name a.star.active i {
+  color: #ffc600 !important;
+}
 .match-information .table thead tr th.team:hover .name a.star {
   display: inline-block;
 }
