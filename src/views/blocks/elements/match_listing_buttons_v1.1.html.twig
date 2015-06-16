@@ -12,9 +12,19 @@
     <div class="col-md-3">
         <div class="btn-toolbar" role="toolbar">
             <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default active"><span class="icon-matches-list"></span></a>
-                <a href="#" class="btn btn-default">1X2</a>
-                <a href="#" class="btn btn-default">P</a>
+                {% if type == 'all' %}
+                    <a href="#" class="btn btn-default active"><span class="icon-matches-list"></span></a>
+                    <a href="#" class="btn btn-default">1X2</a>
+                    <a href="#" class="btn btn-default">P</a>
+                {% elseif type == 'predictions' %}
+                    <a href="#" class="btn btn-default"><span class="icon-matches-list"></span></a>
+                    <a href="#" class="btn btn-default">1X2</a>
+                    <a href="#" class="btn btn-default active">P</a>
+                {% elseif type == 'odds' %}
+                    <a href="#" class="btn btn-default"><span class="icon-matches-list"></span></a>
+                    <a href="#" class="btn btn-default active">1X2</a>
+                    <a href="#" class="btn btn-default">P</a>
+                {% endif %}
             </div>
         </div>
     </div>
