@@ -1086,9 +1086,6 @@
                 line-height: @ls-data-league-line-height;
               }
 
-              &.icon-help{
-                font-size: @font-size-normal;
-              }
             }
 
             > .title{
@@ -1104,7 +1101,18 @@
                 line-height: @font-size-x-large;
                 position: relative;
                 top: 1px;
+
+                span {
+                  color: fade(#000000, 30%);
+                }
+
+                &:hover {
+                  span {
+                    color: @ls-th-league-color;
+                  }
+                }
               }
+
             }
 
             span{

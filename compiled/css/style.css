@@ -9732,9 +9732,6 @@ span.dark-icon {
   margin-right: 5px;
   line-height: 19px;
 }
-.table.my-games thead.league-data tr th a.icon-help {
-  font-size: 14px;
-}
 .table.my-games thead.league-data tr th > .title span.icon {
   font-size: 14px;
   line-height: 17px;
@@ -9746,6 +9743,12 @@ span.dark-icon {
   line-height: 17px;
   position: relative;
   top: 1px;
+}
+.table.my-games thead.league-data tr th > .title .icon-help span {
+  color: rgba(0, 0, 0, 0.3);
+}
+.table.my-games thead.league-data tr th > .title .icon-help:hover span {
+  color: #ffffff;
 }
 .table.my-games thead.league-data tr th span {
   color: rgba(0, 0, 0, 0.1);
