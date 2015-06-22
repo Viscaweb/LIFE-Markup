@@ -356,12 +356,12 @@
             > .title{
               background-color: darken(@ls-light-color, 14%);
               text-align: center;
-              font-size: @font-size-medium;
               font-weight: @font-weight-bold;
               text-transform: uppercase;
-              padding: 2px 0 5px;
+              padding: 5px 0 5px;
               line-height: 16px;
               margin-bottom: 2px;
+
             }
             
             .time-zone{ 
@@ -413,5 +413,57 @@
         }
       }
     }
+  }
+
+  // Style for status LIVE
+  &.live {
+
+     .table {
+
+       tbody {
+
+         tr {
+
+           td {
+             > .title {
+
+               span.minute {
+                 color: #e33000;
+                 .live-blink-gif();
+                 background-position: 1px center;
+               }
+             }
+
+           }
+         }
+       }
+     }
+
+  }
+
+  // Style for status LIVE PAUSED
+  &.paused {
+
+    .table {
+
+      tbody {
+
+        tr {
+
+          td {
+            > .title {
+
+              span.minute {
+                color: #e33000;
+                .paused-gif();
+                background-position: 1px center;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
   }
 }
