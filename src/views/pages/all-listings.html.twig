@@ -43,6 +43,8 @@
     {% include 'blocks/sports/listings/match_listing_A_R.html.twig' %}
     {% include 'blocks/streaming/next_matches_streaming_list.html.twig' %}
 
+    <div class="row"><div class="col-md-12">{{ include('blocks/sports/listings/match_listing_by_team_season.html.twig', {in_panel:'true'}) }}</div></div>
+
 
 
 {% endblock %}
