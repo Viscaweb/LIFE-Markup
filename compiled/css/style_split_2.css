@@ -2659,6 +2659,14 @@ span.glyphicon-star.active {
 }
 
 .match-information .table tbody tr td.team-information ul.players li span {
+  margin-right: 5px;
+  float: left;
+  margin-top: 2px;
+}
+
+.match-information .table tbody tr td.team-information.home .players li span {
+  float: right;
+  margin-right: 0;
   margin-left: 5px;
 }
 
