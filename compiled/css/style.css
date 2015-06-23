@@ -10089,8 +10089,12 @@ span.dark-icon {
 }
 .table.table-standing tbody tr td.number {
   font-weight: 600;
-  text-align: right;
+  text-align: center;
   background-color: #f0f0f0;
+}
+.table.table-standing tbody tr td.number .extra-info {
+  font-width: 400;
+  color: rgba(92, 92, 92, 0.5);
 }
 .table.table-standing tbody tr td.live {
   text-align: center;
@@ -10195,6 +10199,9 @@ span.dark-icon {
 .table.layout-fixed colgroup col.number {
   width: 25px ;
 }
+.table.layout-fixed colgroup col.rank-extra-info {
+  width: 50px ;
+}
 .table.layout-fixed colgroup col.event-leg {
   width: 25px;
 }
@@ -10271,7 +10278,7 @@ span.dark-icon {
   vertical-align: middle;
 }
 .table.league-selection tbody tr td.number {
-  text-align: right;
+  text-align: center;
 }
 .table.league-selection tbody tr td.flag {
   text-align: center;

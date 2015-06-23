@@ -1474,8 +1474,13 @@
 
           &.number{
             font-weight: @font-weight-semi-bold;
-            text-align: right;
+            text-align: center;
             background-color: darken(@ls-light-color, 6%);
+
+            .extra-info {
+              font-width: 400;
+              color: @text-muted;
+            }
 
           }
 
@@ -1637,6 +1642,11 @@
           width: 25px ;
         }
 
+        &.rank-extra-info{
+          width: 50px ;
+        }
+
+
         &.event-leg{
           width: 25px;
         }
@@ -1742,7 +1752,7 @@
         vertical-align: middle;
 
         &.number{
-          text-align: right;
+          text-align: center;
         }
 
         &.flag{

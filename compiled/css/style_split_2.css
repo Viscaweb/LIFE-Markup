@@ -1,3 +1,16 @@
+.matches-slider .content .matches {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.matches-slider .content .matches .inner {
+  left: 0;
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
 .matches-slider .content .match {
   cursor: pointer;
   padding: 6px 20px;
