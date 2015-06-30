@@ -72,8 +72,6 @@
 		'icon-card': '&#xe638;',
 		'icon-titular': '&#xe639;',
 		'icon-matches-list': '&#xe63a;',
-		'icon-referee': '&#xe63b;',
-		'icon-stadium': '&#xe63c;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

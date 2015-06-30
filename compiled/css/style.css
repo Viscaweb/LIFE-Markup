@@ -14292,14 +14292,21 @@ span.glyphicon-star.active {
 .match-information .match-info .date {
   display: inline;
 }
-.match-information .match-info .date span.icon {
+.match-information .match-info span.icon {
   color: #808080;
   margin-right: 4px;
   font-size: 16px;
   vertical-align: middle;
 }
-.match-information .match-info span.referee {
-  margin-right: 20px;
+.match-information .match-info .referee {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.match-information .match-info .stadium {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .match-information .table thead tr th {
   text-transform: none;

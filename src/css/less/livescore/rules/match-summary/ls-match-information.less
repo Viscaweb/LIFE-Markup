@@ -44,17 +44,25 @@
     
     .date{
       display: inline;
-      
-      span.icon{
-        color: lighten(@ls-dark-color, 50%);
-        margin-right: 4px;
-        font-size: @font-size-large;
-        vertical-align: middle;
-      }
+    }
+
+    span.icon{
+      color: lighten(@ls-dark-color, 50%);
+      margin-right: 4px;
+      font-size: @font-size-large;
+      vertical-align: middle;
     }
     
-    span.referee{
-      margin-right: 20px;
+    .referee{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .stadium {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   

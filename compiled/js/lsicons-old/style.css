@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?2suyfl');
-	src:url('fonts/LSicons.eot?#iefix2suyfl') format('embedded-opentype'),
-		url('fonts/LSicons.ttf?2suyfl') format('truetype'),
-		url('fonts/LSicons.woff?2suyfl') format('woff'),
-		url('fonts/LSicons.svg?2suyfl#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?-g0kscm');
+	src:url('fonts/LSicons.eot?#iefix-g0kscm') format('embedded-opentype'),
+		url('fonts/LSicons.ttf?-g0kscm') format('truetype'),
+		url('fonts/LSicons.woff?-g0kscm') format('woff'),
+		url('fonts/LSicons.svg?-g0kscm#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -199,10 +199,4 @@
 }
 .icon-matches-list:before {
 	content: "\e63a";
-}
-.icon-referee:before {
-	content: "\e63b";
-}
-.icon-stadium:before {
-	content: "\e63c";
 }
