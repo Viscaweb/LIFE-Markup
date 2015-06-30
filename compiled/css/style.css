@@ -14325,22 +14325,27 @@ span.glyphicon-star.active {
 .match-information .table thead tr th .name {
   padding: 0;
   text-align: right;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
 }
 .match-information .table thead tr th .name a {
-  display: inline-block;
-  color: #dfdfdf;
-  margin-left: 7px;
+  display: block;
+  min-height: 40px;
+  max-width: 100%;
+  color: #ffffff;
+  margin-left: 20px;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .match-information .table thead tr th .name a .qualified {
   color: #79c614;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 11px;
   text-transform: uppercase;
-  bottom: -10px;
+  bottom: 0px;
   right: 0;
   position: absolute;
 }
@@ -14352,8 +14357,10 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 .match-information .table thead tr th .name a.star {
-  color: #b1b1b1;
   display: none;
+  color: #b1b1b1;
+  position: absolute;
+  margin-left: 4px;
 }
 .match-information .table thead tr th .name a.star span {
   font-size: 14px;
@@ -14366,7 +14373,7 @@ span.glyphicon-star.active {
   color: #ffc600 !important;
 }
 .match-information .table thead tr th.team:hover .name a.star {
-  display: inline-block;
+  display: block;
 }
 .match-information .table thead tr th.away-team .logo {
   text-align: right;
@@ -14376,11 +14383,15 @@ span.glyphicon-star.active {
 }
 .match-information .table thead tr th.away-team .name a {
   margin-left: 0;
-  margin-right: 7px;
+  margin-right: 20px;
 }
 .match-information .table thead tr th.away-team .name a .qualified {
   left: 0;
   right: auto;
+}
+.match-information .table thead tr th.away-team a.star {
+  right: 0;
+  margin-right: 6px;
 }
 .match-information .table thead tr th.score {
   text-align: center;
