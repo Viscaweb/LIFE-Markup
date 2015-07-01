@@ -10262,6 +10262,9 @@ span.dark-icon {
 .table.layout-fixed colgroup col.rank-variation {
   width: 30px;
 }
+.table.layout-fixed colgroup col.rank-variation-large {
+  width: 44px;
+}
 .table.layout-fixed colgroup col.favorite {
   width: 25px;
 }
@@ -17400,86 +17403,6 @@ main .matches-widgets td.content span.empty {
 .contest-standings .table-scroll {
   height: 550px;
   overflow: auto;
-}
-.contest-standings .table {
-  margin: 0;
-}
-.contest-standings .table thead tr th {
-  padding: 4px 7px;
-  font-weight: 700;
-  font-size: 12px;
-}
-.contest-standings .table thead tr th.state {
-  padding-left: 0;
-  padding-right: 0;
-}
-.contest-standings .table thead tr th.state .icon {
-  font-size: 16px;
-  line-height: 12px;
-  vertical-align: middle;
-  position: relative;
-  top: -1px;
-}
-.contest-standings .table tbody tr td.number {
-  font-weight: 600;
-  padding: 8px 5px;
-  text-align: center;
-}
-.contest-standings .table tbody tr td.state {
-  padding-right: 0;
-  font-weight: 600;
-}
-.contest-standings .table tbody tr td.state.down {
-  color: #bd0800;
-}
-.contest-standings .table tbody tr td.state.up {
-  color: #7ab748;
-}
-.contest-standings .table tbody tr td.avatar {
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.contest-standings .table tbody tr td.avatar img {
-  max-width: 24px;
-  max-height: 24px;
-  background: #f7f7f7;
-}
-.contest-standings .table tbody tr td.points {
-  font-weight: 700;
-  font-size: 14px;
-  text-align: right;
-}
-.contest-standings .table tbody tr td.player {
-  width: auto;
-}
-.contest-standings .table tbody tr.event-won td.number {
-  font-weight: 700;
-  font-size: 16px;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-.contest-standings .table tbody tr.event-won td.player a {
-  font-weight: 700;
-}
-.contest-standings .table tbody tr.show-all th {
-  border: 0;
-  padding: 0;
-  background-color: #f3f3f3;
-}
-.contest-standings .table tbody tr.show-all th > div {
-  padding: 8px 12px;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: none;
-  line-height: 16px;
-}
-.contest-standings .table tbody tr.show-all th > div span {
-  font-size: 13px;
-  font-weight: 600;
-}
-.contest-standings .table tbody tr.show-all th > div a {
-  margin-left: 30px;
 }
 .predictions-filter label {
   font-size: 14px;
