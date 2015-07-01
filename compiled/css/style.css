@@ -17389,7 +17389,7 @@ main .matches-widgets td.content span.empty {
   max-height: 18px;
 }
 .contest-standings .filters {
-  padding: 15px;
+  padding: 15px 15px 0;
 }
 .contest-standings .filters .btn-group-justified {
   margin-bottom: 15px;
