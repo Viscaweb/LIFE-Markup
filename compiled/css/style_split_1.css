@@ -7281,7 +7281,7 @@ button.close {
 }
 
 .tooltip-inner {
-  max-width: 200px;
+  max-width: 400px;
   padding: 3px 8px;
   color: #ffffff;
   text-align: center;
@@ -12580,6 +12580,10 @@ span.dark-icon {
   width: 30px;
 }
 
+.table.layout-fixed colgroup col.rank-variation-large {
+  width: 44px;
+}
+
 .table.layout-fixed colgroup col.favorite {
   width: 25px;
 }
@@ -15065,10 +15069,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .control.next {
   border-left-width: 1px;
   border-left-style: solid;
-}
-
-.matches-slider .content {
-  vertical-align: top;
-  display: table-cell;
-  white-space: nowrap;
 }
