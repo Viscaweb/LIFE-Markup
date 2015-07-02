@@ -14263,11 +14263,29 @@ span.glyphicon-star.active {
   max-height: 21px;
 }
 /*Match Summary */
+.match-information .panel-heading:before,
+.match-information .panel-heading:after {
+  content: " ";
+  display: table;
+}
+.match-information .panel-heading:after {
+  clear: both;
+}
+.match-information .panel-heading:before,
+.match-information .panel-heading:after {
+  content: " ";
+  display: table;
+}
+.match-information .panel-heading:after {
+  clear: both;
+}
 .match-information .panel-heading .panel-title {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
-  width: 60%;
+  width: 65%;
+  line-height: 21px;
+  float: left;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
