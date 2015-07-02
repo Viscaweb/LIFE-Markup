@@ -3233,6 +3233,7 @@ span.glyphicon-star.active {
   font-size: 12px;
   font-weight: 700;
   text-align: center;
+  background-color: #fafafa;
 }
 
 .match-report table tbody tr td.player.home {
