@@ -73,7 +73,10 @@
 		'icon-titular': '&#xe639;',
 		'icon-matches-list': '&#xe63a;',
 		'icon-referee': '&#xe63b;',
-		'icon-stadium': '&#xe63c;',
+		'icon-star': '&#xe63c;',
+		'icon-location-pin': '&#xe63d;',
+		'icon-help': '&#xe63e;',
+		'icon-info': '&#xe63f;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

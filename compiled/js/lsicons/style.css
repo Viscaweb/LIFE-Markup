@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LSicons';
-	src:url('fonts/LSicons.eot?2suyfl');
-	src:url('fonts/LSicons.eot?#iefix2suyfl') format('embedded-opentype'),
-		url('fonts/LSicons.ttf?2suyfl') format('truetype'),
-		url('fonts/LSicons.woff?2suyfl') format('woff'),
-		url('fonts/LSicons.svg?2suyfl#LSicons') format('svg');
+	src:url('fonts/LSicons.eot?-v7l3cw');
+	src:url('fonts/LSicons.eot?#iefix-v7l3cw') format('embedded-opentype'),
+		url('fonts/LSicons.ttf?-v7l3cw') format('truetype'),
+		url('fonts/LSicons.woff?-v7l3cw') format('woff'),
+		url('fonts/LSicons.svg?-v7l3cw#LSicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -203,6 +203,15 @@
 .icon-referee:before {
 	content: "\e63b";
 }
-.icon-stadium:before {
+.icon-star:before {
 	content: "\e63c";
+}
+.icon-location-pin:before {
+	content: "\e63d";
+}
+.icon-help:before {
+	content: "\e63e";
+}
+.icon-info:before {
+	content: "\e63f";
 }
