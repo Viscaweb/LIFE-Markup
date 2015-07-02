@@ -14296,10 +14296,13 @@ span.glyphicon-star.active {
   display: inline;
 }
 .match-information .match-info span.icon {
-  color: #808080;
+  color: #b3b3b3;
   margin-right: 4px;
+  margin-top: -2px;
   font-size: 16px;
   vertical-align: middle;
+  position: relative;
+  display: inline-block;
 }
 .match-information .match-info .referee {
   white-space: nowrap;
