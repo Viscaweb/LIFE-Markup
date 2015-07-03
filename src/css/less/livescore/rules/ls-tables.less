@@ -388,6 +388,18 @@
 
       > td{
 
+        &.number{
+          font-weight: @font-weight-semi-bold;
+          text-align: center;
+          background-color: darken(@ls-light-color, 4%);
+
+          .extra-info {
+            font-width: 400;
+            color: @text-muted;
+          }
+
+        }
+
         &.view-more{
           background-color: @ls-light-color;
         }
@@ -1471,18 +1483,6 @@
               max-height: 18px;
               vertical-align: top;
             }
-          }
-
-          &.number{
-            font-weight: @font-weight-semi-bold;
-            text-align: center;
-            background-color: darken(@ls-light-color, 6%);
-
-            .extra-info {
-              font-width: 400;
-              color: @text-muted;
-            }
-
           }
 
           &.live{
