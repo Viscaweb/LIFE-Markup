@@ -16163,17 +16163,6 @@ table.odds-goal-scorers tbody tr td.best-odd,
 table.table-odds tbody tr td.best-odd {
   font-weight: 700;
 }
-table.odds-1x2 tbody tr:last-child td.result:last-child,
-table.odds-over-under tbody tr:last-child td.result:last-child,
-table.odds-double-chance tbody tr:last-child td.result:last-child,
-table.odds-half-time-full-time tbody tr:last-child td.result:last-child,
-table.odds-correct-score tbody tr:last-child td.result:last-child,
-table.odds-goal-scorers tbody tr:last-child td.result:last-child,
-table.table-odds tbody tr:last-child td.result:last-child {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
 table.odds-over-under tbody tr td.name {
   width: 75%;
 }
