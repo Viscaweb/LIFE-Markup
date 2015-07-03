@@ -12729,6 +12729,7 @@ span.dark-icon {
   color: #e00000;
   background-color: #ffffff;
   border-color: #e00000;
+  /* need for IE only */
 }
 
 .btn-prediction:hover,
@@ -12773,6 +12774,10 @@ fieldset[disabled] .btn-prediction.active {
 .btn-prediction .badge {
   color: #ffffff;
   background-color: #e00000;
+}
+
+.btn-prediction.disabled:hover {
+  border-color: #e1e1e1;
 }
 
 .btn-prediction-done {
@@ -15065,9 +15070,4 @@ span.sprite-icons.webmaster-border {
 .matches-slider .control.prev {
   border-right-width: 1px;
   border-right-style: solid;
-}
-
-.matches-slider .control.next {
-  border-left-width: 1px;
-  border-left-style: solid;
 }

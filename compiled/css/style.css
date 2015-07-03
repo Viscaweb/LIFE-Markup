@@ -10380,6 +10380,7 @@ span.dark-icon {
   color: #e00000;
   background-color: #ffffff;
   border-color: #e00000;
+  /* need for IE only */
 }
 .btn-prediction:hover,
 .btn-prediction:focus,
@@ -10420,6 +10421,9 @@ fieldset[disabled] .btn-prediction.active {
 .btn-prediction .badge {
   color: #ffffff;
   background-color: #e00000;
+}
+.btn-prediction.disabled:hover {
+  border-color: #e1e1e1;
 }
 .btn-prediction-done {
   position: relative;

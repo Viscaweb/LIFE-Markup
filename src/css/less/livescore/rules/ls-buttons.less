@@ -18,6 +18,13 @@
 
 .btn-prediction{
 	.button-variant(@ls-btn-prediction; @ls-light-color; @ls-btn-prediction);
+
+  /* need for IE only */
+  &.disabled {
+    &:hover {
+      border-color: darken(@ls-light-color, 11.6%);
+    }
+  }
 }
 
 
