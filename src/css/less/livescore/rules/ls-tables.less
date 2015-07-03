@@ -365,6 +365,13 @@
     }
   }
 
+  //Shared style between th and td
+  th, td {
+    &.number{
+      text-align: center;
+    }
+  }
+
   //Deep level
   tbody{
 
@@ -390,7 +397,6 @@
 
         &.number{
           font-weight: @font-weight-semi-bold;
-          text-align: center;
           background-color: darken(@ls-light-color, 4%);
 
           .extra-info {
@@ -1643,6 +1649,14 @@
           width: 25px ;
         }
 
+        &.number-with-3-digits{
+          width: 32px;
+        }
+
+        &.number-with-4-digits{
+          width: 40px;
+        }
+
         &.rank-extra-info{
           width: 50px ;
         }
@@ -1728,7 +1742,7 @@
           width: 30px;
         }
 
-        &.rank-variation-large {
+        &.rank-variation-with-3-digits {
           width: 44px;
         }
 
