@@ -9268,7 +9268,7 @@ span.dark-icon {
   float: left;
   display: block;
   width: 50%;
-  text-align: right;
+  text-align: center;
   line-height: 16px;
 }
 .table tbody tr > td.odd a .totals,
@@ -9286,6 +9286,7 @@ span.dark-icon {
   display: block;
   float: left;
   width: 50%;
+  text-align: center;
   line-height: 32px;
 }
 .table tbody tr > td.odd-type,
