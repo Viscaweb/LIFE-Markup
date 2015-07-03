@@ -3384,7 +3384,7 @@ span.glyphicon-star.active {
   float: right;
 }
 
-.match-summary-statistics .table tbody tr td.striped {
+.match-summary-statistics .table tbody tr td.statistic-label {
   text-align: center;
   width: 19%;
 }

@@ -15077,7 +15077,7 @@ span.glyphicon-star.active {
 .match-summary-statistics .table tbody tr td.prog.home .progress .progress-bar {
   float: right;
 }
-.match-summary-statistics .table tbody tr td.striped {
+.match-summary-statistics .table tbody tr td.statistic-label {
   text-align: center;
   width: 19%;
 }
