@@ -1,13 +1,3 @@
-.matches-slider .control span {
-  font-size: 21px;
-  line-height: 71px;
-  color: #dbdbdb;
-}
-
-.matches-slider .control:hover {
-  background: #f0f0f0;
-}
-
 .matches-slider .control:hover span {
   color: #afafaf;
 }

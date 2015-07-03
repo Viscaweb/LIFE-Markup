@@ -565,25 +565,6 @@
 
       }
 
-      //General TD Odd Style
-      &:nth-child(2n+1){
-
-
-        td.striped{
-          background-color: darken(@ls-light-color,2%) !important;
-        }
-      }
-
-      &:nth-child(2n){
-
-        td.striped{
-          background-color: darken(@ls-light-color,6%) !important;
-        }
-      }
-
-      td.odd:last-child{
-      }
-
       //LIVE STYLES
       &.live{
 
@@ -1858,6 +1839,7 @@
           text-align: center;
           padding: 0 4px;
           color: lighten(@ls-dark-color, 50%);
+          background-color: darken(@ls-light-color, 4%);
 
           .icon{
             font-size: @font-size-normal;

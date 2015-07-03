@@ -11079,6 +11079,11 @@ span.dark-icon {
   color: #b3b3b3;
 }
 
+.table th.number,
+.table td.number {
+  text-align: center;
+}
+
 .table tbody tr > th,
 .table tbody tr:nth-child(even) > th,
 .table tbody tr:nth-child(odd) > th {
@@ -11103,7 +11108,6 @@ span.dark-icon {
 .table tbody tr:nth-child(even) > td.number,
 .table tbody tr:nth-child(odd) > td.number {
   font-weight: 600;
-  text-align: center;
   background-color: #f5f5f5;
 }
 
@@ -11381,18 +11385,6 @@ span.dark-icon {
   text-align: center;
   font-weight: 600;
   height: 44px;
-}
-
-.table tbody tr:nth-child(2n+1) td.striped,
-.table tbody tr:nth-child(even):nth-child(2n+1) td.striped,
-.table tbody tr:nth-child(odd):nth-child(2n+1) td.striped {
-  background-color: #fafafa !important;
-}
-
-.table tbody tr:nth-child(2n) td.striped,
-.table tbody tr:nth-child(even):nth-child(2n) td.striped,
-.table tbody tr:nth-child(odd):nth-child(2n) td.striped {
-  background-color: #f0f0f0 !important;
 }
 
 .table tbody tr.live td.time,
@@ -12501,6 +12493,14 @@ span.dark-icon {
   width: 25px;
 }
 
+.table.layout-fixed colgroup col.number-with-3-digits {
+  width: 32px;
+}
+
+.table.layout-fixed colgroup col.number-with-4-digits {
+  width: 40px;
+}
+
 .table.layout-fixed colgroup col.rank-extra-info {
   width: 50px;
 }
@@ -12585,7 +12585,7 @@ span.dark-icon {
   width: 30px;
 }
 
-.table.layout-fixed colgroup col.rank-variation-large {
+.table.layout-fixed colgroup col.rank-variation-with-3-digits {
   width: 44px;
 }
 
@@ -12685,6 +12685,7 @@ span.dark-icon {
   text-align: center;
   padding: 0 4px;
   color: #808080;
+  background-color: #f5f5f5;
 }
 
 .table.predictions tbody tr td.icon .icon {
@@ -15055,4 +15056,14 @@ span.sprite-icons.webmaster-border {
   display: table-cell;
   border-color: #e9e9e9;
   cursor: pointer;
+}
+
+.matches-slider .control span {
+  font-size: 21px;
+  line-height: 71px;
+  color: #dbdbdb;
+}
+
+.matches-slider .control:hover {
+  background: #f0f0f0;
 }
