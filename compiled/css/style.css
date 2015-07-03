@@ -9081,6 +9081,20 @@ span.dark-icon {
   font-width: 400;
   color: rgba(92, 92, 92, 0.5);
 }
+.table tbody tr > td.icon,
+.table tbody tr:nth-child(even) > td.icon,
+.table tbody tr:nth-child(odd) > td.icon {
+  text-align: center;
+  padding: 0 4px;
+  color: #808080;
+  background-color: #f5f5f5;
+}
+.table tbody tr > td.icon .icon,
+.table tbody tr:nth-child(even) > td.icon .icon,
+.table tbody tr:nth-child(odd) > td.icon .icon {
+  font-size: 14px;
+  margin: 0;
+}
 .table tbody tr > td.view-more,
 .table tbody tr:nth-child(even) > td.view-more,
 .table tbody tr:nth-child(odd) > td.view-more {
@@ -10342,16 +10356,6 @@ span.dark-icon {
 }
 .table.predictions tbody tr.prediction-cancelled td.icon {
   background-color: #e6e6e6 !important;
-}
-.table.predictions tbody tr td.icon {
-  text-align: center;
-  padding: 0 4px;
-  color: #808080;
-  background-color: #f5f5f5;
-}
-.table.predictions tbody tr td.icon .icon {
-  font-size: 14px;
-  margin: 0;
 }
 .table.predictions tbody tr td.league-logo {
   padding: 0 3px;
