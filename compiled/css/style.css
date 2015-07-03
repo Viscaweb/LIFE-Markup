@@ -16153,9 +16153,6 @@ table.odds-goal-scorers tbody tr td.result,
 table.table-odds tbody tr td.result {
   text-align: center;
   width: 10%;
-  -webkit-box-shadow: -1px -1px 0 #ffffff inset;
-  -moz-box-shadow: -1px -1px 0 #ffffff inset;
-  box-shadow: -1px -1px 0 #ffffff inset;
 }
 table.odds-1x2 tbody tr td.best-odd,
 table.odds-over-under tbody tr td.best-odd,
@@ -16165,50 +16162,6 @@ table.odds-correct-score tbody tr td.best-odd,
 table.odds-goal-scorers tbody tr td.best-odd,
 table.table-odds tbody tr td.best-odd {
   font-weight: 700;
-}
-table.odds-1x2 tbody tr td.result:last-child,
-table.odds-over-under tbody tr td.result:last-child,
-table.odds-double-chance tbody tr td.result:last-child,
-table.odds-half-time-full-time tbody tr td.result:last-child,
-table.odds-correct-score tbody tr td.result:last-child,
-table.odds-goal-scorers tbody tr td.result:last-child,
-table.table-odds tbody tr td.result:last-child {
-  -webkit-box-shadow: 0 -1px 0 #ffffff inset;
-  -moz-box-shadow: 0 -1px 0 #ffffff inset;
-  box-shadow: 0 -1px 0 #ffffff inset;
-}
-table.odds-1x2 tbody tr:first-child td.result,
-table.odds-over-under tbody tr:first-child td.result,
-table.odds-double-chance tbody tr:first-child td.result,
-table.odds-half-time-full-time tbody tr:first-child td.result,
-table.odds-correct-score tbody tr:first-child td.result,
-table.odds-goal-scorers tbody tr:first-child td.result,
-table.table-odds tbody tr:first-child td.result {
-  -webkit-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
-  -moz-box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
-  box-shadow: -1px -1px 0 #ffffff inset, -1px 1px 0 #ffffff inset;
-}
-table.odds-1x2 tbody tr:first-child td.result:last-child,
-table.odds-over-under tbody tr:first-child td.result:last-child,
-table.odds-double-chance tbody tr:first-child td.result:last-child,
-table.odds-half-time-full-time tbody tr:first-child td.result:last-child,
-table.odds-correct-score tbody tr:first-child td.result:last-child,
-table.odds-goal-scorers tbody tr:first-child td.result:last-child,
-table.table-odds tbody tr:first-child td.result:last-child {
-  -webkit-box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
-  -moz-box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
-  box-shadow: 0 -1px 0 #ffffff inset, 0 1px 0 #ffffff inset;
-}
-table.odds-1x2 tbody tr:last-child td.result,
-table.odds-over-under tbody tr:last-child td.result,
-table.odds-double-chance tbody tr:last-child td.result,
-table.odds-half-time-full-time tbody tr:last-child td.result,
-table.odds-correct-score tbody tr:last-child td.result,
-table.odds-goal-scorers tbody tr:last-child td.result,
-table.table-odds tbody tr:last-child td.result {
-  -webkit-box-shadow: -1px 0 0 #ffffff inset;
-  -moz-box-shadow: -1px 0 0 #ffffff inset;
-  box-shadow: -1px 0 0 #ffffff inset;
 }
 table.odds-1x2 tbody tr:last-child td.result:last-child,
 table.odds-over-under tbody tr:last-child td.result:last-child,
