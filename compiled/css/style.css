@@ -13298,9 +13298,6 @@ span.sprite-icons.webmaster-border {
 .live-commented-matches.panel .matches tr.live td.commented span {
   color: #e33000;
 }
-.live-commented-matches.panel .matches tr:nth-child(even) td.score {
-  background-color: #ededed;
-}
 .empty-state {
   background-color: transparent;
   min-height: 200px;
