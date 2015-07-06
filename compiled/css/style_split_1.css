@@ -11948,17 +11948,17 @@ span.dark-icon {
   top: 1px;
 }
 
-.table.my-games thead.league-data tr th > .title .icon-help {
+.table.my-games thead.league-data tr th > .title .help-icon {
   line-height: 17px;
   position: relative;
   top: 1px;
 }
 
-.table.my-games thead.league-data tr th > .title .icon-help span {
+.table.my-games thead.league-data tr th > .title .help-icon span {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.table.my-games thead.league-data tr th > .title .icon-help:hover span {
+.table.my-games thead.league-data tr th > .title .help-icon:hover span {
   color: #ffffff;
 }
 
