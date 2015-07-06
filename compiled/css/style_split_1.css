@@ -11108,7 +11108,6 @@ span.dark-icon {
 .table tbody tr:nth-child(even) > td.number,
 .table tbody tr:nth-child(odd) > td.number {
   font-weight: 600;
-  background-color: #f5f5f5;
 }
 
 .table tbody tr > td.number .extra-info,
