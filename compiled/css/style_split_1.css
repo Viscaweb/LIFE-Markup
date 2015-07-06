@@ -12158,6 +12158,11 @@ span.dark-icon {
   max-width: 20px;
 }
 
+.table.matches tbody tr td.team .label-goal {
+  position: absolute;
+  top: 2px;
+}
+
 .table.matches tbody tr td.team.team1 {
   text-align: right;
 }
@@ -12170,6 +12175,10 @@ span.dark-icon {
   margin-right: 5px;
 }
 
+.table.matches tbody tr td.team.team1 .label-goal {
+  left: 0;
+}
+
 .table.matches tbody tr td.team.team1 img {
   margin-left: 5px;
 }
@@ -12180,6 +12189,10 @@ span.dark-icon {
 
 .table.matches tbody tr td.team.team2 .label {
   margin-left: 5px;
+}
+
+.table.matches tbody tr td.team.team2 .label-goal {
+  right: 0;
 }
 
 .table.matches tbody tr td.team.team2 img {
@@ -15012,22 +15025,4 @@ span.sprite-icons.webmaster-border {
 .sharing p {
   font-size: 12px;
   font-weight: 600;
-}
-
-.sharing .share-link-block {
-  margin-top: 30px;
-}
-
-.sharing .share-link-block input.share-link {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: #1a1a1a;
-  width: 100%;
-  border: 0;
-  padding: 6px;
-}
-
-.panel-social-small {
-  border: none;
 }

@@ -32,3 +32,16 @@
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
+
+
+.bounce {
+  animation: bounce 1s .5s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1.1); opacity: 1 }
+  50% { transform: scale(1.6); opacity: .7; }
+  60% { transform: scale(0.6); opacity: 1 }
+  80% { transform: scale(0.95) }
+  100% { transform: scale(0.85) }
+}

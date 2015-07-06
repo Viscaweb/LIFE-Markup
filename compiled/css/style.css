@@ -9930,6 +9930,10 @@ span.dark-icon {
 .table.matches tbody tr td.team img {
   max-width: 20px;
 }
+.table.matches tbody tr td.team .label-goal {
+  position: absolute;
+  top: 2px;
+}
 .table.matches tbody tr td.team.team1 {
   text-align: right;
 }
@@ -9939,6 +9943,9 @@ span.dark-icon {
 .table.matches tbody tr td.team.team1 .label {
   margin-right: 5px;
 }
+.table.matches tbody tr td.team.team1 .label-goal {
+  left: 0;
+}
 .table.matches tbody tr td.team.team1 img {
   margin-left: 5px;
 }
@@ -9947,6 +9954,9 @@ span.dark-icon {
 }
 .table.matches tbody tr td.team.team2 .label {
   margin-left: 5px;
+}
+.table.matches tbody tr td.team.team2 .label-goal {
+  right: 0;
 }
 .table.matches tbody tr td.team.team2 img {
   margin-right: 5px;
@@ -19685,6 +19695,29 @@ ul.image-list li img {
   }
   100% {
     opacity: 1.0;
+  }
+}
+.bounce {
+  animation: bounce 1s .5s;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: .7;
+  }
+  60% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.85);
   }
 }
 /*IE8 Compatibility*/
