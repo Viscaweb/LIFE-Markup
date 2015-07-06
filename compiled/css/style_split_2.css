@@ -4087,21 +4087,21 @@ span.glyphicon-star.active {
 }
 
 .iframe .match-tips .make-bet {
-  border-top: 1px solid #ebebeb;
-  padding-top: 15px;
+  padding: 15px;
+  background-color: #fafafa;
+  text-align: center;
 }
 
 .iframe .match-tips .make-bet img {
   max-height: 30px;
-  float: left;
   margin-right: 10px;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .iframe .match-tips .make-bet p {
   font-size: 13px;
   font-weight: 400;
-  display: inline-block;
 }
 
 .iframe .match-tips.iframe {
@@ -4146,21 +4146,21 @@ span.glyphicon-star.active {
 }
 
 .panel.match-tips .make-bet {
-  border-top: 1px solid #ebebeb;
-  padding-top: 15px;
+  padding: 15px;
+  background-color: #fafafa;
+  text-align: center;
 }
 
 .panel.match-tips .make-bet img {
   max-height: 30px;
-  float: left;
   margin-right: 10px;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .panel.match-tips .make-bet p {
   font-size: 13px;
   font-weight: 400;
-  display: inline-block;
 }
 
 .panel.match-tips iframe {
@@ -4206,21 +4206,21 @@ span.glyphicon-star.active {
 }
 
 .tips-list .make-bet {
-  border-top: 1px solid #ebebeb;
-  padding-top: 15px;
+  padding: 15px;
+  background-color: #fafafa;
+  text-align: center;
 }
 
 .tips-list .make-bet img {
   max-height: 30px;
-  float: left;
   margin-right: 10px;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .tips-list .make-bet p {
   font-size: 13px;
   font-weight: 400;
-  display: inline-block;
 }
 
 .table.live-commentary {
