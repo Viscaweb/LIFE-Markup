@@ -3306,6 +3306,16 @@ span.glyphicon-star.active {
   font-size: 12px;
 }
 
+.match-report table tbody tr td.extra-info {
+  width: 1%;
+}
+
+.match-report table tbody tr td.extra-info a.replay {
+  float: left;
+  color: #5da400;
+  font-size: 17px;
+}
+
 .match-report table tbody tr td.minute {
   font-size: 12px;
   font-weight: 700;
@@ -3315,12 +3325,6 @@ span.glyphicon-star.active {
 
 .match-report table tbody tr td.player.home {
   text-align: right;
-}
-
-.match-report table tbody tr td.player.home a.replay {
-  float: left;
-  color: #5da400;
-  font-size: 17px;
 }
 
 .match-report table tbody tr td.incident-icon {

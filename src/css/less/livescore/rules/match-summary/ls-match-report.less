@@ -32,6 +32,16 @@
         }
         
         td{
+          &.extra-info {
+            width: 1%;
+
+            a.replay{
+              float: left;
+              color: @active-green;
+              font-size: @font-size-x-large;
+            }
+          }
+
           
           &.minute{
             font-size: @font-size-small;
@@ -43,12 +53,6 @@
           &.player{
             &.home{
               text-align: right;
-              
-              a.replay{
-                float: left;
-                color: @active-green;
-                font-size: @font-size-x-large;
-              }
             }
           }
           
