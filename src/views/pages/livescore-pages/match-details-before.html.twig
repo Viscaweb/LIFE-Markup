@@ -11,7 +11,7 @@
     {% include 'blocks/sports/match/match_comments_iframe.html.twig' %}
     {% include 'blocks/sports/match/match_lineups.html.twig' %}
     {% include 'blocks/sports/match/match_odds_1x2.html.twig' %}
-    {% include 'blocks/sports/match/match_betting_tips.html.twig' %}
+    {{ include('blocks/sports/match/match_betting_tips.html.twig', {in_panel:'true'}) }}
     {{ include('blocks/sports/match/match_prediction.html.twig', {withContest:'true'}) }}
     {% include 'blocks/various/comment_thread.html.twig' %}
 {% endblock %}
