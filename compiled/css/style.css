@@ -9125,7 +9125,7 @@ span.dark-icon {
 .table tbody tr:nth-child(odd) > td.score {
   font-size: 14px;
   font-weight: 700;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   text-align: center;
   padding: 0;
 }
