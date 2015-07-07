@@ -10816,6 +10816,7 @@ iframe {
 
 .page-message .message-image {
   max-width: 600px;
+  max-height: 300px;
 }
 
 .page-message .title {
