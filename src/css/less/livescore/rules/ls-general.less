@@ -98,3 +98,26 @@ iframe{
 		margin-top: 0px;
 	}
 }
+
+
+.page-message {
+  text-align: center;
+
+  .message-image {
+    max-width: 600px;
+  }
+
+  .title {
+    &:extend(h1);
+    display: block;
+    font-weight: 200;
+  }
+
+  .sub-title {
+    &:extend(h4);
+    color : darken(@ls-light-color, 20%);
+    text-transform: uppercase;
+    font-weight: 200;
+    display: block;
+  }
+}

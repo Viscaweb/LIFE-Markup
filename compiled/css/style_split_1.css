@@ -68,7 +68,8 @@ dfn {
   font-style: italic;
 }
 
-h1 {
+h1,
+.page-message .title {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -1519,7 +1520,9 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+.page-message .title,
+.page-message .sub-title {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -1560,7 +1563,8 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
+.h3,
+.page-message .title {
   margin-top: 18px;
   margin-bottom: 9px;
 }
@@ -1585,7 +1589,8 @@ h4,
 h5,
 .h5,
 h6,
-.h6 {
+.h6,
+.page-message .sub-title {
   margin-top: 9px;
   margin-bottom: 9px;
 }
@@ -1606,7 +1611,8 @@ h6 .small,
 }
 
 h1,
-.h1 {
+.h1,
+.page-message .title {
   font-size: 38px;
 }
 
@@ -1621,7 +1627,8 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+.page-message .sub-title {
   font-size: 17px;
 }
 
@@ -10715,12 +10722,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.page-message .title,
+.page-message .sub-title {
   font-weight: 600;
   color: #474747;
 }
 
-h1 {
+h1,
+.page-message .title {
   font-weight: bold;
 }
 
@@ -10798,6 +10808,26 @@ iframe {
 
 .content-wrapper h1 {
   margin-top: 0px;
+}
+
+.page-message {
+  text-align: center;
+}
+
+.page-message .message-image {
+  max-width: 600px;
+}
+
+.page-message .title {
+  display: block;
+  font-weight: 200;
+}
+
+.page-message .sub-title {
+  color: #cccccc;
+  text-transform: uppercase;
+  font-weight: 200;
+  display: block;
 }
 
 .row.row-voffset {
@@ -14924,105 +14954,4 @@ span.sprite-icons.webmaster-border {
   padding: 1px 4px;
   font-size: 20px;
   margin-right: 5px;
-}
-
-@media \0screen {
-  .sharing .likes .fb .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.sharing .likes .fb .icon:hover {
-  background-color: #3b5586;
-}
-
-.sharing .likes .fb iframe {
-  position: relative;
-  top: 2px;
-  width: 140px;
-}
-
-.sharing .likes .tw {
-  padding: 4px 0;
-}
-
-.sharing .likes .tw .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
-  background-color: #00b9f3;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-
-@media \0screen {
-  .sharing .likes .tw .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.sharing .likes .tw .icon:hover {
-  background-color: #0092c0;
-}
-
-.sharing .likes .tw iframe {
-  position: relative;
-  top: 1px;
-  width: 140px;
-}
-
-.sharing .likes .gp {
-  padding: 4px 0;
-}
-
-.sharing .likes .gp .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
-  background-color: #e75f46;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-
-@media \0screen {
-  .sharing .likes .gp .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
-.sharing .likes .gp .icon:hover {
-  background-color: #dd3b1d;
-}
-
-.sharing .likes .gp iframe {
-  position: relative;
-  top: 3px;
-  width: 140px;
-}
-
-.sharing p {
-  font-size: 12px;
-  font-weight: 600;
 }
