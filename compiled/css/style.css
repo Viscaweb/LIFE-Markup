@@ -19579,18 +19579,12 @@ ul.image-list li img {
 }
 /*CSS animations*/
 .blinking {
-  -webkit-animation-name: blinker;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  -moz-animation-name: blinker;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: 4;
-  animation-name: blinker;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: 4;
+  -webkit-animation: blinker 1s linear 4;
+  -o-animation: blinker 1s linear 4;
+  animation: blinker 1s linear 4;
+  -webkit-animation: blinker 1s linear 4 300ms 0 ease;
+  -moz-animation: blinker 1s linear 4 300ms 0 ease;
+  -ms-animation: blinker 1s linear 4 300ms 0 ease;
 }
 @-moz-keyframes blinker {
   0% {
@@ -19626,7 +19620,12 @@ ul.image-list li img {
   }
 }
 .bounce {
-  animation: bounce 1s .5s;
+  -webkit-animation: bounce 1s 0.5s;
+  -o-animation: bounce 1s 0.5s;
+  animation: bounce 1s 0.5s;
+  -webkit-animation: bounce 1s 0.5s 300ms 0 ease;
+  -moz-animation: bounce 1s 0.5s 300ms 0 ease;
+  -ms-animation: bounce 1s 0.5s 300ms 0 ease;
 }
 @keyframes bounce {
   0% {
