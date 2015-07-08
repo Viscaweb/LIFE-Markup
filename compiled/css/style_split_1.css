@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
 /*Bootstrap Source Code*/
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -10857,46 +10859,6 @@ span.dark-icon {
   src: url("../fonts/OpenSans-CondLight-webfont.eot");
   src: url("../fonts/OpenSans-CondLight-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-CondLight-webfont.woff") format('woff'), url("../fonts/OpenSans-CondLight-webfont.ttf") format('truetype'), url("../fonts/OpenSans-CondLight-webfont.svg#open_sanscondensed_light") format('svg');
   font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Regular-webfont.woff") format('woff'), url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Light-webfont.eot");
-  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Light-webfont.woff") format('woff'), url("../fonts/OpenSans-Light-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Light-webfont.svg#open_sanslight") format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Semibold-webfont.eot");
-  src: url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Semibold-webfont.woff") format('woff'), url("../fonts/OpenSans-Semibold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold") format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Bold-webfont.eot");
-  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Bold-webfont.woff") format('woff'), url("../fonts/OpenSans-Bold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-ExtraBold-webfont.eot");
-  src: url("../fonts/OpenSans-ExtraBold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-ExtraBold-webfont.woff") format('woff'), url("../fonts/OpenSans-ExtraBold-webfont.ttf") format('truetype'), url("../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold") format('svg');
-  font-weight: 800;
   font-style: normal;
 }
 
