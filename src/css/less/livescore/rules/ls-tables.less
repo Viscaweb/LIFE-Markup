@@ -360,7 +360,7 @@
   //Deep level
   tbody{
 
-    tr, tr:nth-child(even), tr:nth-child(odd){
+    tr{
 
       > th{
         background-color: darken(@ls-light-color, 8.3%);
@@ -409,15 +409,6 @@
 
         &.view-more{
           background-color: @ls-light-color;
-        }
-
-        &.updated{
-          background-color: @live-red !important;
-          color: @ls-light-color !important;
-
-          > a {
-            color: @ls-light-color !important;
-          }
         }
 
         &.prediction{
@@ -824,6 +815,15 @@
 
         &.win{
           font-weight: @font-weight-bold;
+        }
+
+        &.updated{
+          background-color: @live-red !important;
+          color: @ls-light-color !important;
+
+          > a {
+            color: @ls-light-color !important;
+          }
         }
       }
 

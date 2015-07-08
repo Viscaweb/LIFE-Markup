@@ -9080,94 +9080,57 @@ span.dark-icon {
 .table td.number {
   text-align: center;
 }
-.table tbody tr > th,
-.table tbody tr:nth-child(even) > th,
-.table tbody tr:nth-child(odd) > th {
+.table tbody tr > th {
   background-color: #eaeaea;
 }
-.table tbody tr > th span.match-name,
-.table tbody tr:nth-child(even) > th span.match-name,
-.table tbody tr:nth-child(odd) > th span.match-name {
+.table tbody tr > th span.match-name {
   color: rgba(255, 255, 255, 0.6) !important;
   font-weight: 400;
   display: none;
 }
-.table tbody tr > th:hover span.match-name,
-.table tbody tr:nth-child(even) > th:hover span.match-name,
-.table tbody tr:nth-child(odd) > th:hover span.match-name {
+.table tbody tr > th:hover span.match-name {
   display: inline-block;
 }
-.table tbody tr > td.number,
-.table tbody tr:nth-child(even) > td.number,
-.table tbody tr:nth-child(odd) > td.number {
+.table tbody tr > td.number {
   font-weight: 600;
 }
-.table tbody tr > td.number .extra-info,
-.table tbody tr:nth-child(even) > td.number .extra-info,
-.table tbody tr:nth-child(odd) > td.number .extra-info {
+.table tbody tr > td.number .extra-info {
   font-width: 400;
   color: rgba(92, 92, 92, 0.5);
 }
-.table tbody tr > td.rank,
-.table tbody tr:nth-child(even) > td.rank,
-.table tbody tr:nth-child(odd) > td.rank {
+.table tbody tr > td.rank {
   background-color: #f5f5f5;
 }
-.table tbody tr > td.icon,
-.table tbody tr:nth-child(even) > td.icon,
-.table tbody tr:nth-child(odd) > td.icon {
+.table tbody tr > td.icon {
   text-align: center;
   padding: 0 4px;
   color: #808080;
   background-color: #f5f5f5;
 }
-.table tbody tr > td.icon .icon,
-.table tbody tr:nth-child(even) > td.icon .icon,
-.table tbody tr:nth-child(odd) > td.icon .icon {
+.table tbody tr > td.icon .icon {
   font-size: 14px;
   margin: 0;
 }
-.table tbody tr > td.view-more,
-.table tbody tr:nth-child(even) > td.view-more,
-.table tbody tr:nth-child(odd) > td.view-more {
+.table tbody tr > td.view-more {
   background-color: #ffffff;
 }
-.table tbody tr > td.updated,
-.table tbody tr:nth-child(even) > td.updated,
-.table tbody tr:nth-child(odd) > td.updated {
-  background-color: #e33000 !important;
-  color: #ffffff !important;
-}
-.table tbody tr > td.updated > a,
-.table tbody tr:nth-child(even) > td.updated > a,
-.table tbody tr:nth-child(odd) > td.updated > a {
-  color: #ffffff !important;
-}
-.table tbody tr > td.prediction .btn-group-justified,
-.table tbody tr:nth-child(even) > td.prediction .btn-group-justified,
-.table tbody tr:nth-child(odd) > td.prediction .btn-group-justified {
+.table tbody tr > td.prediction .btn-group-justified {
   max-width: 74px;
 }
-.table tbody tr > td.score,
-.table tbody tr:nth-child(even) > td.score,
-.table tbody tr:nth-child(odd) > td.score {
+.table tbody tr > td.score {
   font-size: 14px;
   font-weight: 700;
   background-color: #fafafa;
   text-align: center;
   padding: 0;
 }
-.table tbody tr > td.score > a,
-.table tbody tr:nth-child(even) > td.score > a,
-.table tbody tr:nth-child(odd) > td.score > a {
+.table tbody tr > td.score > a {
   position: relative;
   display: block;
   line-height: 28px;
   color: #5c5c5c;
 }
-.table tbody tr > td.score > a.has-score-details:after,
-.table tbody tr:nth-child(even) > td.score > a.has-score-details:after,
-.table tbody tr:nth-child(odd) > td.score > a.has-score-details:after {
+.table tbody tr > td.score > a.has-score-details:after {
   position: absolute;
   right: -1px;
   bottom: -3px;
@@ -9183,32 +9146,22 @@ span.dark-icon {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
-.table tbody tr > td.score.hour,
-.table tbody tr:nth-child(even) > td.score.hour,
-.table tbody tr:nth-child(odd) > td.score.hour {
+.table tbody tr > td.score.hour {
   text-align: center;
 }
-.table tbody tr > td.score.hour > a,
-.table tbody tr:nth-child(even) > td.score.hour > a,
-.table tbody tr:nth-child(odd) > td.score.hour > a {
+.table tbody tr > td.score.hour > a {
   color: rgba(92, 92, 92, 0.7);
 }
-.table tbody tr > td.score span.icon-expand-h,
-.table tbody tr:nth-child(even) > td.score span.icon-expand-h,
-.table tbody tr:nth-child(odd) > td.score span.icon-expand-h {
+.table tbody tr > td.score span.icon-expand-h {
   color: #d6d6d6;
 }
-.table tbody tr > td.tools,
-.table tbody tr:nth-child(even) > td.tools,
-.table tbody tr:nth-child(odd) > td.tools {
+.table tbody tr > td.tools {
   padding: 0px;
   text-align: right;
   font-size: 0;
   white-space: nowrap;
 }
-.table tbody tr > td.tools > a,
-.table tbody tr:nth-child(even) > td.tools > a,
-.table tbody tr:nth-child(odd) > td.tools > a {
+.table tbody tr > td.tools > a {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
@@ -9217,9 +9170,7 @@ span.dark-icon {
   vertical-align: middle;
   position: relative;
 }
-.table tbody tr > td.tools > a .comment-number,
-.table tbody tr:nth-child(even) > td.tools > a .comment-number,
-.table tbody tr:nth-child(odd) > td.tools > a .comment-number {
+.table tbody tr > td.tools > a .comment-number {
   color: #b3b3b3;
   font-size: 8px;
   line-height: 9px;
@@ -9230,130 +9181,86 @@ span.dark-icon {
   top: 3px;
   left: 0;
 }
-.table tbody tr > td.tools > a.available,
-.table tbody tr:nth-child(even) > td.tools > a.available,
-.table tbody tr:nth-child(odd) > td.tools > a.available {
+.table tbody tr > td.tools > a.available {
   color: #cccccc;
 }
-.table tbody tr > td.tools > a.available.live,
-.table tbody tr:nth-child(even) > td.tools > a.available.live,
-.table tbody tr:nth-child(odd) > td.tools > a.available.live {
+.table tbody tr > td.tools > a.available.live {
   color: #e33000;
 }
-.table tbody tr > td.tools > a.available.live:hover,
-.table tbody tr:nth-child(even) > td.tools > a.available.live:hover,
-.table tbody tr:nth-child(odd) > td.tools > a.available.live:hover {
+.table tbody tr > td.tools > a.available.live:hover {
   color: #b02500;
 }
-.table tbody tr > td.tools > a.available .comment-number,
-.table tbody tr:nth-child(even) > td.tools > a.available .comment-number,
-.table tbody tr:nth-child(odd) > td.tools > a.available .comment-number {
+.table tbody tr > td.tools > a.available .comment-number {
   color: #ffffff;
 }
-.table tbody tr > td.tools > a:hover,
-.table tbody tr:nth-child(even) > td.tools > a:hover,
-.table tbody tr:nth-child(odd) > td.tools > a:hover {
+.table tbody tr > td.tools > a:hover {
   color: #808080;
 }
-.table tbody tr > td.tools > a:hover.available .comment-number,
-.table tbody tr:nth-child(even) > td.tools > a:hover.available .comment-number,
-.table tbody tr:nth-child(odd) > td.tools > a:hover.available .comment-number {
+.table tbody tr > td.tools > a:hover.available .comment-number {
   color: #ffffff;
 }
-.table tbody tr > td.tools > a.active,
-.table tbody tr:nth-child(even) > td.tools > a.active,
-.table tbody tr:nth-child(odd) > td.tools > a.active {
+.table tbody tr > td.tools > a.active {
   color: #5da400;
 }
-.table tbody tr > td.tools > a.active:hover,
-.table tbody tr:nth-child(even) > td.tools > a.active:hover,
-.table tbody tr:nth-child(odd) > td.tools > a.active:hover {
+.table tbody tr > td.tools > a.active:hover {
   color: #407100;
 }
-.table tbody tr > td.tools.tools-1,
-.table tbody tr:nth-child(even) > td.tools.tools-1,
-.table tbody tr:nth-child(odd) > td.tools.tools-1 {
+.table tbody tr > td.tools.tools-1 {
   max-width: 20px;
 }
-.table tbody tr > td.tools:last-child,
-.table tbody tr:nth-child(even) > td.tools:last-child,
-.table tbody tr:nth-child(odd) > td.tools:last-child {
+.table tbody tr > td.tools:last-child {
   padding-right: 4px;
 }
-.table tbody tr > td.favorite,
-.table tbody tr:nth-child(even) > td.favorite,
-.table tbody tr:nth-child(odd) > td.favorite {
+.table tbody tr > td.favorite {
   text-align: center;
 }
-.table tbody tr > td.logo img,
-.table tbody tr:nth-child(even) > td.logo img,
-.table tbody tr:nth-child(odd) > td.logo img {
+.table tbody tr > td.logo img {
   max-width: 20px;
 }
-.table tbody tr > td.minute-range,
-.table tbody tr:nth-child(even) > td.minute-range,
-.table tbody tr:nth-child(odd) > td.minute-range {
+.table tbody tr > td.minute-range {
   background-color: #f7f7f7;
 }
-.table tbody tr > td.full-sportsbook-logo img,
-.table tbody tr:nth-child(even) > td.full-sportsbook-logo img,
-.table tbody tr:nth-child(odd) > td.full-sportsbook-logo img {
+.table tbody tr > td.full-sportsbook-logo img {
   max-width: 50px;
 }
-.table tbody tr > td.odd,
-.table tbody tr:nth-child(even) > td.odd,
-.table tbody tr:nth-child(odd) > td.odd {
+.table tbody tr > td.odd {
   border-right: 1px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
 }
-.table tbody tr > td.odd.odd-no-border,
-.table tbody tr:nth-child(even) > td.odd.odd-no-border,
-.table tbody tr:nth-child(odd) > td.odd.odd-no-border {
+.table tbody tr > td.odd.odd-no-border {
   border-left: none;
   border-right: none;
 }
-.table tbody tr > td.odd a > .odd-part,
-.table tbody tr:nth-child(even) > td.odd a > .odd-part,
-.table tbody tr:nth-child(odd) > td.odd a > .odd-part {
+.table tbody tr > td.odd a > .odd-part {
   color: #8fc6ff;
 }
-.table tbody tr > td.odd a .moneyline,
-.table tbody tr:nth-child(even) > td.odd a .moneyline,
-.table tbody tr:nth-child(odd) > td.odd a .moneyline {
+.table tbody tr > td.odd a .moneyline {
   display: block;
   text-align: right;
   line-height: 16px;
 }
-.table tbody tr > td.odd a .spread,
-.table tbody tr:nth-child(even) > td.odd a .spread,
-.table tbody tr:nth-child(odd) > td.odd a .spread {
+.table tbody tr > td.odd a .spread {
   float: left;
   display: block;
   width: 50%;
   text-align: center;
   line-height: 16px;
 }
-.table tbody tr > td.odd a .totals,
-.table tbody tr:nth-child(even) > td.odd a .totals,
-.table tbody tr:nth-child(odd) > td.odd a .totals {
+.table tbody tr > td.odd a .totals {
   float: right;
   display: block;
   width: 50%;
   text-align: right;
   line-height: 16px;
 }
-.table tbody tr > td.odd a .totals-ou,
-.table tbody tr:nth-child(even) > td.odd a .totals-ou,
-.table tbody tr:nth-child(odd) > td.odd a .totals-ou {
+.table tbody tr > td.odd a .totals-ou {
   display: block;
   float: left;
   width: 50%;
   text-align: center;
   line-height: 32px;
 }
-.table tbody tr > td.odd-type,
-.table tbody tr:nth-child(even) > td.odd-type,
-.table tbody tr:nth-child(odd) > td.odd-type {
+.table tbody tr > td.odd-type {
   font-size: 11px;
   text-transform: uppercase;
   background-color: #f7f7f7;
@@ -9361,27 +9268,17 @@ span.dark-icon {
   font-weight: 600;
   height: 44px;
 }
-.table tbody tr.live td.time,
-.table tbody tr:nth-child(even).live td.time,
-.table tbody tr:nth-child(odd).live td.time {
+.table tbody tr.live td.time {
   color: #e33000;
 }
 .table tbody tr.live td.time img,
-.table tbody tr:nth-child(even).live td.time img,
-.table tbody tr:nth-child(odd).live td.time img,
-.table tbody tr.live td.time i,
-.table tbody tr:nth-child(even).live td.time i,
-.table tbody tr:nth-child(odd).live td.time i {
+.table tbody tr.live td.time i {
   margin-right: 3px;
 }
-.table tbody tr.live td.score a,
-.table tbody tr:nth-child(even).live td.score a,
-.table tbody tr:nth-child(odd).live td.score a {
+.table tbody tr.live td.score a {
   color: #e33000;
 }
-.table tbody tr:hover td.score,
-.table tbody tr:nth-child(even):hover td.score,
-.table tbody tr:nth-child(odd):hover td.score {
+.table tbody tr:hover td.score {
   background-color: #e6e6e6;
 }
 .table tbody tr.league-data > th {
@@ -9609,6 +9506,13 @@ span.dark-icon {
 }
 .table tbody tr td.win {
   font-weight: 700;
+}
+.table tbody tr td.updated {
+  background-color: #e33000 !important;
+  color: #ffffff !important;
+}
+.table tbody tr td.updated > a {
+  color: #ffffff !important;
 }
 .table tbody tr:hover td.highlight {
   background-color: #ffefba !important;
@@ -16368,10 +16272,6 @@ table.other-sport tbody tr td.teams i {
 }
 table.other-sport tbody tr td.score {
   width: 5%;
-  background: rgba(0, 0, 0, 0.06) !important;
-  -webkit-box-shadow: -1px 1px 0 #ffffff inset;
-  -moz-box-shadow: -1px 1px 0 #ffffff inset;
-  box-shadow: -1px 1px 0 #ffffff inset;
   text-align: center;
   font-size: 14px;
   font-weight: 400 !important;
