@@ -12761,11 +12761,11 @@ span.dark-icon {
   margin-top: 3px;
 }
 
-.popover-odd-evolution tr td.old {
+.popover-odd-evolution .old {
   text-decoration: line-through;
 }
 
-.popover-odd-evolution tr td.icon span {
+.popover-odd-evolution .icon span {
   font-size: 12px;
 }
 
