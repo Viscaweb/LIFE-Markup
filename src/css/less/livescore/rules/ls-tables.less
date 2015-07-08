@@ -271,13 +271,13 @@
   //General table style
   tr{
 
-    td, th{
+    //Shared style between th and td
+    td,
+    th{
 
       &.color-success{
         color: @brand-success;
       }
-
-
 
       span.icon{//Icon beside text margin
         margin-right: 5px;
@@ -289,6 +289,10 @@
           position: relative;
           top: 0px;
         }
+      }
+
+      &.number{
+        text-align: center;
       }
     }
 
@@ -350,12 +354,6 @@
     }
   }
 
-  //Shared style between th and td
-  th, td {
-    &.number{
-      text-align: center;
-    }
-  }
 
   //Deep level
   tbody{

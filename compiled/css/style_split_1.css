@@ -11067,6 +11067,11 @@ span.dark-icon {
   top: 0px;
 }
 
+.table tr td.number,
+.table tr th.number {
+  text-align: center;
+}
+
 .table tr th.divider {
   text-align: center;
   text-transform: uppercase;
@@ -11109,11 +11114,6 @@ span.dark-icon {
 
 .table tr.empty-row td .icon {
   color: #b3b3b3;
-}
-
-.table th.number,
-.table td.number {
-  text-align: center;
 }
 
 .table tbody tr > th {
