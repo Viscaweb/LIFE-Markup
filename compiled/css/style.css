@@ -15999,16 +15999,6 @@ span.glyphicon-star.active {
   width: 18px;
   height: 18px;
 }
-.head-to-head .table tbody tr .team1,
-.team-form .table tbody tr .team1 {
-  text-align: right;
-}
-.head-to-head .table tbody tr .score,
-.team-form .table tbody tr .score {
-  font-weight: 700;
-  text-align: center;
-  min-width: 35px;
-}
 .head-to-head > .teams {
   margin: 0;
   padding: 15px 0;
