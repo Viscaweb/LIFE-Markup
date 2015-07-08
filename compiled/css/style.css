@@ -9064,9 +9064,6 @@ span.dark-icon {
   font-width: 400;
   color: rgba(92, 92, 92, 0.5);
 }
-.table tbody tr > td.rank {
-  background-color: #f5f5f5;
-}
 .table tbody tr > td.icon {
   text-align: center;
   padding: 0 4px;
@@ -9460,6 +9457,41 @@ span.dark-icon {
 }
 .table tbody tr td.selected {
   background-color: #e3e8f1 !important;
+}
+.table tbody tr td.rank {
+  background-color: #f5f5f5;
+}
+.table tbody tr td.rank-standing-green {
+  background-color: #d1e9be !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-clear-green {
+  background-color: #e3f1d9 !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-blue {
+  background-color: #bee1ec !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-clear-blue {
+  background-color: #dcf2f9 !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-orange {
+  background-color: #f3ca88 !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-clear-orange {
+  background-color: #f6ddb4 !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-red {
+  background-color: #eebaba !important;
+  color: #5c5c5c;
+}
+.table tbody tr td.rank-standing-clear-red {
+  background-color: #f5cdcd !important;
+  color: #5c5c5c;
 }
 .table tbody tr td.event-won {
   background-color: #e9f2e2 !important;
@@ -9960,38 +9992,6 @@ span.dark-icon {
 }
 .table.table-standing tbody tr td {
   vertical-align: middle;
-}
-.table.table-standing tbody tr td.rank-standing-green {
-  background-color: #d1e9be !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-clear-green {
-  background-color: #e3f1d9 !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-blue {
-  background-color: #bee1ec !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-clear-blue {
-  background-color: #dcf2f9 !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-orange {
-  background-color: #f3ca88 !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-clear-orange {
-  background-color: #f6ddb4 !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-red {
-  background-color: #eebaba !important;
-  color: #5c5c5c;
-}
-.table.table-standing tbody tr td.rank-standing-clear-red {
-  background-color: #f5cdcd !important;
-  color: #5c5c5c;
 }
 .table.table-standing tbody tr td.stats {
   font-weight: 600;

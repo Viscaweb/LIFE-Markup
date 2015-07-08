@@ -388,10 +388,6 @@
 
         }
 
-        &.rank {
-          background-color: darken(@ls-light-color, 4%);
-        }
-
         &.icon{
           text-align: center;
           padding: 0 4px;
@@ -798,6 +794,19 @@
         &.selected{
           background-color: @ls-tr-selected-bg !important;
         }
+
+        &.rank {
+          background-color: darken(@ls-light-color, 4%);
+        }
+
+        &.rank-standing-green{ background-color: @ls-table-rank-standing-green !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-clear-green{ background-color: @ls-table-rank-standing-clear-green !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-blue{ background-color: @ls-table-rank-standing-blue !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-clear-blue{ background-color: @ls-table-rank-standing-clear-blue !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-orange{ background-color: @ls-table-rank-standing-orange !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-clear-orange{ background-color: @ls-table-rank-standing-clear-orange !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-red{ background-color: @ls-table-rank-standing-red !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-clear-red{ background-color: @ls-table-rank-standing-clear-red !important; color: @ls-table-rank-standing-color; }
 
         &.event-won{
           background-color: @ls-tr-won-bg !important;
@@ -1440,15 +1449,6 @@
 
         td{
           vertical-align: middle;
-
-          &.rank-standing-green{ background-color: @ls-table-rank-standing-green !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-clear-green{ background-color: @ls-table-rank-standing-clear-green !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-blue{ background-color: @ls-table-rank-standing-blue !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-clear-blue{ background-color: @ls-table-rank-standing-clear-blue !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-orange{ background-color: @ls-table-rank-standing-orange !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-clear-orange{ background-color: @ls-table-rank-standing-clear-orange !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-red{ background-color: @ls-table-rank-standing-red !important; color: @ls-table-rank-standing-color; }
-          &.rank-standing-clear-red{ background-color: @ls-table-rank-standing-clear-red !important; color: @ls-table-rank-standing-color; }
 
           &.stats{
             font-weight: @font-weight-semi-bold;
