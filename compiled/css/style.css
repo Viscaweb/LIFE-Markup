@@ -7708,7 +7708,6 @@ button.close {
   position: static;
 }
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a > span .badge {
-  font-family: 'Open Sans', sans-serif;
   position: absolute;
   top: 16px;
   right: 6px;
@@ -7732,7 +7731,6 @@ button.close {
   position: static;
 }
 .header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a > span .badge {
-  font-family: 'Open Sans', sans-serif;
   position: absolute;
   top: 16px;
   right: 9px;
@@ -7940,7 +7938,6 @@ button.close {
   }
 }
 .modal .modal-dialog .modal-content .modal-header .modal-title {
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 16px;
 }
@@ -12120,7 +12117,6 @@ span.sprite-icons.webmaster-border {
   margin-top: 30px;
 }
 .sharing .share-link-block input.share-link {
-  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: #1a1a1a;
@@ -14256,7 +14252,6 @@ span.glyphicon-star.active {
   clear: both;
 }
 .match-information .panel-heading .panel-title {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   width: 65%;
@@ -16654,11 +16649,6 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-distribution .js-chart {
   text-align: center;
   background: #fafafa;
-}
-.goals-distribution .js-chart .title {
-  font-family: Courier;
-  font-size: 11px;
-  margin-top: 15px;
 }
 .goals-statistics thead tr th.date,
 .goals-statistics tbody tr th.date {

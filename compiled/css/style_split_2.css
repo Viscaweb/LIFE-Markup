@@ -2148,7 +2148,6 @@ span.glyphicon-star.active {
 }
 
 .match-information .panel-heading .panel-title {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   width: 65%;
@@ -5046,12 +5045,6 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-distribution .js-chart {
   text-align: center;
   background: #fafafa;
-}
-
-.goals-distribution .js-chart .title {
-  font-family: Courier;
-  font-size: 11px;
-  margin-top: 15px;
 }
 
 .goals-statistics thead tr th.date,
