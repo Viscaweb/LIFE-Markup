@@ -8557,7 +8557,7 @@ button.close {
   background: #fcfcfc;
   -webkit-appearance: none;
   -moz-appearance: none;
-  text-indent: 0.01px;
+  text-indent: .01px;
   text-overflow: '';
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -8683,7 +8683,7 @@ button.close {
 .radio input[type="checkbox"]:disabled + label,
 .checkbox input[type="radio"]:disabled + label,
 .radio input[type="radio"]:disabled + label {
-  opacity: 0.5;
+  opacity: .5;
   pointer-events: none;
 }
 
@@ -10333,7 +10333,7 @@ button.close {
 }
 
 #toast-container > div {
-  opacity: 0.9;
+  opacity: .9;
   -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
@@ -15326,7 +15326,7 @@ span.sprite-icons.webmaster-border {
 }
 
 .top-match-block .score-board .teams .at {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .top-match-block .score-board .team {

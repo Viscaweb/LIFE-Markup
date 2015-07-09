@@ -6966,7 +6966,7 @@ button.close {
   background: #fcfcfc;
   -webkit-appearance: none;
   -moz-appearance: none;
-  text-indent: 0.01px;
+  text-indent: .01px;
   text-overflow: '';
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -7078,7 +7078,7 @@ button.close {
 .radio input[type="checkbox"]:disabled + label,
 .checkbox input[type="radio"]:disabled + label,
 .radio input[type="radio"]:disabled + label {
-  opacity: 0.5;
+  opacity: .5;
   pointer-events: none;
 }
 .checkbox input[type="checkbox"]:disabled + label:before,
@@ -8463,7 +8463,7 @@ button.close {
   margin-bottom: 8px;
 }
 #toast-container > div {
-  opacity: 0.9;
+  opacity: .9;
   -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.15);
@@ -12450,7 +12450,7 @@ span.sprite-icons.webmaster-border {
   font-weight: 700;
 }
 .top-match-block .score-board .teams .at {
-  opacity: 0.5;
+  opacity: .5;
 }
 .top-match-block .score-board .team {
   background: url("../img/sprites/team-field-shadow.png") no-repeat center bottom;
@@ -12578,7 +12578,7 @@ span.sprite-icons.webmaster-border {
   right: 0;
   top: 10px;
   text-align: center;
-  opacity: 0.5;
+  opacity: .5;
 }
 .top-match-block .score-board.score-board-variant-1 .title:after {
   border: none;
@@ -12657,7 +12657,7 @@ span.sprite-icons.webmaster-border {
   height: 40px;
   line-height: 40px;
   color: #ffffff;
-  opacity: 0.5;
+  opacity: .5;
   transition: width 0.3s;
   -webkit-transition: width 0.3s;
   -moz-transition: width 0.3s;
@@ -12789,85 +12789,6 @@ span.sprite-icons.webmaster-border {
   font-weight: 400;
   padding-left: 6px;
   padding-right: 6px;
-}
-.top-competitions-block.panel table.teams {
-  margin: 0;
-}
-.top-competitions-block.panel table.teams tr th.number {
-  text-align: center;
-  width: 23px;
-}
-.top-competitions-block.panel table.teams tr th.state {
-  width: 20px;
-}
-.top-competitions-block.panel table.teams tr th.pts {
-  padding-left: 3px;
-  padding-right: 3px;
-  text-align: center;
-}
-.top-competitions-block.panel table.teams tr td.state {
-  padding-right: 0;
-  padding-left: 4px;
-}
-.top-competitions-block.panel table.teams tr td.state.down {
-  color: #bd0800;
-}
-.top-competitions-block.panel table.teams tr td.state.up {
-  color: #7ab748;
-}
-.top-competitions-block.panel table.teams tr td.team img {
-  max-width: 17px;
-  margin-right: 5px;
-}
-.top-competitions-block.panel table.teams tr td.number {
-  font-weight: 600;
-  text-align: center;
-}
-.top-competitions-block.panel table.teams tr td.pts {
-  font-weight: 600;
-  padding-left: 3px;
-  padding-right: 3px;
-  text-align: center;
-}
-.top-competitions-block.panel table.teams tr.live td.team {
-  font-weight: 600;
-  color: #e33000;
-  background-image: url("../img/sprites/live-spot.gif");
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-.top-competitions-block.panel table.teams tr.live td.team > a {
-  color: #e33000;
-}
-.top-competitions-block.panel table.teams tbody tr td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight td.number {
-  background-color: #efefef !important;
-}
-.top-competitions-block.panel table.teams tbody tr:nth-child(odd) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(odd) td.number {
-  background-color: #e6e6e6 !important;
-}
-.top-competitions-block.panel table.teams tbody tr:nth-child(+1) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+1) td.number,
-.top-competitions-block.panel table.teams tbody tr:nth-child(+2) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+2) td.number {
-  background-color: #d1e9be !important;
-}
-.top-competitions-block.panel table.teams tbody tr:nth-child(+3) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+3) td.number {
-  background-color: #e3f1d9 !important;
-}
-.top-competitions-block.panel table.teams tbody tr:nth-child(+4) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+4) td.number {
-  background-color: #bee1ec !important;
-}
-.top-competitions-block.panel table.teams tbody tr:nth-child(+18) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+18) td.number,
-.top-competitions-block.panel table.teams tbody tr:nth-child(+19) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+19) td.number,
-.top-competitions-block.panel table.teams tbody tr:nth-child(+20) td.number,
-.top-competitions-block.panel table.teams tbody tr.highlight:nth-child(+20) td.number {
-  background-color: #eebaba !important;
 }
 .top-competitions-block.panel table.results thead th {
   text-transform: none;
@@ -14296,7 +14217,7 @@ span.glyphicon-star.active {
   max-height: 38px;
 }
 .match-information .table thead tr th.team .logo:hover img {
-  opacity: 0.7;
+  opacity: .7;
 }
 .match-information .table thead tr th .name {
   padding: 0;
@@ -15177,7 +15098,7 @@ span.glyphicon-star.active {
   color: #e0e0e0;
 }
 .match-teams-lineups .component-container .field .field-lines .player:hover .number {
-  opacity: 0.7;
+  opacity: .7;
 }
 .match-teams-lineups .component-container .field .field-lines .player.away:after {
   color: #252525;
@@ -18423,7 +18344,7 @@ ul.image-list li img {
   max-height: 100%;
 }
 .article-resume .article-body .article-image img:hover {
-  opacity: 0.9;
+  opacity: .9;
   transition: opacity 0.2s;
 }
 .article-resume a.read-more {
@@ -18518,7 +18439,7 @@ ul.image-list li img {
   width: 100%;
 }
 .featured-article .article-image img:hover {
-  opacity: 0.9;
+  opacity: .9;
   transition: opacity 0.2s;
 }
 .featured-article .article-image .message {
@@ -18719,8 +18640,8 @@ ul.image-list li img {
   max-width: 111px;
 }
 .small-news a.article-image img:hover {
-  opacity: 0.9;
-  transition: opacity 0.2s;
+  opacity: .9;
+  transition: opacity .2s;
 }
 .small-news span.article-date {
   display: block;
@@ -19484,7 +19405,7 @@ ul.image-list li img {
     opacity: 1.0;
   }
   50% {
-    opacity: 0.0;
+    opacity: .0;
   }
   100% {
     opacity: 1.0;
@@ -19495,7 +19416,7 @@ ul.image-list li img {
     opacity: 1.0;
   }
   50% {
-    opacity: 0.0;
+    opacity: .0;
   }
   100% {
     opacity: 1.0;
@@ -19506,7 +19427,7 @@ ul.image-list li img {
     opacity: 1.0;
   }
   50% {
-    opacity: 0.0;
+    opacity: .0;
   }
   100% {
     opacity: 1.0;
