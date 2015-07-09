@@ -7988,7 +7988,6 @@ button.close {
   border-color: #f0f0f0;
   position: relative;
   font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 @media \0screen {
@@ -8001,7 +8000,6 @@ button.close {
 .panel > .panel-heading .panel-title {
   display: inline;
   font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .panel > .panel-heading .panel-title > img {
@@ -8021,7 +8019,6 @@ button.close {
 .panel > .panel-heading .tools {
   float: right;
   font-weight: normal;
-  font-family: "Open Sans", sans-serif;
   color: #949494;
   font-size: 12px;
   position: relative;
@@ -15280,7 +15277,6 @@ span.glyphicon-star.active {
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
   font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 @media \0screen {
