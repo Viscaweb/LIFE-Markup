@@ -1184,7 +1184,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #424242;
 }
 h1 small,
 h2 small,
@@ -8594,7 +8594,7 @@ button.close {
   font-weight: 400;
   font-size: 27px;
   line-height: 38px;
-  color: #474747;
+  color: #424242;
   margin: 0;
   display: inline-block;
 }
@@ -8683,7 +8683,7 @@ button.close {
   font-weight: 400;
   font-size: 27px;
   line-height: 32px;
-  color: #474747;
+  color: #424242;
 }
 .content-header.player .description {
   display: table-cell;
@@ -8745,22 +8745,6 @@ body {
 }
 body.iframe {
   padding: 0;
-}
-/*Typography*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.page-message .title,
-.page-message .sub-title {
-  font-weight: 600;
-  color: #474747;
-}
-h1,
-.page-message .title {
-  font-weight: bold;
 }
 p {
   font-weight: lighter;
@@ -11918,7 +11902,7 @@ span.sprite-icons.webmaster-border {
   text-transform: uppercase;
   line-height: 16px;
   display: block;
-  color: #474747;
+  color: #424242;
 }
 .player .name img {
   margin-top: -3px;
@@ -17394,7 +17378,7 @@ main .matches-widgets td.content span.empty {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #424242;
   margin-top: 9px;
   margin-bottom: 9px;
   font-size: 17px;
