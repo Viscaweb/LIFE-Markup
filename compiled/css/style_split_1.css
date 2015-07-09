@@ -9430,11 +9430,11 @@ button.close {
 }
 
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a > span .badge {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
   position: absolute;
   top: 16px;
   right: 6px;
-  font-size: 11px;
-  font-weight: 700;
 }
 
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu a.view-all {
@@ -9458,11 +9458,11 @@ button.close {
 }
 
 .header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a > span .badge {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
   position: absolute;
   top: 16px;
   right: 9px;
-  font-size: 11px;
-  font-weight: 700;
 }
 
 .header .navbar.navbar-fixed-top .navbar-right .settings.dropdown ul.dropdown-menu .field label {
@@ -10138,7 +10138,6 @@ button.close {
 
 .table-condensed tr td {
   line-height: 20px;
-  font-size: 12px;
   border-left: none;
   padding: 3px 4px;
 }
@@ -11902,10 +11901,6 @@ span.dark-icon {
   color: #ffffff;
 }
 
-.table.my-games tbody tr td {
-  vertical-align: middle !important;
-}
-
 .table.my-games tbody tr td span.hour {
   font-weight: 600;
 }
@@ -11927,16 +11922,8 @@ span.dark-icon {
   max-width: 20px;
 }
 
-.table.my-games tbody tr td.team.team1 {
-  text-align: right;
-}
-
 .table.my-games tbody tr td.team.team1 img {
   margin-left: 5px;
-}
-
-.table.my-games tbody tr td.team.team2 {
-  text-align: left;
 }
 
 .table.my-games tbody tr td.team.team2 img {
@@ -15355,4 +15342,21 @@ span.sprite-icons.webmaster-border {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+}
+
+.top-match-block .score-board .teams .at {
+  opacity: 0.5;
+}
+
+.top-match-block .score-board .team {
+  background: url("../img/sprites/team-field-shadow.png") no-repeat center bottom;
+  bottom: 10px;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+.top-match-block .score-board .team img {
+  max-width: 60px;
+  max-height: 60px;
 }

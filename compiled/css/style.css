@@ -7708,11 +7708,11 @@ button.close {
   position: static;
 }
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown > a > span .badge {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
   position: absolute;
   top: 16px;
   right: 6px;
-  font-size: 11px;
-  font-weight: 700;
 }
 .header .navbar.navbar-fixed-top .navbar-right .notifications.dropdown ul.dropdown-menu a.view-all {
   text-align: center;
@@ -7731,11 +7731,11 @@ button.close {
   position: static;
 }
 .header .navbar.navbar-fixed-top .navbar-right .alerts.dropdown > a > span .badge {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
   position: absolute;
   top: 16px;
   right: 9px;
-  font-size: 11px;
-  font-weight: 700;
 }
 .header .navbar.navbar-fixed-top .navbar-right .settings.dropdown ul.dropdown-menu .field label {
   display: block;
@@ -8300,7 +8300,6 @@ button.close {
 }
 .table-condensed tr td {
   line-height: 20px;
-  font-size: 12px;
   border-left: none;
   padding: 3px 4px;
 }
@@ -9705,9 +9704,6 @@ span.dark-icon {
 .table.my-games thead.league-data tr th span i {
   color: #ffffff;
 }
-.table.my-games tbody tr td {
-  vertical-align: middle !important;
-}
 .table.my-games tbody tr td span.hour {
   font-weight: 600;
 }
@@ -9724,14 +9720,8 @@ span.dark-icon {
 .table.my-games tbody tr td.team img {
   max-width: 20px;
 }
-.table.my-games tbody tr td.team.team1 {
-  text-align: right;
-}
 .table.my-games tbody tr td.team.team1 img {
   margin-left: 5px;
-}
-.table.my-games tbody tr td.team.team2 {
-  text-align: left;
 }
 .table.my-games tbody tr td.team.team2 img {
   margin-right: 5px;
@@ -19045,19 +19035,6 @@ ul.image-list li img {
 }
 .sidebar-nav > li > a .badge.pull-right {
   margin-left: 2px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-@media \0screen {
-  .sidebar-nav > li > a .badge.pull-right {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .sidebar-nav li {
   position: relative;
