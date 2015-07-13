@@ -400,7 +400,15 @@
           }
         }
 
+        &.time{
+          color: fade(@text-color, 60%);
+          white-space: nowrap;
 
+          i{
+            color: darken(@ls-light-color,24%);
+          }
+        }
+        
         &.view-more{
           background-color: @ls-light-color;
         }
@@ -548,7 +556,6 @@
           font-weight: 600;
           height: 44px;
         }
-
       }
 
       //LIVE STYLES
@@ -1253,15 +1260,6 @@
           .league{
             max-width: 20px;
             margin-right: 5px;
-          }
-
-          &.time{
-            color: fade(@text-color, 60%);
-            white-space: nowrap;
-
-            i{
-              color: darken(@ls-light-color,24%);
-            }
           }
 
           &.team{

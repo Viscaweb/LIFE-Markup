@@ -11087,6 +11087,15 @@ span.dark-icon {
   margin: 0;
 }
 
+.table tbody tr > td.time {
+  color: rgba(92, 92, 92, 0.6);
+  white-space: nowrap;
+}
+
+.table tbody tr > td.time i {
+  color: #c2c2c2;
+}
+
 .table tbody tr > td.view-more {
   background-color: #ffffff;
 }
@@ -12026,15 +12035,6 @@ span.dark-icon {
 .table.matches tbody tr td .league {
   max-width: 20px;
   margin-right: 5px;
-}
-
-.table.matches tbody tr td.time {
-  color: rgba(92, 92, 92, 0.6);
-  white-space: nowrap;
-}
-
-.table.matches tbody tr td.time i {
-  color: #c2c2c2;
 }
 
 .table.matches tbody tr td.team > a {
