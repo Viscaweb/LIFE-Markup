@@ -9717,33 +9717,9 @@ span.dark-icon {
 .table.my-games tbody tr td.team.team2 img {
   margin-right: 5px;
 }
-.table.my-games tbody tr td.score {
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  width: 50px;
-  padding: 0;
-}
 .table.my-games tbody tr td.score > a {
   display: block;
   line-height: 36px;
-}
-.table.my-games tbody tr td.score span.icon-expand-h {
-  color: #d6d6d6;
-}
-.table.my-games tbody tr td.tools {
-  padding: 0px;
-  text-align: right;
-  font-size: 0;
-}
-.table.my-games tbody tr td.tools a {
-  display: inline-block;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.05);
-  padding: 0 1px;
-}
-.table.my-games tbody tr td.tools a.active {
-  color: #5da400;
 }
 .table.matches thead.league-data tr th {
   border-bottom: 1px solid #6c7477;

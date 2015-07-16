@@ -11920,38 +11920,9 @@ span.dark-icon {
   margin-right: 5px;
 }
 
-.table.my-games tbody tr td.score {
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  width: 50px;
-  padding: 0;
-}
-
 .table.my-games tbody tr td.score > a {
   display: block;
   line-height: 36px;
-}
-
-.table.my-games tbody tr td.score span.icon-expand-h {
-  color: #d6d6d6;
-}
-
-.table.my-games tbody tr td.tools {
-  padding: 0px;
-  text-align: right;
-  font-size: 0;
-}
-
-.table.my-games tbody tr td.tools a {
-  display: inline-block;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.05);
-  padding: 0 1px;
-}
-
-.table.my-games tbody tr td.tools a.active {
-  color: #5da400;
 }
 
 .table.matches thead.league-data tr th {
@@ -15382,4 +15353,31 @@ span.sprite-icons.webmaster-border {
   color: #ffffff;
   font-weight: 700;
   font-size: 23px;
+}
+
+.top-match-block .score-board .match-time .block div.time,
+.top-match-block .score-board .match-info .block div.time {
+  background-color: #2a2d2e;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.top-match-block .score-board .match-info {
+  bottom: 21px;
+}
+
+.top-match-block .score-board.live .match-info .block div.time {
+  background-repeat: no-repeat;
+  background-position: 28px center;
+}
+
+.top-match-block .score-board.live .match-info .block div.time .live-spot {
+  background-image: url("../img/sprites/live-spot.gif");
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: -1px;
+  margin-right: 3px;
 }
