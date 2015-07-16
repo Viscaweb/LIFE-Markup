@@ -10843,8 +10843,8 @@ span.dark-icon {
   margin-bottom: 0px;
   /*TR HIGHLIGHT STYLES*/
   /*TD HIGHLIGHT STYLES*/
-  /*MY GAMES TABLES*/
   /*MATCHES TABLES*/
+  /*MY GAMES TABLES*/
   /*STANDING TABLES*/
 }
 
@@ -11844,87 +11844,6 @@ span.dark-icon {
   font-weight: 700;
 }
 
-.table.my-games thead.league-data tr th {
-  vertical-align: middle !important;
-  background-color: #5da400;
-  color: #ffffff;
-  font-weight: 700;
-  border-bottom: 1px solid #519000;
-}
-
-.table.my-games thead.league-data tr th a {
-  color: #ffffff;
-}
-
-.table.my-games thead.league-data tr th a.title {
-  margin-right: 5px;
-  line-height: 19px;
-}
-
-.table.my-games thead.league-data tr th > .title span.icon {
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0;
-  position: relative;
-  top: 1px;
-}
-
-.table.my-games thead.league-data tr th > .title .help-icon {
-  line-height: 17px;
-  position: relative;
-  top: 1px;
-}
-
-.table.my-games thead.league-data tr th > .title .help-icon span {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.table.my-games thead.league-data tr th > .title .help-icon:hover span {
-  color: #ffffff;
-}
-
-.table.my-games thead.league-data tr th span {
-  color: rgba(0, 0, 0, 0.1);
-}
-
-.table.my-games thead.league-data tr th span i {
-  color: #ffffff;
-}
-
-.table.my-games tbody tr td span.hour {
-  font-weight: 600;
-}
-
-.table.my-games tbody tr td .league {
-  max-width: 20px;
-  margin-right: 5px;
-}
-
-.table.my-games tbody tr td.team {
-  width: auto;
-}
-
-.table.my-games tbody tr td.team > a {
-  display: block;
-}
-
-.table.my-games tbody tr td.team img {
-  max-width: 20px;
-}
-
-.table.my-games tbody tr td.team.team1 img {
-  margin-left: 5px;
-}
-
-.table.my-games tbody tr td.team.team2 img {
-  margin-right: 5px;
-}
-
-.table.my-games tbody tr td.score > a {
-  display: block;
-  line-height: 36px;
-}
-
 .table.matches thead.league-data tr th {
   border-bottom: 1px solid #6c7477;
   padding: 0;
@@ -12184,6 +12103,91 @@ span.dark-icon {
 
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;
+}
+
+.table.my-games > thead.league-data > tr th {
+  vertical-align: middle !important;
+  background-color: #5da400;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 1px solid #519000;
+}
+
+.table.my-games > thead.league-data > tr th a {
+  color: #ffffff;
+}
+
+.table.my-games > thead.league-data > tr th a.title {
+  margin-right: 5px;
+  line-height: 19px;
+}
+
+.table.my-games > thead.league-data > tr th > .title span.icon {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+
+.table.my-games > thead.league-data > tr th > .title .help-icon {
+  line-height: 17px;
+  position: relative;
+  top: 1px;
+}
+
+.table.my-games > thead.league-data > tr th > .title .help-icon span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.table.my-games > thead.league-data > tr th > .title .help-icon:hover span {
+  color: #ffffff;
+}
+
+.table.my-games > thead.league-data > tr th span {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.table.my-games > thead.league-data > tr th span i {
+  color: #ffffff;
+}
+
+.table.my-games > thead.league-data > tr:hover > th {
+  background-color: #519000 !important;
+}
+
+.table.my-games tbody tr td span.hour {
+  font-weight: 600;
+}
+
+.table.my-games tbody tr td .league {
+  max-width: 20px;
+  margin-right: 5px;
+}
+
+.table.my-games tbody tr td.team {
+  width: auto;
+}
+
+.table.my-games tbody tr td.team > a {
+  display: block;
+}
+
+.table.my-games tbody tr td.team img {
+  max-width: 20px;
+}
+
+.table.my-games tbody tr td.team.team1 img {
+  margin-left: 5px;
+}
+
+.table.my-games tbody tr td.team.team2 img {
+  margin-right: 5px;
+}
+
+.table.my-games tbody tr td.score > a {
+  display: block;
+  line-height: 36px;
 }
 
 .table.table-standing thead tr th,
@@ -15370,14 +15374,4 @@ span.sprite-icons.webmaster-border {
 .top-match-block .score-board.live .match-info .block div.time {
   background-repeat: no-repeat;
   background-position: 28px center;
-}
-
-.top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url("../img/sprites/live-spot.gif");
-  display: inline-block;
-  height: 8px;
-  width: 8px;
-  position: relative;
-  top: -1px;
-  margin-right: 3px;
 }

@@ -1077,127 +1077,6 @@
     }
   }
 
-  /*MY GAMES TABLES*/
-  &.my-games{
-
-    thead{
-
-      &.league-data{
-
-        tr{
-
-          th{
-            vertical-align: middle !important;
-            background-color: @brand-primary;
-            color: @ls-light-color;
-            font-weight: @font-weight-bold;
-            border-bottom: 1px solid darken(@brand-primary, 4%);
-
-            a{
-              color: @ls-light-color;
-
-              &.title{
-                margin-right: 5px;
-                line-height: @ls-data-league-line-height;
-              }
-
-            }
-
-            > .title{
-              span.icon{
-                font-size: @font-size-normal;
-                line-height: @font-size-x-large;
-                margin: 0;
-                position: relative;
-                top: 1px;
-              }
-
-              .help-icon{
-                line-height: @font-size-x-large;
-                position: relative;
-                top: 1px;
-
-                span {
-                  color: fade(#000000, 30%);
-                }
-
-                &:hover {
-                  span {
-                    color: @ls-th-league-color;
-                  }
-                }
-              }
-
-            }
-
-            span{
-              color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
-
-              i{
-                color: @ls-light-color;
-              }
-            }
-          }
-        }
-      }
-    }
-    tbody{
-
-      tr{
-
-        td{
-
-          span.hour{
-            font-weight: @font-weight-semi-bold;
-          }
-
-          .league{
-            max-width: 20px;
-            margin-right: 5px;
-          }
-
-          &.team{
-            width: auto;
-            > a{
-              display: block;
-            }
-
-            img{
-              max-width: 20px;
-            }
-
-            &.team1{
-
-              img{
-                margin-left: 5px;
-              }
-            }
-
-            &.team2{
-
-              img{
-                margin-right: 5px;
-              }
-            }
-          }
-
-
-
-          &.score{
-
-            > a{
-              display: block;
-              line-height: 36px;
-            }
-
-          }
-
-        }
-      }
-    }
-  }
-
-
   /*MATCHES TABLES*/
   &.matches{
 
@@ -1391,6 +1270,130 @@
             &.tools{
             }
           }
+        }
+      }
+    }
+  }
+
+  /*MY GAMES TABLES*/
+  &.my-games{
+
+    > thead{
+
+      &.league-data{
+
+        > tr{
+
+          th{
+            vertical-align: middle !important;
+            background-color: @brand-primary;
+            color: @ls-light-color;
+            font-weight: @font-weight-bold;
+            border-bottom: 1px solid darken(@brand-primary, 4%);
+
+            a{
+              color: @ls-light-color;
+
+              &.title{
+                margin-right: 5px;
+                line-height: @ls-data-league-line-height;
+              }
+
+            }
+
+            > .title{
+              span.icon{
+                font-size: @font-size-normal;
+                line-height: @font-size-x-large;
+                margin: 0;
+                position: relative;
+                top: 1px;
+              }
+
+              .help-icon{
+                line-height: @font-size-x-large;
+                position: relative;
+                top: 1px;
+
+                span {
+                  color: fade(#000000, 30%);
+                }
+
+                &:hover {
+                  span {
+                    color: @ls-th-league-color;
+                  }
+                }
+              }
+
+            }
+
+            span{
+              color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
+
+              i{
+                color: @ls-light-color;
+              }
+            }
+          }
+
+          &:hover > th {
+            background-color: darken(@brand-primary, 4%) !important;
+          }
+        }
+      }
+    }
+    tbody{
+
+      tr{
+
+        td{
+
+          span.hour{
+            font-weight: @font-weight-semi-bold;
+          }
+
+          .league{
+            max-width: 20px;
+            margin-right: 5px;
+          }
+
+          &.team{
+            width: auto;
+            > a{
+              display: block;
+            }
+
+            img{
+              max-width: 20px;
+            }
+
+            &.team1{
+
+              img{
+                margin-left: 5px;
+              }
+            }
+
+            &.team2{
+
+              img{
+                margin-right: 5px;
+              }
+            }
+          }
+
+
+
+          &.score{
+
+            > a{
+              display: block;
+              line-height: 36px;
+            }
+
+          }
+
         }
       }
     }

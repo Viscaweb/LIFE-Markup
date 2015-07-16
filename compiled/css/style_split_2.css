@@ -1,3 +1,13 @@
+.top-match-block .score-board.live .match-info .block div.time .live-spot {
+  background-image: url("../img/sprites/live-spot.gif");
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: -1px;
+  margin-right: 3px;
+}
+
 .top-match-block .score-board.live.paused .match-info .block div.time {
   background-image: url("../img/sprites/paused-spot.gif");
 }
