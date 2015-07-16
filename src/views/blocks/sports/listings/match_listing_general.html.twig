@@ -21,7 +21,7 @@
                     <col class="score" />
                     <col class="team" />
                     <col class="half-time-score" />
-                    <col class="tools tools-6" />
+                    <col class="tools tools-4" />
                     <col class="favorite">
                 </colgroup>
 
@@ -66,11 +66,18 @@
                         " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                     <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="{{ basePath }}img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
                     <td class="half-time-score">(0 - 1)</td>
-                    <td class="tools">
+                    <td class="tools dropdown">
                         <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">45</span></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenuMatch">
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-prono"></span>Pronostic</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-ellipse"></span>Live</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-x2"></span>Odds</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-stats"></span>Statistics</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-play"></span>Videos</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-bell"></span>Add to My Games</a></li>
+                        </ul>
                     </td>
                     <td class="favorite">
                         <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -84,12 +91,15 @@
                     <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                     <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="{{ basePath }}img/sprites/lyon.png"><span>Olympique Lyonnais</span></a></td>
                     <td class="half-time-score">(0 - 1)</td>
-                    <td class="tools">
+                    <td class="tools dropdown">
                         <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
-                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenuMatch">
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-ellipse"></span>Live</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-x2"></span>Odds</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-stats"></span>Statistics</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-play"></span>Videos</a></li>
+                        </ul>
                     </td>
                     <td class="favorite">
                         <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -103,10 +113,8 @@
                     <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                     <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="{{ basePath }}img/sprites/team2.png"><span>Nimes</span></a></td>
                     <td class="half-time-score">(0 - 1)</td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -126,7 +134,7 @@
                     <col class="score" />
                     <col class="team team2" />
                     <col class="half-time-score" />
-                    <col class="tools tools-6" />
+                    <col class="tools tools-4" />
                     <col class="favorite">
                 </colgroup>
                 <tbody class="league-data active">
@@ -154,13 +162,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="{{ basePath }}img/sprites/team5.png"><span>Atletico Madrid</span></a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="icon-tv" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
-                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -173,11 +176,10 @@
                     <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                     <td class="team team2"><a href="#">CR Belouizdad with a really long name<span class="label red-card">1</span></a></td>
                     <td class="half-time-score">(0 - 0)</td>
-                    <td class="tools">
+                    <td class="tools dropdown">
+                        <a href="#" class="available"><i class="icon-play"></i></a>
                         <a href="#" class="available live"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">45</span></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -190,13 +192,8 @@
                     <td class="score"><a href="#"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">3</span></a></td>
                     <td class="team team2 win"><a href="#">CABBA <span class="qualified">*</span></a></td>
                     <td class="half-time-score">(0 - 2)</td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="icon-play" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
-                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -209,10 +206,9 @@
                     <td class="score"><a href="#"><span class="home-score">13</span> <span class="versus"> - </span> <span class="away">4</span></a></td>
                     <td class="team team2"><a href="#">JS Kabylie</a></td>
                     <td class="half-time-score">(0 - 0)</td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">13</span></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" class="available"><i class="icon-play"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -225,10 +221,9 @@
                     <td class="score updated"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away blinking">1</span></a></td>
                     <td class="team team2 win"><a href="#">MC Alger<span class="label label-live label-goal bounce">GOAL!</span></a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" class="available"><i class="icon-play"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -274,11 +269,9 @@
                         " data-template="<div class='popover popover-score'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="home-score">2</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                     <td class="team team2"><a href="#" >Colegiales</a></td>
                     <td class="half-time-score">(0 - 1)</td>
-                    <td class="tools">
+                    <td class="tools dropdown">
                         <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -291,12 +284,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Malmo</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="icon-tv" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
-                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -309,10 +298,9 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Sheriff</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -325,10 +313,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Olympiakos</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -341,11 +327,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Chelsea</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="icon-play" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -361,7 +344,7 @@
                     <col class="score" />
                     <col class="team team2" />
                     <col class="half-time-score" />
-                    <col class="tools tools-6" />
+                    <col class="tools tools-4" />
                     <col class="favorite">
                 </colgroup>
                 <tbody class="league-data active">
@@ -388,13 +371,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Zenith</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="icon-tv" data-toggle="tooltip" data-placement="top" title="[ Streaming ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
-                        <a href="#" class="available"><i class="icon-mic" data-toggle="tooltip" data-placement="top" title="[ Match commented ]"></i></a>
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -407,10 +385,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Anderlecht</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"</i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -423,11 +399,8 @@
                     <td class="score"><a href="#"><span class="icon-expand-h"></span></a></td>
                     <td class="team team2"><a href="#">Shakhtar Donesk</a></td>
                     <td class="half-time-score"></td>
-                    <td class="tools">
-                        <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
-                        <a href="#"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i></a>
-                        <a href="#" class="available"><i class="icon-prono" data-toggle="tooltip" data-placement="top" title="[ Click for game predictions ]"></i></a>
-                        <a href="#" class="available"><i class="icon-stats" data-toggle="tooltip" data-placement="top" title="[ Statistics ]"></i></a>
+                    <td class="tools dropdown">
+                        <a href="#" id="dropdownMenuMatch" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
                         <a class="fav-match" href="#"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
