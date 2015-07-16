@@ -1103,6 +1103,7 @@
             padding: 1px 6px;
             text-transform: none;
 
+
             &:after {
               content: "";
               position: absolute;
@@ -1112,6 +1113,15 @@
               height: 0;
               border-right: 8px solid transparent;
               border-top: 14px solid darken(@ls-light-color,4%);
+            }
+
+            a {
+              display: block;
+              color : lighten(@text-color, 20%);
+              max-width: 100px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
             }
           }
         }
@@ -1610,7 +1620,7 @@
         }
 
         &.tools-1 {
-          width: 32px;
+          width: 30px;
         }
 
         &.tools-2 {
@@ -1735,7 +1745,7 @@
         }
 
         &.favorite{
-          width: 25px;
+          width: 30px;
         }
 
         &.minute-range{

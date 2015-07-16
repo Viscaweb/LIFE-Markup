@@ -9725,6 +9725,14 @@ span.dark-icon {
   border-right: 8px solid transparent;
   border-top: 14px solid #f5f5f5;
 }
+.table.matches tbody tr th.league-title a {
+  display: block;
+  color: #8f8f8f;
+  max-width: 100px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .table.matches tbody tr td {
   vertical-align: middle !important;
 }
@@ -10072,7 +10080,7 @@ span.dark-icon {
   width: 145px;
 }
 .table.layout-fixed colgroup col.tools-1 {
-  width: 32px;
+  width: 30px;
 }
 .table.layout-fixed colgroup col.tools-2 {
   width: 40px;
@@ -10165,7 +10173,7 @@ span.dark-icon {
   width: 44px;
 }
 .table.layout-fixed colgroup col.favorite {
-  width: 25px;
+  width: 30px;
 }
 .table.layout-fixed colgroup col.minute-range {
   width: 60px;
