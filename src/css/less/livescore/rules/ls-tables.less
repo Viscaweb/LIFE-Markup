@@ -1093,6 +1093,29 @@
 
       tr{
 
+        th {
+          &.league-title {
+            display: block;
+            position: absolute;
+            background-color: darken(@ls-light-color,4%);
+            font-size: 9px;
+            font-weight: 200;
+            padding: 1px 6px;
+            text-transform: none;
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -8px;
+              width: 0;
+              height: 0;
+              border-right: 8px solid transparent;
+              border-top: 14px solid darken(@ls-light-color,4%);
+            }
+          }
+        }
+
         td{
           vertical-align: middle !important;
 
@@ -1206,6 +1229,7 @@
                 }
               }
             }
+
           }
 
           &.half-time-score{
@@ -1273,6 +1297,8 @@
         }
       }
     }
+
+
   }
 
   /*MY GAMES TABLES*/
@@ -1348,14 +1374,11 @@
       tr{
 
         td{
+          padding-top: 8px;
+          padding-bottom: 8px;
 
           span.hour{
             font-weight: @font-weight-semi-bold;
-          }
-
-          .league{
-            max-width: 20px;
-            margin-right: 5px;
           }
 
           &.team{
@@ -1386,10 +1409,11 @@
 
 
           &.score{
+            padding: 0;
 
             > a{
               display: block;
-              line-height: 36px;
+              line-height: 46px;
             }
 
           }

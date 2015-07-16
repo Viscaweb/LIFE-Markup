@@ -1,3 +1,20 @@
+.top-match-block .score-board .match-time .block div.time,
+.top-match-block .score-board .match-info .block div.time {
+  background-color: #2a2d2e;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.top-match-block .score-board .match-info {
+  bottom: 21px;
+}
+
+.top-match-block .score-board.live .match-info .block div.time {
+  background-repeat: no-repeat;
+  background-position: 28px center;
+}
+
 .top-match-block .score-board.live .match-info .block div.time .live-spot {
   background-image: url("../img/sprites/live-spot.gif");
   display: inline-block;
