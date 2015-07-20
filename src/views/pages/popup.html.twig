@@ -1,0 +1,30 @@
+{% extends "layouts/base.html.twig" %}
+
+
+{% block body %}
+
+    {% block container_header %}
+        {% include 'blocks/commons/header_popup.html.twig' %}
+    {% endblock %}
+
+    <div class="container{{ containerFluid }}">
+        {% block container_content_before %}
+        {% endblock %}
+        <div class="wrapper row">
+            {% block container_content %}
+                {# page content #}
+            {% endblock %}
+        </div>
+        {% block container_content_after %}
+        {% endblock %}
+    </div>
+
+    {% block container_footer %}
+
+    {% endblock %}
+
+{% endblock %}
+
+{% block resources_footer %}
+    {% include 'blocks/commons/scripts.html.twig' %}
+{% endblock %}
