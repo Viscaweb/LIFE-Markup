@@ -7777,6 +7777,9 @@ button.close {
   margin-left: 10px;
   padding: 9px 11px;
 }
+.header .navbar.navbar-fixed-top .navbar-right .btn-partager {
+  margin-top: 14px;
+}
 .header .dropdown-inverted .dropdown-menu {
   background-color: #444a4c;
   border-color: #424749;
@@ -15646,6 +15649,9 @@ span.glyphicon-star.active {
   left: auto !important;
   right: 0;
 }
+.popover-partager.share-social-minimal {
+  min-width: 280px;
+}
 .popover-partager > .arrow {
   left: auto !important;
   right: 9%;
@@ -15692,6 +15698,9 @@ span.glyphicon-star.active {
   vertical-align: top;
   min-width: 77px;
   margin-right: 10px;
+}
+.popover-partager .share-social .social-embeds:first-child {
+  border-left: none;
 }
 .popover-partager .share-url {
   margin: 0;

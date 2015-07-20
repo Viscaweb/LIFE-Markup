@@ -9514,6 +9514,10 @@ button.close {
   padding: 9px 11px;
 }
 
+.header .navbar.navbar-fixed-top .navbar-right .btn-partager {
+  margin-top: 14px;
+}
+
 .header .dropdown-inverted .dropdown-menu {
   background-color: #444a4c;
   border-color: #424749;
@@ -15382,13 +15386,4 @@ span.sprite-icons.webmaster-border {
 .top-match-block .score-board .match-info .block {
   display: inline-block;
   min-width: 82px;
-}
-
-.top-match-block .score-board .match-time .block div.score,
-.top-match-block .score-board .match-info .block div.score {
-  padding: 1px 9px;
-  background: #363a3c;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 23px;
 }

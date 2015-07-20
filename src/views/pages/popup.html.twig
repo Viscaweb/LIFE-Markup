@@ -1,7 +1,6 @@
+{% set containerFluid = '-fluid' %}
 {% extends "layouts/full.html.twig" %}
 
-
-{% block body %}
 
     {% block container_header %}
         {% include 'blocks/commons/header_popup.html.twig' %}
@@ -11,8 +10,7 @@
     {% block container_content_wrapper %}
         {# content#}
     {% endblock %}
-    
-{% endblock %}
+
 
 {% block resources_footer %}
     {% include 'blocks/commons/scripts.html.twig' %}

@@ -1,3 +1,12 @@
+.top-match-block .score-board .match-time .block div.score,
+.top-match-block .score-board .match-info .block div.score {
+  padding: 1px 9px;
+  background: #363a3c;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 23px;
+}
+
 .top-match-block .score-board .match-time .block div.time,
 .top-match-block .score-board .match-info .block div.time {
   background-color: #2a2d2e;
@@ -3775,6 +3784,10 @@ span.glyphicon-star.active {
   right: 0;
 }
 
+.popover-partager.share-social-minimal {
+  min-width: 280px;
+}
+
 .popover-partager > .arrow {
   left: auto !important;
   right: 9%;
@@ -3831,6 +3844,10 @@ span.glyphicon-star.active {
   vertical-align: top;
   min-width: 77px;
   margin-right: 10px;
+}
+
+.popover-partager .share-social .social-embeds:first-child {
+  border-left: none;
 }
 
 .popover-partager .share-url {
