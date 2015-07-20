@@ -10820,6 +10820,10 @@ iframe {
   margin-bottom: 0;
 }
 
+.container-popup {
+  padding: 0;
+}
+
 span.dark-icon {
   color: #5c5c5c;
 }
