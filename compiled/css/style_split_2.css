@@ -2756,26 +2756,14 @@ span.glyphicon-star.active {
   border-bottom-color: #454b4d;
 }
 
-.match-timeline .popover {
-  min-width: 291px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-
-@media \0screen {
-  .match-timeline .popover {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
 .match-timeline .popover .popover-content {
   padding: 6px 5px;
+}
+
+.match-timeline .popover .popover-content .icon,
+.match-timeline .popover .popover-content .sprite-icons {
+  float: left;
+  margin-right: 6px;
 }
 
 .match-timeline .popover .popover-content table {
