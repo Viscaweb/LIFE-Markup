@@ -2585,6 +2585,7 @@ span.glyphicon-star.active {
 
 .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank {
   background-image: none;
+  cursor: default;
 }
 
 .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after {
