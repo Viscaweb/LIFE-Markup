@@ -14610,9 +14610,17 @@ span.glyphicon-star.active {
   padding-right: 40px;
   z-index: 3;
 }
-.match-timeline .timeline-scroll .penalty-goals > div {
+.match-timeline .timeline-scroll .penalty-goals .home {
+  position: relative;
+  top: -35px;
+}
+.match-timeline .timeline-scroll .penalty-goals .away {
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+}
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie {
   display: inline-block;
-  line-height: 26px;
   padding: 0 5px 1px 5px;
   background: rgba(0, 0, 0, 0.25);
   -webkit-border-radius: 20px;
@@ -14623,34 +14631,36 @@ span.glyphicon-star.active {
   background-clip: padding-box;
 }
 @media \0screen {
-  .match-timeline .timeline-scroll .penalty-goals > div {
+  .match-timeline .timeline-scroll .penalty-goals .penalty-serie {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
 }
-.match-timeline .timeline-scroll .penalty-goals > div.home {
-  position: relative;
-  top: -35px;
-}
-.match-timeline .timeline-scroll .penalty-goals > div.away {
-  position: absolute;
-  left: 0;
-  bottom: -35px;
-}
-.match-timeline .timeline-scroll .penalty-goals > div span {
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span {
   cursor: pointer;
-  text-align: center;
   display: inline-block;
-  line-height: 18px;
-  color: #ffffff;
-  padding: 1px;
+  vertical-align: sub;
 }
-.match-timeline .timeline-scroll .penalty-goals > div span.win {
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.win {
   background: #87B762;
 }
-.match-timeline .timeline-scroll .penalty-goals > div span.lose {
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.lose {
   background: #E6523E;
+}
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank {
+  background-image: none;
+}
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .match-timeline .timeline-scroll .match-live-progress {
   background: url("../img//timeline/timeline-bg.jpg") repeat 0 0;

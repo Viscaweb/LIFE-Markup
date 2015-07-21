@@ -137,36 +137,50 @@
       border: @ls-match-timeline-border;
       padding-right: 40px;
       z-index: 3;
-      
-      > div{
+
+      .home{
+        position: relative;
+        top: -35px;
+      }
+
+      .away{
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+      }
+
+      .penalty-serie{
         display: inline-block;
-        line-height: 26px;
         padding: 0 5px 1px 5px;
         background: fade(@ls-dark-color, 25%);
 		.border-radius(20px);        
         
-        &.home{
-          position: relative;
-          top: -35px;
-        }
-        
-        &.away{
-          position: absolute;
-          left: 0;
-          bottom: -35px;
-        }
+
         
         span{
-          cursor: pointer; 
-          text-align: center;
+          cursor: pointer;
           display: inline-block;
-          line-height: 18px;
-          color: @ls-light-color;
-          padding: 1px;
+          vertical-align: sub;
           
           &.win{ background: #87B762; }
           &.lose{ background: #E6523E; }
-          
+
+          &.shootout-blank {
+            background-image: none;
+
+            &:after {
+              content: "";
+              width: 17px;
+              height: 17px;
+              display: block;
+              border: 1px solid fade(#fff, 50%);
+              border-radius: 50%;
+              margin-top: 1px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+
         }
       }
     }
