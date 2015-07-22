@@ -16134,6 +16134,7 @@ table.other-sport tbody tr td.score {
   font-weight: 400 !important;
   padding-top: 1px !important;
   border: 1px solid #fafafa;
+  border-top: none;
 }
 table.other-sport tbody tr td.score.main {
   font-weight: 700 !important;
