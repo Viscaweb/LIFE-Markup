@@ -4436,9 +4436,6 @@ table.other-sport.sport-baseball tbody tr td.score {
 }
 
 table.other-sport.sport-baseball tbody tr td.hits {
-  -webkit-box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
-  -moz-box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
-  box-shadow: -1px 1px 0 #ffffff inset, 3px 0 0 #ffffff inset;
   padding-left: 5px;
 }
 
