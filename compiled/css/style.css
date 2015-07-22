@@ -14615,6 +14615,8 @@ span.glyphicon-star.active {
 .match-timeline .timeline-scroll .penalty-goals .home {
   position: relative;
   top: -35px;
+  display: inline-block;
+  /* needed for IE */
 }
 .match-timeline .timeline-scroll .penalty-goals .away {
   position: absolute;
