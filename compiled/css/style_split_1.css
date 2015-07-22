@@ -9663,6 +9663,7 @@ button.close {
   behavior: "js/css3pie/PIE.htc";
   padding: 0;
   background-clip: initial;
+  font-size: 12px;
 }
 
 .popover .popover-title {

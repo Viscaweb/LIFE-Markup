@@ -2714,7 +2714,7 @@ span.glyphicon-star.active {
 
 .match-timeline .timeline-scroll .team-actions .action span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: -3px;
   margin-left: auto;
   margin-right: auto;
 }

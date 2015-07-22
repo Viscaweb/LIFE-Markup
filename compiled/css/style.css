@@ -7899,6 +7899,7 @@ button.close {
   behavior: "js/css3pie/PIE.htc";
   padding: 0;
   background-clip: initial;
+  font-size: 12px;
 }
 .popover .popover-title {
   -webkit-border-top-right-radius: 0;
@@ -14765,7 +14766,7 @@ span.glyphicon-star.active {
 }
 .match-timeline .timeline-scroll .team-actions .action span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: -3px;
   margin-left: auto;
   margin-right: auto;
 }
