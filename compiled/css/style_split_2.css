@@ -1,3 +1,8 @@
+.top-match-block .score-board.live .match-info .block div.time {
+  background-repeat: no-repeat;
+  background-position: 28px center;
+}
+
 .top-match-block .score-board.live .match-info .block div.time .live-spot {
   background-image: url("../img/sprites/live-spot.gif");
   display: inline-block;
@@ -1201,12 +1206,6 @@ span.glyphicon-star.active {
 .ls-wizard > ul.nav > li > a .label {
   padding: 0;
   display: inline-block;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1326,20 +1325,12 @@ span.glyphicon-star.active {
 .step-heading .label {
   padding: 0;
   display: inline-block;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  color: #ffffff;
-  background-color: #666666;
   margin-right: 7px;
 }
 

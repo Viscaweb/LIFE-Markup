@@ -9017,6 +9017,13 @@ button.close {
   background-color: #b02500;
 }
 
+.label-lg {
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+}
+
 /*Media List*/
 
 .media-list {
@@ -15394,9 +15401,4 @@ span.sprite-icons.webmaster-border {
 
 .top-match-block .score-board .match-info {
   bottom: 21px;
-}
-
-.top-match-block .score-board.live .match-info .block div.time {
-  background-repeat: no-repeat;
-  background-position: 28px center;
 }

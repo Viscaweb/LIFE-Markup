@@ -7361,6 +7361,12 @@ button.close {
 .label-live[href]:focus {
   background-color: #b02500;
 }
+.label-lg {
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+}
 /*Media List*/
 .media-list {
   border-top: 1px solid #ebebeb;
@@ -13506,12 +13512,6 @@ span.glyphicon-star.active {
 .ls-wizard > ul.nav > li > a .label {
   padding: 0;
   display: inline-block;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -13610,20 +13610,12 @@ span.glyphicon-star.active {
 .step-heading .label {
   padding: 0;
   display: inline-block;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  color: #ffffff;
-  background-color: #666666;
   margin-right: 7px;
 }
 @media \0screen {
