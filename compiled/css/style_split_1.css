@@ -10607,6 +10607,9 @@ button.close {
   font-weight: 600;
   padding-left: 2px;
   display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .content-header.player .info .title .last-name {
@@ -10616,6 +10619,9 @@ button.close {
   font-size: 27px;
   line-height: 32px;
   color: #424242;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .content-header.player .description {
