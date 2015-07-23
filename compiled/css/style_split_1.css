@@ -10494,17 +10494,16 @@ button.close {
 
 .content-header {
   position: relative;
-  display: table;
   width: 100%;
   border: 0;
 }
 
 .content-header .avatar {
   vertical-align: top;
-  display: table-cell;
   position: relative;
-  padding: 10px 20px 30px 6px;
-  width: 15.5%;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .content-header .avatar img {
@@ -10513,55 +10512,55 @@ button.close {
 }
 
 .content-header .info {
-  display: table-cell;
-  padding: 10px 6px 10px 0;
+  padding: 10px 0;
   vertical-align: top;
+}
+
+.content-header .info .title-container {
+  max-width: 100%;
+  float: left;
 }
 
 .content-header .info .title {
-  margin: 0;
   line-height: 21px;
 }
 
-.content-header .info .title > span,
-.content-header .info .title > h1,
-.content-header .info .title > h2,
-.content-header .info .title > h3,
-.content-header .info .title > div {
+.content-header .info .title > .title-value {
   font-weight: 400;
-  font-size: 27px;
+  font-size: 23px;
   line-height: 38px;
   color: #424242;
-  margin: 0;
-  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.content-header .info .title a {
+.content-header .info .title .fav {
   display: inline-block;
   font-size: 14px;
-  margin-left: 10px;
   vertical-align: top;
   line-height: 38px;
+  margin-left: -10px;
 }
 
-.content-header .info .title a span {
+.content-header .info .title .fav span {
   vertical-align: middle;
   color: #cccccc;
 }
 
-.content-header .info .title a.active {
+.content-header .info .title .fav.active {
   color: #ffc600;
 }
 
-.content-header .info .title a.active span {
+.content-header .info .title .fav.active span {
   color: #ffc600;
 }
 
-.content-header .info .title a:hover {
+.content-header .info .title .fav:hover {
   color: #a1a1a1;
 }
 
-.content-header .info .title a:hover span {
+.content-header .info .title .fav:hover span {
   color: #a1a1a1;
 }
 
@@ -10578,6 +10577,7 @@ button.close {
   color: #a6a6a6;
   display: block;
   font-size: 11px;
+  clear: both;
 }
 
 .content-header .info .additionnal-info span {
@@ -10586,8 +10586,6 @@ button.close {
 
 .content-header.teams .shirts {
   text-align: right;
-  display: table-cell;
-  padding: 10px 0;
 }
 
 .content-header.teams .shirts a {
@@ -10600,28 +10598,6 @@ button.close {
 .content-header.teams .shirts a img {
   display: block;
   margin: 0 auto;
-}
-
-.content-header.teams a.star:hover span.add-to-my-team {
-  display: inline-block;
-}
-
-.content-header.teams a.star span.add-to-my-team {
-  text-transform: none;
-  color: #0053a8;
-  font-size: 12px;
-  margin-left: 0;
-  display: none;
-  vertical-align: baseline;
-}
-
-.content-header.teams a.star span.add-to-my-team:hover {
-  color: #0f86ff;
-}
-
-.content-header.player .info {
-  margin-right: 46px;
-  width: auto;
 }
 
 .content-header.player .info .title .first-name {
@@ -15391,4 +15367,40 @@ span.sprite-icons.webmaster-border {
 .top-match-block .score-board .match-info .block {
   display: inline-block;
   min-width: 82px;
+}
+
+.top-match-block .score-board .match-time .block div.score,
+.top-match-block .score-board .match-info .block div.score {
+  padding: 1px 9px;
+  background: #363a3c;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.top-match-block .score-board .match-time .block div.time,
+.top-match-block .score-board .match-info .block div.time {
+  background-color: #2a2d2e;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.top-match-block .score-board .match-info {
+  bottom: 21px;
+}
+
+.top-match-block .score-board.live .match-info .block div.time {
+  background-repeat: no-repeat;
+  background-position: 28px center;
+}
+
+.top-match-block .score-board.live .match-info .block div.time .live-spot {
+  background-image: url("../img/sprites/live-spot.gif");
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: -1px;
+  margin-right: 3px;
 }
