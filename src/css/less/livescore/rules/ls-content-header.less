@@ -27,16 +27,22 @@
     }
     .title{
        line-height: 21px;
+      display: table;
+      max-width: 100%;
 
     
       > .title-value{
         font-weight: @font-weight-normal;
         font-size: @font-size-h3;
-        line-height: 38px;
+        line-height: 28px;
         color: @headings-color;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      > .favorite-star {
+        display: table-cell;
+        padding: 0 6px;
       }
     
 			.fav{
@@ -44,7 +50,6 @@
 				font-size: @font-size-base + 1;
               vertical-align: top;
               line-height: 38px;
-              margin-left: -10px;
 
             span{
               vertical-align: middle;
@@ -136,18 +141,13 @@
           font-size: @font-size-h2;
           line-height: 32px;
           color: @headings-color;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
         }
-			}
+      }
 		}
     
 	.description{
-      display: table-cell;
       vertical-align: top;
       padding: 10px 10px 10px 0;
-      width: 25%;
 
       &:last-child {
         padding-right: 0;

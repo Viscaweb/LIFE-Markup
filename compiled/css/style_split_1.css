@@ -10523,16 +10523,22 @@ button.close {
 
 .content-header .info .title {
   line-height: 21px;
+  display: table;
+  max-width: 100%;
 }
 
 .content-header .info .title > .title-value {
   font-weight: 400;
   font-size: 23px;
-  line-height: 38px;
+  line-height: 28px;
   color: #424242;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content-header .info .title > .favorite-star {
+  display: table-cell;
+  padding: 0 6px;
 }
 
 .content-header .info .title .fav {
@@ -10540,7 +10546,6 @@ button.close {
   font-size: 14px;
   vertical-align: top;
   line-height: 38px;
-  margin-left: -10px;
 }
 
 .content-header .info .title .fav span {
@@ -10619,16 +10624,11 @@ button.close {
   font-size: 27px;
   line-height: 32px;
   color: #424242;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .content-header.player .description {
-  display: table-cell;
   vertical-align: top;
   padding: 10px 10px 10px 0;
-  width: 25%;
 }
 
 .content-header.player .description:last-child {
@@ -15399,14 +15399,4 @@ span.sprite-icons.webmaster-border {
 .top-match-block .score-board.live .match-info .block div.time {
   background-repeat: no-repeat;
   background-position: 28px center;
-}
-
-.top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url("../img/sprites/live-spot.gif");
-  display: inline-block;
-  height: 8px;
-  width: 8px;
-  position: relative;
-  top: -1px;
-  margin-right: 3px;
 }
