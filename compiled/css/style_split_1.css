@@ -9507,6 +9507,7 @@ button.close {
 
 .header .navbar-inverse .navbar-nav > li > a span.sprite-icons {
   margin-right: 4px;
+  vertical-align: middle;
 }
 
 .header .navbar-inverse .navbar-nav > li.dropdown > a span.icon-caret-down {
