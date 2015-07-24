@@ -30,44 +30,9 @@
     }
   }
 
-  .profile-image{
-    height: 138px;
-    width: 138px;
-    .border-radius(50%);
-    overflow: hidden;
-    position: absolute;
-    display: block;
+  .profile-image {
     bottom: -49px;
     left: 24px;
-
-    > img{
-      height: 100%;
-      width: 100%;
-    }
-
-    > a{
-      height: 80px;
-      width: 80px;
-      display: block;
-      position: absolute;
-      bottom: -40px;
-      background-color: rgba(0, 0, 0, 0.27);
-      .border-radius(50%);
-      left: 50%;
-      margin-left: -40px;
-      text-align: center;
-      padding-top: 10px;
-
-      .icon{
-        font-size: 20px;
-        color: @ls-light-color;
-      }
-
-      &:hover{
-        background-color: @brand-primary;
-      }
-
-    }
   }
 
   .display-name{
@@ -78,6 +43,44 @@
     color: @ls-light-color;
     font-weight: @font-weight-normal;
     margin: 0;
+  }
+}
+
+.profile-image{
+  height: 138px;
+  width: 138px;
+  .border-radius(50%);
+  overflow: hidden;
+  position: absolute;
+  display: block;
+
+  > img{
+    height: 100%;
+    width: 100%;
+  }
+
+  > a{
+    height: 80px;
+    width: 80px;
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    background-color: rgba(0, 0, 0, 0.27);
+    .border-radius(50%);
+    left: 50%;
+    margin-left: -40px;
+    text-align: center;
+    padding-top: 10px;
+
+    .icon{
+      font-size: 20px;
+      color: @ls-light-color;
+    }
+
+    &:hover{
+      background-color: @brand-primary;
+    }
+
   }
 }
 
