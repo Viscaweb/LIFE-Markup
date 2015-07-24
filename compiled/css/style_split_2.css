@@ -1,13 +1,3 @@
-.top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url("../img/sprites/live-spot.gif");
-  display: inline-block;
-  height: 8px;
-  width: 8px;
-  position: relative;
-  top: -1px;
-  margin-right: 3px;
-}
-
 .top-match-block .score-board.live.paused .match-info .block div.time {
   background-image: url("../img/sprites/paused-spot.gif");
 }
@@ -797,6 +787,18 @@ span.glyphicon-star.active {
   color: #ffc600 !important;
 }
 
+.comment-number {
+  color: #b3b3b3;
+  font-size: 8px;
+  line-height: 8px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 0;
+}
+
 /*Mixin General Tables Tools Icon Style*/
 
 .fav-match {
@@ -808,18 +810,6 @@ span.glyphicon-star.active {
   vertical-align: middle;
   position: relative;
   color: #cccccc;
-}
-
-.fav-match .comment-number {
-  color: #b3b3b3;
-  font-size: 8px;
-  line-height: 8px;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 3px;
-  left: 0;
 }
 
 .fav-match.available {
