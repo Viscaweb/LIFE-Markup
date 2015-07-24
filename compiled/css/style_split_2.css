@@ -6187,6 +6187,51 @@ ul.image-list li img {
   max-height: 35px;
 }
 
+.contest-ranking .panel-body {
+  text-align: center;
+}
+
+.contest-ranking .panel-body span.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.contest-ranking .panel-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contest-ranking .panel-body ul li.rank {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px;
+}
+
+.contest-ranking .panel-body ul li.rank .rank-numbers {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.contest-ranking .panel-body ul li.rank .rank-numbers span {
+  font-size: 28px;
+}
+
+.contest-ranking .panel-body ul li.rank .rank-numbers span.rank1 {
+  font-weight: 600;
+}
+
+.contest-ranking .panel-body ul li.rank .rank-numbers span.rank1.active {
+  color: #5da400;
+}
+
+.contest-ranking .panel-body ul li.rank .rank-numbers span.rank1 sup {
+  font-size: 17px !important;
+}
+
+.contest-ranking .evolution-image img {
+  width: 100%;
+}
+
 .prediction-statistics .panel-body .stat,
 .prediction-statistics .panel-body .statistics {
   padding: 17px 0;
