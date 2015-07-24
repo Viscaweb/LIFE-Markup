@@ -43,12 +43,12 @@
     .team{
     
       .circle{
+        &:extend(.border-radius-50-percent);
         display:inline-table;
         width:60px;
         height:60px;
         background-color: lighten(@gray-light, 13.1%);
         color:@ls-light-color;
-        .border-radius(50%);
         
         span{
           display: table-cell;

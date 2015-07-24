@@ -47,9 +47,9 @@
 }
 
 .profile-image{
+  &:extend(.border-radius-50-percent);
   height: 138px;
   width: 138px;
-  .border-radius(50%);
   overflow: hidden;
   position: absolute;
   display: block;
@@ -60,13 +60,13 @@
   }
 
   > a{
+    &:extend(.border-radius-50-percent);
     height: 80px;
     width: 80px;
     display: block;
     position: absolute;
     bottom: -40px;
     background-color: rgba(0, 0, 0, 0.27);
-    .border-radius(50%);
     left: 50%;
     margin-left: -40px;
     text-align: center;
@@ -312,7 +312,7 @@ ul.image-list{
         text-align: center;
 
         img{
-          .border-radius(50%);
+          &:extend(.border-radius-50-percent);
           margin-bottom: 8px;
           width: 104px;
           height: 104px;
@@ -348,7 +348,7 @@ ul.image-list{
             margin-right: 20px;
 
             .img{
-              .border-radius(50%);
+              &:extend(.border-radius-50-percent);
               display: inline-block;
               margin-bottom: 5px;
 
@@ -406,7 +406,7 @@ ul.image-list{
 
               &.selected-image{
                 .img{
-                  .border-radius(50%);
+                  &:extend(.border-radius-50-percent);
                   display: inline-block;
                   position: relative;
                   border: 3px solid transparent;
@@ -515,9 +515,9 @@ ul.image-list{
             min-width: 70px;
 
             .logo{
+              &:extend(.border-radius-50-percent);
               background-color: darken(@ls-light-color, 4.7%);
               display: inline-block;
-              .border-radius(50%);
               height: 52px;
               width: 52px;
               margin-bottom: 5px;

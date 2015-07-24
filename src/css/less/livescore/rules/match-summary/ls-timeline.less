@@ -172,12 +172,12 @@
             cursor: default;
 
             &:after {
+              &:extend(.border-radius-50-percent);
               content: "";
               width: 17px;
               height: 17px;
               display: block;
               border: 1px solid fade(#fff, 50%);
-              border-radius: 50%;
               margin-top: 1px;
               margin-left: auto;
               margin-right: auto;
@@ -244,8 +244,8 @@
       width: 100%;
       
       .replay{
+        &:extend(.border-radius-50-percent);
         background-color: @ls-match-timeline-replay-icon-bg;
-        .border-radius(50%);
         cursor: pointer;
         position: absolute;
         width: 20px;

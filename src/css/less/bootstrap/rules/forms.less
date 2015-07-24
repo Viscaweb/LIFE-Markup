@@ -121,7 +121,7 @@
   
   input[type="radio"] + label{
     &:before{
-      .border-radius(50%);
+      &:extend(.border-radius-50-percent);
       font-family: @ls-icons-font;
       @media @webkit{
         line-height: @font-size-x-large;
@@ -153,7 +153,7 @@
   }
   
   label{
-    .border-radius(50%);
+    &:extend(.border-radius-50-percent);
     border: 1px solid darken(@ls-light-color, 20%);
     background-color: @ls-light-color;
     margin: 0;

@@ -8685,19 +8685,7 @@ button.close {
 
 .checkbox input[type="radio"] + label:before,
 .radio input[type="radio"] + label:before {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   font-family: "LSicons";
-}
-
-@media \0screen {
-  .checkbox input[type="radio"] + label:before,
-  .radio input[type="radio"] + label:before {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -8739,9 +8727,6 @@ button.close {
 }
 
 .switch-button label {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
@@ -8751,14 +8736,6 @@ button.close {
   display: inline-block;
   cursor: pointer;
   background-clip: padding-box;
-}
-
-@media \0screen {
-  .switch-button label {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .switch-button label:before {
@@ -10216,23 +10193,12 @@ button.close {
   padding: 5px;
   margin: 1px;
   color: #5c5c5c;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   width: 30px;
   height: 30px;
   line-height: 20px;
   font-size: 14px;
   border: 1px solid transparent;
   background-clip: border-box;
-}
-
-@media \0screen {
-  .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
@@ -10623,6 +10589,54 @@ button.close {
 .content-header.player .teams a img {
   max-width: 52px;
   display: block;
+}
+
+.border-radius-50-percent,
+.checkbox input[type="radio"] + label:before,
+.radio input[type="radio"] + label:before,
+.switch-button label,
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a,
+.ls-wizard > ul.nav > li > a .label,
+.step-heading .label,
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after,
+.match-timeline .timeline-scroll .team-actions .replay,
+.head-to-head .teams .team .circle,
+.team-form .teams .team .circle,
+.profile-image,
+.profile-image > a,
+.change-profile-image > .row .left-side .current-image img,
+.change-profile-image > .row .options .predefined-images ul > li .img,
+.change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img,
+.change-profile-image > .row .options .my-teams ul > li .logo,
+.discussion .panel-body ul.users-list li a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@media \0screen {
+  .border-radius-50-percent,
+  .checkbox input[type="radio"] + label:before,
+  .radio input[type="radio"] + label:before,
+  .switch-button label,
+  .ui-datepicker table.ui-datepicker-calendar tbody tr td a,
+  .ls-wizard > ul.nav > li > a .label,
+  .step-heading .label,
+  .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after,
+  .match-timeline .timeline-scroll .team-actions .replay,
+  .head-to-head .teams .team .circle,
+  .team-form .teams .team .circle,
+  .profile-image,
+  .profile-image > a,
+  .change-profile-image > .row .left-side .current-image img,
+  .change-profile-image > .row .options .predefined-images ul > li .img,
+  .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img,
+  .change-profile-image > .row .options .my-teams ul > li .logo,
+  .discussion .panel-body ul.users-list li a {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
 }
 
 body {
@@ -15103,180 +15117,4 @@ span.sprite-icons.webmaster-border {
   padding: 15px 0 8px;
   text-align: center;
   border-bottom: 2px solid #efefef;
-}
-
-.top-match-block .top-match .shields img {
-  max-height: 28px;
-  max-width: 28px;
-}
-
-.top-match-block .top-match .shields img:last-child {
-  margin-left: 2px;
-}
-
-.top-match-block .top-match .teams {
-  text-transform: uppercase;
-  padding-top: 5px;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.top-match-block .top-match.active,
-.top-match-block .top-match:hover {
-  background: #f8f8f8;
-  border-bottom-color: #529100;
-}
-
-.top-match-block .panel-content {
-  position: relative;
-}
-
-.top-match-block > .row {
-  margin: 0;
-}
-
-.top-match-block > .row > div {
-  padding: 0;
-}
-
-.top-match-block .scoreboard-container:hover .slider-control {
-  opacity: 1;
-  width: 30px;
-}
-
-.top-match-block .score-board {
-  position: relative;
-  background: url("../img//bg-green-field.png") repeat;
-  height: 123px;
-  display: block;
-}
-
-.top-match-block .score-board .title {
-  line-height: 19px;
-  font-weight: 600;
-  font-size: 11px;
-  background: #f8f8f8;
-  position: absolute;
-  padding: 0 8px;
-  color: #666666;
-}
-
-.top-match-block .score-board .title:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -8px;
-  width: 0;
-  height: 0;
-  border-left: 2px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 20px solid #f8f8f8;
-}
-
-.top-match-block .score-board .match-date {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 21px;
-  color: #ffffff;
-  padding-right: 10px;
-}
-
-.top-match-block .score-board .teams {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  text-align: center;
-  width: 100%;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.top-match-block .score-board .teams .at {
-  opacity: .5;
-}
-
-.top-match-block .score-board .team {
-  background: url("../img/sprites/team-field-shadow.png") no-repeat center bottom;
-  bottom: 10px;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-}
-
-.top-match-block .score-board .team img {
-  max-width: 60px;
-  max-height: 60px;
-}
-
-.top-match-block .score-board .team1 {
-  left: 15px;
-}
-
-.top-match-block .score-board .team2 {
-  right: 15px;
-}
-
-.top-match-block .score-board .match-time,
-.top-match-block .score-board .match-info {
-  text-align: center;
-  position: absolute;
-  bottom: 27px;
-  left: 0;
-  width: 100%;
-}
-
-.top-match-block .score-board .match-time > span,
-.top-match-block .score-board .match-info > span {
-  padding: 7px 9px;
-  background: #363a3c;
-  color: #ffffff;
-  font-size: 23px;
-  display: inline-block;
-  min-width: 82px;
-}
-
-.top-match-block .score-board .match-time .block,
-.top-match-block .score-board .match-info .block {
-  display: inline-block;
-  min-width: 82px;
-}
-
-.top-match-block .score-board .match-time .block div.score,
-.top-match-block .score-board .match-info .block div.score {
-  padding: 1px 9px;
-  background: #363a3c;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 23px;
-}
-
-.top-match-block .score-board .match-time .block div.time,
-.top-match-block .score-board .match-info .block div.time {
-  background-color: #2a2d2e;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.top-match-block .score-board .match-info {
-  bottom: 21px;
-}
-
-.top-match-block .score-board.live .match-info .block div.time {
-  background-repeat: no-repeat;
-  background-position: 28px center;
-}
-
-.top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url("../img/sprites/live-spot.gif");
-  display: inline-block;
-  height: 8px;
-  width: 8px;
-  position: relative;
-  top: -1px;
-  margin-right: 3px;
 }

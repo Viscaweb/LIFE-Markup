@@ -7078,18 +7078,7 @@ button.close {
 }
 .checkbox input[type="radio"] + label:before,
 .radio input[type="radio"] + label:before {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   font-family: "LSicons";
-}
-@media \0screen {
-  .checkbox input[type="radio"] + label:before,
-  .radio input[type="radio"] + label:before {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .checkbox input[type="radio"] + label:before,
@@ -7125,9 +7114,6 @@ button.close {
   display: none;
 }
 .switch-button label {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
@@ -7137,13 +7123,6 @@ button.close {
   display: inline-block;
   cursor: pointer;
   background-clip: padding-box;
-}
-@media \0screen {
-  .switch-button label {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .switch-button label:before {
   position: absolute;
@@ -8354,22 +8333,12 @@ button.close {
   padding: 5px;
   margin: 1px;
   color: #5c5c5c;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   width: 30px;
   height: 30px;
   line-height: 20px;
   font-size: 14px;
   border: 1px solid transparent;
   background-clip: border-box;
-}
-@media \0screen {
-  .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
   background-color: #e6e6e6;
@@ -8662,6 +8631,52 @@ button.close {
 .content-header.player .teams a img {
   max-width: 52px;
   display: block;
+}
+.border-radius-50-percent,
+.checkbox input[type="radio"] + label:before,
+.radio input[type="radio"] + label:before,
+.switch-button label,
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a,
+.ls-wizard > ul.nav > li > a .label,
+.step-heading .label,
+.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after,
+.match-timeline .timeline-scroll .team-actions .replay,
+.head-to-head .teams .team .circle,
+.team-form .teams .team .circle,
+.profile-image,
+.profile-image > a,
+.change-profile-image > .row .left-side .current-image img,
+.change-profile-image > .row .options .predefined-images ul > li .img,
+.change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img,
+.change-profile-image > .row .options .my-teams ul > li .logo,
+.discussion .panel-body ul.users-list li a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media \0screen {
+  .border-radius-50-percent,
+  .checkbox input[type="radio"] + label:before,
+  .radio input[type="radio"] + label:before,
+  .switch-button label,
+  .ui-datepicker table.ui-datepicker-calendar tbody tr td a,
+  .ls-wizard > ul.nav > li > a .label,
+  .step-heading .label,
+  .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after,
+  .match-timeline .timeline-scroll .team-actions .replay,
+  .head-to-head .teams .team .circle,
+  .team-form .teams .team .circle,
+  .profile-image,
+  .profile-image > a,
+  .change-profile-image > .row .left-side .current-image img,
+  .change-profile-image > .row .options .predefined-images ul > li .img,
+  .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img,
+  .change-profile-image > .row .options .my-teams ul > li .logo,
+  .discussion .panel-body ul.users-list li a {
+    behavior: url("js/css3pie/PIE.htc");
+    position: relative;
+    zoom: 1;
+  }
 }
 body {
   padding-top: 64px;
@@ -13250,19 +13265,9 @@ span.glyphicon-star.active {
 .ls-wizard > ul.nav > li > a .label {
   padding: 0;
   display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   color: #ffffff;
   background-color: #5da400;
   margin-right: 7px;
-}
-@media \0screen {
-  .ls-wizard > ul.nav > li > a .label {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .ls-wizard > ul.nav > li > a:hover {
   background-color: #efefef;
@@ -13342,17 +13347,7 @@ span.glyphicon-star.active {
 .step-heading .label {
   padding: 0;
   display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   margin-right: 7px;
-}
-@media \0screen {
-  .step-heading .label {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .step-heading .title {
   font-size: 18px;
@@ -14349,7 +14344,6 @@ span.glyphicon-star.active {
   height: 17px;
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
   margin-top: 1px;
   margin-left: auto;
   margin-right: auto;
@@ -14403,22 +14397,12 @@ span.glyphicon-star.active {
 }
 .match-timeline .timeline-scroll .team-actions .replay {
   background-color: #454a4c;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   cursor: pointer;
   position: absolute;
   width: 20px;
   height: 20px;
   top: -10px;
   padding: 2px;
-}
-@media \0screen {
-  .match-timeline .timeline-scroll .team-actions .replay {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .match-timeline .timeline-scroll .team-actions .replay span {
   font-size: 16px;
@@ -15506,17 +15490,6 @@ span.glyphicon-star.active {
   height: 60px;
   background-color: #989898;
   color: #ffffff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-@media \0screen {
-  .head-to-head .teams .team .circle,
-  .team-form .teams .team .circle {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .head-to-head .teams .team .circle span,
 .team-form .teams .team .circle span {
@@ -17259,19 +17232,9 @@ main .content .league-list ul li.item-placeholder {
 .profile-image {
   height: 138px;
   width: 138px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   overflow: hidden;
   position: absolute;
   display: block;
-}
-@media \0screen {
-  .profile-image {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .profile-image > img {
   height: 100%;
@@ -17284,20 +17247,10 @@ main .content .league-list ul li.item-placeholder {
   position: absolute;
   bottom: -40px;
   background-color: rgba(0, 0, 0, 0.27);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   left: 50%;
   margin-left: -40px;
   text-align: center;
   padding-top: 10px;
-}
-@media \0screen {
-  .profile-image > a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .profile-image > a .icon {
   font-size: 20px;
@@ -17473,19 +17426,9 @@ ul.image-list li img {
   text-align: center;
 }
 .change-profile-image > .row .left-side .current-image img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   margin-bottom: 8px;
   width: 104px;
   height: 104px;
-}
-@media \0screen {
-  .change-profile-image > .row .left-side .current-image img {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .change-profile-image > .row .options {
   vertical-align: top;
@@ -17514,18 +17457,8 @@ ul.image-list li img {
   margin-right: 20px;
 }
 .change-profile-image > .row .options .predefined-images ul > li .img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   display: inline-block;
   margin-bottom: 5px;
-}
-@media \0screen {
-  .change-profile-image > .row .options .predefined-images ul > li .img {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .change-profile-image > .row .options .predefined-images ul > li .img img {
   border: 1px solid #ffffff;
@@ -17564,20 +17497,10 @@ ul.image-list li img {
   text-align: center;
 }
 .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   display: inline-block;
   position: relative;
   border: 3px solid transparent;
   border-color: #5da400;
-}
-@media \0screen {
-  .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img img {
   max-height: 46px;
@@ -17660,19 +17583,9 @@ ul.image-list li img {
 .change-profile-image > .row .options .my-teams ul > li .logo {
   background-color: #f3f3f3;
   display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   height: 52px;
   width: 52px;
   margin-bottom: 5px;
-}
-@media \0screen {
-  .change-profile-image > .row .options .my-teams ul > li .logo {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .change-profile-image > .row .options .my-teams ul > li .logo img {
   width: 100%;
@@ -18204,20 +18117,10 @@ ul.image-list li img {
 }
 .discussion .panel-body ul.users-list li a {
   background-color: #fafafa;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   display: block;
   width: 36px;
   height: 36px;
   text-align: center;
-}
-@media \0screen {
-  .discussion .panel-body ul.users-list li a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .discussion .panel-body ul.users-list li a img {
   max-width: 36px;
