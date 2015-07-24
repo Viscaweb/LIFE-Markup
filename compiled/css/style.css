@@ -6817,9 +6817,6 @@ button.close {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background-clip: border-box;
 }
 @media \0screen {
@@ -6930,9 +6927,6 @@ button.close {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .select-component {
@@ -6971,9 +6965,6 @@ button.close {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .select-component select {
@@ -7024,9 +7015,6 @@ button.close {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   margin-right: 5px;
   font-size: 12px;
   font-family: 'Glyphicons Halflings';
@@ -7093,9 +7081,6 @@ button.close {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   font-family: "LSicons";
 }
 @media \0screen {
@@ -7122,9 +7107,6 @@ button.close {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background-color: #e8e8e8;
   width: 57px;
   height: 24px;
@@ -7146,8 +7128,6 @@ button.close {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
@@ -7291,9 +7271,6 @@ button.close {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .inner-addon input {
@@ -7336,9 +7313,6 @@ button.close {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .label {
@@ -7515,9 +7489,6 @@ button.close {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   behavior: "js/css3pie/PIE.htc";
   border: transparent;
   background-color: #f4f4f4;
@@ -7608,9 +7579,6 @@ button.close {
   -webkit-border-radius: 2px 0 0 2px;
   -moz-border-radius: 2px 0 0 2px;
   border-radius: 2px 0 0 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   color: #878787;
   font-size: 13px -1;
   font-weight: 300;
@@ -7642,9 +7610,6 @@ button.close {
   -webkit-border-radius: 0 2px 2px 0;
   -moz-border-radius: 0 2px 2px 0;
   border-radius: 0 2px 2px 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   height: 36px;
   font-size: 16px;
   outline: none;
@@ -7899,9 +7864,6 @@ button.close {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   behavior: "js/css3pie/PIE.htc";
   padding: 0;
   font-size: 12px;
@@ -7921,9 +7883,6 @@ button.close {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .modal .modal-dialog .modal-content .modal-header {
@@ -7945,9 +7904,6 @@ button.close {
   -webkit-border-radius: 0 0 2px 2px;
   -moz-border-radius: 0 0 2px 2px;
   border-radius: 0 0 2px 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   padding: 20px;
 }
 @media \0screen {
@@ -7974,9 +7930,6 @@ button.close {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   border-color: #f0f0f0;
   position: relative;
   font-size: 13px;
@@ -8211,9 +8164,6 @@ button.close {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   behavior: "js/css3pie/PIE.htc";
   border-right: none;
   border: transparent;
@@ -8227,9 +8177,6 @@ button.close {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -8410,9 +8357,6 @@ button.close {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   width: 30px;
   height: 30px;
   line-height: 20px;
@@ -10188,9 +10132,6 @@ span.dark-icon {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .table.league-selection tbody tr td.functions .btn {
@@ -11929,9 +11870,6 @@ span.sprite-icons.webmaster-border {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   min-width: 85px;
   min-height: 85px;
 }
@@ -11976,9 +11914,6 @@ span.sprite-icons.webmaster-border {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   color: #ffffff;
   display: inline-block;
   height: 28px;
@@ -12669,9 +12604,6 @@ span.sprite-icons.webmaster-border {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   padding: 0 8px;
   border-bottom: 2px solid #efefef;
 }
@@ -13269,9 +13201,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   *::-webkit-scrollbar-thumb {
@@ -13299,9 +13228,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
-  -moz-background-clip: padding !important;
-  -webkit-background-clip: padding-box !important;
-  background-clip: padding-box !important;
   font-weight: 400;
   font-size: 14px;
   background-color: #f9f9f9;
@@ -13338,9 +13264,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   color: #ffffff;
   background-color: #5da400;
   margin-right: 7px;
@@ -13402,9 +13325,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px 0 0 2px;
   -moz-border-radius: 2px 0 0 2px;
   border-radius: 2px 0 0 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   text-transform: uppercase;
 }
 @media \0screen {
@@ -13436,9 +13356,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   margin-right: 7px;
 }
 @media \0screen {
@@ -13721,9 +13638,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .popover.popover-trend,
@@ -13742,9 +13656,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background: #f5f5f5;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
@@ -13820,9 +13731,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .popover.popover-tips .popover-content .tips-list::-webkit-scrollbar-thumb {
@@ -13836,9 +13744,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .popover.popover-score {
@@ -13872,9 +13777,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .popover.popover-standings {
@@ -14429,9 +14331,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .match-timeline .timeline-scroll .penalty-goals .penalty-serie {
@@ -14518,9 +14417,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   cursor: pointer;
   position: absolute;
   width: 20px;
@@ -14554,9 +14450,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .match-timeline .timeline-scroll .team-actions .action {
@@ -14741,9 +14634,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   min-width: 1px;
 }
 @media \0screen {
@@ -14957,9 +14847,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .match-teams-lineups .popover {
@@ -14978,9 +14865,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background: #f5f5f5;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
@@ -15636,9 +15520,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 @media \0screen {
   .head-to-head .teams .team .circle,
@@ -17392,9 +17273,6 @@ main .content .league-list ul li.item-placeholder {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   overflow: hidden;
   position: absolute;
   display: block;
@@ -17420,9 +17298,6 @@ main .content .league-list ul li.item-placeholder {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   left: 50%;
   margin-left: -40px;
   text-align: center;
@@ -17612,9 +17487,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   margin-bottom: 8px;
   width: 104px;
   height: 104px;
@@ -17656,9 +17528,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -17709,9 +17578,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   display: inline-block;
   position: relative;
   border: 3px solid transparent;
@@ -17808,9 +17674,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   height: 52px;
   width: 52px;
   margin-bottom: 5px;
@@ -18355,9 +18218,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   display: block;
   width: 36px;
   height: 36px;
@@ -18998,9 +18858,6 @@ ul.image-list li img {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background: #ffffff;
   padding: 0 0 0 20px;
   margin: 0;

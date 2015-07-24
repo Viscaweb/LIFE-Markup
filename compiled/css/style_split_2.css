@@ -247,9 +247,6 @@
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   padding: 0 8px;
   border-bottom: 2px solid #efefef;
 }
@@ -986,9 +983,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -1022,9 +1016,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
-  -moz-background-clip: padding !important;
-  -webkit-background-clip: padding-box !important;
-  background-clip: padding-box !important;
   font-weight: 400;
   font-size: 14px;
   background-color: #f9f9f9;
@@ -1065,9 +1056,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   color: #ffffff;
   background-color: #5da400;
   margin-right: 7px;
@@ -1144,9 +1132,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px 0 0 2px;
   -moz-border-radius: 2px 0 0 2px;
   border-radius: 2px 0 0 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   text-transform: uppercase;
 }
 
@@ -1184,9 +1169,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   margin-right: 7px;
 }
 
@@ -1532,9 +1514,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -1556,9 +1535,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background: #f5f5f5;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
@@ -1649,9 +1625,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -1667,9 +1640,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -1711,9 +1681,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -2379,9 +2346,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -2482,9 +2446,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   cursor: pointer;
   position: absolute;
   width: 20px;
@@ -2522,9 +2483,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -2743,9 +2701,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   min-width: 1px;
 }
 
@@ -3001,9 +2956,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -3026,9 +2978,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background: #f5f5f5;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
@@ -3833,9 +3782,6 @@ span.glyphicon-star.active {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 @media \0screen {
@@ -5971,9 +5917,6 @@ main .content .league-list ul li.item-placeholder {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   overflow: hidden;
   position: absolute;
   display: block;
@@ -6002,9 +5945,6 @@ main .content .league-list ul li.item-placeholder {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   left: 50%;
   margin-left: -40px;
   text-align: center;
@@ -6233,9 +6173,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   margin-bottom: 8px;
   width: 104px;
   height: 104px;
@@ -6284,9 +6221,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -6346,9 +6280,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   display: inline-block;
   position: relative;
   border: 3px solid transparent;
@@ -6462,9 +6393,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   height: 52px;
   width: 52px;
   margin-bottom: 5px;
@@ -7132,9 +7060,6 @@ ul.image-list li img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   display: block;
   width: 36px;
   height: 36px;
@@ -7920,9 +7845,6 @@ ul.image-list li img {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background: #ffffff;
   padding: 0 0 0 20px;
   margin: 0;
