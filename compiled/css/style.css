@@ -6909,7 +6909,7 @@ button.close {
 }
 .dropdown-menu > li > a .sprite-icons {
   margin-right: 6px;
-  margin-bottom: -5px;
+  vertical-align: middle;
 }
 .dropdown-menu > li > a span.icon {
   color: #a8a8a8;
