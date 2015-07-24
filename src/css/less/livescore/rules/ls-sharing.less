@@ -29,19 +29,26 @@
     
   }
   .likes{
+
+	.icon{
+	  .border-radius(15px);
+	  color: @ls-light-color;
+	  display: inline-block;
+	  height: 28px;
+	  width: 28px;
+	  padding: 1px 4px;
+	  font-size: @ls-social-icon-size + 2;
+	  margin-right: 5px;
+	}
+
+	.fb, .tw, .gp {
+	  padding: 4px 0;
+	}
+
   	.fb{
-  		padding: 4px 0;
 
   		.icon{
-  			.border-radius(15px);
-  			color: @ls-light-color;
-  			display: inline-block;
-  			height: 28px;
-  			width: 28px;
   			background-color: @ls-fb-icon;
-  			padding: 1px 4px;
-  			font-size: @ls-social-icon-size + 2;
-  			margin-right: 5px;
   			
   			&:hover {
 	            background-color: darken(@ls-fb-icon, 10%);
@@ -55,18 +62,9 @@
   		}
   	}
   	.tw{
-  		padding: 4px 0;
 
   		.icon{
-  			.border-radius(15px);
-  			color: @ls-light-color;
-  			display: inline-block;
-  			height: 28px;
-  			width: 28px;
   			background-color: @ls-twitter-icon;
-  			padding: 2px 5px;
-  			font-size: @ls-social-icon-size;
-  			margin-right: 5px;
   			
   			&:hover {
 	            background-color: darken(@ls-twitter-icon, 10%);
@@ -80,18 +78,9 @@
   		}
   	}  	
   	.gp{
-  		padding: 4px 0;
 
   		.icon{
-  			.border-radius(15px);
-  			color: @ls-light-color;
-  			display: inline-block;
-  			height: 28px;
-  			width: 28px;
   			background-color: @ls-gp-icon;
-  			padding: 2px 5px;
-  			font-size: @ls-social-icon-size;
-  			margin-right: 5px;
   			
   			&:hover {
 	            background-color: darken(@ls-gp-icon, 10%);

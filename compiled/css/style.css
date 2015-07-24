@@ -11987,10 +11987,7 @@ span.sprite-icons.webmaster-border {
 .sharing #___plusone_0 iframe {
   height: 64px !important;
 }
-.sharing .likes .fb {
-  padding: 4px 0;
-}
-.sharing .likes .fb .icon {
+.sharing .likes .icon {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -12001,17 +11998,24 @@ span.sprite-icons.webmaster-border {
   display: inline-block;
   height: 28px;
   width: 28px;
-  background-color: #4a6baa;
   padding: 1px 4px;
   font-size: 20px;
   margin-right: 5px;
 }
 @media \0screen {
-  .sharing .likes .fb .icon {
+  .sharing .likes .icon {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
+}
+.sharing .likes .fb,
+.sharing .likes .tw,
+.sharing .likes .gp {
+  padding: 4px 0;
+}
+.sharing .likes .fb .icon {
+  background-color: #4a6baa;
 }
 .sharing .likes .fb .icon:hover {
   background-color: #3b5586;
@@ -12021,31 +12025,8 @@ span.sprite-icons.webmaster-border {
   top: 2px;
   width: 140px;
 }
-.sharing .likes .tw {
-  padding: 4px 0;
-}
 .sharing .likes .tw .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
   background-color: #00b9f3;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-@media \0screen {
-  .sharing .likes .tw .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .sharing .likes .tw .icon:hover {
   background-color: #0092c0;
@@ -12055,31 +12036,8 @@ span.sprite-icons.webmaster-border {
   top: 1px;
   width: 140px;
 }
-.sharing .likes .gp {
-  padding: 4px 0;
-}
 .sharing .likes .gp .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
   background-color: #e75f46;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-@media \0screen {
-  .sharing .likes .gp .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .sharing .likes .gp .icon:hover {
   background-color: #dd3b1d;
@@ -12826,126 +12784,6 @@ span.sprite-icons.webmaster-border {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 11px;
-}
-.social-networks-block.panel > .panel-body > .row {
-  margin: 0 0 12px;
-}
-.social-networks-block.panel > .panel-body > .row > div {
-  padding: 0;
-}
-.social-networks-block.panel > .panel-body > .row > div img {
-  width: 100%;
-}
-.social-networks-block.panel > .panel-body .likes > div {
-  margin-bottom: 10px;
-}
-.social-networks-block.panel > .panel-body .likes .fb {
-  padding: 4px 0;
-  cursor: default;
-}
-.social-networks-block.panel > .panel-body .likes .fb .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
-  background-color: #4a6baa;
-  padding: 1px 4px;
-  font-size: 20px;
-  margin-right: 5px;
-}
-@media \0screen {
-  .social-networks-block.panel > .panel-body .likes .fb .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-.social-networks-block.panel > .panel-body .likes .fb .icon:hover {
-  background-color: #3b5586;
-}
-.social-networks-block.panel > .panel-body .likes .fb iframe {
-  position: relative;
-  top: 2px;
-  width: 140px;
-  margin-bottom: 0;
-}
-.social-networks-block.panel > .panel-body .likes .tw {
-  padding: 4px 0;
-  cursor: default;
-}
-.social-networks-block.panel > .panel-body .likes .tw .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
-  background-color: #00b9f3;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-@media \0screen {
-  .social-networks-block.panel > .panel-body .likes .tw .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-.social-networks-block.panel > .panel-body .likes .tw .icon:hover {
-  background-color: #0092c0;
-}
-.social-networks-block.panel > .panel-body .likes .tw iframe {
-  position: relative;
-  top: 1px;
-  width: 140px;
-  margin-bottom: 0;
-}
-.social-networks-block.panel > .panel-body .likes .gp {
-  padding: 4px 0;
-  cursor: default;
-}
-.social-networks-block.panel > .panel-body .likes .gp .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
-  background-color: #e75f46;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-@media \0screen {
-  .social-networks-block.panel > .panel-body .likes .gp .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-.social-networks-block.panel > .panel-body .likes .gp .icon:hover {
-  background-color: #dd3b1d;
-}
-.social-networks-block.panel > .panel-body .likes .gp iframe {
-  position: relative;
-  top: 3px;
-  width: 140px;
-  margin-bottom: 0;
 }
 .news-block.panel .main-news a,
 .news-block.panel .sub-news a {

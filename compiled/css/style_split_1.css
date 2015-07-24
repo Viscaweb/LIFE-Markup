@@ -14772,11 +14772,7 @@ span.sprite-icons.webmaster-border {
   height: 64px !important;
 }
 
-.sharing .likes .fb {
-  padding: 4px 0;
-}
-
-.sharing .likes .fb .icon {
+.sharing .likes .icon {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -14787,18 +14783,27 @@ span.sprite-icons.webmaster-border {
   display: inline-block;
   height: 28px;
   width: 28px;
-  background-color: #4a6baa;
   padding: 1px 4px;
   font-size: 20px;
   margin-right: 5px;
 }
 
 @media \0screen {
-  .sharing .likes .fb .icon {
+  .sharing .likes .icon {
     behavior: url("js/css3pie/PIE.htc");
     position: relative;
     zoom: 1;
   }
+}
+
+.sharing .likes .fb,
+.sharing .likes .tw,
+.sharing .likes .gp {
+  padding: 4px 0;
+}
+
+.sharing .likes .fb .icon {
+  background-color: #4a6baa;
 }
 
 .sharing .likes .fb .icon:hover {
@@ -14811,33 +14816,8 @@ span.sprite-icons.webmaster-border {
   width: 140px;
 }
 
-.sharing .likes .tw {
-  padding: 4px 0;
-}
-
 .sharing .likes .tw .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
   background-color: #00b9f3;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-
-@media \0screen {
-  .sharing .likes .tw .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .sharing .likes .tw .icon:hover {
@@ -14850,33 +14830,8 @@ span.sprite-icons.webmaster-border {
   width: 140px;
 }
 
-.sharing .likes .gp {
-  padding: 4px 0;
-}
-
 .sharing .likes .gp .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #ffffff;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
   background-color: #e75f46;
-  padding: 2px 5px;
-  font-size: 18px;
-  margin-right: 5px;
-}
-
-@media \0screen {
-  .sharing .likes .gp .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .sharing .likes .gp .icon:hover {
@@ -15401,4 +15356,9 @@ span.sprite-icons.webmaster-border {
 
 .top-match-block .score-board .match-info {
   bottom: 21px;
+}
+
+.top-match-block .score-board.live .match-info .block div.time {
+  background-repeat: no-repeat;
+  background-position: 28px center;
 }
