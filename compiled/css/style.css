@@ -10774,6 +10774,13 @@ fieldset[disabled] .btn-twitter.active {
   left: 0;
   min-width: 100%;
 }
+.dropdown-menu .comment-number {
+  top: 2px;
+}
+.dropdown-menu li > a:hover .comment-number,
+.dropdown-menu li > a:focus .comment-number {
+  color: #5da400;
+}
 /* Livescores Modals */
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
   padding: 0;
@@ -13058,7 +13065,8 @@ span.glyphicon-star.active {
   color: #ffc600 !important;
 }
 .comment-number {
-  color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
   font-size: 8px;
   line-height: 8px;
   font-weight: 600;

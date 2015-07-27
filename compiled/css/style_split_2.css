@@ -1,3 +1,24 @@
+.match-slider-inverse .toggle-right {
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 25px;
+  display: table-cell;
+  background: #313536;
+}
+
+.match-slider-inverse .toggle-right:hover {
+  background-color: #363a3c;
+}
+
+.top-match-block .top-match {
+  cursor: pointer;
+  padding: 15px 0 8px;
+  text-align: center;
+  border-bottom: 2px solid #efefef;
+}
+
 .top-match-block .top-match .shields img {
   max-height: 28px;
   max-width: 28px;
@@ -964,7 +985,8 @@ span.glyphicon-star.active {
 }
 
 .comment-number {
-  color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
   font-size: 8px;
   line-height: 8px;
   font-weight: 600;
