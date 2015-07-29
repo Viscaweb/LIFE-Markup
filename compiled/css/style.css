@@ -11922,6 +11922,12 @@ span.sprite-icons.webmaster-border {
 .sharing #___plusone_0 iframe {
   height: 64px !important;
 }
+.sharing .likes .social-button {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 140px;
+  padding-top: 4px;
+}
 .sharing .likes .icon {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -11933,6 +11939,7 @@ span.sprite-icons.webmaster-border {
   padding: 1px 4px;
   font-size: 20px;
   margin-right: 5px;
+  vertical-align: middle;
 }
 @media \0screen {
   .sharing .likes .icon {
@@ -11944,7 +11951,7 @@ span.sprite-icons.webmaster-border {
 .sharing .likes .fb,
 .sharing .likes .tw,
 .sharing .likes .gp {
-  padding: 4px 0;
+  padding: 8px 0;
 }
 .sharing .likes .fb .icon {
   background-color: #4a6baa;
@@ -11952,32 +11959,17 @@ span.sprite-icons.webmaster-border {
 .sharing .likes .fb .icon:hover {
   background-color: #3b5586;
 }
-.sharing .likes .fb iframe {
-  position: relative;
-  top: 2px;
-  width: 140px;
-}
 .sharing .likes .tw .icon {
   background-color: #00b9f3;
 }
 .sharing .likes .tw .icon:hover {
   background-color: #0092c0;
 }
-.sharing .likes .tw iframe {
-  position: relative;
-  top: 1px;
-  width: 140px;
-}
 .sharing .likes .gp .icon {
   background-color: #e75f46;
 }
 .sharing .likes .gp .icon:hover {
   background-color: #dd3b1d;
-}
-.sharing .likes .gp iframe {
-  position: relative;
-  top: 3px;
-  width: 140px;
 }
 .sharing p {
   font-size: 12px;
