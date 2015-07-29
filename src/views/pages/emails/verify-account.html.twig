@@ -1,7 +1,29 @@
 {% extends "layouts/email_base.html.twig" %}
 {% set basePath = '../' %}
 
+{% set mailContent =
+    {
+    'title': 'hello all!',
+    'block_2_logo_image': 'logo-whatsthescore.png',
+    'image_block_18_1': 'bg-livescore.jpg',
+    'block_18_2_title': 'Please verify your email address',
+    'block_18_2_message': 'Click the button below or use the following copy paste link to confirm this email address:',
+    'block_18_2_button': 'VERIFY NOW',
+    'block_18_2_link': 'https://www.whatsthescore.com/EmailVerification.action?hash=42b8236d5dfa60
+35ff42699d9bd020e5&username=sebaumonier&email_name=verifyEmailAddressSte
+ncil-1001A&email_guid=e7b81743-0ed7-4390-ba40-cd6a0641fd7a&email_link=button_url',
+    'block_20_logo_image': 'logo-whatsthescore.png'
+    }
+%}
+
 
 {% block content %}
-    {% include 'blocks/emails/header.html.twig' %}
+    {% include 'blocks/emails/block_2_logo_menu.html.twig' %}
+    {% include 'blocks/emails/block_18-1_title_background_image.html.twig' %}
+    {% include 'blocks/emails/block_18-2_content_background_image.html.twig' %}
+    {% include 'blocks/emails/block_19_shadow_space.html.twig' %}
+    {% include 'blocks/emails/block_20_logo_footer.html.twig' %}
+    {% include 'blocks/emails/block_21_footer_social.html.twig' %}
+    {% include 'blocks/emails/block_22_footer_unsubscribe.html.twig' %}
+    {% include 'blocks/emails/block_23_footer_all_rights_reserved.html.twig' %}
 {% endblock %}

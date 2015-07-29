@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Avana</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,100,400" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/ty9dfvLAziwdqQ2dHoyjphkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/frNV30OaYdlFRtH2VnZZdhkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/gwVJDERN2Amz39wrSoZ7FxkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/aZMswpodYeVhtRvuABJWvBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/VvXUGKZXbHtX_S_VCTLpGhkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/e7MeVAyvogMqFwwl61PKhBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: 300;
+            font-weight: 100;
+            src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/2tsd397wLxj96qwHyNIkxHYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ffffff;}
+        .ExternalClass {width: 100%; background-color: #ffffff;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span,
+        .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        #outlook a{ padding:0;}
+        body{width: 100%; height: 100%; background-color: #ffffff; margin:0; padding:0;}
+        body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+        html{width:100%;}
+        table {mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
+        table td {border-collapse:collapse;}
+        table p{margin:0;}
+        br, strong br, b br, em br, i br { line-height:100%; }
+        div, p, a, li, td { -webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; }
+        span a { text-decoration: none !important;}
+        a{ text-decoration: none !important; }
+        ul{list-style: none; margin:0; padding:0;}
+        img{height: auto !important; line-height: 100%; outline: none; text-decoration: none; display:block !important; }
+        img{ -ms-interpolation-mode:bicubic;}
+        .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited,
+        .yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important;}
+        /*mailChimp class*/
+        .default-edit-image{
+            height:20px;
+        }
+        .tpl-repeatblock {
+            padding: 0px !important;
+            border: 1px dotted rgba(0,0,0,0.2);
+        }
+        @media only screen and (max-width: 640px){
+            /* mobile setting */
+            table[class="container"]{width:100%!important; max-width:100%!important; min-width:100%!important;
+                padding-left:20px!important; padding-right:20px!important; text-align: center!important; clear: both;}
+            td[class="container"]{width:100%!important; padding-left:20px!important; padding-right:20px!important; clear: both;}
+            table[class="full-width"]{width:100%!important; max-width:100%!important; min-width:100%!important; clear: both;}
+            table[class="full-width-center"] {width: 100%!important; max-width:100%!important; min-width:100%!important; text-align: center!important; clear: both; }
+            table[class="col-3"]{width:30.35%!important; max-width:100%!important;}
+            table[class="col-2"]{width:48.21%!important; max-width:100%!important;}
+            /* image */
+            td[class="image-full-width"] img{width:100% !important; height:auto !important; max-width:100% !important;}
+            /* helper */
+            table[class="space-w-20"]{width:3.5%!important; max-width:20px!important; min-width:3.5% !important;}
+            table[class="space-w-25"]{width:4.4%!important; max-width:25px!important; min-width:4.4% !important;}
+            *[class="h-20"]{height:20px;}
+            *[class="h-30"]{height:30px;}
+            *[class="h-40"]{height:40px;}
+            *[class="remove-640"]{display:none !important;}
+        }
+        @media only screen and (max-width: 479px){
+            /* mobile setting */
+            table[class="container"]{width:100%!important; max-width:100%!important; min-width:124px!important;
+                padding-left:15px!important; padding-right:15px!important; text-align: center!important; clear: both;}
+            td[class="container"]{width:100%!important; padding-left:15px!important; padding-right:15px!important; text-align: center!important; clear: both;}
+            table[class="full-width"]{width:100%!important; max-width:100%!important; min-width:124px!important; clear: both;}
+            table[class="full-width-center"] {width: 100%!important; max-width:100%!important; min-width:124px!important; text-align: center!important; clear: both; }
+            table[class="col-3"]{width:100%!important; max-width:100%!important; text-align: center!important; clear: both;}
+            table[class="col-2"]{width:100%!important; max-width:100%!important; text-align: center!important; clear: both;}
+            /* image */
+            td[class="image-full-width"] img{width:100% !important; height:auto !important; max-width:100% !important; min-width:124px !important;}
+            /* halper */
+            table[class="space-w-20"]{width: 100%!important; max-width:100%!important;  min-width:100% !important;}
+            table[class="space-w-25"]{width:100%!important; max-width:100%!important; min-width:100% !important;}
+            *[class="remove-479"]{display:none !important;}
+        }
+    </style>
+</head>    
+</head>
+<body style="font-size:12px; width:100%; height:100%;">
+
+
+    <table id="mainStructure" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#f4f3f3;">
+            <!-- START LAYOUT-1 TOP BAR ( VIEW ONLINE AND SOCIAL ) -->
+<tr>
+    <td valign="top" align="center" style="background-color:#5da400;">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#5da400; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="30" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container -->
+            <tr>
+                <td valign="top" align="center">
+                    <table width="560" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+                                    <tr>
+                                        <td align="center" style="font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; font-weight: 300; text-align: center; color: rgb(255, 255, 255); word-break: break-word;" >
+                                            <span style="font-weight: 300;">can't view click <span style="font-weight: bold;"><a href="#" style="color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;">View Online</a></span></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="20" >
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td valign="top" align="center">
+                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                                    <tr>
+                                        <td height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-facebook.png" width="30" alt="icon-facebook" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px; " height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-twitter.png" width="30" alt="icon-twitter" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left: 5px; position: relative;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-googleplus.png" width="30" alt="icon-googleplus" style="max-width: 30px; display: block !important; cursor: pointer;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left: 5px; position: relative;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-rss.png" width="30" alt="icon-rss" style="max-width: 30px; display: block !important; cursor: pointer;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-youtube.png" width="30" alt="icon-youtube" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-vimeo.png" width="30" alt="icon-vimeo" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-pinterest.png" width="30" alt="icon-pinterest" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-linkedIn.png" width="30" alt="icon-Linkedin" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="30" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-instagram.png" width="30" alt="icon-instagram" style="max-width:30px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container -->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="30" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!-- END LAYOUT-1 TOP BAR ( VIEW ONLINE AND SOCIAL ) -->    <!--START LAYOUT-2 LOGO AND MENU -->
+<tr>
+    <td align="center" valign="top" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width: 600px; padding-left: 20px; padding-right: 20px; background-color: rgb(244, 243, 243);">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="30" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="middle">
+                                <!-- start logo -->
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center">
+                                    <tr>
+                                        <td align="center" valign="top" style="position: relative;">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/" width="auto" style="max-width: 100%; display: block !important; cursor: pointer;" alt="logo-top" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end logo -->
+                                <!-- height space for mobile -->
+                                <table width="1" border="0" cellpadding="0" cellspacing="0" align="left" class="h-30" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" class="h-30" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- height space for mobile -->
+                                <!-- start menu -->
+                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333;">
+																<a href="#" style="color: rgb(51, 51, 51); text-decoration: none;">About Us &nbsp;&nbsp;&nbsp;&nbsp;</a>
+																<a href="#" style="color: rgb(51, 51, 51); text-decoration: none;">Feature&nbsp;&nbsp;&nbsp;&nbsp;</a>
+																<a href="#" style="color: rgb(51, 51, 51); text-decoration: none;">Contact Us</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end menu -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="30" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-2 LOGO AND MENU -->    <!--START LAYOUT-3 HEADER TITLE  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#ffffff;">
+            <!-- start bar color -->
+            <tr>
+                <td valign="top">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="background-color:#5da400;">
+                        <tr>
+                            <td height="10" valign="top">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end bar color -->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <tr>
+                <td valign="top">
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width:600px;  padding-left:20px; padding-right:20px;">
+                        <!-- start content container-->
+                        <tr>
+                            <td valign="top">
+                                <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                                    <tr>
+                                        <td valign="top">
+                                            <!-- start content -->
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                                                <tr>
+                                                    <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+																		<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;"><span style="color:#5da400;">#1</span> EMAIL TEMPLATES hello all!</a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                                <!-- start space -->
+                                                <tr>
+                                                    <td valign="top" height="20" >
+                                                    </td>
+                                                </tr>
+                                                <!-- end space -->
+                                                <tr>
+                                                    <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Curabitur aliquet, diam vel fringilla
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- end content -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end content container-->
+                    </table>
+                </td>
+            </tr>
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-3 HEADER TITLE -->    <!--START LAYOUT-4 HEADER IMAGE  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#ffffff;">
+            <!-- start image -->
+            <tr>
+                <td valign="top" class="image-full-width" style="position: relative;">
+                    <img src="../img/emails/header-image.jpg" width="600" alt="header-image" style="max-width: 600px; display: block !important; cursor: pointer;" border="0" hspace="0" vspace="0">
+                </td>
+            </tr>
+            <!-- end image-->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-4 HEADER IMAGE -->    <!--START LAYOUT-5 TITLE / DIVIDER-->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <!-- start content -->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                                    <tr>
+                                        <td align="center" style="font-size: 24px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">
+                                                                    AWSOME <span style="color:#5da400;">BUILDER</span>
+                                                                </a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="10" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																DRAG &amp; DROP
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end content -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start divider  -->
+            <tr>
+                <td valign="top">
+                    <table width="45" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; height:3px; background-color:#5da400;">
+                        <tr>
+                            <td height="3" valign="top">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end divider  -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-5 TITLE / DIVIDER  -->    <!--START LAYOUT-6 ( 3-COL ICON / TEXT )  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top" align="center">
+                                <!-- start col left -->
+                                <table width="170" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-home.png" width="66" style="max-width:170px; display:block!important;" alt="icon-home" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">Family</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet consectetur
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col left -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 25px -->
+                                <table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="25" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 25px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col center -->
+                                <table width="170" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-lamp.png" width="66" style="max-width:170px; display:block!important;" alt="icon-lamp" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">Solution</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet consectetur
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col center -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 25px -->
+                                <table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="25" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 25px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col right -->
+                                <table width="170" align="right" border="0" cellpadding="0" cellspacing="0" class="col-3">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon-setting.png" width="66" style="max-width:170px; display:block!important;" alt="icon-setting" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">customize</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet consectetur
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col right -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-6 ( 3-COL ICON / TEXT )   -->    <!--START LAYOUT-7 ( 2-COL IMAGE-LEFT / TEXT-RIGHT )  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#5da400; ">
+            <tr>
+                <td valign="top" align="center">
+                    <!-- start col left -->
+                    <table width="300" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width">
+                        <tr>
+                            <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                <img src="../img/emails/image-1.jpg" width="300" style="max-width: 300px; display: block !important; cursor: pointer;" alt="image-1" border="0" hspace="0" vspace="0">
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start col left -->
+                    <!-- start space width for left-right content -->
+                    <table width="1" border="0" cellpadding="0" cellspacing="0" align="left" class="remove-640" style="font-size: 0;line-height: 0;border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                        <tr>
+                            <td width="1" height="1" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                <p style="padding-left: 25px;">&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start space width for left-right content -->
+                    <!-- start col right -->
+                    <table width="275" align="right" border="0" cellpadding="0" cellspacing="0" class="container" style="padding-right:25px;">
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff;">
+													<a href="#" style="font-size: 22px; line-height: 32px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;">RESPONSIVE EMAIL </a>
+													<br>
+													<span style="font-size:12px; color: #ffffff; font-weight:300;">AUTHOR : AKEDODEE</span>
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff; font-weight:300;">
+													Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam.
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr  dup="0">
+                            <td valign="top">
+                                <!-- start button -->
+                                <table width="auto" border="0" align="left" cellpadding="0" cellspacing="0" class="full-width">
+                                    <tr>
+                                        <td valign="top" style="padding:5px;">
+                                            <table width="auto" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="auto" align="center" valign="middle" height="40" style="border-radius: 3px; font-size: 14px; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: 300; padding-left: 30px; padding-right: 30px; word-break: break-word; background-color: #4f9600; background-clip: padding-box;" >
+																		<span style="color: #ffffff; font-weight: 300;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: 300; text-decoration: none;">
+                                                                                READ MORE
+                                                                            </a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end button -->
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                    </table>
+                    <!-- start col right -->
+                </td>
+            </tr>
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-7 ( 2-COL IMAGE-LEFT / TEXT-RIGHT )   -->    <!--START LAYOUT-8 ( 2-COL IMAGE-RIGHT / TEXT-LEFT )   -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#5da400;">
+            <tr>
+                <td valign="top" align="right">
+                    <!-- start col right -->
+                    <table width="300" align="right" border="0" cellpadding="0" cellspacing="0" class="full-width">
+                        <tr>
+                            <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                <img src="../img/emails/image-2.jpg" width="300" style="max-width: 300px; display: block !important; cursor: pointer;" alt="image-2" border="0" hspace="0" vspace="0">
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start col right -->
+                    <!-- start space width for left-right content -->
+                    <table width="1" border="0" cellpadding="0" cellspacing="0" align="right" class="remove-640" style="font-size: 0;line-height: 0;border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                        <tr>
+                            <td width="1" height="1" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                <p style="padding-left: 25px;">&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start space width for left-right content -->
+                    <!-- start col left -->
+                    <table width="275" align="left" border="0" cellpadding="0" cellspacing="0" class="container" style="padding-left:25px;">
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25" >
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff;">
+													<a href="#" style="font-size: 22px; line-height: 32px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;">EMAIL MARKETING </a>
+													<br>
+													<span style="font-size:12px; color: #ffffff; font-weight:300;">UNLIMITED CREATE TEMPLATE</span>
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff; font-weight:300;">
+													Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam.
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr  dup="0">
+                            <td valign="top">
+                                <!-- start button -->
+                                <table width="auto" border="0" align="left" cellpadding="0" cellspacing="0" class="full-width">
+                                    <tr>
+                                        <td valign="top" style="padding:5px;">
+                                            <table width="auto" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="auto" align="center" valign="middle" height="40" style="border-radius: 3px; font-size: 14px; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: 300; padding-left: 30px; padding-right: 30px; word-break: break-word; background-color: #4f9600; background-clip: padding-box;" >
+																		<span style="color: #ffffff; font-weight: 300;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: 300; text-decoration: none;">
+                                                                                READ MORE
+                                                                            </a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end button -->
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                    </table>
+                    <!-- start col left -->
+                </td>
+            </tr>
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-8 ( 2-COL IMAGE-RIGHT / TEXT-LEFT )   -->    <!--START LAYOUT-9 TITLE AND CONTENT  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <!-- start content -->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                                    <tr>
+                                        <td align="center" style="font-size: 24px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">
+                                                                    MAILBUILDS
+                                                                </a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="10">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																CREATE - SAVE - EXPORT
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Curabitur aliquet, diam vel fringilla
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end content -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40">
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start divider  -->
+            <tr>
+                <td valign="top">
+                    <table width="45" height="3" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; height:3px; background-color:#5da400;">
+                        <tr>
+                            <td height="3" valign="top">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end divider  -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-9 TITLE AND CONTENT  -->    <!--START LAYOUT-10 ( 2-COL  IMAGE / TEXT )  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top" align="center">
+                                <!-- start col left -->
+                                <table width="270" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/image-3.jpg" width="270" style="max-width: 270px; display: block !important; cursor: pointer;" alt="image-3" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="20" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: 300; text-decoration: none;">DRAG &amp; DROP</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="20" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col left -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 20px -->
+                                <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="20" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 20px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col right -->
+                                <table width="270" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/image-4.jpg" width="270" style="max-width: 270px; display: block !important; cursor: pointer;" alt="image-4" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="20" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: 300; text-decoration: none;">CHANGE COLORS</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="20" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col right -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-10 ( 2-COL  IMAGE / TEXT )   -->    <!--START LAYOUT-11 ( 3-COL IMAGE / TEXT )  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top" align="center">
+                                <!-- start col left -->
+                                <table width="170" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/image-5.jpg" width="170" style="max-width: 170px; display: block !important; cursor: pointer;" alt="image-5" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: 300; text-decoration: none;">HTML</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet consectetur
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col left -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 25px -->
+                                <table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="25" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 25px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col center -->
+                                <table width="170" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/image-6.jpg" width="170" style="max-width:170px; display:block!important;" alt="image-6" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: 300; text-decoration: none;">MAILCHIMP</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet consectetur
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col center -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 25px -->
+                                <table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="25" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 25px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col right -->
+                                <table width="170" align="right" border="0" cellpadding="0" cellspacing="0" class="col-3">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/image-7.jpg" width="170" style="max-width:170px; display:block!important;" alt="image-7" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:300;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: 300; text-decoration: none;">CAMPAIGN</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #888888; font-weight:300;">
+																Lorem ipsum dolor sit amet consectetur
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col right -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40">
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-11 ( 3-COL IMAGE / TEXT )   -->    <!--START LAYOUT-12 ( 2-COL 4-IMAGE-LEFT / TEXT-RIGHT )  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#393e44;">
+            <tr>
+                <td valign="top" align="center">
+                    <!-- start col left -->
+                    <table width="300" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <img src="../img/emails/image-8.jpg" width="150" style="max-width: 100%; display: block !important; cursor: pointer;" alt="image-8" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <img src="../img/emails/image-9.jpg" width="150" style="max-width: 100%; display: block !important; cursor: pointer;" alt="image-9" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                <![endif]-->
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width">
+                                            <img src="../img/emails/image-10.jpg" width="150" style="max-width:100%; display:block!important;" alt="image-10" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <img src="../img/emails/image-11.jpg" width="150" style="max-width: 100%; display: block !important; cursor: pointer;" alt="image-11" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start col left -->
+                    <!-- start space width for left-right content -->
+                    <table width="1" border="0" cellpadding="0" cellspacing="0" align="left" class="remove-640" style="font-size: 0;line-height: 0;border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                        <tr>
+                            <td width="1" height="1" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                <p style="padding-left: 25px;">&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start space width for left-right content -->
+                    <!-- start col right -->
+                    <table width="275" align="right" border="0" cellpadding="0" cellspacing="0" class="container" style="padding-right:25px;">
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff;">
+													<a href="#" style="font-size: 24px; line-height: 32px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;">THE ICON</a>
+													<br>
+													<span style="font-size:14px; color: #ffffff; font-weight:300;">GRAPHIC DESIGN</span>
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff; font-weight:300;">
+													Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam.
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr  dup="0">
+                            <td valign="top">
+                                <!-- start button -->
+                                <table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" class="full-width" style="margin:0 auto;">
+                                    <tr>
+                                        <td valign="top" style="padding:5px;">
+                                            <table width="auto" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="auto" align="center" valign="middle" height="40" style="border-radius: 3px; font-size: 14px; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: 300; padding-left: 30px; padding-right: 30px; word-break: break-word; background-color: #5da400; background-clip: padding-box;" >
+																		<span style="color: #ffffff; font-weight: 300;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: 300; text-decoration: none;">
+                                                                                VIEW ALL
+                                                                            </a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end button -->
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                    </table>
+                    <!-- start col right -->
+                </td>
+            </tr>
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-12 ( 2-COL 4-IMAGE-LEFT / TEXT-RIGHT )   -->    <!--START LAYOUT-13 ( 2-COL 4-IMAGE-RIGHT / TEXT-LEFT )  -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#393e44;">
+            <tr>
+                <td valign="top" align="center">
+                    <!-- start col right -->
+                    <table width="300" align="right" border="0" cellpadding="0" cellspacing="0" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <img src="../img/emails/image-12.jpg" width="150" style="max-width: 100%; display: block !important; cursor: pointer;" alt="image-12" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width">
+                                            <img src="../img/emails/image-13.jpg" width="150" style="max-width:100%; display:block!important;" alt="image-13" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                <![endif]-->
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                            <img src="../img/emails/image-14.jpg" width="150" style="max-width: 100%; display: block !important; cursor: pointer;" alt="image-14" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <table width="50%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="top" class="image-full-width">
+                                            <img src="../img/emails/image-15.jpg" width="150" style="max-width:100%; display:block!important;" alt="image-15" border="0" hspace="0" vspace="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start col right -->
+                    <!-- start space width for left-right content -->
+                    <table width="1" border="0" cellpadding="0" cellspacing="0" align="right" class="remove-640" style="font-size: 0;line-height: 0;border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                        <tr>
+                            <td width="1" height="1" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                <p style="padding-left: 25px;">&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- start space width for left-right content -->
+                    <!-- start col left -->
+                    <table width="275" align="left" border="0" cellpadding="0" cellspacing="0" class="container" style="padding-left:25px;">
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25" >
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff;">
+													<a href="#" style="font-size: 24px; line-height: 32px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;">FLAT ICON</a>
+													<br>
+													<span style="font-size:14px; color: #ffffff; font-weight:300;">FLAT ICON DESIGN</span>
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr>
+                            <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+												<span style="text-decoration: none; color: #ffffff; font-weight:300;">
+													Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam.
+												</span>
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="15">
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                        <tr  dup="0">
+                            <td valign="top">
+                                <!-- start button -->
+                                <table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" class="full-width" style="margin:0 auto;">
+                                    <tr>
+                                        <td valign="top" style="padding:5px;">
+                                            <table width="auto" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="auto" align="center" valign="middle" height="40" style="border-radius: 3px; font-size: 14px; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: 300; padding-left: 30px; padding-right: 30px; word-break: break-word; background-color: #5da400; background-clip: padding-box;" >
+																		<span style="color: #ffffff; font-weight: 300;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: 300; text-decoration: none;">
+                                                                                VIEW ALL
+                                                                            </a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end button -->
+                            </td>
+                        </tr>
+                        <!-- start space -->
+                        <tr>
+                            <td valign="top" height="25" >
+                            </td>
+                        </tr>
+                        <!-- end space -->
+                    </table>
+                    <!-- start col left -->
+                </td>
+            </tr>
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-13 ( 2-COL 4-IMAGE-RIGHT / TEXT-LEFT )   -->    <!--START LAYOUT-14 ( 2-COL FEATURE )-->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top" align="center">
+                                <!-- start col left -->
+                                <table width="270" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2">
+                                    <tr  dup="0">
+                                        <td valign="top">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" style="padding-top:5px; padding-bottom:5px;">
+                                                <tr>
+                                                    <td align="left" valign="top" width="29" style="padding-right:20px;">
+                                                        <table width="29" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                            <tr valign="top">
+                                                                <td align="left" valign="middle" style="position: relative;">
+                                                                    <img src="../img/emails/icon-mobile.png" width="40" style="max-width: 40px; display: block !important; cursor: pointer;" alt="icon-mobile" border="0" hspace="0" vspace="0">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+																		<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">
+                                                                                Mobile Fully
+                                                                            </a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="20" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                                <tr>
+                                                    <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+																		<span style="text-decoration: none; color: #888888; font-weight:300;">
+																			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores.
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col left -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 20px -->
+                                <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="20" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 20px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col right -->
+                                <table width="270" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2">
+                                    <tr  dup="0">
+                                        <td valign="top">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" style="padding-top:5px; padding-bottom:5px;">
+                                                <tr>
+                                                    <td align="left" valign="top" width="29" style="padding-right:20px;">
+                                                        <table width="29" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                            <tr valign="top">
+                                                                <td align="left" valign="middle" style="position: relative;">
+                                                                    <img src="../img/emails/icon-heart.png" width="40" style="max-width: 40px; display: block !important; cursor: pointer;" alt="icon-heart" border="0" hspace="0" vspace="0">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+																		<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">
+                                                                                Customer love it
+                                                                            </a>
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="20">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                                <tr>
+                                                    <td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+																		<span style="text-decoration: none; color: #888888; font-weight:300;">
+																			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores.
+																		</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col right -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-14 ( 2-COL FEATURE )-->    <!--START LAYOUT-15 ( QUOTE )-->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20">
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td style="width:2px; background-color:#5da400;">
+                                <table width="5" border="0" cellspacing="0" cellpadding="0" align="left">
+                                    <tr>
+                                        <td valign="top" height="100%">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top">
+                                <table border="0" cellspacing="0" cellpadding="0" align="left" style="background-color:#f7f6f6;  padding:20px;">
+                                    <tr>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">
+                                                                    RECOMMEND
+                                                                </a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="15" style="font-size:0; line-height:0;">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum. Lorem ipsum
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--START LAYOUT-15 ( QUOTE )-->    <!--START LAYOUT-16 ( ICON + TITLE )-->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr  dup="0">
+                            <td valign="top" align="center">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" style="padding-top:5px; padding-bottom:5px;">
+                                    <tr>
+                                        <td align="left" valign="top" width="29" style="padding-right:20px;">
+                                            <table width="29" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                <tr valign="top">
+                                                    <td align="left" valign="middle" style="position: relative;">
+                                                        <img src="../img/emails/icon-team.png" width="40" style="max-width: 40px; display: block !important; cursor: pointer;" alt="icon-team" border="0" hspace="0" vspace="0">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">
+                                                                    OUR DEVELOPER TEAM
+                                                                </a>
+															</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20">
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-16 ( ICON + TITLE )-->    <!--END LAYOUT-17 ( 4-COL 4-IMAGE / TEXT ) -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <!-- start col left -->
+                                <table width="270" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width">
+                                    <tr>
+                                        <td valign="top">
+                                            <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                                        <img src="../img/emails/image-16.png" width="124" style="max-width: 124px; display: block !important; cursor: pointer;" alt="image-16" border="0" hspace="0" vspace="0">
+                                                    </td>
+                                                </tr>
+                                                <!-- start space -->
+                                                <tr>
+                                                    <td valign="top" height="15">
+                                                    </td>
+                                                </tr>
+                                                <!-- end space -->
+                                                <tr>
+                                                    <td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                                        Lorem ipsum dolor sit amet
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="top">
+                                            <!-- space width 20px -->
+                                            <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                                <tr>
+                                                    <td height="1" width="20" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- space width 20px -->
+                                        </td>
+                                        <td>
+                                            <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" valign="top" class="image-full-width" style="position: relative;">
+                                                        <img src="../img/emails/image-17.png" width="124" style="max-width: 124px; display: block !important; cursor: pointer;" alt="image-17" border="0" hspace="0" vspace="0">
+                                                    </td>
+                                                </tr>
+                                                <!-- start space -->
+                                                <tr>
+                                                    <td valign="top" height="15">
+                                                    </td>
+                                                </tr>
+                                                <!-- end space -->
+                                                <tr>
+                                                    <td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                                        Lorem ipsum dolor sit amet
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col left -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- space width 20px -->
+                                <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                    <tr>
+                                        <td height="1" width="20" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- space width 20px -->
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <!-- start col right -->
+                                <table width="270" align="right" border="0" cellpadding="0" cellspacing="0" class="full-width">
+                                    <tr>
+                                        <td valign="top">
+                                            <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" valign="top" class="image-full-width">
+                                                        <img src="../img/emails/image-18.png" width="124" style="max-width:124px; display:block!important;" alt="image-18" border="0" hspace="0" vspace="0">
+                                                    </td>
+                                                </tr>
+                                                <!-- start space -->
+                                                <tr>
+                                                    <td valign="top" height="15">
+                                                    </td>
+                                                </tr>
+                                                <!-- end space -->
+                                                <tr>
+                                                    <td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                                        Lorem ipsum dolor sit amet
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="top">
+                                            <!-- space width 20px -->
+                                            <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+                                                <tr>
+                                                    <td height="1" width="20" class="h-40" style="font-size: 0pt;line-height: 0pt;border-collapse: collapse;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- space width 20px -->
+                                        </td>
+                                        <td>
+                                            <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" valign="top" class="image-full-width">
+                                                        <img src="../img/emails/image-19.png" width="124" style="max-width:124px; display:block!important;" alt="image-19" border="0" hspace="0" vspace="0">
+                                                    </td>
+                                                </tr>
+                                                <!-- start space -->
+                                                <tr>
+                                                    <td valign="top" height="15">
+                                                    </td>
+                                                </tr>
+                                                <!-- end space -->
+                                                <tr>
+                                                    <td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                                        Lorem ipsum dolor sit amet
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- start col right -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20">
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-17 ( 4-COL 4-IMAGE / TEXT ) -->    <!--START LAYOUT-18 ( CONTENT + BACKGROUND-IMAGE ) -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width: 600px; -webkit-background-size: cover; padding-left: 20px; padding-right: 20px; background-image: url(../img/emails/bg-image.jpg); background-color: rgb(255, 255, 255); background-size: cover; background-position: 50% 100% !important; background-repeat: no-repeat !important;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="60" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container-->
+            <tr>
+                <td valign="top">
+                    <table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+                        <tr>
+                            <td valign="top">
+                                <!-- start content -->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/mailbuild.png" width="auto" style="max-width:100%; display:block!important;" alt="logo-top" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="40">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 20px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+															<span style="text-decoration: none; color: #333333; font-weight:bold;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;">JOIN US AND ENJOY TOGETHOR</a>
+															</span>
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="10">
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr>
+                                        <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                                            Build your email Template by MailBuilds
+                                        </td>
+                                    </tr>
+                                    <!-- start space -->
+                                    <tr>
+                                        <td valign="top" height="40" >
+                                        </td>
+                                    </tr>
+                                    <!-- end space -->
+                                    <tr  dup="0">
+                                        <td valign="top">
+                                            <!-- start button -->
+                                            <table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" class="full-width" style="margin:0 auto;">
+                                                <tr>
+                                                    <td valign="top" style="padding:5px;">
+                                                        <table width="auto" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td width="auto" align="center" valign="middle" height="50" style="border-radius: 3px; font-size: 18px; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: 300; padding-left: 40px; padding-right: 40px; word-break: break-word; background-color:#5da400; background-clip: padding-box;" >
+																					<span style="color: #ffffff; font-weight: 300;">
+																						<a href="#" style="color: rgb(255, 255, 255); font-weight: 300; text-decoration: none;">
+                                                                                            JOIN NOW
+                                                                                        </a>
+																					</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- end button -->
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end content -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container-->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="60" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-18 ( CONTENT + BACKGROUND-IMAGE ) -->    <!--START LAYOUT-19 ( SHADOW SPACE ) -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color: rgb(244, 243, 243);">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width: 600px; background-color: rgb(244, 243, 243);">
+            <tr>
+                <td valign="top" class="image-full-width" style="position: relative;">
+                    <img src="../img/emails/shadow-space.png" width="600" alt="shadow-space" style="max-width: 600px; display: block !important; cursor: pointer;" border="0" hspace="0" vspace="0">
+                </td>
+            </tr>
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-19 ( SHADOW SPACE ) -->    <!--START LAYOUT-20 ( LOGO FOOTER ) -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color:#ffffff;">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#ffffff;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start image -->
+            <tr>
+                <td align="center" valign="top">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="../img/emails/" width="auto" style="max-width:100%; display:block!important;" alt="logo-footer" border="0" hspace="0" vspace="0">
+                    </a>
+                </td>
+            </tr>
+            <!-- end image -->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-20 ( LOGO FOOTER ) -->    <!-- START LAYOUT-21 ( FOOTER SOCIAL ) -->
+<tr>
+    <td valign="top" align="center" style="background-color:#ffffff;">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20">
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start content container -->
+            <tr>
+                <td valign="top" align="center">
+                    <table width="560" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width">
+                        <tr>
+                            <td valign="top" align="center">
+                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                                    <tr>
+                                        <td height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-facebook.png" width="20" alt="icon_circle-facebook" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px; " height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-twitter.png" width="30" alt="icon_circle-twitter" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px; " height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-googleplus.png" width="20" alt="icon_circle-googleplus" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-rss.png" width="20" alt="icon_circle-rss" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-youtube.png" width="20" alt="icon_circle-youtube" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-vimeo.png" width="20" alt="icon_circle-vimeo" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-pinterest.png" width="20" alt="icon_circle-pinterest" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-linkedIn.png" width="20" alt="icon_circle-Linkedin" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:5px;" height="20" align="center" valign="middle">
+                                            <a href="#" style="text-decoration: none;">
+                                                <img src="../img/emails/icon_circle-instagram.png" width="20" alt="icon-instagram" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end content container -->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!-- END LAYOUT-21 ( FOOTER SOCIAL ) -->    <!--START LAYOUT-22 ( FOOTER UNSUBSCRIBE ) -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color:#ffffff;">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#ffffff;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="20" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start image -->
+            <tr>
+                <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(240, 94, 94); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                    <span style="color:#5da400;">view online <span style="color:#5da400;">&nbsp;&nbsp; | &nbsp;&nbsp;</span><span style="text-decoration: none; color:#5da400;"><a href="#" style="color: rgb(240, 94, 94); text-decoration: none;">unsubscribe</a></span></span>
+                </td>
+            </tr>
+            <!-- end image -->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="40" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-22 ( FOOTER UNSUBSCRIBE ) -->    <!--START LAYOUT-23 ( FOOTER ALL RIGHTS RESERVED ) -->
+<tr>
+    <td align="center" valign="top" class="container" style="background-color:#5da400;">
+        <!-- start container -->
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; background-color:#5da400;">
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="10" >
+                </td>
+            </tr>
+            <!-- end space -->
+            <!-- start image -->
+            <tr>
+                <td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: 300; text-align: center; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;" >
+                    <span style="color:#ffffff;">MailBuild , all rights reserved 2013 © </span>
+                </td>
+            </tr>
+            <!-- end image -->
+            <!-- start space -->
+            <tr>
+                <td valign="top" height="10" >
+                </td>
+            </tr>
+            <!-- end space -->
+        </table>
+        <!-- end container -->
+    </td>
+</tr>
+<!--END LAYOUT-23 ( FOOTER ALL RIGHTS RESERVED ) -->    </table>
+
+</body>
+</html>
