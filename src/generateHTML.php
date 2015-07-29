@@ -16,6 +16,8 @@ echo "Generating Pattern Library HTML files :\n";
     compileFolder('pages/patterns-library/', '../compiled/patterns-library/', $twig);
 echo "Generating Livescore Pages HTML files :\n";
 compileFolder('pages/livescore-pages/', '../compiled/livescore-pages/', $twig);
+echo "Generating Emails :\n";
+compileFolder('pages/emails/', '../compiled/emails/', $twig);
 
 echo '</pre>';
 
