@@ -4884,6 +4884,11 @@ table.squad-listing.avatars tbody tr td.player {
   line-height: 1.1;
 }
 
+.goals-statistics thead.multiple:hover tr td,
+.goals-statistics tbody.multiple:hover tr td {
+  background: #ededed;
+}
+
 .goals-statistics tbody tr td.logo,
 .goals-statistics tbody tr td.date {
   width: 3%;
