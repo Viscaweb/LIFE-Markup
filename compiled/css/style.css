@@ -10007,6 +10007,9 @@ span.dark-icon {
 .table.layout-fixed colgroup col.score-small {
   width: 32px;
 }
+.table.layout-fixed colgroup col.score-x-small {
+  width: 22px;
+}
 .table.layout-fixed colgroup col.half-time-score {
   width: 44px;
 }

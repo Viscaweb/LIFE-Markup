@@ -12294,6 +12294,10 @@ span.dark-icon {
   width: 32px;
 }
 
+.table.layout-fixed colgroup col.score-x-small {
+  width: 22px;
+}
+
 .table.layout-fixed colgroup col.half-time-score {
   width: 44px;
 }
@@ -15100,14 +15104,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .content .match:hover {
   background-color: #363a3c;
-}
-
-.match-slider-inverse .toggle-right {
-  font-size: 13px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  width: 25px;
-  display: table-cell;
-  background: #313536;
 }
