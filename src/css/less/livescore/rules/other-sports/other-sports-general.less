@@ -233,4 +233,21 @@ table.other-sport{
       }
     }
   }
+
+  &.my-games {
+
+    tbody {
+
+      tr {
+        &:nth-child(2) {
+          border-bottom: none;
+        }
+
+        &:nth-child(3), td[rowspan]{
+          border-bottom: 2px solid darken(@ls-light-color, 11.5%);
+        }
+
+      }
+    }
+  }
 }

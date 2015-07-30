@@ -4370,6 +4370,15 @@ table.other-sport.sport-tennis tbody tr td.teams img {
   float: right;
 }
 
+table.other-sport.my-games tbody tr:nth-child(2) {
+  border-bottom: none;
+}
+
+table.other-sport.my-games tbody tr:nth-child(3),
+table.other-sport.my-games tbody tr td[rowspan] {
+  border-bottom: 2px solid #e2e2e2;
+}
+
 /*League Summary*/
 
 ol.breadcrumb li a img {

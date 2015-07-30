@@ -11848,12 +11848,12 @@ span.dark-icon {
 .table.matches tbody tr th.league-title:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   right: -8px;
   width: 0;
   height: 0;
   border-right: 8px solid transparent;
-  border-top: 14px solid #f5f5f5;
+  border-top: 15px solid #f5f5f5;
 }
 
 .table.matches tbody tr th.league-title a {

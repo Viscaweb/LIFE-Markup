@@ -9649,12 +9649,12 @@ span.dark-icon {
 .table.matches tbody tr th.league-title:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   right: -8px;
   width: 0;
   height: 0;
   border-right: 8px solid transparent;
-  border-top: 14px solid #f5f5f5;
+  border-top: 15px solid #f5f5f5;
 }
 .table.matches tbody tr th.league-title a {
   display: block;
@@ -15860,6 +15860,13 @@ table.other-sport.sport-tennis tbody tr th i.icon-woman {
 }
 table.other-sport.sport-tennis tbody tr td.teams img {
   float: right;
+}
+table.other-sport.my-games tbody tr:nth-child(2) {
+  border-bottom: none;
+}
+table.other-sport.my-games tbody tr:nth-child(3),
+table.other-sport.my-games tbody tr td[rowspan] {
+  border-bottom: 2px solid #e2e2e2;
 }
 /*League Summary*/
 ol.breadcrumb li a img {
