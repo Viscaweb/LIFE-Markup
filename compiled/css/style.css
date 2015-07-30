@@ -8803,115 +8803,6 @@ span.dark-icon {
   border-bottom: none;
   vertical-align: middle;
 }
-.table > thead.league-data > tr > th {
-  cursor: pointer;
-  background-color: #767e82;
-  text-align: left;
-  color: #ffffff;
-  text-transform: none;
-  padding: 0;
-  font-size: 0;
-  font-weight: 700 !important;
-  border-top: 0;
-}
-.table > thead.league-data > tr > th .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-}
-.table > thead.league-data > tr > th a {
-  color: #ffffff;
-}
-.table > thead.league-data > tr > th span {
-  color: #51575a;
-}
-.table > thead.league-data > tr > th > .title {
-  display: inline-block;
-  font-size: 0;
-  padding: 0 2px;
-}
-.table > thead.league-data > tr > th > .title > a,
-.table > thead.league-data > tr > th > .title > span {
-  font-size: 12px;
-  display: inline-block;
-  padding: 2px 4px;
-  line-height: 19px;
-  color: #ffffff;
-}
-.table > thead.league-data > tr > th > .title span img {
-  max-width: 17px;
-  max-height: 17px;
-  margin-right: 5px;
-}
-.table > thead.league-data > tr > th > a.dropdown-toggle {
-  padding: 3px 7px;
-  line-height: 19px;
-  font-size: 12px;
-}
-.table > thead.league-data > tr > th > a.dropdown-toggle i {
-  font-size: 10px;
-}
-.table > thead.league-data > tr > th > a.dropdown-toggle:hover {
-  background-color: #51575a;
-}
-.table > thead.league-data > tr > th .tools {
-  float: right;
-  padding: 0 !important;
-  font-size: 0;
-}
-.table > thead.league-data > tr > th .tools span {
-  display: inline-block;
-}
-.table > thead.league-data > tr > th .tools span a.fav {
-  font-size: 14px;
-  vertical-align: top;
-  line-height: 19px;
-}
-.table > thead.league-data > tr > th .tools a {
-  display: inline-block;
-  padding: 2px 4px;
-  color: #ffffff;
-  font-weight: 400;
-  line-height: 19px;
-  font-size: 12px;
-}
-.table > thead.league-data > tr > th .tools a i {
-  font-size: 18px;
-  vertical-align: middle;
-  color: rgba(0, 0, 0, 0.2);
-}
-.table > thead.league-data > tr > th .tools a:hover {
-  background-color: #51575a;
-  color: #ffffff;
-}
-.table > thead.league-data > tr > th .tools a:hover.fav span {
-  color: #ffc600;
-}
-.table > thead.league-data > tr > th .tools a.fav {
-  vertical-align: middle;
-}
-.table > thead.league-data > tr > th .tools a.fav span {
-  font-size: 15px;
-  display: inline-block;
-}
-.table > thead.league-data > tr > th .tools a.active {
-  color: #5da400;
-}
-.table > thead.league-data > tr > th .tools a.active.fav span {
-  font-size: 14px;
-  color: #ffc600;
-}
-.table > thead.league-data > tr > th .tools a.live i {
-  color: #e33000;
-}
-.table > thead.league-data > tr:hover > th {
-  background-color: #5d6467 !important;
-}
-.table > thead.league-data.active > tr > th > a.dropdown-toggle {
-  -webkit-box-shadow: 5px 0 0 #5da400 inset;
-  -moz-box-shadow: 5px 0 0 #5da400 inset;
-  box-shadow: 5px 0 0 #5da400 inset;
-}
 .table tr td.color-success,
 .table tr th.color-success {
   color: #87b762;
@@ -8957,6 +8848,151 @@ span.dark-icon {
 }
 .table tr td.date {
   text-align: center;
+}
+.table tr.league-data > th {
+  cursor: pointer;
+  background-color: #767e82;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+  padding: 0;
+  font-size: 0;
+  font-weight: 700 !important;
+  border-top: 0;
+}
+.table tr.league-data > th .country {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+.table tr.league-data > th a {
+  color: #ffffff;
+}
+.table tr.league-data > th span {
+  color: #51575a;
+}
+.table tr.league-data > th > .title {
+  display: inline-block;
+  font-size: 0;
+  padding: 0 2px;
+}
+.table tr.league-data > th > .title > a,
+.table tr.league-data > th > .title > span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 2px 4px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.table tr.league-data > th > .title span img {
+  max-width: 17px;
+  max-height: 17px;
+  margin-right: 5px;
+}
+.table tr.league-data > th > a.dropdown-toggle {
+  padding: 3px 7px;
+  line-height: 19px;
+  font-size: 12px;
+}
+.table tr.league-data > th > a.dropdown-toggle i {
+  font-size: 10px;
+}
+.table tr.league-data > th > a.dropdown-toggle:hover {
+  background-color: #51575a;
+}
+.table tr.league-data > th .tools {
+  float: right;
+  padding: 0 !important;
+  font-size: 0;
+}
+.table tr.league-data > th .tools span {
+  display: inline-block;
+}
+.table tr.league-data > th .tools span a.fav {
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 19px;
+}
+.table tr.league-data > th .tools a {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 12px;
+}
+.table tr.league-data > th .tools a i {
+  font-size: 18px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.2);
+}
+.table tr.league-data > th .tools a:hover {
+  background-color: #51575a;
+  color: #ffffff;
+}
+.table tr.league-data > th .tools a:hover.fav span {
+  color: #ffc600;
+}
+.table tr.league-data > th .tools a.fav {
+  vertical-align: middle;
+}
+.table tr.league-data > th .tools a.fav span {
+  font-size: 15px;
+  display: inline-block;
+}
+.table tr.league-data > th .tools a.active {
+  color: #5da400;
+}
+.table tr.league-data > th .tools a.active.fav span {
+  font-size: 14px;
+  color: #ffc600;
+}
+.table tr.league-data > th .tools a.live i {
+  color: #e33000;
+}
+.table tr.league-data:hover > th {
+  background-color: #5d6467 !important;
+}
+.table tr.league-data.league-data-heading th {
+  vertical-align: middle !important;
+  background-color: #5da400;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 1px solid #519000;
+}
+.table tr.league-data.league-data-heading th a {
+  color: #ffffff;
+}
+.table tr.league-data.league-data-heading th a.title {
+  margin-right: 5px;
+  line-height: 19px;
+}
+.table tr.league-data.league-data-heading th > .title span.icon {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+.table tr.league-data.league-data-heading th > .title .help-icon {
+  line-height: 17px;
+  position: relative;
+  top: 1px;
+}
+.table tr.league-data.league-data-heading th > .title .help-icon span {
+  color: rgba(0, 0, 0, 0.3);
+}
+.table tr.league-data.league-data-heading th > .title .help-icon:hover span {
+  color: #ffffff;
+}
+.table tr.league-data.league-data-heading th span {
+  color: rgba(0, 0, 0, 0.1);
+}
+.table tr.league-data.league-data-heading th span i {
+  color: #ffffff;
+}
+.table tr.league-data.league-data-heading:hover > th {
+  background-color: #519000 !important;
 }
 .table tr.empty-row td {
   text-align: center;
@@ -9262,6 +9298,47 @@ span.dark-icon {
 }
 .table tbody tr.league-data:hover > th {
   background-color: #5d6467 !important;
+}
+.table tbody tr.league-data.league-data-heading th {
+  vertical-align: middle !important;
+  background-color: #5da400;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 1px solid #519000;
+}
+.table tbody tr.league-data.league-data-heading th a {
+  color: #ffffff;
+}
+.table tbody tr.league-data.league-data-heading th a.title {
+  margin-right: 5px;
+  line-height: 19px;
+}
+.table tbody tr.league-data.league-data-heading th > .title span.icon {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+.table tbody tr.league-data.league-data-heading th > .title .help-icon {
+  line-height: 17px;
+  position: relative;
+  top: 1px;
+}
+.table tbody tr.league-data.league-data-heading th > .title .help-icon span {
+  color: rgba(0, 0, 0, 0.3);
+}
+.table tbody tr.league-data.league-data-heading th > .title .help-icon:hover span {
+  color: #ffffff;
+}
+.table tbody tr.league-data.league-data-heading th span {
+  color: rgba(0, 0, 0, 0.1);
+}
+.table tbody tr.league-data.league-data-heading th span i {
+  color: #ffffff;
+}
+.table tbody tr.league-data.league-data-heading:hover > th {
+  background-color: #519000 !important;
 }
 .table tbody tr.league-data.active > th > a.dropdown-toggle {
   -webkit-box-shadow: 5px 0 0 #5da400 inset;
@@ -9822,47 +9899,6 @@ span.dark-icon {
 }
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;
-}
-.table.my-games > thead.league-data > tr th {
-  vertical-align: middle !important;
-  background-color: #5da400;
-  color: #ffffff;
-  font-weight: 700;
-  border-bottom: 1px solid #519000;
-}
-.table.my-games > thead.league-data > tr th a {
-  color: #ffffff;
-}
-.table.my-games > thead.league-data > tr th a.title {
-  margin-right: 5px;
-  line-height: 19px;
-}
-.table.my-games > thead.league-data > tr th > .title span.icon {
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0;
-  position: relative;
-  top: 1px;
-}
-.table.my-games > thead.league-data > tr th > .title .help-icon {
-  line-height: 17px;
-  position: relative;
-  top: 1px;
-}
-.table.my-games > thead.league-data > tr th > .title .help-icon span {
-  color: rgba(0, 0, 0, 0.3);
-}
-.table.my-games > thead.league-data > tr th > .title .help-icon:hover span {
-  color: #ffffff;
-}
-.table.my-games > thead.league-data > tr th span {
-  color: rgba(0, 0, 0, 0.1);
-}
-.table.my-games > thead.league-data > tr th span i {
-  color: #ffffff;
-}
-.table.my-games > thead.league-data > tr:hover > th {
-  background-color: #519000 !important;
 }
 .table.my-games tbody tr td {
   padding-top: 8px;
