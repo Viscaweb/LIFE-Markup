@@ -16272,6 +16272,14 @@ table.squad-listing.avatars tbody tr td.player {
   margin: 5px 0;
   line-height: 1.1;
 }
+.goals-statistics thead.multiple,
+.goals-statistics tbody.multiple {
+  border: none;
+}
+.goals-statistics thead.multiple + tbody,
+.goals-statistics tbody.multiple + tbody {
+  border: none;
+}
 .goals-statistics thead.multiple:hover tr td,
 .goals-statistics tbody.multiple:hover tr td {
   background: #ededed;
