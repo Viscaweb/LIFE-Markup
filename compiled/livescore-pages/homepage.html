@@ -406,7 +406,7 @@
                             <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-play"></span>Videos</a></li>
                             <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-tv"></span>Streaming</a></li>
                             <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-prono"></span>Prediction</a></li>
-                            <li role="presentation"><a role="menuitem" href="#"><span class="icon glyphicon glyphicon-comment"></span>Comments</a></li>
+                            <li role="presentation"><a role="menuitem" href="#"><span class="icon glyphicon glyphicon-comment"><span class="comment-number">45</span></span>Comments</a></li>
                             <li role="separator" class="divider"></li>
                             <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-bell"></span>Add to My Games</a></li>
                         </ul>
@@ -428,12 +428,6 @@
                     <td class="tools dropdown">
                         <a href="#" class="available"><i class="glyphicon glyphicon-info-sign"  data-toggle="tooltip" data-placement="top" title="[ Info ]"></i></a>
                         <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenuMatch">
-                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-ellipse"></span>Live</a></li>
-                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-x2"></span>Odds</a></li>
-                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-stats"></span>Statistics</a></li>
-                            <li role="presentation"><a role="menuitem" href="#"><span class="icon icon-play"></span>Videos</a></li>
-                        </ul>
                     </td>
                     <td class="favorite">
                         <a href="#" class="active fav-match"><i class="icon-bell" data-toggle="tooltip" data-placement="top" title="Add/Remove from My Games"></i></a>
@@ -450,6 +444,7 @@
                     <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/team2.png"><span>Nimes</span></a></td>
                     <td class="half-time-score">(0 - 1)</td>
                     <td class="tools dropdown">
+                        <a href="#" class="available"><i class="glyphicon glyphicon-comment" data-toggle="tooltip" data-placement="top" title="[ Chat messages ]"></i><span class="comment-number">45</span></a>
                         <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
                     </td>
                     <td class="favorite">
@@ -827,22 +822,28 @@
     <div class="likes">
         <div class="fb">
             <a href="#" class="icon"><span class="icon-facebook"></span></a>
-            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21"   style="border:none; overflow:hidden; height:21px;" ></iframe>
+            <div class="social-button">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21"   style="border:none; overflow:hidden; height:21px;" ></iframe>
+            </div>
         </div>
         <div class="tw">
             <a href="#" class="icon"><span class="icon-twitter"></span></a>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="gore_edward">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <div class="social-button">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="gore_edward">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
         </div>
         <div class="gp">
             <a href="#" class="icon"><span class="icon-googleplus"></span></a>
-            <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
-            <script src="https://apis.google.com/js/platform.js" async defer>
-                {lang: 'es'}
-            </script>
+            <div class="social-button">
+                <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
+                <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'es'}
+                </script>
 
-            <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
-            <div class="g-plusone" data-size="medium"></div>
+                <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+                <div class="g-plusone" data-size="medium"></div>
+            </div>
         </div>
     </div>
 </div>
