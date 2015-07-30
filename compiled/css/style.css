@@ -6879,6 +6879,7 @@ button.close {
 /*Badges*/
 .badge {
   padding: 4px 6px;
+  vertical-align: baseline;
 }
 .badge.primary {
   background-color: #5da400;
