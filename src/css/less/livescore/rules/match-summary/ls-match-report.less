@@ -51,9 +51,19 @@
           }
           
           &.player{
+            
             &.home{
               text-align: right;
             }
+            
+            > a {
+              color: @text-color;
+              
+              &:hover {
+                color: @link-hover-color;
+              }
+            }
+            
           }
           
           &.incident-icon{

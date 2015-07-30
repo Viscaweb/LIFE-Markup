@@ -14530,6 +14530,12 @@ span.glyphicon-star.active {
 .match-report table tbody tr td.player.home {
   text-align: right;
 }
+.match-report table tbody tr td.player > a {
+  color: #5c5c5c;
+}
+.match-report table tbody tr td.player > a:hover {
+  color: #0f86ff;
+}
 .match-report table tbody tr td.incident-icon {
   width: 1%;
   text-align: center;
