@@ -12290,6 +12290,10 @@ span.dark-icon {
   width: 46px;
 }
 
+.table.layout-fixed colgroup col.score-small {
+  width: 32px;
+}
+
 .table.layout-fixed colgroup col.half-time-score {
   width: 44px;
 }
@@ -15106,8 +15110,4 @@ span.sprite-icons.webmaster-border {
   width: 25px;
   display: table-cell;
   background: #313536;
-}
-
-.match-slider-inverse .toggle-right:hover {
-  background-color: #363a3c;
 }
