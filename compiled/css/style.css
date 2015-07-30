@@ -15799,6 +15799,9 @@ table.other-sport tbody tr:nth-child(2),
 table.other-sport tbody tr td[rowspan] {
   border-bottom: 2px solid #e2e2e2;
 }
+table.other-sport tbody tr th {
+  text-align: center;
+}
 table.other-sport tbody tr th .tools a i.icon-standings {
   margin-right: 5px;
   position: relative;
