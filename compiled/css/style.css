@@ -8860,11 +8860,6 @@ span.dark-icon {
   font-weight: 700 !important;
   border-top: 0;
 }
-.table tr.league-data > th .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-}
 .table tr.league-data > th a {
   color: #ffffff;
 }
@@ -8888,6 +8883,19 @@ span.dark-icon {
   max-width: 17px;
   max-height: 17px;
   margin-right: 5px;
+}
+.table tr.league-data > th > .title .country {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+.table tr.league-data > th > .title .country span.icon {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 14px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
 }
 .table tr.league-data > th > a.dropdown-toggle {
   padding: 3px 7px;
@@ -9206,11 +9214,6 @@ span.dark-icon {
   font-weight: 700 !important;
   border-top: 0;
 }
-.table tbody tr.league-data > th .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-}
 .table tbody tr.league-data > th a {
   color: #ffffff;
 }
@@ -9234,6 +9237,19 @@ span.dark-icon {
   max-width: 17px;
   max-height: 17px;
   margin-right: 5px;
+}
+.table tbody tr.league-data > th > .title .country {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+.table tbody tr.league-data > th > .title .country span.icon {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 14px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
 }
 .table tbody tr.league-data > th > a.dropdown-toggle {
   padding: 3px 7px;
@@ -10189,15 +10205,6 @@ span.dark-icon {
 }
 .table.league-selection tbody tr td:first-child {
   padding: 8px;
-}
-.table.predictions thead.league-data tr th span.country span.icon,
-.table.predictions tbody tr th span.country span.icon {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 14px;
-  position: relative;
-  top: 2px;
-  margin-right: 10px;
 }
 .table.predictions tbody tr.prediction-won td.icon {
   background-color: #87b762 !important;

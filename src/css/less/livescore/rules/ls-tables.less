@@ -16,12 +16,6 @@
     font-weight: @font-weight-bold !important;
     border-top: 0;
 
-    .country{
-      text-transform: uppercase;
-      color: fade(@ls-th-league-color, 60%);
-      font-weight: @font-weight-normal;
-    }
-
     a{
       color: @ls-light-color;
     }
@@ -52,7 +46,20 @@
         }
       }
 
+      .country{
+        text-transform: uppercase;
+        color: fade(@ls-th-league-color, 60%);
+        font-weight: @font-weight-normal;
 
+        span.icon{
+          color: @ls-light-color;
+          font-size: @font-size-medium;
+          line-height: @font-size-normal;
+          position: relative;
+          top: 2px;
+          margin-right: 10px;
+        }
+      }
     }
 
     > a.dropdown-toggle{
@@ -1792,22 +1799,6 @@
 }
 
 .table.predictions{
-  thead.league-data, tbody{
-    tr{
-      th{
-        span.country{
-          span.icon{
-            color: @ls-light-color;
-            font-size: @font-size-medium;
-            line-height: @font-size-normal;
-            position: relative;
-            top: 2px;
-            margin-right: 10px;
-          }
-        }
-      }
-    }
-  }
 
   tbody{
     tr{
