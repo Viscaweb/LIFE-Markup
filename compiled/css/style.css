@@ -8157,6 +8157,12 @@ button.close {
 .pagination > li > a > span {
   color: #b8b8b8;
 }
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 1;
+}
 .pagination.pagination-xs > li > a {
   padding: 1px 13px;
 }
