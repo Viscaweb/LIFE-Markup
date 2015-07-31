@@ -1,3 +1,25 @@
+.match-slider-inverse .content .match.highlight table tr td.team {
+  color: #424749;
+}
+
+.match-slider-inverse .content .match:hover {
+  background-color: #363a3c;
+}
+
+.match-slider-inverse .toggle-right {
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 25px;
+  display: table-cell;
+  background: #313536;
+}
+
+.match-slider-inverse .toggle-right:hover {
+  background-color: #363a3c;
+}
+
 .top-match-block .top-match {
   cursor: pointer;
   padding: 15px 0 8px;
@@ -4294,6 +4316,10 @@ table.other-sport tbody tr td[rowspan] {
   border-bottom: 2px solid #e2e2e2;
 }
 
+table.other-sport tbody tr th {
+  text-align: center;
+}
+
 table.other-sport tbody tr th .tools a i.icon-standings {
   margin-right: 5px;
   position: relative;
@@ -4368,6 +4394,15 @@ table.other-sport.sport-tennis tbody tr th i.icon-woman {
 
 table.other-sport.sport-tennis tbody tr td.teams img {
   float: right;
+}
+
+table.other-sport.my-games tbody tr:nth-child(2) {
+  border-bottom: none;
+}
+
+table.other-sport.my-games tbody tr:nth-child(3),
+table.other-sport.my-games tbody tr td[rowspan] {
+  border-bottom: 2px solid #e2e2e2;
 }
 
 /*League Summary*/
@@ -4855,6 +4890,21 @@ table.squad-listing.avatars tbody tr td.player {
   display: inline-block;
   margin: 5px 0;
   line-height: 1.1;
+}
+
+.goals-statistics thead.multiple,
+.goals-statistics tbody.multiple {
+  border: none;
+}
+
+.goals-statistics thead.multiple + tbody,
+.goals-statistics tbody.multiple + tbody {
+  border: none;
+}
+
+.goals-statistics thead.multiple:hover tr td,
+.goals-statistics tbody.multiple:hover tr td {
+  background: #ededed;
 }
 
 .goals-statistics tbody tr td.logo,

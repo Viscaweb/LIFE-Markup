@@ -1107,12 +1107,12 @@
             &:after {
               content: "";
               position: absolute;
-              top: 0;
+              top: -1px;
               right: -8px;
               width: 0;
               height: 0;
               border-right: 8px solid transparent;
-              border-top: 14px solid darken(@ls-light-color,4%);
+              border-top: 15px solid darken(@ls-light-color,4%);
             }
 
             a {
@@ -1611,6 +1611,14 @@
           width: 46px;
         }
 
+        &.score-small {
+          width: 32px;
+        }
+
+        &.score-x-small {
+          width: 22px;
+        }
+
         &.half-time-score {
           width: 44px;
         }
@@ -1867,6 +1875,11 @@
   }
 }
 
+
+.table-width-auto {
+  width: auto;
+}
+
 &.popover-odd-evolution{
   width: 100%;
   margin-top: 3px;
@@ -1884,4 +1897,6 @@
 
 
 }
+
+
 
