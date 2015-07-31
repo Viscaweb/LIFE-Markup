@@ -8859,6 +8859,7 @@ span.dark-icon {
   font-size: 0;
   font-weight: 700 !important;
   border-top: 0;
+  border-bottom: 1px solid #6c7477;
 }
 .table tr.league-data > th a {
   color: #ffffff;
@@ -8961,42 +8962,42 @@ span.dark-icon {
 .table tr.league-data:hover > th {
   background-color: #5d6467 !important;
 }
-.table tr.league-data.league-data-heading th {
+.table tr.league-data.league-data-heading > th {
   vertical-align: middle !important;
   background-color: #5da400;
   color: #ffffff;
   font-weight: 700;
   border-bottom: 1px solid #519000;
 }
-.table tr.league-data.league-data-heading th a {
+.table tr.league-data.league-data-heading > th a {
   color: #ffffff;
 }
-.table tr.league-data.league-data-heading th a.title {
+.table tr.league-data.league-data-heading > th a.title {
   margin-right: 5px;
   line-height: 19px;
 }
-.table tr.league-data.league-data-heading th > .title span.icon {
+.table tr.league-data.league-data-heading > th > .title span.icon {
   font-size: 14px;
   line-height: 17px;
   margin: 0;
   position: relative;
   top: 1px;
 }
-.table tr.league-data.league-data-heading th > .title .help-icon {
+.table tr.league-data.league-data-heading > th > .title .help-icon {
   line-height: 17px;
   position: relative;
   top: 1px;
 }
-.table tr.league-data.league-data-heading th > .title .help-icon span {
+.table tr.league-data.league-data-heading > th > .title .help-icon span {
   color: rgba(0, 0, 0, 0.3);
 }
-.table tr.league-data.league-data-heading th > .title .help-icon:hover span {
+.table tr.league-data.league-data-heading > th > .title .help-icon:hover span {
   color: #ffffff;
 }
-.table tr.league-data.league-data-heading th span {
+.table tr.league-data.league-data-heading > th span {
   color: rgba(0, 0, 0, 0.1);
 }
-.table tr.league-data.league-data-heading th span i {
+.table tr.league-data.league-data-heading > th span i {
   color: #ffffff;
 }
 .table tr.league-data.league-data-heading:hover > th {
@@ -9213,6 +9214,7 @@ span.dark-icon {
   font-size: 0;
   font-weight: 700 !important;
   border-top: 0;
+  border-bottom: 1px solid #6c7477;
 }
 .table tbody tr.league-data > th a {
   color: #ffffff;
@@ -9315,42 +9317,42 @@ span.dark-icon {
 .table tbody tr.league-data:hover > th {
   background-color: #5d6467 !important;
 }
-.table tbody tr.league-data.league-data-heading th {
+.table tbody tr.league-data.league-data-heading > th {
   vertical-align: middle !important;
   background-color: #5da400;
   color: #ffffff;
   font-weight: 700;
   border-bottom: 1px solid #519000;
 }
-.table tbody tr.league-data.league-data-heading th a {
+.table tbody tr.league-data.league-data-heading > th a {
   color: #ffffff;
 }
-.table tbody tr.league-data.league-data-heading th a.title {
+.table tbody tr.league-data.league-data-heading > th a.title {
   margin-right: 5px;
   line-height: 19px;
 }
-.table tbody tr.league-data.league-data-heading th > .title span.icon {
+.table tbody tr.league-data.league-data-heading > th > .title span.icon {
   font-size: 14px;
   line-height: 17px;
   margin: 0;
   position: relative;
   top: 1px;
 }
-.table tbody tr.league-data.league-data-heading th > .title .help-icon {
+.table tbody tr.league-data.league-data-heading > th > .title .help-icon {
   line-height: 17px;
   position: relative;
   top: 1px;
 }
-.table tbody tr.league-data.league-data-heading th > .title .help-icon span {
+.table tbody tr.league-data.league-data-heading > th > .title .help-icon span {
   color: rgba(0, 0, 0, 0.3);
 }
-.table tbody tr.league-data.league-data-heading th > .title .help-icon:hover span {
+.table tbody tr.league-data.league-data-heading > th > .title .help-icon:hover span {
   color: #ffffff;
 }
-.table tbody tr.league-data.league-data-heading th span {
+.table tbody tr.league-data.league-data-heading > th span {
   color: rgba(0, 0, 0, 0.1);
 }
-.table tbody tr.league-data.league-data-heading th span i {
+.table tbody tr.league-data.league-data-heading > th span i {
   color: #ffffff;
 }
 .table tbody tr.league-data.league-data-heading:hover > th {
@@ -9816,7 +9818,6 @@ span.dark-icon {
   display: none;
 }
 .table.matches tr.league-data th {
-  border-bottom: 1px solid #6c7477;
   padding: 0;
   vertical-align: middle !important;
 }
@@ -9898,7 +9899,6 @@ span.dark-icon {
 }
 .table.table-standing thead tr th,
 .table.table-standing tbody tr th {
-  border-bottom: 0;
   vertical-align: middle !important;
 }
 .table.table-standing tbody tr td {
