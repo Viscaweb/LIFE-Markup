@@ -1,3 +1,11 @@
+.match-slider-inverse .content .match.highlight table tr td.team {
+  color: #424749;
+}
+
+.match-slider-inverse .content .match:hover {
+  background-color: #363a3c;
+}
+
 .match-slider-inverse .toggle-right {
   font-size: 13px;
   text-align: center;
