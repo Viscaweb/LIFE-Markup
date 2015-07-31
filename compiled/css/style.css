@@ -9681,55 +9681,6 @@ span.dark-icon {
 .table.table-odds tbody tr td.best-odd {
   font-weight: 700;
 }
-.table.matches thead.league-data tr th {
-  border-bottom: 1px solid #6c7477;
-  padding: 0;
-  vertical-align: middle !important;
-}
-.table.matches thead.league-data tr th .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-}
-.table.matches thead.league-data tr th a {
-  color: #ffffff;
-}
-.table.matches thead.league-data tr th span {
-  color: #51575a;
-}
-.table.matches thead.league-data tr th .tools {
-  float: right;
-  padding: 0;
-}
-.table.matches thead.league-data tr th .tools span a.fav {
-  font-size: 14px;
-}
-.table.matches thead.league-data tr th .tools a {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 400;
-}
-.table.matches thead.league-data tr th .tools a i {
-  font-size: 18px;
-  line-height: 16px;
-  vertical-align: middle;
-  color: rgba(255, 255, 255, 0.6);
-}
-.table.matches thead.league-data tr th .tools a i.icon-standings {
-  margin-right: 5px;
-  position: relative;
-  top: -1px;
-}
-.table.matches thead.league-data tr th .tools a.active {
-  color: #5da400;
-}
-.table.matches thead.league-data tr th .tools a.active.fav span {
-  color: #ffc600;
-  font-size: 14px;
-}
-.table.matches thead.league-data tr th .tools a.live i {
-  color: #e33000;
-}
 .table.matches tbody tr th.league-title {
   display: block;
   position: absolute;
@@ -9861,57 +9812,57 @@ span.dark-icon {
   background-repeat: no-repeat;
   background-position: 5px center;
 }
-.table.matches tbody tr.league-data th {
+.table.matches tbody tr.league-data span.match-name {
+  display: none;
+}
+.table.matches tr.league-data th {
   border-bottom: 1px solid #6c7477;
   padding: 0;
   vertical-align: middle !important;
 }
-.table.matches tbody tr.league-data th .country {
+.table.matches tr.league-data th .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 }
-.table.matches tbody tr.league-data th a {
+.table.matches tr.league-data th a {
   color: #ffffff;
 }
-.table.matches tbody tr.league-data th span {
+.table.matches tr.league-data th span {
   color: #51575a;
 }
-.table.matches tbody tr.league-data th .tools {
+.table.matches tr.league-data th .tools {
   float: right;
   padding: 0;
 }
-.table.matches tbody tr.league-data th .tools span a.fav {
+.table.matches tr.league-data th .tools span a.fav {
   font-size: 14px;
 }
-.table.matches tbody tr.league-data th .tools a {
+.table.matches tr.league-data th .tools a {
   display: inline-block;
   color: #ffffff;
   font-weight: 400;
 }
-.table.matches tbody tr.league-data th .tools a i {
+.table.matches tr.league-data th .tools a i {
   font-size: 18px;
   line-height: 16px;
   vertical-align: middle;
   color: rgba(255, 255, 255, 0.6);
 }
-.table.matches tbody tr.league-data th .tools a i.icon-standings {
+.table.matches tr.league-data th .tools a i.icon-standings {
   margin-right: 5px;
   position: relative;
   top: -1px;
 }
-.table.matches tbody tr.league-data th .tools a.active {
+.table.matches tr.league-data th .tools a.active {
   color: #5da400;
 }
-.table.matches tbody tr.league-data th .tools a.active.fav span {
+.table.matches tr.league-data th .tools a.active.fav span {
   color: #ffc600;
   font-size: 14px;
 }
-.table.matches tbody tr.league-data th .tools a.live i {
+.table.matches tr.league-data th .tools a.live i {
   color: #e33000;
-}
-.table.matches tbody tr.league-data span.match-name {
-  display: none;
 }
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;

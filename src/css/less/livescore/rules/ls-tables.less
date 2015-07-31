@@ -1136,15 +1136,6 @@
   /*MATCHES TABLES*/
   &.matches{
 
-    thead.league-data{
-
-      tr{
-
-        .league-data-matches-style();
-
-      }
-    }
-
     tbody{
 
       tr{
@@ -1322,16 +1313,18 @@
           }
         }
 
-
-
         &.league-data{
-          .league-data-matches-style();
 
           span.match-name {
             display: none;
           }
         }
       }
+    }
+
+    //League data style
+    tr.league-data{
+      .league-data-matches-style();
     }
 
     &.table-condensed{
