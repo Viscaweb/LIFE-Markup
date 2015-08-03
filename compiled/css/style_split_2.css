@@ -1,3 +1,11 @@
+.match-slider-inverse .content .match.highlight table tr td.team {
+  color: #424749;
+}
+
+.match-slider-inverse .content .match:hover {
+  background-color: #363a3c;
+}
+
 .match-slider-inverse .toggle-right {
   font-size: 13px;
   text-align: center;
@@ -4882,6 +4890,21 @@ table.squad-listing.avatars tbody tr td.player {
   display: inline-block;
   margin: 5px 0;
   line-height: 1.1;
+}
+
+.goals-statistics thead.multiple,
+.goals-statistics tbody.multiple {
+  border: none;
+}
+
+.goals-statistics thead.multiple + tbody,
+.goals-statistics tbody.multiple + tbody {
+  border: none;
+}
+
+.goals-statistics thead.multiple:hover tr td,
+.goals-statistics tbody.multiple:hover tr td {
+  background: #ededed;
 }
 
 .goals-statistics tbody tr td.logo,
