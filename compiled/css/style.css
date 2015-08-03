@@ -1125,11 +1125,9 @@ img {
   background-color: #e7e9eb;
   border: 1px solid #dddddd;
   border-radius: 2px;
-  transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -2547,11 +2545,9 @@ output {
   border: 1px solid #cccccc;
   border-radius: 0px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3020,10 +3016,8 @@ select[multiple].form-group-lg .form-control {
 fieldset[disabled] .btn {
   cursor: not-allowed;
   pointer-events: none;
-  filter: alpha(opacity=65);
-  -webkit-opacity: 0.65;
-  -moz-opacity: 0.65;
   opacity: 0.65;
+  filter: alpha(opacity=65);
   box-shadow: none;
 }
 .btn-default {
@@ -3363,11 +3357,9 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  transition: opacity 0.15s linear;
   -webkit-transition: opacity 0.15s linear;
-  -moz-transition: opacity 0.15s linear;
-  -ms-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -4879,11 +4871,9 @@ a.badge:focus {
   background-color: #e7e9eb;
   border: 1px solid #dddddd;
   border-radius: 2px;
-  transition: border 0.2s ease-in-out;
   -webkit-transition: border 0.2s ease-in-out;
-  -moz-transition: border 0.2s ease-in-out;
-  -ms-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -5016,11 +5006,9 @@ a.thumbnail.active {
   text-align: center;
   background-color: #5da400;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  transition: width 0.6s ease;
   -webkit-transition: width 0.6s ease;
-  -moz-transition: width 0.6s ease;
-  -ms-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
 }
 .progress-striped .progress-bar,
 .progress-bar-striped {
@@ -5034,9 +5022,6 @@ a.thumbnail.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
-  -webkit-animation: progress-bar-stripes 2s linear infinite 300ms 0 ease;
-  -moz-animation: progress-bar-stripes 2s linear infinite 300ms 0 ease;
-  -ms-animation: progress-bar-stripes 2s linear infinite 300ms 0 ease;
 }
 .progress-bar-success {
   background-color: #87b762;
@@ -5677,20 +5662,16 @@ a.list-group-item-danger.active:focus {
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  filter: alpha(opacity=20);
-  -webkit-opacity: 0.2;
-  -moz-opacity: 0.2;
   opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 .close:hover,
 .close:focus {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-  filter: alpha(opacity=50);
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
   opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 button.close {
   padding: 0;
@@ -5715,21 +5696,19 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
-  transform: translate(0, -25%);
   -webkit-transform: translate(0, -25%);
-  -moz-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
-  transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -5760,16 +5739,12 @@ button.close {
   background-color: #000000;
 }
 .modal-backdrop.fade {
-  filter: alpha(opacity=0);
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  filter: alpha(opacity=50);
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
   opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 .modal-header {
   padding: 15px;
@@ -5834,16 +5809,12 @@ button.close {
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
-  filter: alpha(opacity=0);
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 .tooltip.in {
-  filter: alpha(opacity=90);
-  -webkit-opacity: 0.9;
-  -moz-opacity: 0.9;
   opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 .tooltip.top {
   margin-top: -3px;
@@ -6064,11 +6035,9 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
-  transition: 0.6s ease-in-out left;
   -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -ms-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -6082,35 +6051,25 @@ button.close {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000;
-    -ms-perspective: 1000;
     perspective: 1000;
   }
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
-    transform: translate3d(100%, 0, 0);
     -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     left: 0;
   }
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
-    transform: translate3d(-100%, 0, 0);
     -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     left: 0;
   }
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
   .carousel-inner > .item.active {
-    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     left: 0;
   }
 }
@@ -6150,10 +6109,8 @@ button.close {
   left: 0;
   bottom: 0;
   width: 15%;
-  filter: alpha(opacity=50);
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
   opacity: 0.5;
+  filter: alpha(opacity=50);
   font-size: 20px;
   color: #ffffff;
   text-align: center;
@@ -6180,10 +6137,8 @@ button.close {
   outline: 0;
   color: #ffffff;
   text-decoration: none;
-  filter: alpha(opacity=90);
-  -webkit-opacity: 0.9;
-  -moz-opacity: 0.9;
   opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
@@ -6631,11 +6586,9 @@ button.close {
   font-size: 12px;
   line-height: 16px;
   padding: 9px 9px;
-  transition: 0.6s ease-in-out width;
   -webkit-transition: 0.6s ease-in-out width;
-  -moz-transition: 0.6s ease-in-out width;
-  -ms-transition: 0.6s ease-in-out width;
-  -o-transition: 0.6s ease-in-out width;
+       -o-transition: 0.6s ease-in-out width;
+          transition: 0.6s ease-in-out width;
 }
 .btn:focus {
   outline: none;
@@ -6776,13 +6729,6 @@ button.close {
   border-radius: 2px;
   background-clip: border-box;
 }
-@media \0screen {
-  .btn-group > .btn {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .btn-group > .btn.active {
   background-color: #5da400;
   border-color: #4f8b00;
@@ -6881,13 +6827,6 @@ button.close {
   cursor: pointer;
   border-radius: 2px;
 }
-@media \0screen {
-  .select-component {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .select-component:after {
   content: "\e62f";
   position: absolute;
@@ -6967,16 +6906,6 @@ button.close {
   text-align: center;
   background-color: #ffffff;
 }
-@media \0screen {
-  .checkbox input[type="checkbox"] + label:before,
-  .radio input[type="checkbox"] + label:before,
-  .checkbox input[type="radio"] + label:before,
-  .radio input[type="radio"] + label:before {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .checkbox input[type="checkbox"] + label:hover:before,
 .radio input[type="checkbox"] + label:hover:before,
 .checkbox input[type="radio"] + label:hover:before,
@@ -7019,6 +6948,7 @@ button.close {
 }
 .checkbox input[type="radio"] + label:before,
 .radio input[type="radio"] + label:before {
+  border-radius: 50%;
   font-family: "LSicons";
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -7042,17 +6972,11 @@ button.close {
   position: relative;
   overflow: hidden;
 }
-@media \0screen {
-  .switch-button {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .switch-button input[type="checkbox"] {
   display: none;
 }
 .switch-button label {
+  border-radius: 50%;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
@@ -7180,13 +7104,6 @@ button.close {
   padding-bottom: 11px;
   border-radius: 2px;
 }
-@media \0screen {
-  .inner-addon input {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .inner-addon .dropdown-menu {
   width: 100%;
   margin-top: 0;
@@ -7219,13 +7136,6 @@ button.close {
 /*Labels*/
 .label {
   border-radius: 0;
-}
-@media \0screen {
-  .label {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .label .icon {
   margin-right: 5px;
@@ -7383,19 +7293,7 @@ button.close {
 }
 .nav-pills > li.active a,
 .nav-pills > li.active a:focus {
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 2px;
-  behavior: "js/css3pie/PIE.htc";
+  border-radius: 2px, 0, 0, 2px;
   border: transparent;
   background-color: #f4f4f4;
   border-bottom: 2px solid #519000;
@@ -7489,13 +7387,6 @@ button.close {
   height: 36px;
   width: 224px;
 }
-@media \0screen {
-  .header .navbar.navbar-fixed-top .navbar-form .input-search input {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control {
   display: table-cell !important;
 }
@@ -7522,13 +7413,6 @@ button.close {
   height: 36px;
   font-size: 16px;
   outline: none;
-}
-@media \0screen {
-  .header .navbar.navbar-fixed-top .navbar-form .input-search .input-group-btn .btn {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .header .navbar.navbar-fixed-top .navbar-form .input-search .input-group-btn .btn:hover,
 .header .navbar.navbar-fixed-top .navbar-form .input-search .input-group-btn .btn:active {
@@ -7738,7 +7622,7 @@ button.close {
 .pagination > li.active a,
 .pagination > li.active a:hover,
 .pagination > li.active a:focus {
-  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
   border-color: #5ea501;
   background: #5da400;
   outline: none;
@@ -7758,19 +7642,7 @@ button.close {
 }
 /*Popover*/
 .popover {
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  behavior: "js/css3pie/PIE.htc";
+  border-radius: 0px;
   padding: 0;
   font-size: 12px;
 }
@@ -7788,13 +7660,6 @@ button.close {
   padding: 20px;
   border-radius: 2px 2px 0 0;
 }
-@media \0screen {
-  .modal .modal-dialog .modal-content .modal-header {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .modal .modal-dialog .modal-content .modal-header .modal-title {
   font-size: 16px;
   line-height: 16px;
@@ -7808,13 +7673,6 @@ button.close {
   border-radius: 0 0 2px 2px;
   padding: 20px;
 }
-@media \0screen {
-  .modal .modal-dialog .modal-content .modal-footer {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 /*
 .modal-open[style] {
   padding-right: 0px !important;
@@ -7822,7 +7680,7 @@ button.close {
 }*/
 /*panels*/
 .panel {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: none;
   border-color: #f0f0f0;
   margin-bottom: 20px;
 }
@@ -7832,13 +7690,6 @@ button.close {
   position: relative;
   font-size: 13px;
   font-weight: 600;
-}
-@media \0screen {
-  .panel > .panel-heading {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .panel > .panel-heading .panel-title {
   display: inline;
@@ -8050,19 +7901,7 @@ button.close {
 .nav-tabs > li.active a,
 .nav-tabs > li.active a:hover,
 .nav-tabs > li.active a:focus {
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 2px;
-  behavior: "js/css3pie/PIE.htc";
+  border-radiuses: 2px, 0, 0, 2px;
   border-right: none;
   border: transparent;
   border-bottom: 2px solid #519000;
@@ -8080,13 +7919,6 @@ button.close {
   color: #5c5c5c;
   outline: none;
   font-weight: 600;
-}
-@media \0screen {
-  .nav-tabs > li > a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .nav-tabs > li > a:focus {
   border-left: none;
@@ -8244,6 +8076,7 @@ button.close {
   text-align: center;
 }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
+  border-radius: 50%;
   display: inline-block;
   padding: 5px;
   margin: 1px;
@@ -8330,9 +8163,6 @@ button.close {
   content: "\e013";
 }
 .toast-progress {
-  filter: alpha(opacity=10);
-  -webkit-opacity: 0.1;
-  -moz-opacity: 0.1;
   opacity: 0.1;
 }
 /*LiveScore Components*/
@@ -8542,50 +8372,6 @@ button.close {
 .content-header.player .teams a img {
   max-width: 52px;
   display: block;
-}
-.border-radius-50-percent,
-.checkbox input[type="radio"] + label:before,
-.radio input[type="radio"] + label:before,
-.switch-button label,
-.ui-datepicker table.ui-datepicker-calendar tbody tr td a,
-.ls-wizard > ul.nav > li > a .label,
-.step-heading .label,
-.match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after,
-.match-timeline .timeline-scroll .team-actions .replay,
-.head-to-head .teams .team .circle,
-.team-form .teams .team .circle,
-.profile-image,
-.profile-image > a,
-.change-profile-image > .row .left-side .current-image img,
-.change-profile-image > .row .options .predefined-images ul > li .img,
-.change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img,
-.change-profile-image > .row .options .my-teams ul > li .logo,
-.discussion .panel-body ul.users-list li a {
-  border-radius: 50%;
-}
-@media \0screen {
-  .border-radius-50-percent,
-  .checkbox input[type="radio"] + label:before,
-  .radio input[type="radio"] + label:before,
-  .switch-button label,
-  .ui-datepicker table.ui-datepicker-calendar tbody tr td a,
-  .ls-wizard > ul.nav > li > a .label,
-  .step-heading .label,
-  .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after,
-  .match-timeline .timeline-scroll .team-actions .replay,
-  .head-to-head .teams .team .circle,
-  .team-form .teams .team .circle,
-  .profile-image,
-  .profile-image > a,
-  .change-profile-image > .row .left-side .current-image img,
-  .change-profile-image > .row .options .predefined-images ul > li .img,
-  .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img,
-  .change-profile-image > .row .options .my-teams ul > li .logo,
-  .discussion .panel-body ul.users-list li a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 body {
   padding-top: 64px;
@@ -8935,11 +8721,10 @@ span.dark-icon {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 5px solid #b8b8b8;
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .table tbody tr > td.score.hour {
   text-align: center;
@@ -10044,13 +9829,6 @@ span.dark-icon {
 .table.league-selection tbody tr td.functions .btn {
   border-radius: 2px;
 }
-@media \0screen {
-  .table.league-selection tbody tr td.functions .btn {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .table.league-selection tbody tr td:first-child {
   padding: 8px;
 }
@@ -10443,7 +10221,7 @@ fieldset[disabled] .btn-prediction-failed.active {
   margin-bottom: 10px;
   padding: 20px 5px;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
   width: 100%;
 }
 .btn-selector-group .btn-selector-item .btn-selector.active {
@@ -10614,11 +10392,10 @@ fieldset[disabled] .btn-twitter.active {
   left: 50%;
   margin-left: -1px;
   background-color: #ffffff;
-  transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
-  -moz-transform: rotate(40deg);
-  -ms-transform: rotate(40deg);
-  -o-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+       -o-transform: rotate(40deg);
+          transform: rotate(40deg);
 }
 .btn-group .dropdown-toggle .icon-caret-select {
   margin-left: 10px;
@@ -11786,13 +11563,6 @@ span.sprite-icons.webmaster-border {
   min-width: 85px;
   min-height: 85px;
 }
-@media \0screen {
-  .player .picture {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .player .picture img {
   max-width: 85px;
   min-width: 85px;
@@ -11839,13 +11609,6 @@ span.sprite-icons.webmaster-border {
   font-size: 20px;
   margin-right: 5px;
   vertical-align: middle;
-}
-@media \0screen {
-  .sharing .likes .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .sharing .likes .fb,
 .sharing .likes .tw,
@@ -12319,9 +12082,6 @@ span.sprite-icons.webmaster-border {
   display: block;
   position: absolute;
   background: #000000;
-  filter: alpha(opacity=10);
-  -webkit-opacity: 0.1;
-  -moz-opacity: 0.1;
   opacity: 0.1;
 }
 .top-match-block .score-board.score-board-clear {
@@ -12445,11 +12205,9 @@ span.sprite-icons.webmaster-border {
   line-height: 40px;
   color: #ffffff;
   opacity: .5;
-  transition: width 0.3s;
-  -webkit-transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  -ms-transition: width 0.3s;
-  -o-transition: width 0.3s;
+  -webkit-transition: width .3s;
+       -o-transition: width .3s;
+          transition: width .3s;
 }
 .top-match-block .slider-control.prev {
   left: 0;
@@ -12507,13 +12265,6 @@ span.sprite-icons.webmaster-border {
   border-radius: 0;
   padding: 0 8px;
   border-bottom: 2px solid #efefef;
-}
-@media \0screen {
-  .top-competitions-block.panel .nav-pills > li > a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .top-competitions-block.panel .nav-pills > li > a:hover {
   background: #f8f8f8;
@@ -13102,13 +12853,6 @@ span.glyphicon-star.active {
   background: #5da400;
   border-radius: 2px;
 }
-@media \0screen {
-  *::-webkit-scrollbar-thumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 *::-webkit-scrollbar-thumb:hover {
   background: #4f8b00;
 }
@@ -13131,13 +12875,6 @@ span.glyphicon-star.active {
   background-color: #f9f9f9;
   border-bottom: 0 !important;
 }
-@media \0screen {
-  .ls-wizard > ul.nav > li > a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .ls-wizard > ul.nav > li > a:after,
 .ls-wizard > ul.nav > li > a:before {
   content: "";
@@ -13157,6 +12894,7 @@ span.glyphicon-star.active {
   z-index: 2;
 }
 .ls-wizard > ul.nav > li > a .label {
+  border-radius: 50%;
   padding: 0;
   display: inline-block;
   color: #ffffff;
@@ -13213,13 +12951,6 @@ span.glyphicon-star.active {
   border-radius: 2px 0 0 2px;
   text-transform: uppercase;
 }
-@media \0screen {
-  .color-picker input {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .color-picker .input-group-addon {
   padding: 2px 4px;
 }
@@ -13237,6 +12968,7 @@ span.glyphicon-star.active {
   margin-bottom: 25px;
 }
 .step-heading .label {
+  border-radius: 50%;
   padding: 0;
   display: inline-block;
   margin-right: 7px;
@@ -13513,14 +13245,6 @@ span.glyphicon-star.active {
   min-width: 260px;
   border-radius: 2px;
 }
-@media \0screen {
-  .popover.popover-trend,
-  .popover.popover-tips {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .popover.popover-trend > .arrow:after,
 .popover.popover-tips > .arrow:after {
   border-bottom-color: #f5f5f5;
@@ -13533,14 +13257,6 @@ span.glyphicon-star.active {
   padding: 8px 20px;
   font-weight: 600;
   font-size: 14px;
-}
-@media \0screen {
-  .popover.popover-trend > .popover-title,
-  .popover.popover-tips > .popover-title {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .popover.popover-trend .popover-content {
   padding: 15px 20px 20px;
@@ -13602,23 +13318,9 @@ span.glyphicon-star.active {
   background: #5da400;
   border-radius: 2px;
 }
-@media \0screen {
-  .popover.popover-tips .popover-content .tips-list::-webkit-scrollbar-thumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .popover.popover-score {
   min-width: 490px;
   border-radius: 2px;
-}
-@media \0screen {
-  .popover.popover-score {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .popover.popover-score .popover-content {
   padding: 0;
@@ -13643,13 +13345,6 @@ span.glyphicon-star.active {
 .popover.popover-standings {
   min-width: 395px;
   border-radius: 2px;
-}
-@media \0screen {
-  .popover.popover-standings {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .popover.popover-standings .popover-content .table {
   margin: 0;
@@ -14196,13 +13891,6 @@ span.glyphicon-star.active {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
-@media \0screen {
-  .match-timeline .timeline-scroll .penalty-goals .penalty-serie {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .match-timeline .timeline-scroll .penalty-goals .penalty-serie span {
   cursor: pointer;
   display: inline-block;
@@ -14219,6 +13907,7 @@ span.glyphicon-star.active {
   cursor: default;
 }
 .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after {
+  border-radius: 50%;
   content: "";
   width: 17px;
   height: 17px;
@@ -14276,6 +13965,7 @@ span.glyphicon-star.active {
   width: 100%;
 }
 .match-timeline .timeline-scroll .team-actions .replay {
+  border-radius: 50%;
   background-color: #454a4c;
   cursor: pointer;
   position: absolute;
@@ -14301,13 +13991,6 @@ span.glyphicon-star.active {
   padding: 1px 1px;
   min-width: 23px;
   border-radius: 2px;
-}
-@media \0screen {
-  .match-timeline .timeline-scroll .team-actions .action {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .match-timeline .timeline-scroll .team-actions .action span {
   display: block;
@@ -14482,13 +14165,6 @@ span.glyphicon-star.active {
   box-shadow: none;
   border-radius: 2px;
   min-width: 1px;
-}
-@media \0screen {
-  .match-summary-statistics .table tbody tr td.prog .progress .progress-bar {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .match-summary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
   background-color: #9e9e9e;
@@ -14699,13 +14375,6 @@ span.glyphicon-star.active {
   min-width: 322px;
   border-radius: 2px;
 }
-@media \0screen {
-  .match-teams-lineups .popover {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .match-teams-lineups .popover .arrow:after {
   border-bottom-color: #f5f5f5;
 }
@@ -14719,13 +14388,6 @@ span.glyphicon-star.active {
   padding: 8px 20px;
   font-size: 13px;
   font-weight: 600;
-}
-@media \0screen {
-  .match-teams-lineups .popover .popover-content > .title {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .match-teams-lineups .popover .popover-content > .body {
   padding: 15px 20px 20px;
@@ -15357,6 +15019,7 @@ span.glyphicon-star.active {
 }
 .head-to-head .teams .team .circle,
 .team-form .teams .team .circle {
+  border-radius: 50%;
   display: inline-table;
   width: 60px;
   height: 60px;
@@ -16373,11 +16036,9 @@ table.squad-listing.avatars tbody tr td.player {
   width: 100%;
   height: 518px;
   z-index: 3;
-  transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
+       -o-transition: all 250ms ease-in-out;
+          transition: all 250ms ease-in-out;
   overflow: hidden;
 }
 .widget-creator-settings-validation > .row > div .widget-preview .iframe-container .widget-iframe iframe {
@@ -17110,6 +16771,7 @@ main .content .league-list ul li.item-placeholder {
   margin: 0;
 }
 .profile-image {
+  border-radius: 50%;
   height: 138px;
   width: 138px;
   overflow: hidden;
@@ -17121,6 +16783,7 @@ main .content .league-list ul li.item-placeholder {
   width: 100%;
 }
 .profile-image > a {
+  border-radius: 50%;
   height: 80px;
   width: 80px;
   display: block;
@@ -17341,6 +17004,7 @@ ul.image-list li img {
   text-align: center;
 }
 .change-profile-image > .row .left-side .current-image img {
+  border-radius: 50%;
   margin-bottom: 8px;
   width: 104px;
   height: 104px;
@@ -17372,6 +17036,7 @@ ul.image-list li img {
   margin-right: 20px;
 }
 .change-profile-image > .row .options .predefined-images ul > li .img {
+  border-radius: 50%;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -17412,6 +17077,7 @@ ul.image-list li img {
   text-align: center;
 }
 .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img {
+  border-radius: 50%;
   display: inline-block;
   position: relative;
   border: 3px solid transparent;
@@ -17496,6 +17162,7 @@ ul.image-list li img {
   min-width: 70px;
 }
 .change-profile-image > .row .options .my-teams ul > li .logo {
+  border-radius: 50%;
   background-color: #f3f3f3;
   display: inline-block;
   height: 52px;
@@ -18035,6 +17702,7 @@ ul.image-list li img {
   vertical-align: top;
 }
 .discussion .panel-body ul.users-list li a {
+  border-radius: 50%;
   background-color: #fafafa;
   display: block;
   width: 36px;
@@ -18435,11 +18103,9 @@ ul.image-list li img {
   left: 8px;
   position: absolute;
   color: #d4d4d4;
-  transition: transform 200ms ease-out;
   -webkit-transition: -webkit-transform 200ms ease-out;
-  -moz-transition: transform 200ms ease-out;
-  -ms-transition: transform 200ms ease-out;
-  -o-transition: -o-transform 200ms ease-out;
+       -o-transition: -o-transform 200ms ease-out;
+          transition: transform 200ms ease-out;
 }
 .sidebar-nav li a.sortable .sort {
   margin-top: 2px;
@@ -18477,11 +18143,9 @@ ul.image-list li img {
 .sidebar-nav li .sub-menu {
   padding: 0 0 10px;
   list-style: none;
-  transition: max-height 400ms ease-out;
   -webkit-transition: max-height 400ms ease-out;
-  -moz-transition: max-height 400ms ease-out;
-  -ms-transition: max-height 400ms ease-out;
-  -o-transition: max-height 400ms ease-out;
+       -o-transition: max-height 400ms ease-out;
+          transition: max-height 400ms ease-out;
 }
 .sidebar-nav li .sub-menu.second-menu > li.open > a {
   background-color: #edeff0;
@@ -18570,9 +18234,9 @@ ul.image-list li img {
 }
 .sidebar-nav li.open > a.dropdown-toggle:before {
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .sidebar-nav-inverse {
   background-color: #2e3436;
@@ -18673,13 +18337,6 @@ ul.image-list li img {
   padding: 0 0 0 20px;
   margin: 0;
   border-bottom: 1px solid #ececec;
-}
-@media \0screen {
-  .breadcrumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 .breadcrumb > li {
   font-size: 12px;
@@ -18847,11 +18504,8 @@ ul.image-list li img {
 /*CSS animations*/
 .blinking {
   -webkit-animation: blinker 1s linear 4;
-  -o-animation: blinker 1s linear 4;
-  animation: blinker 1s linear 4;
-  -webkit-animation: blinker 1s linear 4 300ms 0 ease;
-  -moz-animation: blinker 1s linear 4 300ms 0 ease;
-  -ms-animation: blinker 1s linear 4 300ms 0 ease;
+       -o-animation: blinker 1s linear 4;
+          animation: blinker 1s linear 4;
 }
 @-webkit-keyframes blinker {
   0% {
@@ -18887,12 +18541,9 @@ ul.image-list li img {
   }
 }
 .bounce {
-  -webkit-animation: bounce 1s 0.5s;
-  -o-animation: bounce 1s 0.5s;
-  animation: bounce 1s 0.5s;
-  -webkit-animation: bounce 1s 0.5s 300ms 0 ease;
-  -moz-animation: bounce 1s 0.5s 300ms 0 ease;
-  -ms-animation: bounce 1s 0.5s 300ms 0 ease;
+  -webkit-animation: bounce 1s .5s;
+       -o-animation: bounce 1s .5s;
+          animation: bounce 1s .5s;
 }
 @-webkit-keyframes bounce {
   0% {

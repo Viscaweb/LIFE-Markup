@@ -4,7 +4,7 @@
   border: 1px solid darken(@ls-light-color, 8.2%);
   position: relative;
   cursor: pointer;
-  .border-radius(2px);
+  border-radius: 2px;
   
   &:after{
     content: "\e62f";
@@ -68,7 +68,7 @@
       height: 18px;
       display: inline-block;
       border: 1px solid darken(@ls-light-color, 20%);
-      .border-radius(1px);
+      border-radius: 1px;
       margin-right: 5px;
       font-size: @font-size-small;
       font-family: @ls-bootstrap-icons-font-family;
@@ -101,7 +101,7 @@
 
   input[type="checkbox"]:focus + label, input[type="radio"]:focus + label {
     &:before{
-      .box-shadow(0px 0px 5px 0px @brand-primary);
+      box-shadow: 0px 0px 5px 0px @brand-primary;
     }
   }
 
@@ -120,7 +120,7 @@
   
   input[type="radio"] + label{
     &:before{
-      &:extend(.border-radius-50-percent);
+      border-radius: 50%;
       font-family: @ls-icons-font;
       @media @webkit{
         line-height: @font-size-x-large;
@@ -139,7 +139,7 @@
 .switch-button{
   display: inline-block;
   line-height: @font-size-xx-large;
-  .border-radius(50px);
+  border-radius: 50px;
   background-color: darken(@ls-light-color, 9%);
   width: 57px;
   height: 24px;
@@ -152,7 +152,7 @@
   }
   
   label{
-    &:extend(.border-radius-50-percent);
+    border-radius: 50%;
     border: 1px solid darken(@ls-light-color, 20%);
     background-color: @ls-light-color;
     margin: 0;
@@ -236,7 +236,7 @@
   line-height: 16px;
 
 	&:focus{
-		.box-shadow(0 0 8px rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), 0.25));
+		box-shadow: 0 0 8px rgba(red(@brand-primary), green(@brand-primary), blue(@brand-primary), 0.25);
 		border-color: @brand-primary;
 	}
 }
@@ -247,7 +247,7 @@
 	.form-control{
 		border-color: @ls-success-border;
 		&:focus{
-			.box-shadow(0 0 8px rgba(red(@ls-success-border), green(@ls-success-border), blue(@ls-success-border), 0.25));
+			box-shadow: 0 0 8px rgba(red(@ls-success-border), green(@ls-success-border), blue(@ls-success-border), 0.25);
 			border-color: @ls-success-border;
 		}
 		
@@ -260,7 +260,7 @@
 	.form-control{
 		border-color: @ls-form-error;
 		&:focus{
-			.box-shadow(0 0 8px rgba(red(@ls-form-error), green(@ls-form-error), blue(@ls-form-error), 0.25));
+			box-shadow: 0 0 8px rgba(red(@ls-form-error), green(@ls-form-error), blue(@ls-form-error), 0.25);
 			border-color: @ls-form-error;
 		}
 		
@@ -273,7 +273,7 @@
 	.form-control{
 		border-color: @ls-form-warning;
 		&:focus{
-			.box-shadow(0 0 8px rgba(red(@ls-form-warning), green(@ls-form-warning), blue(@ls-form-warning), 0.25));
+			box-shadow: 0 0 8px rgba(red(@ls-form-warning), green(@ls-form-warning), blue(@ls-form-warning), 0.25);
 			border-color: @ls-form-warning;
 		}
 		
@@ -319,7 +319,7 @@
     height: auto;
     padding-top: 11px;
     padding-bottom: 11px;
-    .border-radius(2px);
+    border-radius: 2px;
   }
 
   .dropdown-menu{

@@ -157,7 +157,7 @@
 .league-data-active-style(){
   > th{
     > a.dropdown-toggle{
-      .box-shadow(5px 0 0 @active-green inset);
+      box-shadow: 5px 0 0 @active-green inset;
     }
   }
 }
@@ -443,7 +443,7 @@
               border-top: 5px solid transparent;
               border-bottom: 5px solid transparent;
               border-left: 5px solid contrast(@ls-light-color, darken(@ls-light-color, 28%), fade(#ffffff, 30%));
-              .rotate(45deg);
+              transform: rotate(45deg);
             }
           }
 
@@ -1049,7 +1049,7 @@
         border: 0;
 
         &.event-outcome {
-          .box-shadow(1px -1px 0 @ls-light-color inset);
+          box-shadow: 1px -1px 0 @ls-light-color inset;
         }
       }
     }
@@ -1795,7 +1795,7 @@
           text-align: right;
 
           .btn{
-            .border-radius(2px);
+            border-radius: 2px;
           }
         }
 
