@@ -8512,14 +8512,6 @@ button.close {
   border-radius: 2px;
 }
 
-@media \0screen {
-  .select-component select {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
-
 .select-component:hover {
   border-color: #cdcdcd;
 }
@@ -9212,7 +9204,19 @@ button.close {
   display: table-cell !important;
 }
 
+.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::-webkit-input-placeholder {
+  color: #afafaf;
+}
+
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::-moz-placeholder {
+  color: #afafaf;
+}
+
+.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control:-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::placeholder {
   color: #afafaf;
 }
 
@@ -14989,12 +14993,4 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .content .match.highlight table tr:first-child td:last-child {
   border-color: #fff4ce !important;
-}
-
-.match-slider-inverse .content .match.highlight table tr td.team {
-  color: #424749;
-}
-
-.match-slider-inverse .content .match:hover {
-  background-color: #363a3c;
 }

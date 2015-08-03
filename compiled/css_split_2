@@ -1,3 +1,11 @@
+.match-slider-inverse .content .match.highlight table tr td.team {
+  color: #424749;
+}
+
+.match-slider-inverse .content .match:hover {
+  background-color: #363a3c;
+}
+
 .match-slider-inverse .toggle-right {
   font-size: 13px;
   text-align: center;
@@ -3064,7 +3072,10 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 13px solid #ffffff;
-  -moz-transform: scale(0.9999);
+  -webkit-transform: scale(0.9999);
+  -ms-transform: scale(0.9999);
+  -o-transform: scale(0.9999);
+  transform: scale(0.9999);
 }
 
 .match-teams-lineups .component-container .field:after {
@@ -3077,7 +3088,10 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 13px solid #ffffff;
-  -moz-transform: scale(0.9999);
+  -webkit-transform: scale(0.9999);
+  -ms-transform: scale(0.9999);
+  -o-transform: scale(0.9999);
+  transform: scale(0.9999);
 }
 
 .match-teams-lineups .popover {

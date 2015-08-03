@@ -6918,13 +6918,6 @@ button.close {
   text-overflow: '';
   border-radius: 2px;
 }
-@media \0screen {
-  .select-component select {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
-}
 .select-component:hover {
   border-color: #cdcdcd;
 }
@@ -7506,7 +7499,16 @@ button.close {
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control {
   display: table-cell !important;
 }
+.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::-webkit-input-placeholder {
+  color: #afafaf;
+}
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::-moz-placeholder {
+  color: #afafaf;
+}
+.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control:-ms-input-placeholder {
+  color: #afafaf;
+}
+.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::placeholder {
   color: #afafaf;
 }
 .header .navbar.navbar-fixed-top .navbar-form .input-search .input-group-btn {
@@ -14672,7 +14674,10 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 13px solid #ffffff;
-  -moz-transform: scale(0.9999);
+  -webkit-transform: scale(0.9999);
+      -ms-transform: scale(0.9999);
+       -o-transform: scale(0.9999);
+          transform: scale(0.9999);
 }
 .match-teams-lineups .component-container .field:after {
   position: absolute;
@@ -14684,7 +14689,10 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 13px solid #ffffff;
-  -moz-transform: scale(0.9999);
+  -webkit-transform: scale(0.9999);
+      -ms-transform: scale(0.9999);
+       -o-transform: scale(0.9999);
+          transform: scale(0.9999);
 }
 .match-teams-lineups .popover {
   border-top: 0;
