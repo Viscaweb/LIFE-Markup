@@ -295,7 +295,25 @@
             }
           }
         }
+
       }
+
+      &.multiple {
+        border: none;
+        
+        + tbody {
+          border: none;
+        }
+
+        &:hover {
+
+          tr td {
+            background: @table-bg-hover;
+          }
+
+        }
+      }
+
     }
     
     tbody{
