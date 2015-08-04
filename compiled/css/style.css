@@ -16432,6 +16432,9 @@ table.other-sport tbody tr td[rowspan] {
 table.other-sport tbody tr th {
   text-align: center;
 }
+table.other-sport tbody tr th.league-title a {
+  max-width: 80px !important;
+}
 table.other-sport tbody tr th .tools a i.icon-standings {
   margin-right: 5px;
   position: relative;
