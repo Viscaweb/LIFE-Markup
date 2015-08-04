@@ -9306,9 +9306,36 @@ ul.image-list li img {
   text-align: center;
 }
 
+.user-sidebar-nav li.user-display .profile-image {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-sidebar-nav li.user-display .profile-image > a {
+  height: 50px;
+  width: 50px;
+  bottom: 0px;
+  margin-left: -50%;
+  opacity: 0;
+}
+
+.user-sidebar-nav li.user-display .profile-image > a .icon {
+  font-size: 15px;
+  top: 11px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.user-sidebar-nav li.user-display .profile-image > a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
 .user-sidebar-nav li.user-display img {
-  max-height: 47px;
-  max-width: 47px;
+  max-height: 50px;
+  max-width: 50px;
   background: #3a4144;
 }
 
