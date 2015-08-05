@@ -15,12 +15,7 @@
     font-size: 0;
     font-weight: @font-weight-bold !important;
     border-top: 0;
-
-    .country{
-      text-transform: uppercase;
-      color: fade(@ls-th-league-color, 60%);
-      font-weight: @font-weight-normal;
-    }
+    border-bottom: 1px solid darken(@ls-th-league-bg, 4%);
 
     a{
       color: @ls-light-color;
@@ -52,7 +47,20 @@
         }
       }
 
+      .country{
+        text-transform: uppercase;
+        color: fade(@ls-th-league-color, 60%);
+        font-weight: @font-weight-normal;
 
+        span.icon{
+          color: @ls-light-color;
+          font-size: @font-size-medium;
+          line-height: @font-size-normal;
+          position: relative;
+          top: 2px;
+          margin-right: 10px;
+        }
+      }
     }
 
     > a.dropdown-toggle{
@@ -152,6 +160,66 @@
 
     }
   }
+
+  &.league-data-heading{
+
+    > th{
+      vertical-align: middle !important;
+      background-color: @brand-primary;
+      color: @ls-light-color;
+      font-weight: @font-weight-bold;
+      border-bottom: 1px solid darken(@brand-primary, 4%);
+
+      a{
+        color: @ls-light-color;
+
+        &.title{
+          margin-right: 5px;
+          line-height: @ls-data-league-line-height;
+        }
+
+      }
+
+      > .title{
+        span.icon{
+          font-size: @font-size-normal;
+          line-height: @font-size-x-large;
+          margin: 0;
+          position: relative;
+          top: 1px;
+        }
+
+        .help-icon{
+          line-height: @font-size-x-large;
+          position: relative;
+          top: 1px;
+
+          span {
+            color: fade(#000000, 30%);
+          }
+
+          &:hover {
+            span {
+              color: @ls-th-league-color;
+            }
+          }
+        }
+
+      }
+
+      span{
+        color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
+
+        i{
+          color: @ls-light-color;
+        }
+      }
+    }
+
+    &:hover > th {
+      background-color: darken(@brand-primary, 4%) !important;
+    }
+  }
 }
 
 .league-data-active-style(){
@@ -163,8 +231,8 @@
 }
 
 .league-data-matches-style(){
+
   th{
-    border-bottom: 1px solid darken(@ls-th-league-bg, 4%);
     padding: 0;
     vertical-align: middle !important;
 
@@ -250,23 +318,8 @@
         vertical-align: middle;
       }
     }
-
-    &.league-data{
-
-      > tr{
-
-        .league-data-style();
-
-      }
-
-      &.active{
-        > tr{
-          .league-data-active-style();
-        }
-      }
-
-    }
   }
+
 
   //General table style
   tr{
@@ -341,6 +394,11 @@
         text-align: center
       }
     }
+    
+    //General league data & league heading style
+    &.league-data{
+      .league-data-style();
+    }
 
     &.empty-row {
       td {
@@ -353,7 +411,6 @@
       }
     }
   }
-
 
   //Deep level
   tbody{
@@ -609,7 +666,7 @@
       }
     }
   }
-
+  
 
   &.table-condensed{
 
@@ -1080,15 +1137,6 @@
   /*MATCHES TABLES*/
   &.matches{
 
-    thead.league-data{
-
-      tr{
-
-        .league-data-matches-style();
-
-      }
-    }
-
     tbody{
 
       tr{
@@ -1266,16 +1314,18 @@
           }
         }
 
-
-
         &.league-data{
-          .league-data-matches-style();
 
           span.match-name {
             display: none;
           }
         }
       }
+    }
+
+    //League data style
+    tr.league-data{
+      .league-data-matches-style();
     }
 
     &.table-condensed{
@@ -1314,71 +1364,6 @@
   /*MY GAMES TABLES*/
   &.my-games{
 
-    > thead{
-
-      &.league-data{
-
-        > tr{
-
-          th{
-            vertical-align: middle !important;
-            background-color: @brand-primary;
-            color: @ls-light-color;
-            font-weight: @font-weight-bold;
-            border-bottom: 1px solid darken(@brand-primary, 4%);
-
-            a{
-              color: @ls-light-color;
-
-              &.title{
-                margin-right: 5px;
-                line-height: @ls-data-league-line-height;
-              }
-
-            }
-
-            > .title{
-              span.icon{
-                font-size: @font-size-normal;
-                line-height: @font-size-x-large;
-                margin: 0;
-                position: relative;
-                top: 1px;
-              }
-
-              .help-icon{
-                line-height: @font-size-x-large;
-                position: relative;
-                top: 1px;
-
-                span {
-                  color: fade(#000000, 30%);
-                }
-
-                &:hover {
-                  span {
-                    color: @ls-th-league-color;
-                  }
-                }
-              }
-
-            }
-
-            span{
-              color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
-
-              i{
-                color: @ls-light-color;
-              }
-            }
-          }
-
-          &:hover > th {
-            background-color: darken(@brand-primary, 4%) !important;
-          }
-        }
-      }
-    }
     tbody{
 
       tr{
@@ -1441,9 +1426,7 @@
       tr{
 
         th{
-          border-bottom: 0;
           vertical-align: middle !important;
-
         }
       }
     }
@@ -1808,22 +1791,6 @@
 }
 
 .table.predictions{
-  thead.league-data, tbody{
-    tr{
-      th{
-        span.country{
-          span.icon{
-            color: @ls-light-color;
-            font-size: @font-size-medium;
-            line-height: @font-size-normal;
-            position: relative;
-            top: 2px;
-            margin-right: 10px;
-          }
-        }
-      }
-    }
-  }
 
   tbody{
     tr{

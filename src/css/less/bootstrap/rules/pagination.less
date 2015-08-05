@@ -21,6 +21,15 @@
     }
   }
 
+  //Pagination bootstrap 3.3.5 z-index fix
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      z-index: 1;
+    }
+  }
+
   &.pagination-xs{ 
     > li{
       > a{
