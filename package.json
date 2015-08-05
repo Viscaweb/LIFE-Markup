@@ -12,7 +12,12 @@
     "grunt-csssplit": "^0.4.0",
     "load-grunt-tasks": "^3.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-csscss": "^0.6.2",
+    "grunt-postcss": "^0.5.5",
+    "grunt-uncss": "^0.4.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
