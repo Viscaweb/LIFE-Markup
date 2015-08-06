@@ -10856,7 +10856,6 @@ span.dark-icon {
   /*TR HIGHLIGHT STYLES*/
   /*TD HIGHLIGHT STYLES*/
   /*MATCHES TABLES*/
-  /*MY GAMES TABLES*/
   /*STANDING TABLES*/
 }
 
@@ -11955,6 +11954,10 @@ span.dark-icon {
   font-weight: 700;
 }
 
+.table.matches {
+  /*MY GAMES TABLES*/
+}
+
 .table.matches tbody tr th.league-title {
   display: block;
   position: absolute;
@@ -12184,40 +12187,40 @@ span.dark-icon {
   line-height: 15px;
 }
 
-.table.my-games tbody tr td {
+.table.matches tbody.my-games tr td {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.table.my-games tbody tr td span.hour {
+.table.matches tbody.my-games tr td span.hour {
   font-weight: 600;
 }
 
-.table.my-games tbody tr td.team {
+.table.matches tbody.my-games tr td.team {
   width: auto;
 }
 
-.table.my-games tbody tr td.team > a {
+.table.matches tbody.my-games tr td.team > a {
   display: block;
 }
 
-.table.my-games tbody tr td.team img {
+.table.matches tbody.my-games tr td.team img {
   max-width: 20px;
 }
 
-.table.my-games tbody tr td.team.team1 img {
+.table.matches tbody.my-games tr td.team.team1 img {
   margin-left: 5px;
 }
 
-.table.my-games tbody tr td.team.team2 img {
+.table.matches tbody.my-games tr td.team.team2 img {
   margin-right: 5px;
 }
 
-.table.my-games tbody tr td.score {
+.table.matches tbody.my-games tr td.score {
   padding: 0;
 }
 
-.table.my-games tbody tr td.score > a {
+.table.matches tbody.my-games tr td.score > a {
   display: block;
   line-height: 46px;
 }

@@ -1358,65 +1358,65 @@
       }
     }
 
+    /*MY GAMES TABLES*/
+    tbody.my-games{
 
-  }
 
-  /*MY GAMES TABLES*/
-  &.my-games{
+        tr{
 
-    tbody{
+          td{
+            padding-top: 8px;
+            padding-bottom: 8px;
 
-      tr{
-
-        td{
-          padding-top: 8px;
-          padding-bottom: 8px;
-
-          span.hour{
-            font-weight: @font-weight-semi-bold;
-          }
-
-          &.team{
-            width: auto;
-            > a{
-              display: block;
+            span.hour{
+              font-weight: @font-weight-semi-bold;
             }
 
-            img{
-              max-width: 20px;
-            }
-
-            &.team1{
+            &.team{
+              width: auto;
+              > a{
+                display: block;
+              }
 
               img{
-                margin-left: 5px;
+                max-width: 20px;
+              }
+
+              &.team1{
+
+                img{
+                  margin-left: 5px;
+                }
+              }
+
+              &.team2{
+
+                img{
+                  margin-right: 5px;
+                }
               }
             }
 
-            &.team2{
 
-              img{
-                margin-right: 5px;
+
+            &.score{
+              padding: 0;
+
+              > a{
+                display: block;
+                line-height: 46px;
               }
-            }
-          }
 
-
-
-          &.score{
-            padding: 0;
-
-            > a{
-              display: block;
-              line-height: 46px;
             }
 
           }
-
         }
-      }
+
     }
+
   }
+
+
 
   /*STANDING TABLES*/
   &.table-standing{
