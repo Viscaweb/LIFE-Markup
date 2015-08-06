@@ -1,3 +1,7 @@
+.country-flag.fr {
+  background-position: 0 -1424px;
+}
+
 .country-flag.bl,
 .country-flag.cp,
 .country-flag.mf,
@@ -5247,7 +5251,6 @@ table.other-sport thead.league-data > tr > th .tools span a i.icon-standings {
 }
 
 table.other-sport tbody {
-  border-top: 0;
   /*&:nth-child(even){
       background-color: darken(@ls-light-color,2%);
     }*/

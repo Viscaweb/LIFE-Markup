@@ -9724,6 +9724,9 @@ span.dark-icon {
 .table.matches {
   /*MY GAMES TABLES*/
 }
+.table.matches tbody {
+  border-top: 0;
+}
 .table.matches tbody tr th.league-title {
   display: block;
   position: absolute;
@@ -15908,7 +15911,6 @@ table.other-sport thead.league-data > tr > th .tools span a i.icon-standings {
   line-height: 16px;
 }
 table.other-sport tbody {
-  border-top: 0;
   /*&:nth-child(even){
       background-color: darken(@ls-light-color,2%);
     }*/

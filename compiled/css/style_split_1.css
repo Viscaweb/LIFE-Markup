@@ -11958,6 +11958,10 @@ span.dark-icon {
   /*MY GAMES TABLES*/
 }
 
+.table.matches tbody {
+  border-top: 0;
+}
+
 .table.matches tbody tr th.league-title {
   display: block;
   position: absolute;
@@ -14296,8 +14300,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.fo {
   background-position: 0 -1408px;
-}
-
-.country-flag.fr {
-  background-position: 0 -1424px;
 }
