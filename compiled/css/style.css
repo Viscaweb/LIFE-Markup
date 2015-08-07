@@ -9158,10 +9158,12 @@ span.dark-icon {
 .table tbody tr > td.tools > a.available .comment-number {
   color: #ffffff;
 }
-.table tbody tr > td.tools > a:hover {
+.table tbody tr > td.tools > a:hover,
+.table tbody tr > td.tools > a:focus {
   color: #808080;
 }
-.table tbody tr > td.tools > a:hover.available .comment-number {
+.table tbody tr > td.tools > a:hover.available .comment-number,
+.table tbody tr > td.tools > a:focus.available .comment-number {
   color: #ffffff;
 }
 .table tbody tr > td.tools > a.active {
@@ -13373,10 +13375,12 @@ span.glyphicon-star.active {
 .fav-match.available .comment-number {
   color: #ffffff;
 }
-.fav-match:hover {
+.fav-match:hover,
+.fav-match:focus {
   color: #808080;
 }
-.fav-match:hover.available .comment-number {
+.fav-match:hover.available .comment-number,
+.fav-match:focus.available .comment-number {
   color: #ffffff;
 }
 .fav-match.active {

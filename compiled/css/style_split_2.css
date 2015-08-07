@@ -1,3 +1,11 @@
+.country-flag.fm {
+  background-position: 0 -1392px;
+}
+
+.country-flag.fo {
+  background-position: 0 -1408px;
+}
+
 .country-flag.fr {
   background-position: 0 -1424px;
 }
@@ -2164,11 +2172,13 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 
-.fav-match:hover {
+.fav-match:hover,
+.fav-match:focus {
   color: #808080;
 }
 
-.fav-match:hover.available .comment-number {
+.fav-match:hover.available .comment-number,
+.fav-match:focus.available .comment-number {
   color: #ffffff;
 }
 
