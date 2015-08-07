@@ -12016,9 +12016,15 @@ span.dark-icon {
   margin-right: 5px;
 }
 
+.table.matches tbody tr td.team {
+  position: relative;
+}
+
 .table.matches tbody tr td.team > a {
-  display: block;
+  float: left;
   color: #5c5c5c;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .table.matches tbody tr td.team > a:hover {
@@ -12039,7 +12045,7 @@ span.dark-icon {
 
 .table.matches tbody tr td.team .label-goal {
   position: absolute;
-  top: 2px;
+  margin-top: 2px;
 }
 
 .table.matches tbody tr td.team.team1 {
@@ -12047,7 +12053,7 @@ span.dark-icon {
 }
 
 .table.matches tbody tr td.team.team1 > a {
-  display: block;
+  float: right;
 }
 
 .table.matches tbody tr td.team.team1 .label {
@@ -14290,8 +14296,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.fi {
   background-position: 0 -1360px;
-}
-
-.country-flag.fj {
-  background-position: 0 -1376px;
 }

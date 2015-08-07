@@ -1197,10 +1197,13 @@
           }
 
           &.team{
+            position: relative;
 
             > a{
-              display: block;
+              float: left;
               color: @text-color;
+              display: inline-block;
+              max-width: 100%;
 
 
               &:hover {
@@ -1222,14 +1225,14 @@
             
             .label-goal {
               position: absolute;
-              top:2px;
+              margin-top: 2px;
             }
 
             &.team1{
               text-align: right;
 
               > a{
-                display: block;
+                float: right;
               }
 
               .label{
