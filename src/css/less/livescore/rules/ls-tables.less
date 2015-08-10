@@ -29,6 +29,9 @@
       display: inline-block;
       font-size: 0;
       padding: 0 2px;
+      max-width: 76%;
+      white-space: nowrap;
+      overflow: hidden;
 
       > a, > span{
         font-size: @ls-data-league-font-size;
@@ -36,6 +39,9 @@
         padding: @ls-data-league-padding;
         line-height: @ls-data-league-line-height;
         color: @ls-light-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       span{
@@ -67,6 +73,7 @@
       padding: @ls-data-league-arrow-padding;
       line-height: @ls-data-league-line-height;
       font-size: @ls-data-league-font-size;
+      float: left;
 
       i{
         font-size: @font-size-x-tiny;
@@ -89,6 +96,8 @@
           font-size: @font-size-normal;
           vertical-align: top;
           line-height: @font-size-xx-large + 1px;
+          width: 30px;
+          text-align: center;
         }
       }
 
@@ -235,6 +244,7 @@
   th{
     padding: 0;
     vertical-align: middle !important;
+    white-space: nowrap;
 
     .country{
       text-transform: uppercase;
