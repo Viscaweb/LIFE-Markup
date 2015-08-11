@@ -9886,6 +9886,9 @@ span.dark-icon {
 .table.matches tbody tr.league-data span.match-name {
   display: none;
 }
+.table.matches tbody:hover tr.league-data > th .title span.match-name {
+  display: inline-block;
+}
 .table.matches tr.league-data th {
   padding: 0;
   vertical-align: middle !important;
@@ -10046,9 +10049,6 @@ span.dark-icon {
   background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
-}
-.table:hover tr.league-data > th .title span.match-name {
-  display: inline-block;
 }
 .table.layout-fixed {
   table-layout: fixed;

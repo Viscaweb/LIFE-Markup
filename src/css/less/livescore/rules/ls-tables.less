@@ -675,6 +675,8 @@
         .league-data-active-style();
       }
     }
+
+
   }
   
 
@@ -1335,6 +1337,19 @@
           }
         }
       }
+
+      &:hover {
+
+        tr.league-data {
+          > th {
+            .title {
+              span.match-name {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
     }
 
     //League data style
@@ -1550,18 +1565,7 @@
     }
   }
 
-  &:hover {
 
-    tr.league-data {
-      > th {
-        .title {
-          span.match-name {
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
 
   &.layout-fixed {
     table-layout: fixed;
