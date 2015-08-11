@@ -815,6 +815,10 @@
   background-color: #3b5586;
 }
 
+.sharing .likes .fb .social-button {
+  padding-top: 0;
+}
+
 .sharing .likes .tw .icon {
   background-color: #00b9f3;
 }
