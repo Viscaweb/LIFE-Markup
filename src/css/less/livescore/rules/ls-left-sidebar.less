@@ -124,16 +124,13 @@
 
 			&.dropdown-toggle:before{
 				content: "\e60d";
-			    font-family: "LSicons";
-			    font-size: @font-size-small - 2;
-			    left: 8px;
-			    position: absolute;
-			    color: darken(@ls-light-color,17%);
-			    .transition(transform 200ms ease-out);
-			
+		    font-family: "LSicons";
+		    font-size: @font-size-small - 2;
+		    left: 8px;
+		    position: absolute;
+		    color: darken(@ls-light-color,17%);
+		    transition: transform 200ms ease-out;
 			}
-      
-			
       
 			&.sortable{
 
@@ -186,7 +183,7 @@
 		.sub-menu{
 			padding: 0 0 10px;
 			list-style: none;
-			.transition(max-height 400ms ease-out);
+			transition: max-height 400ms ease-out;
 			
 			&.second-menu {
 					> li {
@@ -360,7 +357,7 @@
 			> a {
 				
 				&.dropdown-toggle:before{
-					.transform(rotate(90deg));
+					transform: rotate(90deg);
 					// content: "\e60b";
 				}
 			}

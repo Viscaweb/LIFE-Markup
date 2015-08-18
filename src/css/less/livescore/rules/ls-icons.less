@@ -43,7 +43,7 @@ i, span{
     &.live {
       color: @live-red;
 
-      &:hover {
+      &:hover{
         color: darken(@live-red,10%);
       }
     }
@@ -54,7 +54,8 @@ i, span{
 
   }
 
-  &:hover{
+  &:hover,
+  &:focus{
     color: contrast(@ls-table-tools-icons-color, darken(@ls-table-tools-icons-color, 30%), lighten(@ls-table-tools-icons-color, 30%));
 
 

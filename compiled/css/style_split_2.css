@@ -1,183 +1,3 @@
-.country-flag.be {
-  background-position: 0 -656px;
-}
-
-.country-flag.bf {
-  background-position: 0 -672px;
-}
-
-.country-flag.bg {
-  background-position: 0 -688px;
-}
-
-.country-flag.bh {
-  background-position: 0 -704px;
-}
-
-.country-flag.bi {
-  background-position: 0 -720px;
-}
-
-.country-flag.bj {
-  background-position: 0 -736px;
-}
-
-.country-flag.bm {
-  background-position: 0 -752px;
-}
-
-.country-flag.bn {
-  background-position: 0 -768px;
-}
-
-.country-flag.bo {
-  background-position: 0 -784px;
-}
-
-.country-flag.br {
-  background-position: 0 -800px;
-}
-
-.country-flag.bs {
-  background-position: 0 -816px;
-}
-
-.country-flag.bt {
-  background-position: 0 -832px;
-}
-
-.country-flag.bw {
-  background-position: 0 -848px;
-}
-
-.country-flag.by {
-  background-position: 0 -864px;
-}
-
-.country-flag.bz {
-  background-position: 0 -880px;
-}
-
-.country-flag.ca {
-  background-position: 0 -896px;
-}
-
-.country-flag.cg {
-  background-position: 0 -912px;
-}
-
-.country-flag.cf {
-  background-position: 0 -928px;
-}
-
-.country-flag.cd {
-  background-position: 0 -944px;
-}
-
-.country-flag.ch {
-  background-position: 0 -960px;
-}
-
-.country-flag.ci {
-  background-position: 0 -976px;
-}
-
-.country-flag.ck {
-  background-position: 0 -992px;
-}
-
-.country-flag.cl {
-  background-position: 0 -1008px;
-}
-
-.country-flag.cm {
-  background-position: 0 -1024px;
-}
-
-.country-flag.cn {
-  background-position: 0 -1040px;
-}
-
-.country-flag.co {
-  background-position: 0 -1056px;
-}
-
-.country-flag.cr {
-  background-position: 0 -1072px;
-}
-
-.country-flag.cu {
-  background-position: 0 -1088px;
-}
-
-.country-flag.cv {
-  background-position: 0 -1104px;
-}
-
-.country-flag.cy {
-  background-position: 0 -1120px;
-}
-
-.country-flag.cz {
-  background-position: 0 -1136px;
-}
-
-.country-flag.de {
-  background-position: 0 -1152px;
-}
-
-.country-flag.dj {
-  background-position: 0 -1168px;
-}
-
-.country-flag.dk {
-  background-position: 0 -1184px;
-}
-
-.country-flag.dm {
-  background-position: 0 -1200px;
-}
-
-.country-flag.do {
-  background-position: 0 -1216px;
-}
-
-.country-flag.dz {
-  background-position: 0 -1232px;
-}
-
-.country-flag.ec {
-  background-position: 0 -1248px;
-}
-
-.country-flag.ee {
-  background-position: 0 -1264px;
-}
-
-.country-flag.eg {
-  background-position: 0 -1280px;
-}
-
-.country-flag.eh {
-  background-position: 0 -1296px;
-}
-
-.country-flag.er {
-  background-position: 0 -1312px;
-}
-
-.country-flag.es {
-  background-position: 0 -1328px;
-}
-
-.country-flag.et {
-  background-position: 0 -1344px;
-}
-
-.country-flag.fi {
-  background-position: 0 -1360px;
-}
-
 .country-flag.fj {
   background-position: 0 -1376px;
 }
@@ -847,7 +667,7 @@
   background-position: 0 -3936px;
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (min-resolution: 192dpi) {
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2/1), all and (min-resolution: 192dpi) {
   .country-flag {
     background-image: url("../img//sprite-flags.png");
     /* Update the variable value with retina sprite */
@@ -918,19 +738,9 @@
   position: absolute;
   right: 15px;
   background-color: #f2f2f2;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
   border-radius: 50px;
   min-width: 85px;
   min-height: 85px;
-}
-
-@media \0screen {
-  .player .picture {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .player .picture img {
@@ -980,8 +790,6 @@
 }
 
 .sharing .likes .icon {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
   border-radius: 15px;
   color: #ffffff;
   display: inline-block;
@@ -991,14 +799,6 @@
   font-size: 20px;
   margin-right: 5px;
   vertical-align: middle;
-}
-
-@media \0screen {
-  .sharing .likes .icon {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .sharing .likes .fb,
@@ -1013,6 +813,10 @@
 
 .sharing .likes .fb .icon:hover {
   background-color: #3b5586;
+}
+
+.sharing .likes .fb .social-button {
+  padding-top: 0;
 }
 
 .sharing .likes .tw .icon {
@@ -1571,9 +1375,6 @@
   display: block;
   position: absolute;
   background: #000000;
-  filter: alpha(opacity=10);
-  -webkit-opacity: 0.1;
-  -moz-opacity: 0.1;
   opacity: 0.1;
 }
 
@@ -1724,11 +1525,9 @@
   line-height: 40px;
   color: #ffffff;
   opacity: .5;
-  transition: width 0.3s;
-  -webkit-transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  -ms-transition: width 0.3s;
-  -o-transition: width 0.3s;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
 }
 
 .top-match-block .slider-control.prev {
@@ -1796,19 +1595,9 @@
 
 .top-competitions-block.panel .nav-pills > li > a {
   line-height: 40px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   padding: 0 8px;
   border-bottom: 2px solid #efefef;
-}
-
-@media \0screen {
-  .top-competitions-block.panel .nav-pills > li > a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .top-competitions-block.panel .nav-pills > li > a:hover {
@@ -2391,11 +2180,13 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 
-.fav-match:hover {
+.fav-match:hover,
+.fav-match:focus {
   color: #808080;
 }
 
-.fav-match:hover.available .comment-number {
+.fav-match:hover.available .comment-number,
+.fav-match:focus.available .comment-number {
   color: #ffffff;
 }
 
@@ -2533,17 +2324,7 @@ span.glyphicon-star.active {
 
 *::-webkit-scrollbar-thumb {
   background: #5da400;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  *::-webkit-scrollbar-thumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -2566,21 +2347,11 @@ span.glyphicon-star.active {
   position: relative;
   padding: 17px 20px;
   padding-left: 40px;
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
   border-radius: 0 !important;
   font-weight: 400;
   font-size: 14px;
   background-color: #f9f9f9;
   border-bottom: 0 !important;
-}
-
-@media \0screen {
-  .ls-wizard > ul.nav > li > a {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .ls-wizard > ul.nav > li > a:after,
@@ -2604,6 +2375,7 @@ span.glyphicon-star.active {
 }
 
 .ls-wizard > ul.nav > li > a .label {
+  border-radius: 50%;
   padding: 0;
   display: inline-block;
   color: #ffffff;
@@ -2671,18 +2443,8 @@ span.glyphicon-star.active {
 
 .color-picker input {
   height: 30px;
-  -webkit-border-radius: 2px 0 0 2px;
-  -moz-border-radius: 2px 0 0 2px;
   border-radius: 2px 0 0 2px;
   text-transform: uppercase;
-}
-
-@media \0screen {
-  .color-picker input {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .color-picker .input-group-addon {
@@ -2706,6 +2468,7 @@ span.glyphicon-star.active {
 }
 
 .step-heading .label {
+  border-radius: 50%;
   padding: 0;
   display: inline-block;
   margin-right: 7px;
@@ -3042,18 +2805,7 @@ span.glyphicon-star.active {
 .popover.popover-tips {
   border-top: 0;
   min-width: 260px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  .popover.popover-trend,
-  .popover.popover-tips {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .popover.popover-trend > .arrow:after,
@@ -3063,23 +2815,12 @@ span.glyphicon-star.active {
 
 .popover.popover-trend > .popover-title,
 .popover.popover-tips > .popover-title {
-  -webkit-border-radius: 2px 2px 0 0;
-  -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
   background: #f5f5f5;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
   font-weight: 600;
   font-size: 14px;
-}
-
-@media \0screen {
-  .popover.popover-trend > .popover-title,
-  .popover.popover-tips > .popover-title {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .popover.popover-trend .popover-content {
@@ -3153,32 +2894,12 @@ span.glyphicon-star.active {
 
 .popover.popover-tips .popover-content .tips-list::-webkit-scrollbar-thumb {
   background: #5da400;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  .popover.popover-tips .popover-content .tips-list::-webkit-scrollbar-thumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .popover.popover-score {
   min-width: 490px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  .popover.popover-score {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .popover.popover-score .popover-content {
@@ -3209,17 +2930,7 @@ span.glyphicon-star.active {
 
 .popover.popover-standings {
   min-width: 395px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  .popover.popover-standings {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .popover.popover-standings .popover-content .table {
@@ -3874,17 +3585,7 @@ span.glyphicon-star.active {
   display: inline-block;
   padding: 0 5px;
   background: rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
   border-radius: 20px;
-}
-
-@media \0screen {
-  .match-timeline .timeline-scroll .penalty-goals .penalty-serie {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .match-timeline .timeline-scroll .penalty-goals .penalty-serie span {
@@ -3907,6 +3608,7 @@ span.glyphicon-star.active {
 }
 
 .match-timeline .timeline-scroll .penalty-goals .penalty-serie span.shootout-blank:after {
+  border-radius: 50%;
   content: "";
   width: 17px;
   height: 17px;
@@ -3972,6 +3674,7 @@ span.glyphicon-star.active {
 }
 
 .match-timeline .timeline-scroll .team-actions .replay {
+  border-radius: 50%;
   background-color: #454a4c;
   cursor: pointer;
   position: absolute;
@@ -3999,17 +3702,7 @@ span.glyphicon-star.active {
   background: rgba(69, 75, 77, 0.7);
   padding: 1px 1px;
   min-width: 23px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  .match-timeline .timeline-scroll .team-actions .action {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .match-timeline .timeline-scroll .team-actions .action span {
@@ -4181,15 +3874,11 @@ span.glyphicon-star.active {
 .match-summary-statistics .possession .graph .bar .progress {
   margin-bottom: 0;
   background-color: #396400;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
 .match-summary-statistics .possession .graph .bar .progress .progress-bar {
   float: right;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   background-color: #ffffff;
   min-width: 1%;
@@ -4216,27 +3905,13 @@ span.glyphicon-star.active {
 .match-summary-statistics .table tbody tr td.prog .progress {
   margin: 0;
   background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
 .match-summary-statistics .table tbody tr td.prog .progress .progress-bar {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   min-width: 1px;
-}
-
-@media \0screen {
-  .match-summary-statistics .table tbody tr td.prog .progress .progress-bar {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .match-summary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
@@ -4461,7 +4136,10 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 13px solid #ffffff;
-  -moz-transform: scale(0.9999);
+  -webkit-transform: scale(0.9999);
+  -ms-transform: scale(0.9999);
+  -o-transform: scale(0.9999);
+  transform: scale(0.9999);
 }
 
 .match-teams-lineups .component-container .field:after {
@@ -4474,23 +4152,16 @@ span.glyphicon-star.active {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 13px solid #ffffff;
-  -moz-transform: scale(0.9999);
+  -webkit-transform: scale(0.9999);
+  -ms-transform: scale(0.9999);
+  -o-transform: scale(0.9999);
+  transform: scale(0.9999);
 }
 
 .match-teams-lineups .popover {
   border-top: 0;
   min-width: 322px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-}
-
-@media \0screen {
-  .match-teams-lineups .popover {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .match-teams-lineups .popover .arrow:after {
@@ -4502,22 +4173,12 @@ span.glyphicon-star.active {
 }
 
 .match-teams-lineups .popover .popover-content > .title {
-  -webkit-border-radius: 2px 2px 0 0;
-  -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
   background: #f5f5f5;
   border-bottom: 1px solid #f0f0f0;
   padding: 8px 20px;
   font-size: 13px;
   font-weight: 600;
-}
-
-@media \0screen {
-  .match-teams-lineups .popover .popover-content > .title {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .match-teams-lineups .popover .popover-content > .body {
@@ -4790,15 +4451,11 @@ span.glyphicon-star.active {
 
 .match-prediction > .row > div table tbody tr td .progress {
   margin-bottom: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   background-color: #e8e8e8;
 }
 
 .match-prediction > .row > div table tbody tr td .progress .progress-bar {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -5301,6 +4958,7 @@ span.glyphicon-star.active {
 
 .head-to-head .teams .team .circle,
 .team-form .teams .team .circle {
+  border-radius: 50%;
   display: inline-table;
   width: 60px;
   height: 60px;
@@ -5611,7 +5269,6 @@ table.other-sport thead.league-data > tr > th .tools span a i.icon-standings {
 }
 
 table.other-sport tbody {
-  border-top: 0;
   /*&:nth-child(even){
       background-color: darken(@ls-light-color,2%);
     }*/
@@ -5757,12 +5414,12 @@ table.other-sport.sport-tennis tbody tr td.teams img {
   float: right;
 }
 
-table.other-sport.my-games tbody tr:nth-child(2) {
+table.other-sport tbody.my-games tr:nth-child(2) {
   border-bottom: none;
 }
 
-table.other-sport.my-games tbody tr:nth-child(3),
-table.other-sport.my-games tbody tr td[rowspan] {
+table.other-sport tbody.my-games tr:nth-child(3),
+table.other-sport tbody.my-games tr td[rowspan] {
   border-bottom: 2px solid #e2e2e2;
 }
 
@@ -6563,11 +6220,9 @@ table.squad-listing.avatars tbody tr td.player {
   width: 100%;
   height: 518px;
   z-index: 3;
-  transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   overflow: hidden;
 }
 
@@ -6580,8 +6235,6 @@ table.squad-listing.avatars tbody tr td.player {
 
 .widget-creator-settings-validation > .row > div .widget-preview .iframe-container .widget-iframe:hover {
   width: 630px;
-  -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
 }
 
@@ -7459,6 +7112,7 @@ main .content .league-list ul li.item-placeholder {
 }
 
 .profile-image {
+  border-radius: 50%;
   height: 138px;
   width: 138px;
   overflow: hidden;
@@ -7472,6 +7126,7 @@ main .content .league-list ul li.item-placeholder {
 }
 
 .profile-image > a {
+  border-radius: 50%;
   height: 80px;
   width: 80px;
   display: block;
@@ -7740,6 +7395,7 @@ ul.image-list li img {
 }
 
 .change-profile-image > .row .left-side .current-image img {
+  border-radius: 50%;
   margin-bottom: 8px;
   width: 104px;
   height: 104px;
@@ -7777,6 +7433,7 @@ ul.image-list li img {
 }
 
 .change-profile-image > .row .options .predefined-images ul > li .img {
+  border-radius: 50%;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -7825,6 +7482,7 @@ ul.image-list li img {
 }
 
 .change-profile-image > .row .options .custom-picture > .row > div:first-child.selected-image .img {
+  border-radius: 50%;
   display: inline-block;
   position: relative;
   border: 3px solid transparent;
@@ -7925,6 +7583,7 @@ ul.image-list li img {
 }
 
 .change-profile-image > .row .options .my-teams ul > li .logo {
+  border-radius: 50%;
   background-color: #f3f3f3;
   display: inline-block;
   height: 52px;
@@ -8310,6 +7969,8 @@ ul.image-list li img {
 
 .article-resume .article-body .article-image img:hover {
   opacity: .9;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -8426,6 +8087,8 @@ ul.image-list li img {
 
 .featured-article .article-image img:hover {
   opacity: .9;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -8582,6 +8245,7 @@ ul.image-list li img {
 }
 
 .discussion .panel-body ul.users-list li a {
+  border-radius: 50%;
   background-color: #fafafa;
   display: block;
   width: 36px;
@@ -8658,6 +8322,8 @@ ul.image-list li img {
 
 .small-news a.article-image img:hover {
   opacity: .9;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
   transition: opacity .2s;
 }
 
@@ -9070,11 +8736,9 @@ ul.image-list li img {
   left: 8px;
   position: absolute;
   color: #d4d4d4;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
   transition: transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  -moz-transition: transform 200ms ease-out;
-  -ms-transition: transform 200ms ease-out;
-  -o-transition: transform 200ms ease-out;
 }
 
 .sidebar-nav li a.sortable .sort {
@@ -9119,11 +8783,9 @@ ul.image-list li img {
 .sidebar-nav li .sub-menu {
   padding: 0 0 10px;
   list-style: none;
-  transition: max-height 400ms ease-out;
   -webkit-transition: max-height 400ms ease-out;
-  -moz-transition: max-height 400ms ease-out;
-  -ms-transition: max-height 400ms ease-out;
   -o-transition: max-height 400ms ease-out;
+  transition: max-height 400ms ease-out;
 }
 
 .sidebar-nav li .sub-menu.second-menu > li.open > a {
@@ -9234,9 +8896,9 @@ ul.image-list li img {
 
 .sidebar-nav li.open > a.dropdown-toggle:before {
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .sidebar-nav-inverse {
@@ -9384,21 +9046,11 @@ ul.image-list li img {
 }
 
 .breadcrumb {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background: #ffffff;
   padding: 0 0 0 20px;
   margin: 0;
   border-bottom: 1px solid #ececec;
-}
-
-@media \0screen {
-  .breadcrumb {
-    behavior: url("js/css3pie/PIE.htc");
-    position: relative;
-    zoom: 1;
-  }
 }
 
 .breadcrumb > li {
@@ -9604,12 +9256,9 @@ ul.image-list li img {
   -webkit-animation: blinker 1s linear 4;
   -o-animation: blinker 1s linear 4;
   animation: blinker 1s linear 4;
-  -webkit-animation: blinker 1s linear 4 300ms 0 ease;
-  -moz-animation: blinker 1s linear 4 300ms 0 ease;
-  -ms-animation: blinker 1s linear 4 300ms 0 ease;
 }
 
-@-moz-keyframes blinker {
+@-webkit-keyframes blinker {
   0% {
     opacity: 1.0;
   }
@@ -9623,7 +9272,7 @@ ul.image-list li img {
   }
 }
 
-@-webkit-keyframes blinker {
+@-o-keyframes blinker {
   0% {
     opacity: 1.0;
   }
@@ -9652,35 +9301,102 @@ ul.image-list li img {
 }
 
 .bounce {
-  -webkit-animation: bounce 1s 0.5s;
-  -o-animation: bounce 1s 0.5s;
-  animation: bounce 1s 0.5s;
-  -webkit-animation: bounce 1s 0.5s 300ms 0 ease;
-  -moz-animation: bounce 1s 0.5s 300ms 0 ease;
-  -ms-animation: bounce 1s 0.5s 300ms 0 ease;
+  -webkit-animation: bounce 1s .5s;
+  -o-animation: bounce 1s .5s;
+  animation: bounce 1s .5s;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     opacity: 1;
   }
 
   50% {
+    -webkit-transform: scale(1.6);
     transform: scale(1.6);
     opacity: .7;
   }
 
   60% {
+    -webkit-transform: scale(0.6);
     transform: scale(0.6);
     opacity: 1;
   }
 
   80% {
+    -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
 
   100% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+
+@-o-keyframes bounce {
+  0% {
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  50% {
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    opacity: .7;
+  }
+
+  60% {
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+  }
+
+  80% {
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  100% {
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    opacity: .7;
+  }
+
+  60% {
+    -webkit-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  100% {
+    -webkit-transform: scale(0.85);
+    -o-transform: scale(0.85);
     transform: scale(0.85);
   }
 }
@@ -9700,4 +9416,4 @@ ul.image-list li img {
 
 /*@import "less/livescore/variables/ls-variables-widgets.less";*/
 
-/*# sourceMappingURL=style-map.css */
+/*# sourceMappingURL=style.css.map */

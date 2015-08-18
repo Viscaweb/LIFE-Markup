@@ -5,7 +5,7 @@
     background: @header-bg;
     height: 64px;
     border: 0;
-    .box-shadow( 0px 3px 0px 0px rgba(0,0,0,0.05));
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
     
     .navbar-header{
       margin-right: 0;
@@ -32,7 +32,7 @@
         input{
           border:none;
           background: darken(@header-bg, 5%);
-          .border-radius(2px 0 0 2px);
+          border-radius: 2px 0 0 2px;
           color: darken(@header-bg, 47%);
           font-size:  @font-size-base -1;
           font-weight: 300;
@@ -45,7 +45,7 @@
         .form-control{
           display: table-cell !important;
         
-          &::-moz-placeholder {
+          &::placeholder {
             color: #afafaf;
           }
         }
@@ -57,13 +57,13 @@
             border-color: darken(@header-bg, 5%);
             background: darken(@header-bg, 5%);
             color: darken(@header-bg, 31%);
-            .border-radius(0 2px 2px 0);
+            border-radius: 0 2px 2px 0;
             height: 36px;
             font-size:  @font-size-large;
             outline: none;
             
             &:hover, &:active{
-              .box-shadow(none);
+              box-shadow: none;
             }
             
             &:hover{

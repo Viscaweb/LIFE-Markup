@@ -227,7 +227,7 @@
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         border-left: 13px solid @ls-light-color;
-        -moz-transform: scale(.9999);
+        transform: scale(.9999);
       }
       
       &:after{
@@ -240,7 +240,7 @@
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         border-right: 13px solid @ls-light-color; 
-        -moz-transform: scale(.9999);     
+        transform: scale(.9999);     
       }
     }
   }
@@ -248,7 +248,7 @@
   .popover{
     border-top: 0;
     min-width: 322px;
-    .border-radius(2px);
+    border-radius: 2px;
     
     .arrow:after{
       border-bottom-color: @panel-default-heading-bg;
@@ -258,7 +258,7 @@
       padding: 0;
       
       > .title{
-        .border-radius(2px 2px 0 0);
+        border-radius: 2px 2px 0 0;
         background:  @panel-default-heading-bg;
         border-bottom: 1px solid darken(@ls-light-color,6%);
         padding: 8px 20px;

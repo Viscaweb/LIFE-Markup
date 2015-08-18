@@ -593,7 +593,7 @@
 
     </div>    <div class="row">
         <div class="col-md-12">
-            <table class="table matches my-games table-condensed layout-fixed">
+            <table class="table matches  table-condensed layout-fixed">
                 <colgroup>
                     <col class="hour" />
                     <col class="time" />
@@ -604,13 +604,10 @@
                     <col class="tools tools-4" />
                     <col class="favorite">
                 </colgroup>
-
-                <thead>
+                <tbody class="my-games">
                 <tr class="league-data league-data-heading">
                     <th colspan="8"><div class="title"><span class="icon"><i class="icon-bell"></i></span><a class="title" href="#">My Games</a><a class="help-icon" href="#" data-toggle="popover" data-popover="popover" data-trigger="hover" data-placement="right" data-content="[Translation to create] Have your games always showing up first here by clicking the star next to each game or by selecting your favorite team." data-container="body"><span class="glyphicon glyphicon-question-sign"></span></a></div></th>
                 </tr>
-                </thead>
-                <tbody>
                 <tr>
                     <th class="league-title"><a href="#">League 1</a></th>
                 </tr>
@@ -674,7 +671,9 @@
                 <tr>
                     <td class="hour">13h30</td>
                     <td class="time">FT</td>
-                    <td class="team team1 has-logo"><a href="#"><span>PSG</span><img src="../img/sprites/psg.png" alt="Barcelona"></a></td>
+                    <td class="team team1 has-logo">
+                        <a href="#"><span>PSG</span><img src="../img/sprites/psg.png" alt="Barcelona"></a>
+                        <span class="label label-live label-goal bounce">GOAL!</span></td>
                     <td class="score"><a href="#" class="has-score-details"><span class="home-score">1</span> <span class="versus"> - </span> <span class="away">2</span></a></td>
                     <td class="team team2 has-logo"><a href="#"><img alt="Team 5" src="../img/sprites/lyon.png"><span>Olympique Lyonnais</span></a></td>
                     <td class="half-time-score">(0 - 1)</td>
@@ -705,22 +704,6 @@
                     </td>
                 </tr>
                 </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table matches table-condensed layout-fixed">
-                <colgroup>
-                    <col class="hour" />
-                    <col class="time" />
-                    <col class="team team1" />
-                    <col class="score" />
-                    <col class="team team2" />
-                    <col class="half-time-score" />
-                    <col class="tools tools-4" />
-                    <col class="favorite">
-                </colgroup>
                 <tbody>
                 <tr class="league-data active">
                     <th colspan="8">
@@ -734,7 +717,7 @@
                         <div class="title">
                             <span class="country"><i class="country-flag fr"></i>France :</span>
                             <a href="#">Ligue 1</a>
-                            <span class="match-name">: Matchday 23</span>
+                            <span class="match-name">: Matchday 23 - Group B - Qualification phase for winning the cup</span>
                         </div>
                     </th>
                 </tr>
@@ -802,7 +785,10 @@
                     <td class="time live">42'</td>
                     <td class="team team1"><a href="#">JS Saoura</a></td>
                     <td class="score updated"><a href="#"><span class="home-score">0</span> <span class="versus"> - </span> <span class="away blinking">1</span></a></td>
-                    <td class="team team2 win"><a href="#">MC Alger<span class="label label-live label-goal bounce">GOAL!</span></a></td>
+                    <td class="team team2 win">
+                        <a href="#">MC Alger</a>
+                        <span class="label label-live label-goal bounce">GOAL!</span>
+                    </td>
                     <td class="half-time-score"></td>
                     <td class="tools dropdown">
                         <a href="#" class="available"><i class="icon-play"></i></a>
@@ -918,18 +904,6 @@
                     </td>
                 </tr>
                 </tbody>
-            </table>
-            <table class="table matches table-condensed layout-fixed">
-                <colgroup >
-                    <col class="hour" />
-                    <col class="time" />
-                    <col class="team team1" />
-                    <col class="score" />
-                    <col class="team team2" />
-                    <col class="half-time-score" />
-                    <col class="tools tools-4" />
-                    <col class="favorite">
-                </colgroup>
                 <tbody>
                 <tr class="league-data">
                     <th colspan="8">
@@ -991,18 +965,6 @@
                 </tr>
 
                 </tbody>
-            </table>
-            <table class="table matches table-condensed layout-fixed">
-                <colgroup >
-                    <col class="hour" />
-                    <col class="time" />
-                    <col class="team team1" />
-                    <col class="score" />
-                    <col class="team team2" />
-                    <col class="half-time-score" />
-                    <col class="tools tools-6" />
-                    <col class="favorite">
-                </colgroup>
                 <tbody>
                 <tr class="league-data">
                     <th colspan="8">
@@ -1021,18 +983,6 @@
                     </th>
                 </tr>
                 </tbody>
-            </table>
-            <table class="table matches table-condensed layout-fixed">
-                <colgroup >
-                    <col class="hour" />
-                    <col class="time" />
-                    <col class="team team1" />
-                    <col class="score" />
-                    <col class="team team2" />
-                    <col class="half-time-score" />
-                    <col class="tools tools-6" />
-                    <col class="favorite">
-                </colgroup>
                 <tbody>
                 <tr class="league-data">
                     <th colspan="8">

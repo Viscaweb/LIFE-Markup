@@ -29,6 +29,9 @@
       display: inline-block;
       font-size: 0;
       padding: 0 2px;
+      max-width: 76%;
+      white-space: nowrap;
+      overflow: hidden;
 
       > a, > span{
         font-size: @ls-data-league-font-size;
@@ -36,6 +39,9 @@
         padding: @ls-data-league-padding;
         line-height: @ls-data-league-line-height;
         color: @ls-light-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       span{
@@ -67,6 +73,7 @@
       padding: @ls-data-league-arrow-padding;
       line-height: @ls-data-league-line-height;
       font-size: @ls-data-league-font-size;
+      float: left;
 
       i{
         font-size: @font-size-x-tiny;
@@ -89,6 +96,8 @@
           font-size: @font-size-normal;
           vertical-align: top;
           line-height: @font-size-xx-large + 1px;
+          width: 30px;
+          text-align: center;
         }
       }
 
@@ -225,7 +234,7 @@
 .league-data-active-style(){
   > th{
     > a.dropdown-toggle{
-      .box-shadow(5px 0 0 @active-green inset);
+      box-shadow: 5px 0 0 @active-green inset;
     }
   }
 }
@@ -235,6 +244,7 @@
   th{
     padding: 0;
     vertical-align: middle !important;
+    white-space: nowrap;
 
     .country{
       text-transform: uppercase;
@@ -500,7 +510,7 @@
               border-top: 5px solid transparent;
               border-bottom: 5px solid transparent;
               border-left: 5px solid contrast(@ls-light-color, darken(@ls-light-color, 28%), fade(#ffffff, 30%));
-              .rotate(45deg);
+              transform: rotate(45deg);
             }
           }
 
@@ -665,6 +675,8 @@
         .league-data-active-style();
       }
     }
+
+
   }
   
 
@@ -1106,7 +1118,7 @@
         border: 0;
 
         &.event-outcome {
-          .box-shadow(1px -1px 0 @ls-light-color inset);
+          box-shadow: 1px -1px 0 @ls-light-color inset;
         }
       }
     }
@@ -1138,6 +1150,7 @@
   &.matches{
 
     tbody{
+      border-top: 0;
 
       tr{
 
@@ -1196,10 +1209,13 @@
           }
 
           &.team{
+            position: relative;
 
             > a{
-              display: block;
+              float: left;
               color: @text-color;
+              display: inline-block;
+              max-width: 100%;
 
 
               &:hover {
@@ -1221,14 +1237,14 @@
             
             .label-goal {
               position: absolute;
-              top:2px;
+              margin-top: 2px;
             }
 
             &.team1{
               text-align: right;
 
               > a{
-                display: block;
+                float: right;
               }
 
               .label{
@@ -1321,6 +1337,19 @@
           }
         }
       }
+
+      &:hover {
+
+        tr.league-data {
+          > th {
+            .title {
+              span.match-name {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
     }
 
     //League data style
@@ -1358,65 +1387,65 @@
       }
     }
 
+    /*MY GAMES TABLES*/
+    tbody.my-games{
 
-  }
 
-  /*MY GAMES TABLES*/
-  &.my-games{
+        tr{
 
-    tbody{
+          td{
+            padding-top: 8px;
+            padding-bottom: 8px;
 
-      tr{
-
-        td{
-          padding-top: 8px;
-          padding-bottom: 8px;
-
-          span.hour{
-            font-weight: @font-weight-semi-bold;
-          }
-
-          &.team{
-            width: auto;
-            > a{
-              display: block;
+            span.hour{
+              font-weight: @font-weight-semi-bold;
             }
 
-            img{
-              max-width: 20px;
-            }
-
-            &.team1{
+            &.team{
+              width: auto;
+              > a{
+                display: block;
+              }
 
               img{
-                margin-left: 5px;
+                max-width: 20px;
+              }
+
+              &.team1{
+
+                img{
+                  margin-left: 5px;
+                }
+              }
+
+              &.team2{
+
+                img{
+                  margin-right: 5px;
+                }
               }
             }
 
-            &.team2{
 
-              img{
-                margin-right: 5px;
+
+            &.score{
+              padding: 0;
+
+              > a{
+                display: block;
+                line-height: 46px;
               }
-            }
-          }
 
-
-
-          &.score{
-            padding: 0;
-
-            > a{
-              display: block;
-              line-height: 46px;
             }
 
           }
-
         }
-      }
+
     }
+
   }
+
+
 
   /*STANDING TABLES*/
   &.table-standing{
@@ -1536,18 +1565,7 @@
     }
   }
 
-  &:hover {
 
-    tr.league-data {
-      > th {
-        .title {
-          span.match-name {
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
 
   &.layout-fixed {
     table-layout: fixed;
@@ -1749,6 +1767,10 @@
       }
     }
   }
+
+  &:not(.other-sport) {
+
+  }
 }
 
 .table.league-selection{
@@ -1778,7 +1800,7 @@
           text-align: right;
 
           .btn{
-            .border-radius(2px);
+            border-radius: 2px;
           }
         }
 

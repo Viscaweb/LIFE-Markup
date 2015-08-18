@@ -2,7 +2,7 @@
   font-size: @font-size-small;
   line-height: 16px;
   padding: (@padding-large-vertical - 1) (@padding-base-horizontal - 3);
-  .transition(.6s ease-in-out width);
+  transition: .6s ease-in-out width;
 
   &:focus{
     outline: none;
@@ -172,7 +172,7 @@
   }
   
   > .btn{
-    .border-radius(@border-radius-base);
+    border-radius: @border-radius-base;
     background-clip: border-box;
     
    &.active{
