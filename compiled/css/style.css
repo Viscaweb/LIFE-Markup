@@ -14003,6 +14003,7 @@ span.glyphicon-star.active {
 }
 .popover.popover-score .popover-content .table tr td.score {
   width: 50px;
+  white-space: nowrap;
 }
 .popover.popover-score .popover-content .table tr:first-child td {
   border-top: none;
