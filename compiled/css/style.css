@@ -14766,6 +14766,9 @@ span.glyphicon-star.active {
   width: 1%;
   text-align: center;
 }
+.match-report table tbody tr:hover td.minute {
+  background-color: #e6e6e6;
+}
 .match-summary-statistics .possession {
   background: url("../img//timeline/timeline-bg.jpg") repeat;
   padding: 13px 10px 20px;
