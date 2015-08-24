@@ -9193,6 +9193,11 @@ span.dark-icon {
 .table tbody tr > td.logo img {
   max-width: 20px;
 }
+.table tbody tr > td.action-icon {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
 .table tbody tr > td.minute-range {
   background-color: #f7f7f7;
 }
@@ -10148,6 +10153,9 @@ span.dark-icon {
 }
 .table.layout-fixed colgroup col.minutes {
   width: 60px;
+}
+.table.layout-fixed colgroup col.action-icon {
+  width: 26px;
 }
 .table.layout-fixed colgroup col.odd {
   width: 54px ;
@@ -13994,7 +14002,6 @@ span.glyphicon-star.active {
   margin: 0;
 }
 .popover.popover-score .popover-content .table tr td {
-  padding: 3px 7px;
   line-height: 17px;
 }
 .popover.popover-score .popover-content .table tr td.team {

@@ -1,3 +1,11 @@
+.country-flag.et {
+  background-position: 0 -1344px;
+}
+
+.country-flag.fi {
+  background-position: 0 -1360px;
+}
+
 .country-flag.fj {
   background-position: 0 -1376px;
 }
@@ -2911,7 +2919,6 @@ span.glyphicon-star.active {
 }
 
 .popover.popover-score .popover-content .table tr td {
-  padding: 3px 7px;
   line-height: 17px;
 }
 
