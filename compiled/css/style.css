@@ -15089,7 +15089,7 @@ span.glyphicon-star.active {
 }
 .match-teams-lineups .popover .popover-content .content-header.player .avatar {
   margin-right: 10px;
-  position: static;
+  float: left;
 }
 .match-teams-lineups .popover .popover-content .content-header.player .avatar img {
   margin: 0;
@@ -15097,6 +15097,9 @@ span.glyphicon-star.active {
   max-height: 80px;
   vertical-align: baseline;
   background: #f7f7f7;
+}
+.match-teams-lineups .popover .popover-content .content-header.player .info {
+  float: left;
 }
 .match-teams-lineups .popover .popover-content .content-header.player .actions {
   margin-top: 5px;
