@@ -9800,7 +9800,8 @@ span.dark-icon {
 .table.matches tbody tr td.team {
   position: relative;
 }
-.table.matches tbody tr td.team > a {
+.table.matches tbody tr td.team > a,
+.table.matches tbody tr td.team div {
   float: left;
   color: #5c5c5c;
   display: inline-block;
@@ -9826,7 +9827,8 @@ span.dark-icon {
 .table.matches tbody tr td.team.team1 {
   text-align: right;
 }
-.table.matches tbody tr td.team.team1 > a {
+.table.matches tbody tr td.team.team1 > a,
+.table.matches tbody tr td.team.team1 div {
   float: right;
 }
 .table.matches tbody tr td.team.team1 .label {
@@ -9850,7 +9852,8 @@ span.dark-icon {
 .table.matches tbody tr td.team.team2 img {
   margin-right: 5px;
 }
-.table.matches tbody tr td.team.has-logo > a {
+.table.matches tbody tr td.team.has-logo > a,
+.table.matches tbody tr td.team.has-logo div {
   position: relative;
   padding-left: 23px;
 }
@@ -9860,7 +9863,8 @@ span.dark-icon {
   top: 50%;
   left: 0;
 }
-.table.matches tbody tr td.team.has-logo.team1 > a {
+.table.matches tbody tr td.team.has-logo.team1 > a,
+.table.matches tbody tr td.team.has-logo.team1 div {
   padding-left: 0;
   padding-right: 23px;
 }
@@ -9957,7 +9961,8 @@ span.dark-icon {
 .table.matches tbody.my-games tr td.team {
   width: auto;
 }
-.table.matches tbody.my-games tr td.team > a {
+.table.matches tbody.my-games tr td.team > a,
+.table.matches tbody.my-games tr td.team div {
   display: block;
 }
 .table.matches tbody.my-games tr td.team img {
@@ -9975,6 +9980,13 @@ span.dark-icon {
 .table.matches tbody.my-games tr td.score > a {
   display: block;
   line-height: 46px;
+}
+.table.linked-rows tr td.hour,
+.table.linked-rows tr td.time,
+.table.linked-rows tr td.team,
+.table.linked-rows tr td.score,
+.table.linked-rows tr td.half-time-score {
+  cursor: pointer;
 }
 .table.table-standing thead tr th,
 .table.table-standing tbody tr th {
@@ -9998,7 +10010,8 @@ span.dark-icon {
   width: auto;
   padding: 0px 5px;
 }
-.table.table-standing tbody tr td.team > a {
+.table.table-standing tbody tr td.team > a,
+.table.table-standing tbody tr td.team div {
   color: #5c5c5c;
   white-space: nowrap;
   overflow: hidden;
@@ -10046,7 +10059,8 @@ span.dark-icon {
   display: inline-block;
 }
 .table.table-standing tbody tr.live td.team,
-.table.table-standing tbody tr.live td.team > a {
+.table.table-standing tbody tr.live td.team > a,
+.table.table-standing tbody tr.live td.team > div {
   font-weight: 600;
   color: #e33000;
 }
@@ -10067,7 +10081,8 @@ span.dark-icon {
 
         */
 }
-.table.layout-fixed tr td.team > a {
+.table.layout-fixed tr td.team > a,
+.table.layout-fixed tr td.team div {
   overflow: hidden;
   position: relative;
 }

@@ -1218,16 +1218,16 @@
           &.team{
             position: relative;
 
-            > a{
+            > a, div{
               float: left;
               color: @text-color;
               display: inline-block;
               max-width: 100%;
 
+            }
 
-              &:hover {
-                color: @link-hover-color;
-              }
+            > a:hover {
+              color: @link-hover-color;
             }
 
             .red-card{
@@ -1250,7 +1250,7 @@
             &.team1{
               text-align: right;
 
-              > a{
+              > a, div{
                 float: right;
               }
 
@@ -1285,7 +1285,7 @@
 
             &.has-logo{
 
-              > a{
+              > a, div{
                 position: relative;
                 padding-left: 23px;
               }
@@ -1299,7 +1299,7 @@
 
               &.team1{
 
-                > a{
+                > a, div{
                   padding-left: 0;
                   padding-right: 23px;
                 }
@@ -1410,7 +1410,7 @@
 
             &.team{
               width: auto;
-              > a{
+              > a, div{
                 display: block;
               }
 
@@ -1452,7 +1452,20 @@
 
   }
 
+  &.linked-rows {
 
+    tr td {
+
+      &.hour,
+      &.time,
+      &.team,
+      &.score,
+      &.half-time-score{
+        cursor: pointer;
+      }
+
+    }
+  }
 
   /*STANDING TABLES*/
   &.table-standing{
@@ -1493,7 +1506,7 @@
             padding: 0px 5px;
 
 
-            > a{
+            > a, div{
               color: @text-color;
               white-space: nowrap;
               overflow: hidden;
@@ -1558,7 +1571,7 @@
 
           td{
 
-            &.team, &.team > a{
+            &.team, &.team > a, &.team > div{
               font-weight: @font-weight-semi-bold;
               color: @live-red;
             }
@@ -1588,7 +1601,7 @@
         */
         &.team {
 
-          > a {
+          > a, div {
             overflow: hidden;
             position: relative;
           }
@@ -1782,6 +1795,7 @@
   &:not(.other-sport) {
 
   }
+
 }
 
 .table.league-selection{

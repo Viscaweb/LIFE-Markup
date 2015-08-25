@@ -12045,7 +12045,8 @@ span.dark-icon {
   position: relative;
 }
 
-.table.matches tbody tr td.team > a {
+.table.matches tbody tr td.team > a,
+.table.matches tbody tr td.team div {
   float: left;
   color: #5c5c5c;
   display: inline-block;
@@ -12077,7 +12078,8 @@ span.dark-icon {
   text-align: right;
 }
 
-.table.matches tbody tr td.team.team1 > a {
+.table.matches tbody tr td.team.team1 > a,
+.table.matches tbody tr td.team.team1 div {
   float: right;
 }
 
@@ -12109,7 +12111,8 @@ span.dark-icon {
   margin-right: 5px;
 }
 
-.table.matches tbody tr td.team.has-logo > a {
+.table.matches tbody tr td.team.has-logo > a,
+.table.matches tbody tr td.team.has-logo div {
   position: relative;
   padding-left: 23px;
 }
@@ -12121,7 +12124,8 @@ span.dark-icon {
   left: 0;
 }
 
-.table.matches tbody tr td.team.has-logo.team1 > a {
+.table.matches tbody tr td.team.has-logo.team1 > a,
+.table.matches tbody tr td.team.has-logo.team1 div {
   padding-left: 0;
   padding-right: 23px;
 }
@@ -12242,7 +12246,8 @@ span.dark-icon {
   width: auto;
 }
 
-.table.matches tbody.my-games tr td.team > a {
+.table.matches tbody.my-games tr td.team > a,
+.table.matches tbody.my-games tr td.team div {
   display: block;
 }
 
@@ -12265,6 +12270,14 @@ span.dark-icon {
 .table.matches tbody.my-games tr td.score > a {
   display: block;
   line-height: 46px;
+}
+
+.table.linked-rows tr td.hour,
+.table.linked-rows tr td.time,
+.table.linked-rows tr td.team,
+.table.linked-rows tr td.score,
+.table.linked-rows tr td.half-time-score {
+  cursor: pointer;
 }
 
 .table.table-standing thead tr th,
@@ -12295,7 +12308,8 @@ span.dark-icon {
   padding: 0px 5px;
 }
 
-.table.table-standing tbody tr td.team > a {
+.table.table-standing tbody tr td.team > a,
+.table.table-standing tbody tr td.team div {
   color: #5c5c5c;
   white-space: nowrap;
   overflow: hidden;
@@ -12352,7 +12366,8 @@ span.dark-icon {
 }
 
 .table.table-standing tbody tr.live td.team,
-.table.table-standing tbody tr.live td.team > a {
+.table.table-standing tbody tr.live td.team > a,
+.table.table-standing tbody tr.live td.team > div {
   font-weight: 600;
   color: #e33000;
 }
@@ -12377,7 +12392,8 @@ span.dark-icon {
         */
 }
 
-.table.layout-fixed tr td.team > a {
+.table.layout-fixed tr td.team > a,
+.table.layout-fixed tr td.team div {
   overflow: hidden;
   position: relative;
 }
@@ -14266,56 +14282,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.cy {
   background-position: 0 -1120px;
-}
-
-.country-flag.cz {
-  background-position: 0 -1136px;
-}
-
-.country-flag.de {
-  background-position: 0 -1152px;
-}
-
-.country-flag.dj {
-  background-position: 0 -1168px;
-}
-
-.country-flag.dk {
-  background-position: 0 -1184px;
-}
-
-.country-flag.dm {
-  background-position: 0 -1200px;
-}
-
-.country-flag.do {
-  background-position: 0 -1216px;
-}
-
-.country-flag.dz {
-  background-position: 0 -1232px;
-}
-
-.country-flag.ec {
-  background-position: 0 -1248px;
-}
-
-.country-flag.ee {
-  background-position: 0 -1264px;
-}
-
-.country-flag.eg {
-  background-position: 0 -1280px;
-}
-
-.country-flag.eh {
-  background-position: 0 -1296px;
-}
-
-.country-flag.er {
-  background-position: 0 -1312px;
-}
-
-.country-flag.es {
-  background-position: 0 -1328px;
 }
