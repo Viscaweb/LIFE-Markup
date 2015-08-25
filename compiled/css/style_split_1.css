@@ -10993,6 +10993,10 @@ span.dark-icon {
 
 .table tr.league-data > th > a.dropdown-toggle i {
   font-size: 10px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 .table tr.league-data > th > a.dropdown-toggle:hover {
@@ -11446,6 +11450,10 @@ span.dark-icon {
 
 .table tbody tr.league-data > th > a.dropdown-toggle i {
   font-size: 10px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 .table tbody tr.league-data > th > a.dropdown-toggle:hover {
@@ -11962,6 +11970,13 @@ span.dark-icon {
 
 .table > tbody > tr:hover td:hover.event-leg {
   background-color: #d4d4d4 !important;
+}
+
+.table tbody.open tr.league-data a.dropdown-toggle i {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .table.no-border tr > td {
@@ -14278,8 +14293,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.cv {
   background-position: 0 -1104px;
-}
-
-.country-flag.cy {
-  background-position: 0 -1120px;
 }

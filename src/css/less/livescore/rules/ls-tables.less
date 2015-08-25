@@ -77,6 +77,10 @@
 
       i{
         font-size: @font-size-x-tiny;
+        display: inline-block;
+        -webkit-transition: -webkit-transform 200ms ease-out;
+        -o-transition: -o-transform 200ms ease-out;
+        transition: transform 200ms ease-out;
       }
 
       &:hover{
@@ -1117,6 +1121,24 @@
       }
       
     }
+  }
+
+  tbody.open {
+
+    tr.league-data {
+       a.dropdown-toggle{
+
+        i{
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+
+      }
+    }
+
+
   }
 
   &.no-border{
