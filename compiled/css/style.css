@@ -13295,7 +13295,6 @@ span.sprite-icons.webmaster-border {
   position: absolute;
   right: 0;
   top: 11px;
-  background: #ffffff;
 }
 .panel-condensed .comments .media-list .media .media-heading .tools h5,
 .panel-condensed .comments .media-list .media .media-heading .tools .date {
@@ -13304,7 +13303,6 @@ span.sprite-icons.webmaster-border {
   white-space: nowrap;
   right: 0;
   position: absolute;
-  background: #ffffff;
 }
 .panel-condensed .comments .media-list .media .media-heading .tools > a {
   display: none;

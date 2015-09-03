@@ -2066,7 +2066,6 @@
   position: absolute;
   right: 0;
   top: 11px;
-  background: #ffffff;
 }
 
 .panel-condensed .comments .media-list .media .media-heading .tools h5,
@@ -2076,7 +2075,6 @@
   white-space: nowrap;
   right: 0;
   position: absolute;
-  background: #ffffff;
 }
 
 .panel-condensed .comments .media-list .media .media-heading .tools > a {
