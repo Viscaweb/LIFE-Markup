@@ -13395,31 +13395,31 @@ span.sprite-icons.webmaster-border {
 .progress-bar-away {
   background-color: #2356a3;
 }
-.popover.popover-action {
+.popover.popover-incident {
   background-clip: initial;
 }
-.popover.popover-action .popover-content {
+.popover.popover-incident .popover-content {
   padding: 6px 5px;
 }
-.popover.popover-action .popover-content .icon,
-.popover.popover-action .popover-content .sprite-icons {
+.popover.popover-incident .popover-content .icon,
+.popover.popover-incident .popover-content .sprite-icons {
   float: left;
   margin-right: 6px;
 }
-.popover.popover-action .popover-content table {
+.popover.popover-incident .popover-content table {
   border: 0;
   margin: 0;
 }
-.popover.popover-action .popover-content table tr.sustitution td.player {
+.popover.popover-incident .popover-content table tr.sustitution td.player {
   padding-left: 1px;
   padding-right: 1px;
 }
-.popover.popover-action .popover-content table tr.sustitution td.player img {
+.popover.popover-incident .popover-content table tr.sustitution td.player img {
   max-height: 30px;
   max-width: 30px;
   background: #f7f7f7;
 }
-.popover.popover-action .popover-content table tr td.details {
+.popover.popover-incident .popover-content table tr td.details {
   font-weight: 600;
   font-size: 11px;
 }
