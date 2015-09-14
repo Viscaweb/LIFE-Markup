@@ -2189,6 +2189,41 @@
   background-color: #2356a3;
 }
 
+.popover.popover-action {
+  background-clip: initial;
+}
+
+.popover.popover-action .popover-content {
+  padding: 6px 5px;
+}
+
+.popover.popover-action .popover-content .icon,
+.popover.popover-action .popover-content .sprite-icons {
+  float: left;
+  margin-right: 6px;
+}
+
+.popover.popover-action .popover-content table {
+  border: 0;
+  margin: 0;
+}
+
+.popover.popover-action .popover-content table tr.sustitution td.player {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.popover.popover-action .popover-content table tr.sustitution td.player img {
+  max-height: 30px;
+  max-width: 30px;
+  background: #f7f7f7;
+}
+
+.popover.popover-action .popover-content table tr td.details {
+  font-weight: 600;
+  font-size: 11px;
+}
+
 /*Custom General Icons Behavior*/
 
 .span.active .glyphicon-star {
@@ -3809,37 +3844,6 @@ span.glyphicon-star.active {
 
 .match-timeline .timeline-scroll .team-actions .action:hover.away-team:after {
   border-bottom-color: #454b4d;
-}
-
-.match-timeline .popover .popover-content {
-  padding: 6px 5px;
-}
-
-.match-timeline .popover .popover-content .icon,
-.match-timeline .popover .popover-content .sprite-icons {
-  float: left;
-  margin-right: 6px;
-}
-
-.match-timeline .popover .popover-content table {
-  border: 0;
-  margin: 0;
-}
-
-.match-timeline .popover .popover-content table tr.sustitution td.player {
-  padding-left: 1px;
-  padding-right: 1px;
-}
-
-.match-timeline .popover .popover-content table tr.sustitution td.player img {
-  max-height: 30px;
-  max-width: 30px;
-  background: #f7f7f7;
-}
-
-.match-timeline .popover .popover-content table tr td.details {
-  font-weight: 600;
-  font-size: 11px;
 }
 
 .match-report table thead tr th span.icon {
