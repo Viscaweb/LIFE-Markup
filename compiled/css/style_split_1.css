@@ -12012,6 +12012,7 @@ span.dark-icon {
   font-weight: 200;
   padding: 1px 6px;
   text-transform: none;
+  z-index: 2;
 }
 
 .table.matches tbody tr th.league-title:after {
