@@ -26,8 +26,31 @@
         margin-left: 6px;
         color: darken(@ls-light-color, 11.2%);
       }
+      
+      > span.icon,
+      > i.icon,
+      > .icon {
+        font-size: 17px;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          color: @ls-action-icon-color-hover;
+        }
+      }
     }
-    
+
+    h1,
+    h2,
+    h3{
+      font-size: @font-size-small;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      color: inherit;
+    }
+
     & + li:before{
        color: darken(@ls-light-color, 11.2%);
        font-family: 'LSicons';
@@ -48,8 +71,15 @@
       }
     }
     
-    &.active:before{
-      padding-right: 8px;
+    &.active{
+
+      &:before {
+        padding-right: 8px;
+      }
+
+      > a {
+        padding-left: 0;
+      }
     }
     
     .dropdown-menu{

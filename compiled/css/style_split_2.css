@@ -9151,6 +9151,31 @@ ul.image-list li img {
   color: #e2e2e2;
 }
 
+.breadcrumb > li > a > span.icon,
+.breadcrumb > li > a > i.icon,
+.breadcrumb > li > a > .icon {
+  font-size: 17px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb > li > a > span.icon:hover,
+.breadcrumb > li > a > i.icon:hover,
+.breadcrumb > li > a > .icon:hover {
+  color: #424749;
+}
+
+.breadcrumb > li h1,
+.breadcrumb > li h2,
+.breadcrumb > li h3 {
+  font-size: 12px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
 .breadcrumb > li + li:before {
   color: #e2e2e2;
   font-family: 'LSicons';
@@ -9171,6 +9196,10 @@ ul.image-list li img {
 
 .breadcrumb > li.active:before {
   padding-right: 8px;
+}
+
+.breadcrumb > li.active > a {
+  padding-left: 0;
 }
 
 .breadcrumb > li .dropdown-menu {
