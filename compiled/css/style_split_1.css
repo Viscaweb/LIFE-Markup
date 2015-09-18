@@ -7340,7 +7340,8 @@ button.list-group-item-danger.active:focus {
   padding-bottom: 75%;
 }
 
-.well {
+.well,
+.h2-small {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -10202,7 +10203,8 @@ button.close {
   background-color: #ededed;
 }
 
-.well {
+.well,
+.h2-small {
   border-radius: 0;
   box-shadow: none;
   background: none;
@@ -10788,6 +10790,13 @@ iframe {
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
+}
+
+.h2-small {
+  font-size: 12px;
+  padding-left: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .content-wrapper h1 {
@@ -14282,16 +14291,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.co {
   background-position: 0 -1056px;
-}
-
-.country-flag.cr {
-  background-position: 0 -1072px;
-}
-
-.country-flag.cu {
-  background-position: 0 -1088px;
-}
-
-.country-flag.cv {
-  background-position: 0 -1104px;
 }
