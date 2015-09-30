@@ -1,0 +1,201 @@
+table.links-table{
+
+  tbody{
+  
+    tr{
+    
+      td{
+        padding: 0;
+        width: 30%;
+      
+        > a{
+          padding: 8px;
+          display: block;
+        
+          img{
+            max-width: 18px;
+            max-height: 18px;
+            margin-right: 5px;
+          }
+          
+          span.icon-caret-right{
+            float: right;
+            line-height: 18px;
+          }
+          
+          &:hover{
+            background: darken(@ls-light-color, 5%);
+          }
+        }
+
+        > div > a {
+          img{
+            max-width: 18px;
+            max-height: 18px;
+            margin-right: 5px;
+          }
+        }
+     
+      }
+      
+      &:hover{
+      
+        td{
+          background: transparent !important;
+        }
+      }
+    }
+  }
+}
+
+
+table.squad-listing{
+
+  thead{
+  
+    tr{
+    
+      th{
+        padding: 4px 7px;
+        font-size: @font-size-x-tiny !important;
+      }
+    }
+  }
+
+  tbody{
+  
+    tr{
+    
+      th{
+        border-top: 0;
+        text-align: center;
+        font-weight: @font-weight-bold;
+        font-size: @font-size-small;
+      }
+      
+      td{
+        text-align: center;
+        
+        &.num{
+          font-weight: @font-weight-semi-bold;
+        }
+        
+        &.player{
+          vertical-align: middle !important;
+          width: 30%;
+          text-align: left;
+          
+          img{
+            max-height: 30px;
+            max-width: 30px;
+            margin-right: 10px;
+            background: @ls-player-image-placeholder-bg;
+          }
+        }
+        
+        &.nationality{
+          text-align: left;
+          border-left: 2px solid darken(@ls-light-color, 8.2%);
+          
+            span{
+              margin-right: 8px;
+            }
+        }
+      }
+    }
+  }
+  
+  &.avatars{
+  
+    tbody{
+    
+      tr{
+      
+        td{
+        
+          &.player{
+            padding: 0 5px 0 !important;
+            line-height: 31px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.links-list {
+  .make-row(0px);
+  margin-bottom: 0px;
+
+  > li {
+    .make-sm-column(4;0px);
+    border-bottom: 1px solid @table-border-color;
+    border-right: 1px solid @table-border-color ;
+
+    &:nth-child(3n+3) {
+      border-right: none;
+    }
+
+    &:nth-child(3n+3) + li {
+      clear: left;
+    }
+
+    &:nth-last-child(-n + 3):nth-child(3n + 1),
+    &:nth-last-child(-n + 3):nth-child(3n + 1) ~ li{
+      border-bottom: 0px;
+    }
+  }
+
+  .btn-link {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .btn-group {
+    
+    .btn {
+
+      &.link-name {
+
+        width: auto;
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 0;
+        white-space: initial;
+
+        img {
+          max-width: 18px;
+          max-height: 18px;
+          margin-right: 5px;
+        }
+
+      }
+
+      &.dropdown-toggle {
+        /*opacity: 0;*/
+        text-decoration: none !important;
+
+        &.btn-link {
+
+          > .icon-caret-down {
+            margin-left: 0px;
+          }
+        }
+
+      }
+
+    }
+
+    &:hover, &.open {
+      
+      .dropdown-toggle {
+        opacity: 1;
+      }
+      
+    }
+  }
+}
+
+
+

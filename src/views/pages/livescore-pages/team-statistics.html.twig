@@ -9,12 +9,12 @@
     {{  include('blocks/elements/content_header_team.html.twig', {selectedTab: 'tables'}) }}
     {% include 'blocks/various/share_page_small.html.twig' %}
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-6">
             {% include 'blocks/sports/team/team_last_season_statistics.html.twig' %}
             {% include 'blocks/sports/team/team_over_under_v1.1.html.twig' %}
             {{ include('blocks/sports/team/team_last_season_card_statistics_v1.1.html.twig', {in_panel:'true'}) }}
         </div>
-        <div class="col-md-6">
+        <div class="col-xs-6">
             {{ include('blocks/sports/team/team_results_statistics.html.twig', {in_panel:'true'}) }}
             {% include 'blocks/sports/team/team_last_season_goals_statistics.html.twig' %}
         </div>
