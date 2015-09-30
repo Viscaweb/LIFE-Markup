@@ -3320,6 +3320,7 @@ span.glyphicon-star.active {
   padding-top: 0;
   padding-bottom: 0;
   width: 15%;
+  white-space: nowrap;
 }
 
 .match-information .table thead tr th.score span {
