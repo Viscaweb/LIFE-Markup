@@ -386,52 +386,65 @@ ul.image-list{
         margin-bottom: 10px;
       }
 
-      .predefined-images{
+      .avatars-list{
         margin-bottom: 20px;
 
+        .scroll-container{
+          overflow: auto;
+          width: 100%;
+          padding-bottom: 10px;
+        }
+
         ul{
-          margin: 0;
+          display: inline-block;
           padding: 0;
-          overflow: hidden;
+          margin: 0;
+          white-space: nowrap;
 
           > li{
-            float: left;
             list-style: none;
-            display: block;
+            display: inline-block;
             text-align: center;
-            margin-right: 20px;
+            min-width: 90px;
+            margin-right: 10px;
 
-            .img{
+            .img, .logo{
               border-radius: 50%;
+              background-color: darken(@ls-light-color, 4.7%);
               display: inline-block;
+              height: 52px;
+              width: 52px;
               margin-bottom: 5px;
+              border: 3px solid transparent;
+              box-sizing: content-box;
 
               img{
-                border: 1px solid @ls-light-color;
-                height: 50px;
-                width: 50px;
+                height: 52px;
+                width: 52px;
               }
             }
 
             .name{
               display: block;
+              display: block;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
             }
 
             a{
               color: lighten(@ls-dark-color, 36%);
               outline: none;
+              outline: none;
+              display: block;
+              max-width: 90px;
             }
 
             &.selected-image{
-              .img{
+              .img, .logo{
                 position: relative;
-                border: 3px solid transparent;
                 border-color: @brand-primary;
 
-                img{
-                  max-height: 44px;
-                  max-width: 44px;
-                }
 
                 &:after{
                   content: "\e013";
@@ -548,71 +561,6 @@ ul.image-list{
         }
       }
 
-      .my-teams{
-
-        .scroll-container{
-          overflow: auto;
-          width: 100%;
-          padding-bottom: 10px;
-        }
-
-        ul{
-          display: inline-block;
-          padding: 0;
-          margin: 0;
-          white-space: nowrap;
-
-          > li{
-            list-style: none;
-            display: inline-block;
-            text-align: center;
-            min-width: 70px;
-
-            .logo{
-              border-radius: 50%;
-              background-color: darken(@ls-light-color, 4.7%);
-              display: inline-block;
-              height: 52px;
-              width: 52px;
-              margin-bottom: 5px;
-
-              img{
-                width: 100%;
-                height: 100%;
-              }
-            }
-
-            .name{
-              display: block;
-            }
-
-            &.selected-image{
-              .logo{
-                position: relative;
-                border: 3px solid transparent;
-                border-color: @brand-primary;
-
-                img{
-                  max-height: 44px;
-                  max-width: 44px;
-                }
-
-                &:after{
-                  content: "\e013";
-                  font-family: @ls-bootstrap-icons-font-family;
-                  font-size: @font-size-normal;
-                  color: @brand-primary;
-                  position: absolute;
-                  display: block;
-                  left: 0;
-                  bottom: 4px;
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
