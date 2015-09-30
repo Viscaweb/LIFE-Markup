@@ -2,7 +2,8 @@
 {% set basePath = '../' %}
 
 {% block container_main %}
-    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['Champions League Scores', 'Real Madrid vs. Bayern Munich Odds']}) }}
+
 {% endblock %}
 
 {% block content %}
