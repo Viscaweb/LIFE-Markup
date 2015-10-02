@@ -2,11 +2,13 @@
 {% set basePath = '../' %}
 
 {% block container_main %}
-    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['Champions League Scores', '<h1>Real Madrid vs. Bayern Munich Score</h1>']}) }}
+
 {% endblock %}
 
 {% block content %}
     {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'summary'}) }}
+    <h2 class="h2-small">Real Madrid Bayern Munich Result</h2>
     {% include 'blocks/various/share_page_small.html.twig' %}
     {% include 'blocks/sports/match/match_timeline.html.twig' %}
     {% include 'blocks/sports/match/match_comments_iframe.html.twig' %}
