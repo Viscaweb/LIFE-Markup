@@ -2,11 +2,12 @@
 {% set basePath = '../' %}
 
 {% block container_main %}
-    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['International', '<h1>Champions League Standings</h1>']}) }}
 {% endblock %}
 
 {% block content %}
     {{  include('blocks/elements/content_header_competition.html.twig', {selectedTab: 'tables'}) }}
+    <h2 class="h2-small">Champions League Standings</h2>
     {% include 'blocks/various/share_page_small.html.twig' %}
     {% include 'blocks/sports/competition/competition_standing_panel.html.twig' %}
     {% include 'blocks/various/comment_thread.html.twig' %}
