@@ -3,7 +3,7 @@
 
 {% set panel_classes = 'panel-condensed panel-default' %}
 {% block panel_heading %}
-    <div class="panel-title">Matches</div>
+    <h2 class="panel-title">{{ panel_title | raw }}</h2>
 {% endblock %}
 
 {% block widget_content %}
