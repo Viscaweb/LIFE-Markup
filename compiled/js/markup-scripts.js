@@ -447,6 +447,7 @@ $( document ).ready(function() {
 
     });
 
+    $('#fill-it').popover('show');
 
 });
 

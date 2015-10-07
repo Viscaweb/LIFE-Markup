@@ -22,6 +22,8 @@
         </div>
         Prediction Contest Grid
     </div>
+
+    {% if  contestPublic != 'true' %}
     <div class="row indicators">
         <div class="col-xs-4">
             My Ranking: <span class="number-big">345</span><span class="number-small">/ 739</span>
@@ -33,6 +35,8 @@
             Points: <span class="number-big">9</span>
         </div>
     </div>
+    {% endif %}
+
     <table class="table matches predictions table-condensed layout-fixed">
         <colgroup>
             <col class="prediction-status">
@@ -63,7 +67,7 @@
             <th></th>
             <th>Score</th>
             <th></th>
-            <th>Prediction</th>
+            <th id="fill-it" data-toggle="popover" data-template="<div class='popover popover-primary' role='tooltip'><div class='arrow'></div><div class='popover-content'></div></div>'" data-popover="popover" data-placement="top" data-html="true" data-content="Remplis ta grille ici!" data-trigger="click" data-container="body">Prediction</th>
             <th class="text-center">Trend</th>
             <th>Aide</th>
             <th></th>

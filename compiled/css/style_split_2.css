@@ -2244,6 +2244,21 @@
   font-size: 11px;
 }
 
+.popover.popover-primary {
+  background-color: #5da400;
+  border-color: #5da400;
+  background-clip: initial;
+  color: #fff;
+}
+
+.popover.popover-primary.top > .arrow {
+  border-top-color: #5da400;
+}
+
+.popover.popover-primary.top > .arrow:after {
+  border-top-color: #5da400;
+}
+
 /*Custom General Icons Behavior*/
 
 .span.active .glyphicon-star {
