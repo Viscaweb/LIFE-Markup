@@ -447,7 +447,13 @@ $( document ).ready(function() {
 
     });
 
-    $('#fill-it').popover('show');
+
+    setTimeout(function (){
+
+        $('#fill-it').popover('show');
+
+    }, 3000);
+
 
 });
 
