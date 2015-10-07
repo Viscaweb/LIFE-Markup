@@ -2,12 +2,14 @@
 {% set basePath = '../' %}
 
 {% block container_main %}
-    {% include 'blocks/commons/breadcrumb.html.twig' %}
-    {% include 'blocks/placeholders/visual_block_970x300.html.twig' %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['<h1>Concours de Pronostics</h1>']}) }}
+    {{ include('blocks/placeholders/visual_block_970x300.html.twig', {image970x300: 'img/970x300-REEL.jpg'}) }}
 {% endblock %}
 
 {% block content %}
-    {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
+    <h2 class="no-top-margin">Concours de Pronostics Foot</h2>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    {{  include('blocks/predictions/predictions_contest_grid.html.twig', {contestPublic: 'true' }) }}
     <div class="row">
         <div class="col-xs-6">
             {% include 'blocks/predictions/predictions_contest_season_gifts.html.twig' %}

@@ -1,4 +1,11 @@
+{% set imgageSRC = 'img/970x300.gif' %}
+
 <div class="visual-block">
     <!-- Content Ad Space -->
-    <img src="{{ basePath }}img/970x300.gif" alt="Visual Block">
+
+    {% if image970x300 is defined %}
+        {% set imgageSRC = image970x300 %}
+    {% endif %}
+
+    <img src="{{ basePath }}{{ imgageSRC }}" alt="Visual Block">
 </div>

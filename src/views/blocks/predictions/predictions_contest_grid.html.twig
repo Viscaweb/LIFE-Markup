@@ -617,7 +617,13 @@
         <a href="#"><img class="img-circle avatar" src="{{ basePath }}img/user-default.png" alt="User Avatar">John Smith</a> finished 1st and won his favorite team shirt!
     </div>
     -->
+    {% if contestPublic == 'true' %}
+        <div class="user-notification">
+            <a href="#">Register</a> or <a href="#">Log in</a> to play and save your Predictions Grids.
+        </div>
+    {% endif %}
     <div class="panel-footer">
         <a href="#"><span class="icon-caret-right icon"></span>Contest rules</a>
     </div>
 </div>
+
