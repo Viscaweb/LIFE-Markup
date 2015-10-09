@@ -9166,7 +9166,8 @@ span.dark-icon {
   font-size: 0;
   white-space: nowrap;
 }
-.table tbody tr > td.tools > a {
+.table tbody tr > td.tools > a,
+.table tbody tr > td.tools div > a {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
@@ -9175,30 +9176,40 @@ span.dark-icon {
   vertical-align: middle;
   position: relative;
 }
-.table tbody tr > td.tools > a.available {
+.table tbody tr > td.tools > a.available,
+.table tbody tr > td.tools div > a.available {
   color: #cccccc;
 }
-.table tbody tr > td.tools > a.available.live {
+.table tbody tr > td.tools > a.available.live,
+.table tbody tr > td.tools div > a.available.live {
   color: #e33000;
 }
-.table tbody tr > td.tools > a.available.live:hover {
+.table tbody tr > td.tools > a.available.live:hover,
+.table tbody tr > td.tools div > a.available.live:hover {
   color: #b02500;
 }
-.table tbody tr > td.tools > a.available .comment-number {
+.table tbody tr > td.tools > a.available .comment-number,
+.table tbody tr > td.tools div > a.available .comment-number {
   color: #ffffff;
 }
 .table tbody tr > td.tools > a:hover,
-.table tbody tr > td.tools > a:focus {
+.table tbody tr > td.tools div > a:hover,
+.table tbody tr > td.tools > a:focus,
+.table tbody tr > td.tools div > a:focus {
   color: #808080;
 }
 .table tbody tr > td.tools > a:hover.available .comment-number,
-.table tbody tr > td.tools > a:focus.available .comment-number {
+.table tbody tr > td.tools div > a:hover.available .comment-number,
+.table tbody tr > td.tools > a:focus.available .comment-number,
+.table tbody tr > td.tools div > a:focus.available .comment-number {
   color: #ffffff;
 }
-.table tbody tr > td.tools > a.active {
+.table tbody tr > td.tools > a.active,
+.table tbody tr > td.tools div > a.active {
   color: #5da400;
 }
-.table tbody tr > td.tools > a.active:hover {
+.table tbody tr > td.tools > a.active:hover,
+.table tbody tr > td.tools div > a.active:hover {
   color: #407100;
 }
 .table tbody tr > td.tools.tools-1 {
@@ -9206,6 +9217,9 @@ span.dark-icon {
 }
 .table tbody tr > td.tools:last-child {
   padding-right: 4px;
+}
+.table tbody tr > td.tools .data-multiple {
+  text-align: right;
 }
 .table tbody tr > td.favorite {
   text-align: center;
@@ -9268,6 +9282,19 @@ span.dark-icon {
   text-align: center;
   font-weight: 600;
   height: 44px;
+}
+.table tbody tr > td.cell-multiple {
+  padding: 0;
+}
+.table tbody tr > td .data-multiple {
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: 30px;
+  text-align: center;
+}
+.table tbody tr > td .data-multiple:last-child {
+  border: none;
 }
 .table tbody tr.live td.time {
   color: #e33000;

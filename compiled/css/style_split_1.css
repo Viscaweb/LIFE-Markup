@@ -11252,7 +11252,8 @@ span.dark-icon {
   white-space: nowrap;
 }
 
-.table tbody tr > td.tools > a {
+.table tbody tr > td.tools > a,
+.table tbody tr > td.tools div > a {
   display: inline-block;
   font-size: 16px;
   padding: 0 1px;
@@ -11262,37 +11263,47 @@ span.dark-icon {
   position: relative;
 }
 
-.table tbody tr > td.tools > a.available {
+.table tbody tr > td.tools > a.available,
+.table tbody tr > td.tools div > a.available {
   color: #cccccc;
 }
 
-.table tbody tr > td.tools > a.available.live {
+.table tbody tr > td.tools > a.available.live,
+.table tbody tr > td.tools div > a.available.live {
   color: #e33000;
 }
 
-.table tbody tr > td.tools > a.available.live:hover {
+.table tbody tr > td.tools > a.available.live:hover,
+.table tbody tr > td.tools div > a.available.live:hover {
   color: #b02500;
 }
 
-.table tbody tr > td.tools > a.available .comment-number {
+.table tbody tr > td.tools > a.available .comment-number,
+.table tbody tr > td.tools div > a.available .comment-number {
   color: #ffffff;
 }
 
 .table tbody tr > td.tools > a:hover,
-.table tbody tr > td.tools > a:focus {
+.table tbody tr > td.tools div > a:hover,
+.table tbody tr > td.tools > a:focus,
+.table tbody tr > td.tools div > a:focus {
   color: #808080;
 }
 
 .table tbody tr > td.tools > a:hover.available .comment-number,
-.table tbody tr > td.tools > a:focus.available .comment-number {
+.table tbody tr > td.tools div > a:hover.available .comment-number,
+.table tbody tr > td.tools > a:focus.available .comment-number,
+.table tbody tr > td.tools div > a:focus.available .comment-number {
   color: #ffffff;
 }
 
-.table tbody tr > td.tools > a.active {
+.table tbody tr > td.tools > a.active,
+.table tbody tr > td.tools div > a.active {
   color: #5da400;
 }
 
-.table tbody tr > td.tools > a.active:hover {
+.table tbody tr > td.tools > a.active:hover,
+.table tbody tr > td.tools div > a.active:hover {
   color: #407100;
 }
 
@@ -11302,6 +11313,10 @@ span.dark-icon {
 
 .table tbody tr > td.tools:last-child {
   padding-right: 4px;
+}
+
+.table tbody tr > td.tools .data-multiple {
+  text-align: right;
 }
 
 .table tbody tr > td.favorite {
@@ -11377,6 +11392,22 @@ span.dark-icon {
   text-align: center;
   font-weight: 600;
   height: 44px;
+}
+
+.table tbody tr > td.cell-multiple {
+  padding: 0;
+}
+
+.table tbody tr > td .data-multiple {
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: 30px;
+  text-align: center;
+}
+
+.table tbody tr > td .data-multiple:last-child {
+  border: none;
 }
 
 .table tbody tr.live td.time {
@@ -14232,64 +14263,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.bo {
   background-position: 0 -784px;
-}
-
-.country-flag.br {
-  background-position: 0 -800px;
-}
-
-.country-flag.bs {
-  background-position: 0 -816px;
-}
-
-.country-flag.bt {
-  background-position: 0 -832px;
-}
-
-.country-flag.bw {
-  background-position: 0 -848px;
-}
-
-.country-flag.by {
-  background-position: 0 -864px;
-}
-
-.country-flag.bz {
-  background-position: 0 -880px;
-}
-
-.country-flag.ca {
-  background-position: 0 -896px;
-}
-
-.country-flag.cg {
-  background-position: 0 -912px;
-}
-
-.country-flag.cf {
-  background-position: 0 -928px;
-}
-
-.country-flag.cd {
-  background-position: 0 -944px;
-}
-
-.country-flag.ch {
-  background-position: 0 -960px;
-}
-
-.country-flag.ci {
-  background-position: 0 -976px;
-}
-
-.country-flag.ck {
-  background-position: 0 -992px;
-}
-
-.country-flag.cl {
-  background-position: 0 -1008px;
-}
-
-.country-flag.cm {
-  background-position: 0 -1024px;
 }
