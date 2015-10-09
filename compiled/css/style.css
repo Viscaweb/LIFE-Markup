@@ -12316,6 +12316,15 @@ span.sprite-icons.webmaster-border {
 .sharing {
   overflow: hidden;
   background-color: #f7f7f7;
+  /*#twitter-widget-0{
+    height: 65px !important;
+  }  
+
+  #___plusone_0{
+  	iframe{
+  		height: 64px !important;
+  	}
+  }*/
 }
 .sharing iframe {
   margin: 0;
@@ -12327,12 +12336,6 @@ span.sprite-icons.webmaster-border {
 }
 .sharing > div > div > div {
   vertical-align: top !important;
-}
-.sharing #twitter-widget-0 {
-  height: 65px !important;
-}
-.sharing #___plusone_0 iframe {
-  height: 64px !important;
 }
 .sharing .likes .social-button {
   display: inline-block;
