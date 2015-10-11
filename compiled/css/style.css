@@ -8351,12 +8351,6 @@ button.close {
   display: none;
   background-color: #ffffff;
   border: 1px solid #f0f0f0;
-  /**
-   * I don't think we need this arrow.
-   * Seb will provide the design for each datepicker and then we'll see if
-   * the arrow is needed for any of the datepicker style.
-   * Right now, it's breaking the proper integration
-  */
 }
 .ui-datepicker.ui-datepicker-with-border {
   border: 1px solid #dfdfdf;
@@ -8416,6 +8410,11 @@ button.close {
 }
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-next:after {
   content: "\e60d";
+}
+.ui-datepicker .ui-icon {
+  text-indent: -9090em;
+  text-align: left;
+  float: left;
 }
 .ui-datepicker table.ui-datepicker-calendar {
   width: 100%;
