@@ -8826,6 +8826,8 @@ ul.image-list li img {
 
 .sidebar-nav > li > a .badge.pull-right {
   margin-left: 2px;
+  position: absolute;
+  right: 8px;
 }
 
 .sidebar-nav li {
