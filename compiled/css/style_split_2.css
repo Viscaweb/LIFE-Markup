@@ -1,3 +1,11 @@
+.country-flag.bm {
+  background-position: 0 -752px;
+}
+
+.country-flag.bn {
+  background-position: 0 -768px;
+}
+
 .country-flag.bo {
   background-position: 0 -784px;
 }
@@ -8822,6 +8830,7 @@ ul.image-list li img {
 
 .sidebar-nav li {
   position: relative;
+  font-weight: normal;
 }
 
 .sidebar-nav li.active > a {

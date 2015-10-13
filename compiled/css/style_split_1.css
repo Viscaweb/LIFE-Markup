@@ -10723,7 +10723,6 @@ body.iframe {
 
 p {
   font-weight: lighter;
-  font-size: 14px;
   line-height: 22px;
 }
 
@@ -10743,6 +10742,11 @@ small,
 .small {
   font-size: 13px;
   font-weight: normal;
+}
+
+ul li,
+ol li {
+  font-weight: lighter;
 }
 
 a:hover {
@@ -14252,12 +14256,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.bj {
   background-position: 0 -736px;
-}
-
-.country-flag.bm {
-  background-position: 0 -752px;
-}
-
-.country-flag.bn {
-  background-position: 0 -768px;
 }

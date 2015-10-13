@@ -8733,7 +8733,6 @@ body.iframe {
 }
 p {
   font-weight: lighter;
-  font-size: 14px;
   line-height: 22px;
 }
 p b {
@@ -8749,6 +8748,10 @@ small,
 .small {
   font-size: 13px;
   font-weight: normal;
+}
+ul li,
+ol li {
+  font-weight: lighter;
 }
 a:hover {
   text-decoration: none;
@@ -18815,6 +18818,7 @@ ul.image-list li img {
 }
 .sidebar-nav li {
   position: relative;
+  font-weight: normal;
 }
 .sidebar-nav li.active > a {
   color: #5da400;
