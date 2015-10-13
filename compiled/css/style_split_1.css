@@ -10113,6 +10113,7 @@ button.close {
   border-top: none;
   border-right: none;
   border-left: none;
+  border-bottom-width: 2px;
   margin-right: 0;
   color: #5c5c5c;
   outline: none;
