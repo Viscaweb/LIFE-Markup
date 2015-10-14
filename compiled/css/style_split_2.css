@@ -1,3 +1,15 @@
+.country-flag.bh {
+  background-position: 0 -704px;
+}
+
+.country-flag.bi {
+  background-position: 0 -720px;
+}
+
+.country-flag.bj {
+  background-position: 0 -736px;
+}
+
 .country-flag.bm {
   background-position: 0 -752px;
 }
@@ -94,7 +106,8 @@
   background-position: 0 -1120px;
 }
 
-.country-flag.cz {
+.country-flag.cz,
+.country-flag.cz-czechoslovakia {
   background-position: 0 -1136px;
 }
 
@@ -173,6 +186,7 @@
 .country-flag.bl,
 .country-flag.cp,
 .country-flag.mf,
+.country-flag.pyf,
 .country-flag.yt {
   background-position: 0 -1424px;
 }
@@ -513,7 +527,9 @@
   background-position: 0 -2736px;
 }
 
-.country-flag.nl {
+.country-flag.nl,
+.country-flag.nl-east-indies,
+.country-flag.nl-antilles {
   background-position: 0 -2752px;
 }
 
@@ -821,6 +837,22 @@
 
 .country-flag.ss {
   background-position: 0 -3936px;
+}
+
+.country-flag.cx {
+  background-position: 0 -3952px;
+}
+
+.country-flag.ua-43 {
+  background-position: 0 -3968px;
+}
+
+.country-flag.gy-fr {
+  background-position: 0 -3984px;
+}
+
+.country-flag._north_mariana_islands {
+  background-position: 0 -4001px;
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2/1), all and (min-resolution: 192dpi) {

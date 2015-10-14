@@ -14071,91 +14071,106 @@ span.sprite-icons.webmaster-border {
   background-image: url("../img//sprite-flags.png");
   background-repeat: no-repeat;
   background-position: 0 2px;
+  /* united nations flag */
+  /* united nations flag */
+  /* united nations flag */
 }
 
-.country-flag._African_Union {
+.country-flag._african_union {
   background-position: 0 -16px;
 }
 
-.country-flag._Arab_League {
+.country-flag._arab_league {
   background-position: 0 -32px;
 }
 
-.country-flag._ASEAN {
+.country-flag._asean {
   background-position: 0 -48px;
 }
 
-.country-flag._CARICOM {
+.country-flag._caricom {
   background-position: 0 -64px;
 }
 
-.country-flag._CIS {
+.country-flag._cis {
   background-position: 0 -80px;
 }
 
-.country-flag._Commonwealth {
+.country-flag._commonwealth {
   background-position: 0 -96px;
 }
 
-.country-flag._England {
+.country-flag._england {
   background-position: 0 -112px;
 }
 
-.country-flag._European_Union,
+.country-flag._european_union,
 .country-flag.eu {
   background-position: 0 -128px;
 }
 
-.country-flag._Islamic_Conference {
+.country-flag._islamic_conference {
   background-position: 0 -144px;
 }
 
-.country-flag._Kosovo {
+.country-flag._kosovo {
   background-position: 0 -160px;
 }
 
-.country-flag._NATO {
+.country-flag._nato {
   background-position: 0 -176px;
 }
 
-.country-flag._Northern_Cyprus {
+.country-flag._northern_cyprus {
   background-position: 0 -192px;
 }
 
-.country-flag._Northern_Ireland {
+.country-flag._northern_ireland {
   background-position: 0 -208px;
 }
 
-.country-flag._Olimpic_Movement {
+.country-flag._olimpic_movement {
   background-position: 0 -224px;
 }
 
-.country-flag._OPEC {
+.country-flag._opec {
   background-position: 0 -240px;
 }
 
-.country-flag._Red_Cross {
+.country-flag._red_cross {
   background-position: 0 -256px;
 }
 
-.country-flag._Scotland {
+.country-flag._scotland {
   background-position: 0 -272px;
 }
 
-.country-flag._Somaliland {
+.country-flag._somaliland {
   background-position: 0 -288px;
 }
 
-.country-flag._Tibet {
+.country-flag._tibet {
   background-position: 0 -304px;
 }
 
-.country-flag._United_Nations {
+.country-flag._united_nations {
   background-position: 0 -320px;
 }
 
-.country-flag._Wales {
+.country-flag._wales {
   background-position: 0 -336px;
+}
+
+.country-flag._oceania {
+  background-position: 0 -320px;
+}
+
+.country-flag._central_north_am {
+  background-position: 0 -320px;
+}
+
+.country-flag._south_am {
+  background-position: 0 -320px;
 }
 
 .country-flag.ad {
@@ -14244,16 +14259,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.bg {
   background-position: 0 -688px;
-}
-
-.country-flag.bh {
-  background-position: 0 -704px;
-}
-
-.country-flag.bi {
-  background-position: 0 -720px;
-}
-
-.country-flag.bj {
-  background-position: 0 -736px;
 }
