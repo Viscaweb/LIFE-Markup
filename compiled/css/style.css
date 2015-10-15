@@ -14355,6 +14355,9 @@ span.glyphicon-star.active {
   position: absolute;
   margin-left: 4px;
 }
+.match-information .table thead tr th .name a.star.active {
+  display: block;
+}
 .match-information .table thead tr th .name a.star span {
   font-size: 14px;
 }
