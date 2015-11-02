@@ -11942,6 +11942,10 @@ span.dark-icon {
   background-color: #e6523e !important;
 }
 
+.table > tbody > tr td.event-outcome-neutral {
+  background-color: #cccccc !important;
+}
+
 .table > tbody > tr td.event-outcome-live {
   padding: 0 !important;
   text-align: center;
@@ -13923,7 +13927,8 @@ span.sprite-icons.funfact {
   width: 22px;
 }
 
-span.sprite-icons.stadium {
+span.sprite-icons.stadium,
+span.sprite-icons.attendance {
   background-position: -198px -97px;
   width: 25px;
 }
@@ -14251,12 +14256,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.be {
   background-position: 0 -656px;
-}
-
-.country-flag.bf {
-  background-position: 0 -672px;
-}
-
-.country-flag.bg {
-  background-position: 0 -688px;
 }
