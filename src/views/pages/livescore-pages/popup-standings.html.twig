@@ -1,0 +1,20 @@
+{% set containerFluid = '-fluid container-popup' %}
+{% extends "layouts/full.html.twig" %}
+{% set basePath = '../' %}
+
+
+    {% block container_header %}
+        {% include 'blocks/commons/header_popup.html.twig' %}
+    {% endblock %}
+
+
+    {% block container_content_wrapper %}
+        {% include 'blocks/sports/competition/competition_standing_panel.html.twig' %}
+    {% endblock %}
+
+
+{% block resources_footer %}
+    {% include 'blocks/commons/scripts.html.twig' %}
+{% endblock %}
+
+
