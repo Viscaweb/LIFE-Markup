@@ -15917,7 +15917,8 @@ span.glyphicon-star.active {
   margin: 0;
   padding: 15px 0;
 }
-.team-form > .row {
+.team-form > .row,
+.team-form > form > .row {
   margin: 0;
 }
 .team-form .nav-pills li {

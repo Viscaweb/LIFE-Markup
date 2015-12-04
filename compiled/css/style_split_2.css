@@ -5295,7 +5295,8 @@ span.glyphicon-star.active {
   padding: 15px 0;
 }
 
-.team-form > .row {
+.team-form > .row,
+.team-form > form > .row {
   margin: 0;
 }
 
