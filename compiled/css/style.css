@@ -8730,6 +8730,7 @@ body {
 }
 body.iframe {
   padding: 0;
+  background: #ffffff;
 }
 p {
   font-weight: lighter;
