@@ -2036,6 +2036,10 @@
   text-overflow: ellipsis;
 }
 
+.live-commented-matches.panel .matches tr td.team > span {
+  padding: 3px 7px;
+}
+
 .live-commented-matches.panel .matches tr td.team1 {
   text-align: right;
   padding: 0;
