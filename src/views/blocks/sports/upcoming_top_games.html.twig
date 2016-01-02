@@ -111,21 +111,22 @@
                 <td class="odd best-odd"><span class="icon-arrow-up"></span><a href="#">3.70</a></td>
             </tr>
         </table>
-        <div class="add-comment">
-            <p><span></span>Say what you think about this game!</p>
-            <div class="row">
-                <div class="col-xs-3">
-                    <img class="img-circle avatar" alt="64x64" src="{{ basePath }}img/user-default.png">
-                </div>
-                <div class="col-xs-9">
-                    <textarea class="form-control" placeholder="Write here..."></textarea>
-                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-edit"></span>Publish my comment</button>
+        <div class="comment-thread">
+            <div class="add-comment">
+                <p><span></span>Say what you think about this game!</p>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img class="img-circle avatar" alt="64x64" src="{{ basePath }}img/user-default.png">
+                    </div>
+                    <div class="col-xs-9">
+                        <textarea class="form-control" placeholder="Write here..."></textarea>
+                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-edit"></span>Publish my comment</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="comments">
-
-            {% include 'blocks/various/comments_list.html.twig' %}
+            <div class="comments">
+                {% include 'blocks/various/comments_list.html.twig' %}
+            </div>
         </div>
         {# ALTERNATIVE COMMENTS DISPLAY : CAROUSEL #}
         {#<div class="comments carousel">
