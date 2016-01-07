@@ -2535,6 +2535,10 @@ span.glyphicon-star.active {
   display: none;
 }
 
+.loading-opacity {
+  opacity: 0.5;
+}
+
 /* Classic loading for some simple elements */
 
 .sidebar-nav .sub-menu li.loading {

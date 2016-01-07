@@ -7163,6 +7163,7 @@ button.close {
   position: relative;
   cursor: pointer;
   border-radius: 2px;
+  overflow: hidden;
 }
 .select-component:after {
   content: "\e62f";
@@ -7192,7 +7193,6 @@ button.close {
           appearance: none;
   text-indent: .01px;
   text-overflow: '';
-  border-radius: 2px;
 }
 .select-component:hover {
   border-color: #cdcdcd;
@@ -13648,6 +13648,9 @@ span.glyphicon-star.active {
 }
 .loading.fourth-menu:after {
   display: none;
+}
+.loading-opacity {
+  opacity: 0.5;
 }
 /* Classic loading for some simple elements */
 .sidebar-nav .sub-menu li.loading {

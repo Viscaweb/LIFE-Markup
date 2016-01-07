@@ -8786,6 +8786,7 @@ button.close {
   position: relative;
   cursor: pointer;
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .select-component:after {
@@ -8817,7 +8818,6 @@ button.close {
   appearance: none;
   text-indent: .01px;
   text-overflow: '';
-  border-radius: 2px;
 }
 
 .select-component:hover {
