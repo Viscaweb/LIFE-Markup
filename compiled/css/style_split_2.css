@@ -5340,6 +5340,7 @@ table.odds-goal-scorers tbody tr td.result,
 table.table-odds tbody tr td.result {
   text-align: center;
   width: 10%;
+  cursor: pointer;
 }
 
 table.odds-1x2 tbody tr td.best-odd,
@@ -5350,6 +5351,16 @@ table.odds-correct-score tbody tr td.best-odd,
 table.odds-goal-scorers tbody tr td.best-odd,
 table.table-odds tbody tr td.best-odd {
   font-weight: 700;
+}
+
+table.odds-1x2 tbody tr td .odd-value,
+table.odds-over-under tbody tr td .odd-value,
+table.odds-double-chance tbody tr td .odd-value,
+table.odds-half-time-full-time tbody tr td .odd-value,
+table.odds-correct-score tbody tr td .odd-value,
+table.odds-goal-scorers tbody tr td .odd-value,
+table.table-odds tbody tr td .odd-value {
+  color: #0053a8;
 }
 
 table.odds-over-under tbody tr td.name {
@@ -5807,7 +5818,7 @@ table.links-table .dropdown-toggle {
   display: none;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   height: 100%;
   background-color: #ffffff;
 }
