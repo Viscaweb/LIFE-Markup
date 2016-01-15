@@ -1,3 +1,11 @@
+.country-flag.bd {
+  background-position: 0 -640px;
+}
+
+.country-flag.be {
+  background-position: 0 -656px;
+}
+
 .country-flag.bf {
   background-position: 0 -672px;
 }

@@ -588,47 +588,54 @@
         &.odd {
           border-right: 1px solid @table-border-color;
           border-left: 1px solid @table-border-color;
+          cursor: pointer;
 
           &.odd-no-border {
             border-left: none;
             border-right: none;
           }
 
-          a {
-            > .odd-part {
-              color: lighten(@link-color, 45%);
-            }
-
-            .moneyline {
-              display: block;
-              text-align: right;
-              line-height: 16px;
-            }
-
-            .spread {
-              float: left;
-              display: block;
-              width: 50%;
-              text-align: center;
-              line-height: 16px;
-            }
-
-            .totals {
-              float: right;
-              display: block;
-              width: 50%;
-              text-align: right;
-              line-height: 16px;
-            }
-
-            .totals-ou {
-              display: block;
-              float: left;
-              width: 50%;
-              text-align: center;
-              line-height: 32px;
-            }
+          > .odd-part {
+            color: lighten(@link-color, 45%);
           }
+
+          .moneyline {
+            display: block;
+            text-align: right;
+            line-height: 16px;
+            color: @link-color;
+          }
+
+          .spread {
+            float: left;
+            display: block;
+            width: 50%;
+            text-align: center;
+            line-height: 16px;
+            color: @link-color;
+          }
+
+          .totals {
+            float: right;
+            display: block;
+            width: 50%;
+            text-align: right;
+            line-height: 16px;
+            color: @link-color;
+          }
+
+          .totals-ou {
+            display: block;
+            float: left;
+            width: 50%;
+            text-align: center;
+            line-height: 32px;
+            color: @link-color;
+          }
+        }
+
+        .odd-value{
+          color: @link-color;
         }
 
         &.odd-type {
@@ -1251,6 +1258,11 @@
 
           &.odd{
             white-space: nowrap;
+            cursor: pointer;
+          }
+
+          .odd-value{
+            color: @link-color;
           }
 
           span.hour{

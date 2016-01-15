@@ -9245,39 +9245,47 @@ span.dark-icon {
 .table tbody tr > td.odd {
   border-right: 1px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
+  cursor: pointer;
 }
 .table tbody tr > td.odd.odd-no-border {
   border-left: none;
   border-right: none;
 }
-.table tbody tr > td.odd a > .odd-part {
+.table tbody tr > td.odd > .odd-part {
   color: #8fc6ff;
 }
-.table tbody tr > td.odd a .moneyline {
+.table tbody tr > td.odd .moneyline {
   display: block;
   text-align: right;
   line-height: 16px;
+  color: #0053a8;
 }
-.table tbody tr > td.odd a .spread {
+.table tbody tr > td.odd .spread {
   float: left;
   display: block;
   width: 50%;
   text-align: center;
   line-height: 16px;
+  color: #0053a8;
 }
-.table tbody tr > td.odd a .totals {
+.table tbody tr > td.odd .totals {
   float: right;
   display: block;
   width: 50%;
   text-align: right;
   line-height: 16px;
+  color: #0053a8;
 }
-.table tbody tr > td.odd a .totals-ou {
+.table tbody tr > td.odd .totals-ou {
   display: block;
   float: left;
   width: 50%;
   text-align: center;
   line-height: 32px;
+  color: #0053a8;
+}
+.table tbody tr > td .odd-value {
+  color: #0053a8;
 }
 .table tbody tr > td.odd-type {
   font-size: 11px;
@@ -9853,6 +9861,10 @@ span.dark-icon {
 }
 .table.matches tbody tr td.odd {
   white-space: nowrap;
+  cursor: pointer;
+}
+.table.matches tbody tr td .odd-value {
+  color: #0053a8;
 }
 .table.matches tbody tr td span.hour {
   font-weight: 600;
