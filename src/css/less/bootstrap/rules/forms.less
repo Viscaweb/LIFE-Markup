@@ -17,7 +17,7 @@
     height: 100%;
     right: 0;
     top: 0;
-    background: darken(@ls-light-color, 1%);
+    background: transparent;
     pointer-events: none;
     cursor: pointer;
     color: darken(@ls-light-color, 27%);
@@ -34,12 +34,13 @@
     appearance: none;
     text-indent: .01px;
     text-overflow: '';
+    border-radius: 0;
   }
   
   &:hover{
     border-color: darken(@btn-default-border, 7%);
     
-    select, &:after{
+    select{
       background-color: darken(@btn-default-bg, 5%);
     }
   }
