@@ -12365,7 +12365,14 @@ span.dark-icon {
 .table.linked-rows tr td.time,
 .table.linked-rows tr td.team,
 .table.linked-rows tr td.score,
-.table.linked-rows tr td.half-time-score {
+.table.linked-rows tr td.half-time-score,
+.table.linked-rows tr td.event-outcome,
+.table.linked-rows tr td.date,
+.table.linked-rows tr td.league,
+.table.linked-rows tr td.stage,
+.table.linked-rows tr td.logo,
+.table.linked-rows tr td.league-logo,
+.table.linked-rows tr td.icon {
   cursor: pointer;
 }
 
@@ -14239,32 +14246,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.at {
   background-position: 0 -528px;
-}
-
-.country-flag.au {
-  background-position: 0 -544px;
-}
-
-.country-flag.aw {
-  background-position: 0 -560px;
-}
-
-.country-flag.ax {
-  background-position: 0 -576px;
-}
-
-.country-flag.az {
-  background-position: 0 -592px;
-}
-
-.country-flag.ba {
-  background-position: 0 -608px;
-}
-
-.country-flag.bb {
-  background-position: 0 -624px;
-}
-
-.country-flag.bd {
-  background-position: 0 -640px;
 }

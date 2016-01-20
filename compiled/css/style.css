@@ -10061,7 +10061,14 @@ span.dark-icon {
 .table.linked-rows tr td.time,
 .table.linked-rows tr td.team,
 .table.linked-rows tr td.score,
-.table.linked-rows tr td.half-time-score {
+.table.linked-rows tr td.half-time-score,
+.table.linked-rows tr td.event-outcome,
+.table.linked-rows tr td.date,
+.table.linked-rows tr td.league,
+.table.linked-rows tr td.stage,
+.table.linked-rows tr td.logo,
+.table.linked-rows tr td.league-logo,
+.table.linked-rows tr td.icon {
   cursor: pointer;
 }
 .table.table-standing thead tr th,
