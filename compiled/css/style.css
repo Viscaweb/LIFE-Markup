@@ -8873,8 +8873,8 @@ span.dark-icon {
 .table tr th span.icon {
   margin-right: 5px;
 }
-.table tr td span.country i,
-.table tr th span.country i {
+.table tr td .country i,
+.table tr th .country i {
   margin-right: 5px;
   position: relative;
   top: 0px;
