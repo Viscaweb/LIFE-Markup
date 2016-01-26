@@ -15639,7 +15639,7 @@ span.glyphicon-star.active {
 .table.live-commentary tbody tr td {
   vertical-align: middle;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .table.live-commentary tbody tr td.minute {
   width: 13%;
@@ -15654,7 +15654,7 @@ span.glyphicon-star.active {
 }
 .table.live-commentary tbody tr td.content p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 .table.live-commentary tbody tr td.content p + img,

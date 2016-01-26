@@ -16,7 +16,8 @@ module.exports = function (grunt) {
 
                 },
                 files: {
-                    "compiled/css/style.css": "src/css/style.less"
+                    "compiled/css/style.css": "src/css/style.less",
+                    "compiled/css/match-comments-iframe.css": "src/css/less/match-comments-iframe.less"
                 }
             },
             production: {
@@ -36,7 +37,8 @@ module.exports = function (grunt) {
         cssmin: {
             combine: {
                 files: {
-                    'compiled/css/style.min.css': ['compiled/css/style.css']
+                    'compiled/css/style.min.css': ['compiled/css/style.css'],
+                    'compiled/css/match-comments-iframe.min.css': ['compiled/css/match-comments-iframe.css']
                 }
             }
         },
@@ -105,7 +107,10 @@ module.exports = function (grunt) {
             options: {
               map: true
             },
-            src: "compiled/css/style.css"
+            src: [
+              "compiled/css/style.css",
+              "compiled/css/match-comments-iframe.css"
+            ]
           }
         },
         watch: {
