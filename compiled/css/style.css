@@ -15138,6 +15138,8 @@ span.glyphicon-star.active {
   text-transform: none;
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .match-teams-lineups .component-container .field .field-lines .player .icons {
   text-align: center;
