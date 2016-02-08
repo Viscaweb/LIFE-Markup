@@ -13493,9 +13493,7 @@ span.sprite-icons.webmaster-border {
   background-color: #6790ce;
 }
 .progress-bar-neutral {
-  background-color: #b8b8b8;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+  background-color: #cccccc;
 }
 .progress-bar-away {
   background-color: #2356a3;
@@ -14121,7 +14119,7 @@ span.glyphicon-star.active {
 .popover.popover-trend .popover-content table tr td .indicator {
   display: inline-block;
   padding: 0 5px;
-  background-color: #b8b8b8;
+  background-color: #cccccc;
   vertical-align: bottom;
   color: #ffffff;
   margin-right: 7px;
