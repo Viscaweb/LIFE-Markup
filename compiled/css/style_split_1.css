@@ -10713,6 +10713,10 @@ button.close {
   display: block;
 }
 
+.content-header.country .info {
+  padding-top: 22px;
+}
+
 body {
   padding-top: 64px;
 }
@@ -14243,8 +14247,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.as {
   background-position: 0 -512px;
-}
-
-.country-flag.at {
-  background-position: 0 -528px;
 }

@@ -8725,6 +8725,9 @@ button.close {
   max-width: 52px;
   display: block;
 }
+.content-header.country .info {
+  padding-top: 22px;
+}
 body {
   padding-top: 64px;
 }
