@@ -13737,6 +13737,12 @@ fieldset[disabled] .btn-twitter.active {
   width: 100%;
 }
 
+.floating-feedback {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 .dropdown-select {
   top: 0;
   left: 0;
@@ -14243,8 +14249,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.ar {
   background-position: 0 -496px;
-}
-
-.country-flag.as {
-  background-position: 0 -512px;
 }

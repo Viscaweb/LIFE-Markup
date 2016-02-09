@@ -11220,6 +11220,11 @@ fieldset[disabled] .btn-twitter.active {
 .btn-group.btn-group-selector-prev-next > .btn-group {
   width: 100%;
 }
+.floating-feedback {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 .dropdown-select {
   top: 0;
   left: 0;
