@@ -9692,6 +9692,7 @@ fieldset[disabled] .btn-twitter.active {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 100;
 }
 /* Livescores Modals */
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
