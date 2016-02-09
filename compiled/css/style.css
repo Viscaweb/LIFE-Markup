@@ -12534,6 +12534,9 @@ span.sprite-icons.webmaster-border {
   display: block;
   font-size: 0;
 }
+.matches-slider .content .owl-item {
+  max-width: 130px;
+}
 .matches-slider .content .match {
   cursor: pointer;
   padding: 6px 20px;
@@ -12685,6 +12688,9 @@ span.sprite-icons.webmaster-border {
 }
 .match-slider-inverse .control:hover span {
   color: #596063;
+}
+.match-slider-inverse .content .owl-item {
+  max-width: 130px;
 }
 .match-slider-inverse .content .match {
   background-color: #2f3334;
