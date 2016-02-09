@@ -10717,6 +10717,14 @@ button.close {
   padding-top: 22px;
 }
 
+.panel-content-header {
+  margin-bottom: 0;
+}
+
+.panel-content-header + .nav-tabs {
+  margin-bottom: 20px;
+}
+
 body {
   padding-top: 64px;
 }
@@ -14242,12 +14250,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.ao {
   background-position: 0 -464px;
-}
-
-.country-flag.aq {
-  background-position: 0 -480px;
-}
-
-.country-flag.ar {
-  background-position: 0 -496px;
 }

@@ -5,16 +5,16 @@
   border: 0;
 
   .avatar{
-	vertical-align: top;
-	position: relative;
+  	vertical-align: top;
+  	position: relative;
     padding-bottom: 30px;
     padding-top: 10px;
     text-align: center;
 
-	img{
-      max-width: 65px;
-      margin-top: 8px;
-	}
+  	img{
+        max-width: 65px;
+        margin-top: 8px;
+  	}
   }
 
   .info{
@@ -25,11 +25,11 @@
       max-width: 100%;
       float: left;
     }
+
     .title{
        line-height: 21px;
       display: table;
       max-width: 100%;
-
     
       > .title-value{
         font-weight: @font-weight-normal;
@@ -48,13 +48,13 @@
 			.fav{
 				display: inline-block;
 				font-size: @font-size-base + 1;
-              vertical-align: top;
-              line-height: 38px;
+        vertical-align: top;
+        line-height: 38px;
 
-            span{
-              vertical-align: middle;
-              color: darken(@ls-light-color, 20%);
-            }
+        span{
+          vertical-align: middle;
+          color: darken(@ls-light-color, 20%);
+        }
 
 		    &.active{
 		    	color: @ls-fav-hover;
@@ -216,4 +216,13 @@
     }
   }
 
+}
+
+//Panel style
+.panel-content-header{
+  margin-bottom: 0;
+
+  & + .nav-tabs{
+    margin-bottom: @grid-gutter-width;
+  }
 }

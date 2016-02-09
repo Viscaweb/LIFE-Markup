@@ -1,4 +1,4 @@
-<div class="panel panel-no-border">
+<div class="panel panel-no-border panel-content-header">
     <div class="row content-header teams">
         <div class="col-xs-2 avatar">
             <img src="{{ basePath }}img/sprites/psg.png" alt="PSG">
@@ -43,9 +43,6 @@
             </a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-12">
-            {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab: selectedTab}) }}
-        </div>
-    </div>
 </div>
+
+{{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab: selectedTab, no_container: true}) }}

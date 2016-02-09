@@ -8728,6 +8728,12 @@ button.close {
 .content-header.country .info {
   padding-top: 22px;
 }
+.panel-content-header {
+  margin-bottom: 0;
+}
+.panel-content-header + .nav-tabs {
+  margin-bottom: 20px;
+}
 body {
   padding-top: 64px;
 }
