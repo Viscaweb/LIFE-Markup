@@ -15413,50 +15413,6 @@ span.glyphicon-star.active {
   font-weight: 600;
   display: block;
 }
-.match-prediction > .row > div .notification {
-  position: relative;
-  padding: 12px;
-  padding-left: 62px;
-  border-bottom: 1px solid #f0f0f0;
-  line-height: 19px;
-}
-.match-prediction > .row > div .notification > div.icon {
-  display: block;
-  left: 0;
-  top: 0;
-  text-align: center;
-  width: 43px;
-  height: 43px;
-  line-height: 43px;
-  padding: 0px;
-  position: absolute;
-  background-color: #f0f0f0;
-}
-.match-prediction > .row > div .notification > div.icon > span {
-  font-size: 17px;
-  line-height: inherit;
-}
-.match-prediction > .row > div .notification > div.icon > span.icon-clock {
-  font-size: 20px;
-}
-.match-prediction > .row > div .notification > span {
-  font-weight: 600;
-  color: #333333;
-}
-.match-prediction > .row > div .notification.prediction-won {
-  background-color: #e9f2e2;
-}
-.match-prediction > .row > div .notification.prediction-won > div.icon {
-  background-color: #5da400;
-  color: #ffffff;
-}
-.match-prediction > .row > div .notification.prediction-lost {
-  background-color: #f5d3cf;
-}
-.match-prediction > .row > div .notification.prediction-lost > div.icon {
-  background-color: #e6523e;
-  color: #ffffff;
-}
 .match-prediction > .row > div .content {
   padding: 0 20px 15px;
 }
@@ -15508,6 +15464,58 @@ span.glyphicon-star.active {
 }
 .popover-prediction .popover-content .btn:last-child {
   margin-left: 10px;
+}
+.notification {
+  position: relative;
+  padding: 12px 62px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 19px;
+  -webkit-transition-property: all;
+       -o-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+       -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+          transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.notification > div.icon {
+  display: block;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  padding: 0px;
+  position: absolute;
+  background-color: #f0f0f0;
+}
+.notification > div.icon > span {
+  font-size: 17px;
+  line-height: inherit;
+}
+.notification > div.icon > span.icon-clock {
+  font-size: 20px;
+}
+.notification > span {
+  font-weight: 600;
+  color: #333333;
+}
+.notification.prediction-won {
+  background-color: #e9f2e2;
+}
+.notification.prediction-won > div.icon {
+  background-color: #5da400;
+  color: #ffffff;
+}
+.notification.prediction-lost {
+  background-color: #f5d3cf;
+}
+.notification.prediction-lost > div.icon {
+  background-color: #e6523e;
+  color: #ffffff;
 }
 .iframe .match-tips {
   background: #ffffff;

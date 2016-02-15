@@ -96,59 +96,6 @@
         display: block;
       }
 
-      .notification{
-        position: relative;
-        padding: 12px;
-        padding-left: 62px;
-        border-bottom: 1px solid darken(@ls-light-color, 6%);
-        line-height: @font-size-xx-large + 1px;
-
-        > div.icon{
-          display: block;
-          left: 0;
-          top: 0;
-          text-align: center;
-          width: 43px;
-          height: 43px;
-          line-height: 43px;
-          padding: 0px;
-          position: absolute;
-          background-color: darken(@ls-light-color, 6%);
-
-          > span{
-            font-size: @font-size-x-large;
-            line-height: inherit;
-
-
-            &.icon-clock{
-              font-size: @font-size-xx-large + 2px;
-            }
-          }
-        }
-
-        > span{
-          font-weight: @font-weight-semi-bold;
-          color: lighten(@ls-dark-color, 20%);
-        }
-
-        &.prediction-won{
-          background-color: @ls-tr-won-bg;
-
-          > div.icon{
-            background-color: @active-green;
-            color: @ls-light-color;
-          }
-        }
-
-        &.prediction-lost{
-          background-color: @ls-tr-lost-bg;
-
-          > div.icon{
-            background-color: @ls-td-lost-bg;
-            color: @ls-light-color;
-          }
-        }
-      }
       
       .content{
         padding: 0 20px 15px;
@@ -224,6 +171,63 @@
       &:last-child{
         margin-left: 10px;
       }
+    }
+  }
+}
+
+.notification{
+  position: relative;
+  padding: 12px 62px;
+  border-bottom: 1px solid darken(@ls-light-color, 6%);
+  line-height: @font-size-xx-large + 1px;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+
+  > div.icon{
+    display: block;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    padding: 0px;
+    position: absolute;
+    background-color: darken(@ls-light-color, 6%);
+
+    > span{
+      font-size: @font-size-x-large;
+      line-height: inherit;
+
+
+      &.icon-clock{
+        font-size: @font-size-xx-large + 2px;
+      }
+    }
+  }
+
+  > span{
+    font-weight: @font-weight-semi-bold;
+    color: lighten(@ls-dark-color, 20%);
+  }
+
+  &.prediction-won{
+    background-color: @ls-tr-won-bg;
+
+    > div.icon{
+      background-color: @active-green;
+      color: @ls-light-color;
+    }
+  }
+
+  &.prediction-lost{
+    background-color: @ls-tr-lost-bg;
+
+    > div.icon{
+      background-color: @ls-td-lost-bg;
+      color: @ls-light-color;
     }
   }
 }
