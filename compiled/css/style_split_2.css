@@ -1,3 +1,7 @@
+.country-flag.ao {
+  background-position: 0 -464px;
+}
+
 .country-flag.aq {
   background-position: 0 -480px;
 }
@@ -2590,7 +2594,7 @@ span.glyphicon-star.active {
 }
 
 .loading-opacity {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 /* Classic loading for some simple elements */

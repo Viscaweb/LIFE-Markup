@@ -12615,6 +12615,10 @@ span.dark-icon {
   width: 95px;
 }
 
+.table.layout-fixed colgroup col.stage-logo-only {
+  width: 30px;
+}
+
 .table.layout-fixed colgroup col.minutes {
   width: 60px;
 }
@@ -14246,8 +14250,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.am {
   background-position: 0 -448px;
-}
-
-.country-flag.ao {
-  background-position: 0 -464px;
 }

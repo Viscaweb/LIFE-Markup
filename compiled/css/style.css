@@ -10260,6 +10260,9 @@ span.dark-icon {
 .table.layout-fixed colgroup col.stage-has-logo {
   width: 95px;
 }
+.table.layout-fixed colgroup col.stage-logo-only {
+  width: 30px;
+}
 .table.layout-fixed colgroup col.minutes {
   width: 60px;
 }
@@ -13689,7 +13692,7 @@ span.glyphicon-star.active {
   display: none;
 }
 .loading-opacity {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 /* Classic loading for some simple elements */
 .sidebar-nav .sub-menu li.loading {
