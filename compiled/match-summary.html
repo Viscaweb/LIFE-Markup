@@ -462,15 +462,15 @@
         </div>
     </div>
     <div class="row row-voffset">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
             <div class="match-info row">
-                <div class="col-sm-5">
+                <div class="col-xs-5">
                     <div class="date"><span class="icon icon-default icon-calendar"></span> Wednesday 25 April 2012 - <strong>20:45</strong></div>
                 </div>
-                <div class="col-sm-3 referee" title="Viktor Kassaistadfeurthein Senior">
+                <div class="col-xs-3 referee" title="Viktor Kassaistadfeurthein Senior">
                     <span class="icon icon-referee"></span> Viktor Kassaistadfeurthein Senior
                 </div>
-                <div class="col-sm-4 stadium" title="Estadio Santiago Mariano do Brazil">
+                <div class="col-xs-4 stadium" title="Estadio Santiago Mariano do Brazil">
                     <span class="icon glyphicon glyphicon-map-marker"></span> Estadio Santiago Mariano do Brazil
                 </div>
             </div>
@@ -593,7 +593,7 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
             
 <div class="row">
   <div class="col-xs-12">
@@ -636,7 +636,7 @@
         <div class="col-xs-5 text-right">
             <div class="btn-group"><button class="btn btn-default dropdown-toggle large-icon btn-partager" type="button" data-popover="popover" data-html="true" data-placement="bottom" data-content="
                             <div class='row share-social'>
-                              <div class='col-md-6'>
+                              <div class='col-xs-6'>
                                 <div class='teams'>
                                   <div class='image'>
                                     <img src='img/sprites/partager-popover-teams.png' alt='Teams'>
@@ -646,7 +646,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class='col-md-6'>
+                              <div class='col-xs-6'>
                                 <div class='social-embeds'>
 
                                   <!-- Facebook Button-->
@@ -664,10 +664,10 @@
                               </div>
                             </div>
                             <div class='row share-url'>
-                              <div class='col-md-3'>
+                              <div class='col-xs-3'>
                                 <label>Share url</label>
                               </div>
-                              <div class='col-md-9'>
+                              <div class='col-xs-9'>
                                 <input class='share-link form-control' type='text' value='http://www.site.com/allemagne/bundesliga/mayence-hoffen'>
                               </div>
                             </div>
@@ -1698,16 +1698,22 @@
             </div>
         </div>
         
+        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseNot" aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+        </a>
+
         <div class="col-xs-6">
-            <div class="notification">
-                <div class="icon"><span class="icon icon-clock"></span></div>
-                <span>Result pending...</span>
+            <div class="collapse" id="collapseNot">
+                <div class="notification">
+                    <div class="icon"><span class="icon icon-clock"></span></div>
+                    <span>Result pending...</span>
             </div>
-            <div class="notification prediction-won">
+            </div>
+            <div class="notification prediction-won collapse">
                 <div class="icon"><span class="icon glyphicon glyphicon-ok"></span></div>
                 <span>Prediction won !</span>
             </div>
-            <div class="notification prediction-lost">
+            <div class="notification prediction-lost collapse">
                 <div class="icon"><span class="icon glyphicon glyphicon-remove"></span></div>
                 <span>Prediction lost !</span>
             </div>
