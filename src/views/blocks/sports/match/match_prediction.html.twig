@@ -50,16 +50,22 @@
         </div>
         {% endif %}
 
+        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseNot" aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+        </a>
+
         <div class="col-xs-{{ colWidth }}">
-            <div class="notification">
-                <div class="icon"><span class="icon icon-clock"></span></div>
-                <span>Result pending...</span>
+            <div class="collapse" id="collapseNot">
+                <div class="notification">
+                    <div class="icon"><span class="icon icon-clock"></span></div>
+                    <span>Result pending...</span>
             </div>
-            <div class="notification prediction-won">
+            </div>
+            <div class="notification prediction-won collapse">
                 <div class="icon"><span class="icon glyphicon glyphicon-ok"></span></div>
                 <span>Prediction won !</span>
             </div>
-            <div class="notification prediction-lost">
+            <div class="notification prediction-lost collapse">
                 <div class="icon"><span class="icon glyphicon glyphicon-remove"></span></div>
                 <span>Prediction lost !</span>
             </div>
