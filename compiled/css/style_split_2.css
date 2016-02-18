@@ -6957,7 +6957,7 @@ main .matches-widgets td.content span.empty {
 }
 
 .contest-standings .table-scroll {
-  height: 550px;
+  max-height: 550px;
   overflow: auto;
 }
 
