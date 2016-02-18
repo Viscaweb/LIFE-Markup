@@ -10191,6 +10191,9 @@ span.dark-icon {
 .table.layout-fixed colgroup col.score {
   width: 46px;
 }
+.table.layout-fixed colgroup col.score-large {
+  width: 110px;
+}
 .table.layout-fixed colgroup col.score-small {
   width: 32px;
 }
@@ -14347,35 +14350,34 @@ span.glyphicon-star.active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.match-information .table thead tr th {
+.match-information .table tbody tr th {
   text-transform: none;
   color: #dfdfdf;
 }
-.match-information .table thead tr th.team {
+.match-information .table tbody tr th.team {
   background-color: #454a4c;
-  width: 35%;
 }
-.match-information .table thead tr th.team .row {
+.match-information .table tbody tr th.team .row {
   margin: 0;
 }
-.match-information .table thead tr th.team .logo {
+.match-information .table tbody tr th.team .logo {
   padding: 0;
 }
-.match-information .table thead tr th.team .logo img {
+.match-information .table tbody tr th.team .logo img {
   max-width: 38px;
   max-height: 38px;
 }
-.match-information .table thead tr th.team .logo:hover img {
+.match-information .table tbody tr th.team .logo:hover img {
   opacity: .7;
 }
-.match-information .table thead tr th .name {
+.match-information .table tbody tr th .name {
   padding: 0;
   text-align: right;
   font-size: 18px;
   font-weight: 600;
   line-height: 38px;
 }
-.match-information .table thead tr th .name a {
+.match-information .table tbody tr th .name a {
   display: block;
   min-height: 40px;
   max-width: 100%;
@@ -14386,7 +14388,7 @@ span.glyphicon-star.active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.match-information .table thead tr th .name a .qualified {
+.match-information .table tbody tr th .name a .qualified {
   color: #79c614;
   font-size: 10px;
   line-height: 11px;
@@ -14395,69 +14397,96 @@ span.glyphicon-star.active {
   right: 0;
   position: absolute;
 }
-.match-information .table thead tr th .name a .qualified i {
+.match-information .table tbody tr th .name a .qualified i {
   vertical-align: middle;
   margin-right: 3px;
 }
-.match-information .table thead tr th .name a:hover {
+.match-information .table tbody tr th .name a:hover {
   color: #ffffff;
 }
-.match-information .table thead tr th .name a.star {
+.match-information .table tbody tr th .name a.star {
   display: none;
   color: #b1b1b1;
   position: absolute;
   margin-left: 4px;
 }
-.match-information .table thead tr th .name a.star.active {
+.match-information .table tbody tr th .name a.star.active {
   display: block;
 }
-.match-information .table thead tr th .name a.star span {
+.match-information .table tbody tr th .name a.star span {
   font-size: 14px;
 }
-.match-information .table thead tr th .name a.star:hover {
+.match-information .table tbody tr th .name a.star:hover {
   color: #999999;
 }
-.match-information .table thead tr th .name a.star.active span,
-.match-information .table thead tr th .name a.star.active i {
+.match-information .table tbody tr th .name a.star.active span,
+.match-information .table tbody tr th .name a.star.active i {
   color: #ffc600 !important;
 }
-.match-information .table thead tr th.team:hover .name a.star {
+.match-information .table tbody tr th.team:hover .name a.star {
   display: block;
 }
-.match-information .table thead tr th.away-team .logo {
+.match-information .table tbody tr th.away-team .logo {
   text-align: right;
 }
-.match-information .table thead tr th.away-team .name {
+.match-information .table tbody tr th.away-team .name {
   text-align: left;
 }
-.match-information .table thead tr th.away-team .name a {
+.match-information .table tbody tr th.away-team .name a {
   margin-left: 0;
   margin-right: 20px;
 }
-.match-information .table thead tr th.away-team .name a .qualified {
+.match-information .table tbody tr th.away-team .name a .qualified {
   left: 0;
   right: auto;
 }
-.match-information .table thead tr th.away-team a.star {
+.match-information .table tbody tr th.away-team a.star {
   right: 0;
   margin-right: 6px;
 }
-.match-information .table thead tr th.score {
+.match-information .table tbody tr th.score {
   text-align: center;
   background-color: #313536;
   padding-top: 0;
   padding-bottom: 0;
-  width: 15%;
+  min-width: 110px;
+  vertical-align: middle;
   white-space: nowrap;
+  position: relative;
 }
-.match-information .table thead tr th.score span {
+.match-information .table tbody tr th.score > span {
   font-size: 39px;
   font-weight: 700;
   line-height: 31px;
   color: #ffffff;
 }
-.match-information .table thead tr th.score span.versus {
+.match-information .table tbody tr th.score > span.versus {
   margin: 0 7px;
+}
+.match-information .table tbody tr th.score .match-status {
+  background-color: #dbdbdb;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 0 5px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -28px;
+  font-size: 13px;
+  color: #5c5c5c;
+  display: none;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.match-information .table tbody tr th.score .match-status span.minute {
+  color: #e33000;
+  padding-left: 15px;
+  background-image: url("../img/sprites/live-spot.gif");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-position: 1px center;
 }
 .match-information .table tbody tr td.team-information {
   padding-top: 3px;
@@ -14626,6 +14655,19 @@ span.glyphicon-star.active {
   background-repeat: no-repeat;
   background-position: 5px center;
   background-position: 1px center;
+}
+.match-information.flying .table-match-details {
+  position: fixed;
+  top: 64px;
+  width: 608px;
+  z-index: 10;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.match-information.flying .table-match-details .match-status {
+  display: block !important;
+}
+.match-information.flying .table-match-actions-summary {
+  margin-top: 56px;
 }
 .match-timeline {
   position: relative;

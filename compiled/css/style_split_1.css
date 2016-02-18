@@ -12523,6 +12523,10 @@ span.dark-icon {
   width: 46px;
 }
 
+.table.layout-fixed colgroup col.score-large {
+  width: 110px;
+}
+
 .table.layout-fixed colgroup col.score-small {
   width: 32px;
 }
@@ -14246,8 +14250,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.al {
   background-position: 0 -432px;
-}
-
-.country-flag.am {
-  background-position: 0 -448px;
 }

@@ -415,7 +415,7 @@
         <div class="content-wrapper">
 
                 <div class="content">
-            <div class="panel panel-default match-information live">
+            <div class="panel panel-default match-information live flying">
     <div class="panel-heading">
         <div class="panel-title"><img alt="Ligue" src="img/sprites/ldc.png"><a href="#" title="Champions League">Champions League</a> / <a href="#" title="Group Stage - Matchday 12 - Groupe A 2nd leg">Group Stage - Matchday 12 - Groupe A 2nd leg</a></div>
         <div class="tools">
@@ -440,8 +440,13 @@
                     <span class="icon glyphicon glyphicon-map-marker"></span> Estadio Santiago Mariano do Brazil
                 </div>
             </div>
-            <table class="table layout-fixed">
-                <thead>
+            <table class="table table-match-details layout-fixed">
+                <colgroup>
+                    <col class="team">
+                    <col class="score-large">
+                    <col class="team">
+                </colgroup>
+                <tbody>
                 <tr>
                     <th class="team home-team">
                         <div class="row">
@@ -449,7 +454,13 @@
                             <div class="col-xs-10 name"><a href="#" class="star"><span class="glyphicon glyphicon-star"></span></a><a href="#" title="Real Madrid long team name">Real Madrid long team name</a></div>
                         </div>
                     </th>
-                    <th class="score"><span class="home-score">2</span><span class="versus">-</span><span class="away-score">1</span></th>
+                    <th class="score">
+                        <span class="home-score">2</span><span class="versus">-</span><span class="away-score">1</span>
+                        <div class="match-status">
+                            <span>1H</span> -
+                            <span class="minute">66'</span>
+                        </div>
+                    </th>
                     <th class="team away-team">
                         <div class="row">
                             <div class="col-xs-10 name"><a href="#" class="star active"><span class="glyphicon glyphicon-star"></span></a><a href="#" title="Fußball-Club Bayern München">Fußball-Club Bayern München<span class="qualified"><i class="icon-tick"></i>Qualified</span></a></div>
@@ -457,7 +468,14 @@
                         </div>
                     </th>
                 </tr>
-                </thead>
+                </tbody>
+            </table>
+            <table class="table table-match-actions-summary layout-fixed">
+                <colgroup>
+                    <col class="team">
+                    <col class="score-large">
+                    <col class="team">
+                </colgroup>
                 <tbody>
                 <tr>
                     <td class="team-information home">
