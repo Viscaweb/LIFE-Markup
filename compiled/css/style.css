@@ -17200,6 +17200,10 @@ main .matches-widgets td.content span.empty {
   margin-top: 10px;
   display: block;
 }
+.first-day-month-gift .month-gift-image {
+  max-width: 240px;
+  max-height: 300px;
+}
 .setting-box {
   background-color: #f8f8f8;
   border: 1px solid #f5f5f5;
