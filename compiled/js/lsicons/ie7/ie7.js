@@ -81,6 +81,8 @@
 		'icon-view_list': '&#xe900;',
 		'icon-verified_user': '&#xe901;',
 		'icon-email': '&#xe902;',
+		'icon-gift': '&#xe904;',
+		'icon-phone': '&#xe905;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),
