@@ -18554,6 +18554,12 @@ ul.image-list li img {
   margin-top: 7px;
   letter-spacing: -1px;
 }
+.main-article h2,
+.main-article h3,
+.main-article h4 {
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
 .main-article img.article-image {
   max-width: 100%;
   margin-bottom: 15px;
@@ -18567,11 +18573,11 @@ ul.image-list li img {
   font-size: 17px;
   font-weight: 700;
   display: block;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 25px;
 }
 .main-article p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .discussion .panel-body span.users-list-title {
   font-size: 12px;
