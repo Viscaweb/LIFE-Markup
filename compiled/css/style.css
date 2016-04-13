@@ -7878,6 +7878,7 @@ button.close {
 }
 .header .navbar.navbar-fixed-top .navbar-right .btn-partager {
   margin-top: 14px;
+  position: relative;
 }
 .header .dropdown-inverted .dropdown-menu {
   background-color: #444a4c;
