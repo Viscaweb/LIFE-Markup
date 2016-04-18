@@ -15172,6 +15172,7 @@ span.glyphicon-star.active {
   min-width: 35px;
   cursor: pointer;
   border-collapse: collapse;
+  outline: none;
 }
 .match-teams-lineups .component-container .field .field-lines .player .number {
   color: #1a1a1a;
