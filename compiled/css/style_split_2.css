@@ -4500,7 +4500,7 @@ span.glyphicon-star.active {
 
 .match-teams-lineups .popover {
   border-top: 0;
-  min-width: 322px;
+  min-width: 380px;
   border-radius: 2px;
 }
 
@@ -4527,11 +4527,6 @@ span.glyphicon-star.active {
 
 .match-teams-lineups .popover .popover-content .content-header.player {
   padding: 0;
-}
-
-.match-teams-lineups .popover .popover-content .content-header.player .avatar {
-  margin-right: 10px;
-  float: left;
 }
 
 .match-teams-lineups .popover .popover-content .content-header.player .avatar img {
