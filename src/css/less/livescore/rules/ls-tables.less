@@ -819,6 +819,11 @@
         }
       }
 
+      &.updated{
+        animation-name: progressiveHighlight;
+        animation-duration: 4s;
+      }
+
       &.selected{
         background-color: @ls-tr-selected-bg !important;
 
@@ -940,11 +945,12 @@
         }
 
         &.updated{
-          background-color: @live-red !important;
-          color: @ls-light-color !important;
+          animation-name: progressiveUpdate;
+          animation-duration: 4s;
 
           > a {
-            color: @ls-light-color !important;
+            animation-name: progressiveUpdateLink;
+            animation-duration: 4s;
           }
         }
       }

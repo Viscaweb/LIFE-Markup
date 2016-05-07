@@ -19,3 +19,29 @@
   80% { transform: scale(0.95) }
   100% { transform: scale(0.85) }
 }
+
+@keyframes progressiveHighlight {
+  from {background-color: @ls-tr-highlight-bg; }
+  to {background-color: initial; }
+}
+
+@keyframes progressiveUpdate {
+  from {
+    background-color: @live-red;
+    color: @ls-light-color;
+  }
+  to {
+    background-color: initial;
+    color: initial;
+  }
+}
+
+@keyframes progressiveUpdateLink {
+  from {
+    color: @ls-light-color;
+  }
+  to {
+    color: initial;
+  }
+}
+
