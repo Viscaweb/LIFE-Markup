@@ -821,8 +821,24 @@
 
       &.updated{
         animation-name: progressiveHighlight;
-        animation-duration: 4s;
+        animation-duration: 6s;
+
+        td{
+          animation-name: progressiveHighlight;
+          animation-duration: 6s;
+        }
+
+        &:hover{
+          background-color: darken(@ls-tr-highlight-bg, 6%) !important;
+        }
+
       }
+
+      /*&.updated{
+        animation-name: progressiveHighlight;
+        animation-duration: 4s;
+        animation-delay: 4s;
+      }*/
 
       &.selected{
         background-color: @ls-tr-selected-bg !important;
@@ -946,11 +962,11 @@
 
         &.updated{
           animation-name: progressiveUpdate;
-          animation-duration: 4s;
+          animation-duration: 6s;
 
           > a {
             animation-name: progressiveUpdateLink;
-            animation-duration: 4s;
+            animation-duration: 6s;
           }
         }
       }
@@ -1308,6 +1324,7 @@
             }
             
             .label-goal {
+              opacity:0;
               position: absolute;
               margin-top: 2px;
             }

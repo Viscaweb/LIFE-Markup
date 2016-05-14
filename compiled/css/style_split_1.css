@@ -11707,6 +11707,14 @@ span.dark-icon {
   background-color: #dbdbdb;
 }
 
+.table > tbody > tr {
+  /*&.updated{
+        animation-name: progressiveHighlight;
+        animation-duration: 4s;
+        animation-delay: 4s;
+      }*/
+}
+
 .table > tbody > tr.highlight {
   background-color: #fff4ce !important;
 }
@@ -11716,6 +11724,28 @@ span.dark-icon {
 }
 
 .table > tbody > tr.highlight:hover {
+  background-color: #ffedaf !important;
+}
+
+.table > tbody > tr.updated {
+  -webkit-animation-name: progressiveHighlight;
+  -o-animation-name: progressiveHighlight;
+  animation-name: progressiveHighlight;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table > tbody > tr.updated td {
+  -webkit-animation-name: progressiveHighlight;
+  -o-animation-name: progressiveHighlight;
+  animation-name: progressiveHighlight;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table > tbody > tr.updated:hover {
   background-color: #ffedaf !important;
 }
 
@@ -11858,12 +11888,21 @@ span.dark-icon {
 }
 
 .table tbody tr td.updated {
-  background-color: #e33000 !important;
-  color: #ffffff !important;
+  -webkit-animation-name: progressiveUpdate;
+  -o-animation-name: progressiveUpdate;
+  animation-name: progressiveUpdate;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
 }
 
 .table tbody tr td.updated > a {
-  color: #ffffff !important;
+  -webkit-animation-name: progressiveUpdateLink;
+  -o-animation-name: progressiveUpdateLink;
+  animation-name: progressiveUpdateLink;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
 }
 
 .table tbody tr:hover td.highlight {
@@ -12172,6 +12211,7 @@ span.dark-icon {
 }
 
 .table.matches tbody tr td.team .label-goal {
+  opacity: 0;
   position: absolute;
   margin-top: 2px;
 }
@@ -14235,20 +14275,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.ae {
   background-position: 0 -368px;
-}
-
-.country-flag.af {
-  background-position: 0 -384px;
-}
-
-.country-flag.ag {
-  background-position: 0 -400px;
-}
-
-.country-flag.ai {
-  background-position: 0 -416px;
-}
-
-.country-flag.al {
-  background-position: 0 -432px;
 }
