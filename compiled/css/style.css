@@ -19607,9 +19607,6 @@ ul.image-list li img {
   90% {
     background-color: #fff4ce;
   }
-  100% {
-    background-color: initial;
-  }
 }
 @-o-keyframes progressiveHighlight {
   0% {
@@ -19618,9 +19615,6 @@ ul.image-list li img {
   90% {
     background-color: #fff4ce;
   }
-  100% {
-    background-color: initial;
-  }
 }
 @keyframes progressiveHighlight {
   0% {
@@ -19628,9 +19622,6 @@ ul.image-list li img {
   }
   90% {
     background-color: #fff4ce;
-  }
-  100% {
-    background-color: initial;
   }
 }
 @-webkit-keyframes progressiveUpdate {
@@ -19642,9 +19633,6 @@ ul.image-list li img {
     background-color: #e33000;
     color: #ffffff;
   }
-  100% {
-    background-color: initial;
-  }
 }
 @-o-keyframes progressiveUpdate {
   0% {
@@ -19655,9 +19643,6 @@ ul.image-list li img {
     background-color: #e33000;
     color: #ffffff;
   }
-  100% {
-    background-color: initial;
-  }
 }
 @keyframes progressiveUpdate {
   0% {
@@ -19667,9 +19652,6 @@ ul.image-list li img {
   90% {
     background-color: #e33000;
     color: #ffffff;
-  }
-  100% {
-    background-color: initial;
   }
 }
 @-webkit-keyframes progressiveUpdateLink {
