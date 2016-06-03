@@ -9097,6 +9097,9 @@ span.dark-icon {
 }
 .table tbody tr > th {
   background-color: #eaeaea;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .table tbody tr > th span.match-name {
   color: rgba(255, 255, 255, 0.6) !important;
@@ -9881,6 +9884,7 @@ span.dark-icon {
   padding: 1px 6px;
   text-transform: none;
   z-index: 2;
+  overflow: visible;
 }
 .table.matches tbody tr th.league-title:after {
   content: "";

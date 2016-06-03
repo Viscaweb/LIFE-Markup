@@ -433,6 +433,9 @@
 
       > th{
         background-color: darken(@ls-light-color, 8.3%);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         span.match-name{
           color: fade(@ls-th-league-color, 60%) !important;
@@ -1254,6 +1257,7 @@
             padding: 1px 6px;
             text-transform: none;
             z-index: 2;
+            overflow: visible;
 
             &:after {
               content: "";
