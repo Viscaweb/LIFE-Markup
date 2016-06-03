@@ -9318,6 +9318,9 @@ span.dark-icon {
 .table tbody tr > td .data-multiple:last-child {
   border: none;
 }
+.table tbody tr > td.partner-logo img {
+  max-width: 100px;
+}
 .table tbody tr.live td.time {
   color: #e33000;
 }

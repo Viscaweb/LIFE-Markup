@@ -11438,6 +11438,10 @@ span.dark-icon {
   border: none;
 }
 
+.table tbody tr > td.partner-logo img {
+  max-width: 100px;
+}
+
 .table tbody tr.live td.time {
   color: #e33000;
 }
@@ -14271,8 +14275,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.ad {
   background-position: 0 -352px;
-}
-
-.country-flag.ae {
-  background-position: 0 -368px;
 }
