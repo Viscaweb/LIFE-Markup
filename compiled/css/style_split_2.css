@@ -4401,6 +4401,10 @@ span.glyphicon-star.active {
   height: 16.6%;
 }
 
+.match-teams-lineups .component-container .field .field-lines .field-part .field-row.lines-6 .player .icons {
+  margin-bottom: -13px;
+}
+
 .match-teams-lineups .component-container .field .field-lines .player {
   position: relative;
   display: table-cell;
