@@ -1,3 +1,23 @@
+.country-flag._united_nations {
+  background-position: 0 -320px;
+}
+
+.country-flag._wales {
+  background-position: 0 -336px;
+}
+
+.country-flag._oceania {
+  background-position: 0 -320px;
+}
+
+.country-flag._central_north_am {
+  background-position: 0 -320px;
+}
+
+.country-flag._south_am {
+  background-position: 0 -320px;
+}
+
 .country-flag.ad {
   background-position: 0 -352px;
 }

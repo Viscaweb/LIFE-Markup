@@ -10205,6 +10205,26 @@ button.close {
   background-color: #ededed;
 }
 
+.text-left {
+  text-align: left!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.text-justify {
+  text-align: justify!important;
+}
+
+.text-nowrap {
+  white-space: nowrap!important;
+}
+
 .well,
 .h2-small {
   border-radius: 0;
@@ -14259,24 +14279,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag._tibet {
   background-position: 0 -304px;
-}
-
-.country-flag._united_nations {
-  background-position: 0 -320px;
-}
-
-.country-flag._wales {
-  background-position: 0 -336px;
-}
-
-.country-flag._oceania {
-  background-position: 0 -320px;
-}
-
-.country-flag._central_north_am {
-  background-position: 0 -320px;
-}
-
-.country-flag._south_am {
-  background-position: 0 -320px;
 }
