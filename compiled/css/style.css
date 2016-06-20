@@ -10030,8 +10030,7 @@ span.dark-icon {
   background-repeat: no-repeat;
   background-position: 5px center;
 }
-.table.matches tbody tr.live.paused > td.time,
-.table.matches tbody tr.live.paused > td.date {
+.table.matches tbody tr.live.paused > td.time {
   padding-left: 15px;
   background-image: url("../img/sprites/paused-spot.gif");
   background-repeat: no-repeat;

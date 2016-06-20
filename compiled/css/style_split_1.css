@@ -12322,8 +12322,7 @@ span.dark-icon {
   background-position: 5px center;
 }
 
-.table.matches tbody tr.live.paused > td.time,
-.table.matches tbody tr.live.paused > td.date {
+.table.matches tbody tr.live.paused > td.time {
   padding-left: 15px;
   background-image: url("../img/sprites/paused-spot.gif");
   background-repeat: no-repeat;
@@ -14279,4 +14278,8 @@ span.sprite-icons.webmaster-border {
 
 .country-flag._tibet {
   background-position: 0 -304px;
+}
+
+.country-flag._united_nations {
+  background-position: 0 -320px;
 }
