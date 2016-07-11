@@ -144,7 +144,8 @@
 						left: 5px;
 						top: 1px;
 						opacity: 0;
-						font-size: @font-size-small;						
+						font-size: @font-size-small;
+						cursor: move;
 					}
 
 					.close{
@@ -220,6 +221,11 @@
 
 					&.dropdown-toggle:before {
 						margin-top: 2px;
+					}
+
+					&.no-link {
+						cursor: default;
+						background: none;
 					}
 				}
 				

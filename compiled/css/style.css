@@ -19072,6 +19072,7 @@ ul.image-list li img {
   top: 1px;
   opacity: 0;
   font-size: 12px;
+  cursor: move;
 }
 .sidebar-nav li a.sortable .close {
   display: none;
@@ -19125,6 +19126,10 @@ ul.image-list li img {
 }
 .sidebar-nav li .sub-menu > li a.dropdown-toggle:before {
   margin-top: 2px;
+}
+.sidebar-nav li .sub-menu > li a.no-link {
+  cursor: default;
+  background: none;
 }
 .sidebar-nav li .sub-menu > li.open > a:hover {
   background-color: #e2e5e6;
