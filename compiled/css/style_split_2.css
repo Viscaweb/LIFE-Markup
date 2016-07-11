@@ -14,6 +14,10 @@
   background-position: 0 -320px;
 }
 
+.country-flag._south_hemisphere {
+  background-position: 0 -320px;
+}
+
 .country-flag.ad {
   background-position: 0 -352px;
 }

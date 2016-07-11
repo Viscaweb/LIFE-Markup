@@ -10017,6 +10017,7 @@ span.sprite-icons.webmaster-border {
   /* united nations flag */
   /* united nations flag */
   /* united nations flag */
+  /* united nations flag */
 }
 .country-flag._african_union {
   background-position: 0 -16px;
@@ -10089,6 +10090,9 @@ span.sprite-icons.webmaster-border {
   background-position: 0 -320px;
 }
 .country-flag._south_am {
+  background-position: 0 -320px;
+}
+.country-flag._south_hemisphere {
   background-position: 0 -320px;
 }
 .country-flag.ad {
