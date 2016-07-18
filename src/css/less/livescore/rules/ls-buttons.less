@@ -25,40 +25,36 @@
       border-color: darken(@ls-light-color, 11.6%);
     }
   }
-}
 
+  &.btn-prediction-done {
+    position: relative;
+    .button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
 
-.btn-prediction-done{
-  position: relative;
-  .button-variant(@ls-light-color; lighten(@ls-dark-color, 45%); lighten(@ls-dark-color, 37%));
-
-  &:hover {
-    .prediction-remove(red);
+    &:hover {
+      .prediction-remove(red);
+    }
   }
-}
 
+  &.btn-prediction-success {
+    .button-variant(@ls-light-color; @ls-btn-success; @ls-success-border);
+  }
 
-.btn-prediction-success{
-	.button-variant(@ls-light-color; @ls-btn-success; @ls-success-border);
-}
- 
+  &.btn-prediction-result{
+    .button-variant(@ls-success-border; darken(@ls-light-color, 3%); @ls-success-border);
+    border-right-width: 1px !important;
+    outline: none;
+  }
 
-.btn-prediction-result{
-	.button-variant(@ls-success-border; darken(@ls-light-color, 3%); @ls-success-border);
-	border-right-width: 1px !important;
-	outline: none;
+  &.btn-prediction-failed{
+    .button-variant(@ls-light-color; @ls-btn-danger; @ls-btn-danger - 15%);
+    outline: none;
+  }
 }
 
 
 .btn.btn-prediction-result + .btn{
   margin-left: 0;
 }
-
-.btn-prediction-failed{
-	.button-variant(@ls-light-color; @ls-btn-danger; @ls-btn-danger - 15%);
-	outline: none;
-}
-
 
 
 /* Prediction buttons status depending on prediction state */
@@ -68,12 +64,31 @@
   &.btn-group {
     cursor: not-allowed;
     pointer-events: none;
-
   }
 
-  .btn-prediction{
-      border-color: darken(@ls-light-color, 11.6%);
-      color: lighten(@ls-dark-color, 20%);
+  .btn-prediction {
+    border-color: darken(@ls-light-color, 11.6%);
+    color: lighten(@ls-dark-color, 20%);
+
+    &.btn-prediction-done{
+      color: @ls-light-color;
+      border-color: lighten(@ls-dark-color, 37%);
+    }
+
+    &.btn-prediction-success{
+      color: @ls-light-color;
+      border-color: @ls-success-border;
+    }
+
+    &.btn-prediction-result{
+      color: @ls-success-border;
+      border-color: @ls-success-border;
+    }
+
+    &.btn-prediction-failed{
+      color: @ls-light-color;
+      border-color: @ls-btn-danger - 15%;
+    }
   }
 
   .btn-prediction-success, .btn-prediction-failed, .btn-prediction-result {
@@ -361,7 +376,3 @@
   z-index: 100;
 
 }
-
-
-
-
