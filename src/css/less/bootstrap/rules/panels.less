@@ -15,6 +15,9 @@
     border-color: darken(@ls-light-color,6%);
     position: relative;
     .panel-title-font-style();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
     .panel-title{
       display: inline;
@@ -38,12 +41,11 @@
     }
 
     .tools{
-      float: right;
       font-weight: normal;
       color: lighten( @ls-dark-color, 58% );
       font-size:  @font-size-small;
-      position: relative;
-      right: 0;
+      flex: 0 0 auto;
+      margin-left: 5px;
 
       > a{
         outline: none;

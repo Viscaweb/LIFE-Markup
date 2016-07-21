@@ -9839,6 +9839,18 @@ button.close {
   position: relative;
   font-size: 13px;
   font-weight: 600;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .panel > .panel-heading .panel-title {
@@ -9864,12 +9876,14 @@ button.close {
 }
 
 .panel > .panel-heading .tools {
-  float: right;
   font-weight: normal;
   color: #949494;
   font-size: 12px;
-  position: relative;
-  right: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-left: 5px;
 }
 
 .panel > .panel-heading .tools > a {
@@ -13916,9 +13930,11 @@ fieldset[disabled] .btn-twitter.active {
 .panel > .panel-heading .team-logo {
   max-width: 28px;
   max-height: 28px;
-  margin-right: 5px;
-  top: -5px;
   position: relative;
+}
+
+.panel > .panel-heading .team-logo + .team-logo {
+  margin-left: 5px;
 }
 
 .panel.panel-no-border {
@@ -14290,9 +14306,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag._england {
   background-position: 0 -112px;
-}
-
-.country-flag._european_union,
-.country-flag.eu {
-  background-position: 0 -128px;
 }
