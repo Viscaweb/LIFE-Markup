@@ -195,15 +195,17 @@
 
     > span{
       font-size: @font-size-x-large;
-      line-height: inherit;
+      line-height: @font-size-x-large;
+      margin-top: -( @font-size-x-large / 2 );
+      left: 13px;
+      top: 50%;
+      position: absolute;
 
       &.icon-clock{
         font-size: @font-size-xx-large + 2px;
         line-height: @font-size-xx-large + 2px;
-        position: absolute;
-        left: 11px;
-        top: 50%;
         margin-top: -( (@font-size-xx-large + 2px) / 2 );
+        left: 11px;
       }
     }
   }

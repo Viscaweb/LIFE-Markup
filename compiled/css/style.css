@@ -15655,15 +15655,17 @@ span.glyphicon-star.active {
 }
 .notification > div.icon > span {
   font-size: 17px;
-  line-height: inherit;
+  line-height: 17px;
+  margin-top: -8.5px;
+  left: 13px;
+  top: 50%;
+  position: absolute;
 }
 .notification > div.icon > span.icon-clock {
   font-size: 20px;
   line-height: 20px;
-  position: absolute;
-  left: 11px;
-  top: 50%;
   margin-top: -10px;
+  left: 11px;
 }
 .notification > span {
   font-weight: 600;
