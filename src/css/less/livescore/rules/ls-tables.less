@@ -1315,7 +1315,7 @@
               color: @text-color;
               display: inline-block;
               max-width: 100%;
-
+              min-height: @ls-matches-table-team-image-size;
             }
 
             > a:hover {
@@ -1331,7 +1331,7 @@
             }
 
             img{
-              max-width: 20px;
+              max-width: @ls-matches-table-team-image-size;
             }
             
             .label-goal {
@@ -1612,12 +1612,13 @@
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
+              min-height: @ls-standing-table-team-image-size;
             }
 
             img{
               margin-right: 5px;
-              max-width: 18px;
-              max-height: 18px;
+              max-width: @ls-standing-table-team-image-size;
+              max-height: @ls-standing-table-team-image-size;
               vertical-align: top;
             }
           }

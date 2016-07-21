@@ -7200,6 +7200,8 @@ button.close {
 /*DatePicker*/
 /*Footer*/
 /*Tables General*/
+/*Matches table*/
+/*Standing table*/
 /*Table status colors*/
 /*Table Icons*/
 /*Table Standings*/
@@ -8403,6 +8405,7 @@ span.dark-icon {
   color: #5c5c5c;
   display: inline-block;
   max-width: 100%;
+  min-height: 20px;
 }
 .table.matches tbody tr td.team > a:hover {
   color: #0f86ff;
@@ -8621,6 +8624,7 @@ span.dark-icon {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-height: 18px;
 }
 .table.table-standing tbody tr td.team img {
   margin-right: 5px;

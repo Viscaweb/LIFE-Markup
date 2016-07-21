@@ -7772,8 +7772,18 @@ button.close {
   font-size: 24px;
   top: 0px;
 }
+.header .navbar.navbar-fixed-top .navbar-right > li > a:focus {
+  background-color: transparent;
+}
+.header .navbar.navbar-fixed-top .navbar-right > li > a:active,
+.header .navbar.navbar-fixed-top .navbar-right > li > a:hover {
+  background-color: #eeeeee;
+}
 .header .navbar.navbar-fixed-top .navbar-right > li.active > a {
   color: #5da400;
+}
+.header .navbar.navbar-fixed-top .navbar-right > li.open > a {
+  background-color: #eeeeee;
 }
 .header .navbar.navbar-fixed-top .navbar-right ul.dropdown-menu.custom {
   padding: 0;
@@ -8577,6 +8587,8 @@ button.close {
 /*DatePicker*/
 /*Footer*/
 /*Tables General*/
+/*Matches table*/
+/*Standing table*/
 /*Table status colors*/
 /*Table Icons*/
 /*Table Standings*/
@@ -9963,6 +9975,7 @@ span.dark-icon {
   color: #5c5c5c;
   display: inline-block;
   max-width: 100%;
+  min-height: 20px;
 }
 .table.matches tbody tr td.team > a:hover {
   color: #0f86ff;
@@ -10181,6 +10194,7 @@ span.dark-icon {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-height: 18px;
 }
 .table.table-standing tbody tr td.team img {
   margin-right: 5px;
@@ -15650,7 +15664,7 @@ span.glyphicon-star.active {
   top: 0;
   text-align: center;
   width: 43px;
-  height: 43px;
+  height: 100%;
   line-height: 43px;
   padding: 0px;
   position: absolute;
@@ -15658,10 +15672,17 @@ span.glyphicon-star.active {
 }
 .notification > div.icon > span {
   font-size: 17px;
-  line-height: inherit;
+  line-height: 17px;
+  margin-top: -8.5px;
+  left: 13px;
+  top: 50%;
+  position: absolute;
 }
 .notification > div.icon > span.icon-clock {
   font-size: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  left: 11px;
 }
 .notification > span {
   font-weight: 600;
