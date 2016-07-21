@@ -181,14 +181,13 @@
   border-bottom: 1px solid darken(@ls-light-color, 6%);
   line-height: @font-size-xx-large + 1px;
 
-
   > div.icon{
     display: block;
     left: 0;
     top: 0;
     text-align: center;
     width: 43px;
-    height: 43px;
+    height: 100%;
     line-height: 43px;
     padding: 0px;
     position: absolute;
@@ -198,9 +197,13 @@
       font-size: @font-size-x-large;
       line-height: inherit;
 
-
       &.icon-clock{
         font-size: @font-size-xx-large + 2px;
+        line-height: @font-size-xx-large + 2px;
+        position: absolute;
+        left: 11px;
+        top: 50%;
+        margin-top: -( (@font-size-xx-large + 2px) / 2 );
       }
     }
   }

@@ -4902,7 +4902,7 @@ span.glyphicon-star.active {
   top: 0;
   text-align: center;
   width: 43px;
-  height: 43px;
+  height: 100%;
   line-height: 43px;
   padding: 0px;
   position: absolute;
@@ -4916,6 +4916,11 @@ span.glyphicon-star.active {
 
 .notification > div.icon > span.icon-clock {
   font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  margin-top: -10px;
 }
 
 .notification > span {
