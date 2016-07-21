@@ -9959,6 +9959,7 @@ span.dark-icon {
   color: #5c5c5c;
   display: inline-block;
   max-width: 100%;
+  line-height: 20px;
 }
 .table.matches tbody tr td.team > a:hover {
   color: #0f86ff;
@@ -10177,6 +10178,7 @@ span.dark-icon {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 18px;
 }
 .table.table-standing tbody tr td.team img {
   margin-right: 5px;
