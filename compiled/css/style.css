@@ -7772,8 +7772,18 @@ button.close {
   font-size: 24px;
   top: 0px;
 }
+.header .navbar.navbar-fixed-top .navbar-right > li > a:focus {
+  background-color: transparent;
+}
+.header .navbar.navbar-fixed-top .navbar-right > li > a:active,
+.header .navbar.navbar-fixed-top .navbar-right > li > a:hover {
+  background-color: #eeeeee;
+}
 .header .navbar.navbar-fixed-top .navbar-right > li.active > a {
   color: #5da400;
+}
+.header .navbar.navbar-fixed-top .navbar-right > li.open > a {
+  background-color: #eeeeee;
 }
 .header .navbar.navbar-fixed-top .navbar-right ul.dropdown-menu.custom {
   padding: 0;

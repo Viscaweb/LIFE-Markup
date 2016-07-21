@@ -1,3 +1,16 @@
+.country-flag._commonwealth {
+  background-position: 0 -96px;
+}
+
+.country-flag._england {
+  background-position: 0 -112px;
+}
+
+.country-flag._european_union,
+.country-flag.eu {
+  background-position: 0 -128px;
+}
+
 .country-flag._islamic_conference {
   background-position: 0 -144px;
 }

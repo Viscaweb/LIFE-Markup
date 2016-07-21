@@ -9515,8 +9515,21 @@ button.close {
   top: 0px;
 }
 
+.header .navbar.navbar-fixed-top .navbar-right > li > a:focus {
+  background-color: transparent;
+}
+
+.header .navbar.navbar-fixed-top .navbar-right > li > a:active,
+.header .navbar.navbar-fixed-top .navbar-right > li > a:hover {
+  background-color: #eeeeee;
+}
+
 .header .navbar.navbar-fixed-top .navbar-right > li.active > a {
   color: #5da400;
+}
+
+.header .navbar.navbar-fixed-top .navbar-right > li.open > a {
+  background-color: #eeeeee;
 }
 
 .header .navbar.navbar-fixed-top .navbar-right ul.dropdown-menu.custom {
@@ -14282,17 +14295,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag._cis {
   background-position: 0 -80px;
-}
-
-.country-flag._commonwealth {
-  background-position: 0 -96px;
-}
-
-.country-flag._england {
-  background-position: 0 -112px;
-}
-
-.country-flag._european_union,
-.country-flag.eu {
-  background-position: 0 -128px;
 }

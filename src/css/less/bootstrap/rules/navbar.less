@@ -81,6 +81,7 @@
       margin: 0;
     
       > li{
+
         > a{ 
           color:darken(@header-bg, 57%);
           padding-bottom: 0;
@@ -91,12 +92,28 @@
             vertical-align: middle;
             font-size:  @font-size-base + 11;
             top : 0px;
-          }   
+          }
+
+          &:focus{
+            background-color: transparent;
+          }
+
+          &:active, &:hover{
+            background-color: @nav-link-hover-bg;
+          }
         }
              
         &.active{
+
           > a{
             color: @active-green;
+          }
+        }
+
+        &.open{
+
+          > a{
+            background-color: @nav-link-hover-bg;
           }
         }
       }
