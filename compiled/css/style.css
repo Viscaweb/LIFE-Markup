@@ -15867,6 +15867,10 @@ span.glyphicon-star.active {
   padding-left: 15px;
   padding-right: 15px;
 }
+.table.live-commentary tbody tr td.content img {
+  max-width: 100%;
+  height: auto;
+}
 .table.live-commentary tbody tr td.content p {
   font-size: 13px;
   font-weight: 300;
