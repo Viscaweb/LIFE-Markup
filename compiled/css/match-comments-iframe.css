@@ -10071,7 +10071,7 @@ span.sprite-icons.webmaster-border {
   /* united nations flag */
   /* united nations flag */
 }
-.country-flag._african_union {
+.country-flag._african_u {
   background-position: 0 -16px;
 }
 .country-flag._arab_league {
@@ -10108,7 +10108,7 @@ span.sprite-icons.webmaster-border {
 .country-flag._northern_cyprus {
   background-position: 0 -192px;
 }
-.country-flag._northern_ireland {
+.country-flag._n-ireland {
   background-position: 0 -208px;
 }
 .country-flag._olimpic_movement {
@@ -10138,13 +10138,13 @@ span.sprite-icons.webmaster-border {
 .country-flag._oceania {
   background-position: 0 -320px;
 }
-.country-flag._central_north_am {
+.country-flag.central_n {
   background-position: 0 -320px;
 }
 .country-flag._south_am {
   background-position: 0 -320px;
 }
-.country-flag._south_hemisphere {
+.country-flag._southern_hemisphere {
   background-position: 0 -320px;
 }
 .country-flag.ad {
