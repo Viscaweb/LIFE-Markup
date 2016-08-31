@@ -11730,7 +11730,8 @@ span.sprite-icons.webmaster-border {
 .country-flag._tibet {
   background-position: 0 -304px;
 }
-.country-flag._united_nations {
+.country-flag._united_nations,
+.country-flag._united_na {
   background-position: 0 -320px;
 }
 .country-flag._wales {
