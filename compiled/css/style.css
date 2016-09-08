@@ -8061,6 +8061,10 @@ button.close {
   display: inline;
   font-size: 13px;
   font-weight: 600;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 .panel > .panel-heading .panel-title > img {
   max-width: 20px;
@@ -14492,6 +14496,7 @@ span.glyphicon-star.active {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: right;
 }
 .match-information .table tbody tr th {
   text-transform: none;

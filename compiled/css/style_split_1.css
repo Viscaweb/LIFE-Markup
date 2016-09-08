@@ -9870,6 +9870,10 @@ button.close {
   display: inline;
   font-size: 13px;
   font-weight: 600;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .panel > .panel-heading .panel-title > img {

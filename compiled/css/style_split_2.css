@@ -3515,6 +3515,7 @@ span.glyphicon-star.active {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: right;
 }
 
 .match-information .table tbody tr th {
