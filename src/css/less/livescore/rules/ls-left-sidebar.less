@@ -13,6 +13,7 @@
 .sidebar-nav{
 	padding: 0;
 	list-style: none;
+
 	> li{
 	  border-bottom: 1px solid darken(@ls-light-color, 9%);
 
@@ -191,16 +192,15 @@
 			transition: max-height 400ms ease-out;
 			
 			&.second-menu {
-					> li {
-						&.open{
-							> a {
+				> li {
+					&.open{
+						> a {
 							background-color: @ls-left-sidebar-sublevel-bg;
 							border-left: 3px solid @brand-primary; 
 							padding-left: 18px;
 						}	
 					} 
-					 
-					}
+				}
 			}
 
 			> li{
@@ -208,10 +208,23 @@
 				a{
 					padding: 3px 21px;
 
+					span.img{
+						display: inline-block;
+						text-align: center;
+						vertical-align: middle;
+						width: 18px;
+						margin-top: -7px;
+
+						> img{
+							margin: 0;
+						}
+					}
+
 					img,span{
 						margin-right: 5px;
 						margin-top: -5px;
 						max-width: 18px;
+						max-height: 18px;
 					}
 					
 					.country-flag {

@@ -9240,11 +9240,24 @@ ul.image-list li img {
   padding: 3px 21px;
 }
 
+.sidebar-nav li .sub-menu > li a span.img {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 18px;
+  margin-top: -7px;
+}
+
+.sidebar-nav li .sub-menu > li a span.img > img {
+  margin: 0;
+}
+
 .sidebar-nav li .sub-menu > li a img,
 .sidebar-nav li .sub-menu > li a span {
   margin-right: 5px;
   margin-top: -5px;
   max-width: 18px;
+  max-height: 18px;
 }
 
 .sidebar-nav li .sub-menu > li a .country-flag {
