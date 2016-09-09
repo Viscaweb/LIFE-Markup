@@ -93,6 +93,7 @@
                     <div class="panel panel-default league-standing">
     <div class="panel-heading">Champions League Standings</div>
     <div class="panel-body">
+   		<div class="btn-group-collapsible">
         <div class="btn-group btn-group-justified btn-group-distributed">
     <a class="btn btn-default active">Main</a>
     <a class="btn btn-default">Home</a>
@@ -110,7 +111,8 @@
             <li><a href="#">Scorer</a></li>
         </ul>
     </div>
-</div>    </div>
+</div>      </div>
+    </div>
     <!-- Standing WITHOUT team forms and next match -->
 
     
@@ -538,6 +540,67 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="../js/markup-scripts.js"></script>
 <script src="../js/google-charts.js"></script>
+    <script type="text/javascript">
+  $( document ).ready(function() {
 
+    //Wait for final event on window resize to avoid too much repetitions
+    var waitForFinalEvent = (function () {
+      var timers = {};
+      return function (callback, ms, uniqueId) {
+        if (!uniqueId) {
+          uniqueId = "x1x2x3x4";
+        }
+        if (timers[uniqueId]) {
+          clearTimeout (timers[uniqueId]);
+        }
+        timers[uniqueId] = setTimeout(callback, ms);
+      };
+    })();
+
+    function buttonGroupCollapser( collapser ) {
+      var _el = collapser[0];
+      var _dropdown = collapser.find('.dropdown-menu');
+      var _dropdownBtn = _dropdown.parent();
+      var _btnGroup = $("> .btn-group", _el);
+      var btns = $("> .btn", _btnGroup);
+
+      if( _el.clientWidth < _el.scrollWidth && !_dropdownBtn.hasClass('open') ){
+        var index = btns.length - 1; 
+        var _li = $('<li></li>');
+        $(btns[index]).appendTo(_li).removeClass('btn btn-default');
+        _li.appendTo(_dropdown).addClass('btn-collapsed').data('width', _el.clientWidth);
+
+        //Recursively call the same function to find another overflow after moving operation
+        setTimeout(function(){ 
+          buttonGroupCollapser( collapser );
+        }, 100);
+      }else{
+        var _last = $("li:last-child",_dropdown);
+
+        if( _last.hasClass('btn-collapsed') ){
+          var width = _last.data('width');
+
+          if( _el.clientWidth > width ){
+            var _btn = $("> a", _last);
+            _btn.insertBefore(_dropdownBtn).addClass('btn btn-default');
+            _last.remove();
+
+            setTimeout(function(){ 
+              buttonGroupCollapser( collapser );
+            }, 100);
+          }
+        }
+      }
+    }
+
+    var btnGroup = $(".btn-group-collapsible");
+
+    $(window).resize(function (){
+      waitForFinalEvent(function(){
+        buttonGroupCollapser( btnGroup );
+      }, 100, "btn-group-collapsible-checker");
+    });
+  });
+</script>
 </body>
 </html>
