@@ -5528,6 +5528,7 @@ span.glyphicon-star.active {
   height: 18px;
 }
 
+.head-to-head > .panel-content .teams,
 .head-to-head > .teams {
   margin: 0;
   padding: 15px 0;
