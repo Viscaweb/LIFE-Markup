@@ -6935,6 +6935,32 @@ main .matches-widgets td.content span.empty {
   line-height: 25px;
 }
 
+.prediction-contest-grid .table-pagination:before,
+.last-predictions .table-pagination:before,
+.prediction-contest-grid .table-pagination:after,
+.last-predictions .table-pagination:after {
+  content: " ";
+  display: table;
+}
+
+.prediction-contest-grid .table-pagination:after,
+.last-predictions .table-pagination:after {
+  clear: both;
+}
+
+.prediction-contest-grid .table-pagination:before,
+.last-predictions .table-pagination:before,
+.prediction-contest-grid .table-pagination:after,
+.last-predictions .table-pagination:after {
+  content: " ";
+  display: table;
+}
+
+.prediction-contest-grid .table-pagination:after,
+.last-predictions .table-pagination:after {
+  clear: both;
+}
+
 .prediction-contest-grid .table-pagination .pagination,
 .last-predictions .table-pagination .pagination {
   margin: 0;
