@@ -179,6 +179,14 @@
       background-color: @brand-primary;
       border-color: darken(@brand-primary, 5%);
       color: @btn-primary-color;
+
+      &:hover + .btn-default{
+        border-left-color: @btn-default-border;
+      }
+
+      & + .btn-default:hover{
+        border-left-color: darken(@brand-primary, 5%);
+      }
     }    
   }
   
@@ -199,6 +207,10 @@
       &.active{
         &:hover + .btn-default{
           border-left-color: @btn-default-border;
+        }
+
+        & + .btn-default:hover{
+          border-left-color: darken(@btn-default-border, 12%);
         }
       }
       &.btn-primary{

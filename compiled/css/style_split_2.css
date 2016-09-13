@@ -1,3 +1,26 @@
+.country-flag {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: text-top;
+  line-height: 16px;
+  background-image: url("../img//sprite-flags.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  /* united nations flag */
+  /* united nations flag */
+  /* united nations flag */
+  /* united nations flag */
+}
+
+.country-flag._african_u {
+  background-position: 0 -16px;
+}
+
+.country-flag._arab_league {
+  background-position: 0 -32px;
+}
+
 .country-flag._asean {
   background-position: 0 -48px;
 }

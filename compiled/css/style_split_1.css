@@ -8668,6 +8668,14 @@ button.close {
   color: #ffffff;
 }
 
+.btn-group > .btn.active:hover + .btn-default {
+  border-left-color: #dfdfdf;
+}
+
+.btn-group > .btn.active + .btn-default:hover {
+  border-left-color: #4f8b00;
+}
+
 .btn-group.btn-group-justified {
   /* handling double borders when btn-group use inside btn-group-justified for dropdowns */
   /*########## START */
@@ -8688,6 +8696,10 @@ button.close {
 
 .btn-group.btn-group-justified .btn.active:hover + .btn-default {
   border-left-color: #dfdfdf;
+}
+
+.btn-group.btn-group-justified .btn.active + .btn-default:hover {
+  border-left-color: #c0c0c0;
 }
 
 .btn-group.btn-group-justified .btn.btn-primary:hover + .btn {
@@ -14295,26 +14307,3 @@ span.sprite-icons.webmaster-border {
 }
 
 /*Countries flags icons*/
-
-.country-flag {
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-  vertical-align: text-top;
-  line-height: 16px;
-  background-image: url("../img//sprite-flags.png");
-  background-repeat: no-repeat;
-  background-position: 0 2px;
-  /* united nations flag */
-  /* united nations flag */
-  /* united nations flag */
-  /* united nations flag */
-}
-
-.country-flag._african_u {
-  background-position: 0 -16px;
-}
-
-.country-flag._arab_league {
-  background-position: 0 -32px;
-}
