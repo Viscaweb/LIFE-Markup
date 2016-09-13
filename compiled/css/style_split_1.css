@@ -8682,6 +8682,14 @@ button.close {
   border-left-color: #c0c0c0;
 }
 
+.btn-group.btn-group-justified .btn.btn-default:hover + .btn.active {
+  border-left-color: #4f8b00;
+}
+
+.btn-group.btn-group-justified .btn.active:hover + .btn-default {
+  border-left-color: #dfdfdf;
+}
+
 .btn-group.btn-group-justified .btn.btn-primary:hover + .btn {
   border-left-color: #4b9200;
 }
@@ -14309,12 +14317,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag._arab_league {
   background-position: 0 -32px;
-}
-
-.country-flag._asean {
-  background-position: 0 -48px;
-}
-
-.country-flag._caricom {
-  background-position: 0 -64px;
 }

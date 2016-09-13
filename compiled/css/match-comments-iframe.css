@@ -7037,6 +7037,12 @@ button.close {
 .btn-group.btn-group-justified .btn.btn-default:hover + .btn {
   border-left-color: #c0c0c0;
 }
+.btn-group.btn-group-justified .btn.btn-default:hover + .btn.active {
+  border-left-color: #4f8b00;
+}
+.btn-group.btn-group-justified .btn.active:hover + .btn-default {
+  border-left-color: #dfdfdf;
+}
 .btn-group.btn-group-justified .btn.btn-primary:hover + .btn {
   border-left-color: #4b9200;
 }

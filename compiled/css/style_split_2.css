@@ -1,3 +1,11 @@
+.country-flag._asean {
+  background-position: 0 -48px;
+}
+
+.country-flag._caricom {
+  background-position: 0 -64px;
+}
+
 .country-flag._cis {
   background-position: 0 -80px;
 }
