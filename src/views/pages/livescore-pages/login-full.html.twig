@@ -1,0 +1,26 @@
+{% extends "layouts/full.html.twig" %}
+{% set basePath = '../' %}
+{% set wrapper_additional_class = 'content-wrapper-login' %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    <div class="login-full-background">
+        <img class="login-background-image" src="{{ basePath }}img/bg-login-1.jpg">
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-xs-offset-7">
+            <div class="panel panel-default panel-no-border">
+                <div class="panel-body">
+                    {{ include('blocks/login/login_register.html.twig', {tab:'register'}) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}

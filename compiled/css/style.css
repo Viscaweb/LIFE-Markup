@@ -17532,6 +17532,13 @@ main .matches-widgets td.content span.empty {
   text-align: center;
 }
 /*Login*/
+.content-wrapper-login {
+  margin: 0;
+  padding: 20px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
 .registration-features {
   overflow: hidden;
   border: 1px solid #f5f5f5;
@@ -17653,6 +17660,15 @@ main .matches-widgets td.content span.empty {
 }
 .login-register-container .login-image img {
   max-width: 100%;
+}
+.login-full-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.login-full-background > .login-background-image {
+  width: 100%;
+  height: auto;
 }
 .pass-recovery,
 .successfully {
