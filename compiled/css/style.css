@@ -13836,7 +13836,10 @@ span.glyphicon-star.active {
   background-color: rgba(243, 244, 245, 0.8);
 }
 .loading.sub-menu:after {
-  display: none;
+  background-image: url("../img//loading-tiny.gif");
+  background-position: right 4px;
+  right: 3px;
+  left: auto;
 }
 .loading.third-menu {
   min-height: initial;
@@ -13845,7 +13848,10 @@ span.glyphicon-star.active {
   background-color: rgba(237, 239, 240, 0.8);
 }
 .loading.third-menu:after {
-  display: none;
+  background-image: url("../img//loading-tiny.gif");
+  background-position: right 4px;
+  right: 3px;
+  left: auto;
 }
 .loading.fourth-menu {
   min-height: initial;
@@ -13854,7 +13860,10 @@ span.glyphicon-star.active {
   background-color: rgba(237, 239, 240, 0.8);
 }
 .loading.fourth-menu:after {
-  display: none;
+  background-image: url("../img//loading-tiny.gif");
+  background-position: right 4px;
+  right: 3px;
+  left: auto;
 }
 .loading-opacity {
   opacity: 0.3;
@@ -13867,7 +13876,10 @@ span.glyphicon-star.active {
   background-color: rgba(243, 244, 245, 0.8);
 }
 .sidebar-nav .sub-menu li.loading:after {
-  display: none;
+  background-image: url("../img//loading-tiny.gif");
+  background-position: right 4px;
+  right: 3px;
+  left: auto;
 }
 .popover.loading {
   position: absolute;
