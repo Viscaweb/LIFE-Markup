@@ -10967,6 +10967,41 @@ span.sprite-icons.webmaster-border {
 .live-commented-matches.panel .matches tr.live td.commented span {
   color: #e33000;
 }
+.empty-state {
+  background-color: transparent;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.empty-state > .icon {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 50px;
+  color: #f0f0f0;
+}
+.empty-state > .glyphicon {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 50px;
+  color: #f0f0f0;
+}
+.empty-state > p {
+  margin: 7px 0 30px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d9d9d9;
+}
+.empty-state .btn-available-matches time {
+  text-decoration: underline;
+}
+.empty-state .btn-available-matches .icon:first-child {
+  margin-right: 4px;
+}
+.empty-state .btn-available-matches .icon:last-child {
+  margin-left: 4px;
+}
 .popover.popover-incident {
   background-clip: initial;
 }
