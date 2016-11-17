@@ -10259,8 +10259,8 @@ span.dark-icon {
 .table.table-standing tbody tr.live td.team,
 .table.table-standing tbody tr.live td.team > a,
 .table.table-standing tbody tr.live td.team > div {
-  font-weight: 600;
-  color: #e33000;
+  /*font-weight: @font-weight-semi-bold;*/
+  color: #b02500;
 }
 .table.table-standing tbody tr.live td.extra-points {
   padding-left: 15px;
