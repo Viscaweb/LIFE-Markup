@@ -13177,14 +13177,14 @@ span.sprite-icons.webmaster-border {
 .top-match-block .make-prediction .prediction .team.away {
   text-align: left;
 }
-.top-match-block .bets {
+.top-match-block .odds {
   margin: 0;
 }
-.top-match-block .bets .logo {
+.top-match-block .odds .logo {
   width: 22px;
   padding: 0;
 }
-.top-match-block .bets .best-odd {
+.top-match-block .odds .best-odd {
   font-weight: 700;
 }
 .top-match-block .slider-control {
