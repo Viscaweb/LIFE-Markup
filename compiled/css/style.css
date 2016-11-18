@@ -13237,6 +13237,8 @@ span.sprite-icons.webmaster-border {
 }
 .top-match-block .add-comment .avatar {
   max-width: 44px;
+  width: 44px;
+  height: 44px;
   background: #f2f2f2;
 }
 .top-match-block .add-comment textarea {
