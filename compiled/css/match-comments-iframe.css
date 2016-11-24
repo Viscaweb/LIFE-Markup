@@ -7745,6 +7745,7 @@ span.dark-icon {
   border-right: 1px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
   cursor: pointer;
+  white-space: nowrap;
 }
 .table tbody tr > td.odd.odd-no-border {
   border-left: none;
