@@ -19137,6 +19137,7 @@ ul.image-list li img {
 .sidebar-nav {
   padding: 0;
   list-style: none;
+  margin-bottom: 0;
 }
 .sidebar-nav > li {
   border-bottom: 1px solid #e8e8e8;
