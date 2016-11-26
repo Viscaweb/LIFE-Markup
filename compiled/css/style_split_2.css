@@ -5604,7 +5604,7 @@ table.odds-correct-score tbody tr td.logo,
 table.odds-goal-scorers tbody tr td.logo,
 table.table-odds tbody tr td.logo {
   width: 22px;
-  padding: 0 0 1px;
+  padding: 0 0 1px 4px;
 }
 
 table.odds-1x2 tbody tr td.result,
