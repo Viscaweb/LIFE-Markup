@@ -1243,6 +1243,11 @@
   /*MATCHES TABLES*/
   &.matches{
 
+    // Add border bottom if there is an element in last position that is not a table
+    & ~ *:not(table):last-of-type {
+      border-top: 1px solid @table-border-color;
+    }
+
     tbody{
       border-top: 0;
 

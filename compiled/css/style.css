@@ -9933,6 +9933,9 @@ span.dark-icon {
 .table.matches {
   /*MY GAMES TABLES*/
 }
+.table.matches ~ *:not(table):last-of-type {
+  border-top: 1px solid #f2f2f2;
+}
 .table.matches tbody {
   border-top: 0;
 }

@@ -1,3 +1,11 @@
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2/1), all and (min-resolution: 192dpi) {
+  span.sprite-icons {
+    background-image: url("../img//sprite-icons@2x.png");
+  }
+}
+
+/*Countries flags icons*/
+
 .country-flag {
   display: inline-block;
   height: 18px;

@@ -12203,6 +12203,10 @@ span.dark-icon {
   /*MY GAMES TABLES*/
 }
 
+.table.matches ~ *:not(table):last-of-type {
+  border-top: 1px solid #f2f2f2;
+}
+
 .table.matches tbody {
   border-top: 0;
 }
@@ -14300,11 +14304,3 @@ span.sprite-icons.webmaster-border {
   height: 19px;
   margin: 0;
 }
-
-@media all and (-webkit-min-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2/1), all and (min-resolution: 192dpi) {
-  span.sprite-icons {
-    background-image: url("../img//sprite-icons@2x.png");
-  }
-}
-
-/*Countries flags icons*/
