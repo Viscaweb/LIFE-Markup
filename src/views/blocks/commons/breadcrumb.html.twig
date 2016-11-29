@@ -11,5 +11,8 @@
                 <li><a href="#">{{ item | raw }}</a></li>
             {% endif %}
         {% endfor %}
+        {% if breadcrumb_h1 is defined %}
+            <li><h1>{{ breadcrumb_h1 }}</h1></li>
+        {% endif %}
     </ol>
 {% endif %}
