@@ -7,7 +7,7 @@
 
 {% block content %}
     {{  include('blocks/elements/content_header_country.html.twig', {selectedTab: 'summary'}) }}
-    <h2 class="h2-small">French Football results, tables and fixtures</h2>
+    <h2 class="h2-inpage">French Football results, tables and fixtures</h2>
     {% include 'blocks/various/share_page_small.html.twig' %}
     {% include 'blocks/sports/competition/country_competitions.html.twig' %}
     {{ include('blocks/sports/listings/match_listing_general.html.twig', {in_panel:'true'}) }}

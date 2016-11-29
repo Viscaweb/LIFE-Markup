@@ -7304,6 +7304,12 @@ iframe {
   padding-top: 0;
   border-top: none;
 }
+.h2-inpage {
+  font-size: 12px;
+  display: inline;
+  position: absolute;
+  text-indent: -999px;
+}
 .no-top-margin {
   margin-top: 0 !important;
 }
