@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {{ include('blocks/sports/listings/match_listing_general_predictions.html.twig', {in_panel:'true', panel_title: 'Today Live Scores'}) }}
+    <h2 class="h2-inpage">Football live results</h2>
+    {{ include('blocks/sports/listings/match_listing_general_predictions.html.twig', {in_panel:'true', noHeader: 'true'}) }}
 {% endblock %}
 
 {% block content_right %}
