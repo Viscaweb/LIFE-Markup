@@ -19546,7 +19546,7 @@ ul.image-list li img {
   font-size: 12px;
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 0 8px;
   color: #c2c2c2;
 }
 .breadcrumb > li + li:before {
