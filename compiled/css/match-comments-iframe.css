@@ -8442,6 +8442,7 @@ span.dark-icon {
 .table.matches tbody tr td.team .label-goal {
   opacity: 0;
   position: absolute;
+  z-index: 1;
   margin-top: 2px;
 }
 .table.matches tbody tr td.team.team1 {
