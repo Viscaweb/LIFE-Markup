@@ -11404,6 +11404,10 @@ fieldset[disabled] .btn-twitter.active {
   right: 10px;
   z-index: 100;
 }
+.btn-toggle {
+  display: block;
+  text-align: left;
+}
 .dropdown-select {
   top: 0;
   left: 0;

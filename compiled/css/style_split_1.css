@@ -13961,6 +13961,11 @@ fieldset[disabled] .btn-twitter.active {
   z-index: 100;
 }
 
+.btn-toggle {
+  display: block;
+  text-align: left;
+}
+
 .dropdown-select {
   top: 0;
   left: 0;
@@ -14295,12 +14300,5 @@ span.sprite-icons.webmaster-background {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -5px -3px;
   width: 18px;
   height: 18px;
-  margin: 0;
-}
-
-span.sprite-icons.webmaster-text {
-  background: url("../img//sprite-icons-webmaster.png") no-repeat -8px -29px;
-  width: 15px;
-  height: 15px;
   margin: 0;
 }

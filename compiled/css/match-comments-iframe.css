@@ -9822,6 +9822,10 @@ fieldset[disabled] .btn-twitter.active {
   right: 10px;
   z-index: 100;
 }
+.btn-toggle {
+  display: block;
+  text-align: left;
+}
 /* Livescores Modals */
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
   padding: 0;
