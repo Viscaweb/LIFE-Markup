@@ -62,6 +62,23 @@
   content: "\e013";
 }
 
+// Alert loading style
+#toast-container > .alert-loading {
+  padding-left: 75px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("@{ls-image-loading}") no-repeat left center;
+    width: @ls-loading-img-size;
+    height: @ls-loading-img-size;
+    margin-left: 0;
+    margin-top: -((@ls-loading-img-size / 2) + 3px);
+    top: 50%;
+    left: 15px;
+  }
+}
+
 .toast-progress {
   opacity: 0.1;
 }

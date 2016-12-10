@@ -411,6 +411,7 @@ $( document ).ready(function() {
     });
 
     /* Initialisation of toastr */
+    var ls_toastr_defaults = 
 
     $('.showtoast').click(function () {
         var msg =  this.dataset.message;
@@ -440,11 +441,15 @@ $( document ).ready(function() {
                 success: 'alert-success',
                 warning: 'alert-warning'
             }
-
         };
 
-        toastr[alert](msg, title);
-
+        if( this.dataset.loading == 'loading' ) {
+            toastr[alert](msg, title, {
+                toastClass: 'alert alert-loading'
+            });
+        } else {
+            toastr[alert](msg, title);
+        }
     });
 
 

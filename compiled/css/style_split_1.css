@@ -10496,6 +10496,22 @@ button.close {
   content: "\e013";
 }
 
+#toast-container > .alert-loading {
+  padding-left: 75px;
+}
+
+#toast-container > .alert-loading:before {
+  position: absolute;
+  content: '';
+  background: url("../img//loading.gif") no-repeat left center;
+  width: 48px;
+  height: 48px;
+  margin-left: 0;
+  margin-top: -27px;
+  top: 50%;
+  left: 15px;
+}
+
 .toast-progress {
   opacity: 0.1;
 }
@@ -14286,19 +14302,4 @@ span.sprite-icons.webmaster-cogs {
   margin-bottom: 0;
   position: relative;
   top: 7px;
-}
-
-span.sprite-icons.webmaster-palette {
-  background: url("../img//sprite-icons-webmaster.png") no-repeat -36px -29px;
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-  margin-bottom: -3px;
-}
-
-span.sprite-icons.webmaster-background {
-  background: url("../img//sprite-icons-webmaster.png") no-repeat -5px -3px;
-  width: 18px;
-  height: 18px;
-  margin: 0;
 }

@@ -8573,6 +8573,20 @@ button.close {
 #toast-container > .alert-success:before {
   content: "\e013";
 }
+#toast-container > .alert-loading {
+  padding-left: 75px;
+}
+#toast-container > .alert-loading:before {
+  position: absolute;
+  content: '';
+  background: url("../img//loading.gif") no-repeat left center;
+  width: 48px;
+  height: 48px;
+  margin-left: 0;
+  margin-top: -27px;
+  top: 50%;
+  left: 15px;
+}
 .toast-progress {
   opacity: 0.1;
 }
