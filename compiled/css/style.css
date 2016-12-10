@@ -19585,6 +19585,9 @@ ul.image-list li img {
   max-height: 300px;
   overflow: auto;
 }
+.breadcrumb-subtitle {
+  display: none;
+}
 .main {
   display: table-cell;
   vertical-align: top;

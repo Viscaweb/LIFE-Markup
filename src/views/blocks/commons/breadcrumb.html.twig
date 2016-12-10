@@ -15,4 +15,8 @@
             <li><h1>{{ breadcrumb_h1 }}</h1></li>
         {% endif %}
     </ol>
+    
+    {% if breadcrumb_h2 is defined %}
+        <h2 class="breadcrumb-subtitle">{{ breadcrumb_h2 }}</h2>
+    {% endif %}
 {% endif %}
