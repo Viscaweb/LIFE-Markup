@@ -19600,7 +19600,11 @@ ul.image-list li img {
   overflow: auto;
 }
 .breadcrumb-subtitle {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -980px;
 }
 .main {
   display: table-cell;
