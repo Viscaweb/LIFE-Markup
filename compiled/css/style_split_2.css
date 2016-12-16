@@ -7263,7 +7263,7 @@ main .matches-widgets td.content span.empty {
 .content-wrapper-login {
   margin: 0;
   padding: 20px;
-  height: 600px;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
 }
