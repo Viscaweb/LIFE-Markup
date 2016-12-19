@@ -16455,6 +16455,7 @@ table.other-sport tbody tr td[rowspan] {
 }
 table.other-sport tbody tr th {
   text-align: center;
+  text-overflow: clip;
 }
 table.other-sport tbody tr th.league-title a {
   max-width: 80px !important;
