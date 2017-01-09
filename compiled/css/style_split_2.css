@@ -7445,11 +7445,6 @@ main .matches-widgets td.content span.empty {
   margin-top: 30px;
 }
 
-.pass-recovery form .buttons button.btn-primary,
-.successfully form .buttons button.btn-primary {
-  float: right;
-}
-
 .successfully {
   text-align: center;
 }
