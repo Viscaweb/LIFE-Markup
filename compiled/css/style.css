@@ -8887,7 +8887,7 @@ iframe {
   font-size: 12px;
   display: inline;
   position: absolute;
-  text-indent: -999px;
+  text-indent: -9999px;
 }
 .no-top-margin {
   margin-top: 0 !important;
