@@ -8887,7 +8887,7 @@ iframe {
   font-size: 12px;
   display: inline;
   position: absolute;
-  text-indent: -9999px;
+  text-indent: -99999px;
 }
 .no-top-margin {
   margin-top: 0 !important;
@@ -19305,6 +19305,9 @@ ul.image-list li img {
 }
 .sidebar-nav li .sub-menu > li a {
   padding: 3px 21px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .sidebar-nav li .sub-menu > li a span.img {
   display: inline-block;
