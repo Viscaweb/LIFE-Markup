@@ -4932,6 +4932,10 @@ span.glyphicon-star.active {
   font-size: 12px;
 }
 
+.match-prediction > .row > div .content img {
+  max-width: 100%;
+}
+
 .match-prediction > .row > div table tbody tr td .progress {
   margin-bottom: 0;
   box-shadow: none;
