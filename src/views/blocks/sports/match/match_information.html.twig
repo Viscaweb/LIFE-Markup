@@ -10,7 +10,7 @@
             <a href="#" class="icon"><span class="icon icon-bell icon-lg"></span></a>
         </div>
     </div>
-    <div class="row row-voffset">
+    <div class="row">
         <div class="col-xs-12">
             <div class="match-info row">
                 <div class="col-xs-5">
@@ -158,11 +158,5 @@
             </table>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-xs-12">
-            {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab: selectedTab }) }}
-        </div>
-    </div>
-
 </div>
+{{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab: selectedTab, no_container: true }) }}

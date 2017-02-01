@@ -3528,6 +3528,12 @@ span.glyphicon-star.active {
 
 /*Match Summary */
 
+.match-information {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom-width: 0;
+}
+
 .match-information .panel-heading:before,
 .match-information .panel-heading:after {
   content: " ";
@@ -3993,6 +3999,12 @@ span.glyphicon-star.active {
 
 .match-information.flying .table-match-actions-summary {
   margin-top: 56px;
+}
+
+.match-information + .nav-tabs {
+  margin-bottom: 18px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
 }
 
 .match-timeline {

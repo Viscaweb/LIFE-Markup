@@ -1,4 +1,8 @@
 .match-information{
+  margin-bottom: 0;
+  padding-bottom: @grid-gutter-width;
+  border-bottom-width: 0;
+
   .panel-heading{
     .clearfix();
     
@@ -536,5 +540,12 @@
     .table-match-actions-summary {
       margin-top: 56px;
     }
+  }
+
+  // Tabs styling
+  & + .nav-tabs {
+    margin-bottom: @line-height-computed;
+    border-left: 1px solid @panel-inner-border;
+    border-right: 1px solid @panel-inner-border;
   }
 }
