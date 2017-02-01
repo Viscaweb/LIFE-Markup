@@ -98,7 +98,7 @@
 
   &.teams{
   
-	.shirts{
+	  .shirts{
 			text-align: right;
       
 			a{
@@ -113,12 +113,11 @@
 				}
 			}      
 		}
-
 	}
 
   &.player{
     
-	.info{
+	  .info{
 
       .title{
 
@@ -187,26 +186,35 @@
       }
 	}
     
-	.teams{
+  	.teams{
       vertical-align: top;
       text-align: right;
-      display: table-cell;
+      display: flex;
       padding: 10px 0;
       width: 25%;
 
       a{
+        flex: 1 1 50%;
         text-align: center;
-        display: inline-block;
+        display: block;
         font-size: @font-size-small - 1;
         color: darken(@ls-light-color,32%);
         padding: 2px;
+        overflow: hidden;
 
         img{
           max-width: 52px;
+          display: inline-block;
+        }
+
+        > span {
           display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
-	}
+  	}
   }
 
   &.country {
@@ -215,7 +223,6 @@
       padding-top:22px;
     }
   }
-
 }
 
 //Panel style

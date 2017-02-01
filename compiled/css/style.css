@@ -8785,20 +8785,34 @@ button.close {
 .content-header.player .teams {
   vertical-align: top;
   text-align: right;
-  display: table-cell;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding: 10px 0;
   width: 25%;
 }
 .content-header.player .teams a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   text-align: center;
-  display: inline-block;
+  display: block;
   font-size: 11px;
   color: #adadad;
   padding: 2px;
+  overflow: hidden;
 }
 .content-header.player .teams a img {
   max-width: 52px;
+  display: inline-block;
+}
+.content-header.player .teams a > span {
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content-header.country .info {
   padding-top: 22px;

@@ -1,3 +1,14 @@
+span.sprite-icons.webmaster-cogs {
+  background: url("../img//sprite-icons-webmaster.png") no-repeat -32px -1px;
+  width: 20px;
+  height: 24px;
+  margin-right: 5px;
+  margin-top: -10px;
+  margin-bottom: 0;
+  position: relative;
+  top: 7px;
+}
+
 span.sprite-icons.webmaster-palette {
   background: url("../img//sprite-icons-webmaster.png") no-repeat -36px -29px;
   width: 15px;
