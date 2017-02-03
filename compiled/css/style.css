@@ -8813,6 +8813,7 @@ button.close {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 4px;
 }
 .content-header.country .info {
   padding-top: 22px;
