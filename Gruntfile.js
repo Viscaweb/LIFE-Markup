@@ -7,9 +7,9 @@ module.exports = function (grunt) {
             development: {
                 options: {
                     //paths: ["css"]
-                    sourceMap: true,
-                    sourceMapFilename: "compiled/css/style-map.css",
-                    sourceMapURL: "style-map.css",
+                    // sourceMap: false,
+                    // sourceMapFilename: "compiled/css/style-map.css",
+                    // sourceMapURL: "style-map.css",
                     //modifyVars: {
                     //   'brand-primary': 'red'
                     //}
@@ -67,7 +67,7 @@ module.exports = function (grunt) {
 
         postcss: {
           options: {
-            map: true,
+            // map: true,
             processors: [
               require('autoprefixer-core')({browsers: ['last 1 version']})
             ]
@@ -105,7 +105,7 @@ module.exports = function (grunt) {
           },
           dev: {
             options: {
-              map: true
+              // map: true
             },
             src: [
               "compiled/css/style.css",
