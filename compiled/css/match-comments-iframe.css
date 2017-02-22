@@ -9821,6 +9821,7 @@ fieldset[disabled] .btn-twitter.active {
   bottom: 10px;
   right: 10px;
   z-index: 100;
+  display: none;
 }
 .btn-toggle {
   display: block;
