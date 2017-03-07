@@ -7920,6 +7920,7 @@ button.close {
   height: 50px;
   margin-bottom: 0;
   position: relative;
+  min-width: 1120px;
 }
 .header .navbar-inverse span.icon-caret-down {
   font-size: 12px;
