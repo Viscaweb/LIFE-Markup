@@ -39,10 +39,6 @@ $( document ).ready(function() {
 
     });
 
-    $(window).scroll(function(){
-      $('.navbar-fixed-top').css('left',-$(window).scrollLeft());
-    });
-
 
     /*Profile Modal Trigger*/
     $(".profile-image .modal-toggle").click(function(){
