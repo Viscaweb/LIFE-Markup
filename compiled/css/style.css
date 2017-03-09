@@ -7716,6 +7716,11 @@ button.close {
 .header .navbar.navbar-fixed-top .navbar-header .navbar-brand img {
   height: 46px;
 }
+.header .navbar.navbar-fixed-top .container {
+  width: auto;
+  min-width: 540px;
+  max-width: 1120px;
+}
 .header .navbar.navbar-fixed-top .navbar-form {
   border: 0;
   float: left !important;
