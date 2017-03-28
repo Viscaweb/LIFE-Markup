@@ -13035,11 +13035,34 @@ span.sprite-icons.webmaster-border {
   position: absolute;
   top: 20px;
   right: 0;
-  text-align: center;
   width: 100%;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.top-match-block .score-board .teams .team-name {
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 45%;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.top-match-block .score-board .teams .team-name:first-child {
+  margin-right: 5px;
+  text-align: right;
+}
+.top-match-block .score-board .teams .team-name:last-child {
+  margin-left: 5px;
 }
 .top-match-block .score-board .teams .at {
   opacity: .5;

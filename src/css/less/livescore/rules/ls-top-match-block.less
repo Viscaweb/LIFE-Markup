@@ -98,11 +98,28 @@
         position: absolute;
         top: 20px;
         right: 0;
-        text-align: center;
         width: 100%;
         color: @ls-light-color;
         font-size: @font-size-large;
         font-weight: 700;
+        display: flex;
+        justify-content: center;
+
+        .team-name {
+          white-space: nowrap;
+          flex: 0 1 45%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          &:first-child {
+            margin-right: 5px;
+            text-align: right;
+          }
+
+          &:last-child {
+            margin-left:  5px;
+          }
+        }
         
         .at {
           opacity: .5;
