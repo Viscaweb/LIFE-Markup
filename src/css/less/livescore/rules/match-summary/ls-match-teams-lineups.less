@@ -1,14 +1,14 @@
 .match-teams-lineups{
 
   .component-container{ 
-    display: table;
+    display: flex;
     
-    .team{
-      display: table-cell;
+    .team {
+      flex: 1 1 50%;
       vertical-align: top;
       width: 20%;
       
-      .table{
+      .table {
         margin-bottom: 0;
       
         thead{
@@ -74,9 +74,40 @@
           }
         }
       }
+
+      & + .team {
+
+        table {
+
+          thead {
+          
+            tr {
+            
+              th {
+                
+                &.team-logo {
+                  border-left: 2px solid darken(@ls-light-color, 7%);
+                }
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              th {
+                border-left: 2px solid darken(@ls-light-color, 7%);
+              }
+
+              td:nth-child(1) {
+                border-left: 2px solid darken(@ls-light-color, 7%);
+              }
+            }
+          }
+        }
+      }
     }
     
-    .field{
+    .field {
       background: url("@{ls-image-match-teams-lineups-field-bg}") repeat 0 -7px;
       display: table-cell;
       vertical-align: top;
@@ -222,8 +253,6 @@
             }
           }
         }
-
-
       }
       
       &:before{
@@ -254,19 +283,19 @@
     }
   }
   
-  .popover{
+  .popover {
     border-top: 0;
     min-width: 380px;
     border-radius: 2px;
     
-    .arrow:after{
+    .arrow:after {
       border-bottom-color: @panel-default-heading-bg;
     }
     
-    .popover-content{
+    .popover-content {
       padding: 0;
       
-      > .title{
+      > .title {
         border-radius: 2px 2px 0 0;
         background:  @panel-default-heading-bg;
         border-bottom: 1px solid darken(@ls-light-color,6%);
@@ -274,16 +303,16 @@
         .panel-title-font-style();
       }
       
-      > .body{
+      > .body {
         padding: 15px 20px 20px;
       }
     
-      .content-header.player{
+      .content-header.player {
         padding: 0;
       
-        .avatar{
+        .avatar {
 
-          img{
+          img {
             margin: 0;
             max-width: 80px;
             max-height: 80px;
@@ -296,30 +325,30 @@
           float: left;
         }
       
-        .actions{
+        .actions {
           margin-top: 5px;
         
-          .action{
+          .action {
             display: inline-block;
             margin-right: 7px;
             
-            .sprite-icons{
+            .sprite-icons {
               margin-right: 3px;
             }
           }
         }
       }
       
-      .table{
+      .table {
         margin: 12px 0px;
         border-top:2px solid darken(@ls-light-color, 2%);
 
         
-        tr{
+        tr {
         
-          td{
+          td {
           
-            &.value{
+            &.value {
               font-weight: @font-weight-semi-bold;
             }
           }
@@ -329,27 +358,27 @@
   }
 }
 
-.table.teams-lineups{
+.table.teams-lineups {
   margin-bottom: 0;
 
-  thead{
+  thead {
   
-    tr{
+    tr {
     
-      th{
+      th {
         border-right: 2px solid darken(@ls-light-color, 7%);
         
-        &.team-logo{
+        &.team-logo {
           background: @ls-light-color;
           text-align: center;
           
-          img{
+          img {
             margin-top: 7px;
             max-height: 45px;
             max-width: 45px;
           }
           
-          span.positions{
+          span.positions {
             margin-top: 5px;
             margin-bottom: 1px;
             font-size: @font-size-normal;
@@ -358,18 +387,18 @@
           }
         }
         
-        &:last-child{
+        &:last-child {
           border-right: 0;
         }
       }
     }
   }
   
-  tbody{
+  tbody {
   
-    tr{
+    tr {
     
-      th{
+      th {
         border-top: 0;
         text-transform: none;
         font-weight: @font-weight-bold;
@@ -378,15 +407,15 @@
         border-right: 2px solid darken(@ls-light-color, 7%);
         width: 50%;
         
-        &:last-child{
+        &:last-child {
           border-right: 0;
         }
       }
       
-      td{
+      td {
         line-height: @font-size-xx-large;
         
-        &.number{
+        &.number {
           font-weight: @font-weight-bold;
           font-size: @font-size-base;
           text-align: center;
@@ -394,15 +423,15 @@
           width: 6%;
         }
         
-        &.player{
+        &.player {
           
-          span.sprite-icons{
+          span.sprite-icons {
             float: right;
             margin-right: 3px;
           }
         }
         
-        &:nth-child(2){
+        &:nth-child(2) {
           border-right: 2px solid darken(@ls-light-color, 7%);
         }
       }

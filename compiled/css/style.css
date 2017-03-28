@@ -15314,10 +15314,16 @@ span.glyphicon-star.active {
   font-weight: 700;
 }
 .match-teams-lineups .component-container {
-  display: table;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .match-teams-lineups .component-container .team {
-  display: table-cell;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   vertical-align: top;
   width: 20%;
 }
@@ -15363,6 +15369,15 @@ span.glyphicon-star.active {
 .match-teams-lineups .component-container .team .table tbody tr td.player span.sprite-icons {
   float: right;
   margin-right: 3px;
+}
+.match-teams-lineups .component-container .team + .team table thead tr th.team-logo {
+  border-left: 2px solid #ededed;
+}
+.match-teams-lineups .component-container .team + .team table tbody tr th {
+  border-left: 2px solid #ededed;
+}
+.match-teams-lineups .component-container .team + .team table tbody tr td:nth-child(1) {
+  border-left: 2px solid #ededed;
 }
 .match-teams-lineups .component-container .field {
   background: url("../img//field/field-bg.png") repeat 0 -7px;
