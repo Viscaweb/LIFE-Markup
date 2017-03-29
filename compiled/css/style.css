@@ -8608,6 +8608,8 @@ button.close {
 /*CSS3 PIE Path*/
 /*Elements Colors*/
 /*Navbar Inverse*/
+/*Top Banner*/
+/*Ads Background*/
 /*User Left Sidebar*/
 /*Main Header*/
 /*Top BreadCrumbs*/
@@ -12546,6 +12548,30 @@ span.sprite-icons.webmaster-border {
 }
 .visual-block img {
   max-width: 100%;
+}
+.visual-bg {
+  background-repeat: no-repeat;
+  background-position: center 114px;
+}
+.visual-bg-only > .container {
+  margin-top: 111px;
+}
+.visual-bg-fixed {
+  background-attachment: fixed;
+}
+.visual-bg-prom {
+  background-color: #ababab;
+}
+.visual-top {
+  padding: 8px 0 13px;
+  text-align: center;
+}
+.visual-top > div {
+  display: block;
+  margin: 0 auto;
+}
+.visual-top-bg {
+  background-color: #ebebeb;
 }
 .live-red {
   color: #e33000 !important;

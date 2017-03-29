@@ -7,7 +7,10 @@
     {% endblock %}
 
 </head>
-<body>
+{% if body_classes %}
+    {% set body_classes = 'class="' ~ body_classes|join(' ') ~ '"' %}
+{% endif %}
+<body {{ body_classes|raw }}>
 
 {% block body %}
 
@@ -16,6 +19,17 @@
     {% endblock %}
 
     <div class="container{{ containerFluid }}">
+        {% if top_banner %}
+            {% if top_banner_classes %}
+                {% set top_banner_classes = top_banner_classes|join(' ') %}
+            {% endif %}
+            <div class="visual-top {{ top_banner_classes }}">
+                <div>
+                    <!-- Content Ad Space -->
+                    <img src="{{ basePath }}img/728x90.png" alt="Visual Block">
+                </div>
+            </div>
+        {% endif %}
         {% block container_content_before %}
         {% endblock %}
         <div class="wrapper row">
