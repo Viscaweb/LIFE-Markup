@@ -1772,6 +1772,7 @@ span.sprite-icons.webmaster-border {
   position: absolute;
   width: 64px;
   height: 64px;
+  text-align: center;
 }
 
 .top-match-block .score-board .team img {
