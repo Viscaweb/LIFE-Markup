@@ -10705,11 +10705,17 @@ button.close {
   color: #a6a6a6;
   display: block;
   font-size: 11px;
+  float: left;
   clear: both;
 }
 
 .content-header .info .additionnal-info span {
   margin-right: 5px;
+}
+
+.content-header .info .btn-group {
+  float: left;
+  clear: both;
 }
 
 .content-header.teams .shirts {
@@ -14307,8 +14313,4 @@ span.sprite-icons.match-stop {
 
 span.sprite-icons.extra-time {
   background-position: -171px -75px;
-}
-
-span.sprite-icons.offside {
-  background-position: -58px -50px;
 }

@@ -8716,10 +8716,15 @@ button.close {
   color: #a6a6a6;
   display: block;
   font-size: 11px;
+  float: left;
   clear: both;
 }
 .content-header .info .additionnal-info span {
   margin-right: 5px;
+}
+.content-header .info .btn-group {
+  float: left;
+  clear: both;
 }
 .content-header.teams .shirts {
   text-align: right;
