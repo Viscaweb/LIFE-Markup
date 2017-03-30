@@ -1185,7 +1185,8 @@ span.sprite-icons.webmaster-border {
 
 .player .name img {
   margin-top: -3px;
-  max-width: 14px;
+  width: 14px;
+  height: 14px;
   margin-right: 6px;
 }
 
@@ -2088,7 +2089,6 @@ span.sprite-icons.webmaster-border {
 }
 
 .top-match-block .add-comment .avatar {
-  max-width: 44px;
   width: 44px;
   height: 44px;
   background: #f2f2f2;
@@ -2482,7 +2482,8 @@ span.sprite-icons.webmaster-border {
 }
 
 .panel-condensed .comments .media-list .media .img-circle {
-  max-width: 47px;
+  width: 47px;
+  height: 47px;
   background: #f7f7f7;
 }
 
@@ -2670,8 +2671,8 @@ span.sprite-icons.webmaster-border {
 }
 
 .popover.popover-incident .popover-content table tr.sustitution td.player img {
-  max-height: 30px;
-  max-width: 30px;
+  height: 30px;
+  width: 30px;
   background: #f7f7f7;
 }
 
@@ -3094,8 +3095,8 @@ span.glyphicon-star.active {
 }
 
 .notifications-list > ul > li.media .avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
   background: #f7f7f7;
 }
 
@@ -4835,8 +4836,8 @@ span.glyphicon-star.active {
 
 .match-teams-lineups .popover .popover-content .content-header.player .avatar img {
   margin: 0;
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   vertical-align: baseline;
   background: #f7f7f7;
 }
@@ -5185,8 +5186,8 @@ span.glyphicon-star.active {
 }
 
 .iframe .match-tips ul.media-list li.media .tip-container a.avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
 }
 
 .iframe .match-tips ul.media-list li.media .tip-container .media-body {
@@ -5244,8 +5245,8 @@ span.glyphicon-star.active {
 }
 
 .panel.match-tips ul.media-list li.media .tip-container a.avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
 }
 
 .panel.match-tips ul.media-list li.media .tip-container .media-body {
@@ -5304,8 +5305,8 @@ span.glyphicon-star.active {
 }
 
 .tips-list ul.media-list li.media .tip-container a.avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
 }
 
 .tips-list ul.media-list li.media .tip-container .media-body {
@@ -6144,8 +6145,8 @@ ol.breadcrumb li a img {
 /*Team Summary*/
 
 .panel .table tbody tr td.avatar img {
-  max-height: 18px;
-  max-width: 18px;
+  height: 18px;
+  width: 18px;
 }
 
 .panel.stats .table tbody tr td.percent {
@@ -6287,8 +6288,8 @@ table.squad-listing tbody tr td.player {
 }
 
 table.squad-listing tbody tr td.player img {
-  max-height: 30px;
-  max-width: 30px;
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
   background: #f7f7f7;
 }
@@ -9696,8 +9697,8 @@ ul.image-list li img {
 }
 
 .user-sidebar-nav li.user-display img {
-  max-height: 50px;
-  max-width: 50px;
+  height: 50px;
+  width: 50px;
   background: #3a4144;
 }
 

@@ -7558,7 +7558,8 @@ button.close {
 }
 .media-list li.media .img-circle,
 .media-list div.media .img-circle {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
 }
 .media-list li.media .media-body .media-heading,
 .media-list div.media .media-body .media-heading {
@@ -7879,8 +7880,8 @@ button.close {
 }
 .header .navbar.navbar-fixed-top .navbar-right .user.dropdown > a img.img-circle {
   margin-right: 10px;
-  max-width: 37px;
-  max-height: 37px;
+  width: 37px;
+  height: 37px;
   background: #f7f7f7;
 }
 .header .navbar.navbar-fixed-top .navbar-right .user.dropdown > a span {
@@ -8657,7 +8658,8 @@ button.close {
   text-align: center;
 }
 .content-header .avatar img {
-  max-width: 65px;
+  width: 65px;
+  height: 65px;
   margin-top: 8px;
 }
 .content-header .info {
@@ -12591,7 +12593,8 @@ span.sprite-icons.webmaster-border {
 }
 .player .name img {
   margin-top: -3px;
-  max-width: 14px;
+  width: 14px;
+  height: 14px;
   margin-right: 6px;
 }
 .player .goals {
@@ -13341,7 +13344,6 @@ span.sprite-icons.webmaster-border {
   height: 20px;
 }
 .top-match-block .add-comment .avatar {
-  max-width: 44px;
   width: 44px;
   height: 44px;
   background: #f2f2f2;
@@ -13661,7 +13663,8 @@ span.sprite-icons.webmaster-border {
   padding: 10px 0;
 }
 .panel-condensed .comments .media-list .media .img-circle {
-  max-width: 47px;
+  width: 47px;
+  height: 47px;
   background: #f7f7f7;
 }
 .panel-condensed .comments .media-list .media .avatar {
@@ -13814,8 +13817,8 @@ span.sprite-icons.webmaster-border {
   padding-right: 1px;
 }
 .popover.popover-incident .popover-content table tr.sustitution td.player img {
-  max-height: 30px;
-  max-width: 30px;
+  height: 30px;
+  width: 30px;
   background: #f7f7f7;
 }
 .popover.popover-incident .popover-content table tr td.details {
@@ -14158,8 +14161,8 @@ span.glyphicon-star.active {
   margin-right: 9px;
 }
 .notifications-list > ul > li.media .avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
   background: #f7f7f7;
 }
 .notifications-list > ul > li.media .media-body .meadia-heading {
@@ -15605,8 +15608,8 @@ span.glyphicon-star.active {
 }
 .match-teams-lineups .popover .popover-content .content-header.player .avatar img {
   margin: 0;
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   vertical-align: baseline;
   background: #f7f7f7;
 }
@@ -15891,8 +15894,8 @@ span.glyphicon-star.active {
   outline: none;
 }
 .iframe .match-tips ul.media-list li.media .tip-container a.avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
 }
 .iframe .match-tips ul.media-list li.media .tip-container .media-body {
   display: table-cell;
@@ -15939,8 +15942,8 @@ span.glyphicon-star.active {
   outline: none;
 }
 .panel.match-tips ul.media-list li.media .tip-container a.avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
 }
 .panel.match-tips ul.media-list li.media .tip-container .media-body {
   display: table-cell;
@@ -15988,8 +15991,8 @@ span.glyphicon-star.active {
   outline: none;
 }
 .tips-list ul.media-list li.media .tip-container a.avatar img {
-  max-height: 48px;
-  max-width: 48px;
+  height: 48px;
+  width: 48px;
 }
 .tips-list ul.media-list li.media .tip-container .media-body {
   display: table-cell;
@@ -16671,8 +16674,8 @@ ol.breadcrumb li a img {
 }
 /*Team Summary*/
 .panel .table tbody tr td.avatar img {
-  max-height: 18px;
-  max-width: 18px;
+  height: 18px;
+  width: 18px;
 }
 .panel.stats .table tbody tr td.percent {
   text-align: right;
@@ -16787,8 +16790,8 @@ table.squad-listing tbody tr td.player {
   text-align: left;
 }
 table.squad-listing tbody tr td.player img {
-  max-height: 30px;
-  max-width: 30px;
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
   background: #f7f7f7;
 }
@@ -19589,8 +19592,8 @@ ul.image-list li img {
   opacity: 1;
 }
 .user-sidebar-nav li.user-display img {
-  max-height: 50px;
-  max-width: 50px;
+  height: 50px;
+  width: 50px;
   background: #3a4144;
 }
 .user-sidebar-nav li.user-display .info {

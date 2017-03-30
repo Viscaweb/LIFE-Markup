@@ -11039,8 +11039,8 @@ span.sprite-icons.webmaster-border {
   padding-right: 1px;
 }
 .popover.popover-incident .popover-content table tr.sustitution td.player img {
-  max-height: 30px;
-  max-width: 30px;
+  height: 30px;
+  width: 30px;
   background: #f7f7f7;
 }
 .popover.popover-incident .popover-content table tr td.details {

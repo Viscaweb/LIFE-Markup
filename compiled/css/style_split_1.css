@@ -9258,7 +9258,8 @@ button.close {
 
 .media-list li.media .img-circle,
 .media-list div.media .img-circle {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .media-list li.media .media-body .media-heading,
@@ -9648,8 +9649,8 @@ button.close {
 
 .header .navbar.navbar-fixed-top .navbar-right .user.dropdown > a img.img-circle {
   margin-right: 10px;
-  max-width: 37px;
-  max-height: 37px;
+  width: 37px;
+  height: 37px;
   background: #f7f7f7;
 }
 
@@ -10634,7 +10635,8 @@ button.close {
 }
 
 .content-header .avatar img {
-  max-width: 65px;
+  width: 65px;
+  height: 65px;
   margin-top: 8px;
 }
 
