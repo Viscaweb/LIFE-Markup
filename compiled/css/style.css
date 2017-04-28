@@ -17630,7 +17630,7 @@ main .matches-widgets td.content span.empty {
   margin-bottom: 5px;
 }
 .contest-standings .table-scroll {
-  max-height: 550px;
+  max-height: 570px;
   overflow: auto;
 }
 .predictions-filter label {
