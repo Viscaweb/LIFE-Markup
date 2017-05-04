@@ -11801,6 +11801,10 @@ span.dark-icon {
   box-shadow: 5px 0 0 #5da400 inset;
 }
 
+.table tbody.empty-section tr:hover td {
+  background: inherit;
+}
+
 .table.table-condensed thead.league-data > tr > th {
   background-color: #767e82;
   text-align: left;
@@ -14315,8 +14319,4 @@ span.sprite-icons.match-reload {
 
 span.sprite-icons.match-stop {
   background-position: -171px -50px;
-}
-
-span.sprite-icons.extra-time {
-  background-position: -171px -75px;
 }
