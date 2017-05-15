@@ -9992,6 +9992,19 @@ ul.image-list li img {
   color: #7ca2c3;
 }
 
+/*Site administration*/
+
+.admin-action {
+  background: #ff00d4;
+  padding: 4px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.admin-action > span {
+  color: #fff!important;
+}
+
 /*CSS animations*/
 
 .blinking {
