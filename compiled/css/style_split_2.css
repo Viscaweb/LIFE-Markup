@@ -9995,14 +9995,18 @@ ul.image-list li img {
 /*Site administration*/
 
 .admin-action {
-  background: #ff00d4;
+  background: red;
   padding: 4px;
   color: #fff;
-  border-radius: 4px;
 }
 
-.admin-action > span {
-  color: #fff!important;
+.media-list li.media .media-body .media-heading .tools > a.admin-action {
+  padding-left: 3px;
+  padding-top: 5px;
+}
+
+.media-list li.media .media-body .media-heading .tools > a.admin-action > span {
+  color: #fff;
 }
 
 /*CSS animations*/
