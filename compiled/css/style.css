@@ -14200,22 +14200,25 @@ span.glyphicon-star.active {
 .notifications-list > ul > li.media:hover .media-body p {
   color: #ffffff;
 }
-.discussion .panel-body ul {
+.discussion .comment-thread-body {
+  padding: 20px;
+}
+.discussion .comment-thread-body ul {
   border: 0;
 }
-.discussion .panel-body ul li:first-child {
+.discussion .comment-thread-body ul li:first-child {
   padding-top: 0;
 }
-.discussion .panel-body ul li a img {
+.discussion .comment-thread-body ul li a img {
   max-width: 48px;
 }
-.discussion .panel-body ul li .media-body .media-heading {
+.discussion .comment-thread-body ul li .media-body .media-heading {
   overflow: hidden;
 }
-.discussion .panel-body ul li .media-body .message-edit {
+.discussion .comment-thread-body ul li .media-body .message-edit {
   margin-top: 10px;
 }
-.discussion .panel-body ul li.view-all {
+.discussion .comment-thread-body ul li.view-all {
   padding-bottom: 0;
 }
 .discussion .make-prediction {

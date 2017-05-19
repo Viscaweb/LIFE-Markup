@@ -1,5 +1,5 @@
 {# Modal structure #}
-<div class="modal fade {{ modal_classes }}" id="{{ modal_id }}">
+<div class="modal fade {{ modal_classes }}" id="{{ modal_id }}" tabindex="-1">
     <div class="modal-dialog {{ modal_dialog_classes }}">
         <div class="modal-content">
             {% set _header = block('modal_header') %}
