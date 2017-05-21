@@ -14204,7 +14204,7 @@ span.glyphicon-star.active {
   padding: 20px;
 }
 .discussion .comment-thread-body ul {
-  border: 0;
+  border-width: 0 0 1px 0;
 }
 .discussion .comment-thread-body ul li:first-child {
   padding-top: 0;
@@ -14217,9 +14217,6 @@ span.glyphicon-star.active {
 }
 .discussion .comment-thread-body ul li .media-body .message-edit {
   margin-top: 10px;
-}
-.discussion .comment-thread-body ul li.view-all {
-  padding-bottom: 0;
 }
 .discussion .make-prediction {
   padding: 10px 20px;
@@ -18945,23 +18942,23 @@ ul.image-list li img {
 .main-article p {
   margin-bottom: 20px;
 }
-.discussion .panel-body span.users-list-title {
+.discussion span.users-list-title {
   font-size: 12px;
 }
-.discussion .panel-body span.users-list-title .active {
+.discussion span.users-list-title .active {
   color: #5da400;
 }
-.discussion .panel-body ul.users-list {
+.discussion ul.users-list {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
 }
-.discussion .panel-body ul.users-list li {
+.discussion ul.users-list li {
   display: inline-block;
   padding: 8px;
   vertical-align: top;
 }
-.discussion .panel-body ul.users-list li a {
+.discussion ul.users-list li a {
   border-radius: 50%;
   background-color: #fafafa;
   display: block;
@@ -18969,11 +18966,11 @@ ul.image-list li img {
   height: 36px;
   text-align: center;
 }
-.discussion .panel-body ul.users-list li a img {
+.discussion ul.users-list li a img {
   max-width: 36px;
   max-height: 36px;
 }
-.discussion .panel-body ul.users-list li a span {
+.discussion ul.users-list li a span {
   line-height: 36px;
   font-size: 10px;
 }
