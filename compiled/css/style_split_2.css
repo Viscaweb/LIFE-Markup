@@ -1,3 +1,19 @@
+span.sprite-icons.gift {
+  background-position: -255px -122px;
+}
+
+span.sprite-icons.match-paused {
+  background-position: -116px -50px;
+}
+
+span.sprite-icons.match-play {
+  background-position: -142px -50px;
+}
+
+span.sprite-icons.match-reload {
+  background-position: -199px -50px;
+}
+
 span.sprite-icons.match-stop {
   background-position: -171px -50px;
 }

@@ -7380,9 +7380,21 @@ span.dark-icon {
 .table tr th span.icon {
   margin-right: 5px;
 }
+.table tr td .country .icon-placeholder,
+.table tr th .country .icon-placeholder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
+  line-height: 16px;
+  margin-right: 5px;
+}
+.table tr td .country .icon-placeholder i,
+.table tr th .country .icon-placeholder i {
+  vertical-align: baseline;
+}
 .table tr td .country i,
 .table tr th .country i {
-  margin-right: 5px;
   position: relative;
   top: 0px;
 }
