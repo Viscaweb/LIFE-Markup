@@ -12411,11 +12411,15 @@ span.dark-icon {
   padding-left: 23px;
 }
 
-.table.matches tbody tr td.team.has-logo img {
+.table.matches tbody tr td.team.has-logo .icon-placeholder {
   margin-top: -9px;
   position: absolute;
   top: 50%;
   left: 0;
+}
+
+.table.matches tbody tr td.team.has-logo .icon-placeholder img {
+  margin: 0;
 }
 
 .table.matches tbody tr td.team.has-logo.team1 > a,
@@ -12424,7 +12428,8 @@ span.dark-icon {
   padding-right: 23px;
 }
 
-.table.matches tbody tr td.team.has-logo.team1 img {
+.table.matches tbody tr td.team.has-logo.team1 img,
+.table.matches tbody tr td.team.has-logo.team1 .icon-placeholder {
   right: 0;
   left: auto;
 }
@@ -12548,12 +12553,9 @@ span.dark-icon {
   max-width: 20px;
 }
 
-.table.matches tbody.my-games tr td.team.team1 img {
-  margin-left: 5px;
-}
-
-.table.matches tbody.my-games tr td.team.team2 img {
-  margin-right: 5px;
+.table.matches tbody.my-games tr td.team .icon-placeholder {
+  width: 20px;
+  height: 20px;
 }
 
 .table.matches tbody.my-games tr td.score {
@@ -14315,8 +14317,4 @@ span.sprite-icons.match-play {
 
 span.sprite-icons.match-reload {
   background-position: -199px -50px;
-}
-
-span.sprite-icons.match-stop {
-  background-position: -171px -50px;
 }

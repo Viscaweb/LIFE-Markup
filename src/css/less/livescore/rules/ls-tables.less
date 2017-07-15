@@ -1395,11 +1395,15 @@
                 padding-left: 23px;
               }
 
-              img{
+              .icon-placeholder {
                 margin-top: -9px;
                 position: absolute;
                 top: 50%;
                 left: 0;
+
+                img {
+                  margin: 0;
+                }
               }
 
               &.team1{
@@ -1409,7 +1413,7 @@
                   padding-right: 23px;
                 }
 
-                img{
+                img, .icon-placeholder {
                   right: 0;
                   left: auto;
                 }
@@ -1523,22 +1527,11 @@
                 max-width: 20px;
               }
 
-              &.team1{
-
-                img{
-                  margin-left: 5px;
-                }
-              }
-
-              &.team2{
-
-                img{
-                  margin-right: 5px;
-                }
+              .icon-placeholder {
+                width: @ls-matches-table-team-image-size;
+                height: @ls-matches-table-team-image-size;
               }
             }
-
-
 
             &.score{
               padding: 0;
