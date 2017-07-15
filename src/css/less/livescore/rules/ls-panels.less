@@ -2,10 +2,16 @@
 
   > .panel-heading {
 
-    .team-logo {
-      max-width: 28px;
-      max-height: 28px;
+    .icon-placeholder.team-logo {
+      display: inline-block;
+      width: @ls-panel-team-logo-size;
+      height: @ls-panel-team-logo-size;
       position: relative;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
 
       & + .team-logo{
         margin-left: 5px;

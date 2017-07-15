@@ -10558,6 +10558,8 @@ button.close {
 
 /*Top BreadCrumbs*/
 
+/*Panels*/
+
 /*Matches Slider*/
 
 /*Match Resume*/
@@ -14059,13 +14061,19 @@ fieldset[disabled] .btn-twitter.active {
   padding: 0;
 }
 
-.panel > .panel-heading .team-logo {
-  max-width: 28px;
-  max-height: 28px;
+.panel > .panel-heading .icon-placeholder.team-logo {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
   position: relative;
 }
 
-.panel > .panel-heading .team-logo + .team-logo {
+.panel > .panel-heading .icon-placeholder.team-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.panel > .panel-heading .icon-placeholder.team-logo + .team-logo {
   margin-left: 5px;
 }
 
@@ -14311,8 +14319,4 @@ span.sprite-icons.nogoal {
 
 span.sprite-icons.shootout-missed {
   background-position: -87px -26px;
-}
-
-span.sprite-icons.grid {
-  background-position: -199px -123px;
 }
