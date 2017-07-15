@@ -19477,26 +19477,25 @@ ul.image-list li img {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.sidebar-nav li .sub-menu > li a span.img {
+.sidebar-nav li .sub-menu > li a .icon-placeholder {
   display: inline-block;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   width: 18px;
-  margin-top: -7px;
-}
-.sidebar-nav li .sub-menu > li a span.img > img {
-  margin: 0;
-}
-.sidebar-nav li .sub-menu > li a img,
-.sidebar-nav li .sub-menu > li a span {
+  height: 18px;
   margin-right: 5px;
   margin-top: -5px;
-  max-width: 18px;
-  max-height: 18px;
+}
+.sidebar-nav li .sub-menu > li a .icon-placeholder > img {
+  margin: 0;
+}
+.sidebar-nav li .sub-menu > li a img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .sidebar-nav li .sub-menu > li a .country-flag {
   position: relative;
-  top: 6px;
+  top: 2px;
 }
 .sidebar-nav li .sub-menu > li a.dropdown-toggle:before {
   margin-top: 2px;
@@ -19540,8 +19539,8 @@ ul.image-list li img {
   color: #cccccc;
   position: absolute;
   right: 0;
-  top: 5px;
-  padding: 3px 7px;
+  top: 0;
+  padding: 3px 4px;
   display: block;
 }
 .sidebar-nav li .sub-menu > li .third-menu li a .fav:hover {
