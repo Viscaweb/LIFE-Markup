@@ -8,13 +8,16 @@
       border-bottom: 2px solid darken(@ls-light-color, 6.4%);
       
       .shields{
+
+        .icon-placeholder {
+          display: inline-block;
+          width: @ls-top-match-block-shields-logo-size;
+          height: @ls-top-match-block-shields-logo-size;
+        }
+
         img{
-          max-height: 28px;
-          max-width: 28px;
-          
-          &:last-child{
-            margin-left: 2px;
-          }
+          max-height: 100%;
+          max-width: 100%;
         }
       }
       
@@ -134,9 +137,15 @@
         height: 64px;
         text-align: center;
 
+        .icon-placeholder {
+          display: inline-block;
+          width: @ls-top-match-block-teams-logo-size;
+          height: @ls-top-match-block-teams-logo-size;
+        }
+
         img{
-          max-width: 60px;
-          max-height: 60px;
+          max-width: 100%;
+          max-height: 100%;
         }
       }
       

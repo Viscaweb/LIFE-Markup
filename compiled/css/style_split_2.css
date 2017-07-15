@@ -1702,13 +1702,15 @@ span.sprite-icons.webmaster-border {
   border-bottom: 2px solid #efefef;
 }
 
-.top-match-block .top-match .shields img {
-  max-height: 28px;
-  max-width: 28px;
+.top-match-block .top-match .shields .icon-placeholder {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
 }
 
-.top-match-block .top-match .shields img:last-child {
-  margin-left: 2px;
+.top-match-block .top-match .shields img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .top-match-block .top-match .teams {
@@ -1831,9 +1833,15 @@ span.sprite-icons.webmaster-border {
   text-align: center;
 }
 
+.top-match-block .score-board .team .icon-placeholder {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
 .top-match-block .score-board .team img {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .top-match-block .score-board .team1 {
