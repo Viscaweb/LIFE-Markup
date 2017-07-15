@@ -351,8 +351,21 @@
       }
 
       .country{
-        i{
+
+        .icon-placeholder {
+          display: inline-block;
+          width: @ls-data-league-country-icon-size;
+          height: @ls-data-league-country-icon-size;
+          vertical-align: text-top;
+          line-height: 16px;
           margin-right: 5px;
+
+          i {
+            vertical-align: baseline;
+          }
+        }
+
+        i{
           position: relative;
           top: 0px;
         }
