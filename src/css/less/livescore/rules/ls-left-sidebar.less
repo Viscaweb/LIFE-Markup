@@ -212,28 +212,28 @@
 					text-overflow : ellipsis;
 					overflow: hidden;
 
-					span.img{
+					.icon-placeholder {
 						display: inline-block;
 						text-align: center;
-						vertical-align: middle;
+						vertical-align: text-bottom;
 						width: 18px;
-						margin-top: -7px;
+						height: 18px;
+						margin-right: 5px;
+						margin-top: -5px;
 
 						> img{
 							margin: 0;
 						}
 					}
 
-					img,span{
-						margin-right: 5px;
-						margin-top: -5px;
-						max-width: 18px;
-						max-height: 18px;
+					img {
+						max-width: 100%;
+						max-height: 100%;
 					}
 					
 					.country-flag {
 						position: relative;
-						top:6px;
+						top: 2px;
 					}
 
 					&.dropdown-toggle:before {
@@ -313,11 +313,11 @@
 
 
 							.fav{
-                              color: darken(@ls-light-color, 20%);
+                color: darken(@ls-light-color, 20%);
 								position: absolute;
 						    right: 0;
-						    top: 5px;
-						    padding: 3px 7px;
+						    top: 0;
+						    padding: 3px 4px;
 						    display: block;
 						    
 						    &:hover{
