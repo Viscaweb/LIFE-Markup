@@ -1,3 +1,15 @@
+span.sprite-icons.nogoal {
+  background-position: -31px -50px;
+}
+
+span.sprite-icons.shootout-missed {
+  background-position: -87px -26px;
+}
+
+span.sprite-icons.grid {
+  background-position: -199px -123px;
+}
+
 span.sprite-icons.gift {
   background-position: -255px -122px;
 }
@@ -1521,12 +1533,9 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match.live .status,
 .matches-slider .content .match.paused .status {
   padding-left: 11px;
-  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   font-weight: 600;
   color: #e33000;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .matches-slider .content .match.live table tr td.score,
@@ -1535,7 +1544,7 @@ span.sprite-icons.webmaster-border {
 }
 
 .matches-slider .content .match.paused .status {
-  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
+  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
   color: #9a9a9a;
 }
 
@@ -1612,11 +1621,8 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .slider-content > .title.live h4 span.title,
 .match-slider-inverse .slider-content > .title.live .h4 span.title {
-  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
+  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
   padding-left: 11px;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .match-slider-inverse .control {
@@ -1708,13 +1714,15 @@ span.sprite-icons.webmaster-border {
   border-bottom: 2px solid #efefef;
 }
 
-.top-match-block .top-match .shields img {
-  max-height: 28px;
-  max-width: 28px;
+.top-match-block .top-match .shields .icon-placeholder {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
 }
 
-.top-match-block .top-match .shields img:last-child {
-  margin-left: 2px;
+.top-match-block .top-match .shields img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .top-match-block .top-match .teams {
@@ -1837,9 +1845,15 @@ span.sprite-icons.webmaster-border {
   text-align: center;
 }
 
+.top-match-block .score-board .team .icon-placeholder {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
 .top-match-block .score-board .team img {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .top-match-block .score-board .team1 {
@@ -1902,20 +1916,17 @@ span.sprite-icons.webmaster-border {
 }
 
 .top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/live-spot.gif");
   display: inline-block;
   height: 8px;
   width: 8px;
   position: relative;
   top: -1px;
   margin-right: 3px;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .top-match-block .score-board.live.paused .match-info .block div.time {
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/paused-spot.gif");
 }
 
 .top-match-block .score-board:hover:before {
@@ -2438,12 +2449,9 @@ span.sprite-icons.webmaster-border {
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/live-spot.gif");
   background-position: 5px center;
   background-repeat: no-repeat;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .live-commented-matches.panel .matches tr.live td.score {
@@ -3175,28 +3183,28 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 
-.discussion .panel-body ul {
-  border: 0;
+.discussion .comment-thread-body {
+  padding: 20px;
 }
 
-.discussion .panel-body ul li:first-child {
+.discussion .comment-thread-body ul {
+  border-width: 0 0 1px 0;
+}
+
+.discussion .comment-thread-body ul li:first-child {
   padding-top: 0;
 }
 
-.discussion .panel-body ul li a img {
+.discussion .comment-thread-body ul li a img {
   max-width: 48px;
 }
 
-.discussion .panel-body ul li .media-body .media-heading {
+.discussion .comment-thread-body ul li .media-body .media-heading {
   overflow: hidden;
 }
 
-.discussion .panel-body ul li .media-body .message-edit {
+.discussion .comment-thread-body ul li .media-body .message-edit {
   margin-top: 10px;
-}
-
-.discussion .panel-body ul li.view-all {
-  padding-bottom: 0;
 }
 
 .discussion .make-prediction {
@@ -3418,36 +3426,6 @@ span.glyphicon-star.active {
 
 .odds-slider .content .sportsbook-odds table tr td.odd {
   border-left: none;
-}
-
-@-webkit-keyframes ls-live-indicator-animation {
-  0% {
-    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
-  }
-
-  50% {
-    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
-  }
-}
-
-@-o-keyframes ls-live-indicator-animation {
-  0% {
-    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
-  }
-
-  50% {
-    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
-  }
-}
-
-@keyframes ls-live-indicator-animation {
-  0% {
-    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
-  }
-
-  50% {
-    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
-  }
 }
 
 /*Base Tables*/
@@ -3767,9 +3745,15 @@ span.glyphicon-star.active {
   padding: 0;
 }
 
+.match-information .table tbody tr th.team .logo .icon-placeholder {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+}
+
 .match-information .table tbody tr th.team .logo img {
-  max-width: 38px;
-  max-height: 38px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .match-information .table tbody tr th.team .logo:hover img {
@@ -3909,12 +3893,9 @@ span.glyphicon-star.active {
 .match-information .table tbody tr th.score .match-status span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
   background-position: 1px center;
 }
 
@@ -4106,19 +4087,16 @@ span.glyphicon-star.active {
 .match-information.live .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
   background-position: 1px center;
 }
 
 .match-information.paused .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/paused-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
   background-position: 1px center;
@@ -6102,12 +6080,9 @@ table.other-sport tbody.live tr td.time {
 table.other-sport tbody.live tr td.time {
   font-size: 11px;
   padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/live-spot.gif");
   background-repeat: no-repeat;
   background-position: 5px center;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-  -o-animation: ls-live-indicator-animation 1s step-end infinite;
-  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 table.other-sport tbody.live tr td.time img {
@@ -6115,7 +6090,7 @@ table.other-sport tbody.live tr td.time img {
 }
 
 table.other-sport tbody.live.paused tr td.time {
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url("../img/sprites/paused-spot.gif");
 }
 
 table.other-sport tbody.header tr:nth-child(2),
@@ -8974,27 +8949,27 @@ ul.image-list li img {
   margin-bottom: 20px;
 }
 
-.discussion .panel-body span.users-list-title {
+.discussion span.users-list-title {
   font-size: 12px;
 }
 
-.discussion .panel-body span.users-list-title .active {
+.discussion span.users-list-title .active {
   color: #5da400;
 }
 
-.discussion .panel-body ul.users-list {
+.discussion ul.users-list {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
 }
 
-.discussion .panel-body ul.users-list li {
+.discussion ul.users-list li {
   display: inline-block;
   padding: 8px;
   vertical-align: top;
 }
 
-.discussion .panel-body ul.users-list li a {
+.discussion ul.users-list li a {
   border-radius: 50%;
   background-color: #fafafa;
   display: block;
@@ -9003,12 +8978,12 @@ ul.image-list li img {
   text-align: center;
 }
 
-.discussion .panel-body ul.users-list li a img {
+.discussion ul.users-list li a img {
   max-width: 36px;
   max-height: 36px;
 }
 
-.discussion .panel-body ul.users-list li a span {
+.discussion ul.users-list li a span {
   line-height: 36px;
   font-size: 10px;
 }

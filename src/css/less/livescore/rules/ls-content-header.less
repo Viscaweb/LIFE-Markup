@@ -11,10 +11,16 @@
     padding-top: 10px;
     text-align: center;
 
+    .icon-placeholder {
+      display: inline-block;
+      width: @ls-content-header-img-size;
+      height: @ls-content-header-img-size;
+      margin-top: 8px;
+    }
+
   	img{
-        width: 65px;
-        height: 65px;
-        margin-top: 8px;
+      max-width: 100%;
+      max-height: 100%;
   	}
   }
 
@@ -209,9 +215,15 @@
         padding: 2px;
         overflow: hidden;
 
-        img{
-          max-width: 52px;
+        .icon-placeholder {
           display: inline-block;
+          width: @ls-content-header-player-teams-logo-size;
+          height: @ls-content-header-player-teams-logo-size;
+        }
+
+        img{
+          max-width: 100%;
+          max-height: 100%;
         }
 
         > span {
