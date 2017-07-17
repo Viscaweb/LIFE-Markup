@@ -10574,6 +10574,8 @@ button.close {
 
 /*Player Summary*/
 
+/*Content header*/
+
 /*Buttons*/
 
 /*Progress Bars*/
@@ -10636,10 +10638,16 @@ button.close {
   text-align: center;
 }
 
-.content-header .avatar img {
+.content-header .avatar .icon-placeholder {
+  display: inline-block;
   width: 65px;
   height: 65px;
   margin-top: 8px;
+}
+
+.content-header .avatar img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .content-header .info {
@@ -10829,9 +10837,15 @@ button.close {
   overflow: hidden;
 }
 
-.content-header.player .teams a img {
-  max-width: 52px;
+.content-header.player .teams a .icon-placeholder {
   display: inline-block;
+  width: 52px;
+  height: 52px;
+}
+
+.content-header.player .teams a img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .content-header.player .teams a > span {
@@ -14311,12 +14325,4 @@ span.sprite-icons.own-goal {
 
 span.sprite-icons.goal-small {
   background-position: -201px -26px;
-}
-
-span.sprite-icons.nogoal {
-  background-position: -31px -50px;
-}
-
-span.sprite-icons.shootout-missed {
-  background-position: -87px -26px;
 }

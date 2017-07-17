@@ -1,3 +1,11 @@
+span.sprite-icons.nogoal {
+  background-position: -31px -50px;
+}
+
+span.sprite-icons.shootout-missed {
+  background-position: -87px -26px;
+}
+
 span.sprite-icons.grid {
   background-position: -199px -123px;
 }

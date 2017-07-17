@@ -8622,6 +8622,7 @@ button.close {
 /*Match Timeline*/
 /*Match Head to Head*/
 /*Player Summary*/
+/*Content header*/
 /*Buttons*/
 /*Progress Bars*/
 /*Modals*/
@@ -8658,10 +8659,15 @@ button.close {
   padding-top: 10px;
   text-align: center;
 }
-.content-header .avatar img {
+.content-header .avatar .icon-placeholder {
+  display: inline-block;
   width: 65px;
   height: 65px;
   margin-top: 8px;
+}
+.content-header .avatar img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .content-header .info {
   padding: 10px 0;
@@ -8820,9 +8826,14 @@ button.close {
   padding: 2px;
   overflow: hidden;
 }
-.content-header.player .teams a img {
-  max-width: 52px;
+.content-header.player .teams a .icon-placeholder {
   display: inline-block;
+  width: 52px;
+  height: 52px;
+}
+.content-header.player .teams a img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .content-header.player .teams a > span {
   display: block;
