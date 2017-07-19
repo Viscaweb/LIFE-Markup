@@ -18439,8 +18439,8 @@ ul.image-list li img {
 }
 .change-profile-image > .row .options .avatars-list ul > li .img img,
 .change-profile-image > .row .options .avatars-list ul > li .logo img {
-  height: 52px;
-  width: 52px;
+  max-height: 100%;
+  max-width: 100%;
 }
 .change-profile-image > .row .options .avatars-list ul > li .name {
   display: block;
