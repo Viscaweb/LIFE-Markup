@@ -8798,9 +8798,15 @@ ul.image-list li img {
   display: table-cell;
 }
 
+.article-match-info .team .icon-placeholder {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
 .article-match-info .team img {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .article-match-info .team.team1 {
@@ -8809,7 +8815,7 @@ ul.image-list li img {
   color: #5c5c5c;
 }
 
-.article-match-info .team.team1 img {
+.article-match-info .team.team1 .icon-placeholder {
   float: left;
 }
 
@@ -8819,7 +8825,7 @@ ul.image-list li img {
   color: #5c5c5c;
 }
 
-.article-match-info .team.team2 img {
+.article-match-info .team.team2 .icon-placeholder {
   float: right;
 }
 
