@@ -6279,10 +6279,18 @@ table.links-table tbody tr td > a {
   display: block;
 }
 
-table.links-table tbody tr td > a img {
-  max-width: 18px;
-  max-height: 18px;
+table.links-table tbody tr td > a .icon-placeholder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+table.links-table tbody tr td > a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 table.links-table tbody tr td > a span.icon-caret-right {
