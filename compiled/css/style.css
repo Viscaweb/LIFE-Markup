@@ -16728,9 +16728,16 @@ ol.breadcrumb li a img {
 .panel .table.league-clubs tbody tr td.logo {
   width: 5%;
 }
+.panel .table.league-clubs tbody tr td.logo .icon-placeholder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
 .panel .table.league-clubs tbody tr td.logo img {
-  max-height: 18px;
-  max-width: 18px;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
 }
 .panel .table.league-clubs tbody tr td.name {
   width: 65%;
