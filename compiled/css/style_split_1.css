@@ -11846,18 +11846,23 @@ span.dark-icon {
   font-size: 0;
 }
 
-.table.table-condensed tr td span.icon-caret-right,
-.table.table-condensed tr td span.icon-caret-right {
-  font-size: 10px;
-}
-
-.table.table-condensed tr td.team {
+.table.table-condensed tbody tr td.team {
   width: auto;
 }
 
-.table.table-condensed tr td.team img {
-  max-height: 18px;
-  max-width: 18px;
+.table.table-condensed tbody tr td.team .icon-placeholder {
+  width: 18px;
+  height: 18px;
+}
+
+.table.table-condensed tbody tr td.team img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.table.table-condensed tr td span.icon-caret-right,
+.table.table-condensed tr td span.icon-caret-right {
+  font-size: 10px;
 }
 
 .table tr.stats td.stat {
@@ -12360,6 +12365,7 @@ span.dark-icon {
 }
 
 .table.matches tbody tr td .icon-placeholder {
+  display: inline-block;
   margin-right: 5px;
 }
 
@@ -12397,8 +12403,16 @@ span.dark-icon {
   top: -2px;
 }
 
+.table.matches tbody tr td.team .icon-placeholder {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
 .table.matches tbody tr td.team img {
-  max-width: 20px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .table.matches tbody tr td.team .label-goal {
@@ -12425,8 +12439,9 @@ span.dark-icon {
   left: 0;
 }
 
-.table.matches tbody tr td.team.team1 img {
+.table.matches tbody tr td.team.team1 .icon-placeholder {
   margin-left: 5px;
+  margin-right: 0;
 }
 
 .table.matches tbody tr td.team.team2 {
@@ -12441,7 +12456,7 @@ span.dark-icon {
   right: 0;
 }
 
-.table.matches tbody tr td.team.team2 img {
+.table.matches tbody tr td.team.team2 .icon-placeholder {
   margin-right: 5px;
 }
 
@@ -12565,6 +12580,16 @@ span.dark-icon {
 
 .table.matches tr.league-data th .tools a.live i {
   color: #e33000;
+}
+
+.table.matches.table-condensed tbody tr td.team .icon-placeholder {
+  width: 18px;
+  height: 18px;
+}
+
+.table.matches.table-condensed tbody tr td.team img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
@@ -14311,22 +14336,4 @@ span.sprite-icons.whistle {
 
 span.sprite-icons.interrupted {
   background-position: -31px -27px;
-}
-
-span.sprite-icons.whistle-active {
-  background-position: -31px -144px;
-}
-
-span.sprite-icons.shootouts {
-  background-position: -60px -144px;
-}
-
-span.sprite-icons.goal-assist {
-  background-position: -3px -121px;
-  width: 23px;
-}
-
-span.sprite-icons.assist {
-  background-position: -31px -121px;
-  width: 23px;
 }

@@ -8028,16 +8028,20 @@ span.dark-icon {
   padding: 0;
   font-size: 0;
 }
+.table.table-condensed tbody tr td.team {
+  width: auto;
+}
+.table.table-condensed tbody tr td.team .icon-placeholder {
+  width: 18px;
+  height: 18px;
+}
+.table.table-condensed tbody tr td.team img {
+  max-height: 100%;
+  max-width: 100%;
+}
 .table.table-condensed tr td span.icon-caret-right,
 .table.table-condensed tr td span.icon-caret-right {
   font-size: 10px;
-}
-.table.table-condensed tr td.team {
-  width: auto;
-}
-.table.table-condensed tr td.team img {
-  max-height: 18px;
-  max-width: 18px;
 }
 .table tr.stats td.stat {
   background-color: #fafafa;
@@ -8438,6 +8442,7 @@ span.dark-icon {
   font-weight: 600;
 }
 .table.matches tbody tr td .icon-placeholder {
+  display: inline-block;
   margin-right: 5px;
 }
 .table.matches tbody tr td .icon-placeholder .league {
@@ -8468,8 +8473,15 @@ span.dark-icon {
   position: relative;
   top: -2px;
 }
+.table.matches tbody tr td.team .icon-placeholder {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
 .table.matches tbody tr td.team img {
-  max-width: 20px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .table.matches tbody tr td.team .label-goal {
   opacity: 0;
@@ -8490,8 +8502,9 @@ span.dark-icon {
 .table.matches tbody tr td.team.team1 .label-goal {
   left: 0;
 }
-.table.matches tbody tr td.team.team1 img {
+.table.matches tbody tr td.team.team1 .icon-placeholder {
   margin-left: 5px;
+  margin-right: 0;
 }
 .table.matches tbody tr td.team.team2 {
   text-align: left;
@@ -8502,7 +8515,7 @@ span.dark-icon {
 .table.matches tbody tr td.team.team2 .label-goal {
   right: 0;
 }
-.table.matches tbody tr td.team.team2 img {
+.table.matches tbody tr td.team.team2 .icon-placeholder {
   margin-right: 5px;
 }
 .table.matches tbody tr td.team.has-logo > a,
@@ -8603,6 +8616,14 @@ span.dark-icon {
 }
 .table.matches tr.league-data th .tools a.live i {
   color: #e33000;
+}
+.table.matches.table-condensed tbody tr td.team .icon-placeholder {
+  width: 18px;
+  height: 18px;
+}
+.table.matches.table-condensed tbody tr td.team img {
+  max-height: 100%;
+  max-width: 100%;
 }
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;

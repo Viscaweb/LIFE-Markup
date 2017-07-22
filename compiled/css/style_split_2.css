@@ -1,3 +1,21 @@
+span.sprite-icons.whistle-active {
+  background-position: -31px -144px;
+}
+
+span.sprite-icons.shootouts {
+  background-position: -60px -144px;
+}
+
+span.sprite-icons.goal-assist {
+  background-position: -3px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.assist {
+  background-position: -31px -121px;
+  width: 23px;
+}
+
 span.sprite-icons.shootout-goal {
   background-position: -116px -26px;
 }

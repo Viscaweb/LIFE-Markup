@@ -768,22 +768,28 @@
       }
     }
 
+    tbody tr td {
+      
+      &.team {
+        width: auto;
+
+        .icon-placeholder {
+          width: 18px;
+          height: 18px;
+        }
+
+        img{
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
 
     tr{
 
       td{
 
         span.icon-caret-right, span.icon-caret-right{ font-size:  @font-size-base - 3; }
-
-        &.team{
-          width: auto;
-
-          img{
-            max-height: 18px;
-            max-width: 18px;
-          }
-        }
-
       }
     }
   }
@@ -1327,6 +1333,7 @@
           }
 
           .icon-placeholder {
+            display: inline-block;
             margin-right: 5px;
 
             .league {
@@ -1362,8 +1369,16 @@
               top: -2px;
             }
 
+            .icon-placeholder {
+              display: inline-block;
+              width: @ls-matches-table-team-image-size;
+              height: @ls-matches-table-team-image-size;
+              vertical-align: middle;
+            }
+
             img{
-              max-width: @ls-matches-table-team-image-size;
+              max-width: 100%;
+              max-height: 100%;
             }
             
             .label-goal {
@@ -1388,8 +1403,9 @@
                 left: 0;
               }
 
-              img{
+              .icon-placeholder {
                 margin-left: 5px;
+                margin-right: 0;
               }
             }
 
@@ -1404,7 +1420,7 @@
                 right: 0;
               }
 
-              img{
+              .icon-placeholder {
                 margin-right: 5px;
               }
             }
@@ -1495,6 +1511,22 @@
     }
 
     &.table-condensed{
+      
+      tbody tr td {
+        
+        &.team {
+
+          .icon-placeholder {
+            width: 18px;
+            height: 18px;
+          }
+
+          img{
+            max-height: 100%;
+            max-width: 100%;
+          }
+        }
+      }
 
       tr{
 
