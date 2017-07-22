@@ -8054,20 +8054,28 @@ ul.profile-nav li:first-child {
   margin-bottom: 10px;
 }
 
-.content ul.media-list li .match-info img {
-  max-width: 47px;
-  max-height: 47px;
-  margin-top: 12px;
+.content ul.media-list li .match-info .icon-placeholder {
   position: absolute;
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  margin-top: 12px;
+  vertical-align: middle;
 }
 
-.content ul.media-list li .match-info img.team1 {
+.content ul.media-list li .match-info .icon-placeholder.team1 {
   left: 15px;
 }
 
-.content ul.media-list li .match-info img.team2 {
+.content ul.media-list li .match-info .icon-placeholder.team2 {
   right: 15px;
   top: 0;
+}
+
+.content ul.media-list li .match-info img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .content ul.media-list li .match-info table.user-prediction {
