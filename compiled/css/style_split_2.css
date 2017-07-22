@@ -1,3 +1,15 @@
+span.sprite-icons.shootout-goal {
+  background-position: -116px -26px;
+}
+
+span.sprite-icons.own-goal {
+  background-position: -171px -26px;
+}
+
+span.sprite-icons.goal-small {
+  background-position: -201px -26px;
+}
+
 span.sprite-icons.nogoal {
   background-position: -31px -50px;
 }
