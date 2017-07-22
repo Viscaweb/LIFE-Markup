@@ -9263,9 +9263,18 @@ ul.image-list li img {
   line-height: 14px;
 }
 
-.streaming-table table tbody tr td ul > li > a .title img {
-  max-height: 14px;
+.streaming-table table tbody tr td ul > li > a .title .icon-placeholder {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+.streaming-table table tbody tr td ul > li > a .title img {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
 }
 
 .streaming-table table tbody tr td ul > li > a .description {
