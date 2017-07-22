@@ -17720,9 +17720,16 @@ main .matches-widgets td.content span.empty {
 .teams-table table tbody tr td.logo {
   width: 3%;
 }
+.teams-table table tbody tr td.logo .icon-placeholder {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
 .teams-table table tbody tr td.logo img {
-  max-width: 18px;
-  max-height: 18px;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 .contest-standings .filters {
   padding: 15px 15px 0;
@@ -19345,6 +19352,21 @@ ul.image-list li img {
 .search-block div.checkbox {
   display: block;
   margin-bottom: 13px;
+}
+.dropdown-search li a .icon-placeholder {
+  display: inline-block;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+  vertical-align: middle;
+}
+.dropdown-search li a .icon-placeholder img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
+  margin-right: 0;
 }
 .dropdown-search li a img {
   height: 20px;
