@@ -1,3 +1,7 @@
+span.sprite-icons.interrupted {
+  background-position: -31px -27px;
+}
+
 span.sprite-icons.whistle-active {
   background-position: -31px -144px;
 }
@@ -3487,6 +3491,10 @@ span.glyphicon-star.active {
 
 .odds-slider .content .sportsbook-odds table tr td.odd {
   border-left: none;
+}
+
+.icon-placeholder {
+  display: inline-block;
 }
 
 /*Base Tables*/

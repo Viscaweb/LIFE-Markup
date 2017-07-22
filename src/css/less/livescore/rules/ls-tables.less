@@ -394,14 +394,19 @@
     td{
 
       &.stage {
-
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
-        img {
-          max-width: 18px;
+        .icon-placeholder {
+          width: 18px;
+          height: 18px;
           margin-right: 3px;
+        }
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
         }
 
       }

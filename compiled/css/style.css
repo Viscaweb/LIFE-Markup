@@ -9042,9 +9042,14 @@ span.dark-icon {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.table tr td.stage img {
-  max-width: 18px;
+.table tr td.stage .icon-placeholder {
+  width: 18px;
+  height: 18px;
   margin-right: 3px;
+}
+.table tr td.stage img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .table tr td.league img {
   max-width: 18px;
@@ -14496,6 +14501,9 @@ span.glyphicon-star.active {
 }
 .odds-slider .content .sportsbook-odds table tr td.odd {
   border-left: none;
+}
+.icon-placeholder {
+  display: inline-block;
 }
 /*Base Tables*/
 .popover.popover-trend,
