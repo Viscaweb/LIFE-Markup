@@ -8735,6 +8735,15 @@ button.close {
   float: left;
   clear: both;
 }
+.content-header .info .additionnal-info .icon-placeholder {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.content-header .info .additionnal-info .icon-placeholder > span {
+  margin-right: 0;
+}
 .content-header .info .additionnal-info span {
   margin-right: 5px;
 }

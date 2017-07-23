@@ -1,3 +1,13 @@
+span.sprite-icons.stadium,
+span.sprite-icons.attendance {
+  background-position: -198px -97px;
+  width: 25px;
+}
+
+span.sprite-icons.info {
+  background-position: -199px -75px;
+}
+
 span.sprite-icons.whistle {
   background-position: -3px -27px;
 }
