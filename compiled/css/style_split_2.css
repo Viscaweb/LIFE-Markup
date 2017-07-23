@@ -3518,6 +3518,12 @@ span.glyphicon-star.active {
   display: inline-block;
 }
 
+.icon-placeholder--flag {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
 /*Base Tables*/
 
 .popover.popover-trend,
