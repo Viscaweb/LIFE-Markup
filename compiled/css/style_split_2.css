@@ -6198,7 +6198,7 @@ table.other-sport.sport-tennis tbody tr th i.icon-woman {
   color: #ffaef7;
 }
 
-table.other-sport.sport-tennis tbody tr td.teams img {
+table.other-sport.sport-tennis tbody tr td.teams .icon-placeholder {
   float: right;
 }
 
