@@ -1,3 +1,51 @@
+span.sprite-icons.stadium,
+span.sprite-icons.attendance {
+  background-position: -198px -97px;
+  width: 25px;
+}
+
+span.sprite-icons.info {
+  background-position: -199px -75px;
+}
+
+span.sprite-icons.whistle {
+  background-position: -3px -27px;
+}
+
+span.sprite-icons.interrupted {
+  background-position: -31px -27px;
+}
+
+span.sprite-icons.whistle-active {
+  background-position: -31px -144px;
+}
+
+span.sprite-icons.shootouts {
+  background-position: -60px -144px;
+}
+
+span.sprite-icons.goal-assist {
+  background-position: -3px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.assist {
+  background-position: -31px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.shootout-goal {
+  background-position: -116px -26px;
+}
+
+span.sprite-icons.own-goal {
+  background-position: -171px -26px;
+}
+
+span.sprite-icons.goal-small {
+  background-position: -201px -26px;
+}
+
 span.sprite-icons.nogoal {
   background-position: -31px -50px;
 }
@@ -1219,11 +1267,19 @@ span.sprite-icons.webmaster-border {
   color: #424242;
 }
 
-.player .name img {
-  margin-top: -3px;
+.player .name .icon-placeholder {
+  display: inline-block;
   width: 14px;
   height: 14px;
   margin-right: 6px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+
+.player .name img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .player .goals {
@@ -1486,8 +1542,15 @@ span.sprite-icons.webmaster-border {
   padding: 0 4px 0 0;
 }
 
+.matches-slider .content .match table tr td.flag .icon-placeholder {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
 .matches-slider .content .match table tr td.flag img {
-  max-width: 16px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .matches-slider .content .match table tr td.team {
@@ -2167,8 +2230,17 @@ span.sprite-icons.webmaster-border {
   border-bottom-color: #529100;
 }
 
-.top-competitions-block.panel .nav-pills > li > a > img {
-  max-width: 20px;
+.top-competitions-block.panel .nav-pills > li > a .icon-placeholder {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.top-competitions-block.panel .nav-pills > li > a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .top-competitions-block.panel .nav-pills > li > a .icon-caret-down {
@@ -2202,9 +2274,16 @@ span.sprite-icons.webmaster-border {
   padding: 15px;
 }
 
-.top-competitions-block.panel .active-ligue .ligue-logo {
+.top-competitions-block.panel .active-ligue .icon-placeholder {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
   float: right;
-  max-width: 32px;
+}
+
+.top-competitions-block.panel .active-ligue .ligue-logo {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .top-competitions-block.panel .active-ligue h4,
@@ -3301,8 +3380,15 @@ span.glyphicon-star.active {
   display: inline;
 }
 
-.odds-slider .match-infos .table-us-match-info td.teams .team img {
+.odds-slider .match-infos .table-us-match-info td.teams .team .icon-placeholder {
   width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.odds-slider .match-infos .table-us-match-info td.teams .team img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .odds-slider .match-infos .table-us-match-info td.team-names {
@@ -3426,6 +3512,10 @@ span.glyphicon-star.active {
 
 .odds-slider .content .sportsbook-odds table tr td.odd {
   border-left: none;
+}
+
+.icon-placeholder {
+  display: inline-block;
 }
 
 /*Base Tables*/
@@ -4142,12 +4232,16 @@ span.glyphicon-star.active {
   position: absolute;
 }
 
-.match-timeline .team-logos .team img {
+.match-timeline .team-logos .team .icon-placeholder {
+  width: 38px;
+  height: 38px;
   vertical-align: top;
-  display: inline-block;
-  max-width: 38px;
-  max-height: 38px;
   margin-right: 5px;
+}
+
+.match-timeline .team-logos .team img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .match-timeline .team-logos .team .name {
@@ -4628,10 +4722,15 @@ span.glyphicon-star.active {
   text-align: center;
 }
 
-.match-teams-lineups .component-container .team .table thead tr th.team-logo img {
+.match-teams-lineups .component-container .team .table thead tr th.team-logo .icon-placeholder {
+  width: 45px;
+  height: 45px;
   margin-top: 7px;
-  max-height: 45px;
-  max-width: 45px;
+}
+
+.match-teams-lineups .component-container .team .table thead tr th.team-logo img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .match-teams-lineups .component-container .team .table thead tr th.team-logo span.positions {
@@ -4931,10 +5030,15 @@ span.glyphicon-star.active {
   text-align: center;
 }
 
-.table.teams-lineups thead tr th.team-logo img {
+.table.teams-lineups thead tr th.team-logo .icon-placeholder {
+  width: 45px;
+  height: 45px;
   margin-top: 7px;
-  max-height: 45px;
-  max-width: 45px;
+}
+
+.table.teams-lineups thead tr th.team-logo img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .table.teams-lineups thead tr th.team-logo span.positions {
@@ -5235,9 +5339,14 @@ span.glyphicon-star.active {
   outline: none;
 }
 
-.iframe .match-tips ul.media-list li.media .tip-container a.avatar img {
-  height: 48px;
+.iframe .match-tips ul.media-list li.media .tip-container a.avatar .icon-placeholder {
   width: 48px;
+  height: 48px;
+}
+
+.iframe .match-tips ul.media-list li.media .tip-container a.avatar img {
+  height: 100%;
+  width: 100%;
 }
 
 .iframe .match-tips ul.media-list li.media .tip-container .media-body {
@@ -5294,9 +5403,14 @@ span.glyphicon-star.active {
   outline: none;
 }
 
-.panel.match-tips ul.media-list li.media .tip-container a.avatar img {
-  height: 48px;
+.panel.match-tips ul.media-list li.media .tip-container a.avatar .icon-placeholder {
   width: 48px;
+  height: 48px;
+}
+
+.panel.match-tips ul.media-list li.media .tip-container a.avatar img {
+  height: 100%;
+  width: 100%;
 }
 
 .panel.match-tips ul.media-list li.media .tip-container .media-body {
@@ -5354,9 +5468,14 @@ span.glyphicon-star.active {
   outline: none;
 }
 
-.tips-list ul.media-list li.media .tip-container a.avatar img {
-  height: 48px;
+.tips-list ul.media-list li.media .tip-container a.avatar .icon-placeholder {
   width: 48px;
+  height: 48px;
+}
+
+.tips-list ul.media-list li.media .tip-container a.avatar img {
+  height: 100%;
+  width: 100%;
 }
 
 .tips-list ul.media-list li.media .tip-container .media-body {
@@ -5903,11 +6022,18 @@ table.odds-goal-scorers tbody tr th.logo {
   width: 38%;
 }
 
+table.odds-goal-scorers thead tr th.logo .icon-placeholder,
+table.odds-goal-scorers tbody tr th.logo .icon-placeholder {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 table.odds-goal-scorers thead tr th.logo img,
 table.odds-goal-scorers tbody tr th.logo img {
-  max-width: 20px;
-  max-height: 20px;
-  margin-right: 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 table.odds-goal-scorers tbody tr td i {
@@ -6133,7 +6259,7 @@ table.other-sport.sport-tennis tbody tr th i.icon-woman {
   color: #ffaef7;
 }
 
-table.other-sport.sport-tennis tbody tr td.teams img {
+table.other-sport.sport-tennis tbody tr td.teams .icon-placeholder {
   float: right;
 }
 
@@ -6148,10 +6274,19 @@ table.other-sport tbody.my-games tr td[rowspan] {
 
 /*League Summary*/
 
-ol.breadcrumb li a img {
+ol.breadcrumb li a .icon-placeholder {
+  display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+ol.breadcrumb li a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .panel .panel-heading span.icon-football {
@@ -6183,9 +6318,17 @@ ol.breadcrumb li a img {
   width: 5%;
 }
 
+.panel .table.league-clubs tbody tr td.logo .icon-placeholder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
 .panel .table.league-clubs tbody tr td.logo img {
-  max-height: 18px;
-  max-width: 18px;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
 }
 
 .panel .table.league-clubs tbody tr td.name {
@@ -6261,10 +6404,18 @@ table.links-table tbody tr td > a {
   display: block;
 }
 
-table.links-table tbody tr td > a img {
-  max-width: 18px;
-  max-height: 18px;
+table.links-table tbody tr td > a .icon-placeholder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+table.links-table tbody tr td > a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 table.links-table tbody tr td > a span.icon-caret-right {
@@ -6653,10 +6804,17 @@ table.squad-listing.avatars tbody tr td.player {
   width: 3%;
 }
 
+.goals-statistics tbody tr td.logo .icon-placeholder,
+.goals-statistics tbody tr td.date .icon-placeholder {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
 .goals-statistics tbody tr td.logo img,
 .goals-statistics tbody tr td.date img {
-  max-width: 16px;
-  max-height: 16px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .goals-statistics tbody tr td.league img {
@@ -7335,9 +7493,17 @@ main .matches-widgets td.content span.empty {
   width: 3%;
 }
 
+.teams-table table tbody tr td.logo .icon-placeholder {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+
 .teams-table table tbody tr td.logo img {
-  max-width: 18px;
-  max-height: 18px;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .contest-standings .filters {
@@ -7791,8 +7957,17 @@ main .content .league-list ul li span.logo {
   margin: 0 8px;
 }
 
+main .content .league-list ul li span.logo .icon-placeholder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
 main .content .league-list ul li span.logo img {
-  max-width: 18px;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 main .content .league-list ul li span.fav .icon {
@@ -7943,20 +8118,28 @@ ul.profile-nav li:first-child {
   margin-bottom: 10px;
 }
 
-.content ul.media-list li .match-info img {
-  max-width: 47px;
-  max-height: 47px;
-  margin-top: 12px;
+.content ul.media-list li .match-info .icon-placeholder {
   position: absolute;
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  margin-top: 12px;
+  vertical-align: middle;
 }
 
-.content ul.media-list li .match-info img.team1 {
+.content ul.media-list li .match-info .icon-placeholder.team1 {
   left: 15px;
 }
 
-.content ul.media-list li .match-info img.team2 {
+.content ul.media-list li .match-info .icon-placeholder.team2 {
   right: 15px;
   top: 0;
+}
+
+.content ul.media-list li .match-info img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .content ul.media-list li .match-info table.user-prediction {
@@ -8032,9 +8215,15 @@ ul.image-list li {
   padding: 13px;
 }
 
+ul.image-list li .icon-placeholder {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
 ul.image-list li img {
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .contest-ranking .panel-body {
@@ -8222,8 +8411,8 @@ ul.image-list li img {
 
 .change-profile-image > .row .options .avatars-list ul > li .img img,
 .change-profile-image > .row .options .avatars-list ul > li .logo img {
-  height: 52px;
-  width: 52px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .change-profile-image > .row .options .avatars-list ul > li .name {
@@ -8742,9 +8931,15 @@ ul.image-list li img {
   display: table-cell;
 }
 
+.article-match-info .team .icon-placeholder {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
 .article-match-info .team img {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .article-match-info .team.team1 {
@@ -8753,7 +8948,7 @@ ul.image-list li img {
   color: #5c5c5c;
 }
 
-.article-match-info .team.team1 img {
+.article-match-info .team.team1 .icon-placeholder {
   float: left;
 }
 
@@ -8763,7 +8958,7 @@ ul.image-list li img {
   color: #5c5c5c;
 }
 
-.article-match-info .team.team2 img {
+.article-match-info .team.team2 .icon-placeholder {
   float: right;
 }
 
@@ -9181,9 +9376,18 @@ ul.image-list li img {
   line-height: 14px;
 }
 
-.streaming-table table tbody tr td ul > li > a .title img {
-  max-height: 14px;
+.streaming-table table tbody tr td ul > li > a .title .icon-placeholder {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+.streaming-table table tbody tr td ul > li > a .title img {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
 }
 
 .streaming-table table tbody tr td ul > li > a .description {
@@ -9311,6 +9515,23 @@ ul.image-list li img {
 .search-block div.checkbox {
   display: block;
   margin-bottom: 13px;
+}
+
+.dropdown-search li a .icon-placeholder {
+  display: inline-block;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.dropdown-search li a .icon-placeholder img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
+  margin-right: 0;
 }
 
 .dropdown-search li a img {
@@ -9543,6 +9764,13 @@ ul.image-list li img {
 
 .sidebar-nav li .sub-menu > li a .icon-placeholder > img {
   margin: 0;
+}
+
+.sidebar-nav li .sub-menu > li a span.icon {
+  margin-right: 5px;
+  margin-top: -5px;
+  max-width: 18px;
+  max-height: 18px;
 }
 
 .sidebar-nav li .sub-menu > li a img {
@@ -9953,12 +10181,22 @@ ul.image-list li img {
   margin-top: 18px;
 }
 
-.footer .top-footer .left-column h3 img,
-.footer .top-footer .left-column span.title img,
-.footer .top-footer .left-column span img {
+.footer .top-footer .left-column h3 .icon-placeholder,
+.footer .top-footer .left-column span.title .icon-placeholder,
+.footer .top-footer .left-column span .icon-placeholder {
+  display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 6px;
+  vertical-align: middle;
+}
+
+.footer .top-footer .left-column h3 img,
+.footer .top-footer .left-column span.title img,
+.footer .top-footer .left-column span img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: baseline;
 }
 
 .footer .top-footer .left-column h3.title,
