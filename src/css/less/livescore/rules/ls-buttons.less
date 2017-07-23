@@ -144,16 +144,12 @@
 .btn-live{
   position: relative;
   padding-left: 23px;
-  
-  &:after{
+
+  .ls-live-indicator {
     position: absolute;
-    background: url("@{ls-image-live-spot}") no-repeat 0 center;
-    content: "";
-    display: block;
-    width: 8px;
-    height: 100%;
     left: 10px;
-    top: 0;
+    top: 50%;
+    margin-top: -(@ls-live-indicator-size / 2);
   }
 }
 
