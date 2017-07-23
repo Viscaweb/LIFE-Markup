@@ -14413,8 +14413,14 @@ span.glyphicon-star.active {
 .odds-slider .match-infos .table-us-match-info td.teams .team {
   display: inline;
 }
-.odds-slider .match-infos .table-us-match-info td.teams .team img {
+.odds-slider .match-infos .table-us-match-info td.teams .team .icon-placeholder {
   width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.odds-slider .match-infos .table-us-match-info td.teams .team img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .odds-slider .match-infos .table-us-match-info td.team-names {
   font-weight: 600;
