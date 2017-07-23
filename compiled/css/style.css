@@ -15515,10 +15515,14 @@ span.glyphicon-star.active {
   background: #ffffff;
   text-align: center;
 }
-.match-teams-lineups .component-container .team .table thead tr th.team-logo img {
+.match-teams-lineups .component-container .team .table thead tr th.team-logo .icon-placeholder {
+  width: 45px;
+  height: 45px;
   margin-top: 7px;
-  max-height: 45px;
-  max-width: 45px;
+}
+.match-teams-lineups .component-container .team .table thead tr th.team-logo img {
+  max-height: 100%;
+  max-width: 100%;
 }
 .match-teams-lineups .component-container .team .table thead tr th.team-logo span.positions {
   margin-top: 5px;
