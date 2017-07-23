@@ -5997,11 +5997,18 @@ table.odds-goal-scorers tbody tr th.logo {
   width: 38%;
 }
 
+table.odds-goal-scorers thead tr th.logo .icon-placeholder,
+table.odds-goal-scorers tbody tr th.logo .icon-placeholder {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 table.odds-goal-scorers thead tr th.logo img,
 table.odds-goal-scorers tbody tr th.logo img {
-  max-width: 20px;
-  max-height: 20px;
-  margin-right: 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 table.odds-goal-scorers tbody tr td i {
