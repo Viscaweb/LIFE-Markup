@@ -16814,6 +16814,9 @@ table.other-sport.sport-tennis tbody tr th i.icon-woman {
 table.other-sport.sport-tennis tbody tr td.teams .icon-placeholder {
   float: right;
 }
+table.other-sport.sport-tennis tbody tr td.teams .icon-placeholder--flag {
+  float: none;
+}
 table.other-sport tbody.my-games tr:nth-child(2) {
   border-bottom: none;
 }
