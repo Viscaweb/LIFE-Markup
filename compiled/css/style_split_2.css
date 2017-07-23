@@ -3388,6 +3388,62 @@ span.glyphicon-star.active {
   border-left: none;
 }
 
+<<<<<<< HEAD
+=======
+.icon-placeholder {
+  display: inline-block;
+}
+
+.icon-placeholder--flag {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
+}
+
+.ls-live-indicator {
+  vertical-align: middle;
+}
+
+.ls-live-indicator circle {
+  stroke: #e33000;
+  stroke-width: 1;
+  fill: transparent;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
+}
+
+@-webkit-keyframes ls-live-indicator-animation {
+  0% {
+    fill: #e33000;
+  }
+
+  50% {
+    fill: transparent;
+  }
+}
+
+@-o-keyframes ls-live-indicator-animation {
+  0% {
+    fill: #e33000;
+  }
+
+  50% {
+    fill: transparent;
+  }
+}
+
+@keyframes ls-live-indicator-animation {
+  0% {
+    fill: #e33000;
+  }
+
+  50% {
+    fill: transparent;
+  }
+}
+
+>>>>>>> ae6b603... LIMA-4: Replaced btn-live with new svg indicator
 /*Base Tables*/
 
 .popover.popover-trend,

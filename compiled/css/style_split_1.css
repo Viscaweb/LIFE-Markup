@@ -13629,15 +13629,11 @@ fieldset[disabled] .btn-prediction.btn-prediction-failed.active {
   padding-left: 23px;
 }
 
-.btn-live:after {
+.btn-live .ls-live-indicator {
   position: absolute;
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 center;
-  content: "";
-  display: block;
-  width: 8px;
-  height: 100%;
   left: 10px;
-  top: 0;
+  top: 50%;
+  margin-top: -4px;
 }
 
 .btn-selector-group .btn-selector-item {
