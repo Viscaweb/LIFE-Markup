@@ -9043,9 +9043,18 @@ span.dark-icon {
   text-overflow: ellipsis;
 }
 .table tr td.stage .icon-placeholder {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 18px;
   height: 18px;
   margin-right: 3px;
+  vertical-align: middle;
 }
 .table tr td.stage img {
   max-width: 100%;
@@ -10071,10 +10080,6 @@ span.dark-icon {
 }
 .table.matches tbody tr td span.hour {
   font-weight: 600;
-}
-.table.matches tbody tr td .icon-placeholder {
-  display: inline-block;
-  margin-right: 5px;
 }
 .table.matches tbody tr td .icon-placeholder .league {
   margin-right: 0;
@@ -17184,10 +17189,16 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-statistics tbody tr td.date {
   width: 3%;
 }
+.goals-statistics tbody tr td.logo .icon-placeholder,
+.goals-statistics tbody tr td.date .icon-placeholder {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
 .goals-statistics tbody tr td.logo img,
 .goals-statistics tbody tr td.date img {
-  max-width: 16px;
-  max-height: 16px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .goals-statistics tbody tr td.league img {
   max-height: 16px;

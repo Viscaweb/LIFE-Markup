@@ -7417,9 +7417,18 @@ span.dark-icon {
   text-overflow: ellipsis;
 }
 .table tr td.stage .icon-placeholder {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 18px;
   height: 18px;
   margin-right: 3px;
+  vertical-align: middle;
 }
 .table tr td.stage img {
   max-width: 100%;
@@ -8445,10 +8454,6 @@ span.dark-icon {
 }
 .table.matches tbody tr td span.hour {
   font-weight: 600;
-}
-.table.matches tbody tr td .icon-placeholder {
-  display: inline-block;
-  margin-right: 5px;
 }
 .table.matches tbody tr td .icon-placeholder .league {
   margin-right: 0;

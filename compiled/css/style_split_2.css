@@ -1,7 +1,3 @@
-span.sprite-icons.interrupted {
-  background-position: -31px -27px;
-}
-
 span.sprite-icons.whistle-active {
   background-position: -31px -144px;
 }
@@ -6747,10 +6743,17 @@ table.squad-listing.avatars tbody tr td.player {
   width: 3%;
 }
 
+.goals-statistics tbody tr td.logo .icon-placeholder,
+.goals-statistics tbody tr td.date .icon-placeholder {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
 .goals-statistics tbody tr td.logo img,
 .goals-statistics tbody tr td.date img {
-  max-width: 16px;
-  max-height: 16px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .goals-statistics tbody tr td.league img {
