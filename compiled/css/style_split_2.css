@@ -6518,6 +6518,14 @@ table.squad-listing tbody tr td.nationality {
   border-left: 2px solid #eaeaea;
 }
 
+table.squad-listing tbody tr td.nationality .icon-placeholder {
+  margin-right: 8px;
+}
+
+table.squad-listing tbody tr td.nationality .icon-placeholder > span {
+  margin-right: 0;
+}
+
 table.squad-listing tbody tr td.nationality span {
   margin-right: 8px;
 }
