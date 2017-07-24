@@ -7202,6 +7202,7 @@ button.close {
 /*User Left Sidebar*/
 /*Main Header*/
 /*Top BreadCrumbs*/
+/*Panels*/
 /*Matches Slider*/
 /*Match Resume*/
 /*Match Statistics*/
@@ -7209,6 +7210,7 @@ button.close {
 /*Match Timeline*/
 /*Match Head to Head*/
 /*Player Summary*/
+/*Content header*/
 /*Buttons*/
 /*Progress Bars*/
 /*Modals*/
@@ -7226,6 +7228,7 @@ button.close {
 /*Social like icons*/
 /*Player*/
 /*Upcoming Top Games - Block*/
+/*Top competitions widget*/
 /*Bootstrap Wizard Component*/
 /*Color Picker Plugin*/
 /*Widget Creator Page*/
@@ -10984,9 +10987,12 @@ span.sprite-icons.webmaster-border {
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-position: 5px center;
   background-repeat: no-repeat;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
 }
 .live-commented-matches.panel .matches tr.live td.score {
   color: #e33000;
