@@ -158,9 +158,10 @@
       &.live, &.paused{
         .status{
           padding-left: 11px;
-          background: url("@{ls-image-live-spot}") no-repeat 0 4px;
+          background: url('@{ls-live-indicator-initial-state}') no-repeat 0 4px;
           font-weight: 600;
           color: @live-red;
+          animation: @ls-live-indicator-animation;
         }
         
         table{ 
@@ -175,7 +176,7 @@
       
       &.paused{
         .status{
-          background: url("@{ls-image-paused-spot}") no-repeat 0 4px;
+          background: url('@{ls-live-indicator-initial-state}') no-repeat 0 4px;
           color: lighten(@ls-dark-color, 60.5%);
         }
       }
@@ -261,8 +262,9 @@
       &.live{
         h4, .h4{
           span.title{
-            background: url("@{ls-image-live-spot}") no-repeat 0 4px;
+            background: url('@{ls-live-indicator-initial-state}') no-repeat 0 4px;
             padding-left: 11px;
+            animation: @ls-live-indicator-animation;
           }
         }
       }

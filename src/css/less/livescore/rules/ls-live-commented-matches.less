@@ -92,9 +92,10 @@
                 font-weight: 600;
                 color: @live-red; 
                 padding-left: 17px;
-                background-image: url("@{ls-image-live-spot}");
+                background-image: url('@{ls-live-indicator-initial-state}');
                 background-position: 5px center;
                 background-repeat: no-repeat;
+                animation: @ls-live-indicator-animation;
               }
               
               &.score{
@@ -111,10 +112,7 @@
               }
             }
           }
-          
         }
       }
-      
   } 
-  
 }

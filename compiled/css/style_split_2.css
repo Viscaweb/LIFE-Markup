@@ -1596,9 +1596,12 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match.live .status,
 .matches-slider .content .match.paused .status {
   padding-left: 11px;
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
   font-weight: 600;
   color: #e33000;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .matches-slider .content .match.live table tr td.score,
@@ -1607,7 +1610,7 @@ span.sprite-icons.webmaster-border {
 }
 
 .matches-slider .content .match.paused .status {
-  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
   color: #9a9a9a;
 }
 
@@ -1684,8 +1687,11 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .slider-content > .title.live h4 span.title,
 .match-slider-inverse .slider-content > .title.live .h4 span.title {
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
   padding-left: 11px;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .match-slider-inverse .control {
@@ -1979,17 +1985,20 @@ span.sprite-icons.webmaster-border {
 }
 
 .top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   display: inline-block;
   height: 8px;
   width: 8px;
   position: relative;
   top: -1px;
   margin-right: 3px;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .top-match-block .score-board.live.paused .match-info .block div.time {
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
 }
 
 .top-match-block .score-board:hover:before {
@@ -2528,9 +2537,12 @@ span.sprite-icons.webmaster-border {
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-position: 5px center;
   background-repeat: no-repeat;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .live-commented-matches.panel .matches tr.live td.score {
@@ -6269,7 +6281,7 @@ table.other-sport tbody.live tr td.time img {
 }
 
 table.other-sport tbody.live.paused tr td.time {
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
 }
 
 table.other-sport tbody.header tr:nth-child(2),

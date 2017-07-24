@@ -207,13 +207,14 @@
               background-position: 28px center;
 
               .live-spot{
-                background-image: url("@{ls-image-live-spot}");
+                background-image: url('@{ls-live-indicator-initial-state}');
                 display: inline-block;
                 height: 8px;
                 width: 8px;
                 position: relative;
                 top: -1px;
                 margin-right: 3px;
+                animation: @ls-live-indicator-animation;
               }
             }
           }
@@ -223,7 +224,7 @@
           .match-info{
             .block{
               div.time{
-                background-image: url("@{ls-image-paused-spot}");
+                background-image: url('@{ls-live-indicator-initial-state}');
               }
             }
           }
