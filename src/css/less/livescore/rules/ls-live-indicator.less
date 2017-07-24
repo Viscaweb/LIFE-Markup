@@ -1,17 +1,6 @@
 // Live indicator
 
-.ls-live-indicator {
-	vertical-align: middle;
-
-	circle {
-		stroke: @live-red;
-		stroke-width: 1;
-		fill: transparent;
-		animation: ls-live-indicator-animation @ls-live-indicator-animation-duration step-end infinite;
-	}
-}
-
 @keyframes ls-live-indicator-animation {
-  0%   { fill: @live-red; }
-  50% { fill: transparent; }
+	0%   { background-image: url('@{ls-live-indicator-initial-state}'); }
+	50%  { background-image: url('@{ls-live-indicator-end-state}'); }
 }
