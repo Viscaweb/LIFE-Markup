@@ -18,15 +18,16 @@
 //Live TR Style
 .live-blink-gif(){
   padding-left: 15px;
-  background-image: url("@{ls-image-live-spot}");
+  background-image: url('@{ls-live-indicator-initial-state}');
   background-repeat: no-repeat;
   background-position: 5px center;
+  animation: @ls-live-indicator-animation;
 }
 
 //Paused Spot Style
 .paused-gif(){
   padding-left: 15px;
-  background-image: url("@{ls-image-paused-spot}");
+  background-image: url('@{ls-live-indicator-initial-state}');
   background-repeat: no-repeat;
   background-position: 5px center;
 }

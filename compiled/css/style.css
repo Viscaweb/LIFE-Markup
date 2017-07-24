@@ -10130,13 +10130,16 @@ span.dark-icon {
 }
 .table.matches tbody tr.live > td.time {
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
 }
 .table.matches tbody tr.live.paused > td.time {
   padding-left: 15px;
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
 }
@@ -10321,9 +10324,12 @@ span.dark-icon {
 }
 .table.table-standing tbody tr.live td.extra-points {
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
 }
 .table.layout-fixed {
   table-layout: fixed;
@@ -11117,11 +11123,18 @@ fieldset[disabled] .btn-prediction.btn-prediction-failed.active {
   position: relative;
   padding-left: 23px;
 }
-.btn-live .ls-live-indicator {
+.btn-live:after {
   position: absolute;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 center;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 100%;
   left: 10px;
-  top: 50%;
-  margin-top: -4px;
+  top: 0;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
 }
 .btn-selector-group .btn-selector-item {
   vertical-align: top;
@@ -14405,39 +14418,28 @@ span.glyphicon-star.active {
   height: 18px;
   vertical-align: text-top;
 }
-.ls-live-indicator {
-  vertical-align: middle;
-}
-.ls-live-indicator circle {
-  stroke: #e33000;
-  stroke-width: 1;
-  fill: transparent;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-       -o-animation: ls-live-indicator-animation 1s step-end infinite;
-          animation: ls-live-indicator-animation 1s step-end infinite;
-}
 @-webkit-keyframes ls-live-indicator-animation {
   0% {
-    fill: #e33000;
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   }
   50% {
-    fill: transparent;
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
   }
 }
 @-o-keyframes ls-live-indicator-animation {
   0% {
-    fill: #e33000;
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   }
   50% {
-    fill: transparent;
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
   }
 }
 @keyframes ls-live-indicator-animation {
   0% {
-    fill: #e33000;
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   }
   50% {
-    fill: transparent;
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
   }
 }
 >>>>>>> ae6b603... LIMA-4: Replaced btn-live with new svg indicator
@@ -14818,9 +14820,12 @@ span.glyphicon-star.active {
 .match-information .table tbody tr th.score .match-status span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
   background-position: 1px center;
 }
 .match-information .table tbody tr td.team-information {
@@ -14978,15 +14983,18 @@ span.glyphicon-star.active {
 .match-information.live .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
   background-position: 1px center;
 }
 .match-information.paused .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
   background-position: 1px center;
@@ -16629,9 +16637,12 @@ table.other-sport tbody.live tr td.time {
 table.other-sport tbody.live tr td.time {
   font-size: 11px;
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
 }
 table.other-sport tbody.live tr td.time img {
   margin-right: 3px;
