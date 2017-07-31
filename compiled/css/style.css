@@ -14555,6 +14555,7 @@ span.glyphicon-star.active {
 }
 .icon-placeholder {
   display: inline-block;
+  overflow: hidden;
 }
 .icon-placeholder--flag {
   width: 18px;
