@@ -1,47 +1,3 @@
-span.sprite-icons.stadium,
-span.sprite-icons.attendance {
-  background-position: -198px -97px;
-  width: 25px;
-}
-
-span.sprite-icons.info {
-  background-position: -199px -75px;
-}
-
-span.sprite-icons.whistle {
-  background-position: -3px -27px;
-}
-
-span.sprite-icons.interrupted {
-  background-position: -31px -27px;
-}
-
-span.sprite-icons.whistle-active {
-  background-position: -31px -144px;
-}
-
-span.sprite-icons.shootouts {
-  background-position: -60px -144px;
-}
-
-span.sprite-icons.goal-assist {
-  background-position: -3px -121px;
-  width: 23px;
-}
-
-span.sprite-icons.assist {
-  background-position: -31px -121px;
-  width: 23px;
-}
-
-span.sprite-icons.shootout-goal {
-  background-position: -116px -26px;
-}
-
-span.sprite-icons.own-goal {
-  background-position: -171px -26px;
-}
-
 span.sprite-icons.goal-small {
   background-position: -201px -26px;
 }
@@ -1267,19 +1223,11 @@ span.sprite-icons.webmaster-border {
   color: #424242;
 }
 
-.player .name .icon-placeholder {
-  display: inline-block;
+.player .name img {
+  margin-top: -3px;
   width: 14px;
   height: 14px;
   margin-right: 6px;
-  margin-top: -3px;
-  vertical-align: middle;
-}
-
-.player .name img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
 }
 
 .player .goals {
@@ -1542,15 +1490,8 @@ span.sprite-icons.webmaster-border {
   padding: 0 4px 0 0;
 }
 
-.matches-slider .content .match table tr td.flag .icon-placeholder {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
 .matches-slider .content .match table tr td.flag img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 16px;
 }
 
 .matches-slider .content .match table tr td.team {
@@ -1596,9 +1537,12 @@ span.sprite-icons.webmaster-border {
 .matches-slider .content .match.live .status,
 .matches-slider .content .match.paused .status {
   padding-left: 11px;
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
   font-weight: 600;
   color: #e33000;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .matches-slider .content .match.live table tr td.score,
@@ -1607,7 +1551,7 @@ span.sprite-icons.webmaster-border {
 }
 
 .matches-slider .content .match.paused .status {
-  background: url("../img/sprites/paused-spot.gif") no-repeat 0 4px;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
   color: #9a9a9a;
 }
 
@@ -1684,8 +1628,11 @@ span.sprite-icons.webmaster-border {
 
 .match-slider-inverse .slider-content > .title.live h4 span.title,
 .match-slider-inverse .slider-content > .title.live .h4 span.title {
-  background: url("../img/sprites/live-spot.gif") no-repeat 0 4px;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>') no-repeat 0 4px;
   padding-left: 11px;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .match-slider-inverse .control {
@@ -1777,15 +1724,13 @@ span.sprite-icons.webmaster-border {
   border-bottom: 2px solid #efefef;
 }
 
-.top-match-block .top-match .shields .icon-placeholder {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
+.top-match-block .top-match .shields img {
+  max-height: 28px;
+  max-width: 28px;
 }
 
-.top-match-block .top-match .shields img {
-  max-height: 100%;
-  max-width: 100%;
+.top-match-block .top-match .shields img:last-child {
+  margin-left: 2px;
 }
 
 .top-match-block .top-match .teams {
@@ -1908,15 +1853,9 @@ span.sprite-icons.webmaster-border {
   text-align: center;
 }
 
-.top-match-block .score-board .team .icon-placeholder {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-}
-
 .top-match-block .score-board .team img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .top-match-block .score-board .team1 {
@@ -1979,17 +1918,20 @@ span.sprite-icons.webmaster-border {
 }
 
 .top-match-block .score-board.live .match-info .block div.time .live-spot {
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   display: inline-block;
   height: 8px;
   width: 8px;
   position: relative;
   top: -1px;
   margin-right: 3px;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .top-match-block .score-board.live.paused .match-info .block div.time {
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
 }
 
 .top-match-block .score-board:hover:before {
@@ -2230,17 +2172,8 @@ span.sprite-icons.webmaster-border {
   border-bottom-color: #529100;
 }
 
-.top-competitions-block.panel .nav-pills > li > a .icon-placeholder {
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-}
-
-.top-competitions-block.panel .nav-pills > li > a img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+.top-competitions-block.panel .nav-pills > li > a > img {
+  max-width: 20px;
 }
 
 .top-competitions-block.panel .nav-pills > li > a .icon-caret-down {
@@ -2274,16 +2207,9 @@ span.sprite-icons.webmaster-border {
   padding: 15px;
 }
 
-.top-competitions-block.panel .active-ligue .icon-placeholder {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  float: right;
-}
-
 .top-competitions-block.panel .active-ligue .ligue-logo {
-  max-width: 100%;
-  max-height: 100%;
+  float: right;
+  max-width: 32px;
 }
 
 .top-competitions-block.panel .active-ligue h4,
@@ -2528,9 +2454,12 @@ span.sprite-icons.webmaster-border {
   font-weight: 600;
   color: #e33000;
   padding-left: 17px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-position: 5px center;
   background-repeat: no-repeat;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 .live-commented-matches.panel .matches tr.live td.score {
@@ -3262,28 +3191,28 @@ span.glyphicon-star.active {
   color: #ffffff;
 }
 
-.discussion .comment-thread-body {
-  padding: 20px;
+.discussion .panel-body ul {
+  border: 0;
 }
 
-.discussion .comment-thread-body ul {
-  border-width: 0 0 1px 0;
-}
-
-.discussion .comment-thread-body ul li:first-child {
+.discussion .panel-body ul li:first-child {
   padding-top: 0;
 }
 
-.discussion .comment-thread-body ul li a img {
+.discussion .panel-body ul li a img {
   max-width: 48px;
 }
 
-.discussion .comment-thread-body ul li .media-body .media-heading {
+.discussion .panel-body ul li .media-body .media-heading {
   overflow: hidden;
 }
 
-.discussion .comment-thread-body ul li .media-body .message-edit {
+.discussion .panel-body ul li .media-body .message-edit {
   margin-top: 10px;
+}
+
+.discussion .panel-body ul li.view-all {
+  padding-bottom: 0;
 }
 
 .discussion .make-prediction {
@@ -3380,15 +3309,8 @@ span.glyphicon-star.active {
   display: inline;
 }
 
-.odds-slider .match-infos .table-us-match-info td.teams .team .icon-placeholder {
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-}
-
 .odds-slider .match-infos .table-us-match-info td.teams .team img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 50px;
 }
 
 .odds-slider .match-infos .table-us-match-info td.team-names {
@@ -3512,6 +3434,36 @@ span.glyphicon-star.active {
 
 .odds-slider .content .sportsbook-odds table tr td.odd {
   border-left: none;
+}
+
+@-webkit-keyframes ls-live-indicator-animation {
+  0% {
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  }
+
+  50% {
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
+  }
+}
+
+@-o-keyframes ls-live-indicator-animation {
+  0% {
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  }
+
+  50% {
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
+  }
+}
+
+@keyframes ls-live-indicator-animation {
+  0% {
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  }
+
+  50% {
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
+  }
 }
 
 .icon-placeholder {
@@ -3835,15 +3787,9 @@ span.glyphicon-star.active {
   padding: 0;
 }
 
-.match-information .table tbody tr th.team .logo .icon-placeholder {
-  display: inline-block;
-  width: 38px;
-  height: 38px;
-}
-
 .match-information .table tbody tr th.team .logo img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 38px;
+  max-height: 38px;
 }
 
 .match-information .table tbody tr th.team .logo:hover img {
@@ -3983,9 +3929,12 @@ span.glyphicon-star.active {
 .match-information .table tbody tr th.score .match-status span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
   background-position: 1px center;
 }
 
@@ -4177,16 +4126,19 @@ span.glyphicon-star.active {
 .match-information.live .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
   background-position: 1px center;
 }
 
 .match-information.paused .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
   background-position: 1px center;
@@ -4232,16 +4184,12 @@ span.glyphicon-star.active {
   position: absolute;
 }
 
-.match-timeline .team-logos .team .icon-placeholder {
-  width: 38px;
-  height: 38px;
-  vertical-align: top;
-  margin-right: 5px;
-}
-
 .match-timeline .team-logos .team img {
-  max-width: 100%;
-  max-height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  max-width: 38px;
+  max-height: 38px;
+  margin-right: 5px;
 }
 
 .match-timeline .team-logos .team .name {
@@ -4722,15 +4670,10 @@ span.glyphicon-star.active {
   text-align: center;
 }
 
-.match-teams-lineups .component-container .team .table thead tr th.team-logo .icon-placeholder {
-  width: 45px;
-  height: 45px;
-  margin-top: 7px;
-}
-
 .match-teams-lineups .component-container .team .table thead tr th.team-logo img {
-  max-height: 100%;
-  max-width: 100%;
+  margin-top: 7px;
+  max-height: 45px;
+  max-width: 45px;
 }
 
 .match-teams-lineups .component-container .team .table thead tr th.team-logo span.positions {
@@ -5030,15 +4973,10 @@ span.glyphicon-star.active {
   text-align: center;
 }
 
-.table.teams-lineups thead tr th.team-logo .icon-placeholder {
-  width: 45px;
-  height: 45px;
-  margin-top: 7px;
-}
-
 .table.teams-lineups thead tr th.team-logo img {
-  max-height: 100%;
-  max-width: 100%;
+  margin-top: 7px;
+  max-height: 45px;
+  max-width: 45px;
 }
 
 .table.teams-lineups thead tr th.team-logo span.positions {
@@ -5339,14 +5277,9 @@ span.glyphicon-star.active {
   outline: none;
 }
 
-.iframe .match-tips ul.media-list li.media .tip-container a.avatar .icon-placeholder {
-  width: 48px;
-  height: 48px;
-}
-
 .iframe .match-tips ul.media-list li.media .tip-container a.avatar img {
-  height: 100%;
-  width: 100%;
+  height: 48px;
+  width: 48px;
 }
 
 .iframe .match-tips ul.media-list li.media .tip-container .media-body {
@@ -5403,14 +5336,9 @@ span.glyphicon-star.active {
   outline: none;
 }
 
-.panel.match-tips ul.media-list li.media .tip-container a.avatar .icon-placeholder {
-  width: 48px;
-  height: 48px;
-}
-
 .panel.match-tips ul.media-list li.media .tip-container a.avatar img {
-  height: 100%;
-  width: 100%;
+  height: 48px;
+  width: 48px;
 }
 
 .panel.match-tips ul.media-list li.media .tip-container .media-body {
@@ -5468,14 +5396,9 @@ span.glyphicon-star.active {
   outline: none;
 }
 
-.tips-list ul.media-list li.media .tip-container a.avatar .icon-placeholder {
-  width: 48px;
-  height: 48px;
-}
-
 .tips-list ul.media-list li.media .tip-container a.avatar img {
-  height: 100%;
-  width: 100%;
+  height: 48px;
+  width: 48px;
 }
 
 .tips-list ul.media-list li.media .tip-container .media-body {
@@ -6022,18 +5945,11 @@ table.odds-goal-scorers tbody tr th.logo {
   width: 38%;
 }
 
-table.odds-goal-scorers thead tr th.logo .icon-placeholder,
-table.odds-goal-scorers tbody tr th.logo .icon-placeholder {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
 table.odds-goal-scorers thead tr th.logo img,
 table.odds-goal-scorers tbody tr th.logo img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 5px;
 }
 
 table.odds-goal-scorers tbody tr td i {
@@ -6206,9 +6122,12 @@ table.other-sport tbody.live tr td.time {
 table.other-sport tbody.live tr td.time {
   font-size: 11px;
   padding-left: 15px;
-  background-image: url("../img/sprites/live-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+  -o-animation: ls-live-indicator-animation 1s step-end infinite;
+  animation: ls-live-indicator-animation 1s step-end infinite;
 }
 
 table.other-sport tbody.live tr td.time img {
@@ -6216,7 +6135,7 @@ table.other-sport tbody.live tr td.time img {
 }
 
 table.other-sport tbody.live.paused tr td.time {
-  background-image: url("../img/sprites/paused-spot.gif");
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
 }
 
 table.other-sport tbody.header tr:nth-child(2),
@@ -6259,7 +6178,7 @@ table.other-sport.sport-tennis tbody tr th i.icon-woman {
   color: #ffaef7;
 }
 
-table.other-sport.sport-tennis tbody tr td.teams .icon-placeholder {
+table.other-sport.sport-tennis tbody tr td.teams img {
   float: right;
 }
 
@@ -6274,19 +6193,10 @@ table.other-sport tbody.my-games tr td[rowspan] {
 
 /*League Summary*/
 
-ol.breadcrumb li a .icon-placeholder {
-  display: inline-block;
+ol.breadcrumb li a img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
-  margin-left: 0;
-  vertical-align: middle;
-}
-
-ol.breadcrumb li a img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
 }
 
 .panel .panel-heading span.icon-football {
@@ -6318,17 +6228,9 @@ ol.breadcrumb li a img {
   width: 5%;
 }
 
-.panel .table.league-clubs tbody tr td.logo .icon-placeholder {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-}
-
 .panel .table.league-clubs tbody tr td.logo img {
-  max-height: 100%;
-  max-width: 100%;
-  vertical-align: baseline;
+  max-height: 18px;
+  max-width: 18px;
 }
 
 .panel .table.league-clubs tbody tr td.name {
@@ -6404,18 +6306,10 @@ table.links-table tbody tr td > a {
   display: block;
 }
 
-table.links-table tbody tr td > a .icon-placeholder {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
 table.links-table tbody tr td > a img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 5px;
 }
 
 table.links-table tbody tr td > a span.icon-caret-right {
@@ -6804,17 +6698,10 @@ table.squad-listing.avatars tbody tr td.player {
   width: 3%;
 }
 
-.goals-statistics tbody tr td.logo .icon-placeholder,
-.goals-statistics tbody tr td.date .icon-placeholder {
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-}
-
 .goals-statistics tbody tr td.logo img,
 .goals-statistics tbody tr td.date img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 16px;
+  max-height: 16px;
 }
 
 .goals-statistics tbody tr td.league img {
@@ -7493,17 +7380,9 @@ main .matches-widgets td.content span.empty {
   width: 3%;
 }
 
-.teams-table table tbody tr td.logo .icon-placeholder {
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-  vertical-align: middle;
-}
-
 .teams-table table tbody tr td.logo img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+  max-width: 18px;
+  max-height: 18px;
 }
 
 .contest-standings .filters {
@@ -7957,17 +7836,8 @@ main .content .league-list ul li span.logo {
   margin: 0 8px;
 }
 
-main .content .league-list ul li span.logo .icon-placeholder {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-}
-
 main .content .league-list ul li span.logo img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+  max-width: 18px;
 }
 
 main .content .league-list ul li span.fav .icon {
@@ -8118,28 +7988,20 @@ ul.profile-nav li:first-child {
   margin-bottom: 10px;
 }
 
-.content ul.media-list li .match-info .icon-placeholder {
-  position: absolute;
-  display: inline-block;
-  width: 47px;
-  height: 47px;
+.content ul.media-list li .match-info img {
+  max-width: 47px;
+  max-height: 47px;
   margin-top: 12px;
-  vertical-align: middle;
+  position: absolute;
 }
 
-.content ul.media-list li .match-info .icon-placeholder.team1 {
+.content ul.media-list li .match-info img.team1 {
   left: 15px;
 }
 
-.content ul.media-list li .match-info .icon-placeholder.team2 {
+.content ul.media-list li .match-info img.team2 {
   right: 15px;
   top: 0;
-}
-
-.content ul.media-list li .match-info img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
 }
 
 .content ul.media-list li .match-info table.user-prediction {
@@ -8215,15 +8077,9 @@ ul.image-list li {
   padding: 13px;
 }
 
-ul.image-list li .icon-placeholder {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-}
-
 ul.image-list li img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 35px;
+  max-height: 35px;
 }
 
 .contest-ranking .panel-body {
@@ -8411,8 +8267,8 @@ ul.image-list li img {
 
 .change-profile-image > .row .options .avatars-list ul > li .img img,
 .change-profile-image > .row .options .avatars-list ul > li .logo img {
-  max-height: 100%;
-  max-width: 100%;
+  height: 52px;
+  width: 52px;
 }
 
 .change-profile-image > .row .options .avatars-list ul > li .name {
@@ -8931,15 +8787,9 @@ ul.image-list li img {
   display: table-cell;
 }
 
-.article-match-info .team .icon-placeholder {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
-
 .article-match-info .team img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .article-match-info .team.team1 {
@@ -8948,7 +8798,7 @@ ul.image-list li img {
   color: #5c5c5c;
 }
 
-.article-match-info .team.team1 .icon-placeholder {
+.article-match-info .team.team1 img {
   float: left;
 }
 
@@ -8958,7 +8808,7 @@ ul.image-list li img {
   color: #5c5c5c;
 }
 
-.article-match-info .team.team2 .icon-placeholder {
+.article-match-info .team.team2 img {
   float: right;
 }
 
@@ -9144,27 +8994,27 @@ ul.image-list li img {
   margin-bottom: 20px;
 }
 
-.discussion span.users-list-title {
+.discussion .panel-body span.users-list-title {
   font-size: 12px;
 }
 
-.discussion span.users-list-title .active {
+.discussion .panel-body span.users-list-title .active {
   color: #5da400;
 }
 
-.discussion ul.users-list {
+.discussion .panel-body ul.users-list {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
 }
 
-.discussion ul.users-list li {
+.discussion .panel-body ul.users-list li {
   display: inline-block;
   padding: 8px;
   vertical-align: top;
 }
 
-.discussion ul.users-list li a {
+.discussion .panel-body ul.users-list li a {
   border-radius: 50%;
   background-color: #fafafa;
   display: block;
@@ -9173,12 +9023,12 @@ ul.image-list li img {
   text-align: center;
 }
 
-.discussion ul.users-list li a img {
+.discussion .panel-body ul.users-list li a img {
   max-width: 36px;
   max-height: 36px;
 }
 
-.discussion ul.users-list li a span {
+.discussion .panel-body ul.users-list li a span {
   line-height: 36px;
   font-size: 10px;
 }
@@ -9376,18 +9226,9 @@ ul.image-list li img {
   line-height: 14px;
 }
 
-.streaming-table table tbody tr td ul > li > a .title .icon-placeholder {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
 .streaming-table table tbody tr td ul > li > a .title img {
-  max-height: 100%;
-  max-width: 100%;
-  vertical-align: baseline;
+  max-height: 14px;
+  margin-right: 5px;
 }
 
 .streaming-table table tbody tr td ul > li > a .description {
@@ -9515,23 +9356,6 @@ ul.image-list li img {
 .search-block div.checkbox {
   display: block;
   margin-bottom: 13px;
-}
-
-.dropdown-search li a .icon-placeholder {
-  display: inline-block;
-  height: 20px;
-  margin-right: 5px;
-  width: 20px;
-  vertical-align: middle;
-}
-
-.dropdown-search li a .icon-placeholder img {
-  height: auto;
-  width: auto;
-  max-height: 100%;
-  max-width: 100%;
-  vertical-align: baseline;
-  margin-right: 0;
 }
 
 .dropdown-search li a img {
@@ -9764,13 +9588,6 @@ ul.image-list li img {
 
 .sidebar-nav li .sub-menu > li a .icon-placeholder > img {
   margin: 0;
-}
-
-.sidebar-nav li .sub-menu > li a span.icon {
-  margin-right: 5px;
-  margin-top: -5px;
-  max-width: 18px;
-  max-height: 18px;
 }
 
 .sidebar-nav li .sub-menu > li a img {
@@ -10181,22 +9998,12 @@ ul.image-list li img {
   margin-top: 18px;
 }
 
-.footer .top-footer .left-column h3 .icon-placeholder,
-.footer .top-footer .left-column span.title .icon-placeholder,
-.footer .top-footer .left-column span .icon-placeholder {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
 .footer .top-footer .left-column h3 img,
 .footer .top-footer .left-column span.title img,
 .footer .top-footer .left-column span img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: baseline;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
 }
 
 .footer .top-footer .left-column h3.title,
