@@ -10738,6 +10738,12 @@ button.close {
   margin-right: 0;
 }
 
+.content-header .info .additionnal-info .icon-placeholder img,
+.content-header .info .additionnal-info .icon-placeholder svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .content-header .info .additionnal-info span {
   margin-right: 5px;
 }
@@ -14329,12 +14335,4 @@ span.sprite-icons.goal-assist {
 span.sprite-icons.assist {
   background-position: -31px -121px;
   width: 23px;
-}
-
-span.sprite-icons.shootout-goal {
-  background-position: -116px -26px;
-}
-
-span.sprite-icons.own-goal {
-  background-position: -171px -26px;
 }

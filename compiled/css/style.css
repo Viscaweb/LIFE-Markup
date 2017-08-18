@@ -8740,6 +8740,11 @@ button.close {
 .content-header .info .additionnal-info .icon-placeholder > span {
   margin-right: 0;
 }
+.content-header .info .additionnal-info .icon-placeholder img,
+.content-header .info .additionnal-info .icon-placeholder svg {
+  max-height: 100%;
+  max-width: 100%;
+}
 .content-header .info .additionnal-info span {
   margin-right: 5px;
 }
@@ -14482,6 +14487,12 @@ span.glyphicon-star.active {
 }
 .icon-placeholder {
   display: inline-block;
+  overflow: hidden;
+}
+.icon-placeholder--flag {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
 }
 /*Base Tables*/
 .popover.popover-trend,

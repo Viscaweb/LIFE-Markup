@@ -1,3 +1,11 @@
+span.sprite-icons.shootout-goal {
+  background-position: -116px -26px;
+}
+
+span.sprite-icons.own-goal {
+  background-position: -171px -26px;
+}
+
 span.sprite-icons.goal-small {
   background-position: -201px -26px;
 }
@@ -3468,6 +3476,13 @@ span.glyphicon-star.active {
 
 .icon-placeholder {
   display: inline-block;
+  overflow: hidden;
+}
+
+.icon-placeholder--flag {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
 }
 
 /*Base Tables*/
