@@ -1136,6 +1136,11 @@ span.sprite-icons.webmaster-border {
   max-width: 100%;
 }
 
+.visual-block > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visual-bg {
   background-repeat: no-repeat;
   background-position: center 114px;
