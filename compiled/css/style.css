@@ -14451,6 +14451,18 @@ span.glyphicon-star.active {
     background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>');
   }
 }
+.content-match-listing-hide-tabs #match-listing-filter-panel,
+.content-match-listing-hide-tabs #match-listing-filter-panel:before,
+.content-match-listing-hide-tabs #match-listing-filter-panel:after {
+  display: none;
+  content: "";
+}
+.content-match-listing-hide-tabs .panel > .panel-body + .table,
+.content-match-listing-hide-tabs .panel > .panel-body + .table-responsive,
+.content-match-listing-hide-tabs .panel > .table + .panel-body,
+.content-match-listing-hide-tabs .panel > .table-responsive + .panel-body {
+  border-top: none;
+}
 /*Base Tables*/
 .popover.popover-trend,
 .popover.popover-tips {
