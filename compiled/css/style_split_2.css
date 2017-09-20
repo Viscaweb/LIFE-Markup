@@ -3572,6 +3572,20 @@ span.glyphicon-star.active {
   }
 }
 
+.content-match-listing-hide-tabs #match-listing-filter-panel,
+.content-match-listing-hide-tabs #match-listing-filter-panel:before,
+.content-match-listing-hide-tabs #match-listing-filter-panel:after {
+  display: none;
+  content: "";
+}
+
+.content-match-listing-hide-tabs .panel > .panel-body + .table,
+.content-match-listing-hide-tabs .panel > .panel-body + .table-responsive,
+.content-match-listing-hide-tabs .panel > .table + .panel-body,
+.content-match-listing-hide-tabs .panel > .table-responsive + .panel-body {
+  border-top: none;
+}
+
 /*Base Tables*/
 
 .popover.popover-trend,
