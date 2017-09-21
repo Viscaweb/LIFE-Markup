@@ -12587,7 +12587,7 @@ span.sprite-icons.webmaster-border {
   padding: 8px 0 13px;
   text-align: center;
 }
-.visual-top > div {
+.visual-top > * {
   display: block;
   margin: 0 auto;
 }
