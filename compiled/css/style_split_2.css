@@ -1243,7 +1243,7 @@ span.sprite-icons.webmaster-border {
   text-align: center;
 }
 
-.visual-top > div {
+.visual-top > * {
   display: block;
   margin: 0 auto;
 }
