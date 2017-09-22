@@ -12560,8 +12560,17 @@ span.sprite-icons.webmaster-border {
     background-size: 18px;
   }
 }
+.visual-block,
+.visual-bg,
+.visual-bg-only,
+.visual-bg-fixed,
+.visual-bg-prom,
+.visual-top-bg {
+  border-width: 0;
+}
 .visual-block {
   background: #d4d4d4;
+  margin: 0;
 }
 .visual-block img {
   max-width: 100%;
