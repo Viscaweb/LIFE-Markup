@@ -1133,6 +1133,7 @@ span.sprite-icons.webmaster-border {
 .visual-bg-only,
 .visual-bg-fixed,
 .visual-bg-prom,
+.visual-top,
 .visual-top-bg {
   border-width: 0;
 }
@@ -1140,10 +1141,10 @@ span.sprite-icons.webmaster-border {
 .visual-top,
 .visual-top-bg {
   margin-bottom: 0;
+  background-color: #ebebeb;
 }
 
 .visual-block {
-  background: #d4d4d4;
   margin: 0;
 }
 
