@@ -4276,9 +4276,12 @@ span.glyphicon-star.active {
 .match-information.paused .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23a3a3a3" stroke-width="1" fill="%23a3a3a3"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
+  -webkit-animation: none;
+  -o-animation: none;
+  animation: none;
   background-position: 1px center;
 }
 
