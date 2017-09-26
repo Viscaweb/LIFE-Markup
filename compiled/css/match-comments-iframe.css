@@ -8577,7 +8577,7 @@ span.dark-icon {
 }
 .table.matches tbody tr.live.paused > td.time {
   padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23a3a3a3" stroke-width="1" fill="%23a3a3a3"/></svg>');
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23b3b3b3" stroke-width="1" fill="%23b3b3b3"/></svg>');
   background-repeat: no-repeat;
   background-position: 5px center;
   -webkit-animation: none;
