@@ -9475,7 +9475,7 @@ button.close {
   border-radius: 2px 0 0 2px;
   color: #878787;
   font-size: 13px -1;
-  font-weight: 400;
+  font-weight: 500;
   box-shadow: none;
   padding: 0px 15px;
   height: 36px;
@@ -10042,7 +10042,7 @@ button.close {
 }
 
 .panel.panel-condensed .panel-body {
-  font-weight: 400;
+  font-weight: 500;
   padding: 15px;
 }
 
@@ -10663,7 +10663,7 @@ button.close {
 }
 
 .content-header .info .title > .title-value {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 23px;
   line-height: 28px;
   color: #424242;
@@ -10709,7 +10709,7 @@ button.close {
 }
 
 .content-header .info .btn-link {
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 5px;
 }
 
@@ -10761,7 +10761,7 @@ button.close {
 .content-header.player .info .title .last-name {
   margin: 0;
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 27px;
   line-height: 32px;
   color: #424242;
@@ -10868,7 +10868,7 @@ body.iframe {
 }
 
 p {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
 }
 
@@ -10887,12 +10887,12 @@ p.lead b {
 small,
 .small {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 ul li,
 ol li {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a:hover {
@@ -10981,13 +10981,13 @@ iframe {
 
 .page-message .title {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .page-message .sub-title {
   color: #cccccc;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   margin-bottom: 20px;
 }
@@ -11148,7 +11148,7 @@ span.dark-icon {
 .table tr.league-data > th > .title .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .table tr.league-data > th > .title .country span.icon {
@@ -11316,7 +11316,7 @@ span.dark-icon {
 
 .table tbody tr > th span.match-name {
   color: rgba(255, 255, 255, 0.6) !important;
-  font-weight: 400;
+  font-weight: 500;
   display: none;
 }
 
@@ -11653,7 +11653,7 @@ span.dark-icon {
 .table tbody tr.league-data > th > .title .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .table tbody tr.league-data > th > .title .country span.icon {
@@ -12284,7 +12284,7 @@ span.dark-icon {
   position: absolute;
   background-color: #f5f5f5;
   font-size: 9px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 1px 6px;
   text-transform: none;
   z-index: 2;
@@ -12358,7 +12358,7 @@ span.dark-icon {
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
   background-color: #dc0000;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   top: -2px;
 }
@@ -12482,7 +12482,7 @@ span.dark-icon {
 .table.matches tr.league-data th .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .table.matches tr.league-data th a {
@@ -12505,7 +12505,7 @@ span.dark-icon {
 .table.matches tr.league-data th .tools a {
   display: inline-block;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .table.matches tr.league-data th .tools a i {

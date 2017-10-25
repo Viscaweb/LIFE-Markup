@@ -1218,7 +1218,7 @@ span.sprite-icons.webmaster-border {
 .player .goals {
   display: inline-block;
   font-size: 52px;
-  font-weight: 400;
+  font-weight: 500;
   color: #8a8a8a;
   margin-bottom: 0;
 }
@@ -2015,7 +2015,7 @@ span.sprite-icons.webmaster-border {
   font-size: 14px;
   margin-bottom: 6px;
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .top-match-block .make-prediction .prediction {
@@ -2217,7 +2217,7 @@ span.sprite-icons.webmaster-border {
 }
 
 .top-competitions-block.panel .active-ligue .btn-group .btn {
-  font-weight: 400;
+  font-weight: 500;
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -2970,7 +2970,7 @@ span.glyphicon-star.active {
   padding: 17px 20px;
   padding-left: 40px;
   border-radius: 0 !important;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   background-color: #f9f9f9;
   border-bottom: 0 !important;
@@ -3103,7 +3103,7 @@ span.glyphicon-star.active {
 }
 
 .step-heading .description {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -3644,7 +3644,7 @@ span.glyphicon-star.active {
 .odds-selector .content p {
   margin: 0;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .odds-selector .button {
@@ -3703,7 +3703,7 @@ span.glyphicon-star.active {
 }
 
 .match-information .panel-heading .panel-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   width: 65%;
   line-height: 21px;
@@ -4388,7 +4388,7 @@ span.glyphicon-star.active {
 .match-timeline .timeline-scroll .match-time-zones .time-zone .label {
   font-family: Tahoma;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 10px 5px;
   vertical-align: bottom;
   display: table-cell;
@@ -4813,7 +4813,7 @@ span.glyphicon-star.active {
   display: block;
   color: #ffffff;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: none;
   text-align: center;
   white-space: nowrap;
@@ -5308,7 +5308,7 @@ span.glyphicon-star.active {
 
 .iframe .match-tips .make-bet p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .iframe .match-tips.iframe {
@@ -5367,7 +5367,7 @@ span.glyphicon-star.active {
 
 .panel.match-tips .make-bet p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .panel.match-tips iframe {
@@ -5427,7 +5427,7 @@ span.glyphicon-star.active {
 
 .tips-list .make-bet p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .table.live-commentary {
@@ -5437,7 +5437,7 @@ span.glyphicon-star.active {
 .table.live-commentary tbody tr td {
   vertical-align: middle;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .table.live-commentary tbody tr td.minute {
@@ -5460,7 +5460,7 @@ span.glyphicon-star.active {
 
 .table.live-commentary tbody tr td.content p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -5720,7 +5720,7 @@ span.glyphicon-star.active {
   display: table-cell;
   vertical-align: middle;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -5997,7 +5997,7 @@ table.odds-goal-scorers tbody tr td:first-child {
 .offer-simple .content p {
   margin: 0;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .offer-simple .button {
@@ -6011,7 +6011,7 @@ table.odds-goal-scorers tbody tr td:first-child {
 table.other-sport thead span.match-name,
 table.other-sport tbody tr th span.match-name {
   color: #d6d6d6 !important;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 table.other-sport thead tr th {
@@ -6068,7 +6068,7 @@ table.other-sport tbody tr td.score {
   width: 5%;
   text-align: center;
   font-size: 14px;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   padding-top: 1px !important;
   border: 1px solid #fafafa;
   border-top: none;
@@ -6466,7 +6466,7 @@ table.squad-listing.avatars tbody tr td.player {
 .player-statistics > .row.stat-values > div h1.result,
 .player-statistics > .row.stat-values > div .result {
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 500;
   display: inline-block;
   line-height: 1.1;
   margin-top: 0;
@@ -6509,7 +6509,7 @@ table.squad-listing.avatars tbody tr td.player {
 .player-statistics .statistics h2.result,
 .player-statistics .statistics .result {
   font-size: 29px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
   text-align: right;
   display: inline-block;
@@ -6615,12 +6615,12 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-distribution > .row > div p {
   font-size: 13px;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .goals-distribution > .row > div h4,
 .goals-distribution > .row > div .content {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   display: block;
   margin: 9px 0;
@@ -6670,7 +6670,7 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-statistics thead tr th.statistics-title .stat .result,
 .goals-statistics tbody tr th.statistics-title .stat .result {
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 500;
   display: inline-block;
   margin: 5px 0;
   line-height: 1.1;
@@ -6878,7 +6878,7 @@ table.squad-listing.avatars tbody tr td.player {
 }
 
 .widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .radio label {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .widget-creator-settings-validation > .row > div .widget-parameters.widget-style .form-group .value .select-component {
@@ -7419,7 +7419,7 @@ main .matches-widgets td.content span.empty {
 }
 
 .predictions-filter .row label {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
 }
 
@@ -7667,7 +7667,7 @@ main .matches-widgets td.content span.empty {
 
 .successfully p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .successfully button {
@@ -7918,7 +7918,7 @@ main .content .league-list ul li.item-placeholder {
   bottom: 10px;
   left: 180px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -8423,7 +8423,7 @@ ul.image-list li img {
 .webmaster-banner .banner-title span.subtitle {
   font-size: 32px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .webmaster-banner .banner-title span.small {
@@ -9134,7 +9134,7 @@ ul.image-list li img {
   display: block;
   margin-top: 10px;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /*Streaming*/
@@ -9182,7 +9182,7 @@ ul.image-list li img {
 
 .streaming-table table thead tr th span {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .streaming-table table tbody tr td {
@@ -9234,7 +9234,7 @@ ul.image-list li img {
   margin-top: 3px;
   line-height: 14px;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .streaming-table table tbody tr td ul > li > a .hover {
@@ -9464,7 +9464,7 @@ ul.image-list li img {
 
 .sidebar-nav li {
   position: relative;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .sidebar-nav li.active > a {
