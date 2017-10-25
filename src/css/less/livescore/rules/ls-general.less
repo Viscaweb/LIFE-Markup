@@ -8,18 +8,18 @@ body{
 }
 
 p{
-  font-weight: lighter;
+  font-weight: @font-weight-normal;
   line-height: @ls-paragraph-line-height;
   
   b{
-    font-weight: 600;
+    font-weight: @font-weight-semi-bold;
   }
   
   &.lead{
     font-size: @font-size-large + 1px;
 
     b{
-      font-weight: bold;
+      font-weight: @font-weight-bold;
     }
   }
   
@@ -27,13 +27,13 @@ p{
 
 small,.small{
   font-size: @font-size-base;
-  font-weight: normal;
+  font-weight: @font-weight-normal;
 }
 
 ul, ol {
 
   li {
-    font-weight: lighter;
+    font-weight: @font-weight-normal;
   }
 }
 
@@ -124,14 +124,14 @@ iframe{
   .title {
     &:extend(h1);
     display: block;
-    font-weight: 200;
+    font-weight: @font-weight-normal;
   }
 
   .sub-title {
     &:extend(h4);
     color : darken(@ls-light-color, 20%);
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: @font-weight-normal;
     display: block;
     margin-bottom: 20px;
   }

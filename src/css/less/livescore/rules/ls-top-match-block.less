@@ -22,7 +22,7 @@
         text-transform: uppercase;
         padding-top: 5px;
         font-size: @font-size-small - 1;
-        font-weight: 600;
+        font-weight: @font-weight-semi-bold;
       }
       
       &.active, &:hover{
@@ -88,7 +88,7 @@
         top: 0;
         right: 0;
         font-size: @font-size-small - 1;
-        font-weight: 600;
+        font-weight: @font-weight-semi-bold;
         line-height: 21px;
         color: @ls-light-color;
         padding-right: 10px;
@@ -101,7 +101,7 @@
         width: 100%;
         color: @ls-light-color;
         font-size: @font-size-large;
-        font-weight: 700;
+        font-weight: @font-weight-bold;
         display: flex;
         justify-content: center;
 
@@ -324,7 +324,7 @@
         font-size: @font-size-normal;
         margin-bottom: 6px;
         display: block;
-        font-weight: 100;
+        font-weight: @font-weight-normal;
       }
 
       .prediction {
@@ -342,7 +342,7 @@
         .team {
 
           color: lighten(@ls-dark-color, 36%);
-          font-weight: 600;
+          font-weight: @font-weight-semi-bold;
 
           &.home {
             text-align: right;
@@ -410,7 +410,7 @@
         margin-bottom: 12px;
         font-size: @font-size-small;
         line-height: 13px;
-        font-weight: 600;
+        font-weight: @font-weight-semi-bold;
         padding-left: 27px;
         
         span{
