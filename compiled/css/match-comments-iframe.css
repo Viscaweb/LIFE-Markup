@@ -7243,7 +7243,7 @@ body.iframe {
   background: #ffffff;
 }
 p {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
 }
 p b {
@@ -7258,11 +7258,11 @@ p.lead b {
 small,
 .small {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 ul li,
 ol li {
-  font-weight: 400;
+  font-weight: 500;
 }
 a:hover {
   text-decoration: none;
@@ -7333,12 +7333,12 @@ iframe {
 }
 .page-message .title {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
 }
 .page-message .sub-title {
   color: #cccccc;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   margin-bottom: 20px;
 }
@@ -7495,7 +7495,7 @@ span.dark-icon {
 .table tr.league-data > th > .title .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  font-weight: 500;
 }
 .table tr.league-data > th > .title .country span.icon {
   color: #ffffff;
@@ -7632,7 +7632,7 @@ span.dark-icon {
 }
 .table tbody tr > th span.match-name {
   color: rgba(255, 255, 255, 0.6) !important;
-  font-weight: 400;
+  font-weight: 500;
   display: none;
 }
 .table tbody tr > th:hover span.match-name {
@@ -7912,7 +7912,7 @@ span.dark-icon {
 .table tbody tr.league-data > th > .title .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  font-weight: 500;
 }
 .table tbody tr.league-data > th > .title .country span.icon {
   color: #ffffff;
@@ -8420,7 +8420,7 @@ span.dark-icon {
   position: absolute;
   background-color: #f5f5f5;
   font-size: 9px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 1px 6px;
   text-transform: none;
   z-index: 2;
@@ -8485,7 +8485,7 @@ span.dark-icon {
 .table.matches tbody tr td.team .red-card {
   padding: 0 2px;
   background-color: #dc0000;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   top: -2px;
 }
@@ -8598,7 +8598,7 @@ span.dark-icon {
 .table.matches tr.league-data th .country {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  font-weight: 500;
 }
 .table.matches tr.league-data th a {
   color: #ffffff;
@@ -8616,7 +8616,7 @@ span.dark-icon {
 .table.matches tr.league-data th .tools a {
   display: inline-block;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
 }
 .table.matches tr.league-data th .tools a i {
   font-size: 18px;
@@ -11327,7 +11327,7 @@ span.glyphicon-star.active {
 .table.live-commentary tbody tr td {
   vertical-align: middle;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .table.live-commentary tbody tr td.minute {
   width: 13%;
@@ -11346,7 +11346,7 @@ span.glyphicon-star.active {
 }
 .table.live-commentary tbody tr td.content p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 }
 .table.live-commentary tbody tr td.content p + img,
