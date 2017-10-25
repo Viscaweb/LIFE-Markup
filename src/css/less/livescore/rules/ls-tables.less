@@ -251,7 +251,7 @@
     .country{
       text-transform: uppercase;
       color: fade(@ls-th-league-color, 60%);
-      font-weight: 400;
+      font-weight: @font-weight-normal;
     }
 
     a{
@@ -276,7 +276,7 @@
       a{
         display: inline-block;
         color: @ls-th-league-color;
-        font-weight: 400;
+        font-weight: @font-weight-normal;
 
         i{
           font-size:  @font-size-xx-large;
@@ -380,7 +380,7 @@
         text-align: center;
         text-transform: uppercase;
         font-size:  @font-size-small;
-        font-weight: bold;
+        font-weight: @font-weight-bold;
 
         &.divider-dark{
           background: darken(@ls-light-color, 15%);
@@ -524,7 +524,7 @@
 
         &.score{
           font-size:  @font-size-base + 1;
-          font-weight: 700;
+          font-weight: @font-weight-bold;
           background-color: darken(@ls-light-color,2%);
           text-align: center;
           padding: 0;
@@ -674,7 +674,7 @@
           text-transform: uppercase;
           background-color: darken(@ls-light-color,3%);
           text-align: center;
-          font-weight: 600;
+          font-weight: @font-weight-semi-bold;
           height: 44px;
         }
 
@@ -1147,7 +1147,7 @@
 
         &.event-leg{
           background-color: darken(@ls-light-color,13%) !important;
-          font-weight: bold;
+          font-weight: @font-weight-bold;
           text-align: center;
         }
       }
@@ -1297,7 +1297,7 @@
             position: absolute;
             background-color: darken(@ls-light-color,4%);
             font-size: 9px;
-            font-weight: 200;
+            font-weight: @font-weight-normal;
             padding: 1px 6px;
             text-transform: none;
             z-index: 2;

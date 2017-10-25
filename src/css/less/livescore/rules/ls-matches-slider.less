@@ -88,7 +88,7 @@
           td{
             line-height: 10px;
             padding: 5px;
-            font-weight: 600;
+            font-weight: @font-weight-semi-bold;
             font-size: @font-size-base;
             text-transform: uppercase;
             
@@ -116,7 +116,7 @@
             
             &.score{
               text-align: center;
-              font-weight: 700;
+              font-weight: @font-weight-bold;
               padding-left: 8px;
               padding-right: 8px;
               background-color: darken(@ls-light-color, 9.8%);
@@ -145,7 +145,7 @@
           
           &.win{
             td.team{
-              font-weight: 700;
+              font-weight: @font-weight-bold;
             }
           }
         }
@@ -159,7 +159,7 @@
         .status{
           padding-left: 11px;
           background: url('@{ls-live-indicator-initial-state}') no-repeat 0 4px;
-          font-weight: 600;
+          font-weight: @font-weight-semi-bold;
           color: @live-red;
           animation: @ls-live-indicator-animation;
         }
@@ -248,7 +248,7 @@
         margin: 0;
         font-size: @font-size-small;
         color: lighten(@ls-greyblue-dark, 31%);
-        font-weight: 600;      
+        font-weight: @font-weight-semi-bold;      
         line-height: 16px;
         display: block;
         

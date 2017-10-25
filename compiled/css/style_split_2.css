@@ -1281,7 +1281,7 @@ span.sprite-icons.webmaster-border {
 .player .name {
   margin: 0;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
   display: block;
@@ -1306,7 +1306,7 @@ span.sprite-icons.webmaster-border {
 .player .goals {
   display: inline-block;
   font-size: 52px;
-  font-weight: 300;
+  font-weight: 400;
   color: #8a8a8a;
   margin-bottom: 0;
 }
@@ -2118,7 +2118,7 @@ span.sprite-icons.webmaster-border {
   font-size: 14px;
   margin-bottom: 6px;
   display: block;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .top-match-block .make-prediction .prediction {
@@ -3222,7 +3222,7 @@ span.glyphicon-star.active {
 }
 
 .step-heading .description {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -4535,7 +4535,7 @@ span.glyphicon-star.active {
 .match-timeline .timeline-scroll .match-time-zones .time-zone .label {
   font-family: Tahoma;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 400;
   padding: 10px 5px;
   vertical-align: bottom;
   display: table-cell;
@@ -5609,7 +5609,7 @@ span.glyphicon-star.active {
 .table.live-commentary tbody tr td {
   vertical-align: middle;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .table.live-commentary tbody tr td.minute {
@@ -5632,7 +5632,7 @@ span.glyphicon-star.active {
 
 .table.live-commentary tbody tr td.content p {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -6690,7 +6690,7 @@ table.squad-listing.avatars tbody tr td.player {
 .player-statistics > .row.stat-values > div h1.result,
 .player-statistics > .row.stat-values > div .result {
   font-size: 47px;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   line-height: 1.1;
   margin-top: 0;
@@ -6733,7 +6733,7 @@ table.squad-listing.avatars tbody tr td.player {
 .player-statistics .statistics h2.result,
 .player-statistics .statistics .result {
   font-size: 29px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   text-align: right;
   display: inline-block;
@@ -6894,7 +6894,7 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-statistics thead tr th.statistics-title .stat .result,
 .goals-statistics tbody tr th.statistics-title .stat .result {
   font-size: 47px;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   margin: 5px 0;
   line-height: 1.1;
@@ -8685,7 +8685,7 @@ ul.image-list li img {
 .webmaster-banner .banner-title span.subtitle {
   font-size: 32px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .webmaster-banner .banner-title span.small {
@@ -9402,7 +9402,7 @@ ul.image-list li img {
   display: block;
   margin-top: 10px;
   font-size: 11px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /*Streaming*/
@@ -9758,7 +9758,7 @@ ul.image-list li img {
 
 .sidebar-nav li {
   position: relative;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .sidebar-nav li.active > a {
