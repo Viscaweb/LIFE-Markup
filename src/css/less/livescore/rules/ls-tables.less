@@ -534,6 +534,31 @@
           }
         }
 
+        &.teams .score {
+          position: relative;
+          display: flex;
+          flex: 0 0 45px;
+          font-size: 14px;
+          font-weight: 700;
+          min-height: 28px;
+          background-color: #fafafa;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+
+          > span {
+            display: inline-block;
+
+            &.versus {
+              margin: 0 3px;
+            }
+
+            &.icon-expand-h {
+              color: contrast(@ls-light-color, darken(@ls-light-color,16%), fade(#ffffff, 20%));
+            }
+          }
+        }
+
         &.tools{
           padding: 0px;
           text-align: right;
@@ -686,11 +711,15 @@
             }
           }
 
-          &.score{
+          &.score {
 
             a{
               color: @live-red;
             }
+          }
+
+          &.teams .score {
+            color: @live-red;
           }
         }
       }
@@ -706,12 +735,11 @@
 
         td {
 
-          &.score {
+          &.score,
+          &.teams .score  {
             background-color: darken(@ls-light-color,10%);
           }
-
         }
-
       }
     }
 
@@ -837,7 +865,8 @@
         animation-name: progressiveHighlight;
         animation-duration: 6s;
 
-        td{
+        td, 
+        td .score {
           animation-name: progressiveHighlight;
           animation-duration: 6s;
         }
@@ -857,7 +886,8 @@
       &.selected{
         background-color: @ls-tr-selected-bg !important;
 
-        td{
+        td,
+        td .score {
           background-color: transparent !important;
         }
 
@@ -905,7 +935,8 @@
       &.event-cancelled{
         background-color: @ls-tr-cancelled-bg !important;
 
-        td{
+        td,
+        td .score {
           background-color: transparent !important;
         }
 
@@ -923,7 +954,8 @@
       &.event-won,
       &.event-lost,
       &.event-draw{
-        td.score{
+        td.score,
+        td .score, {
           background-color: rgba(255, 255, 255, 0.25) !important;
         }
       }
@@ -982,6 +1014,11 @@
             animation-name: progressiveUpdateLink;
             animation-duration: 6s;
           }
+        }
+
+        &.teams .updated {
+          animation-name: progressiveUpdate;
+          animation-duration: 6s;
         }
       }
 
@@ -1316,6 +1353,119 @@
             margin-right: 5px;
           }
 
+          &.teams {
+            padding: 0;
+            text-align: center;
+
+            > a {
+              display: flex;
+              align-items: stretch;
+              justify-content: center;
+              color: @text-color;
+
+              &.has-score-details .score:after{
+                position: absolute;
+                right: -1px;
+                bottom: -3px;
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid contrast(@ls-light-color, darken(@ls-light-color, 28%), fade(#ffffff, 30%));
+                transform: rotate(45deg);
+              }
+            }
+
+            .team {
+              position: relative;
+              display: flex;
+              flex: 1 1 100%;
+              align-items: center;
+              justify-content: flex-end;
+              text-align: right;
+              padding: 5px;
+
+              img {
+                max-width: 18px;
+                max-height: 18px;
+              }
+
+              .label {
+                margin-right: 5px;
+
+                &.red-card {
+                  padding: 0 2px;
+                  background-color: #dc0000;
+                  font-weight: 500;
+                  position: relative;
+                  top: -2px;
+                }
+              }
+
+              .label-goal {
+                opacity:0;
+                position: absolute;
+                z-index: 1;
+                margin-top: 2px;
+                left: 0;
+              }
+
+              .qualified {
+                display: inline-block;
+                margin-right: 3px;
+              }
+
+              &.team2 {
+                justify-content: flex-start;
+                text-align: left;
+
+                .label {
+                  margin-left: 5px;
+                }
+
+                .label-goal {
+                  left: auto;
+                  right: 0;
+                }
+
+                .qualified {
+                  margin-right: 0;
+                  margin-left: 3px;
+                }
+              }
+
+              &.win{
+                font-weight: @font-weight-bold;
+              }
+            }
+
+            &.has-logo {
+
+              .team {
+                position: relative;
+                padding-right: 28px;
+
+                img {
+                  position: absolute;
+                  top: 50%;
+                  right: 5px;
+                  margin-top: -9px;
+                }
+
+                &.team2 {
+                  padding-right: 5px;
+                  padding-left: 28px;
+
+                  img {
+                    left: 5px;
+                    right: auto;
+                  }
+                }
+              }
+            }
+          }
+
           &.team{
             position: relative;
 
@@ -1500,59 +1650,60 @@
     /*MY GAMES TABLES*/
     tbody.my-games{
 
+      tr{
 
-        tr{
+        td{
+          padding-top: 8px;
+          padding-bottom: 8px;
 
-          td{
-            padding-top: 8px;
-            padding-bottom: 8px;
+          span.hour{
+            font-weight: @font-weight-semi-bold;
+          }
 
-            span.hour{
-              font-weight: @font-weight-semi-bold;
+          &.team{
+            width: auto;
+            > a, div{
+              display: block;
             }
 
-            &.team{
-              width: auto;
-              > a, div{
-                display: block;
-              }
+            img{
+              max-width: 20px;
+            }
+
+            &.team1{
 
               img{
-                max-width: 20px;
-              }
-
-              &.team1{
-
-                img{
-                  margin-left: 5px;
-                }
-              }
-
-              &.team2{
-
-                img{
-                  margin-right: 5px;
-                }
+                margin-left: 5px;
               }
             }
 
+            &.team2{
 
-
-            &.score{
-              padding: 0;
-
-              > a{
-                display: block;
-                line-height: 46px;
+              img{
+                margin-right: 5px;
               }
-
             }
+          }
 
+          &.score{
+            padding: 0;
+
+            > a{
+              display: block;
+              line-height: 46px;
+            }
+          }
+
+          &.teams {
+            padding: 0;
+
+            .score {
+              min-height: 46px;
+            }
           }
         }
-
+      }
     }
-
   }
 
   &.linked-rows {

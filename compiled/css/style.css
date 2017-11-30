@@ -9290,6 +9290,39 @@ span.dark-icon {
 .table tbody tr > td.score span.icon-expand-h {
   color: #d6d6d6;
 }
+.table tbody tr > td.teams .score {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45px;
+      -ms-flex: 0 0 45px;
+          flex: 0 0 45px;
+  font-size: 14px;
+  font-weight: 700;
+  min-height: 28px;
+  background-color: #fafafa;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+.table tbody tr > td.teams .score > span {
+  display: inline-block;
+}
+.table tbody tr > td.teams .score > span.versus {
+  margin: 0 3px;
+}
+.table tbody tr > td.teams .score > span.icon-expand-h {
+  color: #d6d6d6;
+}
 .table tbody tr > td.tools {
   padding: 0px;
   text-align: right;
@@ -9448,7 +9481,11 @@ span.dark-icon {
 .table tbody tr.live td.score a {
   color: #e33000;
 }
-.table tbody tr:hover td.score {
+.table tbody tr.live td.teams .score {
+  color: #e33000;
+}
+.table tbody tr:hover td.score,
+.table tbody tr:hover td.teams .score {
   background-color: #e6e6e6;
 }
 .table tbody tr.league-data > th {
@@ -9685,7 +9722,8 @@ span.dark-icon {
        -o-animation-duration: 6s;
           animation-duration: 6s;
 }
-.table > tbody > tr.updated td {
+.table > tbody > tr.updated td,
+.table > tbody > tr.updated td .score {
   -webkit-animation-name: progressiveHighlight;
        -o-animation-name: progressiveHighlight;
           animation-name: progressiveHighlight;
@@ -9699,7 +9737,8 @@ span.dark-icon {
 .table > tbody > tr.selected {
   background-color: #e3e8f1 !important;
 }
-.table > tbody > tr.selected td {
+.table > tbody > tr.selected td,
+.table > tbody > tr.selected td .score {
   background-color: transparent !important;
 }
 .table > tbody > tr.selected:hover {
@@ -9735,7 +9774,8 @@ span.dark-icon {
 .table > tbody > tr.event-cancelled {
   background-color: #e6e6e6 !important;
 }
-.table > tbody > tr.event-cancelled td {
+.table > tbody > tr.event-cancelled td,
+.table > tbody > tr.event-cancelled td .score {
   background-color: transparent !important;
 }
 .table > tbody > tr.event-cancelled:hover {
@@ -9746,7 +9786,10 @@ span.dark-icon {
 }
 .table > tbody > tr.event-won td.score,
 .table > tbody > tr.event-lost td.score,
-.table > tbody > tr.event-draw td.score {
+.table > tbody > tr.event-draw td.score,
+.table > tbody > tr.event-won td .score,
+.table > tbody > tr.event-lost td .score,
+.table > tbody > tr.event-draw td .score {
   background-color: rgba(255, 255, 255, 0.25) !important;
 }
 .table tbody tr td.highlight {
@@ -9814,6 +9857,14 @@ span.dark-icon {
   -webkit-animation-name: progressiveUpdateLink;
        -o-animation-name: progressiveUpdateLink;
           animation-name: progressiveUpdateLink;
+  -webkit-animation-duration: 6s;
+       -o-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.table tbody tr td.teams .updated {
+  -webkit-animation-name: progressiveUpdate;
+       -o-animation-name: progressiveUpdate;
+          animation-name: progressiveUpdate;
   -webkit-animation-duration: 6s;
        -o-animation-duration: 6s;
           animation-duration: 6s;
@@ -10045,6 +10096,125 @@ span.dark-icon {
   max-width: 20px;
   margin-right: 5px;
 }
+.table.matches tbody tr td.teams {
+  padding: 0;
+  text-align: center;
+}
+.table.matches tbody tr td.teams > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #5c5c5c;
+}
+.table.matches tbody tr td.teams > a.has-score-details .score:after {
+  position: absolute;
+  right: -1px;
+  bottom: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #b8b8b8;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.table.matches tbody tr td.teams .team {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  padding: 5px;
+}
+.table.matches tbody tr td.teams .team img {
+  max-width: 18px;
+  max-height: 18px;
+}
+.table.matches tbody tr td.teams .team .label {
+  margin-right: 5px;
+}
+.table.matches tbody tr td.teams .team .label.red-card {
+  padding: 0 2px;
+  background-color: #dc0000;
+  font-weight: 500;
+  position: relative;
+  top: -2px;
+}
+.table.matches tbody tr td.teams .team .label-goal {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: 2px;
+  left: 0;
+}
+.table.matches tbody tr td.teams .team .qualified {
+  display: inline-block;
+  margin-right: 3px;
+}
+.table.matches tbody tr td.teams .team.team2 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+.table.matches tbody tr td.teams .team.team2 .label {
+  margin-left: 5px;
+}
+.table.matches tbody tr td.teams .team.team2 .label-goal {
+  left: auto;
+  right: 0;
+}
+.table.matches tbody tr td.teams .team.team2 .qualified {
+  margin-right: 0;
+  margin-left: 3px;
+}
+.table.matches tbody tr td.teams .team.win {
+  font-weight: 700;
+}
+.table.matches tbody tr td.teams.has-logo .team {
+  position: relative;
+  padding-right: 28px;
+}
+.table.matches tbody tr td.teams.has-logo .team img {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -9px;
+}
+.table.matches tbody tr td.teams.has-logo .team.team2 {
+  padding-right: 5px;
+  padding-left: 28px;
+}
+.table.matches tbody tr td.teams.has-logo .team.team2 img {
+  left: 5px;
+  right: auto;
+}
 .table.matches tbody tr td.team {
   position: relative;
 }
@@ -10236,6 +10406,12 @@ span.dark-icon {
 .table.matches tbody.my-games tr td.score > a {
   display: block;
   line-height: 46px;
+}
+.table.matches tbody.my-games tr td.teams {
+  padding: 0;
+}
+.table.matches tbody.my-games tr td.teams .score {
+  min-height: 46px;
 }
 .table.linked-rows tr td.hour,
 .table.linked-rows tr td.time,

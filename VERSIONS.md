@@ -9,3 +9,4 @@
 |`v1.0.9`|Include CSS rules to improve the banners blocks visualisation|
 |`v1.0.10`|Include CSS rules for the match status paused ticker|
 |`v1.0.11`|Increased all font-weights to 500 minimum|
+|`v1.0.12`|Added merged teams cell styling|
