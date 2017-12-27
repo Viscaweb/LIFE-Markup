@@ -10,3 +10,4 @@
 |`v1.0.10`|Include CSS rules for the match status paused ticker|
 |`v1.0.11`|Increased all font-weights to 500 minimum|
 |`v1.0.12`|Added merged teams cell styling|
+|`v1.0.13`|Added optimized SEO top games widget|
