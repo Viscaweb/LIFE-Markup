@@ -11,3 +11,4 @@
 |`v1.0.11`|Increased all font-weights to 500 minimum|
 |`v1.0.12`|Added merged teams cell styling|
 |`v1.0.13`|Added optimized SEO top games widget|
+|`v1.0.14`|Added recaptcha container|

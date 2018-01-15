@@ -3605,6 +3605,10 @@ span.glyphicon-star.active {
   border-top: none;
 }
 
+.ls-recaptcha {
+  padding: 20px 0;
+}
+
 /*Base Tables*/
 
 .popover.popover-trend,
