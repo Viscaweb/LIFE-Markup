@@ -5605,6 +5605,8 @@ span.glyphicon-star.active {
 .table.live-commentary tbody tr td.content p {
   font-size: 13px;
   font-weight: 500;
+  word-break: break-word;
+  overflow-wrap: break-word;
   margin: 0;
 }
 
