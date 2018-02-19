@@ -14,3 +14,4 @@
 |`v1.0.14`|Added recaptcha container|
 |`v1.0.15`|Fixed word-break in live commentary|
 |`v1.0.16`|Fixed https preference in Google fonts urls|
+|`v1.0.17`|Added sport content widget|
