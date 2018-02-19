@@ -1,0 +1,40 @@
+// Sport content widget
+
+.panel-sport-content {
+  margin-bottom: 1rem;
+}
+
+.sport-content {
+  position: relative;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.sport-content--collapsed {
+  overflow: hidden;
+  height: 100px;
+}
+
+.sport-content--collapsed::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  background-color: hsla(0, 0%, 100%, 0);
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 20%, #FFF 80%, #FFF);
+}
+
+.sport-content--collapsed.in {
+  height: auto;
+}
+
+.sport-content--collapsed.in::after {
+  display: none;
+}
+
+.sport-content__show-more span.icon {
+  margin-left: 5px;
+}
