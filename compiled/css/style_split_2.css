@@ -10268,6 +10268,23 @@ ul.image-list li img {
   color: #7ca2c3;
 }
 
+.footer .bottom-footer .ls-svg {
+  float: right;
+  max-width: 32px;
+  max-height: 32px;
+  background: #ffffff;
+  margin-top: 6px;
+  margin-right: 2px;
+}
+
+.footer .bottom-footer .ls-svg-bg {
+  fill: #272a2c;
+}
+
+.footer .bottom-footer .ls-svg-text {
+  fill: #272a2c;
+}
+
 /*Site administration*/
 
 .admin-action {
