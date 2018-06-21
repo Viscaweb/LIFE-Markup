@@ -1,0 +1,18 @@
+// With the bottom margin of .row deleted, this allow to add one if really needed
+.row {
+
+  &.row-voffset {
+    margin-bottom: @grid-gutter-width;
+  }
+
+}
+
+.panel-body {
+  > .row-voffset:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.container-popup {
+  padding: 0;
+}

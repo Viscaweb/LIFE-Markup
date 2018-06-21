@@ -1,0 +1,17 @@
+{% extends "layouts/2_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    <span class="page-title">Create / Edit my widgets</span>
+    {% include 'blocks/webmaster/widgets_intro.html.twig' %}
+    {% include 'blocks/elements/sports_pills.html.twig' %}
+    {% include 'blocks/webmaster/widgets_list.html.twig' %}
+{% endblock %}

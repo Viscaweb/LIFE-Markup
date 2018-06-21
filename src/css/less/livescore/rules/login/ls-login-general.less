@@ -1,0 +1,162 @@
+.content-wrapper-login {
+  margin: 0;
+  padding: 20px;
+  min-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.registration-features{
+  overflow: hidden;
+  border: 1px solid darken(@ls-light-color, 4%);
+  background-color: darken(@ls-light-color, 2%);
+
+  .content{
+    padding: 20px;
+
+    p{
+      font-size: @font-size-base;
+    }
+
+    span.title{
+      display: block;
+      font-size: 22px;
+      font-weight: @font-weight-bold;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin-top: 18px;
+
+      li{
+        font-size: @font-size-normal;
+        line-height: 33px;
+
+        .icon{
+          font-size: 24px;
+          color: @active-green;
+          display: inline-block;
+          min-width: 35px;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+    }
+
+  }
+
+  .image{
+    float: right;
+  }
+}
+
+.login, .register, .password-forgotten{
+
+  .login-facebook{
+    text-align: center;
+    padding: 20px;
+
+    .btn{
+
+      i{
+        font-size: 18px;
+        vertical-align: middle;
+        line-height: 17px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .divider{
+    text-align: center;
+    border-top: 1px solid darken(@ls-light-color, 13.5%);
+    position: relative;
+
+    span{
+      position: relative;
+      display: inline-block;
+      line-height: 20px;
+      top: -12px;
+      background-color: @ls-light-color;
+      padding: 0 10px;
+    }
+  }
+
+  form{
+
+     a.forgot-password-link{
+      float: right;
+      font-size: @font-size-x-tiny;
+      line-height: 23px;
+    }
+
+    .has-error{
+      margin-bottom: 25px,
+    }
+
+    button.btn-primary{
+      float: right;
+      min-width: 115px;
+    }
+  }
+ 
+}
+
+.register{;
+
+  form{
+
+    button.btn-primary{
+      float: none;
+      margin-top: 15px;
+    }
+  }
+}
+
+.password-forgotten{
+
+  form{
+
+    button{
+      
+      span{
+        margin-right: 5px;
+      }
+
+      .btn-primary{
+        float: right;
+      }
+    }
+  }
+
+  .title {
+    .h4;
+    display: block;
+  }
+}
+
+.login-register-container {
+
+  .login-image{
+    margin-left: -20px;
+    margin-bottom: -20px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.login-full-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  > .login-background-image {
+    width: 100%;
+    height:auto;
+  }
+
+}

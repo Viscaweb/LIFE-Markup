@@ -1,0 +1,19 @@
+{# Login Modal #}
+{% extends 'blocks/containers/modal.html.twig' %}
+
+{% set modal_classes = 'login login-modal' %}
+{% set modal_id = 'login-main-simple' %}
+{% set modal_dialog_classes = 'modal-sm' %}
+
+{% block modal_header %}
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">Login or Register</h4>
+{% endblock %}
+
+{% block modal_content %}
+    <div class="login-register-container">
+        {{ include('blocks/login/login_register.html.twig', {tab:'login'}) }}
+        {{ include('blocks/login/login_register.html.twig', {tab:'register'}) }}
+        {{ include('blocks/login/login_register.html.twig', {tab:'password_reset'}) }}
+    </div>
+{% endblock %}

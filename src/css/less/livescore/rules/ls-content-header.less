@@ -1,0 +1,243 @@
+/*Content Header*/
+.content-header{
+  position: relative;
+  width: 100%;
+  border: 0;
+
+  .avatar{
+  	vertical-align: top;
+  	position: relative;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+
+  	img{
+      max-width: 65px;
+      max-height: 65px;
+      margin-top: 8px;
+  	}
+  }
+
+  .info{
+      padding: 10px 0;
+      vertical-align: top;
+
+    .title-container {
+      max-width: 100%;
+      float: left;
+    }
+
+    .title{
+       line-height: 21px;
+      display: table;
+      max-width: 100%;
+    
+      > .title-value{
+        font-weight: @font-weight-normal;
+        font-size: @font-size-h3;
+        line-height: 28px;
+        color: @headings-color;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      > .favorite-star {
+        display: table-cell;
+        padding: 0 6px;
+      }
+    
+			.fav{
+				display: inline-block;
+				font-size: @font-size-base + 1;
+        vertical-align: top;
+        line-height: 38px;
+
+        span{
+          vertical-align: middle;
+          color: darken(@ls-light-color, 20%);
+        }
+
+		    &.active{
+		    	color: @ls-fav-hover;
+          
+          span{
+            color: @ls-fav-hover;
+          }
+		    }  
+        
+		    &:hover{
+		    	color: darken(@ls-light-color,37%);
+          
+          span{
+            color: darken(@ls-light-color,37%);
+          }
+		    }
+			}
+      
+      &.uppercase{
+        text-transform: uppercase;
+      }
+
+		}
+		
+    .btn-link{
+      font-weight: @font-weight-normal;
+      margin-top: 5px;
+		}
+		
+		.additionnal-info{
+			color: darken(@ls-light-color,35%);
+			display: block;
+			font-size: @font-size-small - 1;
+      float: left;
+      clear: both;
+      
+			span{
+				margin-right: 5px;
+			}
+		}
+
+    .btn-group {
+      float: left;
+      clear: both;
+    }
+	}
+
+  &.teams{
+  
+	  .shirts{
+			text-align: right;
+      
+			a{
+				text-align: center;
+				display: inline-block;
+				font-size: @font-size-small - 1;
+				color: darken(@ls-light-color,32%);
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}      
+		}
+	}
+
+  &.player{
+    
+	  .info{
+
+      .title{
+
+        .first-name {
+          margin: 0;
+          font-size: @font-size-base;
+          line-height: 18px;
+          font-weight: @font-weight-semi-bold;
+          padding-left: 2px;
+          display: block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        
+        .last-name{
+          margin: 0;
+          display: block;
+          font-weight: @font-weight-normal;
+          font-size: @font-size-h2;
+          line-height: 32px;
+          color: @headings-color;
+        }
+      }
+		}
+    
+	.description{
+      vertical-align: top;
+      padding: 10px 10px 10px 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      ul{
+        padding: 0;
+        list-style: none;
+
+        li{
+          padding: 1px 0;
+          font-size: @font-size-small - 1;
+          border-bottom: 1px solid darken(@ls-light-color,7%);
+
+          .icon{
+            margin-right: 5px;
+            font-size: @font-size-medium;
+            color: lighten(@ls-dark-color, 35.3%);
+          }
+
+          span.info{
+            float: right;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            font-size: @font-size-base;
+            color: darken(@ls-light-color, 23%);
+            cursor: pointer;
+            position: relative;
+            top: 3px;
+          }
+
+          span{
+            font-weight: @font-weight-semi-bold;
+          }
+        }
+      }
+	}
+    
+  	.teams{
+      vertical-align: top;
+      text-align: right;
+      display: flex;
+      padding: 10px 0;
+      width: 25%;
+
+      a{
+        flex: 1 1 50%;
+        text-align: center;
+        display: block;
+        font-size: @font-size-small - 1;
+        color: darken(@ls-light-color,32%);
+        padding: 2px;
+        overflow: hidden;
+
+        img{
+          max-width: 52px;
+          display: inline-block;
+        }
+
+        > span {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-top:4px;
+        }
+      }
+  	}
+  }
+
+  &.country {
+
+    .info {
+      padding-top:22px;
+    }
+  }
+}
+
+//Panel style
+.panel-content-header{
+  margin-bottom: 0;
+
+  & + .nav-tabs{
+    margin-bottom: @grid-gutter-width;
+  }
+}

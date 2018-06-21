@@ -1,0 +1,86 @@
+.match-tips-style(){
+    ul.media-list{
+      border-top: 0;
+      margin: 0;
+    
+      li.media{
+        
+        .tip-container{
+          display: table;
+          width: 100%;
+          
+          a.avatar{
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 15px;
+            width: 60px;
+            text-align: center;
+            outline: none; 
+            
+            img{
+              height: 48px;
+              width: 48px;
+            }
+          }
+          
+          .media-body{
+            display: table-cell;
+            vertical-align: middle; 
+            
+            p{
+              margin: 0; 
+            }
+          }
+        }
+        
+        &:first-child{
+          padding-top: 0;
+        }  
+      }
+    }
+    
+    .make-bet{
+      padding: 15px;
+      background-color: darken(@ls-light-color,2%);
+      text-align: center;
+       
+       img{
+        max-height: 30px;
+        margin-right: 10px;
+        margin-top: 4px;
+         margin-bottom: 10px;
+       }
+       
+       p{
+        font-size: @font-size-base;
+        font-weight: @font-weight-normal;
+       }
+    }
+}
+
+.iframe{
+
+  .match-tips{
+    background: @ls-light-color;
+    padding: 20px;
+    
+    .match-tips-style();
+    
+    &.iframe{
+      margin: 0;
+    }
+  }
+} 
+
+.panel.match-tips{
+  .match-tips-style();
+  
+  iframe{
+    margin: 0;
+    display: block;
+  }
+}
+
+.tips-list{
+  .match-tips-style();
+}

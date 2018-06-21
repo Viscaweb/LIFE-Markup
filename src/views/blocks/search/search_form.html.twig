@@ -1,0 +1,53 @@
+<div class="panel panel-default search-block">
+    <div class="panel-body">
+        <label>Rechercher</label>
+        <div class="inner-addon right-addon">
+            <i class="glyphicon glyphicon-search"></i>
+            <input data-toggle="dropdown" type="text" placeholder="Champions League, Europa League..." class="form-control">
+            {{ include('blocks/search/search_suggest_dropdown.html.twig', {type: 'all'}) }}
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <span class="option-group-name">Filtres</span>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check1">
+                    <label for="check1">Compétitions</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check2">
+                    <label for="check2">Equipes</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check3">
+                    <label for="check3">Matchs</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check4">
+                    <label for="check4">Joueurs</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check5">
+                    <label for="check5">Pays</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check6">
+                    <label for="check6">Actualités</label>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <span class="option-group-name">Sport</span>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check7">
+                    <label for="check7">Foot</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" checked="" id="check8">
+                    <label for="check8">Tennis</label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#">- Masquer les filtres</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,243 @@
+.webmaster-banner{
+  position: relative;
+
+  img{
+    width: 100%;
+  }
+
+  .banner-title{
+    position: absolute;
+    top: 73px;
+    left: 40px;
+
+    span{
+      display: block;
+      color: @ls-light-color;
+
+      &.big{
+        font-size: 43px;
+        text-transform: uppercase;
+        font-weight: @font-weight-extra-bold;
+
+        span{
+          display: inline-block;
+          color: @brand-primary;
+        }
+      }
+
+      &.subtitle{
+        font-size: 32px;
+        line-height: 30px;
+        font-weight: @font-weight-normal;
+      }
+
+      &.small{
+        font-size: 19px;
+        font-weight: @font-weight-semi-bold;
+        margin-top: 15px;
+      }
+
+      &.medium{
+        font-size: 27px;
+        font-weight: @font-weight-bold;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.webmaster-content-section-1{
+
+  span.title{
+    font-size: 24px;
+    font-weight: @font-weight-semi-bold;
+  }
+
+  .columns{
+    > div:first-child{
+      width: 23%;
+    }
+
+    > div:nth-child(2){
+      padding: 0;
+      width: 47%;
+    }
+
+    > div:last-child{
+      width: 30%;
+    }
+
+    .widget-preview{
+      position: relative;
+      margin-top: 20px; 
+
+      span{
+        position: absolute;
+        display: block;
+        font-size: @font-size-x-tiny;
+
+        &.image-title{
+          font-size: @font-size-x-small;
+          font-weight: @font-weight-bold;
+          text-transform: uppercase;    
+          top: 0;
+          left: 50px;   
+        }
+
+        &.widget-1{
+          top: 49px;
+          font-weight: @font-weight-semi-bold;
+        }
+
+        &.widget-2{
+          bottom: 12px;
+          right: 20px;
+          font-weight: @font-weight-semi-bold;
+        }
+      }
+    }
+
+    .description{
+      margin-top: 20px;
+
+      .webmaster-list{
+        margin-top: 25px;
+
+        ul{
+          list-style: none;
+          padding: 0;
+
+          li{
+            font-size: @font-size-normal;
+            font-weight: @font-weight-semi-bold;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+
+    .create-widget{
+      margin-top: 29px;
+      border: 1px solid darken(@ls-light-color, 6.2%);
+      padding: 42px 12px;
+      background-color:darken(@ls-light-color, 1.5%);;
+
+      button{
+        margin-bottom: 15px;
+      }
+
+      a{
+        display: block;
+      }
+    }
+  }
+}
+
+.webmaster-content-section-2{
+  background-color: darken(@ls-light-color, 3%);
+  margin-left: -20px;
+  margin-right: -20px;
+
+  > .row{
+    padding-top: 30px;
+  }
+
+  span.title{
+    font-size: 24px;
+    font-weight: @font-weight-semi-bold;
+    margin-left: 20px;
+  }
+
+  .section-nav{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    
+    a{
+      line-height: 33px;
+      display: inline-block;
+      color: darken(@ls-light-color, 25.5%);
+
+      .icon{
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .features{
+    padding: 0 20px;
+    margin-top: 25px;
+
+    > div{
+      padding-left: 10px
+    }
+
+    .widget{
+      margin-bottom: 30px;
+
+      .image{
+        position: relative;
+      }
+
+      a{
+        text-align: center;
+        display: block;
+        margin-top: 8px;
+
+        &.zoom{
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.8);
+          display: inline-block;
+          padding: 6px 8px;
+          color: @ls-light-color;
+          bottom: 5px;
+          right: 5px;  
+          line-height: 14px; 
+
+          .icon{
+            font-size: @font-size-medium;
+          }      
+        }
+      }
+    }
+  }
+
+}
+
+.webmaster-content-section-3{
+	padding: 10px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+
+  > .row{
+
+    > div{
+      border-left: 1px solid darken(@ls-light-color, 7.5%);
+
+      &:first-child{
+        border: 0;
+      }
+    }
+  }
+
+  .widgets{
+    text-align: center;
+
+    span.title{
+      display: block;
+      font-size: @font-size-x-large;
+      font-weight: @font-weight-semi-bold;
+      margin-bottom: 30px;
+    }
+
+    p{
+      font-size: @font-size-base;
+      line-height: 22px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+
+}

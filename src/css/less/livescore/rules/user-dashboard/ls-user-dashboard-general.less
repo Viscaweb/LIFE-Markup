@@ -1,0 +1,322 @@
+.prediction-contest-grid, .last-predictions{
+ 
+	.indicators{
+		margin: 0;
+		padding: 0;
+ 
+		> div{
+			padding: 15px 0;
+			text-align: right;
+			font-size: @font-size-small;
+			
+			&:first-child{
+				padding-left: 20px;
+				text-align: left;
+			}
+
+			&:last-child{
+				padding-right: 20px; 
+			}
+
+			.number-big{
+				font-size: @ls-contest-grid-big-number-font-size;
+				line-height: @ls-contest-grid-big-number-font-size;
+				color: lighten(@ls-dark-color, 36%);
+				margin-right: 4px;
+				margin-left: 7px;
+			}
+
+			.number-small{ 
+				font-size: @font-size-x-large;
+				color: darken(@ls-light-color, 30%);
+			}
+
+		}
+	}
+
+	.user-notification{
+		padding: 15px;
+		font-size: @font-size-small;
+
+		> a{
+			font-weight: @font-weight-semi-bold;
+
+			img{
+				max-width: 32px;
+				max-height: 32px;
+				margin-right: 8px;
+				background: @ls-user-avatar-placeholder-bg;
+				
+			}
+		}
+	}
+
+	.table-pagination{
+		padding: 10px 15px;
+		font-size: @font-size-small;
+		line-height: 25px;
+		.clearfix();
+
+		.pagination{
+			margin: 0;
+			float: right;
+		}
+	}
+
+	.table{
+		margin: 0;
+	}
+}
+
+.season-gifts{
+	.table{
+		tbody{
+			tr{
+				td{
+
+					&.place{
+						text-align: center;
+						min-width: 19%;
+						font-weight: @font-weight-semi-bold;
+					}
+
+					&.gift-img{
+						min-width: 17%;
+						text-align: center;
+						vertical-align: middle;
+						padding: 0;
+
+						img{
+							max-width: 30px;
+							max-height: 30px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.first-day-month-gift{
+	.panel-body{
+		text-align: center;
+
+		.title{
+			line-height: @font-size-x-large;
+			font-size: @font-size-x-large;
+			font-weight: @font-weight-semi-bold;
+
+			sup{
+				font-size: @font-size-x-tiny;
+			}
+		}
+
+		a{
+			font-size: @font-size-small;
+			margin-top: 10px;
+			display: block;
+		}
+	}
+
+	.month-gift-image {
+		max-width: 240px;
+		max-height: 300px;
+	}
+}
+
+.setting-box{
+	background-color: darken(@ls-light-color, 2.8%);
+	border: 1px solid darken(@ls-light-color, 3.8%);
+	padding: 15px 10px;
+	line-height: 24px;
+
+	.option-name{
+		display: inline-block;
+		font-size: @font-size-small;
+
+		.icon{
+			font-size: @font-size-xx-large;
+			vertical-align: middle;
+			color: @brand-primary;
+			margin-right: 7px;
+		}
+	}
+
+	.field{
+		float: right;
+	}
+}
+
+.settings-list{
+	padding: 0;
+	margin: 0;
+
+	> li{
+		list-style: none;
+		padding: 5px 10px;
+		line-height: 24px;
+
+		.option-name{
+			display: inline-block;
+			font-size: @font-size-small;
+
+			.icon{
+				display: inline-block;
+				margin-right: 5px;
+				width: 25px;
+				text-align: center;
+
+				> .icon{
+					font-size: @font-size-xx-large;
+					vertical-align: middle;
+					color: @brand-primary;
+				}
+
+			}
+		}
+
+		.field{
+			float: right;
+		}
+
+		&:nth-child(even){
+			background-color: darken(@ls-light-color, 2%);
+		}
+
+	}
+}
+
+.teams-table{
+	.title{
+		display: block;
+		font-size: @font-size-xx-large;
+		font-weight: @font-weight-semi-bold;
+		margin-bottom: 20px;
+
+		> span{
+			color: @active-green;
+		}
+	}
+
+	table{
+		tbody{
+			tr{
+				td{
+
+					&.logo{
+						width: 3%;
+
+						img{
+							max-width: 18px;
+							max-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.contest-standings{
+	.filters{
+	  padding: 15px 15px 0;
+
+	  .btn-group-justified{
+			margin-bottom: 15px;
+
+			.btn.spinner{
+				min-width: 169px;
+			}
+
+			&:last-child{
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.table-scroll{
+		max-height: 570px;
+		overflow: auto;
+	}
+}
+
+.predictions-filter{
+
+	label{
+		font-size: @font-size-normal;
+		font-weight: @font-weight-semi-bold;
+	}
+
+	select{
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
+
+	.row{
+		margin-bottom: 0;
+
+		label{
+			font-weight: @font-weight-normal;
+			font-size: @font-size-small;
+		}
+	}
+}
+
+.archives{
+	.table{
+		tbody{
+			tr{
+				td{
+					&.icon{
+						width: 1%; 
+						padding-right: 2px;
+
+						.icon{
+							font-size: @font-size-large;
+							color: darken(@ls-light-color, 28%);
+							line-height: @font-size-small;
+							position: relative;
+							top: 2px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.how-to-play{
+
+	p{
+		font-size: @font-size-base;
+	}
+
+	.image{
+		margin: 20px 0;
+
+		img{
+			float: left;
+			margin-right: 10px;
+			margin-top: 7px;
+		}
+
+		p{
+			color: @brand-primary;
+			font-weight: @font-weight-semi-bold;
+		}
+	}
+}
+
+.share-contest {
+	
+	.share-buttons-title {
+		font-weight: 400;
+		padding-bottom: 20px;
+		display: block;
+		font-weight: 600;
+		font-size: @font-size-normal;
+		text-align: center;
+	}
+	
+}

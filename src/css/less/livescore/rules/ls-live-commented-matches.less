@@ -1,0 +1,118 @@
+
+.live-commented-matches{
+  &.panel{
+      
+      .preview{
+        width: 100%;
+      }
+      
+      .description{
+        padding: 15px;
+        
+        p{
+          font-size: @font-size-small;
+          line-height: 17px;
+          margin: 0;
+        }
+        
+      }
+      
+      .matches{
+        border-top: 2px solid darken(@ls-light-color, 4%);
+        margin: 0;
+        
+        tr{
+          td{
+          
+            > a{
+              padding: 3px 7px;
+              line-height: @font-size-x-large;
+              color: inherit;
+            }
+
+            &.team{
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              > a {
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              > span {
+                padding: 3px 7px;
+              }
+            }
+
+            &.team1{
+              text-align: right;
+              padding: 0;
+            }
+            
+            &.team2{
+              padding: 0;
+            }
+          
+            &.score{ 
+              padding: 0;
+              text-align: center;
+              background-color: darken(@ls-light-color, 3.3%);
+              
+              a{
+                line-height: @font-size-large;
+              }
+              
+              &.none{
+                line-height: 12px;
+              }
+              
+              > span{
+                color: darken(@ls-light-color, 16.5%);
+                font-size: @font-size-large - 1;
+              }
+            }
+            
+            &.commented{
+              width: 25px;
+              padding: 0;
+              
+              span{
+                font-size: @font-size-large + 2;
+                line-height: 10px;
+                vertical-align: middle;
+                color: darken(@ls-light-color, 20.5%);
+              }
+            }
+          }
+          
+          &.live{
+            td{
+              &.date{
+                font-weight: @font-weight-semi-bold;
+                color: @live-red; 
+                padding-left: 17px;
+                background-image: url('@{ls-live-indicator-initial-state}');
+                background-position: 5px center;
+                background-repeat: no-repeat;
+                animation: @ls-live-indicator-animation;
+              }
+              
+              &.score{
+                color: @live-red;
+                font-size: @font-size-base;
+                font-weight: @font-weight-bold;
+              }
+              
+              &.commented{
+                
+                span{
+                  color: @live-red;
+                }
+              }
+            }
+          }
+        }
+      }
+  } 
+}

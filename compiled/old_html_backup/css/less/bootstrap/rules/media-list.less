@@ -1,0 +1,116 @@
+/*Media List*/
+.media-list{
+  border-top: 1px solid darken(@ls-light-color, 8%);
+  border-bottom: 1px solid darken(@ls-light-color, 8%);
+
+  li.media, div.media{
+    padding: 17px 3px;
+    margin-top: 0;
+
+    .media{
+      padding: 19px 16px;
+      background-color: darken(@ls-light-color, 1%);
+    }
+
+    & + .media{
+      border-top: 1px solid darken(@ls-light-color, 8%);
+    }
+
+   .media-left{
+      margin-right: 20px;
+    }
+    
+    .avatar{
+    	text-align: center;
+		min-width: 62px;
+      
+		.btn-group{
+        	display: block;
+			margin-top: 5px;
+        
+			.btn{
+			font-size: 11px;
+			line-height: 13px;
+			padding: 1px 4px;
+        	}
+    	}
+    
+		&.avatar-user {
+	  
+		  img {
+			  background: @ls-user-avatar-placeholder-bg;
+		  }
+		  
+		}
+		
+		&.player-image {
+	  
+		  img {
+			  background: @ls-player-image-placeholder-bg;
+		  }
+		  
+		}
+    }
+    
+    .img-circle{
+      max-width: 50px;
+    }
+    .media-body{
+    
+      .media-heading{
+        margin: 0;
+        
+        h4, .name{
+          font-size: @font-size-base;
+          font-weight: bold;
+          color: lighten(@ls-dark-color,36%);
+          margin-top: 0;
+          display: inline-block;
+          margin-bottom: 9px;
+        }
+        
+        .tools{
+          float: right;
+          h5, .date{
+            font-weight: 400;
+            color: darken(@ls-light-color,15%);
+            font-size: @font-size-small - 1;
+            display: inline-block;
+            margin-right: 6px;            
+
+            a{
+              color: darken(@ls-light-color, 14%);
+              margin-right: 5px;
+              &:hover{
+                color: @ls-greyblue-dark;
+              }
+            }
+          }
+          
+          > a{
+            color: darken(@ls-light-color, 14%);
+            font-size: @font-size-large;
+            margin-left: 10px;
+            cursor: pointer;
+
+            &:hover{
+              color: @ls-greyblue-dark;
+            }            
+          }     
+        }
+      }
+      
+      p{
+        font-size: @font-size-base;
+      }
+      
+      .reply{
+        color: @brand-primary;
+
+        &:hover{
+          color: @brand-primary - 10%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/sports/matches_slider.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'head-to-head'}) }}
+    {% include 'blocks/various/share_page_small.html.twig' %}
+    <div class="row">
+        <div class="col-xs-12">{% include 'blocks/sports/match/team_head2head.html.twig' %}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">{% include 'blocks/sports/team/team_form.html.twig' %}</div>
+        <div class="col-xs-6">{% include 'blocks/sports/team/team_form.html.twig' %}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">{{ include('blocks/sports/team/team_over_under_v1.1.html.twig', {logo: 'true'}) }}</div>
+        <div class="col-xs-6">{{ include('blocks/sports/team/team_over_under_v1.1.html.twig', {logo: 'true', team2: '_2'}) }}</div>
+    </div>
+    {% include 'blocks/various/comment_thread.html.twig' %}
+
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+{% endblock %}

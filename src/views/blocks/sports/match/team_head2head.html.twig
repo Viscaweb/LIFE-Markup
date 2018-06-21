@@ -1,0 +1,100 @@
+<div class="panel panel-default head-to-head">
+    <div class="panel-heading">
+        Head to Head
+        <div class="tools">
+            <img class="team-logo" alt="Real" src="{{ basePath }}img/sprites/realmadrid.png">
+            <img class="team-logo" alt="fc" src="{{ basePath }}img/sprites/fc_bayern.png">
+        </div>
+    </div>
+    <div class="teams">
+        <table class="circles">
+            <tr>
+                <td class="circle-info"><div class="team first"><div class="circle gray1"><span>4</span></div></div></td>
+                <td class="circle-info"><div class="team third"><div class="circle gray3"><span>1</span></div></div></td>
+                <td class="circle-info"><div class="team second"><div class="circle gray2"><span>2</span></div></div></td>
+            </tr>
+            <tr>
+                <td class="title"><span>REAL M.</span></td>
+                <td class="title"><span>DRAW</span></td>
+                <td class="title"><span>BAYERN</span></td>
+            </tr>
+        </table>
+    </div>
+    <table class="table matches table-condensed layout-fixed">
+        <colgroup>
+            <col class="date date-dmy">
+            {% if not small %}<col class="stage-has-logo">{% endif %}
+            {% if small %}<col class="stage-logo-only">{% endif %}
+            <col class="team">
+            <col class="score">
+            <col class="team">
+            {% if not small %}<col class="tools tools-4">{% endif %}
+        </colgroup>
+        <tbody>
+
+        <tr>
+            <td class="date">17/04/12</td>
+            <td class="stage"><img src="{{ basePath }}img/sprites/eurocoup.png" alt="Bundes Liga"> {% if not small %}MD23{% endif %}</td>
+            <td class="team team1"><a href="#"><span class="label red-card">1</span>Bayern Munich</a></td>
+            <td class="score"><a href="#">2 - 1</a></a></td>
+            <td class="team team2"><a href="#">Real Madrid</a></td>
+            {% if not small %}
+                <td class="tools dropdown">
+                    <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                </td>
+            {% endif %}
+        </tr>
+        <tr>
+            <td class="date">13/08/10</td>
+            <td class="stage"><img src="{{ basePath }}img/sprites/bundesliga.png" alt="Bundes Liga"> {% if not small %}MD23{% endif %}</td>
+            <td class="team team1"><a href="#">Bayern Munich</a></td>
+            <td class="score"><a href="#">0 - 0</a></td>
+            <td class="team team2"><a href="#">Real Madrid</a></td>
+            {% if not small %}
+                <td class="tools dropdown">
+                    <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                </td>
+            {% endif %}
+        </tr>
+        <tr>
+            <td class="date">07/03/07</td>
+            <td class="stage"><img src="{{ basePath }}img/sprites/cup2.png" alt="Bundes Liga"> {% if not small %}MD23{% endif %}</td>
+            <td class="team team1"><a href="#">Real Madrid</a></td>
+            <td class="score"><a href="#">2 - 1</a></td>
+            <td class="team team2"><a href="#">Bayern Munich</a></td>
+            {% if not small %}
+                <td class="tools dropdown">
+                    <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                </td>
+            {% endif %}
+        </tr>
+        <tr>
+            <td class="date">20/02/07</td>
+            <td class="stage"><img src="{{ basePath }}img/sprites/cup2.png" alt="Bundes Liga"> {% if not small %}MD23{% endif %}</td>
+            <td class="team team1"><a href="#">Real Madrid with a long name</a></td>
+            <td class="score"><a href="#">3 - 2</a></td>
+            <td class="team team2"><a href="#">Bayern Munich</a></td>
+            {% if not small %}
+                <td class="tools dropdown">
+                    <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                </td>
+            {% endif %}
+        </tr>
+        <tr>
+            <td class="date">10/03/04</td>
+            <td class="stage"><img src="{{ basePath }}img/sprites/bundesliga.png" alt="Bundes Liga"> {% if not small %}MD23{% endif %}</td>
+            <td class="team team1"><a href="#">Real Madrid</a></td>
+            <td class="score"><a href="#">1 - 0</a></td>
+            <td class="team team2"><a href="#">Bayern Munich<span class="label red-card">1</span></a></td>
+            {% if not small %}
+                <td class="tools dropdown">
+                    <a href="#" class="dropdown-toggle" id="" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-option-horizontal"></i></a>
+                </td>
+            {% endif %}
+        </tr>
+        </tbody>
+    </table>
+    <div class="panel-footer">
+        <a href="#"><span class="icon-caret-right"></span>All Stats</a>
+    </div>
+</div>

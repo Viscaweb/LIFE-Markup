@@ -1,0 +1,82 @@
+/*Custom General Icons Behavior*/
+
+.span{
+  &.active{
+    .glyphicon-star{
+      color: @ls-fav-hover !important;
+    }
+  }
+}
+
+i, span{
+ &.glyphicon-star.active{
+    color: @ls-fav-hover !important;
+  }
+}
+
+.comment-number{
+  font-family: @font-family-sans-serif;
+  color: @ls-light-color;
+  font-size: @font-size-x-tiny - 2px;
+  line-height: @font-size-x-tiny - 2px;
+  font-weight: @font-weight-semi-bold;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 0;
+}
+
+/*Mixin General Tables Tools Icon Style*/
+.ls-tools-icon-style(){
+  display: inline-block;
+  font-size:  @font-size-large;
+  padding: 0 1px;
+  color: fade(@ls-table-tools-icons-color, 35%);
+  line-height: 15px;
+  vertical-align: middle;
+  position: relative;
+
+  &.available{
+    color: @ls-table-tools-icons-color;
+
+    &.live {
+      color: @live-red;
+
+      &:hover{
+        color: darken(@live-red,10%);
+      }
+    }
+
+    .comment-number {
+      color: @ls-light-color;
+    }
+
+  }
+
+  &:hover,
+  &:focus{
+    color: contrast(@ls-table-tools-icons-color, darken(@ls-table-tools-icons-color, 30%), lighten(@ls-table-tools-icons-color, 30%));
+
+
+    &.available{
+
+      .comment-number{
+        color: @ls-light-color;
+      }
+    }
+  }
+
+  &.active{
+    color: @brand-primary;
+
+    &:hover{
+      color: darken(@brand-primary, 10%);
+    }
+  }
+}
+
+.fav-match{
+  .ls-tools-icon-style();
+  color:@ls-table-tools-icons-color;
+}

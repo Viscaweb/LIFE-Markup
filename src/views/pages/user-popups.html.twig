@@ -1,0 +1,47 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_before %}
+    {% include 'blocks/placeholders/visual_block_1220x230.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Login</h3>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#login-main">LOGIN_MAIN</button>
+
+            <h3>Password Forgotten</h3>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#login-pwd">LOGIN_PWD</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#login-pwd-simple">LOGIN_PWD_SIMPLE</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#login-pwd-success">LOGIN_PWD_SUCCESS</button>
+
+            <h3>Registration</h3>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#reg-main">REG_MAIN</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#login-reg-success">LOGIN_REG_SUCCESS</button>
+
+            <h3>Facebook</h3>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#login-fb-error">LOGIN_FB_ERROR</button>
+
+            <h3>Account validation</h3>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#validation-success">ACCOUNT_VALIDATION_ERROR</button>
+        </div>
+    </div>
+
+    {% include 'blocks/modals/modal_sample.html.twig' %}
+    {% include 'blocks/modals/modal_login.html.twig' %}
+    {{ include('blocks/modals/modal_register.html.twig', {context: 'reg-main'}) }}
+    {% include 'blocks/modals/modal_register_success.html.twig' %}
+    {% include 'blocks/modals/modal_password_forgotten.html.twig' %}
+    {{ include('blocks/modals/modal_register.html.twig', {context: 'login-fb-error'}) }}
+    {% include 'blocks/modals/modal_password_forgotten_success.html.twig' %}
+    {% include 'blocks/modals/modal_validation_success.html.twig' %}
+    {% include 'blocks/modals/modal_password_forgotten_simple.html.twig' %}
+
+{% endblock %}
+
+{% block content_right %}
+{% endblock %}

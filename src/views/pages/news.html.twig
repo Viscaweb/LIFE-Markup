@@ -1,0 +1,21 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb_news.html.twig' %}
+    {% include 'blocks/news/featured_news.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/news/news_listing.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/placeholders/panel_300x300.html.twig' %}
+{% endblock %}

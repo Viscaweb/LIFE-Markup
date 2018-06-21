@@ -1,0 +1,25 @@
+{# base.html.twig : Widget base width conditional .panel#}
+
+{% if in_panel %}
+    <div class="panel {{ panel_classes }}">
+
+        {% set _header = block('panel_heading') %}
+        {% if _header is not empty and noHeader != 'true'  %}
+            <div class="panel-heading">
+                {% block panel_heading %}{% endblock %}
+            </div>
+        {% endif %}
+{% endif %}
+
+        {% block widget_content %}
+            {# Content of the widget #}
+        {% endblock %}
+
+        {% set _footer = block('panel_footer') %}
+        {% if _footer is not empty %}
+            <div class="panel-footer">
+                {% block panel_footer %}{% endblock %}
+            </div>
+        {% endif %}
+
+{% if in_panel %}</div>{% endif %}

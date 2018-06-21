@@ -1,0 +1,22 @@
+{% if breadcrumb is defined or breadcrumb_h1 is defined %}
+    <ol class="breadcrumb" role="navigation">
+        <li><a href="#"><span class="icon glyphicon glyphicon-home"></span></a></li>
+        <li><a href="#"><span class="icon icon-football" title="Football"></span></a></li>
+        {% for item in breadcrumb %}
+            {% if loop.first %}
+                <li><a href="#">{{ item | raw }}</a></li>
+            {% elseif loop.last %}
+                <li  class="active"><a href="#">{{ item | raw }}</a></li>
+            {% else %}
+                <li><a href="#">{{ item | raw }}</a></li>
+            {% endif %}
+        {% endfor %}
+        {% if breadcrumb_h1 is defined %}
+            <li><h1>{{ breadcrumb_h1 }}</h1></li>
+        {% endif %}
+    </ol>
+    
+    {% if breadcrumb_h2 is defined %}
+        <h2 class="breadcrumb-subtitle">{{ breadcrumb_h2 }}</h2>
+    {% endif %}
+{% endif %}

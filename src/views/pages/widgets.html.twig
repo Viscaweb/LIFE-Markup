@@ -1,0 +1,47 @@
+{% extends "layouts/full.html.twig" %}
+
+
+{% block container_content_wrapper %}
+
+        {% include 'blocks/sports/listings/match_listing_all_columns.html.twig' %}
+
+     {% include 'blocks/sports/top_competitions_results.html.twig' %}
+
+        <h3>Match listing (general)</h3>
+        {{ include('blocks/sports/listings/match_listing_general.html.twig', {in_panel:'true', noHeader:'true'}) }}
+        {{ include('blocks/sports/listings/match_listing_general_odds.html.twig', {in_panel:'true', noHeader:'true'}) }}
+        {{ include('blocks/sports/listings/match_listing_general_predictions.html.twig', {in_panel:'true', noHeader:'true'}) }}
+
+        <h3>Match listing (by competition)</h3>
+        <div class="row"><div class="col-xs-12">{% include 'blocks/sports/listings/match_listing_by_competition.html.twig' %}</div></div>
+
+        <h3>Match listing (by participant)</h3>
+        <div class="row"><div class="col-xs-12">{% include 'blocks/sports/listings/match_listing_by_team.html.twig' %}</div></div>
+
+        <h3>Match listing (by player)</h3>
+        <div class="row"><div class="col-xs-12">{% include 'blocks/sports/listings/match_listing_by_player.html.twig' %}</div></div>
+
+        <h3>Predictions Listing</h3>
+        {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
+        {% include 'blocks/predictions/predictions_last_predictions.html.twig' %}
+
+        <h3>Head to Head</h3>
+        {% include 'blocks/sports/match/team_head2head.html.twig' %}
+
+        <h3>Team Forms</h3>
+        <div class="row">
+            <div class="col-xs-6">{% include 'blocks/sports/team/team_form.html.twig' %}</div>
+            <div class="col-xs-6">{% include 'blocks/sports/team/team_form.html.twig' %}</div>
+        </div>
+
+        <h3>Competition Standing</h3>
+        <div class="row"><div class="col-xs-12">
+                {{ include('blocks/sports/competition/competition_standing.html.twig', {withForm: 'true'}) }}
+            </div></div>
+        <div class="row"><div class="col-xs-12">{% include 'blocks/sports/competition/competition_standing.html.twig' %}</div></div>
+        <div class="row"><div class="col-xs-12">{% include 'blocks/sports/competition/competition_standing_groups.html.twig' %}</div></div>
+        {% include 'blocks/sports/listings/match_listing_A_R.html.twig' %}
+        {% include 'blocks/streaming/next_matches_streaming_list.html.twig' %}
+
+{% endblock %}
+

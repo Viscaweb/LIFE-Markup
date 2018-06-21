@@ -1,0 +1,27 @@
+{# Modal structure #}
+<div class="modal fade {{ modal_classes }}" id="{{ modal_id }}">
+    <div class="modal-dialog {{ modal_dialog_classes }}">
+        <div class="modal-content">
+            {% set _header = block('modal_header') %}
+            {% if _header is not empty %}
+                <div class="modal-header">
+                    {% block modal_header %}{% endblock %}
+                </div>
+            {% endif %}
+
+            <div class="modal-body container-fluid {{ modal_body_classes }}">
+                {% block modal_content %}
+                    {# Content of the modal #}
+                {% endblock %}
+            </div>
+
+            {% set _footer = block('modal_footer') %}
+            {% if _footer is not empty %}
+                <div class="modal-footer">
+                    {% block modal_footer %}{% endblock %}
+                </div>
+            {% endif %}
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

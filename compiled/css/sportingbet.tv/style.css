@@ -1,0 +1,86 @@
+body {
+    background: no-repeat top fixed url('/bundles/app/markup/img/extra/sportingbet.tv/background.jpg');
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #285a97;
+
+}
+
+.header .navbar.navbar-fixed-top {
+    background: #285a97 none repeat scroll 0 0;
+}
+
+.header .navbar-inverse {
+    background-color: #009ce9;
+}
+
+.table tbody tr.league-data.league-data-heading > th {
+    background-color: #009ce9;
+}
+.sidebar-nav > li > a .icon,
+.sidebar-nav > li > a .icon.active {
+    color: #009ce9;
+}
+
+
+.header .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.table tbody tr.league-data.league-data-heading > th,
+.table tbody tr.league-data > th {
+    background-color: #009ce9;
+    border-bottom: 1px solid #009ce9;
+}
+
+.table tbody tr.league-data.active > th > a.dropdown-toggle {
+    box-shadow: 5px 0 0 #009ce9 inset;
+}
+
+.sidebar-nav li.active > a {
+    color: #009ce9;
+}
+
+.btn-primary,
+.btn-info,
+.btn-group > .btn.active{
+    background-color: #009ce9;
+    border-color: #285a97;
+}
+
+.btn-primary:hover {
+    background-color: #285a97;
+    border-color: #009ce9;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: #048ccf;
+}
+
+.header .navbar-inverse .navbar-nav > li.active > a,
+.header .navbar-inverse .navbar-nav > li.active > a:hover {
+    background-color: #048ccf;
+}
+
+.header .navbar.navbar-fixed-top .navbar-right > li.active > a,
+.header .navbar.navbar-fixed-top .navbar-right > li > a {
+    color:#fff;
+}
+
+.header .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #285a97 !important;
+}
+
+.table tbody tr.league-data.league-data-heading:hover > th{
+    background-color: #285a97 !important;
+}
+
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
+    background-color: #048ccf;
+    border-color: #048ccf;
+}

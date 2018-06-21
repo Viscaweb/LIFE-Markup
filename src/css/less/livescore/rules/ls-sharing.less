@@ -1,0 +1,132 @@
+/*sharing*/
+.sharing{
+  overflow: hidden;
+  background-color: darken(@ls-light-color, 3%);
+
+  iframe{
+    margin: 0;
+    min-width: 65px;
+    margin-right: 20px;
+  }
+  
+  > div {
+    margin: 0;
+
+    > div{
+      > div{
+        vertical-align: top !important;
+      }
+    }
+  }
+  /*#twitter-widget-0{
+    height: 65px !important;
+  }  
+
+  #___plusone_0{
+  	iframe{
+  		height: 64px !important;
+  	}
+  }*/
+
+  .likes{
+
+    .social-button {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 170px;
+      padding-top: 4px;
+    }
+
+	.icon{
+	  border-radius: 15px;
+	  color: @ls-light-color;
+	  display: inline-block;
+	  height: 28px;
+	  width: 28px;
+	  padding: 1px 4px;
+	  font-size: @ls-social-icon-size + 2;
+	  margin-right: 5px;
+    vertical-align: middle;
+	}
+
+	.fb, .tw, .gp {
+	  padding: 8px 0;
+	}
+
+  	.fb{
+
+  		.icon{
+  			background-color: @ls-fb-icon;
+  			
+  			&:hover {
+	            background-color: darken(@ls-fb-icon, 10%);
+            }
+            
+  		}
+
+        .social-button {
+          padding-top: 0;
+        }
+  	}
+  	.tw{
+
+  		.icon{
+  			background-color: @ls-twitter-icon;
+  			
+  			&:hover {
+	            background-color: darken(@ls-twitter-icon, 10%);
+            }
+  			
+  		}
+  	}  	
+  	.gp{
+
+  		.icon{
+  			background-color: @ls-gp-icon;
+  			
+  			&:hover {
+	            background-color: darken(@ls-gp-icon, 10%);
+            }
+            
+  		}
+  	}
+  }
+
+  p{
+    font-size: @font-size-small;
+    font-weight: @font-weight-semi-bold;
+  }
+  
+  .share-link-block{
+    margin-top: 30px;
+    
+    input.share-link{ 
+      font-size: @font-size-small;
+      font-weight: @font-weight-semi-bold;
+      color: lighten(@ls-dark-color, 10%);
+      width: 100%;
+      border: 0;
+      padding: 6px;
+    }
+  }
+}
+
+.panel-social-small {
+  border: none;
+}
+
+.social{ 
+  display: table;
+  
+  > div{
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: @font-size-small;
+    width: 25%;
+    
+    iframe{
+      margin: 0;
+    }
+  }
+}

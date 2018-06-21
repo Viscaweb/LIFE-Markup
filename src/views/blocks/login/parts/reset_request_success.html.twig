@@ -1,0 +1,9 @@
+{% extends 'blocks/elements/message_success.html.twig' %}
+
+{% set icon_classes = 'glyphicon glyphicon-envelope' %}
+
+{% block message_title %}We've sent you a reset link{% endblock %}
+{% block message_texte %}Check your emails, we've sent you a link to reset your password.{% endblock %}
+{% block message_buttons %}
+    <button type="button" class="btn btn-primary">Close</button>
+{% endblock %}

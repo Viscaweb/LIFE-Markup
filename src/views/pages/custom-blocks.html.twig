@@ -1,0 +1,41 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+    {% include 'blocks/user/user_profile_header.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'country', tab:'summary'}) }}
+    {% include 'blocks/sports/competition/competition_standing_panel.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
+    {% include 'blocks/predictions/predictions_alert_welcome.html.twig' %}
+    <div class="row">
+        <div class="col-xs-8">
+            {% include 'blocks/predictions/predictions_contest_share.html.twig' %}
+        </div>
+        <div class="col-xs-4">
+            {% include 'blocks/predictions/predictions_contest_rules_link.html.twig' %}
+        </div>
+    </div>
+    {% include 'blocks/sports/listings/match_listing_A_R.html.twig' %}
+    {{ include('blocks/sports/match/match_prediction.html.twig') }}
+    {% include 'blocks/elements/sports_tabs.html.twig' %}
+    {{ include('blocks/sports/listings/match_listing_general.html.twig', {in_panel:'true'}) }}
+
+    {% include 'blocks/sports/listings/match_listing_US_odds.html.twig' %}
+
+    {% include 'blocks/elements/match_listing_buttons_v1.0.html.twig' %}
+    {{ include('blocks/elements/match_listing_buttons_v1.1.html.twig', {type: 'all'}) }}
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/news/news_in_brief_list.html.twig' %}
+    {% include 'blocks/sports/upcoming_US_top_games.html.twig' %}
+{% endblock %}

@@ -1,0 +1,323 @@
+.btn{
+  font-size: @font-size-small;
+  color: lighten(@ls-dark-color, 26.2%);
+  line-height: 16px;
+  padding: (@padding-large-vertical - 1) (@padding-base-horizontal - 1);
+  .transition(.6s ease-in-out width); 
+ 
+
+  &:focus{
+    outline: none;
+  }
+
+  &.btn-lg{
+    font-size: @font-size-large;
+    padding: (@padding-large-vertical + 3) (@padding-large-horizontal + 2);
+  }
+
+  &.btn-sm{
+    padding: (@padding-small-vertical + 1) @padding-small-horizontal;
+  }
+
+  &.btn-xs{ 
+    padding: (@padding-xs-vertical + 1) (@padding-xs-horizontal + 1);
+  }
+  
+  &.dropdown-toggle{
+    .icon.icon-caret-down, .icon.icon-expand{
+      margin-left: 15px;
+    }
+    
+    &.btn-link{
+      .icon-caret-down,.icon-expand, .icon{
+        margin-left: 10px;
+      }
+    }
+    
+    &.btn-partager{
+      padding-right: 38px;
+    }
+  }  
+  
+  &.large-icon{
+    padding: 6px 28px 5px 11px;
+    
+    > span.icon{
+      color: darken(@ls-light-color,39%);
+      font-size: @font-size-base + 9;
+      display: inline-block;
+      font-size: 22px;
+      height: 22px;
+      vertical-align: middle;
+      margin-right: 11px;
+    }
+    
+    .icon-caret-down,.icon-expand{
+      margin-top: -6px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+    }
+  }
+}
+
+.btn-default {
+
+	span{ 
+	    
+	    &.icon,
+	    &.icon-caret-down,
+	    &.icon-caret-up,
+	    &.icon-caret-left,
+	    &.icon-caret-right {
+	      color: darken(@ls-light-color, 28%);
+	    }
+	}
+}
+
+.btn-primary,.btn-primary:focus{
+  color: @ls-light-color;
+  outline: none;
+  
+  &.active{
+    outline: none;
+  }
+  
+  &:hover{
+    border-color: @brand-primary - 18%;
+    background: @brand-primary - 14%;
+  }
+
+  .glyphicon{
+    color: @ls-light-color;
+    margin-right: 5px;
+  }
+
+}
+
+.btn-success,.btn-success:focus{
+  color: @ls-light-color;
+  outline: none;
+  
+  &.active{
+    outline: none;
+  }
+  
+  &:hover{
+    border-color: @ls-success-border - 18%;
+    background: @ls-btn-success - 14%;
+  }
+  
+  .glyphicon{
+    color: @ls-light-color;
+  }
+}
+
+.btn-info,.btn-info:focus{
+  color: @ls-light-color;
+  outline: none;
+  
+  &.active{
+    outline: none;
+  }
+  
+  &:hover{
+    border-color: @ls-btn-info - 18%;
+    background: @ls-btn-info - 14%;
+  }
+  
+}
+
+.btn-warning,.btn-warning:focus{
+  color: @ls-light-color;
+  outline: none;
+  
+  &.active{
+    outline: none;
+  }
+  
+  &:hover{
+    border-color: @ls-btn-warning - 18%;
+    background: @ls-btn-warning - 14%;
+  }
+  
+}
+
+.btn-danger,.btn-danger:focus{
+  color: @ls-light-color;
+  outline: none;
+  
+  &.active{
+    outline: none;
+  }
+  
+  &:hover{
+    border-color: @ls-btn-danger - 18%;
+    background: @ls-btn-danger - 14%;
+  }
+  
+}
+
+.btn-link,.btn-link:focus{
+  color: @ls-btn-link;
+  outline: none;
+  font-weight: @font-weight-semi-bold;
+  
+  &.active{
+    outline: none;
+  }
+  
+  &:hover{
+    background: @ls-light-color - 14%;
+    text-decoration: none;
+  }
+  
+}
+
+.btn.spinner{
+  min-width: 100px;
+  text-align: left;
+  border:1px solid darken(@ls-light-color, 12%) !important;
+
+  span.icon{
+    float: right;
+    line-height: @font-size-medium;
+  }
+  
+  .icon{
+    font-size: @font-size-x-small;
+  }
+}
+
+.btn-group{
+
+  .btn-link{
+  
+    span{
+        color: @ls-btn-link;
+    }
+    
+    &.icon{
+      
+      span{
+        color: darken(@ls-light-color, 19.3%);
+        font-size: @font-size-normal;
+      }
+      
+      &:hover{
+        background-color: transparent;
+        
+        span{
+          color: darken(@ls-light-color, 30%);
+        }
+      }
+    }
+  }
+  
+  > .btn{
+    .border-radius(2px);
+    
+   &.active{
+      background-color: @brand-primary;
+      border-color: darken(@brand-primary, 5%);
+      color: @ls-light-color;
+    }    
+  }
+  
+  &.btn-group-justified{
+    table-layout: inherit;
+
+    .btn{
+      border-right-width: 0px;
+
+      &.btn-default{
+        &:hover + .btn{
+          border-left-color: darken(@ls-light-color, 32%);
+        }
+      }
+      &.btn-warning{
+        &:hover + .btn{
+          border-left-color: @ls-btn-warning - 18%;
+        }
+      }
+      &.btn-danger{
+        &:hover + .btn{
+          border-left-color: @ls-btn-danger - 18%;
+        }
+      }
+      &.btn-info{
+        &:hover + .btn{
+          border-left-color: @ls-btn-info - 18%;
+        }
+      }
+      &.btn-success{
+        &:hover + .btn{
+          border-left-color: @brand-primary - 18%;
+        }
+      }
+
+      &:last-of-type{
+        border-right-width: 1px;
+      }
+
+      &.spinner{
+        border-right-width: 0 !important;
+      }
+    }
+  }
+  
+  .btn-prediction-failed{
+    position: relative;
+    
+    &:after{
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 50%;
+      margin-left: -1px;
+      background-color: @ls-light-color;
+      .rotate(40deg);
+    }
+  }
+  
+  .dropdown-toggle{
+    .icon-caret-select{
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+  }
+
+  .select-component{
+    float: left;
+    display: inline-block;
+    font-style: normal;
+    border-color: darken(@ls-light-color, 12%);
+
+    select{
+      outline: none;
+    }
+
+    &.select-component-xs{
+
+      &:after{
+        line-height: 20px;
+        width: 30px;
+      }
+
+      select{
+        color: lighten(@ls-dark-color, 20%);
+        font-weight: @font-weight-semi-bold;
+        padding: 0 6px 1px;
+        min-width: 160px;
+      }
+    }
+  }
+
+  .btn + .select-component, .select-component + .btn {
+    margin-left: -1px;
+  }
+}
+

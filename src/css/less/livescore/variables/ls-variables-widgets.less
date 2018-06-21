@@ -1,0 +1,34 @@
+/* Theming for webmaster widgets */
+
+/*style-design-alt-background-color*/              //AUTO > darken(@ls-light-color,1%);
+/*style-design-background-color*/                  @ls-light-color: #032476;
+
+/*style-design-bar-background-color*/              @panel-default-heading-bg: #0a193e;
+/*style-design-bar-color*/                         @panel-default-text: #005fff;
+
+/*style-design-border-color*/                      @table-border-color : #0e3391;
+/*style-design-color*/                             @text-color : #6a88b0;
+/*style-design-deep-background-color*/             //AUTO > darken(@ls-light-color, 15%) > create specific variable
+/*style-design-header-background-color*/           @ls-th-league-bg : #690015;
+/*style-design-header-color*/                      @ls-th-league-color: #fffefa;
+/*style-design-highlight-color*/                   @ls-tr-highlight-bg: #0d3096;
+/*style-design-light-color*/                       // ?? not found in the widgets
+/*style-design-live-color*/                         @live-red: #e30013;
+/*style-design-next-match-link-color*/              @link-color: #94ceff;
+/*style-design-scores-odds-color*/                  @ls-data-score-color: #fffefa;
+
+/*style-design-selector-active-background-color*/   @brand-primary: #0f40c1;
+/*style-design-selector-active-color*/              @btn-primary-color : #c9dfff;
+/*style-design-selector-inactive-background-color*/ //AUTO >transparent
+/*style-design-selector-inactive-color*/            //AUTO > @text-color
+
+/*style-design-table-highlight-background-color*/   //@ls-tr-selected-bg: #ffdf00; >> see why this is used, can we use only the other one
+                                                    // also see classes .selected et .selected-row
+                                                    @ls-tr-selected-bg : #57477b;
+/*style-design-table-hover-background-color*/       //AUTO > darken(@ls-light-color, 7%);
+/*style-design-table-hover-color*/                  //AUTO > @text-color;
+
+/*style-height*/
+
+/* Generated color : */
+@ls-table-tools-icons-color : contrast(@ls-light-color, fade(#000000,30%), fade(#ffffff,50%));

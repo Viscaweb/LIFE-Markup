@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'LSicons';
+  src:  url('fonts/LSicons.eot?f6d8ae');
+  src:  url('fonts/LSicons.eot?f6d8ae#iefix') format('embedded-opentype'),
+    url('fonts/LSicons.ttf?f6d8ae') format('truetype'),
+    url('fonts/LSicons.woff?f6d8ae') format('woff'),
+    url('fonts/LSicons.svg?f6d8ae#LSicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'LSicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-whistle:before {
+  content: "\e62b";
+}
+.icon-x2:before {
+  content: "\e600";
+}
+.icon-am-football:before {
+  content: "\e601";
+}
+.icon-android:before {
+  content: "\e602";
+}
+.icon-apple:before {
+  content: "\e603";
+}
+.icon-arrow-down:before {
+  content: "\e604";
+}
+.icon-arrow-up:before {
+  content: "\e605";
+}
+.icon-baseball:before {
+  content: "\e606";
+}
+.icon-basketball:before {
+  content: "\e607";
+}
+.icon-bell:before {
+  content: "\e608";
+}
+.icon-bulb:before {
+  content: "\e609";
+}
+.icon-calendar:before {
+  content: "\e60a";
+}
+.icon-caret-down:before {
+  content: "\e60b";
+}
+.icon-caret-left:before {
+  content: "\e60c";
+}
+.icon-caret-right:before {
+  content: "\e60d";
+}
+.icon-caret-up:before {
+  content: "\e60e";
+}
+.icon-clock:before {
+  content: "\e60f";
+}
+.icon-cup:before {
+  content: "\e610";
+}
+.icon-equal:before {
+  content: "\e611";
+}
+.icon-expand-h:before {
+  content: "\e612";
+}
+.icon-expand:before {
+  content: "\e613";
+}
+.icon-facebook:before {
+  content: "\e614";
+}
+.icon-football:before {
+  content: "\e615";
+}
+.icon-googleplus:before {
+  content: "\e616";
+}
+.icon-handball:before {
+  content: "\e617";
+}
+.icon-hockey:before {
+  content: "\e618";
+}
+.icon-man:before {
+  content: "\e619";
+}
+.icon-mic:before {
+  content: "\e61a";
+}
+.icon-open:before {
+  content: "\e61b";
+}
+.icon-play:before {
+  content: "\e61c";
+}
+.icon-prono:before {
+  content: "\e61d";
+}
+.icon-rugby:before {
+  content: "\e61e";
+}
+.icon-share:before {
+  content: "\e61f";
+}
+.icon-shirt:before {
+  content: "\e620";
+}
+.icon-standings:before {
+  content: "\e621";
+}
+.icon-stats:before {
+  content: "\e622";
+}
+.icon-stopwatch:before {
+  content: "\e623";
+}
+.icon-team:before {
+  content: "\e624";
+}
+.icon-tennis:before {
+  content: "\e625";
+}
+.icon-tick:before {
+  content: "\e626";
+}
+.icon-tv:before {
+  content: "\e627";
+}
+.icon-twitter:before {
+  content: "\e628";
+}
+.icon-volley:before {
+  content: "\e629";
+}
+.icon-woman:before {
+  content: "\e62a";
+}
+.icon-caret-double-left:before {
+  content: "\e62c";
+}
+.icon-caret-double-right:before {
+  content: "\e62d";
+}
+.icon-ellipse:before {
+  content: "\e62e";
+}
+.icon-caret-select:before {
+  content: "\e62f";
+}
+.icon-widget:before {
+  content: "\e630";
+}
+.icon-arrow-up-down:before {
+  content: "\e631";
+}
+.icon-prediction:before {
+  content: "\e632";
+}
+.icon-cake-candle:before {
+  content: "\e633";
+}
+.icon-man-height:before {
+  content: "\e634";
+}
+.icon-weight:before {
+  content: "\e635";
+}
+.icon-arrows-position:before {
+  content: "\e636";
+}
+.icon-bell-off:before {
+  content: "\e637";
+}
+.icon-card:before {
+  content: "\e638";
+}
+.icon-titular:before {
+  content: "\e639";
+}
+.icon-matches-list:before {
+  content: "\e63a";
+}
+.icon-referee:before {
+  content: "\e63b";
+}
+.icon-star:before {
+  content: "\e63c";
+}
+.icon-location-pin:before {
+  content: "\e63d";
+}
+.icon-help:before {
+  content: "\e63e";
+}
+.icon-info:before {
+  content: "\e63f";
+}
+.icon-news:before {
+  content: "\e903";
+}
+.icon-view_list:before {
+  content: "\e900";
+}
+.icon-verified_user:before {
+  content: "\e901";
+}
+.icon-email:before {
+  content: "\e902";
+}
+.icon-gift:before {
+  content: "\e904";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-field:before {
+  content: "\e906";
+}
+.icon-lineup:before {
+  content: "\e906";
+}
+

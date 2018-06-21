@@ -1,0 +1,137 @@
+
+.top-competitions-block{
+  &.panel{
+      
+      .nav-pills{
+        > li{
+          > a{
+            line-height: 40px;
+            border-radius: 0;
+            padding: 0 8px;
+            border-bottom: 2px solid darken(@ls-light-color, 6.4%);
+            
+            &:hover{
+              background: darken(@ls-light-color, 2.8%);
+              border-bottom-color: darken(@brand-primary, 3.8%);
+            }
+            
+            > img{
+              max-width: 20px;
+            }
+            
+            .icon-caret-down{
+              color: fade(@text-color, 70%);
+              font-size: @font-size-small;
+            }
+
+            &:focus{
+              background-color: transparent;
+            }
+          }
+          
+          &.active{
+            > a{
+              background: darken(@ls-light-color, 2.8%);
+              border-bottom-color: darken(@brand-primary, 3.8%);
+            }
+          }
+          
+          &.open{
+            > a{
+              border-bottom-color: darken(@brand-primary, 3.8%);
+              
+              .icon-caret-down{
+                color: @ls-light-color;
+              }
+
+              &:hover, &:focus{
+                background-color: @brand-primary;
+              }
+            }
+          }
+        }
+      }
+      
+      .active-ligue{
+        padding: 15px;
+        
+        .ligue-logo{
+          float: right;
+          max-width: 32px;
+        }
+        
+        h4, .h4{
+          margin: 0 0 20px;
+          font-size: @font-size-small - 1;
+          font-weight: @font-weight-semi-bold;
+          line-height: 18px;
+          text-transform: uppercase;
+          color: @text-muted;
+          display: block;
+          
+          span{
+            color: @text-color;
+            font-size: @font-size-base + 1;
+            display: block;
+            text-transform: none;
+          }
+        }
+        
+        .btn-group{
+          .btn{
+            font-weight: @font-weight-normal;
+            padding-left: 6px;
+            padding-right: 6px;
+          }
+        }
+      }
+    
+      table.results{
+        thead{
+          th{
+            text-transform: none;
+            font-size: @font-size-small;
+          }
+        }
+      
+        tbody{
+          tr{
+            td{
+              &.time{
+                color: fade(@text-color, 60%);
+                padding-left: 4px;
+                padding-right: 4px;
+              }
+              
+              &.hour{
+                padding-left: 4px;
+                padding-right: 4px;
+              }
+              
+              &.team{
+                
+                b{
+                  font-weight: @font-weight-semi-bold;
+                }
+              }
+              
+              &.team1{
+                text-align: right;
+              }
+              
+              &.score{
+                font-size: @font-size-base;
+                
+                a{
+	                
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      
+
+  }
+}

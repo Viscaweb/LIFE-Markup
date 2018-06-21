@@ -1,0 +1,64 @@
+.table.live-commentary{
+  margin: 0;
+
+  tbody{
+    tr{
+      td{
+        vertical-align: middle;
+        font-size: @font-size-base;
+        font-weight: @font-weight-normal;
+        
+        &.minute{
+          width: 13%;
+          text-align: center;
+          padding-left: 13px;
+          padding-right: 13px;
+        }
+        
+        &.icon{
+          text-align: center;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        
+        &.content{
+
+          img{
+            max-width: 100%;
+            height: auto;
+          }
+
+          p{
+            font-size: @font-size-base;
+            font-weight: @font-weight-normal;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            margin: 0;
+            
+            & + img, & + iframe{
+              margin-top: 13px;
+            }
+            
+          }
+          
+          .btn{
+            margin-top: 3px;
+            
+            .icon{
+              font-size: @font-size-x-large;
+              vertical-align: middle;
+              color: lighten(@ls-dark-color, 40%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel.live-commentary{
+  iframe{
+    margin: 0;
+    display: block;
+  }
+}

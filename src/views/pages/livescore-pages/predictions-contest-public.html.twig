@@ -1,0 +1,36 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['<h1>Concours de Pronostics</h1>']}) }}
+    {{ include('blocks/placeholders/visual_block_970x300.html.twig', {image970x300: 'img/970x300-REEL.jpg'}) }}
+{% endblock %}
+
+{% block content %}
+    <h2 class="no-top-margin">Concours de Pronostics Foot</h2>
+    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    {{  include('blocks/predictions/predictions_contest_grid.html.twig', {contestPublic: 'true' }) }}
+    <div class="row">
+        <div class="col-xs-6">
+            {% include 'blocks/predictions/predictions_contest_season_gifts.html.twig' %}
+        </div>
+        <div class="col-xs-6">
+            {% include 'blocks/predictions/predictions_contest_month_gifts.html.twig' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            {% include 'blocks/predictions/predictions_contest_share.html.twig' %}
+        </div>
+        <div class="col-xs-4">
+            {% include 'blocks/predictions/predictions_contest_rules_link.html.twig' %}
+        </div>
+    </div>
+    {% include 'blocks/various/comment_thread.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/predictions/predictions_contest_quick_info.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_standings.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_others.html.twig' %}
+{% endblock %}

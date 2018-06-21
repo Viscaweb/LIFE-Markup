@@ -1,0 +1,55 @@
+.blinking {
+  animation: blinker 1s linear 4;
+}
+
+@keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: .0; }
+  100% { opacity: 1.0; }
+}
+
+.bounce {
+  animation: bounce 1s .5s;
+}
+
+.bounceHide {
+  animation: bounce 1s, showHide 5s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1.1);}
+  50% { transform: scale(1.6); }
+  60% { transform: scale(0.6); }
+  80% { transform: scale(0.95);}
+  100% { transform: scale(1);}
+}
+
+@keyframes progressiveHighlight {
+  0% {  background-color: @ls-tr-highlight-bg;  }
+  90% { background-color: @ls-tr-highlight-bg;  }
+  100% { }
+}
+
+
+@keyframes progressiveUpdate {
+  0% { background-color: @live-red; color: @ls-light-color;}
+  90% { background-color: @live-red; color: @ls-light-color; }
+  100% { }
+}
+
+
+@keyframes progressiveUpdateLink {
+  0% { color: @ls-light-color;}
+  90% { color: @ls-light-color; }
+  100% { }
+}
+
+.showHide {
+  animation: showHide 1s linear 4;
+}
+
+@keyframes showHide {
+  0% { opacity: 1 }
+  90% { opacity: 1 }
+  100% { opacity: 0}
+}

@@ -1,0 +1,25 @@
+{% extends "layouts/full.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    <div class="row">
+        <div class="col-xs-8">
+            {% include 'blocks/login/site_features.html.twig' %}
+        </div>
+        <div class="col-xs-4">
+            <div class="login-register-container">
+                {% include 'blocks/login/panel_login.html.twig' %}
+                {% include 'blocks/login/panel_register.html.twig' %}
+                {% include 'blocks/login/panel_password_resest.html.twig' %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}

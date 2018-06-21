@@ -1,0 +1,9 @@
+{% extends 'blocks/elements/message_success.html.twig' %}
+
+{% set icon_classes = 'glyphicon glyphicon-ok' %}
+
+{% block message_title %}Congratulations!<br/> Your registration has been successful{% endblock %}
+{% block message_texte %}Please check your emails to validate your account.{% endblock %}
+{% block message_buttons %}
+    <button type="button" class="btn btn-primary"><span class="icon-caret-right"></span> Go to My Dashboard</button>
+{% endblock %}

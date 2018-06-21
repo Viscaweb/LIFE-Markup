@@ -1,0 +1,18 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['<h1>Football Live Scores</h1>']}) }}
+{% endblock %}
+
+{% block content %}
+    {{ include ('blocks/sports/listings/match_listing_general.html.twig', {in_panel:'true', panel_title: 'Today Live Scores'}) }}
+{% endblock %}
+
+{% block content_right %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {% include 'blocks/news/news_in_brief_list.html.twig' %}
+    {% include 'blocks/sports/live_commented_matches.html.twig' %}
+{% endblock %}

@@ -1,0 +1,155 @@
+table.links-table{
+
+  tbody{
+  
+    tr{
+    
+      td{
+        padding: 0;
+        width: 33%;
+        vertical-align: middle;
+      
+        > a{
+          padding: 8px;
+          display: block;
+        
+          img{
+            max-width: 18px;
+            max-height: 18px;
+            margin-right: 5px;
+          }
+          
+          span.icon-caret-right{
+            float: right;
+            line-height: 18px;
+          }
+
+        }
+
+        &:hover{
+
+          .dropdown-toggle {
+            display: block;
+          }
+        }
+
+        &.open {
+
+          .dropdown-toggle {
+            display: block;
+            background-color: darken(@ls-light-color, 7%);
+            text-decoration: none;
+
+          }
+        }
+     
+      }
+
+      &:hover{
+
+        td{
+          background: transparent;
+
+          &:hover {
+            background-color: darken(@ls-light-color, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: @ls-light-color;
+
+    &:hover {
+      display: block;
+      background-color: darken(@ls-light-color, 7%);
+    }
+
+    > span {
+      display: block;
+      position: relative;
+      top: 50%;
+      margin-top: -50%;
+    }
+  }
+}
+
+table.squad-listing{
+
+  thead{
+  
+    tr{
+    
+      th{
+        padding: 4px 7px;
+        font-size: @font-size-x-tiny !important;
+      }
+    }
+  }
+
+  tbody{
+  
+    tr{
+    
+      th{
+        border-top: 0;
+        text-align: center;
+        font-weight: @font-weight-bold;
+        font-size: @font-size-small;
+      }
+      
+      td{
+        text-align: center;
+        
+        &.num{
+          font-weight: @font-weight-semi-bold;
+        }
+        
+        &.player{
+          vertical-align: middle !important;
+          width: 30%;
+          text-align: left;
+          
+          img{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            background: @ls-player-image-placeholder-bg;
+          }
+        }
+        
+        &.nationality{
+          text-align: left;
+          border-left: 2px solid darken(@ls-light-color, 8.2%);
+          
+            span{
+              margin-right: 8px;
+            }
+        }
+      }
+    }
+  }
+  
+  &.avatars{
+  
+    tbody{
+    
+      tr{
+      
+        td{
+        
+          &.player{
+            padding: 0 5px 0 !important;
+            line-height: 31px;
+          }
+        }
+      }
+    }
+  }
+}

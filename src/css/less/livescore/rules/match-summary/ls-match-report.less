@@ -1,0 +1,87 @@
+.match-report{
+  table{
+    thead{
+      tr{
+        th{
+          span.icon{
+            vertical-align: middle;
+            font-size: @font-size-large;
+            color: lighten(@ls-dark-color, 55.3%);
+            line-height: @font-size-small;
+            position: relative;
+            top: -2px;
+          }
+          
+          &.team{
+            width: 40%;
+          }
+          
+          &.middle{
+            width: 10%;
+          }
+        }
+      }
+    }
+    
+    tbody{
+      tr{
+        th{
+          border-top: 0;
+          font-weight: @font-weight-bold;
+          font-size: @font-size-small;
+        }
+        
+        td{
+          &.extra-info {
+            width: 1%;
+
+            a.replay{
+              float: left;
+              color: @active-green;
+              font-size: @font-size-x-large;
+            }
+          }
+
+          
+          &.minute{
+            font-size: @font-size-small;
+            font-weight: @font-weight-bold;
+            text-align: center;
+            background-color: darken(@ls-light-color, 2%);
+          }
+          
+          &.player{
+            
+            &.home{
+              text-align: right;
+            }
+            
+            > a {
+              color: @text-color;
+              
+              &:hover {
+                color: @link-hover-color;
+              }
+            }
+            
+          }
+          
+          &.incident-icon{
+            width: 1%;
+            text-align: center;
+          }
+        }
+
+        &:hover {
+
+          td {
+
+            &.minute {
+              background-color: darken(@ls-light-color,10%)
+            }
+          }
+        }
+      }
+    }
+  }
+}

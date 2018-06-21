@@ -1,0 +1,89 @@
+.table {
+
+  tr {
+    th {
+      background-color: darken(@ls-light-color, 8.3%);
+      font-weight: 600;
+      font-size: @font-size-small - 1;
+      text-transform: uppercase;
+      color: lighten(@text-color, 5%);
+      padding: 8px 20px;
+    }
+
+    td {
+      font-size: @font-size-small;
+      padding: 8px 10px;
+    }
+
+    //General Hover Style
+    &:hover{
+      td{
+        background-color: @table-bg-hover;
+      }
+    }
+  }
+}
+
+.table-condensed {
+
+  thead {
+
+    > tr {
+
+      th {
+        border: 0;
+        padding: 4px 7px;
+        font-size: @font-size-x-small;
+        font-weight: 600;
+      }
+    }
+  }
+
+  tr {
+
+    th {
+      border: 0;
+      padding: 4px 7px;
+      font-size: @font-size-x-small;
+      font-weight: 600;
+    }
+
+    td {
+      line-height: 20px;
+      border-left: none;
+      padding: 3px 4px;
+
+      &:first-child {
+        border-left: 0;
+      }
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+//Table Striped Style
+.table-striped{
+
+  tbody{
+
+    tr:nth-child(even){
+      td{
+        background-color: darken(@ls-light-color,1%);
+      }
+    }
+
+    tr:nth-child(odd){
+      td{
+        background-color: @ls-light-color;
+      }
+    }
+
+    tr:nth-child(even):hover,  tr:nth-child(odd):hover{
+      td{
+        background-color: @table-bg-hover;
+      }
+    }
+  }
+}

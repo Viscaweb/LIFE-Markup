@@ -1,0 +1,87 @@
+{% set action_icons = [
+'sprite-icons football',
+'sprite-icons tennis',
+'sprite-icons rugby',
+'sprite-icons handball',
+'sprite-icons basketball',
+'sprite-icons volleyball',
+'sprite-icons icehockey',
+'sprite-icons baseball',
+'sprite-icons am-football',
+'sprite-icons yellow-card',
+'sprite-icons red-card',
+'sprite-icons yellow-red-card',
+'sprite-icons goal',
+'sprite-icons penalty-goal',
+'sprite-icons penalty-missed',
+'sprite-icons shirt',
+'sprite-icons comment',
+'sprite-icons comment-more',
+'sprite-icons shot-off',
+'sprite-icons shot-on',
+'sprite-icons shot-on-1',
+'sprite-icons shot-post',
+'sprite-icons clock',
+'sprite-icons player-change',
+'sprite-icons substitution-left',
+'sprite-icons football-field',
+'sprite-icons lineups',
+'sprite-icons shot-blocked',
+'sprite-icons hit-player-wall',
+'sprite-icons green-arrow',
+'sprite-icons red-arrow',
+'sprite-icons chairs',
+'sprite-icons incident-important',
+'sprite-icons red-cross',
+'sprite-icons yellow-cross',
+'sprite-icons injury-back',
+'sprite-icons players-wall',
+'sprite-icons funfact',
+'sprite-icons attendance',
+'sprite-icons info',
+'sprite-icons whistle',
+'sprite-icons interrupted',
+'sprite-icons whistle-active',
+'sprite-icons shootouts',
+'sprite-icons goal-assist',
+'sprite-icons assist',
+'sprite-icons shootout-goal',
+'sprite-icons own-goal',
+'sprite-icons goal-small',
+'sprite-icons nogoal',
+'sprite-icons shootout-missed',
+
+
+'sprite-icons grid',
+'sprite-icons gift',
+'sprite-icons match-paused',
+'sprite-icons match-play',
+'sprite-icons match-reload',
+'sprite-icons match-stop',
+'sprite-icons extra-time',
+'sprite-icons offside',
+'sprite-icons corner-flag'
+] %}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Actions icons</h3>
+        <p>Icons must be used with a &lt;span&gt;. Ex :
+        <PRE><code>&lt;span class="sprite-icons football"&gt;&lt;/span&gt;</code></PRE></p>
+        <table class="table table-condensed">
+            <tr>
+                <th>Icon</th>
+                <th>Class</th>
+            </tr>
+
+
+            {% for action_icon in action_icons %}
+            <tr><td><span class="{{ action_icon }}"></span></td><td><pre>{{ action_icon }}</pre></td></tr>
+            {% endfor %}
+
+        </table>
+    </div>
+</div>
+
+
+

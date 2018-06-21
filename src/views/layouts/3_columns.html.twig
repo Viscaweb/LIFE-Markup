@@ -1,0 +1,15 @@
+{% extends "layouts/2_columns.html.twig" %}
+
+{% block container_content_wrapper %}
+    <div class="content">
+        {% block content %}
+            {# content #}
+        {% endblock %}
+    </div>
+
+    <div class="right-sidebar">
+        {% block content_right %}
+            {# content right #}
+        {% endblock %}
+    </div>
+{% endblock %}

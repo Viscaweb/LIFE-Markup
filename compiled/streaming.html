@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+            
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livescore">
+    <meta name="author" content="Condor Themes">
+    <link rel="icon" href="js/bootstrap/favicon.ico">
+    <title>Livescore</title>
+
+    <!-- Global Style links-->
+
+    <!-- LSicons-->
+    <link rel="stylesheet" href="js/lsicons/style.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/custombox/dist/custombox.min.css" />
+    <link rel="stylesheet" href="js/toastr/toastr.min.css" />
+
+    
+    <!--  Custom styles for this template-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/style_split_1.css" />
+    <link rel="stylesheet" href="css/style_split_2.css" />
+    <![endif]-->
+
+    <!--End Global Style-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body >
+
+
+            <header class="header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="loading-bar" style="width: 21%;"></div>
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="img/ls-logo.png" alt="site logo"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-search">
+                    <input type="text" class="form-control" placeholder="Arsenal, Rooney, Premier League...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown alerts"><a href="#"><span class="icon-bell"><span class="badge live">5</span></span></a></li>
+                <li class="dropdown notifications">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-comment"><span class="badge primary">3</span></span></a>
+                    <ul class="dropdown-menu custom" role="menu">
+                        <li>
+                            <div class="dropdown-title">Notifications (3)<div class="tools"><a href="#" class="icon"><span class="icon glyphicon glyphicon-cog"></span></a></div></div>
+                            <div class="notifications-list ls-scrollbar">
+                                <ul class="media-list">
+                                    <li class="media highlight">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations !</span>
+                                            <p>New Prediction Contest Grid is available. Play now !</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media highlight">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">YOUNITED</span>
+                                            <p>real meme si jsuis pour le barca</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations ! </span>
+                                            <p>You won this month predictions contest</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations ! </span>
+                                            <p>You won this month predictions contest</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="view-all">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown settings">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></a>
+                    <ul class="dropdown-menu custom" role="menu">
+                        <li>
+                            <div class="dropdown-title">Settings</div>
+                            <div class="field time-zone">
+                                <label for="time-zone">Time Zone</label>
+                                <div class="select-component loading-opacity">
+                                    <select name="time-zone" id="time-zone">
+                                        <option value="1" selected>15h09 UTC+2 Madrid</option>
+                                        <option value="1">15h09 UTC+2 Madrid</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field odds-type">
+                                <label for="time-zone">Odds Type</label>
+                                <div class="select-component">
+                                    <select name="time-zone" id="time-zone2">
+                                        <option value="1" selected>Decimal Odds</option>
+                                        <option value="1">Decimal Odds</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-volume-up"></span></a></li>
+                <!--User dropdown-->
+                <li class="user dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="img/user-default.png" alt="user avatar">sebastien au. <span class="icon-caret-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="icon glyphicon glyphicon-user"></span>My account</a></li>
+                        <li><a href="#"><span class="icon icon-prono"></span>My predictions</a></li>
+                        <li><a href="#"><span class="icon icon-cup"></span>Prediction Contest</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-wrench"></span>Webmaster zone</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-edit"></span>Contact</a></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-off"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="sprite-icons football"></span>Football</a></li>
+                <li><a href="#"><span class="sprite-icons tennis"></span>Tennis</a></li>
+                <li><a href="#"><span class="sprite-icons rugby"></span>Rugby</a></li>
+                <li><a href="#"><span class="sprite-icons handball"></span>Handball</a></li>
+                <li class="dropdown dropdown-inverted">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others<span class="icon-caret-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="sprite-icons basketball"></span>Basketball</a></li>
+                        <li><a href="#"><span class="sprite-icons volleyball"></span>Volleyball</a></li>
+                        <li><a href="#"><span class="sprite-icons icehockey"></span>Ice Hockey</a></li>
+                        <li><a href="#"><span class="sprite-icons baseball"></span>Baseball</a></li>
+                        <li><a href="#"><span class="sprite-icons am-football"></span>American Football</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Streaming</a></li>
+                <li><a href="#">Prediction Contest</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right social-nav">
+                <li><a href="#"><span class="icon-phone"></span></a></li>
+                <li><a href="#"><span class="icon-apple"></span></a></li>
+                <li><a href="#"><span class="icon-android"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-googleplus"></span></a></li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>    
+    <div class="container">
+                                <div class="wrapper row">
+            
+    <div class="left-sidebar col-xs-2">
+                    <ul class="sidebar-nav">
+    <li>
+        <a href="#"><i class="icon icon-football"></i>All Matches</a>
+        <!-- <a href="javascript:;" class="pull-right calendar-button btn-datepicker-open" data-position="right-top"><input type="hidden" name="dp"><span class="icon-calendar"></span></a> -->
+    </li>
+    <li>
+        <a href="#" class="live-red uppercase"><i class="icon-ellipse"></i>Live Now<span class="badge live pull-right">12</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="icon-bell"></i>My Games<span class="badge live pull-right">3</span></a>
+    </li>
+    <li class="active open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Leagues</a>
+        <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
+        <ul class="sub-menu sortable-ul">
+            <li><a href="#" class="sortable" title="Ligue 1"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/ligue1.png" alt="Ligue 1"></span>Ligue 1 <span class="live-red">(6)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/ligue2.png" alt="Ligue 2"></span>Ligue 2<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/premiereleague.png" alt="Premiere league"></span>Premiere League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/bundesliga.png" alt="Bundes Liga"></span>Bundesliga <span class="live-red">(3)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/seriea.png" alt="Serie A"></span>Serie A<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/coupedefrance.png" alt="Coupe de France"></span>Coupe de France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/cdl.png" alt="Cdl"></span>CdL<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/ldc.png" alt="Ldc"></span>LdC<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/eurocoup.png" alt="Europa League"></span>Europa League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/worldcup.png" alt="World Cup"></span>World Cup<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable no-link"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/worldcup.png" alt="World Cup"></span>(not linked)<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+            <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add competitions</a></li>
+        </ul>
+    </li>
+    <li class="active open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Teams</a>
+        <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
+        <ul class="sub-menu sortable-ul">
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/fr.png" alt="France"></span>France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/manchestercity.png" alt="Manchester City"></span>Manchester City<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/fr.png" alt="OM"></span>OM<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></span>Real Madrid<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/barcelona.png" alt="Barcelona"></span>Barcelona<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/lyon.png" alt="Lyon"></span>Lyon<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/psg.png" alt="PSG"></span>PSG<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+            <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add teams</a></li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Top Countries</a>
+        <ul class="sub-menu">
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag fr"></span>France</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _england"></span>England</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag es"></span>Spain</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag it"></span>Italy</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a></li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Country</a>
+        <ul class="sub-menu second-menu">
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _united_nations"></span>International</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag za"></span>South Africa</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag al"></span>Albania</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ag"></span>Algeria</a></li>
+            <li class="open">
+                <a class="dropdown-toggle"><span class="country-flag de"></span>Germany</a>
+                <ul class="sub-menu third-menu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Bundesliga <span class="fav active"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Super Coupe <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Bundesliga 2 <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li class="open">
+                        <a class="dropdown-toggle">CFA</a>
+                        <ul class="sub-menu fourth-menu">
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">CFA Group A<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group B<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group C<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group D<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bundesliga 3<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Regionalliga<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Coupe de la Lig.<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Oberliga<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">DfB-Pokal<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Barrages<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ad"></span>Andorra</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _england"></span>England</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ao"></span>Angola</a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+        </ul>
+    </li>
+    <li><a href="#">+ View more</a></li>
+</ul>            </div>
+
+    <main class="main col-xs-10">
+
+            
+        <div class="content-wrapper">
+
+                <div class="row streaming-description">
+    <div class="col-xs-7">
+        <span class="title">Streaming foot</span>
+        <span class="sub-title">Suis le foot en streaming live !</span>
+        <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="col-xs-5 text-right">
+        <img src="img/streaming.png" alt="Streaming">
+    </div>
+</div>    <div class="row streaming-table">
+    <div class="col-xs-12">
+        <span class="title">Programme des matchs de foot en streaming</span>
+        <div class="btn-group">
+            <button class="btn btn-default" type="button"><span class="icon-caret-left"></span></button>
+            <button class="btn btn-default dropdown-toggle" type="button">9 MAR - 15 MAR<span class="icon-caret-down"></span></button>
+            <button class="btn btn-default" type="button"><span class="icon-caret-right"></span></button>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Monday<span>9 Mar</span></th>
+                <th>Tuesday<span>10 Mar</span></th>
+                <th>Wednesday<span>11 Mar</span></th>
+                <th>Thursday<span>12 Mar</span></th>
+                <th>Friday<span>13 Mar</span></th>
+                <th>Saturday<span>14 Mar</span></th>
+                <th>Sunday<span>15 Mar</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="hour">07:00</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">07h30</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">08:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">09:00</td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">09h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">09h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">10h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">11:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">12:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">12h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">12h20</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">14:00</td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h10</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h45</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h00</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h60</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h50</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h50</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h50</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title"><img src="img/sprites/bundesliga.png" alt="Bundes Liga">14h55</span>
+                                <span class="description">Hertha Berlin<br>FSV Francfort</span>
+                                <span class="hover"><i class="icon icon-play"></i>Watch the match</span>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hour">15:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </main>
+
+        </div>
+                    </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="top-footer">
+            <div class="row">
+                <div class="col-xs-9 left-column">
+                    <span class="title">Top competitions football</span>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/worldcup.png" alt="World Cup">Coupe du Monde</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Coupe du Monde</a></li>
+                                <li><a href="#">Résultat Coupe du Monde</a></li>
+                                <li><a href="#">Calendrier Coupe du Monde</a></li>
+                                <li><a href="#">Classement Coupe du Monde</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/ligue1.png" alt="Ligue 1">Ligue1</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Ligue 1</a></li>
+                                <li><a href="#">Résultat Liguel 1</a></li>
+                                <li><a href="#">Calendrier Ligue 1</a></li>
+                                <li><a href="#">Classement Ligue 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/ldc.png" alt="Ldc">Ligue des Champions</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Ligue des Champions</a></li>
+                                <li><a href="#">Résultat Ligue des Champions</a></li>
+                                <li><a href="#">Calendrier Ligue des Champions</a></li>
+                                <li><a href="#">Classement Ligue des Champions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/premiereleague.png" alt="Premiere league">Premier League</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Premier League</a></li>
+                                <li><a href="#">Résultat Premier League</a></li>
+                                <li><a href="#">Calendrier Premier League</a></li>
+                                <li><a href="#">Classement Premier League</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/cup2.png" alt="Cup">Liga</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Liga</a></li>
+                                <li><a href="#">Résultat Liga</a></li>
+                                <li><a href="#">Calendrier Liga</a></li>
+                                <li><a href="#">Classement Liga</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/seriea.png" alt="Serie A">Serie A</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Serie A</a></li>
+                                <li><a href="#">Résultat Serie A</a></li>
+                                <li><a href="#">Calendrier Serie A</a></li>
+                                <li><a href="#">Classement Serie A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span class="title">Résultats foot par pays</span>
+                            <ul>
+                                <li><a href="#">Résultats Foot Français</a></li>
+                                <li><a href="#">Résultats Foot Anglais</a></li>
+                                <li><a href="#">Résultats Foot Espagnol</a></li>
+                                <li><a href="#">Résultats Foot Italien</a></li>
+                                <li><a href="#">Résultats Foot Allemand</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span class="title">Résultats foot par equipes</span>
+                            <ul>
+                                <li><a href="#">Equipe OM</a></li>
+                                <li><a href="#">Equipe Real Madrid</a></li>
+                                <li><a href="#">Equipe Barcelone</a></li>
+                                <li><a href="#">Equipe PSG</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span class="title">Principaux matchs à venir:</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Allemangne Portugal</a></li>
+                                <li><a href="#">Foot en direct Suisse France</a></li>
+                                <li><a href="#">Foot en direct Equiateur France</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 right-column">
+                    <img src="img/ls-logo-white.png" alt="Site Logo">
+                    <p>Fusce sagittis eget purus vel hendrerit. Morbi fermentum semper risus. Phasellus vel efficitur dolor. Quisque vel lorem accumsan, ornare velit eget, ultricies lacus, um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
+                    <div class="app-links">
+                        <img src="img/app-store.png" alt="AppStore">
+                        <img src="img/play-store.png" alt="PlayStore">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Utilisation</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Livescore gratuit</a></li>
+                <li><a href="#">Recrutement</a></li>
+            </ul>
+            <svg class="ls-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+             preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path class="ls-svg-bg" d="M0 1500 l0 -1500 1500 0 1500 0 0 1500 0 1500 -1500 0 -1500 0 0
+                -1500z m1625 1476 c213 -13 487 -110 680 -239 379 -254 624 -675 653 -1119 18
+                -275 -31 -525 -150 -763 -148 -295 -368 -515 -663 -662 -238 -120 -487 -169
+                -762 -151 -587 38 -1108 445 -1292 1008 -61 188 -83 363 -69 568 29 444 274
+                865 653 1119 140 94 351 182 525 219 77 16 261 32 315 27 17 -1 66 -4 110 -7z"/>
+                <path class="ls-svg-text" d="M1961 2465 c-260 -57 -421 -275 -383 -521 19 -122 80 -217 194 -300
+                l49 -36 -48 -33 c-123 -83 -220 -204 -262 -326 -28 -81 -38 -208 -21 -280 43
+                -184 190 -327 386 -376 50 -12 110 -17 214 -16 125 0 156 3 227 25 158 48 274
+                146 342 288 33 69 36 83 39 185 3 92 1 120 -17 173 -47 138 -140 238 -311 331
+                l-51 28 76 58 c99 75 147 132 193 224 36 73 37 77 37 190 0 110 -2 119 -30
+                169 -59 107 -177 189 -313 218 -84 17 -237 17 -321 -1z m273 -215 c63 -24 127
+                -87 146 -145 35 -107 -36 -258 -173 -364 l-57 -43 -86 53 c-204 129 -275 234
+                -239 356 20 68 87 130 164 154 54 16 188 10 245 -11z m-107 -847 c238 -145
+                303 -218 303 -349 0 -165 -155 -284 -359 -272 -218 13 -354 177 -320 390 15
+                98 49 157 140 242 44 42 83 76 86 76 3 0 70 -39 150 -87z"/>
+                <path class="ls-svg-text" d="M823 2427 l-233 -20 0 -89 0 -88 140 0 140 0 0 -805 0 -805 135 0
+                135 0 0 915 0 915 -42 -1 c-24 -1 -148 -11 -275 -22z"/>
+                <path class="ls-svg-text" d="M82 1378 l3 -103 270 0 270 0 3 103 3 102 -276 0 -276 0 3 -102z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.js"></script>
+<script src="js/owl.carousel/owl.carousel.min.js"></script>
+<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/custombox/dist/custombox.min.js"></script>
+<script src="js/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="js/markup-scripts.js"></script>
+<script src="js/google-charts.js"></script>
+
+
+</body>
+</html>

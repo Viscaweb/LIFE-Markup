@@ -1,0 +1,23 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['Champions League', 'Real Madrid - Bayern'], breadcrumb_h1:'Real Madrid vs. Bayern Munich Videos'}) }}
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'videos'}) }}
+    <h2 class="h2-inpage">Real Madrid Bayern Munich Videos</h2>
+    {% include 'blocks/various/share_page_small.html.twig' %}
+    {% include 'blocks/sports/match/match_videos.html.twig' %}
+    {% include 'blocks/various/comment_thread.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {{ include('blocks/sports/match/team_head2head.html.twig', {small:'true'}) }}
+    {% include 'blocks/sports/team/team_form.html.twig' %}
+    {% include 'blocks/sports/team/team_form.html.twig' %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/various/partners_featured.html.twig' %}
+{% endblock %}

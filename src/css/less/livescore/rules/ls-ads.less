@@ -1,0 +1,62 @@
+.visual-block, 
+.visual-bg, 
+.visual-bg-only, 
+.visual-bg-fixed, 
+.visual-bg-prom, 
+.visual-top,
+.visual-top-bg {
+	border-width: 0;
+}
+
+.visual-top,
+.visual-top-bg {
+	margin-bottom: 0;
+	background-color: #ebebeb;
+}
+
+.visual-block {
+  margin: 0;
+  
+  img {
+    max-width: 100%;
+  }
+
+  > * {
+  	margin-left: auto !important;
+  	margin-right: auto !important;
+  }
+}
+
+.visual-bg {
+	background-repeat: no-repeat;
+	background-position: center 114px;
+
+	&-only {
+		> .container {
+			margin-top: @ls-visual-only-height;
+		}
+	}
+
+	&-fixed {
+		background-attachment: fixed;
+	}
+
+	// Here goes each promotional background image
+	&-prom {
+		background-color: #ababab;
+	}
+}
+
+.visual-top {
+	padding: @ls-top-banner-padding;
+	text-align: center;
+
+	> * {
+		display: block;
+		margin: 0 auto !important;
+	}
+
+	&-bg {
+		background-color: @ls-top-banner-bg;
+	}
+}

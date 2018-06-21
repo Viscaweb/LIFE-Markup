@@ -1,0 +1,148 @@
+{% set basePath = '../' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livescore">
+    <meta name="author" content="Condor Themes">
+    <link rel="icon" href="js/bootstrap/favicon.ico">
+    <title>Livescore</title>
+
+    <!-- Global Style links-->
+
+    <!-- LSicons-->
+    <link rel="stylesheet" href="js/lsicons/style.css" />
+
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/style_split_1.css" />
+    <link rel="stylesheet" href="css/style_split_2.css" />
+    <![endif]-->
+
+    <!--End Global Style-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="iframe">
+
+<table class="table table-striped no-border live-commentary">
+    <tbody>
+    <tr>
+        <td class="minute">90' <span class="live-red">+3</span></td>
+        <td class="icon striped"><span class="sprite-icons attendance"></span></td>
+        <td class="content">67300 spectators are watching the match in Munich.</td>
+    </tr>
+    <tr>
+        <td class="minute">88'</td>
+        <td class="icon striped"><span class="sprite-icons info"></span></td>
+        <td class="content">Bayern Munich goes through to the next round by winning 4-2 on aggregate.</td>
+    </tr>
+    <tr>
+        <td class="minute">87'</td>
+        <td class="icon striped"><span class="sprite-icons whistle"></span></td>
+        <td class="content">Full-time! The final score is 3 - 1.</td>
+    </tr>
+    <tr>
+        <td class="minute">84'</td>
+        <td class="icon striped"><span class="sprite-icons extra-time"></span></td>
+        <td class="content">The fourth official's board shows 3 minutes, which will be added to the second half.</td>
+    </tr>
+    <tr>
+        <td class="minute">82'</td>
+        <td class="icon striped"><span class="sprite-icons offside"></span></td>
+        <td class="content"><b>Claudio Pizarro</b> for Bayern Munich drives towards goal at Allianz Arena. But the finish is unsuccessful.</td>
+    </tr>
+    <tr>
+        <td class="minute">81'</td>
+        <td class="icon striped"><span class="sprite-icons yellow-red-card"></span></td>
+        <td class="content">In Munich, <b>Wayne Rooney</b> of Manchester Utd is presented with a shooting opportunity. But the strike is blocked by the covering defence.</td>
+    </tr>
+    <tr>
+        <td class="minute">79'</td>
+        <td class="icon striped"><span class="sprite-icons info"></span></td>
+        <td class="content">3-1 in today's game is enough for Bayern Munich to go through to the next round, by leading 4-2 on aggregate.</td>
+    </tr>
+    <tr>
+        <td class="minute">76'</td>
+        <td class="icon striped"><span class="sprite-icons player-change"></span></td>
+        <td class="content"><p>Claudio Pizarro is on a sub for Thomas Muller for Bayern Munich.</p><img src="{{ basePath }}img/sprites/live-commentary-image.png" alt="Live Game"></td>
+    </tr>
+    <tr>
+        <td class="minute">75'</td>
+        <td class="icon striped"><span class="sprite-icons corner-flag"></span></td>
+        <td class="content">Bayern Munich have been awarded a corner by Jonas Eriksson.</td>
+    </tr>
+    <tr>
+        <td class="minute">73'</td>
+        <td class="icon striped"><span class="sprite-icons player-change"></span></td>
+        <td class="content">Adnan Januzaj is replacing Danny Welbeck for Manchester Utd at Allianz Arena.</td>
+    </tr>
+    <tr>
+        <td class="minute">70'</td>
+        <td class="icon striped"><span class="sprite-icons yellow-card"></span></td>
+        <td class="content">Bayern Munich drive forward and Arjen Robben gets in a shot. Without netting, however.</td>
+    </tr>
+    <tr class="event-won">
+        <td class="minute">68'</td>
+        <td class="icon striped"><span class="sprite-icons goal"></span></td>
+        <td class="content"><p>Goal! Bayern Munich extend their lead to 3 - 1 through Arjen Robben.</p>
+            <a class="btn btn-default btn-sm" href="#">
+                <span class="icon icon-play"></span>
+                Watch the vidéo
+            </a></td>
+    </tr>
+    <tr>
+        <td class="minute">64'</td>
+        <td class="icon striped"><span class="sprite-icons goal"></span></td>
+        <td class="content"><p>The away team have replaced Darren Fletcher with Javier Hernandez. This is the first substitution made today by David Moyes.</p>
+            <iframe  width="480" height="270" src="//www.dailymotion.com/embed/video/x1n32j9" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td class="minute">62'</td>
+        <td class="icon striped"><span class="sprite-icons goal"></span></td>
+        <td class="content"><p>Rafinha (Bayern Munich) has been booked and must now be careful not to get a second yellow card. <br>Corner awarded to Bayern Munich.</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.js"></script>
+<script src="js/owl.carousel/owl.carousel.min.js"></script>
+<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $( document ).ready(function() {
+
+        /*Sortable*/
+        $( ".sortable-ul" ).sortable();
+        $( ".sortable-ul" ).disableSelection();
+
+        /*Tooltips*/
+        $('.ttip, [data-toggle="tooltip"]').tooltip();
+
+        /*Popover*/
+        $('[data-popover="popover"]').popover();
+
+    });
+</script>
+</body>
+</html>

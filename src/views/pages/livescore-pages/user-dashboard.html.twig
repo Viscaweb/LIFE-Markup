@@ -1,0 +1,23 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_member.html.twig' %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/predictions/predictions_alert_welcome.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_grid.html.twig' %}
+    {% include 'blocks/predictions/predictions_last_predictions.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/predictions/predictions_contest_standings.html.twig' %}
+    {% include 'blocks/predictions/predictions_contest_quick_info.html.twig' %}
+    {% include 'blocks/predictions/predictions_user_statistics.html.twig' %}
+{% endblock %}

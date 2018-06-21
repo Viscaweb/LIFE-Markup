@@ -1,0 +1,92 @@
+.panel{
+
+  .table{
+  
+    tbody{
+    
+      tr{
+      
+        td.avatar{
+          
+          img{
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel.stats{
+
+  .table{
+    
+    tbody{
+    
+      tr{
+        
+        td.percent{
+          text-align: right;
+          font-weight: @font-weight-bold;
+        }
+        
+         td.date{
+          text-align: center;
+          font-weight: @font-weight-bold;
+        }
+      }
+    }
+  }
+}
+
+.goal-stats{
+
+  tbody{
+    
+    tr{
+   
+      td{
+      
+        .progress{
+          margin-bottom: 0;
+          background: none;
+          box-shadow: none;
+          
+            .progress-bar{
+              box-shadow: none;
+              border-radius: 2px;
+              min-width: 1px;
+              
+              &.progress-bar-success{
+                float: right;
+              }
+
+              &[style="width: 0%"],
+              &[style="width:0%"],
+              &[style="width: 0%;"],
+              &[style="width:0%;"],
+              &[width="0%"]{
+                background-color: darken(@ls-light-color, 10%) ;
+              }
+            }
+        }
+        
+        &.percent{
+          width: 3%;
+          font-weight: @font-weight-bold;
+          text-align: center;
+        }
+        
+        &.prog{ 
+          width: 30%;
+        }
+
+        &.minute-range{
+          text-align: center;
+          white-space: nowrap;
+        }
+      }
+   } 
+  }
+}

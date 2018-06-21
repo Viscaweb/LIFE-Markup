@@ -1,0 +1,35 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb_static.html.twig' %}
+    {% include 'blocks/sports/matches_slider.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'blocks/sports/match/match_alert_other_year.html.twig' %}
+    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'summary'}) }}
+    <h2 class="h2-inpage">Real Madrid Bayern Munich Result</h2>
+    {% include 'blocks/various/share_page_small.html.twig' %}
+    {% include 'blocks/sports/match/match_timeline.html.twig' %}
+    {% include 'blocks/sports/match/match_incidents.html.twig' %}
+    {% include 'blocks/sports/match/match_statistics.html.twig' %}
+    {% include 'blocks/sports/match/match_lineups.html.twig' %}
+    {% include 'blocks/sports/match/match_odds_1x2.html.twig' %}
+    {{ include('blocks/sports/match/match_prediction.html.twig', {withContest:'true'}) }}
+    {{ include('blocks/sports/match/match_betting_tips.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/sports/match/match_betting_tips_iframe.html.twig' %}
+    {% include 'blocks/sports/match/match_lineups_list.html.twig' %}
+    {% include 'blocks/sports/match/match_comments.html.twig' %}
+    {% include 'blocks/sports/match/match_comments_iframe.html.twig' %}
+
+
+
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {{ include('blocks/sports/match/team_head2head.html.twig', {small:'true'}) }}
+    {% include 'blocks/sports/team/team_form.html.twig' %}
+    {% include 'blocks/sports/team/team_form.html.twig' %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+{% endblock %}

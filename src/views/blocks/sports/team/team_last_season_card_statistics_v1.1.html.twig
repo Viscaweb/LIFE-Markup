@@ -1,0 +1,40 @@
+{% extends 'blocks/base.html.twig' %}
+
+{% set panel_classes = 'panel-default' %}
+{% block panel_heading %}
+    <div class="panel-title">Discipline Stats</div>
+{% endblock %}
+
+{% block widget_content %}
+    <div class="panel-body">
+        <div class="row stats-holder">
+            <div class="col-xs-6 stat-block">
+                    <div class="yellow-cards">
+                        <i class="icon icon-card"></i>
+                        <span>69</span>
+                        <p>Cards</p>
+                    </div>
+            </div>
+            <div class="col-xs-6 stat-block">
+                    <div class="red-cards">
+                        <i class="icon icon-card"></i>
+                        <span>23</span>
+                        <p>Cards</p>
+                    </div>
+            </div>
+            <div class="col-xs-12 stats-separator">
+                Average per Game
+            </div>
+            <div class="col-xs-6 stat-block">
+                <div class="stat-value-small">
+                    <span>2,13</span>
+                </div>
+            </div>
+            <div class="col-xs-6 stat-block">
+                <div class="stat-value-small">
+                    <span>0,11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

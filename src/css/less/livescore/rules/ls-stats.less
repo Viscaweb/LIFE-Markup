@@ -1,0 +1,60 @@
+/* Statistics display templates */
+
+.stats-holder {
+  margin-bottom: 0;
+
+  .stat-block {
+    font-size: @ls-stat-value-big-size;
+    display: block;
+    text-align: center;
+
+    p {
+      text-transform: uppercase;
+      font-size: @font-size-small;
+      font-weight: @font-weight-semi-bold;
+    }
+
+    + .stat-block {
+      border-left: 1px solid darken(@ls-light-color, 7%);
+    }
+
+    .stat-value-small {
+      font-size: @font-size-large;
+    }
+    
+    .icon {
+      display: block;
+      font-size: 30px;
+    }
+
+    .scored {
+      color: @brand-success;
+    }
+
+    .conceded {
+      color: @brand-danger;
+    }
+
+    .red-cards {
+
+      .icon {
+        color: @ls-table-red-card;
+      }
+
+    }
+
+    .yellow-cards {
+
+      .icon {
+        color: @ls-table-yellow-card;
+      }
+
+    }
+  }
+
+  .stats-separator {
+    text-align: center;
+    padding: 10px;
+  }
+
+}

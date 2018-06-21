@@ -1,0 +1,37 @@
+/*Modals*/
+.modal{
+  .modal-dialog{
+    .modal-content{
+    
+      border-radius: 0px;
+    
+      .modal-header{
+        background-color: darken(@ls-light-color, 2.8%);
+        padding: 20px;
+        border-radius: 2px 2px 0 0;
+        
+        .modal-title{
+          font-size: @font-size-large;
+          line-height: @font-size-large;
+        }
+        
+        .close{
+          font-size: @ls-modal-close-icon-size;
+          margin-top: -4px;
+          margin-right: 5px;
+        }
+      }
+      
+      .modal-footer{
+        border-radius: 0 0 2px 2px;
+        padding: 20px;
+      }
+    }
+  }
+}
+ 
+/*
+.modal-open[style] {
+  padding-right: 0px !important;
+  overflow: scroll;
+}*/

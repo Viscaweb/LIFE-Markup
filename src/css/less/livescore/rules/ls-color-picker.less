@@ -1,0 +1,23 @@
+.color-picker{
+  input{
+  	height: @ls-color-picker-input-height;
+  	border-radius: 2px 0 0 2px;
+    text-transform: uppercase;
+  }
+
+  .input-group-addon{
+  	padding: 2px 4px;
+
+  	.color-preview{
+  		height: @ls-color-picker-preview-size;
+  		width: @ls-color-picker-preview-size;
+  		display: block;
+  		background-color: #FFF;
+      cursor: pointer;
+  	}
+  }
+}
+
+.ui-colorpicker{
+  z-index: 4 !important; 
+}

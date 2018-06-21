@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+            
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livescore">
+    <meta name="author" content="Condor Themes">
+    <link rel="icon" href="js/bootstrap/favicon.ico">
+    <title>Livescore</title>
+
+    <!-- Global Style links-->
+
+    <!-- LSicons-->
+    <link rel="stylesheet" href="js/lsicons/style.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/custombox/dist/custombox.min.css" />
+    <link rel="stylesheet" href="js/toastr/toastr.min.css" />
+
+    
+    <!--  Custom styles for this template-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/style_split_1.css" />
+    <link rel="stylesheet" href="css/style_split_2.css" />
+    <![endif]-->
+
+    <!--End Global Style-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body >
+
+
+            <header class="header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="loading-bar" style="width: 21%;"></div>
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="img/ls-logo.png" alt="site logo"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-search">
+                    <input type="text" class="form-control" placeholder="Arsenal, Rooney, Premier League...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown alerts"><a href="#"><span class="icon-bell"><span class="badge live">5</span></span></a></li>
+                <li class="dropdown notifications">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-comment"><span class="badge primary">3</span></span></a>
+                    <ul class="dropdown-menu custom" role="menu">
+                        <li>
+                            <div class="dropdown-title">Notifications (3)<div class="tools"><a href="#" class="icon"><span class="icon glyphicon glyphicon-cog"></span></a></div></div>
+                            <div class="notifications-list ls-scrollbar">
+                                <ul class="media-list">
+                                    <li class="media highlight">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations !</span>
+                                            <p>New Prediction Contest Grid is available. Play now !</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media highlight">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">YOUNITED</span>
+                                            <p>real meme si jsuis pour le barca</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations ! </span>
+                                            <p>You won this month predictions contest</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-left avatar">
+                                            <img src="img/user-default.png" alt="64x64" class="img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="meadia-heading">Congratulations ! </span>
+                                            <p>You won this month predictions contest</p>
+                                            <span class="date">19/05 15h19</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="view-all">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown settings">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></a>
+                    <ul class="dropdown-menu custom" role="menu">
+                        <li>
+                            <div class="dropdown-title">Settings</div>
+                            <div class="field time-zone">
+                                <label for="time-zone">Time Zone</label>
+                                <div class="select-component loading-opacity">
+                                    <select name="time-zone" id="time-zone">
+                                        <option value="1" selected>15h09 UTC+2 Madrid</option>
+                                        <option value="1">15h09 UTC+2 Madrid</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field odds-type">
+                                <label for="time-zone">Odds Type</label>
+                                <div class="select-component">
+                                    <select name="time-zone" id="time-zone2">
+                                        <option value="1" selected>Decimal Odds</option>
+                                        <option value="1">Decimal Odds</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-volume-up"></span></a></li>
+                <!--User dropdown-->
+                <li class="user dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="img/user-default.png" alt="user avatar">sebastien au. <span class="icon-caret-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="icon glyphicon glyphicon-user"></span>My account</a></li>
+                        <li><a href="#"><span class="icon icon-prono"></span>My predictions</a></li>
+                        <li><a href="#"><span class="icon icon-cup"></span>Prediction Contest</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-wrench"></span>Webmaster zone</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-edit"></span>Contact</a></li>
+                        <li><a href="#"><span class="icon glyphicon glyphicon-off"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="sprite-icons football"></span>Football</a></li>
+                <li><a href="#"><span class="sprite-icons tennis"></span>Tennis</a></li>
+                <li><a href="#"><span class="sprite-icons rugby"></span>Rugby</a></li>
+                <li><a href="#"><span class="sprite-icons handball"></span>Handball</a></li>
+                <li class="dropdown dropdown-inverted">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others<span class="icon-caret-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="sprite-icons basketball"></span>Basketball</a></li>
+                        <li><a href="#"><span class="sprite-icons volleyball"></span>Volleyball</a></li>
+                        <li><a href="#"><span class="sprite-icons icehockey"></span>Ice Hockey</a></li>
+                        <li><a href="#"><span class="sprite-icons baseball"></span>Baseball</a></li>
+                        <li><a href="#"><span class="sprite-icons am-football"></span>American Football</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Streaming</a></li>
+                <li><a href="#">Prediction Contest</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right social-nav">
+                <li><a href="#"><span class="icon-phone"></span></a></li>
+                <li><a href="#"><span class="icon-apple"></span></a></li>
+                <li><a href="#"><span class="icon-android"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-googleplus"></span></a></li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>    
+    <div class="container">
+                                <div class="wrapper row">
+            
+    <div class="left-sidebar col-xs-2">
+                    <ul class="sidebar-nav">
+    <li>
+        <a href="#"><i class="icon icon-football"></i>All Matches</a>
+        <!-- <a href="javascript:;" class="pull-right calendar-button btn-datepicker-open" data-position="right-top"><input type="hidden" name="dp"><span class="icon-calendar"></span></a> -->
+    </li>
+    <li>
+        <a href="#" class="live-red uppercase"><i class="icon-ellipse"></i>Live Now<span class="badge live pull-right">12</span></a>
+    </li>
+    <li>
+        <a href="#" ><i class="icon-bell"></i>My Games<span class="badge live pull-right">3</span></a>
+    </li>
+    <li class="active open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Leagues</a>
+        <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
+        <ul class="sub-menu sortable-ul">
+            <li><a href="#" class="sortable" title="Ligue 1"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/ligue1.png" alt="Ligue 1"></span>Ligue 1 <span class="live-red">(6)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/ligue2.png" alt="Ligue 2"></span>Ligue 2<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/premiereleague.png" alt="Premiere league"></span>Premiere League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/bundesliga.png" alt="Bundes Liga"></span>Bundesliga <span class="live-red">(3)</span><span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/seriea.png" alt="Serie A"></span>Serie A<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/coupedefrance.png" alt="Coupe de France"></span>Coupe de France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/cdl.png" alt="Cdl"></span>CdL<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/ldc.png" alt="Ldc"></span>LdC<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/eurocoup.png" alt="Europa League"></span>Europa League<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/worldcup.png" alt="World Cup"></span>World Cup<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable no-link"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/worldcup.png" alt="World Cup"></span>(not linked)<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+            <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add competitions</a></li>
+        </ul>
+    </li>
+    <li class="active open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-star"></i>My Teams</a>
+        <a href="#" class="option-icon"><span class="icon glyphicon glyphicon-cog right"></span></a>
+        <ul class="sub-menu sortable-ul">
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/fr.png" alt="France"></span>France<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/manchestercity.png" alt="Manchester City"></span>Manchester City<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/fr.png" alt="OM"></span>OM<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/realmadrid.png" alt="Real Madrid"></span>Real Madrid<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/barcelona.png" alt="Barcelona"></span>Barcelona<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/lyon.png" alt="Lyon"></span>Lyon<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li><a href="#" class="sortable"><span class="sort"><i class="glyphicon glyphicon-align-justify"></i></span><span class="img"><img src="img/sprites/psg.png" alt="PSG"></span>PSG<span class="close"><i class="glyphicon glyphicon-remove"></i></span></a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+            <li class="more"><a href="#"><i class="glyphicon glyphicon-plus"></i>Click here to add teams</a></li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Top Countries</a>
+        <ul class="sub-menu">
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag fr"></span>France</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _england"></span>England</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag es"></span>Spain</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag it"></span>Italy</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag de"></span>Germany</a></li>
+        </ul>
+    </li>
+    <li class="open">
+        <a class="dropdown-toggle"><i class="glyphicon glyphicon-globe"></i>Country</a>
+        <ul class="sub-menu second-menu">
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _united_nations"></span>International</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag za"></span>South Africa</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag al"></span>Albania</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ag"></span>Algeria</a></li>
+            <li class="open">
+                <a class="dropdown-toggle"><span class="country-flag de"></span>Germany</a>
+                <ul class="sub-menu third-menu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Bundesliga <span class="fav active"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Super Coupe <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Bundesliga 2 <span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li class="open">
+                        <a class="dropdown-toggle">CFA</a>
+                        <ul class="sub-menu fourth-menu">
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">CFA Group A<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group B<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group C<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                            <li><a href="#">CFA Group D<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bundesliga 3<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Regionalliga<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Coupe de la Lig.<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Oberliga<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">DfB-Pokal<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                    <li><a href="#">Barrages<span class="fav"><i class="glyphicon glyphicon-star"></i></span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ad"></span>Andorra</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag _england"></span>England</a></li>
+            <li><a href="#" class="dropdown-toggle"><span class="country-flag ao"></span>Angola</a></li>
+            <li class="more"><a href="#"><i class="dark-icon icon-expand"></i>View all</a></li>
+        </ul>
+    </li>
+    <li><a href="#">+ View more</a></li>
+</ul>            </div>
+
+    <main class="main col-xs-10">
+
+            
+        <div class="content-wrapper">
+
+                <div class="content">
+            <div class="panel panel-no-border panel-content-header">
+    <div class="row content-header teams">
+        <div class="col-xs-2 avatar">
+            <img src="img/sprites/psg.png" alt="PSG">
+        </div>
+        <div class="col-xs-6 info">
+            <div class="title-container">
+                <div class="title">
+                    <div class="title-value">Psg</div>
+                    <div class="favorite-star">
+                        <a href="#" class="fav active"><span class="glyphicon glyphicon-star"></span></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="uppercase additionnal-info"><span class="country-flag fr"></span>France</a>
+            <div class="btn-group">
+                <a href="" class="btn btn-xs btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span>2013 / 2014</span><span class="icon-caret-select"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-select" role="menu">
+                    <li><a href="#">2014 / 2015</a></li>
+                    <li class="active"><a href="#">2013 / 2014</a></li>
+                    <li><a href="#">2012 / 2013</a></li>
+                    <li><a href="#">2011 / 2012</a></li>
+                    <li><a href="#">2010 / 2011</a></li>
+                    <li><a href="#">2010</a></li>
+                    <li><a href="#">2009 / 2009</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-4 shirts">
+            <a href="#" class="shirt">
+                <img src="img/sprites/shirt1.png" alt="Shirt">
+                Domicile
+            </a>
+            <a href="#" class="shirt">
+                <img src="img/sprites/shirt2.png" alt="Shirt">
+                Exterieur
+            </a>
+            <a href="#" class="shirt">
+                <img src="img/sprites/shirt3.png" alt="Shirt">
+                Third
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+  
+    <ul class="nav nav-tabs" role="tablist">
+      <li ><a href="#">Summary</a></li>
+      <li ><a href="#">Results</a></li>
+      <li ><a href="#">Fixtures</a></li>
+      <li ><a href="#">Tables</a></li>
+      <li ><a href="#">Teams</a></li>
+    </ul>
+
+  
+
+    <div class="panel panel-default panel-social-small">
+    <div class="row social">
+        <div class="col-xs-3">
+            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21"   style="border:none; overflow:hidden; height:21px;" ></iframe>
+        </div>
+        <div class="col-xs-2">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="gore_edward">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div class="col-xs-2">
+            <script src="https://apis.google.com/js/platform.js" async defer>
+                {lang: 'es'}
+            </script>
+            <div class="g-plusone" data-size="medium"></div>
+        </div>
+        <div class="col-xs-5 text-right">
+            <div class="btn-group"><button class="btn btn-default dropdown-toggle large-icon btn-partager" type="button" data-popover="popover" data-html="true" data-placement="bottom" data-content="
+                            <div class='row share-social'>
+                              <div class='col-xs-6'>
+                                <div class='teams'>
+                                  <div class='image'>
+                                    <img src='img/sprites/partager-popover-teams.png' alt='Teams'>
+                                  </div>
+                                  <div class='description'>
+                                    <p>Livescore Direct Real Madrid Bayern Munich</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class='col-xs-6'>
+                                <div class='social-embeds'>
+
+                                  <!-- Facebook Button-->
+                                  <iframe class='facebook' src='//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=65' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:77px; height:65px; margin-right: 10px;' allowTransparency='true'></iframe>
+
+                                  <a href='https://twitter.com/share' class='twitter-share-button' data-count='vertical' data-via='footendirectcom' >Tweet</a>
+                                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                                  <!-- Google Button -->
+                                  <script src='https://apis.google.com/js/platform.js' async defer>
+                                    {lang: 'es'}
+                                  </script>
+                                  <div class='g-plusone' data-size='tall'></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class='row share-url'>
+                              <div class='col-xs-3'>
+                                <label>Share url</label>
+                              </div>
+                              <div class='col-xs-9'>
+                                <input class='share-link form-control' type='text' value='http://www.site.com/allemagne/bundesliga/mayence-hoffen'>
+                              </div>
+                            </div>
+                            " data-template="<div class='popover popover-partager'><div class='arrow'></div><div class='popover-title'></div><div class='popover-content'></div></div>"><span class="icon icon-share"></span>Partager<span class="icon-caret-down"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        Ligue 1 Teams
+    </div>
+    <table class="table table-bordered links-table">
+        <tbody>
+        <tr>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team1.png" alt="Team 4">
+                    <span>Bastia</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team2.png" alt="Team 4">
+                    <span>Bordeaux</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team3.png" alt="Team 4">
+                    <span>Caen</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team4.png" alt="Team 4">
+                    <span>Evian</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team1.png" alt="Team 4">
+                    <span>Guingamo</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team2.png" alt="Team 4">
+                    <span>Lens</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team3.png" alt="Team 4">
+                    <span>Lille</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team4.png" alt="Team 4">
+                    <span>Lorient</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team1.png" alt="Team 4">
+                    <span>Lyon</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team2.png" alt="Team 4">
+                    <span>Metz</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team3.png" alt="Team 4">
+                    <span>Monaco - test team with a long name on multiple lines</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team4.png" alt="Team 4">
+                    <span>Montpellier</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team1.png" alt="Team 4">
+                    <span>Nantes</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team2.png" alt="Team 4">
+                    <span>Nice</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team3.png" alt="Team 4">
+                    <span>OM</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team4.png" alt="Team 4">
+                    <span>Reims</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team1.png" alt="Team 4">
+                    <span>Rennes</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+            <td class="dropdown">
+                <a href="#">
+                    <img src="img/sprites/team2.png" alt="Team 4">
+                    <span>St Etienne</span>
+                </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#"><span class="icon icon-team"></span>  Team Profie</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Results / Fixtures</a></li>
+                    <li><a href="#"><span class="icon icon-calendar"></span> Stadings</a></li>
+                    <li><a href="#"><span class="icon icon-shirt"></span>  Squad</a></li>
+                    <li><a href="#"><span class="icon icon-stats"></span> Stats</a></li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    
+<div class="panel panel-default">
+    <div class="panel-heading">
+        PSG Squad
+    </div>
+    <table class="table squad-listing avatars">
+        <thead>
+        <tr>
+            <th>Num</th>
+            <th>Player</th>
+            <th><span class="sprite-icons shirt"></span></th>
+            <th><span class="sprite-icons clock"></span></th>
+            <th><span class="sprite-icons football"></span></th>
+            <th><span class="sprite-icons yellow-card"></span></th>
+            <th><span class="sprite-icons red-card"></span></th>
+            <th>Nationality</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th colspan="11">Goalkeepers</th>
+        </tr>
+        <tr>
+            <td class="number">1</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Nicolas <b>Douchez</b></td>
+            <td>4</td>
+            <td>360</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="nationality"><span class="country-flag fr"></span>FRA</td>
+            <td>34</td>
+            <td>185</td>
+            <td>77</td>
+        </tr>
+        <tr>
+            <td class="number">30</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Salvatore <b>Sirigu</b></td>
+            <td>33</td>
+            <td>2927</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td class="nationality"><span class="country-flag it"></span>ITA</td>
+            <td>27</td>
+            <td>192</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td class="number">16</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Mike <b>Maignan</b></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="nationality"><span class="country-flag fr"></span>FRA</td>
+            <td>18</td>
+            <td>187</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td class="number">-</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Mory <b>Diaw</b></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="nationality"><span class="country-flag fr"></span>FRA</td>
+            <td>20</td>
+            <td>197</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <th colspan="11">Defenders</th>
+        </tr>
+        <tr>
+            <td class="number">6</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Zoumana <b>Camara</b></td>
+            <td>6</td>
+            <td>422</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="nationality"><span class="country-flag fr"></span>FRA</td>
+            <td>35</td>
+            <td>182</td>
+            <td>76</td>
+        </tr>
+        <tr>
+            <td class="number">26</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Christope <b>Jallet</b></td>
+            <td>27</td>
+            <td>1884</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="nationality"><span class="country-flag fr"></span>FRA</td>
+            <td>30</td>
+            <td>178</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td class="number">17</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Maxwell</td>
+            <td>33</td>
+            <td>2935</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td class="nationality"><span class="country-flag br"></span>BRA</td>
+            <td>32</td>
+            <td>177</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td class="number">2</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Thiago <b>Silva</b></td>
+            <td>22</td>
+            <td>1947</td>
+            <td>0</td>
+            <td>2</td>
+            <td>1</td>
+            <td class="nationality"><span class="country-flag br"></span>BRA</td>
+            <td>29</td>
+            <td>183</td>
+            <td>72</td>
+        </tr>
+        <tr>
+            <td class="number">23</td>
+            <td class="player"><img src="img/player-default.png" class="img-circle" alt="Player">Greogory <b>van der Wiel</b></td>
+            <td>22</td>
+            <td>1554</td>
+            <td>1</td>
+            <td>7</td>
+            <td>0</td>
+            <td class="nationality"><span class="country-flag nl"></span>NET</td>
+            <td>26</td>
+            <td>181</td>
+            <td>69</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    </div>
+
+    <div class="right-sidebar">
+            <div class="panel panel-default panel-condensed top-match-block">
+    <div class="panel-heading">
+        Upcoming Top Games
+    </div>
+    <ul class="nav nav-pills nav-justified">
+        <li class="active">
+            <a href="#" class="top-match">
+                <div class="shields">
+                    <img src="img/sprites/team1.png" alt="Team 1"><img src="img/sprites/team2.png" alt="Team 2">
+                </div>
+                <div class="teams">Smc - Nim</div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="top-match">
+                <div class="shields">
+                    <img src="img/sprites/team3.png" alt="Team 3"><img src="img/sprites/team4.png" alt="Team 4">
+                </div>
+                <div class="teams">Sev - Ven</div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="top-match">
+                <div class="shields">
+                    <img src="img/sprites/barcelona.png" alt="Barcelona"><img src="img/sprites/team5.png" alt="Team 5">
+                </div>
+                <div class="teams">Bar - Ama</div>
+            </a>
+        </li>
+    </ul>
+    <div class="panel-content">
+        <div class="scoreboard-container">
+            <a href="#" class="score-board">
+                <div class="title">LdC - Group 1 - J2</div>
+                <div class="match-date">28 Juin 2014</div>
+                <div class="teams">
+                    <span class="team-name">Nimes</span> 
+                    <span> - </span> 
+                    <span class="team-name">PSG</span>
+                </div>
+                <div class="team team1"><img src="img/sprites/team2.png" alt="Team 2"></div>
+                <div class="team team2"><img src="img/sprites/psg.png" alt="PSG"></div>
+                <div class="match-time"><span>20h30</span></div>
+            </a>
+            <a href="#" class="score-board live">
+                <div class="title">LdC - Group 1 - J2</div>
+                <div class="match-date">28 Juin 2014</div>
+                <div class="teams">
+                    <span class="team-name">Nimes</span> 
+                    <span> - </span> 
+                    <span class="team-name">PSG</span>
+                </div>
+                <div class="team team1"><img src="img/sprites/team2.png" alt="Team 2"></div>
+                <div class="team team2"><img src="img/sprites/psg.png" alt="PSG"></div>
+                <div class="match-info">
+                    <div class="block">
+                        <div class="score">
+                            <span class="home-score">2</span>
+                            <span class="versus">-</span>
+                            <span class="away-score">1</span>
+                        </div>
+                        <div class="time">
+                            <span class="live-spot"></span>43'
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="slider-control prev"><span class="icon icon-caret-left"></span></a>
+            <a href="#" class="slider-control next"><span class="icon icon-caret-right"></span></a>
+        </div>
+
+        <div class="make-prediction">
+            <span class="title-prediction">What's your prediction ?</span>
+            <div class="prediction">
+                <div class="team home">Nimes</div>
+                <div class="btn-group btn-group-justified btn-group-xs">
+                    <a href="#" class="btn btn-prediction btn-prediction-done">1</a>
+                    <a href="#" class="btn btn-prediction">X</a>
+                    <a href="#" class="btn btn-prediction">2</a>
+                </div>
+                <div class="team away">PSG</div>
+            </div>
+        </div>
+
+        <table class="table table-condensed odds layout-fixed">
+            <colgroup>
+                <col class="logo">
+                <col class="">
+                <col class="odd">
+                <col class="odd">
+                <col class="odd">
+            </colgroup>
+            <thead>
+            <tr>
+                <th colspan="2">Odds</th>
+                <th class="stat text-center">1</th>
+                <th class="stat text-center">X</th>
+                <th class="stat text-center">2</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="logo"><img src="img/sprites/bets1.png" alt="Bet1"></td>
+                <td class="name"><a href="#">Betclic</a></td>
+                <td class="odd"><span class="icon-arrow-down"></span><span class="odd-value">11.75</span></td>
+                <td class="odd"><span class="icon-arrow-up"></span><span class="odd-value">3.50</span></td>
+                <td class="odd"><span class="icon-equal"></span><span class="odd-value">3.80</span></td>
+            </tr>
+            <tr>
+                <td class="logo"><img src="img/sprites/bets2.png" alt="Bet1"></td>
+                <td class="name"><a href="#">PMU</a></td>
+                <td class="odd best-odd"><span class="icon-equal"></span><span class="odd-value">1.64</span></td>
+                <td class="odd"><span class="icon-arrow-up"></span><span class="odd-value">3.45</span></td>
+                <td class="odd"><span class="icon-arrow-up"></span><span class="odd-value">13.60</span></td>
+            </tr>
+            <tr>
+                <td class="logo"><img src="img/sprites/bets3.png" alt="Bet1"></td>
+                <td class="name"><a href="#">Netbet</a></td>
+                <td class="odd"><span class="icon-arrow-down"></span><span class="odd-value">1.75</span></td>
+                <td class="odd best-odd"><span class="icon-arrow-up"></span><span class="odd-value">3.50</span></td>
+                <td class="odd best-odd"><span class="icon-arrow-up"></span><span class="odd-value">3.70</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="comment-thread">
+            <div class="add-comment">
+                <p><span></span>Say what you think about this game!</p>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img class="img-circle avatar" alt="64x64" src="img/user-default.png">
+                    </div>
+                    <div class="col-xs-9">
+                        <textarea class="form-control" placeholder="Write here..."></textarea>
+                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-edit"></span>Publish my comment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <ul class="media-list">
+    <li class="media">
+        <div class="media-left avatar avatar-user">
+            <a href="#">
+                <img class="img-circle" alt="64x64" src="img/user-default.png">
+            </a>
+            <div class="btn-group btn-group-xs prediction-locked">
+                <button class="btn btn-prediction" type="button">1</button>
+                <button class="btn btn-prediction btn-prediction-done" type="button">N</button>
+                <button class="btn btn-prediction" type="button">2</button>
+            </div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">Reboul</span>
+                <div class="tools">
+                    <span class="date">19/05 15h19</span>
+                    <a href="#modal-report"><span class="glyphicon glyphicon-flag" data-toggle="modal" data-target="#modal-report"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                </div>
+            </div>
+            <p>Victoire du Real car l'atletico a deja reussi sa saison en étant champion !</p>
+            <!-- Nested media object -->
+        </div>
+    </li>
+    <li class="media">
+        <div class="media-left avatar avatar-user">
+            <a href="#">
+                <img class="img-circle" alt="64x64" src="img/user-default.png">
+            </a>
+            <div class="btn-group btn-group-xs prediction-closed">
+                <button class="btn btn-success" type="button">1</button>
+                <button class="btn btn-prediction" type="button">N</button>
+                <button class="btn btn-prediction" type="button">2</button>
+            </div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">sebastien.au</span>
+                <div class="tools">
+                    <span class="date">19/05 15h19</span>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"  data-toggle="tooltip" data-placement="top" data-container="body" title="Edit"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-flag" data-toggle="tooltip" data-placement="top" data-container="body" title="Report"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-share-alt" data-toggle="tooltip" data-placement="top" data-container="body" title="Reply"></span></a>
+                </div>
+            </div>
+            <p>real meme si jsuis pour le barca</p>
+            <!-- Nested media object -->
+        </div>
+    </li>
+    <li class="media">
+        <div class="media-left avatar avatar-user">
+            <a href="#">
+                <img class="img-circle" alt="64x64" src="img/user-default.png">
+            </a>
+            <div class="btn-group btn-group-xs prediction-closed">
+                <button class="btn btn-prediction btn-prediction-success" type="button">1</button>
+                <button class="btn btn-prediction" type="button">N</button>
+                <button class="btn btn-prediction" type="button">2</button>
+            </div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">sebastien.au</span>
+            </div>
+            <form class="message-edit">
+                <div class="form-group">
+                    <textarea class="form-control" rows="2" placeholder="Textarea">real meme si jsuis pour le barca</textarea>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Publish</button>
+                </div>
+            </form>
+            <!-- Nested media object -->
+        </div>
+    </li>
+    <li class="media">
+        <div class="media-left avatar avatar-user">
+            <a href="#">
+                <img class="img-circle" alt="64x64" src="img/user-default.png">
+            </a>
+            <div class="btn-group btn-group-xs prediction-closed">
+                <button class="btn btn-prediction btn-prediction-result" type="button">1</button>
+                <button class="btn btn-prediction" type="button">N</button>
+                <button class="btn btn-prediction btn-prediction-failed" type="button">2</button>
+            </div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">riadh sbai</span>
+                <div class="tools">
+                    <span class="date">19/05 15h19</span>
+                    <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                </div>
+            </div>
+            <p>c la guerre pour les deux</p>
+            <!-- Nested media object -->
+        </div>
+    </li>
+    <li class="media">
+        <a href="#" class="media-left avatar avatar-user">
+            <img class="img-circle" alt="64x64" src="img/user-default.png">
+        </a>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">ramoul</span>
+                <div class="tools">
+                    <span class="date">30 min ago</span>
+                    <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                </div>
+            </div>
+            <p>real 1-0 atletico</p>
+            <!-- Nested media object -->
+        </div>
+    </li>
+    <li class="media">
+        <div class="media-left avatar avatar-user">
+            <a href="#">
+                <img class="img-circle" alt="64x64" src="img/user-default.png">
+            </a>
+            <div class="btn-group btn-group-xs prediction-closed">
+                <button class="btn btn-prediction btn-prediction-success" type="button">1</button>
+                <button class="btn btn-prediction" type="button">N</button>
+                <button class="btn btn-prediction" type="button">2</button>
+            </div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">Andréleboss</span>
+                <div class="tools">
+                    <span class="date">19/05 15h19</span>
+                    <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                </div>
+            </div>
+            <p>Moi j'y croi poru lyon a la 3eme place du poduim vu que St etienne a fais match nul contre rennes il faut juste que lyon gagne le match contre toulouse et que lille perde contre l'OM apres il reste que 3 poins d'ecart! En plus lille contre psg a l'avant dernier journées</p>
+            <!-- Nested media object -->
+            <div class="media">
+                <div class="media-left avatar avatar-user">
+                    <a href="#">
+                        <img class="img-circle" alt="64x64" src="img/user-default.png">
+                    </a>
+                    <div class="btn-group btn-group-xs prediction-closed">
+                        <button type="button" class="btn btn-prediction">1</button>
+                        <button type="button" class="btn btn-prediction btn-prediction-failed">N</button>
+                        <button type="button" class="btn btn-prediction">2</button>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <div class="media-heading">
+                        <span class="name">ramoul</span>
+                        <div class="tools">
+                            <span class="date">19/05 15h19</span>
+                            <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                        </div>
+                    </div>
+                    <p><a class="reply" href="#">@Andréleboss</a>, Lyon va pas aller en LDC l'année prochaine, surtout avec un 0-0 contre Chernomorets en Ligue Europa. ^^</p>
+                </div>
+            </div>
+            <div class="media">
+                <a href="#" class="media-left avatar avatar-user">
+                    <img class="img-circle" alt="64x64" src="img/user-default.png">
+                </a>
+                <div class="media-body">
+                    <div class="media-heading">
+                        <span class="name">PSG365</span>
+                        <div class="tools">
+                            <span class="date">19/05 15h19</span>
+                            <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                        </div>
+                    </div>
+                    <p><a class="reply" href="#">@Andréleboss</a>, Lyon va pas aller en LDC l'année prochaine, surtout avec un 0-0 contre Chernomorets en Ligue Europa. ^^</p>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="media">
+        <a href="#" class="media-left avatar avatar-user">
+            <img class="img-circle" alt="64x64" src="img/user-default.png">
+        </a>
+        <div class="media-body">
+            <div class="media-heading">
+                <span class="name">Raboul</span>
+                <div class="tools">
+                    <span class="date">30 min ago</span>
+                    <a href="#"><span class="glyphicon glyphicon-flag"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>
+                </div>
+            </div>
+            <p>Victoire du Real car l'atletico a deja reussi sa saison en étant champion!</p>
+            <!-- Nested media object -->
+        </div>
+    </li>
+    <li class="media view-all text-center"><a href="#" class="btn btn-link btn-block">+ View all 56 comments</a>
+    </li>
+</ul>            </div>
+        </div>
+                    </div>
+</div>    <div class="panel panel-condensed panel-default top-competitions-block">
+    <div class="panel-heading">
+        Top Competitions
+        <div class="tools">
+            <a href="#" class="icon"><span class="glyphicon glyphicon-cog"></span></a>
+        </div>
+    </div>
+    <ul class="nav nav-pills nav-justified">
+        <li class="active">
+            <a href="#"><img src="img/sprites/ligue1.png" alt="Ligue"></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/sprites/bundesliga.png" alt="Ligue"></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/sprites/ligue2.png" alt="Ligue"></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/sprites/premiereleague.png" alt="Ligue"></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/sprites/seriea.png" alt="Ligue"></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/sprites/ldc.png" alt="Ligue"></a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="icon-caret-down"></span></a>
+            <ul role="menu" class="dropdown-menu pull-right">
+                <li><a href="#">World Cup</a></li>
+                <li><a href="#">Serie B</a></li>
+                <li><a href="#">Europa League</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="panel-content">
+        <div class="active-ligue">
+            <img class="ligue-logo" src="img/sprites/ligue1.png" alt="ligue">
+                        <span class="h4">
+                          <span>Ligue 1</span>
+                          37th matchday
+                        </span>
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-default" href="#">Results</a>
+                <a class="btn btn-default active" href="#">Table</a>
+                <a class="btn btn-default" href="#">Fixtures</a>
+            </div>
+        </div>
+
+        <!-- Standing WITHOUT team forms and next match -->
+
+    
+<table class="table matches table-condensed table-standing layout-fixed">
+    <colgroup>
+        <col class="number">
+        <col class="rank-variation">
+        <col class="team">
+        <col class="extra-points">
+        <col class="points">
+        <col class="point-details">
+        <col class="point">
+                    <col class="point">
+            </colgroup>
+    <tbody>
+            <tr>
+        <th class="text-center">#</th>
+        <th></th>
+        <th>Team</th>
+        <th></th>
+        <th class="text-center">Pts</th>
+        <th class="text-center"></th>
+        <th class="text-center">P</th>
+                    <th class="text-center">+/-</th>
+        
+
+    </tr>
+    <tr class="playing live selected">
+        <td class="number rank rank-standing-green" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">1</td>
+        <td class="stats up"><span class="icon-arrow-up"></span>+3</td>
+        <td class="team has-logo"><a href=""><img src="img/sprites/psg.png" alt="Barcelona"><span>PSG</span></a></td>
+        <td class="extra-points">+3</td>
+        <td class="points">89</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">61</td>
+        
+    </tr>
+    <tr>
+        <td class="number rank rank-standing-green" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">2</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/sprites/monaco.png" alt="Monaco"><span>Monaco</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">89</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">61</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-clear-green" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">3</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/sprites/barcelona.png" alt="Barcelona"><span>Lille</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">71</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">61</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-blue" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">4</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/sprites/barcelona.png" alt="Barcelona"><span>St Etienne</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">69</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">61</td>
+            </tr>
+
+    <tr>
+        <td class="number rank rank-standing-clear-blue" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">5</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Team with really long name</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+
+    <tr class="live">
+        <td class="number rank">6</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Sochaux</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">7</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Bordeaux</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">8</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Montpellier</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">9</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Nantes</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">10</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Guingamp</span></a></td>
+        <td class="extra-points">+2</td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">11</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Rennes</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">12</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Bastia</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">13</td>
+        <td class="stats"><span class="icon-arrow-down"></span><span class="live-red">-2</span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Reims</span></a></td>
+        <td class="extra-points">+3</td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">14</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Caen</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank">15</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Lorient</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-clear-orange" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">16</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Nice</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"><span data-placement="bottom" data-toggle="tooltip" data-original-title="-6 point (Federation decision)">p</span></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-orange" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">17</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Evian</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-clear-red" data-placement="top" data-toggle="tooltip" data-original-title="[qualification]" data-container="body">18</td>
+        <td class="stats"><span class="icon-equal"></span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Toulouse</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-red" data-placement="top" data-toggle="tooltip" data-original-title="[relegation]" data-container="body">19</td>
+        <td class="stats"><span class="icon-arrow-down"></span><span class="live-red">-2</span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Lens</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    <tr>
+        <td class="number rank rank-standing-red" data-placement="top" data-toggle="tooltip" data-original-title="[relegation]" data-container="body">20</td>
+        <td class="stats"><span class="icon-arrow-down"></span><span class="live-red">-2</span></td>
+        <td class="team has-logo"><a href=""><img src="img/team-default.png" alt="Barcelona"><span>Metz</span></a></td>
+        <td class="extra-points"></td>
+        <td class="points">40</td>
+        <td class="point-detail"></td>
+        <td class="point">38</td>
+                <td class="point">-24</td>
+            </tr>
+    </tbody>
+</table>
+
+
+<a class="btn btn-link btn-toggle" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <span class="glyphicon glyphicon-info-sign"></span> Show Table Legend
+</a>
+<div class="collapse" id="collapseExample">
+    <table class="table matches table-condensed table-standing layout-fixed">
+        <colgroup>
+            <col class="number">
+            <col>
+        </colgroup>
+        <tr>
+            <td class="number rank-standing-green"></td>
+            <td>Qualified for Champions league</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-clear-green"></td>
+            <td>Qualified for Champions league</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-blue"></td>
+            <td>Going to Champions league Qualifier</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-clear-blue"></td>
+            <td>Going to Europa League Qualifier</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-orange"></td>
+            <td>Relegation</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-clear-orange"></td>
+            <td>Relegation</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-red"></td>
+            <td>Relegation</td>
+        </tr>
+        <tr>
+            <td class="number rank-standing-clear-red"></td>
+            <td>Relegation</td>
+        </tr>
+    </table>
+</div>
+
+
+    </div>
+    <div class="panel-footer">
+        <a href="#"><span class="icon-caret-right"></span>Full Table</a>
+    </div>
+</div>    
+    <div class="panel panel-condensed panel-default social-networks-block sharing">
+
+                            <div class="panel-heading">
+                    <div class="panel-title">Follow us</div>
+            </div>
+        
+        <div class="panel-body">
+    <p>Show your support to WhatstheScore.com! Like us and follow us via your social networks:</p>
+    <div class="likes">
+        <div class="fb">
+            <a href="#" class="icon"><span class="icon-facebook"></span></a>
+            <div class="social-button">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21"   style="border:none; overflow:hidden; height:21px;" ></iframe>
+            </div>
+        </div>
+        <div class="tw">
+            <a href="#" class="icon"><span class="icon-twitter"></span></a>
+            <div class="social-button">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="gore_edward">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+        <div class="gp">
+            <a href="#" class="icon"><span class="icon-googleplus"></span></a>
+            <div class="social-button">
+                <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
+                <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'es'}
+                </script>
+
+                <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+                <div class="g-plusone" data-size="medium"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                
+</div>
+    <div class="panel panel-condensed panel-default news-block">
+    <div class="panel-heading">
+        News in brief
+    </div>
+    <div class="main-news">
+        <a href="#"><img class="preview" src="img/news1.png" alt="News 1"></a>
+        <div class="content">
+            <div class="date">Thu. March 10 - 13:45</div>
+            <p class="resume"><a href="#">2014 World Cup : five questions regading the french team players list for Brazil</a></p>
+        </div>
+    </div>
+    <div class="main-news">
+        <a href="#"><img class="preview" src="img/news2.png" alt="News 2"></a>
+        <div class="content">
+            <div class="date">Thu. March 10 - 13:45</div>
+            <p class="resume"><a href="#">Odss Ligua Europa Final : FC Séville Benfica</a></p>
+        </div>
+    </div>
+    <div class="sub-news">
+        <div class="row">
+            <div class="col-xs-5">
+                <a href="#"><img class="preview" src="img/news2.png" alt="News 2"></a>
+            </div>
+            <div class="col-xs-7">
+                <div class="content">
+                    <div class="date">Thu. March 10 - 13:45</div>
+                    <p class="resume"><a href="#">Marco Verratti best player in french Ligue 1</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-news">
+        <div class="row">
+            <div class="col-xs-5">
+                <a href="#"><img class="preview" src="img/news2.png" alt="News 2"></a>
+            </div>
+            <div class="col-xs-7">
+                <div class="content">
+                    <div class="date">Thu. March 10 - 13:45</div>
+                    <p class="resume"><a href="#">Duel de statistiques : Miralem Pjanic vs Paul Pogba</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="latest-news">
+        <ul>
+            <li>10/05 <a href="#">- Helena Costa : première femme entraîneur en...</a></li>
+            <li>09/05 <a href="#">- Cote et Matchs Ligue 1 : Les affiches de la 37e...</a></li>
+            <li>08/05 <a href="#">- La liste des 23 du Brésil pour la Coupe du...</a></li>
+            <li>07/05 <a href="#">- Cote PSG Rennes : Le calice jusqu'à la lie ?</a></li>
+        </ul>
+    </div>
+
+    <div class="panel-footer">
+        <a href="#"><span class="icon-caret-right"></span>All News</a>
+    </div>
+
+</div>    <div class="panel panel-condensed panel-default live-commented-matches">
+    <div class="panel-heading">
+        Live commented matches
+    </div>
+    <img class="preview" src="img/live-commented-matches.png" alt="Live">
+    <div class="description">
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper</p>
+    </div>
+    <table class="table matches table-condensed layout-fixed">
+        <colgroup>
+            <col class="date">
+            <col class="team">
+            <col class="score">
+            <col class="team">
+            <col class="tools tools-1">
+        </colgroup>
+        <tr class="live">
+            <td class="date">63'</td>
+            <td class="team team1"><a href="#">VA</a></td>
+            <td class="score"><a href="#">1 - 2</a></td>
+            <td class="team team2"><a href="#">Monaco</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr class="live paused">
+            <td class="date">HT</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Barcelone long team name</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><span>Rennes</span></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><span>Sochaux</span></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+        <tr>
+            <td class="date">21h00</td>
+            <td class="team team1"><a href="#">Rennes</a></td>
+            <td class="score none"><a href="#"><span class="icon-expand-h"></span></a></td>
+            <td class="team team2"><a href="#">Sochaux</a></td>
+            <td class="commented"><a href="#"><span class="icon-mic"></span></a></td>
+        </tr>
+    </table>
+</div>    <div class="panel panel-condensed panel-default">
+    <div class="panel-heading">
+        Long box title that has to be displayed on two lines
+    </div>
+    <table class="table matches table-condensed top-partners">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>BOOKMAKER</th>
+            <th>BONUS</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td class="partner-logo"><img alt="Bonus 1" src="img/sprites/bonus1.png"></td>
+            <td><a href="#">50€</a></td>
+            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="partner-logo"><img alt="Bonus 2" src="img/sprites/bonus2.png"></td>
+            <td><a href="#">50€</a></td>
+            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="partner-logo"><img alt="Bonus 3" src="img/sprites/bonus3.png"></td>
+            <td><a href="#">50€</a></td>
+            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="partner-logo"><img alt="Bonus 4" src="img/sprites/bonus4.png"></td>
+            <td><a href="#">50€</a></td>
+            <td><a href="#">Visit <span class="icon-caret-right"></span></a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>    </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </main>
+
+        </div>
+                    </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="top-footer">
+            <div class="row">
+                <div class="col-xs-9 left-column">
+                    <span class="title">Top competitions football</span>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/worldcup.png" alt="World Cup">Coupe du Monde</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Coupe du Monde</a></li>
+                                <li><a href="#">Résultat Coupe du Monde</a></li>
+                                <li><a href="#">Calendrier Coupe du Monde</a></li>
+                                <li><a href="#">Classement Coupe du Monde</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/ligue1.png" alt="Ligue 1">Ligue1</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Ligue 1</a></li>
+                                <li><a href="#">Résultat Liguel 1</a></li>
+                                <li><a href="#">Calendrier Ligue 1</a></li>
+                                <li><a href="#">Classement Ligue 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/ldc.png" alt="Ldc">Ligue des Champions</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Ligue des Champions</a></li>
+                                <li><a href="#">Résultat Ligue des Champions</a></li>
+                                <li><a href="#">Calendrier Ligue des Champions</a></li>
+                                <li><a href="#">Classement Ligue des Champions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/premiereleague.png" alt="Premiere league">Premier League</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Premier League</a></li>
+                                <li><a href="#">Résultat Premier League</a></li>
+                                <li><a href="#">Calendrier Premier League</a></li>
+                                <li><a href="#">Classement Premier League</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/cup2.png" alt="Cup">Liga</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Liga</a></li>
+                                <li><a href="#">Résultat Liga</a></li>
+                                <li><a href="#">Calendrier Liga</a></li>
+                                <li><a href="#">Classement Liga</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span><img src="img/sprites/seriea.png" alt="Serie A">Serie A</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Serie A</a></li>
+                                <li><a href="#">Résultat Serie A</a></li>
+                                <li><a href="#">Calendrier Serie A</a></li>
+                                <li><a href="#">Classement Serie A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span class="title">Résultats foot par pays</span>
+                            <ul>
+                                <li><a href="#">Résultats Foot Français</a></li>
+                                <li><a href="#">Résultats Foot Anglais</a></li>
+                                <li><a href="#">Résultats Foot Espagnol</a></li>
+                                <li><a href="#">Résultats Foot Italien</a></li>
+                                <li><a href="#">Résultats Foot Allemand</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span class="title">Résultats foot par equipes</span>
+                            <ul>
+                                <li><a href="#">Equipe OM</a></li>
+                                <li><a href="#">Equipe Real Madrid</a></li>
+                                <li><a href="#">Equipe Barcelone</a></li>
+                                <li><a href="#">Equipe PSG</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <span class="title">Principaux matchs à venir:</span>
+                            <ul>
+                                <li><a href="#">Foot en direct Allemangne Portugal</a></li>
+                                <li><a href="#">Foot en direct Suisse France</a></li>
+                                <li><a href="#">Foot en direct Equiateur France</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 right-column">
+                    <img src="img/ls-logo-white.png" alt="Site Logo">
+                    <p>Fusce sagittis eget purus vel hendrerit. Morbi fermentum semper risus. Phasellus vel efficitur dolor. Quisque vel lorem accumsan, ornare velit eget, ultricies lacus, um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
+                    <div class="app-links">
+                        <img src="img/app-store.png" alt="AppStore">
+                        <img src="img/play-store.png" alt="PlayStore">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Utilisation</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Livescore gratuit</a></li>
+                <li><a href="#">Recrutement</a></li>
+            </ul>
+            <svg class="ls-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"
+             preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path class="ls-svg-bg" d="M0 1500 l0 -1500 1500 0 1500 0 0 1500 0 1500 -1500 0 -1500 0 0
+                -1500z m1625 1476 c213 -13 487 -110 680 -239 379 -254 624 -675 653 -1119 18
+                -275 -31 -525 -150 -763 -148 -295 -368 -515 -663 -662 -238 -120 -487 -169
+                -762 -151 -587 38 -1108 445 -1292 1008 -61 188 -83 363 -69 568 29 444 274
+                865 653 1119 140 94 351 182 525 219 77 16 261 32 315 27 17 -1 66 -4 110 -7z"/>
+                <path class="ls-svg-text" d="M1961 2465 c-260 -57 -421 -275 -383 -521 19 -122 80 -217 194 -300
+                l49 -36 -48 -33 c-123 -83 -220 -204 -262 -326 -28 -81 -38 -208 -21 -280 43
+                -184 190 -327 386 -376 50 -12 110 -17 214 -16 125 0 156 3 227 25 158 48 274
+                146 342 288 33 69 36 83 39 185 3 92 1 120 -17 173 -47 138 -140 238 -311 331
+                l-51 28 76 58 c99 75 147 132 193 224 36 73 37 77 37 190 0 110 -2 119 -30
+                169 -59 107 -177 189 -313 218 -84 17 -237 17 -321 -1z m273 -215 c63 -24 127
+                -87 146 -145 35 -107 -36 -258 -173 -364 l-57 -43 -86 53 c-204 129 -275 234
+                -239 356 20 68 87 130 164 154 54 16 188 10 245 -11z m-107 -847 c238 -145
+                303 -218 303 -349 0 -165 -155 -284 -359 -272 -218 13 -354 177 -320 390 15
+                98 49 157 140 242 44 42 83 76 86 76 3 0 70 -39 150 -87z"/>
+                <path class="ls-svg-text" d="M823 2427 l-233 -20 0 -89 0 -88 140 0 140 0 0 -805 0 -805 135 0
+                135 0 0 915 0 915 -42 -1 c-24 -1 -148 -11 -275 -22z"/>
+                <path class="ls-svg-text" d="M82 1378 l3 -103 270 0 270 0 3 103 3 102 -276 0 -276 0 3 -102z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.js"></script>
+<script src="js/owl.carousel/owl.carousel.min.js"></script>
+<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/custombox/dist/custombox.min.js"></script>
+<script src="js/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="js/markup-scripts.js"></script>
+<script src="js/google-charts.js"></script>
+
+
+</body>
+</html>

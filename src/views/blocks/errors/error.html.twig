@@ -1,0 +1,9 @@
+{% extends 'blocks/elements/full_page_error.html.twig' %}
+
+{% block image_block %}<img class="message-image" src="{{ basePath }}img/errors/error.svg">{% endblock %}
+
+{% block message_title %}Error !{% endblock %}
+{% block message_sub_title %}Description of the error{% endblock %}
+{% block message_buttons %}
+    <button type="button" class="btn btn-primary"><span class="icon-caret-left"</span> Return to home page </button>
+{% endblock %}

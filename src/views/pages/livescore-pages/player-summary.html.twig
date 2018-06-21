@@ -1,0 +1,21 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb: ['Sweden', 'Arjen Robben'], breadcrumb_h1:'Arjen Robben results'}) }}
+{% endblock %}
+
+{% block content %}
+    {{  include('blocks/elements/content_header_player.html.twig', {selectedTab: 'summary'}) }}
+    <h2 class="h2-inpage">Arjen Robben League Stats</h2>
+    {% include 'blocks/various/share_page_small.html.twig' %}
+    {% include 'blocks/sports/player/player_statistics.html.twig' %}
+    {% include 'blocks/sports/player/player_goals_statistics.html.twig' %}
+    {% include 'blocks/various/comment_thread.html.twig' %}
+{% endblock %}
+
+{% block content_right %}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+{% endblock %}

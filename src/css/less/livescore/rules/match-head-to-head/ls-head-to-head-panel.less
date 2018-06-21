@@ -1,0 +1,175 @@
+.head-to-head, &.team-form{
+
+   .teams{
+    margin-bottom:8px;
+   
+     table.circles{
+      width: 100%;
+      
+      tr{
+        td{
+          width: 33.3%;
+          text-align: center;
+
+          &.circle-info{
+            height: 60px;
+          }
+          
+          &.title{
+            padding-top: 5px;
+          
+            span{
+              display:block;
+              font-weight:@font-weight-semi-bold;
+              font-size:@font-size-x-small;
+              
+              &.win{
+                color:@brand-success;
+              }
+              
+              &.draw{
+                color:lighten(@gray-light, 32.4%);
+              }
+              
+              &.lost{
+                color:@brand-danger;
+              }
+            }
+          }
+        }
+      }
+     }
+   
+    .team{
+    
+      .circle{
+        border-radius: 50%;
+        display:inline-table;
+        width:60px;
+        height:60px;
+        background-color: lighten(@gray-light, 13.1%);
+        color:@ls-light-color;
+        
+        span{
+          display: table-cell;
+          vertical-align: middle;
+          font-size: @ls-head-to-head-first-team-size;
+          font-weight: @font-weight-normal;
+          text-align: center;
+        }
+        
+        &.gray1{ background-color: lighten(@gray-light, 13.1%); }
+        &.gray2{ background-color: lighten(@gray-light, 30.5%); }
+        &.gray3{ background-color: lighten(@gray-light, 32.4%); }
+        &.success{ background-color:@brand-success; }
+        &.danger{ background-color:@brand-danger; }
+        
+      }
+      
+      
+      &.second{
+        
+        .circle{
+          width:40px;
+          height:40px;
+          font-size:@ls-head-to-head-second-team-size;
+          
+          span{
+            font-size:@ls-head-to-head-second-team-size;
+          }
+        }
+      }
+      
+      &.third{
+      
+        .circle{
+          width:32px;
+          height:32px;
+          
+          span{
+            font-size:@ls-head-to-head-third-team-size;
+          }
+        }    
+      }
+      
+      &.fourth{
+      
+        .circle{
+          width:24px;
+          height:24px;
+          
+          span{
+            font-size:@font-size-small;
+          }
+        }
+      }
+      
+      &.fifth{
+      
+        .circle{
+          width:20px;
+          height:20px;
+
+          span{
+            font-size:@font-size-small;
+          }
+        }
+      }
+
+    }
+  }
+  
+  .table{
+    border-top:1px solid darken(@ls-light-color, 6%);   
+    margin-bottom: 0;  
+  
+    tbody{
+      
+      tr{
+      
+        .logo{
+          padding-right: 0;
+          padding-left: 0;
+          
+          img{
+            width:18px;
+            height:18px;
+          }
+        }
+      }
+    }
+  
+  }
+}
+  
+.head-to-head{
+  
+  > .panel-content .teams,
+  > .teams{
+    margin: 0;
+    padding: 15px 0;
+  }
+}
+  
+  
+.team-form{
+
+  > .row,
+  > form > .row {
+    margin: 0;
+  }
+
+  .nav-pills{
+  
+    li{
+      margin-right:0;
+    }
+  }
+  
+  .navigation{
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+}
+

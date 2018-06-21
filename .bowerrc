@@ -1,4 +1,6 @@
 {
-	"directory" :	"www/80/lib/bower",
-	"json"      :	"bower.json"
+	"directory" :	"compiled/js/",
+	"json"      :	"bower.json",
+	"strict-ssl":   false, 
+	"https-proxy":	""
 }

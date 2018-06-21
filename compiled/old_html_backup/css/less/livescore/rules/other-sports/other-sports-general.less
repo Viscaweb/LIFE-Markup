@@ -1,0 +1,237 @@
+table.other-sport{
+
+  thead, tbody tr th{
+  
+    span.match-name{
+      color: darken(@ls-light-color, 16%) !important;
+      font-weight: @font-weight-normal;
+    }
+  }
+
+  thead{
+    tr{
+      th{
+        vertical-align: middle;
+      } 
+    }
+
+    &.league-data{
+
+      > tr{
+
+        > th{
+
+          .tools{
+
+            span{
+
+              a.fav{
+                position: relative;
+                top: 1px;
+              }
+
+              a{
+
+                i.icon-standings{
+                  margin-right: 5px;
+                  position: relative;
+                  top: -1px;
+                  line-height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+
+  tbody{
+    border-top: 0;
+   
+    &:nth-child(even){
+      background-color: darken(@ls-light-color,2%);
+    }
+    
+    &.highlight{
+      background-color: @ls-tr-highlight-bg;
+    }
+  
+    tr{
+    
+      td{
+        background-color: transparent !important;
+        border: 0;
+        vertical-align: middle;
+      }
+  
+      td.hour{
+        width: 5%;
+        font-weight: @font-weight-semi-bold;
+      }
+      
+      td.time{
+        width: 7%;
+        color: darken(@ls-light-color, 46%);
+      }
+      
+      td.teams{
+        width: 32%;
+        
+        i{
+          margin-right: 5px;
+        }
+      }
+      
+      td.score{
+        width: 5%;
+        background: rgba(0,0,0,0.06) !important;
+        .box-shadow(-1px 1px 0 @ls-light-color inset);
+        text-align: center;
+        font-size: @font-size-normal;
+        font-weight: @font-weight-normal !important;
+        padding-top: 1px !important;
+        
+        &.main{
+          font-weight: @font-weight-bold !important;
+        }
+      }
+      
+      td.tools{
+        text-align: right;
+
+        &.favorite{
+          width: 4%;
+          text-align: center;
+        }       
+      }
+      
+      &:nth-child(2), td[rowspan]{
+        border-bottom: 2px solid darken(@ls-light-color, 11.5%);
+      }
+
+      th{
+
+        .tools{
+          a{
+            i.icon-standings{
+              margin-right: 5px;
+              position: relative;
+              top: -1px;
+              line-height: 16px;
+            }
+          } 
+        }
+      }
+    
+    }
+  
+    &:hover{
+      background-color: @table-bg-hover;
+    }
+    
+    &.live{
+      
+      tr{
+      
+        td.score.main, td.time{
+          color: @live-red;
+        }
+        
+        td.time{
+          font-size: @font-size-x-small;
+          .live-blink-gif();
+          
+          img{
+            margin-right: 3px;
+          }
+        }
+      }
+
+      &.paused{
+
+        tr{
+
+          td.time{
+            background-image: url("@{ls-image-paused-spot}");
+          }
+        }
+      }
+    }
+
+    &.header{
+      tr{
+        &:nth-child(2), td[rowspan]{
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  &.sport-baseball{
+  
+    tbody{
+    
+      tr{
+      
+        td.teams{
+          width: 20%;
+        }
+        
+        td.score{
+          width: 3%;
+        }
+        
+        td.hits{
+          .box-shadow(-1px 1px 0 @ls-light-color inset, 3px 0 0 @ls-light-color inset);
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  
+  &.sport-tennis{
+  
+    thead, tbody{
+    
+      tr{
+      
+        th{
+        
+          img{
+            height: 18px;
+            width: 18px;
+            margin-right: 5px;
+            margin-left: 2px;
+            margin-top: -3px;
+          }
+          
+          i.icon-man, .icon-woman{
+            font-size: @font-size-medium;
+            color: #8dc4ff;
+            display: inline-block;
+          }
+          
+          i.icon-woman{
+            color: #ffaef7;
+          }
+        }
+      }
+    }
+    
+    tbody{
+      
+      tr{
+      
+        td.teams{
+        
+          img{
+            float: right; 
+          }
+        }
+      }
+    }
+  }
+}

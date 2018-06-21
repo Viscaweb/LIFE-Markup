@@ -1,0 +1,17 @@
+<div class="panel panel-no-border panel-content-header">
+    <div class="row content-header country">
+        <div class="col-xs-2 avatar">
+            <img src="{{ basePath }}img/flag-fr.png" alt="France">
+        </div>
+        <div class="col-xs-10 info">
+            <div class="title-container">
+                <div class="row title">
+                    <div class="col-xs-12 title-value">France</div>
+                </div>
+            </div>
+            <a href="#" class="uppercase additionnal-info">Football</a>
+        </div>
+    </div>
+</div>
+
+{{ include('blocks/elements/page_tabs.html.twig', {type: 'country', tab: selectedTab, no_container: true}) }}

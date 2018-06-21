@@ -1,0 +1,34 @@
+
+
+.scroll-bar(@width: 10px, @border-radius: 2px, @background: @ls-scrollbar-background, @thumb-background: @ls-scrollbar-color){
+  &::-webkit-scrollbar {
+      width: @width;
+  }
+   
+  &::-webkit-scrollbar-track {
+      background: @background;
+  } 
+   
+  &::-webkit-scrollbar-thumb {
+      background: @thumb-background;
+      border-radius: @border-radius;
+  }
+}
+
+//Live TR Style
+.live-blink-gif(){
+  padding-left: 15px;
+  background-image: url('@{ls-live-indicator-initial-state}');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  animation: @ls-live-indicator-animation;
+}
+
+//Paused Spot Style
+.paused-gif(){
+  padding-left: 15px;
+  background-image: url('@{ls-live-indicator-paused-state}');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  animation: none;
+}

@@ -1,0 +1,19 @@
+{% extends "layouts/3_columns.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {{ include('blocks/commons/breadcrumb.html.twig', {breadcrumb_h1:'Football live scores'}) }}
+{% endblock %}
+
+{% block content %}
+    <h2 class="h2-inpage">Football live results</h2>
+    {{ include('blocks/sports/listings/match_listing_general_predictions.html.twig', {in_panel:'true', noHeader: 'true'}) }}
+{% endblock %}
+
+{% block content_right %}
+    {{ include('blocks/various/follow_us.html.twig', {in_panel:'true'}) }}
+    {% include 'blocks/sports/upcoming_top_games.html.twig' %}
+    {% include 'blocks/sports/top_competitions_tables.html.twig' %}
+    {% include 'blocks/news/news_in_brief_list.html.twig' %}
+    {% include 'blocks/sports/live_commented_matches.html.twig' %}
+{% endblock %}

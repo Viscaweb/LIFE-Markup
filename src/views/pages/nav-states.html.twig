@@ -1,0 +1,44 @@
+{% extends "layouts/3_columns.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar_no_favorites.html.twig' %}
+{% endblock %}
+
+{% block container_content_before %}
+{% endblock %}
+
+{% block container_main %}
+{% endblock %}
+
+{% block content %}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'summary'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'head-to-head'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'odds'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'chat'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'videos'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'match', tab:'streaming'}) }}
+
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab:'summary'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab:'results'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab:'fixtures'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab:'tables'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'competition', tab:'teams'}) }}
+
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'country', tab:'summary'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'country', tab:'tables'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'country', tab:'teams'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'country', tab:'competitions'}) }}
+
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team', tab:'summary'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team', tab:'results-fixtures'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team', tab:'tables'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team', tab:'squad'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'team', tab:'stats'}) }}
+
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'player', tab:'summary'}) }}
+    {{ include('blocks/elements/page_tabs.html.twig', {type: 'player', tab:'goals'}) }}
+{% endblock %}
+
+{% block content_right %}
+{% endblock %}
+

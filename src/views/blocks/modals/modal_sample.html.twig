@@ -1,0 +1,44 @@
+{# SAMLPE MODAL #}
+{% extends 'blocks/containers/modal.html.twig' %}
+
+{% set modal_classes = '' %}
+{% set modal_id = 'modal-window' %}
+
+{% block modal_header %}
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">Results Bar Customization</h4>
+{% endblock %}
+
+{% block modal_content %}
+    <p>Display results from :</p>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="checkbox">
+                <input type="checkbox" checked="" id="check3">
+                <label for="check3">My Games</label>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="checkbox">
+                <input type="checkbox" checked="" id="check4">
+                <label for="check4">My Leagues</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <p>Hidden by default :</p>
+        </div>
+        <div class="col-xs-3">
+            <div class="switch-button">
+                <input type="checkbox" checked="" name="check" id="switch2">
+                <span><label for="switch2"></label></span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block modal_footer %}
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+{% endblock %}
