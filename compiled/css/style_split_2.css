@@ -1,3 +1,8 @@
+span.sprite-icons.substitution-left {
+  background-position: -233px -5px;
+  width: 8px;
+}
+
 span.sprite-icons.football-field {
   background-position: -5px -3px;
   width: 16px;
@@ -3648,6 +3653,483 @@ span.glyphicon-star.active {
 
 .sport-content__show-more span.icon {
   margin-left: 5px;
+}
+
+.player-comparison-hero {
+  position: relative;
+}
+
+.player-comparison-hero-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.player-comparison-hero-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 73, 75, 0.6);
+}
+
+.player-comparison-hero-player {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  padding: 30px 35px;
+}
+
+.player-comparison-hero-player.player-comparison-hero-player--left {
+  padding-right: 10px;
+}
+
+.player-comparison-hero-player.player-comparison-hero-player--right {
+  text-align: right;
+  padding-left: 10px;
+}
+
+.player-comparison-hero-player-name {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  padding-right: 33px;
+  margin-bottom: 14px;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-name {
+  padding-right: 0;
+  padding-left: 33px;
+}
+
+.player-comparison-hero-player-name:hover,
+.player-comparison-hero-player-name:active,
+.player-comparison-hero-player-name:focus {
+  color: #ffffff;
+}
+
+.player-comparison-hero-player-name:after {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjx0aXRsZT5hcnJvdy1kb3duPC90aXRsZT48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMC4yNTYgOC42MDZjMC0wLjI2OSAwLjEwNi0wLjU0NCAwLjMxMy0wLjc1IDAuNDEyLTAuNDEyIDEuMDg3LTAuNDEyIDEuNSAwbDE0LjExOSAxNC4xMTkgMTMuOTEzLTEzLjkxMmMwLjQxMy0wLjQxMiAxLjA4Ny0wLjQxMiAxLjUgMHMwLjQxMyAxLjA4OCAwIDEuNWwtMTQuNjYzIDE0LjY2OWMtMC40MTMgMC40MTMtMS4wODggMC40MTMtMS41IDBsLTE0Ljg2OS0xNC44NjljLTAuMjEzLTAuMjEzLTAuMzEzLTAuNDgxLTAuMzEzLTAuNzU2eiI+PC9wYXRoPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-name:after {
+  left: 0;
+  right: auto;
+}
+
+.player-comparison-hero-player-data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-data {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.player-comparison-hero-player--left .player-comparison-hero-player-data > div {
+  margin-right: 14px;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-data > div {
+  margin-left: 14px;
+}
+
+.player-comparison-hero-player-country {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.player-comparison-hero-player-country img {
+  max-height: 20px;
+  max-width: 23px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.player-comparison-hero-player-team img {
+  max-height: 20px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.player-comparison-hero-player-achievements {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player-comparison-hero-player-prize {
+  position: relative;
+}
+
+.player-comparison-hero-player-prize .prize-counter {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.player-comparison-hero-player-prize img {
+  max-height: 21px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.player-comparison-hero-player-social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-social-links {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.player-comparison-hero-player-social-links a {
+  display: inline-block;
+  opacity: 0.6;
+}
+
+.player-comparison-hero-player-social-links a:hover {
+  opacity: 1;
+}
+
+.player-comparison-hero-player--left .player-comparison-hero-player-social-links a {
+  margin-right: 10px;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-social-links a {
+  margin-left: 10px;
+}
+
+.player-comparison-hero-player-social-links a svg {
+  max-width: 17px;
+  max-height: 17px;
+  fill: #ffffff;
+}
+
+.player-comparison-hero-player-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.player-comparison-hero-player--left .player-comparison-hero-player-image {
+  left: 0;
+}
+
+.player-comparison-hero-player--right .player-comparison-hero-player-image {
+  right: 0;
+}
+
+.player-comparison-hero-player-image img {
+  max-width: 290px;
+}
+
+.player-comparison-hero-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.player-comparison-hero-chart canvas {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li {
+  border-right-width: 0;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  height: 45px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom: 1px solid #ededed;
+  border-radius: 0;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li > a:hover {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li svg {
+  margin-right: 6px;
+  max-width: 15px;
+  max-height: 15px;
+  fill: #43494b;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li.active > a {
+  color: #5da400;
+  background-color: #ffffff;
+  border-bottom-color: #ffffff;
+  border-bottom-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li.active > a:focus {
+  border-top-width: 0;
+}
+
+.player-comparison-nav .nav-tabs.nav-justified > li.active svg {
+  fill: #5da400;
+}
+
+.player-comparison-nav .tab-content .tab-pane {
+  padding: 35px;
+}
+
+.player-comparison-vs-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 25px;
+  background-color: #fafafa;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-comparison-vs-block .player-team-logo {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.player-comparison-vs-block .player-team-logo.player-team-logo--left {
+  margin-right: 15px;
+}
+
+.player-comparison-vs-block .player-team-logo.player-team-logo--right {
+  margin-left: 15px;
+}
+
+.player-comparison-vs-block .player-team-logo img {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+.player-comparison-vs-block .player-name {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font-size: 16px;
+}
+
+.player-comparison-vs-block .player-name span {
+  font-weight: 700;
+}
+
+.player-comparison-vs-block .player-name.player-name--right {
+  text-align: right;
+}
+
+.player-comparison-vs-block .vs {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  color: #5da400;
+}
+
+.player-comparison-competitions-stats {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.player-comparison-competitions-stats.player-comparison-competitions-stats--main {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.player-comparison-competitions-stats-title {
+  color: #43494b;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.player-comparison-competitions-stats-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player-comparison-stats-block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.player-comparison-stats-block-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.player-comparison-stats-block-title .image {
+  margin-right: 5px;
+}
+
+.player-comparison-stats-block-title .image img {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.player-comparison-stats-block-title .image .icon {
+  font-size: 14px;
+  vertical-align: middle;
+  color: #43494b;
+}
+
+.player-comparison-stats-block-title .name {
+  color: #43494b;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.player-comparison-competitions-stats--main .player-comparison-stats-block-title .name {
+  text-transform: uppercase;
+}
+
+.player-comparison-stats-block-values {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.player-comparison-stats-block-values .number {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+}
+
+.player-comparison-competitions-stats--main .player-comparison-stats-block-values .number {
+  font-size: 36px;
+}
+
+.player-comparison-stats-block-values .number.number--left {
+  text-align: right;
+  color: #cb6b64;
+}
+
+.player-comparison-stats-block-values .number.number--right {
+  color: #5d9fdd;
+}
+
+.player-comparison-stats-block-values .vs {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  color: #43494b;
+  text-transform: uppercase;
+  padding: 0 20px;
 }
 
 /*Base Tables*/
