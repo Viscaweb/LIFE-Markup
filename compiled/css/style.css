@@ -15091,10 +15091,10 @@ span.glyphicon-star.active {
 }
 .player-comparison-stats-block-values .number.number--left {
   text-align: right;
-  color: #cb6b64;
+  color: #ff6565;
 }
 .player-comparison-stats-block-values .number.number--right {
-  color: #5d9fdd;
+  color: #34a7ff;
 }
 .player-comparison-stats-block-values .vs {
   -webkit-box-flex: 0;
@@ -15104,6 +15104,120 @@ span.glyphicon-star.active {
   color: #43494b;
   text-transform: uppercase;
   padding: 0 20px;
+}
+.player-comparison-financial-chart {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 60px;
+}
+.player-comparison-financial-chart .chart-container {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 200px;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  height: 200px;
+}
+.player-comparison-financial-chart .player-comparison-player-salary {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.player-comparison-financial-chart .player-comparison-player-salary .chart-arm {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  width: 200px;
+  border-bottom: 2px dashed #ededed;
+}
+.player-comparison-financial-chart .player-comparison-player-salary .chart-arm > span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -70px;
+  width: 70px;
+  border-bottom: 2px dashed #ededed;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+       -o-transform-origin: top right;
+          transform-origin: top right;
+}
+.player-comparison-financial-chart .player-comparison-player-salary .chart-arm > span:after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: -3px;
+  left: -7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+.player-comparison-financial-chart .player-comparison-player-salary .player-salary {
+  padding-top: 100px;
+}
+.player-comparison-financial-chart .player-comparison-player-salary .player-salary-value {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.player-comparison-financial-chart .player-comparison-player-salary .player-salary-description {
+  text-transform: uppercase;
+  color: #909a9d;
+}
+.player-comparison-financial-chart .player-comparison-player-salary.player-comparison-player-salary--left .chart-arm > span:after {
+  background-color: #ff6565;
+}
+.player-comparison-financial-chart .player-comparison-player-salary.player-comparison-player-salary--right .chart-arm {
+  right: auto;
+  left: -30px;
+}
+.player-comparison-financial-chart .player-comparison-player-salary.player-comparison-player-salary--right .chart-arm > span {
+  left: auto;
+  right: -70px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+       -o-transform-origin: top left;
+          transform-origin: top left;
+}
+.player-comparison-financial-chart .player-comparison-player-salary.player-comparison-player-salary--right .chart-arm > span:after {
+  left: auto;
+  right: -7px;
+  background-color: #34a7ff;
+}
+.player-comparison-financial-chart .player-comparison-player-salary.player-comparison-player-salary--right .player-salary {
+  text-align: right;
+}
+.player-comparison-financial-chart canvas {
+  max-width: 200px;
+  max-height: 200px;
+}
+.player-comparison-financial-chart-title {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
 }
 /*Base Tables*/
 .popover.popover-trend,

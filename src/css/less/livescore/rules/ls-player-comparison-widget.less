@@ -1,195 +1,195 @@
 // Player comparison widget
 
 .player-comparison-hero {
-	position: relative;
+  position: relative;
 }
 
 .player-comparison-hero-img {
 
-	img {
-		max-width: 100%;
-		max-height: 100%;
-	}
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .player-comparison-hero-content {
-	position: absolute;
-	display: flex;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(67, 73, 75, 0.6);
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 73, 75, 0.6);
 }
 
 .player-comparison-hero-player {
-	flex: 1 1 50%;
-	padding: @player-comparison-hero-padding;
+  flex: 1 1 50%;
+  padding: @player-comparison-hero-padding;
 
-	&.player-comparison-hero-player--left {
-		padding-right: 10px;
-	}
+  &.player-comparison-hero-player--left {
+    padding-right: 10px;
+  }
 
-	&.player-comparison-hero-player--right {
-		text-align: right;
-		padding-left: 10px;
-	}
+  &.player-comparison-hero-player--right {
+    text-align: right;
+    padding-left: 10px;
+  }
 }
 
 .player-comparison-hero-player-name {
-	position: relative;
-	display: inline-block;
-	color: @ls-light-color;
-	font-size: @player-comparison-hero-player-name-size;
-	font-weight: @font-weight-bold;
-	line-height: 1;
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	padding-right: 33px;
-	margin-bottom: 14px;
+  position: relative;
+  display: inline-block;
+  color: @ls-light-color;
+  font-size: @player-comparison-hero-player-name-size;
+  font-weight: @font-weight-bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  padding-right: 33px;
+  margin-bottom: 14px;
 
-	.player-comparison-hero-player--right & {
-		padding-right: 0;
-		padding-left: 33px;
-	}
+  .player-comparison-hero-player--right & {
+    padding-right: 0;
+    padding-left: 33px;
+  }
 
-	&:hover,
-	&:active,
-	&:focus {
-		color: @ls-light-color;
-	}
+  &:hover,
+  &:active,
+  &:focus {
+    color: @ls-light-color;
+  }
 
-	&:after {
-		position: absolute;
-		top: 6px;
-		right: 0;
-		content: '';
-		display: block;
-		width: 25px;
-		height: 25px;
-		background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjx0aXRsZT5hcnJvdy1kb3duPC90aXRsZT48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMC4yNTYgOC42MDZjMC0wLjI2OSAwLjEwNi0wLjU0NCAwLjMxMy0wLjc1IDAuNDEyLTAuNDEyIDEuMDg3LTAuNDEyIDEuNSAwbDE0LjExOSAxNC4xMTkgMTMuOTEzLTEzLjkxMmMwLjQxMy0wLjQxMiAxLjA4Ny0wLjQxMiAxLjUgMHMwLjQxMyAxLjA4OCAwIDEuNWwtMTQuNjYzIDE0LjY2OWMtMC40MTMgMC40MTMtMS4wODggMC40MTMtMS41IDBsLTE0Ljg2OS0xNC44NjljLTAuMjEzLTAuMjEzLTAuMzEzLTAuNDgxLTAuMzEzLTAuNzU2eiI+PC9wYXRoPjwvc3ZnPg==);
-		background-repeat: no-repeat;
-		background-size: 20px;
-		background-position: center;
+  &:after {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjx0aXRsZT5hcnJvdy1kb3duPC90aXRsZT48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMC4yNTYgOC42MDZjMC0wLjI2OSAwLjEwNi0wLjU0NCAwLjMxMy0wLjc1IDAuNDEyLTAuNDEyIDEuMDg3LTAuNDEyIDEuNSAwbDE0LjExOSAxNC4xMTkgMTMuOTEzLTEzLjkxMmMwLjQxMy0wLjQxMiAxLjA4Ny0wLjQxMiAxLjUgMHMwLjQxMyAxLjA4OCAwIDEuNWwtMTQuNjYzIDE0LjY2OWMtMC40MTMgMC40MTMtMS4wODggMC40MTMtMS41IDBsLTE0Ljg2OS0xNC44NjljLTAuMjEzLTAuMjEzLTAuMzEzLTAuNDgxLTAuMzEzLTAuNzU2eiI+PC9wYXRoPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
 
-		.player-comparison-hero-player--right & {
-			left: 0;
-			right: auto;
-		}
-	}
+    .player-comparison-hero-player--right & {
+      left: 0;
+      right: auto;
+    }
+  }
 }
 
 .player-comparison-hero-player-data {
-	display: flex;
-	align-items: center;
-	margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 
-	.player-comparison-hero-player--right & {
-		justify-content: flex-end;
-	}
+  .player-comparison-hero-player--right & {
+    justify-content: flex-end;
+  }
 
-	> div {
-		
-		.player-comparison-hero-player--left & {
-			margin-right: 14px;
-		}
+  > div {
+    
+    .player-comparison-hero-player--left & {
+      margin-right: 14px;
+    }
 
-		.player-comparison-hero-player--right & {
-			margin-left: 14px;
-		}
-	}
+    .player-comparison-hero-player--right & {
+      margin-left: 14px;
+    }
+  }
 }
 
 .player-comparison-hero-player-country {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	img {
-		max-height: 20px;
-		max-width: 23px;
-		width: auto;
-		vertical-align: middle;
-	}
+  img {
+    max-height: 20px;
+    max-width: 23px;
+    width: auto;
+    vertical-align: middle;
+  }
 }
 
 .player-comparison-hero-player-team {
 
-	img {
-		max-height: 20px;
-		width: auto;
-		vertical-align: middle;
-	}
+  img {
+    max-height: 20px;
+    width: auto;
+    vertical-align: middle;
+  }
 }
 
 .player-comparison-hero-player-achievements {
-	display: flex;
+  display: flex;
 }
 
 .player-comparison-hero-player-prize {
-	position: relative;
-	
-	.prize-counter {
-		position: absolute;
-		top: -4px;
+  position: relative;
+  
+  .prize-counter {
+    position: absolute;
+    top: -4px;
     right: -7px;
-		color: @ls-light-color;
-		font-size: 10px;
-		font-weight: bold;
-	}
+    color: @ls-light-color;
+    font-size: 10px;
+    font-weight: bold;
+  }
 
-	img {
-		max-height: 21px;
-		width: auto; 
-		vertical-align: middle;
-	}
+  img {
+    max-height: 21px;
+    width: auto; 
+    vertical-align: middle;
+  }
 }
 
 .player-comparison-hero-player-social-links {
-	display: flex;
+  display: flex;
 
-	.player-comparison-hero-player--right & {
-		justify-content: flex-end;
-	}
+  .player-comparison-hero-player--right & {
+    justify-content: flex-end;
+  }
 
-	a {
-		display: inline-block;
-		opacity: 0.6;
+  a {
+    display: inline-block;
+    opacity: 0.6;
 
-		&:hover {
-			opacity: 1;
-		}
+    &:hover {
+      opacity: 1;
+    }
 
-		.player-comparison-hero-player--left & {
-			margin-right: 10px;
-		}
+    .player-comparison-hero-player--left & {
+      margin-right: 10px;
+    }
 
-		.player-comparison-hero-player--right & {
-			margin-left: 10px;
-		}
+    .player-comparison-hero-player--right & {
+      margin-left: 10px;
+    }
 
-		svg {
-			max-width: 17px;
-			max-height: 17px;
-			fill: @ls-light-color;
-		}
-	}
+    svg {
+      max-width: 17px;
+      max-height: 17px;
+      fill: @ls-light-color;
+    }
+  }
 }
 
 .player-comparison-hero-player-image {
-	position: absolute;
-	bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-	.player-comparison-hero-player--left & {
-		left: 0;
-	}
+  .player-comparison-hero-player--left & {
+    left: 0;
+  }
 
-	.player-comparison-hero-player--right & {
-		right: 0;
-	}
+  .player-comparison-hero-player--right & {
+    right: 0;
+  }
 
-	img {
-		max-width: 290px;
-	}
+  img {
+    max-width: 290px;
+  }
 }
 
 .player-comparison-hero-chart {
@@ -202,211 +202,326 @@
   align-items: center;
   justify-content: center;
 
-	canvas {
-		max-width: @player-comparison-hero-chart-size;
-		max-height: @player-comparison-hero-chart-size;
-	}
+  canvas {
+    max-width: @player-comparison-hero-chart-size;
+    max-height: @player-comparison-hero-chart-size;
+  }
 }
 
 // Tabs nav
 .player-comparison-nav {
 
-	.nav-tabs.nav-justified {
+  .nav-tabs.nav-justified {
 
-		> li {
-			border-right-width: 0;
+    > li {
+      border-right-width: 0;
 
-			> a {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: @player-comparison-nav-text-size;
-				text-transform: uppercase;
-				height: @player-comparison-nav-height;
-				border-top-width: 0;
-				border-left-width: 0;
-				border-right-width: 0;
-				border-bottom: 1px solid #ededed;
-				border-radius: 0;
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: @player-comparison-nav-text-size;
+        text-transform: uppercase;
+        height: @player-comparison-nav-height;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom: 1px solid #ededed;
+        border-radius: 0;
 
-				&:hover {
-					border-top-width: 0;
-					border-left-width: 0;
-					border-right-width: 0;
-				}
-			}
+        &:hover {
+          border-top-width: 0;
+          border-left-width: 0;
+          border-right-width: 0;
+        }
+      }
 
-			svg {
-				margin-right: 6px;
-				max-width: 15px;
-				max-height: 15px;
-				fill: @player-comparison-nav-text-color;
-			}
+      svg {
+        margin-right: 6px;
+        max-width: 15px;
+        max-height: 15px;
+        fill: @player-comparison-nav-text-color;
+      }
 
-			&.active {
+      &.active {
 
-				> a {
-					color: @player-comparison-nav-text-color-active;
-					background-color: @ls-light-color;
-					border-bottom-color: @ls-light-color;
-					border-bottom-width: 1px;
-					border-left-width: 0;
-					border-right-width: 0;
+        > a {
+          color: @player-comparison-nav-text-color-active;
+          background-color: @ls-light-color;
+          border-bottom-color: @ls-light-color;
+          border-bottom-width: 1px;
+          border-left-width: 0;
+          border-right-width: 0;
 
-					&:focus {
-						border-top-width: 0;
-					}
-				}
+          &:focus {
+            border-top-width: 0;
+          }
+        }
 
-				svg {
-					fill: @player-comparison-nav-text-color-active;
-				}
-			}
-		}
-	}
+        svg {
+          fill: @player-comparison-nav-text-color-active;
+        }
+      }
+    }
+  }
 
-	.tab-content {
+  .tab-content {
 
-		.tab-pane {
-			padding: 35px;
-		}
-	}
+    .tab-pane {
+      padding: 35px;
+    }
+  }
 }
 
 // Player versus block
 .player-comparison-vs-block {
-	display: flex;
-	padding: 20px 25px;
-	background-color: #fafafa;
-	align-items: center;
-	margin-bottom: 20px;
+  display: flex;
+  padding: 20px 25px;
+  background-color: #fafafa;
+  align-items: center;
+  margin-bottom: 20px;
 
-	.player-team-logo {
-		flex: 1 1 auto;
+  .player-team-logo {
+    flex: 1 1 auto;
 
-		&.player-team-logo--left {
-			margin-right: 15px;
-		}
+    &.player-team-logo--left {
+      margin-right: 15px;
+    }
 
-		&.player-team-logo--right {
-			margin-left: 15px;
-		}
+    &.player-team-logo--right {
+      margin-left: 15px;
+    }
 
-		img {
-			max-width: 36px;
-			max-height: 36px;
-		}
-	}
+    img {
+      max-width: 36px;
+      max-height: 36px;
+    }
+  }
 
-	.player-name {
-		flex: 1 1 100%;
-		font-size: 16px;
+  .player-name {
+    flex: 1 1 100%;
+    font-size: 16px;
 
-		span {
-			font-weight: 700;
-		}
+    span {
+      font-weight: 700;
+    }
 
-		&.player-name--right {
-			text-align: right;
-		}
-	}	
+    &.player-name--right {
+      text-align: right;
+    }
+  } 
 
-	.vs {
-		flex: 0 0 auto;
-		font-size: 24px;
-		font-weight: 700;
-		letter-spacing: 0.48px;
-		color: @active-green;
-	}
+  .vs {
+    flex: 0 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    color: @active-green;
+  }
 }
 
 // Stats
 .player-comparison-competitions-stats {
-	background-color: #f7f7f7;
-	padding: 40px 0;
-	margin-bottom: 20px;
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  margin-bottom: 20px;
 
-	&.player-comparison-competitions-stats--main {
-		border-bottom: 2px solid #f0f0f0;
-	}
+  &.player-comparison-competitions-stats--main {
+    border-bottom: 2px solid #f0f0f0;
+  }
 }
 
 .player-comparison-competitions-stats-title {
-	color: @player-comparison-stats-widget-text-color;
-	text-transform: uppercase;
-	font-size: 13px;
-	text-align: center;
-	margin-bottom: 35px;
+  color: @player-comparison-stats-widget-text-color;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .player-comparison-competitions-stats-items {
-	display: flex;
+  display: flex;
 }
 
 .player-comparison-stats-block {
-	flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .player-comparison-stats-block-title {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
 
-	.image {
-		margin-right: 5px;
+  .image {
+    margin-right: 5px;
 
-		img {
-			max-width: 16px;
-			max-height: 16px;
-		}
+    img {
+      max-width: 16px;
+      max-height: 16px;
+    }
 
-		.icon {
-			font-size: 14px;
-			vertical-align: middle;
-			color: @player-comparison-stats-widget-text-color;
-		}
-	}
+    .icon {
+      font-size: 14px;
+      vertical-align: middle;
+      color: @player-comparison-stats-widget-text-color;
+    }
+  }
 
-	.name {
-		color: @player-comparison-stats-widget-text-color;
-		font-weight: 600;
-		font-size: 12px;
+  .name {
+    color: @player-comparison-stats-widget-text-color;
+    font-weight: 600;
+    font-size: 12px;
 
-		.player-comparison-competitions-stats--main & {
-			text-transform: uppercase;
-		}
-	}
+    .player-comparison-competitions-stats--main & {
+      text-transform: uppercase;
+    }
+  }
 }
 
 .player-comparison-stats-block-values {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	.number {
-		flex: 1 1 100%;
-		font-size: 24px;
-		font-weight: 700;
-		letter-spacing: 0.72px;
+  .number {
+    flex: 1 1 100%;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
 
-		.player-comparison-competitions-stats--main & {
-			font-size: 36px;
-		}
+    .player-comparison-competitions-stats--main & {
+      font-size: 36px;
+    }
 
-		&.number--left {
-			text-align: right;
-			color: @player-comparison-left-player-color;
-		}
+    &.number--left {
+      text-align: right;
+      color: @player-comparison-left-player-color;
+    }
 
-		&.number--right {
-			color: @player-comparison-right-player-color;
-		}
-	}
+    &.number--right {
+      color: @player-comparison-right-player-color;
+    }
+  }
 
-	.vs {
-		flex: 0 0 auto;
-		color: @player-comparison-stats-widget-text-color;
-		text-transform: uppercase;
-		padding: 0 20px;
-	}
+  .vs {
+    flex: 0 0 auto;
+    color: @player-comparison-stats-widget-text-color;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+}
+
+.player-comparison-financial-chart {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  padding: 50px 0 60px;
+
+  .chart-container {
+    flex: 0 0 200px;
+    height: 200px;
+  }
+
+  .player-comparison-player-salary {
+    position: relative;
+    flex: 1 1 100%;
+
+    .chart-arm {
+      position: absolute;
+      top: 30px;
+      right: -30px;
+      width: 200px;
+      border-bottom: 2px dashed #ededed;
+
+      > span {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: -70px;
+        width: 70px;
+        border-bottom: 2px dashed #ededed;
+        transform: rotate(-45deg);
+        transform-origin: top right;
+
+        &:after {
+          position: absolute;
+          content: '';
+          display: block;
+          top: -3px;
+          left: -7px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #ededed;
+        }
+      }
+    }
+
+    .player-salary {
+      padding-top: 100px;
+
+      &-value {
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
+
+      &-description {
+        text-transform: uppercase;
+        color: #909a9d;
+      }
+    }
+
+    &.player-comparison-player-salary--left {
+
+      .chart-arm {
+
+        > span {
+
+          &:after {
+            background-color: @player-comparison-left-player-color;
+          }
+        }
+      }
+    }
+
+    &.player-comparison-player-salary--right {
+
+      .chart-arm {
+        right: auto;
+        left: -30px;
+
+        > span {
+          left: auto;
+          right: -70px;
+          transform: rotate(45deg);
+          transform-origin: top left;
+
+          &:after {
+            left: auto;
+            right: -7px;
+            background-color: @player-comparison-right-player-color;
+          }
+        }
+      }
+
+      .player-salary {
+        text-align: right;
+      }
+    }
+  }
+
+  canvas {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.player-comparison-financial-chart-title {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
 }
