@@ -5,6 +5,8 @@
 }
 
 .player-comparison-hero-img {
+  position: relative;
+  z-index: 1;
 
   img {
     max-width: 100%;
@@ -19,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(67, 73, 75, 0.6);
+  z-index: 3;
 }
 
 .player-comparison-hero-player {
@@ -39,42 +41,98 @@
 .player-comparison-hero-player-name {
   position: relative;
   display: inline-block;
-  color: @ls-light-color;
-  font-size: @player-comparison-hero-player-name-size;
-  font-weight: @font-weight-bold;
-  line-height: 1;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  padding-right: 33px;
   margin-bottom: 14px;
 
-  .player-comparison-hero-player--right & {
-    padding-right: 0;
-    padding-left: 33px;
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
+  > a {
     color: @ls-light-color;
-  }
-
-  &:after {
-    position: absolute;
-    top: 6px;
-    right: 0;
-    content: '';
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjx0aXRsZT5hcnJvdy1kb3duPC90aXRsZT48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMC4yNTYgOC42MDZjMC0wLjI2OSAwLjEwNi0wLjU0NCAwLjMxMy0wLjc1IDAuNDEyLTAuNDEyIDEuMDg3LTAuNDEyIDEuNSAwbDE0LjExOSAxNC4xMTkgMTMuOTEzLTEzLjkxMmMwLjQxMy0wLjQxMiAxLjA4Ny0wLjQxMiAxLjUgMHMwLjQxMyAxLjA4OCAwIDEuNWwtMTQuNjYzIDE0LjY2OWMtMC40MTMgMC40MTMtMS4wODggMC40MTMtMS41IDBsLTE0Ljg2OS0xNC44NjljLTAuMjEzLTAuMjEzLTAuMzEzLTAuNDgxLTAuMzEzLTAuNzU2eiI+PC9wYXRoPjwvc3ZnPg==);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: center;
+    font-size: @player-comparison-hero-player-name-size;
+    font-weight: @font-weight-bold;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    padding-right: 33px;
 
     .player-comparison-hero-player--right & {
-      left: 0;
+      padding-right: 0;
+      padding-left: 33px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @ls-light-color;
+    }
+
+    &:after {
+      position: absolute;
+      top: 6px;
+      right: 0;
+      content: '';
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjx0aXRsZT5hcnJvdy1kb3duPC90aXRsZT48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMC4yNTYgOC42MDZjMC0wLjI2OSAwLjEwNi0wLjU0NCAwLjMxMy0wLjc1IDAuNDEyLTAuNDEyIDEuMDg3LTAuNDEyIDEuNSAwbDE0LjExOSAxNC4xMTkgMTMuOTEzLTEzLjkxMmMwLjQxMy0wLjQxMiAxLjA4Ny0wLjQxMiAxLjUgMHMwLjQxMyAxLjA4OCAwIDEuNWwtMTQuNjYzIDE0LjY2OWMtMC40MTMgMC40MTMtMS4wODggMC40MTMtMS41IDBsLTE0Ljg2OS0xNC44NjljLTAuMjEzLTAuMjEzLTAuMzEzLTAuNDgxLTAuMzEzLTAuNzU2eiI+PC9wYXRoPjwvc3ZnPg==);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: center;
+
+      .player-comparison-hero-player--right & {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    left: auto;
+    right: -9px;
+    margin-top: 10px;
+    padding-top: 0;
+    border-radius: 3px;
+    min-width: 234px;
+
+    .player-comparison-hero-player--right & {
       right: auto;
+      left: 0;
+    }
+
+    &:after {      
+      position: absolute;
+      right: 12px;
+      top: -8px;
+      content: "";
+      display: inline-block;
+      border-bottom: 8px solid #fff;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      margin-left: -8px;
+      z-index: 1001;
+
+      .player-comparison-hero-player--right & {
+        right: auto;
+        left: 12px;
+      }
+    }
+
+    li {
+
+      a {
+
+        img {
+          position: relative;
+          top: 4px;
+          float: right;
+          max-width: 16px;
+          max-height: 16px;
+        }
+      }
+    }
+
+    .menu-title {
+      font-size: 12px;
+      text-align: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #ededed;
     }
   }
 }
@@ -201,6 +259,8 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: rgba(67, 73, 75, 0.6);
+  z-index: 2;
 
   canvas {
     max-width: @player-comparison-hero-chart-size;
