@@ -14995,6 +14995,21 @@ span.glyphicon-star.active {
 .player-comparison-vs-block .player-name.player-name--right {
   text-align: right;
 }
+.player-comparison-vs-block .player-score {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.player-comparison-vs-block .player-score.player-score--left {
+  padding-right: 35px;
+}
+.player-comparison-vs-block .player-score.player-score--right {
+  padding-left: 35px;
+}
 .player-comparison-vs-block .vs {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -15498,6 +15513,102 @@ span.glyphicon-star.active {
 .timeline-item.right .timeline-icon {
   background-color: #34a7ff;
   border-color: #34a7ff;
+}
+.player-comparison-girlfriends-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.player-comparison-girlfriends-column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.player-comparison-girlfriends-item {
+  position: relative;
+}
+.player-comparison-girlfriends-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 200ms ease;
+       -o-transition: opacity 200ms ease;
+          transition: opacity 200ms ease;
+  opacity: 0;
+}
+.player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-name {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-actions a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 5px;
+  margin: 0 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-actions a:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-actions a svg {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.player-comparison-girlfriends-column--left .player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay {
+  background-color: rgba(255, 101, 101, 0.65);
+}
+.player-comparison-girlfriends-column--right .player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay {
+  background-color: rgba(52, 167, 255, 0.65);
+}
+.player-comparison-girlfriends-item:hover .player-comparison-girlfriends-item-overlay {
+  opacity: 1;
 }
 /*Base Tables*/
 .popover.popover-trend,
