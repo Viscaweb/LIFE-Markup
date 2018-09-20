@@ -1,0 +1,104 @@
+{% extends "layouts/wrapper_replacement.html.twig" %}
+
+{% block container_content_left %}
+    {% include 'blocks/commons/left_navbar.html.twig' %}
+{% endblock %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb_news.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    {% block content %}
+        {% include 'blocks/widgets/player-comparison-widget.html.twig' %}
+    {% endblock %}
+{% endblock %}
+
+{% block after_scripts %}
+	<script src="{{ basePath }}js/chartjs/Chart.min.js"></script>
+	<script>
+		new Chart(document.getElementById("player-comparison-main-chart"),{
+			"type":"radar",
+			"data":{
+				"labels":["GOALS","ASSISTS","TITRES","CARDS","PASSING","DRIBBLING"],
+				"datasets":[
+					{
+						"label":"Lionel Messi",
+						"data":[100,25,100,50,80,60],
+						"fill":true,
+						"backgroundColor":"rgba(52,167,255,0.7)",
+						"borderWidth": 0,
+						"pointRadius": 0
+					},
+					{
+						"label":"Cristiano Ronaldo",
+						"data":[62,62,80,19,43,30],
+						"fill":true,
+						"backgroundColor":"rgba(255,101,101, 0.85)",
+						"borderWidth": 0,
+						"pointRadius": 0
+					}
+				]},
+				"options":{
+					"elements":{
+						"line":{
+							"tension":0,
+							"borderWidth":0,
+							"borderColor": 'rgba(255,255,255,0.1)'
+						}
+					},
+					"legend":{
+						"display":false
+					},
+					"scale": {
+			      "ticks": {
+			      	"display":false,
+			        "beginAtZero": true,
+			        "fontColor": 'white', // labels such as 10, 20, etc
+			        "showLabelBackdrop": false, // hide square behind text
+			        "stepSize": 20
+			      },
+			      "pointLabels": {
+			        "fontColor": 'white' // labels around the edge like 'Running'
+			      },
+			      "gridLines": {
+			        "color": 'rgba(255, 255, 255, 0.4)'
+			      },
+			      "angleLines": {
+			        "color": 'rgba(255, 255, 255, 0.4)' // lines radiating from the center
+			      }
+			    }
+				}
+			});
+
+		new Chart(document.getElementById("player-comparison-financial-chart"),{
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						80,
+						20,
+					],
+					backgroundColor: [
+						"rgb(52,167,255)",
+						"rgb(255,101,101)",
+					],
+				}],
+				labels: [
+					'Cristiano Ronaldo',
+					'Lionel Messi'
+				]
+			},
+			options: {
+				cutoutPercentage: 95,
+				legend: {
+					display: false,
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		});
+	</script>
+{% endblock %}

@@ -340,6 +340,39 @@
 @ls-live-indicator-end-state: 'data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>';
 @ls-live-indicator-paused-state: 'data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23b3b3b3" stroke-width="1" fill="%23b3b3b3"/></svg>';
 
+// Player comparison widget
+@player-comparison-left-player-color: 						rgb(255,101,101);
+@player-comparison-right-player-color: 						rgb(52,167,255);
+@player-comparison-hero-padding: 									30px 35px;
+@player-comparison-hero-player-name-size: 				31px;
+@player-comparison-hero-chart-size: 							350px;
+@player-comparison-nav-text-size: 								11px;
+@player-comparison-nav-text-color: 								#43494b;
+@player-comparison-nav-text-color-active: 				@active-green;
+@player-comparison-nav-height: 										45px;
+@player-comparison-stats-widget-text-color: 			#43494b;
+
+// Timeline
+@timeline-max-width:                    					840px;
+@timeline-left-padding:                 					210px;
+@timeline-vbar-position:                					@timeline-left-padding - 40px;
+@timeline-margin-helper:                					10px;
+@timeline-avatar-size:                  					35px;
+@timeline-item-bg:           											#f7f7f7;
+@timeline-content-min-height:           					85px;
+@timeline-header-line-height:           					21px;
+@timeline-header-padding-top:           					(@timeline-avatar-size - @timeline-header-line-height) / 2;
+@timeline-content-vpadding:             					25px;
+@timeline-date-width:                   					@timeline-vbar-position - 25px;
+@timeline-date-position:                					ceil(@timeline-content-vpadding + @timeline-header-padding-top) + 2px;
+@timeline-tail-size:                    					10px;
+@timeline-tail-position:                					ceil(@timeline-content-min-height - @timeline-tail-size) / 2;
+@timeline-bubble-size:                  					16px;
+@timeline-bubble-position:              					ceil(@timeline-content-min-height - @timeline-bubble-size) / 2;
+@timeline-icon-size:                    					44px;
+@timeline-icon-border-width:            					2px;
+@timeline-icon-position:                					floor((@timeline-content-min-height - @timeline-icon-size) / 2);
+
 //Responsive limits
 @xx-small-devices: 620px; 
 @extra-small-devices: 768px;
