@@ -21274,13 +21274,27 @@ ul.image-list li img {
 .footer .bottom-footer .navbar-nav li a:hover {
   color: #7ca2c3;
 }
+.footer .bottom-footer .warning-text {
+  font-size: 10px;
+  line-height: 18px;
+  color: #fff;
+  text-align: right;
+  padding: 4px 0 0;
+}
+.footer .bottom-footer .legal-text {
+  margin: 10px auto 0;
+  border-top: 1px solid #7f7f7f;
+  color: #7f7f7f;
+  padding: 10px 0 0;
+  font-size: 11px;
+  line-height: 13px;
+}
 .footer .bottom-footer .ls-svg {
   float: right;
   max-width: 32px;
   max-height: 32px;
   background: #ffffff;
-  margin-top: 6px;
-  margin-right: 2px;
+  margin: 4px 0 0 10px;
 }
 .footer .bottom-footer .ls-svg-bg {
   fill: #272a2c;
