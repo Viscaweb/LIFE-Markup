@@ -14990,6 +14990,10 @@ span.glyphicon-star.active {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  color: #5c5c5c;
+}
+.player-comparison-vs-block:hover {
+  color: #5c5c5c;
 }
 .player-comparison-row .player-comparison-vs-block {
   padding: 14px 8px;
