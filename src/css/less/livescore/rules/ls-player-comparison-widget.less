@@ -42,7 +42,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 4;
+  z-index: 3;
+
+  &--data {
+    height: auto;
+    z-index: 5;
+  }
 }
 
 .player-comparison-hero-player {
@@ -101,59 +106,6 @@
         left: 0;
         right: auto;
       }
-    }
-  }
-
-  .dropdown-menu {
-    left: auto;
-    right: -9px;
-    margin-top: 10px;
-    padding-top: 0;
-    border-radius: 3px;
-    min-width: 234px;
-
-    .player-comparison-hero-player--right & {
-      right: auto;
-      left: 0;
-    }
-
-    &:after {      
-      position: absolute;
-      right: 12px;
-      top: -8px;
-      content: "";
-      display: inline-block;
-      border-bottom: 8px solid #fff;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      margin-left: -8px;
-      z-index: 1001;
-
-      .player-comparison-hero-player--right & {
-        right: auto;
-        left: 12px;
-      }
-    }
-
-    li {
-
-      a {
-
-        img {
-          position: relative;
-          top: 4px;
-          float: right;
-          max-width: 16px;
-          max-height: 16px;
-        }
-      }
-    }
-
-    .menu-title {
-      font-size: 12px;
-      text-align: center;
-      padding: 8px 0;
-      border-bottom: 1px solid #ededed;
     }
   }
 }
@@ -280,7 +232,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 4;
 
   canvas {
     max-width: @player-comparison-hero-chart-size;
@@ -360,27 +312,57 @@
   background-color: #fafafa;
   align-items: center;
   margin-bottom: 20px;
+  color: @text-color;
+
+  &:hover {
+    color: @text-color;
+  }
+
+  .player-comparison-row & {
+    padding: 14px 8px;
+    margin-bottom: 0;
+  }
 
   .player-team-logo {
     flex: 1 1 auto;
 
     &.player-team-logo--left {
       margin-right: 15px;
+
+      .player-comparison-row & {
+        margin-right: 7px;
+      }
     }
 
     &.player-team-logo--right {
       margin-left: 15px;
+
+      .player-comparison-row & {
+        margin-left: 7px;
+      }
     }
 
     img {
       max-width: 36px;
       max-height: 36px;
+
+      .player-comparison-row & {
+        max-width: 18px;
+        max-height: 18px;
+      }
     }
   }
 
   .player-name {
     flex: 1 1 100%;
     font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .player-comparison-row & {
+      font-size: 12px;
+    }
 
     span {
       font-weight: 700;
@@ -412,6 +394,11 @@
     font-weight: 700;
     letter-spacing: 0.48px;
     color: @active-green;
+
+    .player-comparison-row & {
+      font-size: 14px;
+      padding: 0 5px;
+    }
   }
 }
 
@@ -1000,6 +987,189 @@
 
     .player-comparison-girlfriends-item-overlay {
       opacity: 1;
+    }
+  }
+}
+
+// Player comparison sudebr widget
+.player-comparison-row {
+  
+}
+
+.player-comparison-vs-summary {
+  display: flex;
+}
+
+.player-comparison-summary {
+  flex: 1 1 50%;
+  display: flex;
+  padding: 3px 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  color: #a8a8a8;
+
+  &:first-child {
+    margin-right: 1px;
+  }
+ 
+  &:last-child {
+    margin-left: 1px;
+  }
+
+  .divider {
+    margin: 0 8px;
+
+    &:after {
+      content: '/';
+    }
+  }
+}
+
+.player-comparison-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40px 10px;
+  background: url("@{ls-image-scoreboard-game-field}") repeat;
+}
+
+.player-comparison-selector-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+  background: #f8f8f8;
+  padding: 0 8px;
+  color: #666666;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-left: 2px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 20px solid #f8f8f8;
+  }
+}
+
+.player-comparison-selector-player {
+  flex: 1 1 100%;
+
+  &:last-child {
+
+    > a {
+      text-align: right;
+      padding-right: 10px;
+      padding-left: 24px;
+
+      &:after {
+        right: auto;
+        left: 5px;
+      }
+    }
+  }
+
+  > a {
+    position: relative;
+    display: block;
+    padding: 8px 24px 8px 10px;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+
+    &:after {
+      position: absolute;
+      top: 10px;
+      right: 6px;
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjx0aXRsZT5hcnJvdy1kb3duPC90aXRsZT48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMC4yNTYgOC42MDZjMC0wLjI2OSAwLjEwNi0wLjU0NCAwLjMxMy0wLjc1IDAuNDEyLTAuNDEyIDEuMDg3LTAuNDEyIDEuNSAwbDE0LjExOSAxNC4xMTkgMTMuOTEzLTEzLjkxMmMwLjQxMy0wLjQxMiAxLjA4Ny0wLjQxMiAxLjUgMHMwLjQxMyAxLjA4OCAwIDEuNWwtMTQuNjYzIDE0LjY2OWMtMC40MTMgMC40MTMtMS4wODggMC40MTMtMS41IDBsLTE0Ljg2OS0xNC44NjljLTAuMjEzLTAuMjEzLTAuMzEzLTAuNDgxLTAuMzEzLTAuNzU2eiI+PC9wYXRoPjwvc3ZnPg==);
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: center;
+    }
+  }
+}
+
+.player-comparison-selector-vs {
+  flex: 0 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.player-comparison-selector-dropdown {
+  left: auto;
+  right: -9px;
+  margin-top: 10px;
+  padding-top: 0;
+  border-radius: 3px;
+  min-width: 234px;
+
+  .player-comparison-hero-player--right & {
+    right: auto;
+    left: 0;
+  }
+
+  &:after {      
+    position: absolute;
+    right: 12px;
+    top: -8px;
+    content: "";
+    display: inline-block;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-left: -8px;
+    z-index: 1001;
+
+    .player-comparison-hero-player--right & {
+      right: auto;
+      left: 12px;
+    }
+  }
+
+  li {
+    padding: 2px 13px;
+    line-height: 23px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @active-green;
+      color: white;
+    }
+
+    img {
+      position: relative;
+      top: 4px;
+      float: right;
+      max-width: 16px;
+      max-height: 16px;
+    }
+  }
+
+  .menu-title {
+    font-size: 12px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ededed;
+    cursor: default;
+
+    &:hover {
+      background-color: transparent;
+      color: @text-color;
     }
   }
 }

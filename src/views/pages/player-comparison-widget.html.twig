@@ -17,7 +17,7 @@
 {% block after_scripts %}
 	<script src="{{ basePath }}js/chartjs/Chart.min.js"></script>
 	<script>
-		new Chart(document.getElementById("player-comparison-main-chart"),{
+		new Chart(document.getElementById("player-comparison-main-chart").getContext('2d'),{
 			"type":"radar",
 			"data":{
 				"labels":["GOALS","ASSISTS","TITRES","CARDS","PASSING","DRIBBLING"],
@@ -67,6 +67,10 @@
 			      "angleLines": {
 			        "color": 'rgba(255, 255, 255, 0.4)' // lines radiating from the center
 			      }
+			    },
+			    tooltips: {
+			    	position: 'nearest',
+			    	intersect: false
 			    }
 				}
 			});
