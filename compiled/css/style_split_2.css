@@ -3700,7 +3700,12 @@ span.glyphicon-star.active {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 4;
+  z-index: 3;
+}
+
+.player-comparison-hero-content--data {
+  height: auto;
+  z-index: 5;
 }
 
 .player-comparison-hero-player {
@@ -3708,7 +3713,7 @@ span.glyphicon-star.active {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
-  padding: 30px 35px;
+  padding: 30px 35px 0;
 }
 
 .player-comparison-hero-player.player-comparison-hero-player--left {
@@ -3915,7 +3920,7 @@ span.glyphicon-star.active {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 4;
 }
 
 .player-comparison-hero-chart canvas {
