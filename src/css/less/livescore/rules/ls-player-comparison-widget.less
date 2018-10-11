@@ -1137,16 +1137,21 @@
   }
 
   li {
+    padding: 2px 13px;
+    line-height: 23px;
+    cursor: pointer;
 
-    a {
+    &:hover {
+      background-color: @active-green;
+      color: white;
+    }
 
-      img {
-        position: relative;
-        top: 4px;
-        float: right;
-        max-width: 16px;
-        max-height: 16px;
-      }
+    img {
+      position: relative;
+      top: 4px;
+      float: right;
+      max-width: 16px;
+      max-height: 16px;
     }
   }
 
@@ -1155,5 +1160,11 @@
     text-align: center;
     padding: 8px 0;
     border-bottom: 1px solid #ededed;
+    cursor: default;
+
+    &:hover {
+      background-color: transparent;
+      color: @text-color;
+    }
   }
 }

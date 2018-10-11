@@ -4949,7 +4949,18 @@ span.glyphicon-star.active {
   left: 12px;
 }
 
-.player-comparison-selector-dropdown li a img {
+.player-comparison-selector-dropdown li {
+  padding: 2px 13px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.player-comparison-selector-dropdown li:hover {
+  background-color: #5da400;
+  color: white;
+}
+
+.player-comparison-selector-dropdown li img {
   position: relative;
   top: 4px;
   float: right;
@@ -4962,6 +4973,12 @@ span.glyphicon-star.active {
   text-align: center;
   padding: 8px 0;
   border-bottom: 1px solid #ededed;
+  cursor: default;
+}
+
+.player-comparison-selector-dropdown .menu-title:hover {
+  background-color: transparent;
+  color: #5c5c5c;
 }
 
 /*Base Tables*/
