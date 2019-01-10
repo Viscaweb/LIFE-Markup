@@ -17998,7 +17998,7 @@ table.odds-1x2-v2 tbody tr td.odd.best-odd > span {
   border-color: #d1e9be;
   background-color: rgba(209, 233, 190, 0.25);
 }
-table.odds-1x2-v2 tbody tr td.bonus > a {
+table.odds-1x2-v2 tbody tr td.bonus .bonus-text {
   font-size: 16px;
   font-weight: 600;
   background-color: #ffd800;
