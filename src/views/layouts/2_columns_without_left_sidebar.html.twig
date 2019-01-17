@@ -1,0 +1,33 @@
+{% extends "layouts/base.html.twig" %}
+
+
+{% block container_content %}
+
+    <main class="main col-xs-10">
+
+        {% block container_main %}
+            {# content top full#}
+        {% endblock %}
+
+        <div class="content-wrapper {{ wrapper_additional_class }}">
+
+          {% block container_content_wrapper %}
+              <div class="content content-no-sidebar-left">
+                  {% block content %}
+                      {# content #}
+                  {% endblock %}
+              </div>
+
+              <div class="right-sidebar">
+                  {% block content_right %}
+                      {# content right #}
+                  {% endblock %}
+              </div>
+          {% endblock %}
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </main>
+{% endblock %}
