@@ -5019,12 +5019,12 @@ ul.table-of-content li a {
   color: #5da400;
 }
 
-.main-article--new .article-content ul.table-of-content li a {
+.main-article .article-content ul.table-of-content li a {
   color: #5da400;
   text-decoration: none;
 }
 
-.main-article--new .article-content ul.table-of-content li a:hover {
+.main-article .article-content ul.table-of-content li a:hover {
   text-decoration: underline;
 }
 
