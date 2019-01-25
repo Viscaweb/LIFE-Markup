@@ -20710,6 +20710,9 @@ ul.image-list li img {
   line-height: 1.5;
   margin-bottom: 36px;
 }
+.main-article--new .article-content img {
+  max-width: 100%;
+}
 .main-article--new .article-content a {
   color: #5c5c5c;
   text-decoration: underline;
