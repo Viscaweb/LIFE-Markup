@@ -10734,6 +10734,7 @@ ul.image-list li img {
 
 .main-article .article-content img {
   max-width: 100%;
+  height: auto;
 }
 
 .main-article .article-content a {
