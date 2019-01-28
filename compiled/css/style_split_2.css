@@ -10814,6 +10814,17 @@ ul.image-list li img {
   margin: 0;
 }
 
+.main-article .blockquote div.blockquote-details {
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.main-article .blockquote div.blockquote-details p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #5c5c5c;
+}
+
 .main-article .blockquote.blockquote-highlight {
   background: none;
   padding: 20px 0;
