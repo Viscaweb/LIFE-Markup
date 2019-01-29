@@ -6,10 +6,8 @@
 		font-weight: @font-weight-semi-bold;
 	}
 
-	h1{
-		font-weight: @font-weight-extra-bold;
-		margin-top: 7px;
-		letter-spacing: -1px; 
+	.article-body {
+		padding: 40px 16px 20px 36px;
 	}
 
 	h2, h3, h4 {
@@ -19,8 +17,9 @@
 
 	img.article-image{
 		max-width: 100%;
-		margin-bottom: 15px; 
-		margin-top: 10px;
+		border-radius: 8px;
+		margin-top: 0;
+		margin-bottom: -60px;
 	}
 
 	p.introduction{
@@ -36,8 +35,214 @@
 		margin-top:25px;
 	}
 
-	p{
-		margin-bottom: 20px;
+	.article-content {
+		position: relative;
+		background-color: @ls-light-color;
+		border-radius: 0 8px 0 0;
+		margin-right: 40px;
+		padding: 25px;
+		font-size: 16px;
+		line-height: 1.5;
+
+		h1 {
+			font-size: 38px;
+			line-height: 1.16;
+			font-weight: normal;
+			letter-spacing: normal;
+			margin-top: 7px;
+			margin-bottom: 0;
+		}
+
+		h2,
+		h3,
+		h4,
+		h5 {
+			line-height: normal;
+			margin-bottom: 24px;
+		}
+
+		h2 {
+			font-size: 28px;
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+
+		h4 {
+			font-size: 20px;
+		}
+
+		h5 {
+			font-size: 18px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 36px;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		a {
+			color: @text-color;
+			text-decoration: underline;
+			font-weight: 600;
+
+			&:hover {
+				color: @active-green;
+			}
+		}
+	}
+
+	// Ordered list
+	ol {
+		list-style: none;
+		counter-reset: ordered-list-counter;
+		margin: 0 0 30px;
+		padding: 0;
+		box-sizing: border-box;
+
+		li {
+			display: block;
+			position: relative;
+			counter-increment: ordered-list-counter;
+			padding: 0 0 0 @ordered-list-item-padding;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.5;
+			margin: 0 0 26px;
+
+			&:before {
+				position: absolute;
+				top: 3px;
+				left: 0;
+				display: block;
+				content: counter(ordered-list-counter);
+				width: @ordered-list-number-size;
+				height: @ordered-list-number-size;
+				font-size: @ordered-list-number-text-size;
+				font-weight: 600;
+				text-align: center;
+				line-height: @ordered-list-number-size;
+				color: @ls-light-color;
+				background-color: @ordered-list-number-color;
+				border-radius: 50%;
+			}
+
+			strong {
+				display: block;
+				font-weight: 700;
+				font-size: 20px;
+				margin-bottom: 12px;
+				line-height: 26px;
+			}
+		}
+	}
+
+	// Blockquote
+	.blockquote {
+		position: relative;
+		margin: 0 auto 40px;
+		padding: 0 0 0 @blockquote-padding;
+		box-sizing: border-box;
+		border-left-width: 0;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDMyIDI4Ij4gICAgPHBhdGggZmlsbD0iI0YwRjBGMCIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMjkgMTRoLTV2LTRjMC0yLjIwNiAxLjc5NC00IDQtNGguNWMuODMxIDAgMS41LS42NjkgMS41LTEuNXYtM2MwLS44MzEtLjY2OS0xLjUtMS41LTEuNUgyOGMtNS41MjUgMC0xMCA0LjQ3NS0xMCAxMHYxNWEzIDMgMCAwIDAgMyAzaDhhMyAzIDAgMCAwIDMtM3YtOGEzIDMgMCAwIDAtMy0zem0tMTggMEg2di00YzAtMi4yMDYgMS43OTQtNCA0LTRoLjVjLjgzMSAwIDEuNS0uNjY5IDEuNS0xLjV2LTNjMC0uODMxLS42NjktMS41LTEuNS0xLjVIMTBDNC40NzUgMCAwIDQuNDc1IDAgMTB2MTVhMyAzIDAgMCAwIDMgM2g4YTMgMyAwIDAgMCAzLTN2LThhMyAzIDAgMCAwLTMtM3oiLz48L3N2Zz4=);
+		background-position: top left;
+		background-size: 32px 28px;
+		background-repeat: no-repeat;
+
+		p {
+			font-weight: @blockquote-font-weight;
+			font-style: italic;
+			line-height: @blockquote-line-height;
+			font-size: @blockquote-font-size;
+			color: @blockquote-text-color;
+			margin: 0;
+		}
+
+		div.blockquote-details {
+			padding-left: 0;
+			margin-top: 5px;
+
+			p {
+				font-size: 16px;
+				font-weight: normal;
+				color: @text-color;
+			}
+		}
+
+		&.blockquote-highlight {
+			background: none;
+			padding: @blockquote-highlight-padding;
+
+			&:before {
+				position: absolute;
+				content: '';
+				display: block;
+				top: 0;
+				left: 0;
+				width: 50%;
+				height: 4px;
+				background-color: #f0f0f0;
+			}
+
+			p {
+				font-style: normal;
+				font-weight: normal;
+				font-size: @blockquote-highlight-text-size;
+				line-height: @blockquote-highlight-line-height;
+				color: @blockquote-highlight-color;
+			}
+		}
+	}
+
+	div.blockquote-details {
+		display: block;
+		padding-top: 10px;
+		padding-left: @blockquote-padding;
+		margin-top: -34px;
+		box-sizing: border-box;
+		font-size: 16px;
+		font-weight: normal;
+
+		a {
+			color: @text-color;
+			text-decoration: underline;
+
+			&:hover {
+				color: @active-green;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	div.blockquote-alert {
+		p {
+			margin: 0 auto 40px;
+			padding: @blockquote-alert-padding;
+			background-color: @blockquote-alert-bg-color;
+			border-left: @blockquote-alert-border-width solid @blockquote-alert-border-color;
+			color: @blockquote-alert-text-color;
+			box-sizing: border-box;
+
+			.news-article .content-section & {
+				a {
+					color: @blockquote-alert-text-color;
+					text-decoration: underline;
+
+					&:hover,
+					&:visited {
+						color: @blockquote-alert-text-color;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -47,7 +252,7 @@
 
 		span.users-list-title{
 			font-size: @font-size-small;
-			
+
 			.active{
 				color: @active-green;
 			}
@@ -87,7 +292,7 @@
 }
 
 .news-title{
-	margin-top: 15px; 
+	margin-top: 15px;
 	margin-bottom: 12px;
 
 	span{

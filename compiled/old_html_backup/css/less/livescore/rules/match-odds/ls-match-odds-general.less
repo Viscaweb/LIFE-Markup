@@ -1,28 +1,28 @@
 table{
   &.odds-1x2, &.odds-over-under, &.odds-double-chance, &.odds-half-time-full-time, &.odds-correct-score, &.odds-goal-scorers, &.table-odds{
-    
+
     thead{}
-    
+
     tbody{
-     
+
       tr{
-     
+
         td{
-        
+
           &.logo{
             width: 22px;
             padding: 0 0 1px;
           }
-      
+
           &.name{
           }
-          
+
           &.result{
             text-align: center;
             width: 10%;
             .box-shadow(-1px -1px 0 @ls-light-color inset);
           }
-          
+
           &.best-odd{
             font-weight: @font-weight-bold;
           }
@@ -34,19 +34,19 @@ table{
           .box-shadow(0 -1px 0 @ls-light-color inset);
         }
       }
-      
+
       tr:first-child{
         td{
           &.result{
             .box-shadow(-1px -1px 0 @ls-light-color inset, -1px 1px 0 @ls-light-color inset);
           }
-          
+
           &.result:last-child{
             .box-shadow(0 -1px 0 @ls-light-color inset, 0 1px 0 @ls-light-color inset);
           }
         }
       }
-      
+
       tr:last-child{
         td{
           &.result{
@@ -57,19 +57,19 @@ table{
           }
         }
       }
-      
+
 
     }
   }
-  
+
   &.odds-over-under{
-  
+
     tbody{
-    
+
       tr{
-      
+
         td{
-        
+
           &.name{
             width: 75%;
           }
@@ -77,15 +77,15 @@ table{
       }
     }
   }
-  
+
   &.odds-half-time-full-time{
-  
+
     tbody{
-    
+
       tr{
-      
+
         td{
-        
+
           &.name{
             width: 25%;
           }
@@ -93,56 +93,56 @@ table{
       }
     }
   }
-  
+
   &.odds-correct-score, &.odds-goal-scorers{
-  
+
     > tbody{
-    
+
       > tr{
-      
+
         > td{
           padding-left: 18px !important;
           padding-right: 18px !important;
-          cursor: pointer;          
-          
+          cursor: pointer;
+
           i{
             font-size: @font-size-x-tiny;
             color: darken(@ls-light-color, 41%);
             display: none;
             margin-left: 5px;
           }
-          
+
           &:hover{
-          
+
             i{
               display: inline-block;
             }
           }
-        
+
           a{
             float: right;
           }
-          
+
           &.result{
             width: 33.3%;
             text-align: left;
             vertical-align: top !important;
           }
-          
+
           .table-slide{
             display: none;
             position: relative;
-          
+
             .table{
               width: 100%;
               background: transparent;
               margin-top: 5px;
               margin-bottom: 16px;
-              
+
                 tbody{
-                
+
                   tr{
-                  
+
                     td{
                       border-top: 1px solid @ls-light-color;
                       background-color: rgba(0,0,0,0.06) !important;
@@ -155,16 +155,16 @@ table{
       }
     }
   }
-  
+
   &.odds-goal-scorers{
-  
+
     thead, tbody{
-    
+
       tr{
-      
+
         th.logo{
           width: 38%;
-         
+
             img{
               max-width: 20px;
               max-height: 20px;
@@ -173,13 +173,13 @@ table{
         }
       }
     }
-    
+
     tbody{
-    
+
       tr{
-      
+
         td{
-        
+
           i{
             float: left;
             line-height: 16px;
@@ -187,24 +187,24 @@ table{
             position: relative;
             top: -1px;
           }
-        
+
           &.result{
             width: 20%;
             text-align: center;
           }
-          
+
           .table-slide{
-          
+
             .table{
               margin-bottom: 13px;
               margin-top: 8px;
             }
           }
-          
+
           a{
             float: none;
           }
-          
+
           &:first-child{
             vertical-align: top !important;
           }

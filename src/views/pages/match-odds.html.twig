@@ -5,14 +5,7 @@
     {% include 'blocks/sports/matches_slider.html.twig' %}
 {% endblock %}
 
-{% block content %}
-    {{ include('blocks/sports/match/match_information.html.twig', {selectedTab: 'odds'}) }}
-    {% include 'blocks/various/share_page_small.html.twig' %}
-    {% include 'blocks/sports/match/match_odds.html.twig' %}
 
-
-
-{% endblock %}
 
 {% block content_right %}
     {% include 'blocks/sports/upcoming_top_games.html.twig' %}
