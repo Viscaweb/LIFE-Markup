@@ -7,14 +7,11 @@
 
 {% block container_content_wrapper %}
     {% include 'blocks/review/header.twig' %}
-    <div class="row">
-        <div class="col-xs-8 main-article main-article--new">
+    <div class="review-body">
+        <div class="main-article">
           {% include 'blocks/review/content.twig' %}
         </div>
-        <div class="col-xs-4">
-            <div class="login-register-container">
-                {% include 'blocks/login/panel_login.html.twig' %}
-            </div>
+        <div class="review-sidebar">
         </div>
     </div>
 

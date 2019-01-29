@@ -16,24 +16,7 @@
   }
 
   .btn-cta {
-    position: relative;
-    background-color: @ls-yellow-color;
-    color: @text-color;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 19px 30px 19px 10px;
-    width: 100%;
     max-width: 50%;
-
-    &:after {
-      position: absolute;
-      top: 18px;
-      right: 15px;
-      content: '\e60d';
-      font-family: @ls-icons-font;
-      font-size: 16px;
-      color: @text-color;
-    }
   }
 }
 
@@ -85,10 +68,24 @@
   }
 }
 
-.article-content--review {
+.review-body {
+  display: flex;
+
+  .main-article {
+    flex: 0 0 720px;
+  }
+}
+
+.review-sidebar {
+  flex: 1 1 auto;
+  padding: 24px 0 24px 62px;
+}
+
+.main-article .article-content--review {
   background-color: @ls-light-color;
   border-radius: 0 8px 0 0;
   margin-top: -40px;
+  margin-right: 0;
   padding: 24px;
 }
 
@@ -97,6 +94,35 @@
   margin-bottom: 30px;
 }
 
-.article-content--review .article-body {
-  padding: 10px 16px 20px 36px;
+.btn-cta {
+  position: relative;
+  background-color: @ls-yellow-color;
+  color: @text-color;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 30px 18px 10px;
+  width: 100%;
+  transition: all 200ms ease;
+  border-width: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    box-shadow: none;
+    border-color: @ls-yellow-color-shade;
+  }
+
+  &:after {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    content: '\e60d';
+    font-family: @ls-icons-font;
+    font-size: 16px;
+    color: @text-color;
+  }
 }
