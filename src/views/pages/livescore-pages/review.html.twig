@@ -1,0 +1,25 @@
+{% extends "layouts/full.html.twig" %}
+{% set basePath = '../' %}
+
+{% block container_main %}
+    {% include 'blocks/commons/breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block container_content_wrapper %}
+    {% include 'blocks/review/header.twig' %}
+    <div class="row">
+        <div class="col-xs-8 main-article main-article--new">
+          {% include 'blocks/review/content.twig' %}
+        </div>
+        <div class="col-xs-4">
+            <div class="login-register-container">
+                {% include 'blocks/login/panel_login.html.twig' %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block container_footer %}
+    {% include 'blocks/commons/footer.html.twig' %}
+{% endblock %}
