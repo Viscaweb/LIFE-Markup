@@ -15948,6 +15948,47 @@ ul.table-of-content li span {
 .review-stars--1-half:after {
   width: 16px;
 }
+.review-stars--small {
+  background-size: 53px 8px;
+  width: 53px;
+  height: 8px;
+}
+.review-stars--small:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAxOTIgMjkiPiAgICA8ZyBmaWxsPSIjMTY3NzczIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgPHBhdGggZD0iTTE3NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEwxNzYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek0xMzYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMMTM2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnpNOTYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMOTYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek01NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEw1NiAwbDQuNzAyIDkuNTI4IDEwLjUxNSAxLjUyOC03LjYwOSA3LjQxNiAxLjc5NyAxMC40NzJ6TTE2IDI0bC05LjQwNSA0Ljk0NCAxLjc5Ny0xMC40NzItNy42MDktNy40MTYgMTAuNTE1LTEuNTI4TDE2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnoiLz4gICAgPC9nPjwvc3ZnPg==);
+  background-size: 53px 8px;
+  width: 53px;
+  height: 8px;
+}
+.review-stars--small.review-stars--5:after {
+  width: 100%;
+}
+.review-stars--small.review-stars--5-half:after {
+  width: 49px;
+}
+.review-stars--small.review-stars--4:after {
+  width: 43px;
+}
+.review-stars--small.review-stars--4-half:after {
+  width: 38px;
+}
+.review-stars--small.review-stars--3:after {
+  width: 31px;
+}
+.review-stars--small.review-stars--3-half:after {
+  width: 27px;
+}
+.review-stars--small.review-stars--2:after {
+  width: 20px;
+}
+.review-stars--small.review-stars--2-half:after {
+  width: 16px;
+}
+.review-stars--small.review-stars--1:after {
+  width: 10px;
+}
+.review-stars--small.review-stars--1-half:after {
+  width: 5px;
+}
 .emoji {
   font-weight: 400;
   font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
@@ -16344,6 +16385,186 @@ ul.table-of-content li span {
 .ls-country-flag-list svg {
   width: 22px;
   height: 22px;
+}
+.partner-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.partner-list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1px;
+}
+.partner-list li:hover {
+  background-color: #f8f8f8;
+}
+.partner-list li:last-child {
+  border-bottom-width: 0;
+}
+.partner-list__order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  background-color: #454a4c;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+.partner-list__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+}
+.partner-list__logo img {
+  max-width: 80px;
+}
+.partner-list__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.partner-list__info--left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.partner-list__info--right {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 8px;
+}
+.partner-list__bonus-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+}
+.partner-list__bonus-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px 0 16px;
+  color: #167773;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.85;
+  min-width: 55px;
+  -moz-box-sizing: content-box;
+       box-sizing: content-box;
+}
+.partner-list__review-link {
+  color: #167773;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.main-article .partner-list .partner-list__review-link {
+  text-decoration: none;
+}
+.partner-list__cta-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+}
+.partner-list__cta-button a {
+  display: block;
+  padding: 9px 17px;
+  border-radius: 4px;
+  background-color: #ffd800;
+  font-size: 14px;
+  line-height: 1.58;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5c5c5c;
+}
+.main-article .partner-list .partner-list__cta-button a {
+  text-decoration: none;
+}
+.partner-list__cta-button a:hover {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  color: #167773;
 }
 /*Base Tables*/
 .popover.popover-trend,
