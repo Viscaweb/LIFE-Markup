@@ -16441,6 +16441,9 @@ ul.table-of-content li span {
   padding: 4px 0px;
   line-height: 1.5;
 }
+.partner-list--small li:active .partner-list__order {
+  background-color: #167773;
+}
 .partner-list__logo {
   display: -webkit-box;
   display: -webkit-flex;
