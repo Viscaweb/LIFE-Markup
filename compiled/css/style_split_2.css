@@ -5775,6 +5775,7 @@ ul.table-of-content li span {
   -webkit-flex: 0 0 96px;
   -ms-flex: 0 0 96px;
   flex: 0 0 96px;
+  min-height: 88px;
 }
 
 .partner-list__logo img {
@@ -5836,6 +5837,13 @@ ul.table-of-content li span {
   padding: 0 8px 13px;
 }
 
+.partner-list--small .partner-list__info--right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
 .partner-list__bonus-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5863,7 +5871,7 @@ ul.table-of-content li span {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  line-height: 2.7;
+  line-height: 1.6em;
 }
 
 .partner-list__bonus-value {
