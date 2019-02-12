@@ -5047,6 +5047,933 @@ ul.table-of-content li span {
   margin-right: 12px;
 }
 
+.review-stars {
+  position: relative;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAxOTIgMjkiPiAgICA8ZyBmaWxsPSIjQ0NDIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgPHBhdGggZD0iTTE3NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEwxNzYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek0xMzYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMMTM2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnpNOTYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMOTYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek01NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEw1NiAwbDQuNzAyIDkuNTI4IDEwLjUxNSAxLjUyOC03LjYwOSA3LjQxNiAxLjc5NyAxMC40NzJ6TTE2IDI0bC05LjQwNSA0Ljk0NCAxLjc5Ny0xMC40NzItNy42MDktNy40MTYgMTAuNTE1LTEuNTI4TDE2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnoiLz4gICAgPC9nPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-size: 192px 29px;
+  width: 192px;
+  height: 29px;
+}
+
+.review-stars:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAxOTIgMjkiPiAgICA8ZyBmaWxsPSIjRkZEODAwIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgPHBhdGggZD0iTTE3NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEwxNzYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek0xMzYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMMTM2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnpNOTYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMOTYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek01NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEw1NiAwbDQuNzAyIDkuNTI4IDEwLjUxNSAxLjUyOC03LjYwOSA3LjQxNiAxLjc5NyAxMC40NzJ6TTE2IDI0bC05LjQwNSA0Ljk0NCAxLjc5Ny0xMC40NzItNy42MDktNy40MTYgMTAuNTE1LTEuNTI4TDE2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnoiLz4gICAgPC9nPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-size: 192px 29px;
+}
+
+.review-stars--5-half:after {
+  width: 176px;
+}
+
+.review-stars--5:after {
+  width: 100%;
+}
+
+.review-stars--4-half:after {
+  width: 136px;
+}
+
+.review-stars--4:after {
+  width: 150px;
+}
+
+.review-stars--3-half:after {
+  width: 96px;
+}
+
+.review-stars--3:after {
+  width: 110px;
+}
+
+.review-stars--2-half:after {
+  width: 56px;
+}
+
+.review-stars--2:after {
+  width: 70px;
+}
+
+.review-stars--1:after {
+  width: 32px;
+}
+
+.review-stars--1-half:after {
+  width: 16px;
+}
+
+.review-stars--small {
+  background-size: 53px 8px;
+  width: 53px;
+  height: 8px;
+}
+
+.review-stars--small:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAxOTIgMjkiPiAgICA8ZyBmaWxsPSIjMTY3NzczIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgPHBhdGggZD0iTTE3NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEwxNzYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek0xMzYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMMTM2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnpNOTYgMjRsLTkuNDA1IDQuOTQ0IDEuNzk3LTEwLjQ3Mi03LjYwOS03LjQxNiAxMC41MTUtMS41MjhMOTYgMGw0LjcwMiA5LjUyOCAxMC41MTUgMS41MjgtNy42MDkgNy40MTYgMS43OTcgMTAuNDcyek01NiAyNGwtOS40MDUgNC45NDQgMS43OTctMTAuNDcyLTcuNjA5LTcuNDE2IDEwLjUxNS0xLjUyOEw1NiAwbDQuNzAyIDkuNTI4IDEwLjUxNSAxLjUyOC03LjYwOSA3LjQxNiAxLjc5NyAxMC40NzJ6TTE2IDI0bC05LjQwNSA0Ljk0NCAxLjc5Ny0xMC40NzItNy42MDktNy40MTYgMTAuNTE1LTEuNTI4TDE2IDBsNC43MDIgOS41MjggMTAuNTE1IDEuNTI4LTcuNjA5IDcuNDE2IDEuNzk3IDEwLjQ3MnoiLz4gICAgPC9nPjwvc3ZnPg==);
+  background-size: 53px 8px;
+  width: 53px;
+  height: 8px;
+}
+
+.review-stars--small.review-stars--5:after {
+  width: 100%;
+}
+
+.review-stars--small.review-stars--5-half:after {
+  width: 49px;
+}
+
+.review-stars--small.review-stars--4:after {
+  width: 43px;
+}
+
+.review-stars--small.review-stars--4-half:after {
+  width: 38px;
+}
+
+.review-stars--small.review-stars--3:after {
+  width: 31px;
+}
+
+.review-stars--small.review-stars--3-half:after {
+  width: 27px;
+}
+
+.review-stars--small.review-stars--2:after {
+  width: 20px;
+}
+
+.review-stars--small.review-stars--2-half:after {
+  width: 16px;
+}
+
+.review-stars--small.review-stars--1:after {
+  width: 10px;
+}
+
+.review-stars--small.review-stars--1-half:after {
+  width: 5px;
+}
+
+.emoji {
+  font-weight: 400;
+  font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+}
+
+.ls-payment-methods-list {
+  display: block;
+  padding: 16px 0 20px;
+}
+
+.list-icon .ls-payment-methods-list {
+  padding-bottom: 0;
+}
+
+.ls-payment-icon {
+  display: inline-block;
+  background: url("../img//sprite-payments.png") transparent no-repeat;
+  width: 40px;
+  height: 23px;
+  text-indent: -3939em;
+  margin: 0 5px 5px 0;
+}
+
+.ls-payment-icon--empty {
+  background-position: 0px 20px;
+}
+
+.ls-payment-icon--visa_electron {
+  background-position: -4px -5px;
+}
+
+.ls-payment-icon--webmoney {
+  background-position: -54px -5px;
+}
+
+.ls-payment-icon--visa {
+  background-position: -104px -5px;
+}
+
+.ls-payment-icon--usemywallet {
+  background-position: -154px -5px;
+}
+
+.ls-payment-icon--ukash {
+  background-position: -204px -5px;
+}
+
+.ls-payment-icon--speedcard {
+  background-position: -254px -5px;
+}
+
+.ls-payment-icon--sofort {
+  background-position: -4px -36px;
+}
+
+.ls-payment-icon--paypal {
+  background-position: -154px -36px;
+}
+
+.ls-payment-icon--neteller {
+  background-position: -254px -36px;
+}
+
+.ls-payment-icon--mypaylinq {
+  background-position: -4px -67px;
+}
+
+.ls-payment-icon--mycitadel {
+  background-position: -54px -67px;
+}
+
+.ls-payment-icon--check {
+  background-position: -154px -67px;
+}
+
+.ls-payment-icon--moneybookers {
+  background-position: -204px -67px;
+}
+
+.ls-payment-icon--mastercard {
+  background-position: -254px -67px;
+}
+
+.ls-payment-icon--maestro {
+  background-position: -4px -98px;
+}
+
+.ls-payment-icon--kalixa {
+  background-position: -54px -98px;
+}
+
+.ls-payment-icon--ipoint {
+  background-position: -104px -98px;
+}
+
+.ls-payment-icon--goldpay {
+  background-position: -154px -98px;
+}
+
+.ls-payment-icon--giropay {
+  background-position: -204px -98px;
+}
+
+.ls-payment-icon--ezvouchers {
+  background-position: -254px -98px;
+}
+
+.ls-payment-icon--ewalletxpress {
+  background-position: -4px -129px;
+}
+
+.ls-payment-icon--ecocard {
+  background-position: -54px -129px;
+}
+
+.ls-payment-icon--directebanking {
+  background-position: -104px -129px;
+}
+
+.ls-payment-icon--dinersclub {
+  background-position: -154px -129px;
+}
+
+.ls-payment-icon--click2pay {
+  background-position: -4px -160px;
+}
+
+.ls-payment-icon--moneyorder {
+  background-position: -54px -160px;
+}
+
+.ls-payment-icon--cb {
+  background-position: -104px -160px;
+}
+
+.ls-payment-icon--b2b {
+  background-position: -204px -160px;
+}
+
+.ls-payment-icon--american_express {
+  background-position: -254px -160px;
+}
+
+.ls-payment-icon--americanexpress {
+  background-position: -254px -160px;
+}
+
+.ls-payment-icon--neosurf {
+  background-position: -4px -191px;
+}
+
+.ls-payment-icon--wiretransfer {
+  background-position: -254px -346px;
+}
+
+.ls-payment-icon--clickandbuy {
+  background-position: -104px -191px;
+}
+
+.ls-payment-icon--paysafecard {
+  background-position: -154px -191px;
+}
+
+.ls-payment-icon--ticketpremium {
+  background-position: -254px -191px;
+}
+
+.ls-payment-icon--hipay {
+  background-position: -4px -222px;
+}
+
+.ls-payment-icon--entropay {
+  background-position: -54px -222px;
+}
+
+.ls-payment-icon--amazon_payment {
+  background-position: -104px -222px;
+}
+
+.ls-payment-icon--skrill {
+  background-position: -154px -222px;
+}
+
+.ls-payment-icon--quicktender {
+  background-position: -204px -222px;
+}
+
+.ls-payment-icon--ezipay {
+  background-position: -254px -222px;
+}
+
+.ls-payment-icon--moneygram {
+  background-position: -4px -253px;
+}
+
+.ls-payment-icon--poli {
+  background-position: -54px -253px;
+}
+
+.ls-payment-icon--bpay {
+  background-position: -104px -253px;
+}
+
+.ls-payment-icon--intercash {
+  background-position: -204px -253px;
+}
+
+.ls-payment-icon--mistercash {
+  background-position: -254px -253px;
+}
+
+.ls-payment-icon--fasterpay {
+  background-position: -4px -284px;
+}
+
+.ls-payment-icon--enets {
+  background-position: -54px -284px;
+}
+
+.ls-payment-icon--interac {
+  background-position: -104px -284px;
+}
+
+.ls-payment-icon--echecks {
+  background-position: -154px -284px;
+}
+
+.ls-payment-icon--echeck {
+  background-position: -154px -284px;
+}
+
+.ls-payment-icon--boleto {
+  background-position: -204px -284px;
+}
+
+.ls-payment-icon--pokerstarspay {
+  background-position: -254px -284px;
+}
+
+.ls-payment-icon--multibanco {
+  background-position: -4px -315px;
+}
+
+.ls-payment-icon--epay {
+  background-position: -54px -315px;
+}
+
+.ls-payment-icon--toditocash {
+  background-position: -104px -315px;
+}
+
+.ls-payment-icon--obopay {
+  background-position: -154px -315px;
+}
+
+.ls-payment-icon--google_checkout {
+  background-position: -204px -315px;
+}
+
+.ls-payment-icon--pppay {
+  background-position: -254px -315px;
+}
+
+.ls-payment-icon--qiwi-visa {
+  background-position: -54px -346px;
+}
+
+.ls-payment-icon--debit-card {
+  background-position: -104px -346px;
+}
+
+.ls-payment-icon--debit {
+  background-position: -104px -346px;
+}
+
+.ls-payment-icon--debitcards {
+  background-position: -104px -346px;
+}
+
+.ls-payment-icon--dankort {
+  background-position: -154px -346px;
+}
+
+.ls-payment-icon--online-bank-transfer {
+  background-position: -204px -346px;
+}
+
+.ls-payment-icon--banktransfer {
+  background-position: -54px -191px;
+}
+
+.ls-payment-icon--elv {
+  background-position: -4px -377px;
+}
+
+.ls-payment-icon--moneta {
+  background-position: -104px -377px;
+}
+
+.ls-payment-icon--instadebit {
+  background-position: -154px -377px;
+}
+
+.ls-payment-icon--astropay {
+  background-position: -204px -377px;
+}
+
+.ls-payment-icon--barcode-santander {
+  background-position: -254px -377px;
+}
+
+.ls-payment-icon--teleingreso {
+  background-position: -4px -408px;
+}
+
+.ls-payment-icon--abaqoos {
+  background-position: -104px -408px;
+}
+
+.ls-payment-icon--robokassa {
+  background-position: -154px -408px;
+}
+
+.ls-payment-icon--sporopay {
+  background-position: -204px -408px;
+}
+
+.ls-payment-icon--laser {
+  background-position: -254px -408px;
+}
+
+.ls-payment-icon--xoom {
+  background-position: -4px -439px;
+}
+
+.ls-payment-icon--bankaxess {
+  background-position: -54px -439px;
+}
+
+.ls-payment-icon--postepay {
+  background-position: -104px -439px;
+}
+
+.ls-payment-icon--discover {
+  background-position: -154px -439px;
+}
+
+.ls-payment-icon--freebet {
+  background-position: -204px -439px;
+}
+
+.ls-payment-icon--alipay {
+  background-position: -254px -439px;
+}
+
+.ls-payment-icon--westerunion {
+  background-position: -4px -470px;
+}
+
+.ls-payment-icon--westernunion {
+  background-position: -4px -470px;
+}
+
+.ls-payment-icon--union_pay {
+  background-position: -54px -470px;
+}
+
+.ls-payment-icon--easycash {
+  background-position: -104px -470px;
+}
+
+.ls-payment-icon--paymate {
+  background-position: -154px -470px;
+}
+
+.ls-payment-icon--cashu {
+  background-position: -204px -470px;
+}
+
+.ls-payment-icon--p2p {
+  background-position: -254px -470px;
+}
+
+.ls-payment-icon--asia_pay {
+  background-position: -4px -501px;
+}
+
+.ls-payment-icon--cirrus {
+  background-position: -54px -501px;
+}
+
+.ls-payment-icon--citibank {
+  background-position: -104px -501px;
+}
+
+.ls-payment-icon--unet {
+  background-position: -204px -501px;
+}
+
+.ls-payment-icon--instant_banking {
+  background-position: -4px -532px;
+}
+
+.ls-payment-icon--instantbanking {
+  background-position: -4px -532px;
+}
+
+.ls-payment-icon--visa_debit {
+  background-position: -54px -532px;
+}
+
+.ls-payment-icon--buyster {
+  background-position: -104px -532px;
+}
+
+.ls-payment-icon--dineromail {
+  background-position: -4px -625px;
+}
+
+.ls-payment-icon--eps {
+  background-position: -254px -532px;
+}
+
+.ls-payment-icon--ideal {
+  background-position: -154px -532px;
+}
+
+.ls-payment-icon--ikoruna {
+  background-position: -104px -625px;
+}
+
+.ls-payment-icon--local-bank-transfer {
+  background-position: -104px -129px;
+}
+
+.ls-payment-icon--moneyclic {
+  background-position: -54px -625px;
+}
+
+.ls-payment-icon--ecartebleue {
+  background-position: -204px -191px;
+}
+
+.ls-payment-icon--spei {
+  background-position: -154px -625px;
+}
+
+.ls-payment-icon--servipag {
+  background-position: -204px -625px;
+}
+
+.ls-payment-icon--tpay {
+  background-position: -204px -532px;
+}
+
+.ls-payment-icon--bonificobancario {
+  background-position: -254px -624px;
+}
+
+.ls-payment-icon--bitcoin {
+  background-position: -4px -654px;
+}
+
+.ls-payment-icon--jcb {
+  background-position: -54px -654px;
+}
+
+.ls-payment-icon--banamex {
+  background-position: -104px -654px;
+}
+
+.ls-payment-icon--bancomer {
+  background-position: -154px -654px;
+}
+
+.ls-payment-icon--mint {
+  background-position: -204px -654px;
+}
+
+.ls-payment-icon--mobiamo {
+  background-position: -254px -654px;
+}
+
+.ls-payment-icon--oxxo {
+  background-position: -4px -687px;
+}
+
+.ls-payment-icon--red_compra {
+  background-position: -54px -687px;
+}
+
+.ls-payment-icon--safetypay {
+  background-position: -104px -687px;
+}
+
+.ls-payment-icon--efectivo {
+  background-position: -154px -66px;
+}
+
+.ls-payment-icon--ecopayz {
+  background-position: -204px -687px;
+}
+
+.ls-payment-icon--idebit {
+  background-position: -154px -687px;
+}
+
+.ls-country-flag-list {
+  display: block;
+  padding: 16px 0 20px;
+}
+
+.list-icon .ls-country-flag-list {
+  padding-bottom: 0;
+}
+
+.ls-country-flag-list span {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+
+.ls-country-flag-list svg {
+  width: 22px;
+  height: 22px;
+}
+
+.partner-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partner-list li {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1px;
+}
+
+.partner-list li:hover {
+  background-color: #f8f8f8;
+}
+
+.partner-list li:last-child {
+  border-bottom-width: 0;
+}
+
+.partner-list__order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 24px;
+  background-color: #454a4c;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.partner-list--small .partner-list__order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 4px 0;
+  padding: 4px 0px;
+  line-height: 1.5;
+}
+
+.partner-list--small li:active .partner-list__order {
+  background-color: #167773;
+}
+
+.partner-list__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.partner-list--small .partner-list__logo {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 96px;
+  -ms-flex: 0 0 96px;
+  flex: 0 0 96px;
+  min-height: 88px;
+}
+
+.partner-list__logo img {
+  max-width: 80px;
+}
+
+.partner-list__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.partner-list--small .partner-list__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.partner-list__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partner-list__info--left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  padding: 8px 0;
+}
+
+.partner-list__info--right {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 8px 13px;
+}
+
+.partner-list--small .partner-list__info--right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.partner-list__bonus-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.partner-list--small .partner-list__bonus-text {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 1.6em;
+}
+
+.partner-list__bonus-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 40px 0 16px;
+  color: #167773;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.85;
+  min-width: 55px;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.partner-list--small .partner-list__bonus-value {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 8px 0 11px;
+}
+
+.partner-list__review-link {
+  color: #167773;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.partner-list--small .partner-list__review-link {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.main-article .partner-list .partner-list__review-link {
+  text-decoration: none;
+}
+
+.partner-list__cta-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.partner-list--small .partner-list__cta-button {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 0;
+}
+
+.partner-list--small .partner-list__cta-button a {
+  padding: 5px 14px;
+}
+
+.partner-list__cta-button a {
+  display: block;
+  padding: 9px 17px;
+  border-radius: 4px;
+  background-color: #ffd800;
+  font-size: 14px;
+  line-height: 1.58;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5c5c5c;
+}
+
+.main-article .partner-list .partner-list__cta-button a {
+  text-decoration: none;
+}
+
+.partner-list__cta-button a:hover {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  color: #167773;
+}
+
+.partner-list__cta-button a:active {
+  color: #ffd800;
+  background-color: #167773;
+  box-shadow: none;
+}
+
 /*Base Tables*/
 
 .popover.popover-trend,
@@ -10663,6 +11590,72 @@ ul.image-list li img {
   margin-top: 25px;
 }
 
+.main-article h2:first-child,
+.main-article h3:first-child,
+.main-article h4:first-child {
+  margin-top: 0;
+}
+
+.main-article h1 {
+  font-size: 38px;
+  line-height: 1.16;
+  font-weight: normal;
+  letter-spacing: normal;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.main-article h2,
+.main-article h3,
+.main-article h4,
+.main-article h5 {
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.main-article h2 {
+  font-size: 28px;
+}
+
+.main-article h3 {
+  font-size: 24px;
+}
+
+.main-article h4 {
+  font-size: 20px;
+}
+
+.main-article h5 {
+  font-size: 18px;
+}
+
+.main-article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+.main-article p .icon svg {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+.main-article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-article a:not(.btn) {
+  color: #5c5c5c;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.main-article a:not(.btn):hover {
+  color: #5da400;
+}
+
 .main-article img.article-image {
   max-width: 100%;
   border-radius: 8px;
@@ -10691,60 +11684,6 @@ ul.image-list li img {
   padding: 25px;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.main-article .article-content h1 {
-  font-size: 38px;
-  line-height: 1.16;
-  font-weight: normal;
-  letter-spacing: normal;
-  margin-top: 7px;
-  margin-bottom: 0;
-}
-
-.main-article .article-content h2,
-.main-article .article-content h3,
-.main-article .article-content h4,
-.main-article .article-content h5 {
-  line-height: normal;
-  margin-bottom: 24px;
-}
-
-.main-article .article-content h2 {
-  font-size: 28px;
-}
-
-.main-article .article-content h3 {
-  font-size: 24px;
-}
-
-.main-article .article-content h4 {
-  font-size: 20px;
-}
-
-.main-article .article-content h5 {
-  font-size: 18px;
-}
-
-.main-article .article-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 36px;
-}
-
-.main-article .article-content img {
-  max-width: 100%;
-  height: auto;
-}
-
-.main-article .article-content a {
-  color: #5c5c5c;
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.main-article .article-content a:hover {
-  color: #5da400;
 }
 
 .main-article ol {
@@ -10889,6 +11828,34 @@ ul.image-list li img {
 .news-article .content-section .main-article div.blockquote-alert p a:visited {
   color: #3e4e5a;
   text-decoration: underline;
+}
+
+.main-article .list-icon {
+  padding: 0;
+  margin: 0 0 40px;
+  list-style: none;
+}
+
+.main-article .list-icon li {
+  position: relative;
+  margin-bottom: 16px;
+  line-height: 23px;
+  font-size: 16px;
+  padding-left: 40px;
+}
+
+.main-article .list-icon li > .emoji,
+.main-article .list-icon li > .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-article .list-icon li > .emoji svg,
+.main-article .list-icon li > .icon svg {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
 }
 
 .discussion .panel-body span.users-list-title {
@@ -12015,6 +12982,205 @@ ul.image-list li img {
 
 .footer .bottom-footer .ls-svg-text {
   fill: #272a2c;
+}
+
+/* Content */
+
+.review-header {
+  position: relative;
+  padding: 20px;
+  background: url("../img//review/header-bg.png") repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 320px;
+}
+
+.review-header .review-stars {
+  margin-bottom: 30px;
+}
+
+.review-header .btn-cta {
+  max-width: 50%;
+}
+
+.review-header-title {
+  color: white;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.16;
+  margin-bottom: 16px;
+}
+
+.review-sidebar h2,
+.review-sidebar h3,
+.review-sidebar h4 {
+  margin-bottom: 24px;
+}
+
+.review-header-bookmaker {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 460px;
+  height: 312px;
+}
+
+.review-header-bookmaker img {
+  max-width: 100%;
+}
+
+.reiew-header-promo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.reiew-header-promo .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.reiew-header-promo .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.reiew-header-promo .text {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.reiew-header-promo .text .value {
+  font-weight: bold;
+  color: #ffd800;
+}
+
+.review-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review-body .main-article {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 720px;
+  -ms-flex: 0 0 720px;
+  flex: 0 0 720px;
+}
+
+.review-sidebar {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 24px 0 24px 62px;
+}
+
+.main-article .article-content--review {
+  background-color: #ffffff;
+  border-radius: 0 8px 0 0;
+  margin-top: -40px;
+  margin-right: 0;
+  padding: 24px;
+}
+
+.review-body-title {
+  line-height: 1.16;
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  position: relative;
+  background-color: #ffd800;
+  color: #5c5c5c;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 30px 18px 10px;
+  width: 100%;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  border-width: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-cta:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-cta:active {
+  box-shadow: none;
+  border-color: #e1b902;
+}
+
+.btn-cta:after {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  content: '\e60d';
+  font-family: "LSicons";
+  font-size: 16px;
+  color: #5c5c5c;
+}
+
+.ls-cta-widget {
+  margin-bottom: 40px;
+}
+
+.ls-cta-widget__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ls-cta-widget__value,
+.ls-cta-widget__description {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  padding: 0 0 24px;
+}
+
+.ls-cta-widget .ls-cta-widget__value p,
+.ls-cta-widget .ls-cta-widget__description p {
+  margin: 0;
+}
+
+.ls-cta-widget__value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.ls-cta-widget__value .icon svg {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
 }
 
 /*Site administration*/
