@@ -5,6 +5,10 @@
 @ls-light-color: #FFF;
 @ls-dark-color: #000;
 @live-red: #e33000;
+@ls-yellow-color: #ffd800;
+@ls-yellow-color-shade: #e1b902;
+@ls-dark-contrast-color: #454a4c;
+@ls-secondary-color: #167773;
 @prediction: #e00000;
 @active-green: #5da400;
 @warning-red: #FF0000;
@@ -57,6 +61,8 @@
 @ls-image-player-summary-yellow-card: "@{ls-img-path}/sprites/yellow-card.png";
 @ls-image-player-summary-red-card: "@{ls-img-path}/sprites/red-card.png";
 @ls-image-user-dashboard-th-bg: "@{ls-img-path}/user-dashboard/th-bg.png";
+@ls-image-review-header-bg: "@{ls-img-path}/review/header-bg.png";
+@ls-image-review-payment-methods-bg: "@{ls-img-path}/sprite-payments.png";
 
 /*CSS3 PIE Path*/
 @ls-css3-pie-url: "js/css3pie/PIE.htc";
@@ -345,14 +351,14 @@
 // Player comparison widget
 @player-comparison-left-player-color: 						rgb(255,101,101);
 @player-comparison-right-player-color: 						rgb(52,167,255);
-@player-comparison-hero-padding: 									30px 35px 0;
-@player-comparison-hero-player-name-size: 				31px;
-@player-comparison-hero-chart-size: 							350px;
-@player-comparison-nav-text-size: 								11px;
-@player-comparison-nav-text-color: 								#43494b;
-@player-comparison-nav-text-color-active: 				@active-green;
-@player-comparison-nav-height: 										45px;
-@player-comparison-stats-widget-text-color: 			#43494b;
+@player-comparison-hero-padding: 							30px 35px 0;
+@player-comparison-hero-player-name-size: 				    31px;
+@player-comparison-hero-chart-size: 						350px;
+@player-comparison-nav-text-size: 							11px;
+@player-comparison-nav-text-color: 							#43494b;
+@player-comparison-nav-text-color-active: 				    @active-green;
+@player-comparison-nav-height: 								45px;
+@player-comparison-stats-widget-text-color: 			    #43494b;
 
 // Timeline
 @timeline-max-width:                    					840px;
@@ -389,7 +395,7 @@
 @blockquote-font-weight:                           normal;
 @blockquote-line-height:                           1.33;
 @blockquote-text-color:                            @active-green;
-@blockquote-padding:                               0 0 0 48px;
+@blockquote-padding:                               48px;
 @blockquote-highlight-color:                       @active-green;
 @blockquote-highlight-text-size:                   24px;
 @blockquote-highlight-line-height:                 1.33;
@@ -414,6 +420,12 @@
 @blockquote-alert-border-width-small-phone:      2px;
 @blockquote-alert-padding:                       15px 15px 15px 20px;
 @blockquote-alert-max-width:                     790px;
+
+// Review
+@review-header-mockup-width:                     460px;
+@review-header-mockup-height:                    312px;
+@review-header-title-size:                       38px;
+@review-header-title-line-height:                1.16;
 
 //Responsive limits
 @xx-small-devices: 620px;

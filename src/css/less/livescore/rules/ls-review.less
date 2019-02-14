@@ -1,0 +1,138 @@
+// Review page components
+
+.review-header {
+  position: relative;
+  padding: 20px;
+  background: url("@{ls-image-review-header-bg}") repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 320px;
+
+  .review-stars {
+    margin-bottom: 30px;
+  }
+
+  .btn-cta {
+    max-width: 50%;
+  }
+}
+
+.review-header-title {
+  display: block;
+  color: white;
+  font-weight: 600;
+  font-size: @review-header-title-size;
+  line-height: @review-header-title-line-height;
+  margin-bottom: 16px;
+}
+
+.review-sidebar {
+
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 24px;
+  }
+}
+
+.review-header-bookmaker {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: @review-header-mockup-width;
+  height: @review-header-mockup-height;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.review-header-promo {
+  display: flex;
+  margin-bottom: 24px;
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    color: @ls-light-color;
+
+    .value {
+      font-weight: bold;
+      color: @ls-yellow-color;
+    }
+  }
+}
+
+.review-body {
+  //display: flex;
+
+  .main-article {
+    //flex: 0 0 720px;
+  }
+}
+
+.review-sidebar {
+  //flex: 1 1 auto;
+  padding: 24px 0 24px 62px;
+}
+
+.main-article .article-content--review {
+  background-color: @ls-light-color;
+  border-radius: 0 8px 0 0;
+  margin-top: -40px;
+  margin-right: 0;
+  padding: 24px;
+}
+
+.review-body-title {
+  line-height: 1.16;
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  position: relative;
+  background-color: @ls-yellow-color;
+  color: @text-color;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 30px 18px 10px;
+  width: 100%;
+  transition: all 200ms ease;
+  border-width: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    box-shadow: none;
+    border-color: @ls-yellow-color-shade;
+  }
+
+  &:after {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    content: '\e60d';
+    font-family: @ls-icons-font;
+    font-size: 16px;
+    color: @text-color;
+  }
+}
