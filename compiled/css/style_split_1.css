@@ -6018,6 +6018,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
 }
 
+.breadcrumb.breadcrumb--article {
+  padding: 0;
+  border-bottom: none;
+}
+
+.breadcrumb.breadcrumb--article > li:first-child a {
+  padding-left: 0;
+}
+
 .pagination {
   display: inline-block;
   padding-left: 0;
@@ -10288,6 +10297,22 @@ button.close {
   white-space: nowrap!important;
 }
 
+.text-primary a {
+  color: #5da400;
+}
+
+.text-primary a:hover {
+  color: #5da400;
+}
+
+.text-semi-bold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
 .well,
 .h2-small {
   border-radius: 0;
@@ -14265,6 +14290,10 @@ fieldset[disabled] .btn-twitter.active {
   color: #5da400;
 }
 
+ul.nav li.dropdown-hover:hover ul.dropdown-menu {
+  display: block;
+}
+
 /* Livescores Modals */
 
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
@@ -14373,38 +14402,4 @@ span.sprite-icons.comment {
 
 span.sprite-icons.comment-more {
   background-position: -60px -97px;
-}
-
-span.sprite-icons.shot-off {
-  background-position: -85px -97px;
-  width: 26px;
-}
-
-span.sprite-icons.shot-on {
-  background-position: -114px -97px;
-  width: 26px;
-}
-
-span.sprite-icons.shot-on-1 {
-  background-position: -171px -98px;
-  width: 26px;
-}
-
-span.sprite-icons.shot-post {
-  background-position: -143px -96px;
-  height: 19px;
-}
-
-span.sprite-icons.clock {
-  background-position: -144px -121px;
-}
-
-span.sprite-icons.player-change {
-  background-position: -205px -5px;
-  width: 8px;
-}
-
-span.sprite-icons.substitution-left {
-  background-position: -233px -5px;
-  width: 8px;
 }
