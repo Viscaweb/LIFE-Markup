@@ -31,22 +31,6 @@ table{
     }
   }
 
-  &.odds-over-under{
-
-    tbody{
-
-      tr{
-
-        td{
-
-          &.name{
-            width: 75%;
-          }
-        }
-      }
-    }
-  }
-
   &.odds-half-time-full-time{
 
     tbody{
@@ -187,7 +171,6 @@ table{
 table.odds-1x2-v2 {
 
   thead tr th {
-    font-weight: @font-weight-bold;
     font-size: 12px;
     padding-left: 10px;
     padding-right: 10px;
@@ -212,89 +195,107 @@ table.odds-1x2-v2 {
       color: @new-match-odds-widget-bonus-bg;
     }
   }
+}
 
-  tbody tr {
+table {
 
-    td {
-     width: 20%;
-     padding: 2px 4px;
+  &.odds-1x2-v2,
+  &.odds-over-under {
 
-     &.logo {
-       text-align: center;
-       padding: 2px 4px;
-
-       img {
-         max-width: 80px;
-       }
-     }
-
-     &.result,
-     &.logo {
-       width: 20%;
-     }
-
-     &.odd,
-     &.bonus {
-       > span, > a {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         height: 32px;
-         border-radius: 4px;
-         color: @new-match-odds-widget-text-color;
-         font-size: 14px;
-         cursor: pointer;
-         box-sizing: border-box;
-         border: 2px solid transparent;
-       }
-     }
-
-     &.odd {
-       border-right-width: 0;
-       border-left-width: 0;
-
-       &.best-odd > span {
-         font-weight: 600;
-         border-color: @new-match-odds-widget-light-green;
-         background-color: fade(@new-match-odds-widget-light-green, 25%);
-       }
-     }
-
-     &.bonus {
-       .bonus-text {
-         font-size: 16px;
-         font-weight: 600;
-         background-color: @new-match-odds-widget-bonus-bg;
-       }
-     }
-
-     &.event-won,
-     &.event-lost {
-       background-color: transparent !important;
-     }
-
-     &.event-won {
-       > span {
-         background-color: fade(@new-match-odds-widget-light-green, 50%);
-       }
-     }
-
-     &.event-lost {
-       > span {
-         background-color: fade(@new-match-odds-widget-light-red, 50%);
-       }
-     }
+    thead tr th,
+    tbody tr th {
+      font-weight: @font-weight-bold;
+      text-transform: none;
     }
 
-    &:hover td {
-      &.event-won,
-      &.event-lost {
-        background-color: #ededed !important;
+    tbody tr {
 
-        &:hover {
+      td {
+        width: 20%;
+        padding: 2px 4px;
+
+        &.logo {
+          text-align: center;
+          padding: 2px 15px;
+
+          img {
+            max-width: 80px;
+          }
+        }
+
+        &.result,
+        &.logo {
+          width: 20%;
+        }
+
+        &.result,
+        &.bonus {
+          > span, > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            border-radius: 4px;
+            color: @new-match-odds-widget-text-color;
+            font-size: 14px;
+            cursor: pointer;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+          }
+        }
+
+        &.result {
+          border-right-width: 0;
+          border-left-width: 0;
+
+          &.best-odd > span {
+            font-weight: 600;
+            border-color: @new-match-odds-widget-light-green;
+            background-color: fade(@new-match-odds-widget-light-green, 25%);
+          }
+        }
+
+        &.bonus {
+          .bonus-text {
+            font-size: 16px;
+            font-weight: 600;
+            background-color: @new-match-odds-widget-bonus-bg;
+          }
+        }
+
+        &.event-won,
+        &.event-lost {
+          background-color: transparent !important;
+        }
+
+        &.event-won {
+          > span {
+            background-color: fade(@new-match-odds-widget-light-green, 50%);
+          }
+        }
+
+        &.event-lost {
+          > span {
+            background-color: fade(@new-match-odds-widget-light-red, 50%);
+          }
+        }
+      }
+
+      &:hover td {
+        &.event-won,
+        &.event-lost {
           background-color: #ededed !important;
+
+          &:hover {
+            background-color: #ededed !important;
+          }
         }
       }
     }
+  }
+
+  &.odds-over-under tbody tr td.logo {
+    width: 60%;
+    text-align: left;
   }
 }
