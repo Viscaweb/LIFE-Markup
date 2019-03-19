@@ -6737,6 +6737,22 @@ ul.table-of-content li span {
   background-color: transparent;
 }
 
+.match-information .match-date {
+  display: none;
+}
+
+.match-information .match-date span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: #ffffff;
+}
+
+.match-information .match-date span.time {
+  font-weight: 700;
+}
+
 .match-information.live .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
@@ -6775,6 +6791,10 @@ ul.table-of-content li span {
 
 .match-information.flying .table-match-actions-summary {
   margin-top: 56px;
+}
+
+.match-information.scheduled .match-date {
+  display: block;
 }
 
 .match-information + .nav-tabs {
