@@ -411,7 +411,7 @@
         text-align: center
       }
     }
-    
+
     //General league data & league heading style
     &.league-data{
       .league-data-style();
@@ -457,7 +457,7 @@
 
         &.number{
           font-weight: @font-weight-semi-bold;
-          
+
           .extra-info {
             font-width: 400;
             color: @text-muted;
@@ -486,7 +486,7 @@
             color: darken(@ls-light-color,24%);
           }
         }
-        
+
         &.view-more{
           background-color: @ls-light-color;
         }
@@ -539,6 +539,24 @@
           }
         }
 
+        &.cta {
+          padding: 0 3px;
+
+          .btn {
+            font-size: @ls-table-cta-button-font-size;
+            min-width: @ls-table-cta-button-width;
+            border-radius: @ls-table-cta-button-border-radius;
+
+            &:after {
+              display: inline-block;
+              content: "\e60d";
+              font-family: @ls-icons-font;
+              font-size: 8px;
+              margin-left: 2px;
+            }
+          }
+        }
+
         &.teams .score {
           position: relative;
           display: flex;
@@ -580,7 +598,7 @@
           }
 
           &:last-child {
-            padding-right: 4px; 
+            padding-right: 4px;
           }
 
           .data-multiple {
@@ -680,7 +698,7 @@
         }
 
         &.cell-multiple {
-          padding: 0;  
+          padding: 0;
         }
 
         .data-multiple {
@@ -689,7 +707,7 @@
           padding-bottom: @table-cell-padding - 2px;
           min-height: 30px;
           text-align: center;
-          
+
           &:last-child {
             border: none;
           }
@@ -731,7 +749,7 @@
 
       &:hover{
         &:nth-child(2n+1){
-          
+
         }
 
         &:nth-child(2n){
@@ -764,7 +782,7 @@
         }
     }
   }
-  
+
 
   &.table-condensed{
 
@@ -870,7 +888,7 @@
         animation-name: progressiveHighlight;
         animation-duration: 6s;
 
-        td, 
+        td,
         td .score {
           animation-name: progressiveHighlight;
           animation-duration: 6s;
@@ -1229,7 +1247,7 @@
           }
         }
       }
-      
+
     }
   }
 
@@ -1497,7 +1515,7 @@
             img{
               max-width: @ls-matches-table-team-image-size;
             }
-            
+
             .label-goal {
               opacity:0;
               position: absolute;
@@ -1515,7 +1533,7 @@
               .label{
                 margin-right: 5px;
               }
-              
+
               .label-goal {
                 left: 0;
               }
@@ -1531,7 +1549,7 @@
               .label{
                 margin-left: 5px;
               }
-              
+
               .label-goal {
                 right: 0;
               }
@@ -1852,8 +1870,6 @@
     }
   }
 
-
-
   &.layout-fixed {
     table-layout: fixed;
     border-collapse: collapse;
@@ -1862,21 +1878,13 @@
 
       td {
         width: auto;
-        /*
-                        overflow: hidden;
 
-        */
         &.team {
-
           > a, div {
             overflow: hidden;
             position: relative;
           }
-
-
         }
-
-
       }
     }
 
@@ -2067,15 +2075,14 @@
         &.width-auto {
           width: auto;
         }
-        
+
       }
     }
+
+    &.cta-button colgroup col.score {
+      width: @ls-table-cta-button-width + 6px;
+    }
   }
-
-  &:not(.other-sport) {
-
-  }
-
 }
 
 .table.league-selection{
@@ -2191,6 +2198,3 @@
 
 
 }
-
-
-

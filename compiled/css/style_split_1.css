@@ -11439,6 +11439,24 @@ span.dark-icon {
   color: #d6d6d6;
 }
 
+.table tbody tr > td.cta {
+  padding: 0 3px;
+}
+
+.table tbody tr > td.cta .btn {
+  font-size: 10px;
+  min-width: 80px;
+  border-radius: 2px;
+}
+
+.table tbody tr > td.cta .btn:after {
+  display: inline-block;
+  content: "\e60d";
+  font-family: "LSicons";
+  font-size: 8px;
+  margin-left: 2px;
+}
+
 .table tbody tr > td.teams .score {
   position: relative;
   display: -webkit-box;
@@ -12937,10 +12955,6 @@ span.dark-icon {
 
 .table.layout-fixed tr td {
   width: auto;
-  /*
-                        overflow: hidden;
-
-        */
 }
 
 .table.layout-fixed tr td.team > a,
@@ -13131,6 +13145,10 @@ span.dark-icon {
 
 .table.layout-fixed colgroup col.width-auto {
   width: auto;
+}
+
+.table.layout-fixed.cta-button colgroup col.score {
+  width: 86px;
 }
 
 .table.league-selection {
@@ -14386,20 +14404,4 @@ span.sprite-icons.goal {
 
 span.sprite-icons.penalty-goal {
   background-position: -3px -50px;
-}
-
-span.sprite-icons.penalty-missed {
-  background-position: -254px -3px;
-}
-
-span.sprite-icons.shirt {
-  background-position: -5px -97px;
-}
-
-span.sprite-icons.comment {
-  background-position: -31px -97px;
-}
-
-span.sprite-icons.comment-more {
-  background-position: -60px -97px;
 }

@@ -9318,6 +9318,21 @@ span.dark-icon {
 .table tbody tr > td.score span.icon-expand-h {
   color: #d6d6d6;
 }
+.table tbody tr > td.cta {
+  padding: 0 3px;
+}
+.table tbody tr > td.cta .btn {
+  font-size: 10px;
+  min-width: 80px;
+  border-radius: 2px;
+}
+.table tbody tr > td.cta .btn:after {
+  display: inline-block;
+  content: "\e60d";
+  font-family: "LSicons";
+  font-size: 8px;
+  margin-left: 2px;
+}
 .table tbody tr > td.teams .score {
   position: relative;
   display: -webkit-box;
@@ -10547,10 +10562,6 @@ span.dark-icon {
 }
 .table.layout-fixed tr td {
   width: auto;
-  /*
-                        overflow: hidden;
-
-        */
 }
 .table.layout-fixed tr td.team > a,
 .table.layout-fixed tr td.team div {
@@ -10694,6 +10705,9 @@ span.dark-icon {
 }
 .table.layout-fixed colgroup col.width-auto {
   width: auto;
+}
+.table.layout-fixed.cta-button colgroup col.score {
+  width: 86px;
 }
 .table.league-selection {
   border: 1px solid #f5f5f5;
