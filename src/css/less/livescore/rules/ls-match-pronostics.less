@@ -5,5 +5,102 @@
   p {
     font-size: @match-pronostics-body-font-size;
     line-height: @match-pronostics-body-line-height;
+    margin-bottom: 20px;
+  }
+}
+
+.match-pronostic-block {
+  margin-bottom: @match-pronostics-margin-bottom;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.match-pronostic-block-header {
+  background-color: @match-pronostics-bg-color;
+  font-size: @match-pronostics-header-font-size;
+  line-height: 1.19;
+  padding: 9px 10px;
+  text-align: center;
+
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: @ls-yellow-color;
+  }
+}
+
+.match-pronostic-block-body {
+  display: flex;
+}
+
+.match-pronostic-block-column {
+  display: flex;
+  flex: 1 1 16.6%;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid @match-pronostics-bg-color;
+  overflow: hidden;
+
+  &:first-child {
+    border-bottom-left-radius: @match-pronostics-border-radius;
+  }
+
+  &:last-child {
+    border-width: 0;
+    border-bottom-right-radius: @match-pronostics-border-radius;
+  }
+
+  &--logo,
+  &--odds {
+    background-color: @ls-light-color;
+    color: @text-color;
+  }
+
+  &--odds span,
+  &--bonus span {
+    font-size: @match-pronostics-numbers-font-size;
+    font-weight: bold;
+    margin-left: 3px;
+  }
+
+  &--bonus {
+    background-color: @ls-yellow-color;
+    color: @ls-yellow-text-contrast-color;
+  }
+
+  &--cta {
+    flex: 1 1 50%;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+      background-color: @active-green;
+      text-transform: uppercase;
+      text-align: center;
+      color: @ls-light-color;
+      font-size: @match-pronostics-cta-font-size;
+      font-weight: bold;
+      line-height: 1.35;
+
+      &:hover {
+        color: @ls-light-color;
+        background-color: lighten(@active-green, 2%);
+      }
+
+      &:active {
+        background-color: darken(@active-green, 2%);
+      }
+
+      .panel-inverse & {
+        color: @ls-light-color;
+
+        &:hover {
+          color: @ls-light-color;
+        }
+      }
+    }
   }
 }
