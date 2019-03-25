@@ -6087,121 +6087,6 @@ ul.table-of-content li span {
 .match-pronostics p {
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.match-pronostic-block {
-  margin-bottom: 20px;
-}
-
-.match-pronostic-block:last-child {
-  margin-bottom: 0;
-}
-
-.match-pronostic-block-header {
-  background-color: #000000;
-  font-size: 12px;
-  line-height: 1.19;
-  padding: 9px 10px;
-  text-align: center;
-}
-
-.match-pronostic-block-header span {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #ffd800;
-}
-
-.match-pronostic-block-body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.match-pronostic-block-column {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 16.6%;
-  -ms-flex: 1 1 16.6%;
-  flex: 1 1 16.6%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-right: 1px solid #000000;
-  overflow: hidden;
-}
-
-.match-pronostic-block-column:first-child {
-  border-bottom-left-radius: 4px;
-}
-
-.match-pronostic-block-column:last-child {
-  border-width: 0;
-  border-bottom-right-radius: 4px;
-}
-
-.match-pronostic-block-column--logo,
-.match-pronostic-block-column--odds {
-  background-color: #ffffff;
-  color: #5c5c5c;
-}
-
-.match-pronostic-block-column--odds span,
-.match-pronostic-block-column--bonus span {
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 3px;
-}
-
-.match-pronostic-block-column--bonus {
-  background-color: #ffd800;
-  color: #3e4e5a;
-}
-
-.match-pronostic-block-column--cta {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
-.match-pronostic-block-column--cta a {
-  display: block;
-  width: 100%;
-  padding: 10px 10px;
-  background-color: #5da400;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1.35;
-}
-
-.match-pronostic-block-column--cta a:hover {
-  color: #ffffff;
-  background-color: #63ae00;
-}
-
-.match-pronostic-block-column--cta a:active {
-  background-color: #579a00;
-}
-
-.panel-inverse .match-pronostic-block-column--cta a {
-  color: #ffffff;
-}
-
-.panel-inverse .match-pronostic-block-column--cta a:hover {
-  color: #ffffff;
 }
 
 .match-score {
@@ -6921,6 +6806,22 @@ ul.table-of-content li span {
   background-color: transparent;
 }
 
+.match-information .match-date {
+  display: none;
+}
+
+.match-information .match-date span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: #ffffff;
+}
+
+.match-information .match-date span.time {
+  font-weight: 700;
+}
+
 .match-information.live .table tbody tr td > .title span.minute {
   color: #e33000;
   padding-left: 15px;
@@ -6959,6 +6860,10 @@ ul.table-of-content li span {
 
 .match-information.flying .table-match-actions-summary {
   margin-top: 56px;
+}
+
+.match-information.scheduled .match-date {
+  display: block;
 }
 
 .match-information + .nav-tabs {
