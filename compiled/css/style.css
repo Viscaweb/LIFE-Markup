@@ -16796,6 +16796,9 @@ ul.table-of-content li span {
   font-weight: bold;
   margin-left: 3px;
 }
+.match-pronostic-block-column--logo img {
+  max-height: 40px;
+}
 .match-pronostic-block-column--bonus {
   background-color: #ffd800;
   color: #3e4e5a;
