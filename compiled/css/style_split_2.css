@@ -1,3 +1,7 @@
+.modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
+  padding: 0;
+}
+
 .panel > .panel-heading .team-logo {
   max-width: 28px;
   max-height: 28px;

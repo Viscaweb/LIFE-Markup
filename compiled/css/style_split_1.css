@@ -10331,6 +10331,10 @@ button.close {
   background-color: #f9f9f9;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
 .mt-1 {
   margin-top: 13px;
 }
@@ -14390,7 +14394,3 @@ ul.nav li.dropdown-hover:hover ul.dropdown-menu {
 }
 
 /* Livescores Modals */
-
-.modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
-  padding: 0;
-}
