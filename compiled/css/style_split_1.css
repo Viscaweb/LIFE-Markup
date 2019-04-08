@@ -10375,6 +10375,10 @@ button.close {
   margin-bottom: 26px;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
+
 .pt-1 {
   padding-top: 13px;
 }
@@ -14388,9 +14392,3 @@ fieldset[disabled] .btn-twitter.active {
 .dropdown-menu li > a:focus .comment-number {
   color: #5da400;
 }
-
-ul.nav li.dropdown-hover:hover ul.dropdown-menu {
-  display: block;
-}
-
-/* Livescores Modals */
