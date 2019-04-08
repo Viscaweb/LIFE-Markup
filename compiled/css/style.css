@@ -8223,7 +8223,7 @@ button.close {
   font-weight: 600;
 }
 .panel.panel-inverse {
-  border-color: #313536;
+  border: none;
   background-color: #444a4c;
 }
 .panel.panel-inverse .panel-heading {
