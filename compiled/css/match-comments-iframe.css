@@ -11109,6 +11109,9 @@ span.sprite-icons.webmaster-border {
 .bg-grey {
   background-color: #f9f9f9;
 }
+.m-0 {
+  margin: 0 !important;
+}
 .mt-1 {
   margin-top: 13px;
 }
@@ -11139,6 +11142,9 @@ span.sprite-icons.webmaster-border {
 .mb-5 {
   margin-bottom: 26px;
 }
+.p-0 {
+  padding: 0 !important;
+}
 .pt-1 {
   padding-top: 13px;
 }
@@ -11168,6 +11174,12 @@ span.sprite-icons.webmaster-border {
 }
 .pb-5 {
   padding-bottom: 26px;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 .live-commented-matches.panel .preview {
   width: 100%;

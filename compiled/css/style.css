@@ -1,3 +1,4 @@
+/* Boostrap */
 /*Bootstrap Source Code*/
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -7762,9 +7763,6 @@ button.close {
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::-moz-placeholder {
   color: #afafaf;
 }
-.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control:-ms-input-placeholder {
-  color: #afafaf;
-}
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::placeholder {
   color: #afafaf;
 }
@@ -8225,7 +8223,7 @@ button.close {
   font-weight: 600;
 }
 .panel.panel-inverse {
-  border-color: #313536;
+  border: none;
   background-color: #444a4c;
 }
 .panel.panel-inverse .panel-heading {
@@ -8432,6 +8430,85 @@ button.close {
   border-color: #f0f0f0;
   border-width: 1px 0;
   text-align: left;
+}
+/* Helpers */
+.live-red {
+  color: #e33000 !important;
+}
+.bg-grey {
+  background-color: #f9f9f9;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.mt-1 {
+  margin-top: 13px;
+}
+.mt-2 {
+  margin-top: 18.2px;
+}
+.mt-3 {
+  margin-top: 20.8px;
+}
+.mt-4 {
+  margin-top: 23.4px;
+}
+.mt-5 {
+  margin-top: 26px;
+}
+.mb-1 {
+  margin-bottom: 13px;
+}
+.mb-2 {
+  margin-bottom: 18.2px;
+}
+.mb-3 {
+  margin-bottom: 20.8px;
+}
+.mb-4 {
+  margin-bottom: 23.4px;
+}
+.mb-5 {
+  margin-bottom: 26px;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.pt-1 {
+  padding-top: 13px;
+}
+.pt-2 {
+  padding-top: 18.2px;
+}
+.pt-3 {
+  padding-top: 20.8px;
+}
+.pt-4 {
+  padding-top: 23.4px;
+}
+.pt-5 {
+  padding-top: 26px;
+}
+.pb-1 {
+  padding-bottom: 13px;
+}
+.pb-2 {
+  padding-bottom: 18.2px;
+}
+.pb-3 {
+  padding-bottom: 20.8px;
+}
+.pb-4 {
+  padding-bottom: 23.4px;
+}
+.pb-5 {
+  padding-bottom: 26px;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 /*jQuery UI Components*/
 /*Custom General Icons Behavior*/
@@ -11705,6 +11782,10 @@ ul.nav li.dropdown-hover:hover ul.dropdown-menu {
 .panel.panel-no-border {
   border: 0;
 }
+.panel.panel-inverse .panel-heading--primary,
+.panel .panel-heading--primary {
+  background-color: #5da400;
+}
 span.sprite-icons {
   width: 21px;
   height: 21px;
@@ -12817,72 +12898,6 @@ span.sprite-icons.webmaster-border {
 }
 .visual-top-bg {
   background-color: #ebebeb;
-}
-.live-red {
-  color: #e33000 !important;
-}
-.bg-grey {
-  background-color: #f9f9f9;
-}
-.mt-1 {
-  margin-top: 13px;
-}
-.mt-2 {
-  margin-top: 18.2px;
-}
-.mt-3 {
-  margin-top: 20.8px;
-}
-.mt-4 {
-  margin-top: 23.4px;
-}
-.mt-5 {
-  margin-top: 26px;
-}
-.mb-1 {
-  margin-bottom: 13px;
-}
-.mb-2 {
-  margin-bottom: 18.2px;
-}
-.mb-3 {
-  margin-bottom: 20.8px;
-}
-.mb-4 {
-  margin-bottom: 23.4px;
-}
-.mb-5 {
-  margin-bottom: 26px;
-}
-.pt-1 {
-  padding-top: 13px;
-}
-.pt-2 {
-  padding-top: 18.2px;
-}
-.pt-3 {
-  padding-top: 20.8px;
-}
-.pt-4 {
-  padding-top: 23.4px;
-}
-.pt-5 {
-  padding-top: 26px;
-}
-.pb-1 {
-  padding-bottom: 13px;
-}
-.pb-2 {
-  padding-bottom: 18.2px;
-}
-.pb-3 {
-  padding-bottom: 20.8px;
-}
-.pb-4 {
-  padding-bottom: 23.4px;
-}
-.pb-5 {
-  padding-bottom: 26px;
 }
 /*Player info*/
 .player .name {
@@ -23136,7 +23151,7 @@ ul.image-list li img {
   }
 }
 /*Theming*/
-/*@import "less/livescore/variables/ls-variables-widgets.less";*/
+/*@import "variables/ls-variables-widgets.less";*/
 .pt-0 {
   padding-top: 0;
 }
