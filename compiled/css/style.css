@@ -9011,6 +9011,76 @@ span.dark-icon {
 .table.matches tbody {
   border-top: 0;
 }
+.table.matches tbody tr.league-data th {
+  padding: 0;
+  vertical-align: middle !important;
+  white-space: nowrap;
+}
+.table.matches tbody tr.league-data th .country {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+.table.matches tbody tr.league-data th a {
+  color: #ffffff;
+}
+.table.matches tbody tr.league-data th span {
+  color: #51575a;
+}
+.table.matches tbody tr.league-data th .tools {
+  float: right;
+  padding: 0;
+}
+.table.matches tbody tr.league-data th .tools span a.fav {
+  font-size: 14px;
+}
+.table.matches tbody tr.league-data th .tools a {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+}
+.table.matches tbody tr.league-data th .tools a i {
+  font-size: 18px;
+  line-height: 16px;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.6);
+}
+.table.matches tbody tr.league-data th .tools a i.icon-standings {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.table.matches tbody tr.league-data th .tools a.active {
+  color: #5da400;
+}
+.table.matches tbody tr.league-data th .tools a.active.fav span {
+  color: #ffc600;
+  font-size: 14px;
+}
+.table.matches tbody tr.league-data th .tools a.live i {
+  color: #e33000;
+}
+.table.matches tbody tr.live > td.time {
+  padding-left: 15px;
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
+       -o-animation: ls-live-indicator-animation 1s step-end infinite;
+          animation: ls-live-indicator-animation 1s step-end infinite;
+}
+.table.matches tbody tr.live.paused > td.time {
+  padding-left: 15px;
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23b3b3b3" stroke-width="1" fill="%23b3b3b3"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  -webkit-animation: none;
+       -o-animation: none;
+          animation: none;
+}
+.table.matches tbody tr.league-data span.match-name {
+  display: none;
+}
 .table.matches tbody tr th.league-title {
   display: block;
   position: absolute;
@@ -9130,21 +9200,6 @@ span.dark-icon {
   position: relative;
   top: -2px;
 }
-.table.matches tbody tr td.teams .team .cta {
-  padding: 0 3px;
-}
-.table.matches tbody tr td.teams .team .cta .btn {
-  font-size: 10px;
-  min-width: 80px;
-  border-radius: 2px;
-}
-.table.matches tbody tr td.teams .team .cta .btn:after {
-  display: inline-block;
-  content: "\e60d";
-  font-family: "LSicons";
-  font-size: 8px;
-  margin-left: 2px;
-}
 .table.matches tbody tr td.teams .team .label-goal {
   opacity: 0;
   position: absolute;
@@ -9176,6 +9231,21 @@ span.dark-icon {
 }
 .table.matches tbody tr td.teams .team.win {
   font-weight: 700;
+}
+.table.matches tbody tr td.teams .cta {
+  padding: 0 3px;
+}
+.table.matches tbody tr td.teams .cta .btn {
+  font-size: 10px;
+  min-width: 80px;
+  border-radius: 2px;
+}
+.table.matches tbody tr td.teams .cta .btn:after {
+  display: inline-block;
+  content: "\e60d";
+  font-family: "LSicons";
+  font-size: 8px;
+  margin-left: 2px;
 }
 .table.matches tbody tr td.teams.has-logo .team {
   position: relative;
@@ -9281,78 +9351,8 @@ span.dark-icon {
 .table.matches tbody tr td.win {
   font-weight: 700;
 }
-.table.matches tbody tr.live > td.time {
-  padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>');
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
-       -o-animation: ls-live-indicator-animation 1s step-end infinite;
-          animation: ls-live-indicator-animation 1s step-end infinite;
-}
-.table.matches tbody tr.live.paused > td.time {
-  padding-left: 15px;
-  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23b3b3b3" stroke-width="1" fill="%23b3b3b3"/></svg>');
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  -webkit-animation: none;
-       -o-animation: none;
-          animation: none;
-}
-.table.matches tbody tr.league-data span.match-name {
-  display: none;
-}
 .table.matches tbody:hover tr.league-data > th .title span.match-name {
   display: inline-block;
-}
-.table.matches tr.league-data th {
-  padding: 0;
-  vertical-align: middle !important;
-  white-space: nowrap;
-}
-.table.matches tr.league-data th .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-}
-.table.matches tr.league-data th a {
-  color: #ffffff;
-}
-.table.matches tr.league-data th span {
-  color: #51575a;
-}
-.table.matches tr.league-data th .tools {
-  float: right;
-  padding: 0;
-}
-.table.matches tr.league-data th .tools span a.fav {
-  font-size: 14px;
-}
-.table.matches tr.league-data th .tools a {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 500;
-}
-.table.matches tr.league-data th .tools a i {
-  font-size: 18px;
-  line-height: 16px;
-  vertical-align: middle;
-  color: rgba(255, 255, 255, 0.6);
-}
-.table.matches tr.league-data th .tools a i.icon-standings {
-  margin-right: 5px;
-  position: relative;
-  top: -1px;
-}
-.table.matches tr.league-data th .tools a.active {
-  color: #5da400;
-}
-.table.matches tr.league-data th .tools a.active.fav span {
-  color: #ffc600;
-  font-size: 14px;
-}
-.table.matches tr.league-data th .tools a.live i {
-  color: #e33000;
 }
 .table.matches.table-condensed tr td.prediction .btn-group .btn {
   line-height: 15px;
