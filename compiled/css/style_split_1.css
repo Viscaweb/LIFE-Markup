@@ -11329,7 +11329,15 @@ span.dark-icon {
 }
 
 .table.matches tbody tr td.teams .cta {
-  padding: 0 3px;
+  padding: 2px 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .table.matches tbody tr td.teams .cta .btn {
