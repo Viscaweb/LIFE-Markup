@@ -7500,6 +7500,21 @@ span.dark-icon {
   position: relative;
   top: -2px;
 }
+.table.matches tbody tr td.teams .team .cta {
+  padding: 0 3px;
+}
+.table.matches tbody tr td.teams .team .cta .btn {
+  font-size: 10px;
+  min-width: 80px;
+  border-radius: 2px;
+}
+.table.matches tbody tr td.teams .team .cta .btn:after {
+  display: inline-block;
+  content: "\e60d";
+  font-family: "LSicons";
+  font-size: 8px;
+  margin-left: 2px;
+}
 .table.matches tbody tr td.teams .team .label-goal {
   opacity: 0;
   position: absolute;
@@ -8180,21 +8195,6 @@ span.dark-icon {
 }
 .table tbody tr > td.score span.icon-expand-h {
   color: #d6d6d6;
-}
-.table tbody tr > td.cta {
-  padding: 0 3px;
-}
-.table tbody tr > td.cta .btn {
-  font-size: 10px;
-  min-width: 80px;
-  border-radius: 2px;
-}
-.table tbody tr > td.cta .btn:after {
-  display: inline-block;
-  content: "\e60d";
-  font-family: "LSicons";
-  font-size: 8px;
-  margin-left: 2px;
 }
 .table tbody tr > td.teams .score {
   position: relative;
