@@ -9503,10 +9503,6 @@ button.close {
   color: #afafaf;
 }
 
-.header .navbar.navbar-fixed-top .navbar-form .input-search .form-control:-ms-input-placeholder {
-  color: #afafaf;
-}
-
 .header .navbar.navbar-fixed-top .navbar-form .input-search .form-control::placeholder {
   color: #afafaf;
 }
@@ -11059,1321 +11055,7 @@ span.dark-icon {
   margin-bottom: 18px !important;
 }
 
-.table {
-  width: 100%;
-  margin-bottom: 0px;
-  /*TR HIGHLIGHT STYLES*/
-  /*TD HIGHLIGHT STYLES*/
-  /*MATCHES TABLES*/
-  /*STANDING TABLES*/
-}
-
-.table > thead > tr > th {
-  border-bottom: none;
-  vertical-align: middle;
-}
-
-.table tr td.color-success,
-.table tr th.color-success {
-  color: #87b762;
-}
-
-.table tr td span.icon,
-.table tr th span.icon {
-  margin-right: 5px;
-}
-
-.table tr td .country i,
-.table tr th .country i {
-  margin-right: 5px;
-  position: relative;
-  top: 0px;
-}
-
-.table tr td.number,
-.table tr th.number {
-  text-align: center;
-}
-
-.table tr th.divider {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.table tr th.divider.divider-dark {
-  background: #d9d9d9;
-}
-
-.table tr td.stage {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.table tr td.stage img {
-  max-width: 18px;
-  margin-right: 3px;
-}
-
-.table tr td.league img {
-  max-width: 18px;
-}
-
-.table tr td.hour {
-  font-weight: 600;
-  text-align: center;
-}
-
-.table tr td.date {
-  text-align: center;
-}
-
-.table tr.league-data > th {
-  cursor: pointer;
-  background-color: #767e82;
-  text-align: left;
-  color: #ffffff;
-  text-transform: none;
-  padding: 0;
-  font-size: 0;
-  font-weight: 700 !important;
-  border-top: 0;
-  border-bottom: 1px solid #6c7477;
-}
-
-.table tr.league-data > th a {
-  color: #ffffff;
-}
-
-.table tr.league-data > th span {
-  color: #51575a;
-}
-
-.table tr.league-data > th > .title {
-  display: inline-block;
-  font-size: 0;
-  padding: 0 2px;
-  max-width: 76%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.table tr.league-data > th > .title > a,
-.table tr.league-data > th > .title > span {
-  font-size: 12px;
-  display: inline-block;
-  padding: 3px 4px;
-  line-height: 19px;
-  color: #ffffff;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.table tr.league-data > th > .title span img {
-  max-width: 17px;
-  max-height: 17px;
-  margin-right: 5px;
-}
-
-.table tr.league-data > th > .title .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-}
-
-.table tr.league-data > th > .title .country span.icon {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 14px;
-  position: relative;
-  top: 2px;
-  margin-right: 10px;
-}
-
-.table tr.league-data > th > a.dropdown-toggle {
-  padding: 3px 7px;
-  line-height: 19px;
-  font-size: 12px;
-  float: left;
-}
-
-.table tr.league-data > th > a.dropdown-toggle i {
-  font-size: 10px;
-  display: inline-block;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -o-transition: -o-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-}
-
-.table tr.league-data > th > a.dropdown-toggle:hover {
-  background-color: #51575a;
-}
-
-.table tr.league-data > th .tools {
-  float: right;
-  padding: 0 !important;
-  font-size: 0;
-}
-
-.table tr.league-data > th .tools span {
-  display: inline-block;
-}
-
-.table tr.league-data > th .tools span a.fav {
-  font-size: 14px;
-  vertical-align: top;
-  line-height: 19px;
-  width: 30px;
-  text-align: center;
-}
-
-.table tr.league-data > th .tools a {
-  display: inline-block;
-  padding: 3px 4px;
-  color: #ffffff;
-  font-weight: 400;
-  line-height: 19px;
-  font-size: 12px;
-}
-
-.table tr.league-data > th .tools a i {
-  font-size: 18px;
-  vertical-align: middle;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.table tr.league-data > th .tools a:hover {
-  background-color: #51575a;
-  color: #ffffff;
-}
-
-.table tr.league-data > th .tools a:hover.fav span {
-  color: #ffc600;
-}
-
-.table tr.league-data > th .tools a.fav {
-  vertical-align: middle;
-}
-
-.table tr.league-data > th .tools a.fav span {
-  font-size: 15px;
-  display: inline-block;
-}
-
-.table tr.league-data > th .tools a.active {
-  color: #5da400;
-}
-
-.table tr.league-data > th .tools a.active.fav span {
-  font-size: 14px;
-  color: #ffc600;
-}
-
-.table tr.league-data > th .tools a.live i {
-  color: #e33000;
-}
-
-.table tr.league-data:hover > th {
-  background-color: #5d6467 !important;
-}
-
-.table tr.league-data.league-data-heading > th {
-  vertical-align: middle !important;
-  background-color: #5da400;
-  color: #ffffff;
-  font-weight: 700;
-  border-bottom: 1px solid #519000;
-}
-
-.table tr.league-data.league-data-heading > th a {
-  color: #ffffff;
-}
-
-.table tr.league-data.league-data-heading > th a.title {
-  margin-right: 5px;
-  line-height: 19px;
-}
-
-.table tr.league-data.league-data-heading > th > .title span.icon {
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0;
-  position: relative;
-  top: 1px;
-}
-
-.table tr.league-data.league-data-heading > th > .title .help-icon {
-  line-height: 17px;
-  position: relative;
-  top: 1px;
-}
-
-.table tr.league-data.league-data-heading > th > .title .help-icon span {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.table tr.league-data.league-data-heading > th > .title .help-icon:hover span {
-  color: #ffffff;
-}
-
-.table tr.league-data.league-data-heading > th span {
-  color: rgba(0, 0, 0, 0.1);
-}
-
-.table tr.league-data.league-data-heading > th span i {
-  color: #ffffff;
-}
-
-.table tr.league-data.league-data-heading:hover > th {
-  background-color: #519000 !important;
-}
-
-.table tr.empty-row td {
-  text-align: center;
-  border-bottom-width: 1px;
-}
-
-.table tr.empty-row td .icon {
-  color: #b3b3b3;
-}
-
-.table tbody tr > th {
-  background-color: #eaeaea;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.table tbody tr > th span.match-name {
-  color: rgba(255, 255, 255, 0.6) !important;
-  font-weight: 500;
-  display: none;
-}
-
-.table tbody tr > th:hover span.match-name {
-  display: inline-block;
-}
-
-.table tbody tr > td.number {
-  font-weight: 600;
-}
-
-.table tbody tr > td.number .extra-info {
-  font-width: 400;
-  color: rgba(92, 92, 92, 0.5);
-}
-
-.table tbody tr > td.icon {
-  text-align: center;
-  padding: 0 4px;
-  color: #808080;
-  background-color: #f5f5f5;
-}
-
-.table tbody tr > td.icon .icon {
-  font-size: 14px;
-  margin: 0;
-}
-
-.table tbody tr > td.time {
-  color: rgba(92, 92, 92, 0.6);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.table tbody tr > td.time i {
-  color: #c2c2c2;
-}
-
-.table tbody tr > td.view-more {
-  background-color: #ffffff;
-}
-
-.table tbody tr > td.prediction .btn-group-justified {
-  max-width: 74px;
-}
-
-.table tbody tr > td.score {
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #fafafa;
-  text-align: center;
-  padding: 0;
-}
-
-.table tbody tr > td.score > a {
-  position: relative;
-  display: block;
-  line-height: 28px;
-  color: #5c5c5c;
-}
-
-.table tbody tr > td.score > a.has-score-details:after {
-  position: absolute;
-  right: -1px;
-  bottom: -3px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid #b8b8b8;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.table tbody tr > td.score.hour {
-  text-align: center;
-}
-
-.table tbody tr > td.score.hour > a {
-  color: rgba(92, 92, 92, 0.7);
-}
-
-.table tbody tr > td.score span.icon-expand-h {
-  color: #d6d6d6;
-}
-
-.table tbody tr > td.cta {
-  padding: 0 3px;
-}
-
-.table tbody tr > td.cta .btn {
-  font-size: 10px;
-  min-width: 80px;
-  border-radius: 2px;
-}
-
-.table tbody tr > td.cta .btn:after {
-  display: inline-block;
-  content: "\e60d";
-  font-family: "LSicons";
-  font-size: 8px;
-  margin-left: 2px;
-}
-
-.table tbody tr > td.teams .score {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 45px;
-  -ms-flex: 0 0 45px;
-  flex: 0 0 45px;
-  font-size: 14px;
-  font-weight: 700;
-  min-height: 28px;
-  background-color: #fafafa;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.table tbody tr > td.teams .score > span {
-  display: inline-block;
-}
-
-.table tbody tr > td.teams .score > span.versus {
-  margin: 0 3px;
-}
-
-.table tbody tr > td.teams .score > span.icon-expand-h {
-  color: #d6d6d6;
-}
-
-.table tbody tr > td.tools {
-  padding: 0px;
-  text-align: right;
-  font-size: 0;
-  white-space: nowrap;
-}
-
-.table tbody tr > td.tools > a,
-.table tbody tr > td.tools div > a {
-  display: inline-block;
-  font-size: 16px;
-  padding: 0 1px;
-  color: rgba(204, 204, 204, 0.35);
-  line-height: 15px;
-  vertical-align: middle;
-  position: relative;
-}
-
-.table tbody tr > td.tools > a.available,
-.table tbody tr > td.tools div > a.available {
-  color: #cccccc;
-}
-
-.table tbody tr > td.tools > a.available.live,
-.table tbody tr > td.tools div > a.available.live {
-  color: #e33000;
-}
-
-.table tbody tr > td.tools > a.available.live:hover,
-.table tbody tr > td.tools div > a.available.live:hover {
-  color: #b02500;
-}
-
-.table tbody tr > td.tools > a.available .comment-number,
-.table tbody tr > td.tools div > a.available .comment-number {
-  color: #ffffff;
-}
-
-.table tbody tr > td.tools > a:hover,
-.table tbody tr > td.tools div > a:hover,
-.table tbody tr > td.tools > a:focus,
-.table tbody tr > td.tools div > a:focus {
-  color: #808080;
-}
-
-.table tbody tr > td.tools > a:hover.available .comment-number,
-.table tbody tr > td.tools div > a:hover.available .comment-number,
-.table tbody tr > td.tools > a:focus.available .comment-number,
-.table tbody tr > td.tools div > a:focus.available .comment-number {
-  color: #ffffff;
-}
-
-.table tbody tr > td.tools > a.active,
-.table tbody tr > td.tools div > a.active {
-  color: #5da400;
-}
-
-.table tbody tr > td.tools > a.active:hover,
-.table tbody tr > td.tools div > a.active:hover {
-  color: #407100;
-}
-
-.table tbody tr > td.tools.tools-1 {
-  max-width: 20px;
-}
-
-.table tbody tr > td.tools:last-child {
-  padding-right: 4px;
-}
-
-.table tbody tr > td.tools .data-multiple {
-  text-align: right;
-}
-
-.table tbody tr > td.favorite {
-  text-align: center;
-}
-
-.table tbody tr > td.logo img {
-  max-width: 20px;
-}
-
-.table tbody tr > td.action-icon {
-  text-align: center;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.table tbody tr > td.minute-range {
-  background-color: #f7f7f7;
-}
-
-.table tbody tr > td.full-sportsbook-logo img {
-  max-width: 50px;
-}
-
-.table tbody tr > td.odd {
-  border-right: 1px solid #f2f2f2;
-  border-left: 1px solid #f2f2f2;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.table tbody tr > td.odd.odd-no-border {
-  border-left: none;
-  border-right: none;
-}
-
-.table tbody tr > td.odd > .odd-part {
-  color: #8fc6ff;
-}
-
-.table tbody tr > td.odd .moneyline {
-  display: block;
-  text-align: right;
-  line-height: 16px;
-  color: #0053a8;
-}
-
-.table tbody tr > td.odd .spread {
-  float: left;
-  display: block;
-  width: 50%;
-  text-align: center;
-  line-height: 16px;
-  color: #0053a8;
-}
-
-.table tbody tr > td.odd .totals {
-  float: right;
-  display: block;
-  width: 50%;
-  text-align: right;
-  line-height: 16px;
-  color: #0053a8;
-}
-
-.table tbody tr > td.odd .totals-ou {
-  display: block;
-  float: left;
-  width: 50%;
-  text-align: center;
-  line-height: 32px;
-  color: #0053a8;
-}
-
-.table tbody tr > td .odd-value {
-  color: #0053a8;
-}
-
-.table tbody tr > td.odd-type {
-  font-size: 11px;
-  text-transform: uppercase;
-  background-color: #f7f7f7;
-  text-align: center;
-  font-weight: 600;
-  height: 44px;
-}
-
-.table tbody tr > td.cell-multiple {
-  padding: 0;
-}
-
-.table tbody tr > td .data-multiple {
-  border-bottom: 1px solid #f2f2f2;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  min-height: 30px;
-  text-align: center;
-}
-
-.table tbody tr > td .data-multiple:last-child {
-  border: none;
-}
-
-.table tbody tr > td.partner-logo img {
-  max-width: 100px;
-}
-
-.table tbody tr.live td.time {
-  color: #e33000;
-}
-
-.table tbody tr.live td.time img,
-.table tbody tr.live td.time i {
-  margin-right: 3px;
-}
-
-.table tbody tr.live td.score a {
-  color: #e33000;
-}
-
-.table tbody tr.live td.teams .score {
-  color: #e33000;
-}
-
-.table tbody tr:hover td.score,
-.table tbody tr:hover td.teams .score {
-  background-color: #e6e6e6;
-}
-
-.table tbody tr.league-data > th {
-  cursor: pointer;
-  background-color: #767e82;
-  text-align: left;
-  color: #ffffff;
-  text-transform: none;
-  padding: 0;
-  font-size: 0;
-  font-weight: 700 !important;
-  border-top: 0;
-  border-bottom: 1px solid #6c7477;
-}
-
-.table tbody tr.league-data > th a {
-  color: #ffffff;
-}
-
-.table tbody tr.league-data > th span {
-  color: #51575a;
-}
-
-.table tbody tr.league-data > th > .title {
-  display: inline-block;
-  font-size: 0;
-  padding: 0 2px;
-  max-width: 76%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.table tbody tr.league-data > th > .title > a,
-.table tbody tr.league-data > th > .title > span {
-  font-size: 12px;
-  display: inline-block;
-  padding: 3px 4px;
-  line-height: 19px;
-  color: #ffffff;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.table tbody tr.league-data > th > .title span img {
-  max-width: 17px;
-  max-height: 17px;
-  margin-right: 5px;
-}
-
-.table tbody tr.league-data > th > .title .country {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-}
-
-.table tbody tr.league-data > th > .title .country span.icon {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 14px;
-  position: relative;
-  top: 2px;
-  margin-right: 10px;
-}
-
-.table tbody tr.league-data > th > a.dropdown-toggle {
-  padding: 3px 7px;
-  line-height: 19px;
-  font-size: 12px;
-  float: left;
-}
-
-.table tbody tr.league-data > th > a.dropdown-toggle i {
-  font-size: 10px;
-  display: inline-block;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -o-transition: -o-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-}
-
-.table tbody tr.league-data > th > a.dropdown-toggle:hover {
-  background-color: #51575a;
-}
-
-.table tbody tr.league-data > th .tools {
-  float: right;
-  padding: 0 !important;
-  font-size: 0;
-}
-
-.table tbody tr.league-data > th .tools span {
-  display: inline-block;
-}
-
-.table tbody tr.league-data > th .tools span a.fav {
-  font-size: 14px;
-  vertical-align: top;
-  line-height: 19px;
-  width: 30px;
-  text-align: center;
-}
-
-.table tbody tr.league-data > th .tools a {
-  display: inline-block;
-  padding: 3px 4px;
-  color: #ffffff;
-  font-weight: 400;
-  line-height: 19px;
-  font-size: 12px;
-}
-
-.table tbody tr.league-data > th .tools a i {
-  font-size: 18px;
-  vertical-align: middle;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.table tbody tr.league-data > th .tools a:hover {
-  background-color: #51575a;
-  color: #ffffff;
-}
-
-.table tbody tr.league-data > th .tools a:hover.fav span {
-  color: #ffc600;
-}
-
-.table tbody tr.league-data > th .tools a.fav {
-  vertical-align: middle;
-}
-
-.table tbody tr.league-data > th .tools a.fav span {
-  font-size: 15px;
-  display: inline-block;
-}
-
-.table tbody tr.league-data > th .tools a.active {
-  color: #5da400;
-}
-
-.table tbody tr.league-data > th .tools a.active.fav span {
-  font-size: 14px;
-  color: #ffc600;
-}
-
-.table tbody tr.league-data > th .tools a.live i {
-  color: #e33000;
-}
-
-.table tbody tr.league-data:hover > th {
-  background-color: #5d6467 !important;
-}
-
-.table tbody tr.league-data.league-data-heading > th {
-  vertical-align: middle !important;
-  background-color: #5da400;
-  color: #ffffff;
-  font-weight: 700;
-  border-bottom: 1px solid #519000;
-}
-
-.table tbody tr.league-data.league-data-heading > th a {
-  color: #ffffff;
-}
-
-.table tbody tr.league-data.league-data-heading > th a.title {
-  margin-right: 5px;
-  line-height: 19px;
-}
-
-.table tbody tr.league-data.league-data-heading > th > .title span.icon {
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0;
-  position: relative;
-  top: 1px;
-}
-
-.table tbody tr.league-data.league-data-heading > th > .title .help-icon {
-  line-height: 17px;
-  position: relative;
-  top: 1px;
-}
-
-.table tbody tr.league-data.league-data-heading > th > .title .help-icon span {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.table tbody tr.league-data.league-data-heading > th > .title .help-icon:hover span {
-  color: #ffffff;
-}
-
-.table tbody tr.league-data.league-data-heading > th span {
-  color: rgba(0, 0, 0, 0.1);
-}
-
-.table tbody tr.league-data.league-data-heading > th span i {
-  color: #ffffff;
-}
-
-.table tbody tr.league-data.league-data-heading:hover > th {
-  background-color: #519000 !important;
-}
-
-.table tbody tr.league-data.active > th > a.dropdown-toggle {
-  box-shadow: 5px 0 0 #5da400 inset;
-}
-
-.table tbody.empty-section tr:hover td {
-  background: inherit;
-}
-
-.table.table-condensed thead.league-data > tr > th {
-  background-color: #767e82;
-  text-align: left;
-  color: #ffffff;
-  text-transform: none;
-  padding: 0;
-  font-size: 0;
-}
-
-.table.table-condensed tr td span.icon-caret-right,
-.table.table-condensed tr td span.icon-caret-right {
-  font-size: 10px;
-}
-
-.table.table-condensed tr td.team {
-  width: auto;
-}
-
-.table.table-condensed tr td.team img {
-  max-height: 18px;
-  max-width: 18px;
-}
-
-.table tr.stats td.stat {
-  background-color: #fafafa;
-}
-
-.table tr.stats:nth-child(even) td.stat {
-  background-color: #f0f0f0;
-}
-
-.table tr.stats:hover td.stat {
-  background-color: #f0f0f0;
-}
-
-.table tr.stats:hover td.stat:hover {
-  background-color: #e6e6e6;
-}
-
-.table tr.stats:hover:nth-child(even) td.stat {
-  background-color: #e6e6e6;
-}
-
-.table tr.stats:hover:nth-child(even) td.stat:hover {
-  background-color: #dbdbdb;
-}
-
-.table > tbody > tr {
-  /*&.updated{
-        animation-name: progressiveHighlight;
-        animation-duration: 4s;
-        animation-delay: 4s;
-      }*/
-}
-
-.table > tbody > tr.highlight {
-  background-color: #fff4ce !important;
-}
-
-.table > tbody > tr.highlight td {
-  background-color: transparent !important;
-}
-
-.table > tbody > tr.highlight:hover {
-  background-color: #ffedaf !important;
-}
-
-.table > tbody > tr.updated {
-  -webkit-animation-name: progressiveHighlight;
-  -o-animation-name: progressiveHighlight;
-  animation-name: progressiveHighlight;
-  -webkit-animation-duration: 6s;
-  -o-animation-duration: 6s;
-  animation-duration: 6s;
-}
-
-.table > tbody > tr.updated td,
-.table > tbody > tr.updated td .score {
-  -webkit-animation-name: progressiveHighlight;
-  -o-animation-name: progressiveHighlight;
-  animation-name: progressiveHighlight;
-  -webkit-animation-duration: 6s;
-  -o-animation-duration: 6s;
-  animation-duration: 6s;
-}
-
-.table > tbody > tr.updated:hover {
-  background-color: #ffedaf !important;
-}
-
-.table > tbody > tr.selected {
-  background-color: #e3e8f1 !important;
-}
-
-.table > tbody > tr.selected td,
-.table > tbody > tr.selected td .score {
-  background-color: transparent !important;
-}
-
-.table > tbody > tr.selected:hover {
-  background-color: #cfd7e7 !important;
-}
-
-.table > tbody > tr.event-won {
-  background-color: #e9f2e2 !important;
-}
-
-.table > tbody > tr.event-won td {
-  background-color: transparent !important;
-}
-
-.table > tbody > tr.event-won:hover {
-  background-color: #d9e9cd !important;
-}
-
-.table > tbody > tr.event-lost {
-  background-color: #f5d3cf !important;
-}
-
-.table > tbody > tr.event-lost td {
-  background-color: transparent !important;
-}
-
-.table > tbody > tr.event-lost:hover {
-  background-color: #f0bcb6 !important;
-}
-
-.table > tbody > tr.event-draw {
-  background-color: #faf1e6 !important;
-}
-
-.table > tbody > tr.event-draw td {
-  background-color: transparent !important;
-}
-
-.table > tbody > tr.event-draw:hover {
-  background-color: #f5e3cc !important;
-}
-
-.table > tbody > tr.event-cancelled {
-  background-color: #e6e6e6 !important;
-}
-
-.table > tbody > tr.event-cancelled td,
-.table > tbody > tr.event-cancelled td .score {
-  background-color: transparent !important;
-}
-
-.table > tbody > tr.event-cancelled:hover {
-  background-color: #d6d6d6 !important;
-}
-
-.table > tbody > tr.event-2nd-leg td {
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.table > tbody > tr.event-won td.score,
-.table > tbody > tr.event-lost td.score,
-.table > tbody > tr.event-draw td.score,
-.table > tbody > tr.event-won td .score,
-.table > tbody > tr.event-lost td .score,
-.table > tbody > tr.event-draw td .score {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-}
-
-.table tbody tr td.highlight {
-  background-color: #fff4ce !important;
-}
-
-.table tbody tr td.selected {
-  background-color: #e3e8f1 !important;
-}
-
-.table tbody tr td.rank {
-  background-color: #f5f5f5;
-}
-
-.table tbody tr td.rank-standing-green {
-  background-color: #d1e9be !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-clear-green {
-  background-color: #e3f1d9 !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-blue {
-  background-color: #bee1ec !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-clear-blue {
-  background-color: #dcf2f9 !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-orange {
-  background-color: #f3ca88 !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-clear-orange {
-  background-color: #f6ddb4 !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-red {
-  background-color: #eebaba !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.rank-standing-clear-red {
-  background-color: #f5cdcd !important;
-  color: #5c5c5c;
-}
-
-.table tbody tr td.event-won {
-  background-color: #e9f2e2 !important;
-}
-
-.table tbody tr td.event-lost {
-  background-color: #f5d3cf !important;
-}
-
-.table tbody tr td.event-draw {
-  background-color: #faf1e6 !important;
-}
-
-.table tbody tr td.win {
-  font-weight: 700;
-}
-
-.table tbody tr td.updated {
-  -webkit-animation-name: progressiveUpdate;
-  -o-animation-name: progressiveUpdate;
-  animation-name: progressiveUpdate;
-  -webkit-animation-duration: 6s;
-  -o-animation-duration: 6s;
-  animation-duration: 6s;
-}
-
-.table tbody tr td.updated > a {
-  -webkit-animation-name: progressiveUpdateLink;
-  -o-animation-name: progressiveUpdateLink;
-  animation-name: progressiveUpdateLink;
-  -webkit-animation-duration: 6s;
-  -o-animation-duration: 6s;
-  animation-duration: 6s;
-}
-
-.table tbody tr td.teams .updated {
-  -webkit-animation-name: progressiveUpdate;
-  -o-animation-name: progressiveUpdate;
-  animation-name: progressiveUpdate;
-  -webkit-animation-duration: 6s;
-  -o-animation-duration: 6s;
-  animation-duration: 6s;
-}
-
-.table tbody tr:hover td.highlight {
-  background-color: #ffefba !important;
-}
-
-.table tbody tr:hover td.selected {
-  background-color: #d5ddea !important;
-}
-
-.table tbody tr:hover td.event-won {
-  background-color: #deecd4 !important;
-}
-
-.table tbody tr:hover td.event-lost {
-  background-color: #f1c4be !important;
-}
-
-.table tbody tr:hover td.event-draw {
-  background-color: #f7e7d5 !important;
-}
-
-.table tbody tr:hover td:hover.highlight {
-  background-color: #ffeba5 !important;
-}
-
-.table tbody tr:hover td:hover.selected {
-  background-color: #c8d2e3 !important;
-}
-
-.table tbody tr:hover td:hover.event-won {
-  background-color: #d4e5c6 !important;
-}
-
-.table tbody tr:hover td:hover.event-lost {
-  background-color: #eeb4ad !important;
-}
-
-.table tbody tr:hover td:hover.event-draw {
-  background-color: #f3dec4 !important;
-}
-
-.table > tbody > tr td {
-  vertical-align: middle;
-}
-
-.table > tbody > tr td > span.icon-arrow-down,
-.table > tbody > tr td > span.icon-arrow-up,
-.table > tbody > tr td span.icon-equal {
-  font-size: 10px;
-  margin-right: 3px;
-}
-
-.table > tbody > tr td span.icon-arrow-down {
-  color: #bd0800;
-}
-
-.table > tbody > tr td span.icon-arrow-up {
-  color: #7ab748;
-}
-
-.table > tbody > tr td span.icon-equal {
-  color: #999999;
-}
-
-.table > tbody > tr td.trend {
-  min-width: 70px;
-  padding: 0 !important;
-}
-
-.table > tbody > tr td.trend .progress {
-  margin-bottom: 0;
-}
-
-.table > tbody > tr td.event-outcome {
-  color: #ffffff;
-  width: 1%;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0;
-}
-
-.table > tbody > tr td.event-outcome a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 3px 4px 3px;
-  display: block;
-}
-
-.table > tbody > tr td.event-outcome-won {
-  background-color: #87b762 !important;
-}
-
-.table > tbody > tr td.event-outcome-draw {
-  background-color: #ebc44f !important;
-}
-
-.table > tbody > tr td.event-outcome-lost {
-  background-color: #e6523e !important;
-}
-
-.table > tbody > tr td.event-outcome-neutral {
-  background-color: #cccccc !important;
-}
-
-.table > tbody > tr td.event-outcome-live {
-  padding: 0 !important;
-  text-align: center;
-  font-size: 9px !important;
-  background-color: #e6e6e6 !important;
-  color: #e33000;
-}
-
-.table > tbody > tr td.event-outcome-live a {
-  color: #e33000;
-}
-
-.table > tbody > tr td.event-outcome-upcoming {
-  background-color: #e6e6e6 !important;
-  color: #ffffff;
-}
-
-.table > tbody > tr td.event-leg {
-  background-color: #dedede !important;
-  font-weight: 700;
-  text-align: center;
-}
-
-.table > tbody > tr:hover td.event-outcome-won {
-  background-color: #87b762 !important;
-  color: #ffffff;
-  width: 1%;
-  text-transform: uppercase;
-}
-
-.table > tbody > tr:hover td.event-outcome-draw {
-  background-color: #ebc44f !important;
-  color: #ffffff;
-  width: 1%;
-  text-transform: uppercase;
-}
-
-.table > tbody > tr:hover td.event-outcome-lost {
-  background-color: #e6523e !important;
-  color: #ffffff;
-  width: 1%;
-  text-transform: uppercase;
-}
-
-.table > tbody > tr:hover td.event-outcome-live {
-  padding: 0 !important;
-  text-align: center;
-  font-size: 9px !important;
-  background-color: #e6e6e6 !important;
-  color: #e33000;
-  width: 1%;
-  text-transform: uppercase;
-}
-
-.table > tbody > tr:hover td.event-outcome-upcoming {
-  background-color: #e6e6e6 !important;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.table > tbody > tr:hover td:hover.event-outcome-won {
-  background-color: #7cb154 !important;
-}
-
-.table > tbody > tr:hover td:hover.event-outcome-draw {
-  background-color: #e9be3d !important;
-}
-
-.table > tbody > tr:hover td:hover.event-outcome-lost {
-  background-color: #e4422c !important;
-}
-
-.table > tbody > tr:hover td:hover.event-outcome-live {
-  background-color: #dbdbdb !important;
-}
-
-.table > tbody > tr:hover td:hover.event-outcome-upcoming {
-  background-color: #dbdbdb !important;
-}
-
-.table > tbody > tr:hover td:hover.event-leg {
-  background-color: #d4d4d4 !important;
-}
-
-.table tbody.open tr.league-data a.dropdown-toggle i {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.table.no-border tr > td {
-  border: 0;
-}
-
-.table.no-border tr > td.event-outcome {
-  box-shadow: 1px -1px 0 #ffffff inset;
-}
-
-.table.table-odds tbody tr td.logo {
-  padding: 0 0 1px;
-  vertical-align: middle;
-}
-
-.table.table-odds tbody tr td.best-odd {
-  font-weight: 700;
-}
+/*MATCHES TABLES*/
 
 .table.matches {
   /*MY GAMES TABLES*/
@@ -12830,20 +11512,7 @@ span.dark-icon {
   min-height: 46px;
 }
 
-.table.linked-rows tr td.hour,
-.table.linked-rows tr td.time,
-.table.linked-rows tr td.team,
-.table.linked-rows tr td.score,
-.table.linked-rows tr td.half-time-score,
-.table.linked-rows tr td.event-outcome,
-.table.linked-rows tr td.date,
-.table.linked-rows tr td.league,
-.table.linked-rows tr td.stage,
-.table.linked-rows tr td.logo,
-.table.linked-rows tr td.league-logo,
-.table.linked-rows tr td.icon {
-  cursor: pointer;
-}
+/*STANDING TABLES*/
 
 .table.table-standing thead tr th,
 .table.table-standing tbody tr th {
@@ -12946,6 +11615,1165 @@ span.dark-icon {
   -webkit-animation: ls-live-indicator-animation 1s step-end infinite;
   -o-animation: ls-live-indicator-animation 1s step-end infinite;
   animation: ls-live-indicator-animation 1s step-end infinite;
+}
+
+.table.predictions tbody tr.prediction-won td.icon {
+  background-color: #87b762 !important;
+}
+
+.table.predictions tbody tr.prediction-won td.icon .icon {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.table.predictions tbody tr.prediction-lost td.icon {
+  background-color: #e6523e !important;
+}
+
+.table.predictions tbody tr.prediction-lost td.icon .icon {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.table.predictions tbody tr.prediction-cancelled td.icon {
+  background-color: #e6e6e6 !important;
+}
+
+.table.predictions tbody tr td.league-logo {
+  padding: 0 3px;
+}
+
+.table.predictions tbody tr td.league-logo img {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.table.table-odds tbody tr td.logo {
+  padding: 0 0 1px;
+  vertical-align: middle;
+}
+
+.table.table-odds tbody tr td.best-odd {
+  font-weight: 700;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0px;
+  /*TR HIGHLIGHT STYLES*/
+  /*TD HIGHLIGHT STYLES*/
+}
+
+.table > thead > tr > th {
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+.table tr.league-data > th {
+  cursor: pointer;
+  background-color: #767e82;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+  padding: 0;
+  font-size: 0;
+  font-weight: 700 !important;
+  border-top: 0;
+  border-bottom: 1px solid #6c7477;
+}
+
+.table tr.league-data > th a {
+  color: #ffffff;
+}
+
+.table tr.league-data > th span {
+  color: #51575a;
+}
+
+.table tr.league-data > th > .title {
+  display: inline-block;
+  font-size: 0;
+  padding: 0 2px;
+  max-width: 76%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.table tr.league-data > th > .title > a,
+.table tr.league-data > th > .title > span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 3px 4px;
+  line-height: 19px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table tr.league-data > th > .title span img {
+  max-width: 17px;
+  max-height: 17px;
+  margin-right: 5px;
+}
+
+.table tr.league-data > th > .title .country {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.table tr.league-data > th > .title .country span.icon {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 14px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
+.table tr.league-data > th > a.dropdown-toggle {
+  padding: 3px 7px;
+  line-height: 19px;
+  font-size: 12px;
+  float: left;
+}
+
+.table tr.league-data > th > a.dropdown-toggle i {
+  font-size: 10px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+}
+
+.table tr.league-data > th > a.dropdown-toggle:hover {
+  background-color: #51575a;
+}
+
+.table tr.league-data > th .tools {
+  float: right;
+  padding: 0 !important;
+  font-size: 0;
+}
+
+.table tr.league-data > th .tools span {
+  display: inline-block;
+}
+
+.table tr.league-data > th .tools span a.fav {
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 19px;
+  width: 30px;
+  text-align: center;
+}
+
+.table tr.league-data > th .tools a {
+  display: inline-block;
+  padding: 3px 4px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 12px;
+}
+
+.table tr.league-data > th .tools a i {
+  font-size: 18px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.table tr.league-data > th .tools a:hover {
+  background-color: #51575a;
+  color: #ffffff;
+}
+
+.table tr.league-data > th .tools a:hover.fav span {
+  color: #ffc600;
+}
+
+.table tr.league-data > th .tools a.fav {
+  vertical-align: middle;
+}
+
+.table tr.league-data > th .tools a.fav span {
+  font-size: 15px;
+  display: inline-block;
+}
+
+.table tr.league-data > th .tools a.active {
+  color: #5da400;
+}
+
+.table tr.league-data > th .tools a.active.fav span {
+  font-size: 14px;
+  color: #ffc600;
+}
+
+.table tr.league-data > th .tools a.live i {
+  color: #e33000;
+}
+
+.table tr.league-data:hover > th {
+  background-color: #5d6467 !important;
+}
+
+.table tr.league-data.league-data-heading > th {
+  vertical-align: middle !important;
+  background-color: #5da400;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 1px solid #519000;
+}
+
+.table tr.league-data.league-data-heading > th a {
+  color: #ffffff;
+}
+
+.table tr.league-data.league-data-heading > th a.title {
+  margin-right: 5px;
+  line-height: 19px;
+}
+
+.table tr.league-data.league-data-heading > th > .title span.icon {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+
+.table tr.league-data.league-data-heading > th > .title .help-icon {
+  line-height: 17px;
+  position: relative;
+  top: 1px;
+}
+
+.table tr.league-data.league-data-heading > th > .title .help-icon span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.table tr.league-data.league-data-heading > th > .title .help-icon:hover span {
+  color: #ffffff;
+}
+
+.table tr.league-data.league-data-heading > th span {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.table tr.league-data.league-data-heading > th span i {
+  color: #ffffff;
+}
+
+.table tr.league-data.league-data-heading:hover > th {
+  background-color: #519000 !important;
+}
+
+.table tr.league-data.active > th > a.dropdown-toggle {
+  box-shadow: 5px 0 0 #5da400 inset;
+}
+
+.table tr.empty-row td {
+  text-align: center;
+  border-bottom-width: 1px;
+}
+
+.table tr.empty-row td .icon {
+  color: #b3b3b3;
+}
+
+.table tr th.color-success,
+.table tr td.color-success {
+  color: #87b762;
+}
+
+.table tr th span.icon,
+.table tr td span.icon {
+  margin-right: 5px;
+}
+
+.table tr th .country i,
+.table tr td .country i {
+  margin-right: 5px;
+  position: relative;
+  top: 0px;
+}
+
+.table tr th.number,
+.table tr td.number {
+  text-align: center;
+}
+
+.table tr th.divider {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.table tr th.divider.divider-dark {
+  background: #d9d9d9;
+}
+
+.table tr td.stage {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table tr td.stage img {
+  max-width: 18px;
+  margin-right: 3px;
+}
+
+.table tr td.league img {
+  max-width: 18px;
+}
+
+.table tr td.hour {
+  font-weight: 600;
+  text-align: center;
+}
+
+.table tr td.date {
+  text-align: center;
+}
+
+.table tbody tr > th {
+  background-color: #eaeaea;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.table tbody tr > th span.match-name {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 500;
+  display: none;
+}
+
+.table tbody tr > th:hover span.match-name {
+  display: inline-block;
+}
+
+.table tbody tr > td.number {
+  font-weight: 600;
+}
+
+.table tbody tr > td.number .extra-info {
+  font-weight: 400;
+  color: rgba(92, 92, 92, 0.5);
+}
+
+.table tbody tr > td.icon {
+  text-align: center;
+  padding: 0 4px;
+  color: #808080;
+  background-color: #f5f5f5;
+}
+
+.table tbody tr > td.icon .icon {
+  font-size: 14px;
+  margin: 0;
+}
+
+.table tbody tr > td.time {
+  color: rgba(92, 92, 92, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.table tbody tr > td.time i {
+  color: #c2c2c2;
+}
+
+.table tbody tr > td.view-more {
+  background-color: #ffffff;
+}
+
+.table tbody tr > td.prediction .btn-group-justified {
+  max-width: 74px;
+}
+
+.table tbody tr > td.score {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 0;
+}
+
+.table tbody tr > td.score > a {
+  position: relative;
+  display: block;
+  line-height: 28px;
+  color: #5c5c5c;
+}
+
+.table tbody tr > td.score > a.has-score-details:after {
+  position: absolute;
+  right: -1px;
+  bottom: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #b8b8b8;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.table tbody tr > td.score.hour {
+  text-align: center;
+}
+
+.table tbody tr > td.score.hour > a {
+  color: rgba(92, 92, 92, 0.7);
+}
+
+.table tbody tr > td.score span.icon-expand-h {
+  color: #d6d6d6;
+}
+
+.table tbody tr > td.cta {
+  padding: 0 3px;
+}
+
+.table tbody tr > td.cta .btn {
+  font-size: 10px;
+  min-width: 80px;
+  border-radius: 2px;
+}
+
+.table tbody tr > td.cta .btn:after {
+  display: inline-block;
+  content: "\e60d";
+  font-family: "LSicons";
+  font-size: 8px;
+  margin-left: 2px;
+}
+
+.table tbody tr > td.teams .score {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45px;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  font-size: 14px;
+  font-weight: 700;
+  min-height: 28px;
+  background-color: #fafafa;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.table tbody tr > td.teams .score > span {
+  display: inline-block;
+}
+
+.table tbody tr > td.teams .score > span.versus {
+  margin: 0 3px;
+}
+
+.table tbody tr > td.teams .score > span.icon-expand-h {
+  color: #d6d6d6;
+}
+
+.table tbody tr > td.tools {
+  padding: 0px;
+  text-align: right;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.table tbody tr > td.tools > a,
+.table tbody tr > td.tools div > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 1px;
+  color: rgba(204, 204, 204, 0.35);
+  line-height: 15px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.table tbody tr > td.tools > a.available,
+.table tbody tr > td.tools div > a.available {
+  color: #cccccc;
+}
+
+.table tbody tr > td.tools > a.available.live,
+.table tbody tr > td.tools div > a.available.live {
+  color: #e33000;
+}
+
+.table tbody tr > td.tools > a.available.live:hover,
+.table tbody tr > td.tools div > a.available.live:hover {
+  color: #b02500;
+}
+
+.table tbody tr > td.tools > a.available .comment-number,
+.table tbody tr > td.tools div > a.available .comment-number {
+  color: #ffffff;
+}
+
+.table tbody tr > td.tools > a:hover,
+.table tbody tr > td.tools div > a:hover,
+.table tbody tr > td.tools > a:focus,
+.table tbody tr > td.tools div > a:focus {
+  color: #808080;
+}
+
+.table tbody tr > td.tools > a:hover.available .comment-number,
+.table tbody tr > td.tools div > a:hover.available .comment-number,
+.table tbody tr > td.tools > a:focus.available .comment-number,
+.table tbody tr > td.tools div > a:focus.available .comment-number {
+  color: #ffffff;
+}
+
+.table tbody tr > td.tools > a.active,
+.table tbody tr > td.tools div > a.active {
+  color: #5da400;
+}
+
+.table tbody tr > td.tools > a.active:hover,
+.table tbody tr > td.tools div > a.active:hover {
+  color: #407100;
+}
+
+.table tbody tr > td.tools.tools-1 {
+  max-width: 20px;
+}
+
+.table tbody tr > td.tools:last-child {
+  padding-right: 4px;
+}
+
+.table tbody tr > td.tools .data-multiple {
+  text-align: right;
+}
+
+.table tbody tr > td.favorite {
+  text-align: center;
+}
+
+.table tbody tr > td.logo img {
+  max-width: 20px;
+}
+
+.table tbody tr > td.action-icon {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.table tbody tr > td.minute-range {
+  background-color: #f7f7f7;
+}
+
+.table tbody tr > td.full-sportsbook-logo img {
+  max-width: 50px;
+}
+
+.table tbody tr > td.odd {
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.table tbody tr > td.odd.odd-no-border {
+  border-left: none;
+  border-right: none;
+}
+
+.table tbody tr > td.odd > .odd-part {
+  color: #8fc6ff;
+}
+
+.table tbody tr > td.odd .moneyline {
+  display: block;
+  text-align: right;
+  line-height: 16px;
+  color: #0053a8;
+}
+
+.table tbody tr > td.odd .spread {
+  float: left;
+  display: block;
+  width: 50%;
+  text-align: center;
+  line-height: 16px;
+  color: #0053a8;
+}
+
+.table tbody tr > td.odd .totals {
+  float: right;
+  display: block;
+  width: 50%;
+  text-align: right;
+  line-height: 16px;
+  color: #0053a8;
+}
+
+.table tbody tr > td.odd .totals-ou {
+  display: block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #0053a8;
+}
+
+.table tbody tr > td .odd-value {
+  color: #0053a8;
+}
+
+.table tbody tr > td.odd-type {
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-weight: 600;
+  height: 44px;
+}
+
+.table tbody tr > td.cell-multiple {
+  padding: 0;
+}
+
+.table tbody tr > td .data-multiple {
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: 30px;
+  text-align: center;
+}
+
+.table tbody tr > td .data-multiple:last-child {
+  border: none;
+}
+
+.table tbody tr > td.partner-logo img {
+  max-width: 100px;
+}
+
+.table tbody tr.live td.time {
+  color: #e33000;
+}
+
+.table tbody tr.live td.time img,
+.table tbody tr.live td.time i {
+  margin-right: 3px;
+}
+
+.table tbody tr.live td.score a {
+  color: #e33000;
+}
+
+.table tbody tr.live td.teams .score {
+  color: #e33000;
+}
+
+.table tbody tr:hover td.score,
+.table tbody tr:hover td.teams .score {
+  background-color: #e6e6e6;
+}
+
+.table tbody.empty-section tr:hover td {
+  background: inherit;
+}
+
+.table.no-border tr > td {
+  border: 0;
+}
+
+.table.no-border tr > td.event-outcome {
+  box-shadow: 1px -1px 0 #ffffff inset;
+}
+
+.table.table-condensed thead.league-data > tr > th {
+  background-color: #767e82;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+  padding: 0;
+  font-size: 0;
+}
+
+.table.table-condensed tr td span.icon-caret-right,
+.table.table-condensed tr td span.icon-caret-right {
+  font-size: 10px;
+}
+
+.table.table-condensed tr td.team {
+  width: auto;
+}
+
+.table.table-condensed tr td.team img {
+  max-height: 18px;
+  max-width: 18px;
+}
+
+.table tr.stats td.stat {
+  background-color: #fafafa;
+}
+
+.table tr.stats:nth-child(even) td.stat {
+  background-color: #f0f0f0;
+}
+
+.table tr.stats:hover td.stat {
+  background-color: #f0f0f0;
+}
+
+.table tr.stats:hover td.stat:hover {
+  background-color: #e6e6e6;
+}
+
+.table tr.stats:hover:nth-child(even) td.stat {
+  background-color: #e6e6e6;
+}
+
+.table tr.stats:hover:nth-child(even) td.stat:hover {
+  background-color: #dbdbdb;
+}
+
+.table > tbody > tr {
+  /*&.updated{
+        animation-name: progressiveHighlight;
+        animation-duration: 4s;
+        animation-delay: 4s;
+      }*/
+}
+
+.table > tbody > tr.highlight {
+  background-color: #fff4ce !important;
+}
+
+.table > tbody > tr.highlight td {
+  background-color: transparent !important;
+}
+
+.table > tbody > tr.highlight:hover {
+  background-color: #ffedaf !important;
+}
+
+.table > tbody > tr.updated {
+  -webkit-animation-name: progressiveHighlight;
+  -o-animation-name: progressiveHighlight;
+  animation-name: progressiveHighlight;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table > tbody > tr.updated td,
+.table > tbody > tr.updated td .score {
+  -webkit-animation-name: progressiveHighlight;
+  -o-animation-name: progressiveHighlight;
+  animation-name: progressiveHighlight;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table > tbody > tr.updated:hover {
+  background-color: #ffedaf !important;
+}
+
+.table > tbody > tr.selected {
+  background-color: #e3e8f1 !important;
+}
+
+.table > tbody > tr.selected td,
+.table > tbody > tr.selected td .score {
+  background-color: transparent !important;
+}
+
+.table > tbody > tr.selected:hover {
+  background-color: #cfd7e7 !important;
+}
+
+.table > tbody > tr.event-won {
+  background-color: #e9f2e2 !important;
+}
+
+.table > tbody > tr.event-won td {
+  background-color: transparent !important;
+}
+
+.table > tbody > tr.event-won:hover {
+  background-color: #d9e9cd !important;
+}
+
+.table > tbody > tr.event-lost {
+  background-color: #f5d3cf !important;
+}
+
+.table > tbody > tr.event-lost td {
+  background-color: transparent !important;
+}
+
+.table > tbody > tr.event-lost:hover {
+  background-color: #f0bcb6 !important;
+}
+
+.table > tbody > tr.event-draw {
+  background-color: #faf1e6 !important;
+}
+
+.table > tbody > tr.event-draw td {
+  background-color: transparent !important;
+}
+
+.table > tbody > tr.event-draw:hover {
+  background-color: #f5e3cc !important;
+}
+
+.table > tbody > tr.event-cancelled {
+  background-color: #e6e6e6 !important;
+}
+
+.table > tbody > tr.event-cancelled td,
+.table > tbody > tr.event-cancelled td .score {
+  background-color: transparent !important;
+}
+
+.table > tbody > tr.event-cancelled:hover {
+  background-color: #d6d6d6 !important;
+}
+
+.table > tbody > tr.event-2nd-leg td {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.table > tbody > tr.event-won td.score,
+.table > tbody > tr.event-lost td.score,
+.table > tbody > tr.event-draw td.score,
+.table > tbody > tr.event-won td .score,
+.table > tbody > tr.event-lost td .score,
+.table > tbody > tr.event-draw td .score {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.table tbody tr td.highlight {
+  background-color: #fff4ce !important;
+}
+
+.table tbody tr td.selected {
+  background-color: #e3e8f1 !important;
+}
+
+.table tbody tr td.rank {
+  background-color: #f5f5f5;
+}
+
+.table tbody tr td.rank-standing-green {
+  background-color: #d1e9be !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-clear-green {
+  background-color: #e3f1d9 !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-blue {
+  background-color: #bee1ec !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-clear-blue {
+  background-color: #dcf2f9 !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-orange {
+  background-color: #f3ca88 !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-clear-orange {
+  background-color: #f6ddb4 !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-red {
+  background-color: #eebaba !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.rank-standing-clear-red {
+  background-color: #f5cdcd !important;
+  color: #5c5c5c;
+}
+
+.table tbody tr td.event-won {
+  background-color: #e9f2e2 !important;
+}
+
+.table tbody tr td.event-lost {
+  background-color: #f5d3cf !important;
+}
+
+.table tbody tr td.event-draw {
+  background-color: #faf1e6 !important;
+}
+
+.table tbody tr td.win {
+  font-weight: 700;
+}
+
+.table tbody tr td.updated {
+  -webkit-animation-name: progressiveUpdate;
+  -o-animation-name: progressiveUpdate;
+  animation-name: progressiveUpdate;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table tbody tr td.updated > a {
+  -webkit-animation-name: progressiveUpdateLink;
+  -o-animation-name: progressiveUpdateLink;
+  animation-name: progressiveUpdateLink;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table tbody tr td.teams .updated {
+  -webkit-animation-name: progressiveUpdate;
+  -o-animation-name: progressiveUpdate;
+  animation-name: progressiveUpdate;
+  -webkit-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.table tbody tr:hover td.highlight {
+  background-color: #ffefba !important;
+}
+
+.table tbody tr:hover td.selected {
+  background-color: #d5ddea !important;
+}
+
+.table tbody tr:hover td.event-won {
+  background-color: #deecd4 !important;
+}
+
+.table tbody tr:hover td.event-lost {
+  background-color: #f1c4be !important;
+}
+
+.table tbody tr:hover td.event-draw {
+  background-color: #f7e7d5 !important;
+}
+
+.table tbody tr:hover td:hover.highlight {
+  background-color: #ffeba5 !important;
+}
+
+.table tbody tr:hover td:hover.selected {
+  background-color: #c8d2e3 !important;
+}
+
+.table tbody tr:hover td:hover.event-won {
+  background-color: #d4e5c6 !important;
+}
+
+.table tbody tr:hover td:hover.event-lost {
+  background-color: #eeb4ad !important;
+}
+
+.table tbody tr:hover td:hover.event-draw {
+  background-color: #f3dec4 !important;
+}
+
+.table > tbody > tr td {
+  vertical-align: middle;
+}
+
+.table > tbody > tr td > span.icon-arrow-down,
+.table > tbody > tr td > span.icon-arrow-up,
+.table > tbody > tr td span.icon-equal {
+  font-size: 10px;
+  margin-right: 3px;
+}
+
+.table > tbody > tr td span.icon-arrow-down {
+  color: #bd0800;
+}
+
+.table > tbody > tr td span.icon-arrow-up {
+  color: #7ab748;
+}
+
+.table > tbody > tr td span.icon-equal {
+  color: #999999;
+}
+
+.table > tbody > tr td.trend {
+  min-width: 70px;
+  padding: 0 !important;
+}
+
+.table > tbody > tr td.trend .progress {
+  margin-bottom: 0;
+}
+
+.table > tbody > tr td.event-outcome {
+  color: #ffffff;
+  width: 1%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+}
+
+.table > tbody > tr td.event-outcome a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 3px 4px 3px;
+  display: block;
+}
+
+.table > tbody > tr td.event-outcome-won {
+  background-color: #87b762 !important;
+}
+
+.table > tbody > tr td.event-outcome-draw {
+  background-color: #ebc44f !important;
+}
+
+.table > tbody > tr td.event-outcome-lost {
+  background-color: #e6523e !important;
+}
+
+.table > tbody > tr td.event-outcome-neutral {
+  background-color: #cccccc !important;
+}
+
+.table > tbody > tr td.event-outcome-live {
+  padding: 0 !important;
+  text-align: center;
+  font-size: 9px !important;
+  background-color: #e6e6e6 !important;
+  color: #e33000;
+}
+
+.table > tbody > tr td.event-outcome-live a {
+  color: #e33000;
+}
+
+.table > tbody > tr td.event-outcome-upcoming {
+  background-color: #e6e6e6 !important;
+  color: #ffffff;
+}
+
+.table > tbody > tr td.event-leg {
+  background-color: #dedede !important;
+  font-weight: 700;
+  text-align: center;
+}
+
+.table > tbody > tr:hover td.event-outcome-won {
+  background-color: #87b762 !important;
+  color: #ffffff;
+  width: 1%;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr:hover td.event-outcome-draw {
+  background-color: #ebc44f !important;
+  color: #ffffff;
+  width: 1%;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr:hover td.event-outcome-lost {
+  background-color: #e6523e !important;
+  color: #ffffff;
+  width: 1%;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr:hover td.event-outcome-live {
+  padding: 0 !important;
+  text-align: center;
+  font-size: 9px !important;
+  background-color: #e6e6e6 !important;
+  color: #e33000;
+  width: 1%;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr:hover td.event-outcome-upcoming {
+  background-color: #e6e6e6 !important;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr:hover td:hover.event-outcome-won {
+  background-color: #7cb154 !important;
+}
+
+.table > tbody > tr:hover td:hover.event-outcome-draw {
+  background-color: #e9be3d !important;
+}
+
+.table > tbody > tr:hover td:hover.event-outcome-lost {
+  background-color: #e4422c !important;
+}
+
+.table > tbody > tr:hover td:hover.event-outcome-live {
+  background-color: #dbdbdb !important;
+}
+
+.table > tbody > tr:hover td:hover.event-outcome-upcoming {
+  background-color: #dbdbdb !important;
+}
+
+.table > tbody > tr:hover td:hover.event-leg {
+  background-color: #d4d4d4 !important;
+}
+
+.table tbody.open tr.league-data a.dropdown-toggle i {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.table.linked-rows tr td.hour,
+.table.linked-rows tr td.time,
+.table.linked-rows tr td.team,
+.table.linked-rows tr td.score,
+.table.linked-rows tr td.half-time-score,
+.table.linked-rows tr td.event-outcome,
+.table.linked-rows tr td.date,
+.table.linked-rows tr td.league,
+.table.linked-rows tr td.stage,
+.table.linked-rows tr td.logo,
+.table.linked-rows tr td.league-logo,
+.table.linked-rows tr td.icon {
+  cursor: pointer;
 }
 
 .table.layout-fixed {
@@ -13149,72 +12977,6 @@ span.dark-icon {
 
 .table.layout-fixed.cta-button colgroup col.score {
   width: 86px;
-}
-
-.table.league-selection {
-  border: 1px solid #f5f5f5;
-}
-
-.table.league-selection tbody tr td {
-  vertical-align: middle;
-}
-
-.table.league-selection tbody tr td.number {
-  text-align: center;
-}
-
-.table.league-selection tbody tr td.flag {
-  text-align: center;
-  padding-left: 0;
-  padding-right: 0;
-  width: 1%;
-}
-
-.table.league-selection tbody tr td.name {
-  font-weight: 600;
-}
-
-.table.league-selection tbody tr td.functions {
-  text-align: right;
-}
-
-.table.league-selection tbody tr td.functions .btn {
-  border-radius: 2px;
-}
-
-.table.league-selection tbody tr td:first-child {
-  padding: 8px;
-}
-
-.table.predictions tbody tr.prediction-won td.icon {
-  background-color: #87b762 !important;
-}
-
-.table.predictions tbody tr.prediction-won td.icon .icon {
-  font-size: 12px;
-  color: #ffffff;
-}
-
-.table.predictions tbody tr.prediction-lost td.icon {
-  background-color: #e6523e !important;
-}
-
-.table.predictions tbody tr.prediction-lost td.icon .icon {
-  font-size: 12px;
-  color: #ffffff;
-}
-
-.table.predictions tbody tr.prediction-cancelled td.icon {
-  background-color: #e6e6e6 !important;
-}
-
-.table.predictions tbody tr td.league-logo {
-  padding: 0 3px;
-}
-
-.table.predictions tbody tr td.league-logo img {
-  max-width: 16px;
-  max-height: 16px;
 }
 
 .table-width-auto {
@@ -14404,4 +14166,194 @@ span.sprite-icons.goal {
 
 span.sprite-icons.penalty-goal {
   background-position: -3px -50px;
+}
+
+span.sprite-icons.penalty-missed {
+  background-position: -254px -3px;
+}
+
+span.sprite-icons.shirt {
+  background-position: -5px -97px;
+}
+
+span.sprite-icons.comment {
+  background-position: -31px -97px;
+}
+
+span.sprite-icons.comment-more {
+  background-position: -60px -97px;
+}
+
+span.sprite-icons.shot-off {
+  background-position: -85px -97px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-on {
+  background-position: -114px -97px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-on-1 {
+  background-position: -171px -98px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-post {
+  background-position: -143px -96px;
+  height: 19px;
+}
+
+span.sprite-icons.clock {
+  background-position: -144px -121px;
+}
+
+span.sprite-icons.player-change {
+  background-position: -205px -5px;
+  width: 8px;
+}
+
+span.sprite-icons.substitution-left {
+  background-position: -233px -5px;
+  width: 8px;
+}
+
+span.sprite-icons.football-field {
+  background-position: -5px -3px;
+  width: 16px;
+  height: 19px;
+}
+
+span.sprite-icons.lineups {
+  background-position: -59px -120px;
+  height: 20px;
+}
+
+span.sprite-icons.shot-blocked {
+  background-position: -88px -121px;
+}
+
+span.sprite-icons.hit-player-wall {
+  background-position: -116px -121px;
+}
+
+span.sprite-icons.green-arrow {
+  background-position: -37px -3px;
+  width: 11px;
+}
+
+span.sprite-icons.red-arrow {
+  background-position: -64px -3px;
+  width: 11px;
+}
+
+span.sprite-icons.chairs {
+  background-position: -87px -3px;
+  width: 23px;
+}
+
+span.sprite-icons.incident-important {
+  background-position: -143px -75px;
+}
+
+span.sprite-icons.red-cross {
+  background-position: -3px -75px;
+}
+
+span.sprite-icons.yellow-cross {
+  background-position: -31px -75px;
+}
+
+span.sprite-icons.injury-back {
+  background-position: -60px -74px;
+}
+
+span.sprite-icons.players-wall {
+  background-position: -87px -74px;
+  width: 22px;
+}
+
+span.sprite-icons.funfact {
+  background-position: -115px -74px;
+  width: 22px;
+}
+
+span.sprite-icons.stadium,
+span.sprite-icons.attendance {
+  background-position: -198px -97px;
+  width: 25px;
+}
+
+span.sprite-icons.info {
+  background-position: -199px -75px;
+}
+
+span.sprite-icons.whistle {
+  background-position: -3px -27px;
+}
+
+span.sprite-icons.interrupted {
+  background-position: -31px -27px;
+}
+
+span.sprite-icons.whistle-active {
+  background-position: -31px -144px;
+}
+
+span.sprite-icons.shootouts {
+  background-position: -60px -144px;
+}
+
+span.sprite-icons.goal-assist {
+  background-position: -3px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.assist {
+  background-position: -31px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.shootout-goal {
+  background-position: -116px -26px;
+}
+
+span.sprite-icons.own-goal {
+  background-position: -171px -26px;
+}
+
+span.sprite-icons.goal-small {
+  background-position: -201px -26px;
+}
+
+span.sprite-icons.nogoal {
+  background-position: -31px -50px;
+}
+
+span.sprite-icons.shootout-missed {
+  background-position: -87px -26px;
+}
+
+span.sprite-icons.grid {
+  background-position: -199px -123px;
+}
+
+span.sprite-icons.gift {
+  background-position: -255px -122px;
+}
+
+span.sprite-icons.match-paused {
+  background-position: -116px -50px;
+}
+
+span.sprite-icons.match-play {
+  background-position: -142px -50px;
+}
+
+span.sprite-icons.match-reload {
+  background-position: -199px -50px;
+}
+
+span.sprite-icons.match-stop {
+  background-position: -171px -50px;
 }
