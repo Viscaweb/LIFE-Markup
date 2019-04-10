@@ -1,336 +1,19 @@
 /* Specific livescore Tables */
-
-// World Cup banner in MatchListing
-.wc-banner {
-  margin-bottom: @line-height-computed !important;
-}
-
-//League header style
-.league-data-style(){
-
-  > th{
-    cursor: pointer;
-    background-color: @ls-th-league-bg;
-    text-align: left;
-    color: @ls-light-color;
-    text-transform: none;
-    padding: 0;
-    font-size: 0;
-    font-weight: @font-weight-bold !important;
-    border-top: 0;
-    border-bottom: 1px solid darken(@ls-th-league-bg, 4%);
-
-    a{
-      color: @ls-light-color;
-    }
-
-    span{
-      color: darken(@ls-th-league-bg, 15%);
-    }
-
-    > .title{
-      display: inline-block;
-      font-size: 0;
-      padding: 0 2px;
-      max-width: 76%;
-      white-space: nowrap;
-      overflow: hidden;
-
-      > a, > span{
-        font-size: @ls-data-league-font-size;
-        display: inline-block;
-        padding: @ls-data-league-padding;
-        line-height: @ls-data-league-line-height;
-        color: @ls-light-color;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      span{
-
-        img{
-          max-width: 17px;
-          max-height: 17px;
-          margin-right: 5px;
-        }
-      }
-
-      .country{
-        text-transform: uppercase;
-        color: fade(@ls-th-league-color, 60%);
-        font-weight: @font-weight-normal;
-
-        span.icon{
-          color: @ls-light-color;
-          font-size: @font-size-medium;
-          line-height: @font-size-normal;
-          position: relative;
-          top: 2px;
-          margin-right: 10px;
-        }
-      }
-    }
-
-    > a.dropdown-toggle{
-      padding: @ls-data-league-arrow-padding;
-      line-height: @ls-data-league-line-height;
-      font-size: @ls-data-league-font-size;
-      float: left;
-
-      i{
-        font-size: @font-size-x-tiny;
-        display: inline-block;
-        -webkit-transition: -webkit-transform 200ms ease-out;
-        -o-transition: -o-transform 200ms ease-out;
-        transition: transform 200ms ease-out;
-      }
-
-      &:hover{
-        background-color: @ls-data-league-hover;
-      }
-    }
-
-    .tools{
-      float: right;
-      padding: 0 !important;
-      font-size: 0;
-
-      span{
-        display: inline-block;
-
-        a.fav{
-          font-size: @font-size-normal;
-          vertical-align: top;
-          line-height: @font-size-xx-large + 1px;
-          width: 30px;
-          text-align: center;
-        }
-      }
-
-      a{
-        display: inline-block;
-        padding: @ls-data-league-padding;
-        color: @ls-th-league-color;
-        font-weight: 400;
-        line-height: 19px;
-        font-size: @ls-data-league-font-size;
-
-        i{
-          font-size:  @font-size-base + 5;
-          vertical-align: middle;
-          color:  rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.2);
-        }
-
-        &:hover{
-          background-color: @ls-data-league-hover;
-          color: @ls-light-color;
-
-          &.fav {
-            span {
-              color: @ls-fav-hover;
-            }
-          }
-        }
-
-        &.fav{
-          vertical-align: middle;
-
-          span{
-            font-size: @font-size-medium;
-            display: inline-block;
-          }
-        }
-
-        &.active{
-          color: @brand-primary;
-
-          &.fav{
-
-            span{
-              font-size: @font-size-normal;
-              color: @ls-fav-hover;
-            }
-          }
-
-          &:hover{
-            // color: @ls-light-color;
-          }
-        }
-
-        &.live{
-
-          i{
-            color: @live-red;
-          }
-        }
-      }
-
-    }
-  }
-
-  &:hover{
-
-    > th{
-      background-color: darken(@ls-th-league-bg, 10%) !important;
-
-    }
-  }
-
-  &.league-data-heading{
-
-    > th{
-      vertical-align: middle !important;
-      background-color: @brand-primary;
-      color: @ls-light-color;
-      font-weight: @font-weight-bold;
-      border-bottom: 1px solid darken(@brand-primary, 4%);
-
-      a{
-        color: @ls-light-color;
-
-        &.title{
-          margin-right: 5px;
-          line-height: @ls-data-league-line-height;
-        }
-
-      }
-
-      > .title{
-        span.icon{
-          font-size: @font-size-normal;
-          line-height: @font-size-x-large;
-          margin: 0;
-          position: relative;
-          top: 1px;
-        }
-
-        .help-icon{
-          line-height: @font-size-x-large;
-          position: relative;
-          top: 1px;
-
-          span {
-            color: fade(#000000, 30%);
-          }
-
-          &:hover {
-            span {
-              color: @ls-th-league-color;
-            }
-          }
-        }
-
-      }
-
-      span{
-        color: rgba(red(@ls-dark-color),green(@ls-dark-color),blue(@ls-dark-color),0.1);
-
-        i{
-          color: @ls-light-color;
-        }
-      }
-    }
-
-    &:hover > th {
-      background-color: darken(@brand-primary, 4%) !important;
-    }
-  }
-}
-
-.league-data-active-style(){
-  > th{
-    > a.dropdown-toggle{
-      box-shadow: 5px 0 0 @active-green inset;
-    }
-  }
-}
-
-.league-data-matches-style(){
-
-  th{
-    padding: 0;
-    vertical-align: middle !important;
-    white-space: nowrap;
-
-    .country{
-      text-transform: uppercase;
-      color: fade(@ls-th-league-color, 60%);
-      font-weight: @font-weight-normal;
-    }
-
-    a{
-      color: @ls-th-league-color;
-    }
-
-    span{
-      color: darken(@ls-th-league-bg, 15%);
-    }
-
-    .tools{
-      float: right;
-      padding: 0;
-
-      span{
-
-        a.fav{
-          font-size: @font-size-normal;
-        }
-      }
-
-      a{
-        display: inline-block;
-        color: @ls-th-league-color;
-        font-weight: @font-weight-normal;
-
-        i{
-          font-size:  @font-size-xx-large;
-          line-height: @font-size-large;
-          vertical-align: middle;
-          color: fade(@ls-th-league-color, 60%);
-
-          &.icon-standings{
-            margin-right: 5px;
-            position: relative;
-            top: -1px;
-          }
-        }
-
-        &.active{
-          color: @brand-primary;
-
-          &.fav{
-
-            span{
-              color: @ls-fav-hover;
-              font-size: @font-size-normal;
-            }
-          }
-
-          &:hover{
-            //color: @ls-light-color;
-          }
-        }
-
-        &.live{
-          i{
-            color: @live-red;
-          }
-        }
-      }
-    }
-  }
-}
-
-.table{
+@import "tables/league-tables.less";
+@import "tables/matches-tables.less";
+@import "tables/standing-tables.less";
+@import "tables/predictions-tables.less";
+@import "tables/odds-tables.less";
+
+
+// General table style
+.table {
   width: 100%;
   margin-bottom: 0px;
 
-  > thead{
-
-    > tr{
-
-      > th{
+  > thead {
+    > tr {
+      > th {
         border-bottom: none;
         vertical-align: middle;
       }
@@ -339,49 +22,68 @@
 
 
   //General table style
-  tr{
+  tr {
+    //General league data & league heading style
+    &.league-data {
+      .league-data-style();
+
+      &.active {
+        .league-data-active-style();
+      }
+    }
+
+    &.empty-row {
+      td {
+        text-align: center;
+        border-bottom-width: 1px;
+
+        .icon {
+          color: darken(@ls-light-color, 30%);
+        }
+      }
+    }
+
 
     //Shared style between th and td
-    td,
-    th{
+    th, td {
 
-      &.color-success{
+      &.color-success {
         color: @brand-success;
       }
 
-      span.icon{//Icon beside text margin
+      span.icon { //Icon beside text margin
         margin-right: 5px;
       }
 
-      .country{
-        i{
+      .country {
+        i {
           margin-right: 5px;
           position: relative;
           top: 0px;
         }
       }
 
-      &.number{
+      &.number {
         text-align: center;
       }
     }
 
-    th{
+    th {
 
-      &.divider{
+      &.divider {
         text-align: center;
         text-transform: uppercase;
-        font-size:  @font-size-small;
+        font-size: @font-size-small;
         font-weight: @font-weight-bold;
 
-        &.divider-dark{
+        &.divider-dark {
           background: darken(@ls-light-color, 15%);
         }
 
       }
     }
 
-    td{
+    td {
 
       &.stage {
 
@@ -405,113 +107,96 @@
       &.hour {
         font-weight: @font-weight-semi-bold;
         text-align: center;
-      };
+      }
 
       &.date {
         text-align: center
       }
     }
-
-    //General league data & league heading style
-    &.league-data{
-      .league-data-style();
-    }
-
-    &.empty-row {
-      td {
-        text-align: center;
-        border-bottom-width: 1px;
-
-        .icon {
-          color: darken(@ls-light-color, 30%);
-        }
-      }
-    }
   }
 
   //Deep level
-  tbody{
+  tbody {
 
-    tr{
+    tr {
 
-      > th{
+      > th {
         background-color: darken(@ls-light-color, 8.3%);
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
 
-        span.match-name{
+        span.match-name {
           color: fade(@ls-th-league-color, 60%) !important;
           font-weight: @font-weight-normal;
           display: none;
         }
 
         &:hover {
-          span.match-name{
+          span.match-name {
             display: inline-block;
           }
         }
       }
 
-      > td{
-
-        &.number{
+      > td {
+        &.number {
           font-weight: @font-weight-semi-bold;
 
           .extra-info {
-            font-width: 400;
+            font-weight: 400;
             color: @text-muted;
           }
 
         }
 
-        &.icon{
+        &.icon {
           text-align: center;
           padding: 0 4px;
           color: lighten(@ls-dark-color, 50%);
           background-color: darken(@ls-light-color, 4%);
 
-          .icon{
+          .icon {
             font-size: @font-size-normal;
             margin: 0;
           }
         }
 
-        &.time{
+        &.time {
           color: fade(@text-color, 60%);
           white-space: nowrap;
           overflow: hidden;
 
-          i{
-            color: darken(@ls-light-color,24%);
+          i {
+            color: darken(@ls-light-color, 24%);
           }
         }
 
-        &.view-more{
+        &.view-more {
           background-color: @ls-light-color;
         }
 
-        &.prediction{
+        &.prediction {
 
-          .btn-group-justified{
+          .btn-group-justified {
             max-width: 74px;
           }
         }
 
-        &.score{
-          font-size:  @font-size-base + 1;
+        &.score {
+          font-size: @font-size-base + 1;
           font-weight: @font-weight-bold;
-          background-color: darken(@ls-light-color,2%);
+          background-color: darken(@ls-light-color, 2%);
           text-align: center;
           padding: 0;
 
-          > a{
-            position:relative;
+          > a {
+            position: relative;
             display: block;
             line-height: 28px;
             color: @ls-data-score-color;
 
-            &.has-score-details:after{
+            &.has-score-details:after {
               position: absolute;
               right: -1px;
               bottom: -3px;
@@ -534,8 +219,8 @@
             }
           }
 
-          span.icon-expand-h{
-            color: contrast(@ls-light-color, darken(@ls-light-color,16%), fade(#ffffff, 20%));
+          span.icon-expand-h {
+            color: contrast(@ls-light-color, darken(@ls-light-color, 16%), fade(#ffffff, 20%));
           }
         }
 
@@ -577,19 +262,19 @@
             }
 
             &.icon-expand-h {
-              color: contrast(@ls-light-color, darken(@ls-light-color,16%), fade(#ffffff, 20%));
+              color: contrast(@ls-light-color, darken(@ls-light-color, 16%), fade(#ffffff, 20%));
             }
           }
         }
 
-        &.tools{
+        &.tools {
           padding: 0px;
           text-align: right;
           font-size: 0;
           white-space: nowrap;
 
           > a,
-          div > a{
+          div > a {
             .ls-tools-icon-style();
           }
 
@@ -606,7 +291,7 @@
           }
         }
 
-        &.favorite{
+        &.favorite {
           text-align: center;
         }
 
@@ -624,7 +309,7 @@
         }
 
         &.minute-range {
-          background-color: darken(@ls-light-color,3%);
+          background-color: darken(@ls-light-color, 3%);
         }
 
         &.full-sportsbook-logo {
@@ -684,14 +369,14 @@
           }
         }
 
-        .odd-value{
+        .odd-value {
           color: @link-color;
         }
 
         &.odd-type {
           font-size: @font-size-x-small;
           text-transform: uppercase;
-          background-color: darken(@ls-light-color,3%);
+          background-color: darken(@ls-light-color, 3%);
           text-align: center;
           font-weight: @font-weight-semi-bold;
           height: 44px;
@@ -722,21 +407,21 @@
       }
 
       //LIVE STYLES
-      &.live{
+      &.live {
 
-        td{
+        td {
 
-          &.time{
+          &.time {
             color: @live-red;
 
-            img, i{
+            img, i {
               margin-right: 3px;
             }
           }
 
           &.score {
 
-            a{
+            a {
               color: @live-red;
             }
           }
@@ -747,52 +432,53 @@
         }
       }
 
-      &:hover{
-        &:nth-child(2n+1){
+      &:hover {
+        &:nth-child(2n+1) {
 
         }
 
-        &:nth-child(2n){
+        &:nth-child(2n) {
 
         }
 
         td {
 
           &.score,
-          &.teams .score  {
-            background-color: darken(@ls-light-color,10%);
+          &.teams .score {
+            background-color: darken(@ls-light-color, 10%);
           }
         }
       }
     }
 
-    //League header style in tbody
-    tr.league-data{
-      .league-data-style();
-
-      &.active{
-        .league-data-active-style();
-      }
-    }
-
     &.empty-section {
-
-        tr:hover td {
-          background: inherit;
-        }
+      tr:hover td {
+        background: inherit;
+      }
     }
   }
 
+  &.no-border {
+    tr {
+      > td {
+        border: 0;
 
-  &.table-condensed{
+        &.event-outcome {
+          box-shadow: 1px -1px 0 @ls-light-color inset;
+        }
+      }
+    }
+  }
 
-    thead{
+  &.table-condensed {
 
-      &.league-data{
+    thead {
 
-        >tr{
+      &.league-data {
 
-          >th{
+        > tr {
+
+          > th {
             background-color: lighten(@ls-greyblue-dark, 21.3%);
             text-align: left;
             color: @ls-light-color;
@@ -805,16 +491,18 @@
     }
 
 
-    tr{
+    tr {
 
-      td{
+      td {
 
-        span.icon-caret-right, span.icon-caret-right{ font-size:  @font-size-base - 3; }
+        span.icon-caret-right, span.icon-caret-right {
+          font-size: @font-size-base - 3;
+        }
 
-        &.team{
+        &.team {
           width: auto;
 
-          img{
+          img {
             max-height: 18px;
             max-width: 18px;
           }
@@ -824,41 +512,41 @@
     }
   }
 
-  tr.stats{
+  tr.stats {
 
-    td{
+    td {
 
-      &.stat{
+      &.stat {
         background-color: darken(@ls-light-color, 2%);
       }
     }
 
-    &:nth-child(even){
+    &:nth-child(even) {
 
-      td.stat{
+      td.stat {
         background-color: darken(@ls-light-color, 6%);
       }
     }
 
-    &:hover{
+    &:hover {
 
-      td{
+      td {
 
-        &.stat{
+        &.stat {
           background-color: darken(@ls-light-color, 6%);
 
-          &:hover{
+          &:hover {
             background-color: darken(@ls-light-color, 10%);
           }
         }
       }
 
-      &:nth-child(even){
+      &:nth-child(even) {
 
-        td.stat{
+        td.stat {
           background-color: darken(@ls-light-color, 10%);
 
-          &:hover{
+          &:hover {
             background-color: darken(@ls-light-color, 14%);
           }
         }
@@ -868,23 +556,24 @@
 
 
   /*TR HIGHLIGHT STYLES*/
-  > tbody{
 
-    > tr{
+  > tbody {
 
-      &.highlight{
+    > tr {
+
+      &.highlight {
         background-color: @ls-tr-highlight-bg !important;
 
-        td{
+        td {
           background-color: transparent !important;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-highlight-bg, 6%) !important;
         }
       }
 
-      &.updated{
+      &.updated {
         animation-name: progressiveHighlight;
         animation-duration: 6s;
 
@@ -894,7 +583,7 @@
           animation-duration: 6s;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-highlight-bg, 6%) !important;
         }
 
@@ -906,7 +595,7 @@
         animation-delay: 4s;
       }*/
 
-      &.selected{
+      &.selected {
         background-color: @ls-tr-selected-bg !important;
 
         td,
@@ -914,48 +603,48 @@
           background-color: transparent !important;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-selected-bg, 6%) !important;
         }
       }
 
-      &.event-won{
+      &.event-won {
         background-color: @ls-tr-won-bg !important;
 
-        td{
+        td {
           background-color: transparent !important;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-won-bg, 6%) !important;
         }
       }
 
-      &.event-lost{
+      &.event-lost {
         background-color: @ls-tr-lost-bg !important;
 
-        td{
+        td {
           background-color: transparent !important;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-lost-bg, 6%) !important;
         }
       }
 
-      &.event-draw{
+      &.event-draw {
         background-color: @ls-tr-draw-bg !important;
 
-        td{
+        td {
           background-color: transparent !important;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-draw-bg, 6%) !important;
         }
       }
 
-      &.event-cancelled{
+      &.event-cancelled {
         background-color: @ls-tr-cancelled-bg !important;
 
         td,
@@ -963,7 +652,7 @@
           background-color: transparent !important;
         }
 
-        &:hover{
+        &:hover {
           background-color: darken(@ls-tr-cancelled-bg, 6%) !important;
         }
       }
@@ -976,7 +665,7 @@
 
       &.event-won,
       &.event-lost,
-      &.event-draw{
+      &.event-draw {
         td.score,
         td .score {
           background-color: rgba(255, 255, 255, 0.25) !important;
@@ -986,17 +675,18 @@
   }
 
   /*TD HIGHLIGHT STYLES*/
-  tbody{
 
-    tr{
+  tbody {
 
-      td{
+    tr {
 
-        &.highlight{
+      td {
+
+        &.highlight {
           background-color: @ls-tr-highlight-bg !important;
         }
 
-        &.selected{
+        &.selected {
           background-color: @ls-tr-selected-bg !important;
         }
 
@@ -1004,32 +694,63 @@
           background-color: darken(@ls-light-color, 4%);
         }
 
-        &.rank-standing-green{ background-color: @ls-table-rank-standing-green !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-clear-green{ background-color: @ls-table-rank-standing-clear-green !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-blue{ background-color: @ls-table-rank-standing-blue !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-clear-blue{ background-color: @ls-table-rank-standing-clear-blue !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-orange{ background-color: @ls-table-rank-standing-orange !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-clear-orange{ background-color: @ls-table-rank-standing-clear-orange !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-red{ background-color: @ls-table-rank-standing-red !important; color: @ls-table-rank-standing-color; }
-        &.rank-standing-clear-red{ background-color: @ls-table-rank-standing-clear-red !important; color: @ls-table-rank-standing-color; }
+        &.rank-standing-green {
+          background-color: @ls-table-rank-standing-green !important;
+          color: @ls-table-rank-standing-color;
+        }
 
-        &.event-won{
+        &.rank-standing-clear-green {
+          background-color: @ls-table-rank-standing-clear-green !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.rank-standing-blue {
+          background-color: @ls-table-rank-standing-blue !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.rank-standing-clear-blue {
+          background-color: @ls-table-rank-standing-clear-blue !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.rank-standing-orange {
+          background-color: @ls-table-rank-standing-orange !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.rank-standing-clear-orange {
+          background-color: @ls-table-rank-standing-clear-orange !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.rank-standing-red {
+          background-color: @ls-table-rank-standing-red !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.rank-standing-clear-red {
+          background-color: @ls-table-rank-standing-clear-red !important;
+          color: @ls-table-rank-standing-color;
+        }
+
+        &.event-won {
           background-color: @ls-tr-won-bg !important;
         }
 
-        &.event-lost{
+        &.event-lost {
           background-color: @ls-tr-lost-bg !important;
         }
 
-        &.event-draw{
+        &.event-draw {
           background-color: @ls-tr-draw-bg !important;
         }
 
-        &.win{
+        &.win {
           font-weight: @font-weight-bold;
         }
 
-        &.updated{
+        &.updated {
           animation-name: progressiveUpdate;
           animation-duration: 6s;
 
@@ -1045,49 +766,49 @@
         }
       }
 
-      &:hover{
+      &:hover {
 
-        td{
+        td {
 
-          &.highlight{
+          &.highlight {
             background-color: darken(@ls-tr-highlight-bg, 4%) !important;
           }
 
-          &.selected{
+          &.selected {
             background-color: darken(@ls-tr-selected-bg, 4%) !important;
           }
 
-          &.event-won{
+          &.event-won {
             background-color: darken(@ls-tr-won-bg, 4%) !important;
           }
 
-          &.event-lost{
+          &.event-lost {
             background-color: darken(@ls-tr-lost-bg, 4%) !important;
           }
 
-          &.event-draw{
+          &.event-draw {
             background-color: darken(@ls-tr-draw-bg, 4%) !important;
           }
 
-          &:hover{
+          &:hover {
 
-            &.highlight{
+            &.highlight {
               background-color: darken(@ls-tr-highlight-bg, 8%) !important;
             }
 
-            &.selected{
+            &.selected {
               background-color: darken(@ls-tr-selected-bg, 8%) !important;
             }
 
-            &.event-won{
+            &.event-won {
               background-color: darken(@ls-tr-won-bg, 8%) !important;
             }
 
-            &.event-lost{
+            &.event-lost {
               background-color: darken(@ls-tr-lost-bg, 8%) !important;
             }
 
-            &.event-draw{
+            &.event-draw {
               background-color: darken(@ls-tr-draw-bg, 8%) !important;
             }
           }
@@ -1096,40 +817,48 @@
     }
   }
 
-  > tbody{
+  > tbody {
 
-    > tr{
+    > tr {
 
-      td{
+      td {
         vertical-align: middle;
 
-        > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal{
-          font-size:  @font-size-base - 3;
+        > span.icon-arrow-down, > span.icon-arrow-up, span.icon-equal {
+          font-size: @font-size-base - 3;
           margin-right: 3px;
         }
 
-        span.icon-arrow-down{ color: @ls-table-stats-down; }
-        span.icon-arrow-up{ color: @ls-table-stats-up; }
-        span.icon-equal{ color: @ls-table-stats-equal; }
+        span.icon-arrow-down {
+          color: @ls-table-stats-down;
+        }
+
+        span.icon-arrow-up {
+          color: @ls-table-stats-up;
+        }
+
+        span.icon-equal {
+          color: @ls-table-stats-equal;
+        }
 
 
-        &.trend{
+        &.trend {
           min-width: 70px;
           padding: 0 !important;
 
-          .progress{
+          .progress {
             margin-bottom: 0;
           }
         }
 
-        &.event-outcome{
+        &.event-outcome {
           color: @ls-light-color;
           width: 1%;
           text-transform: uppercase;
-          text-align:center;
+          text-align: center;
           padding: 0;
 
-          a{
+          a {
             text-decoration: none;
             color: @ls-light-color;
             padding: 3px 4px 3px;
@@ -1137,15 +866,15 @@
           }
         }
 
-        &.event-outcome-won{
+        &.event-outcome-won {
           background-color: @ls-td-won-bg !important;
         }
 
-        &.event-outcome-draw{
+        &.event-outcome-draw {
           background-color: @ls-td-draw-bg !important;
         }
 
-        &.event-outcome-lost{
+        &.event-outcome-lost {
           background-color: @ls-td-lost-bg !important;
         }
 
@@ -1153,56 +882,56 @@
           background-color: @ls-td-neutral-bg !important;
         }
 
-        &.event-outcome-live{
+        &.event-outcome-live {
           padding: 0 !important;
           text-align: center;
           font-size: @font-size-x-tiny - 1 !important;
           background-color: @ls-td-live-bg !important;
           color: @live-red;
 
-          a{
+          a {
             color: @live-red;
           }
         }
 
-        &.event-outcome-upcoming{
+        &.event-outcome-upcoming {
           background-color: @ls-td-upcoming-bg !important;
           color: @ls-light-color;
         }
 
-        &.event-leg{
-          background-color: darken(@ls-light-color,13%) !important;
+        &.event-leg {
+          background-color: darken(@ls-light-color, 13%) !important;
           font-weight: @font-weight-bold;
           text-align: center;
         }
       }
 
-      &:hover{
+      &:hover {
 
-        td{
+        td {
 
-          &.event-outcome-won{
+          &.event-outcome-won {
             background-color: @ls-td-won-bg !important;
             color: @ls-light-color;
             width: 1%;
             text-transform: uppercase;
           }
 
-          &.event-outcome-draw{
+          &.event-outcome-draw {
             background-color: @ls-td-draw-bg !important;
             color: @ls-light-color;
             width: 1%;
             text-transform: uppercase;
           }
 
-          &.event-outcome-lost{
+          &.event-outcome-lost {
             background-color: @ls-td-lost-bg !important;
             color: @ls-light-color;
             width: 1%;
             text-transform: uppercase;
           }
 
-          &.event-outcome-live{
+          &.event-outcome-live {
             padding: 0 !important;
             text-align: center;
             font-size: @font-size-x-tiny - 1 !important;
@@ -1213,35 +942,35 @@
 
           }
 
-          &.event-outcome-upcoming{
+          &.event-outcome-upcoming {
             background-color: @ls-td-upcoming-bg !important;
             color: @ls-light-color;
             text-transform: uppercase;
           }
 
-          &:hover{
+          &:hover {
 
-            &.event-outcome-won{
+            &.event-outcome-won {
               background-color: darken(@ls-td-won-bg, 4%) !important;
             }
 
-            &.event-outcome-draw{
+            &.event-outcome-draw {
               background-color: darken(@ls-td-draw-bg, 4%) !important;
             }
 
-            &.event-outcome-lost{
+            &.event-outcome-lost {
               background-color: darken(@ls-td-lost-bg, 4%) !important;
             }
 
-            &.event-outcome-live{
+            &.event-outcome-live {
               background-color: darken(@ls-td-live-bg, 4%) !important;
             }
 
-            &.event-outcome-upcoming{
+            &.event-outcome-upcoming {
               background-color: darken(@ls-td-upcoming-bg, 4%) !important;
             }
 
-            &.event-leg{
+            &.event-leg {
               background-color: darken(@ls-light-color, 17%) !important;
             }
           }
@@ -1254,9 +983,9 @@
   tbody.open {
 
     tr.league-data {
-       a.dropdown-toggle{
+      a.dropdown-toggle {
 
-        i{
+        i {
           -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
@@ -1269,470 +998,8 @@
 
   }
 
-  &.no-border{
-    tr{
-      > td{
-        border: 0;
-
-        &.event-outcome {
-          box-shadow: 1px -1px 0 @ls-light-color inset;
-        }
-      }
-    }
-  }
-
-  &.table-odds{
-
-    tbody{
-
-      tr{
-
-        td{
-
-          &.logo{
-            padding: 0 0 1px;
-            vertical-align: middle;
-          }
-
-          &.best-odd{
-            font-weight: @font-weight-bold;
-          }
-
-        }
-      }
-    }
-  }
-
-  /*MATCHES TABLES*/
-  &.matches{
-
-    // Add border bottom if there is an element in last position that is not a table
-    & ~ *:not(table):last-of-type {
-      border-top: 1px solid @table-border-color;
-    }
-
-    tbody{
-      border-top: 0;
-
-      tr{
-
-        th {
-          &.league-title {
-            display: block;
-            position: absolute;
-            background-color: darken(@ls-light-color,4%);
-            font-size: 9px;
-            font-weight: @font-weight-normal;
-            padding: 1px 6px;
-            text-transform: none;
-            z-index: 2;
-            overflow: visible;
-
-            &:after {
-              content: "";
-              position: absolute;
-              top: -1px;
-              right: -8px;
-              width: 0;
-              height: 0;
-              border-right: 8px solid transparent;
-              border-top: 15px solid darken(@ls-light-color,4%);
-            }
-
-            a {
-              display: block;
-              color : lighten(@text-color, 20%);
-              max-width: 100px;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              overflow: hidden;
-            }
-          }
-        }
-
-        td{
-          vertical-align: middle !important;
-
-          &.score{
-            min-width: 50px;
-            width: 50px;
-          }
-
-          &.odd{
-            white-space: nowrap;
-            cursor: pointer;
-          }
-
-          .odd-value{
-            color: @link-color;
-          }
-
-          span.hour{
-            font-weight: @font-weight-semi-bold;
-          }
-
-          .league{
-            max-width: 20px;
-            margin-right: 5px;
-          }
-
-          &.teams {
-            padding: 0;
-            text-align: center;
-
-            > a {
-              display: flex;
-              align-items: stretch;
-              justify-content: center;
-              color: @text-color;
-
-              &.has-score-details .score:after{
-                position: absolute;
-                right: -1px;
-                bottom: -3px;
-                content: "";
-                width: 0;
-                height: 0;
-                border-top: 5px solid transparent;
-                border-bottom: 5px solid transparent;
-                border-left: 5px solid contrast(@ls-light-color, darken(@ls-light-color, 28%), fade(#ffffff, 30%));
-                transform: rotate(45deg);
-              }
-            }
-
-            .team {
-              position: relative;
-              display: flex;
-              flex: 1 1 100%;
-              align-items: center;
-              justify-content: flex-end;
-              text-align: right;
-              padding: 5px;
-
-              img {
-                max-width: 18px;
-                max-height: 18px;
-              }
-
-              .label {
-                margin-right: 5px;
-
-                &.red-card {
-                  padding: 0 2px;
-                  background-color: #dc0000;
-                  font-weight: 500;
-                  position: relative;
-                  top: -2px;
-                }
-              }
-
-              .label-goal {
-                opacity:0;
-                position: absolute;
-                z-index: 1;
-                margin-top: 2px;
-                left: 0;
-              }
-
-              .qualified {
-                display: inline-block;
-                margin-right: 3px;
-              }
-
-              &.team2 {
-                justify-content: flex-start;
-                text-align: left;
-
-                .label {
-                  margin-left: 5px;
-                }
-
-                .label-goal {
-                  left: auto;
-                  right: 0;
-                }
-
-                .qualified {
-                  margin-right: 0;
-                  margin-left: 3px;
-                }
-              }
-
-              &.win{
-                font-weight: @font-weight-bold;
-              }
-            }
-
-            &.has-logo {
-
-              .team {
-                position: relative;
-                padding-right: 28px;
-
-                img {
-                  position: absolute;
-                  top: 50%;
-                  right: 5px;
-                  margin-top: -9px;
-                }
-
-                &.team2 {
-                  padding-right: 5px;
-                  padding-left: 28px;
-
-                  img {
-                    left: 5px;
-                    right: auto;
-                  }
-                }
-              }
-            }
-          }
-
-          &.team{
-            position: relative;
-
-            > a, div{
-              float: left;
-              color: @text-color;
-              display: inline-block;
-              max-width: 100%;
-              min-height: @ls-matches-table-team-image-size;
-            }
-
-            > a:hover {
-              color: @link-hover-color;
-            }
-
-            .red-card{
-              padding: 0 2px;
-              background-color: @ls-table-red-card;
-              font-weight: @font-weight-normal;
-              position: relative;
-              top: -2px;
-            }
-
-            img{
-              max-width: @ls-matches-table-team-image-size;
-            }
-
-            .label-goal {
-              opacity:0;
-              position: absolute;
-              z-index: 1;
-              margin-top: 2px;
-            }
-
-            &.team1{
-              text-align: right;
-
-              > a, div{
-                float: right;
-              }
-
-              .label{
-                margin-right: 5px;
-              }
-
-              .label-goal {
-                left: 0;
-              }
-
-              img{
-                margin-left: 5px;
-              }
-            }
-
-            &.team2{
-              text-align: left;
-
-              .label{
-                margin-left: 5px;
-              }
-
-              .label-goal {
-                right: 0;
-              }
-
-              img{
-                margin-right: 5px;
-              }
-            }
-
-            &.has-logo{
-
-              > a, div{
-                position: relative;
-                padding-left: 23px;
-              }
-
-              img{
-                margin-top: -9px;
-                position: absolute;
-                top: 50%;
-                left: 0;
-              }
-
-              &.team1{
-
-                > a, div{
-                  padding-left: 0;
-                  padding-right: 23px;
-                }
-
-                img{
-                  right: 0;
-                  left: auto;
-                }
-              }
-            }
-
-          }
-
-          &.half-time-score{
-            color: darken(@ls-light-color,37%);
-            white-space: nowrap;
-            text-align: center;
-          }
-
-          &.win{
-            font-weight: @font-weight-bold;
-          }
-
-        }
-
-        &.live{
-          > td.time{
-            .live-blink-gif();
-          }
-
-          &.paused{
-            > td.time{
-              .paused-gif();
-            }
-          }
-        }
-
-        &.league-data{
-
-          span.match-name {
-            display: none;
-          }
-        }
-      }
-
-      &:hover {
-
-        tr.league-data {
-          > th {
-            .title {
-              span.match-name {
-                display: inline-block;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    //League data style
-    tr.league-data{
-      .league-data-matches-style();
-    }
-
-    &.table-condensed{
-
-      tr{
-
-        td{
-
-          &.prediction{
-
-            .btn-group{
-
-              .btn{
-                line-height: @font-size-medium;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &.odds{
-      tbody{
-        tr{
-          td{
-            &.tools{
-            }
-          }
-        }
-      }
-    }
-
-    /*MY GAMES TABLES*/
-    tbody.my-games{
-
-      tr{
-
-        td{
-          padding-top: 8px;
-          padding-bottom: 8px;
-
-          span.hour{
-            font-weight: @font-weight-semi-bold;
-          }
-
-          &.team{
-            width: auto;
-            > a, div{
-              display: block;
-            }
-
-            img{
-              max-width: 20px;
-            }
-
-            &.team1{
-
-              img{
-                margin-left: 5px;
-              }
-            }
-
-            &.team2{
-
-              img{
-                margin-right: 5px;
-              }
-            }
-          }
-
-          &.score{
-            padding: 0;
-
-            > a{
-              display: block;
-              line-height: 46px;
-            }
-          }
-
-          &.teams {
-            padding: 0;
-
-            .score {
-              min-height: 46px;
-            }
-          }
-        }
-      }
-    }
-  }
-
   &.linked-rows {
-
     tr td {
-
       &.hour,
       &.time,
       &.team,
@@ -1744,131 +1011,12 @@
       &.stage,
       &.logo,
       &.league-logo,
-      &.icon{
+      &.icon {
         cursor: pointer;
       }
-
     }
   }
 
-  /*STANDING TABLES*/
-  &.table-standing{
-
-    thead, tbody{
-
-      tr{
-
-        th{
-          vertical-align: middle !important;
-        }
-      }
-    }
-
-    tbody{
-
-      tr{
-
-        td{
-          vertical-align: middle;
-
-          &.stats{
-            font-weight: @font-weight-semi-bold;
-            padding-left: 4px;
-            padding-right: 1px;
-            white-space: nowrap;
-
-            &.up{
-              color: @ls-table-stats-up;
-            }
-
-            &.down{
-              color: @ls-table-stats-down;
-            }
-          }
-
-          &.team{
-            width: auto;
-            padding: 0px 5px;
-
-
-            > a, div{
-              color: @text-color;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              min-height: @ls-standing-table-team-image-size;
-            }
-
-            img{
-              margin-right: 5px;
-              max-width: @ls-standing-table-team-image-size;
-              max-height: @ls-standing-table-team-image-size;
-              vertical-align: top;
-            }
-          }
-
-          &.live{
-            text-align: center;
-            width: 8px;
-            padding-left: 0;
-            padding-right: 0;
-          }
-
-          &.extra-points{
-            font-weight: @font-weight-semi-bold;
-            color: @ls-table-stats-up;
-            padding-left: 0;
-            padding-right: 0;
-            text-align: right;
-            white-space: nowrap;
-          }
-
-          &.points{
-            font-weight: @font-weight-bold;
-            text-align: center;
-          }
-
-          &.point-detail{
-            padding-left: 0;
-            padding-right: 0;
-
-            span{
-              font-size: @ls-table-standing-point-detail-font-size;
-              font-weight: @font-weight-bold;
-              color: @ls-table-standing-point-detail-color;
-              display: inline-block;
-              cursor: pointer;
-            }
-          }
-
-          &.point{
-            text-align: center;
-          }
-        }
-
-        &.league-data {
-
-          span.match-name {
-            display: inline-block;
-          }
-        }
-
-        &.live{
-
-          td{
-
-            &.team, &.team > a, &.team > div{
-              font-weight: @font-weight-semi-bold;
-            }
-
-            &.extra-points{
-              .live-blink-gif();
-            }
-          }
-        }
-      }
-    }
-  }
 
   &.layout-fixed {
     table-layout: fixed;
@@ -1951,64 +1099,63 @@
           width: 130px;
         }
 
-        &.number{
-          width: 25px ;
+        &.number {
+          width: 25px;
         }
 
-        &.number-with-3-digits{
+        &.number-with-3-digits {
           width: 32px;
         }
 
-        &.number-with-4-digits{
+        &.number-with-4-digits {
           width: 40px;
         }
 
-        &.rank-extra-info{
-          width: 50px ;
+        &.rank-extra-info {
+          width: 50px;
         }
 
-
-        &.event-leg{
+        &.event-leg {
           width: 25px;
         }
 
-        &.event-outcome{
+        &.event-outcome {
           width: 25px;
         }
 
-        &.league{
+        &.league {
           width: 30px;
         }
 
-        &.league-logo{
+        &.league-logo {
           width: 30px;
         }
 
-        &.logo{
+        &.logo {
           width: 22px;
         }
 
-        &.date{
-          width:44px ;
+        &.date {
+          width: 44px;
         }
 
-        &.date-dmy{
-          width:57px ;
+        &.date-dmy {
+          width: 57px;
         }
 
-        &.stage{
+        &.stage {
           width: 80px;
         }
 
-        &.stage-has-logo{
+        &.stage-has-logo {
           width: 95px;
         }
 
-        &.stage-logo-only{
+        &.stage-logo-only {
           width: 30px;
         }
 
-        &.minutes{
+        &.minutes {
           width: 60px;
         }
 
@@ -2016,23 +1163,23 @@
           width: 26px;
         }
 
-        &.odd{
-          width:54px ;
+        &.odd {
+          width: 54px;
         }
 
-        &.prediction{
-          width:84px ;
+        &.prediction {
+          width: 84px;
         }
 
-        &.prediction-status{
-          width:25px;
+        &.prediction-status {
+          width: 25px;
         }
 
-        &.trend{
+        &.trend {
           width: 70px;
         }
 
-        &.goal-minute{
+        &.goal-minute {
           width: 64px;
         }
 
@@ -2060,22 +1207,21 @@
           width: 44px;
         }
 
-        &.favorite{
+        &.favorite {
           width: 30px;
         }
 
-        &.minute-range{
+        &.minute-range {
           width: 60px;
         }
 
-        &.goals-number{
+        &.goals-number {
           width: 26px;
         }
 
         &.width-auto {
           width: auto;
         }
-
       }
     }
 
@@ -2085,113 +1231,21 @@
   }
 }
 
-.table.league-selection{
-  border: 1px solid darken(@ls-light-color, 4%);
-
-  tbody{
-    tr{
-      td{
-        vertical-align: middle;
-
-        &.number{
-          text-align: center;
-        }
-
-        &.flag{
-          text-align: center;
-          padding-left: 0;
-          padding-right: 0;
-          width: 1%;
-        }
-
-        &.name{
-          font-weight: @font-weight-semi-bold;
-        }
-
-        &.functions{
-          text-align: right;
-
-          .btn{
-            border-radius: 2px;
-          }
-        }
-
-        &:first-child{
-          padding: 8px;
-        }
-      }
-    }
-  }
-}
-
-.table.predictions{
-
-  tbody{
-    tr{
-
-      &.prediction-won{
-        td.icon{
-          background-color: @ls-td-won-bg !important;
-
-          .icon{
-            font-size: @font-size-small;
-            color: @ls-light-color;
-          }
-        }
-      }
-
-      &.prediction-lost{
-        td.icon{
-          background-color: @ls-td-lost-bg !important;
-
-          .icon{
-            font-size: @font-size-small;
-            color: @ls-light-color;
-          }
-        }
-      }
-
-      &.prediction-cancelled{
-
-        td.icon{
-          background-color: @ls-td-cancelled-bg !important;
-        }
-
-      }
-
-      td{
-
-        &.league-logo{
-          padding: 0 3px;
-
-          img{
-            max-width: 16px;
-            max-height: 16px;
-          }
-        }
-
-
-      }
-    }
-  }
-}
-
-
 .table-width-auto {
   width: auto;
 }
 
-&.popover-odd-evolution{
+&.popover-odd-evolution {
   width: 100%;
   margin-top: 3px;
 
-  .old{
+  .old {
     text-decoration: line-through;
   }
 
-  .icon{
+  .icon {
 
-    span{
+    span {
       font-size: 12px;
     }
   }

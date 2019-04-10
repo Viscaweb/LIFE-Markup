@@ -1,0 +1,427 @@
+/*MATCHES TABLES*/
+.table.matches {
+
+  // Add border bottom if there is an element in last position that is not a table
+  & ~ *:not(table):last-of-type {
+    border-top: 1px solid @table-border-color;
+  }
+
+  tbody {
+    border-top: 0;
+
+    tr {
+
+      th {
+        &.league-title {
+          display: block;
+          position: absolute;
+          background-color: darken(@ls-light-color, 4%);
+          font-size: 9px;
+          font-weight: @font-weight-normal;
+          padding: 1px 6px;
+          text-transform: none;
+          z-index: 2;
+          overflow: visible;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: -1px;
+            right: -8px;
+            width: 0;
+            height: 0;
+            border-right: 8px solid transparent;
+            border-top: 15px solid darken(@ls-light-color, 4%);
+          }
+
+          a {
+            display: block;
+            color: lighten(@text-color, 20%);
+            max-width: 100px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+
+      td {
+        vertical-align: middle !important;
+
+        &.score {
+          min-width: 50px;
+          width: 50px;
+        }
+
+        &.odd {
+          white-space: nowrap;
+          cursor: pointer;
+        }
+
+        .odd-value {
+          color: @link-color;
+        }
+
+        span.hour {
+          font-weight: @font-weight-semi-bold;
+        }
+
+        .league {
+          max-width: 20px;
+          margin-right: 5px;
+        }
+
+        &.teams {
+          padding: 0;
+          text-align: center;
+
+          > a {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            color: @text-color;
+
+            &.has-score-details .score:after {
+              position: absolute;
+              right: -1px;
+              bottom: -3px;
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-left: 5px solid contrast(@ls-light-color, darken(@ls-light-color, 28%), fade(#ffffff, 30%));
+              transform: rotate(45deg);
+            }
+          }
+
+          .team {
+            position: relative;
+            display: flex;
+            flex: 1 1 100%;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: right;
+            padding: 5px;
+
+            img {
+              max-width: 18px;
+              max-height: 18px;
+            }
+
+            .label {
+              margin-right: 5px;
+
+              &.red-card {
+                padding: 0 2px;
+                background-color: #dc0000;
+                font-weight: 500;
+                position: relative;
+                top: -2px;
+              }
+            }
+
+            .label-goal {
+              opacity: 0;
+              position: absolute;
+              z-index: 1;
+              margin-top: 2px;
+              left: 0;
+            }
+
+            .qualified {
+              display: inline-block;
+              margin-right: 3px;
+            }
+
+            &.team2 {
+              justify-content: flex-start;
+              text-align: left;
+
+              .label {
+                margin-left: 5px;
+              }
+
+              .label-goal {
+                left: auto;
+                right: 0;
+              }
+
+              .qualified {
+                margin-right: 0;
+                margin-left: 3px;
+              }
+            }
+
+            &.win {
+              font-weight: @font-weight-bold;
+            }
+          }
+
+          &.has-logo {
+
+            .team {
+              position: relative;
+              padding-right: 28px;
+
+              img {
+                position: absolute;
+                top: 50%;
+                right: 5px;
+                margin-top: -9px;
+              }
+
+              &.team2 {
+                padding-right: 5px;
+                padding-left: 28px;
+
+                img {
+                  left: 5px;
+                  right: auto;
+                }
+              }
+            }
+          }
+        }
+
+        &.team {
+          position: relative;
+
+          > a, div {
+            float: left;
+            color: @text-color;
+            display: inline-block;
+            max-width: 100%;
+            min-height: @ls-matches-table-team-image-size;
+          }
+
+          > a:hover {
+            color: @link-hover-color;
+          }
+
+          .red-card {
+            padding: 0 2px;
+            background-color: @ls-table-red-card;
+            font-weight: @font-weight-normal;
+            position: relative;
+            top: -2px;
+          }
+
+          img {
+            max-width: @ls-matches-table-team-image-size;
+          }
+
+          .label-goal {
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            margin-top: 2px;
+          }
+
+          &.team1 {
+            text-align: right;
+
+            > a, div {
+              float: right;
+            }
+
+            .label {
+              margin-right: 5px;
+            }
+
+            .label-goal {
+              left: 0;
+            }
+
+            img {
+              margin-left: 5px;
+            }
+          }
+
+          &.team2 {
+            text-align: left;
+
+            .label {
+              margin-left: 5px;
+            }
+
+            .label-goal {
+              right: 0;
+            }
+
+            img {
+              margin-right: 5px;
+            }
+          }
+
+          &.has-logo {
+
+            > a, div {
+              position: relative;
+              padding-left: 23px;
+            }
+
+            img {
+              margin-top: -9px;
+              position: absolute;
+              top: 50%;
+              left: 0;
+            }
+
+            &.team1 {
+
+              > a, div {
+                padding-left: 0;
+                padding-right: 23px;
+              }
+
+              img {
+                right: 0;
+                left: auto;
+              }
+            }
+          }
+
+        }
+
+        &.half-time-score {
+          color: darken(@ls-light-color, 37%);
+          white-space: nowrap;
+          text-align: center;
+        }
+
+        &.win {
+          font-weight: @font-weight-bold;
+        }
+
+      }
+
+      &.live {
+        > td.time {
+          .live-blink-gif();
+        }
+
+        &.paused {
+          > td.time {
+            .paused-gif();
+          }
+        }
+      }
+
+      &.league-data {
+
+        span.match-name {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+
+      tr.league-data {
+        > th {
+          .title {
+            span.match-name {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //League data style
+  tr.league-data {
+    .league-data-matches-style();
+  }
+
+  &.table-condensed {
+
+    tr {
+
+      td {
+
+        &.prediction {
+
+          .btn-group {
+
+            .btn {
+              line-height: @font-size-medium;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.odds {
+    tbody {
+      tr {
+        td {
+          &.tools {
+          }
+        }
+      }
+    }
+  }
+
+  /*MY GAMES TABLES*/
+
+  tbody.my-games {
+
+    tr {
+
+      td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        span.hour {
+          font-weight: @font-weight-semi-bold;
+        }
+
+        &.team {
+          width: auto;
+
+          > a, div {
+            display: block;
+          }
+
+          img {
+            max-width: 20px;
+          }
+
+          &.team1 {
+
+            img {
+              margin-left: 5px;
+            }
+          }
+
+          &.team2 {
+
+            img {
+              margin-right: 5px;
+            }
+          }
+        }
+
+        &.score {
+          padding: 0;
+
+          > a {
+            display: block;
+            line-height: 46px;
+          }
+        }
+
+        &.teams {
+          padding: 0;
+
+          .score {
+            min-height: 46px;
+          }
+        }
+      }
+    }
+  }
+}

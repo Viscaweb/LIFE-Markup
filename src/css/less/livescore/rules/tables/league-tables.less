@@ -1,0 +1,322 @@
+//League header style
+.league-data-style() {
+
+  > th {
+    cursor: pointer;
+    background-color: @ls-th-league-bg;
+    text-align: left;
+    color: @ls-light-color;
+    text-transform: none;
+    padding: 0;
+    font-size: 0;
+    font-weight: @font-weight-bold !important;
+    border-top: 0;
+    border-bottom: 1px solid darken(@ls-th-league-bg, 4%);
+
+    a {
+      color: @ls-light-color;
+    }
+
+    span {
+      color: darken(@ls-th-league-bg, 15%);
+    }
+
+    > .title {
+      display: inline-block;
+      font-size: 0;
+      padding: 0 2px;
+      max-width: 76%;
+      white-space: nowrap;
+      overflow: hidden;
+
+      > a, > span {
+        font-size: @ls-data-league-font-size;
+        display: inline-block;
+        padding: @ls-data-league-padding;
+        line-height: @ls-data-league-line-height;
+        color: @ls-light-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      span {
+
+        img {
+          max-width: 17px;
+          max-height: 17px;
+          margin-right: 5px;
+        }
+      }
+
+      .country {
+        text-transform: uppercase;
+        color: fade(@ls-th-league-color, 60%);
+        font-weight: @font-weight-normal;
+
+        span.icon {
+          color: @ls-light-color;
+          font-size: @font-size-medium;
+          line-height: @font-size-normal;
+          position: relative;
+          top: 2px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    > a.dropdown-toggle {
+      padding: @ls-data-league-arrow-padding;
+      line-height: @ls-data-league-line-height;
+      font-size: @ls-data-league-font-size;
+      float: left;
+
+      i {
+        font-size: @font-size-x-tiny;
+        display: inline-block;
+        -webkit-transition: -webkit-transform 200ms ease-out;
+        -o-transition: -o-transform 200ms ease-out;
+        transition: transform 200ms ease-out;
+      }
+
+      &:hover {
+        background-color: @ls-data-league-hover;
+      }
+    }
+
+    .tools {
+      float: right;
+      padding: 0 !important;
+      font-size: 0;
+
+      span {
+        display: inline-block;
+
+        a.fav {
+          font-size: @font-size-normal;
+          vertical-align: top;
+          line-height: @font-size-xx-large + 1px;
+          width: 30px;
+          text-align: center;
+        }
+      }
+
+      a {
+        display: inline-block;
+        padding: @ls-data-league-padding;
+        color: @ls-th-league-color;
+        font-weight: 400;
+        line-height: 19px;
+        font-size: @ls-data-league-font-size;
+
+        i {
+          font-size: @font-size-base + 5;
+          vertical-align: middle;
+          color: rgba(red(@ls-dark-color), green(@ls-dark-color), blue(@ls-dark-color), 0.2);
+        }
+
+        &:hover {
+          background-color: @ls-data-league-hover;
+          color: @ls-light-color;
+
+          &.fav {
+            span {
+              color: @ls-fav-hover;
+            }
+          }
+        }
+
+        &.fav {
+          vertical-align: middle;
+
+          span {
+            font-size: @font-size-medium;
+            display: inline-block;
+          }
+        }
+
+        &.active {
+          color: @brand-primary;
+
+          &.fav {
+
+            span {
+              font-size: @font-size-normal;
+              color: @ls-fav-hover;
+            }
+          }
+
+          &:hover {
+            // color: @ls-light-color;
+          }
+        }
+
+        &.live {
+
+          i {
+            color: @live-red;
+          }
+        }
+      }
+
+    }
+  }
+
+  &:hover {
+
+    > th {
+      background-color: darken(@ls-th-league-bg, 10%) !important;
+
+    }
+  }
+
+  &.league-data-heading {
+
+    > th {
+      vertical-align: middle !important;
+      background-color: @brand-primary;
+      color: @ls-light-color;
+      font-weight: @font-weight-bold;
+      border-bottom: 1px solid darken(@brand-primary, 4%);
+
+      a {
+        color: @ls-light-color;
+
+        &.title {
+          margin-right: 5px;
+          line-height: @ls-data-league-line-height;
+        }
+
+      }
+
+      > .title {
+        span.icon {
+          font-size: @font-size-normal;
+          line-height: @font-size-x-large;
+          margin: 0;
+          position: relative;
+          top: 1px;
+        }
+
+        .help-icon {
+          line-height: @font-size-x-large;
+          position: relative;
+          top: 1px;
+
+          span {
+            color: fade(#000000, 30%);
+          }
+
+          &:hover {
+            span {
+              color: @ls-th-league-color;
+            }
+          }
+        }
+
+      }
+
+      span {
+        color: rgba(red(@ls-dark-color), green(@ls-dark-color), blue(@ls-dark-color), 0.1);
+
+        i {
+          color: @ls-light-color;
+        }
+      }
+    }
+
+    &:hover > th {
+      background-color: darken(@brand-primary, 4%) !important;
+    }
+  }
+}
+
+.league-data-active-style() {
+  > th {
+    > a.dropdown-toggle {
+      box-shadow: 5px 0 0 @active-green inset;
+    }
+  }
+}
+
+.league-data-matches-style() {
+
+  th {
+    padding: 0;
+    vertical-align: middle !important;
+    white-space: nowrap;
+
+    .country {
+      text-transform: uppercase;
+      color: fade(@ls-th-league-color, 60%);
+      font-weight: @font-weight-normal;
+    }
+
+    a {
+      color: @ls-th-league-color;
+    }
+
+    span {
+      color: darken(@ls-th-league-bg, 15%);
+    }
+
+    .tools {
+      float: right;
+      padding: 0;
+
+      span {
+
+        a.fav {
+          font-size: @font-size-normal;
+        }
+      }
+
+      a {
+        display: inline-block;
+        color: @ls-th-league-color;
+        font-weight: @font-weight-normal;
+
+        i {
+          font-size: @font-size-xx-large;
+          line-height: @font-size-large;
+          vertical-align: middle;
+          color: fade(@ls-th-league-color, 60%);
+
+          &.icon-standings {
+            margin-right: 5px;
+            position: relative;
+            top: -1px;
+          }
+        }
+
+        &.active {
+          color: @brand-primary;
+
+          &.fav {
+
+            span {
+              color: @ls-fav-hover;
+              font-size: @font-size-normal;
+            }
+          }
+
+          &:hover {
+            //color: @ls-light-color;
+          }
+        }
+
+        &.live {
+          i {
+            color: @live-red;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// World Cup banner in MatchListing
+.wc-banner {
+  margin-bottom: @line-height-computed !important;
+}
