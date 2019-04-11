@@ -1,9 +1,17 @@
+/*
 @spacing-0: 0;
 @spacing-1: @font-size-base;
 @spacing-2: @font-size-base + ((@font-size-base / 5)*2);
 @spacing-3: @font-size-base + ((@font-size-base / 5)*3);
 @spacing-4: @font-size-base + ((@font-size-base / 5)*4);
 @spacing-5: @font-size-base * 2;
+*/
+@spacer-0: 0;
+@spacer-1: @font-size-base * 0.25;
+@spacer-2: @font-size-base * 0.5;
+@spacer-3: @font-size-base;
+@spacer-4: @font-size-base * 1.5;
+@spacer-5: @font-size-base * 3;
 
 .vertical-margin(@property; @size) {
   .top-spacing(@property, @size);
@@ -11,20 +19,20 @@
 }
 
 .top-spacing(@property; @size) {
-  @length : "spacing-@{size}";
+  @length : "spacer-@{size}";
   @propertyName : ~"@{property}-top";
   @{propertyName}: @@length !important;
 }
 
 .bottom-spacing(@property; @size) {
-  @length : "spacing-@{size}";
+  @length : "spacer-@{size}";
   @propertyName : ~"@{property}-bottom";
   @{propertyName}: @@length !important;
 }
 
 
 // Margin --------------------
-.m-0 { margin: @spacing-0 !important; }
+.m-0 { margin: @spacer-0 !important; }
 
 // Margin top
 .mt-0 { .top-spacing(margin, 0) }
@@ -54,9 +62,9 @@
 
 
 // Padding -----------------------------
-.p-0 { padding: @spacing-0 !important; }
+.p-0 { padding: @spacer-0 !important; }
 
-// Margin top
+// Padding top
 .pt-0 { .top-spacing(padding, 0) }
 .pt-1 { .top-spacing(padding, 1) }
 .pt-2 { .top-spacing(padding, 2) }
@@ -64,7 +72,7 @@
 .pt-4 { .top-spacing(padding, 4) }
 .pt-5 { .top-spacing(padding, 5) }
 
-// Margin bottom
+// Padding bottom
 .pb-0 { .bottom-spacing(padding, 0) }
 .pb-1 { .bottom-spacing(padding, 1) }
 .pb-2 { .bottom-spacing(padding, 2) }
