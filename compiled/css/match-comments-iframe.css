@@ -10942,14 +10942,6 @@ span.sprite-icons.webmaster-border {
 .bg-grey {
   background-color: #f9f9f9;
 }
-/*
-@spacing-0: 0;
-@spacing-1: @font-size-base;
-@spacing-2: @font-size-base + ((@font-size-base / 5)*2);
-@spacing-3: @font-size-base + ((@font-size-base / 5)*3);
-@spacing-4: @font-size-base + ((@font-size-base / 5)*4);
-@spacing-5: @font-size-base * 2;
-*/
 .m-0 {
   margin: 0 !important;
 }
