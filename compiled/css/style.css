@@ -8485,6 +8485,24 @@ button.close {
 .mb-5 {
   margin-bottom: 39px !important;
 }
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mr-1 {
+  margin-right: 3.25px !important;
+}
+.mr-2 {
+  margin-right: 6.5px !important;
+}
+.mr-3 {
+  margin-right: 13px !important;
+}
+.mr-4 {
+  margin-right: 19.5px !important;
+}
+.mr-5 {
+  margin-right: 39px !important;
+}
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;

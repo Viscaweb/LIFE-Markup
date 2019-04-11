@@ -10392,6 +10392,30 @@ button.close {
   margin-bottom: 39px !important;
 }
 
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mr-1 {
+  margin-right: 3.25px !important;
+}
+
+.mr-2 {
+  margin-right: 6.5px !important;
+}
+
+.mr-3 {
+  margin-right: 13px !important;
+}
+
+.mr-4 {
+  margin-right: 19.5px !important;
+}
+
+.mr-5 {
+  margin-right: 39px !important;
+}
+
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -14353,31 +14377,4 @@ span.sprite-icons.am-football {
   width: 22px;
   margin-bottom: -4px !important;
   margin-left: -2px;
-}
-
-span.sprite-icons.yellow-card {
-  width: 9px;
-  background-position: -121px -5px;
-}
-
-span.sprite-icons.red-card {
-  width: 12px;
-  background-position: -146px -5px;
-}
-
-span.sprite-icons.yellow-red-card {
-  width: 12px;
-  background-position: -176px -5px;
-}
-
-span.sprite-icons.goal {
-  background-position: -60px -26px;
-}
-
-span.sprite-icons.penalty-goal {
-  background-position: -3px -50px;
-}
-
-span.sprite-icons.penalty-missed {
-  background-position: -254px -3px;
 }

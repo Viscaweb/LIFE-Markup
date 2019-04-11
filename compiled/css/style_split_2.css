@@ -1,3 +1,30 @@
+span.sprite-icons.yellow-card {
+  width: 9px;
+  background-position: -121px -5px;
+}
+
+span.sprite-icons.red-card {
+  width: 12px;
+  background-position: -146px -5px;
+}
+
+span.sprite-icons.yellow-red-card {
+  width: 12px;
+  background-position: -176px -5px;
+}
+
+span.sprite-icons.goal {
+  background-position: -60px -26px;
+}
+
+span.sprite-icons.penalty-goal {
+  background-position: -3px -50px;
+}
+
+span.sprite-icons.penalty-missed {
+  background-position: -254px -3px;
+}
+
 span.sprite-icons.shirt {
   background-position: -5px -97px;
 }

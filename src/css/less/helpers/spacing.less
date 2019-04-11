@@ -24,6 +24,18 @@
   @{propertyName}: @@length !important;
 }
 
+.right-spacing(@property; @size) {
+  @length : "spacer-@{size}";
+  @propertyName : ~"@{property}-right";
+  @{propertyName}: @@length !important;
+}
+
+.left-spacing(@property; @size) {
+  @length : "spacer-@{size}";
+  @propertyName : ~"@{property}-left";
+  @{propertyName}: @@length !important;
+}
+
 .bottom-spacing(@property; @size) {
   @length : "spacer-@{size}";
   @propertyName : ~"@{property}-bottom";
@@ -49,6 +61,13 @@
 .mb-3 { .bottom-spacing(margin, 3) }
 .mb-4 { .bottom-spacing(margin, 4) }
 .mb-5 { .bottom-spacing(margin, 5) }
+
+.mr-0 { .right-spacing(margin, 0) }
+.mr-1 { .right-spacing(margin, 1) }
+.mr-2 { .right-spacing(margin, 2) }
+.mr-3 { .right-spacing(margin, 3) }
+.mr-4 { .right-spacing(margin, 4) }
+.mr-5 { .right-spacing(margin, 5) }
 
 .my-0 { .vertical-margin(margin, 0) }
 .my-1 { .vertical-margin(margin, 1) }
