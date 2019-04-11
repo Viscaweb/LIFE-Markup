@@ -14,60 +14,44 @@
 @spacer-5: @font-size-base * 3;
 
 .vertical-margin(@property; @size) {
-  .top-spacing(@property, @size);
-  .bottom-spacing(@property, @size);
+  .direction-spacing(@property, top, @size);
+  .direction-spacing(@property, bottom, @size);
 }
 
-.top-spacing(@property; @size) {
+.direction-spacing(@property; @direction; @size) {
   @length : "spacer-@{size}";
-  @propertyName : ~"@{property}-top";
+  @propertyName : ~"@{property}-@{direction}";
   @{propertyName}: @@length !important;
 }
 
-.right-spacing(@property; @size) {
-  @length : "spacer-@{size}";
-  @propertyName : ~"@{property}-right";
-  @{propertyName}: @@length !important;
-}
 
-.left-spacing(@property; @size) {
-  @length : "spacer-@{size}";
-  @propertyName : ~"@{property}-left";
-  @{propertyName}: @@length !important;
-}
-
-.bottom-spacing(@property; @size) {
-  @length : "spacer-@{size}";
-  @propertyName : ~"@{property}-bottom";
-  @{propertyName}: @@length !important;
-}
 
 
 // Margin --------------------
 .m-0 { margin: @spacer-0 !important; }
 
 // Margin top
-.mt-0 { .top-spacing(margin, 0) }
-.mt-1 { .top-spacing(margin, 1) }
-.mt-2 { .top-spacing(margin, 2) }
-.mt-3 { .top-spacing(margin, 3) }
-.mt-4 { .top-spacing(margin, 4) }
-.mt-5 { .top-spacing(margin, 5) }
+.mt-0 { .direction-spacing(margin, top, 0) }
+.mt-1 { .direction-spacing(margin, top, 1) }
+.mt-2 { .direction-spacing(margin, top, 2) }
+.mt-3 { .direction-spacing(margin, top, 3) }
+.mt-4 { .direction-spacing(margin, top, 4) }
+.mt-5 { .direction-spacing(margin, top, 5) }
 
 // Margin bottom
-.mb-0 { .bottom-spacing(margin, 0) }
-.mb-1 { .bottom-spacing(margin, 1) }
-.mb-2 { .bottom-spacing(margin, 2) }
-.mb-3 { .bottom-spacing(margin, 3) }
-.mb-4 { .bottom-spacing(margin, 4) }
-.mb-5 { .bottom-spacing(margin, 5) }
+.mb-0 { .direction-spacing(margin, bottom, 0) }
+.mb-1 { .direction-spacing(margin, bottom, 1) }
+.mb-2 { .direction-spacing(margin, bottom, 2) }
+.mb-3 { .direction-spacing(margin, bottom, 3) }
+.mb-4 { .direction-spacing(margin, bottom, 4) }
+.mb-5 { .direction-spacing(margin, bottom, 5) }
 
-.mr-0 { .right-spacing(margin, 0) }
-.mr-1 { .right-spacing(margin, 1) }
-.mr-2 { .right-spacing(margin, 2) }
-.mr-3 { .right-spacing(margin, 3) }
-.mr-4 { .right-spacing(margin, 4) }
-.mr-5 { .right-spacing(margin, 5) }
+.mr-0 { .direction-spacing(margin, right, 0) }
+.mr-1 { .direction-spacing(margin, right, 1) }
+.mr-2 { .direction-spacing(margin, right, 2) }
+.mr-3 { .direction-spacing(margin, right, 3) }
+.mr-4 { .direction-spacing(margin, right, 4) }
+.mr-5 { .direction-spacing(margin, right, 5) }
 
 .my-0 { .vertical-margin(margin, 0) }
 .my-1 { .vertical-margin(margin, 1) }
@@ -84,20 +68,20 @@
 .p-0 { padding: @spacer-0 !important; }
 
 // Padding top
-.pt-0 { .top-spacing(padding, 0) }
-.pt-1 { .top-spacing(padding, 1) }
-.pt-2 { .top-spacing(padding, 2) }
-.pt-3 { .top-spacing(padding, 3) }
-.pt-4 { .top-spacing(padding, 4) }
-.pt-5 { .top-spacing(padding, 5) }
+.pt-0 { .direction-spacing(padding, top, 0) }
+.pt-1 { .direction-spacing(padding, top, 1) }
+.pt-2 { .direction-spacing(padding, top, 2) }
+.pt-3 { .direction-spacing(padding, top, 3) }
+.pt-4 { .direction-spacing(padding, top, 4) }
+.pt-5 { .direction-spacing(padding, top, 5) }
 
 // Padding bottom
-.pb-0 { .bottom-spacing(padding, 0) }
-.pb-1 { .bottom-spacing(padding, 1) }
-.pb-2 { .bottom-spacing(padding, 2) }
-.pb-3 { .bottom-spacing(padding, 3) }
-.pb-4 { .bottom-spacing(padding, 4) }
-.pb-5 { .bottom-spacing(padding, 5) }
+.pb-0 { .direction-spacing(padding, bottom, 0) }
+.pb-1 { .direction-spacing(padding, bottom, 1) }
+.pb-2 { .direction-spacing(padding, bottom, 2) }
+.pb-3 { .direction-spacing(padding, bottom, 3) }
+.pb-4 { .direction-spacing(padding, bottom, 4) }
+.pb-5 { .direction-spacing(padding, bottom, 5) }
 
 .py-0 { .vertical-margin(padding, 0) }
 .py-1 { .vertical-margin(padding, 1) }
