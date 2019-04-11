@@ -1,34 +1,80 @@
+@spacing-0: 0;
+@spacing-1: @font-size-base;
+@spacing-2: @font-size-base + ((@font-size-base / 5)*2);
+@spacing-3: @font-size-base + ((@font-size-base / 5)*3);
+@spacing-4: @font-size-base + ((@font-size-base / 5)*4);
+@spacing-5: @font-size-base * 2;
+
+.vertical-margin(@property; @size) {
+  .top-spacing(@property, @size);
+  .bottom-spacing(@property, @size);
+}
+
+.top-spacing(@property; @size) {
+  @length : "spacing-@{size}";
+  @propertyName : ~"@{property}-top";
+  @{propertyName}: @@length !important;
+}
+
+.bottom-spacing(@property; @size) {
+  @length : "spacing-@{size}";
+  @propertyName : ~"@{property}-bottom";
+  @{propertyName}: @@length !important;
+}
+
+
 // Margin --------------------
-.m-0 { margin: 0 !important; }
+.m-0 { margin: @spacing-0 !important; }
 
 // Margin top
-.mt-1 { margin-top: @font-size-base; }
-.mt-2 { margin-top: @font-size-base + ((@font-size-base / 5)*2); }
-.mt-3 { margin-top: @font-size-base + ((@font-size-base / 5)*3); }
-.mt-4 { margin-top: @font-size-base + ((@font-size-base / 5)*4); }
-.mt-5 { margin-top: @font-size-base * 2; }
+.mt-0 { .top-spacing(margin, 0) }
+.mt-1 { .top-spacing(margin, 1) }
+.mt-2 { .top-spacing(margin, 2) }
+.mt-3 { .top-spacing(margin, 3) }
+.mt-4 { .top-spacing(margin, 4) }
+.mt-5 { .top-spacing(margin, 5) }
 
 // Margin bottom
-.mb-1 { margin-bottom: @font-size-base; }
-.mb-2 { margin-bottom: @font-size-base + ((@font-size-base / 5)*2); }
-.mb-3 { margin-bottom: @font-size-base + ((@font-size-base / 5)*3); }
-.mb-4 { margin-bottom: @font-size-base + ((@font-size-base / 5)*4); }
-.mb-5 { margin-bottom: @font-size-base * 2; }
+.mb-0 { .bottom-spacing(margin, 0) }
+.mb-1 { .bottom-spacing(margin, 1) }
+.mb-2 { .bottom-spacing(margin, 2) }
+.mb-3 { .bottom-spacing(margin, 3) }
+.mb-4 { .bottom-spacing(margin, 4) }
+.mb-5 { .bottom-spacing(margin, 5) }
+
+.my-0 { .vertical-margin(margin, 0) }
+.my-1 { .vertical-margin(margin, 1) }
+.my-2 { .vertical-margin(margin, 2) }
+.my-3 { .vertical-margin(margin, 3) }
+.my-4 { .vertical-margin(margin, 4) }
+.my-5 { .vertical-margin(margin, 5) }
+
 
 
 
 
 // Padding -----------------------------
-.p-0 { padding: 0 !important; }
+.p-0 { padding: @spacing-0 !important; }
 
-.pt-1 { padding-top: @font-size-base; }
-.pt-2 { padding-top: @font-size-base + ((@font-size-base / 5)*2); }
-.pt-3 { padding-top: @font-size-base + ((@font-size-base / 5)*3); }
-.pt-4 { padding-top: @font-size-base + ((@font-size-base / 5)*4); }
-.pt-5 { padding-top: @font-size-base * 2; }
+// Margin top
+.pt-0 { .top-spacing(padding, 0) }
+.pt-1 { .top-spacing(padding, 1) }
+.pt-2 { .top-spacing(padding, 2) }
+.pt-3 { .top-spacing(padding, 3) }
+.pt-4 { .top-spacing(padding, 4) }
+.pt-5 { .top-spacing(padding, 5) }
 
-.pb-1 { padding-bottom: @font-size-base; }
-.pb-2 { padding-bottom: @font-size-base + ((@font-size-base / 5)*2); }
-.pb-3 { padding-bottom: @font-size-base + ((@font-size-base / 5)*3); }
-.pb-4 { padding-bottom: @font-size-base + ((@font-size-base / 5)*4); }
-.pb-5 { padding-bottom: @font-size-base * 2; }
+// Margin bottom
+.pb-0 { .bottom-spacing(padding, 0) }
+.pb-1 { .bottom-spacing(padding, 1) }
+.pb-2 { .bottom-spacing(padding, 2) }
+.pb-3 { .bottom-spacing(padding, 3) }
+.pb-4 { .bottom-spacing(padding, 4) }
+.pb-5 { .bottom-spacing(padding, 5) }
+
+.py-0 { .vertical-margin(padding, 0) }
+.py-1 { .vertical-margin(padding, 1) }
+.py-2 { .vertical-margin(padding, 2) }
+.py-3 { .vertical-margin(padding, 3) }
+.py-4 { .vertical-margin(padding, 4) }
+.py-5 { .vertical-margin(padding, 5) }

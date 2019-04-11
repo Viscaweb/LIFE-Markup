@@ -1,3 +1,78 @@
+span.sprite-icons.shirt {
+  background-position: -5px -97px;
+}
+
+span.sprite-icons.comment {
+  background-position: -31px -97px;
+}
+
+span.sprite-icons.comment-more {
+  background-position: -60px -97px;
+}
+
+span.sprite-icons.shot-off {
+  background-position: -85px -97px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-on {
+  background-position: -114px -97px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-on-1 {
+  background-position: -171px -98px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-post {
+  background-position: -143px -96px;
+  height: 19px;
+}
+
+span.sprite-icons.clock {
+  background-position: -144px -121px;
+}
+
+span.sprite-icons.player-change {
+  background-position: -205px -5px;
+  width: 8px;
+}
+
+span.sprite-icons.substitution-left {
+  background-position: -233px -5px;
+  width: 8px;
+}
+
+span.sprite-icons.football-field {
+  background-position: -5px -3px;
+  width: 16px;
+  height: 19px;
+}
+
+span.sprite-icons.lineups {
+  background-position: -59px -120px;
+  height: 20px;
+}
+
+span.sprite-icons.shot-blocked {
+  background-position: -88px -121px;
+}
+
+span.sprite-icons.hit-player-wall {
+  background-position: -116px -121px;
+}
+
+span.sprite-icons.green-arrow {
+  background-position: -37px -3px;
+  width: 11px;
+}
+
+span.sprite-icons.red-arrow {
+  background-position: -64px -3px;
+  width: 11px;
+}
+
 span.sprite-icons.chairs {
   background-position: -87px -3px;
   width: 23px;
