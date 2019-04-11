@@ -16660,6 +16660,10 @@ ul.table-of-content li span {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+.match-pronostics p a {
+  color: #ffffff;
+  font-weight: 700;
+}
 .match-pronostic-block {
   margin-bottom: 20px;
 }
