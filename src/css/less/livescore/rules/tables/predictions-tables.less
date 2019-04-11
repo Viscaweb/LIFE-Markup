@@ -1,0 +1,46 @@
+.table.predictions {
+  tbody {
+    tr {
+      &.prediction-won {
+        td.icon {
+          background-color: @ls-td-won-bg !important;
+
+          .icon {
+            font-size: @font-size-small;
+            color: @ls-light-color;
+          }
+        }
+      }
+
+      &.prediction-lost {
+        td.icon {
+          background-color: @ls-td-lost-bg !important;
+
+          .icon {
+            font-size: @font-size-small;
+            color: @ls-light-color;
+          }
+        }
+      }
+
+      &.prediction-cancelled {
+        td.icon {
+          background-color: @ls-td-cancelled-bg !important;
+        }
+
+      }
+
+      td {
+
+        &.league-logo {
+          padding: 0 3px;
+
+          img {
+            max-width: 16px;
+            max-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
