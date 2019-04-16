@@ -16661,7 +16661,7 @@ ul.table-of-content li span {
   margin-bottom: 20px;
 }
 .match-pronostics p a {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 700;
 }
 .match-pronostic-block {
