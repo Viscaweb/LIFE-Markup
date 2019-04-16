@@ -6042,7 +6042,7 @@ ul.table-of-content li span {
 }
 
 .match-pronostics p a {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 700;
 }
 
