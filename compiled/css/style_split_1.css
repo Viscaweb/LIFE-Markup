@@ -10519,11 +10519,25 @@ button.close {
   padding-bottom: 39px !important;
 }
 
+.d-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .justify-content-center {
   -webkit-box-pack: center !important;
   -webkit-justify-content: center !important;
   -ms-flex-pack: center !important;
   justify-content: center !important;
+}
+
+.justify-content-space-between {
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
 }
 
 /*jQuery UI Components*/
@@ -14317,6 +14331,7 @@ ul.nav li.dropdown-hover:hover ul.dropdown-menu {
 .panel.panel-inverse .panel-heading--primary,
 .panel .panel-heading--primary {
   background-color: #5da400;
+  color: #FCFCFA;
 }
 
 span.sprite-icons {
@@ -14356,16 +14371,4 @@ span.sprite-icons.volleyball {
 
 span.sprite-icons.icehockey {
   background-position: -257px -52px;
-}
-
-span.sprite-icons.baseball {
-  background-position: -257px -75px;
-}
-
-span.sprite-icons.am-football {
-  background-position: -255px -98px;
-  height: 17px;
-  width: 22px;
-  margin-bottom: -4px !important;
-  margin-left: -2px;
 }
