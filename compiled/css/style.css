@@ -22860,7 +22860,7 @@ ul.image-list li img {
   color: #FFF;
   font-weight: bold;
 }
-.widget-postforecast .widget-postforecast-main .description .potential-earns {
+.widget-postforecast .widget-postforecast-main .potential-earns {
   text-align: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -22877,7 +22877,7 @@ ul.image-list li img {
           flex-direction: column;
   text-shadow: 0 3px 1px rgba(0, 0, 0, 0.4);
 }
-.widget-postforecast .widget-postforecast-main .description .potential-earns .lead {
+.widget-postforecast .widget-postforecast-main .potential-earns .lead {
   font-weight: bold;
   font-size: 55px;
   margin: 0;
