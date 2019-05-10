@@ -11086,11 +11086,23 @@ span.sprite-icons.webmaster-border {
   padding-top: 39px !important;
   padding-bottom: 39px !important;
 }
+.d-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
 .justify-content-center {
   -webkit-box-pack: center !important;
   -webkit-justify-content: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
+}
+.justify-content-space-between {
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 .live-commented-matches.panel .preview {
   width: 100%;
