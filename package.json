@@ -13,6 +13,7 @@
     "load-grunt-tasks": "^3.2.0"
   },
   "devDependencies": {
+    "@babel/register": "^7.4.4",
     "autoprefixer": "^9.5.1",
     "cssnano": "^4.1.10",
     "grunt": "^0.4.5",
@@ -22,8 +23,12 @@
     "grunt-postcss": "^0.5.5",
     "grunt-uncss": "^0.4.3",
     "gulp": "^4.0.0",
+    "gulp-bless": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.1.0",
     "gulp-less": "^4.0.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "load-grunt-tasks": "^3.2.0",
     "postcss-less": "^3.1.4"
