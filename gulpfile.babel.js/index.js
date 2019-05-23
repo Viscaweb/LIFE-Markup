@@ -17,10 +17,10 @@ const cssnano = require('cssnano')({
 });
 
 const urlRebaseOptions = [
-    {filter: '**/fonts/*.eot', url: 'rebase'},
-    {filter: '**/fonts/*.ttf', url: 'rebase'},
-    {filter: '**/fonts/*.woff', url: 'rebase'},
-    {filter: '**/fonts/*.svg', url: 'rebase'},
+    {filter: '**/*.eot', url: 'rebase'},
+    {filter: '**/*.ttf', url: 'rebase'},
+    {filter: '**/*.woff', url: 'rebase'},
+    {filter: '**/js/lsicons/fonts/*.svg', url: 'rebase'},
 ];
 
 const plugins = [
@@ -46,7 +46,7 @@ function mainCSS(cb) {
     return src([
         'src/css/style.less',
         'compiled/js/lsicons/style.css',
-        'compiled/js/owl.carousel/assets/owl.carousel.css',
+        // 'compiled/js/owl.carousel/assets/owl.carousel.css',
         'compiled/js/toastr/toastr.min.css',
         'src/css/comments.css'
     ])
@@ -55,7 +55,7 @@ function mainCSS(cb) {
         .pipe(filter.restore)
         .pipe(concat('style.css'))
         .pipe(postcss(plugins, {
-            from: './compiled/js/lsicons/fonts/style.css',
+            from: './compiled/js/lsicons/style.css',
             to: './compiled/css/style.css'
         }))
         .pipe(dest('./compiled/css'));
