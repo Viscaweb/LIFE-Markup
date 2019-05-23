@@ -7,6 +7,7 @@ const Filter = require('gulp-filter');
 const autoprefixer = require('autoprefixer');
 const splitCSS = require('gulp-bless');
 const rename = require('gulp-rename');
+const urlRebase = require('postcss-url');
 const cssnano = require('cssnano')({
     preset: ['default', {
         discardComments: {
@@ -15,7 +16,14 @@ const cssnano = require('cssnano')({
     }]
 });
 
-var plugins = [
+const urlRebaseOptions = [
+    {filter: '**/fonts/*.eot', url: 'rebase'},
+    {filter: '**/fonts/*.ttf', url: 'rebase'},
+    {filter: '**/fonts/*.woff', url: 'rebase'},
+    {filter: '**/fonts/*.svg', url: 'rebase'},
+];
+
+const plugins = [
     autoprefixer({
         browsers: [
             "Android >= 4",
@@ -27,7 +35,8 @@ var plugins = [
             "Safari >= 6"
         ]
     }),
-   cssnano
+    urlRebase(urlRebaseOptions),
+    cssnano
 ];
 
 
@@ -45,14 +54,20 @@ function mainCSS(cb) {
         .pipe(less())
         .pipe(filter.restore)
         .pipe(concat('style.css'))
-        .pipe(postcss(plugins))
+        .pipe(postcss(plugins, {
+            from: './compiled/js/lsicons/fonts/style.css',
+            to: './compiled/css/style.css'
+        }))
         .pipe(dest('./compiled/css'));
 }
 
 function cssMatchCommentsIFrame(cb) {
     return src(['src/css/less/match-comments-iframe.less'])
         .pipe(less())
-        .pipe(postcss(plugins))
+        .pipe(postcss(plugins, {
+            from: './compiled/js/lsicons/fonts/style.css',
+            to: './compiled/css/style.css'
+        }))
         .pipe(dest('./compiled/css'));
 }
 
@@ -63,7 +78,10 @@ function splitForIE10(cb) {
             imports: false,
             suffix: '-'
         }))
-        .pipe(postcss(plugins))
+        .pipe(postcss(plugins, {
+            from: './compiled/js/lsicons/fonts/style.css',
+            to: './compiled/css/style.css'
+        }))
         .pipe(dest('./compiled/css'));
 }
 

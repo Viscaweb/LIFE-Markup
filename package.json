@@ -10,7 +10,8 @@
     "grunt-contrib-less": "^0.12.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-csssplit": "^0.4.0",
-    "load-grunt-tasks": "^3.2.0"
+    "load-grunt-tasks": "^3.2.0",
+    "postcss-url": "^8.0.0"
   },
   "devDependencies": {
     "@babel/register": "^7.4.4",
