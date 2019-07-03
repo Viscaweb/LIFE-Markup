@@ -6619,6 +6619,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+.bs-container:before,
+.bs-container:after,
 .top-match-block .make-prediction .prediction:before,
 .top-match-block .make-prediction .prediction:after {
   content: " ";
@@ -6639,6 +6641,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+.bs-container:after,
 .top-match-block .make-prediction .prediction:after {
   clear: both;
 }
@@ -7493,6 +7496,27 @@ button.close {
   padding: 0;
   width: 1120px;
   min-width: 1120px;
+}
+.bs-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .bs-container {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .bs-container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .bs-container {
+    width: 1120px;
+  }
 }
 /*Labels*/
 .label {
@@ -22540,6 +22564,10 @@ ul.image-list li img {
   float: left;
   width: 310px;
   padding-left: 10px;
+}
+.main--alt {
+  background: transparent;
+  padding-top: 1em;
 }
 .footer .top-footer {
   background: #313536;
