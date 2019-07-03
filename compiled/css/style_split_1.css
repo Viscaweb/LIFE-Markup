@@ -8113,6 +8113,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+.bs-container:before,
+.bs-container:after,
 .top-match-block .make-prediction .prediction:before,
 .top-match-block .make-prediction .prediction:after {
   content: " ";
@@ -8134,6 +8136,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+.bs-container:after,
 .top-match-block .make-prediction .prediction:after {
   clear: both;
 }
@@ -9176,6 +9179,31 @@ button.close {
   padding: 0;
   width: 1120px;
   min-width: 1120px;
+}
+
+.bs-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .bs-container {
+    width: 740px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bs-container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bs-container {
+    width: 1120px;
+  }
 }
 
 /*Labels*/
@@ -14343,32 +14371,4 @@ span.sprite-icons {
   background-image: url("../img//sprite-icons.png");
   background-size: 292px;
   background-repeat: no-repeat;
-}
-
-span.sprite-icons.football {
-  background-position: -230px -28px;
-}
-
-span.sprite-icons.tennis {
-  background-position: -229px -75px;
-}
-
-span.sprite-icons.rugby {
-  background-position: -230px -52px;
-}
-
-span.sprite-icons.handball {
-  background-position: -229px -98px;
-}
-
-span.sprite-icons.basketball {
-  background-position: -229px -122px;
-}
-
-span.sprite-icons.volleyball {
-  background-position: -257px -28px;
-}
-
-span.sprite-icons.icehockey {
-  background-position: -257px -52px;
 }

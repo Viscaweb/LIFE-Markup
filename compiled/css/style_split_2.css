@@ -1,3 +1,31 @@
+span.sprite-icons.football {
+  background-position: -230px -28px;
+}
+
+span.sprite-icons.tennis {
+  background-position: -229px -75px;
+}
+
+span.sprite-icons.rugby {
+  background-position: -230px -52px;
+}
+
+span.sprite-icons.handball {
+  background-position: -229px -98px;
+}
+
+span.sprite-icons.basketball {
+  background-position: -229px -122px;
+}
+
+span.sprite-icons.volleyball {
+  background-position: -257px -28px;
+}
+
+span.sprite-icons.icehockey {
+  background-position: -257px -52px;
+}
+
 span.sprite-icons.baseball {
   background-position: -257px -75px;
 }
@@ -13150,6 +13178,11 @@ ul.image-list li img {
   float: left;
   width: 310px;
   padding-left: 10px;
+}
+
+.main--alt {
+  background: transparent;
+  padding-top: 1em;
 }
 
 .footer .top-footer {
