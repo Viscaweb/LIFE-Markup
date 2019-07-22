@@ -10363,6 +10363,26 @@ button.close {
   margin: 0 !important;
 }
 
+.m-1 {
+  margin: 3.25px !important;
+}
+
+.m-2 {
+  margin: 6.5px !important;
+}
+
+.m-3 {
+  margin: 13px !important;
+}
+
+.m-4 {
+  margin: 19.5px !important;
+}
+
+.m-5 {
+  margin: 39px !important;
+}
+
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -14346,29 +14366,4 @@ ul.nav li.dropdown-hover:hover ul.dropdown-menu {
   max-width: 28px;
   max-height: 28px;
   position: relative;
-}
-
-.panel > .panel-heading .team-logo + .team-logo {
-  margin-left: 5px;
-}
-
-.panel.panel-no-border {
-  border: 0;
-}
-
-.panel.panel-inverse .panel-heading--primary,
-.panel .panel-heading--primary {
-  background-color: #5da400;
-  color: #FCFCFA;
-}
-
-span.sprite-icons {
-  width: 21px;
-  height: 21px;
-  content: "";
-  display: inline-block;
-  margin-bottom: -4px;
-  background-image: url("../img//sprite-icons.png");
-  background-size: 292px;
-  background-repeat: no-repeat;
 }
