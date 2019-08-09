@@ -11107,6 +11107,13 @@ span.sprite-icons.webmaster-border {
   display: -ms-flexbox !important;
   display: flex !important;
 }
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .justify-content-center {
   -webkit-box-pack: center !important;
   -webkit-justify-content: center !important;

@@ -10574,6 +10574,14 @@ button.close {
   display: flex !important;
 }
 
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .justify-content-center {
   -webkit-box-pack: center !important;
   -webkit-justify-content: center !important;
@@ -14360,10 +14368,4 @@ ul.nav li.dropdown-hover:hover ul.dropdown-menu {
 
 .modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
   padding: 0;
-}
-
-.panel > .panel-heading .team-logo {
-  max-width: 28px;
-  max-height: 28px;
-  position: relative;
 }
