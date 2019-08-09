@@ -8627,6 +8627,13 @@ button.close {
   display: -ms-flexbox !important;
   display: flex !important;
 }
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .justify-content-center {
   -webkit-box-pack: center !important;
   -webkit-justify-content: center !important;
@@ -22989,7 +22996,7 @@ ul.image-list li img {
   background: rgba(0, 0, 0, 0.4);
 }
 .widget-postforecast .widget-postforecast-footer .caption {
-  margin-right: 13px;
+  margin: 6.5px;
 }
 /*Site administration*/
 .admin-action {

@@ -1,3 +1,9 @@
+.panel > .panel-heading .team-logo {
+  max-width: 28px;
+  max-height: 28px;
+  position: relative;
+}
+
 .panel > .panel-heading .team-logo + .team-logo {
   margin-left: 5px;
 }
@@ -13693,7 +13699,7 @@ ul.image-list li img {
 }
 
 .widget-postforecast .widget-postforecast-footer .caption {
-  margin-right: 13px;
+  margin: 6.5px;
 }
 
 /*Site administration*/
