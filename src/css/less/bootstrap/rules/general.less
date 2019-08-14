@@ -5,7 +5,10 @@
 }
 
 .bs-container {
+  @container-large-desktop:      (1200px + @grid-gutter-width);
+  @container-lg:                 @container-large-desktop;
   .container-fixed();
+  //width: 1200px;
 
   @media (min-width: @screen-sm-min) {
     width: @container-sm;
