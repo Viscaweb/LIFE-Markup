@@ -14033,3 +14033,13 @@ ul.image-list li img {
 .pt-1 {
   padding-top: 18px;
 }
+
+/** Pages */
+
+body.page--pronosticador {
+  background: #f3f3f5;
+}
+
+.header .navbar-right {
+  display: none;
+}
