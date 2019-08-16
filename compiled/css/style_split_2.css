@@ -14043,3 +14043,44 @@ body.page--pronosticador {
 .header .navbar-right {
   display: none;
 }
+
+.widget--bookmaker-list {
+  /*
+  border-radius: 4px;
+  background-color: #FFF;
+  padding: 1em;
+  .panel-heading {
+    background: none;
+    border: 0;
+
+    & > .panel-title {
+      font-size: 22px;
+      color: #06082e;
+    }
+  }
+*/
+}
+
+.widget--bookmaker-list .card__title span:first-child {
+  vertical-align: bottom;
+}
+
+.widget--bookmaker-list .partner-list li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-shadow: none;
+  margin-bottom: 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.widget--bookmaker-list .partner-list li:last-child {
+  border-bottom: none;
+}
+
+.widget--bookmaker-list .partner-list .partner-list__order {
+  position: initial;
+  border-radius: 0;
+}
