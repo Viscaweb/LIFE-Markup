@@ -1,0 +1,56 @@
+@card-background: #FFF;
+@card-padding: 3em;
+@card-text-color: #262a36;
+@title-light: #807f9a;
+@title-text: @gray-dark;
+
+
+.card {
+  border-radius: @border-radius-base;
+  background: @card-background;
+  margin-bottom: @spacer-4;
+}
+
+.card__header {
+  padding: @card-padding @card-padding 0 @card-padding;
+}
+
+.card__title {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 0 @spacer-4 0;
+
+  font-size: 22px;
+  color: @title-light;
+  font-weight: 400;
+
+  span {
+    color: @title-text;
+    font-weight: 700;
+  }
+}
+
+.card__body {
+  display: block;
+  color: @card-text-color;
+  padding: @card-padding;
+  border-bottom: 1px solid @gray;
+
+  &:last-child {
+    border-bottom-left-radius: @border-radius-base;
+    border-bottom-right-radius: @border-radius-base;
+  }
+}
+
+.card > .list-group {
+  margin: 0;
+
+  .list-group-item  {
+    padding-left: @card-padding;
+    padding-right: @card-padding;
+
+    &:last-child {
+      padding-bottom: @card-padding;
+    }
+  }
+}

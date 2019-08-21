@@ -8597,6 +8597,24 @@ button.close {
 .pb-5 {
   padding-bottom: 39px !important;
 }
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pl-1 {
+  padding-left: 3.25px !important;
+}
+.pl-2 {
+  padding-left: 6.5px !important;
+}
+.pl-3 {
+  padding-left: 13px !important;
+}
+.pl-4 {
+  padding-left: 19.5px !important;
+}
+.pl-5 {
+  padding-left: 39px !important;
+}
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -8634,6 +8652,29 @@ button.close {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+@media (min-width: 768px) {
+  .flex-sm-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-sm-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .justify-content-center {
   -webkit-box-pack: center !important;
   -webkit-justify-content: center !important;
@@ -8645,6 +8686,17 @@ button.close {
   -webkit-justify-content: space-between !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
+}
+.align-self-center {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 /*jQuery UI Components*/
 /*Custom General Icons Behavior*/
@@ -23262,6 +23314,46 @@ ul.image-list li img {
 }
 .ls-alert.ls-alert--info .alert-link {
   color: #66512c;
+}
+.card {
+  border-radius: 2px;
+  background: #ffffff;
+  margin-bottom: 19.5px;
+}
+.card__header {
+  padding: 3em 3em 0 3em;
+}
+.card__title {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 0 19.5px 0;
+  font-size: 22px;
+  color: #807f9a;
+  font-weight: 400;
+}
+.card__title span {
+  color: #333333;
+  font-weight: 700;
+}
+.card__body {
+  display: block;
+  color: #262a36;
+  padding: 3em;
+  border-bottom: 1px solid #555555;
+}
+.card__body:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.card > .list-group {
+  margin: 0;
+}
+.card > .list-group .list-group-item {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.card > .list-group .list-group-item:last-child {
+  padding-bottom: 3em;
 }
 /** Pages */
 body.page--pronosticador {

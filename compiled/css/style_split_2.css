@@ -1,3 +1,52 @@
+.btn-group.btn-group-selector-prev-next .dropdown-toggle > .icon,
+.btn-group.btn-group-selector-prev-next .btn-group .dropdown-toggle > .icon {
+  position: absolute;
+  right: 4px;
+  line-height: 18px;
+}
+
+.btn-group.btn-group-selector-prev-next > .btn-group {
+  width: 100%;
+}
+
+.floating-feedback {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  display: none;
+}
+
+.btn-toggle {
+  display: block;
+  text-align: left;
+}
+
+.dropdown-select {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.dropdown-menu .comment-number {
+  top: 2px;
+}
+
+.dropdown-menu li > a:hover .comment-number,
+.dropdown-menu li > a:focus .comment-number {
+  color: #5da400;
+}
+
+ul.nav li.dropdown-hover:hover ul.dropdown-menu {
+  display: block;
+}
+
+/* Livescores Modals */
+
+.modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
+  padding: 0;
+}
+
 .panel > .panel-heading .team-logo {
   max-width: 28px;
   max-height: 28px;
@@ -14032,6 +14081,55 @@ ul.image-list li img {
 
 .ls-alert.ls-alert--info .alert-link {
   color: #66512c;
+}
+
+.card {
+  border-radius: 2px;
+  background: #ffffff;
+  margin-bottom: 19.5px;
+}
+
+.card__header {
+  padding: 3em 3em 0 3em;
+}
+
+.card__title {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 0 19.5px 0;
+  font-size: 22px;
+  color: #807f9a;
+  font-weight: 400;
+}
+
+.card__title span {
+  color: #333333;
+  font-weight: 700;
+}
+
+.card__body {
+  display: block;
+  color: #262a36;
+  padding: 3em;
+  border-bottom: 1px solid #555555;
+}
+
+.card__body:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.card > .list-group {
+  margin: 0;
+}
+
+.card > .list-group .list-group-item {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.card > .list-group .list-group-item:last-child {
+  padding-bottom: 3em;
 }
 
 /** Pages */
