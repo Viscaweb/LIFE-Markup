@@ -14142,6 +14142,18 @@ body.page--pronosticador .header .navbar-right {
   display: none;
 }
 
+@media (max-width: 768px) {
+  body.page--pronosticador footer.footer .top-footer .left-column,
+  body.page--pronosticador footer.footer .top-footer .right-column {
+    display: block;
+  }
+
+  body.page--pronosticador footer.footer .container {
+    width: 100%;
+    min-width: initial;
+  }
+}
+
 .widget--bookmaker-list .card__title span:first-child {
   vertical-align: bottom;
 }
