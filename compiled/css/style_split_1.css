@@ -3,8 +3,8 @@
 /*Bootstrap Source Code*/
 
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -339,11 +339,11 @@ th {
 }
 
 .glyphicon-asterisk:before {
-  content: "\2a";
+  content: "\002a";
 }
 
 .glyphicon-plus:before {
-  content: "\2b";
+  content: "\002b";
 }
 
 .glyphicon-euro:before,
@@ -1432,7 +1432,6 @@ a:focus {
 }
 
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3301,7 +3300,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3349,6 +3347,11 @@ output {
 
 .form-control::-webkit-input-placeholder {
   color: #999999;
+}
+
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
 }
 
 .form-control[disabled],
@@ -3823,7 +3826,7 @@ select[multiple].input-lg {
 
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 14.333333px;
+    padding-top: 11px;
     font-size: 16px;
   }
 }
@@ -3863,7 +3866,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3943,9 +3945,6 @@ fieldset[disabled] a.btn {
   background-image: none;
 }
 
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
 .btn-default.disabled:hover,
 .btn-default[disabled]:hover,
 fieldset[disabled] .btn-default:hover,
@@ -3954,13 +3953,7 @@ fieldset[disabled] .btn-default:hover,
 fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
+fieldset[disabled] .btn-default.focus {
   background-color: #fafafa;
   border-color: #dfdfdf;
 }
@@ -4038,9 +4031,6 @@ fieldset[disabled] .btn-default.active {
   background-image: none;
 }
 
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover,
@@ -4049,13 +4039,7 @@ fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
+fieldset[disabled] .btn-primary.focus {
   background-color: #5da400;
   border-color: #4b9200;
 }
@@ -4133,9 +4117,6 @@ fieldset[disabled] .btn-primary.active {
   background-image: none;
 }
 
-.btn-success.disabled,
-.btn-success[disabled],
-fieldset[disabled] .btn-success,
 .btn-success.disabled:hover,
 .btn-success[disabled]:hover,
 fieldset[disabled] .btn-success:hover,
@@ -4144,13 +4125,7 @@ fieldset[disabled] .btn-success:hover,
 fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
-fieldset[disabled] .btn-success.focus,
-.btn-success.disabled:active,
-.btn-success[disabled]:active,
-fieldset[disabled] .btn-success:active,
-.btn-success.disabled.active,
-.btn-success[disabled].active,
-fieldset[disabled] .btn-success.active {
+fieldset[disabled] .btn-success.focus {
   background-color: #87b762;
   border-color: #5da400;
 }
@@ -4228,9 +4203,6 @@ fieldset[disabled] .btn-success.active {
   background-image: none;
 }
 
-.btn-info.disabled,
-.btn-info[disabled],
-fieldset[disabled] .btn-info,
 .btn-info.disabled:hover,
 .btn-info[disabled]:hover,
 fieldset[disabled] .btn-info:hover,
@@ -4239,13 +4211,7 @@ fieldset[disabled] .btn-info:hover,
 fieldset[disabled] .btn-info:focus,
 .btn-info.disabled.focus,
 .btn-info[disabled].focus,
-fieldset[disabled] .btn-info.focus,
-.btn-info.disabled:active,
-.btn-info[disabled]:active,
-fieldset[disabled] .btn-info:active,
-.btn-info.disabled.active,
-.btn-info[disabled].active,
-fieldset[disabled] .btn-info.active {
+fieldset[disabled] .btn-info.focus {
   background-color: #96b4bd;
   border-color: #87a5ae;
 }
@@ -4323,9 +4289,6 @@ fieldset[disabled] .btn-info.active {
   background-image: none;
 }
 
-.btn-warning.disabled,
-.btn-warning[disabled],
-fieldset[disabled] .btn-warning,
 .btn-warning.disabled:hover,
 .btn-warning[disabled]:hover,
 fieldset[disabled] .btn-warning:hover,
@@ -4334,13 +4297,7 @@ fieldset[disabled] .btn-warning:hover,
 fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled.focus,
 .btn-warning[disabled].focus,
-fieldset[disabled] .btn-warning.focus,
-.btn-warning.disabled:active,
-.btn-warning[disabled]:active,
-fieldset[disabled] .btn-warning:active,
-.btn-warning.disabled.active,
-.btn-warning[disabled].active,
-fieldset[disabled] .btn-warning.active {
+fieldset[disabled] .btn-warning.focus {
   background-color: #f1ae4e;
   border-color: #e29f3f;
 }
@@ -4418,9 +4375,6 @@ fieldset[disabled] .btn-warning.active {
   background-image: none;
 }
 
-.btn-danger.disabled,
-.btn-danger[disabled],
-fieldset[disabled] .btn-danger,
 .btn-danger.disabled:hover,
 .btn-danger[disabled]:hover,
 fieldset[disabled] .btn-danger:hover,
@@ -4429,13 +4383,7 @@ fieldset[disabled] .btn-danger:hover,
 fieldset[disabled] .btn-danger:focus,
 .btn-danger.disabled.focus,
 .btn-danger[disabled].focus,
-fieldset[disabled] .btn-danger.focus,
-.btn-danger.disabled:active,
-.btn-danger[disabled]:active,
-fieldset[disabled] .btn-danger:active,
-.btn-danger.disabled.active,
-.btn-danger[disabled].active,
-fieldset[disabled] .btn-danger.active {
+fieldset[disabled] .btn-danger.focus {
   background-color: #dd4f3c;
   border-color: #ce402d;
 }
@@ -4895,14 +4843,16 @@ tbody.collapse.in {
 
 .btn-group-vertical > .btn:first-child:not(:last-child) {
   border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .btn-group-vertical > .btn:last-child:not(:first-child) {
-  border-bottom-left-radius: 2px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
@@ -4969,6 +4919,10 @@ tbody.collapse.in {
   float: left;
   width: 100%;
   margin-bottom: 0;
+}
+
+.input-group .form-control:focus {
+  z-index: 3;
 }
 
 .input-group-lg > .form-control,
@@ -5051,7 +5005,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 .input-group-addon.input-sm {
@@ -6020,15 +5974,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
 }
 
-.breadcrumb.breadcrumb--article {
-  padding: 0;
-  border-bottom: none;
-}
-
-.breadcrumb.breadcrumb--article > li:first-child a {
-  padding-left: 0;
-}
-
 .pagination {
   display: inline-block;
   padding-left: 0;
@@ -6070,7 +6015,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  z-index: 3;
+  z-index: 2;
   color: #0f86ff;
   background-color: #eeeeee;
   border-color: #dddddd;
@@ -6082,7 +6027,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  z-index: 2;
+  z-index: 3;
   color: #ffffff;
   background-color: #5da400;
   border-color: #5da400;
@@ -6348,6 +6293,8 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron {
   border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .jumbotron .container {
@@ -7482,7 +7429,6 @@ button.close {
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857143px;
 }
 
 .modal-header .close {
@@ -7932,6 +7878,7 @@ button.close {
   color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .carousel-control.left {
@@ -8058,18 +8005,18 @@ button.close {
   .carousel-control .icon-next {
     width: 30px;
     height: 30px;
-    margin-top: -15px;
+    margin-top: -10px;
     font-size: 30px;
   }
 
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
-    margin-left: -15px;
+    margin-left: -10px;
   }
 
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
-    margin-right: -15px;
+    margin-right: -10px;
   }
 
   .carousel-caption {
@@ -8111,6 +8058,8 @@ button.close {
 .pager:after,
 .panel-body:before,
 .panel-body:after,
+.modal-header:before,
+.modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
 .bs-container:before,
@@ -8135,6 +8084,7 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
+.modal-header:after,
 .modal-footer:after,
 .bs-container:after,
 .top-match-block .make-prediction .prediction:after {
@@ -10669,13 +10619,18 @@ button.close {
   padding: 50px 15px 15px;
   position: relative;
   display: none;
-  background-color: #ffffff;
-  border: 1px solid #f0f0f0;
 }
 
-.ui-datepicker.ui-datepicker-with-border {
-  border: 1px solid #dfdfdf;
-  margin-top: -1px;
+.ui-datepicker:after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fcfcfc;
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -10694,7 +10649,7 @@ button.close {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  color: rgba(92, 92, 92, 0.7);
+  color: #c2c2c2;
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev,
@@ -10704,7 +10659,7 @@ button.close {
   width: 40px;
   text-align: center;
   cursor: pointer;
-  color: rgba(92, 92, 92, 0.5);
+  color: #b5b5b5;
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after,
@@ -10742,12 +10697,6 @@ button.close {
   content: "\e60d";
 }
 
-.ui-datepicker .ui-icon {
-  text-indent: -9090em;
-  text-align: left;
-  float: left;
-}
-
 .ui-datepicker table.ui-datepicker-calendar {
   width: 100%;
 }
@@ -10766,7 +10715,7 @@ button.close {
   display: inline-block;
   padding: 5px;
   margin: 1px;
-  color: #5c5c5c;
+  color: #333333;
   width: 30px;
   height: 30px;
   line-height: 20px;
@@ -10776,10 +10725,6 @@ button.close {
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
-  background-color: #e6e6e6;
-}
-
-.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   background-color: #5da400;
   border-color: #5da400;
   color: #ffffff;
@@ -10792,7 +10737,7 @@ button.close {
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a:hover {
   background-color: #ebebeb;
   border-color: #ebebeb;
-  color: #5c5c5c;
+  color: #333333;
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
@@ -13412,9 +13357,6 @@ span.dark-icon {
   background-image: none;
 }
 
-.btn-prediction.disabled,
-.btn-prediction[disabled],
-fieldset[disabled] .btn-prediction,
 .btn-prediction.disabled:hover,
 .btn-prediction[disabled]:hover,
 fieldset[disabled] .btn-prediction:hover,
@@ -13423,13 +13365,7 @@ fieldset[disabled] .btn-prediction:hover,
 fieldset[disabled] .btn-prediction:focus,
 .btn-prediction.disabled.focus,
 .btn-prediction[disabled].focus,
-fieldset[disabled] .btn-prediction.focus,
-.btn-prediction.disabled:active,
-.btn-prediction[disabled]:active,
-fieldset[disabled] .btn-prediction:active,
-.btn-prediction.disabled.active,
-.btn-prediction[disabled].active,
-fieldset[disabled] .btn-prediction.active {
+fieldset[disabled] .btn-prediction.focus {
   background-color: #ffffff;
   border-color: #e00000;
 }
@@ -13512,9 +13448,6 @@ fieldset[disabled] .btn-prediction.active {
   background-image: none;
 }
 
-.btn-prediction.btn-prediction-done.disabled,
-.btn-prediction.btn-prediction-done[disabled],
-fieldset[disabled] .btn-prediction.btn-prediction-done,
 .btn-prediction.btn-prediction-done.disabled:hover,
 .btn-prediction.btn-prediction-done[disabled]:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-done:hover,
@@ -13523,13 +13456,7 @@ fieldset[disabled] .btn-prediction.btn-prediction-done:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-done:focus,
 .btn-prediction.btn-prediction-done.disabled.focus,
 .btn-prediction.btn-prediction-done[disabled].focus,
-fieldset[disabled] .btn-prediction.btn-prediction-done.focus,
-.btn-prediction.btn-prediction-done.disabled:active,
-.btn-prediction.btn-prediction-done[disabled]:active,
-fieldset[disabled] .btn-prediction.btn-prediction-done:active,
-.btn-prediction.btn-prediction-done.disabled.active,
-.btn-prediction.btn-prediction-done[disabled].active,
-fieldset[disabled] .btn-prediction.btn-prediction-done.active {
+fieldset[disabled] .btn-prediction.btn-prediction-done.focus {
   background-color: #737373;
   border-color: #5e5e5e;
 }
@@ -13619,9 +13546,6 @@ fieldset[disabled] .btn-prediction.btn-prediction-done.active {
   background-image: none;
 }
 
-.btn-prediction.btn-prediction-success.disabled,
-.btn-prediction.btn-prediction-success[disabled],
-fieldset[disabled] .btn-prediction.btn-prediction-success,
 .btn-prediction.btn-prediction-success.disabled:hover,
 .btn-prediction.btn-prediction-success[disabled]:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-success:hover,
@@ -13630,13 +13554,7 @@ fieldset[disabled] .btn-prediction.btn-prediction-success:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-success:focus,
 .btn-prediction.btn-prediction-success.disabled.focus,
 .btn-prediction.btn-prediction-success[disabled].focus,
-fieldset[disabled] .btn-prediction.btn-prediction-success.focus,
-.btn-prediction.btn-prediction-success.disabled:active,
-.btn-prediction.btn-prediction-success[disabled]:active,
-fieldset[disabled] .btn-prediction.btn-prediction-success:active,
-.btn-prediction.btn-prediction-success.disabled.active,
-.btn-prediction.btn-prediction-success[disabled].active,
-fieldset[disabled] .btn-prediction.btn-prediction-success.active {
+fieldset[disabled] .btn-prediction.btn-prediction-success.focus {
   background-color: #87b762;
   border-color: #5da400;
 }
@@ -13716,9 +13634,6 @@ fieldset[disabled] .btn-prediction.btn-prediction-success.active {
   background-image: none;
 }
 
-.btn-prediction.btn-prediction-result.disabled,
-.btn-prediction.btn-prediction-result[disabled],
-fieldset[disabled] .btn-prediction.btn-prediction-result,
 .btn-prediction.btn-prediction-result.disabled:hover,
 .btn-prediction.btn-prediction-result[disabled]:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-result:hover,
@@ -13727,13 +13642,7 @@ fieldset[disabled] .btn-prediction.btn-prediction-result:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-result:focus,
 .btn-prediction.btn-prediction-result.disabled.focus,
 .btn-prediction.btn-prediction-result[disabled].focus,
-fieldset[disabled] .btn-prediction.btn-prediction-result.focus,
-.btn-prediction.btn-prediction-result.disabled:active,
-.btn-prediction.btn-prediction-result[disabled]:active,
-fieldset[disabled] .btn-prediction.btn-prediction-result:active,
-.btn-prediction.btn-prediction-result.disabled.active,
-.btn-prediction.btn-prediction-result[disabled].active,
-fieldset[disabled] .btn-prediction.btn-prediction-result.active {
+fieldset[disabled] .btn-prediction.btn-prediction-result.focus {
   background-color: #f7f7f7;
   border-color: #5da400;
 }
@@ -13812,9 +13721,6 @@ fieldset[disabled] .btn-prediction.btn-prediction-result.active {
   background-image: none;
 }
 
-.btn-prediction.btn-prediction-failed.disabled,
-.btn-prediction.btn-prediction-failed[disabled],
-fieldset[disabled] .btn-prediction.btn-prediction-failed,
 .btn-prediction.btn-prediction-failed.disabled:hover,
 .btn-prediction.btn-prediction-failed[disabled]:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-failed:hover,
@@ -13823,13 +13729,7 @@ fieldset[disabled] .btn-prediction.btn-prediction-failed:hover,
 fieldset[disabled] .btn-prediction.btn-prediction-failed:focus,
 .btn-prediction.btn-prediction-failed.disabled.focus,
 .btn-prediction.btn-prediction-failed[disabled].focus,
-fieldset[disabled] .btn-prediction.btn-prediction-failed.focus,
-.btn-prediction.btn-prediction-failed.disabled:active,
-.btn-prediction.btn-prediction-failed[disabled]:active,
-fieldset[disabled] .btn-prediction.btn-prediction-failed:active,
-.btn-prediction.btn-prediction-failed.disabled.active,
-.btn-prediction.btn-prediction-failed[disabled].active,
-fieldset[disabled] .btn-prediction.btn-prediction-failed.active {
+fieldset[disabled] .btn-prediction.btn-prediction-failed.focus {
   background-color: #dd4f3c;
   border-color: #ce402d;
 }
@@ -14121,9 +14021,6 @@ fieldset[disabled] .btn-prediction.btn-prediction-failed.active {
   background-image: none;
 }
 
-.btn-facebook.disabled,
-.btn-facebook[disabled],
-fieldset[disabled] .btn-facebook,
 .btn-facebook.disabled:hover,
 .btn-facebook[disabled]:hover,
 fieldset[disabled] .btn-facebook:hover,
@@ -14132,13 +14029,7 @@ fieldset[disabled] .btn-facebook:hover,
 fieldset[disabled] .btn-facebook:focus,
 .btn-facebook.disabled.focus,
 .btn-facebook[disabled].focus,
-fieldset[disabled] .btn-facebook.focus,
-.btn-facebook.disabled:active,
-.btn-facebook[disabled]:active,
-fieldset[disabled] .btn-facebook:active,
-.btn-facebook.disabled.active,
-.btn-facebook[disabled].active,
-fieldset[disabled] .btn-facebook.active {
+fieldset[disabled] .btn-facebook.focus {
   background-color: #4763b2;
   border-color: #4059a0;
 }
@@ -14216,9 +14107,6 @@ fieldset[disabled] .btn-facebook.active {
   background-image: none;
 }
 
-.btn-twitter.disabled,
-.btn-twitter[disabled],
-fieldset[disabled] .btn-twitter,
 .btn-twitter.disabled:hover,
 .btn-twitter[disabled]:hover,
 fieldset[disabled] .btn-twitter:hover,
@@ -14227,13 +14115,7 @@ fieldset[disabled] .btn-twitter:hover,
 fieldset[disabled] .btn-twitter:focus,
 .btn-twitter.disabled.focus,
 .btn-twitter[disabled].focus,
-fieldset[disabled] .btn-twitter.focus,
-.btn-twitter.disabled:active,
-.btn-twitter[disabled]:active,
-fieldset[disabled] .btn-twitter:active,
-.btn-twitter.disabled.active,
-.btn-twitter[disabled].active,
-fieldset[disabled] .btn-twitter.active {
+fieldset[disabled] .btn-twitter.focus {
   background-color: #00b9f3;
   border-color: #00a6da;
 }
@@ -14382,4 +14264,530 @@ fieldset[disabled] .btn-twitter.active {
   white-space: nowrap;
   padding-right: 20px;
   text-align: left;
+}
+
+.btn-group.btn-group-selector-prev-next .dropdown-toggle > .icon,
+.btn-group.btn-group-selector-prev-next .btn-group .dropdown-toggle > .icon {
+  position: absolute;
+  right: 4px;
+  line-height: 18px;
+}
+
+.btn-group.btn-group-selector-prev-next > .btn-group {
+  width: 100%;
+}
+
+.floating-feedback {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  display: none;
+}
+
+.btn-toggle {
+  display: block;
+  text-align: left;
+}
+
+.dropdown-select {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.dropdown-menu .comment-number {
+  top: 2px;
+}
+
+.dropdown-menu li > a:hover .comment-number,
+.dropdown-menu li > a:focus .comment-number {
+  color: #5da400;
+}
+
+ul.nav li.dropdown-hover:hover ul.dropdown-menu {
+  display: block;
+}
+
+/* Livescores Modals */
+
+.modal .modal-dialog .modal-content .modal-body.modal-body-no-padding {
+  padding: 0;
+}
+
+.panel > .panel-heading .team-logo {
+  max-width: 28px;
+  max-height: 28px;
+  position: relative;
+}
+
+.panel > .panel-heading .team-logo + .team-logo {
+  margin-left: 5px;
+}
+
+.panel.panel-no-border {
+  border: 0;
+}
+
+.panel.panel-inverse .panel-heading--primary,
+.panel .panel-heading--primary {
+  background-color: #5da400;
+  color: #FCFCFA;
+}
+
+span.sprite-icons {
+  width: 21px;
+  height: 21px;
+  content: "";
+  display: inline-block;
+  margin-bottom: -4px;
+  background-image: url("../img//sprite-icons.png");
+  background-size: 292px;
+  background-repeat: no-repeat;
+}
+
+span.sprite-icons.football {
+  background-position: -230px -28px;
+}
+
+span.sprite-icons.tennis {
+  background-position: -229px -75px;
+}
+
+span.sprite-icons.rugby {
+  background-position: -230px -52px;
+}
+
+span.sprite-icons.handball {
+  background-position: -229px -98px;
+}
+
+span.sprite-icons.basketball {
+  background-position: -229px -122px;
+}
+
+span.sprite-icons.volleyball {
+  background-position: -257px -28px;
+}
+
+span.sprite-icons.icehockey {
+  background-position: -257px -52px;
+}
+
+span.sprite-icons.baseball {
+  background-position: -257px -75px;
+}
+
+span.sprite-icons.am-football {
+  background-position: -255px -98px;
+  height: 17px;
+  width: 22px;
+  margin-bottom: -4px !important;
+  margin-left: -2px;
+}
+
+span.sprite-icons.yellow-card {
+  width: 9px;
+  background-position: -121px -5px;
+}
+
+span.sprite-icons.red-card {
+  width: 12px;
+  background-position: -146px -5px;
+}
+
+span.sprite-icons.yellow-red-card {
+  width: 12px;
+  background-position: -176px -5px;
+}
+
+span.sprite-icons.goal {
+  background-position: -60px -26px;
+}
+
+span.sprite-icons.penalty-goal {
+  background-position: -3px -50px;
+}
+
+span.sprite-icons.penalty-missed {
+  background-position: -254px -3px;
+}
+
+span.sprite-icons.shirt {
+  background-position: -5px -97px;
+}
+
+span.sprite-icons.comment {
+  background-position: -31px -97px;
+}
+
+span.sprite-icons.comment-more {
+  background-position: -60px -97px;
+}
+
+span.sprite-icons.shot-off {
+  background-position: -85px -97px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-on {
+  background-position: -114px -97px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-on-1 {
+  background-position: -171px -98px;
+  width: 26px;
+}
+
+span.sprite-icons.shot-post {
+  background-position: -143px -96px;
+  height: 19px;
+}
+
+span.sprite-icons.clock {
+  background-position: -144px -121px;
+}
+
+span.sprite-icons.player-change {
+  background-position: -205px -5px;
+  width: 8px;
+}
+
+span.sprite-icons.substitution-left {
+  background-position: -233px -5px;
+  width: 8px;
+}
+
+span.sprite-icons.football-field {
+  background-position: -5px -3px;
+  width: 16px;
+  height: 19px;
+}
+
+span.sprite-icons.lineups {
+  background-position: -59px -120px;
+  height: 20px;
+}
+
+span.sprite-icons.shot-blocked {
+  background-position: -88px -121px;
+}
+
+span.sprite-icons.hit-player-wall {
+  background-position: -116px -121px;
+}
+
+span.sprite-icons.green-arrow {
+  background-position: -37px -3px;
+  width: 11px;
+}
+
+span.sprite-icons.red-arrow {
+  background-position: -64px -3px;
+  width: 11px;
+}
+
+span.sprite-icons.chairs {
+  background-position: -87px -3px;
+  width: 23px;
+}
+
+span.sprite-icons.incident-important {
+  background-position: -143px -75px;
+}
+
+span.sprite-icons.red-cross {
+  background-position: -3px -75px;
+}
+
+span.sprite-icons.yellow-cross {
+  background-position: -31px -75px;
+}
+
+span.sprite-icons.injury-back {
+  background-position: -60px -74px;
+}
+
+span.sprite-icons.players-wall {
+  background-position: -87px -74px;
+  width: 22px;
+}
+
+span.sprite-icons.funfact {
+  background-position: -115px -74px;
+  width: 22px;
+}
+
+span.sprite-icons.stadium,
+span.sprite-icons.attendance {
+  background-position: -198px -97px;
+  width: 25px;
+}
+
+span.sprite-icons.info {
+  background-position: -199px -75px;
+}
+
+span.sprite-icons.whistle {
+  background-position: -3px -27px;
+}
+
+span.sprite-icons.interrupted {
+  background-position: -31px -27px;
+}
+
+span.sprite-icons.whistle-active {
+  background-position: -31px -144px;
+}
+
+span.sprite-icons.shootouts {
+  background-position: -60px -144px;
+}
+
+span.sprite-icons.goal-assist {
+  background-position: -3px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.assist {
+  background-position: -31px -121px;
+  width: 23px;
+}
+
+span.sprite-icons.shootout-goal {
+  background-position: -116px -26px;
+}
+
+span.sprite-icons.own-goal {
+  background-position: -171px -26px;
+}
+
+span.sprite-icons.goal-small {
+  background-position: -201px -26px;
+}
+
+span.sprite-icons.nogoal {
+  background-position: -31px -50px;
+}
+
+span.sprite-icons.shootout-missed {
+  background-position: -87px -26px;
+}
+
+span.sprite-icons.grid {
+  background-position: -199px -123px;
+}
+
+span.sprite-icons.gift {
+  background-position: -255px -122px;
+}
+
+span.sprite-icons.match-paused {
+  background-position: -116px -50px;
+}
+
+span.sprite-icons.match-play {
+  background-position: -142px -50px;
+}
+
+span.sprite-icons.match-reload {
+  background-position: -199px -50px;
+}
+
+span.sprite-icons.match-stop {
+  background-position: -171px -50px;
+}
+
+span.sprite-icons.extra-time {
+  background-position: -171px -75px;
+}
+
+span.sprite-icons.offside {
+  background-position: -58px -50px;
+}
+
+span.sprite-icons.corner-flag {
+  background-position: -86px -50px;
+}
+
+span.sprite-icons.webmaster-cogs {
+  background: url("../img//sprite-icons-webmaster.png") no-repeat -32px -1px;
+  width: 20px;
+  height: 24px;
+  margin-right: 5px;
+  margin-top: -10px;
+  margin-bottom: 0;
+  position: relative;
+  top: 7px;
+}
+
+span.sprite-icons.webmaster-palette {
+  background: url("../img//sprite-icons-webmaster.png") no-repeat -36px -29px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+span.sprite-icons.webmaster-background {
+  background: url("../img//sprite-icons-webmaster.png") no-repeat -5px -3px;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+span.sprite-icons.webmaster-text {
+  background: url("../img//sprite-icons-webmaster.png") no-repeat -8px -29px;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+span.sprite-icons.webmaster-border {
+  background: url("../img//sprite-icons-webmaster.png") no-repeat -8px -74px;
+  width: 17px;
+  height: 19px;
+  margin: 0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2/1), all and (min-resolution: 192dpi) {
+  span.sprite-icons {
+    background-image: url("../img//sprite-icons@2x.png");
+  }
+}
+
+/*Countries flags icons*/
+
+.country-flag {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: text-top;
+  line-height: 16px;
+  background-image: url("../img//sprite-flags.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  /* united nations flag */
+  /* united nations flag */
+  /* united nations flag */
+  /* united nations flag */
+}
+
+.country-flag._african_u {
+  background-position: 0 -16px;
+}
+
+.country-flag._arab_league {
+  background-position: 0 -32px;
+}
+
+.country-flag._asean {
+  background-position: 0 -48px;
+}
+
+.country-flag._caricom {
+  background-position: 0 -64px;
+}
+
+.country-flag._cis {
+  background-position: 0 -80px;
+}
+
+.country-flag._commonwealth {
+  background-position: 0 -96px;
+}
+
+.country-flag._england {
+  background-position: 0 -112px;
+}
+
+.country-flag._european_union,
+.country-flag.eu {
+  background-position: 0 -128px;
+}
+
+.country-flag._islamic_conference {
+  background-position: 0 -144px;
+}
+
+.country-flag._kosovo {
+  background-position: 0 -160px;
+}
+
+.country-flag._nato {
+  background-position: 0 -176px;
+}
+
+.country-flag._northern_cyprus {
+  background-position: 0 -192px;
+}
+
+.country-flag._n-ireland {
+  background-position: 0 -208px;
+}
+
+.country-flag._olimpic_movement {
+  background-position: 0 -224px;
+}
+
+.country-flag._opec {
+  background-position: 0 -240px;
+}
+
+.country-flag._red_cross {
+  background-position: 0 -256px;
+}
+
+.country-flag._scotland {
+  background-position: 0 -272px;
+}
+
+.country-flag._somaliland {
+  background-position: 0 -288px;
+}
+
+.country-flag._tibet {
+  background-position: 0 -304px;
+}
+
+.country-flag._united_nations,
+.country-flag._united_na {
+  background-position: 0 -320px;
+}
+
+.country-flag._wales {
+  background-position: 0 -336px;
+}
+
+.country-flag._oceania {
+  background-position: 0 -320px;
+}
+
+.country-flag._central_n {
+  background-position: 0 -320px;
+}
+
+.country-flag._south_am {
+  background-position: 0 -320px;
+}
+
+.country-flag._southern_hemisphere {
+  background-position: 0 -320px;
+}
+
+.country-flag.ad {
+  background-position: 0 -352px;
+}
+
+.country-flag.ae {
+  background-position: 0 -368px;
+}
+
+.country-flag.af {
+  background-position: 0 -384px;
+}
+
+.country-flag.ag {
+  background-position: 0 -400px;
 }

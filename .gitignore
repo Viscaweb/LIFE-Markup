@@ -22,4 +22,4 @@ node_modules
 .vagrant/
 
 #Composer
-vendor
+./vendor
