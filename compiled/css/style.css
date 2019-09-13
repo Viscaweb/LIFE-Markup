@@ -21485,31 +21485,34 @@ ul.image-list li img {
 .main-article .article-widget {
   padding: 12px 0;
 }
+.main-article h1,
+.main-article h2,
+.main-article h3,
+.main-article h4,
+.main-article h5,
+.main-article h6 {
+  color: #06082e;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.main-article h1 {
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: normal;
+  margin-top: 7px;
+  margin-bottom: 0;
+  color: #06082e;
+}
 .main-article h2,
 .main-article h3,
 .main-article h4 {
-  margin-bottom: 20px;
   margin-top: 25px;
 }
 .main-article h2:first-child,
 .main-article h3:first-child,
 .main-article h4:first-child {
   margin-top: 0;
-}
-.main-article h1 {
-  font-size: 38px;
-  line-height: 1.16;
-  font-weight: normal;
-  letter-spacing: normal;
-  margin-top: 7px;
-  margin-bottom: 0;
-}
-.main-article h2,
-.main-article h3,
-.main-article h4,
-.main-article h5 {
-  line-height: normal;
-  margin-bottom: 24px;
 }
 .main-article h2 {
   font-size: 28px;
@@ -21522,6 +21525,7 @@ ul.image-list li img {
 }
 .main-article h5 {
   font-size: 18px;
+  margin-bottom: 24px;
 }
 .main-article p {
   font-size: 16px;
