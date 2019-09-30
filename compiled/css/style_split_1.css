@@ -10619,18 +10619,13 @@ button.close {
   padding: 50px 15px 15px;
   position: relative;
   display: none;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
 }
 
-.ui-datepicker:after {
-  content: "";
-  position: absolute;
-  left: 50px;
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #fcfcfc;
+.ui-datepicker.ui-datepicker-with-border {
+  border: 1px solid #dfdfdf;
+  margin-top: -1px;
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -10649,7 +10644,7 @@ button.close {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  color: #c2c2c2;
+  color: rgba(92, 92, 92, 0.7);
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev,
@@ -10659,7 +10654,7 @@ button.close {
   width: 40px;
   text-align: center;
   cursor: pointer;
-  color: #b5b5b5;
+  color: rgba(92, 92, 92, 0.5);
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after,
@@ -10697,6 +10692,12 @@ button.close {
   content: "\e60d";
 }
 
+.ui-datepicker .ui-icon {
+  text-indent: -9090em;
+  text-align: left;
+  float: left;
+}
+
 .ui-datepicker table.ui-datepicker-calendar {
   width: 100%;
 }
@@ -10715,7 +10716,7 @@ button.close {
   display: inline-block;
   padding: 5px;
   margin: 1px;
-  color: #333333;
+  color: #5c5c5c;
   width: 30px;
   height: 30px;
   line-height: 20px;
@@ -10725,6 +10726,10 @@ button.close {
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-highlight {
+  background-color: #e6e6e6;
+}
+
+.ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   background-color: #5da400;
   border-color: #5da400;
   color: #ffffff;
@@ -10737,7 +10742,7 @@ button.close {
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a:hover {
   background-color: #ebebeb;
   border-color: #ebebeb;
-  color: #333333;
+  color: #5c5c5c;
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
@@ -14782,12 +14787,4 @@ span.sprite-icons.webmaster-border {
 
 .country-flag.ae {
   background-position: 0 -368px;
-}
-
-.country-flag.af {
-  background-position: 0 -384px;
-}
-
-.country-flag.ag {
-  background-position: 0 -400px;
 }
