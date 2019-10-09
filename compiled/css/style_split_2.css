@@ -13603,11 +13603,11 @@ ul.image-list li img {
   margin-bottom: 19.5px;
 }
 
-.card__header {
+.card--flat .card__header {
   padding: 3em 3em 0 3em;
 }
 
-.card__title {
+.card--flat .card__title {
   display: inline-block;
   padding-bottom: 4px;
   margin: 0 0 19.5px 0;
@@ -13616,18 +13616,18 @@ ul.image-list li img {
   font-weight: 400;
 }
 
-.card__title span {
+.card--flat .card__title span {
   color: #333333;
   font-weight: 700;
 }
 
-.card__body {
+.card--flat .card__body {
   display: block;
   color: #262a36;
   padding: 3em;
 }
 
-.card__body:last-child {
+.card--flat .card__body:last-child {
   border-bottom: 1px solid #555555;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
