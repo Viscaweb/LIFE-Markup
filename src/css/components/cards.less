@@ -11,34 +11,36 @@
   margin-bottom: @spacer-4;
 }
 
-.card__header {
-  padding: @card-padding @card-padding 0 @card-padding;
-}
-
-.card__title {
-  display: inline-block;
-  padding-bottom: 4px;
-  margin: 0 0 @spacer-4 0;
-
-  font-size: 22px;
-  color: @title-light;
-  font-weight: 400;
-
-  span {
-    color: @title-text;
-    font-weight: 700;
+.card--flat {
+  .card__header {
+    padding: @card-padding @card-padding 0 @card-padding;
   }
-}
 
-.card__body {
-  display: block;
-  color: @card-text-color;
-  padding: @card-padding;
+  .card__title {
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 0 0 @spacer-4 0;
 
-  &:last-child {
-    border-bottom: 1px solid @gray;
-    border-bottom-left-radius: @border-radius-base;
-    border-bottom-right-radius: @border-radius-base;
+    font-size: 22px;
+    color: @title-light;
+    font-weight: 400;
+
+    span {
+      color: @title-text;
+      font-weight: 700;
+    }
+  }
+
+  .card__body {
+    display: block;
+    color: @card-text-color;
+    padding: @card-padding;
+
+    &:last-child {
+      border-bottom: 1px solid @gray;
+      border-bottom-left-radius: @border-radius-base;
+      border-bottom-right-radius: @border-radius-base;
+    }
   }
 }
 
