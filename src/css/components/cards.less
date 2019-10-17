@@ -1,6 +1,8 @@
 @card-background: #FFF;
-@card-padding: 3em;
+@card-padding: @spacer-3;
+@card-padding-xl: @spacer-5;
 @card-text-color: #262a36;
+
 @title-light: #807f9a;
 @title-text: @gray-dark;
 
@@ -8,6 +10,7 @@
 .card {
   border-radius: @border-radius-base;
   background: @card-background;
+  box-shadow: 0 0 2px rgba(0,0,0, .1);
   margin-bottom: @spacer-4;
 }
 
@@ -25,6 +28,10 @@
     color: @title-light;
     font-weight: 400;
 
+.card__title {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 0 @spacer-4 0;
     span {
       color: @title-text;
       font-weight: 700;
@@ -43,6 +50,7 @@
     }
   }
 }
+
 
 .card > .list-group {
   margin: 0;

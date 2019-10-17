@@ -23234,14 +23234,44 @@ ul.image-list li img {
 .card {
   border-radius: 2px;
   background: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 19.5px;
 }
+.card__header {
+  padding: 13px;
+}
+.card__title {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 0 19.5px 0;
+  font-size: 18px;
+  color: #807f9a;
+  font-weight: 600;
+  line-height: 1;
+}
+.card__body {
+  display: block;
+  color: #262a36;
+  padding: 13px;
+}
+.card__body--indented {
+  padding: 13px 13.7px;
+}
+@media (min-width: 768px) {
+  .card__body--indented {
+    padding: 13px 39px;
+  }
+}
+.card--flat {
+  box-shadow: none;
+}
 .card--flat .card__header {
-  padding: 3em 3em 0 3em;
+  padding: 39px 39px 0 39px;
+  border: none;
 }
 .card--flat .card__title {
   display: inline-block;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   margin: 0 0 19.5px 0;
   font-size: 22px;
   color: #807f9a;
@@ -23252,24 +23282,26 @@ ul.image-list li img {
   font-weight: 700;
 }
 .card--flat .card__body {
-  display: block;
-  color: #262a36;
-  padding: 3em;
+  padding: 39px;
 }
 .card--flat .card__body:last-child {
   border-bottom: 1px solid #555555;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+.card--flat .card__footer {
+  padding: 0 39px 39px 39px;
+  border-bottom: 1px solid #555555;
+}
 .card > .list-group {
   margin: 0;
 }
 .card > .list-group .list-group-item {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 .card > .list-group .list-group-item:last-child {
-  padding-bottom: 3em;
+  padding-bottom: 13px;
 }
 /** Pages */
 body.page--pronosticador {
