@@ -13610,10 +13610,9 @@ ul.image-list li img {
 
 .card__title {
   display: inline-block;
-  padding-bottom: 4px;
-  margin: 0 0 19.5px 0;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
-  color: #807f9a;
   font-weight: 600;
   line-height: 1;
 }
@@ -13639,7 +13638,7 @@ ul.image-list li img {
 }
 
 .card--flat .card__header {
-  padding: 39px 39px 0 39px;
+  padding: 13px 13px 0 13px;
   border: none;
 }
 
@@ -13652,22 +13651,30 @@ ul.image-list li img {
   font-weight: 400;
 }
 
-.card--flat .card__title span {
+.card--flat .card__title .card__title {
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 0 19.5px 0;
+}
+
+.card--flat .card__title .card__title span {
   color: #333333;
   font-weight: 700;
 }
 
-.card--flat .card__body {
+.card--flat .card__title .card__body {
+  display: block;
+  color: #262a36;
   padding: 39px;
 }
 
-.card--flat .card__body:last-child {
+.card--flat .card__title .card__body:last-child {
   border-bottom: 1px solid #555555;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
-.card--flat .card__footer {
+.card--flat .card__title .card__footer {
   padding: 0 39px 39px 39px;
   border-bottom: 1px solid #555555;
 }
