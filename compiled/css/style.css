@@ -23240,6 +23240,9 @@ ul.image-list li img {
 .card__header {
   padding: 13px;
 }
+.card__header.card__header--with-separator {
+  border-bottom: 1px solid #eeeeee;
+}
 .card__title {
   display: inline-block;
   padding: 0;
@@ -23345,4 +23348,105 @@ body.page--pronosticador .header .navbar-right {
 .widget--bookmaker-list .partner-list .partner-list__order {
   position: initial;
   border-radius: 0;
+}
+.card--match-summary {
+  font-family: 'Open Sans', sans-serif;
+}
+.card--match-summary .card__header {
+  text-align: center;
+  text-transform: uppercase;
+}
+.card--match-summary .card__header .card__title {
+  font-size: 12px;
+}
+.card--match-summary .card__header .card__title a {
+  color: #5da400;
+}
+.card--match-summary .card__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2em;
+  padding-bottom: 2.5em;
+}
+.card--match-summary .team {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+.card--match-summary .team .team__name {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 19.5px;
+}
+.card--match-summary .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2em;
+}
+.card--match-summary .info .time {
+  font-weight: 500;
+  font-size: 2.5em;
+}
+.card--match-summary .info .date {
+  font-weight: 600;
+  color: #333333;
+}
+.card--match-summary .info .info__score {
+  font-size: 3em;
+  font-weight: 600;
+}
+.card--match-summary .info .info__halftime-score {
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+.card--match-summary .info .info__status {
+  font-weight: 600;
+  color: #2e9fc7;
+  text-transform: uppercase;
+}
+.card--match-summary .info .period,
+.card--match-summary .info .minute {
+  color: #2e9fc7;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.card--match-summary.card--match-summary--inprogress .info__score {
+  background: #2e9fc7;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 0 20px;
+  margin-bottom: 10px;
 }
