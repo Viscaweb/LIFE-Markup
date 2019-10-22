@@ -23414,7 +23414,7 @@ body.page--pronosticador .header .navbar-right {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2em;
+  margin: 2em 10px 0 10px;
 }
 .card--match-summary .info .time {
   font-weight: 500;
@@ -23436,12 +23436,19 @@ body.page--pronosticador .header .navbar-right {
   font-weight: 600;
   color: #2e9fc7;
   text-transform: uppercase;
+  text-align: center;
 }
 .card--match-summary .info .period,
 .card--match-summary .info .minute {
   color: #2e9fc7;
   font-weight: 700;
   margin-left: 5px;
+}
+.card--match-summary .info .match-is-live {
+  display: block;
+  margin-top: 1em;
+  font-weight: normal;
+  text-transform: initial;
 }
 .card--match-summary.card--match-summary--inprogress .info__score {
   background: #2e9fc7;
