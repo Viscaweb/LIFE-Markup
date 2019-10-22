@@ -1,6 +1,8 @@
 @card-background: #FFF;
-@card-padding: 3em;
+@card-padding: @spacer-3;
+@card-padding-xl: @spacer-5;
 @card-text-color: #262a36;
+
 @title-light: #807f9a;
 @title-text: @gray-dark;
 
@@ -8,51 +10,100 @@
 .card {
   border-radius: @border-radius-base;
   background: @card-background;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .1);
   margin-bottom: @spacer-4;
 }
 
+
+.card__header {
+  padding: @spacer-3;
+
+  &.card__header--with-separator {
+    border-bottom: 1px solid @gray-lighter;
+  }
+}
+
+.card__title {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: @text-weight-bold;
+  line-height: 1;
+}
+
+.card__body {
+  display: block;
+  color: @card-text-color;
+  padding: @card-padding;
+}
+
+.card__body--indented {
+  padding: @card-padding (@card-padding + 0.7em);
+
+  @media (min-width: @screen-sm-min) {
+    padding: @card-padding (@card-padding * 3);
+  }
+}
+
 .card--flat {
+  box-shadow: none;
+
   .card__header {
     padding: @card-padding @card-padding 0 @card-padding;
+    border: none;
   }
 
   .card__title {
     display: inline-block;
-    padding-bottom: 4px;
+    padding-bottom: 0;
     margin: 0 0 @spacer-4 0;
 
     font-size: 22px;
     color: @title-light;
     font-weight: 400;
 
-    span {
-      color: @title-text;
-      font-weight: 700;
+    .card__title {
+      display: inline-block;
+      padding-bottom: 4px;
+      margin: 0 0 @spacer-4 0;
+
+      span {
+        color: @title-text;
+        font-weight: 700;
+      }
     }
-  }
 
-  .card__body {
-    display: block;
-    color: @card-text-color;
-    padding: @card-padding;
+    .card__body {
+      display: block;
+      color: @card-text-color;
+      padding: @card-padding-xl;
 
-    &:last-child {
+      &:last-child {
+        border-bottom: 1px solid @gray;
+        border-bottom-left-radius: @border-radius-base;
+        border-bottom-right-radius: @border-radius-base;
+      }
+    }
+
+    .card__footer {
+      padding: 0 @card-padding-xl @card-padding-xl @card-padding-xl;
       border-bottom: 1px solid @gray;
-      border-bottom-left-radius: @border-radius-base;
-      border-bottom-right-radius: @border-radius-base;
     }
   }
 }
 
-.card > .list-group {
-  margin: 0;
 
-  .list-group-item  {
-    padding-left: @card-padding;
-    padding-right: @card-padding;
+  .card > .list-group {
+    margin: 0;
 
-    &:last-child {
-      padding-bottom: @card-padding;
+    .list-group-item {
+      padding-left: @card-padding;
+      padding-right: @card-padding;
+
+      &:last-child {
+        padding-bottom: @card-padding;
+      }
     }
   }
-}
