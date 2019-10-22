@@ -23000,6 +23000,7 @@ body.page--pronosticador .header .navbar-right {
 .card--match-summary .info .date {
   font-weight: 600;
   color: #333333;
+  margin-bottom: 10px;
 }
 .card--match-summary .info .info__score {
   font-size: 3em;
