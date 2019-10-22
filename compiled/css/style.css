@@ -22971,6 +22971,7 @@ body.page--pronosticador .header .navbar-right {
       -ms-flex-align: center;
           align-items: center;
   width: 200px;
+  color: #333333;
 }
 .card--match-summary .team .team__name {
   font-size: 15px;
