@@ -23049,6 +23049,7 @@ body.page--pronosticador .header .navbar-right {
 }
 .card--head-to-head .head-to-head__intro__team {
   font-weight: 600;
+  text-align: center;
 }
 .card--head-to-head .head-to-head__intro__team img {
   margin: 6.5px auto;
