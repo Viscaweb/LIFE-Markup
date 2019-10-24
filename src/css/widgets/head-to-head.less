@@ -34,8 +34,19 @@
       font-size: @text-size-small;
     }
   }
-  .progressbar__legend-value .legend {
-    text-transform: lowercase;
+  .progressbar__legend-value {
+    .number {
+      font-weight: @text-weight-light;
+    }
+
+    &.highlighted .number{
+      font-weight: @text-weight-bold;
+      color: #92d41f;
+    }
+
+    .legend {
+      text-transform: lowercase;
+    }
   }
 
   .progress {
