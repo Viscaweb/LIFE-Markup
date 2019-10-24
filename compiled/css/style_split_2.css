@@ -13384,6 +13384,15 @@ body.page--pronosticador .header .navbar-right {
   font-size: 11px;
 }
 
+.card--head-to-head .progressbar__legend-value .number {
+  font-weight: 300;
+}
+
+.card--head-to-head .progressbar__legend-value.highlighted .number {
+  font-weight: 600;
+  color: #92d41f;
+}
+
 .card--head-to-head .progressbar__legend-value .legend {
   text-transform: lowercase;
 }
