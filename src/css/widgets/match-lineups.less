@@ -1,0 +1,150 @@
+@breakpoint: 420px;
+@player-background: #BF66A4;
+@player2-background: #E6E5FF;
+@white: #FFF;
+
+
+.ls-match-lineup {
+  position: relative;
+  max-width: 600px;
+  min-width: 300px;
+  margin: auto;
+  overflow: hidden;
+
+  .field {
+    width: 100%;
+    height: auto;
+  }
+
+  a {
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .team {
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    height: 50%;
+    padding: 4.2% 0.03% 0 0.03%;
+
+    @media only screen and (max-width: @breakpoint) {
+      height: 48%;
+    }
+  }
+
+  .team1 {
+    top: 0;
+    left: 0;
+
+    .player__number {
+      background: @player-background;
+      color: @white;
+    }
+  }
+
+  .team2 {
+    top: 50%;
+    height: 50%;
+    .player__number {
+      background: @player2-background;
+      color: #000;
+    }
+  }
+}
+
+
+.team .row-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+
+  .cell {
+
+    &.cell__player {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      .player__number {
+        width: 22px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        border-radius: 4px 4px 0px 0px;
+      }
+
+      .player__name {
+        text-align: center;
+        padding: 3px 5px;
+        min-width: 45px;
+        max-width: 80px;
+        line-height: 14px;
+        background: @white;
+        font-size: 11px;
+        font-weight: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        border-radius: 40px 40px 40px 40px;
+        box-shadow: 1px 2px 0px 0px rgba(36, 74, 0, 0.61);
+
+        @media only screen and (max-width: @breakpoint) {
+          padding: 0 5px;
+        }
+      }
+
+      .match-incidents {
+        &.match-incidents__icon {
+          width: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+
+          span {
+            margin-left: 2px;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.match-lineups .mdl-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cell__team {
+    font-weight: bold;
+  }
+
+  .cell cell__player-name {
+    flex: 1;
+  }
+}
+
+.match-lineup-table {
+  width: 100%;
+  margin-bottom: 10px;
+
+  td {
+    padding: 5px ;
+  }
+}

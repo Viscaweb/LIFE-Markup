@@ -1407,7 +1407,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   line-height: 1.42857143;
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #e7e9eb;
 }
 
@@ -1525,7 +1525,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #424242;
+  color: #313131;
 }
 
 h1 small,
@@ -1702,7 +1702,7 @@ mark,
 }
 
 .text-muted {
-  color: rgba(92, 92, 92, 0.5);
+  color: rgba(74, 74, 74, 0.5);
 }
 
 .text-primary {
@@ -2977,7 +2977,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: rgba(92, 92, 92, 0.5);
+  color: rgba(74, 74, 74, 0.5);
   text-align: left;
 }
 
@@ -3729,7 +3729,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #9c9c9c;
+  color: #8a8a8a;
 }
 
 @media (min-width: 768px) {
@@ -3873,7 +3873,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #5c5c5c;
+  color: #4a4a4a;
   text-decoration: none;
 }
 
@@ -3899,20 +3899,20 @@ fieldset[disabled] a.btn {
 }
 
 .btn-default {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #fafafa;
   border-color: #dfdfdf;
 }
 
 .btn-default:focus,
 .btn-default.focus {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #e0e0e0;
   border-color: #9f9f9f;
 }
 
 .btn-default:hover {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #e0e0e0;
   border-color: #c0c0c0;
 }
@@ -3920,7 +3920,7 @@ fieldset[disabled] a.btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #e0e0e0;
   border-color: #c0c0c0;
 }
@@ -3934,7 +3934,7 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #cfcfcf;
   border-color: #9f9f9f;
 }
@@ -3960,12 +3960,12 @@ fieldset[disabled] .btn-default.focus {
 
 .btn-default .badge {
   color: #fafafa;
-  background-color: #5c5c5c;
+  background-color: #4a4a4a;
 }
 
 .btn-default:focus,
 .btn-default.focus {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #e0e0e0;
   border-color: #c0c0c0;
 }
@@ -3979,7 +3979,7 @@ fieldset[disabled] .btn-default.focus {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #5c5c5c;
+  color: #4a4a4a;
   background-color: #e0e0e0;
   border-color: #c0c0c0;
 }
@@ -4592,7 +4592,7 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #5c5c5c;
+  color: #4a4a4a;
   white-space: nowrap;
 }
 
@@ -6346,7 +6346,7 @@ a.thumbnail.active {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #5c5c5c;
+  color: #4a4a4a;
 }
 
 .alert {
@@ -8488,7 +8488,7 @@ button.close {
 .btn-default span.icon-caret-up,
 .btn-default span.icon-caret-left,
 .btn-default span.icon-caret-right {
-  color: rgba(92, 92, 92, 0.5);
+  color: rgba(74, 74, 74, 0.5);
 }
 
 .btn-primary,
@@ -9355,19 +9355,19 @@ button.close {
   border: transparent;
   background-color: #f4f4f4;
   border-bottom: 2px solid #519000;
-  color: #5c5c5c;
+  color: #4a4a4a;
 }
 
 .nav-pills > li.active a:hover {
   background-color: #f0f0f0;
   border-bottom: 2px solid #519000;
-  color: #5c5c5c;
+  color: #4a4a4a;
 }
 
 .nav-pills > li > a {
   border-top: none;
   border-bottom: 2px solid #f0f0f0;
-  color: #5c5c5c;
+  color: #4a4a4a;
   outline: none;
   font-weight: 600;
 }
@@ -10164,7 +10164,7 @@ button.close {
   border-left: none;
   border-bottom-width: 2px;
   margin-right: 0;
-  color: #5c5c5c;
+  color: #4a4a4a;
   outline: none;
   font-weight: 600;
 }
@@ -10199,7 +10199,7 @@ button.close {
   font-weight: 600;
   font-size: 11px;
   text-transform: uppercase;
-  color: #696969;
+  color: #575757;
   padding: 8px 20px;
 }
 
@@ -10644,7 +10644,7 @@ button.close {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  color: rgba(92, 92, 92, 0.7);
+  color: rgba(74, 74, 74, 0.7);
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev,
@@ -10654,7 +10654,7 @@ button.close {
   width: 40px;
   text-align: center;
   cursor: pointer;
-  color: rgba(92, 92, 92, 0.5);
+  color: rgba(74, 74, 74, 0.5);
 }
 
 .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:after,
@@ -10716,7 +10716,7 @@ button.close {
   display: inline-block;
   padding: 5px;
   margin: 1px;
-  color: #5c5c5c;
+  color: #4a4a4a;
   width: 30px;
   height: 30px;
   line-height: 20px;
@@ -10742,7 +10742,7 @@ button.close {
 .ui-datepicker table.ui-datepicker-calendar tbody tr td a:hover {
   background-color: #ebebeb;
   border-color: #ebebeb;
-  color: #5c5c5c;
+  color: #4a4a4a;
 }
 
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.marked-date a {
@@ -10981,7 +10981,7 @@ button.close {
   font-weight: 500;
   font-size: 23px;
   line-height: 28px;
-  color: #424242;
+  color: #313131;
   display: table-cell;
   vertical-align: middle;
 }
@@ -11079,7 +11079,7 @@ button.close {
   font-weight: 500;
   font-size: 27px;
   line-height: 32px;
-  color: #424242;
+  color: #313131;
 }
 
 .content-header.player .description {
@@ -11260,7 +11260,7 @@ iframe {
 
 .h2-small {
   font-size: 12px;
-  color: #8f8f8f;
+  color: #7d7d7d;
   padding-left: 0;
   padding-top: 0;
   border-top: none;
@@ -11469,7 +11469,7 @@ span.dark-icon {
 
 .table.matches tbody tr th.league-title a {
   display: block;
-  color: #8f8f8f;
+  color: #7d7d7d;
   max-width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -11521,7 +11521,7 @@ span.dark-icon {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #5c5c5c;
+  color: #4a4a4a;
 }
 
 .table.matches tbody tr td.teams > a.has-score-details .score:after {
@@ -11678,7 +11678,7 @@ span.dark-icon {
 .table.matches tbody tr td.team > a,
 .table.matches tbody tr td.team div {
   float: left;
-  color: #5c5c5c;
+  color: #4a4a4a;
   display: inline-block;
   max-width: 100%;
   min-height: 20px;
@@ -11866,7 +11866,7 @@ span.dark-icon {
 
 .table.table-standing tbody tr td.team > a,
 .table.table-standing tbody tr td.team div {
-  color: #5c5c5c;
+  color: #4a4a4a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12284,7 +12284,7 @@ span.dark-icon {
 
 .table tbody tr > td.number .extra-info {
   font-weight: 400;
-  color: rgba(92, 92, 92, 0.5);
+  color: rgba(74, 74, 74, 0.5);
 }
 
 .table tbody tr > td.icon {
@@ -12300,7 +12300,7 @@ span.dark-icon {
 }
 
 .table tbody tr > td.time {
-  color: rgba(92, 92, 92, 0.6);
+  color: rgba(74, 74, 74, 0.6);
   white-space: nowrap;
   overflow: hidden;
 }
@@ -12329,7 +12329,7 @@ span.dark-icon {
   position: relative;
   display: block;
   line-height: 28px;
-  color: #5c5c5c;
+  color: #4a4a4a;
 }
 
 .table tbody tr > td.score > a.has-score-details:after {
@@ -12353,7 +12353,7 @@ span.dark-icon {
 }
 
 .table tbody tr > td.score.hour > a {
-  color: rgba(92, 92, 92, 0.7);
+  color: rgba(74, 74, 74, 0.7);
 }
 
 .table tbody tr > td.score span.icon-expand-h {
