@@ -1,0 +1,60 @@
+
+// List of matches where matches have teams stakec vertically
+.match-list.match-list--vertical {
+  .match-item {
+    display: flex;
+    flex-direction: row;
+
+    border-top: 1px solid #e2e2e2;
+    color: @text-color-grayed;
+
+    .match-item__when, .match-item__teams, .match-item__score {
+      padding: @spacer-2 @spacer-3;
+    }
+
+    .match-item__when {
+      flex-basis: 130px;
+      .match-item__competition {
+        font-size: @text-size - 2;
+      }
+    }
+
+    .match-item__teams {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .match-item__teams__team, .match-item__score__outcome {
+      margin-bottom: 7px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .match-item__teams__team__logo {
+      width: 18px;
+    }
+
+    .match-item__score {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 70px;
+      text-align: center;
+    }
+
+    .match-item__score__outcome {
+      font-weight: @text-weight-bold;
+    }
+
+    .match-item__teams__team.winner, .match-item__score__outcome.winner {
+      font-weight: @text-weight-bold;
+      color: @text-color-dark;
+    }
+
+    .match-item__date {
+      color: @text-color;
+    }
+  }
+}
