@@ -1,4 +1,3 @@
-
 // List of matches where matches have teams stakec vertically
 .match-list.match-list--vertical {
   .match-item {
@@ -8,12 +7,13 @@
     border-top: 1px solid #e2e2e2;
     color: @text-color-grayed;
 
-    .match-item__when, .match-item__teams, .match-item__score {
+    .match-item__when, .match-item__teams {
       padding: @spacer-2 @spacer-3;
     }
 
     .match-item__when {
       flex-basis: 130px;
+
       .match-item__competition {
         font-size: @text-size - 2;
       }
@@ -25,36 +25,42 @@
       flex-grow: 1;
     }
 
-    .match-item__teams__team, .match-item__score__outcome {
+    .match-item__teams__team {
+      display: flex;
+      flex-direction: row;
       margin-bottom: 7px;
 
       &:last-child {
         margin-bottom: 0;
       }
-    }
 
-    .match-item__teams__team__logo {
-      width: 18px;
-    }
+      &.winner {
+        font-weight: @text-weight-bold;
+        color: @text-color-dark;
+      }
 
-    .match-item__score {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 70px;
-      text-align: center;
-    }
+      .team__logo {
+        width: 18px;
+        margin-right: 5px;
+      }
 
-    .match-item__score__outcome {
-      font-weight: @text-weight-bold;
-    }
+      .team__name {
+        flex-grow: 1;
+      }
 
-    .match-item__teams__team.winner, .match-item__score__outcome.winner {
-      font-weight: @text-weight-bold;
-      color: @text-color-dark;
-    }
-
-    .match-item__date {
-      color: @text-color;
+      .team__score {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+      }
     }
   }
+
+  .match-item__date {
+    color: @text-color;
+  }
 }
+

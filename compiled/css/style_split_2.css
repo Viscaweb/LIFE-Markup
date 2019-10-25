@@ -13089,8 +13089,7 @@ ul.image-list li img {
 }
 
 .match-list.match-list--vertical .match-item .match-item__when,
-.match-list.match-list--vertical .match-item .match-item__teams,
-.match-list.match-list--vertical .match-item .match-item__score {
+.match-list.match-list--vertical .match-item .match-item__teams {
   padding: 6.5px 13px;
 }
 
@@ -13120,21 +13119,41 @@ ul.image-list li img {
   flex-grow: 1;
 }
 
-.match-list.match-list--vertical .match-item .match-item__teams__team,
-.match-list.match-list--vertical .match-item .match-item__score__outcome {
+.match-list.match-list--vertical .match-item .match-item__teams__team {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-bottom: 7px;
 }
 
-.match-list.match-list--vertical .match-item .match-item__teams__team:last-child,
-.match-list.match-list--vertical .match-item .match-item__score__outcome:last-child {
+.match-list.match-list--vertical .match-item .match-item__teams__team:last-child {
   margin-bottom: 0;
 }
 
-.match-list.match-list--vertical .match-item .match-item__teams__team__logo {
-  width: 18px;
+.match-list.match-list--vertical .match-item .match-item__teams__team.winner {
+  font-weight: 600;
+  color: #000000;
 }
 
-.match-list.match-list--vertical .match-item .match-item__score {
+.match-list.match-list--vertical .match-item .match-item__teams__team .team__logo {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.match-list.match-list--vertical .match-item .match-item__teams__team .team__name {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.match-list.match-list--vertical .match-item .match-item__teams__team .team__score {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13144,23 +13163,20 @@ ul.image-list li img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-basis: 70px;
-  -ms-flex-preferred-size: 70px;
-  flex-basis: 70px;
+  -webkit-flex-basis: 30px;
+  -ms-flex-preferred-size: 30px;
+  flex-basis: 30px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   text-align: center;
 }
 
-.match-list.match-list--vertical .match-item .match-item__score__outcome {
-  font-weight: 600;
-}
-
-.match-list.match-list--vertical .match-item .match-item__teams__team.winner,
-.match-list.match-list--vertical .match-item .match-item__score__outcome.winner {
-  font-weight: 600;
-  color: #000000;
-}
-
-.match-list.match-list--vertical .match-item .match-item__date {
+.match-list.match-list--vertical .match-item__date {
   color: #4a4a4a;
 }
 
