@@ -1,0 +1,20 @@
+.nav-tabs--ls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .nav-link {
+    color: @text-color;
+    text-transform: capitalize;
+    padding-bottom: @spacer-2;
+
+    &.active {
+      border-bottom: 3px solid @link-color;
+      font-weight: @text-weight-bold;
+    }
+
+    &:hover {
+      background: none;
+    }
+  }
+}

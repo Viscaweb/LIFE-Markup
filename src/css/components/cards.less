@@ -14,10 +14,11 @@
   margin-bottom: @spacer-4;
 }
 
+.card__header, .card__body, .card__footer {
+  padding: @card-padding;
+}
 
 .card__header {
-  padding: @spacer-3;
-
   &.card__header--with-separator {
     border-bottom: 1px solid @gray-lighter;
   }
@@ -31,12 +32,15 @@
   font-size: 18px;
   font-weight: @text-weight-bold;
   line-height: 1;
+
+  &.card__title--with-bolded {
+    font-weight: @text-weight-normal;
+  }
 }
 
 .card__body {
   display: block;
   color: @card-text-color;
-  padding: @card-padding;
 }
 
 .card__body--indented {
