@@ -39,29 +39,34 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: @spacer-3 @spacer-3 0 @spacer-3;
+  }
+}
+
+.bookmaker-list.bookmaker-list--vertical {
+  .bookmaker__item {
+    padding: @spacer-3;
 
     &:hover {
       background-color: #f8f8f8;    // @todo use Variables to define this color
     }
   }
-}
 
-.bookmaker-list.bookmaker-list--vertical {
-  .bookmaker:last-child {
-    padding-bottom: @spacer-3;
-    hr {
-      display: none;
+  .bookmaker {
+    &:last-child {
+      border-bottom: none;
     }
-  }
 
-  .bookmaker__logo-col,
-  .bookmaker__bonus,
-  .bookmaker__button {
-    flex: 0 0 31%;
+    &:after {
+      content: "";
+      border-bottom: 1px solid @ls-line-color;
+      position: absolute;
+      bottom: -1em;
+      left: 0;
+      right: 0;
+    }
   }
 
   .bookmaker__logo-col{
@@ -73,6 +78,7 @@
   }
 
   .bookmaker__bonus {
+    //flex: 0 0 28%;
 
     .partner-list__bonus-text {
       padding-bottom: @spacer-2;
@@ -84,7 +90,6 @@
   }
 
   .break {
-    flex-basis: 100%;
     border-top: 0;
     border-bottom: 1px solid @ls-line-color;
     margin: @spacer-3 0 0 0;
@@ -236,7 +241,7 @@
     padding: 9px 17px;
     border-radius: 4px;
     background-color: @ls-yellow-color;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.58;
     font-weight: @font-weight-semi-bold;
     text-align: center;

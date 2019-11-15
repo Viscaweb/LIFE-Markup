@@ -13140,9 +13140,9 @@ body.page--pronosticador .header .navbar-right {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -13151,28 +13151,27 @@ body.page--pronosticador .header .navbar-right {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 13px 13px 0 13px;
 }
 
-.bookmaker-list .bookmaker:hover {
+.bookmaker-list.bookmaker-list--vertical .bookmaker__item {
+  padding: 13px;
+}
+
+.bookmaker-list.bookmaker-list--vertical .bookmaker__item:hover {
   background-color: #f8f8f8;
 }
 
 .bookmaker-list.bookmaker-list--vertical .bookmaker:last-child {
-  padding-bottom: 13px;
+  border-bottom: none;
 }
 
-.bookmaker-list.bookmaker-list--vertical .bookmaker:last-child hr {
-  display: none;
-}
-
-.bookmaker-list.bookmaker-list--vertical .bookmaker__logo-col,
-.bookmaker-list.bookmaker-list--vertical .bookmaker__bonus,
-.bookmaker-list.bookmaker-list--vertical .bookmaker__button {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 31%;
-  -ms-flex: 0 0 31%;
-  flex: 0 0 31%;
+.bookmaker-list.bookmaker-list--vertical .bookmaker:after {
+  content: "";
+  border-bottom: 1px solid #dddddd;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  right: 0;
 }
 
 .bookmaker-list.bookmaker-list--vertical .bookmaker__logo-col {
@@ -13196,9 +13195,6 @@ body.page--pronosticador .header .navbar-right {
 }
 
 .bookmaker-list.bookmaker-list--vertical .break {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   border-top: 0;
   border-bottom: 1px solid #dddddd;
   margin: 13px 0 0 0;
@@ -13405,7 +13401,7 @@ body.page--pronosticador .header .navbar-right {
   padding: 9px 17px;
   border-radius: 4px;
   background-color: #ffd800;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.58;
   font-weight: 600;
   text-align: center;
