@@ -16,6 +16,10 @@
         border-bottom: none;
         padding: @spacer-3;
       }
+
+      &:after {
+        display: none;
+      }
     }
 
     .partner-list__order {
@@ -78,7 +82,8 @@
   }
 
   .bookmaker__bonus {
-    //flex: 0 0 28%;
+    flex-grow: 1;
+    padding-left: 1em;
 
     .partner-list__bonus-text {
       padding-bottom: @spacer-2;

@@ -22832,6 +22832,9 @@ body.page--pronosticador .header .navbar-right {
   border-bottom: none;
   padding: 13px;
 }
+.widget--bookmaker-list .bookmaker-list .bookmaker:after {
+  display: none;
+}
 .widget--bookmaker-list .bookmaker-list .partner-list__order {
   position: initial;
   border-radius: 0;
@@ -22891,6 +22894,13 @@ body.page--pronosticador .header .navbar-right {
 }
 .bookmaker-list.bookmaker-list--vertical .bookmaker__review {
   padding-top: 0;
+}
+.bookmaker-list.bookmaker-list--vertical .bookmaker__bonus {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 1em;
 }
 .bookmaker-list.bookmaker-list--vertical .bookmaker__bonus .partner-list__bonus-text {
   padding-bottom: 6.5px;
