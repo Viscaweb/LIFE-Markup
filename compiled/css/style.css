@@ -17058,87 +17058,6 @@ ul.table-of-content li span {
 .match-report table tbody tr:hover td.minute {
   background-color: #e6e6e6;
 }
-.match-summary-statistics .possession {
-  background: url("../img//timeline/timeline-bg.jpg") repeat;
-  padding: 13px 10px 20px;
-}
-.match-summary-statistics .possession .title {
-  text-align: center;
-  font-weight: 600;
-  font-size: 13px;
-  color: #ffffff;
-  padding-bottom: 8px;
-}
-.match-summary-statistics .possession .graph {
-  display: table;
-  width: 100%;
-}
-.match-summary-statistics .possession .graph .percent {
-  color: #ffffff;
-  width: 14%;
-  display: table-cell;
-  text-align: center;
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 600;
-}
-.match-summary-statistics .possession .graph .bar {
-  z-index: 2;
-  position: relative;
-  display: table-cell;
-}
-.match-summary-statistics .possession .graph .bar .progress {
-  margin-bottom: 0;
-  background-color: #396400;
-  box-shadow: none;
-}
-.match-summary-statistics .possession .graph .bar .progress .progress-bar {
-  float: right;
-  box-shadow: none;
-  background-color: #ffffff;
-  min-width: 1%;
-  max-width: 99%;
-}
-.match-summary-statistics .possession .graph .bar:before {
-  background-color: #ffffff;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 50%;
-  width: 1px;
-  height: 33px;
-  z-index: -1;
-}
-.match-summary-statistics .table tbody tr td.prog {
-  text-align: right;
-  width: 30%;
-}
-.match-summary-statistics .table tbody tr td.prog .progress {
-  margin: 0;
-  background-color: transparent;
-  box-shadow: none;
-}
-.match-summary-statistics .table tbody tr td.prog .progress .progress-bar {
-  box-shadow: none;
-  border-radius: 2px;
-  min-width: 1px;
-}
-.match-summary-statistics .table tbody tr td.prog .progress.gray .progress-bar {
-  background-color: #9e9e9e;
-}
-.match-summary-statistics .table tbody tr td.prog.home .progress .progress-bar {
-  float: right;
-}
-.match-summary-statistics .table tbody tr td.statistic-label {
-  text-align: center;
-  width: 19%;
-}
-.match-summary-statistics .table tbody tr td.number {
-  width: 2%;
-  text-align: center;
-  font-weight: 700;
-}
 .match-teams-lineups .component-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22798,6 +22717,53 @@ ul.image-list li img {
 .nav-tabs--ls .nav-link:hover {
   background: none;
 }
+.match-participants--hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+.match-participants--hero .hero__team {
+  font-weight: 600;
+  text-align: center;
+}
+.match-participants--hero .hero__team img {
+  display: block;
+  margin-right: 13px;
+}
+.match-participants--hero .hero__team.hero__team--horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.match-participants--hero .hero__team.hero__team--horizontal:last-child img {
+  margin-right: 0;
+  margin-left: 13px;
+}
 /** Pages */
 body.page--pronosticador {
   background: #f3f3f5;
@@ -23109,6 +23075,115 @@ body.page--pronosticador .header .navbar-right {
   color: #ffd800;
   background-color: #167773;
   box-shadow: none;
+}
+.card--match-statistics .possession {
+  padding: 13px 10px 20px;
+  text-align: center;
+}
+.card--match-statistics .possession .title {
+  margin-bottom: 13px;
+}
+.card--match-statistics .possession .graph .progress {
+  margin-bottom: 6.5px;
+}
+.card--match-statistics .possession .graph .progress-bar {
+  background-color: #94da1c;
+}
+.card--match-statistics .possession .legend {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+}
+.card--match-statistics .possession .legend .percent {
+  color: #969696;
+}
+.card--match-statistics .possession .legend .percent-highlighted {
+  color: #94da1c;
+  font-weight: bold;
+}
+.card--match-statistics .table .prog {
+  text-align: right;
+  width: 30%;
+}
+.card--match-statistics .table .prog .progress {
+  margin: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.card--match-statistics .table .prog .progress .progress-bar {
+  box-shadow: none;
+  border-radius: 2px;
+  min-width: 1px;
+}
+.card--match-statistics .table .statistic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card--match-statistics .table .statistic-bars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.card--match-statistics .table .statistic-bars .progress {
+  background-color: transparent;
+  box-shadow: none;
+  width: 35%;
+  height: 8px;
+  border-radius: 0;
+  margin-bottom: 0;
+  margin-right: 3px;
+}
+.card--match-statistics .table .statistic-bars .progress:last-child {
+  margin-right: 0;
+}
+.card--match-statistics .table .statistic-bars .progress:first-child .progress-bar {
+  float: right;
+}
+.card--match-statistics .table .statistic-bars .progress .progress-bar {
+  background-color: #94da1c;
+  box-shadow: none;
+}
+.card--match-statistics .table .statistic-bars .progress.gray .progress-bar {
+  background-color: #d8d8d8;
+}
+.card--match-statistics .table .number {
+  width: 2%;
+  text-align: center;
+  font-weight: 700;
+  color: #969696;
 }
 .card--match-summary {
   font-family: 'Open Sans', sans-serif;
