@@ -1,5 +1,4 @@
-@link-color: #177773;
-
+@bookmaker-link-color: #177773;
 .widget--bookmaker-list {
   .card__title span:first-child {
     vertical-align: bottom;
@@ -56,13 +55,13 @@
     &:hover {
       background-color: #f8f8f8;    // @todo use Variables to define this color
     }
+
+    &:last-child .bookmaker:after {
+      border-bottom: none;
+    }
   }
 
   .bookmaker {
-    &:last-child {
-      border-bottom: none;
-    }
-
     &:after {
       content: "";
       border-bottom: 1px solid @ls-line-color;
@@ -188,7 +187,7 @@
 .bookmaker__review {
   display: flex;
   flex-direction: column;
-  color: @link-color;
+  color: @bookmaker-link-color;
 
   .partner-list__review-link {
     color: @ls-secondary-color;
@@ -210,7 +209,7 @@
 
 .bookmaker__bonus {
   text-align: right;
-  color: @link-color;
+  color: @bookmaker-link-color;
 
   .partner-list__bonus-text {
     font-size: 11px;
