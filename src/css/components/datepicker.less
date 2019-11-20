@@ -1,0 +1,141 @@
+/*Custom General Icons Behavior*/
+
+.ui-datepicker{
+  width: 260px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.04);
+  padding: (@ls-datepicker-header-height + 14px) 15px 15px;
+  position: relative;
+  display: none;
+
+  &:after{
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid darken(@ls-light-color, 1.3%);
+  }
+
+  .ui-datepicker-header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: darken(@ls-light-color, 1.3%);
+    border-bottom: 1px solid darken(@ls-light-color, 8%);
+
+    .ui-datepicker-title{
+      height: @ls-datepicker-header-height;
+      line-height: @ls-datepicker-header-height;
+      margin: 0 40px;
+      text-align: center;
+      font-size: @font-size-normal;
+      font-weight: @font-weight-semi-bold;
+      color: darken(@ls-light-color, 24%);
+    }
+
+    a.ui-datepicker-prev, a.ui-datepicker-next{
+      position: absolute;
+      line-height: @ls-datepicker-header-height;
+      width: 40px;
+      text-align: center;
+      cursor: pointer;
+      color: darken(@ls-light-color, 29%);
+
+      &:after{
+        background-color: darken(@ls-light-color, 1.3%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        font-family: @ls-icons-font;
+      }
+
+      &:hover{
+        &:after{
+          background-color: darken(@ls-light-color, 3%);
+        }
+      }
+    }
+
+    a.ui-datepicker-prev{
+      left: 0;
+      border-right: 1px solid darken(@ls-light-color, 8%);
+
+      &:after{
+        content: "\e60c";
+      }
+    }
+
+    a.ui-datepicker-next{
+      right: 0;
+      border-left: 1px solid darken(@ls-light-color, 8%);
+
+      &:after{
+        content: "\e60d";
+      }
+    }
+  }
+
+  table.ui-datepicker-calendar{
+    width: 100%;
+
+    thead{
+      tr{
+        th{
+          text-align: center;
+          padding: 5px;
+        }
+      }
+    }
+
+    tbody{
+      tr{
+        td{
+          text-align: center;
+
+          a{
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px;
+            margin: 1px;
+            color: lighten(@ls-dark-color, 20%);
+            width: 30px;
+            height: 30px;
+            line-height: 20px;
+            font-size: @font-size-normal;
+            border: 1px solid transparent;
+            background-clip: border-box;
+
+            &.ui-state-highlight{
+              background-color: @brand-primary;
+              border-color: @brand-primary;
+              color: @ls-light-color;
+            }
+
+            &.ui-priority-secondary{
+              color: darken(@ls-light-color, 17.5%);
+            }
+
+            &:hover{
+              background-color:  darken(@ls-light-color, 8%);
+              border-color:  darken(@ls-light-color, 8%);
+              color: lighten(@ls-dark-color, 20%);
+            }
+          }
+
+          &.marked-date{
+            a{
+              border-color: @brand-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

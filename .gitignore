@@ -7,19 +7,17 @@ composer.json
 
 *.bak
 *.db
-*.db
-*.db
 
 # Grunt
 node_modules
 
 # Generated files
 *.css.map
-*.db
 *.orig
 
 #Vagrant
 .vagrant/
 
 #Composer
-vendor
+./vendor
+vendor/*

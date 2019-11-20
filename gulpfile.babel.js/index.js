@@ -33,7 +33,7 @@ function mainCSS(cb) {
 }
 
 function cssMatchCommentsIFrame(cb) {
-    return src(['src/css/less/match-comments-iframe.less'])
+    return src(['src/css/match-comments-iframe.less'])
         .pipe(less())
         .pipe(postcss(plugins))
         .pipe(dest('./dist'));

@@ -1,20 +1,33 @@
 
 
 /* Boostrap */
-@import "less/bootstrap/bootstrap.less";
-@icon-font-path:          "fonts/";
+@import "livescore/bootstrap/bootstrap.less";
+
+@import "theme.less";
 
 /* Helpers */
-@import "less/helpers/helpers";
+@import "helpers/helpers";
 
 /*jQuery UI Components*/
-@import "less/jquery-ui/rules/ls-datepicker.less";
+@import "vendor/jquery-ui/ls-datepicker.less";
 
 /*Toastr notifications*/
-@import "less/toastr/rules/ls-toastr.less";
+@import "vendor/toastr/ls-toastr.less";
 
 /*LiveScore Components*/
-@import "less/livescore/livescore.less";
+@import "livescore/livescore.less";
 
+@import "layout/layout.less";
+
+/* Components */
+@import "components/components.less";
+
+@import "pages/pages.less";
+
+@import "widgets/widgets.less";
+@import "widgets/widgets.less";
+
+/* Styles that require to be added as they are */
 @import (less) "./comments.css";
 @import (less) "./../../compiled/js/lsicons/style.css";
+

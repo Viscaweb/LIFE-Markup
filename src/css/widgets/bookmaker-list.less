@@ -1,0 +1,272 @@
+@bookmaker-link-color: #177773;
+.widget--bookmaker-list {
+  .card__title span:first-child {
+    vertical-align: bottom;
+  }
+
+  .bookmaker-list {
+    .bookmaker {
+      flex-direction: row;
+      box-shadow: none;
+      padding: @spacer-3;
+      border-bottom: 1px dotted #ccc;
+
+      &:last-child {
+        border-bottom: none;
+        padding: @spacer-3;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .partner-list__order {
+      position: initial;
+      border-radius: 0;
+    }
+  }
+}
+
+
+// OLD markup ------------------
+// Partner list
+
+.bookmaker-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .bookmaker {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.bookmaker-list.bookmaker-list--vertical {
+  .bookmaker__item {
+    padding: @spacer-3;
+
+    &:hover {
+      background-color: #f8f8f8;    // @todo use Variables to define this color
+    }
+
+    &:last-child .bookmaker:after {
+      border-bottom: none;
+    }
+  }
+
+  .bookmaker {
+    &:after {
+      content: "";
+      border-bottom: 1px solid @ls-line-color;
+      position: absolute;
+      bottom: -1em;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .bookmaker__logo-col{
+    flex-direction: column;
+  }
+
+  .bookmaker__review {
+    padding-top: 0;
+  }
+
+  .bookmaker__bonus {
+    flex-grow: 1;
+    padding-left: 1em;
+
+    .partner-list__bonus-text {
+      padding-bottom: @spacer-2;
+    }
+  }
+
+  .bookmaker__button {
+    padding: @spacer-3 0 @spacer-3 @spacer-3;
+  }
+
+  .break {
+    border-top: 0;
+    border-bottom: 1px solid @ls-line-color;
+    margin: @spacer-3 0 0 0;
+  }
+}
+
+
+.bookmaker-list--table {
+  .bookmaker {
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 0;
+
+    .bookmaker__logo,
+    .bookmaker__bonus,
+    .bookmaker__review,
+    .bookmaker__button {
+      flex: 0 0 auto;
+      align-self: center;
+    }
+
+    .bookmaker__bonus,
+    .bookmaker__review {
+      flex: 1 0 auto;
+    }
+
+    .bookmaker__order {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .bookmaker__logo {
+      padding: 8px;
+    }
+
+    .bookmaker__bonus {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 auto;
+      justify-content: flex-end;
+
+      padding: @spacer-3;
+
+      .partner-list__bonus-text {
+        padding: 0 @spacer-3;
+      }
+    }
+
+    .bookmaker__review {
+      flex: 0 0 100px;
+    }
+  }
+}
+
+.bookmaker__order {
+  flex: 0 0 24px;
+  background-color: @ls-dark-contrast-color;
+  font-size: 11px;
+  font-weight: @font-weight-semi-bold;
+  color: @ls-light-color;
+  text-align: center;
+  border-radius: @border-radius-large 0 0 @border-radius-large;
+
+  .partner-list--small & {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: @border-radius-large 0 @border-radius-large 0;
+    padding: 4px 0px;
+    line-height: 1.5;
+  }
+
+  .partner-list--small .bookmaker:active & {
+    background-color: @ls-secondary-color;
+  }
+}
+
+
+.bookmaker__logo {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  //padding: 8px;
+
+  img {
+    max-width: 80px;
+  }
+}
+
+.bookmaker__review {
+  display: flex;
+  flex-direction: column;
+  color: @bookmaker-link-color;
+
+  .partner-list__review-link {
+    color: @ls-secondary-color;
+    font-size: 11px;
+    font-weight: @font-weight-semi-bold;
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    .partner-list--small & {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .main-article .partner-list & {
+      text-decoration: none;
+    }
+  }
+}
+
+.bookmaker__bonus {
+  text-align: right;
+  color: @bookmaker-link-color;
+
+  .partner-list__bonus-text {
+    font-size: 11px;
+    line-height: 1.17;
+
+    .partner-list--small & {
+      line-height: 1.6em;
+    }
+  }
+
+  .partner-list__bonus-value {
+    color: @ls-secondary-color;
+    font-size: 20px;
+    font-weight: @font-weight-semi-bold;
+    line-height: 0.85;
+  }
+}
+
+.bookmaker__button {
+  flex: 0 0 33%;
+  padding: 8px;
+
+  .partner-list--small & {
+    padding: 0;
+
+    a {
+      padding: 5px 14px;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 9px 17px;
+    border-radius: 4px;
+    background-color: @ls-yellow-color;
+    font-size: 12px;
+    line-height: 1.58;
+    font-weight: @font-weight-semi-bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @text-color;
+
+    .main-article .partner-list & {
+      text-decoration: none;
+    }
+
+    &:hover {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      color: @ls-secondary-color;
+    }
+
+    &:active {
+      color: @ls-yellow-color;
+      background-color: @ls-secondary-color;
+      box-shadow: none;
+    }
+  }
+}
+

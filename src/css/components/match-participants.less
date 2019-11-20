@@ -1,0 +1,30 @@
+.match-participants--hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: @spacer-3;
+
+  .hero__team {
+    font-weight: @font-weight-bold;
+    text-align: center;
+
+    img {
+      display: block;
+      margin-right: @spacer-3;
+    }
+
+    &.hero__team--horizontal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &:last-child {
+        img {
+          margin-right: 0;
+          margin-left: @spacer-3;
+        }
+      }
+    }
+  }
+}

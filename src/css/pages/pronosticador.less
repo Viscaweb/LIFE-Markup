@@ -1,0 +1,23 @@
+body.page--pronosticador {
+  background: #f3f3f5;
+
+  .header .navbar-right {
+    display: none;
+  }
+
+
+  footer.footer {
+    @media (max-width: @screen-sm) {
+      .top-footer {
+        .left-column, .right-column {
+          display: block;
+        }
+      }
+
+      .container {
+        width: 100%;
+        min-width: initial;
+      }
+    }
+  }
+}

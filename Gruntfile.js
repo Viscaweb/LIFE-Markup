@@ -17,7 +17,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     "compiled/css/style.css": "src/css/style.less",
-                    "compiled/css/match-comments-iframe.css": "src/css/less/match-comments-iframe.less"
+                    "compiled/css/match-comments-iframe.css": "src/css/match-comments-iframe.less"
                 }
             },
             production: {

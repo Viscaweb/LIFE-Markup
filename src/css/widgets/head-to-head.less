@@ -1,0 +1,72 @@
+.card--head-to-head {
+  .progressbar__legend-value {
+    min-width: 70px;
+  }
+
+  .head-to-head__intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: @spacer-5;
+  }
+
+  .head-to-head__intro__team {
+    font-weight: @font-weight-bold;
+    text-align: center;
+
+    img {
+      margin: @spacer-2 auto;
+      display: block;
+    }
+  }
+
+  .head-to-head__intro__hero {
+    text-align:center;
+
+    strong {
+      display: block;
+      font-size: @font-size-xx-large;
+      margin-bottom: 5px;
+    }
+
+    small {
+      font-size: @font-size-x-small;
+    }
+  }
+  .progressbar__legend-value {
+    .number {
+      font-weight: @font-weight-light;
+    }
+
+    &.highlighted .number{
+      font-weight: @font-weight-bold;
+      color: #92d41f;
+    }
+
+    .legend {
+      text-transform: lowercase;
+    }
+  }
+
+  .progress {
+    height: 6px;
+
+    .progress-bar {
+      background-color: #92d41f;
+    }
+
+    .progress-bar--tied {
+      background-color: #fbd900;
+    }
+  }
+
+  .card__footer {
+    text-align: center;
+    font-weight: @font-weight-bold;
+    a {
+      padding: 0;
+      color: @blue;
+    }
+  }
+}

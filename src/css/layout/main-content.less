@@ -1,0 +1,38 @@
+//Includes
+@import "./../livescore/rules/ls-top-breadcrumbs.less";
+
+.main{
+  display: table-cell;
+  vertical-align: top;
+  background: @ls-light-color;
+  padding: 0;
+  float: none;
+  margin: 0;
+  width: @ls-main-width;
+
+  .content-wrapper{
+    margin: 0;
+    padding: 20px;
+
+    > .content{
+      float: left;
+      width: 620px;
+      padding-right: 10px;
+
+      &.content-no-sidebar-left {
+        width: 770px;
+      }
+    }
+
+    .right-sidebar{
+      float: left;
+      width: @ls-sidebar-width;
+      padding-left: 10px;
+    }
+  }
+}
+
+.main--alt {
+  background: transparent;
+  padding-top: 1em;
+}

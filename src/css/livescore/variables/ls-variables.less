@@ -1,0 +1,472 @@
+/*Main Colors*/
+@ls-grey: #33393b;
+@ls-greyblue-dark: #424749;
+@ls-greyblue-darker: @ls-greyblue-dark, 2%;
+@ls-light-color: #FFF;
+@ls-dark-color: #000;
+@live-red: #e33000;
+@ls-yellow-color: #ffd800;
+@ls-yellow-color-shade: #e1b902;
+@ls-yellow-text-contrast-color: #3e4e5a;
+@ls-dark-contrast-color: #454a4c;
+@ls-secondary-color: #167773;
+@ls-black-color: #000000;
+@prediction: #e00000;
+@active-green: #5da400;
+@warning-red: #FF0000;
+@facebook-color: #4763b2;
+@twitter-color: #00b9f3;
+@google-plus-color: #e75f46;
+@ls-action-icon-color: darken(@ls-light-color, 20%);
+@ls-action-icon-color-hover: @ls-greyblue-dark;
+
+@text-dark-color: #06082e;
+
+/*Container*/
+@container-width: 1120px;
+@ls-left-nav-width: 150px;
+@ls-sidebar-width: 310px;
+@ls-main-width:100%;
+
+/*LS Icons Font*/
+@ls-icons-font: "LSicons";
+
+/*Assets Folder Path*/
+@ls-css-path: "/";
+@ls-img-path: "../img/";
+@ls-img-path: "../img/";
+@ls-fonts-path: "../fonts/";
+
+/*File Names*/
+/*Fonts Paths*/
+@ls-alternate-bold-font-name: 'OpenSans-CondBold-webfont';
+@ls-alternate-light-font-name: 'OpenSans-CondLight-webfont';
+
+/*Images Paths*/
+@ls-image-live-spot: "@{ls-img-path}sprites/live-spot.gif";
+@ls-image-paused-spot: "@{ls-img-path}sprites/paused-spot.gif";
+@ls-image-loading: "@{ls-img-path}/loading.gif";
+@ls-image-loading-tiny: "@{ls-img-path}/loading-tiny.gif";
+@ls-image-sprite-icons: "@{ls-img-path}/sprite-icons.png";
+@ls-image-sprite-icons-retina: "@{ls-img-path}/sprite-icons@2x.png";
+@ls-image-sprite-icons-webmaster: "@{ls-img-path}/sprite-icons-webmaster.png";
+@ls-image-sprite-flags: "@{ls-img-path}/sprite-flags.png";
+@ls-image-sprite-flags-retina: "@{ls-img-path}/sprite-flags.png"; /* value to update with retina sprite */
+@ls-image-scoreboard-game-field: "@{ls-img-path}/bg-green-field.png";
+@ls-image-match-teams-lineups-field-bg: "@{ls-img-path}/field/field-bg.png";
+@ls-image-match-teams-lineups-field-lines: "@{ls-img-path}/field/field-lines.png";
+@ls-image-timeline-bg: "@{ls-img-path}/timeline/timeline-bg.jpg";
+@ls-image-timeline-gray-bg: "@{ls-img-path}/timeline/timeline-gray-bg.jpg";
+@ls-image-timeline-guide-bg: "@{ls-img-path}/timeline/timeline-guide.png";
+@ls-image-player-summary-football-field: "@{ls-img-path}/sprites/football-field.png";
+@ls-image-player-summary-arrow-right-green: "@{ls-img-path}/sprites/arrow-right-green.png";
+@ls-image-player-summary-arrow-left-red: "@{ls-img-path}/sprites/arrow-left-red.png";
+@ls-image-player-summary-chairs: "@{ls-img-path}/sprites/chairs.png";
+@ls-image-player-summary-yellow-card: "@{ls-img-path}/sprites/yellow-card.png";
+@ls-image-player-summary-red-card: "@{ls-img-path}/sprites/red-card.png";
+@ls-image-user-dashboard-th-bg: "@{ls-img-path}/user-dashboard/th-bg.png";
+@ls-image-review-header-bg: "@{ls-img-path}/review/header-bg.png";
+@ls-image-review-payment-methods-bg: "@{ls-img-path}/sprite-payments.png";
+
+/*CSS3 PIE Path*/
+@ls-css3-pie-url: "js/css3pie/PIE.htc";
+
+/*Elements Colors*/
+@ls-inverse-link-color: #9ccdff;
+@ls-inverse-link-hover-color: #007fff;
+@header-bg: #fff;
+@ls-fav-hover: #ffc600;
+@ls-scrollbar-background: darken(@ls-light-color, 6%);
+@ls-scrollbar-color: @brand-primary;
+@ls-scrollbar-border-radius: 3px;
+
+/*Navbar Inverse*/
+@ls-navbar-inverse-height: 50px;
+@ls-navbar-inverse-item-padding: 14px;
+@ls-navbar-inverse-item-font-size: 14px;
+@ls-navbar-inverse-item-min-width: 118px;
+@ls-left-sidebar-inverse-bg: #2e3436;
+@ls-left-sidebar-bg :lighten(@ls-grey, 74%);
+@ls-left-sidebar-sublevel-bg :darken(@ls-left-sidebar-bg, 2%);
+
+/*Top Banner*/
+@ls-top-banner-padding: 8px 0 13px;
+@ls-top-banner-bg: darken(@ls-light-color, 8%);
+
+/*Ads Background*/
+@ls-visual-only-height: 111px;
+
+/*User Left Sidebar*/
+@ls-user-left-sidebar-rank1-font-size: 25px;
+@ls-user-left-sidebar-rank2-font-size: 17px;
+
+/*Main Header*/
+@ls-notification-menu-hover: #579a00;
+@ls-notification-menu-highlight: #fff4ce;
+@ls-notification-menu-scrollbar-width: 10px;
+
+/*Top BreadCrumbs*/
+@ls-top-breadcrumbs-height: 43px;
+@ls-top-breadcrumbs-scrollbar-width: 3px;
+@ls-top-breadcrumbs-scrollbar-background: @ls-scrollbar-background;
+@ls-top-breadcrumbs-scrollbar-color: @ls-scrollbar-color;
+@ls-top-breadcrumbs-dropdown-height: 300px;
+@ls-top-breadcrumbs-scrollbar-border-radius: 3px;
+
+/*Panels*/
+@ls-panel-team-logo-size: 28px;
+
+/*Matches Slider*/
+@ls-matches-slider-control-size: 21px;
+@ls-matches-slider-final-stage-bg: #fff4ce;
+
+/*Match Resume*/
+@ls-match-info-table-team-name-size: 18px;
+@ls-match-info-table-team-logo-size: 38px;
+@ls-match-info-table-sore-size: 39px;
+@ls-match-info-table-qualified-color: #79c614;
+@ls-match-info-table-winner-color: #79c614;
+@ls-match-info-table-date-font-size: 12px;
+
+/*Match Statistics*/
+@ls-match-statistics-percent-size: 26px;
+
+/*Match Teams Lineups*/
+@ls-match-teams-lineups-field-padding: 17px 16px;
+@ls-match-teams-lineups-shirt-size: 32px;
+@ls-match-teams-lineups-home-shirt-color: #ededed;
+@ls-match-teams-lineups-away-shirt-color: #252525;
+
+/*Match Timeline*/
+@ls-match-timeline-container-height: 145px;
+@ls-match-timeline-height: 29px;
+@ls-match-timeline-font: Tahoma;
+@ls-match-timeline-bg: rgba(0,0,0,0.2);
+@ls-match-timeline-action-bg: lighten(@ls-greyblue-dark, 1.4%);
+@ls-match-timeline-border: 1px solid rgba(0,0,0,0.02);
+@ls-match-timeline-control-icon-size: 21px;
+@ls-match-timeline-time-zone-bg: #c00000;
+@ls-match-timeline-time-zone-label-color: darken(@ls-light-color, 20%);
+@ls-match-timeline-team-font-family: @ls-alternate-font;
+@ls-match-timeline-team-font-size: 19px;
+@ls-match-timeline-replay-icon-bg: #454A4C;
+@ls-match-timeline-replay-icon-hover: @brand-primary;
+
+/*Match Head to Head*/
+@ls-head-to-head-first-team-size:22px;
+@ls-head-to-head-third-team-size:14px;
+@ls-head-to-head-second-team-size:18px;
+
+/*Player Summary*/
+@ls-player-statistics-number-size: 40px;
+@ls-player-statistics-sub-number-size: 29px;
+@ls-player-image-placeholder-bg : darken(@ls-light-color, 3%);
+
+/*Content header*/
+@ls-content-header-img-size: 65px;
+@ls-content-header-player-teams-logo-size: 52px;
+
+/*Buttons*/
+@ls-btn-primary: @brand-primary;
+@ls-btn-success: #87b762;
+@ls-success-border: #5da400;
+@ls-btn-info: #96b4bd;
+@ls-btn-warning: #f1ae4e;
+@ls-btn-danger: #dd4f3c;
+@ls-btn-link: #0053a8;
+@ls-btn-prediction: @prediction;
+@ls-btn-spinner-line-height: 17px;
+
+/*Progress Bars*/
+@ls-trend-home:       #6790ce;
+@ls-trend-neutral:     darken(@ls-light-color,20%);
+@ls-trend-away:        #2356a3;
+
+/*Modals*/
+@ls-modal-close-icon-size: 24px;
+
+/*Validation Form-controls*/
+@ls-form-error: #a43434;
+@ls-form-warning: #e29000;
+
+/*Form Elements*/
+@ls-checkbox-hover-bg: #e9f2e2;
+@ls-radiobutton-hover-bg: #e9f2e2;
+
+/*DatePicker*/
+@ls-datepicker-header-height: 36px;
+
+/*Footer*/
+@ls-top-footer-bg: darken(@ls-greyblue-dark, 7%);
+@ls-bottom-footer-bg: darken(@ls-greyblue-dark, 11%);
+@ls-footer-link-color: #9fbbd3;
+@ls-footer-title-color: #d2dce5;
+
+/*Tables General*/
+@ls-data-league-country-icon-size: 18px;
+@ls-data-league-padding: 3px 4px;
+@ls-data-league-line-height: 19px;
+@ls-data-league-font-size: @font-size-small;
+@ls-data-league-arrow-padding: 3px 7px;
+@ls-data-league-hover: darken(@ls-th-league-bg, 15%);
+@ls-data-score-color: @text-color;
+@ls-table-cta-button-width: 80px;
+@ls-table-cta-button-font-size: 10px;
+@ls-table-cta-button-border-radius: 2px;
+
+/*Matches table*/
+@ls-matches-table-team-image-size: 20px;
+
+/*Standing table*/
+@ls-standing-table-team-image-size: 18px;
+
+/*Table status colors*/
+//**Status Hover Color
+@ls-tr-highlight-bg:                      #fff4ce;
+@ls-tr-selected-bg:                       #e3e8f1;
+@ls-tr-won-bg:                             #e9f2e2;
+@ls-tr-lost-bg:                             #f5d3cf;
+@ls-tr-draw-bg:                           #faf1e6;
+@ls-tr-cancelled-bg:						darken(@ls-light-color, 10%);
+
+@ls-td-selected-color: contrast(@ls-tr-selected-bg, #323232, #ffffff);
+@ls-td-won-bg:                            @brand-success;
+@ls-td-draw-bg:                           #ebc44f;
+@ls-td-lost-bg:                            #e6523e;
+@ls-td-neutral-bg:                          #cccccc;
+@ls-td-cancelled-bg:						@ls-tr-cancelled-bg;
+@ls-td-live-bg:                            darken(@ls-light-color, 10%);
+@ls-td-upcoming-bg:                    darken(@ls-light-color, 10%);
+
+@ls-th-league-bg:                              lighten(@ls-greyblue-dark, 21.3%);
+@ls-th-league-color:                        @ls-light-color;
+
+/*Table Icons*/
+@ls-table-tools-icons-color : darken(@ls-light-color, 20%);
+@ls-table-stats-down: #BD0800;
+@ls-table-stats-up: #7AB748;
+@ls-table-stats-equal: contrast(@ls-light-color, darken(@ls-light-color, 40%), fade(#ffffff, 40%));
+@ls-table-red-card: #dc0000;
+@ls-table-yellow-card: #ffde00;
+
+/*Table Standings*/
+@ls-table-standing-point-detail-font-size: 8px;
+@ls-table-standing-point-detail-color: #c25656;
+@ls-table-rank-standing-green: #d1e9be;
+@ls-table-rank-standing-clear-green: #e3f1d9;
+@ls-table-rank-standing-blue: #bee1ec;
+@ls-table-rank-standing-clear-blue: #dcf2f9;
+@ls-table-rank-standing-orange: #f3ca88;
+@ls-table-rank-standing-clear-orange: #f6ddb4;
+@ls-table-rank-standing-red: #eebaba;
+@ls-table-rank-standing-clear-red: #f5cdcd;
+@ls-table-rank-standing-color : #5c5c5c;
+
+/*Typography*/
+@ls-body-font-name: 'Open Sans';
+@ls-alternate-font-name: 'Open Sans Condensed';
+@ls-bootstrap-icons-font-family: 'Glyphicons Halflings';
+@ls-body-font: '@{ls-body-font-name}', sans-serif;
+@ls-alternate-font: '@{ls-alternate-font-name}', sans-serif;
+@ls-link-caret-right-size: 10px;
+
+@ls-paragraph-line-height: 22px;
+@ls-general-page-title-size: 27px;
+@ls-stat-value-big-size: 40px;
+
+/*Social like icons*/
+@ls-social-icon-size: 18px;
+@ls-fb-icon: #4a6baa;
+@ls-twitter-icon: #00b9f3;
+@ls-gp-icon: #e75f46;
+
+/*Player*/
+@ls-player-goal-size: 52px;
+
+/*Upcoming Top Games - Block*/
+@ls-top-match-block-shields-logo-size: 28px;
+@ls-top-match-block-match-time-size: 23px;
+@ls-top-match-block-teams-logo-size: 60px;
+@ls-top-match-block-score-size: 23px;
+@ls-top-match-block-score-min-width: 82px;
+
+/*Top competitions widget*/
+@ls-top-competitions-nav-logo-size: 20px;
+
+/*Bootstrap Wizard Component*/
+@ls-wizard-nav-bg: darken(@ls-light-color, 2.2%);
+@ls-wizard-active-step-bg: #61a606;
+@ls-wizard-step-font-size: @font-size-normal;
+@ls-wizard-step-bg: darken(@ls-light-color, 2.2%);
+@ls-wizard-step-hover-bg: darken(@ls-light-color, 6.2%);
+@ls-wizard-step-vertical-padding: 17px;
+@ls-wizard-step-horizontal-padding: 20px;
+@ls-wizard-step-label-size: 28px;
+@ls-wizard-step-label-font-size: 18px;
+@ls-wizard-step-label-bg: @active-green;
+@ls-wizard-step-tail-height: ((@ls-wizard-step-vertical-padding * 2) + @ls-wizard-step-label-size);
+@ls-wizard-step-tail-width: 20px;
+@ls-wizard-step-tail-border-color: darken(@ls-light-color, 9%);
+
+/*Color Picker Plugin*/
+@ls-color-picker-input-height: 30px;
+@ls-color-picker-preview-size: 23px;
+
+/*Widget Creator Page*/
+@ls-widget-creator-heading-title-size: 27px;
+@ls-widget-creator-section-label-size: 28px;
+@ls-widget-creator-section-label-font-size: 18px;
+@ls-widget-creator-section-label-bg: lighten(@ls-dark-color, 40%);
+
+/*User Dashboard & Contest*/
+@ls-contest-grid-big-number-font-size: 24px;
+@ls-user-avatar-placeholder-bg: darken(@ls-light-color, 3%);
+
+/*News*/
+@ls-news-article-title-size: 25px;
+@ls-news-article-full-width-title-size: 27px;
+@ls-news-article-title-line-height: 31px;
+@ls-news-article-team-logo-size: 30px;
+
+/*Streaming Page*/
+@ls-streaming-main-title-size: 38px;
+@ls-streaming-sub-title-size: 24px;
+@ls-streaming-table-title-size: 27px;
+@ls-streaming-table-hover-icon-size: 23px;
+
+//US odds widget variables
+@ls-odds-th-height : 54px;
+@ls-odds-td-height : 46px;
+
+//Loading gif
+@ls-loading-img-size: 48px;
+
+//Country flag
+@ls-country-flag-size: 18px;
+
+//Live indicator
+@ls-live-indicator-size: 8px;
+@ls-live-indicator-animation-duration: 1s;
+@ls-live-indicator-animation: ls-live-indicator-animation @ls-live-indicator-animation-duration step-end infinite;
+@ls-live-indicator-initial-state: 'data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="%23e33000"/></svg>';
+@ls-live-indicator-end-state: 'data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23e33000" stroke-width="1" fill="transparent"/></svg>';
+@ls-live-indicator-paused-state: 'data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><circle cx="4" cy="4" r="3.2" stroke="%23b3b3b3" stroke-width="1" fill="%23b3b3b3"/></svg>';
+
+// Player comparison widget
+@player-comparison-left-player-color: 						rgb(255,101,101);
+@player-comparison-right-player-color: 						rgb(52,167,255);
+@player-comparison-hero-padding: 							30px 35px 0;
+@player-comparison-hero-player-name-size: 				    31px;
+@player-comparison-hero-chart-size: 						350px;
+@player-comparison-nav-text-size: 							11px;
+@player-comparison-nav-text-color: 							#43494b;
+@player-comparison-nav-text-color-active: 				    @active-green;
+@player-comparison-nav-height: 								45px;
+@player-comparison-stats-widget-text-color: 			    #43494b;
+
+// Timeline
+@timeline-max-width:                    					840px;
+@timeline-left-padding:                 					210px;
+@timeline-vbar-position:                					@timeline-left-padding - 40px;
+@timeline-margin-helper:                					10px;
+@timeline-avatar-size:                  					35px;
+@timeline-item-bg:           											#f7f7f7;
+@timeline-content-min-height:           					85px;
+@timeline-header-line-height:           					21px;
+@timeline-header-padding-top:           					(@timeline-avatar-size - @timeline-header-line-height) / 2;
+@timeline-content-vpadding:             					25px;
+@timeline-date-width:                   					@timeline-vbar-position - 25px;
+@timeline-date-position:                					ceil(@timeline-content-vpadding + @timeline-header-padding-top) + 2px;
+@timeline-tail-size:                    					10px;
+@timeline-tail-position:                					ceil(@timeline-content-min-height - @timeline-tail-size) / 2;
+@timeline-bubble-size:                  					16px;
+@timeline-bubble-position:              					ceil(@timeline-content-min-height - @timeline-bubble-size) / 2;
+@timeline-icon-size:                    					44px;
+@timeline-icon-border-width:            					2px;
+@timeline-icon-position:                					floor((@timeline-content-min-height - @timeline-icon-size) / 2);
+
+// New match odds widget
+@new-match-odds-widget-heading-bg:                 #454a4c;
+@new-match-odds-widget-heading-bg-accent:          #313536;
+@new-match-odds-widget-bonus-bg:                   #ffd800;
+@new-match-odds-widget-text-color:                 #5c5c5c;
+@new-match-odds-widget-text-color-secondary:       #808080;
+@new-match-odds-widget-light-green:                #d1e9be;
+@new-match-odds-widget-light-red:                  #eebaba;
+
+// Match score widget
+@match-score-header-font-size:                     18px;
+@match-score-header-value-font-size:               26px;
+@match-score-header-margin:                        0 0 15px;
+
+// Match pronostics widget
+@match-pronostics-bg-color:                        @ls-black-color;
+@match-pronostics-body-font-size:                  12px;
+@match-pronostics-body-line-height:                1.5;
+@match-pronostics-header-font-size:                12px;
+@match-pronostics-numbers-font-size:               14px;
+@match-pronostics-cta-font-size:                   15px;
+@match-pronostics-margin-bottom:                   20px;
+@match-pronostics-border-radius:                   4px;
+
+// Blockquote
+@blockquote-font-size:                             24px;
+@blockquote-font-weight:                           normal;
+@blockquote-line-height:                           1.33;
+@blockquote-text-color:                            @active-green;
+@blockquote-padding:                               48px;
+@blockquote-highlight-color:                       @active-green;
+@blockquote-highlight-text-size:                   24px;
+@blockquote-highlight-line-height:                 1.33;
+@blockquote-highlight-padding:                     20px 0;
+@blockquote-max-width:                             790px;
+
+// Ordered list
+@ordered-list-margin:                              0 30px;
+@ordered-list-title-size:                          20px;
+@ordered-list-number-size:                         24px;
+@ordered-list-number-color:                        @active-green;
+@ordered-list-number-text-size:                    14px;
+@ordered-list-number-margin:                       13px;
+@ordered-list-item-padding:                        @ordered-list-number-size + @ordered-list-number-margin;
+@ordered-list-max-width:                           790px;
+
+// Alert
+@blockquote-alert-bg-color:                      rgba(255, 216, 0, 0.2);
+@blockquote-alert-text-color:                    #3e4e5a;
+@blockquote-alert-border-color:                  #ffd800;
+@blockquote-alert-border-width:                  4px;
+@blockquote-alert-border-width-small-phone:      2px;
+@blockquote-alert-padding:                       15px 15px 15px 20px;
+@blockquote-alert-max-width:                     790px;
+
+// Review
+@review-header-mockup-width:                     460px;
+@review-header-mockup-height:                    312px;
+@review-header-title-size:                       38px;
+@review-header-title-line-height:                1.16;
+
+//Responsive limits
+@xx-small-devices: 620px;
+@extra-small-devices: 768px;
+@small-devices: 992px;
+@medium-devices: 1200px;
+
+//Responsive Variables
+@desktop: ~"(min-width: @{medium-devices})";
+@laptop: ~"(min-width: @{small-devices}) and (max-width: @{medium-devices})";
+@tablet: ~"(min-width: @{extra-small-devices}) and (max-width: @{small-devices})";
+@phone: ~"(max-width: @{extra-small-devices})";
+@small-phone: ~"(max-width: @{xx-small-devices})";
+
+//Retina Display
+@retina: ~"all and (-webkit-min-device-pixel-ratio: 2), all and (min-resolution: 192dpi)";
+
+//Google Chrome Query
+@webkit: ~"screen and (-webkit-min-device-pixel-ratio:0)";
+
+//IE8 Media Query
+@ie8: \0screen;
+
+//IE 10+ Media Query
+@ie10: ~"all and (-ms-high-contrast: none), (-ms-high-contrast: active)";

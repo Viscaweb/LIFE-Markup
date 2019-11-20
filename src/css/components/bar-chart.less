@@ -1,0 +1,40 @@
+.bar-chart {
+  width: 100%;
+
+  .bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    height: 50px;
+    border-bottom: 1px solid @gray-lighter;
+
+    .bar {
+      width: 50px;
+      border-top-left-radius: @border-radius-base;
+      border-top-right-radius: @border-radius-base;
+    }
+
+    .bar--green {
+      background-color: @ls-primary;
+    }
+
+    .bar--yellow {
+      background-color: @ls-warning;
+    }
+
+    .bar--red {
+      background-color: @ls-danger;
+    }
+  }
+
+  .x-axis {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    color: @text-color-grayed;
+    text-transform: lowercase;
+  }
+
+}
