@@ -1105,7 +1105,7 @@
 
 .sharing .likes .icon {
   border-radius: 15px;
-  color: #FFF;
+  color: #ffffff;
   display: inline-block;
   height: 28px;
   width: 28px;
@@ -1302,7 +1302,7 @@
 
 .matches-slider .content .match table tr td.score.update {
   background-color: #e33000;
-  color: #FFF !important;
+  color: #ffffff !important;
 }
 
 .matches-slider .content .match table tr:first-child td {
@@ -1323,7 +1323,7 @@
 }
 
 .matches-slider .content .match:nth-child(even) {
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 .matches-slider .content .match.live .status,
@@ -1414,7 +1414,7 @@
 .match-slider-inverse .slider-content > .title h4 span.title,
 .match-slider-inverse .slider-content > .title .h4 span.title {
   text-transform: uppercase;
-  color: #FFF;
+  color: #ffffff;
   display: block;
 }
 
@@ -1455,7 +1455,7 @@
 }
 
 .match-slider-inverse .content .match table tr td {
-  color: #FFF;
+  color: #ffffff;
   border-color: #52585b;
 }
 
@@ -1591,7 +1591,7 @@
   font-size: 11px;
   font-weight: 600;
   line-height: 21px;
-  color: #FFF;
+  color: #ffffff;
   padding-right: 10px;
 }
 
@@ -1600,7 +1600,7 @@
   top: 20px;
   right: 0;
   width: 100%;
-  color: #FFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   display: -webkit-box;
@@ -1633,7 +1633,7 @@
 }
 
 .top-match-block .score-board .teams .at {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .top-match-block .score-board .team {
@@ -1671,7 +1671,7 @@
 .top-match-block .score-board .match-info > span {
   padding: 7px 9px;
   background: #363a3c;
-  color: #FFF;
+  color: #ffffff;
   font-size: 23px;
   display: inline-block;
   min-width: 82px;
@@ -1687,7 +1687,7 @@
 .top-match-block .score-board .match-info .block div.score {
   padding: 1px 9px;
   background: #363a3c;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 600;
   font-size: 23px;
 }
@@ -1695,7 +1695,7 @@
 .top-match-block .score-board .match-time .block div.time,
 .top-match-block .score-board .match-info .block div.time {
   background-color: #2a2d2e;
-  color: #FFF;
+  color: #ffffff;
   font-size: 12px;
   line-height: 16px;
 }
@@ -1787,7 +1787,7 @@
   right: 0;
   top: 10px;
   text-align: center;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .top-match-block .score-board.score-board-variant-1 .title:after {
@@ -1881,11 +1881,11 @@
   text-align: center;
   height: 40px;
   line-height: 40px;
-  color: #FFF;
-  opacity: 0.5;
-  -webkit-transition: width 0.3s;
-  -o-transition: width 0.3s;
-  transition: width 0.3s;
+  color: #ffffff;
+  opacity: .5;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
 }
 
 .top-match-block .slider-control.prev {
@@ -1987,7 +1987,7 @@
 }
 
 .top-competitions-block.panel .nav-pills > li.open > a .icon-caret-down {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .top-competitions-block.panel .nav-pills > li.open > a:hover,
@@ -2553,7 +2553,7 @@ span.glyphicon-star.active {
 
 .comment-number {
   font-family: "Open Sans", sans-serif;
-  color: #FFF;
+  color: #ffffff;
   font-size: 8px;
   line-height: 8px;
   font-weight: 600;
@@ -2590,7 +2590,7 @@ span.glyphicon-star.active {
 }
 
 .fav-match.available .comment-number {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .fav-match:hover,
@@ -2600,7 +2600,7 @@ span.glyphicon-star.active {
 
 .fav-match:hover.available .comment-number,
 .fav-match:focus.available .comment-number {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .fav-match.active {
@@ -2807,7 +2807,7 @@ span.glyphicon-star.active {
   border-radius: 50%;
   padding: 0;
   display: inline-block;
-  color: #FFF;
+  color: #ffffff;
   background-color: #5da400;
   margin-right: 7px;
 }
@@ -2825,7 +2825,7 @@ span.glyphicon-star.active {
 }
 
 .ls-wizard > ul.nav > li.active > a {
-  color: #FFF;
+  color: #ffffff;
   background-color: #61a606;
 }
 
@@ -2834,7 +2834,7 @@ span.glyphicon-star.active {
 }
 
 .ls-wizard > ul.nav > li.active > a .label {
-  background-color: #FFF;
+  background-color: #ffffff;
   color: #5da400;
 }
 
@@ -2862,7 +2862,7 @@ span.glyphicon-star.active {
 }
 
 .ls-wizard .navigation.wizard > li .btn span {
-  color: #FFF;
+  color: #ffffff;
   margin-right: 5px;
 }
 
@@ -2980,7 +2980,7 @@ span.glyphicon-star.active {
 
 .notifications-list > ul > li.media:hover .media-body .meadia-heading,
 .notifications-list > ul > li.media:hover .media-body p {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .discussion .panel-body ul {
@@ -3299,10 +3299,10 @@ span.glyphicon-star.active {
   width: 100%;
   height: 60px;
   pointer-events: none;
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 20%, #FFF 80%, #FFF);
-  background-image: -o-linear-gradient(270deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 20%, #FFF 80%, #FFF);
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 20%, #FFF 80%, #FFF);
+  background-color: rgba(255, 255, 255, 0);
+  background-image: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 20%, #ffffff 80%, #ffffff);
+  background-image: -o-linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 20%, #ffffff 80%, #ffffff);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 20%, #ffffff 80%, #ffffff);
 }
 
 .sport-content--collapsed.in {
@@ -3394,7 +3394,7 @@ span.glyphicon-star.active {
 }
 
 .player-comparison-hero-player-name > a {
-  color: #FFF;
+  color: #ffffff;
   font-size: 31px;
   font-weight: 600;
   line-height: 1;
@@ -3411,7 +3411,7 @@ span.glyphicon-star.active {
 .player-comparison-hero-player-name > a:hover,
 .player-comparison-hero-player-name > a:active,
 .player-comparison-hero-player-name > a:focus {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .player-comparison-hero-player-name > a:after {
@@ -3499,7 +3499,7 @@ span.glyphicon-star.active {
   position: absolute;
   top: -4px;
   right: -7px;
-  color: #FFF;
+  color: #ffffff;
   font-size: 10px;
   font-weight: bold;
 }
@@ -3544,7 +3544,7 @@ span.glyphicon-star.active {
 .player-comparison-hero-player-social-links a svg {
   max-width: 17px;
   max-height: 17px;
-  fill: #FFF;
+  fill: #ffffff;
 }
 
 .player-comparison-hero-player-image {
@@ -3632,8 +3632,8 @@ span.glyphicon-star.active {
 
 .player-comparison-nav .nav-tabs.nav-justified > li.active > a {
   color: #5da400;
-  background-color: #FFF;
-  border-bottom-color: #FFF;
+  background-color: #ffffff;
+  border-bottom-color: #ffffff;
   border-bottom-width: 1px;
   border-left-width: 0;
   border-right-width: 0;
@@ -4089,7 +4089,7 @@ span.glyphicon-star.active {
 
 .timeline-item.left .timeline-content,
 .timeline-item.right .timeline-content {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .timeline-item.left .timeline-content a,
@@ -4098,7 +4098,7 @@ span.glyphicon-star.active {
 .timeline-item.right .timeline-content a:hover,
 .timeline-item.left .timeline-content .timeline-time,
 .timeline-item.right .timeline-content .timeline-time {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .timeline-item.left .timeline-content {
@@ -4303,19 +4303,19 @@ span.glyphicon-star.active {
 .timeline-date span {
   display: inline-block;
   padding: 3px;
-  background-color: #FFF;
+  background-color: #ffffff;
   padding: 9px;
   font-size: 18px;
 }
 
 .timeline-icon {
   position: absolute;
-  color: #FFF;
+  color: #ffffff;
   top: 20px;
   left: -67px;
   width: 44px;
   height: 44px;
-  border: 2px solid #FFF;
+  border: 2px solid #ffffff;
   text-align: center;
   background-color: #ededed;
   border-radius: 50%;
@@ -4392,7 +4392,7 @@ span.glyphicon-star.active {
 .player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-name {
   font-size: 20px;
   font-weight: 300;
-  color: #FFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -4429,7 +4429,7 @@ span.glyphicon-star.active {
 }
 
 .player-comparison-girlfriends-item .player-comparison-girlfriends-item-overlay .player-comparison-girlfriend-actions a svg {
-  fill: #FFF;
+  fill: #ffffff;
   width: 24px;
   height: 24px;
 }
@@ -5358,7 +5358,7 @@ ul.table-of-content li span {
 }
 
 .match-pronostics p a {
-  color: #FFF !important;
+  color: #ffffff !important;
   font-weight: 600;
 }
 
@@ -5423,7 +5423,7 @@ ul.table-of-content li span {
 
 .match-pronostic-block-column--logo,
 .match-pronostic-block-column--odds {
-  background-color: #FFF;
+  background-color: #ffffff;
   color: #4a4a4a;
 }
 
@@ -5457,14 +5457,14 @@ ul.table-of-content li span {
   background-color: #5da400;
   text-transform: uppercase;
   text-align: center;
-  color: #FFF;
+  color: #ffffff;
   font-size: 15px;
   font-weight: bold;
   line-height: 1.35;
 }
 
 .match-pronostic-block-column--cta a:hover {
-  color: #FFF;
+  color: #ffffff;
   background-color: #63ae00;
 }
 
@@ -5473,11 +5473,11 @@ ul.table-of-content li span {
 }
 
 .panel-inverse .match-pronostic-block-column--cta a {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .panel-inverse .match-pronostic-block-column--cta a:hover {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .match-score {
@@ -5512,7 +5512,7 @@ ul.table-of-content li span {
 }
 
 .panel-inverse .match-score-team {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .panel-inverse .match-score-team.match-score-team--preferred {
@@ -5587,7 +5587,7 @@ ul.table-of-content li span {
   padding: 0 5px;
   background-color: #cccccc;
   vertical-align: bottom;
-  color: #FFF;
+  color: #ffffff;
   margin-right: 7px;
   line-height: 23px;
   font-weight: 600;
@@ -5786,7 +5786,7 @@ ul.table-of-content li span {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 19px;
   font-weight: 600;
-  color: #FFF;
+  color: #ffffff;
   line-height: 38px;
 }
 
@@ -5811,7 +5811,7 @@ ul.table-of-content li span {
 
 .match-timeline .controls > a > span {
   font-size: 21px;
-  color: #FFF;
+  color: #ffffff;
   position: absolute;
   width: 100%;
   height: 21px;
@@ -5863,7 +5863,7 @@ ul.table-of-content li span {
 
 .match-timeline .timeline-scroll .timeline .time-lapse {
   background: url("../img//timeline/timeline-guide.png") repeat-x 12px 0;
-  color: #FFF;
+  color: #ffffff;
   font-family: Tahoma;
   font-size: 11px;
   display: inline-block;
@@ -6003,7 +6003,7 @@ ul.table-of-content li span {
 
 .match-timeline .timeline-scroll .team-actions .replay {
   border-radius: 50%;
-  background-color: #454A4C;
+  background-color: #454a4c;
   cursor: pointer;
   position: absolute;
   width: 20px;
@@ -6014,7 +6014,7 @@ ul.table-of-content li span {
 
 .match-timeline .timeline-scroll .team-actions .replay span {
   font-size: 16px;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .match-timeline .timeline-scroll .team-actions .replay:hover {
@@ -6159,7 +6159,7 @@ ul.table-of-content li span {
 }
 
 .match-teams-lineups .component-container .team .table thead tr th.team-logo {
-  background: #FFF;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -6306,7 +6306,7 @@ ul.table-of-content li span {
 
 .match-teams-lineups .component-container .field .field-lines .player .name {
   display: block;
-  color: #FFF;
+  color: #ffffff;
   font-size: 11px;
   font-weight: 400;
   text-transform: none;
@@ -6333,7 +6333,7 @@ ul.table-of-content li span {
 }
 
 .match-teams-lineups .component-container .field .field-lines .player:hover:after {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .match-teams-lineups .component-container .field .field-lines .player:hover .name {
@@ -6341,7 +6341,7 @@ ul.table-of-content li span {
 }
 
 .match-teams-lineups .component-container .field .field-lines .player:hover .number {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .match-teams-lineups .component-container .field .field-lines .player.away:after {
@@ -6353,7 +6353,7 @@ ul.table-of-content li span {
 }
 
 .match-teams-lineups .component-container .field .field-lines .player.away .number .shirt-number {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .match-teams-lineups .component-container .field:before {
@@ -6365,7 +6365,7 @@ ul.table-of-content li span {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 13px solid #FFF;
+  border-left: 13px solid #ffffff;
   -webkit-transform: scale(0.9999);
   -ms-transform: scale(0.9999);
   -o-transform: scale(0.9999);
@@ -6381,7 +6381,7 @@ ul.table-of-content li span {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 13px solid #FFF;
+  border-right: 13px solid #ffffff;
   -webkit-transform: scale(0.9999);
   -ms-transform: scale(0.9999);
   -o-transform: scale(0.9999);
@@ -6462,7 +6462,7 @@ ul.table-of-content li span {
 }
 
 .table.teams-lineups thead tr th.team-logo {
-  background: #FFF;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -6734,7 +6734,7 @@ ul.table-of-content li span {
 
 .notification.prediction-won > div.icon {
   background-color: #5da400;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .notification.prediction-lost {
@@ -6743,11 +6743,11 @@ ul.table-of-content li span {
 
 .notification.prediction-lost > div.icon {
   background-color: #e6523e;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .iframe .match-tips {
-  background: #FFF;
+  background: #ffffff;
   padding: 20px;
 }
 
@@ -7118,7 +7118,7 @@ ul.table-of-content li span {
 
 .streaming table tbody tr td.watch span i {
   font-size: 17px;
-  color: #FFF;
+  color: #ffffff;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -7249,7 +7249,7 @@ table.odds-goal-scorers > tbody > tr > td .table-slide .table {
 
 table.odds-correct-score > tbody > tr > td .table-slide .table tbody tr td,
 table.odds-goal-scorers > tbody > tr > td .table-slide .table tbody tr td {
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #ffffff;
   background-color: rgba(0, 0, 0, 0.06) !important;
 }
 
@@ -7305,7 +7305,7 @@ table.odds-1x2-v2 thead tr th.bookmaker {
 table.odds-1x2-v2 thead tr th.result {
   background-color: #454a4c;
   font-size: 14px;
-  color: #FFF;
+  color: #ffffff;
 }
 
 table.odds-1x2-v2 thead tr th.result--draw {
@@ -7798,7 +7798,7 @@ table.links-table .dropdown-toggle {
   right: 0;
   bottom: 0;
   height: 100%;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 table.links-table .dropdown-toggle:hover {
@@ -8102,7 +8102,7 @@ table.squad-listing.avatars tbody tr td.player {
 .goals-statistics tbody tr th.statistics-title {
   font-weight: 600;
   font-size: 12px;
-  background: #FFF;
+  background: #ffffff;
   line-height: 47px;
   border-bottom: 1px solid #fafafa;
 }
@@ -8399,11 +8399,11 @@ table.squad-listing.avatars tbody tr td.player {
 }
 
 .widget-creator-settings-validation > .row > div p.warning {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .widget-creator-settings-validation > .row > div p.warning b {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .widget-creator-settings-validation > .row > div .widget-preview .title {
@@ -8438,7 +8438,7 @@ table.squad-listing.avatars tbody tr td.player {
 
 .widget-creator-settings-validation > .row > div .widget-preview .iframe-container .widget-iframe {
   padding: 15px;
-  background-color: #FFF;
+  background-color: #ffffff;
   border: 1px solid #f5f5f5;
   position: absolute;
   right: 0;
@@ -8510,7 +8510,7 @@ main .widget-conditions p:last-child {
 }
 
 main .widget-conditions .important {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 main .fixtures-widgets tbody tr td,
@@ -8593,7 +8593,7 @@ main .fixtures-widgets tbody tr td.button .btn-danger span,
 main .standings-widgets tbody tr td.button .btn-danger span,
 main .livescore-widgets tbody tr td.button .btn-danger span,
 main .matches-widgets tbody tr td.button .btn-danger span {
-  color: #FFF;
+  color: #ffffff;
 }
 
 main .fixtures-widgets tbody tr td.button span.glyphicon,
@@ -9008,7 +9008,7 @@ main .matches-widgets td.content span.empty {
   display: inline-block;
   line-height: 20px;
   top: -12px;
-  background-color: #FFF;
+  background-color: #ffffff;
   padding: 0 10px;
 }
 
@@ -9271,7 +9271,7 @@ main .content .league-list ul {
 }
 
 main .content .league-list ul li {
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 main .content .league-list ul li span.sort {
@@ -9286,7 +9286,7 @@ main .content .league-list ul li span.sort {
 
 main .content .league-list ul li span.sort:hover {
   background-color: #5da400 !important;
-  color: #FFF;
+  color: #ffffff;
 }
 
 main .content .league-list ul li span.logo {
@@ -9350,7 +9350,7 @@ main .content .league-list ul li.item-placeholder {
   position: absolute;
   right: 0;
   top: 0;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .profile-wall a.change-image .icon {
@@ -9363,7 +9363,7 @@ main .content .league-list ul li.item-placeholder {
 
 .profile-wall a.change-image:hover {
   background-color: #5da400;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .profile-wall .profile-image {
@@ -9376,7 +9376,7 @@ main .content .league-list ul li.item-placeholder {
   font-size: 28px;
   bottom: 10px;
   left: 180px;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 400;
   margin: 0;
 }
@@ -9411,7 +9411,7 @@ main .content .league-list ul li.item-placeholder {
 
 .profile-image > a .icon {
   font-size: 20px;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .profile-image > a:hover {
@@ -9835,8 +9835,8 @@ ul.image-list li img {
 
 .change-profile-image > .row .options .custom-picture .drag-zone.dragging {
   background-color: #5da400;
-  color: #FFF;
-  border-color: #FFF;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .change-profile-image > .row .options .custom-picture .drag-zone.dragging .drop-message {
@@ -9865,7 +9865,7 @@ ul.image-list li img {
 
 .webmaster-banner .banner-title span {
   display: block;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .webmaster-banner .banner-title span.big {
@@ -10040,7 +10040,7 @@ ul.image-list li img {
   background-color: rgba(0, 0, 0, 0.8);
   display: inline-block;
   padding: 6px 8px;
-  color: #FFF;
+  color: #ffffff;
   bottom: 5px;
   right: 5px;
   line-height: 14px;
@@ -10127,38 +10127,38 @@ ul.image-list li img {
 
 .article-resume .article-data > li.social-link.facebook a:hover {
   background-color: #4763b2;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.facebook a:hover .icon {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.twitter a:hover {
   background-color: #00b9f3;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.twitter a:hover .icon {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.google-plus a:hover {
   background-color: #e75f46;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.google-plus a:hover .icon {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.comment a:hover {
   background-color: #5da400;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-data > li.social-link.comment a:hover .icon {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .article-resume .article-title {
@@ -10192,7 +10192,7 @@ ul.image-list li img {
 }
 
 .article-resume .article-body .article-image img:hover {
-  opacity: 0.9;
+  opacity: .9;
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -10310,7 +10310,7 @@ ul.image-list li img {
 }
 
 .featured-article .article-image img:hover {
-  opacity: 0.9;
+  opacity: .9;
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -10321,7 +10321,7 @@ ul.image-list li img {
   position: absolute;
   display: inline-block;
   background-color: #5da400;
-  color: #FFF;
+  color: #ffffff;
   top: 0;
   left: 20px;
   text-transform: uppercase;
@@ -10358,7 +10358,7 @@ ul.image-list li img {
 
 .featured-article .article-image .match-container .article-match-info .hour {
   background-color: #313536;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .featured-article .article-image .match-container .article-match-info:hover {
@@ -10388,7 +10388,7 @@ ul.image-list li img {
 }
 
 .featured-article .article-resume .article-title {
-  color: #FFF;
+  color: #ffffff;
   font-size: 27px;
   margin-bottom: 10px;
 }
@@ -10522,7 +10522,7 @@ ul.image-list li img {
 
 .main-article .article-content {
   position: relative;
-  background-color: #FFF;
+  background-color: #ffffff;
   border-radius: 0 8px 0 0;
   margin-right: 40px;
   padding: 25px;
@@ -10562,7 +10562,7 @@ ul.image-list li img {
   font-weight: 600;
   text-align: center;
   line-height: 24px;
-  color: #FFF;
+  color: #ffffff;
   background-color: #5da400;
   border-radius: 50%;
 }
@@ -10799,10 +10799,10 @@ ul.image-list li img {
 }
 
 .small-news a.article-image img:hover {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  opacity: .9;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .small-news span.article-date {
@@ -11154,7 +11154,7 @@ ul.image-list li img {
   display: inline-block;
   font-size: 24px;
   font-weight: 600;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .review-header-promo .text .value {
@@ -11167,7 +11167,7 @@ ul.image-list li img {
 }
 
 .main-article .article-content--review {
-  background-color: #FFF;
+  background-color: #ffffff;
   border-radius: 0 8px 0 0;
   margin-top: -40px;
   margin-right: 0;
@@ -11320,50 +11320,50 @@ ul.image-list li img {
 
 @-webkit-keyframes blinker {
   0% {
-    opacity: 1;
+    opacity: 1.0;
   }
 
   50% {
-    opacity: 0;
+    opacity: .0;
   }
 
   100% {
-    opacity: 1;
+    opacity: 1.0;
   }
 }
 
 @-o-keyframes blinker {
   0% {
-    opacity: 1;
+    opacity: 1.0;
   }
 
   50% {
-    opacity: 0;
+    opacity: .0;
   }
 
   100% {
-    opacity: 1;
+    opacity: 1.0;
   }
 }
 
 @keyframes blinker {
   0% {
-    opacity: 1;
+    opacity: 1.0;
   }
 
   50% {
-    opacity: 0;
+    opacity: .0;
   }
 
   100% {
-    opacity: 1;
+    opacity: 1.0;
   }
 }
 
 .bounce {
-  -webkit-animation: bounce 1s 0.5s;
-  -o-animation: bounce 1s 0.5s;
-  animation: bounce 1s 0.5s;
+  -webkit-animation: bounce 1s .5s;
+  -o-animation: bounce 1s .5s;
+  animation: bounce 1s .5s;
 }
 
 .bounceHide {
@@ -11491,66 +11491,66 @@ ul.image-list li img {
 @-webkit-keyframes progressiveUpdate {
   0% {
     background-color: #e33000;
-    color: #FFF;
+    color: #ffffff;
   }
 
   90% {
     background-color: #e33000;
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
 @-o-keyframes progressiveUpdate {
   0% {
     background-color: #e33000;
-    color: #FFF;
+    color: #ffffff;
   }
 
   90% {
     background-color: #e33000;
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
 @keyframes progressiveUpdate {
   0% {
     background-color: #e33000;
-    color: #FFF;
+    color: #ffffff;
   }
 
   90% {
     background-color: #e33000;
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
 @-webkit-keyframes progressiveUpdateLink {
   0% {
-    color: #FFF;
+    color: #ffffff;
   }
 
   90% {
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
 @-o-keyframes progressiveUpdateLink {
   0% {
-    color: #FFF;
+    color: #ffffff;
   }
 
   90% {
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
 @keyframes progressiveUpdateLink {
   0% {
-    color: #FFF;
+    color: #ffffff;
   }
 
   90% {
-    color: #FFF;
+    color: #ffffff;
   }
 }
 
@@ -11733,7 +11733,7 @@ ul.image-list li img {
 }
 
 .sidebar-nav li.user-display.active .info span {
-  color: #FFF !important;
+  color: #ffffff !important;
 }
 
 .sidebar-nav li:hover .option-icon {
@@ -11977,7 +11977,7 @@ ul.image-list li img {
 }
 
 .sidebar-nav-inverse > li > a.dropdown-toggle:hover:before {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .sidebar-nav-inverse > li > ul > li a {
@@ -11998,11 +11998,11 @@ ul.image-list li img {
 
 .sidebar-nav-inverse > li > ul > li.active a {
   background-color: #5da400;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .sidebar-nav-inverse > li > ul > li.active a .icon {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .user-sidebar-nav {
@@ -12098,7 +12098,7 @@ ul.image-list li img {
 
 .breadcrumb {
   border-radius: 0;
-  background: #FFF;
+  background: #ffffff;
   padding: 0 0 0 20px;
   margin: 0;
   border-bottom: 1px solid #ececec;
@@ -12197,7 +12197,7 @@ ul.image-list li img {
 .main {
   display: table-cell;
   vertical-align: top;
-  background: #FFF;
+  background: #ffffff;
   padding: 0;
   float: none;
   margin: 0;
@@ -12368,7 +12368,7 @@ ul.image-list li img {
   float: right;
   max-width: 32px;
   max-height: 32px;
-  background: #FFF;
+  background: #ffffff;
   margin: 4px 0 0 10px;
 }
 
@@ -12558,7 +12558,7 @@ ul.image-list li img {
 
 .card {
   border-radius: 2px;
-  background: #FFF;
+  background: #ffffff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 19.5px;
 }
@@ -12727,7 +12727,7 @@ ul.image-list li img {
 
 .match-list.match-list--vertical .match-item .match-item__teams__team.winner {
   font-weight: 600;
-  color: #000;
+  color: #000000;
 }
 
 .match-list.match-list--vertical .match-item .match-item__teams__team .team__logo {
@@ -12813,7 +12813,7 @@ ul.image-list li img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFF;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -13098,7 +13098,7 @@ body.page--pronosticador .header .navbar-right {
 
 .bookmaker-list.bookmaker-list--vertical .bookmaker:after {
   content: "";
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   position: absolute;
   bottom: -1em;
   left: 0;
@@ -13135,7 +13135,7 @@ body.page--pronosticador .header .navbar-right {
 
 .bookmaker-list.bookmaker-list--vertical .break {
   border-top: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   margin: 13px 0 0 0;
 }
 
@@ -13231,7 +13231,7 @@ body.page--pronosticador .header .navbar-right {
   background-color: #454a4c;
   font-size: 11px;
   font-weight: 600;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   border-radius: 4px 0 0 4px;
 }
@@ -13614,11 +13614,24 @@ body.page--pronosticador .header .navbar-right {
 }
 
 .card--match-summary.card--match-summary--inprogress .info__score {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   background: #2e9fc7;
   color: #FFF;
   border-radius: 13px;
   padding: 0 20px;
   margin-bottom: 10px;
+}
+
+.card--match-summary.card--match-summary--inprogress .info__score .versus {
+  margin: 0 10px;
 }
 
 .card--head-to-head .progressbar__legend-value {

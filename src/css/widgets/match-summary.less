@@ -86,11 +86,18 @@
 
   &.card--match-summary--inprogress {
     .info__score {
+      display: flex;
+      flex-direction: row;
+
       background: @blue;
       color: #FFF;
       border-radius: 13px;
       padding: 0 20px;
       margin-bottom: 10px;
+
+      .versus {
+        margin: 0 10px;
+      }
     }
   }
 }

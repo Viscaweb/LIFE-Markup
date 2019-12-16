@@ -20,6 +20,7 @@ Test
 
 Requirements
 ------------
+(2019, December Note: I've never needed this vagrant stuff, just npm install and `grunt`)
 * Virtualbox : https://www.virtualbox.org/wiki/Downloads
 * Vagrant : https://www.vagrantup.com
 * Maybe you will need some vagrant plugins...
